@@ -17,7 +17,8 @@ class ReleaseTests(unittest.TestCase):
     def setUp(self):
         directory = tempfile.TemporaryDirectory(prefix='bitbeamer release ')
         self.addCleanup(directory.cleanup)
-        self.root = Path(directory.name)
+        # macOS aliases /var and Windows may expose short temporary paths.
+        self.root = Path(directory.name).resolve()
         (self.root / 'build').mkdir()
         (self.root / 'dist').mkdir()
         for source in release.PREVIEWS:
