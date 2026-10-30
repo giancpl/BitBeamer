@@ -1,0 +1,1028 @@
+{
+  "cow-love-white": {
+    "source": "assets/backgrounds/cow-love-white.svg",
+    "output": "cow-love-white.pdf",
+    "sha256": "70229bb0d6dee184a8132dd40fc5b2f2456749d7f0897b8008cb6ac42232455c",
+    "conversion": "svg-ink-v1"
+  },
+  "cow-love": {
+    "source": "assets/backgrounds/cow-love.svg",
+    "output": "cow-love.pdf",
+    "sha256": "15d133703a82c99074e739a562fc2b164086b8e847169f86e20e714f5011c7e7",
+    "conversion": "svg-ink-v1"
+  },
+  "alice-and-bob": {
+    "source": "assets/characters/alice-and-bob.svg",
+    "output": "alice-and-bob.pdf",
+    "sha256": "1165ce9bed0e74b5212540ddfe1900d5048b2e5a4657b14dbe7679bfd868c29e",
+    "conversion": "svg-ink-v1"
+  },
+  "alice": {
+    "source": "assets/characters/alice.svg",
+    "output": "alice.pdf",
+    "sha256": "e853b91531a4d8aeaf070c53de6fcb4e8e11e7c8a8834999a18ae40fcd8af00c",
+    "conversion": "svg-ink-v1"
+  },
+  "bob": {
+    "source": "assets/characters/bob.svg",
+    "output": "bob.pdf",
+    "sha256": "2a150d60cd96ed7c0e35ea5e78dae398634ac87947ff1ab043cce213569844e0",
+    "conversion": "svg-ink-v1"
+  },
+  "face-angel": {
+    "source": "assets/characters/faces/face-angel.svg",
+    "output": "face-angel.pdf",
+    "sha256": "09ca98032d13c012a637066dd4e6fdc12abe3c501c8afd3180ac8308d43e2a40",
+    "conversion": "svg-ink-v1"
+  },
+  "face-angry": {
+    "source": "assets/characters/faces/face-angry.svg",
+    "output": "face-angry.pdf",
+    "sha256": "3c1c74e407308ae249f783d7a813be6d85bb00b1c6e7f2ad71f17d6b5b21f01c",
+    "conversion": "svg-ink-v1"
+  },
+  "face-crying": {
+    "source": "assets/characters/faces/face-crying.svg",
+    "output": "face-crying.pdf",
+    "sha256": "3e879f1bda305cefba2f50084c85aac0f091bf64bc34a339accf5f3956f9a763",
+    "conversion": "svg-ink-v1"
+  },
+  "face-devil": {
+    "source": "assets/characters/faces/face-devil.svg",
+    "output": "face-devil.pdf",
+    "sha256": "2d921560bf4df599189a2bbdb5b66772d1b5ef3436b8bd1477c8e807df5a3a35",
+    "conversion": "svg-ink-v1"
+  },
+  "face-distressed": {
+    "source": "assets/characters/faces/face-distressed.svg",
+    "output": "face-distressed.pdf",
+    "sha256": "719fb2b0156d0ab1aadecad57dee10abd0690cd61d4d162df844bc3c4f50b64a",
+    "conversion": "svg-ink-v1"
+  },
+  "face-kiss": {
+    "source": "assets/characters/faces/face-kiss.svg",
+    "output": "face-kiss.pdf",
+    "sha256": "bf7aa2eca63affd4d1bb081d571c3d4e7054b9a201e62c7958be25f02127f736",
+    "conversion": "svg-ink-v1"
+  },
+  "face-laugh": {
+    "source": "assets/characters/faces/face-laugh.svg",
+    "output": "face-laugh.pdf",
+    "sha256": "e1bdf7f8a5d1ff0bbd37e76478e17e452e9c5762e7e81e05f1bc7cf562e0d7b8",
+    "conversion": "svg-ink-v1"
+  },
+  "face-neutral": {
+    "source": "assets/characters/faces/face-neutral.svg",
+    "output": "face-neutral.pdf",
+    "sha256": "f618baa9362d68fda106f772dbd6b2f3f8e0cc6a689bad999fb1a73114fb7b53",
+    "conversion": "svg-ink-v1"
+  },
+  "face-sad": {
+    "source": "assets/characters/faces/face-sad.svg",
+    "output": "face-sad.pdf",
+    "sha256": "1dcad7d75231786c69ea5a9850d50f0d72e39e7c7715dc8e8192e79831ed03d1",
+    "conversion": "svg-ink-v1"
+  },
+  "face-scrunched": {
+    "source": "assets/characters/faces/face-scrunched.svg",
+    "output": "face-scrunched.pdf",
+    "sha256": "fc2cba9832bce7bacfa16180f48cfed1db924a1cfb4eb611582dbd1eff5eb020",
+    "conversion": "svg-ink-v1"
+  },
+  "face-shocked": {
+    "source": "assets/characters/faces/face-shocked.svg",
+    "output": "face-shocked.pdf",
+    "sha256": "40a86d7443ada015a0b24c82c16a297c97f2fb8eeee57b5895fca79cbd5a04d3",
+    "conversion": "svg-ink-v1"
+  },
+  "face-smile": {
+    "source": "assets/characters/faces/face-smile.svg",
+    "output": "face-smile.pdf",
+    "sha256": "cdffef3daaafbb4d76f95206c5f13ba0f28f343a7074b7eda321270ebec535c1",
+    "conversion": "svg-ink-v1"
+  },
+  "face-smirk": {
+    "source": "assets/characters/faces/face-smirk.svg",
+    "output": "face-smirk.pdf",
+    "sha256": "5a0062a06e422a0d96f1fb5996b31f9e5e6e0deb1cb7e5fc50da6a26d6e32aca",
+    "conversion": "svg-ink-v1"
+  },
+  "face-star-eyes": {
+    "source": "assets/characters/faces/face-star-eyes.svg",
+    "output": "face-star-eyes.pdf",
+    "sha256": "c17cbf7b8c9bd70156c9339b4393e2db839b8ddf12d9f885aacc489c0f05c2cc",
+    "conversion": "svg-ink-v1"
+  },
+  "face-steaming": {
+    "source": "assets/characters/faces/face-steaming.svg",
+    "output": "face-steaming.pdf",
+    "sha256": "bb36e0dcf9a6ff85948c0e44b53dfbcbff55559d25dc0983b33100fec53a70f6",
+    "conversion": "svg-ink-v1"
+  },
+  "face-sunglasses": {
+    "source": "assets/characters/faces/face-sunglasses.svg",
+    "output": "face-sunglasses.pdf",
+    "sha256": "f6bf307cbec75d1c964401be2d0b8e2e06f90446b46dced441a7b20c5531fd86",
+    "conversion": "svg-ink-v1"
+  },
+  "face-sweat": {
+    "source": "assets/characters/faces/face-sweat.svg",
+    "output": "face-sweat.pdf",
+    "sha256": "c128e77c31f9922a11b70bfb31ddb8dd19d79cbb8459446a2653ab0c2c16da1b",
+    "conversion": "svg-ink-v1"
+  },
+  "face-tears": {
+    "source": "assets/characters/faces/face-tears.svg",
+    "output": "face-tears.pdf",
+    "sha256": "e75cede9074c564a291bb0b232d20a4e1e78be167a6b6e5f0fdee77837f058e9",
+    "conversion": "svg-ink-v1"
+  },
+  "face-thinking": {
+    "source": "assets/characters/faces/face-thinking.svg",
+    "output": "face-thinking.pdf",
+    "sha256": "53f551cb78712fa95e7679f7081de821d13764db2f482ab48dbe75f0bcabefc0",
+    "conversion": "svg-ink-v1"
+  },
+  "face-upside-down": {
+    "source": "assets/characters/faces/face-upside-down.svg",
+    "output": "face-upside-down.pdf",
+    "sha256": "7817ba92d8f55c917fbabb5cc000dc29cf9cfc37c49da33098467d177bea17c3",
+    "conversion": "svg-ink-v1"
+  },
+  "face-weeping": {
+    "source": "assets/characters/faces/face-weeping.svg",
+    "output": "face-weeping.pdf",
+    "sha256": "4afab4e57febfa5698da6bef78050881dd8ddd2f174f3b3f78d2a0f20129c61f",
+    "conversion": "svg-ink-v1"
+  },
+  "face-wide-eyed": {
+    "source": "assets/characters/faces/face-wide-eyed.svg",
+    "output": "face-wide-eyed.pdf",
+    "sha256": "06955baa55d57407d8b0b1834f33ef7f8f5aed17b8c23588aaa0b9f483be96e7",
+    "conversion": "svg-ink-v1"
+  },
+  "face-worried": {
+    "source": "assets/characters/faces/face-worried.svg",
+    "output": "face-worried.pdf",
+    "sha256": "d71614c8805ced1b4d892c2dbff0c642736c04341d8f2c135190d66c5f2f610e",
+    "conversion": "svg-ink-v1"
+  },
+  "face-zipper": {
+    "source": "assets/characters/faces/face-zipper.svg",
+    "output": "face-zipper.pdf",
+    "sha256": "c1df0595a429c373854b488c29c3fba0606c17010766dc9c2ef951af5b8bc07a",
+    "conversion": "svg-ink-v1"
+  },
+  "skull": {
+    "source": "assets/characters/faces/skull.svg",
+    "output": "skull.pdf",
+    "sha256": "b54e622b4d135b9c7a2960c0c146de03d3273a7f88200878c195953df7ebf607",
+    "conversion": "svg-ink-v1"
+  },
+  "pepe": {
+    "source": "assets/characters/pepe.svg",
+    "output": "pepe.pdf",
+    "sha256": "c16a69f096d55f32957bb162ad3f72ade89848c63ec1b6e17d46329efb0133d0",
+    "conversion": "svg-ink-v1"
+  },
+  "pirate-emblem": {
+    "source": "assets/characters/pirate-emblem.svg",
+    "output": "pirate-emblem.pdf",
+    "sha256": "a73153bb48b753be863503f79a75aad3be390698f08ee6db5297eef1c7a70b67",
+    "conversion": "svg-ink-v1"
+  },
+  "poop": {
+    "source": "assets/characters/poop.svg",
+    "output": "poop.pdf",
+    "sha256": "06774ad2aeb256182ee0ddb0c55b2c986a76ba0b97a720e7bab2b09807c283b8",
+    "conversion": "svg-ink-v1"
+  },
+  "trooper-helmet": {
+    "source": "assets/characters/trooper-helmet.svg",
+    "output": "trooper-helmet.pdf",
+    "sha256": "446c50be6899121fd27fe4fe952a8f97d1039b7d2ed55bc5014c906d90e57fad",
+    "conversion": "svg-ink-v1"
+  },
+  "worker": {
+    "source": "assets/characters/worker.svg",
+    "output": "worker.pdf",
+    "sha256": "baad6445d99b2ad5827383bc26bf088af6fc85f7cd491105c1f6aab40bfc81a6",
+    "conversion": "svg-ink-v1"
+  },
+  "amsterdam": {
+    "source": "assets/logos/cities/amsterdam.svg",
+    "output": "amsterdam.pdf",
+    "sha256": "45902b9571a649eb7512eec777dc679df037a6b00f4b9cbd48ada4a2dba101d5",
+    "conversion": "svg-ink-v1"
+  },
+  "berlin": {
+    "source": "assets/logos/cities/berlin.svg",
+    "output": "berlin.pdf",
+    "sha256": "9b760fcfd34d8fe72a33023dd580e0ddba557630397dbf7aa9bb4ad7ba1a4f2e",
+    "conversion": "svg-ink-v1"
+  },
+  "cuneo-alternate": {
+    "source": "assets/logos/cities/cuneo-alternate.svg",
+    "output": "cuneo-alternate.pdf",
+    "sha256": "d65d454be1e85615258c83d2f5fca512fa185b13533ed2460a23fb7f4d9b60c5",
+    "conversion": "svg-ink-v1"
+  },
+  "cuneo-barred": {
+    "source": "assets/logos/cities/cuneo-barred.svg",
+    "output": "cuneo-barred.pdf",
+    "sha256": "11be5a72d2127355e4ee53a964fb136fd45bd7ef3721d8a9793424483be1aa43",
+    "conversion": "svg-ink-v1"
+  },
+  "cuneo": {
+    "source": "assets/logos/cities/cuneo.svg",
+    "output": "cuneo.pdf",
+    "sha256": "f2251d2e05788bcfe96fea8eb2c89d4304d422ac6251c2723d86e9494dfd9926",
+    "conversion": "svg-ink-v1"
+  },
+  "florence": {
+    "source": "assets/logos/cities/florence.svg",
+    "output": "florence.pdf",
+    "sha256": "67243f9ba84fee34d8adfe1e01aae24073e56ce9b3da2cfefc585c4aae79383c",
+    "conversion": "svg-ink-v1"
+  },
+  "lugano": {
+    "source": "assets/logos/cities/lugano.svg",
+    "output": "lugano.pdf",
+    "sha256": "f7198d1dd5a7875e8e48dd684365c66a140bf6015ab4bc3eec2c1fc67fa7178c",
+    "conversion": "svg-ink-v1"
+  },
+  "milan": {
+    "source": "assets/logos/cities/milan.svg",
+    "output": "milan.pdf",
+    "sha256": "a786f16618fd6590f2bcb8bcbeb9b0af1b3a078fe176c67e332ddc0d5e26b2f3",
+    "conversion": "svg-ink-v1"
+  },
+  "novosibirsk": {
+    "source": "assets/logos/cities/novosibirsk.svg",
+    "output": "novosibirsk.pdf",
+    "sha256": "fcac2c5da0faa1973349e99e024f7ac969a38ab746abf1ee562d43b26d57f0b8",
+    "conversion": "svg-ink-v1"
+  },
+  "prague": {
+    "source": "assets/logos/cities/prague.svg",
+    "output": "prague.pdf",
+    "sha256": "d4d8c5892f683e6e80a7ffcd586491018fe8ca46d9e7b67e7884e738113e4522",
+    "conversion": "svg-ink-v1"
+  },
+  "riga": {
+    "source": "assets/logos/cities/riga.svg",
+    "output": "riga.pdf",
+    "sha256": "a4941c701a8547d40b59c021068d72c3d22d02bc62dd53877e192da937652754",
+    "conversion": "svg-ink-v1"
+  },
+  "turin": {
+    "source": "assets/logos/cities/turin.svg",
+    "output": "turin.pdf",
+    "sha256": "249387ae74550608eccf1e08ca0c82d6e086c6d311be9c7cf102a7a3687e4e79",
+    "conversion": "svg-ink-v1"
+  },
+  "warsaw": {
+    "source": "assets/logos/cities/warsaw.svg",
+    "output": "warsaw.pdf",
+    "sha256": "ab4694ba9ab8c826a2b31285a69e8bb05fdb29e806d76c9ec2863b64b00c94d7",
+    "conversion": "svg-ink-v1"
+  },
+  "github": {
+    "source": "assets/logos/platforms/github.svg",
+    "output": "github.pdf",
+    "sha256": "70d66677674624a0d41614cc0b1eae00fd46aff35e4e56d8b3312fe29c6dea66",
+    "conversion": "svg-ink-v1"
+  },
+  "googleplay-outline": {
+    "source": "assets/logos/platforms/googleplay-outline.svg",
+    "output": "googleplay-outline.pdf",
+    "sha256": "764f0981367496e6a5972532f6fe7ca288a43de88c80df34c97f9c9fdbca5e26",
+    "conversion": "svg-ink-v1"
+  },
+  "googleplay-solid": {
+    "source": "assets/logos/platforms/googleplay-solid.svg",
+    "output": "googleplay-solid.pdf",
+    "sha256": "715fc23f8ec0c07ed98fa7b45ec3259b0d7af31c2831bc754b16481378da7c0d",
+    "conversion": "svg-ink-v1"
+  },
+  "huawei": {
+    "source": "assets/logos/platforms/huawei.svg",
+    "output": "huawei.pdf",
+    "sha256": "b9a5906ee3cd41da47e36dc8df8af4f86e7acd60852916a16b7618e7951bc2c3",
+    "conversion": "svg-ink-v1"
+  },
+  "instagram": {
+    "source": "assets/logos/platforms/instagram.svg",
+    "output": "instagram.pdf",
+    "sha256": "3c93b092c769bd704800427da2e55f2457a5fa6cd111a56e389ce6dc987094ff",
+    "conversion": "svg-ink-v1"
+  },
+  "linkedin": {
+    "source": "assets/logos/platforms/linkedin.svg",
+    "output": "linkedin.pdf",
+    "sha256": "e95af9b651e5435e90ce6a0a9ac9aa0faa646655d669283a9c4f018b57b1fec8",
+    "conversion": "svg-ink-v1"
+  },
+  "spotify": {
+    "source": "assets/logos/platforms/spotify.svg",
+    "output": "spotify.pdf",
+    "sha256": "ecad95fc6af3b491b7f021069b8e7e32ab80c88d7d970cd07213ea75b1fc2978",
+    "conversion": "svg-ink-v1"
+  },
+  "telegram": {
+    "source": "assets/logos/platforms/telegram.svg",
+    "output": "telegram.pdf",
+    "sha256": "567a475f7f0a5424e9d01ffb12d79b938c9aaf0a002bc8eab0f0de41cc86b466",
+    "conversion": "svg-ink-v1"
+  },
+  "twitter": {
+    "source": "assets/logos/platforms/twitter.svg",
+    "output": "twitter.pdf",
+    "sha256": "80d410777804ebe753f9ffe5218e3921fa8ae0a7900960eb8bb0965095d8be32",
+    "conversion": "svg-ink-v1"
+  },
+  "x-logo": {
+    "source": "assets/logos/platforms/x-logo.svg",
+    "output": "x-logo.pdf",
+    "sha256": "b5abd1cf2c9191ebc2409f220e8df303e2723cb80f435ca860e42f41a846b82e",
+    "conversion": "svg-ink-v1"
+  },
+  "youtube": {
+    "source": "assets/logos/platforms/youtube.svg",
+    "output": "youtube.pdf",
+    "sha256": "ad610f1ea6d16b3898d8ec41195c5e6232dce2a54d04be3ea66ed9c60ffd3d60",
+    "conversion": "svg-ink-v1"
+  },
+  "polito-coat-of-arms": {
+    "source": "assets/logos/polito-coat-of-arms.svg",
+    "output": "polito-coat-of-arms.pdf",
+    "sha256": "8788c6de8d2afa2141e3e0fbb90ce67b828c31ac8b83ee0f52eea871d961f1bf",
+    "conversion": "svg-ink-v1"
+  },
+  "polito-emblem": {
+    "source": "assets/logos/polito-emblem.svg",
+    "output": "polito-emblem.pdf",
+    "sha256": "94ee9993fc734e3f9ec4ec1a31bd475757bbe7316937f9a85de4b4af90673bb9",
+    "conversion": "svg-ink-v1"
+  },
+  "wordmark-chinese": {
+    "source": "assets/logos/wordmark-chinese.svg",
+    "output": "wordmark-chinese.pdf",
+    "sha256": "1c678bc51002bffb63221789743570bd71193af3f6e92c462582b1fc634d087e",
+    "conversion": "svg-ink-v1"
+  },
+  "wordmark-japanese": {
+    "source": "assets/logos/wordmark-japanese.svg",
+    "output": "wordmark-japanese.pdf",
+    "sha256": "efb8a19ef9cb5ec483273a7b7c27ca7ea42ca15ffbb1f6a1a5dce5650b06d9e5",
+    "conversion": "svg-ink-v1"
+  },
+  "wordmark-on-blue": {
+    "source": "assets/logos/wordmark-on-blue.svg",
+    "output": "wordmark-on-blue.pdf",
+    "sha256": "1b0ebf90c81a054a051231a27caf4b5067468dcbf0ba57728a7f50aa9215e71f",
+    "conversion": "svg-ink-v1"
+  },
+  "wordmark-on-white": {
+    "source": "assets/logos/wordmark-on-white.svg",
+    "output": "wordmark-on-white.pdf",
+    "sha256": "db80097d0eafc0c517d669d3c1cb7d485e42372d49df8805c51c07a403a8e7a8",
+    "conversion": "svg-ink-v1"
+  },
+  "bull-alternate": {
+    "source": "assets/objects/animals/bull-alternate.svg",
+    "output": "bull-alternate.pdf",
+    "sha256": "4ea7db41540f38a5d1ac7fd25c9627309fe96b48d2042a10792dce878937502a",
+    "conversion": "svg-ink-v1"
+  },
+  "bull-large": {
+    "source": "assets/objects/animals/bull-large.svg",
+    "output": "bull-large.pdf",
+    "sha256": "1be26d5917d3ad724aa564e9cacb68e7bb69fee4c78c137418f5dae3c705576f",
+    "conversion": "svg-ink-v1"
+  },
+  "bull-minimal": {
+    "source": "assets/objects/animals/bull-minimal.svg",
+    "output": "bull-minimal.pdf",
+    "sha256": "bcba79f8eccda6824234337c6884bc8400867ab50e430766504f166eb6c87038",
+    "conversion": "svg-ink-v1"
+  },
+  "bull-small": {
+    "source": "assets/objects/animals/bull-small.svg",
+    "output": "bull-small.pdf",
+    "sha256": "fe85e189e3baebe7b49c08776c9d5b497c2255bc118d6d0779607fc3c52b0183",
+    "conversion": "svg-ink-v1"
+  },
+  "bull-tiny": {
+    "source": "assets/objects/animals/bull-tiny.svg",
+    "output": "bull-tiny.pdf",
+    "sha256": "73d8969f30b8c922a2339dc52d6d8a9ab3768233a07a01c92b8edeccaf70cfac",
+    "conversion": "svg-ink-v1"
+  },
+  "bull": {
+    "source": "assets/objects/animals/bull.svg",
+    "output": "bull.pdf",
+    "sha256": "4ea7db41540f38a5d1ac7fd25c9627309fe96b48d2042a10792dce878937502a",
+    "conversion": "svg-ink-v1"
+  },
+  "cow-compact-white": {
+    "source": "assets/objects/animals/cow-compact-white.svg",
+    "output": "cow-compact-white.pdf",
+    "sha256": "16aa06448fd15db6b2d827433c0cf7c247deb7056237ca679a8bb5071fb4541f",
+    "conversion": "svg-ink-v1"
+  },
+  "cow-compact": {
+    "source": "assets/objects/animals/cow-compact.svg",
+    "output": "cow-compact.pdf",
+    "sha256": "9824c26bb1662d5a234a0a7b7337539d2ec7157828061a566e9cb0b0dfea3763",
+    "conversion": "svg-ink-v1"
+  },
+  "cow-solid-white": {
+    "source": "assets/objects/animals/cow-solid-white.svg",
+    "output": "cow-solid-white.pdf",
+    "sha256": "8f23f1b155a6209cb6f1853d32afe43885e02cd6ea179d872cca7e052477280f",
+    "conversion": "svg-ink-v1"
+  },
+  "cow-solid": {
+    "source": "assets/objects/animals/cow-solid.svg",
+    "output": "cow-solid.pdf",
+    "sha256": "c38e12a8421201fbd9d6e6ff545ca026571df45bbb71365b7adaddc72eb5b882",
+    "conversion": "svg-ink-v1"
+  },
+  "cow-white": {
+    "source": "assets/objects/animals/cow-white.svg",
+    "output": "cow-white.pdf",
+    "sha256": "ebaed9e941d73e459a59eb26664a62574c4e21f8bd849907ff343102ece75eb9",
+    "conversion": "svg-ink-v1"
+  },
+  "cow": {
+    "source": "assets/objects/animals/cow.svg",
+    "output": "cow.pdf",
+    "sha256": "30bb9e6ad5c114ffee0df32989f9292026b91e7014759fcdb12e27d51281169f",
+    "conversion": "svg-ink-v1"
+  },
+  "pig-small": {
+    "source": "assets/objects/animals/pig-small.svg",
+    "output": "pig-small.pdf",
+    "sha256": "155bb2a881cefc9f3501a70ba51364f30e6658d461d8c3638756c0eb407c23dc",
+    "conversion": "svg-ink-v1"
+  },
+  "pig": {
+    "source": "assets/objects/animals/pig.svg",
+    "output": "pig.pdf",
+    "sha256": "c5f2f8bf98c2c35fb3c77c507859ceb1e4325c6d86995665cb7d24c28a5d5f14",
+    "conversion": "svg-ink-v1"
+  },
+  "snake": {
+    "source": "assets/objects/animals/snake.svg",
+    "output": "snake.pdf",
+    "sha256": "3ccc8f1cf936c353490feba933792f1e669d699140d1c57ef11fcd48e78f262a",
+    "conversion": "svg-ink-v1"
+  },
+  "bell": {
+    "source": "assets/objects/bell.svg",
+    "output": "bell.pdf",
+    "sha256": "6afe472ead0bd26007673332aa765b907ee2e2063edc3b3dd6b69bf1a0be0302",
+    "conversion": "svg-ink-v1"
+  },
+  "bible": {
+    "source": "assets/objects/bible.svg",
+    "output": "bible.pdf",
+    "sha256": "c0039bb51f65503b7d421d962961d69b525540c133628fb259a3313db2c1c4ee",
+    "conversion": "svg-ink-v1"
+  },
+  "book": {
+    "source": "assets/objects/book.svg",
+    "output": "book.pdf",
+    "sha256": "53f9465cea339780a6b1151da7057b40afaf9796347b40e5bf70757b2040f30c",
+    "conversion": "svg-ink-v1"
+  },
+  "bookmark": {
+    "source": "assets/objects/bookmark.svg",
+    "output": "bookmark.pdf",
+    "sha256": "a8d36b3f6cda4f7a87c27092652763eb83eae4753c87a60d3a7a8431de4dae37",
+    "conversion": "svg-ink-v1"
+  },
+  "brain": {
+    "source": "assets/objects/brain.svg",
+    "output": "brain.pdf",
+    "sha256": "78373c0ca2eb81a648a22c1d84cc8029fd7b20523298e420437aa10e7fac3f1a",
+    "conversion": "svg-ink-v1"
+  },
+  "door": {
+    "source": "assets/objects/buildings/door.svg",
+    "output": "door.pdf",
+    "sha256": "407f6400b434fb02af19f86d20632e5c93b980ec6db5d0679d87fcfc1fd2e3eb",
+    "conversion": "svg-ink-v1"
+  },
+  "hospital": {
+    "source": "assets/objects/buildings/hospital.svg",
+    "output": "hospital.pdf",
+    "sha256": "c9375c7b71aa7e3e681de01d80db91f3cb7a580b32788afad4c65151b9ccb5fb",
+    "conversion": "svg-ink-v1"
+  },
+  "house": {
+    "source": "assets/objects/buildings/house.svg",
+    "output": "house.pdf",
+    "sha256": "37da25ffdf2e391c140ef54fcd2e73b7f03b0dacaae6a8b5c214d134622818cc",
+    "conversion": "svg-ink-v1"
+  },
+  "coin": {
+    "source": "assets/objects/coin.svg",
+    "output": "coin.pdf",
+    "sha256": "bc648773927bd1b2b854aec8dfc3f51bc964570b8108f958745afb4e76d6a2e2",
+    "conversion": "svg-ink-v1"
+  },
+  "apple-small": {
+    "source": "assets/objects/food/apple-small.svg",
+    "output": "apple-small.pdf",
+    "sha256": "e9aa4a0720d4b5a65c36d53a79b7804b0f5a7ac8f783307a4fe7188e8630b8e5",
+    "conversion": "svg-ink-v1"
+  },
+  "apple-tiny": {
+    "source": "assets/objects/food/apple-tiny.svg",
+    "output": "apple-tiny.pdf",
+    "sha256": "219f63a7e5d34ad375cb9ec3ca6e482b5f6ee012cb20f7eaf070c8b144c01869",
+    "conversion": "svg-ink-v1"
+  },
+  "apple": {
+    "source": "assets/objects/food/apple.svg",
+    "output": "apple.pdf",
+    "sha256": "6c5b7843daca8cc3231a6255411a39c9552aa7da34ecb5b91a07405e1bf3d6fc",
+    "conversion": "svg-ink-v1"
+  },
+  "bean": {
+    "source": "assets/objects/food/bean.svg",
+    "output": "bean.pdf",
+    "sha256": "5b896ee59a3237087bd5a9ea6193a7533764a5a2dc25c0b92c7fd3572605868e",
+    "conversion": "svg-ink-v1"
+  },
+  "peapod": {
+    "source": "assets/objects/food/peapod.svg",
+    "output": "peapod.pdf",
+    "sha256": "14d8166d3949f50beb8d0b084c69d07dd48c3084e18dc605e75c5fc52627fb97",
+    "conversion": "svg-ink-v1"
+  },
+  "pizza-cheese": {
+    "source": "assets/objects/food/pizza-cheese.svg",
+    "output": "pizza-cheese.pdf",
+    "sha256": "d30635966b5c46531a3ba5a305cc6a3299b8def8a827b9cda41499b8690d1980",
+    "conversion": "svg-ink-v1"
+  },
+  "pizza-pepperoni": {
+    "source": "assets/objects/food/pizza-pepperoni.svg",
+    "output": "pizza-pepperoni.pdf",
+    "sha256": "aa85446a0fce32f1c24ee08407e9a34ddc1f1b304f9e3d0f7e3f2b5ba99c9a8f",
+    "conversion": "svg-ink-v1"
+  },
+  "pizza": {
+    "source": "assets/objects/food/pizza.svg",
+    "output": "pizza.pdf",
+    "sha256": "a201c7c13b75203b6a1163314e58c4912f3035da929650cb87f5f59ff8b52ca4",
+    "conversion": "svg-ink-v1"
+  },
+  "gift": {
+    "source": "assets/objects/gift.svg",
+    "output": "gift.pdf",
+    "sha256": "b204f194acaf0deab8c56df3662f8ccad5581b41b7abefc966ab2085ffb19a20",
+    "conversion": "svg-ink-v1"
+  },
+  "hourglass": {
+    "source": "assets/objects/hourglass.svg",
+    "output": "hourglass.pdf",
+    "sha256": "9eef146aa187219c2326d69c0374a7679849abad1d141ed6c2d565e336a91edb",
+    "conversion": "svg-ink-v1"
+  },
+  "microscope": {
+    "source": "assets/objects/microscope.svg",
+    "output": "microscope.pdf",
+    "sha256": "b4bc49a4a9570f7a0710f1d5cd25acaf0007a3c9226882071efb8bb6dccab0e6",
+    "conversion": "svg-ink-v1"
+  },
+  "key-round": {
+    "source": "assets/objects/security/key-round.svg",
+    "output": "key-round.pdf",
+    "sha256": "f026d07c1a2b62c299ae93dda7ca2a41aa1a9c754ac039f15ac14157755f03c3",
+    "conversion": "svg-ink-v1"
+  },
+  "key-square": {
+    "source": "assets/objects/security/key-square.svg",
+    "output": "key-square.pdf",
+    "sha256": "71a91b8b394f5f0abcc4ef7bd3d349c8666d5681d77a9255b5cb0f8f4495c9c7",
+    "conversion": "svg-ink-v1"
+  },
+  "key": {
+    "source": "assets/objects/security/key.svg",
+    "output": "key.pdf",
+    "sha256": "e1d0c95f330c01d7ac83fcabf729b8322e5caf9aade7c4d62049174cae88dd0d",
+    "conversion": "svg-ink-v1"
+  },
+  "padlock": {
+    "source": "assets/objects/security/padlock.svg",
+    "output": "padlock.pdf",
+    "sha256": "73a7163dcd59246b3b6361c316eb8bd2d00b889a3fb9443ef2db49eb24702d76",
+    "conversion": "svg-ink-v1"
+  },
+  "shield": {
+    "source": "assets/objects/security/shield.svg",
+    "output": "shield.pdf",
+    "sha256": "ceb03e3e00c4fbf01c14a107b5562fabddf58db0236bd0ab4cc2e6d7bff65917",
+    "conversion": "svg-ink-v1"
+  },
+  "unlocked": {
+    "source": "assets/objects/security/unlocked.svg",
+    "output": "unlocked.pdf",
+    "sha256": "3fd67263c5d577c1e7b7c161a30792160614c6f5a6beec32a61c9667595dc2d5",
+    "conversion": "svg-ink-v1"
+  },
+  "space-station": {
+    "source": "assets/objects/space-station.svg",
+    "output": "space-station.pdf",
+    "sha256": "aa70ba1f4e059359946a5fd99721163f6671a915418446ef7d0fef84cfabbb0f",
+    "conversion": "svg-ink-v1"
+  },
+  "clock": {
+    "source": "assets/objects/technology/clock.svg",
+    "output": "clock.pdf",
+    "sha256": "a89b442b08119fa49dae827540ed156d7aa6e79252318d24df1778a801a10a98",
+    "conversion": "svg-ink-v1"
+  },
+  "envelope": {
+    "source": "assets/objects/technology/envelope.svg",
+    "output": "envelope.pdf",
+    "sha256": "3c4d6c9a6f41095270b67eeb5f0460797f14b6ffeb0727e65379684e92ce0af4",
+    "conversion": "svg-ink-v1"
+  },
+  "laptop": {
+    "source": "assets/objects/technology/laptop.svg",
+    "output": "laptop.pdf",
+    "sha256": "324782e1d845b7eba7139ac00ea9009d5d4629bcc1992a1b86060b32b67c8277",
+    "conversion": "svg-ink-v1"
+  },
+  "phone-button": {
+    "source": "assets/objects/technology/phone-button.svg",
+    "output": "phone-button.pdf",
+    "sha256": "7a9b909d6757f519a81affcc3438efbf48554fd31117e60465abaf2d9a6301c2",
+    "conversion": "svg-ink-v1"
+  },
+  "phone-keypad": {
+    "source": "assets/objects/technology/phone-keypad.svg",
+    "output": "phone-keypad.pdf",
+    "sha256": "b87d3d9a0176dc7841a508734674f8e2a0bbc0a3f1de3d9ddc75a3a3d92a729c",
+    "conversion": "svg-ink-v1"
+  },
+  "phone": {
+    "source": "assets/objects/technology/phone.svg",
+    "output": "phone.pdf",
+    "sha256": "696437b9a414697cf65841e84361e4362de099933f613214d143725a10df28d2",
+    "conversion": "svg-ink-v1"
+  },
+  "gavel": {
+    "source": "assets/objects/tools/gavel.svg",
+    "output": "gavel.pdf",
+    "sha256": "3e119af0cddc6571a5da789b626f7930bad68d701b06a667708f396263a04213",
+    "conversion": "svg-ink-v1"
+  },
+  "hammer": {
+    "source": "assets/objects/tools/hammer.svg",
+    "output": "hammer.pdf",
+    "sha256": "c4a76b9d0f29c2175f7af4acd8665478da69167e5b19be11657abac833b54b73",
+    "conversion": "svg-ink-v1"
+  },
+  "paperclip": {
+    "source": "assets/objects/tools/paperclip.svg",
+    "output": "paperclip.pdf",
+    "sha256": "3493fd30bdd90ef79dec3d77098b0cce4dca64b466622688074eeb3feec1c841",
+    "conversion": "svg-ink-v1"
+  },
+  "pickaxe": {
+    "source": "assets/objects/tools/pickaxe.svg",
+    "output": "pickaxe.pdf",
+    "sha256": "65c847f55a5f7da88cd67f86e52c3166a3286756c882f5c0b2e7bd7f28f72616",
+    "conversion": "svg-ink-v1"
+  },
+  "screwdriver": {
+    "source": "assets/objects/tools/screwdriver.svg",
+    "output": "screwdriver.pdf",
+    "sha256": "eefb77b1041c8f4cd3a4496d4d2118f7a6d9545cf7ea3f2a5b62afe14e36d842",
+    "conversion": "svg-ink-v1"
+  },
+  "shovel": {
+    "source": "assets/objects/tools/shovel.svg",
+    "output": "shovel.pdf",
+    "sha256": "3f5732efad67b839e8b26577fcb232e8edf1999a588a4cdc409452d16da414bc",
+    "conversion": "svg-ink-v1"
+  },
+  "wrench": {
+    "source": "assets/objects/tools/wrench.svg",
+    "output": "wrench.pdf",
+    "sha256": "d402779ba1bf21579228004093619c0d7f2f45de39166a33454c6e8b22ccc4d9",
+    "conversion": "svg-ink-v1"
+  },
+  "wallet": {
+    "source": "assets/objects/wallet.svg",
+    "output": "wallet.pdf",
+    "sha256": "1327b0b76c60b7f816b0d0b10906b50e8e2c8a602945b7856cfccac9f2485abe",
+    "conversion": "svg-ink-v1"
+  },
+  "whitepaper": {
+    "source": "assets/objects/whitepaper.svg",
+    "output": "whitepaper.pdf",
+    "sha256": "cba38094b1cf238483e068c992c43f3838c01f1e72cfc8906a22615ca94ba340",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-down-left": {
+    "source": "assets/symbols/arrows/arrow-down-left.svg",
+    "output": "arrow-down-left.pdf",
+    "sha256": "9de1612fcb2a94b87c2d2f6a9069f76f22a50c850ea3627a0d00380c341ec1e2",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-down-right": {
+    "source": "assets/symbols/arrows/arrow-down-right.svg",
+    "output": "arrow-down-right.pdf",
+    "sha256": "119773b5f5d86d415767292c49b0d0f6597c76ceaca7a2394be2c1470e24e1da",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-down": {
+    "source": "assets/symbols/arrows/arrow-down.svg",
+    "output": "arrow-down.pdf",
+    "sha256": "bb33ea38cc66f816e43baa90c3d76e86a88ec9c42f6f1ddc06a2106f64a81fd0",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-left": {
+    "source": "assets/symbols/arrows/arrow-left.svg",
+    "output": "arrow-left.pdf",
+    "sha256": "6d8cb9bf231fc64df04061cf20420587ae0f73c59985b56f757e59327e594886",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-right": {
+    "source": "assets/symbols/arrows/arrow-right.svg",
+    "output": "arrow-right.pdf",
+    "sha256": "f4e950421e97cc6ecc4a5a57f5f9b77519de74914e3f57fdfb8a426185a4debb",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-up-left": {
+    "source": "assets/symbols/arrows/arrow-up-left.svg",
+    "output": "arrow-up-left.pdf",
+    "sha256": "a255d8cb3495c4916e3c10a312fa91e17ed933539cea8353097012e598079c74",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-up-right": {
+    "source": "assets/symbols/arrows/arrow-up-right.svg",
+    "output": "arrow-up-right.pdf",
+    "sha256": "186f76e37556f4a8a93b32810f95f5bb3cef7054cdfceb18f7a88236cfd2e363",
+    "conversion": "svg-ink-v1"
+  },
+  "arrow-up": {
+    "source": "assets/symbols/arrows/arrow-up.svg",
+    "output": "arrow-up.pdf",
+    "sha256": "a3e24da36e93b54282cde113e7fc6d2112cc525598cffd088416dbd9924e7abe",
+    "conversion": "svg-ink-v1"
+  },
+  "bitcoin-grid": {
+    "source": "assets/symbols/bitcoin/bitcoin-grid.svg",
+    "output": "bitcoin-grid.pdf",
+    "sha256": "c3bdf0cda53f10b79ae9452bf2d3fef0ee448e2fcf0a13336a4a52fa91be626f",
+    "conversion": "svg-ink-v1"
+  },
+  "bitcoin": {
+    "source": "assets/symbols/bitcoin/bitcoin.svg",
+    "output": "bitcoin.pdf",
+    "sha256": "0d22e2d4b9cd92685bce545f4f5802537e7cf711dbc7723ed37e18fddca4cb92",
+    "conversion": "svg-ink-v1"
+  },
+  "lightning-small": {
+    "source": "assets/symbols/bitcoin/lightning-small.svg",
+    "output": "lightning-small.pdf",
+    "sha256": "277a779a1d3459b4095f24e18c6231182261f05e0c32bd8fa6973f5506a4f11f",
+    "conversion": "svg-ink-v1"
+  },
+  "lightning": {
+    "source": "assets/symbols/bitcoin/lightning.svg",
+    "output": "lightning.pdf",
+    "sha256": "667da089c44ec8a17b359a69cd0c4cadea7962aa28a57fb9c0c63bb76373de05",
+    "conversion": "svg-ink-v1"
+  },
+  "code": {
+    "source": "assets/symbols/code.svg",
+    "output": "code.pdf",
+    "sha256": "a3a6ed317c23fbddaa96859ee3c984538dab2d45aee4b084253981dfc777f31b",
+    "conversion": "svg-ink-v1"
+  },
+  "confetti": {
+    "source": "assets/symbols/confetti.svg",
+    "output": "confetti.pdf",
+    "sha256": "78f131fa643ec72a782bdcbf5578f2491fabe93cef3f35b5c1a8079d8e7dc319",
+    "conversion": "svg-ink-v1"
+  },
+  "flag-checkered": {
+    "source": "assets/symbols/flag-checkered.svg",
+    "output": "flag-checkered.pdf",
+    "sha256": "63fbe91b259a06ca224275148eb6daede3cbc8966804dd0fcf7b53cda419bcc0",
+    "conversion": "svg-ink-v1"
+  },
+  "flag": {
+    "source": "assets/symbols/flag.svg",
+    "output": "flag.pdf",
+    "sha256": "728287347fd8df10a9cc2441c23c89e51ee0796557faf01f80092613c2efbec6",
+    "conversion": "svg-ink-v1"
+  },
+  "heart-large": {
+    "source": "assets/symbols/heart-large.svg",
+    "output": "heart-large.pdf",
+    "sha256": "929db13da25a6e47a3ce5c4001f2c067be00b51410323496aa9bd322bf154e55",
+    "conversion": "svg-ink-v1"
+  },
+  "heart-small": {
+    "source": "assets/symbols/heart-small.svg",
+    "output": "heart-small.pdf",
+    "sha256": "d46cdf124ec0ec8f8a7084a19ef0d9b463222151f26a0025a09b616e39e92946",
+    "conversion": "svg-ink-v1"
+  },
+  "heart-sparkle": {
+    "source": "assets/symbols/heart-sparkle.svg",
+    "output": "heart-sparkle.pdf",
+    "sha256": "844f2c3c79f4d3589ea9dab7327f124239f55153d59fdf052d786fb5324ec422",
+    "conversion": "svg-ink-v1"
+  },
+  "heart-sparkles": {
+    "source": "assets/symbols/heart-sparkles.svg",
+    "output": "heart-sparkles.pdf",
+    "sha256": "5acccb27b0986d87fc0b8142522ce5b3ca6c2ab017cf4a448a2fcbb4f6f847ed",
+    "conversion": "svg-ink-v1"
+  },
+  "heart-tiny": {
+    "source": "assets/symbols/heart-tiny.svg",
+    "output": "heart-tiny.pdf",
+    "sha256": "c742a360cf43c01fa9976884e12b41707e55a5da39e10f499eb39ce66f66c8f8",
+    "conversion": "svg-ink-v1"
+  },
+  "heart": {
+    "source": "assets/symbols/heart.svg",
+    "output": "heart.pdf",
+    "sha256": "a283742e94371aec78eb7de824cbfcba6467b5f48083e4089d2f39148a6e82fd",
+    "conversion": "svg-ink-v1"
+  },
+  "crown-count": {
+    "source": "assets/symbols/heraldry/crown-count.svg",
+    "output": "crown-count.pdf",
+    "sha256": "99d49d4b282cc0e3aa559d0ff96085c1aaacfc5dc81bd119bfee67ba4643cdd4",
+    "conversion": "svg-ink-v1"
+  },
+  "crown-imperial": {
+    "source": "assets/symbols/heraldry/crown-imperial.svg",
+    "output": "crown-imperial.pdf",
+    "sha256": "55ead0e19f2d6c88daeaf0dc2e45686b80b12db97a687a95e38d601c32cfb9d6",
+    "conversion": "svg-ink-v1"
+  },
+  "crown-mural": {
+    "source": "assets/symbols/heraldry/crown-mural.svg",
+    "output": "crown-mural.pdf",
+    "sha256": "29c0453a2cbedc78e4983f2fa607552e4513d68683f80253fcd5a2f50daa8f07",
+    "conversion": "svg-ink-v1"
+  },
+  "crown-province": {
+    "source": "assets/symbols/heraldry/crown-province.svg",
+    "output": "crown-province.pdf",
+    "sha256": "e6695554b85519f3619994fbd7e83b5842508d30391e436e0d57165835cc1aac",
+    "conversion": "svg-ink-v1"
+  },
+  "information": {
+    "source": "assets/symbols/information.svg",
+    "output": "information.pdf",
+    "sha256": "0c793e8c7b431c229290e10f565ecd96fc99a44b34e56e8c62d401e96b34e98c",
+    "conversion": "svg-ink-v1"
+  },
+  "qrcode-four": {
+    "source": "assets/symbols/qr-codes/qrcode-four.svg",
+    "output": "qrcode-four.pdf",
+    "sha256": "1b9c30cfa5dde6fc591d3278b44085837e7bdaf1cae025120fdef2fe4abed7e8",
+    "conversion": "svg-ink-v1"
+  },
+  "qrcode-one": {
+    "source": "assets/symbols/qr-codes/qrcode-one.svg",
+    "output": "qrcode-one.pdf",
+    "sha256": "8a59a306be8df2caab49a7762c1d658d8ab4a9a77e32627f8380428191b86ada",
+    "conversion": "svg-ink-v1"
+  },
+  "qrcode-three": {
+    "source": "assets/symbols/qr-codes/qrcode-three.svg",
+    "output": "qrcode-three.pdf",
+    "sha256": "5942f42e03a76ece31f3073fd03e1642baa8037cd2135dcb93572be931005c55",
+    "conversion": "svg-ink-v1"
+  },
+  "qrcode-two": {
+    "source": "assets/symbols/qr-codes/qrcode-two.svg",
+    "output": "qrcode-two.pdf",
+    "sha256": "98aac8f6fa54051270751f6e314020418a7492160a9560cfff08555594841d8c",
+    "conversion": "svg-ink-v1"
+  },
+  "question": {
+    "source": "assets/symbols/question.svg",
+    "output": "question.pdf",
+    "sha256": "aab242a68190c1217138aa6023504f512d16d2c3a6bc5990063e34f0aec5545f",
+    "conversion": "svg-ink-v1"
+  },
+  "share-outline": {
+    "source": "assets/symbols/share-outline.svg",
+    "output": "share-outline.pdf",
+    "sha256": "d6e607abe60b2da1964fff4f24cf1d41eabbc6bedf5361c4356bb42ac6f3f5ba",
+    "conversion": "svg-ink-v1"
+  },
+  "share": {
+    "source": "assets/symbols/share.svg",
+    "output": "share.pdf",
+    "sha256": "4a4b2a2674ee5529787b981d0dad38061f6b1d74d7053f6860b8d9d251b3212e",
+    "conversion": "svg-ink-v1"
+  },
+  "staricon": {
+    "source": "assets/symbols/staricon.svg",
+    "output": "staricon.pdf",
+    "sha256": "03e7d95d8226fecbc1de25b1a95c04dbd4392fa84367a74f102bba0c41398dc7",
+    "conversion": "svg-ink-v1"
+  },
+  "warning": {
+    "source": "assets/symbols/warning.svg",
+    "output": "warning.pdf",
+    "sha256": "61dfeb2ecddf1b3e3430e0bb725e0d99dc40b9b041de3d8bbf70fb65f213450f",
+    "conversion": "svg-ink-v1"
+  },
+  "cloud-small": {
+    "source": "assets/symbols/weather/cloud-small.svg",
+    "output": "cloud-small.pdf",
+    "sha256": "c2d3e3ff99d0aba982c95cc91b80e301685548c589d2b5bd9faa346b1871f210",
+    "conversion": "svg-ink-v1"
+  },
+  "cloud": {
+    "source": "assets/symbols/weather/cloud.svg",
+    "output": "cloud.pdf",
+    "sha256": "c2f04f765e7ee47de605905420c06dca46262a22cd7edd0e724542872d7b17ae",
+    "conversion": "svg-ink-v1"
+  },
+  "earth-small": {
+    "source": "assets/symbols/weather/earth-small.svg",
+    "output": "earth-small.pdf",
+    "sha256": "10ed1d88a45f2bfd943bd4a419e50ab0c8f08ad10ba2f29893f280c86214657b",
+    "conversion": "svg-ink-v1"
+  },
+  "earth": {
+    "source": "assets/symbols/weather/earth.svg",
+    "output": "earth.pdf",
+    "sha256": "0f716561a681f63686e7bef9597088eaade12aa6deae70b2fac630df51424731",
+    "conversion": "svg-ink-v1"
+  },
+  "leaf": {
+    "source": "assets/symbols/weather/leaf.svg",
+    "output": "leaf.pdf",
+    "sha256": "dada2e06c925782925d55da0e84a82e774aa848db89a19900dc40c8ed5de0730",
+    "conversion": "svg-ink-v1"
+  },
+  "moon-small": {
+    "source": "assets/symbols/weather/moon-small.svg",
+    "output": "moon-small.pdf",
+    "sha256": "67df1123f3052bf6c4eb1ccc9c5447e7e435ca547af82f758b0945342b739430",
+    "conversion": "svg-ink-v1"
+  },
+  "moon": {
+    "source": "assets/symbols/weather/moon.svg",
+    "output": "moon.pdf",
+    "sha256": "b2b362b394ef3acb9524082c0f76cda9e70adbef56bb31a500943510f2ccc641",
+    "conversion": "svg-ink-v1"
+  },
+  "rain": {
+    "source": "assets/symbols/weather/rain.svg",
+    "output": "rain.pdf",
+    "sha256": "1c8d828767ffebee572cde34a4e87dca90f394c877a0983369efb1e06238e9a7",
+    "conversion": "svg-ink-v1"
+  },
+  "snow": {
+    "source": "assets/symbols/weather/snow.svg",
+    "output": "snow.pdf",
+    "sha256": "adb6f1cfc7c6793660d4bc19e4bbb3fc76bdbcf2083a1874163bba3a23dd2934",
+    "conversion": "svg-ink-v1"
+  },
+  "snowflake": {
+    "source": "assets/symbols/weather/snowflake.svg",
+    "output": "snowflake.pdf",
+    "sha256": "d4004ca935aa7421220dfe4c81fba3ee78528ff61db55655afc5aebccbe266f1",
+    "conversion": "svg-ink-v1"
+  },
+  "storm": {
+    "source": "assets/symbols/weather/storm.svg",
+    "output": "storm.pdf",
+    "sha256": "5af55e972853fe000038d2e9c7c4ebc3e6ffe64cbfffd50c6128445d92bf8c01",
+    "conversion": "svg-ink-v1"
+  },
+  "sun-small": {
+    "source": "assets/symbols/weather/sun-small.svg",
+    "output": "sun-small.pdf",
+    "sha256": "8213d55fcacd3d7633acab677602dc742fb517504503f255e5492a5bbc64bb17",
+    "conversion": "svg-ink-v1"
+  },
+  "sun": {
+    "source": "assets/symbols/weather/sun.svg",
+    "output": "sun.pdf",
+    "sha256": "40af521238ed65bd96fa18d9b74ca1d178c723f1bd33ba93679f765dd17ba87d",
+    "conversion": "svg-ink-v1"
+  }
+}

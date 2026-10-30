@@ -1,0 +1,1374 @@
+[
+  {
+    "original": "Frame 2.svg",
+    "name": "wordmark-on-white",
+    "category": "logos",
+    "description": "Blue BitPolito wordmark on a white panel",
+    "identification": "identified",
+    "sha256": "db80097d0eafc0c517d669d3c1cb7d485e42372d49df8805c51c07a403a8e7a8"
+  },
+  {
+    "original": "Frame 4.svg",
+    "name": "wordmark-on-blue",
+    "category": "logos",
+    "description": "White BitPolito wordmark on a blue panel",
+    "identification": "identified",
+    "sha256": "1b0ebf90c81a054a051231a27caf4b5067468dcbf0ba57728a7f50aa9215e71f"
+  },
+  {
+    "original": "Group 1.svg",
+    "name": "pirate-emblem",
+    "category": "characters",
+    "description": "Pixel skull and crossbones wearing a straw hat",
+    "identification": "identified",
+    "sha256": "a73153bb48b753be863503f79a75aad3be390698f08ee6db5297eef1c7a70b67"
+  },
+  {
+    "original": "Group 496.svg",
+    "name": "share-outline",
+    "category": "symbols",
+    "description": "Outlined branching share symbol",
+    "identification": "identified",
+    "sha256": "d6e607abe60b2da1964fff4f24cf1d41eabbc6bedf5361c4356bb42ac6f3f5ba"
+  },
+  {
+    "original": "Group 497.svg",
+    "name": "unlocked",
+    "category": "objects/security",
+    "description": "Open padlock",
+    "identification": "identified",
+    "sha256": "3fd67263c5d577c1e7b7c161a30792160614c6f5a6beec32a61c9667595dc2d5"
+  },
+  {
+    "original": "Group 498.svg",
+    "name": "paperclip",
+    "category": "objects/tools",
+    "description": "Diagonal paperclip",
+    "identification": "identified",
+    "sha256": "3493fd30bdd90ef79dec3d77098b0cce4dca64b466622688074eeb3feec1c841"
+  },
+  {
+    "original": "Group 64.svg",
+    "name": "cow",
+    "category": "objects/animals",
+    "description": "Full-body spotted cow facing right",
+    "identification": "identified",
+    "sha256": "30bb9e6ad5c114ffee0df32989f9292026b91e7014759fcdb12e27d51281169f"
+  },
+  {
+    "original": "Group 81.svg",
+    "name": "alice-and-bob",
+    "category": "characters",
+    "description": "Paired female and male portraits with a sparkle",
+    "identification": "identified",
+    "sha256": "1165ce9bed0e74b5212540ddfe1900d5048b2e5a4657b14dbe7679bfd868c29e"
+  },
+  {
+    "original": "Group 82.svg",
+    "name": "cow-white",
+    "category": "objects/animals",
+    "description": "White full-body spotted cow",
+    "identification": "identified",
+    "sha256": "ebaed9e941d73e459a59eb26664a62574c4e21f8bd849907ff343102ece75eb9"
+  },
+  {
+    "original": "Union-1.svg",
+    "name": "cow-love-white",
+    "category": "backgrounds",
+    "description": "Two white cows separated by a heart",
+    "identification": "identified",
+    "sha256": "70229bb0d6dee184a8132dd40fc5b2f2456749d7f0897b8008cb6ac42232455c"
+  },
+  {
+    "original": "Union-2.svg",
+    "name": "heart",
+    "category": "symbols",
+    "description": "Pixel heart with a square highlight",
+    "identification": "identified",
+    "sha256": "a283742e94371aec78eb7de824cbfcba6467b5f48083e4089d2f39148a6e82fd"
+  },
+  {
+    "original": "Union-3.svg",
+    "name": "bull",
+    "category": "objects/animals",
+    "description": "Front-facing horned bovine head",
+    "identification": "identified",
+    "sha256": "4ea7db41540f38a5d1ac7fd25c9627309fe96b48d2042a10792dce878937502a"
+  },
+  {
+    "original": "Union-4.svg",
+    "name": "bull-alternate",
+    "category": "objects/animals",
+    "description": "Alternate export of the horned bovine head",
+    "identification": "identified",
+    "visual_duplicate_of": "bull",
+    "sha256": "4ea7db41540f38a5d1ac7fd25c9627309fe96b48d2042a10792dce878937502a"
+  },
+  {
+    "original": "Union-5.svg",
+    "name": "wordmark-chinese",
+    "category": "logos",
+    "description": "Chinese-script wordmark; exact transliteration not verified",
+    "identification": "inferred",
+    "sha256": "1c678bc51002bffb63221789743570bd71193af3f6e92c462582b1fc634d087e"
+  },
+  {
+    "original": "Union-6.svg",
+    "name": "wordmark-japanese",
+    "category": "logos",
+    "description": "Japanese katakana wordmark",
+    "identification": "inferred",
+    "sha256": "efb8a19ef9cb5ec483273a7b7c27ca7ea42ca15ffbb1f6a1a5dce5650b06d9e5"
+  },
+  {
+    "original": "Union.svg",
+    "name": "cow-love",
+    "category": "backgrounds",
+    "description": "Two blue cows separated by a heart",
+    "identification": "identified",
+    "sha256": "15d133703a82c99074e739a562fc2b164086b8e847169f86e20e714f5011c7e7"
+  },
+  {
+    "original": "Vector-1.svg",
+    "name": "cow-solid-white",
+    "category": "objects/animals",
+    "description": "White full-body cow silhouette",
+    "identification": "identified",
+    "sha256": "8f23f1b155a6209cb6f1853d32afe43885e02cd6ea179d872cca7e052477280f"
+  },
+  {
+    "original": "Vector-2.svg",
+    "name": "cow-compact-white",
+    "category": "objects/animals",
+    "description": "Compact white cow silhouette",
+    "identification": "identified",
+    "sha256": "16aa06448fd15db6b2d827433c0cf7c247deb7056237ca679a8bb5071fb4541f"
+  },
+  {
+    "original": "Vector-3.svg",
+    "name": "cow-compact",
+    "category": "objects/animals",
+    "description": "Compact blue cow silhouette",
+    "identification": "identified",
+    "sha256": "9824c26bb1662d5a234a0a7b7337539d2ec7157828061a566e9cb0b0dfea3763"
+  },
+  {
+    "original": "Vector.svg",
+    "name": "cow-solid",
+    "category": "objects/animals",
+    "description": "Blue full-body cow silhouette",
+    "identification": "identified",
+    "sha256": "c38e12a8421201fbd9d6e6ff545ca026571df45bbb71365b7adaddc72eb5b882"
+  },
+  {
+    "original": "bitpolito-coa-amsterdam.svg",
+    "name": "amsterdam",
+    "category": "logos/cities",
+    "description": "Amsterdam coat-of-arms icon",
+    "identification": "identified",
+    "sha256": "45902b9571a649eb7512eec777dc679df037a6b00f4b9cbd48ada4a2dba101d5"
+  },
+  {
+    "original": "bitpolito-coa-berlin.svg",
+    "name": "berlin",
+    "category": "logos/cities",
+    "description": "Berlin bear shield",
+    "identification": "identified",
+    "sha256": "9b760fcfd34d8fe72a33023dd580e0ddba557630397dbf7aa9bb4ad7ba1a4f2e"
+  },
+  {
+    "original": "bitpolito-coa-cuneo-1.svg",
+    "name": "cuneo",
+    "category": "logos/cities",
+    "description": "Cuneo coat-of-arms icon with central animal",
+    "identification": "identified",
+    "sha256": "f2251d2e05788bcfe96fea8eb2c89d4304d422ac6251c2723d86e9494dfd9926"
+  },
+  {
+    "original": "bitpolito-coa-cuneo.svg",
+    "name": "cuneo-alternate",
+    "category": "logos/cities",
+    "description": "Alternate export of the Cuneo animal shield",
+    "identification": "identified",
+    "visual_duplicate_of": "cuneo",
+    "sha256": "d65d454be1e85615258c83d2f5fca512fa185b13533ed2460a23fb7f4d9b60c5"
+  },
+  {
+    "original": "bitpolito-coa-firenze.svg",
+    "name": "florence",
+    "category": "logos/cities",
+    "description": "Florence fleur-de-lis shield",
+    "identification": "identified",
+    "sha256": "67243f9ba84fee34d8adfe1e01aae24073e56ce9b3da2cfefc585c4aae79383c"
+  },
+  {
+    "original": "bitpolito-coa-lugano.svg",
+    "name": "lugano",
+    "category": "logos/cities",
+    "description": "Lugano shield with letter-like quadrants",
+    "identification": "identified",
+    "sha256": "f7198d1dd5a7875e8e48dd684365c66a140bf6015ab4bc3eec2c1fc67fa7178c"
+  },
+  {
+    "original": "bitpolito-coa-milano.svg",
+    "name": "milan",
+    "category": "logos/cities",
+    "description": "Milan cross shield",
+    "identification": "identified",
+    "sha256": "a786f16618fd6590f2bcb8bcbeb9b0af1b3a078fe176c67e332ddc0d5e26b2f3"
+  },
+  {
+    "original": "bitpolito-coa-novosibirsk.svg",
+    "name": "novosibirsk",
+    "category": "logos/cities",
+    "description": "Novosibirsk coat-of-arms icon",
+    "identification": "identified",
+    "sha256": "fcac2c5da0faa1973349e99e024f7ac969a38ab746abf1ee562d43b26d57f0b8"
+  },
+  {
+    "original": "bitpolito-coa-polito.svg",
+    "name": "polito-coat-of-arms",
+    "category": "logos",
+    "description": "Politecnico emblem in a shield-like frame",
+    "identification": "identified",
+    "sha256": "8788c6de8d2afa2141e3e0fbb90ce67b828c31ac8b83ee0f52eea871d961f1bf"
+  },
+  {
+    "original": "bitpolito-coa-praga.svg",
+    "name": "prague",
+    "category": "logos/cities",
+    "description": "Prague coat-of-arms icon",
+    "identification": "identified",
+    "sha256": "d4d8c5892f683e6e80a7ffcd586491018fe8ca46d9e7b67e7884e738113e4522"
+  },
+  {
+    "original": "bitpolito-coa-riga.svg",
+    "name": "riga",
+    "category": "logos/cities",
+    "description": "Riga coat-of-arms icon",
+    "identification": "identified",
+    "sha256": "a4941c701a8547d40b59c021068d72c3d22d02bc62dd53877e192da937652754"
+  },
+  {
+    "original": "bitpolito-coa-torino.svg",
+    "name": "turin",
+    "category": "logos/cities",
+    "description": "Turin bull shield",
+    "identification": "identified",
+    "sha256": "249387ae74550608eccf1e08ca0c82d6e086c6d311be9c7cf102a7a3687e4e79"
+  },
+  {
+    "original": "bitpolito-coa-varsavia.svg",
+    "name": "warsaw",
+    "category": "logos/cities",
+    "description": "Warsaw mermaid shield",
+    "identification": "identified",
+    "sha256": "ab4694ba9ab8c826a2b31285a69e8bb05fdb29e806d76c9ec2863b64b00c94d7"
+  },
+  {
+    "original": "bitpolito-icon-apple-m.svg",
+    "name": "apple",
+    "category": "objects/food",
+    "description": "Large apple silhouette",
+    "identification": "identified",
+    "sha256": "6c5b7843daca8cc3231a6255411a39c9552aa7da34ecb5b91a07405e1bf3d6fc"
+  },
+  {
+    "original": "bitpolito-icon-apple-s.svg",
+    "name": "apple-small",
+    "category": "objects/food",
+    "description": "Simplified small apple",
+    "identification": "identified",
+    "sha256": "e9aa4a0720d4b5a65c36d53a79b7804b0f5a7ac8f783307a4fe7188e8630b8e5"
+  },
+  {
+    "original": "bitpolito-icon-apple-xs.svg",
+    "name": "apple-tiny",
+    "category": "objects/food",
+    "description": "Minimal apple",
+    "identification": "identified",
+    "sha256": "219f63a7e5d34ad375cb9ec3ca6e482b5f6ee012cb20f7eaf070c8b144c01869"
+  },
+  {
+    "original": "bitpolito-icon-bitcoin.svg",
+    "name": "bitcoin",
+    "category": "symbols/bitcoin",
+    "description": "Bitcoin currency symbol",
+    "identification": "identified",
+    "sha256": "0d22e2d4b9cd92685bce545f4f5802537e7cf711dbc7723ed37e18fddca4cb92"
+  },
+  {
+    "original": "bitpolito-icon-bookmark.svg",
+    "name": "bookmark",
+    "category": "objects",
+    "description": "Bookmark ribbon",
+    "identification": "identified",
+    "sha256": "a8d36b3f6cda4f7a87c27092652763eb83eae4753c87a60d3a7a8431de4dae37"
+  },
+  {
+    "original": "bitpolito-icon-cervello.svg",
+    "name": "brain",
+    "category": "objects",
+    "description": "Brain silhouette",
+    "identification": "identified",
+    "sha256": "78373c0ca2eb81a648a22c1d84cc8029fd7b20523298e420437aa10e7fac3f1a"
+  },
+  {
+    "original": "bitpolito-icon-clock.svg",
+    "name": "clock",
+    "category": "objects/technology",
+    "description": "Digital time display",
+    "identification": "identified",
+    "sha256": "a89b442b08119fa49dae827540ed156d7aa6e79252318d24df1778a801a10a98"
+  },
+  {
+    "original": "bitpolito-icon-codice.svg",
+    "name": "code",
+    "category": "symbols",
+    "description": "Code brackets with slash",
+    "identification": "identified",
+    "sha256": "a3a6ed317c23fbddaa96859ee3c984538dab2d45aee4b084253981dfc777f31b"
+  },
+  {
+    "original": "bitpolito-icon-colletto-blu-xs.svg",
+    "name": "worker",
+    "category": "characters",
+    "description": "Worker portrait wearing a hard hat",
+    "identification": "identified",
+    "sha256": "baad6445d99b2ad5827383bc26bf088af6fc85f7cd491105c1f6aab40bfc81a6"
+  },
+  {
+    "original": "bitpolito-icon-coriandoli.svg",
+    "name": "confetti",
+    "category": "symbols",
+    "description": "Party popper with confetti",
+    "identification": "identified",
+    "sha256": "78f131fa643ec72a782bdcbf5578f2491fabe93cef3f35b5c1a8079d8e7dc319"
+  },
+  {
+    "original": "bitpolito-icon-corona-comitale.svg",
+    "name": "crown-count",
+    "category": "symbols/heraldry",
+    "description": "Count-style crown",
+    "identification": "identified",
+    "sha256": "99d49d4b282cc0e3aa559d0ff96085c1aaacfc5dc81bd119bfee67ba4643cdd4"
+  },
+  {
+    "original": "bitpolito-icon-corona-della-provincia-1.svg",
+    "name": "bitcoin-grid",
+    "category": "symbols/bitcoin",
+    "description": "Bitcoin symbol drawn with visible square-grid construction",
+    "identification": "identified",
+    "sha256": "c3bdf0cda53f10b79ae9452bf2d3fef0ee448e2fcf0a13336a4a52fa91be626f"
+  },
+  {
+    "original": "bitpolito-icon-corona-della-provincia.svg",
+    "name": "crown-province",
+    "category": "symbols/heraldry",
+    "description": "Province-style crown",
+    "identification": "identified",
+    "sha256": "e6695554b85519f3619994fbd7e83b5842508d30391e436e0d57165835cc1aac"
+  },
+  {
+    "original": "bitpolito-icon-corona-imperiale.svg",
+    "name": "crown-imperial",
+    "category": "symbols/heraldry",
+    "description": "Imperial-style crown",
+    "identification": "identified",
+    "sha256": "55ead0e19f2d6c88daeaf0dc2e45686b80b12db97a687a95e38d601c32cfb9d6"
+  },
+  {
+    "original": "bitpolito-icon-corona-turrita.svg",
+    "name": "crown-mural",
+    "category": "symbols/heraldry",
+    "description": "Mural crown with square towers",
+    "identification": "identified",
+    "sha256": "29c0453a2cbedc78e4983f2fa607552e4513d68683f80253fcd5a2f50daa8f07"
+  },
+  {
+    "original": "bitpolito-icon-crypto-1.svg",
+    "name": "qrcode-one",
+    "category": "symbols/qr-codes",
+    "description": "QR-code illustration, example one",
+    "identification": "confirmed",
+    "sha256": "8a59a306be8df2caab49a7762c1d658d8ab4a9a77e32627f8380428191b86ada"
+  },
+  {
+    "original": "bitpolito-icon-crypto-2.svg",
+    "name": "qrcode-two",
+    "category": "symbols/qr-codes",
+    "description": "QR-code illustration, example two",
+    "identification": "confirmed",
+    "sha256": "98aac8f6fa54051270751f6e314020418a7492160a9560cfff08555594841d8c"
+  },
+  {
+    "original": "bitpolito-icon-crypto-3.svg",
+    "name": "qrcode-three",
+    "category": "symbols/qr-codes",
+    "description": "QR-code illustration, example three",
+    "identification": "confirmed",
+    "sha256": "5942f42e03a76ece31f3073fd03e1642baa8037cd2135dcb93572be931005c55"
+  },
+  {
+    "original": "bitpolito-icon-crypto-4.svg",
+    "name": "qrcode-four",
+    "category": "symbols/qr-codes",
+    "description": "QR-code illustration, example four",
+    "identification": "confirmed",
+    "sha256": "1b9c30cfa5dde6fc591d3278b44085837e7bdaf1cae025120fdef2fe4abed7e8"
+  },
+  {
+    "original": "bitpolito-icon-cuore-comp-2.svg",
+    "name": "heart-sparkle",
+    "category": "symbols",
+    "description": "Heart with one sparkle",
+    "identification": "identified",
+    "sha256": "844f2c3c79f4d3589ea9dab7327f124239f55153d59fdf052d786fb5324ec422"
+  },
+  {
+    "original": "bitpolito-icon-cuore-comp-3.svg",
+    "name": "heart-sparkles",
+    "category": "symbols",
+    "description": "Heart with two sparkles",
+    "identification": "identified",
+    "sha256": "5acccb27b0986d87fc0b8142522ce5b3ca6c2ab017cf4a448a2fcbb4f6f847ed"
+  },
+  {
+    "original": "bitpolito-icon-cuore-m.svg",
+    "name": "heart-large",
+    "category": "symbols",
+    "description": "Large detailed heart",
+    "identification": "identified",
+    "sha256": "929db13da25a6e47a3ce5c4001f2c067be00b51410323496aa9bd322bf154e55"
+  },
+  {
+    "original": "bitpolito-icon-cuore-s.svg",
+    "name": "heart-small",
+    "category": "symbols",
+    "description": "Small heart with a square highlight",
+    "identification": "identified",
+    "visual_duplicate_of": "heart",
+    "sha256": "d46cdf124ec0ec8f8a7084a19ef0d9b463222151f26a0025a09b616e39e92946"
+  },
+  {
+    "original": "bitpolito-icon-cuore-xs.svg",
+    "name": "heart-tiny",
+    "category": "symbols",
+    "description": "Minimal heart",
+    "identification": "identified",
+    "sha256": "c742a360cf43c01fa9976884e12b41707e55a5da39e10f499eb39ce66f66c8f8"
+  },
+  {
+    "original": "bitpolito-icon-donna.svg",
+    "name": "alice",
+    "category": "characters",
+    "description": "Female portrait; assigned the presentation role Alice",
+    "identification": "inferred",
+    "sha256": "e853b91531a4d8aeaf070c53de6fcb4e8e11e7c8a8834999a18ae40fcd8af00c"
+  },
+  {
+    "original": "bitpolito-icon-dont-thread.svg",
+    "name": "snake",
+    "category": "objects/animals",
+    "description": "Coiled snake",
+    "identification": "identified",
+    "sha256": "3ccc8f1cf936c353490feba933792f1e669d699140d1c57ef11fcd48e78f262a"
+  },
+  {
+    "original": "bitpolito-icon-fagiolo.svg",
+    "name": "bean",
+    "category": "objects/food",
+    "description": "Bean with a highlight",
+    "identification": "identified",
+    "sha256": "5b896ee59a3237087bd5a9ea6193a7533764a5a2dc25c0b92c7fd3572605868e"
+  },
+  {
+    "original": "bitpolito-icon-fiocco.svg",
+    "name": "snowflake",
+    "category": "symbols/weather",
+    "description": "Symmetric snowflake",
+    "identification": "identified",
+    "sha256": "d4004ca935aa7421220dfe4c81fba3ee78528ff61db55655afc5aebccbe266f1"
+  },
+  {
+    "original": "bitpolito-icon-github.svg",
+    "name": "github",
+    "category": "logos/platforms",
+    "description": "GitHub mark in pixel style",
+    "identification": "identified",
+    "sha256": "70d66677674624a0d41614cc0b1eae00fd46aff35e4e56d8b3312fe29c6dea66"
+  },
+  {
+    "original": "bitpolito-icon-googleplay-black.svg",
+    "name": "googleplay-solid",
+    "category": "logos/platforms",
+    "description": "Filled Google Play triangle in brand blue",
+    "identification": "identified",
+    "sha256": "715fc23f8ec0c07ed98fa7b45ec3259b0d7af31c2831bc754b16481378da7c0d"
+  },
+  {
+    "original": "bitpolito-icon-googleplay-white.svg",
+    "name": "googleplay-outline",
+    "category": "logos/platforms",
+    "description": "Outlined Google Play triangle in brand blue",
+    "identification": "identified",
+    "sha256": "764f0981367496e6a5972532f6fe7ca288a43de88c80df34c97f9c9fdbca5e26"
+  },
+  {
+    "original": "bitpolito-icon-hospital.svg",
+    "name": "hospital",
+    "category": "objects/buildings",
+    "description": "Building with medical cross",
+    "identification": "identified",
+    "sha256": "c9375c7b71aa7e3e681de01d80db91f3cb7a580b32788afad4c65151b9ccb5fb"
+  },
+  {
+    "original": "bitpolito-icon-house.svg",
+    "name": "house",
+    "category": "objects/buildings",
+    "description": "House with pitched roof",
+    "identification": "identified",
+    "sha256": "37da25ffdf2e391c140ef54fcd2e73b7f03b0dacaae6a8b5c214d134622818cc"
+  },
+  {
+    "original": "bitpolito-icon-huawei.svg",
+    "name": "huawei",
+    "category": "logos/platforms",
+    "description": "Huawei fan-shaped mark",
+    "identification": "identified",
+    "sha256": "b9a5906ee3cd41da47e36dc8df8af4f86e7acd60852916a16b7618e7951bc2c3"
+  },
+  {
+    "original": "bitpolito-icon-key-1.svg",
+    "name": "key",
+    "category": "objects/security",
+    "description": "Key with a ring-shaped bow",
+    "identification": "identified",
+    "sha256": "e1d0c95f330c01d7ac83fcabf729b8322e5caf9aade7c4d62049174cae88dd0d"
+  },
+  {
+    "original": "bitpolito-icon-key-2.svg",
+    "name": "key-square",
+    "category": "objects/security",
+    "description": "Key with a square bow and two teeth",
+    "identification": "identified",
+    "sha256": "71a91b8b394f5f0abcc4ef7bd3d349c8666d5681d77a9255b5cb0f8f4495c9c7"
+  },
+  {
+    "original": "bitpolito-icon-key-3.svg",
+    "name": "key-round",
+    "category": "objects/security",
+    "description": "Key with a round bow",
+    "identification": "identified",
+    "sha256": "f026d07c1a2b62c299ae93dda7ca2a41aa1a9c754ac039f15ac14157755f03c3"
+  },
+  {
+    "original": "bitpolito-icon-libro-bibbia.svg",
+    "name": "bible",
+    "category": "objects",
+    "description": "Book with a cross on its cover",
+    "identification": "identified",
+    "sha256": "c0039bb51f65503b7d421d962961d69b525540c133628fb259a3313db2c1c4ee"
+  },
+  {
+    "original": "bitpolito-icon-libro-bitcoin-a-peer-to-peer-electronic-cash-system.svg",
+    "name": "whitepaper",
+    "category": "objects",
+    "description": "Book bearing the Bitcoin symbol",
+    "identification": "identified",
+    "sha256": "cba38094b1cf238483e068c992c43f3838c01f1e72cfc8906a22615ca94ba340"
+  },
+  {
+    "original": "bitpolito-icon-libro.svg",
+    "name": "book",
+    "category": "objects",
+    "description": "Plain closed book",
+    "identification": "identified",
+    "sha256": "53f9465cea339780a6b1151da7057b40afaf9796347b40e5bf70757b2040f30c"
+  },
+  {
+    "original": "bitpolito-icon-lightning-m.svg",
+    "name": "lightning",
+    "category": "symbols/bitcoin",
+    "description": "Lightning bolt",
+    "identification": "identified",
+    "sha256": "667da089c44ec8a17b359a69cd0c4cadea7962aa28a57fb9c0c63bb76373de05"
+  },
+  {
+    "original": "bitpolito-icon-lightning-s.svg",
+    "name": "lightning-small",
+    "category": "symbols/bitcoin",
+    "description": "Simplified lightning bolt",
+    "identification": "identified",
+    "sha256": "277a779a1d3459b4095f24e18c6231182261f05e0c32bd8fa6973f5506a4f11f"
+  },
+  {
+    "original": "bitpolito-icon-lucchetto.svg",
+    "name": "padlock",
+    "category": "objects/security",
+    "description": "Closed padlock",
+    "identification": "identified",
+    "sha256": "73a7163dcd59246b3b6361c316eb8bd2d00b889a3fb9443ef2db49eb24702d76"
+  },
+  {
+    "original": "bitpolito-icon-mail.svg",
+    "name": "envelope",
+    "category": "objects/technology",
+    "description": "Envelope or email icon",
+    "identification": "identified",
+    "sha256": "3c4d6c9a6f41095270b67eeb5f0460797f14b6ffeb0727e65379684e92ce0af4"
+  },
+  {
+    "original": "bitpolito-icon-mezzaluna-m.svg",
+    "name": "moon",
+    "category": "symbols/weather",
+    "description": "Crescent moon",
+    "identification": "identified",
+    "sha256": "b2b362b394ef3acb9524082c0f76cda9e70adbef56bb31a500943510f2ccc641"
+  },
+  {
+    "original": "bitpolito-icon-mezzaluna-s.svg",
+    "name": "moon-small",
+    "category": "symbols/weather",
+    "description": "Simplified crescent moon",
+    "identification": "identified",
+    "sha256": "67df1123f3052bf6c4eb1ccc9c5447e7e435ca547af82f758b0945342b739430"
+  },
+  {
+    "original": "bitpolito-icon-microscopio.svg",
+    "name": "microscope",
+    "category": "objects",
+    "description": "Laboratory microscope",
+    "identification": "identified",
+    "sha256": "b4bc49a4a9570f7a0710f1d5cd25acaf0007a3c9226882071efb8bb6dccab0e6"
+  },
+  {
+    "original": "bitpolito-icon-nuvola-m.svg",
+    "name": "cloud",
+    "category": "symbols/weather",
+    "description": "Cloud silhouette",
+    "identification": "identified",
+    "sha256": "c2f04f765e7ee47de605905420c06dca46262a22cd7edd0e724542872d7b17ae"
+  },
+  {
+    "original": "bitpolito-icon-nuvola-s.svg",
+    "name": "cloud-small",
+    "category": "symbols/weather",
+    "description": "Simplified cloud silhouette",
+    "identification": "identified",
+    "sha256": "c2d3e3ff99d0aba982c95cc91b80e301685548c589d2b5bd9faa346b1871f210"
+  },
+  {
+    "original": "bitpolito-icon-pepe.svg",
+    "name": "pepe",
+    "category": "characters",
+    "description": "Pepe-style frog face",
+    "identification": "identified",
+    "sha256": "c16a69f096d55f32957bb162ad3f72ade89848c63ec1b6e17d46329efb0133d0"
+  },
+  {
+    "original": "bitpolito-icon-pisello.svg",
+    "name": "peapod",
+    "category": "objects/food",
+    "description": "Pea-pod-like shape; named from the source filename",
+    "identification": "inferred",
+    "sha256": "14d8166d3949f50beb8d0b084c69d07dd48c3084e18dc605e75c5fc52627fb97"
+  },
+  {
+    "original": "bitpolito-icon-pizza.svg",
+    "name": "pizza",
+    "category": "objects/food",
+    "description": "Pizza slice",
+    "identification": "identified",
+    "sha256": "a201c7c13b75203b6a1163314e58c4912f3035da929650cb87f5f59ff8b52ca4"
+  },
+  {
+    "original": "bitpolito-icon-polito-s.svg",
+    "name": "polito-emblem",
+    "category": "logos",
+    "description": "Compact Politecnico emblem",
+    "identification": "identified",
+    "sha256": "94ee9993fc734e3f9ec4ec1a31bd475757bbe7316937f9a85de4b4af90673bb9"
+  },
+  {
+    "original": "bitpolito-icon-porco-m.svg",
+    "name": "pig",
+    "category": "objects/animals",
+    "description": "Pig face",
+    "identification": "identified",
+    "sha256": "c5f2f8bf98c2c35fb3c77c507859ceb1e4325c6d86995665cb7d24c28a5d5f14"
+  },
+  {
+    "original": "bitpolito-icon-porco-s.svg",
+    "name": "pig-small",
+    "category": "objects/animals",
+    "description": "Simplified pig face",
+    "identification": "identified",
+    "sha256": "155bb2a881cefc9f3501a70ba51364f30e6658d461d8c3638756c0eb407c23dc"
+  },
+  {
+    "original": "bitpolito-icon-portafoglio.svg",
+    "name": "wallet",
+    "category": "objects",
+    "description": "Closed wallet",
+    "identification": "identified",
+    "sha256": "1327b0b76c60b7f816b0d0b10906b50e8e2c8a602945b7856cfccac9f2485abe"
+  },
+  {
+    "original": "bitpolito-icon-regalo.svg",
+    "name": "gift",
+    "category": "objects",
+    "description": "Wrapped present with bow",
+    "identification": "identified",
+    "sha256": "b204f194acaf0deab8c56df3662f8ccad5581b41b7abefc966ab2085ffb19a20"
+  },
+  {
+    "original": "bitpolito-icon-share.svg",
+    "name": "share",
+    "category": "symbols",
+    "description": "Filled curved share arrow",
+    "identification": "identified",
+    "sha256": "4a4b2a2674ee5529787b981d0dad38061f6b1d74d7053f6860b8d9d251b3212e"
+  },
+  {
+    "original": "bitpolito-icon-social-instagram.svg",
+    "name": "instagram",
+    "category": "logos/platforms",
+    "description": "Instagram camera mark",
+    "identification": "identified",
+    "sha256": "3c93b092c769bd704800427da2e55f2457a5fa6cd111a56e389ce6dc987094ff"
+  },
+  {
+    "original": "bitpolito-icon-social-linkedin.svg",
+    "name": "linkedin",
+    "category": "logos/platforms",
+    "description": "LinkedIn mark",
+    "identification": "identified",
+    "sha256": "e95af9b651e5435e90ce6a0a9ac9aa0faa646655d669283a9c4f018b57b1fec8"
+  },
+  {
+    "original": "bitpolito-icon-social-telegram.svg",
+    "name": "telegram",
+    "category": "logos/platforms",
+    "description": "Telegram paper-plane mark",
+    "identification": "identified",
+    "sha256": "567a475f7f0a5424e9d01ffb12d79b938c9aaf0a002bc8eab0f0de41cc86b466"
+  },
+  {
+    "original": "bitpolito-icon-social-twitter.svg",
+    "name": "twitter",
+    "category": "logos/platforms",
+    "description": "Twitter bird mark",
+    "identification": "identified",
+    "sha256": "80d410777804ebe753f9ffe5218e3921fa8ae0a7900960eb8bb0965095d8be32"
+  },
+  {
+    "original": "bitpolito-icon-social-x.svg",
+    "name": "x-logo",
+    "category": "logos/platforms",
+    "description": "X social-platform mark",
+    "identification": "identified",
+    "sha256": "b5abd1cf2c9191ebc2409f220e8df303e2723cb80f435ca860e42f41a846b82e"
+  },
+  {
+    "original": "bitpolito-icon-social-youtube.svg",
+    "name": "youtube",
+    "category": "logos/platforms",
+    "description": "YouTube play-button mark",
+    "identification": "identified",
+    "sha256": "ad610f1ea6d16b3898d8ec41195c5e6232dce2a54d04be3ea66ed9c60ffd3d60"
+  },
+  {
+    "original": "bitpolito-icon-sole-m.svg",
+    "name": "sun",
+    "category": "symbols/weather",
+    "description": "Sun with rays",
+    "identification": "identified",
+    "sha256": "40af521238ed65bd96fa18d9b74ca1d178c723f1bd33ba93679f765dd17ba87d"
+  },
+  {
+    "original": "bitpolito-icon-sole-s.svg",
+    "name": "sun-small",
+    "category": "symbols/weather",
+    "description": "Simplified sun with rays",
+    "identification": "identified",
+    "sha256": "8213d55fcacd3d7633acab677602dc742fb517504503f255e5492a5bbc64bb17"
+  },
+  {
+    "original": "bitpolito-icon-spotify.svg",
+    "name": "spotify",
+    "category": "logos/platforms",
+    "description": "Spotify circular mark",
+    "identification": "identified",
+    "sha256": "ecad95fc6af3b491b7f021069b8e7e32ab80c88d7d970cd07213ea75b1fc2978"
+  },
+  {
+    "original": "bitpolito-icon-stella.svg",
+    "name": "staricon",
+    "category": "symbols",
+    "description": "Five-point star",
+    "identification": "identified",
+    "sha256": "03e7d95d8226fecbc1de25b1a95c04dbd4392fa84367a74f102bba0c41398dc7"
+  },
+  {
+    "original": "bitpolito-icon-terra-m.svg",
+    "name": "earth",
+    "category": "symbols/weather",
+    "description": "Globe showing continents",
+    "identification": "identified",
+    "sha256": "0f716561a681f63686e7bef9597088eaade12aa6deae70b2fac630df51424731"
+  },
+  {
+    "original": "bitpolito-icon-terra-s.svg",
+    "name": "earth-small",
+    "category": "symbols/weather",
+    "description": "Simplified globe",
+    "identification": "identified",
+    "sha256": "10ed1d88a45f2bfd943bd4a419e50ab0c8f08ad10ba2f29893f280c86214657b"
+  },
+  {
+    "original": "bitpolito-icon-uomo.svg",
+    "name": "bob",
+    "category": "characters",
+    "description": "Male portrait; assigned the presentation role Bob",
+    "identification": "inferred",
+    "sha256": "2a150d60cd96ed7c0e35ea5e78dae398634ac87947ff1ab043cce213569844e0"
+  },
+  {
+    "original": "bitpolito-icon-vacca-m.svg",
+    "name": "bull-large",
+    "category": "objects/animals",
+    "description": "Detailed horned bovine face",
+    "identification": "identified",
+    "sha256": "1be26d5917d3ad724aa564e9cacb68e7bb69fee4c78c137418f5dae3c705576f"
+  },
+  {
+    "original": "bitpolito-icon-vacca-s.svg",
+    "name": "bull-small",
+    "category": "objects/animals",
+    "description": "Small horned bovine face",
+    "identification": "identified",
+    "visual_duplicate_of": "bull",
+    "sha256": "fe85e189e3baebe7b49c08776c9d5b497c2255bc118d6d0779607fc3c52b0183"
+  },
+  {
+    "original": "bitpolito-icon-vacca-xs.svg",
+    "name": "bull-tiny",
+    "category": "objects/animals",
+    "description": "Simplified horned bovine face",
+    "identification": "identified",
+    "sha256": "73d8969f30b8c922a2339dc52d6d8a9ab3768233a07a01c92b8edeccaf70cfac"
+  },
+  {
+    "original": "bitpolito-icon-vacca-xxs.svg",
+    "name": "bull-minimal",
+    "category": "objects/animals",
+    "description": "Minimal horned bovine face",
+    "identification": "identified",
+    "sha256": "bcba79f8eccda6824234337c6884bc8400867ab50e430766504f166eb6c87038"
+  },
+  {
+    "original": "bitpolito-icona-cuneo.svg",
+    "name": "cuneo-barred",
+    "category": "logos/cities",
+    "description": "Cuneo-labelled shield with horizontal bars; source identity retained",
+    "identification": "inferred",
+    "sha256": "11be5a72d2127355e4ee53a964fb136fd45bd7ef3721d8a9793424483be1aa43"
+  },
+  {
+    "original": "bitpolito-sign-esclamationmark.svg",
+    "name": "warning",
+    "category": "symbols",
+    "description": "Warning triangle with exclamation mark",
+    "identification": "identified",
+    "sha256": "61dfeb2ecddf1b3e3430e0bb725e0d99dc40b9b041de3d8bbf70fb65f213450f"
+  },
+  {
+    "original": "bitpolito-sign-questionmark.svg",
+    "name": "question",
+    "category": "symbols",
+    "description": "Triangle with question mark",
+    "identification": "identified",
+    "sha256": "aab242a68190c1217138aa6023504f512d16d2c3a6bc5990063e34f0aec5545f"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-bell.svg",
+    "name": "bell",
+    "category": "objects",
+    "description": "Notification bell",
+    "identification": "identified",
+    "sha256": "6afe472ead0bd26007673332aa765b907ee2e2063edc3b3dd6b69bf1a0be0302"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-leaf.svg",
+    "name": "leaf",
+    "category": "symbols/weather",
+    "description": "Leaf silhouette",
+    "identification": "identified",
+    "sha256": "dada2e06c925782925d55da0e84a82e774aa848db89a19900dc40c8ed5de0730"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-shit.svg",
+    "name": "poop",
+    "category": "characters",
+    "description": "Smiling poop character",
+    "identification": "identified",
+    "sha256": "06774ad2aeb256182ee0ddb0c55b2c986a76ba0b97a720e7bab2b09807c283b8"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-1.svg",
+    "name": "gavel",
+    "category": "objects/tools",
+    "description": "Gavel on a small base",
+    "identification": "identified",
+    "sha256": "3e119af0cddc6571a5da789b626f7930bad68d701b06a667708f396263a04213"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-10.svg",
+    "name": "face-sad",
+    "category": "characters/faces",
+    "description": "Frowning face",
+    "identification": "identified",
+    "sha256": "1dcad7d75231786c69ea5a9850d50f0d72e39e7c7715dc8e8192e79831ed03d1"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-11.svg",
+    "name": "face-crying",
+    "category": "characters/faces",
+    "description": "Face with tears and an open mouth",
+    "identification": "identified",
+    "sha256": "3e879f1bda305cefba2f50084c85aac0f091bf64bc34a339accf5f3956f9a763"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-12.svg",
+    "name": "arrow-right",
+    "category": "symbols/arrows",
+    "description": "Right-pointing arrow",
+    "identification": "identified",
+    "sha256": "f4e950421e97cc6ecc4a5a57f5f9b77519de74914e3f57fdfb8a426185a4debb"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-13.svg",
+    "name": "arrow-down",
+    "category": "symbols/arrows",
+    "description": "Down-pointing arrow",
+    "identification": "identified",
+    "sha256": "bb33ea38cc66f816e43baa90c3d76e86a88ec9c42f6f1ddc06a2106f64a81fd0"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-14.svg",
+    "name": "arrow-up",
+    "category": "symbols/arrows",
+    "description": "Up-pointing arrow",
+    "identification": "identified",
+    "sha256": "a3e24da36e93b54282cde113e7fc6d2112cc525598cffd088416dbd9924e7abe"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-15.svg",
+    "name": "arrow-down-left",
+    "category": "symbols/arrows",
+    "description": "Diagonal arrow pointing down-left",
+    "identification": "identified",
+    "sha256": "9de1612fcb2a94b87c2d2f6a9069f76f22a50c850ea3627a0d00380c341ec1e2"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-16.svg",
+    "name": "arrow-down-right",
+    "category": "symbols/arrows",
+    "description": "Diagonal arrow pointing down-right",
+    "identification": "identified",
+    "sha256": "119773b5f5d86d415767292c49b0d0f6597c76ceaca7a2394be2c1470e24e1da"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-17.svg",
+    "name": "arrow-up-right",
+    "category": "symbols/arrows",
+    "description": "Diagonal arrow pointing up-right",
+    "identification": "identified",
+    "sha256": "186f76e37556f4a8a93b32810f95f5bb3cef7054cdfceb18f7a88236cfd2e363"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-18.svg",
+    "name": "arrow-up-left",
+    "category": "symbols/arrows",
+    "description": "Diagonal arrow pointing up-left",
+    "identification": "identified",
+    "sha256": "a255d8cb3495c4916e3c10a312fa91e17ed933539cea8353097012e598079c74"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-19.svg",
+    "name": "arrow-left",
+    "category": "symbols/arrows",
+    "description": "Left-pointing arrow",
+    "identification": "identified",
+    "sha256": "6d8cb9bf231fc64df04061cf20420587ae0f73c59985b56f757e59327e594886"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-2.svg",
+    "name": "face-smile",
+    "category": "characters/faces",
+    "description": "Smiling face",
+    "identification": "identified",
+    "sha256": "cdffef3daaafbb4d76f95206c5f13ba0f28f343a7074b7eda321270ebec535c1"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-20.svg",
+    "name": "skull",
+    "category": "characters/faces",
+    "description": "Skull face",
+    "identification": "identified",
+    "sha256": "b54e622b4d135b9c7a2960c0c146de03d3273a7f88200878c195953df7ebf607"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-21.svg",
+    "name": "face-sweat",
+    "category": "characters/faces",
+    "description": "Smiling face with a sweat drop",
+    "identification": "identified",
+    "sha256": "c128e77c31f9922a11b70bfb31ddb8dd19d79cbb8459446a2653ab0c2c16da1b"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-22.svg",
+    "name": "face-laugh",
+    "category": "characters/faces",
+    "description": "Laughing face with closed eyes",
+    "identification": "identified",
+    "sha256": "e1bdf7f8a5d1ff0bbd37e76478e17e452e9c5762e7e81e05f1bc7cf562e0d7b8"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-23.svg",
+    "name": "face-smirk",
+    "category": "characters/faces",
+    "description": "Smirking face",
+    "identification": "inferred",
+    "sha256": "5a0062a06e422a0d96f1fb5996b31f9e5e6e0deb1cb7e5fc50da6a26d6e32aca"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-24.svg",
+    "name": "face-star-eyes",
+    "category": "characters/faces",
+    "description": "Face with star-shaped eyes",
+    "identification": "identified",
+    "sha256": "c17cbf7b8c9bd70156c9339b4393e2db839b8ddf12d9f885aacc489c0f05c2cc"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-25.svg",
+    "name": "face-sunglasses",
+    "category": "characters/faces",
+    "description": "Face wearing sunglasses",
+    "identification": "identified",
+    "sha256": "f6bf307cbec75d1c964401be2d0b8e2e06f90446b46dced441a7b20c5531fd86"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-26.svg",
+    "name": "face-thinking",
+    "category": "characters/faces",
+    "description": "Thinking face with hand at chin",
+    "identification": "identified",
+    "sha256": "53f551cb78712fa95e7679f7081de821d13764db2f482ab48dbe75f0bcabefc0"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-27.svg",
+    "name": "face-wide-eyed",
+    "category": "characters/faces",
+    "description": "Wide-eyed face with a straight mouth",
+    "identification": "identified",
+    "sha256": "06955baa55d57407d8b0b1834f33ef7f8f5aed17b8c23588aaa0b9f483be96e7"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-28.svg",
+    "name": "face-angry",
+    "category": "characters/faces",
+    "description": "Angry face",
+    "identification": "identified",
+    "sha256": "3c1c74e407308ae249f783d7a813be6d85bb00b1c6e7f2ad71f17d6b5b21f01c"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-29.svg",
+    "name": "face-devil",
+    "category": "characters/faces",
+    "description": "Smiling face with horns",
+    "identification": "identified",
+    "sha256": "2d921560bf4df599189a2bbdb5b66772d1b5ef3436b8bd1477c8e807df5a3a35"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-3.svg",
+    "name": "face-upside-down",
+    "category": "characters/faces",
+    "description": "Upside-down smiling face",
+    "identification": "inferred",
+    "sha256": "7817ba92d8f55c917fbabb5cc000dc29cf9cfc37c49da33098467d177bea17c3"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-30.svg",
+    "name": "face-steaming",
+    "category": "characters/faces",
+    "description": "Angry face with steam at its nose",
+    "identification": "identified",
+    "sha256": "bb36e0dcf9a6ff85948c0e44b53dfbcbff55559d25dc0983b33100fec53a70f6"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-31.svg",
+    "name": "face-scrunched",
+    "category": "characters/faces",
+    "description": "Scrunched eyes and a zigzag mouth",
+    "identification": "identified",
+    "sha256": "fc2cba9832bce7bacfa16180f48cfed1db924a1cfb4eb611582dbd1eff5eb020"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-32.svg",
+    "name": "face-distressed",
+    "category": "characters/faces",
+    "description": "Distressed face with an open mouth",
+    "identification": "identified",
+    "sha256": "719fb2b0156d0ab1aadecad57dee10abd0690cd61d4d162df844bc3c4f50b64a"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-33.svg",
+    "name": "face-tears",
+    "category": "characters/faces",
+    "description": "Face with large streams of tears",
+    "identification": "identified",
+    "sha256": "e75cede9074c564a291bb0b232d20a4e1e78be167a6b6e5f0fdee77837f058e9"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-34.svg",
+    "name": "face-weeping",
+    "category": "characters/faces",
+    "description": "Open-mouthed weeping face",
+    "identification": "identified",
+    "sha256": "4afab4e57febfa5698da6bef78050881dd8ddd2f174f3b3f78d2a0f20129c61f"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-35.svg",
+    "name": "face-worried",
+    "category": "characters/faces",
+    "description": "Worried face with a sweat drop",
+    "identification": "identified",
+    "sha256": "d71614c8805ced1b4d892c2dbff0c642736c04341d8f2c135190d66c5f2f610e"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-36.svg",
+    "name": "phone",
+    "category": "objects/technology",
+    "description": "Smartphone with a notch",
+    "identification": "identified",
+    "sha256": "696437b9a414697cf65841e84361e4362de099933f613214d143725a10df28d2"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-37.svg",
+    "name": "phone-keypad",
+    "category": "objects/technology",
+    "description": "Mobile phone with physical keypad",
+    "identification": "identified",
+    "sha256": "b87d3d9a0176dc7841a508734674f8e2a0bbc0a3f1de3d9ddc75a3a3d92a729c"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-38.svg",
+    "name": "hammer",
+    "category": "objects/tools",
+    "description": "Claw hammer",
+    "identification": "identified",
+    "sha256": "c4a76b9d0f29c2175f7af4acd8665478da69167e5b19be11657abac833b54b73"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-39.svg",
+    "name": "phone-button",
+    "category": "objects/technology",
+    "description": "Smartphone with home button",
+    "identification": "identified",
+    "sha256": "7a9b909d6757f519a81affcc3438efbf48554fd31117e60465abaf2d9a6301c2"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-4.svg",
+    "name": "face-kiss",
+    "category": "characters/faces",
+    "description": "Face with puckered lips",
+    "identification": "identified",
+    "sha256": "bf7aa2eca63affd4d1bb081d571c3d4e7054b9a201e62c7958be25f02127f736"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-41.svg",
+    "name": "hourglass",
+    "category": "objects",
+    "description": "Hourglass",
+    "identification": "identified",
+    "sha256": "9eef146aa187219c2326d69c0374a7679849abad1d141ed6c2d565e336a91edb"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-42.svg",
+    "name": "screwdriver",
+    "category": "objects/tools",
+    "description": "Screwdriver",
+    "identification": "identified",
+    "sha256": "eefb77b1041c8f4cd3a4496d4d2118f7a6d9545cf7ea3f2a5b62afe14e36d842"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-43.svg",
+    "name": "shield",
+    "category": "objects/security",
+    "description": "Quartered shield",
+    "identification": "identified",
+    "sha256": "ceb03e3e00c4fbf01c14a107b5562fabddf58db0236bd0ab4cc2e6d7bff65917"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-44.svg",
+    "name": "wrench",
+    "category": "objects/tools",
+    "description": "Open-ended wrench",
+    "identification": "identified",
+    "sha256": "d402779ba1bf21579228004093619c0d7f2f45de39166a33454c6e8b22ccc4d9"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-45.svg",
+    "name": "shovel",
+    "category": "objects/tools",
+    "description": "Shovel with highlighted blade",
+    "identification": "identified",
+    "sha256": "3f5732efad67b839e8b26577fcb232e8edf1999a588a4cdc409452d16da414bc"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-46.svg",
+    "name": "storm",
+    "category": "symbols/weather",
+    "description": "Cloud with lightning bolt",
+    "identification": "identified",
+    "sha256": "5af55e972853fe000038d2e9c7c4ebc3e6ffe64cbfffd50c6128445d92bf8c01"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-47.svg",
+    "name": "rain",
+    "category": "symbols/weather",
+    "description": "Cloud with rain streaks",
+    "identification": "identified",
+    "sha256": "1c8d828767ffebee572cde34a4e87dca90f394c877a0983369efb1e06238e9a7"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-48.svg",
+    "name": "snow",
+    "category": "symbols/weather",
+    "description": "Cloud with falling snowflakes",
+    "identification": "identified",
+    "sha256": "adb6f1cfc7c6793660d4bc19e4bbb3fc76bdbcf2083a1874163bba3a23dd2934"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-49.svg",
+    "name": "pickaxe",
+    "category": "objects/tools",
+    "description": "Mining pickaxe",
+    "identification": "identified",
+    "sha256": "65c847f55a5f7da88cd67f86e52c3166a3286756c882f5c0b2e7bd7f28f72616"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-5.svg",
+    "name": "face-zipper",
+    "category": "characters/faces",
+    "description": "Face with a zippered mouth",
+    "identification": "identified",
+    "sha256": "c1df0595a429c373854b488c29c3fba0606c17010766dc9c2ef951af5b8bc07a"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-50.svg",
+    "name": "door",
+    "category": "objects/buildings",
+    "description": "Partly open door",
+    "identification": "identified",
+    "sha256": "407f6400b434fb02af19f86d20632e5c93b980ec6db5d0679d87fcfc1fd2e3eb"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-51.svg",
+    "name": "information",
+    "category": "symbols",
+    "description": "Information symbol in a circle",
+    "identification": "identified",
+    "sha256": "0c793e8c7b431c229290e10f565ecd96fc99a44b34e56e8c62d401e96b34e98c"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-52.svg",
+    "name": "coin",
+    "category": "objects",
+    "description": "Coin",
+    "identification": "confirmed",
+    "sha256": "bc648773927bd1b2b854aec8dfc3f51bc964570b8108f958745afb4e76d6a2e2"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-53.svg",
+    "name": "face-neutral",
+    "category": "characters/faces",
+    "description": "Face with straight mouth",
+    "identification": "identified",
+    "sha256": "f618baa9362d68fda106f772dbd6b2f3f8e0cc6a689bad999fb1a73114fb7b53"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-54.svg",
+    "name": "pizza-cheese",
+    "category": "objects/food",
+    "description": "Coloured round cheese pizza",
+    "identification": "identified",
+    "sha256": "d30635966b5c46531a3ba5a305cc6a3299b8def8a827b9cda41499b8690d1980"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-55.svg",
+    "name": "pizza-pepperoni",
+    "category": "objects/food",
+    "description": "Coloured round pizza with red toppings",
+    "identification": "identified",
+    "sha256": "aa85446a0fce32f1c24ee08407e9a34ddc1f1b304f9e3d0f7e3f2b5ba99c9a8f"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-6.svg",
+    "name": "face-angel",
+    "category": "characters/faces",
+    "description": "Smiling face with halo",
+    "identification": "identified",
+    "sha256": "09ca98032d13c012a637066dd4e6fdc12abe3c501c8afd3180ac8308d43e2a40"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-7.svg",
+    "name": "flag",
+    "category": "symbols",
+    "description": "Flag on a pole",
+    "identification": "identified",
+    "sha256": "728287347fd8df10a9cc2441c23c89e51ee0796557faf01f80092613c2efbec6"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-8.svg",
+    "name": "flag-checkered",
+    "category": "symbols",
+    "description": "Checkered racing flag",
+    "identification": "identified",
+    "sha256": "63fbe91b259a06ca224275148eb6daede3cbc8966804dd0fcf7b53cda419bcc0"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11-9.svg",
+    "name": "face-shocked",
+    "category": "characters/faces",
+    "description": "Shocked face with a wide open mouth",
+    "identification": "identified",
+    "sha256": "40a86d7443ada015a0b24c82c16a297c97f2fb8eeee57b5895fca79cbd5a04d3"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-11×11.svg",
+    "name": "laptop",
+    "category": "objects/technology",
+    "description": "Open laptop with keyboard and screen highlight",
+    "identification": "identified",
+    "sha256": "324782e1d845b7eba7139ac00ea9009d5d4629bcc1992a1b86060b32b67c8277"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-12×12-1.svg",
+    "name": "trooper-helmet",
+    "category": "characters",
+    "description": "Science-fiction armoured trooper helmet",
+    "identification": "inferred",
+    "sha256": "446c50be6899121fd27fe4fe952a8f97d1039b7d2ed55bc5014c906d90e57fad"
+  },
+  {
+    "original": "rdnv-bitpolito-icon-temp-12×12.svg",
+    "name": "space-station",
+    "category": "objects",
+    "description": "Spherical space-station-like shape with a horizontal trench and circular feature",
+    "identification": "inferred",
+    "sha256": "aa70ba1f4e059359946a5fd99721163f6671a915418446ef7d0fef84cfabbb0f"
+  }
+]

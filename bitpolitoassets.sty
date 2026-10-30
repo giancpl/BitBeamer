@@ -1,0 +1,47 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bitpolitoassets}[2026/10/30 Named illustration library]
+\RequirePackage{graphicx}
+\RequirePackage{xparse}
+\providecommand{\bitpolitolibrarypath}{assets/generated}
+
+\ExplSyntaxOn
+\prop_new:N \g_bitpolito_assets_prop
+
+\cs_new_protected:Npn \bitpolito_asset_placeholder:n #1
+  {
+    \PackageWarning{bitpolitoassets}{Asset~'#1'~is~missing.~Add~the~file~and~run~scripts/prepare-assets.py}
+    \fbox{\normalfont\small\ttfamily Add~asset:~\detokenize{#1}}
+  }
+
+\NewDocumentCommand \bitpolitoasset { O{width=2.5cm} m }
+  {
+    \prop_get:NnNTF \g_bitpolito_assets_prop {#2} \l_tmpa_tl
+      {
+        \file_if_exist:nTF {\bitpolitolibrarypath/\l_tmpa_tl}
+          {\includegraphics[keepaspectratio,#1]{\bitpolitolibrarypath/\l_tmpa_tl}}
+          {\bitpolito_asset_placeholder:n {#2}}
+      }
+      {\bitpolito_asset_placeholder:n {#2}}
+  }
+
+% Names containing digits, hyphens, or underscores use \asset{name}.
+% Existing LaTeX commands are never overwritten by an asset shortcut.
+\NewDocumentCommand \DeclareBitPolitoAsset { m m }
+  {
+    \prop_gput:Nnn \g_bitpolito_assets_prop {#1} {#2}
+    \regex_match:nnT {\A[a-z]+\Z} {#1}
+      {
+        \cs_if_exist:cF {#1}
+          {
+            \exp_args:Nc \NewDocumentCommand {#1} { O{width=2.5cm} }
+              {\bitpolitoasset[##1]{#1}}
+          }
+      }
+  }
+\ExplSyntaxOff
+
+\ProvideDocumentCommand{\asset}{O{width=2.5cm} m}{\bitpolitoasset[#1]{#2}}
+% Stable shortcuts for the most common character illustrations.
+\ProvideDocumentCommand{\cow}{O{width=2.5cm}}{\bitpolitoasset[#1]{cow}}
+\ProvideDocumentCommand{\alice}{O{width=2.5cm}}{\bitpolitoasset[#1]{alice}}
+\InputIfFileExists{\bitpolitolibrarypath/catalogue.tex}{}{}

@@ -1,0 +1,117 @@
+% Printable reference. Compile from the repository root with scripts/build.py.
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=16mm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[scaled=0.95]{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage{xcolor,booktabs,tabularx,courier}
+\usepackage{bitpolitoassets}
+\definecolor{brand}{HTML}{001CE0}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{5pt}
+\newcommand{\bbSheetTitle}[2]{%
+  {\huge\bfseries\color{brand}#1}\par
+  {\large #2}\par\smallskip
+  {\color{brand}\rule{\textwidth}{1pt}}\par
+}
+\newcommand{\bbSheetCode}[1]{\texttt{\detokenize{#1}}}
+\newcommand{\bbIconRow}[2]{\asset[height=8mm]{#1} & \bbSheetCode{#2} \\[3mm]}
+
+\begin{document}
+\bbSheetTitle{BitBeamer / Icon Cheat Sheet}{1. Choose an icon and set its size}
+
+The theme loads the library automatically. For other documents, copy the
+style file and prepared artwork beside your document, then add:
+\begin{verbatim}
+\usepackage{bitpolitoassets}
+\end{verbatim}
+
+\section*{Common shortcuts}
+\begin{tabularx}{\textwidth}{@{}m{22mm}X@{}}
+\toprule
+\textbf{Result} & \textbf{Copyable LaTeX} \\
+\midrule
+\bbIconRow{alice}{\alice[height=1cm]}
+\bbIconRow{bob}{\bob[height=1cm]}
+\bbIconRow{cow}{\cow[height=1cm]}
+\bbIconRow{bitcoin}{\bitcoin[height=1cm]}
+\bbIconRow{wallet}{\wallet[height=1cm]}
+\bbIconRow{coin}{\coin[height=1cm]}
+\bottomrule
+\end{tabularx}
+
+\section*{One command works for every icon}
+\begin{tabularx}{\textwidth}{@{}m{22mm}X@{}}
+\bbIconRow{alice-and-bob}{\asset[width=2cm]{alice-and-bob}}
+\bbIconRow{qrcode-one}{\asset[height=1cm]{qrcode-one}}
+\end{tabularx}
+Use \bbSheetCode{\asset{name}} for names containing hyphens or digits, and whenever
+a shortcut conflicts with an existing LaTeX command. Existing commands are
+never replaced.
+
+\section*{Sizing and rotation}
+\begin{tabularx}{\textwidth}{@{}lX@{}}
+\bbSheetCode{\alice} & Default width: 2.5\,cm. \\
+\bbSheetCode{\cow[width=3cm]} & Set a fixed width. \\
+\bbSheetCode{\bitcoin[height=1em]} & Match the size of surrounding text. \\
+\bbSheetCode{\asset[width=2cm,height=1cm]{cow}} & Fit inside a box, keeping proportions. \\
+\bbSheetCode{\asset[height=1cm,angle=15]{key}} & Rotate the artwork. \\
+\end{tabularx}
+
+\smallskip
+The full asset catalogue shows all 171 icons with their exact commands.
+Prepared PDFs are included in the repository and Overleaf ZIP; ordinary
+compilation requires no SVG converter.
+
+\newpage
+\bbSheetTitle{BitBeamer / Icon Cheat Sheet}{2. Place icons in your slides}
+
+\section*{Inline with text}
+Pay with \raisebox{-0.15\height}{\bitcoin[height=1em]} Bitcoin.
+\begin{verbatim}
+Pay with \raisebox{-0.15\height}{\bitcoin[height=1em]} Bitcoin.
+\end{verbatim}
+
+\section*{In two columns}
+\begin{center}
+\begin{tabular}{cc}
+\alice[height=1cm] & \bob[height=1cm] \\
+Alice & Bob
+\end{tabular}
+\end{center}
+\begin{verbatim}
+\begin{columns}[c,onlytextwidth]
+  \begin{column}{0.45\textwidth}
+    \centering
+    \alice[height=1.5cm]
+  \end{column}
+  \begin{column}{0.45\textwidth}
+    \centering
+    \bob[height=1.5cm]
+  \end{column}
+\end{columns}
+\end{verbatim}
+The rendered pair above illustrates the placement; the code uses Beamer columns.
+
+\section*{Colour and troubleshooting}
+\begin{tabularx}{\textwidth}{@{}p{38mm}X@{}}
+\toprule
+\textbf{Question} & \textbf{What to do} \\
+\midrule
+Why does text colour not change the icon? & The supplied PDFs contain their own colours. Prepare a recoloured artwork variant when needed. \\
+An icon name has a hyphen & Use the generic command, for example \bbSheetCode{\asset{qrcode-one}}. \\
+A shortcut already exists & Use \bbSheetCode{\asset{name}}; the library preserves existing commands. \\
+An icon is missing & Check its name in the catalogue and confirm the prepared file is present. A missing icon produces a placeholder and warning. \\
+Artwork changed locally & Run \bbSheetCode{scripts/prepare-assets.py}, then regenerate the catalogue before sharing the project. \\
+\bottomrule
+\end{tabularx}
+
+\section*{Find more examples}
+The icon guide explains usage; the visual catalogue contains every name.
+Compile it from the repository root:
+\begin{verbatim}
+python3 scripts/build.py examples/asset-catalogue.tex
+\end{verbatim}
+On Overleaf, select \bbSheetCode{asset-catalogue.tex} as the main document.
+
+\end{document}
