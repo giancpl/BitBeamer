@@ -1,0 +1,74 @@
+{
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build",
+  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.tools": [
+    {
+      "name": "bitbeamer-native",
+      "command": "python3",
+      "args": [
+        "%WORKSPACE_FOLDER%/scripts/build.py",
+        "%DOC%",
+        "%OUTDIR%"
+      ]
+    },
+    {
+      "name": "bitbeamer-native-windows",
+      "command": "py",
+      "args": [
+        "-3",
+        "%WORKSPACE_FOLDER%/scripts/build.py",
+        "%DOC%",
+        "%OUTDIR%"
+      ]
+    },
+    {
+      "name": "bitbeamer-docker",
+      "command": "python3",
+      "args": [
+        "%WORKSPACE_FOLDER%/scripts/build.py",
+        "%DOC%",
+        "%OUTDIR%",
+        "--backend",
+        "docker"
+      ]
+    },
+    {
+      "name": "bitbeamer-docker-windows",
+      "command": "py",
+      "args": [
+        "-3",
+        "%WORKSPACE_FOLDER%/scripts/build.py",
+        "%DOC%",
+        "%OUTDIR%",
+        "--backend",
+        "docker"
+      ]
+    }
+  ],
+  "latex-workshop.latex.recipes": [
+    {
+      "name": "BitBeamer: native TeX Live",
+      "tools": [
+        "bitbeamer-native"
+      ]
+    },
+    {
+      "name": "BitBeamer: native TeX Live — Windows",
+      "tools": [
+        "bitbeamer-native-windows"
+      ]
+    },
+    {
+      "name": "BitBeamer: Docker (optional)",
+      "tools": [
+        "bitbeamer-docker"
+      ]
+    },
+    {
+      "name": "BitBeamer: Docker (optional) — Windows",
+      "tools": [
+        "bitbeamer-docker-windows"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+% ======================
+% LOGOS
+% ======================
+\pgfdeclareimage[width=0.09\paperwidth]{primarylogo}{\bitpolitoassetpath/bull-blue.pdf}
+\pgfdeclareimage[width=0.09\paperwidth]{primarylogo_neg}{\bitpolitoassetpath/bull-white.pdf}
+\newcommand{\@primarylogo}{primarylogo}
+
+% ======================
+% FRAME TITLE
+% ======================
+% Measure the logos so wrapped headings cannot run underneath them.
+\newsavebox{\bitpolito@headerlogos}
+\newsavebox{\bitpolito@headertext}
+\newlength{\bitpolito@headerheight}
+\newlength{\bitpolito@headingwidth}
+\newlength{\bitpolito@headerminheight}
+\defbeamertemplate*{frametitle}{bitpolito}[1][]
+{%
+  \sbox{\bitpolito@headerlogos}{%
+    \raisebox{-0.5\height}{\includegraphics[height=0.095\paperheight]{\bitpolitoassetpath/polito-coat-of-arms-white.pdf}}%
+    \hspace{0.045\paperheight}%
+    \raisebox{-0.5\height}{\includegraphics[height=\bitpolito@groupheaderheight]{\bitpolitoassetpath/\bitpolito@groupheaderlogo}}%
+  }%
+  \setlength{\bitpolito@headingwidth}{\dimexpr\paperwidth-\wd\bitpolito@headerlogos-0.085\paperwidth\relax}%
+  \sbox{\bitpolito@headertext}{%
+    \parbox{\bitpolito@headingwidth}{%
+      \raggedright
+      \color{white}%
+      {\ifx\insertframesubtitle\@empty
+         \usebeamerfont{frametitle standalone}%
+       \else
+         \usebeamerfont{frametitle}%
+       \fi
+       \insertframetitle\par}%
+      \ifx\insertframesubtitle\@empty\else
+        \vspace{0.3ex}%
+        {\usebeamerfont{framesubtitle}\insertframesubtitle\par}%
+      \fi
+    }%
+  }%
+  % Fit both the text and branding, then add padding for the selected layout.
+  \setlength{\bitpolito@headerheight}{\dimexpr\ht\bitpolito@headertext+\dp\bitpolito@headertext\relax}%
+  \ifdim\bitpolito@headerheight<\dimexpr\ht\bitpolito@headerlogos+\dp\bitpolito@headerlogos\relax
+    \setlength{\bitpolito@headerheight}{\dimexpr\ht\bitpolito@headerlogos+\dp\bitpolito@headerlogos\relax}%
+  \fi
+  \ifx\insertframesubtitle\@empty
+    % Match the standard subtitle band height for consistent slide transitions.
+    \addtolength{\bitpolito@headerheight}{0.08\paperheight}%
+    \setlength{\bitpolito@headerminheight}{0.22\paperheight}%
+  \else
+    \addtolength{\bitpolito@headerheight}{0.10\paperheight}%
+    \setlength{\bitpolito@headerminheight}{0.22\paperheight}%
+  \fi
+  \ifdim\bitpolito@headerheight<\bitpolito@headerminheight
+    \setlength{\bitpolito@headerheight}{\bitpolito@headerminheight}%
+  \fi
+  \begin{beamercolorbox}[wd=\paperwidth,ht=\bitpolito@headerheight,dp=0pt]{frametitle}
+    \begin{tikzpicture}[remember picture,overlay]
+      % Use page coordinates so the band stays flush with every page edge.
+      \begin{scope}[shift={(current page.north west)},x=\paperwidth,y=\paperheight]
+        \begin{scope}[y=\bitpolito@headerheight]
+          \fill[bitpolito-light] (0,0) -- (1,0) -- (1,-0.99) -- (0,-0.55) -- cycle;
+          \fill[bitpolito] (0,0) -- (1,0) -- (1,-0.83) -- (0,-1) -- cycle;
+          % Match the left and right page margins and center both logo silhouettes.
+          \node[anchor=west,inner sep=0] at (0.035,-0.43) {\usebox{\bitpolito@headertext}};
+          \node[anchor=east,inner sep=0] at (0.965,-0.43) {\usebox{\bitpolito@headerlogos}};
+        \end{scope}
+      \end{scope}
+    \end{tikzpicture}
+  \end{beamercolorbox}%
+}
+
+% ======================
+% SECTIONS
+% ======================
+\AtBeginSection[]{
+  \begingroup
+  \setbeamercolor{normal text}{fg=bitpolito}
+  \setbeamercolor{structure}{fg=bitpolito-orange}
+  \setbeamercolor{section in toc}{fg=white}
+  \setbeamercolor{footline}{fg=white}
+
+  \setbeamertemplate{background}{
+    \begin{tikzpicture}[remember picture, overlay]
+      % Solid blue section background.
+      \fill[bitpolito] (current page.south west) rectangle (current page.north east);
+
+    \end{tikzpicture}
+  }
+
+  \begin{frame}[t]
+    \centering
+    \vspace*{0.10\paperheight}
+    \usebeamerfont{section title}
+    \usebeamercolor[fg]{section in toc}
+    \LARGE Table of Contents\par
+
+    \vspace{0.10\paperheight}
+    \normalsize
+    \tableofcontents[currentsection]
+  \end{frame}
+
+  % Restore the regular background after this frame.
+  \setbeamertemplate{background}{}
+  \endgroup
+}
+
+% ======================
+% FOOTER
+% ======================
+\setbeamertemplate{navigation symbols}{}
+\defbeamertemplate*{footline}{customtheme}{%
+  % Keep the measured height constant, including on the cover.
+  \begin{beamercolorbox}[wd=\paperwidth,ht=5mm,dp=3mm,rightskip=5mm]{footline}
+    \hfill
+    \ifnum\insertpagenumber>1\relax
+      \insertframenumber/\inserttotalframenumber
+    \fi
+  \end{beamercolorbox}%
+}

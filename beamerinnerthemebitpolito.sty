@@ -1,0 +1,120 @@
+% ======================
+% COVER LAYOUTS
+% ======================
+\newsavebox{\bitpolito@coverpattern}
+\newsavebox{\bitpolito@covercontent}
+\newsavebox{\bitpolito@coverlogos}
+\newlength{\bitpolito@coverleft}
+\newlength{\bitpolito@covertextwidth}
+\setbeamertemplate{title page}{%
+  % Both orientations share the same text width, padding, and vertical rhythm.
+  \ifbitpolito@coverimageright
+    \setlength{\bitpolito@coverleft}{0.06\paperwidth}%
+  \else
+    \setlength{\bitpolito@coverleft}{0.475\paperwidth}%
+  \fi
+  \setlength{\bitpolito@covertextwidth}{0.465\paperwidth}%
+  \sbox{\bitpolito@coverlogos}{%
+    \raisebox{-0.5\height}{\includegraphics[height=0.105\paperheight]{\bitpolitoassetpath/polito-coat-of-arms-white.pdf}}%
+    \hspace{0.06\paperheight}%
+    \raisebox{-0.5\height}{\includegraphics[width=\bitpolito@groupcoverwidth,height=\bitpolito@groupcoverheight,keepaspectratio]{\bitpolitoassetpath/\bitpolito@groupcoverlogo}}%
+  }%
+  % Measure text outside TikZ so it uses the document's fonts.
+  \sbox{\bitpolito@covercontent}{%
+    \parbox{\bitpolito@covertextwidth}{%
+      \normalfont\normalsize\raggedright\color{white}%
+      {\usebeamerfont{title}\huge\inserttitle\par}%
+      \ifx\insertsubtitle\@empty\else
+        \vspace{0.020\paperheight}%
+        {\usebeamerfont{subtitle}\mdseries\large\insertsubtitle\par}%
+      \fi
+      \ifx\insertauthor\@empty\else
+        \vspace{0.055\paperheight}%
+        {\usebeamerfont{author}\bfseries\insertauthor\par}%
+      \fi
+      \ifx\insertinstitute\@empty\else
+        \vspace{0.008\paperheight}%
+        {\usebeamerfont{institute}\insertinstitute\par}%
+      \fi
+      \ifx\insertdate\@empty\else
+        \vspace{0.020\paperheight}%
+        {\usebeamerfont{date}\insertdate\par}%
+      \fi
+    }%
+  }%
+  % Bleed past every clipped edge; keep the artwork's original orientation.
+  \sbox{\bitpolito@coverpattern}{\includegraphics[height=1.04\paperheight]{\bitpolitoassetpath/first-page-background.pdf}}%
+  \ifdim\wd\bitpolito@coverpattern<0.43\paperwidth
+    \sbox{\bitpolito@coverpattern}{\includegraphics[width=0.43\paperwidth]{\bitpolitoassetpath/first-page-background.pdf}}%
+  \fi
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[bitpolito] (current page.south west) rectangle (current page.north east);
+    % The pattern has transparent gaps; give its clipped panel a white backing.
+    \begin{scope}
+      \ifbitpolito@coverimageright
+        \clip ([xshift=0.59\paperwidth]current page.south west) --
+          (current page.south east) -- (current page.north east) --
+          ([xshift=0.69\paperwidth]current page.north west) -- cycle;
+        \fill[white] (current page.south west) rectangle (current page.north east);
+        \node[anchor=north east,inner sep=0]
+          at ([xshift=0.01\paperwidth,yshift=0.005\paperheight]current page.north east)
+          {\usebox{\bitpolito@coverpattern}};
+      \else
+        \clip (current page.south west) --
+          ([xshift=0.41\paperwidth]current page.south west) --
+          ([xshift=0.31\paperwidth]current page.north west) --
+          (current page.north west) -- cycle;
+        \fill[white] (current page.south west) rectangle (current page.north east);
+        \node[anchor=north west,inner sep=0]
+          at ([xshift=-0.01\paperwidth,yshift=0.005\paperheight]current page.north west)
+          {\usebox{\bitpolito@coverpattern}};
+      \fi
+    \end{scope}
+    % Mirror only the diagonal divider, never the text or brand artwork.
+    \ifbitpolito@coverimageright
+      \fill[bitpolito-light]
+        ([xshift=0.59\paperwidth]current page.south west) --
+        ([xshift=0.59\paperwidth+4pt]current page.south west) --
+        ([xshift=0.69\paperwidth+4pt]current page.north west) --
+        ([xshift=0.69\paperwidth]current page.north west) -- cycle;
+    \else
+      \fill[bitpolito-light]
+        ([xshift=0.41\paperwidth-4pt]current page.south west) --
+        ([xshift=0.41\paperwidth]current page.south west) --
+        ([xshift=0.31\paperwidth]current page.north west) --
+        ([xshift=0.31\paperwidth-4pt]current page.north west) -- cycle;
+    \fi
+    % Use a shared left edge for the fixed logo row and the text block below.
+    \node[anchor=north west,inner sep=0]
+      at ([xshift=\bitpolito@coverleft,yshift=-0.09\paperheight]current page.north west)
+      {\usebox{\bitpolito@coverlogos}};
+    \node[anchor=west,inner sep=0]
+      at ([xshift=\bitpolito@coverleft,yshift=0.41\paperheight]current page.south west)
+      {\usebox{\bitpolito@covercontent}};
+  \end{tikzpicture}%
+}
+
+% ======================
+% MISCELLANEA
+% ======================
+% itemize
+\setbeamertemplate{itemize item}{\textemdash}
+\setbeamertemplate{itemize subitem}{\textemdash}
+\setbeamertemplate{itemize subsubitem}{\textemdash}
+
+% toc
+\setbeamertemplate{section in toc}{%
+  \leavevmode\leftskip=2ex%
+  \llap{\color{bitpolito-orange}\rule{1.5ex}{1.5ex}\hskip1ex}%
+  \inserttocsection\par%
+}
+
+% footnote
+\makeatletter
+\renewcommand\@makefntext[1]{%
+  \noindent
+  \tikz[baseline=(char.base)]{
+    \node[shape=circle, fill=bitpolito-orange, text=white, inner sep=0.5pt] (char) {\@thefnmark};
+  }~#1%
+}
+\makeatother

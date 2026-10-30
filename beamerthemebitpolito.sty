@@ -1,0 +1,78 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemebitpolito}[2026/10/30 BitPolito Beamer theme]
+\mode<presentation>
+
+% ======================
+% PACKAGES
+% ======================
+% graphics
+\RequirePackage{tikz}
+\RequirePackage{xcolor}
+\RequirePackage{graphicx}
+
+% font packages
+\RequirePackage{mathpazo}
+
+% Keep brand assets relocatable without editing the theme files.
+\providecommand{\bitpolitoassetpath}{images/bitpolito}
+\RequirePackage{bitpolitoassets}
+
+% Cover orientation is independent of the partner-logo selection.
+\newif\ifbitpolito@coverimageright
+% The selected group logo is shared by the cover and frame headers.
+\pgfkeys{
+  /bitpolito/cover/.is choice,
+  /bitpolito/cover/image-left/.code={\bitpolito@coverimagerightfalse},
+  /bitpolito/cover/image-right/.code={\bitpolito@coverimagerighttrue},
+  /bitpolito/bitpolitologo/.is choice,
+  /bitpolito/bitpolitologo/wordmark/.code={%
+    \def\bitpolito@brandlogo{logo-white.pdf}%
+    \def\bitpolito@brandcoverheight{0.08\paperheight}%
+    \def\bitpolito@brandheaderheight{0.04\paperheight}%
+  },
+  /bitpolito/bitpolitologo/monogram/.code={%
+    \def\bitpolito@brandlogo{monogram-white.pdf}%
+    \def\bitpolito@brandcoverheight{0.085\paperheight}%
+    \def\bitpolito@brandheaderheight{0.065\paperheight}%
+  },
+  /bitpolito/bitpolitologo/bull/.code={%
+    \def\bitpolito@brandlogo{bull-white.pdf}%
+    \def\bitpolito@brandcoverheight{0.095\paperheight}%
+    \def\bitpolito@brandheaderheight{0.095\paperheight}%
+  },
+  /bitpolito/group/.is choice,
+  /bitpolito/group/bitpolito/.code={%
+    \def\bitpolito@groupcoverlogo{\bitpolito@brandlogo}%
+    \def\bitpolito@groupheaderlogo{\bitpolito@brandlogo}%
+    \def\bitpolito@groupcoverwidth{0.24\paperwidth}%
+    \def\bitpolito@groupcoverheight{\bitpolito@brandcoverheight}%
+    \def\bitpolito@groupheaderheight{\bitpolito@brandheaderheight}%
+  },
+  /bitpolito/group/crypto/.code={%
+    \def\bitpolito@groupcoverlogo{crypto-primary-white.pdf}%
+    \def\bitpolito@groupheaderlogo{crypto-symbol-white.pdf}%
+    \def\bitpolito@groupcoverwidth{0.32\paperwidth}%
+    \def\bitpolito@groupcoverheight{0.105\paperheight}%
+    \def\bitpolito@groupheaderheight{0.095\paperheight}%
+  },
+  /bitpolito/cover=image-left,
+  /bitpolito/bitpolitologo=bull,
+  /bitpolito/group=bitpolito
+}
+\DeclareOptionBeamer{cover}{\pgfkeys{/bitpolito/cover=#1}}
+\DeclareOptionBeamer{group}{\pgfkeys{/bitpolito/group=#1}}
+\DeclareOptionBeamer{bitpolitologo}{\pgfkeys{/bitpolito/bitpolitologo=#1}}
+\ProcessOptionsBeamer
+
+% Also allow examples to preview both covers in a single document.
+\newcommand{\bitpolitocover}[1]{\pgfkeys{/bitpolito/cover=#1}}
+
+% ======================
+% LOAD PACKAGE
+% ======================
+\useinnertheme{bitpolito}
+\useoutertheme{bitpolito}
+\usecolortheme{bitpolito}
+\usefonttheme{bitpolito}
+
+\mode<all>

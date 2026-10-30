@@ -1,0 +1,24 @@
+% Compile from the repository root: python3 scripts/build.py examples/cover-layouts.tex
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito}
+
+\title[BitBeamer]{BitBeamer}
+\subtitle{Bitcoin-themed Template Showcase}
+\author[BitPolito]{BitPolito}
+\institute{Bitcoin Student Community}
+\date{Example Slides}
+
+\begin{document}
+% Page 1: classic cover, with the artwork on the left (the theme default).
+\bitpolitocover{image-left}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+
+% Page 2: mirrored layout, with text on the left and artwork on the right.
+% For a complete deck, choose \usetheme[cover=image-right]{bitpolito} instead.
+\bitpolitocover{image-right}
+\begin{frame}[plain]
+  \titlepage
+\end{frame}
+\end{document}
