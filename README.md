@@ -89,8 +89,10 @@ python3 scripts/release.py
 # Optional: python3 scripts/release.py --backend docker
 ```
 
-Outputs are in `dist/`. Local scripts never commit, tag, push, or publish.
-See [releasing](docs/RELEASING.md) for checks and GitHub automation.
+Outputs are in `dist/`. The script validates the ZIP before replacing a
+previous release. Local scripts never commit, tag, push, or publish.
+Use `python3 scripts/check-repo.py` to check tracked files. See
+[releasing](docs/RELEASING.md) for repository contents and GitHub automation.
 
 ## Find your way around
 

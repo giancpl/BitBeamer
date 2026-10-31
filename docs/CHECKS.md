@@ -1,17 +1,17 @@
 # Local verification report
 
-Verified on 30 October 2026. Changes are organized into local commits. No
-pushes, tags, GitHub runs, or publication were performed.
+Updated on 31 October 2026. Changes are organized into commits and pushed to
+GitHub. No tags or release publication have been performed.
 
 ## Completed locally
 
 | Check | Result |
 | --- | --- |
-| Python checks | All 27 tests passed with both SVG converters available. The host run passed 26 and skipped the Inkscape test because it is not installed on the host. |
+| Python checks | The expanded suite covers repository hygiene, failed-release preservation, path aliases, packaging, and artwork. See the audit below for the current test results. |
 | Documentation | Offline relative-link checks passed for the repository and both guides extracted from the ZIP. |
 | Catalogue freshness | Read-only check passed; entries come from the live library and descriptive metadata. |
 | Prepared artwork | All 171 assets are current; ordinary builds performed no conversion. |
-| Source preservation | SHA-256 comparison of 360 original and prepared artwork files found no changes. Metadata and provenance files were retained. |
+| Source preservation | SHA-256 comparison of 361 source and prepared artwork files found no changes. Metadata and provenance files were retained. |
 | Showcase | 11 PDF pages in both 16:9 and 4:3, with resolved Biber references. |
 | Header | Short titles and subtitles share the nominal 22% minimum. Wrapped headings expand it; text and both logos remain in the solid blue region. The accent uses pale blue `#EEF0FF` and the `0.99` edge; both default header logos use the same 9.5% slide-height size, centered vertically with equal outer page margins. |
 | Cover | The logos sit 9% below the top edge; title, subtitle, author, institute, and date share a left edge with the logos. Both `cover=image-left` and `cover=image-right` are included, with a two-page comparison. Optional logo pairs and the 4:3 layout were checked. |
@@ -22,7 +22,7 @@ pushes, tags, GitHub runs, or publication were performed.
 | Clean project copy | Native launcher and explicit Docker backend built successfully from a copy without Git metadata or previous outputs, in a path containing spaces. |
 | Overleaf package | All five documents, both cover orientations in 16:9 and 4:3, and the explicit logo selections compiled after extraction. Layout, missing assets, unresolved references, and recorded checkout dependencies passed validation. |
 | Independent TeX build | All five documents also compiled with only extracted release files mounted, using `latexmk` and Biber directly, with no Python launcher, converter, source checkout, network, or shell escape. |
-| ZIP reproducibility | Two packages from the same inputs produced identical bytes. The allowlist excludes raw SVGs, scripts, Docker files, and IDE configuration. |
+| ZIP reproducibility | Host Python 3.14 and container Python 3.11 produced byte-identical ZIPs from the same inputs; no compression library is needed. The allowlist excludes raw SVGs, scripts, Docker files, and IDE configuration. |
 
 The host has no TeX installation. Native compilation was exercised inside an
 existing Linux validation container using its TeX Live tools; the launcher used
@@ -31,20 +31,36 @@ The documented native installation steps are still required to build directly
 on this workstation without Docker.
 
 Final outputs are in `dist/`: the Overleaf ZIP, showcase, illustration example,
-complete catalogue, icon cheat sheet, and two-page cover comparison. Additional aspect-ratio and header
-preview PDFs are under `build/verification/`. These output folders are ignored
+complete catalogue, icon cheat sheet, and two-page cover comparison. Additional
+aspect-ratio and header preview PDFs are under `build/verification/`. These output folders are ignored
 by Git.
 
-## Configured but not run on GitHub
+## GitHub verification
 
-- Python launcher, asset, catalogue, and documentation checks on Linux, macOS,
-  and Windows.
-- Native Linux TeX compilation, converter tests, isolated ZIP validation,
-  source-change checks, and artifact upload.
-- Publication of the ZIP and five PDFs after a pushed `v*` tag passes all jobs.
+[Run 41109201114](https://github.com/giancpl/BitBeamer/actions/runs/41109201114)
+passed for commit `15cba3d`: launcher checks on Linux, macOS, and Windows,
+native Linux TeX builds, all logo/cover variants, and independent ZIP validation.
+The release-publication job was correctly skipped because this was a branch push.
 
-No actual macOS, Windows, IDE UI, or hosted Overleaf session was available for
-local testing. Cross-platform command construction and editor configuration
-are covered by the Python tests; hosted jobs remain pending.
+## Repository and release audit
+
+The 31 October audit preserves all 171 icon sources, prepared assets, and
+provenance. Four redundant `.gitkeep` files were removed. Compiled root/example
+PDFs and local archives are now explicitly ignored. `check-repo.py` rejects
+tracked local outputs; CI uploads only the six named release artifacts.
+
+The release script checks inputs before compilation and stages the ZIP and
+previews. Compilation/validation failures or missing preview files preserve
+previous release outputs; regression tests cover these cases. No SVG conversion
+is needed for ordinary builds or packaging.
+
+The 33-test suite passes locally (32 passed and the host Inkscape test skipped).
+The validation-container run also passes (its Git-only test is skipped because
+Git is absent there). Full native Linux TeX release generation is checked from
+an exported source copy in a path containing spaces, and the explicit Docker
+release backend is checked from the source checkout. The earlier successful
+GitHub run above covers the previous commit; see [current Actions runs](https://github.com/giancpl/BitBeamer/actions?query=branch%3Amain)
+for the hosted results of the audit commit.
+Hosted Overleaf UI and release publication have not been tested.
 
 For commands to repeat these checks, see [releasing](RELEASING.md).

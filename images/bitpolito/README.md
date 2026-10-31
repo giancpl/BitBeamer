@@ -44,8 +44,8 @@ Use `--color 8090FF` for lilac, or another six-digit hex colour.
 On Windows use `py -3` instead of `python3`. Conversion supports librsvg or
 Inkscape (`--converter inkscape`). The original SVG is preserved. Unlike
 individual icons, this background keeps its authored canvas; the theme crops
-it to the left cover panel without stretching. Ordinary builds and Overleaf
-use the supplied PDF and need no conversion tools.
+it to the selected left or right cover panel without stretching. Ordinary builds
+and Overleaf use the supplied PDF and need no conversion tools.
 
 To regenerate the PDFs, run `python3 scripts/build-bitpolito-assets.py` from
 the project root (requires PyGObject, librsvg, and pycairo). This step is not
@@ -55,8 +55,10 @@ The CrypTO header uses `crypto-symbol-white.pdf`, a clipped excerpt of the
 primary source PNG containing just the symbol. The original pixels are embedded
 without resampling. The cover pairs this symbol with the supplied standalone
 CrypTO wordmark, omitting the Italian subtitle from the rendered slides. Header logos
-have a shared height and a slightly wider gap. Cover logos and text share an
-inset of 47% of the page width and a right margin of 4%, adapting to 16:9 and 4:3.
+have a shared height and a slightly wider gap. Cover logos and text share one
+left edge: at 47.5% of the page width for
+`cover=image-left`, or 6% for `cover=image-right`. Both use a text width of
+46.5% of the page and adapt to 16:9 and 4:3.
 
 The closing slide uses `bitcoin-white.pdf`, prepared from
 `assets/symbols/bitcoin/bitcoin.svg` by `scripts/build-bitpolito-assets.py`.

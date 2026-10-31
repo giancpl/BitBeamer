@@ -24,3 +24,11 @@ Thumbs.db
 *.swo
 *~
 .venv/
+
+# Compiled previews and downloadable archives stay local.
+/*.pdf
+/examples/*.pdf
+*.zip
+*.7z
+*.tar.gz
+*.tmp

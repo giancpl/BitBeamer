@@ -9,13 +9,35 @@ python3 scripts/release.py
 python3 scripts/release.py --backend docker
 ```
 
-The command checks documentation links, compiles five documents, checks the
-catalogue's freshness, creates the ZIP, and validates the extracted template.
-PDF previews are exported after validation succeeds. Local scripts never
+The command checks documentation links, prepared artwork, and catalogue
+freshness before compiling five documents. It creates a temporary ZIP and
+validates the extracted template. The ZIP and five PDF previews replace the
+previous release files only after validation and preview preparation succeed.
+If compilation or validation fails, the previous release files remain available.
+Temporary staging files are removed automatically. Local scripts never
 commit, tag, push, or publish.
 
 Make provides the same workflow: `make release` or `make release BACKEND=docker`.
 `--image NAME` or `LATEX_IMAGE` chooses a compatible Docker image.
+
+## What belongs on GitHub
+
+Keep presentation and theme sources, the 171 original illustrations and their
+prepared PDFs, descriptive metadata, documentation, examples, build scripts,
+tests, and IDE/CI configuration in Git. Prepared PDFs are required so a clone
+works without artwork converters. Original source files support future edits.
+
+Compiled presentations, release ZIPs, caches, temporary files, and review
+outputs stay in ignored `build/` and `dist/` folders. Do not force-add them.
+The repository check examines tracked and staged paths:
+
+```sh
+python3 scripts/check-repo.py
+```
+
+CI runs this check on Linux, macOS, and Windows. It rejects tracked local
+outputs and redundant placeholders while allowing source and prepared artwork.
+Before committing, inspect `git status --short` and `git diff --cached --stat`.
 
 ## Release files
 
@@ -32,11 +54,13 @@ The ZIP places the presentation and reference documents at its root. It also
 includes theme files, the bibliography, prepared artwork, licences, an icon
 guide, and an Overleaf quick start. An explicit file list excludes development
 configuration, raw SVGs, local experiments, and unused artwork variants.
+Download the named `bitbeamer-overleaf.zip` release asset for Overleaf; GitHub's
+automatic source-code ZIP contains the development repository instead.
 
 The validator compiles every document and explicit bull, wordmark, monogram,
-and CrypTO variants in both cover orientations, plus 4:3 versions. It checks layout warnings, unresolved references, and
-recorded inputs for dependencies on the source checkout. The extracted documents
-compile with pdfLaTeX and Biber, without Python or shell escape.
+and CrypTO variants in both cover orientations, plus 4:3 versions. It checks
+layout warnings, unresolved references, and recorded inputs for dependencies
+on the source checkout. The extracted documents compile with pdfLaTeX and Biber, without Python or shell escape.
 
 See the [local verification report](CHECKS.md) for completed checks and pending
 hosted verification.
@@ -44,6 +68,7 @@ hosted verification.
 ## Individual checks
 
 ```sh
+python3 scripts/check-repo.py
 python3 scripts/check-docs.py
 python3 scripts/build-asset-catalogue.py --check
 python3 scripts/prepare-assets.py --check
@@ -58,15 +83,20 @@ python3 scripts/validate-release.py
 # Or: python3 scripts/validate-release.py --backend docker
 ```
 
-Packaging does not convert artwork or update tracked sources. Identical inputs
-produce identical ZIP bytes. Regenerate changed artwork and catalogues using
+The package-only command writes the ZIP directly and does not compile it;
+use `release.py` for the complete validated release. Packaging does not convert
+artwork or update tracked sources. The ZIP stores its already prepared files
+without recompression, so identical inputs produce identical bytes across
+Python/zlib versions; the current template is about 600 KB.
+Regenerate changed artwork and catalogues using
 [the maintenance workflow](ASSETS.md) before packaging.
 
 ## GitHub automation
 
 Python checks run on Linux, macOS, and Windows. Native Linux TeX runs the same
 release command and checks source files remain unchanged. Branch pushes and
-pull requests upload the six files as a workflow artifact.
+pull requests upload only the six named release files as a workflow artifact;
+other local files in `dist/` are excluded.
 
 A pushed tag starting with `v` publishes those files after all jobs pass.
 Once the repository is reviewed, committed, and pushed, publish when ready:

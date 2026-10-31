@@ -1,6 +1,6 @@
 PYTHON ?= python3
 BACKEND ?= native
-.PHONY: all setup build example assets catalogue preview package test validate-release release cheatsheet covers docs-check clean
+.PHONY: all setup build example assets catalogue preview package test validate-release release cheatsheet covers docs-check repo-check clean
 all: build
 setup:
 	$(PYTHON) scripts/build.py --setup --backend $(BACKEND)
@@ -22,6 +22,8 @@ covers:
 docs-check:
 	$(PYTHON) scripts/check-docs.py
 	$(PYTHON) scripts/build-asset-catalogue.py --check
+repo-check:
+	$(PYTHON) scripts/check-repo.py
 package:
 	$(PYTHON) scripts/package.py
 test:

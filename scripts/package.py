@@ -3,7 +3,7 @@
 import argparse
 from pathlib import Path
 import sys
-from zipfile import ZIP_DEFLATED, ZipFile, ZipInfo
+from zipfile import ZIP_STORED, ZipFile, ZipInfo
 
 from asset_library import check_prepared, inspect_library
 from asset_catalogue import check_catalogue
@@ -58,10 +58,11 @@ def package(root=ROOT, target=None):
     target.parent.mkdir(parents=True, exist_ok=True)
     temporary = target.with_name(target.name + '.tmp')
     try:
-        with ZipFile(temporary, 'w', ZIP_DEFLATED) as archive:
+        # Prepared PDFs are compact; storing entries avoids zlib-version differences.
+        with ZipFile(temporary, 'w', ZIP_STORED) as archive:
             for name, content in sorted(data.items()):
                 info = ZipInfo(name, date_time=(1980, 1, 1, 0, 0, 0))
-                info.compress_type = ZIP_DEFLATED
+                info.compress_type = ZIP_STORED
                 info.create_system = 3
                 info.external_attr = 0o100644 << 16
                 archive.writestr(info, content)

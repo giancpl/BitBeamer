@@ -118,6 +118,7 @@ existing compatible image. A native build never invokes Docker.
 ## Checks and releases
 
 ```sh
+python3 scripts/check-repo.py
 python3 scripts/check-docs.py
 python3 scripts/build-asset-catalogue.py --check
 python3 scripts/prepare-assets.py --check

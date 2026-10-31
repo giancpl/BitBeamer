@@ -6,9 +6,12 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import tempfile
 
 import build
 from package import DOCUMENT_SOURCES, package
+from asset_catalogue import check_catalogue
+from asset_library import check_prepared
 from doc_checks import check_docs
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -24,21 +27,31 @@ PREVIEWS = {
 def release(root=ROOT, backend='native', image=None):
     root = root.resolve()
     check_docs(root)
+    check_prepared(root)
+    check_catalogue(root)
     for document in DOCUMENT_SOURCES.values():
         arguments = [document, '--backend', backend]
         if image:
             arguments += ['--image', image]
         if build.main(arguments, root=root):
             raise RuntimeError(f'Release stopped: {document} did not compile.')
-    archive = package(root)
-    command = [sys.executable, str(root / 'scripts/validate-release.py'),
-               str(archive), '--backend', backend]
-    if image:
-        command += ['--image', image]
-    subprocess.run(command, cwd=root, check=True)
-    # Copy previews only after every independent archive build has passed.
-    for source, target in PREVIEWS.items():
-        shutil.copyfile(root / 'build' / source, root / 'dist' / target)
+    # Validate a staged ZIP before replacing any successful release files.
+    destination = root / 'dist'
+    destination.mkdir(parents=True, exist_ok=True)
+    archive = destination / 'bitbeamer-overleaf.zip'
+    with tempfile.TemporaryDirectory(prefix='.bitbeamer-release-', dir=destination) as temporary:
+        stage = Path(temporary)
+        prepared = package(root, stage / archive.name)
+        command = [sys.executable, str(root / 'scripts/validate-release.py'),
+                   str(prepared), '--backend', backend]
+        if image:
+            command += ['--image', image]
+        subprocess.run(command, cwd=root, check=True)
+        # Stage every preview before promoting the validated set.
+        for source, target in PREVIEWS.items():
+            shutil.copyfile(root / 'build' / source, stage / target)
+        for name in (archive.name, *PREVIEWS.values()):
+            (stage / name).replace(destination / name)
     return archive
 
 

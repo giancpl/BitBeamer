@@ -29,6 +29,7 @@ jobs:
       - run: python scripts/prepare-assets.py --check
       - run: python scripts/build-asset-catalogue.py --check
       - run: python scripts/check-docs.py
+      - run: python scripts/check-repo.py
       - run: python scripts/package.py
 
   latex:
@@ -51,12 +52,20 @@ jobs:
       - name: Build and verify release artifacts
         run: python3 scripts/release.py
       - name: Ensure builds did not rewrite source or prepared artwork
-        run: git diff --exit-code
+        run: |
+          python3 scripts/check-repo.py
+          git diff --exit-code
       - uses: actions/upload-artifact@v7
         with:
           name: release-files
           if-no-files-found: error
-          path: dist/
+          path: |
+            dist/bitbeamer-overleaf.zip
+            dist/bitbeamer-preview.pdf
+            dist/bitbeamer-illustrations.pdf
+            dist/bitbeamer-catalogue.pdf
+            dist/bitbeamer-icon-cheatsheet.pdf
+            dist/bitbeamer-cover-layouts.pdf
 
 
   release:

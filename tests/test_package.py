@@ -19,7 +19,8 @@ class PackageTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             target = Path(directory) / 'template.zip'
             before = {path: path.stat().st_mtime_ns for path in (ROOT / 'assets/generated').iterdir()}
-            with mock.patch.object(asset_library, 'render_svg', side_effect=AssertionError('Must not convert')):
+            with mock.patch.object(asset_library, 'render_svg', side_effect=AssertionError('Must not convert')), \
+                    mock.patch('zipfile.zlib', None):
                 package.package(ROOT, target)
             first = target.read_bytes()
             package.package(ROOT, target)
