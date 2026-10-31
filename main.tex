@@ -127,14 +127,12 @@ print(f"Fee: {fee_sat:,} sat")
   \hyperlink{showcase-start}{\beamergotobutton{Back to the first example}}
 \end{frame}
 
-% A plain frame lets the closing artwork fill the whole page.
+% A plain closing frame with centered white text on a blue background.
 \begin{frame}[plain]
   \begin{tikzpicture}[remember picture,overlay]
     \fill[bitpolito] (current page.south west) rectangle (current page.north east);
     \node[align=center,text=white,text width=0.82\paperwidth,inner sep=0]
       at (current page.center) {%
-        \includegraphics[height=0.16\paperheight]{\bitpolitoassetpath/bitcoin-white.pdf}\par
-        \vspace{0.045\paperheight}
         {\usebeamerfont{title}\color{white}Thank You!\par}
         \vspace{0.025\paperheight}
         {\Large Questions?\par}
