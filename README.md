@@ -6,29 +6,32 @@ frames and 11 PDF pages, including one overlay.
 
 ## Clone and build
 
-Install **Python 3.10+**, **TeX Live** (MacTeX on macOS), **latexmk**, and **Biber**.
-[Installation instructions](docs/SETUP.md) cover Linux, macOS, and Windows.
+Install **Python 3.10+** and **Docker**, then start Docker. No local LaTeX
+installation is needed for the default workflow. [Setup instructions](docs/SETUP.md)
+cover Docker and the native alternative on Linux, macOS, and Windows.
 
 ```sh
 git clone git@github.com:giancpl/BitBeamer.git
 cd BitBeamer
-python3 scripts/build.py --setup
 python3 scripts/build.py
 ```
 
 Output: `build/main.pdf`. On Windows, replace `python3` with `py -3`.
 You can also clone over HTTPS: `https://github.com/giancpl/BitBeamer.git`.
 
-Open the folder in VS Code and press **Ctrl+Shift+B** for the default native
-build. LaTeX Workshop recipes use the same launcher; Windows users choose the
-Windows native recipe. Docker is optional and selected explicitly:
+The first build creates the Docker image automatically and needs internet
+access; it can take several minutes. Later builds reuse the image and compile
+offline. Cloning alone does not download an image.
+
+Open the folder in VS Code and press **Ctrl+Shift+B** to build with Docker.
+LaTeX Workshop uses the same launcher; Windows users choose its Windows Docker
+recipe. Prepared artwork is included, so compilation needs no SVG conversion.
+
+Already have TeX Live or MacTeX, latexmk, and Biber? Build directly with:
 
 ```sh
-python3 scripts/build.py --backend docker
+python3 scripts/build.py --backend native
 ```
-
-A normal build needs neither Docker nor an SVG converter. Prepared artwork is
-included; the launcher reports stale or missing assets before compiling.
 
 ## Edit slides
 
@@ -86,7 +89,7 @@ To build the ZIP and all five PDF references locally:
 
 ```sh
 python3 scripts/release.py
-# Optional: python3 scripts/release.py --backend docker
+# Native alternative: python3 scripts/release.py --backend native
 ```
 
 Outputs are in `dist/`. The script validates the ZIP before replacing a

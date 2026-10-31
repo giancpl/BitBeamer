@@ -1,4 +1,4 @@
-"""Compile the release archive in isolation, with native TeX or explicit Docker."""
+"""Compile the release archive in isolation, using Docker by default."""
 
 import argparse
 import os
@@ -99,7 +99,7 @@ def validate(archive):
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive', nargs='?', type=Path, default=Path(__file__).resolve().parents[1] / 'dist/bitbeamer-overleaf.zip')
-    parser.add_argument('--backend', choices=('native', 'docker'), default='native')
+    parser.add_argument('--backend', choices=('native', 'docker'), default='docker')
     parser.add_argument('--image', default=os.environ.get('LATEX_IMAGE', 'bitbeamer-latex:local'))
     args = parser.parse_args(argv)
     try:
@@ -112,7 +112,7 @@ def main(argv=None):
             command += ['--mount', f'type=bind,source={CHECKOUT},target=/source,readonly',
                         '--mount', f'type=bind,source={archive},target=/release.zip,readonly',
                         '--workdir', '/source', '--entrypoint', 'python3', args.image,
-                        'scripts/validate-release.py', '/release.zip']
+                        'scripts/validate-release.py', '/release.zip', '--backend', 'native']
             subprocess.run(command, check=True)
         else:
             validate(archive)

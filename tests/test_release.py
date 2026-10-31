@@ -87,7 +87,7 @@ class ReleaseTests(unittest.TestCase):
         with mock.patch.object(release.build, 'main', return_value=0) as build, \
                 mock.patch.object(release, 'package', side_effect=self.prepared_archive), \
                 mock.patch.object(release.subprocess, 'run') as run:
-            self.assertEqual(release.release(self.root, 'docker', 'local-image'), self.archive)
+            self.assertEqual(release.release(self.root, image='local-image'), self.archive)
         self.assertEqual(self.archive.read_bytes(), b'new validated archive')
         self.assertEqual(set(p.name for p in (self.root / 'dist').iterdir()),
                          {self.archive.name, *release.PREVIEWS.values()})

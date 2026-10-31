@@ -24,7 +24,7 @@ PREVIEWS = {
 }
 
 
-def release(root=ROOT, backend='native', image=None):
+def release(root=ROOT, backend='docker', image=None):
     root = root.resolve()
     check_docs(root)
     check_prepared(root)
@@ -57,7 +57,7 @@ def release(root=ROOT, backend='native', image=None):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('--backend', choices=('native', 'docker'), default='native')
+    parser.add_argument('--backend', choices=('native', 'docker'), default='docker')
     parser.add_argument('--image', default=os.environ.get('LATEX_IMAGE'))
     args = parser.parse_args()
     try:

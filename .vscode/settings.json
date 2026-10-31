@@ -8,7 +8,9 @@
       "args": [
         "%WORKSPACE_FOLDER%/scripts/build.py",
         "%DOC%",
-        "%OUTDIR%"
+        "%OUTDIR%",
+        "--backend",
+        "native"
       ]
     },
     {
@@ -18,7 +20,9 @@
         "-3",
         "%WORKSPACE_FOLDER%/scripts/build.py",
         "%DOC%",
-        "%OUTDIR%"
+        "%OUTDIR%",
+        "--backend",
+        "native"
       ]
     },
     {
@@ -47,27 +51,27 @@
   ],
   "latex-workshop.latex.recipes": [
     {
+      "name": "BitBeamer: Docker",
+      "tools": [
+        "bitbeamer-docker"
+      ]
+    },
+    {
+      "name": "BitBeamer: Docker \u2014 Windows",
+      "tools": [
+        "bitbeamer-docker-windows"
+      ]
+    },
+    {
       "name": "BitBeamer: native TeX Live",
       "tools": [
         "bitbeamer-native"
       ]
     },
     {
-      "name": "BitBeamer: native TeX Live — Windows",
+      "name": "BitBeamer: native TeX Live \u2014 Windows",
       "tools": [
         "bitbeamer-native-windows"
-      ]
-    },
-    {
-      "name": "BitBeamer: Docker (optional)",
-      "tools": [
-        "bitbeamer-docker"
-      ]
-    },
-    {
-      "name": "BitBeamer: Docker (optional) — Windows",
-      "tools": [
-        "bitbeamer-docker-windows"
       ]
     }
   ]

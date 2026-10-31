@@ -31,7 +31,7 @@ class LauncherTests(unittest.TestCase):
 
     def test_missing_native_tools_never_invoke_docker(self):
         with mock.patch.object(build.shutil, 'which', return_value=None), mock.patch.object(build.subprocess, 'run') as run:
-            self.assertEqual(build.main([], root=self.root), 1)
+            self.assertEqual(build.main(['--backend', 'native'], root=self.root), 1)
             run.assert_not_called()
         self.assertIn('Missing native tools', self.stderr.getvalue())
 
@@ -39,7 +39,7 @@ class LauncherTests(unittest.TestCase):
         document = self.root / 'slides with spaces.tex'
         document.write_text('test', encoding='utf-8')
         with mock.patch.object(build.shutil, 'which', side_effect=lambda name: name), mock.patch.object(build.subprocess, 'run') as run:
-            self.assertEqual(build.main([str(document), 'output with spaces', '--force'], root=self.root), 0)
+            self.assertEqual(build.main([str(document), 'output with spaces', '--force', '--backend', 'native'], root=self.root), 0)
         command = run.call_args.args[0]
         self.assertEqual(command[0], 'latexmk')
         self.assertIn('-g', command)
@@ -48,9 +48,9 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual(run.call_args.kwargs['cwd'], self.root)
         self.assertNotIn('shell', run.call_args.kwargs)
 
-    def test_setup_does_not_compile_or_create_output(self):
+    def test_native_setup_does_not_compile_or_create_output(self):
         with mock.patch.object(build.shutil, 'which', side_effect=lambda name: name), mock.patch.object(build.subprocess, 'run') as run:
-            self.assertEqual(build.main(['--setup'], root=self.root), 0)
+            self.assertEqual(build.main(['--backend', 'native', '--setup'], root=self.root), 0)
             run.assert_not_called()
         self.assertFalse((self.root / 'build').exists())
 
@@ -69,17 +69,35 @@ class LauncherTests(unittest.TestCase):
                 self.assertEqual(build.main([str(doc)], root=self.root), 1)
                 run.assert_not_called()
 
-    def test_explicit_docker_builds_image_only_when_missing(self):
+    def test_default_docker_builds_image_only_when_missing(self):
         responses = [subprocess.CompletedProcess([], 0), subprocess.CompletedProcess([], 1),
                      subprocess.CompletedProcess([], 0), subprocess.CompletedProcess([], 0)]
         with mock.patch.object(build.shutil, 'which', return_value='docker'), mock.patch.object(build.subprocess, 'run', side_effect=responses) as run:
-            self.assertEqual(build.main(['--backend', 'docker'], root=self.root), 0)
+            self.assertEqual(build.main([], root=self.root), 0)
         commands = [call.args[0] for call in run.call_args_list]
         self.assertEqual(commands[0], ['docker', 'info'])
         self.assertEqual(commands[2][:2], ['docker', 'build'])
         self.assertEqual(commands[3][:3], ['docker', 'run', '--rm'])
         self.assertIn('none', commands[3])
         self.assertIn(f'type=bind,source={self.root},target=/source,readonly', commands[3])
+
+    def test_missing_default_docker_reports_native_option_without_falling_back(self):
+        with mock.patch.object(build.shutil, 'which', return_value=None), \
+                mock.patch.object(build, 'native_tools') as native, \
+                mock.patch.object(build.subprocess, 'run') as run:
+            self.assertEqual(build.main([], root=self.root), 1)
+            native.assert_not_called()
+            run.assert_not_called()
+        self.assertIn('--backend native', self.stderr.getvalue())
+
+    def test_docker_setup_prepares_image_without_compiling(self):
+        responses = [subprocess.CompletedProcess([], 0), subprocess.CompletedProcess([], 1),
+                     subprocess.CompletedProcess([], 0)]
+        with mock.patch.object(build.shutil, 'which', return_value='docker'), \
+                mock.patch.object(build.subprocess, 'run', side_effect=responses) as run:
+            self.assertEqual(build.main(['--setup'], root=self.root), 0)
+        self.assertEqual(run.call_args.args[0][:2], ['docker', 'build'])
+        self.assertFalse((self.root / 'build').exists())
 
     def test_windows_docker_command_omits_unix_user_and_normalizes_document(self):
         with mock.patch.object(build.sys, 'platform', 'win32'):
@@ -92,14 +110,18 @@ class LauncherTests(unittest.TestCase):
         self.assertIn('MacTeX', build.install_help('darwin'))
         self.assertIn('apt-get', build.install_help('linux'))
 
-    def test_editor_tasks_use_launcher_with_native_default(self):
+    def test_editor_tasks_use_launcher_with_docker_default(self):
         data = json.loads((ROOT / '.vscode/tasks.json').read_text(encoding='utf-8'))
         default = next(task for task in data['tasks'] if task.get('group', {}).get('isDefault'))
         self.assertIn('${workspaceFolder}/scripts/build.py', default['args'])
-        self.assertNotIn('docker', default['args'])
+        self.assertNotIn('--backend', default['args'])
+        self.assertNotIn('--backend', default['windows']['args'])
         self.assertEqual(default['windows']['command'], 'py')
         recipes = json.loads((ROOT / '.vscode/settings.json').read_text(encoding='utf-8'))
-        self.assertIn('native', recipes['latex-workshop.latex.recipes'][0]['name'])
+        self.assertIn('Docker', recipes['latex-workshop.latex.recipes'][0]['name'])
+        for tool in recipes['latex-workshop.latex.tools']:
+            if tool['name'].startswith('bitbeamer-native'):
+                self.assertEqual(tool['args'][-2:], ['--backend', 'native'])
 
 
 if __name__ == '__main__':

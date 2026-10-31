@@ -1,4 +1,4 @@
-"""Portable native LaTeX launcher. Docker is used only with --backend docker."""
+"""Portable LaTeX launcher. Docker is the default; native TeX is opt-in."""
 
 import argparse
 import os
@@ -32,17 +32,17 @@ def native_tools():
     missing = [tool for tool in TOOLS if not shutil.which(tool)]
     if missing:
         raise RuntimeError('Missing native tools: ' + ', '.join(missing) + '.\n'
-                           + install_help() + '\nDocker is optional: explicitly use --backend docker.')
+                           + install_help() + '\nUse --backend docker to compile in the configured container instead.')
     return shutil.which('latexmk')
 
 
 def docker_image(root, image):
     docker = shutil.which('docker')
     if not docker:
-        raise RuntimeError('Docker was explicitly selected but is not installed. Install Docker or use native TeX Live.')
+        raise RuntimeError('Docker is the default compiler but is not installed. Install and start Docker, or use --backend native with TeX Live/MacTeX; see docs/SETUP.md.')
     probe = subprocess.run([docker, 'info'], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     if probe.returncode:
-        raise RuntimeError('Cannot access Docker. Start Docker and check your user permissions.')
+        raise RuntimeError('Cannot access Docker. Start Docker and check your user permissions, or use --backend native with an installed TeX distribution.')
     probe = subprocess.run([docker, 'image', 'inspect', image], stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
     if probe.returncode:
         subprocess.run([docker, 'build', '-t', image, '.'], cwd=root, check=True)
@@ -67,9 +67,9 @@ def main(argv=None, root=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('document', nargs='?', default='main.tex')
     parser.add_argument('output', nargs='?', default='build')
-    parser.add_argument('--backend', choices=('native', 'docker'), default='native')
+    parser.add_argument('--backend', choices=('native', 'docker'), default='docker')
     parser.add_argument('--image', default=os.environ.get('LATEX_IMAGE', 'bitbeamer-latex:local'))
-    parser.add_argument('--setup', action='store_true', help='Check dependencies without compiling')
+    parser.add_argument('--setup', action='store_true', help='Prepare the selected backend without compiling (builds a missing Docker image)')
     parser.add_argument('--force', '-g', action='store_true', help='Force latexmk to rebuild')
     parser.add_argument('--open', action='store_true', help='Open the compiled PDF in the default viewer')
     args = parser.parse_args(argv)

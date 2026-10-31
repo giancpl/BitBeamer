@@ -5,9 +5,12 @@ On Windows replace `python3` with `py -3`.
 
 ```sh
 python3 scripts/release.py
-# Explicit Docker alternative:
-python3 scripts/release.py --backend docker
+# Native TeX alternative:
+python3 scripts/release.py --backend native
 ```
+
+Docker is the default; install/start it and Python as described in setup.
+The first invocation prepares a missing compiler image automatically.
 
 The command checks documentation links, prepared artwork, and catalogue
 freshness before compiling five documents. It creates a temporary ZIP and
@@ -17,7 +20,7 @@ If compilation or validation fails, the previous release files remain available.
 Temporary staging files are removed automatically. Local scripts never
 commit, tag, push, or publish.
 
-Make provides the same workflow: `make release` or `make release BACKEND=docker`.
+Make provides the same workflow: `make release` or `make release BACKEND=native`.
 `--image NAME` or `LATEX_IMAGE` chooses a compatible Docker image.
 
 ## What belongs on GitHub
@@ -80,7 +83,7 @@ To package only, then validate separately:
 ```sh
 python3 scripts/package.py
 python3 scripts/validate-release.py
-# Or: python3 scripts/validate-release.py --backend docker
+# Native alternative: python3 scripts/validate-release.py --backend native
 ```
 
 The package-only command writes the ZIP directly and does not compile it;
@@ -93,7 +96,7 @@ Regenerate changed artwork and catalogues using
 
 ## GitHub automation
 
-Python checks run on Linux, macOS, and Windows. Native Linux TeX runs the same
+Python checks run on Linux, macOS, and Windows. Native Linux TeX explicitly selects `--backend native` for the
 release command and checks source files remain unchanged. Branch pushes and
 pull requests upload only the six named release files as a workflow artifact;
 other local files in `dist/` are excluded.

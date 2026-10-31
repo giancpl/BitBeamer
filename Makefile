@@ -1,5 +1,5 @@
 PYTHON ?= python3
-BACKEND ?= native
+BACKEND ?= docker
 .PHONY: all setup build example assets catalogue preview package test validate-release release cheatsheet covers docs-check repo-check clean
 all: build
 setup:

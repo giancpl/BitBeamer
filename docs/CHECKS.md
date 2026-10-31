@@ -37,8 +37,8 @@ by Git.
 
 ## GitHub verification
 
-[Run 41109201114](https://github.com/giancpl/BitBeamer/actions/runs/41109201114)
-passed for commit `15cba3d`: launcher checks on Linux, macOS, and Windows,
+[Run 41202721701](https://github.com/giancpl/BitBeamer/actions/runs/41202721701)
+passed for commit `e7e6546`: launcher checks on Linux, macOS, and Windows,
 native Linux TeX builds, all logo/cover variants, and independent ZIP validation.
 The release-publication job was correctly skipped because this was a branch push.
 
@@ -54,8 +54,8 @@ previews. Compilation/validation failures or missing preview files preserve
 previous release outputs; regression tests cover these cases. No SVG conversion
 is needed for ordinary builds or packaging.
 
-The 33-test suite passes locally (32 passed and the host Inkscape test skipped).
-The validation-container run also passes (its Git-only test is skipped because
+The audit's 33-test suite passed locally (32 passed and the host Inkscape test skipped).
+The validation-container run also passed (its Git-only test is skipped because
 Git is absent there). Full native Linux TeX release generation is checked from
 an exported source copy in a path containing spaces, and the explicit Docker
 release backend is checked from the source checkout. The earlier successful
@@ -64,3 +64,21 @@ for the hosted results of the audit commit.
 Hosted Overleaf UI and release publication have not been tested.
 
 For commands to repeat these checks, see [releasing](RELEASING.md).
+
+## Default compiler backend
+
+Docker is now the default for the launcher, Make, IDE builds, release generation,
+and standalone ZIP validation. `--backend native` remains available and is
+explicitly selected by the Linux CI job. Validation inside the compiler container
+also selects native TeX explicitly, avoiding nested Docker.
+
+Tests cover default image preparation, missing-Docker messages, explicit native
+builds without Docker, and propagation of the selected release backend. All 37
+tests pass on the host (Inkscape skipped) and in the validation container (Git
+skipped). Running `python3 scripts/release.py` without flags produced all six
+artifacts and passed the 20-document isolated archive validation. An exported
+source copy in a path containing spaces also compiled the showcase and cover
+comparison with `--backend native`. The host still has no native TeX tools;
+that check used the validation container's TeX installation. The
+Overleaf ZIP still contains only TeX sources, guides, and prepared artwork and
+compiles without Docker or Python.
