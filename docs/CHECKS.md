@@ -106,3 +106,18 @@ its dedicated monospaced code font.
 The Docker, native setup, and CI dependency lists include Inter support.
 Hosted CI runs on push; the Overleaf web interface has not been tested for
 these typography changes.
+
+## Reusable closing slide
+
+The theme provides `\closingframe`, with optional `title`, `subtitle`, and
+`copyright` keys. Its default rendering is pixel-identical to the preceding
+inline slide. Copyright defaults to the current year and BitPolito. The
+showcase now calls the command and retains 10 numbered frames and 11 PDF pages.
+
+Six-frame checks in 16:9 and 4:3 verified custom text, commas in the copyright,
+restoration of defaults on subsequent calls, hidden elements, an empty closing
+slide, and normal frame numbering/layout afterwards. PDF text extraction and
+layout logs passed. All 37 Python tests passed (host Inkscape check skipped),
+and all 20 isolated release builds passed with refreshed ZIP and PDF artifacts.
+The source and Overleaf guides document the command. Hosted CI runs on push;
+the Overleaf web interface has not been tested for this command.

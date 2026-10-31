@@ -40,6 +40,13 @@ Choose one theme declaration. Combine options when needed, for example
 `\usetheme[cover=image-right,group=crypto]{bitpolito}`. Select
 `cover-layouts.tex` as the main document to preview both orientations.
 
+## Add the closing slide
+
+Insert `\closingframe` before `\end{document}`, outside any frame. It creates
+the standard blue closing slide with white text and the current-year copyright.
+Use `\closingframe[title={Thank you!},subtitle={Questions?},copyright={}]`
+to customize the text or hide the copyright.
+
 ## Insert icons
 
 ```latex

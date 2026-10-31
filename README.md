@@ -63,6 +63,13 @@ Both covers use left-aligned text and logos. Preview both with
 Title-only and subtitled frames share a standard header height. Wrapped titles
 expand the header when needed. Use `aspectratio=43` for 4:3 instead of 16:9.
 
+## Add the closing slide
+
+Insert `\closingframe` before `\end{document}`, outside any frame. It creates
+the standard blue closing slide with white text and the current-year copyright.
+Use `\closingframe[title={Thank you!},subtitle={Questions?},copyright={}]`
+to customize the text or hide the copyright.
+
 ## Use icons
 
 ```latex

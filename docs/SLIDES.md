@@ -16,7 +16,7 @@ including a single additional overlay page. Everything is in English.
 | Display mathematics, a table and footnote | “Math and Tables” |
 | Literal Python code in a fragile frame | “Code Examples” |
 | Biber citations and an internal hyperlink | “References and Navigation” |
-| Plain frame, full blue background and centered white artwork | Closing slide |
+| One-command closing slide, blue background and centered white text | `\closingframe` |
 
 Comments above each frame point out the corresponding Beamer features.
 All 171 illustrations remain available through [the asset catalogue](../assets/CATALOGUE.md).
@@ -78,6 +78,33 @@ For icon syntax, use [the icon guide](ICONS.md) and the
 
 Leave out the second argument for a title-only frame. The header adjusts the
 font automatically while keeping its standard height. Longer headings can wrap.
+
+## Add the closing slide
+
+Place this command before `\end{document}`, outside any other frame:
+
+```latex
+\closingframe
+```
+
+It creates the standard full-blue closing slide with centered white
+“Thank You!” and “Questions?” text and a bottom-centered copyright using the
+current year and BitPolito. It works in both 16:9 and 4:3.
+
+Override any text for that call with optional keys:
+
+```latex
+\closingframe[
+  title={Thank you for joining!},
+  subtitle={Let's discuss Bitcoin.},
+  copyright={\textcopyright{} 2026, My Community}
+]
+```
+
+Use `subtitle={}` or `copyright={}` to hide that element. An empty `title={}`
+also works. Each call starts from the defaults, so custom text does not affect
+later calls. The command creates a numbered plain frame, matching the original
+closing slide. To replace its layout, redefine the Beamer `closing page` template.
 
 ## Reveal content progressively
 

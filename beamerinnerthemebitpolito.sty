@@ -95,6 +95,51 @@
 }
 
 % ======================
+% STANDARD CLOSING SLIDE
+% ======================
+\pgfkeys{
+  /bitpolito/closing/.is family,
+  /bitpolito/closing/title/.store in=\bitpolito@closingtitle,
+  /bitpolito/closing/subtitle/.store in=\bitpolito@closingsubtitle,
+  /bitpolito/closing/copyright/.store in=\bitpolito@closingcopyright
+}
+\setbeamertemplate{closing page}{%
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[bitpolito] (current page.south west) rectangle (current page.north east);
+    \node[align=center,text=white,text width=0.82\paperwidth,inner sep=0]
+      at (current page.center) {%
+        \ifx\bitpolito@closingtitle\@empty\else
+          {\usebeamerfont{title}\color{white}\bitpolito@closingtitle\par}%
+        \fi
+        \ifx\bitpolito@closingsubtitle\@empty\else
+          \ifx\bitpolito@closingtitle\@empty\else
+            \vspace{0.025\paperheight}%
+          \fi
+          {\Large\bitpolito@closingsubtitle\par}%
+        \fi
+      };
+    \ifx\bitpolito@closingcopyright\@empty\else
+    \node[anchor=south,text=white,font=\scriptsize,inner sep=0]
+      at ([yshift=0.055\paperheight]current page.south)
+      {\bitpolito@closingcopyright};
+    \fi
+  \end{tikzpicture}
+}
+% Insert a complete frame; each call starts from the same defaults.
+\newcommand{\closingframe}[1][]{%
+  \begingroup
+  \pgfkeys{/bitpolito/closing/.cd,
+    title={Thank You!},
+    subtitle={Questions?},
+    copyright={\textcopyright{} \the\year, BitPolito},
+    #1}%
+  \begin{frame}[plain]
+    \usebeamertemplate{closing page}%
+  \end{frame}
+  \endgroup
+}
+
+% ======================
 % MISCELLANEA
 % ======================
 % itemize

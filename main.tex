@@ -127,20 +127,7 @@ print(f"Fee: {fee_sat:,} sat")
   \hyperlink{showcase-start}{\beamergotobutton{Back to the first example}}
 \end{frame}
 
-% A plain closing frame with centered white text on a blue background.
-\begin{frame}[plain]
-  \begin{tikzpicture}[remember picture,overlay]
-    \fill[bitpolito] (current page.south west) rectangle (current page.north east);
-    \node[align=center,text=white,text width=0.82\paperwidth,inner sep=0]
-      at (current page.center) {%
-        {\usebeamerfont{title}\color{white}Thank You!\par}
-        \vspace{0.025\paperheight}
-        {\Large Questions?\par}
-      };
-    \node[anchor=south,text=white,font=\scriptsize,inner sep=0]
-      at ([yshift=0.055\paperheight]current page.south)
-      {\textcopyright{} 2026, BitPolito};
-  \end{tikzpicture}
-\end{frame}
+% Standard closing slide, provided by the theme.
+\closingframe
 
 \end{document}
