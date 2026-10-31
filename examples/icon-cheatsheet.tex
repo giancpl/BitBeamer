@@ -2,7 +2,7 @@
 \documentclass[10pt,a4paper]{article}
 \usepackage[margin=16mm]{geometry}
 \usepackage[T1]{fontenc}
-\usepackage[scaled=0.95]{helvet}
+\usepackage[sfdefault,scaled=0.95,semibold]{inter}
 \renewcommand{\familydefault}{\sfdefault}
 \usepackage{xcolor,booktabs,tabularx,courier}
 \usepackage{bitpolitoassets}
@@ -94,7 +94,7 @@ Alice & Bob
 The rendered pair above illustrates the placement; the code uses Beamer columns.
 
 \section*{Colour and troubleshooting}
-\begin{tabularx}{\textwidth}{@{}p{38mm}X@{}}
+\begin{tabularx}{\textwidth}{@{}>{\raggedright\arraybackslash}p{38mm}>{\raggedright\arraybackslash}X@{}}
 \toprule
 \textbf{Question} & \textbf{What to do} \\
 \midrule

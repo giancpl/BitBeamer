@@ -82,3 +82,27 @@ comparison with `--backend native`. The host still has no native TeX tools;
 that check used the validation container's TeX installation. The
 Overleaf ZIP still contains only TeX sources, guides, and prepared artwork and
 compiles without Docker or Python.
+
+## Inter typography
+
+Inter is now the default: Regular body text and Semibold headings/emphasis at
+95% scale. The Helvetica selection and redundant font-comparison PDF were
+removed. Formula and code fonts retain their dedicated roles. The closing
+slide uses centered text with the copyright restored to the bottom.
+
+The Docker image was rebuilt from the updated Dockerfile, including the
+standard Inter and font-encoding packages. All 37 Python checks pass on the
+host (Inkscape skipped), documentation links pass, and all 171 assets remain
+current. The showcase has 11 pages; the catalogue has 22 pages and the icon
+cheat sheet has two A4 pages. Embedded PDF font inspection confirms Inter
+Regular, Semibold, and Italic with no Helvetica text font.
+
+All 20 isolated archive builds passed, including logo variants, both cover
+orientations, and 4:3 layouts. Packaging the same inputs again produced identical
+ZIP bytes. No temporary preview font files are required by these builds.
+The printable icon guide also uses Inter Regular and Semibold; Courier remains
+its dedicated monospaced code font.
+
+The Docker, native setup, and CI dependency lists include Inter support.
+Hosted CI runs on push; the Overleaf web interface has not been tested for
+these typography changes.

@@ -24,7 +24,7 @@ def install_help(platform=None):
         return ('Install MacTeX from https://tug.org/mactex/ and add '
                 '/Library/TeX/texbin to PATH, then restart your IDE/terminal.')
     return ('Install TeX Live, latexmk, and Biber. Debian/Ubuntu: sudo apt-get install '
-            'latexmk texlive-latex-extra texlive-fonts-recommended texlive-bibtex-extra biber. '
+            'latexmk texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-greek texlive-bibtex-extra biber. '
             'Fedora: see docs/SETUP.md. Restart your IDE/terminal after updating PATH.')
 
 

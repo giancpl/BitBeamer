@@ -1,8 +1,9 @@
 # BitBeamer
 
-A BitPolito Beamer theme with blue diagonal headers, a patterned cover, and
-**171 vector illustrations**. The compact English showcase contains 10 numbered
-frames and 11 PDF pages, including one overlay.
+A BitPolito Beamer theme with blue diagonal headers, a patterned cover,
+**171 vector illustrations**, and Inter typography (Regular text, Semibold
+headings). The compact English showcase contains 10 numbered frames and
+11 PDF pages, including one overlay.
 
 ## Clone and build
 

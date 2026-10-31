@@ -42,13 +42,18 @@ it does not switch backends silently.
 Use `--backend native` when you already have or prefer a local TeX installation.
 This backend needs Python, pdfLaTeX, latexmk, and Biber and never invokes Docker.
 The prepared illustration library is included, so SVG converters are optional.
+The theme uses Inter Regular and Semibold; install the Inter font package and
+its LY1/Greek encoding support. The commands below include these dependencies.
+For an upstream TeX Live installation, use `tlmgr install inter ly1 greek-fontenc cbfonts-fd`
+if they are missing; full TeX Live and MacTeX installations already include them.
 
 ### Debian / Ubuntu
 
 ```sh
 sudo apt-get update
 sudo apt-get install python3 latexmk texlive-latex-extra \
-  texlive-fonts-recommended texlive-bibtex-extra biber
+  texlive-fonts-recommended texlive-fonts-extra texlive-lang-greek \
+  texlive-bibtex-extra biber
 python3 scripts/build.py --backend native --setup
 python3 scripts/build.py --backend native
 ```
@@ -59,7 +64,8 @@ Install TeX Live with the template's text, math, and bibliography packages:
 
 ```sh
 sudo dnf install python3 latexmk biber texlive-scheme-medium \
-  texlive-mathpazo texlive-palatino texlive-helvetic texlive-biblatex
+  texlive-mathpazo texlive-palatino texlive-inter texlive-ly1 \
+  texlive-greek-fontenc texlive-cbfonts-fd texlive-biblatex
 python3 scripts/build.py --backend native --setup
 python3 scripts/build.py --backend native
 ```
@@ -132,6 +138,7 @@ launcher additionally checks whether artwork needs regeneration.
 | --- | --- |
 | Docker is missing or unavailable | Install/start Docker and check `docker info`, or select `--backend native` after installing TeX. |
 | The first build takes longer | Docker is preparing the image; subsequent builds reuse it. |
+| `inter.sty` is missing | Rebuild an older Docker image with `docker build -t bitbeamer-latex:local .`; for native builds, install the Inter dependencies listed above. |
 | A native TeX command is missing | Run `python3 scripts/build.py --backend native --setup`; install the listed tools and restart the IDE. |
 | A prepared icon is stale | Follow [artwork maintenance](ASSETS.md); ordinary compilation never converts SVGs. |
 | An icon name is unknown | Check [the catalogue](../assets/CATALOGUE.md) and [the icon guide](ICONS.md). |

@@ -120,3 +120,9 @@ all logo variants, run `python3 scripts/release.py`.
 The presentation keeps the existing BitBeamer layout; the examples
 use standard Beamer, TikZ, and `booktabs`. All are available in the
 documented TeX prerequisites and the prepared Overleaf release.
+
+## Typography
+
+Inter is the default sans-serif typeface: Regular body text and Semibold titles
+and emphasis, scaled to 95%. The settings are in `beamerfontthemebitpolito.sty`.
+Math keeps Pazo Math, and verbatim code uses a monospaced font.

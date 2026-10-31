@@ -4,6 +4,9 @@
 2. Select **main.tex** as the main document and **pdfLaTeX** as the compiler.
 3. Edit the title, author, date, and slide content. Overleaf runs Biber for citations.
 
+The default typeface is Inter, with Regular body text and Semibold headings.
+It uses the TeX distribution's Inter package with pdfLaTeX.
+
 The compact English showcase has 10 numbered frames and 11 PDF pages, including
 one overlay. Its source comments identify columns, blocks, diagrams, formulas,
 tables, code, footnotes, and navigation.
