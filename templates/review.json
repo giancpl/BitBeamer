@@ -1,0 +1,1267 @@
+{
+  "schema": 1,
+  "selection": [
+    "cover",
+    "contents",
+    "section-divider",
+    "statement-arrow",
+    "glow-statement",
+    "blue-statement",
+    "two-columns",
+    "list-rail-light",
+    "three-cards",
+    "three-step-process",
+    "four-card-grid",
+    "vertical-split",
+    "image-left",
+    "image-right",
+    "four-images",
+    "hero-number",
+    "line-chart",
+    "horizontal-timeline",
+    "cycle",
+    "merkle-tree",
+    "table",
+    "equation",
+    "code",
+    "closing"
+  ],
+  "templates": {
+    "cover": {
+      "status": "in review",
+      "notes": "",
+      "use": "Introduce a talk and its author.",
+      "example": {
+        "title": "Your talk\\\\title",
+        "author": "Your name",
+        "institute": "Your institute"
+      }
+    },
+    "contents": {
+      "status": "in review",
+      "notes": "",
+      "use": "Outline four sections.",
+      "example": {
+        "title": "Contents",
+        "item-2-1": "Motivation",
+        "item-2-2": "How it works",
+        "item-2-3": "Examples",
+        "item-2-4": "Discussion"
+      }
+    },
+    "section-divider": {
+      "status": "in review",
+      "notes": "",
+      "use": "Separate sections.",
+      "example": {
+        "title": "Your section"
+      }
+    },
+    "tabbed-agenda": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cover-light": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cover-photo": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cover-script-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cover-dashboard": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cover-wide-title": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "agenda-with-icons": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "agenda-with-schedule": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "statement-arrow": {
+      "status": "in review",
+      "notes": "",
+      "use": "Introduce a short claim.",
+      "example": {
+        "title": "Your statement"
+      }
+    },
+    "quotation": {
+      "status": "supplementary",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "glow-statement": {
+      "status": "in review",
+      "notes": "",
+      "use": "Emphasize a central message.",
+      "example": {
+        "statement": "Your main idea"
+      }
+    },
+    "blue-statement": {
+      "status": "in review",
+      "notes": "",
+      "use": "Present a statement on blue.",
+      "example": {
+        "title": "Your statement"
+      }
+    },
+    "icon-spotlight-light": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "icon-spotlight-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "oversized-word": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "chat-dialogue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "speech-panel": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "chat-three-messages": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "oversized-number-light": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "oversized-number-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "diagonal-photo-title": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "title-paragraphs": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "title-centered-paragraphs": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "statement-with-credit": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "people-speech-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "paired-icons-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-columns": {
+      "status": "in review",
+      "notes": "",
+      "use": "Explain two approaches side by side.",
+      "example": {
+        "title": "Two approaches"
+      }
+    },
+    "list-rail-light": {
+      "status": "in review",
+      "notes": "",
+      "use": "Pair a concept with a short list.",
+      "example": {
+        "title": "Your concept"
+      }
+    },
+    "list-rail-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "grouped-rail": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "labelled-rows": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "checklist-rail": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "feature-spotlight": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "privacy-levels": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "title-two-column-list": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "partner-rail": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "icon-rail": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "privacy-levels-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "stepped-rail-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "three-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "Show three illustrated concepts.",
+      "example": {
+        "title": "Three useful tools",
+        "caption-one": "Learn",
+        "caption-two": "Build",
+        "caption-three": "Share",
+        "graphic-one": "\\asset[width=1cm]{alice}"
+      }
+    },
+    "three-step-process": {
+      "status": "in review",
+      "notes": "",
+      "use": "Explain a three-step process.",
+      "example": {
+        "title": "First step",
+        "text-2": "Second step",
+        "text-3": "Third step"
+      }
+    },
+    "two-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "four-card-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "Group four short explanations.",
+      "example": {
+        "title": "Four ideas"
+      }
+    },
+    "eight-icon-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "four-step-process": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-step-process": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "milestone-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "twelve-word-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "three-card-summary": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "four-pillar-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "hardware-options": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "software-options": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-card-vertical": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "callout-explanation": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "six-outline-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "six-explanation-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "five-icon-row": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "square-icon-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "incentives-card-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "network-environments": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "node-type-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "horizontal-split": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "benefits-limits": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "before-after": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "vertical-split": {
+      "status": "in review",
+      "notes": "",
+      "use": "Compare two alternatives.",
+      "example": {
+        "title": "Second option",
+        "text-1": "First option"
+      }
+    },
+    "onchain-offchain": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "photo-split": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "split-outline-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "split-process-cards": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "coin-comparison": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "image-left": {
+      "status": "in review",
+      "notes": "",
+      "use": "Pair a large image with a short label.",
+      "example": {
+        "title": "Your subject",
+        "graphic-1": "\\asset[width=3cm]{alice}"
+      }
+    },
+    "image-right": {
+      "status": "in review",
+      "notes": "",
+      "use": "Explain a figure or photograph.",
+      "example": {
+        "title": "Your example"
+      }
+    },
+    "image-overlay": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "four-images": {
+      "status": "in review",
+      "notes": "",
+      "use": "Compare four images.",
+      "example": {}
+    },
+    "three-portraits": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-image-comparison": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "gallery-collage": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "screenshot-callout": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "resource-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "photo-collage-banner": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "photo-collage-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "photo-triptych": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "image-pair-title": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "nine-logo-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "screenshot-pair": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "phone-screenshot": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "photo-center-two-icons": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "abacus-explanation": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "whitepaper-blue": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "partner-media-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "mission-badges": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "image-logo-pair": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "hero-number": {
+      "status": "in review",
+      "notes": "",
+      "use": "Highlight one key number.",
+      "example": {
+        "title": "21 million",
+        "text-2": "A short explanation"
+      }
+    },
+    "three-statistics": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "line-chart": {
+      "status": "in review",
+      "notes": "",
+      "use": "Present a chart; data can come from CSV.",
+      "example": {
+        "title": "Demo",
+        "text-1": "Example curve",
+        "text-3": "",
+        "text-4": "Illustrative data",
+        "data-file": "examples/data/studio-line.csv"
+      }
+    },
+    "diagonal-number": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "unit-conversion": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "bar-comparison": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "scatter-comparison": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "adoption-curve": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "metric-dashboard": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "ranked-podium": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-charts": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "three-charts": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "world-map": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "europe-map": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "bubble-chart": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "price-lines": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "purchasing-power": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "currency-equivalence": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "photo-statistics-collage": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "split-currency": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "success-dashboard": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "diagram-annotated-energy": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "card-statistics-process": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-key-pair": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "large-figure": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "horizontal-timeline": {
+      "status": "in review",
+      "notes": "",
+      "use": "Show events along a timeline.",
+      "example": {
+        "title": "Your timeline"
+      }
+    },
+    "vertical-timeline": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cycle": {
+      "status": "in review",
+      "notes": "",
+      "use": "Explain a repeating process.",
+      "example": {
+        "title": "Your process"
+      }
+    },
+    "decision-tree": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "system-architecture": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "radial-goals": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "nested-circles": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "separate-circles": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "triangle-tradeoff": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "layered-stack": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "alternating-timeline": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "network-topologies": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "five-spoke-values": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "three-spoke-benefits": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-radial-groups": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "personal-timeline": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "nested-outline-circles": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "two-steps-outline": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "bullseye-values": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "table": {
+      "status": "supplementary",
+      "notes": "",
+      "use": "Present a compact table.",
+      "example": {
+        "title": "Your table"
+      }
+    },
+    "equation": {
+      "status": "in review",
+      "notes": "",
+      "use": "Explain a formula.",
+      "example": {
+        "expression": "\\color{bitpolito}\\Large$E=mc^2$"
+      }
+    },
+    "code": {
+      "status": "in review",
+      "notes": "",
+      "use": "Show code from a separate text file.",
+      "example": {
+        "title": "Your example",
+        "code-file": "examples/code/studio-transaction.txt"
+      }
+    },
+    "references": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "hash-avalanche": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "key-derivation": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "signature-flow": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-sequence": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "block-chain": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "merkle-tree": {
+      "status": "in review",
+      "notes": "",
+      "use": "Explain a tree with editable labels.",
+      "example": {
+        "title": "Merkle\\\\Tree"
+      }
+    },
+    "fork-branches": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "transaction-flow": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cipher-mapping": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "encryption-flow": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "payoff-matrix": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "payment-channel": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "proof-of-work-flow": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "seed-key-tree": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cryptographic-assumptions": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "routing-graph": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-symmetric": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-public-keys": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-key-lock": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-key-exchange": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-signed-message": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-encrypted-message": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-unlock-message": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-signed-payload": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-key-setup": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-token-transfer": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-token-routing": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-key-aggregation": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-aggregate-signature": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-eavesdropping": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "protocol-encrypted-channel": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "symmetric-encryption": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "asymmetric-encryption": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "merkle-tree-wide": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "diagram-transaction-inputs": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "seed-grid-caption": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "diagram-pool-shares": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "layers-overview": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "multi-signature": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "blockchain-with-list": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "double-spend-diagram": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "key-to-addresses": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "dual-consensus-diagram": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "cipher-wheel": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "blue-resources-columns": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "genesis-information": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "regtest-instructions": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "block-inspection": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "mining-card-grid": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "contact-qr": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "apply-qr": {
+      "status": "in review",
+      "notes": "",
+      "use": "",
+      "example": {}
+    },
+    "closing": {
+      "status": "in review",
+      "notes": "",
+      "use": "Close the talk.",
+      "example": {
+        "title": "Thank you!"
+      }
+    }
+  }
+}

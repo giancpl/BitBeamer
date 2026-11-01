@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1691" height="316" viewBox="1571 277 1691 316"><defs><pattern id="pattern0_5453_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5453_36" transform="scale(0.00195312)" />
+</pattern>
+<image id="image0_5453_36" width="512" height="512" preserveAspectRatio="none" xlink:href="resources/1b5c4961f87b1543ec753c3615ff1370b4266b1a39b9ef6b7baa8f590cc69a28.png" />
+<pattern id="pattern1_5453_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5453_36" transform="scale(0.00195312)" />
+</pattern>
+<pattern id="pattern2_5453_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5453_36" transform="scale(0.00195312)" />
+</pattern>
+<pattern id="pattern3_5453_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5453_36" transform="scale(0.00195312)" />
+</pattern>
+<pattern id="pattern4_5453_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5453_36" transform="scale(0.00195312)" />
+</pattern>
+<pattern id="pattern5_5453_36" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5453_36" transform="scale(0.00195312)" />
+</pattern>
+</defs><rect x="1571" y="277" width="268" height="268" fill="url(#pattern0_5453_36)" />
+<rect x="1851" y="277" width="268" height="268" fill="url(#pattern1_5453_36)" />
+<rect x="2126" y="277" width="268" height="268" fill="url(#pattern2_5453_36)" />
+<rect x="2399" y="277" width="268" height="268" fill="url(#pattern3_5453_36)" />
+<rect x="2673" y="277" width="268" height="268" fill="url(#pattern4_5453_36)" />
+<rect x="2946" y="277" width="268" height="268" fill="url(#pattern5_5453_36)" />
+<rect x="1910" y="423" width="21" height="141" rx="10.5" transform="rotate(90 1910 423)" fill="#001CE0" />
+<rect x="2190" y="423" width="21" height="141" rx="10.5" transform="rotate(90 2190 423)" fill="#001CE0" />
+<rect x="2469" y="422" width="21" height="141" rx="10.5" transform="rotate(90 2469 422)" fill="#001CE0" />
+<rect x="2742" y="423" width="21" height="141" rx="10.5" transform="rotate(90 2742 423)" fill="#001CE0" />
+<rect x="3022" y="423" width="21" height="141" rx="10.5" transform="rotate(90 3022 423)" fill="#001CE0" />
+</svg>

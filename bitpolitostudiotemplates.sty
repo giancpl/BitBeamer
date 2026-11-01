@@ -1,0 +1,45 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bitpolitostudiotemplates}[2026/10/31 Named Studio template library]
+\@ifpackageloaded{beamerthemebitpolito-studio}{}{%
+  \PackageError{bitpolitostudiotemplates}{Select the Studio theme first}{Use usetheme bitpolito-studio before loading this optional package.}}
+\RequirePackage{bitpolitostudiolayouts,bitpolitostudiomeasured,booktabs,pgfplots,qrcode}
+\pgfplotsset{compat=1.18}
+\providecommand{\studiotemplatepath}{templates/studio}
+\newcommand{\DeclareStudioTemplate}[1]{\expandafter\def\csname studio@template@#1\endcsname{#1}}
+% Compatibility names share one source; optional defaults preserve their examples.
+\newcommand{\DeclareStudioTemplateAlias}[3]{%
+ \expandafter\def\csname studio@template@#1\endcsname{#2}%
+ \expandafter\def\csname studio@defaults@#1\endcsname{#3}%
+}
+\newcommand{\studiotemplate}[2][]{%
+  \begingroup\def\studiocurrenttemplate{#2}\def\studiotemplateoptions{#1}%
+  \let\studiotemplatedefaults\@empty
+  \ifcsname studio@defaults@#2\endcsname
+   \expandafter\let\expandafter\studiotemplatedefaults\csname studio@defaults@#2\endcsname
+  \fi
+  \ifcsname studio@template@#2\endcsname
+    \edef\studio@source{\csname studio@template@#2\endcsname}%
+    \input{\studiotemplatepath/\studio@source.tex}%
+  \else
+    \PackageError{bitpolitostudiotemplates}{Unknown Studio template '#2'}{Choose a name from templates/CATALOGUE.md.}%
+  \fi\endgroup
+}
+
+\newcommand{\studiocodeoverride}[1]{%
+ \pgfkeysgetvalue{/studio values/code-file}\studio@filename
+ \ifx\studio@filename\@empty\studiofield{#1}\else
+  \VerbatimInput[fontsize=\small]{\studio@filename}%
+ \fi
+}
+\newcommand{\studioplotsoverride}[3]{%
+ \pgfkeysgetvalue{/studio values/data-file}\studio@filename
+ \ifx\studio@filename\@empty\else
+ \studiodeclarefield{#1}{\begin{tikzpicture}\begin{axis}[
+  width=#2\studiounit,height=#3\studiounit,hide axis,scale only axis,
+  enlargelimits=false,clip=true]
+  \addplot[bitpolito,line width=5\studiounit] table[x=x,y=y,col sep=comma]{\studio@filename};
+  \end{axis}\end{tikzpicture}}%
+ \fi
+}
+\input{\studiotemplatepath/registry.tex}
+\endinput

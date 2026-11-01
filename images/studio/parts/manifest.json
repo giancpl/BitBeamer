@@ -1,0 +1,1009 @@
+{
+  "schema": 1,
+  "status": "in-review",
+  "parts": [
+    {
+      "name": "cover-pattern",
+      "reference": "figma-0175",
+      "group": 0,
+      "children": [
+        1
+      ],
+      "render_box": [
+        2296,
+        0,
+        1260,
+        2000
+      ],
+      "content_box": [
+        2296,
+        0,
+        1260,
+        2000
+      ],
+      "anchor": [
+        2296,
+        0
+      ],
+      "notes": "Original pattern clipped at the slide boundaries.",
+      "source": "images/studio/parts/source/cover-pattern.svg",
+      "source_sha256": "8ecf7ac0a6e9b1e94491ddd0f4b0b801093e7e510bde8fcaeb33ef5b4fae4b8e",
+      "reference_sha256": "2b6cbfc0306954fb072f2997ea791043d8787d76dd8c002aaf8ddf7412cf44ba",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_1937_307"
+      ],
+      "pdf_sha256": "afb7701e5efc3399fc9fdd2c98afaf25b864ef79935549f6427ecb4285809ce5"
+    },
+    {
+      "name": "cover-bull",
+      "reference": "figma-0175",
+      "group": 0,
+      "children": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "render_box": [
+        376,
+        202,
+        193,
+        158
+      ],
+      "content_box": [
+        376,
+        202,
+        193,
+        158
+      ],
+      "anchor": [
+        376,
+        202
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/cover-bull.svg",
+      "source_sha256": "8450bf01435e7cdf75f77fd1c5cad7b67295e7888a2200c00840f26e813f19b0",
+      "reference_sha256": "2b6cbfc0306954fb072f2997ea791043d8787d76dd8c002aaf8ddf7412cf44ba",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_1937_307"
+      ],
+      "pdf_sha256": "0bbe3c43ea813a0c68dc7fd7486337c4390dccb72390a5eb4e6b185acd42281e"
+    },
+    {
+      "name": "cover-crest",
+      "reference": "figma-0175",
+      "group": 0,
+      "children": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "render_box": [
+        618,
+        202,
+        159,
+        158
+      ],
+      "content_box": [
+        618,
+        202,
+        159,
+        158
+      ],
+      "anchor": [
+        618,
+        202
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/cover-crest.svg",
+      "source_sha256": "2d56b7733c18f5755a36948edc86ae27407c81b369ed06e388ff7c89885da433",
+      "reference_sha256": "2b6cbfc0306954fb072f2997ea791043d8787d76dd8c002aaf8ddf7412cf44ba",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_1937_307"
+      ],
+      "pdf_sha256": "6681545f8c3fbe725aa5e0f298397c437c15c674c387a9293d921b17c8e48b23"
+    },
+    {
+      "name": "card-1",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        2
+      ],
+      "render_box": [
+        766,
+        766,
+        488,
+        489
+      ],
+      "content_box": [
+        810,
+        784,
+        400,
+        400
+      ],
+      "anchor": [
+        766,
+        766
+      ],
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region.",
+      "source": "images/studio/parts/source/card-1.svg",
+      "source_sha256": "b33ab84812db298826efd96393a733639d4a5bb79021dc6571b8606de8ddb9c1",
+      "reference_sha256": "c13e5168923712ab406fd0f36e68fea3d870fe74a1728bbbbf6d608e789cfb14",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "filter0_dii_3467_686"
+      ],
+      "effect_fallback": "Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.",
+      "png_sha256": "62777aef8dc0188b7f1292bab2db883ee97fc61c04587a334384d3568996e14d",
+      "pdf_sha256": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471"
+    },
+    {
+      "name": "card-icon-1",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        8
+      ],
+      "render_box": [
+        910,
+        871,
+        201,
+        225
+      ],
+      "content_box": [
+        910,
+        871,
+        201,
+        225
+      ],
+      "anchor": [
+        910,
+        871
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/card-icon-1.svg",
+      "source_sha256": "6eeabb54002f3814bfc657df4b37437a9f0fe6c2ce427ec83ad09f5f4612eae0",
+      "reference_sha256": "c13e5168923712ab406fd0f36e68fea3d870fe74a1728bbbbf6d608e789cfb14",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "d5b8bed7e616efded5ceb498f7beb56b8da292ef799e7c29650b6469a3ce7906"
+    },
+    {
+      "name": "card-2",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        4
+      ],
+      "render_box": [
+        1537,
+        766,
+        488,
+        489
+      ],
+      "content_box": [
+        1581,
+        784,
+        400,
+        400
+      ],
+      "anchor": [
+        1537,
+        766
+      ],
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region.",
+      "source": "images/studio/parts/source/card-2.svg",
+      "source_sha256": "136ad92106141ae9884fbd2cfd34d89cc1c61b1f22caf21132764867b072f76e",
+      "reference_sha256": "c13e5168923712ab406fd0f36e68fea3d870fe74a1728bbbbf6d608e789cfb14",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "filter1_dii_3467_686"
+      ],
+      "effect_fallback": "Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.",
+      "png_sha256": "62777aef8dc0188b7f1292bab2db883ee97fc61c04587a334384d3568996e14d",
+      "pdf_sha256": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471"
+    },
+    {
+      "name": "card-icon-2",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        10
+      ],
+      "render_box": [
+        1689,
+        883,
+        180,
+        201
+      ],
+      "content_box": [
+        1689,
+        883,
+        180,
+        201
+      ],
+      "anchor": [
+        1689,
+        883
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/card-icon-2.svg",
+      "source_sha256": "c607956404f4d0271e2e8d4339eaff84b901d6937c8b90b510a36f09b3fb462b",
+      "reference_sha256": "c13e5168923712ab406fd0f36e68fea3d870fe74a1728bbbbf6d608e789cfb14",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "36c1ed39ad691aef444f99a0e92676748c426bf85c1bbd16df68d285b7ebd9d1"
+    },
+    {
+      "name": "card-3",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        6
+      ],
+      "render_box": [
+        2308,
+        766,
+        488,
+        489
+      ],
+      "content_box": [
+        2352,
+        784,
+        400,
+        400
+      ],
+      "anchor": [
+        2308,
+        766
+      ],
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region.",
+      "source": "images/studio/parts/source/card-3.svg",
+      "source_sha256": "3a4ff03f4011a9e950ec39869933c2093393947659610a5914967c826451c936",
+      "reference_sha256": "c13e5168923712ab406fd0f36e68fea3d870fe74a1728bbbbf6d608e789cfb14",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "filter2_dii_3467_686"
+      ],
+      "effect_fallback": "Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.",
+      "png_sha256": "62777aef8dc0188b7f1292bab2db883ee97fc61c04587a334384d3568996e14d",
+      "pdf_sha256": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471"
+    },
+    {
+      "name": "card-icon-3",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        9
+      ],
+      "render_box": [
+        2429,
+        860,
+        246,
+        247
+      ],
+      "content_box": [
+        2429,
+        860,
+        246,
+        247
+      ],
+      "anchor": [
+        2429,
+        860
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/card-icon-3.svg",
+      "source_sha256": "fc8ed3cf365bd3d7d17c5047dac4be656368c79c567330a7c39616f64cd328b8",
+      "reference_sha256": "c13e5168923712ab406fd0f36e68fea3d870fe74a1728bbbbf6d608e789cfb14",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "9f09fa38f7ca23db121949156f365d739364fea059ed0e4fba4e7d29fea628dd"
+    },
+    {
+      "name": "radial-glow",
+      "reference": "figma-0793",
+      "group": 0,
+      "children": [
+        1
+      ],
+      "render_box": [
+        0,
+        0,
+        3556,
+        2000
+      ],
+      "content_box": [
+        0,
+        0,
+        3556,
+        2000
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "notes": "Original radial gradient and transform; clipped to the original canvas.",
+      "source": "images/studio/parts/source/radial-glow.svg",
+      "source_sha256": "fea0d86d02d05dff36e323c63fdf56aad9aafbec3ddad9d7b169cbb8249f0526",
+      "reference_sha256": "562051f5fdd056409401289cf8cd4a4b00f962b718a3ead85512824e27d81ee2",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_2339_1355",
+        "paint0_radial_2339_1355"
+      ],
+      "pdf_sha256": "6c3c684e4dcfbe0101055b56151bfd1e3b8bd84a7b1aaa09a876dddddb5d77b2"
+    },
+    {
+      "name": "dashboard-grid",
+      "reference": "figma-1006",
+      "group": 0,
+      "children": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "render_box": [
+        1678,
+        0,
+        1878,
+        2000
+      ],
+      "content_box": [
+        1678,
+        0,
+        1878,
+        2000
+      ],
+      "anchor": [
+        1678,
+        0
+      ],
+      "notes": "Includes original masks and fading strokes; off-canvas panels are intentionally clipped.",
+      "source": "images/studio/parts/source/dashboard-grid.svg",
+      "source_sha256": "fb656f36f4d1cc29a3ade5e48e5532f7cb861138e124cf9116b048eb675ff7ed",
+      "reference_sha256": "ee243bb7c5a8560e2a0903e2a38a16101b1aea59c08bde6b567f8d8ad3d5071f",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_3171_2811",
+        "paint0_linear_3171_2811",
+        "paint1_linear_3171_2811",
+        "paint2_linear_3171_2811",
+        "paint3_linear_3171_2811",
+        "stroke0_3171_2811",
+        "stroke10_3171_2811",
+        "stroke11_3171_2811",
+        "stroke12_3171_2811",
+        "stroke13_3171_2811",
+        "stroke14_3171_2811",
+        "stroke1_3171_2811",
+        "stroke2_3171_2811",
+        "stroke3_3171_2811",
+        "stroke4_3171_2811",
+        "stroke5_3171_2811",
+        "stroke6_3171_2811",
+        "stroke7_3171_2811",
+        "stroke8_3171_2811",
+        "stroke9_3171_2811"
+      ],
+      "pdf_sha256": "ac14abf3a021723883d40903887eaaa2a09db132d4a823fc234057dafac53c99"
+    },
+    {
+      "name": "protocol-bob",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        1
+      ],
+      "render_box": [
+        2754,
+        308,
+        224,
+        212
+      ],
+      "content_box": [
+        2754,
+        308,
+        224,
+        212
+      ],
+      "anchor": [
+        2754,
+        308
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/protocol-bob.svg",
+      "source_sha256": "c7981fbf5411833c7761b1cb4eaf9d72509a822d40aef03b0fc4e722cd09d390",
+      "reference_sha256": "df3ac372f1cd7c44cf2844bc9444b49ed90bb0e167bcc4052bd20ea258b40310",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "990365bdd19fd975fcf86ddefa2e30e7f4834958b5ece16bcab7d36b04fcde54"
+    },
+    {
+      "name": "protocol-alice",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        2
+      ],
+      "render_box": [
+        603,
+        308,
+        224,
+        212
+      ],
+      "content_box": [
+        603,
+        308,
+        224,
+        212
+      ],
+      "anchor": [
+        603,
+        308
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/protocol-alice.svg",
+      "source_sha256": "a315b2451ab7e1acbe61ef65e896604af3121a45cc7e53aabd040d64804ffd3d",
+      "reference_sha256": "df3ac372f1cd7c44cf2844bc9444b49ed90bb0e167bcc4052bd20ea258b40310",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "8875320dde4a3cfb30caaca5525efebee76b90307e292c1f58f8c5389cda8842"
+    },
+    {
+      "name": "protocol-warning",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        3
+      ],
+      "render_box": [
+        1319,
+        1610,
+        212,
+        212
+      ],
+      "content_box": [
+        1319,
+        1610,
+        212,
+        212
+      ],
+      "anchor": [
+        1319,
+        1610
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/protocol-warning.svg",
+      "source_sha256": "d1d867b977dd3ba9605714a5dcaafe45c956a2a9979f0c2369590e3e796d8f25",
+      "reference_sha256": "df3ac372f1cd7c44cf2844bc9444b49ed90bb0e167bcc4052bd20ea258b40310",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "2517fa73c3b98666de60dfc3e7d8925c1d2892ac087961a41790ce7f5b79d699"
+    },
+    {
+      "name": "protocol-observer",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        5
+      ],
+      "render_box": [
+        1687,
+        308,
+        180,
+        212
+      ],
+      "content_box": [
+        1687,
+        308,
+        180,
+        212
+      ],
+      "anchor": [
+        1687,
+        308
+      ],
+      "notes": "",
+      "source": "images/studio/parts/source/protocol-observer.svg",
+      "source_sha256": "977392279cb307181bed43fc6757664d78837cebc6d370dae67f01ff9762deb2",
+      "reference_sha256": "df3ac372f1cd7c44cf2844bc9444b49ed90bb0e167bcc4052bd20ea258b40310",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "ac19a59f2b7db5ba6cf71cd53d66766786762ca9af65f8eae7c65b8f5ec7148b"
+    },
+    {
+      "name": "collage-1",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        1
+      ],
+      "render_box": [
+        2222,
+        -161,
+        989.204,
+        1237
+      ],
+      "content_box": [
+        2222,
+        -161,
+        989.204,
+        1237
+      ],
+      "anchor": [
+        2222,
+        -161
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-1.svg",
+      "source_sha256": "39765d1a3ac5df0471926a39dd38e82938619f8da918179a9e6c9b2e900ae495",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/b4a92b2fb3d440902e43b9cf3a5486c8785533b40e7b70fc5e9307924961ab25.jpg",
+          "sha256": "b4a92b2fb3d440902e43b9cf3a5486c8785533b40e7b70fc5e9307924961ab25"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image0_4191_2",
+        "pattern0_4191_2"
+      ],
+      "pdf_sha256": "cc6546f8bcd63aba8620651e34cf18881f0012b52ea2dbe348f0dd8995fcc485"
+    },
+    {
+      "name": "collage-2",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        2
+      ],
+      "render_box": [
+        347,
+        -110,
+        987,
+        1237
+      ],
+      "content_box": [
+        347,
+        -110,
+        987,
+        1237
+      ],
+      "anchor": [
+        347,
+        -110
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-2.svg",
+      "source_sha256": "9beca2a152647698ad1faf878a26d768c964598fa79eca30c62c8d3e7377b7ac",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/5da823a77cb91c4a845e58c3a8c9e21b910e4a8cf35574a88e682f84082db8eb.jpg",
+          "sha256": "5da823a77cb91c4a845e58c3a8c9e21b910e4a8cf35574a88e682f84082db8eb"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image1_4191_2",
+        "pattern1_4191_2"
+      ],
+      "renderer": "Original JPEG streams; no recompression.",
+      "pdf_sha256": "e415a7ba3354f4e589b606b5b8bca2c4913e461c0feb018f4c152e7849c5993c"
+    },
+    {
+      "name": "collage-3",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        3
+      ],
+      "render_box": [
+        1233,
+        321,
+        989,
+        1237
+      ],
+      "content_box": [
+        1233,
+        321,
+        989,
+        1237
+      ],
+      "anchor": [
+        1233,
+        321
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-3.svg",
+      "source_sha256": "e1c9969fe9b7d804307d9f4a974bb97e5cf383845b0000adf6fe1238abf41d70",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/7dd85ea28da29f5ac399ce8c09fe89f38e889e92aa16fdd7c1906a3079680bf5.jpg",
+          "sha256": "7dd85ea28da29f5ac399ce8c09fe89f38e889e92aa16fdd7c1906a3079680bf5"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image2_4191_2",
+        "pattern2_4191_2"
+      ],
+      "renderer": "Original JPEG streams; no recompression.",
+      "pdf_sha256": "559b5eed6978fc3d57aefa9f67bf2140fbfc20c81976159bb0a448f8574cc9a5"
+    },
+    {
+      "name": "collage-4",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        5
+      ],
+      "render_box": [
+        834,
+        1076,
+        989.204,
+        1236.51
+      ],
+      "content_box": [
+        834,
+        1076,
+        989.204,
+        1236.51
+      ],
+      "anchor": [
+        834,
+        1076
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-4.svg",
+      "source_sha256": "015899ee2322b51f5f11f6e6ec44b8c5f7c10813be3b8e598111b86481869040",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/7c92a7c1e122cc12a60b49b4b3b86b18ad65346a13028b3e92005f1d7d1534da.jpg",
+          "sha256": "7c92a7c1e122cc12a60b49b4b3b86b18ad65346a13028b3e92005f1d7d1534da"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image3_4191_2",
+        "pattern3_4191_2"
+      ],
+      "pdf_sha256": "f27912879a895d43157bad652d198f888e7215ae85d13ca21ef24abc429b6445"
+    },
+    {
+      "name": "collage-5",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        6
+      ],
+      "render_box": [
+        1764,
+        940,
+        989.204,
+        1236.51
+      ],
+      "content_box": [
+        1764,
+        940,
+        989.204,
+        1236.51
+      ],
+      "anchor": [
+        1764,
+        940
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-5.svg",
+      "source_sha256": "e6d6b494c691dbfec689ac2f9b19aee1d68dc2c173e78e652704ed119ddb8fc7",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/3fa4b70920998203b3d7bdc0b4e8785762cc2dd283f483680a05d321573fb5cf.jpg",
+          "sha256": "3fa4b70920998203b3d7bdc0b4e8785762cc2dd283f483680a05d321573fb5cf"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image4_4191_2",
+        "pattern4_4191_2"
+      ],
+      "pdf_sha256": "79719128c25305f6f85fd2056a19322c7b07a73e5d53c3dd83636cb06fb7c71b"
+    },
+    {
+      "name": "collage-6",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        7
+      ],
+      "render_box": [
+        2655,
+        651,
+        989.6,
+        1237
+      ],
+      "content_box": [
+        2655,
+        651,
+        989.6,
+        1237
+      ],
+      "anchor": [
+        2655,
+        651
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-6.svg",
+      "source_sha256": "74cb53803d61e34eb3257c91e46b794f22051cd2f9f7bdf911304b05f7b59e45",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/5aca8e243e73ef042e58bc9989b52722d0bd4834da9551fecf15e91538c532f3.jpg",
+          "sha256": "5aca8e243e73ef042e58bc9989b52722d0bd4834da9551fecf15e91538c532f3"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image5_4191_2",
+        "pattern5_4191_2"
+      ],
+      "pdf_sha256": "de95e80e5a0de6b2c74b582f9e6f017ceecc31ec6f8b238417eda892a282b83c"
+    },
+    {
+      "name": "collage-7",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        8
+      ],
+      "render_box": [
+        -91,
+        902,
+        990,
+        1237
+      ],
+      "content_box": [
+        -91,
+        902,
+        990,
+        1237
+      ],
+      "anchor": [
+        -91,
+        902
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster.",
+      "source": "images/studio/parts/source/collage-7.svg",
+      "source_sha256": "3abdb46b1aeabc6b6f4e804fa36937832e5dcbe890a30dfa4c31976f139ae2cf",
+      "reference_sha256": "4cbabd2c2b9e21f20efca992a76c1f9ac1210004505bbe5d7c95d401b29739e6",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/parts/source/resources/ad2b4f55ef0bf994c0ea79701659794374d83afc69db2e775f30eca2dcee9058.jpg",
+          "sha256": "ad2b4f55ef0bf994c0ea79701659794374d83afc69db2e775f30eca2dcee9058"
+        }
+      ],
+      "definition_ids": [
+        "clip0_4191_2",
+        "image6_4191_2",
+        "pattern6_4191_2"
+      ],
+      "pdf_sha256": "ceae27a309e1bbf350296de61b057adbf990cd75f1faec59a6327b7035c9c1bf"
+    }
+  ]
+}

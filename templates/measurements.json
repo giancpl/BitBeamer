@@ -1,0 +1,940 @@
+{
+  "schema": 1,
+  "canvas": [
+    3556,
+    2000
+  ],
+  "status": "in-review",
+  "approved": false,
+  "scale": "uniform, centered, fit entire canvas",
+  "typography": "Inter; English translation; font metrics intentionally differ from outlined SF Pro",
+  "models": [
+    {
+      "id": "merkle-tree",
+      "reference": "figma-0865",
+      "source": "templates/studio/merkle-tree.tex",
+      "status": "in-review",
+      "page": 1,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [],
+        "text_fields": [
+          {
+            "name": "title",
+            "x": "257",
+            "y": "380",
+            "width": "600",
+            "height": "280",
+            "font_size": "120",
+            "leading": "140"
+          },
+          {
+            "name": "explanation",
+            "x": "255",
+            "y": "838",
+            "width": "550",
+            "height": "550",
+            "font_size": "64",
+            "leading": "76"
+          },
+          {
+            "name": "root",
+            "x": "1739.1",
+            "y": "473.4",
+            "width": "741.2",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "ab",
+            "x": "1318.3",
+            "y": "859.0500000000001",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "cd",
+            "x": "2654.4",
+            "y": "859.25",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "hash-0",
+            "x": "947.5",
+            "y": "1196.75",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "tx-0",
+            "x": "947.5",
+            "y": "1454.05",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "hash-1",
+            "x": "1646.3",
+            "y": "1196.75",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "tx-1",
+            "x": "1646.3",
+            "y": "1454.05",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "hash-2",
+            "x": "2289.4",
+            "y": "1196.75",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "tx-2",
+            "x": "2289.4",
+            "y": "1454.05",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "hash-3",
+            "x": "2991.4",
+            "y": "1196.75",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          },
+          {
+            "name": "tx-3",
+            "x": "2991.4",
+            "y": "1454.05",
+            "width": "255.1",
+            "height": "70",
+            "font_size": "54",
+            "leading": "64"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Native TikZ tree, including transaction leaves and left proof caption. Rounded boxes use measured extents. Minor source asymmetries are retained where measured."
+    },
+    {
+      "id": "cover",
+      "reference": "figma-0175",
+      "source": "templates/studio/cover.tex",
+      "status": "in-review",
+      "page": 2,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [
+          {
+            "name": "cover-pattern",
+            "render_box": [
+              2296,
+              0,
+              1260,
+              2000
+            ],
+            "content_box": [
+              2296,
+              0,
+              1260,
+              2000
+            ],
+            "anchor": [
+              2296,
+              0
+            ]
+          },
+          {
+            "name": "cover-bull",
+            "render_box": [
+              376,
+              202,
+              193,
+              158
+            ],
+            "content_box": [
+              376,
+              202,
+              193,
+              158
+            ],
+            "anchor": [
+              376,
+              202
+            ]
+          },
+          {
+            "name": "cover-crest",
+            "render_box": [
+              618,
+              202,
+              159,
+              158
+            ],
+            "content_box": [
+              618,
+              202,
+              159,
+              158
+            ],
+            "anchor": [
+              618,
+              202
+            ]
+          }
+        ],
+        "text_fields": [
+          {
+            "name": "author",
+            "x": "378",
+            "y": "690",
+            "width": "1000",
+            "height": "110",
+            "font_size": "96",
+            "leading": "112"
+          },
+          {
+            "name": "title",
+            "x": "378",
+            "y": "827",
+            "width": "1600",
+            "height": "420",
+            "font_size": "200",
+            "leading": "210"
+          },
+          {
+            "name": "institute",
+            "x": "390",
+            "y": "1661",
+            "width": "1300",
+            "height": "80",
+            "font_size": "64",
+            "leading": "75"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Original pattern and two original logo crops. Author placeholder translated. Pattern clipped at the full canvas boundaries."
+    },
+    {
+      "id": "three-cards",
+      "reference": "figma-0021",
+      "source": "templates/studio/three-cards.tex",
+      "status": "in-review",
+      "page": 3,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [
+          {
+            "name": "card-1",
+            "render_box": [
+              766,
+              766,
+              488,
+              489
+            ],
+            "content_box": [
+              810,
+              784,
+              400,
+              400
+            ],
+            "anchor": [
+              766,
+              766
+            ]
+          },
+          {
+            "name": "card-icon-1",
+            "render_box": [
+              910,
+              871,
+              201,
+              225
+            ],
+            "content_box": [
+              910,
+              871,
+              201,
+              225
+            ],
+            "anchor": [
+              910,
+              871
+            ]
+          },
+          {
+            "name": "card-2",
+            "render_box": [
+              1537,
+              766,
+              488,
+              489
+            ],
+            "content_box": [
+              1581,
+              784,
+              400,
+              400
+            ],
+            "anchor": [
+              1537,
+              766
+            ]
+          },
+          {
+            "name": "card-icon-2",
+            "render_box": [
+              1689,
+              883,
+              180,
+              201
+            ],
+            "content_box": [
+              1689,
+              883,
+              180,
+              201
+            ],
+            "anchor": [
+              1689,
+              883
+            ]
+          },
+          {
+            "name": "card-3",
+            "render_box": [
+              2308,
+              766,
+              488,
+              489
+            ],
+            "content_box": [
+              2352,
+              784,
+              400,
+              400
+            ],
+            "anchor": [
+              2308,
+              766
+            ]
+          },
+          {
+            "name": "card-icon-3",
+            "render_box": [
+              2429,
+              860,
+              246,
+              247
+            ],
+            "content_box": [
+              2429,
+              860,
+              246,
+              247
+            ],
+            "anchor": [
+              2429,
+              860
+            ]
+          }
+        ],
+        "text_fields": [
+          {
+            "name": "title",
+            "x": "810",
+            "y": "326",
+            "width": "1935",
+            "height": "150",
+            "font_size": "120",
+            "leading": "140"
+          },
+          {
+            "name": "caption-1",
+            "x": "680",
+            "y": "1321",
+            "width": "660",
+            "height": "110",
+            "font_size": "88",
+            "leading": "102"
+          },
+          {
+            "name": "caption-2",
+            "x": "1451",
+            "y": "1321",
+            "width": "660",
+            "height": "110",
+            "font_size": "88",
+            "leading": "102"
+          },
+          {
+            "name": "caption-3",
+            "x": "2222",
+            "y": "1321",
+            "width": "660",
+            "height": "110",
+            "font_size": "88",
+            "leading": "102"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "400 x 400 panels, radius 100; full filter regions 488 x 489. Translated captions retain one line. Original icon paths."
+    },
+    {
+      "id": "list-rail-blue",
+      "reference": "figma-0395",
+      "source": "templates/studio/list-rail-blue.tex",
+      "status": "in-review",
+      "page": 4,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [],
+        "text_fields": [
+          {
+            "name": "title",
+            "x": "257",
+            "y": "955",
+            "width": "1400",
+            "height": "160",
+            "font_size": "120",
+            "leading": "140"
+          },
+          {
+            "name": "item-1",
+            "x": "1877",
+            "y": "428.5",
+            "width": "1400",
+            "height": "100",
+            "font_size": "80",
+            "leading": "96"
+          },
+          {
+            "name": "item-2",
+            "x": "1877",
+            "y": "735.5",
+            "width": "1400",
+            "height": "100",
+            "font_size": "80",
+            "leading": "96"
+          },
+          {
+            "name": "item-3",
+            "x": "1877",
+            "y": "1044.5",
+            "width": "1400",
+            "height": "100",
+            "font_size": "80",
+            "leading": "96"
+          },
+          {
+            "name": "item-4",
+            "x": "1877",
+            "y": "1351.5",
+            "width": "1400",
+            "height": "100",
+            "font_size": "80",
+            "leading": "96"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Native circles and rounded bars. Final bar intentionally continues beyond the canvas. Labels translated without extra descriptive paragraphs."
+    },
+    {
+      "id": "glow-statement",
+      "reference": "figma-0793",
+      "source": "templates/studio/glow-statement.tex",
+      "status": "in-review",
+      "page": 5,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [
+          {
+            "name": "radial-glow",
+            "render_box": [
+              0,
+              0,
+              3556,
+              2000
+            ],
+            "content_box": [
+              0,
+              0,
+              3556,
+              2000
+            ],
+            "anchor": [
+              0,
+              0
+            ]
+          }
+        ],
+        "text_fields": [
+          {
+            "name": "statement",
+            "x": "1100",
+            "y": "894",
+            "width": "1386",
+            "height": "290",
+            "font_size": "120",
+            "leading": "136"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Exact source radial-gradient transform. White editable text; Inter metrics intentionally differ."
+    },
+    {
+      "id": "metric-dashboard",
+      "reference": "figma-1006",
+      "source": "templates/studio/metric-dashboard.tex",
+      "status": "in-review",
+      "page": 6,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [
+          {
+            "name": "dashboard-grid",
+            "render_box": [
+              1678,
+              0,
+              1878,
+              2000
+            ],
+            "content_box": [
+              1678,
+              0,
+              1878,
+              2000
+            ],
+            "anchor": [
+              1678,
+              0
+            ]
+          }
+        ],
+        "text_fields": [
+          {
+            "name": "title",
+            "x": "257",
+            "y": "955",
+            "width": "1100",
+            "height": "160",
+            "font_size": "120",
+            "leading": "140"
+          },
+          {
+            "name": "participants-number",
+            "x": "2265",
+            "y": "380",
+            "width": "507",
+            "height": "210",
+            "font_size": "200",
+            "leading": "220"
+          },
+          {
+            "name": "participants-caption",
+            "x": "2265",
+            "y": "575",
+            "width": "507",
+            "height": "90",
+            "font_size": "64",
+            "leading": "75"
+          },
+          {
+            "name": "alumni-number",
+            "x": "2846",
+            "y": "380",
+            "width": "442",
+            "height": "210",
+            "font_size": "200",
+            "leading": "220"
+          },
+          {
+            "name": "alumni-caption",
+            "x": "2846",
+            "y": "575",
+            "width": "442",
+            "height": "90",
+            "font_size": "64",
+            "leading": "75"
+          },
+          {
+            "name": "followers-number",
+            "x": "2265",
+            "y": "842",
+            "width": "1022",
+            "height": "210",
+            "font_size": "200",
+            "leading": "220"
+          },
+          {
+            "name": "followers-caption",
+            "x": "2265",
+            "y": "1037",
+            "width": "1022",
+            "height": "90",
+            "font_size": "64",
+            "leading": "75"
+          },
+          {
+            "name": "events-number",
+            "x": "2265",
+            "y": "1296",
+            "width": "644",
+            "height": "210",
+            "font_size": "200",
+            "leading": "220"
+          },
+          {
+            "name": "events-caption",
+            "x": "2265",
+            "y": "1491",
+            "width": "644",
+            "height": "90",
+            "font_size": "64",
+            "leading": "75"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Original masks, strokes and gradients. Panels intentionally extend beyond the top, right and bottom. Original values retained; captions translated."
+    },
+    {
+      "id": "protocol-sequence",
+      "reference": "figma-0453",
+      "source": "templates/studio/protocol-sequence.tex",
+      "status": "in-review",
+      "page": 7,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [
+          {
+            "name": "protocol-bob",
+            "render_box": [
+              2754,
+              308,
+              224,
+              212
+            ],
+            "content_box": [
+              2754,
+              308,
+              224,
+              212
+            ],
+            "anchor": [
+              2754,
+              308
+            ]
+          },
+          {
+            "name": "protocol-alice",
+            "render_box": [
+              603,
+              308,
+              224,
+              212
+            ],
+            "content_box": [
+              603,
+              308,
+              224,
+              212
+            ],
+            "anchor": [
+              603,
+              308
+            ]
+          },
+          {
+            "name": "protocol-warning",
+            "render_box": [
+              1319,
+              1610,
+              212,
+              212
+            ],
+            "content_box": [
+              1319,
+              1610,
+              212,
+              212
+            ],
+            "anchor": [
+              1319,
+              1610
+            ]
+          },
+          {
+            "name": "protocol-observer",
+            "render_box": [
+              1687,
+              308,
+              180,
+              212
+            ],
+            "content_box": [
+              1687,
+              308,
+              180,
+              212
+            ],
+            "anchor": [
+              1687,
+              308
+            ]
+          }
+        ],
+        "text_fields": [
+          {
+            "name": "message",
+            "x": "1390",
+            "y": "900",
+            "width": "760",
+            "height": "190",
+            "font_size": "80",
+            "leading": "94"
+          },
+          {
+            "name": "warning",
+            "x": "1630",
+            "y": "1687",
+            "width": "950",
+            "height": "100",
+            "font_size": "80",
+            "leading": "94"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Original four icon crops; native lines and arrow. Original Italian message translated into two English lines. No added title or extra participants."
+    },
+    {
+      "id": "gallery-collage",
+      "reference": "figma-0542",
+      "source": "templates/studio/gallery-collage.tex",
+      "status": "in-review",
+      "page": 8,
+      "measurements": {
+        "canvas": [
+          3556,
+          2000
+        ],
+        "origin": "top-left",
+        "units": "source SVG units",
+        "parts": [
+          {
+            "name": "collage-1",
+            "render_box": [
+              2222,
+              -161,
+              989.204,
+              1237
+            ],
+            "content_box": [
+              2222,
+              -161,
+              989.204,
+              1237
+            ],
+            "anchor": [
+              2222,
+              -161
+            ]
+          },
+          {
+            "name": "collage-2",
+            "render_box": [
+              347,
+              -110,
+              987,
+              1237
+            ],
+            "content_box": [
+              347,
+              -110,
+              987,
+              1237
+            ],
+            "anchor": [
+              347,
+              -110
+            ]
+          },
+          {
+            "name": "collage-3",
+            "render_box": [
+              1233,
+              321,
+              989,
+              1237
+            ],
+            "content_box": [
+              1233,
+              321,
+              989,
+              1237
+            ],
+            "anchor": [
+              1233,
+              321
+            ]
+          },
+          {
+            "name": "collage-4",
+            "render_box": [
+              834,
+              1076,
+              989.204,
+              1236.51
+            ],
+            "content_box": [
+              834,
+              1076,
+              989.204,
+              1236.51
+            ],
+            "anchor": [
+              834,
+              1076
+            ]
+          },
+          {
+            "name": "collage-5",
+            "render_box": [
+              1764,
+              940,
+              989.204,
+              1236.51
+            ],
+            "content_box": [
+              1764,
+              940,
+              989.204,
+              1236.51
+            ],
+            "anchor": [
+              1764,
+              940
+            ]
+          },
+          {
+            "name": "collage-6",
+            "render_box": [
+              2655,
+              651,
+              989.6,
+              1237
+            ],
+            "content_box": [
+              2655,
+              651,
+              989.6,
+              1237
+            ],
+            "anchor": [
+              2655,
+              651
+            ]
+          },
+          {
+            "name": "collage-7",
+            "render_box": [
+              -91,
+              902,
+              990,
+              1237
+            ],
+            "content_box": [
+              -91,
+              902,
+              990,
+              1237
+            ],
+            "anchor": [
+              -91,
+              902
+            ]
+          }
+        ],
+        "text_fields": [
+          {
+            "name": "title",
+            "x": "1360",
+            "y": "120",
+            "width": "850",
+            "height": "190",
+            "font_size": "180",
+            "leading": "205"
+          }
+        ],
+        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+      },
+      "intentional_differences": "Seven original JPEGs, uncompressed byte extraction, original pattern transforms, radius 50 and stacking. Education is editable. Original lettering inside historical photographs/posters remains part of those assets."
+    }
+  ],
+  "description": "Original pilot measurements; implementations live only in templates/studio/."
+}

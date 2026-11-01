@@ -1,0 +1,6 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemebitpolito-academic}[2026/10/31 BitBeamer Academic entry point]
+% Forward every option to the established theme without changing its layouts.
+\DeclareOption*{\PassOptionsToPackage{\CurrentOption}{beamerthemebitpolito}}
+\ProcessOptions\relax
+\RequirePackage{beamerthemebitpolito}

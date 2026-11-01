@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="488" height="489" viewBox="616 489 488 489"><defs><filter id="filter2_dii_3324_1251" x="616" y="489" width="488" height="489" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="27" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3324_1251" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3324_1251" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-18" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_3324_1251" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="14" />
+<feGaussianBlur stdDeviation="9.5" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_3324_1251" result="effect3_innerShadow_3324_1251" />
+</filter>
+</defs><g filter="url(#filter2_dii_3324_1251)"><rect x="660" y="507" width="400" height="400" rx="100" fill="#F9F9F9" />
+</g><path d="M902.857 611H817.143V628.182H800V782.818H817.143V800H902.857V782.818H920V628.182H902.857V611ZM902.857 645.364H817.143V748.455H902.857V645.364ZM851.429 782.818V765.636H868.571V782.818H851.429Z" fill-rule="evenodd" clip-rule="evenodd" fill="#001CE0" />
+</svg>

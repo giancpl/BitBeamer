@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1920" height="1080" viewBox="0 0 1920 1080"><defs><clipPath id="clip0_5676_1176">
+<rect width="1920" height="1080" fill="white" />
+</clipPath>
+<pattern id="pattern0_5676_1176" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5676_1176" transform="scale(0.000520833 0.000925926)" />
+</pattern>
+<image id="image0_5676_1176" width="1920" height="1080" preserveAspectRatio="none" xlink:href="resources/36a7b363b985a3d0696ece4a614f8441a52c47fdb73169d91d4cef2823c33a00.jpg" />
+</defs><g clip-path="url(#clip0_5676_1176)"><rect width="1920" height="1080" fill="url(#pattern0_5676_1176)" />
+</g></svg>

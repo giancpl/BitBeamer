@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1909" height="1726" viewBox="1430 166 1909 1726"><defs><path id="stroke0_1937_431" d="M3281 1566.5C3281 1714.24 3128.78 1834 2941 1834C2753.22 1834 2601 1714.24 2601 1566.5C2601 1418.76 2753.22 1299 2941 1299C3128.78 1299 3281 1418.76 3281 1566.5Z" />
+<mask id="stroke1_1937_431" fill="white">
+<use xlink:href="#stroke0_1937_431" />
+</mask>
+</defs><ellipse cx="2213" cy="781.5" rx="783" ry="615.5" fill="#001CE0" />
+<use xlink:href="#stroke0_1937_431" fill="#F9F9F9" />
+<path d="M3281 1566.5C3281 1714.24 3128.78 1834 2941 1834C2753.22 1834 2601 1714.24 2601 1566.5C2601 1418.76 2753.22 1299 2941 1299C3128.78 1299 3281 1418.76 3281 1566.5Z" stroke-width="20" stroke="#001CE0" mask="url(#stroke1_1937_431)" />
+</svg>

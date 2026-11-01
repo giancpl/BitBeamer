@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="697" height="696" viewBox="1354 466 697 696"><defs><path id="stroke10_5453_26" d="M1879 1027.5L2003 1027.5" stroke-width="5" />
+<path id="stroke11_5453_26" d="M2000.5 1030L2000.5 546" stroke-width="5" />
+<path id="stroke9_5453_26" d="M1877 547.5L2003 547.5" stroke-width="5" />
+</defs><use xlink:href="#stroke9_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke9_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke10_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke10_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke11_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke11_5453_26" stroke="#001CE0" />
+<path d="M1384 468.5H1849C1864.19 468.5 1876.5 480.812 1876.5 496V604C1876.5 619.188 1864.19 631.5 1849 631.5H1384C1368.81 631.5 1356.5 619.188 1356.5 604V496C1356.5 480.812 1368.81 468.5 1384 468.5Z" stroke-width="5" stroke="#001CE0" />
+<path d="M1384 708.5H1849C1864.19 708.5 1876.5 720.812 1876.5 736V844C1876.5 859.188 1864.19 871.5 1849 871.5H1384C1368.81 871.5 1356.5 859.188 1356.5 844V736C1356.5 720.812 1368.81 708.5 1384 708.5Z" stroke-width="5" stroke="#001CE0" />
+<path d="M1384 948.5H1849C1864.19 948.5 1876.5 960.812 1876.5 976V1084C1876.5 1099.19 1864.19 1111.5 1849 1111.5H1384C1368.81 1111.5 1356.5 1099.19 1356.5 1084V976C1356.5 960.812 1368.81 948.5 1384 948.5Z" stroke-width="5" stroke="#001CE0" />
+</svg>

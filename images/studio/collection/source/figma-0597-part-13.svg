@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1538" height="258" viewBox="1305 621 1538 258"><defs><path id="stroke16_5676_1553" d="M2669.77 703.427L2669.77 621.211" stroke-width="5" />
+<path id="stroke17_5676_1553" d="M1423.17 703.216L1423.17 621" stroke-width="5" />
+<path id="stroke18_5676_1553" d="M2672.27 623.711L1420.46 623.711" stroke-width="5" />
+</defs><use xlink:href="#stroke16_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke16_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke17_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke17_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke18_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke18_5676_1553" stroke="#001CE0" />
+<path d="M2581.6 704.601H2764.27C2779.46 704.601 2791.77 716.913 2791.77 732.101V800.728C2791.77 815.916 2779.46 828.228 2764.27 828.228H2581.6C2566.41 828.228 2554.1 815.916 2554.1 800.728V732.101C2554.1 716.913 2566.41 704.601 2581.6 704.601Z" stroke-width="5" stroke="#001CE0" />
+<path d="M1335 704.39H1517.67C1532.86 704.39 1545.17 716.702 1545.17 731.89V800.518C1545.17 815.705 1532.86 828.018 1517.67 828.018H1335C1319.81 828.018 1307.5 815.705 1307.5 800.518V731.89C1307.5 716.702 1319.81 704.39 1335 704.39Z" stroke-width="5" stroke="#001CE0" />
+</svg>

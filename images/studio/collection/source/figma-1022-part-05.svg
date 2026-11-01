@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="488" height="489" viewBox="1534 855 488 489"><defs><filter id="filter4_dii_2521_1444" x="1534" y="855" width="488" height="489" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="27" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2521_1444" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2521_1444" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-18" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_2521_1444" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="14" />
+<feGaussianBlur stdDeviation="9.5" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_2521_1444" result="effect3_innerShadow_2521_1444" />
+</filter>
+</defs><g filter="url(#filter4_dii_2521_1444)"><rect x="1578" y="873" width="400" height="400" rx="100" fill="#F9F9F9" />
+</g><path d="M1708.78 982H1748.33V1001.67H1708.78V982ZM1708.78 1021.33V1001.67H1689V1021.33H1708.78ZM1728.56 1041V1021.33H1708.78V1041H1689V1060.67H1708.78V1100H1689V1119.67H1708.78V1139.33H1689V1159H1867V982H1827.44V1001.67H1807.67V982H1768.11V1001.67H1748.33V1041H1728.56ZM1787.89 1021.33H1807.67V1001.67H1787.89V1021.33ZM1787.89 1060.67V1021.33H1768.11V1060.67H1748.33V1080.33H1728.56V1100H1708.78V1119.67H1728.56V1139.33H1748.33V1119.67H1768.11V1100H1748.33V1080.33H1768.11V1060.67H1787.89ZM1807.67 1060.67H1787.89V1080.33H1807.67V1100H1787.89V1119.67H1807.67V1139.33H1827.44V1119.67H1847.22V1080.33H1807.67V1060.67ZM1847.22 1041H1807.67V1060.67H1847.22V1041ZM1847.22 1021.33V1001.67H1827.44V1021.33H1847.22ZM1827.44 1119.67H1807.67V1100H1827.44V1119.67ZM1748.33 1100V1119.67H1728.56V1100H1748.33ZM1728.56 1041V1060.67H1708.78V1041H1728.56Z" fill-rule="evenodd" clip-rule="evenodd" fill="#001CE0" />
+</svg>

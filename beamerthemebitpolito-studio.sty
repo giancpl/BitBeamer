@@ -1,0 +1,43 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{beamerthemebitpolito-studio}[2026/10/31 BitBeamer Studio theme]
+\mode<presentation>
+\RequirePackage{tikz,graphicx,xcolor,mathpazo}
+\usetikzlibrary{arrows.meta,shadows.blur}
+\providecommand{\bitpolitoassetpath}{images/bitpolito}
+\providecommand{\bitpolitostudioassetpath}{images/studio}
+\RequirePackage{bitpolitoassets}
+% Share brand colours and Inter, but never load the academic layout themes.
+\usecolortheme{bitpolito}
+\usefonttheme{bitpolito}
+\usefonttheme{bitpolito-studio}
+\definecolor{studio-paper}{HTML}{F9F9F9}
+\definecolor{studio-lilac}{HTML}{DBD5FF}
+\setbeamercolor{background canvas}{bg=studio-paper}
+\setbeamercolor{normal text}{fg=bitpolito,bg=studio-paper}
+\setbeamercolor{frametitle}{fg=bitpolito,bg=studio-paper}
+\setbeamercolor{framesubtitle}{fg=bitpolito,bg=studio-paper}
+\setbeamercolor{structure}{fg=bitpolito}
+\setbeamercolor{block title}{fg=bitpolito,bg=studio-paper}
+\setbeamercolor{block body}{fg=bitpolito,bg=studio-paper}
+% Central layout tokens. Dimensions scale with the 16:9 canvas.
+\newlength{\studio@margin}\setlength{\studio@margin}{0.07\paperwidth}
+\newlength{\studio@cardwidth}\setlength{\studio@cardwidth}{0.12\paperwidth}
+\newlength{\studio@cardheight}\setlength{\studio@cardheight}{0.20\paperheight}
+\tikzset{studio line/.style={line width=0.8pt,draw=bitpolito},
+  studio card/.style={rounded corners=9pt,fill=studio-paper,draw=white,line width=0.4pt,
+    minimum width=\studio@cardwidth,minimum height=\studio@cardheight,
+    blur shadow={shadow xshift=0pt,shadow yshift=-2pt,shadow blur steps=20,
+      shadow blur radius=4pt,shadow opacity=12}},
+  studio arrow/.style={studio line,-{Stealth[length=5pt,width=5pt]}}}
+% Shared tokens for extended Studio compositions.
+\newlength{\studio@panelheight}\setlength{\studio@panelheight}{0.43\paperheight}
+\newlength{\studio@imagewidth}\setlength{\studio@imagewidth}{0.40\paperwidth}
+\newlength{\studio@imageheight}\setlength{\studio@imageheight}{0.64\paperheight}
+\tikzset{studio diagram node/.style={rounded corners=5pt,fill=studio-lilac,
+    text=bitpolito,align=center,inner sep=8pt,font=\small},
+  studio connection/.style={studio arrow,shorten <=2pt,shorten >=2pt},
+  studio panel/.style={rounded corners=9pt,fill=studio-lilac,draw=none,
+    inner sep=10pt,align=left,text=bitpolito}}
+\useinnertheme{bitpolito-studio}
+\useoutertheme{bitpolito-studio}
+\mode<all>

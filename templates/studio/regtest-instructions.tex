@@ -1,0 +1,24 @@
+% Source-coordinate reconstruction. Edit named defaults or copy this entire composition.
+\studiodeclarefield{title}{Setting Up Regtest}
+\studiodeclarefield{item-2-1}{1. Start bitcoind in regtest mode > bitcoind -regtest -daemon}
+\studiodeclarefield{item-2-2}{2. Check it's running > bitcoin-cli -regtest getblockchaininfo}
+\studiodeclarefield{item-2-3}{3. Create a wallet > bitcoin-cli -regtest createwallet "Workshop"}
+\studiodeclarefield{item-2-4}{4. Generate a new address > bitcoin-cli -regtest getnewaddress}
+\studiodeclarefield{item-2-5}{5. Mine 101 blocks to that address (coinbase outputs require 100 confirmations}
+\studiodeclarefield{item-2-6}{before they're spendable) > bitcoin-cli -regtest}
+\studiodeclarefield{item-2-7}{generatetoaddress 101 "<your\_address>"}
+\studiodeclarefield{item-2-8}{6. Check your balance > bitcoin-cli -regtest getbalance}
+\studiodeclarefield{item-2-9}{Output: 50.00000000 (only the last block's reward is mature)}
+\studioapplyfields
+\studiomeasuredcanvas{3556}{2000}{regtest-instructions}{studio-paper}{
+\studiomeasuredtext{title}{1245.66}{282.047}{1064.08}{171.769}{114.688}{133.038}{\color{bitpolito}\bfseries\centering}{\studiofield{title}}
+\studiomeasuredtext{item-2-1}{457.227}{580.115}{2358.48}{111.5}{73.3907}{85.1332}{\color{bitpolito}}{\studiofield{item-2-1}}
+\studiomeasuredtext{item-2-2}{453.241}{701.115}{2443.41}{111.583}{73.5413}{85.3079}{\color{bitpolito}}{\studiofield{item-2-2}}
+\studiomeasuredtext{item-2-3}{451.7}{822.115}{2618.52}{110.921}{72.3373}{83.9113}{\color{bitpolito}}{\studiofield{item-2-3}}
+\studiomeasuredtext{item-2-4}{450.647}{943.115}{2551.77}{111.5}{73.3907}{85.1332}{\color{bitpolito}}{\studiofield{item-2-4}}
+\studiomeasuredtext{item-2-5}{453.016}{1065.84}{2667.03}{108.683}{73.3867}{85.1285}{\color{bitpolito}}{\studiofield{item-2-5}}
+\studiomeasuredtext{item-2-6}{542.824}{1185.11}{1806.22}{111.503}{73.3867}{85.1285}{\color{bitpolito}}{\studiofield{item-2-6}}
+\studiomeasuredtext{item-2-7}{540.718}{1307.66}{1858.18}{110.063}{73.5867}{85.3605}{\color{bitpolito}}{\studiofield{item-2-7}}
+\studiomeasuredtext{item-2-8}{450.985}{1427.11}{2215.12}{111.613}{73.5867}{85.3605}{\color{bitpolito}}{\studiofield{item-2-8}}
+\studiomeasuredtext{item-2-9}{426.045}{1670.84}{2110.71}{109.471}{74.7467}{86.7061}{\color{bitpolito}}{\studiofield{item-2-9}}
+}

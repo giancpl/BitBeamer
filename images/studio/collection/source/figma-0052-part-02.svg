@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1566" height="1170" viewBox="1765 620 1566 1170"><defs><filter id="filter1_dii_3467_435" x="1765.47" y="620.809" width="1565.11" height="1169.38" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="24.2862" />
+<feGaussianBlur stdDeviation="19.7887" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3467_435" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3467_435" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-16.1908" />
+<feGaussianBlur stdDeviation="19.7887" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_3467_435" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="12.5928" />
+<feGaussianBlur stdDeviation="8.54513" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_3467_435" result="effect3_innerShadow_3467_435" />
+</filter>
+<pattern id="pattern1_3467_435" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_3467_435" transform="matrix(0.000756606 0 0 0.00107875 -0.00768266 0)" />
+</pattern>
+<image id="image1_3467_435" width="1342" height="927" preserveAspectRatio="none" xlink:href="resources/cfd2d168b9d6d155af928d748639cb53c70427eba128c02ef54d2e1dbd0300cd.png" />
+</defs><g filter="url(#filter1_dii_3467_435)"><rect x="1805.05" y="637" width="1485.96" height="1089.32" rx="89.9487" fill="#F9F9F9" />
+</g><rect x="1890.45" y="721.453" width="1312.31" height="920.42" rx="47.4443" fill="url(#pattern1_3467_435)" />
+<path d="M2915 1208.5H3163C3175.43 1208.5 3185.5 1218.57 3185.5 1231V1408C3185.5 1420.43 3175.43 1430.5 3163 1430.5H2915C2902.57 1430.5 2892.5 1420.43 2892.5 1408V1231C2892.5 1218.57 2902.57 1208.5 2915 1208.5Z" stroke-width="5" stroke="#FF0000" />
+</svg>

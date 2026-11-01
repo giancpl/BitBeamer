@@ -1,0 +1,23 @@
+{
+  "alice": {
+    "source": "assets/characters/alice.svg",
+    "sha256": "e853b91531a4d8aeaf070c53de6fcb4e8e11e7c8a8834999a18ae40fcd8af00c",
+    "pdf_sha256": "f5d894693c581345318a31da709225e01b9cef88d04090b0e360ae06de1a4710"
+  },
+  "bob": {
+    "source": "assets/characters/bob.svg",
+    "sha256": "2a150d60cd96ed7c0e35ea5e78dae398634ac87947ff1ab043cce213569844e0",
+    "pdf_sha256": "a3af055e2743c22d81c1cba99703aca8c3e1e10e3d140250aee365060c0bab17"
+  },
+  "pig": {
+    "source": "assets/objects/animals/pig.svg",
+    "sha256": "c5f2f8bf98c2c35fb3c77c507859ceb1e4325c6d86995665cb7d24c28a5d5f14",
+    "pdf_sha256": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259"
+  },
+  "cover-pattern": {
+    "source": "images/bitpolito/source/first-page-background.svg",
+    "sha256": "3ee482a7e130dc5716a451a9fc7846fbe444a88b910aaee951ca4dcaf7bf7b75",
+    "canvas": true,
+    "pdf_sha256": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f"
+  }
+}

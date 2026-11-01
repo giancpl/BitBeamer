@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="619" height="259" viewBox="800 1253 619 259"><defs><path id="stroke10_5676_1553" d="M1245.71 1335.26L1245.71 1253.05" stroke-width="5" />
+<path id="stroke14_5676_1553" d="M1248.21 1255.55H914.044" stroke-width="5" />
+<path id="stroke2_5676_1553" d="M918.172 1335.26L918.172 1253.05" stroke-width="5" />
+</defs><use xlink:href="#stroke2_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke2_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke10_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke10_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke14_5676_1553" stroke="#001CE0" />
+<use xlink:href="#stroke14_5676_1553" stroke="#001CE0" />
+<path d="M830 1337.76H1012.67C1027.86 1337.76 1040.17 1350.08 1040.17 1365.26V1433.89C1040.17 1449.08 1027.86 1461.39 1012.67 1461.39H830C814.812 1461.39 802.5 1449.08 802.5 1433.89V1365.26C802.5 1350.08 814.812 1337.76 830 1337.76Z" stroke-width="5" stroke="#001CE0" />
+<path d="M1157.53 1337.76H1340.2C1355.39 1337.76 1367.7 1350.08 1367.7 1365.26V1433.89C1367.7 1449.08 1355.39 1461.39 1340.2 1461.39H1157.53C1142.34 1461.39 1130.03 1449.08 1130.03 1433.89V1365.26C1130.03 1350.08 1142.34 1337.76 1157.53 1337.76Z" stroke-width="5" stroke="#001CE0" />
+</svg>

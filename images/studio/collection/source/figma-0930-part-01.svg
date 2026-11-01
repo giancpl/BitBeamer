@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="915" height="667" viewBox="2378 383 915 667"><defs><clipPath id="clip0_5749_470">
+<rect width="3556" height="2000" fill="white" />
+</clipPath>
+<pattern id="pattern0_5749_470" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_5749_470" transform="scale(0.00111111 0.00200042)" />
+</pattern>
+<image id="image0_5749_470" width="900" height="500" preserveAspectRatio="none" xlink:href="resources/e759dcc4b0d84ffa96e6b40e3cde16595f3518282e291882df3489be09c9ab94.png" />
+<pattern id="pattern2_5749_470" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image2_5749_470" transform="scale(0.000390625 0.00119904)" />
+</pattern>
+<image id="image2_5749_470" width="2560" height="834" preserveAspectRatio="none" xlink:href="resources/8ef0b4a2265ab9826f242d4eefedd169af52da35010d8b99de12826a704675c0.png" />
+</defs><g clip-path="url(#clip0_5749_470)"><path d="M3244.79 520.6H2378.07V1001.95H3244.79V520.6Z" fill="url(#pattern0_5749_470)" style="mix-blend-mode:darken" />
+<path d="M3149.95 383.333H2473.25V603.761H3149.95V383.333Z" fill="url(#pattern2_5749_470)" />
+</g></svg>

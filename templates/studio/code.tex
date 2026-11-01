@@ -1,0 +1,9 @@
+% Source-coordinate reconstruction. Edit named defaults or copy this entire composition.
+\studiodeclarefield{title}{Making Your First Transaction}
+\studiodeclarefield{text-2}{1. Get a second address (recipient) >\\\textbf{bitcoin-cli -regtest getnewaddress "alice"}\\2. Send BTC >\\\textbf{bitcoin-cli -regtest sendtoaddress "<alice\_address>" 10.0}\\Result: a transaction ID (txid, e.g. "alb2c3d4e5f6...")\\3. Check mempool --- transaction is unconfirmed\\\textbf{bitcoin-cli -regtest getmempoolinfo}\\\textbf{bitcoin-cli -regtest getrawmempool}\\4. Mine a block to confirm it >\\\textbf{bitcoin-cli -regtest generatetoaddress 1 "<your\_address>"}\\5. Inspect the transaction > \textbf{bitcoin-cli -regtest gettransaction "<txid>"}\\6. Decode the raw transaction --- see the actual structure >\\\textbf{bitcoin-cli -regtest getrawtransaction "<txid>" true}}
+\studiodeclarefield{code-file}{}
+\studioapplyfields
+\studiomeasuredcanvas{3556}{2000}{code}{studio-paper}{
+\studiomeasuredtext{title}{969.802}{174.047}{1617.39}{170.695}{112.735}{130.772}{\color{bitpolito}\bfseries\centering}{\studiofield{title}}
+\studiomeasuredtext{text-2}{354.648}{413.844}{2830.55}{1429.19}{72.3373}{83.9113}{\color{bitpolito}}{\studiocodeoverride{text-2}}
+}

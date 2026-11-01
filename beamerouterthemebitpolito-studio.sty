@@ -1,0 +1,18 @@
+% Ordinary frames stay quiet: no header band, logos, navigation, or footer.
+\setbeamersize{text margin left=\studio@margin,text margin right=\studio@margin}
+\setbeamertemplate{headline}{}
+\setbeamertemplate{footline}{}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{frametitle}{%
+  \vspace{0.055\paperheight}%
+  \begin{beamercolorbox}[wd=\textwidth,center]{frametitle}
+    {\usebeamerfont{frametitle}\insertframetitle\par}%
+    \ifx\insertframesubtitle\@empty\else
+      \vspace{0.6ex}{\usebeamerfont{framesubtitle}\insertframesubtitle\par}%
+    \fi
+  \end{beamercolorbox}%
+  \vspace{0.025\paperheight}%
+}
+% Sections only appear where the author explicitly inserts a divider or index.
+\setbeamertemplate{itemize item}{\small\textbullet}
+\setbeamertemplate{itemize subitem}{\small\textbullet}

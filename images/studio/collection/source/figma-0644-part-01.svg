@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1691" height="1653" viewBox="1641 203 1691 1653"><defs><filter id="filter0_dii_3749_853" x="1641.6" y="203.937" width="1690.8" height="1652.63" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="30.3131" />
+<feGaussianBlur stdDeviation="24.6996" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3749_853" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3749_853" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-20.2087" />
+<feGaussianBlur stdDeviation="24.6996" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_3749_853" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="15.7179" />
+<feGaussianBlur stdDeviation="10.6657" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_3749_853" result="effect3_innerShadow_3749_853" />
+</filter>
+<mask id="mask0_3749_853" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="1807" y="319" width="1359" height="1347">
+<rect x="1807.76" y="319.576" width="1357.35" height="1346.13" rx="33.6812" fill="#C4C4C4" />
+</mask>
+<pattern id="pattern0_3749_853" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_3749_853" transform="matrix(0.0022836 0 0 0.00235717 0.00474636 0.00813551)" />
+</pattern>
+<image id="image0_3749_853" width="412" height="413" preserveAspectRatio="none" xlink:href="resources/612b08beacc12df0f9b51d0e3ce252c81c9a3175919943e27b8161fb33d9d43b.png" />
+</defs><g filter="url(#filter0_dii_3749_853)"><rect x="1691" y="224.146" width="1592" height="1552.71" rx="112.271" fill="#F9F9F9" />
+</g><g mask="url(#mask0_3749_853)"><rect x="1773.25" y="273.545" width="1519.55" height="1478.61" fill="url(#pattern0_3749_853)" />
+</g></svg>

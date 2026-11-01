@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="424" height="253" viewBox="291 225 424 253"><defs><filter id="filter0_dii_3467_179" x="291.024" y="225.691" width="423.85" height="252.687" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="14.5782" />
+<feGaussianBlur stdDeviation="11.8785" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3467_179" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3467_179" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-9.71878" />
+<feGaussianBlur stdDeviation="11.8785" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_3467_179" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="7.55905" />
+<feGaussianBlur stdDeviation="5.12936" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_3467_179" result="effect3_innerShadow_3467_179" />
+</filter>
+<pattern id="pattern3_3467_179" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image3_3467_179" transform="scale(0.000303767)" />
+</pattern>
+<image id="image3_3467_179" width="3292" height="3292" preserveAspectRatio="none" xlink:href="resources/e2aced034d30b224196c599cb347ea88dde89fa7bd97b2e6c5af0a1070556945.png" />
+</defs><g filter="url(#filter0_dii_3467_179)"><rect x="314.781" y="235.41" width="376.333" height="204.634" rx="53.9932" fill="#F9F9F9" />
+</g><rect x="413.586" y="252.148" width="171.699" height="171.699" fill="url(#pattern3_3467_179)" />
+</svg>

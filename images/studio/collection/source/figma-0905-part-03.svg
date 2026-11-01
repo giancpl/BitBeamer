@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="1170" height="206" viewBox="1059 1192 1170 206"><defs><path id="stroke1_5453_26" d="M1147.5 1254L1147.5 1192" stroke-width="5" />
+<path id="stroke7_5453_26" d="M2086.5 1254L2086.5 1192" stroke-width="5" />
+<path id="stroke8_5453_26" d="M2089 1194.5L1145 1194.5" stroke-width="5" />
+</defs><use xlink:href="#stroke1_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke1_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke7_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke7_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke8_5453_26" stroke="#001CE0" />
+<use xlink:href="#stroke8_5453_26" stroke="#001CE0" />
+<path d="M1089 1255.5H1212C1227.19 1255.5 1239.5 1267.81 1239.5 1283V1320C1239.5 1335.19 1227.19 1347.5 1212 1347.5H1089C1073.81 1347.5 1061.5 1335.19 1061.5 1320V1283C1061.5 1267.81 1073.81 1255.5 1089 1255.5Z" stroke-width="5" stroke="#001CE0" />
+<path d="M2028 1255.5H2151C2166.19 1255.5 2178.5 1267.81 2178.5 1283V1320C2178.5 1335.19 2166.19 1347.5 2151 1347.5H2028C2012.81 1347.5 2000.5 1335.19 2000.5 1320V1283C2000.5 1267.81 2012.81 1255.5 2028 1255.5Z" stroke-width="5" stroke="#001CE0" />
+</svg>

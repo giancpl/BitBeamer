@@ -1,0 +1,3 @@
+# Illustrative regtest commands
+bitcoin-cli -regtest getnewaddress alice
+bitcoin-cli -regtest getblockchaininfo

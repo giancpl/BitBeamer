@@ -1,0 +1,681 @@
+{
+  "schema": 1,
+  "parts": [
+    {
+      "name": "cover-pattern",
+      "reference": "figma-0175",
+      "group": 0,
+      "children": [
+        1
+      ],
+      "render_box": [
+        2296,
+        0,
+        1260,
+        2000
+      ],
+      "content_box": [
+        2296,
+        0,
+        1260,
+        2000
+      ],
+      "anchor": [
+        2296,
+        0
+      ],
+      "notes": "Original pattern clipped at the slide boundaries."
+    },
+    {
+      "name": "cover-bull",
+      "reference": "figma-0175",
+      "group": 0,
+      "children": [
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51
+      ],
+      "render_box": [
+        376,
+        202,
+        193,
+        158
+      ],
+      "content_box": [
+        376,
+        202,
+        193,
+        158
+      ],
+      "anchor": [
+        376,
+        202
+      ],
+      "notes": ""
+    },
+    {
+      "name": "cover-crest",
+      "reference": "figma-0175",
+      "group": 0,
+      "children": [
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        97,
+        98,
+        99,
+        100,
+        101,
+        102
+      ],
+      "render_box": [
+        618,
+        202,
+        159,
+        158
+      ],
+      "content_box": [
+        618,
+        202,
+        159,
+        158
+      ],
+      "anchor": [
+        618,
+        202
+      ],
+      "notes": ""
+    },
+    {
+      "name": "card-1",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        2
+      ],
+      "render_box": [
+        766,
+        766,
+        488,
+        489
+      ],
+      "content_box": [
+        810,
+        784,
+        400,
+        400
+      ],
+      "anchor": [
+        766,
+        766
+      ],
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region."
+    },
+    {
+      "name": "card-icon-1",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        8
+      ],
+      "render_box": [
+        910,
+        871,
+        201,
+        225
+      ],
+      "content_box": [
+        910,
+        871,
+        201,
+        225
+      ],
+      "anchor": [
+        910,
+        871
+      ],
+      "notes": ""
+    },
+    {
+      "name": "card-2",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        4
+      ],
+      "render_box": [
+        1537,
+        766,
+        488,
+        489
+      ],
+      "content_box": [
+        1581,
+        784,
+        400,
+        400
+      ],
+      "anchor": [
+        1537,
+        766
+      ],
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region."
+    },
+    {
+      "name": "card-icon-2",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        10
+      ],
+      "render_box": [
+        1689,
+        883,
+        180,
+        201
+      ],
+      "content_box": [
+        1689,
+        883,
+        180,
+        201
+      ],
+      "anchor": [
+        1689,
+        883
+      ],
+      "notes": ""
+    },
+    {
+      "name": "card-3",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        6
+      ],
+      "render_box": [
+        2308,
+        766,
+        488,
+        489
+      ],
+      "content_box": [
+        2352,
+        784,
+        400,
+        400
+      ],
+      "anchor": [
+        2308,
+        766
+      ],
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region."
+    },
+    {
+      "name": "card-icon-3",
+      "reference": "figma-0021",
+      "group": null,
+      "children": [
+        9
+      ],
+      "render_box": [
+        2429,
+        860,
+        246,
+        247
+      ],
+      "content_box": [
+        2429,
+        860,
+        246,
+        247
+      ],
+      "anchor": [
+        2429,
+        860
+      ],
+      "notes": ""
+    },
+    {
+      "name": "radial-glow",
+      "reference": "figma-0793",
+      "group": 0,
+      "children": [
+        1
+      ],
+      "render_box": [
+        0,
+        0,
+        3556,
+        2000
+      ],
+      "content_box": [
+        0,
+        0,
+        3556,
+        2000
+      ],
+      "anchor": [
+        0,
+        0
+      ],
+      "notes": "Original radial gradient and transform; clipped to the original canvas."
+    },
+    {
+      "name": "dashboard-grid",
+      "reference": "figma-1006",
+      "group": 0,
+      "children": [
+        2,
+        3,
+        5,
+        6,
+        8,
+        9,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35
+      ],
+      "render_box": [
+        1678,
+        0,
+        1878,
+        2000
+      ],
+      "content_box": [
+        1678,
+        0,
+        1878,
+        2000
+      ],
+      "anchor": [
+        1678,
+        0
+      ],
+      "notes": "Includes original masks and fading strokes; off-canvas panels are intentionally clipped."
+    },
+    {
+      "name": "protocol-bob",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        1
+      ],
+      "render_box": [
+        2754,
+        308,
+        224,
+        212
+      ],
+      "content_box": [
+        2754,
+        308,
+        224,
+        212
+      ],
+      "anchor": [
+        2754,
+        308
+      ],
+      "notes": ""
+    },
+    {
+      "name": "protocol-alice",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        2
+      ],
+      "render_box": [
+        603,
+        308,
+        224,
+        212
+      ],
+      "content_box": [
+        603,
+        308,
+        224,
+        212
+      ],
+      "anchor": [
+        603,
+        308
+      ],
+      "notes": ""
+    },
+    {
+      "name": "protocol-warning",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        3
+      ],
+      "render_box": [
+        1319,
+        1610,
+        212,
+        212
+      ],
+      "content_box": [
+        1319,
+        1610,
+        212,
+        212
+      ],
+      "anchor": [
+        1319,
+        1610
+      ],
+      "notes": ""
+    },
+    {
+      "name": "protocol-observer",
+      "reference": "figma-0453",
+      "group": null,
+      "children": [
+        5
+      ],
+      "render_box": [
+        1687,
+        308,
+        180,
+        212
+      ],
+      "content_box": [
+        1687,
+        308,
+        180,
+        212
+      ],
+      "anchor": [
+        1687,
+        308
+      ],
+      "notes": ""
+    },
+    {
+      "name": "collage-1",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        1
+      ],
+      "render_box": [
+        2222,
+        -161,
+        989.204,
+        1237
+      ],
+      "content_box": [
+        2222,
+        -161,
+        989.204,
+        1237
+      ],
+      "anchor": [
+        2222,
+        -161
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "collage-2",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        2
+      ],
+      "render_box": [
+        347,
+        -110,
+        987,
+        1237
+      ],
+      "content_box": [
+        347,
+        -110,
+        987,
+        1237
+      ],
+      "anchor": [
+        347,
+        -110
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "collage-3",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        3
+      ],
+      "render_box": [
+        1233,
+        321,
+        989,
+        1237
+      ],
+      "content_box": [
+        1233,
+        321,
+        989,
+        1237
+      ],
+      "anchor": [
+        1233,
+        321
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "collage-4",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        5
+      ],
+      "render_box": [
+        834,
+        1076,
+        989.204,
+        1236.51
+      ],
+      "content_box": [
+        834,
+        1076,
+        989.204,
+        1236.51
+      ],
+      "anchor": [
+        834,
+        1076
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "collage-5",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        6
+      ],
+      "render_box": [
+        1764,
+        940,
+        989.204,
+        1236.51
+      ],
+      "content_box": [
+        1764,
+        940,
+        989.204,
+        1236.51
+      ],
+      "anchor": [
+        1764,
+        940
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "collage-6",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        7
+      ],
+      "render_box": [
+        2655,
+        651,
+        989.6,
+        1237
+      ],
+      "content_box": [
+        2655,
+        651,
+        989.6,
+        1237
+      ],
+      "anchor": [
+        2655,
+        651
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "collage-7",
+      "reference": "figma-0542",
+      "group": 0,
+      "children": [
+        8
+      ],
+      "render_box": [
+        -91,
+        902,
+        990,
+        1237
+      ],
+      "content_box": [
+        -91,
+        902,
+        990,
+        1237
+      ],
+      "anchor": [
+        -91,
+        902
+      ],
+      "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    }
+  ]
+}

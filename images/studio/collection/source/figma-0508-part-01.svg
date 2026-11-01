@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="2700.0" height="2000.0" viewBox="856 0 2700.0 2000.0"><defs><clipPath id="clip0_3220_757">
+<rect width="3556" height="2000" fill="white" />
+</clipPath>
+<filter id="filter0_d_3220_757" x="1059" y="491" width="2223.88" height="2223.88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dx="10" dy="10" />
+<feGaussianBlur stdDeviation="15" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.0750846 0 0 0 0 0.591667 0 0 0 1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3220_757" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3220_757" result="shape" />
+</filter>
+<filter id="filter1_d_3220_757" x="2232.15" y="-582.277" width="2041.79" height="2041.79" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dx="10" dy="10" />
+<feGaussianBlur stdDeviation="15" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0.0750846 0 0 0 0 0.591667 0 0 0 1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3220_757" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3220_757" result="shape" />
+</filter>
+<pattern id="pattern0_3220_757" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image0_3220_757" transform="scale(0.000333333)" />
+</pattern>
+<image id="image0_3220_757" width="3000" height="3000" preserveAspectRatio="none" xlink:href="resources/4e9103eec5712304b710c6ca4153bbf78fb70f0217c8c0581daca08880d38530.png" />
+<pattern id="pattern1_3220_757" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_3220_757" transform="scale(0.000333333)" />
+</pattern>
+<image id="image1_3220_757" width="3000" height="3000" preserveAspectRatio="none" xlink:href="resources/35ff6a9a52eb18698674359dd72fd3813486a725e86dd8bab792b6031882530e.png" />
+</defs><g clip-path="url(#clip0_3220_757)"><g filter="url(#filter0_d_3220_757)"><rect x="1282.45" y="511" width="1970.95" height="1970.95" transform="rotate(5.92493 1282.45 511)" fill="url(#pattern0_3220_757)" shape-rendering="crispEdges" />
+</g><g filter="url(#filter1_d_3220_757)"><rect x="2438.48" y="-562.277" width="1805.1" height="1805.1" transform="rotate(5.92493 2438.48 -562.277)" fill="url(#pattern1_3220_757)" shape-rendering="crispEdges" />
+</g></g></svg>

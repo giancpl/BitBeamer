@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="none" width="722" height="1026" viewBox="1025 488 722 1026"><defs><filter id="filter1_d_3228_4091" x="1025" y="488" width="721.883" height="1026" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="27" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.12 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3228_4091" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3228_4091" result="shape" />
+</filter>
+<pattern id="pattern1_3228_4091" patternContentUnits="objectBoundingBox" width="1" height="1">
+<use xlink:href="#image1_3228_4091" transform="matrix(0.000992467 0 0 0.000670691 0.00376634 0)" />
+</pattern>
+<image id="image1_3228_4091" width="1000" height="1491" preserveAspectRatio="none" xlink:href="resources/df2122146fd5c06c0f800eb1b4b1851fd9bf3d5f7c5fa5d1b1e4ad432bd65c36.jpg" />
+</defs><g filter="url(#filter1_d_3228_4091)"><rect x="1069" y="505" width="633.883" height="938" rx="100" fill="url(#pattern1_3228_4091)" shape-rendering="crispEdges" />
+</g></svg>

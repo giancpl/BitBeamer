@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="488" height="489" viewBox="2002 1214 488 489"><defs><filter id="filter7_dii_3324_1251" x="2002" y="1214" width="488" height="489" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="27" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_3324_1251" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_3324_1251" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-18" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_3324_1251" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="14" />
+<feGaussianBlur stdDeviation="9.5" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_3324_1251" result="effect3_innerShadow_3324_1251" />
+</filter>
+</defs><g filter="url(#filter7_dii_3324_1251)"><rect x="2046" y="1232" width="400" height="400" rx="100" fill="#F9F9F9" />
+</g><path d="M2204 1320H2221V1337.09H2204V1320ZM2221 1371.27H2204V1388.36H2187V1422.55H2170V1456.73H2153V1490.91H2170V1508H2187V1490.91H2221V1473.82H2255V1456.73H2289V1439.64H2306V1422.55H2289V1405.45H2272V1388.36H2255V1371.27H2238V1354.18H2221V1371.27ZM2221 1439.64H2238V1456.73H2255V1422.55H2238V1405.45H2221V1388.36H2204V1422.55H2187V1456.73H2170V1490.91H2187V1456.73H2204V1473.82H2221V1439.64ZM2221 1439.64H2204V1422.55H2221V1439.64ZM2255 1320H2272V1337.09H2255V1320ZM2289 1350.4H2306V1367.49H2289V1350.4ZM2323 1388.36H2340V1405.45H2323V1388.36ZM2340 1439.64H2323V1456.73H2340V1439.64Z" fill-rule="evenodd" clip-rule="evenodd" fill="#001CE0" />
+</svg>
