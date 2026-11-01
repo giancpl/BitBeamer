@@ -1,24 +1,31 @@
-# Build and maintenance tools
+# Tools
 
-Run from the repository root with Python 3.10+. On Windows use `py -3`.
+Run from the repository root with Python 3.10+ (`py -3` on Windows).
 
-| Script | When to use it |
+| Entry point | Purpose |
 | --- | --- |
-| `build.py` | Compile `main.tex` or a document in `examples/`; Docker by default; use `--backend native` for installed TeX |
-| `release.py` | Build and validate the ZIP and five previews before replacing previous release files |
-| `package.py` | Create only `dist/bitbeamer-overleaf.zip` from prepared files |
-| `check-repo.py` | Reject tracked local outputs, caches, archives, and redundant placeholders |
-| `check-docs.py` | Check local Markdown links offline without writing files |
-| `validate-release.py` | Validate the extracted ZIP and all logo options |
-| `prepare-assets.py` | Regenerate illustration PDFs after artwork changes; `--check` is read-only |
-| `build-asset-catalogue.py` | Regenerate the searchable and visual icon catalogue; `--check` checks freshness |
-| `build-bitpolito-assets.py` | Regenerate theme logo PDFs from their SVG/PNG sources |
-| `build-cover-background.py` | Recolour and regenerate the prepared cover pattern |
-| `import-assets.py` | Reimport the reviewed original collection using `assets/index.json` |
+| `build.py` | Compile any deck; Docker default, `--backend native` for local TeX |
+| `review.py` | Build one Studio model, the selection or the full archive; sync/check review material |
+| `package.py` | Create named Overleaf ZIPs; `--review` keeps candidates outside stable outputs |
+| `release.py` | Build and validate staged artifacts before replacement; `--review` preserves dist |
 
-`asset_library.py` contains artwork checks and conversion. `asset_catalogue.py`
-generates icon references from the live library and descriptive metadata.
-`doc_checks.py` implements the offline Markdown-link check.
-`build.sh` and `setup.sh` are thin compatibility wrappers around `build.py`.
-Artwork conversion dependencies are only needed for artwork maintenance.
-[The artwork guide](../docs/ASSETS.md) describes the conversion backends.
+Make and VS Code tasks call these same Python launchers.
+See [the review workflow](../docs/STUDIO-COLLECTION.md),
+[maintenance map](../docs/MAINTENANCE.md) and [release guide](../docs/RELEASING.md).
+
+## Internal and specialist tools
+
+`studio_review.py` reads the single review ledger. `studio_templates.py`,
+`studio_guides.py` and `studio_gallery.py` generate derived documentation;
+`studio_preview.py` fingerprints dependencies and updates individual thumbnails.
+The JavaScript files render bounded offline gallery pages.
+`build-studio-catalogue.py` remains a compatible generator entry point.
+
+Artwork preparation, extraction and low-level checks remain separate tools;
+ordinary builds never invoke converters. `package-studio-review.py` exports arbitrary
+subsets or the complete library as upload-sized projects. `validate-studio-review.py`
+compiles those projects in isolation. `review-studio-collection.py` maintains optional
+local original comparisons; it is not part of the daily single-slide workflow.
+`check-repo.py` checks tracked and prospective non-ignored sources, and
+`check-docs.py` validates local links without network access.
+`build.sh` and `setup.sh` remain compatibility wrappers around `build.py`.

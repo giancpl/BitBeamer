@@ -1,113 +1,63 @@
 # Prepare a release
 
-Run from the repository root with the prerequisites in [setup](SETUP.md).
-On Windows replace `python3` with `py -3`.
+Ordinary editing and review do not require a release. Use [the review workflow](STUDIO-COLLECTION.md)
+until the compact Studio selection has been reviewed.
+
+## Validate candidates without changing stable files
+
+```sh
+python3 scripts/release.py --review
+# With installed native TeX:
+python3 scripts/release.py --review --backend native
+```
+
+This builds both designs, stages deterministic ZIPs, validates their extracted
+projects and writes candidate artifacts under `build/review/release/`.
+Previous files in `dist/` are untouched. Use `--style academic` or `--style studio`
+for one design. Package-only candidates use `package.py --style all --review`.
+
+## Stable artifacts
 
 ```sh
 python3 scripts/release.py
-# Native TeX alternative:
-python3 scripts/release.py --backend native
 ```
 
-Docker is the default; install/start it and Python as described in setup.
-The first invocation prepares a missing compiler image automatically.
+Default: both styles, Docker. Add `--backend native` for installed TeX Live/MacTeX.
+Stable Studio packaging requires every selected model's status to be `approved`
+in [the review ledger](../templates/review.json). Supplementary models also require
+an explicit approval. Selection alone is insufficient; no script grants approval.
+All styles requested in a release must validate before any final file is replaced.
 
-The command checks documentation links, prepared artwork, and catalogue
-freshness before compiling five documents. It creates a temporary ZIP and
-validates the extracted template. The ZIP and five PDF previews replace the
-previous release files only after validation and preview preparation succeed.
-If compilation or validation fails, the previous release files remain available.
-Temporary staging files are removed automatically. Local scripts never
-commit, tag, push, or publish.
-
-Make provides the same workflow: `make release` or `make release BACKEND=native`.
-`--image NAME` or `LATEX_IMAGE` chooses a compatible Docker image.
-
-## What belongs on GitHub
-
-Keep presentation and theme sources, the 171 original illustrations and their
-prepared PDFs, descriptive metadata, documentation, examples, build scripts,
-tests, and IDE/CI configuration in Git. Prepared PDFs are required so a clone
-works without artwork converters. Original source files support future edits.
-
-Compiled presentations, release ZIPs, caches, temporary files, and review
-outputs stay in ignored `build/` and `dist/` folders. Do not force-add them.
-The repository check examines tracked and staged paths:
-
-```sh
-python3 scripts/check-repo.py
-```
-
-CI runs this check on Linux, macOS, and Windows. It rejects tracked local
-outputs and redundant placeholders while allowing source and prepared artwork.
-Before committing, inspect `git status --short` and `git diff --cached --stat`.
-
-## Release files
-
-| File in `dist/` | Purpose |
+| Artifact | Contents |
 | --- | --- |
-| `bitbeamer-overleaf.zip` | Upload as a new Overleaf project |
-| `bitbeamer-preview.pdf` | Compact template showcase |
-| `bitbeamer-illustrations.pdf` | Small illustration example |
-| `bitbeamer-catalogue.pdf` | All 171 icons with their commands |
-| `bitbeamer-icon-cheatsheet.pdf` | Printable two-page usage reference |
-| `bitbeamer-cover-layouts.pdf` | Both cover orientations, one per page |
+| `bitbeamer-academic-overleaf.zip` | Academic showcase, themes, icons and references |
+| `bitbeamer-academic-preview.pdf` | Academic presentation |
+| `bitbeamer-overleaf.zip`, `bitbeamer-preview.pdf` | Identical Academic compatibility aliases |
+| `bitbeamer-studio-overleaf.zip` | Selected Studio compositions, prepared dependencies and individual guides |
+| `bitbeamer-studio-preview.pdf` | Selected Studio showcase |
+| `bitbeamer-studio-templates.pdf` | Labelled catalogue of the selected Studio models |
+| `bitbeamer-illustrations.pdf`, `bitbeamer-catalogue.pdf` | Icon examples and all 171 illustrations |
+| `bitbeamer-icon-cheatsheet.pdf`, `bitbeamer-cover-layouts.pdf` | Printable icon guide and Academic cover variants |
 
-The ZIP places the presentation and reference documents at its root. It also
-includes theme files, the bibliography, prepared artwork, licences, an icon
-guide, and an Overleaf quick start. An explicit file list excludes development
-configuration, raw SVGs, local experiments, and unused artwork variants.
-Download the named `bitbeamer-overleaf.zip` release asset for Overleaf; GitHub's
-automatic source-code ZIP contains the development repository instead.
+The full 195-model review catalogue is separate from stable release previews.
+Both ZIPs open their own showcase as `main.tex` and include an editable `start.tex`. Studio includes only selected models
+and compatible aliases whose current compositions are included. The complete library
+remains in the repository; custom subsets and split review packages remain available.
 
-The validator compiles every document and explicit bull, wordmark, monogram,
-and CrypTO variants in both cover orientations, plus 4:3 versions. It checks
-layout warnings, unresolved references, and recorded inputs for dependencies
-on the source checkout. The extracted documents compile with pdfLaTeX and Biber, without Python or shell escape.
+Prepared PDFs and the complete 171-icon registry are included. Raw SVGs, original
+frames, scripts, IDE and Docker configuration are excluded. Studio targets 45 MiB;
+archives over 50 MiB are rejected. An oversized selection requires smaller review
+exports or an intentional selection change; packaging never silently drops models.
+The ZIP is deterministic for unchanged inputs and uses normalized text line endings.
 
-See the [local verification report](CHECKS.md) for completed checks and pending
-hosted verification.
+## GitHub checks and publication
 
-## Individual checks
+Portable checks run on Linux, macOS and Windows. Native Linux builds Academic,
+the selected Studio project and the full Studio review catalogue, then validates
+extracted packages. Branches and pull requests validate unapproved candidates;
+version tags additionally require approval before stable artifacts can be published.
+Local and hosted check results are recorded separately in [the report](CHECKS.md).
 
-```sh
-python3 scripts/check-repo.py
-python3 scripts/check-docs.py
-python3 scripts/build-asset-catalogue.py --check
-python3 scripts/prepare-assets.py --check
-python3 -m unittest discover -s tests -v
-```
-
-To package only, then validate separately:
-
-```sh
-python3 scripts/package.py
-python3 scripts/validate-release.py
-# Native alternative: python3 scripts/validate-release.py --backend native
-```
-
-The package-only command writes the ZIP directly and does not compile it;
-use `release.py` for the complete validated release. Packaging does not convert
-artwork or update tracked sources. The ZIP stores its already prepared files
-without recompression, so identical inputs produce identical bytes across
-Python/zlib versions; the current template is about 600 KB.
-Regenerate changed artwork and catalogues using
-[the maintenance workflow](ASSETS.md) before packaging.
-
-## GitHub automation
-
-Python checks run on Linux, macOS, and Windows. Native Linux TeX explicitly selects `--backend native` for the
-release command and checks source files remain unchanged. Branch pushes and
-pull requests upload only the six named release files as a workflow artifact;
-other local files in `dist/` are excluded.
-
-A pushed tag starting with `v` publishes those files after all jobs pass.
-Once the repository is reviewed, committed, and pushed, publish when ready:
-
-```sh
-git tag v1.0.0
-git push origin v1.0.0
-```
-
-Creating local release artifacts does not perform either action. Report local
-checks separately from GitHub jobs that have not yet run.
+No local script commits, tags, pushes or publishes. Creating a future `v*` tag and
+pushing it is a separate explicit action; the configured workflow publishes the
+validated named assets only after its checks pass.

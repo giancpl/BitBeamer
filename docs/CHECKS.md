@@ -1,123 +1,110 @@
-# Local verification report
+# Verification report
 
-Updated on 31 October 2026. Changes are organized into commits and pushed to
-GitHub. No tags or release publication have been performed.
+Local verification completed on **2026-11-01**. The repository is ready for
+individual graphical refinement and selection. No model was approved automatically.
 
-## Completed locally
+## Current library
 
-| Check | Result |
+| Item | Count |
 | --- | --- |
-| Python checks | The expanded suite covers repository hygiene, failed-release preservation, path aliases, packaging, and artwork. See the audit below for the current test results. |
-| Documentation | Offline relative-link checks passed for the repository and both guides extracted from the ZIP. |
-| Catalogue freshness | Read-only check passed; entries come from the live library and descriptive metadata. |
-| Prepared artwork | All 171 assets are current; ordinary builds performed no conversion. |
-| Source preservation | SHA-256 comparison of 361 source and prepared artwork files found no changes. Metadata and provenance files were retained. |
-| Showcase | 11 PDF pages in both 16:9 and 4:3, with resolved Biber references. |
-| Header | Short titles and subtitles share the nominal 22% minimum. Wrapped headings expand it; text and both logos remain in the solid blue region. The accent uses pale blue `#EEF0FF` and the `0.99` edge; both default header logos use the same 9.5% slide-height size, centered vertically with equal outer page margins. |
-| Cover | The logos sit 9% below the top edge; title, subtitle, author, institute, and date share a left edge with the logos. Both `cover=image-left` and `cover=image-right` are included, with a two-page comparison. Optional logo pairs and the 4:3 layout were checked. |
-| Branding | Default bull head and explicit BitPolito, bull, wordmark, monogram, and CrypTO options compiled from the extracted ZIP. |
-| Complete catalogue | 22 pages; recorder output confirms all 171 prepared illustrations were read. Commands are printed beneath the icons in a three-column, three-row grid. |
-| Icon cheat sheet | Exactly two A4 pages, with vector code fonts, rendered shortcuts, and copyable examples. |
-| Icon API | Generic hyphenated names, sizing, rotation, existing-command preservation, and missing-icon warnings checked. |
-| Clean project copy | Native launcher and explicit Docker backend built successfully from a copy without Git metadata or previous outputs, in a path containing spaces. |
-| Overleaf package | All five documents, both cover orientations in 16:9 and 4:3, and the explicit logo selections compiled after extraction. Layout, missing assets, unresolved references, and recorded checkout dependencies passed validation. |
-| Independent TeX build | All five documents also compiled with only extracted release files mounted, using `latexmk` and Biber directly, with no Python launcher, converter, source checkout, network, or shell escape. |
-| ZIP reproducibility | Host Python 3.14 and container Python 3.11 produced byte-identical ZIPs from the same inputs; no compression library is needed. The allowlist excludes raw SVGs, scripts, Docker files, and IDE configuration. |
+| Unique Studio compositions | 195 |
+| Featured working selection | 24 |
+| Public names, including compatibility aliases | 204 |
+| Prepared graphic parts | 867 |
+| Illustrations | 171 |
 
-The host has no TeX installation. Native compilation was exercised inside an
-existing Linux validation container using its TeX Live tools; the launcher used
-its native backend there. Docker was selected explicitly for host builds.
-The documented native installation steps are still required to build directly
-on this workstation without Docker.
+Each composition has one current editable source and one generated usage guide.
+[review.json](../templates/review.json) is the sole editable source for review
+status, feedback, ordered selection and examples. CSV, guides, registries and
+showcase follow that ledger; generated files are marked.
 
-Final outputs are in `dist/`: the Overleaf ZIP, showcase, illustration example,
-complete catalogue, icon cheat sheet, and two-page cover comparison. Additional
-aspect-ratio and header preview PDFs are under `build/verification/`. These output folders are ignored
-by Git.
+## Completed local checks
 
-## GitHub verification
+- **91 regression tests:** 90 passed; one optional Inkscape converter test skipped.
+- All **195 compositions compile**, with embedded fonts and selectable text.
+  The full command also produces the **205-page indexed review** automatically.
+- The compact selection and showcase contain **24 pages**. Single-slide compilation
+  and cached-PDF reuse pass; source/part/data changes invalidate the affected models.
+  Notes and selection changes do not invalidate artwork previews.
+- Field customization, empty content, graphic replacement, code/CSV input and return
+  to ordinary frames pass. All nine compatibility names and pilot commands compile.
+  Unknown fields, excessive text and oversized graphics fail with model/field diagnostics.
+- Academic is pixel-identical to the saved baseline on all **11 pages** in both
+  **16:9 and 4:3**, compared at 800px width. The recorded Academic and source-artwork
+  hashes are unchanged.
+- Both candidate Overleaf ZIPs pass isolated validation. Academic logo/cover variants,
+  wrapped headings, Studio components, all 171 illustrations and bibliography checks pass.
+- All **five split review projects** compile independently: **20 documents**, including
+  all **195 catalogue pages**, guide examples and explicit Biber verification.
+  The extracted projects have no checkout mount, converter, network or shell escape.
+- The compact Studio ZIP is **3,118,802 bytes (2.97 MiB)**. Split ZIPs account for guides
+  and ZIP overhead and remain below the 45 MiB budget; the largest is 44,381,074 bytes.
+  Both main ZIPs reproduce identical bytes and match the validated candidates.
+- A clean source copy in a path containing spaces builds Academic, Studio and the
+  selection with the native launcher. This uses installed Linux TeX inside the existing
+  compiler container; it is not a claim of a separate native-host installation.
+- Docker-only thumbnail generation and PDF merging pass with host Poppler hidden.
+  The compiler image now includes those tools; ordinary builds need no SVG conversion.
+- The parts gallery displays at most 24 entries. Pagination, filtering, empty results
+  and copying pass behaviour tests; Firefox renders the offline page successfully.
+  The existing slide-gallery navigation and field-map tests continue to pass.
+- Offline documentation links, generated-file freshness, prepared dependencies and
+  tracked/prospective repository-content checks pass. Stable artifacts remain byte-identical.
 
-[Run 41202721701](https://github.com/giancpl/BitBeamer/actions/runs/41202721701)
-passed for commit `e7e6546`: launcher checks on Linux, macOS, and Windows,
-native Linux TeX builds, all logo/cover variants, and independent ZIP validation.
-The release-publication job was correctly skipped because this was a branch push.
+## Studio typography refinement
 
-## Repository and release audit
+The current visual-review pass restores reference-matched Inter Semibold in
+**52 fields across 13 featured models**. Mixed card headings and code commands
+retain distinct weights from their body text and instructions. Coordinates, box
+sizes, font sizes, leading and artwork remain unchanged. Two English captions
+use equivalent shorter wording to stay in their original fixed boxes.
 
-The 31 October audit preserves all 171 icon sources, prepared assets, and
-provenance. Four redundant `.gitkeep` files were removed. Compiled root/example
-PDFs and local archives are now explicitly ignored. `check-repo.py` rejects
-tracked local outputs; CI uploads only the six named release artifacts.
+The showcase, selection, all 195 catalogue pages, customization fixture and
+compatibility fixture compile without overflow. The 91-test suite still passes
+with the same optional converter skip. Updated comparisons and before/after
+images are local under `build/review/style-validation/typography/`.
+This typography pass does not approve any model or update stable release files.
 
-The release script checks inputs before compilation and stages the ZIP and
-previews. Compilation/validation failures or missing preview files preserve
-previous release outputs; regression tests cover these cases. No SVG conversion
-is needed for ordinary builds or packaging.
+## Editable starters and clone handoff
 
-The audit's 33-test suite passed locally (32 passed and the host Inkscape test skipped).
-The validation-container run also passed (its Git-only test is skipped because
-Git is absent there). Full native Linux TeX release generation is checked from
-an exported source copy in a path containing spaces, and the explicit Docker
-release backend is checked from the source checkout. The earlier successful
-GitHub run above covers the previous commit; see [current Actions runs](https://github.com/giancpl/BitBeamer/actions?query=branch%3Amain)
-for the hosted results of the audit commit.
-Hosted Overleaf UI and release publication have not been tested.
+`start-academic.tex` and `start-studio.tex` are short editable documents, independent
+of catalogue regeneration. Both compile to four pages with the shared launcher.
+VS Code provides named starter tasks and an active-document build task. The clone
+guides distinguish these documents from the full Academic and generated Studio showcases.
+Each Overleaf package also contains a corresponding editable `start.tex`, included
+in isolated package validation. The 91-test suite passes with one optional converter skip.
 
-For commands to repeat these checks, see [releasing](RELEASING.md).
+## Start the graphical review
 
-## Default compiler backend
+```sh
+python3 scripts/review.py slide three-cards --open
+python3 scripts/review.py selection --open
+```
 
-Docker is now the default for the launcher, Make, IDE builds, release generation,
-and standalone ZIP validation. `--backend native` remains available and is
-explicitly selected by the Linux CI job. Validation inside the compiler container
-also selects native TeX explicitly, avoiding nested Docker.
+Use [the gallery](templates/index.html), [individual slide guides](templates/GUIDES.md)
+and [review workflow](STUDIO-COLLECTION.md). Refine the current source, record notes
+and status in the ledger, then run `review.py sync` and `review.py check`.
+Fonts and geometry remain fixed; compilation is not graphical approval.
 
-Tests cover default image preparation, missing-Docker messages, explicit native
-builds without Docker, and propagation of the selected release backend. All 37
-tests pass on the host (Inkscape skipped) and in the validation container (Git
-skipped). Running `python3 scripts/release.py` without flags produced all six
-artifacts and passed the 20-document isolated archive validation. An exported
-source copy in a path containing spaces also compiled the showcase and cover
-comparison with `--backend native`. The host still has no native TeX tools;
-that check used the validation container's TeX installation. The
-Overleaf ZIP still contains only TeX sources, guides, and prepared artwork and
-compiles without Docker or Python.
+Current local outputs:
 
-## Inter typography
+- `build/review/slides/<id>/slide.pdf`: one composition.
+- `build/review/studio-selected-templates.pdf`: labelled working selection.
+- `build/review/bitbeamer-studio-review.pdf`: complete indexed review.
+- `build/review/release/`: both validated candidate ZIPs and preview PDFs.
+- `build/review/finalization-checks.json`: aggregate machine report.
+- `build/review/finalize-overleaf-validation/report.json`: isolated full-library checks.
 
-Inter is now the default: Regular body text and Semibold headings/emphasis at
-95% scale. The Helvetica selection and redundant font-comparison PDF were
-removed. Formula and code fonts retain their dedicated roles. The closing
-slide uses centered text with the copyright restored to the bottom.
+Stable files in `dist/` are preserved. Review packages remain available without
+approval; stable Studio exports require every selected model to be explicitly approved.
 
-The Docker image was rebuilt from the updated Dockerfile, including the
-standard Inter and font-encoding packages. All 37 Python checks pass on the
-host (Inkscape skipped), documentation links pass, and all 171 assets remain
-current. The showcase has 11 pages; the catalogue has 22 pages and the icon
-cheat sheet has two A4 pages. Embedded PDF font inspection confirms Inter
-Regular, Semibold, and Italic with no Helvetica text font.
+## Pending outside this local verification
 
-All 20 isolated archive builds passed, including logo variants, both cover
-orientations, and 4:3 layouts. Packaging the same inputs again produced identical
-ZIP bytes. No temporary preview font files are required by these builds.
-The printable icon guide also uses Inter Regular and Semibold; Courier remains
-its dedicated monospaced code font.
+Graphical refinement, approval and final selection remain human review decisions.
+Original-frame geometry/effect comparisons are a separate optional maintenance
+workflow; the checks above do not newly certify every reconstruction against Figma.
 
-The Docker, native setup, and CI dependency lists include Inter support.
-Hosted CI runs on push; the Overleaf web interface has not been tested for
-these typography changes.
-
-## Reusable closing slide
-
-The theme provides `\closingframe`, with optional `title`, `subtitle`, and
-`copyright` keys. Its default rendering is pixel-identical to the preceding
-inline slide. Copyright defaults to the current year and BitPolito. The
-showcase now calls the command and retains 10 numbered frames and 11 PDF pages.
-
-Six-frame checks in 16:9 and 4:3 verified custom text, commas in the copyright,
-restoration of defaults on subsequent calls, hidden elements, an empty closing
-slide, and normal frame numbering/layout afterwards. PDF text extraction and
-layout logs passed. All 37 Python tests passed (host Inkscape check skipped),
-and all 20 isolated release builds passed with refreshed ZIP and PDF artifacts.
-The source and Overleaf guides document the command. Hosted CI runs on push;
-the Overleaf web interface has not been tested for this command.
+Linux/macOS/Windows portable jobs and native Linux CI are configured. Hosted jobs,
+a real Overleaf service upload, version-tag checks and publication have not run in
+this local session. This report records local verification. Repository synchronization is recorded in
+Git history; no version tag or release publication is part of this handoff.

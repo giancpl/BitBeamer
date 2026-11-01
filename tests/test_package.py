@@ -84,11 +84,51 @@ class PackageTests(unittest.TestCase):
                 with ZipFile(target) as archive:
                     self.assertNotIn('images/bitpolito/local-experiment.pdf', archive.namelist())
                     self.assertNotIn('beamerthemelocalbitpolito.sty', archive.namelist())
+                canonical = package.package(root)
+                self.assertEqual(canonical.name, 'bitbeamer-academic-overleaf.zip')
+                self.assertEqual((root / 'dist/bitbeamer-overleaf.zip').read_bytes(), canonical.read_bytes())
                 previous = target.read_bytes()
                 (root / package.THEME_FILES[0]).unlink()
                 with self.assertRaises(FileNotFoundError):
                     package.package(root, target)
                 self.assertEqual(target.read_bytes(), previous)
+
+    def test_studio_archive_is_independent_and_reproducible(self):
+        with tempfile.TemporaryDirectory() as directory:
+            target = Path(directory) / 'studio.zip'
+            package.package(ROOT, target, style='studio', review=True)
+            first = target.read_bytes()
+            package.package(ROOT, target, style='studio', review=True)
+            self.assertEqual(first, target.read_bytes())
+            with ZipFile(target) as archive:
+                names = set(archive.namelist())
+                self.assertTrue(set(package.STUDIO_THEME_FILES).issubset(names))
+                self.assertTrue(set(package.STUDIO_DOCUMENT_SOURCES).issubset(names))
+                self.assertFalse({'beamerthemebitpolito.sty', 'beamerinnerthemebitpolito.sty',
+                                  'beamerouterthemebitpolito.sty', 'beamerthemebitpolito-academic.sty', 'cover-layouts.tex'} & names)
+                self.assertEqual(archive.read('main.tex'), (ROOT / 'main-studio.tex').read_bytes())
+                self.assertNotIn(b'main-studio.tex', archive.read('STUDIO.md'))
+                self.assertNotIn(b'scripts/build.py', archive.read('STUDIO.md'))
+                self.assertIn(b'latexmk -pdf main.tex', archive.read('STUDIO.md'))
+                for name in ('assets-example.tex', 'asset-catalogue.tex'):
+                    self.assertIn(b'\\usetheme{bitpolito-studio}', archive.read(name))
+                    self.assertNotIn(b'\\usetheme{bitpolito}', archive.read(name))
+                for name in package.STUDIO_ASSETS:
+                    self.assertIn('images/studio/' + name, names)
+                self.assertEqual(sum(name.startswith('assets/generated/') and name.endswith('.pdf') for name in names), 171)
+                self.assertNotIn(b'scripts/build', archive.read('TEMPLATES.md'))
+                self.assertNotIn(b'--previews', archive.read('TEMPLATES.md'))
+                self.assertIn(b'latexmk -pdf studio-template-catalogue.tex', archive.read('TEMPLATES.md'))
+                self.assertIn('studio-template-catalogue.tex', names)
+                self.assertIn('templates/studio/registry.tex', names)
+                self.assertEqual(sum(name.startswith('templates/studio/') and name.endswith('.tex') for name in names), 1 + len(__import__('studio_review').selected(ROOT)))
+                self.assertFalse(any(name.startswith(('docs/templates/', 'design-references/')) for name in names))
+                self.assertFalse(any(name.endswith(('.svg', '.py', '.json')) for name in names))
+                extracted = Path(directory) / 'extracted'
+                archive.extractall(extracted)
+            self.assertEqual(check_docs(extracted), 4 + len(__import__('studio_review').selected(ROOT)))
+            self.assertTrue((extracted / 'guides/three-cards.md').is_file())
+            self.assertNotIn('Show editable areas', (extracted / 'guides/three-cards.md').read_text())
 
 
 if __name__ == '__main__':

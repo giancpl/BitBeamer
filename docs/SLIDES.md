@@ -1,8 +1,21 @@
-# Write slides with BitBeamer
+# Write slides with BitBeamer Academic
 
-The sample [main.tex](../main.tex) demonstrates the template rather than giving
+The sample [main-academic.tex](../main-academic.tex) demonstrates the template rather than giving
 a full Bitcoin lecture. It contains 10 numbered frames and 11 PDF pages,
 including a single additional overlay page. Everything is in English.
+
+## Start your own deck
+
+Copy [start-academic.tex](../start-academic.tex) to `my-slides.tex` in the repository
+root. Change its title, author and content, then compile:
+
+```sh
+python3 scripts/build.py my-slides.tex --open
+```
+
+On Windows use `Copy-Item start-academic.tex my-slides.tex` and `py -3`.
+The starter is a short, editable document and is never regenerated. Use the full
+showcase below to find examples of more advanced Beamer features.
 
 ## Feature map
 
@@ -25,25 +38,38 @@ Build the complete visual inventory with
 
 ## Theme defaults
 
-The default logo pair is PoliTo + the white BitPolito bull head. The README
-lists the explicit wordmark, monogram, and CrypTO alternatives. The header uses
+Use `\usetheme{bitpolito-academic}` for this design. The original
+`\usetheme{bitpolito}` is a compatibility name with the same options and layout.
+`main.tex` forwards to `main-academic.tex`; your own deck should start from the editable starter.
+
+The default logo pair is PoliTo + the white BitPolito bull head. The branding options below select the explicit wordmark, monogram, and CrypTO alternatives. The header uses
 a slightly shorter blue band with a pale blue diagonal accent on the right;
 title-only and subtitled frames keep the same nominal height. The default
 header icons have equal heights and share a vertical center, with symmetric
 outer margins. Both cover orientations use a shared left edge for logos and
 text, including the institute when set.
 
+## Choose branding
+
+```latex
+\usetheme{bitpolito-academic} % Default: PoliTo + BitPolito bull head.
+% Choose one declaration; optional alternatives:
+% \usetheme[bitpolitologo=wordmark]{bitpolito-academic}
+% \usetheme[bitpolitologo=monogram]{bitpolito-academic}
+% \usetheme[group=crypto]{bitpolito-academic}
+```
+
 ## Choose a cover
 
 ```latex
 % Classic: artwork on the left, text on the right (default).
-\usetheme[cover=image-left]{bitpolito}
+\usetheme[cover=image-left]{bitpolito-academic}
 % Alternative: text on the left, artwork on the right.
-% \usetheme[cover=image-right]{bitpolito}
+% \usetheme[cover=image-right]{bitpolito-academic}
 ```
 
 Choose one declaration. You can combine it with branding options, for example
-`\usetheme[cover=image-right,group=crypto]{bitpolito}`. The option changes only
+`\usetheme[cover=image-right,group=crypto]{bitpolito-academic}`. The option changes only
 the title page; normal frames and the closing slide keep their layouts.
 
 Both covers share text sizes, spacing, logo alignment, and the pale diagonal

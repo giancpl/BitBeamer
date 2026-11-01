@@ -1,4 +1,4 @@
-"""Check that Git tracks source files and prepared artwork, not local outputs."""
+"""Check tracked and prospective sources, excluding ignored local outputs."""
 
 import argparse
 from pathlib import Path, PurePosixPath
@@ -21,6 +21,7 @@ def unwanted_paths(paths):
         path = PurePosixPath(name)
         output = (any(part in OUTPUT_FOLDERS for part in path.parts)
                   or path.name in LOCAL_FILES
+                  or path.is_relative_to(PurePosixPath('design-references/figma'))
                   or any(path.name.endswith(suffix) for suffix in TEX_OUTPUTS)
                   or path.suffix in {'.pyc', '.tmp', '.swp', '.swo', '.zip', '.7z'}
                   or path.name.endswith(('~', '.tar.gz'))
@@ -36,16 +37,16 @@ def check_repository(root=ROOT):
     git = shutil.which('git')
     if not git:
         raise RuntimeError('This check needs Git and a working checkout.')
-    result = subprocess.run([git, '-C', str(root), 'ls-files', '-z'], check=True,
+    result = subprocess.run([git, '-C', str(root), 'ls-files', '--cached', '--others', '--exclude-standard', '-z'], check=True,
                             stdout=subprocess.PIPE, stderr=subprocess.PIPE)
     paths = result.stdout.decode('utf-8').split('\0')
     paths = [name for name in paths if name]
     unwanted = unwanted_paths(paths)
     if unwanted:
-        raise RuntimeError('Local outputs or redundant placeholders are tracked:\n'
+        raise RuntimeError('Tracked or prospective files include local outputs or redundant placeholders:\n'
                            + '\n'.join(unwanted)
                            + '\nRemove them from Git; keep compiled documents in build/ or dist/.')
-    return len(paths)
+    return len(set(paths))
 
 
 def main(argv=None):
@@ -53,7 +54,7 @@ def main(argv=None):
     parser.add_argument('--root', type=Path, default=ROOT, help=argparse.SUPPRESS)
     args = parser.parse_args(argv)
     try:
-        print(f'Repository ready: {check_repository(args.root.resolve())} tracked files; no local outputs.')
+        print(f'Repository ready: {check_repository(args.root.resolve())} tracked/prospective files; no local outputs.')
         return 0
     except (OSError, RuntimeError, subprocess.CalledProcessError) as error:
         print(f'Repository check failed: {error}', file=sys.stderr)

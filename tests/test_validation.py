@@ -37,6 +37,23 @@ class ValidationBackendTests(unittest.TestCase):
             docker.assert_not_called()
             native.assert_called_once_with(self.archive)
 
+    def test_studio_selection_reaches_the_isolated_container(self):
+        with mock.patch.object(validator, 'docker_image', return_value='docker'), \
+                mock.patch.object(validator.subprocess, 'run') as run:
+            self.assertEqual(validator.main([str(self.archive), '--style', 'studio']), 0)
+        command = run.call_args.args[0]
+        self.assertEqual(command[-4:], ['--backend', 'native', '--style', 'studio'])
+
+    def test_studio_flag_selects_its_named_archive_when_path_is_omitted(self):
+        root = self.archive.parent
+        archive = root / 'dist/bitbeamer-studio-overleaf.zip'
+        archive.parent.mkdir()
+        archive.write_bytes(b'archive placeholder')
+        with mock.patch.object(validator, 'CHECKOUT', root), \
+                mock.patch.object(validator, 'validate') as native:
+            self.assertEqual(validator.main(['--style', 'studio', '--backend', 'native']), 0)
+            native.assert_called_once_with(archive, style='studio')
+
 
 if __name__ == '__main__':
     unittest.main()

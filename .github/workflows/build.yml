@@ -27,10 +27,14 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
       - run: python scripts/prepare-assets.py --check
+      - run: python scripts/prepare-studio-assets.py --check
       - run: python scripts/build-asset-catalogue.py --check
+      - run: python scripts/build-studio-catalogue.py --check
+      - run: python scripts/studio_collection.py check
+      - run: python scripts/catalogue-studio-collection.py --check
       - run: python scripts/check-docs.py
-      - run: python scripts/check-repo.py
-      - run: python scripts/package.py
+      - run: python scripts/review.py check
+      - run: python scripts/package.py --style all --review
 
   latex:
     name: Native TeX and isolated Overleaf builds
@@ -50,8 +54,21 @@ jobs:
         run: |
           /usr/bin/python3 -m unittest discover -s tests -v
           /usr/bin/python3 scripts/prepare-assets.py --check
+      - name: Build both editable starters
+        run: |
+          python3 scripts/build.py start-academic.tex --backend native
+          python3 scripts/build.py start-studio.tex --backend native
       - name: Build and verify release artifacts
+        run: python3 scripts/release.py --review --backend native
+      - name: Compile the complete Studio library
+        run: python3 scripts/review.py all --backend native
+      - name: Require approval and validate stable artifacts on version tags
+        if: startsWith(github.ref, 'refs/tags/v')
         run: python3 scripts/release.py --backend native
+      - name: Verify standalone Studio review projects
+        run: |
+          python3 scripts/package-studio-review.py
+          python3 scripts/validate-studio-review.py --backend native
       - name: Ensure builds did not rewrite source or prepared artwork
         run: |
           python3 scripts/check-repo.py
@@ -61,12 +78,17 @@ jobs:
           name: release-files
           if-no-files-found: error
           path: |
-            dist/bitbeamer-overleaf.zip
-            dist/bitbeamer-preview.pdf
-            dist/bitbeamer-illustrations.pdf
-            dist/bitbeamer-catalogue.pdf
-            dist/bitbeamer-icon-cheatsheet.pdf
-            dist/bitbeamer-cover-layouts.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-studio-overleaf.zip
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-studio-preview.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-studio-templates.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-academic-overleaf.zip
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-academic-preview.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-overleaf.zip
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-preview.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-illustrations.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-catalogue.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-icon-cheatsheet.pdf
+            ${{ startsWith(github.ref, 'refs/tags/v') && 'dist' || 'build/review/release' }}/bitbeamer-cover-layouts.pdf
 
 
   release:
@@ -88,6 +110,11 @@ jobs:
           RELEASE_TAG: ${{ github.ref_name }}
         run: |
           gh release create "$RELEASE_TAG" --verify-tag --title "$RELEASE_TAG" --generate-notes \
+            release-files/bitbeamer-studio-overleaf.zip \
+            release-files/bitbeamer-studio-preview.pdf \
+            release-files/bitbeamer-studio-templates.pdf \
+            release-files/bitbeamer-academic-overleaf.zip \
+            release-files/bitbeamer-academic-preview.pdf \
             release-files/bitbeamer-overleaf.zip \
             release-files/bitbeamer-preview.pdf \
             release-files/bitbeamer-illustrations.pdf \

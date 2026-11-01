@@ -111,16 +111,22 @@ required. Windows filenames and project paths may contain spaces.
 
 ## IDE workflow
 
-Open the repository in VS Code. **Ctrl+Shift+B** builds `main.tex` with Docker.
-Run Task also offers illustrations, the catalogue, icon cheat sheet, both covers,
+Open the repository in VS Code. **Ctrl+Shift+B** builds Academic through the compatible `main.tex` entry point
+with Docker. For your own talk, copy `start-academic.tex` or `start-studio.tex` to
+a new root-level document. Starter tasks compile each editable example; **Build active
+document** compiles the open .tex file. The separate showcase tasks retain their defaults.
+Run Task also offers the separate Studio presentation, illustrations, the catalogue, icon cheat sheet, both covers,
 Docker preparation, documentation checks, and an explicit native build/setup.
 Windows tasks use `py -3`; Linux and macOS tasks use `python3`.
 
 LaTeX Workshop selects **BitBeamer: Docker** by default. On Windows choose
 **BitBeamer: Docker — Windows**. Native TeX Live recipes remain available and
-pass `--backend native`. All build tasks and recipes use `scripts/build.py`.
+pass `--backend native`. Document build tasks and recipes use `scripts/build.py`; review tasks use
+`review.py`, which delegates compilation to that same launcher.
 
 ```sh
+python3 scripts/build.py main-academic.tex
+python3 scripts/build.py main-studio.tex
 python3 scripts/build.py examples/assets-example.tex
 python3 scripts/build.py examples/asset-catalogue.tex
 python3 scripts/build.py examples/icon-cheatsheet.tex
@@ -158,3 +164,17 @@ python3 -m unittest discover -s tests -v
 `python3 scripts/release.py` uses Docker; `--backend native` selects local TeX.
 The extracted Overleaf ZIP compiles directly with pdfLaTeX and Biber and needs
 neither Docker nor Python nor artwork converters.
+
+The default `release.py` command validates both styles. Use `--style academic`
+or `--style studio` to prepare just one. See [Studio](STUDIO.md) for its separate
+16:9 layout and authoring commands.
+
+## Studio review tools
+
+The Docker compiler includes Poppler for individual previews and the indexed review
+PDF; no host installation is needed. After updating an older checkout's compiler,
+rebuild the existing image with `docker build -t bitbeamer-latex:local .`.
+Native review rendering additionally needs Poppler (`pdftocairo` and `pdfunite`)
+on PATH; ordinary LaTeX compilation and read-only review checks do not.
+On Debian/Ubuntu install `poppler-utils`; on macOS install Poppler with your package
+manager. Windows users can use the Docker backend without installing these tools.

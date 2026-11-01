@@ -1,0 +1,14 @@
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+\studiotemplate[title={Three useful tools},caption-one={Learn},caption-two={Build},caption-three={Share},graphic-one={\asset[width=1cm]{alice}}]{three-cards}
+\studiotemplate[title={}]{section-divider}
+\studiotemplate[title={Bitcoin},text-2={A finite supply}]{hero-number}
+\studiotemplate[code-file={examples/code/studio-transaction.txt}]{code}
+\studiotemplate[data-file={examples/data/studio-line.csv},text-1={Example curve},title={Demo},text-3={},text-4={Illustrative data}]{line-chart}
+\studiotemplate[expression={\color{bitpolito}\Large$E=mc^2$}]{equation}
+\begin{frame}{Back to a normal frame}
+Normal Studio content. \studiopart[width=1cm]{protocol-alice}
+\end{frame}
+\end{document}

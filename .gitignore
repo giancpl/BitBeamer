@@ -32,3 +32,6 @@ Thumbs.db
 *.7z
 *.tar.gz
 *.tmp
+
+# Local frame exports used for visual reconstruction; never release these.
+/design-references/figma/

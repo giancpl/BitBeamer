@@ -1,122 +1,79 @@
 # BitBeamer
 
-A BitPolito Beamer theme with blue diagonal headers, a patterned cover,
-**171 vector illustrations**, and Inter typography (Regular text, Semibold
-headings). The compact English showcase contains 10 numbered frames and
-11 PDF pages, including one overlay.
+Two independent BitPolito Beamer designs, sharing **Inter** and **171 vector illustrations**.
+
+| Design | Best for | Showcase | Theme |
+| --- | --- | --- | --- |
+| **BitBeamer Academic** — default | Academic talks and structured presentations | `main-academic.tex` | `bitpolito-academic` |
+| **BitBeamer Studio** | Visual talks and fixed-composition slides | `main-studio.tex` | `bitpolito-studio` |
+
+Studio contains **195 unique compositions**, with **24 featured layouts**.
+All remain available; graphical approval and selection are explicit review decisions.
 
 ## Clone and build
 
-Install **Python 3.10+** and **Docker**, then start Docker. No local LaTeX
-installation is needed for the default workflow. [Setup instructions](docs/SETUP.md)
-cover Docker and the native alternative on Linux, macOS, and Windows.
+Install **Python 3.10+** and **Docker**, then start Docker.
 
 ```sh
-git clone git@github.com:giancpl/BitBeamer.git
+git clone https://github.com/giancpl/BitBeamer.git
 cd BitBeamer
 python3 scripts/build.py
+python3 scripts/build.py main-studio.tex
 ```
 
-Output: `build/main.pdf`. On Windows, replace `python3` with `py -3`.
-You can also clone over HTTPS: `https://github.com/giancpl/BitBeamer.git`.
+Outputs: `build/main.pdf` and `build/main-studio.pdf`.
+On Windows replace `python3` with `py -3`. VS Code's default build task uses the same launcher.
+The first Docker build prepares the compiler image; later builds reuse it offline.
+With TeX Live or MacTeX, latexmk and Biber installed, add `--backend native`.
+See [installation and troubleshooting](docs/SETUP.md).
 
-The first build creates the Docker image automatically and needs internet
-access; it can take several minutes. Later builds reuse the image and compile
-offline. Cloning alone does not download an image.
+## Create a presentation
 
-Open the folder in VS Code and press **Ctrl+Shift+B** to build with Docker.
-LaTeX Workshop uses the same launcher; Windows users choose its Windows Docker
-recipe. Prepared artwork is included, so compilation needs no SVG conversion.
+Choose an editable starting document. These files are never regenerated:
 
-Already have TeX Live or MacTeX, latexmk, and Biber? Build directly with:
+| Starting document | Build | Output |
+| --- | --- | --- |
+| [start-academic.tex](start-academic.tex) | `python3 scripts/build.py start-academic.tex` | `build/start-academic.pdf` |
+| [start-studio.tex](start-studio.tex) | `python3 scripts/build.py start-studio.tex` | `build/start-studio.pdf` |
+
+Copy either file to `my-slides.tex` in the repository root, change its metadata
+and content, then run `python3 scripts/build.py my-slides.tex --open`.
+On Windows copy with `Copy-Item start-studio.tex my-slides.tex` and use `py -3`.
+VS Code provides named starter tasks and **Build active document**; LaTeX Workshop
+also builds the open document through the same launcher.
+
+- **Academic:** [slide-writing guide](docs/SLIDES.md), branding, covers and standard Beamer features.
+- **Studio:** [choose a layout](docs/templates/index.html), then [use its documented fields](docs/USING-STUDIO.md).
+- **Icons:** `\alice[height=2cm]`, `\cow[width=3cm]` or `\asset[width=2cm]{qrcode-one}`.
+  See [the icon guide](docs/ICONS.md) and [printable cheat sheet](examples/icon-cheatsheet.tex).
+
+`main-academic.tex` is the full Academic showcase; `main.tex` forwards to it.
+`main-studio.tex` is a generated Studio showcase. Copy it before editing, because
+`review.py sync` regenerates it from the selected layouts.
+Every Studio slide has a [copyable usage guide](docs/templates/GUIDES.md).
+Ordinary builds use included prepared graphics and need no converter or Figma export.
+
+## Improve the library
 
 ```sh
-python3 scripts/build.py --backend native
+python3 scripts/review.py slide three-cards --open
+python3 scripts/review.py selection --open
+python3 scripts/review.py sync
+python3 scripts/review.py check
 ```
 
-## Edit slides
+Edit a composition's current source, inspect its individual PDF, and record notes,
+status and selection in `templates/review.json`. Single-slide updates reuse cached
+outputs and refresh only affected previews. The full archive is an explicit `review.py all` operation.
+See [the review workflow](docs/STUDIO-COLLECTION.md).
 
-Edit `main.tex` and `bibliography.bib`. Keep the theme files beside your deck.
-The [slide guide](docs/SLIDES.md) maps the showcase to reusable Beamer examples.
+## Overleaf and maintenance
 
-The default logo pair is **PoliTo + the white BitPolito bull head**:
+Academic and Studio have [separate Overleaf projects](docs/README.md#overleaf).
+The main Studio download contains the compact selection and its dependencies;
+custom exports can contain any subset. The complete collection stays in the clone.
 
-```latex
-\usetheme{bitpolito}
-% Optional alternatives; use one theme declaration:
-% \usetheme[bitpolitologo=wordmark]{bitpolito}
-% \usetheme[bitpolitologo=monogram]{bitpolito}
-% \usetheme[group=crypto]{bitpolito}
-```
-
-Choose the cover orientation in the same theme declaration:
-
-```latex
-\usetheme[cover=image-left]{bitpolito}  % Default: image left, text right.
-% Or: \usetheme[cover=image-right]{bitpolito}  % Text left, image right.
-```
-
-Both covers use left-aligned text and logos. Preview both with
-`python3 scripts/build.py examples/cover-layouts.tex` (output:
-`build/cover-layouts.pdf`). See [cover options](docs/SLIDES.md#choose-a-cover).
-
-Title-only and subtitled frames share a standard header height. Wrapped titles
-expand the header when needed. Use `aspectratio=43` for 4:3 instead of 16:9.
-
-## Add the closing slide
-
-Insert `\closingframe` before `\end{document}`, outside any frame. It creates
-the standard blue closing slide with white text and the current-year copyright.
-Use `\closingframe[title={Thank you!},subtitle={Questions?},copyright={}]`
-to customize the text or hide the copyright.
-
-## Use icons
-
-```latex
-\alice[height=2cm]
-\cow[width=3cm]
-\bitcoin[height=1cm]
-\asset[width=2cm]{qrcode-one}
-```
-
-Read the [icon guide](docs/ICONS.md), browse the [complete catalogue](assets/CATALOGUE.md),
-or compile the printable reference:
-
-```sh
-python3 scripts/build.py examples/icon-cheatsheet.tex
-python3 scripts/build.py examples/asset-catalogue.tex
-```
-
-## Download or prepare a release
-
-Download `bitbeamer-overleaf.zip` from a GitHub release, upload it as a new
-Overleaf project, and select **main.tex** with **pdfLaTeX**. The ZIP includes
-prepared artwork and an [Overleaf quick start](docs/OVERLEAF.md).
-
-To build the ZIP and all five PDF references locally:
-
-```sh
-python3 scripts/release.py
-# Native alternative: python3 scripts/release.py --backend native
-```
-
-Outputs are in `dist/`. The script validates the ZIP before replacing a
-previous release. Local scripts never commit, tag, push, or publish.
-Use `python3 scripts/check-repo.py` to check tracked files. See
-[releasing](docs/RELEASING.md) for repository contents and GitHub automation.
-
-## Find your way around
-
-| Location | Purpose |
-| --- | --- |
-| `main.tex`, `bibliography.bib`, `*.sty` | Presentation, references, and theme |
-| `examples/` | Illustration example, full catalogue, printable cheat sheet, cover comparison |
-| `assets/` | Illustration sources, metadata, and prepared library |
-| `images/bitpolito/` | Theme logos, cover pattern, and their sources |
-| `docs/` | [Setup](docs/SETUP.md), [slides](docs/SLIDES.md), [icons](docs/ICONS.md), [artwork](docs/ASSETS.md), [releases](docs/RELEASING.md) |
-| `scripts/`, `tests/` | [Build and maintenance tools](scripts/README.md), automated checks |
-| `build/`, `dist/` | Local outputs, excluded from Git |
-
-Authored documentation, comments, and slides use English. Original artwork and
-original export names are preserved for provenance. The repository retains its
-[licence](LICENSE); supplied brand artwork has its own [licence](images/bitpolito/LICENSE).
+Use [the documentation map](docs/README.md) for writing, review and maintenance.
+[Release instructions](docs/RELEASING.md) explain validation and approval gates.
+`build/`, `dist/` and original-reference comparisons are local outputs, excluded from Git.
+`main.tex` and `\usetheme{bitpolito}` remain compatible Academic entry points.

@@ -9,6 +9,7 @@ import sys
 import webbrowser
 
 from asset_library import check_prepared
+from studio_assets import prepare_studio
 
 ROOT = Path(__file__).resolve().parents[1]
 TOOLS = ('latexmk', 'pdflatex', 'biber')
@@ -89,6 +90,14 @@ def main(argv=None, root=None):
             output = root / output
         output = output.resolve()
         count = check_prepared(root)
+        if 'bitpolito-studio' in document.read_text(encoding='utf-8'):
+            prepare_studio(root, check=True)
+        if any(package in document.read_text(encoding='utf-8') for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/parts/manifest.json').is_file():
+            from studio_parts import prepare as check_studio_parts
+            check_studio_parts(root, check=True)
+        if any(package in document.read_text(encoding='utf-8') for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/collection/manifest.json').is_file():
+            from studio_collection import prepare as check_collection
+            check_collection(root, check=True)
         tool = native_tools() if args.backend == 'native' else docker_image(root, args.image)
         print(f'Ready: {args.backend} compiler; {count} prepared assets.', flush=True)
         if args.setup:
