@@ -6,13 +6,36 @@ Show three illustrated concepts.
 
 Model: `three-cards` · Family: Cards · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/three-cards.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-cards.tex)
 
 [Open this slide individually](../index.html?template=three-cards)
 
 ![Three soft icon cards](../previews/three-cards.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `text/1` | `title` | Main text |
+| `text/2` | `caption-one` | First caption |
+| `text/3` | `caption-two` | Second caption |
+| `text/4` | `caption-three` | Third caption |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-one` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-two` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-three` | Replaces this complete graphic; other elements stay fixed. |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,11 +51,11 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Three useful tools},
-  caption-one={Learn},
-  caption-two={Build},
-  caption-three={Share},
-  graphic-one={\asset[width=1cm]{alice}}
+  text/1={Three useful tools},
+  text/2={Learn},
+  text/3={Build},
+  text/4={Share},
+  graphic/1={\asset[width=1cm]{alice}}
 ]{three-cards}
 ```
 
@@ -48,11 +71,11 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Three useful tools},
-  caption-one={Learn},
-  caption-two={Build},
-  caption-three={Share},
-  graphic-one={\asset[width=1cm]{alice}}
+  text/1={Three useful tools},
+  text/2={Learn},
+  text/3={Build},
+  text/4={Share},
+  graphic/1={\asset[width=1cm]{alice}}
 ]{three-cards}
 \end{document}
 ```
@@ -76,30 +99,30 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>caption-one</code> | First caption (text) | lower left | 18.6% wide × 5.5% high | <code>Unbanked</code> |
 | <code>caption-two</code> | Second caption (text) | lower centre | 18.6% wide × 5.5% high | <code>Remittances</code> |
 | <code>caption-three</code> | Third caption (text) | lower right | 18.6% wide × 5.5% high | <code>Censorship</code> |
-| <code>graphic-one</code> | Replaceable graphic or decoration (graphic) | middle left | 9.0% wide × 16.0% high | <code>\studiopart[width=180.9\studiounit]{card-icon-1}</code> |
-| <code>graphic-two</code> | Replaceable graphic or decoration (graphic) | middle centre | 9.0% wide × 16.0% high | <code>\studiopart[width=162\studiounit]{card-icon-2}</code> |
-| <code>graphic-three</code> | Replaceable graphic or decoration (graphic) | middle right | 9.0% wide × 16.0% high | <code>\studiopart[width=221.4\studiounit]{card-icon-3}</code> |
+| <code>graphic-one</code> | Icon or image inside a fixed composition (graphic) | middle left | 9.0% wide × 16.0% high | <code>\studiopart[width=180.9\studiounit]{card-icon-1}</code> |
+| <code>graphic-two</code> | Icon or image inside a fixed composition (graphic) | middle centre | 9.0% wide × 16.0% high | <code>\studiopart[width=162\studiounit]{card-icon-2}</code> |
+| <code>graphic-three</code> | Icon or image inside a fixed composition (graphic) | middle right | 9.0% wide × 16.0% high | <code>\studiopart[width=221.4\studiounit]{card-icon-3}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-one={\asset[width=0.08099\paperwidth,height=0.14400\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{three-cards}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

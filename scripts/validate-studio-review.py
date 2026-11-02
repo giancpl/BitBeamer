@@ -49,6 +49,7 @@ Normal Studio content after loading the collection. \asset[width=1cm]{alice}
 \end{document}
 ''', encoding='utf-8')
         documents=['main.tex','catalogue.tex','verification.tex']
+        if (project/'customization.tex').is_file():documents.append('customization.tex')
         example=guide_example(project)
         if example:
             (project/'guide-example.tex').write_text(example,encoding='utf-8')

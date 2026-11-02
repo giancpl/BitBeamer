@@ -1,6 +1,8 @@
 # Use a Studio slide
 
-Studio has 195 current compositions. Start with the 24 selected layouts;
+For consistent text, icon and image customization, use the [typed content API](STUDIO-CONTENT.md).
+
+Studio has 194 current compositions. Start with the 24 selected layouts;
 every composition has a [usage guide](templates/GUIDES.md) and one editable source.
 The collection compiles locally and remains in graphical review.
 
@@ -132,4 +134,4 @@ python3 scripts/check-docs.py
 If the layout or its default content changed, rebuild its catalogue/previews as
 described in [the maintenance workflow](STUDIO-COLLECTION.md). Ordinary slide
 writing needs no regeneration or conversion. Guides are generated files; change
-the field metadata or `scripts/studio_guides.py` instead of editing 195 pages.
+the field metadata or `scripts/studio_guides.py` instead of editing 194 pages.

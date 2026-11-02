@@ -1,0 +1,128 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bitpolitostudioslots}[2026/11/02 Typed content slots for Studio templates]
+\RequirePackage{graphicx,tikz}
+\newbox\studio@slotraw
+\newbox\studio@slotfit
+\newcommand{\studio@addslot}[2]{%
+ \ifcsname studio@slots@#1\endcsname\else\expandafter\gdef\csname studio@slots@#1\endcsname{}\fi
+ \expandafter\g@addto@macro\csname studio@slots@#1\endcsname{#2}%
+}
+\newcommand{\DeclareStudioTextSlot}[3]{\studio@addslot{#1}{\studio@textslot{#2}{#3}}}
+\newcommand{\DeclareStudioFileSlot}[3]{\studio@addslot{#1}{\studio@fileslot{#2}{#3}}}
+\newcommand{\DeclareStudioGraphicSlot}[7]{\studio@addslot{#1}{\studio@graphicslot{#2}{#3}{#4}{#5}{#6}{#7}}}
+\newcommand{\studio@textslot}[2]{%
+ \pgfkeys{/studio fields/text/#1/.code=\pgfkeyssetvalue{/studio values/#2}{##1},
+  /studio fields/text/#2/.code=\pgfkeyssetvalue{/studio values/#2}{##1}}%
+ \edef\studio@textnames{\studio@textnames,#2}%
+}
+\newcommand{\studio@fileslot}[2]{%
+ \pgfkeys{/studio fields/file/#1/.code=\studio@setfile{#2}{##1},
+  /studio fields/file/#2/.code=\studio@setfile{#2}{##1}}%
+}
+\newcommand{\studio@graphicslot}[6]{%
+ \pgfkeys{/studio fields/graphic/#1/.code=\pgfkeyssetvalue{/studio values/#2}{\studio@slotgraphic{#2}{#3}{#4}{#5}{#6}{graphic}{##1}},
+ /studio fields/icon/#1/.code=\pgfkeyssetvalue{/studio values/#2}{\studio@slotgraphic{#2}{#3}{#4}{#5}{#6}{icon}{##1}},
+ /studio fields/image/#1/.code=\pgfkeyssetvalue{/studio values/#2}{\studio@slotgraphic{#2}{#3}{#4}{#5}{#6}{image}{##1}},
+ /studio fields/graphic/#2/.code=\pgfkeyssetvalue{/studio values/#2}{\studio@slotgraphic{#2}{#3}{#4}{#5}{#6}{graphic}{##1}},
+ /studio fields/icon/#2/.code=\pgfkeyssetvalue{/studio values/#2}{\studio@slotgraphic{#2}{#3}{#4}{#5}{#6}{icon}{##1}},
+ /studio fields/image/#2/.code=\pgfkeyssetvalue{/studio values/#2}{\studio@slotgraphic{#2}{#3}{#4}{#5}{#6}{image}{##1}}}%
+}
+% Only graphics are fitted. Text retains its source font and overflow checks.
+\newcommand{\studio@fitcontent}[3]{%
+ \begingroup\setbox\studio@slotraw=\hbox{#3}%
+ \ifdim\wd\studio@slotraw>0pt
+  \ifdim\dimexpr\ht\studio@slotraw+\dp\studio@slotraw\relax>0pt
+   \setbox\studio@slotfit=\hbox{\resizebox{#1\studiounit}{!}{\copy\studio@slotraw}}%
+   \ifdim\dimexpr\ht\studio@slotfit+\dp\studio@slotfit\relax>#2\studiounit
+    \setbox\studio@slotfit=\hbox{\resizebox*{!}{#2\studiounit}{\copy\studio@slotraw}}%
+   \fi\box\studio@slotfit
+  \fi
+ \fi\endgroup
+}
+\def\studio@slotbox#1,#2,#3,#4\@nil{\def\studio@cx{#1}\def\studio@cy{#2}\def\studio@fw{#3}\def\studio@fh{#4}}
+\newcommand{\studio@slotgraphic}[7]{%
+ \begingroup
+ \studio@slotbox#5\@nil
+ \def\studio@kind{#6}\def\studio@iconkind{icon}\def\studio@imagekind{image}%
+ \def\studio@value{#7}\def\studio@frame{#4}%
+ \def\studio@content{#7}%
+ \ifx\studio@value\@empty\def\studio@content{}\else
+  \ifx\studio@kind\studio@iconkind
+   \IfFileExists{assets/generated/#7.pdf}{\def\studio@content{\includegraphics{assets/generated/#7.pdf}}}{%
+    \PackageError{bitpolitostudioslots}{Unknown icon '#7' in \studiocurrenttemplate/#1}{Use a name from the icon catalogue.}}%
+  \fi
+  \ifx\studio@kind\studio@imagekind
+   \IfFileExists{#7}{\def\studio@content{\includegraphics{#7}}}{%
+    \PackageError{bitpolitostudioslots}{Missing image '#7' in \studiocurrenttemplate/#1}{Use a project-relative PDF, PNG or JPEG path.}}%
+  \fi
+ \fi
+ \ifx\studio@frame\@empty
+  \studio@fitcontent{\studio@fw}{\studio@fh}{\studio@content}%
+ \else
+  \begin{tikzpicture}[x=\studiounit,y=\studiounit,baseline=0pt,every node/.style={inner sep=0,outer sep=0}]
+   \path[use as bounding box] (0,0) rectangle (#2,#3);
+   \node[anchor=south west] at (0,0) {\includegraphics[width=#2\studiounit]{#4}};
+   \node at (\studio@cx,{#3-\studio@cy}) {\studio@fitcontent{\studio@fw}{\studio@fh}{\studio@content}};
+  \end{tikzpicture}%
+ \fi\endgroup
+}
+\newcommand{\studio@unknownslot}[1]{%
+ \PackageError{bitpolitostudioslots}{Unknown field '#1/\pgfkeyscurrentname' in \studiocurrenttemplate}{Use a slot listed in this template's guide.}%
+}
+\newcommand{\studio@prepareslots}{%
+ \def\studio@textnames{}\def\studio@blocknames{}\def\studio@clearmode{none}%
+ \pgfkeys{/studio fields/text/.unknown/.code=\studio@unknownslot{text},
+ /studio fields/icon/.unknown/.code=\studio@unknownslot{icon},
+ /studio fields/image/.unknown/.code=\studio@unknownslot{image},
+ /studio fields/graphic/.unknown/.code=\studio@unknownslot{graphic},
+ /studio fields/file/.unknown/.code=\studio@unknownslot{file},
+ /studio fields/heading/.unknown/.code=\studio@unknownslot{heading},
+ /studio fields/body/.unknown/.code=\studio@unknownslot{body},
+ /studio fields/clear/.unknown/.code=\studio@unknownslot{clear}}%
+ \pgfkeys{/studio fields/clear/.is choice,
+  /studio fields/clear/none/.code=\def\studio@clearmode{none},
+  /studio fields/clear/text/.code=\def\studio@clearmode{text}}%
+ \ifcsname studio@slots@\studio@source\endcsname\csname studio@slots@\studio@source\endcsname\fi
+}
+\newcommand{\studio@clearslots}{%
+ \def\studio@textmode{text}%
+ \ifx\studio@clearmode\studio@textmode
+  \@for\studio@fieldname:=\studio@textnames\do{%
+   \ifx\studio@fieldname\@empty\else\pgfkeyssetvalue{/studio values/\studio@fieldname}{}\fi}%
+  \@for\studio@fieldname:=\studio@blocknames\do{%
+   \ifx\studio@fieldname\@empty\else
+    \pgfkeyssetvalue{/studio blocks/\studio@fieldname/heading}{}%
+    \pgfkeyssetvalue{/studio blocks/\studio@fieldname/body}{}\fi}%
+ \fi
+}
+% Heading/body setters retain a measured block's original hierarchy.
+\newcommand{\DeclareStudioBlockSlot}[9]{\studio@addslot{#1}{\studio@blockslot{#2}{#3}{#4}{#5}{#6}{#7}{#8}{#9}}}
+\newcommand{\studio@blockslot}[8]{%
+ \pgfkeyssetvalue{/studio blocks/#2/heading}{#3}%
+ \pgfkeyssetvalue{/studio blocks/#2/body}{#4}%
+ \pgfkeys{/studio fields/heading/#1/.code={\pgfkeyssetvalue{/studio blocks/#2/heading}{##1}\studio@buildblock{#2}{#5}{#6}{#7}{#8}},
+ /studio fields/body/#1/.code={\pgfkeyssetvalue{/studio blocks/#2/body}{##1}\studio@buildblock{#2}{#5}{#6}{#7}{#8}},
+ /studio fields/heading/#2/.code={\pgfkeyssetvalue{/studio blocks/#2/heading}{##1}\studio@buildblock{#2}{#5}{#6}{#7}{#8}},
+ /studio fields/body/#2/.code={\pgfkeyssetvalue{/studio blocks/#2/body}{##1}\studio@buildblock{#2}{#5}{#6}{#7}{#8}}}%
+ \edef\studio@blocknames{\studio@blocknames,#2}%
+}
+\newcommand{\studio@buildblock}[5]{%
+ \pgfkeyssetvalue{/studio values/#1}{\studio@textblock{#2}{#3}{#4}{#5}{\pgfkeysvalueof{/studio blocks/#1/heading}}{\pgfkeysvalueof{/studio blocks/#1/body}}}%
+}
+\newcommand{\studio@textblock}[6]{%
+ {\fontsize{#1\studiounit}{#2\studiounit}\selectfont\bfseries #5\rule{0pt}{#1\studiounit}\par}%
+ {\fontsize{#3\studiounit}{#4\studiounit}\selectfont #6\par}%
+}
+% A list fits the current fixed text box and inherits its font and colour.
+\newcommand{\studiolist}[1]{%
+ \foreach\studio@listitem in {#1}{\noindent\hangindent=1em\textbullet{}\nobreak\hspace{.4em}\studio@listitem\par}%
+}
+
+
+\newcommand{\studio@setfile}[2]{%
+ \def\studio@candidate{#2}%
+ \ifx\studio@candidate\@empty\else
+  \IfFileExists{#2}{}{\PackageError{bitpolitostudioslots}{Missing file '#2' in \studiocurrenttemplate/#1}{Use a project-relative code or data file.}}%
+ \fi\pgfkeyssetvalue{/studio values/#1}{#2}%
+}
+\endinput

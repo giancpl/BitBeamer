@@ -33,6 +33,7 @@ def input_sets(root, entries):
     results = {}
     for number, entry in enumerate(entries, 1):
         files = {root/entry['source']}
+        files.update(root/name for name in entry.get('slot_parts', []))
         source = (root/entry['source']).read_text(encoding='utf-8')
         source += json.dumps(entry.get('fields', []))
         # Include literal graphic, code and data paths in both source and defaults.
@@ -56,7 +57,7 @@ def input_sets(root, entries):
                 files.add(path)
         if re.search(r'\\(?:cite|printbibliography)|references', source):
             files.add(root/'bibliography.bib')
-        fields = {key:entry[key] for key in ('id','source','fields','canvas','background','parts') if key in entry}
+        fields = {key:entry[key] for key in ('id','source','fields','canvas','background','parts','slot_parts') if key in entry}
         fields['page'] = number
         values = dict(common)
         values.update(hashed(path) for path in files)

@@ -68,3 +68,9 @@ start-academic:
 	$(PYTHON) scripts/build.py start-academic.tex --backend $(BACKEND)
 start-studio:
 	$(PYTHON) scripts/build.py start-studio.tex --backend $(BACKEND)
+
+.PHONY: studio-customization studio-content-check
+studio-customization:
+	$(PYTHON) scripts/build.py examples/studio-customization.tex --backend $(BACKEND)
+studio-content-check:
+	$(PYTHON) scripts/check-studio-content.py --backend $(BACKEND)

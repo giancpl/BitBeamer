@@ -25,6 +25,7 @@ def common_files(root):
 
 def entry_files(root,entry):
     files={entry['source']:root/entry['source']}
+    files.update({name:root/name for name in entry.get('slot_parts',[])})
     for part in entry.get('parts',[]):
         folder='images/studio/parts' if (root/'images/studio/parts'/(part+'.pdf')).exists() else 'images/studio/collection'
         name=folder+'/'+part+'.pdf';files[name]=root/name
@@ -39,6 +40,8 @@ def generated_data(root,entries):
     data['templates/studio/registry.tex']=registry_document([e for e in entries if not e.get('alias_of')], [e for e in entries if e.get('alias_of')]).encode()
     data['main.tex']=document(entries,short=True);data['catalogue.tex']=document(entries)
     data.update(portable_guides(root, entries))
+    from studio_content_examples import document as customization_document
+    data['customization.tex']=customization_document(entries).encode()
     data['README.md']=('# Studio graphical review\n\nOpen main.tex with pdfLaTeX. It contains at most six models for a quick first build.\nSelect catalogue.tex to render every model in this archive; larger catalogues may need a longer compile timeout.\nSee [the per-slide usage guides](TEMPLATES.md) for complete copyable examples and field tables.\nNo Python, converter, shell escape or Figma export is needed.\n\nLoad the Studio theme and bitpolitostudiotemplates. Each model accepts its documented named fields; edit its source for structural changes.\nAll models are in review or supplementary. No release approval is implied.\n\n## Included compositions\n\n'+''.join('- `\\studiotemplate{'+e['id']+'}` ('+e['status']+')\n' for e in entries)+'\nChoose additional models through the repository review packager; this archive declares only the included model IDs.\n').encode()
     return data
 
@@ -69,6 +72,8 @@ def write_archive(root,target,entries):
 
 def package(root=ROOT,output=None,names=None):
     prepare(root,check=True);pilot_parts(root,check=True)
+    from studio_slots import prepare as check_slots
+    check_slots(root,check=True)
     from studio_templates import inspect_templates
     entries=inspect_templates(root)
     if names:

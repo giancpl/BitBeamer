@@ -1,6 +1,6 @@
 # Refine the Studio library
 
-The library has 195 current compositions and nine compatibility names.
+The library has 194 current compositions and nine compatibility names.
 Start with the 24 featured layouts; the full archive remains available.
 Academic is independent. Compilation never approves a design.
 

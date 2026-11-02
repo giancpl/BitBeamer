@@ -6,13 +6,39 @@ Group concepts into a visual set using the callout explanation layout.
 
 Model: `callout-explanation` · Family: Cards · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/callout-explanation.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/callout-explanation.tex)
 
 [Open this slide individually](../index.html?template=callout-explanation)
 
 ![Callout Explanation](../previews/callout-explanation.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `text/1` | `title` | Main text |
+| `text/2` | `item-2-1` | List or contents entry |
+| `text/4` | `item-2-2` | List or contents entry |
+| `text/5` | `item-2-3` | List or contents entry |
+| `text/6` | `item-2-4` | List or contents entry |
+| `text/7` | `item-2-5` | List or contents entry |
+| `text/8` | `item-2-6` | List or contents entry |
+| `text/9` | `item-2-7` | List or contents entry |
+| `text/3` | `text-3` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +54,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={ZK-STARKs for\\Lightning Network},
-  item-2-1={Off-chain channels scalable payments}
+  text/1={ZK-STARKs for\\Lightning Network},
+  text/2={Off-chain channels\hspace{220\studiounit}scalable payments}
 ]{callout-explanation}
 ```
 
@@ -45,8 +71,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={ZK-STARKs for\\Lightning Network},
-  item-2-1={Off-chain channels scalable payments}
+  text/1={ZK-STARKs for\\Lightning Network},
+  text/2={Off-chain channels\hspace{220\studiounit}scalable payments}
 ]{callout-explanation}
 \end{document}
 ```
@@ -66,10 +92,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle right | 40.6% wide × 30.8% high | <code>\includegraphics[width=1443\studiounit]{images/studio/collection/figma-0924-part-01.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 40.6% wide × 30.8% high | <code>\includegraphics[width=1443\studiounit]{images/studio/collection/figma-0924-part-01.pdf}</code> |
 | <code>title</code> | Main text (text) | upper left | 29.4% wide × 15.1% high | <code>ZK-STARKs for\\Lightning Network</code> |
-| <code>item-2-1</code> | List or contents entry (text) | middle left | 40.7% wide × 5.0% high | <code>Off-chain channels scalable payments</code> |
-| <code>item-2-2</code> | List or contents entry (text) | middle left | 34.5% wide × 4.9% high | <code>- Privacy = proofs of balances / routes</code> |
+| <code>item-2-1</code> | List or contents entry (text) | middle left | 40.7% wide × 5.0% high | <code>Off-chain channels\hspace{220\studiounit}scalable payments</code> |
+| <code>item-2-2</code> | List or contents entry (text) | middle left | 34.5% wide × 4.9% high | <code>\textbullet{} Privacy = balance / route proofs</code> |
 | <code>item-2-3</code> | List or contents entry (text) | middle left | 20.0% wide × 4.9% high | <code>without revealing data</code> |
 | <code>item-2-4</code> | List or contents entry (text) | middle left | 35.5% wide × 4.9% high | <code>\textbullet{} Security = compact proofs of channel</code> |
 | <code>item-2-5</code> | List or contents entry (text) | middle left | 5.5% wide × 4.0% high | <code>state</code> |
@@ -82,21 +108,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.36521\paperwidth,height=0.27675\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{callout-explanation}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

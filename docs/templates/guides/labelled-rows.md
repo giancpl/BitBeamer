@@ -6,13 +6,36 @@ Organize related explanations or talking points using the label and explanation 
 
 Model: `labelled-rows` · Family: Lists · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/labelled-rows.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/labelled-rows.tex)
 
 [Open this slide individually](../index.html?template=labelled-rows)
 
 ![Label and explanation rows](../previews/labelled-rows.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `text/1` | `text-1` | Editable text |
+| `text/4` | `text-2` | Editable text |
+| `text/6` | `text-3` | Editable text |
+| `text/2` | `text-4` | Editable text |
+| `text/5` | `text-5` | Editable text |
+| `text/7` | `text-6` | Editable text |
+| `text/3` | `title` | Main text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +51,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={What if\\someone cheats?},
-  text-1={The change}
+  text/3={What if\\someone cheats?},
+  text/1={The change}
 ]{labelled-rows}
 ```
 
@@ -45,8 +68,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={What if\\someone cheats?},
-  text-1={The change}
+  text/3={What if\\someone cheats?},
+  text/1={The change}
 ]{labelled-rows}
 \end{document}
 ```
@@ -80,7 +103,7 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

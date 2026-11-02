@@ -6,13 +6,40 @@ Group concepts into a visual set using the five icon row layout.
 
 Model: `five-icon-row` · Family: Cards · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/five-icon-row.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/five-icon-row.tex)
 
 [Open this slide individually](../index.html?template=five-icon-row)
 
 ![Five Icon Row](../previews/five-icon-row.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-1` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/5`, `image/5`, `graphic/5` | `graphic-2` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-3` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-4` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-5` | Card panel and shadow stay in place; only the inner content changes. |
+| `text/1` | `title` | Main text |
+| `text/6` | `text-2` | Editable text |
+| `text/3` | `text-3` | Editable text |
+| `text/5` | `text-4` | Editable text |
+| `text/4` | `text-5` | Editable text |
+| `text/2` | `text-6` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +55,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Benefits},
-  text-2={Low\\fees}
+  text/1={Benefits},
+  text/6={Low\\fees}
 ]{five-icon-row}
 ```
 
@@ -45,8 +72,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Benefits},
-  text-2={Low\\fees}
+  text/1={Benefits},
+  text/6={Low\\fees}
 ]{five-icon-row}
 \end{document}
 ```
@@ -66,38 +93,38 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-03.pdf}</code> |
-| <code>graphic-4</code> | Replaceable graphic or decoration (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-04.pdf}</code> |
-| <code>graphic-5</code> | Replaceable graphic or decoration (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-05.pdf}</code> |
+| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-01.pdf}</code> |
+| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-02.pdf}</code> |
+| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-03.pdf}</code> |
+| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-04.pdf}</code> |
+| <code>graphic-5</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-05.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 15.1% wide × 8.6% high | <code>Benefits</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 13.5% wide × 9.2% high | <code>Low\\fees</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 16.9% wide × 10.4% high | <code>Micropayment\\support</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 15.5% wide × 10.2% high | <code>Low energy\\use</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 10.3% wide × 10.4% high | <code>More\\privacy</code> |
-| <code>text-6</code> | Editable text (text) | lower left | 14.1% wide × 9.8% high | <code>Fast\\transactions</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Low\\fees</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Micropayment\\support</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Low energy\\use</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 17.4% wide × 10.8% high | <code>More\\privacy</code> |
+| <code>text-6</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Fast\\transactions</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.12351\paperwidth,height=0.22005\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{five-icon-row}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

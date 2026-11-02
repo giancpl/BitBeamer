@@ -6,13 +6,34 @@ Explain connections, sequences or structure using the vertical timeline layout.
 
 Model: `vertical-timeline` · Family: Diagrams · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/vertical-timeline.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/vertical-timeline.tex)
 
 [Open this slide individually](../index.html?template=vertical-timeline)
 
 ![Vertical timeline](../previews/vertical-timeline.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `text/3` | `title` | Main text |
+| `text/1` | `text-2` | Editable text |
+| `text/2` | `text-3` | Editable text |
+| `text/4` | `text-4` | Editable text |
+| `text/5` | `text-5` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +49,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Free Software},
-  text-2={1960s: Rise of the hacker's\\culture at MIT}
+  text/3={Free Software},
+  text/1={1960s: Rise of the hacker's\\culture at MIT}
 ]{vertical-timeline}
 ```
 
@@ -45,8 +66,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Free Software},
-  text-2={1960s: Rise of the hacker's\\culture at MIT}
+  text/3={Free Software},
+  text/1={1960s: Rise of the hacker's\\culture at MIT}
 ]{vertical-timeline}
 \end{document}
 ```
@@ -78,7 +99,7 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

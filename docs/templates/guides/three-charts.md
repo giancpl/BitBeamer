@@ -6,13 +6,42 @@ Explain values, metrics or relationships using the three-chart dashboard layout.
 
 Model: `three-charts` · Family: Data · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/three-charts.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-charts.tex)
 
 [Open this slide individually](../index.html?template=three-charts)
 
 ![Three-chart dashboard](../previews/three-charts.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/5`, `image/5`, `graphic/5` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
+| `text/8` | `text-1` | Editable text |
+| `text/7` | `text-2` | Editable text |
+| `text/6` | `text-3` | Editable text |
+| `text/5` | `text-4` | Editable text |
+| `text/4` | `text-5` | Editable text |
+| `text/3` | `text-6` | Editable text |
+| `text/2` | `text-7` | Editable text |
+| `text/1` | `title` | Main text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +57,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Experimental Data},
-  text-1={Source: Ben-Sasson, Eli, et al. Scalable, Transparent, and Post-Quantum Secure Computational Integrity. 6 Mar. 2018}
+  text/1={Experimental Data},
+  text/8={Source: Ben-Sasson, Eli, et al. Scalable, Transparent, and Post-Quantum Secure Computational Integrity. 6 Mar. 2018}
 ]{three-charts}
 ```
 
@@ -45,8 +74,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Experimental Data},
-  text-1={Source: Ben-Sasson, Eli, et al. Scalable, Transparent, and Post-Quantum Secure Computational Integrity. 6 Mar. 2018}
+  text/1={Experimental Data},
+  text/8={Source: Ben-Sasson, Eli, et al. Scalable, Transparent, and Post-Quantum Secure Computational Integrity. 6 Mar. 2018}
 ]{three-charts}
 \end{document}
 ```
@@ -66,11 +95,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle right | 27.1% wide × 45.4% high | <code>\includegraphics[width=965\studiounit]{images/studio/collection/figma-0921-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | middle right | 2.2% wide × 8.0% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0921-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle right | 2.2% wide × 13.1% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0921-part-03.pdf}</code> |
-| <code>graphic-4</code> | Replaceable graphic or decoration (graphic) | lower right | 2.2% wide × 13.7% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0921-part-04.pdf}</code> |
-| <code>graphic-5</code> | Replaceable graphic or decoration (graphic) | middle centre | 58.8% wide × 49.3% high | <code>\includegraphics[width=2091\studiounit]{images/studio/collection/figma-0921-part-05.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 27.1% wide × 45.4% high | <code>\includegraphics[width=965\studiounit]{images/studio/collection/figma-0921-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 2.2% wide × 8.0% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0921-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 2.2% wide × 13.1% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0921-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 2.2% wide × 13.7% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0921-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 58.8% wide × 49.3% high | <code>\includegraphics[width=2091\studiounit]{images/studio/collection/figma-0921-part-05.pdf}</code> |
 | <code>text-1</code> | Editable text (text) | lower centre | 70.4% wide × 3.6% high | <code>Source: Ben-Sasson, Eli, et al. Scalable, Transparent, and Post-Quantum Secure Computational Integrity. 6 Mar. 2018</code> |
 | <code>text-2</code> | Editable text (text) | middle right | 23.2% wide × 3.7% high | <code>Total oracles \&amp; Merkle-trees length</code> |
 | <code>text-3</code> | Editable text (text) | middle centre | 2.7% wide × 1.8% high | <code>P Cc</code> |
@@ -85,21 +114,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.24424\paperwidth,height=0.40860\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{three-charts}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

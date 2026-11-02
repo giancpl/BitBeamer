@@ -48,6 +48,8 @@ def rows_for_gallery(root, entries, comparison=False):
                 reference = entry['references'][0]
                 for key, stem in [('original', reference), ('overlay', name + '-overlay'), ('difference', name + '-difference')]:
                     row[key] = dict(preview='web/' + stem + '.webp', full=stem + '.png')
+        for frame in entry.get('slot_parts', []):
+            row['parts'].append(dict(name=Path(frame).stem+' (replacement panel)',url=base+frame))
         rows.append(row)
     return rows
 

@@ -13,7 +13,7 @@ For slide writing, start with [Use a Studio slide](USING-STUDIO.md) and the
 | Review status, notes, ordered selection and examples | [review.json](../templates/review.json) |
 | Prepared graphic dependencies and provenance | [parts guide](STUDIO-PARTS.md) |
 
-There is one implementation for each of 195 compositions. Nine aliases share current
+There is one implementation for each of 194 compositions. Nine aliases share current
 sources with compatible defaults. The 24 featured models are a working selection,
 not a separate library. IDs stay stable when a layout is refined.
 
@@ -21,6 +21,14 @@ Registry, command indices, CSV review sheet, showcase, gallery and per-slide gui
 are generated. Run `python3 scripts/review.py sync` after metadata/review changes.
 Run `python3 scripts/review.py slide <id>` after changing a layout; it refreshes that
 preview. `python3 scripts/review.py check` checks freshness without rewriting files.
+
+## Typed content API
+
+Read [the content API](STUDIO-CONTENT.md) for a common syntax across every model.
+Use numbered `text/N`, `icon/N`, `image/N` and `graphic/N` slots, or named aliases
+such as `text/title`. Structured blocks also expose `heading/N` and `body/N`.
+The individual guides and visual field maps show the stable slot numbers.
+Original field names remain compatible.
 
 ## Public commands
 

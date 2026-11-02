@@ -6,13 +6,35 @@ Explain connections, sequences or structure using the bullseye values layout.
 
 Model: `bullseye-values` · Family: Diagrams · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/bullseye-values.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/bullseye-values.tex)
 
 [Open this slide individually](../index.html?template=bullseye-values)
 
 ![Bullseye Values](../previews/bullseye-values.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `text/2` | `title` | Main text |
+| `text/1` | `text-2` | Editable text |
+| `text/4` | `text-3` | Editable text |
+| `text/5` | `text-4` | Editable text |
+| `text/3` | `text-5` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +50,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Why\\(only)\\Bitcoin},
-  text-2={Financial freedom}
+  text/2={Why\\(only)\\Bitcoin},
+  text/1={Financial freedom}
 ]{bullseye-values}
 ```
 
@@ -45,8 +67,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Why\\(only)\\Bitcoin},
-  text-2={Financial freedom}
+  text/2={Why\\(only)\\Bitcoin},
+  text/1={Financial freedom}
 ]{bullseye-values}
 \end{document}
 ```
@@ -66,7 +88,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle centre | 29.0% wide × 51.6% high | <code>\includegraphics[width=1033\studiounit]{images/studio/collection/figma-1051-part-01.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 29.0% wide × 51.6% high | <code>\includegraphics[width=1033\studiounit]{images/studio/collection/figma-1051-part-01.pdf}</code> |
 | <code>title</code> | Main text (text) | middle centre | 20.0% wide × 20.6% high | <code>Why\\(only)\\Bitcoin</code> |
 | <code>text-2</code> | Editable text (text) | upper centre | 20.7% wide × 5.6% high | <code>Financial freedom</code> |
 | <code>text-3</code> | Editable text (text) | middle right | 13.8% wide × 10.9% high | <code>Strong\\core values</code> |
@@ -78,21 +100,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.26145\paperwidth,height=0.46485\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{bullseye-values}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

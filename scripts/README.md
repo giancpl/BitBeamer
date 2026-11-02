@@ -29,3 +29,14 @@ local original comparisons; it is not part of the daily single-slide workflow.
 `check-repo.py` checks tracked and prospective non-ignored sources, and
 `check-docs.py` validates local links without network access.
 `build.sh` and `setup.sh` remain compatibility wrappers around `build.py`.
+
+## Studio content slots
+
+`scripts/studio_slots.py check` validates prepared card-only replacement backgrounds.
+`prepare` regenerates their PDFs from the retained derived SVGs without Figma exports.
+`annotate` is a maintenance operation that initializes missing stable slot numbers
+and extracts card-only SVGs from retained collection sources; run `prepare` after it.
+The runtime and generated registry need no Python or converter when compiling on Overleaf.
+
+`python3 scripts/check-studio-content.py` verifies typed content, preserved empty
+card panels and expected error cases. Add `--backend native` for installed TeX.

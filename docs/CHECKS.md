@@ -1,16 +1,17 @@
 # Verification report
 
-Local verification completed on **2026-11-01**. The repository is ready for
+Local content-API verification completed on **2026-11-02**. The repository is ready for
 individual graphical refinement and selection. No model was approved automatically.
 
 ## Current library
 
 | Item | Count |
 | --- | --- |
-| Unique Studio compositions | 195 |
+| Unique Studio compositions | 194 |
 | Featured working selection | 24 |
-| Public names, including compatibility aliases | 204 |
-| Prepared graphic parts | 867 |
+| Public names, including compatibility aliases | 203 |
+| Reference graphic parts | 867 |
+| Separated replacement-card panels | 34 |
 | Illustrations | 171 |
 
 Each composition has one current editable source and one generated usage guide.
@@ -18,7 +19,40 @@ Each composition has one current editable source and one generated usage guide.
 status, feedback, ordered selection and examples. CSV, guides, registries and
 showcase follow that ledger; generated files are marked.
 
-## Completed local checks
+## Collection cleanup (2026-11-02)
+
+The supplementary `quotation` preset (Quiet quotation) was removed because it has
+no matching Figma original. The featured selection remains unchanged at 24 layouts.
+The earlier checks below record the collection before this removal. The 194-page
+catalogue and 204-page indexed review were rebuilt, along with previews and local
+original/replica comparisons. The 98-test suite passes (one optional converter
+check skipped); generated-file freshness and offline documentation checks pass.
+
+## Typed content API checks (2026-11-02)
+
+- Every field in all 195 models has a stable typed slot: `text/N`, `icon/N`,
+  `image/N`, `graphic/N` or `file/N`. Seven mixed text blocks also support
+  `heading/N` and `body/N`. Existing fields and all nine aliases remain compatible.
+- All 195 defaults and all 195 guide examples compile without overflow. Default
+  preview PNGs are byte-identical to the pre-API baseline on every page at 480px.
+- The eight-page customization example compiles with replacement icons, images,
+  lists, heading/body blocks and code-file input. Replacements preserve fixed text
+  styles and graphic proportions; 34 separated card frames retain their shadows.
+- Nine real compiler cases pass: clear-option ordering, fitted/empty graphics,
+  empty structured text, alias handling, unknown fields, missing icons/images/files
+  and excessive text. Expected error cases fail with model/field diagnostics.
+- The 98-test suite passes with one optional Inkscape converter check skipped.
+- An isolated eight-model Overleaf review project compiles its main document,
+  catalogue, typed customization example, guide example and Biber verification.
+  The compiler has no source-checkout mount, converter, network or shell escape.
+- Generated guides, template dependencies, prepared panels and offline links are
+  current. Original artwork and Academic layout files are unchanged. No graphical
+  approval, stable-artifact replacement, commit or push is part of this work.
+
+See [the content API](STUDIO-CONTENT.md) and
+[the editable examples](../examples/studio-customization.tex).
+
+## Earlier baseline checks (2026-11-01)
 
 - **91 regression tests:** 90 passed; one optional Inkscape converter test skipped.
 - All **195 compositions compile**, with embedded fonts and selectable text.
@@ -53,17 +87,11 @@ showcase follow that ledger; generated files are marked.
 
 ## Studio typography refinement
 
-The current visual-review pass restores reference-matched Inter Semibold in
-**52 fields across 13 featured models**. Mixed card headings and code commands
-retain distinct weights from their body text and instructions. Coordinates, box
-sizes, font sizes, leading and artwork remain unchanged. Two English captions
-use equivalent shorter wording to stay in their original fixed boxes.
-
-The showcase, selection, all 195 catalogue pages, customization fixture and
-compatibility fixture compile without overflow. The 91-test suite still passes
-with the same optional converter skip. Updated comparisons and before/after
-images are local under `build/review/style-validation/typography/`.
-This typography pass does not approve any model or update stable release files.
+The latest graphical pass revised 35 compositions: stronger Inter text, source
+left edges, centred icon captions, checklist hierarchy and the clockwise diagonal
+title. Text boxes and English copy were adjusted explicitly where needed; fonts
+never shrink automatically. Academic and original artwork stayed unchanged.
+All current templates still require human graphical approval.
 
 ## Editable starters and clone handoff
 

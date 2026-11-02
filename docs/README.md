@@ -35,3 +35,5 @@ The [CSV sheet](../templates/REVIEW.csv) is generated for reading and sharing.
 
 Use the release asset, rather than GitHub's automatic source archive.
 Unapproved Studio work is available through separate review packages.
+
+For reusable composition content, see [Studio content API](STUDIO-CONTENT.md).

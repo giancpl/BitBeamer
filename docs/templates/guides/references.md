@@ -6,13 +6,50 @@ Present technical content in a measured composition using the bibliography and r
 
 Model: `references` · Family: Technical · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/references.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/references.tex)
 
 [Open this slide individually](../index.html?template=references)
 
 ![Bibliography and resources](../previews/references.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `text/2` | `item-1-1` | List or contents entry |
+| `text/3` | `item-1-2` | List or contents entry |
+| `text/4` | `item-1-3` | List or contents entry |
+| `text/5` | `item-1-4` | List or contents entry |
+| `text/6` | `item-1-5` | List or contents entry |
+| `text/7` | `item-1-6` | List or contents entry |
+| `text/8` | `item-1-7` | List or contents entry |
+| `text/9` | `item-1-8` | List or contents entry |
+| `text/10` | `item-1-9` | List or contents entry |
+| `text/11` | `item-1-10` | List or contents entry |
+| `text/12` | `item-1-11` | List or contents entry |
+| `text/13` | `item-1-12` | List or contents entry |
+| `text/14` | `item-1-13` | List or contents entry |
+| `text/15` | `item-1-14` | List or contents entry |
+| `text/16` | `item-1-15` | List or contents entry |
+| `text/17` | `item-1-16` | List or contents entry |
+| `text/18` | `item-1-17` | List or contents entry |
+| `text/1` | `title` | Main text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +65,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={References},
-  item-1-1={Blocks, transactions and Bitcoin supply}
+  text/1={References},
+  text/2={Blocks, transactions and Bitcoin supply}
 ]{references}
 ```
 
@@ -45,8 +82,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={References},
-  item-1-1={Blocks, transactions and Bitcoin supply}
+  text/1={References},
+  text/2={Blocks, transactions and Bitcoin supply}
 ]{references}
 \end{document}
 ```
@@ -66,9 +103,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | upper left | 37.6% wide × 11.4% high | <code>\includegraphics[width=1336\studiounit]{images/studio/collection/figma-0526-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | upper left | 50.4% wide × 8.4% high | <code>\includegraphics[width=1793\studiounit]{images/studio/collection/figma-0526-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle left | 56.0% wide × 29.4% high | <code>\includegraphics[width=1990\studiounit]{images/studio/collection/figma-0526-part-03.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 37.6% wide × 11.4% high | <code>\includegraphics[width=1336\studiounit]{images/studio/collection/figma-0526-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper left | 50.4% wide × 8.4% high | <code>\includegraphics[width=1793\studiounit]{images/studio/collection/figma-0526-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 56.0% wide × 29.4% high | <code>\includegraphics[width=1990\studiounit]{images/studio/collection/figma-0526-part-03.pdf}</code> |
 | <code>item-1-1</code> | List or contents entry (text) | upper left | 37.7% wide × 5.7% high | <code>Blocks, transactions and Bitcoin supply</code> |
 | <code>item-1-2</code> | List or contents entry (text) | upper left | 15.3% wide × 3.5% high | <code>https://mempool.space</code> |
 | <code>item-1-3</code> | List or contents entry (text) | middle left | 37.2% wide × 3.5% high | <code>https://www.blockchain.com/explorer/charts/total-bitcoins</code> |
@@ -93,15 +130,15 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.33813\paperwidth,height=0.10260\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{references}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Bibliography
@@ -112,7 +149,7 @@ Citation keys and resource text can be changed through the listed fields or the 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

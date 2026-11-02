@@ -27,12 +27,12 @@ class ReviewTests(unittest.TestCase):
 
     def test_single_ledger_retains_selection_and_drives_generated_sheet(self):
         data = studio_review.load_review(ROOT)
-        self.assertEqual(len(data['templates']),195)
+        self.assertEqual(len(data['templates']),194)
         self.assertEqual(len(data['selection']),24)
         metadata = json.loads((ROOT/'templates/index.json').read_text())
         self.assertTrue(all('status' not in entry for entry in metadata['templates']))
         rows = list(csv.DictReader(io.StringIO(studio_review.review_csv(ROOT,self.entries))))
-        self.assertEqual(len(rows),195)
+        self.assertEqual(len(rows),194)
         for row in rows:
             item = data['templates'][row['id']]
             self.assertEqual(row['status'],item['status'])

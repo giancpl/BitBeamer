@@ -126,7 +126,7 @@ class PackageTests(unittest.TestCase):
                 self.assertFalse(any(name.endswith(('.svg', '.py', '.json')) for name in names))
                 extracted = Path(directory) / 'extracted'
                 archive.extractall(extracted)
-            self.assertEqual(check_docs(extracted), 4 + len(__import__('studio_review').selected(ROOT)))
+            self.assertEqual(check_docs(extracted), 5 + len(__import__('studio_review').selected(ROOT)))
             self.assertTrue((extracted / 'guides/three-cards.md').is_file())
             self.assertNotIn('Show editable areas', (extracted / 'guides/three-cards.md').read_text())
 

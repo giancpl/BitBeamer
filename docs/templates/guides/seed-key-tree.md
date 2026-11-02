@@ -6,13 +6,57 @@ Present technical content in a measured composition using the seed key tree layo
 
 Model: `seed-key-tree` · Family: Technical · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/seed-key-tree.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/seed-key-tree.tex)
 
 [Open this slide individually](../index.html?template=seed-key-tree)
 
 ![Seed Key Tree](../previews/seed-key-tree.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/5`, `image/5`, `graphic/5` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/9`, `image/9`, `graphic/9` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/12`, `image/12`, `graphic/12` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/7`, `image/7`, `graphic/7` | `graphic-6` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/16`, `image/16`, `graphic/16` | `graphic-7` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/18`, `image/18`, `graphic/18` | `graphic-8` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/19`, `image/19`, `graphic/19` | `graphic-9` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/22`, `image/22`, `graphic/22` | `graphic-10` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-11` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-12` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/6`, `image/6`, `graphic/6` | `graphic-13` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/10`, `image/10`, `graphic/10` | `graphic-14` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/17`, `image/17`, `graphic/17` | `graphic-15` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/20`, `image/20`, `graphic/20` | `graphic-16` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/11`, `image/11`, `graphic/11` | `graphic-17` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/13`, `image/13`, `graphic/13` | `graphic-18` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/8`, `image/8`, `graphic/8` | `graphic-19` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/14`, `image/14`, `graphic/14` | `graphic-20` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/15`, `image/15`, `graphic/15` | `graphic-21` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/21`, `image/21`, `graphic/21` | `graphic-22` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/23`, `image/23`, `graphic/23` | `graphic-23` | Replaces this complete graphic; other elements stay fixed. |
+| `text/1` | `title` | Main text |
+| `text/2` | `text-2` | Editable text |
+| `text/3` | `text-3` | Editable text |
+| `text/4` | `text-4` | Editable text |
+| `text/5` | `text-5` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +72,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={seed},
-  text-2={Master}
+  text/1={seed},
+  text/2={Master}
 ]{seed-key-tree}
 ```
 
@@ -45,8 +89,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={seed},
-  text-2={Master}
+  text/1={seed},
+  text/2={Master}
 ]{seed-key-tree}
 \end{document}
 ```
@@ -66,29 +110,29 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | upper left | 4.3% wide × 10.5% high | <code>\includegraphics[width=152\studiounit]{images/studio/collection/figma-0115-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | middle left | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle left | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-03.pdf}</code> |
-| <code>graphic-4</code> | Replaceable graphic or decoration (graphic) | middle centre | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-04.pdf}</code> |
-| <code>graphic-5</code> | Replaceable graphic or decoration (graphic) | middle right | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-05.pdf}</code> |
-| <code>graphic-6</code> | Replaceable graphic or decoration (graphic) | middle centre | 30.5% wide × 7.6% high | <code>\includegraphics[width=1083\studiounit]{images/studio/collection/figma-0115-part-06.pdf}</code> |
-| <code>graphic-7</code> | Replaceable graphic or decoration (graphic) | lower centre | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-07.pdf}</code> |
-| <code>graphic-8</code> | Replaceable graphic or decoration (graphic) | lower right | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-08.pdf}</code> |
-| <code>graphic-9</code> | Replaceable graphic or decoration (graphic) | lower centre | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-09.pdf}</code> |
-| <code>graphic-10</code> | Replaceable graphic or decoration (graphic) | lower right | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-10.pdf}</code> |
-| <code>graphic-11</code> | Replaceable graphic or decoration (graphic) | middle left | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-11.pdf}</code> |
-| <code>graphic-12</code> | Replaceable graphic or decoration (graphic) | middle left | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-12.pdf}</code> |
-| <code>graphic-13</code> | Replaceable graphic or decoration (graphic) | middle centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-13.pdf}</code> |
-| <code>graphic-14</code> | Replaceable graphic or decoration (graphic) | middle centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-14.pdf}</code> |
-| <code>graphic-15</code> | Replaceable graphic or decoration (graphic) | lower centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-15.pdf}</code> |
-| <code>graphic-16</code> | Replaceable graphic or decoration (graphic) | lower centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-16.pdf}</code> |
-| <code>graphic-17</code> | Replaceable graphic or decoration (graphic) | middle centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-17.pdf}</code> |
-| <code>graphic-18</code> | Replaceable graphic or decoration (graphic) | middle right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-18.pdf}</code> |
-| <code>graphic-19</code> | Replaceable graphic or decoration (graphic) | middle right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-19.pdf}</code> |
-| <code>graphic-20</code> | Replaceable graphic or decoration (graphic) | lower centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-20.pdf}</code> |
-| <code>graphic-21</code> | Replaceable graphic or decoration (graphic) | lower right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-21.pdf}</code> |
-| <code>graphic-22</code> | Replaceable graphic or decoration (graphic) | lower centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-22.pdf}</code> |
-| <code>graphic-23</code> | Replaceable graphic or decoration (graphic) | lower right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-23.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 4.3% wide × 10.5% high | <code>\includegraphics[width=152\studiounit]{images/studio/collection/figma-0115-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 30.5% wide × 7.6% high | <code>\includegraphics[width=1083\studiounit]{images/studio/collection/figma-0115-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower right | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower right | 5.9% wide × 7.6% high | <code>\includegraphics[width=210\studiounit]{images/studio/collection/figma-0115-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-11.pdf}</code> |
+| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-12.pdf}</code> |
+| <code>graphic-13</code> | Complete graphic, image or decoration (graphic) | middle centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-13.pdf}</code> |
+| <code>graphic-14</code> | Complete graphic, image or decoration (graphic) | middle centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-14.pdf}</code> |
+| <code>graphic-15</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-15.pdf}</code> |
+| <code>graphic-16</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0115-part-16.pdf}</code> |
+| <code>graphic-17</code> | Complete graphic, image or decoration (graphic) | middle centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-17.pdf}</code> |
+| <code>graphic-18</code> | Complete graphic, image or decoration (graphic) | middle right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-18.pdf}</code> |
+| <code>graphic-19</code> | Complete graphic, image or decoration (graphic) | middle right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-19.pdf}</code> |
+| <code>graphic-20</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-20.pdf}</code> |
+| <code>graphic-21</code> | Complete graphic, image or decoration (graphic) | lower right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-21.pdf}</code> |
+| <code>graphic-22</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-22.pdf}</code> |
+| <code>graphic-23</code> | Complete graphic, image or decoration (graphic) | lower right | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0115-part-23.pdf}</code> |
 | <code>title</code> | Main text (text) | upper left | 7.3% wide × 5.9% high | <code>seed</code> |
 | <code>text-2</code> | Editable text (text) | middle left | 9.7% wide × 5.9% high | <code>Master</code> |
 | <code>text-3</code> | Editable text (text) | lower centre | 8.3% wide × 5.1% high | <code>Private</code> |
@@ -100,21 +144,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.03847\paperwidth,height=0.09450\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{seed-key-tree}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

@@ -46,7 +46,7 @@ allowed; `\date{}` matches the example.
 
 ## One source per composition
 
-The library contains **195 current compositions**. The [gallery](templates/index.html)
+The library contains **194 current compositions**. The [gallery](templates/index.html)
 starts with the 24-layout selection; choose Full archive for every composition.
 Nine compatibility names preserve earlier commands by loading the same current
 source, with their original example defaults. They are not separate slides.
@@ -178,6 +178,24 @@ and [BitGeneration 3](https://github.com/BitPolito/decks/blob/HEAD/bitgeneration
 (index, large diagram, split comparison, decision structures, and development
 cycle). Other models are reusable visual and technical compositions in the same
 brand style; they are not claimed as exact replicas of unseen Figma frames.
+
+## Preserve text hierarchy
+
+Measured templates set text weight and alignment per field in their current
+`templates/studio/<name>.tex` source. The corresponding `templates/index.json`
+fields record font size, leading, weight and alignment where reviewed.
+
+Use Inter Semibold for the stronger text in the references. Keep small cover
+footers and checklist details Regular when the original distinguishes them.
+Align dialogue and explanatory paragraphs to their source left edge; centre
+icon captions beneath their own graphic. A centred card does not imply centred
+body text. Preserve explicit line breaks and the separate heading/detail sizes
+in mixed text fields.
+
+After editing a composition, run `python3 scripts/review.py slide <name>` and
+compare the rendering with its original. Shorten English copy or explicitly
+revise the documented field box when necessary; normal builds report overflow
+and never shrink the text automatically. Graphical review remains required.
 
 ## Measured composition collection
 

@@ -2,7 +2,7 @@
 \ProvidesPackage{bitpolitostudiotemplates}[2026/10/31 Named Studio template library]
 \@ifpackageloaded{beamerthemebitpolito-studio}{}{%
   \PackageError{bitpolitostudiotemplates}{Select the Studio theme first}{Use usetheme bitpolito-studio before loading this optional package.}}
-\RequirePackage{bitpolitostudiolayouts,bitpolitostudiomeasured,booktabs,pgfplots,qrcode}
+\RequirePackage{bitpolitostudiolayouts,bitpolitostudiomeasured,bitpolitostudioslots,booktabs,pgfplots,qrcode}
 \pgfplotsset{compat=1.18}
 \providecommand{\studiotemplatepath}{templates/studio}
 \newcommand{\DeclareStudioTemplate}[1]{\expandafter\def\csname studio@template@#1\endcsname{#1}}

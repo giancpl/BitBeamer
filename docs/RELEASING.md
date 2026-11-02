@@ -39,7 +39,7 @@ All styles requested in a release must validate before any final file is replace
 | `bitbeamer-illustrations.pdf`, `bitbeamer-catalogue.pdf` | Icon examples and all 171 illustrations |
 | `bitbeamer-icon-cheatsheet.pdf`, `bitbeamer-cover-layouts.pdf` | Printable icon guide and Academic cover variants |
 
-The full 195-model review catalogue is separate from stable release previews.
+The full 194-model review catalogue is separate from stable release previews.
 Both ZIPs open their own showcase as `main.tex` and include an editable `start.tex`. Studio includes only selected models
 and compatible aliases whose current compositions are included. The complete library
 remains in the repository; custom subsets and split review packages remain available.

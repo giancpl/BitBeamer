@@ -6,13 +6,36 @@ Explain values, metrics or relationships using the card statistics process layou
 
 Model: `card-statistics-process` · Family: Data · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/card-statistics-process.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/card-statistics-process.tex)
 
 [Open this slide individually](../index.html?template=card-statistics-process)
 
 ![Card Statistics Process](../previews/card-statistics-process.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `text/3` | `text-1` | Editable text |
+| `text/1` | `title` | Main text |
+| `text/4` | `text-3` | Editable text |
+| `text/2` | `text-4` | Editable text |
+| `text/5` | `text-5` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +51,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={1.5B+},
-  text-1={People without\\a bank account}
+  text/1={1.5B+},
+  text/3={People without\\a bank account}
 ]{card-statistics-process}
 ```
 
@@ -45,8 +68,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={1.5B+},
-  text-1={People without\\a bank account}
+  text/1={1.5B+},
+  text/3={People without\\a bank account}
 ]{card-statistics-process}
 \end{document}
 ```
@@ -66,8 +89,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle left | 24.8% wide × 36.8% high | <code>\includegraphics[width=476\studiounit]{images/studio/collection/figma-0024-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | middle right | 24.8% wide × 36.8% high | <code>\includegraphics[width=476\studiounit]{images/studio/collection/figma-0024-part-02.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 24.8% wide × 36.8% high | <code>\includegraphics[width=476\studiounit]{images/studio/collection/figma-0024-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 24.8% wide × 36.8% high | <code>\includegraphics[width=476\studiounit]{images/studio/collection/figma-0024-part-02.pdf}</code> |
 | <code>text-1</code> | Editable text (text) | middle left | 20.5% wide × 8.3% high | <code>People without\\a bank account</code> |
 | <code>title</code> | Main text (text) | middle left | 18.5% wide × 8.8% high | <code>1.5B+</code> |
 | <code>text-3</code> | Editable text (text) | middle right | 20.4% wide × 9.0% high | <code>Own a\\smartphone</code> |
@@ -79,21 +102,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.22313\paperwidth,height=0.33083\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{card-statistics-process}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

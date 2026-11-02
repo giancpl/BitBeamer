@@ -1,0 +1,86 @@
+% Editable typed-slot examples. Copy one command into your own document.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\begin{document}
+
+% three-cards — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/title={Your concepts},
+  text/caption-one={Learn},
+  text/caption-two={Build},
+  text/caption-three={Share},
+  icon/1={alice},
+  icon/2={cow},
+  icon/3={bitcoin}
+]{three-cards}
+
+% two-cards — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/1={People},
+  text/2={Bitcoin},
+  icon/1={alice},
+  icon/2={bitcoin}
+]{two-cards}
+
+% five-icon-row — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/title={Values},
+  text/2={Learn},
+  text/3={Build},
+  text/4={Save},
+  text/5={Verify},
+  text/6={Share},
+  icon/1={alice},
+  icon/2={cow},
+  icon/3={bitcoin},
+  icon/4={alice},
+  icon/5={bitcoin}
+]{five-icon-row}
+
+% checklist-rail — see its individual guide for every numbered slot.
+\studiotemplate[
+  clear={text},
+  text/title={Your\\checklist},
+  heading/1={Choose hardware},
+  body/1={Use a device that meets your needs.},
+  heading/2={Install software},
+  body/2={Follow the official project instructions.},
+  heading/4={Verify the setup},
+  body/4={Check connections and available storage.},
+  heading/5={Start your node},
+  body/5={Keep your recovery information safe.}
+]{checklist-rail}
+
+% four-card-grid — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/title={Your workshop},
+  text/item-3-1={Third concept},
+  text/item-3-2={\textbullet{} A short takeaway},
+  heading/text-2={First concept},
+  body/text-2={\studiolist{{One point},{Another point}}},
+  heading/text-4={Second concept},
+  body/text-4={A short explanation.},
+  heading/text-5={Next steps},
+  body/text-5={Share what you learned.}
+]{four-card-grid}
+
+% image-left — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/title={Your image},
+  image/1={assets/generated/cow.pdf}
+]{image-left}
+
+% code — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/title={Your commands},
+  file/1={examples/code/studio-transaction.txt}
+]{code}
+
+% closing — see its individual guide for every numbered slot.
+\studiotemplate[
+  text/title={Thanks!}
+]{closing}
+\end{document}

@@ -40,8 +40,9 @@ ARCHIVES = {'academic': 'bitbeamer-academic-overleaf.zip', 'studio': 'bitbeamer-
 STUDIO_DOCUMENT_SOURCES = {**DOCUMENT_SOURCES, 'main.tex': 'main-studio.tex', 'start.tex': 'start-studio.tex'}
 STUDIO_DOCUMENT_SOURCES.pop('cover-layouts.tex')
 STUDIO_DOCUMENT_SOURCES['studio-template-catalogue.tex'] = 'examples/studio-template-catalogue.tex'
+STUDIO_DOCUMENT_SOURCES['customization.tex'] = 'examples/studio-customization.tex'
 STUDIO_THEME_FILES = (
-    'bitpolitostudiopilots.sty', 'bitpolitostudiotemplates.sty', 'bitpolitostudiolayouts.sty', 'bitpolitostudiomeasured.sty',
+    'bitpolitostudioslots.sty', 'bitpolitostudiopilots.sty', 'bitpolitostudiotemplates.sty', 'bitpolitostudiolayouts.sty', 'bitpolitostudiomeasured.sty',
     'beamerthemebitpolito-studio.sty', 'beamerinnerthemebitpolito-studio.sty',
     'beamerouterthemebitpolito-studio.sty', 'beamerfontthemebitpolito-studio.sty',
     'beamerfontthemebitpolito.sty', 'beamercolorthemebitpolito.sty', 'bitpolitoassets.sty',
@@ -65,6 +66,8 @@ def studio_data(root):
     from studio_review import selected
     from studio_guides import portable_guides
     prepare_studio(root, check=True)
+    from studio_slots import prepare as check_slots
+    check_slots(root, check=True)
     prepare_catalogue(root, check=True)
     all_entries = inspect_templates(root)
     by_id = {e['id']:e for e in all_entries}
@@ -77,6 +80,8 @@ def studio_data(root):
     files.update({'images/studio/'+name:root/'images/studio'/name for name in STUDIO_ASSETS})
     for entry in entries + aliases:
         files[entry['source']] = root/entry['source']
+        for name in entry.get('slot_parts', []):
+            files[name] = root/name
         for part in entry.get('parts',[]):
             path = next((root/'images/studio'/folder/(part+'.pdf') for folder in ('parts','collection')
                          if (root/'images/studio'/folder/(part+'.pdf')).is_file()),None)
@@ -89,7 +94,10 @@ def studio_data(root):
         files[relative] = root/relative
     data = {name:path.read_bytes() for name,path in files.items()}
     for name, source in STUDIO_DOCUMENT_SOURCES.items():
-        if name == 'studio-template-catalogue.tex':
+        if name == 'customization.tex':
+            from studio_content_examples import document as customization_document
+            data[name] = customization_document(entries).encode()
+        elif name == 'studio-template-catalogue.tex':
             data[name] = catalogue_document(entries).encode()
         else:
             raw = (root/source).read_bytes()

@@ -7,7 +7,7 @@ Two independent BitPolito Beamer designs, sharing **Inter** and **171 vector ill
 | **BitBeamer Academic** — default | Academic talks and structured presentations | `main-academic.tex` | `bitpolito-academic` |
 | **BitBeamer Studio** | Visual talks and fixed-composition slides | `main-studio.tex` | `bitpolito-studio` |
 
-Studio contains **195 unique compositions**, with **24 featured layouts**.
+Studio contains **194 unique compositions**, with **24 featured layouts**.
 All remain available; graphical approval and selection are explicit review decisions.
 
 ## Clone and build
@@ -44,6 +44,7 @@ also builds the open document through the same launcher.
 
 - **Academic:** [slide-writing guide](docs/SLIDES.md), branding, covers and standard Beamer features.
 - **Studio:** [choose a layout](docs/templates/index.html), then [use its documented fields](docs/USING-STUDIO.md).
+  The [content API](docs/STUDIO-CONTENT.md) provides consistent text, icon and image keys.
 - **Icons:** `\alice[height=2cm]`, `\cow[width=3cm]` or `\asset[width=2cm]{qrcode-one}`.
   See [the icon guide](docs/ICONS.md) and [printable cheat sheet](examples/icon-cheatsheet.tex).
 

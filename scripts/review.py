@@ -98,6 +98,8 @@ def main(argv=None, root=ROOT):
             import runpy
             check_docs(root);check_prepared(root);check_catalogue(root);prepare_studio(root,check=True)
             check_parts(root,check=True);check_collection(root,check=True)
+            from studio_slots import prepare as check_slots
+            check_slots(root,check=True)
             runpy.run_path(str(root/'scripts/catalogue-studio-collection.py'))['catalogue'](root,check=True)
             runpy.run_path(str(root/'scripts/check-repo.py'))['check_repository'](root)
             print('Review sources, documentation, prepared parts and previews are current.')

@@ -1,6 +1,6 @@
 # Slide-by-slide guides
 
-195 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
+194 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
 
 [Getting started](../USING-STUDIO.md) · [Visual gallery](index.html)
 
@@ -50,7 +50,6 @@ Start with the selected layouts, then browse the full collection by family.
 ## Statements
 
 - [Statement with incoming arrow](guides/statement-arrow.md) — selected
-- [Quiet quotation](guides/quotation.md)
 - [Radial glow statement](guides/glow-statement.md) — selected
 - [Plain blue statement](guides/blue-statement.md) — selected
 - [Light icon spotlight](guides/icon-spotlight-light.md)

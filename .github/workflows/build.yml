@@ -58,8 +58,11 @@ jobs:
         run: |
           python3 scripts/build.py start-academic.tex --backend native
           python3 scripts/build.py start-studio.tex --backend native
+          python3 scripts/build.py examples/studio-customization.tex --backend native
       - name: Build and verify release artifacts
         run: python3 scripts/release.py --review --backend native
+      - name: Verify typed Studio content and expected errors
+        run: python3 scripts/check-studio-content.py --backend native
       - name: Compile the complete Studio library
         run: python3 scripts/review.py all --backend native
       - name: Require approval and validate stable artifacts on version tags

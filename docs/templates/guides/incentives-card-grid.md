@@ -6,13 +6,46 @@ Group concepts into a visual set using the incentives card grid layout.
 
 Model: `incentives-card-grid` · Family: Cards · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/incentives-card-grid.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/incentives-card-grid.tex)
 
 [Open this slide individually](../index.html?template=incentives-card-grid)
 
 ![Incentives Card Grid](../previews/incentives-card-grid.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/5`, `image/5`, `graphic/5` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/6`, `image/6`, `graphic/6` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-6` | Replaces this complete graphic; other elements stay fixed. |
+| `text/1` | `title` | Main text |
+| `text/4` | `text-2` | Editable text |
+| `text/2` | `text-3` | Editable text |
+| `text/8` | `text-4` | Editable text |
+| `text/7` | `text-5` | Editable text |
+| `text/11` | `text-6` | Editable text |
+| `text/10` | `text-7` | Editable text |
+| `text/5` | `text-8` | Editable text |
+| `text/3` | `text-9` | Editable text |
+| `text/9` | `text-10` | Editable text |
+| `text/6` | `text-11` | Editable text |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +61,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Incentives},
-  text-2={- Block reward (new BTC)\\\textbullet{} Transaction fees}
+  text/1={Incentives},
+  text/4={- Block reward (new BTC)\\\textbullet{} Transaction fees}
 ]{incentives-card-grid}
 ```
 
@@ -45,8 +78,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Incentives},
-  text-2={- Block reward (new BTC)\\\textbullet{} Transaction fees}
+  text/1={Incentives},
+  text/4={- Block reward (new BTC)\\\textbullet{} Transaction fees}
 ]{incentives-card-grid}
 \end{document}
 ```
@@ -66,12 +99,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle left | 41.9% wide × 28.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | upper left | 5.9% wide × 10.4% high | <code>\includegraphics[width=209\studiounit]{images/studio/collection/figma-0869-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle right | 41.9% wide × 21.5% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-03.pdf}</code> |
-| <code>graphic-4</code> | Replaceable graphic or decoration (graphic) | lower right | 41.9% wide × 21.5% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-04.pdf}</code> |
-| <code>graphic-5</code> | Replaceable graphic or decoration (graphic) | middle right | 41.9% wide × 28.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-05.pdf}</code> |
-| <code>graphic-6</code> | Replaceable graphic or decoration (graphic) | lower left | 41.9% wide × 42.6% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-06.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 28.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper left | 5.9% wide × 10.4% high | <code>\includegraphics[width=209\studiounit]{images/studio/collection/figma-0869-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 21.5% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 41.9% wide × 21.5% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 28.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | lower left | 41.9% wide × 42.6% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0869-part-06.pdf}</code> |
 | <code>title</code> | Main text (text) | upper left | 17.0% wide × 7.5% high | <code>Incentives</code> |
 | <code>text-2</code> | Editable text (text) | middle left | 34.7% wide × 7.8% high | <code>- Block reward (new BTC)\\\textbullet{} Transaction fees</code> |
 | <code>text-3</code> | Editable text (text) | upper left | 35.6% wide × 5.0% high | <code>Miner</code> |
@@ -89,21 +122,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.37711\paperwidth,height=0.25560\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{incentives-card-grid}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

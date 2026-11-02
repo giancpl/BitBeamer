@@ -6,13 +6,39 @@ Group four short explanations.
 
 Model: `four-card-grid` · Family: Cards · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/four-card-grid.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/four-card-grid.tex)
 
 [Open this slide individually](../index.html?template=four-card-grid)
 
 ![Four soft text cards](../previews/four-card-grid.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
+| `text/1` | `title` | Main text |
+| `text/2`, `heading/2`, `body/2` | `text-2` | Use heading/body separately to retain the measured text hierarchy. |
+| `text/4` | `item-3-1` | List or contents entry |
+| `text/6` | `item-3-2` | List or contents entry |
+| `text/3`, `heading/3`, `body/3` | `text-4` | Use heading/body separately to retain the measured text hierarchy. |
+| `text/5`, `heading/5`, `body/5` | `text-5` | Use heading/body separately to retain the measured text hierarchy. |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,7 +54,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Four ideas}
+  text/1={Four ideas}
 ]{four-card-grid}
 ```
 
@@ -44,7 +70,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Four ideas}
+  text/1={Four ideas}
 ]{four-card-grid}
 \end{document}
 ```
@@ -64,37 +90,37 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle left | 37.5% wide × 29.4% high | <code>\includegraphics[width=1333\studiounit]{images/studio/collection/figma-0603-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | lower left | 37.5% wide × 29.4% high | <code>\includegraphics[width=1333\studiounit]{images/studio/collection/figma-0603-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle right | 38.7% wide × 29.4% high | <code>\includegraphics[width=1375\studiounit]{images/studio/collection/figma-0603-part-03.pdf}</code> |
-| <code>graphic-4</code> | Replaceable graphic or decoration (graphic) | lower right | 38.7% wide × 29.4% high | <code>\includegraphics[width=1375\studiounit]{images/studio/collection/figma-0603-part-04.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 37.5% wide × 29.4% high | <code>\includegraphics[width=1333\studiounit]{images/studio/collection/figma-0603-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 37.5% wide × 29.4% high | <code>\includegraphics[width=1333\studiounit]{images/studio/collection/figma-0603-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 38.7% wide × 29.4% high | <code>\includegraphics[width=1375\studiounit]{images/studio/collection/figma-0603-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 38.7% wide × 29.4% high | <code>\includegraphics[width=1375\studiounit]{images/studio/collection/figma-0603-part-04.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 35.2% wide × 7.5% high | <code>How Bitcoin works</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 33.3% wide × 16.3% high | <code>\\textbf{Proof of Work (What)}\\\\Spam: scarcity versus privacy\\\\Cryptographic hashes and\\\\difficulty adjustment</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 33.3% wide × 16.3% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont Proof of Work (What)}\\\textbullet{} Scarcity vs. privacy...</code> |
 | <code>item-3-1</code> | List or contents entry (text) | lower left | 30.0% wide × 6.2% high | <code>Timechain (When)</code> |
 | <code>item-3-2</code> | List or contents entry (text) | lower left | 29.1% wide × 4.6% high | <code>\textbullet{} Durability/Scarcity</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 34.1% wide × 13.3% high | <code>\\textbf{Proof of Knowledge (Who)}\\\\\\textbullet{} Leak: Privacy vs Scarcity\\\\- Asymmetric cryptography</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 34.1% wide × 9.4% high | <code>\\textbf{Lightning Network (Where)}\\\\\\textbullet{} Scalability/Privacy</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 34.1% wide × 13.3% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont Proof of Knowledge (Who)}\\\textbullet{} Privacy vs. scar...</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 34.1% wide × 9.4% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont Lightning Network (Where)}\\\textbullet{} Scalability/Pri...</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.33737\paperwidth,height=0.26505\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{four-card-grid}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

@@ -70,8 +70,14 @@
 \newcommand{\studiofield}[1]{\pgfkeysvalueof{/studio values/#1}}
 \newcommand{\studio@applyoptions}[1]{\pgfqkeys{/studio fields}{#1}}
 \newcommand{\studioapplyfields}{%
+ \ifdefined\studio@prepareslots\studio@prepareslots\fi
  \expandafter\studio@applyoptions\expandafter{\studiotemplatedefaults}%
  \expandafter\studio@applyoptions\expandafter{\studiotemplateoptions}%
+ % Clear shipped copy first, then restore every explicit option, independent of order.
+ \ifdefined\studio@clearslots
+  \studio@clearslots
+  \expandafter\studio@applyoptions\expandafter{\studiotemplateoptions}%
+ \fi
 }
 \newbox\studiographicbox
 \newcommand{\studiographfield}[7]{%

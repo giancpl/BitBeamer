@@ -38,17 +38,19 @@ class StudioGuideTests(unittest.TestCase):
             self.assertIn(r'\documentclass[aspectratio=169]{beamer}', info['document'])
             self.assertIn(r'\addbibresource{bibliography.bib}', info['document'])
             expected = {field['name'] for field in entry['fields']}
-            options = set(re.findall(r'^\s*([a-z][a-z0-9-]*)=\{', info['example'], re.M))
+            expected |= {field['slot']['key'] for field in entry['fields']}
+            expected |= {prefix+'/'+str(field['slot']['number']) for field in entry['fields'] if field.get('block') for prefix in ('heading','body')}
+            options = set(re.findall(r'^\s*([a-z][a-z0-9/-]*)=\{', info['example'], re.M))
             self.assertTrue(options <= expected, entry['id'])
-            self.assertEqual({field['name'] for field in info['fields']}, expected)
+            self.assertEqual({field['name'] for field in info['fields']}, {field['name'] for field in entry['fields']})
             for field in info['fields']:
                 self.assertIn('<code>' + field['name'] + '</code>', text)
                 self.assertTrue(field['role'])
                 self.assertTrue(field['space'])
             if info['replacement']:
-                self.assertIn('keepaspectratio', info['replacement'])
-                graphic_name = re.search(r'^\s*([a-z][a-z0-9-]*)=\{', info['replacement'], re.M).group(1)
-                self.assertIn(graphic_name, {f['name'] for f in entry['fields'] if f['type']=='graphic'})
+                self.assertIn('icon/', info['replacement'])
+                graphic_name = re.search(r'^\s*([a-z][a-z0-9/-]*)=\{', info['replacement'], re.M).group(1)
+                self.assertIn(graphic_name, {'icon/'+str(f['slot']['number']) for f in entry['fields'] if f['type']=='graphic'})
 
     def test_native_source_defined_areas_are_described_without_invented_boxes(self):
         entry = next(entry for entry in self.entries if entry['id'] == 'table')
@@ -86,7 +88,7 @@ class StudioGuideTests(unittest.TestCase):
     def test_portable_guides_reference_only_the_included_project(self):
         entries = [entry for entry in self.entries if entry['id'] in ['three-cards','line-chart','code','table','equation']]
         data = portable_guides(ROOT, entries)
-        self.assertEqual(len(data), len(entries) + 1)
+        self.assertEqual(len(data), len(entries) + 3)
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name, value in data.items():
@@ -99,7 +101,7 @@ class StudioGuideTests(unittest.TestCase):
                 target = root / entry['source']
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.touch()
-            self.assertEqual(check_docs(root), len(data))
+            self.assertEqual(check_docs(root), len(data)-1)
             self.assertFalse((root / 'guides/cover.md').exists())
             self.assertNotIn('Show editable areas', (root / 'guides/table.md').read_text())
 

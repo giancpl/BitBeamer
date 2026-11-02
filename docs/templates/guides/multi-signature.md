@@ -6,13 +6,43 @@ Present technical content in a measured composition using the multi signature la
 
 Model: `multi-signature` · Family: Technical · Status: **in review**.
 
-[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Current LaTeX source](../../../templates/studio/multi-signature.tex)
+[Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/multi-signature.tex)
 
 [Open this slide individually](../index.html?template=multi-signature)
 
 ![Multi Signature](../previews/multi-signature.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Typed content slots
+
+Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
+and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored
+in its metadata; the map below shows their positions. Supplied graphics are fitted
+proportionally. Text fonts and alignment remain fixed.
+
+Use `clear=text` to remove shipped copy before adding your own; option order does not matter.
+Omitted fields keep their defaults. Named aliases such as `text/title` also work.
+
+| Public slot | Existing field | Content and appearance |
+| --- | --- | --- |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `text/1` | `title` | Main text |
+| `text/2` | `item-2-1` | List or contents entry |
+| `text/3` | `item-2-2` | List or contents entry |
+| `text/4` | `item-2-3` | List or contents entry |
+| `text/5` | `item-2-4` | List or contents entry |
+| `text/6` | `item-2-5` | List or contents entry |
+| `text/7` | `item-2-6` | List or contents entry |
+| `text/8` | `item-2-7` | List or contents entry |
+| `text/9` | `item-2-8` | List or contents entry |
+| `text/10` | `item-2-9` | List or contents entry |
+| `text/11` | `item-2-10` | List or contents entry |
+
+Original unscoped field names remain compatible. For a labelled block, changing
+`text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
 
 ## Insert this slide
 
@@ -28,8 +58,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  title={Multisignature transactions},
-  item-2-1={Multisignature transactions are Bitcoin}
+  text/1={Multisignature transactions},
+  text/2={Multisignature transactions are Bitcoin}
 ]{multi-signature}
 ```
 
@@ -45,8 +75,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  title={Multisignature transactions},
-  item-2-1={Multisignature transactions are Bitcoin}
+  text/1={Multisignature transactions},
+  text/2={Multisignature transactions are Bitcoin}
 ]{multi-signature}
 \end{document}
 ```
@@ -66,9 +96,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Replaceable graphic or decoration (graphic) | middle centre | 9.7% wide × 10.5% high | <code>\includegraphics[width=345\studiounit]{images/studio/collection/figma-0637-part-01.pdf}</code> |
-| <code>graphic-2</code> | Replaceable graphic or decoration (graphic) | middle centre | 9.7% wide × 9.2% high | <code>\includegraphics[width=346\studiounit]{images/studio/collection/figma-0637-part-02.pdf}</code> |
-| <code>graphic-3</code> | Replaceable graphic or decoration (graphic) | middle centre | 9.7% wide × 9.2% high | <code>\includegraphics[width=346\studiounit]{images/studio/collection/figma-0637-part-03.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 9.7% wide × 10.5% high | <code>\includegraphics[width=345\studiounit]{images/studio/collection/figma-0637-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 9.7% wide × 9.2% high | <code>\includegraphics[width=346\studiounit]{images/studio/collection/figma-0637-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 9.7% wide × 9.2% high | <code>\includegraphics[width=346\studiounit]{images/studio/collection/figma-0637-part-03.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 62.2% wide × 7.5% high | <code>Multisignature transactions</code> |
 | <code>item-2-1</code> | List or contents entry (text) | upper left | 36.1% wide × 4.9% high | <code>Multisignature transactions are Bitcoin</code> |
 | <code>item-2-2</code> | List or contents entry (text) | middle left | 33.7% wide × 4.9% high | <code>transactions that require more than</code> |
@@ -86,21 +116,21 @@ A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`,
 
 ## Replace a graphic
 
-This example fits an icon inside the first graphic slot, preserving its proportions:
+This example selects an icon by catalogue name; its size and position come from the slot:
 
 ```latex
 \studiotemplate[
-  graphic-1={\asset[width=0.08732\paperwidth,height=0.09495\paperheight,keepaspectratio]{alice}}
+  icon/1={alice}
 ]{multi-signature}
 ```
 
-Use any graphic field listed above to target another slot. Some slots contain a complete
+Use a numbered slot listed above to target another graphic. Some slots contain a complete
 panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
-- Use `field={}` to hide content while retaining its space.
+- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
 - Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.

@@ -43,7 +43,7 @@ if (typeof module !== 'undefined' && module.exports) {
       return '<g data-box="' + escape(field.name) + '"><rect x="' + x + '" y="' + y + '" width="' + w + '" height="' + h +
         '" fill="' + color + '" fill-opacity=".06" stroke="' + color + '" stroke-width="' + (height * .002) +
         '"></rect><text x="' + labelX + '" y="' + labelY + '" fill="' + color + '" font-size="' + (height * .023) +
-        '" paint-order="stroke" stroke="white" stroke-width="' + (height * .003) + '">' + escape(field.name) + '</text></g>';
+        '" paint-order="stroke" stroke="white" stroke-width="' + (height * .003) + '">' + escape(field.slot?.key || field.name) + '</text></g>';
     }).join('');
     return '<div class="slide-image">' + markup.slice(0, split) + '<svg class="field-map" aria-hidden="true" viewBox="0 0 ' + width + ' ' + height + '">' + boxes + '</svg></div>' + markup.slice(split);
   }
@@ -64,7 +64,7 @@ if (typeof module !== 'undefined' && module.exports) {
     if (!fields.length) return '<p>This model uses source-defined Beamer areas; inspect its source for placement.</p>';
     return '<div class="map-controls"><button data-areas>Show editable areas</button><select data-field-focus aria-label="Locate an editable field">' +
       '<option value="">All editable fields</option>' + fields.map(field => '<option value="' + escape(field.name) + '">' +
-        escape(field.name + ' — ' + field.role) + '</option>').join('') + '</select></div>';
+        escape((field.slot?.key || field.name) + ' — ' + field.role) + '</option>').join('') + '</select></div>';
   }
   function card(row) {
     const graphics = config.mode === 'comparisons' ? '<div class="pair">' +
@@ -129,7 +129,7 @@ if (typeof module !== 'undefined' && module.exports) {
         '</div><div>' + image(row.difference.preview, row.difference.full, 'Graphic difference') + '</div></div>';
     } else {
       body.innerHTML = '<table><tr><th>Field</th><th>Role / position</th><th>Default</th><th>Space; box</th></tr>' +
-        row.fields.map(field => '<tr><td><code>' + escape(field.name) + '</code></td><td>' + escape(field.role + ' · ' + field.location) +
+        row.fields.map(field => '<tr><td><code>' + escape(field.slot?.key || field.name) + '</code><br><small>' + escape(field.name) + '</small></td><td>' + escape(field.role + ' · ' + field.location) +
         '</td><td><code>' + escape(field.default) + '</code></td><td>' + escape(field.space) + '<br>' + escape(JSON.stringify(field.box || 'file input')) +
         '<br>' + escape(field.font_size || '') + ' / ' + escape(field.leading || '') + '</td></tr>').join('') +
         '</table><p>Compatibility names: ' + escape((row.aliases || []).join(', ') || 'None') + '</p><p>Canvas: ' + escape(JSON.stringify(row.canvas)) + '. ' + escape(row.notes.join(' ')) + '</p><ul>' +

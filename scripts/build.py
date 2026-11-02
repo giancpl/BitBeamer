@@ -98,6 +98,8 @@ def main(argv=None, root=None):
         if any(package in document.read_text(encoding='utf-8') for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/collection/manifest.json').is_file():
             from studio_collection import prepare as check_collection
             check_collection(root, check=True)
+            from studio_slots import prepare as check_slots
+            check_slots(root, check=True)
         tool = native_tools() if args.backend == 'native' else docker_image(root, args.image)
         print(f'Ready: {args.backend} compiler; {count} prepared assets.', flush=True)
         if args.setup:
