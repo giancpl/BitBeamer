@@ -54,11 +54,13 @@ jobs:
         run: |
           /usr/bin/python3 -m unittest discover -s tests -v
           /usr/bin/python3 scripts/prepare-assets.py --check
-      - name: Build both editable starters
+      - name: Build the default Studio entry point and both editable starters
         run: |
+          python3 scripts/build.py --backend native
           python3 scripts/build.py start-academic.tex --backend native
           python3 scripts/build.py start-studio.tex --backend native
           python3 scripts/build.py examples/studio-customization.tex --backend native
+          python3 scripts/review.py models --backend native
       - name: Build and verify release artifacts
         run: python3 scripts/release.py --review --backend native
       - name: Verify typed Studio content and expected errors

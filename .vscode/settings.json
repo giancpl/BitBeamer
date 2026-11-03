@@ -74,5 +74,14 @@
         "bitbeamer-native-windows"
       ]
     }
-  ]
+  ],
+  "search.exclude": {
+    "**/build/**": true,
+    "**/dist/**": true,
+    "**/design-references/figma/**": true,
+    "**/__pycache__/**": true
+  },
+  "files.exclude": {
+    "**/__pycache__": true
+  }
 }

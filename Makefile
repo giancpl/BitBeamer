@@ -74,3 +74,13 @@ studio-customization:
 	$(PYTHON) scripts/build.py examples/studio-customization.tex --backend $(BACKEND)
 studio-content-check:
 	$(PYTHON) scripts/check-studio-content.py --backend $(BACKEND)
+
+.PHONY: studio-models studio-palettes
+studio-models:
+	$(PYTHON) scripts/review.py models --backend $(BACKEND)
+studio-palettes:
+	$(PYTHON) scripts/review.py palettes --backend $(BACKEND)
+
+.PHONY: studio-overview
+studio-overview:
+	$(PYTHON) scripts/build-studio-overview.py --backend $(BACKEND)
