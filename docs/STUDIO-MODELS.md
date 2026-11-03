@@ -1,7 +1,7 @@
 # Studio models, variants and palettes
 
 Start with the [grouped gallery](templates/index.html) or the [100-model index](../templates/MODELS.md).
-The library retains all 194 compositions behind 100 model cards. The featured set contains
+The library retains all 195 compositions behind 100 model cards. The featured set contains
 21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.
 
 Use `\studiotitleframe`, `\studiotocframe` and `\closingframe` for the standard
@@ -87,8 +87,8 @@ python3 scripts/review.py all
 python3 scripts/review.py palettes --previews
 ```
 
-These explicit full-collection operations are slower. `all` builds all 194 native compositions;
-`palettes` is a compatibility alias for `all`; `--previews` refreshes the 194 native thumbnails. Neither command creates opposite-colour versions or a duplicate palette PDF.
+These explicit full-collection operations are slower. `all` builds all 195 native compositions;
+`palettes` is a compatibility alias for `all`; `--previews` refreshes the 195 native thumbnails. Neither command creates opposite-colour versions or a duplicate palette PDF.
 Windows uses `py -3`; append `--backend native` for installed TeX. Default builds use Docker.
 The [migration table](../templates/MIGRATION.md) maps all old names to grouped models.
 

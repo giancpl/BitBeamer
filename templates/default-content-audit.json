@@ -1,6 +1,6 @@
 {
   "schema": 1,
-  "description": "Visible default copy generalized; previous values retained only for maintenance provenance.",
+  "description": "Neutral default copy and retained English examples; previous values also drive the ready-content catalogue.",
   "fields": [
     {
       "composition": "cover",
@@ -28,35 +28,35 @@
       "field": "title",
       "role": "title",
       "previous": "Contents",
-      "default": "Title"
+      "default": "Contents"
     },
     {
       "composition": "contents",
       "field": "item-2-1",
       "role": "label-one",
       "previous": "Why Bitcoin?",
-      "default": "Supporting explanation"
+      "default": "First section"
     },
     {
       "composition": "contents",
       "field": "item-2-2",
       "role": "label-two",
       "previous": "Distributed systems",
-      "default": "Supporting explanation"
+      "default": "Second section"
     },
     {
       "composition": "contents",
       "field": "item-2-3",
       "role": "label-four",
       "previous": "Blockchain",
-      "default": "Supporting explanation"
+      "default": "Third section"
     },
     {
       "composition": "contents",
       "field": "item-2-4",
       "role": "label-five",
       "previous": "Open-source development",
-      "default": "Supporting explanation"
+      "default": "Fourth section"
     },
     {
       "composition": "section-divider",
@@ -8093,6 +8093,48 @@
       "role": "title",
       "previous": "@BitPolito",
       "default": "Thank you"
+    },
+    {
+      "composition": "contents-five",
+      "field": "title",
+      "role": "title",
+      "previous": "Table of contents",
+      "default": "Contents"
+    },
+    {
+      "composition": "contents-five",
+      "field": "item-one",
+      "role": "item-one",
+      "previous": "Introduction to Bitcoin",
+      "default": "First section"
+    },
+    {
+      "composition": "contents-five",
+      "field": "item-two",
+      "role": "item-two",
+      "previous": "Scaling Bitcoin",
+      "default": "Second section"
+    },
+    {
+      "composition": "contents-five",
+      "field": "item-three",
+      "role": "item-three",
+      "previous": "ZK-STARKs",
+      "default": "Third section"
+    },
+    {
+      "composition": "contents-five",
+      "field": "item-four",
+      "role": "item-four",
+      "previous": "Schnorr based protocols",
+      "default": "Fourth section"
+    },
+    {
+      "composition": "contents-five",
+      "field": "item-five",
+      "role": "item-five",
+      "previous": "Q\\&A",
+      "default": "Fifth section"
     }
   ]
 }

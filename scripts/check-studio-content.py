@@ -90,6 +90,24 @@ CASES['standard-cover-unknown-variant']=(r'\studiotitleframe[variant=not-a-cover
 CASES['standard-cover-missing-library']=(r'\studiotitleframe[variant=bitgeneration]','Optional cover variants require')
 
 
+CASES['agenda-manual']=(r"""
+\studiotemplate[variant=panels,title={Contents},item-one={First section},item-two={Second section},item-three={Third section},item-four={Fourth section}]{agenda}
+\studiotemplate[variant=panels-five,title={Contents},item-one={First section},item-two={Second section},item-three={Third section},item-four={Fourth section},item-five={Fifth section}]{agenda}
+\studioframe{Normal frame}{Ordinary content.}
+""",None)
+CASES['agenda-empty']=(r'\studiotemplate[variant=panels,clear=text,title={}]{agenda}\studiotemplate[variant=panels-five,clear=text,title={}]{agenda}',None)
+CASES['agenda-fifth-on-four']=(r'\studiotemplate[variant=panels,item-five={Not available}]{agenda}','Unknown field')
+CASES['agenda-overflow']=(r'\studiotemplate[variant=panels-five,item-one={One\\Two\\Three\\Four\\Five}]{agenda}','Text overflow')
+for count,variant in [(4,'panels'),(5,'panels-five')]:
+    body=r'\studiotocframe[variant='+variant+']\n'
+    for i,word in enumerate(['First','Second','Third','Fourth','Fifth'][:count]):
+        body+=r'\section{'+word+' section}\n'
+        if i==0:body+=r'\subsection{Hidden detail}\subsubsection{Hidden subdetail}'+'\n'
+    body+=r'\studioframe{Normal frame}{Ordinary content.}'
+    CASES['agenda-auto-'+str(count)]=(body,None)
+CASES['agenda-too-many-sections']=(r'\studiotocframe[variant=panels]'+''.join(r'\section{Section '+str(i)+'}' for i in range(5))+r'\studioframe{Normal frame}{Content.}', 'Too many sections')
+
+
 def corner(pdf,page,backend,image,full=False):
     options=['-f',str(page),'-singlefile','-scale-to-x','320' if full else '16','-scale-to-y','180' if full else '9']
     tool=shutil.which('pdftoppm')
@@ -134,6 +152,11 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local'):
                 for page,expected in pages:
                     actual=corner(folder/'test.pdf',page,backend,image)
                     if actual!=expected:raise RuntimeError(f'Palette state/normal-frame leak in {name} page {page}: {actual}, expected {expected}')
+            if name in ('agenda-auto-4','agenda-auto-5'):
+                pages=[' '.join(p.split()) for p in pdf_text(folder/'test.pdf',backend,image).split('\f') if p.strip()]
+                words=['First','Second','Third','Fourth','Fifth'][:int(name[-1])]
+                if len(pages)!=2 or any(word+' section' not in pages[0] for word in words) or 'Hidden' in pages[0] or 'section' in pages[1]:
+                    raise RuntimeError('Measured agenda did not bind top-level sections or isolate its state')
             if name=='standard-cover-variants':
                 pages=[' '.join(p.split()) for p in pdf_text(folder/'test.pdf',backend,image).split('\f') if p.strip()]
                 if len(pages)!=8 or any(not all(value in page for value in ('Your title','Author name','Organization')) for page in pages[:7]):

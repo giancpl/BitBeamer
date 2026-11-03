@@ -11,6 +11,7 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `cover-script-blue` | `cover` | `script` | light |
 | `cover-wide-title` | `cover` | `wide-title` | blue |
 | `contents` | `agenda` | `panels` | light |
+| `contents-five` | `agenda` | `panels-five` | light |
 | `tabbed-agenda` | `agenda` | `rail` | light |
 | `agenda-with-icons` | `agenda` | `icons` | light |
 | `agenda-with-schedule` | `agenda` | `schedule` | light |

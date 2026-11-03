@@ -43,6 +43,7 @@ STUDIO_DOCUMENT_SOURCES.pop('cover-layouts.tex')
 STUDIO_DOCUMENT_SOURCES.pop('academic-showcase.tex')
 STUDIO_DOCUMENT_SOURCES['studio-template-catalogue.tex'] = 'examples/studio-template-catalogue.tex'
 STUDIO_DOCUMENT_SOURCES['customization.tex'] = 'examples/studio-customization.tex'
+STUDIO_DOCUMENT_SOURCES['studio-agendas.tex'] = 'examples/studio-agendas.tex'
 STUDIO_THEME_FILES = (
     'bitpolitostudiomodels.sty', 'bitpolitostudioslots.sty', 'bitpolitostudiopilots.sty', 'bitpolitostudiotemplates.sty', 'bitpolitostudiolayouts.sty', 'bitpolitostudiomeasured.sty',
     'beamerthemebitpolito-studio.sty', 'beamerinnerthemebitpolito-studio.sty',
@@ -125,7 +126,7 @@ Create a new .tex file at the project root and copy a guide's complete example.
 No Python, Docker, converter, shell escape or original Figma export is needed.
 With installed TeX Live or MacTeX, run `latexmk -pdf main.tex`.
 
-This project includes selected compositions, the optional standard covers and their dependencies.
+This project includes selected compositions, the optional standard covers and four/five-item agendas with their dependencies.
 The full repository retains every composition and supports custom review exports.
 Compilation checks do not imply graphical approval.
 ''').encode()
@@ -144,6 +145,12 @@ The default cover is classic blue. Use `\\studiotitleframe[variant=bitgeneration
 for the light BitGeneration cover or `\\studiotitleframe[variant=bitgeneration-photo]`
 for its photographic version. Both use `\\title`, `\\author` and `\\institute`.
 Classic also supports `\\subtitle` and `\\date`; variants retain their original text slots.
+Use `\\studiotocframe[variant=panels]` for four section titles or
+`\\studiotocframe[variant=panels-five]` for five. These preserve the original panel
+geometry, ignore subsections and leave unused panels blank. Too many sections
+produce an explicit error. Both measured agenda variants are included.
+For manual content, use the `agenda` model with `item-one` through `item-four` or
+`item-five`. Omitted fields retain descriptive defaults; use `{}` for empty text.
 Use `\\studiotocframe[title={Agenda}]` to change its heading and
 `\\studioframe[subtitle={Optional subtitle}]{Title}{Content}` for a simple aligned slide.
 All these commands create complete frames. Place catalogue calls outside them.

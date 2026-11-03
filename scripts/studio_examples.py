@@ -99,7 +99,7 @@ def generated(root, entries):
                'Neutral content helps create a new presentation. Other compositions remain in the [ready-content catalogue](EXAMPLES.md) and full layout library.', '',
                'Compile [the compact source](../examples/studio-reusable.tex):', '',
                '```sh', 'python3 scripts/build.py examples/studio-reusable.tex build/review --open', '```', '',
-               'Agenda fields are currently manual. Automatic section binding will follow the visual choice.', '',
+               'For automatic section binding use `\\studiotocframe` with `variant=panels` or `panels-five`. See the Studio agenda guide.', '',
                '| Role | Composition | Editable source |', '| --- | --- | --- |']
     for entry in chosen:
         neutral.append(f"| {entry['title']} | `{entry['id']}` | [{entry['id']}.tex](studio/{entry['id']}.tex) |")

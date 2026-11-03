@@ -70,15 +70,65 @@
   \endgroup
 }
 \pgfkeys{/studio/toc/.is family,
-  /studio/toc/title/.store in=\studio@toctitle}
+  /studio/toc/title/.store in=\studio@toctitle,
+  /studio/toc/variant/.is choice,
+  /studio/toc/variant/auto/.code=\def\studio@tocvariant{auto},
+  /studio/toc/variant/panels/.code=\def\studio@tocvariant{panels},
+  /studio/toc/variant/panels-five/.code=\def\studio@tocvariant{panels-five}}
 \setbeamertemplate{section in toc}{%
   \tikz\node[draw=bitpolito,line width=0.5pt,rounded corners=6pt,
     text width=0.32\paperwidth,minimum height=0.12\paperheight,
     inner xsep=7pt,align=left,font=\normalsize]{\inserttocsection};\par\vspace{0.025\paperheight}%
 }
+% Measured agenda variants reuse the catalogue geometry and actual section titles.
+\newcount\studio@tocitemcount
+\newcommand{\studio@measuredtoc}{%
+  \@ifpackageloaded{bitpolitostudiotemplates}{%
+    \ifcsname studio@choice@agenda@\studio@tocvariant @light\endcsname
+      \@tempcnta=0
+      \loop\ifnum\@tempcnta<5
+        \advance\@tempcnta by 1
+        \expandafter\def\csname studio@tocitem@\the\@tempcnta\endcsname{}%
+      \repeat
+      \studio@tocitemcount=0
+      \long\def\beamer@sectionintoc##1##2##3##4##5{%
+        \advance\studio@tocitemcount by 1
+        \expandafter\def\csname studio@tocitem@\the\studio@tocitemcount\endcsname{\hyperlink{Navigation##3}{##2}}%
+      }%
+      \long\def\beamer@subsectionintoc##1##2##3##4##5##6{}%
+      \long\def\beamer@subsubsectionintoc##1##2##3##4##5##6##7{}%
+      \makeatletter\InputIfFileExists{\jobname.toc}{}{}%
+      \def\studio@fiveagenda{panels-five}%
+      \def\studio@toclimit{4}%
+      \ifx\studio@tocvariant\studio@fiveagenda\def\studio@toclimit{5}\fi
+      \ifnum\studio@tocitemcount>\studio@toclimit
+        \PackageError{bitpolito-studio}{Too many sections for agenda variant '\studio@tocvariant'}%
+          {Use panels-five for five sections, the default automatic contents, or explicit manual agenda fields.}%
+      \fi
+      \ifx\studio@tocvariant\studio@fiveagenda
+        \studiotemplate[variant=panels-five,palette=light,title={\studio@toctitle},
+          item-one={\csname studio@tocitem@1\endcsname},item-two={\csname studio@tocitem@2\endcsname},
+          item-three={\csname studio@tocitem@3\endcsname},item-four={\csname studio@tocitem@4\endcsname},
+          item-five={\csname studio@tocitem@5\endcsname}]{agenda}%
+      \else
+        \studiotemplate[variant=panels,palette=light,title={\studio@toctitle},
+          item-one={\csname studio@tocitem@1\endcsname},item-two={\csname studio@tocitem@2\endcsname},
+          item-three={\csname studio@tocitem@3\endcsname},item-four={\csname studio@tocitem@4\endcsname}]{agenda}%
+      \fi
+    \else
+      \PackageError{bitpolito-studio}{Agenda variant '\studio@tocvariant' is not included in this project}%
+        {Restore the requested agenda source and prepared panels, or use the default automatic contents.}%
+    \fi
+  }{%
+    \PackageError{bitpolito-studio}{Measured agenda variants require bitpolitostudiotemplates}%
+      {Load bitpolitostudiotemplates in the preamble or use the default automatic contents.}%
+  }%
+}
 \newcommand{\studiotocframe}[1][]{%
   \begingroup
-  \pgfkeys{/studio/toc/.cd,title={Contents},#1}%
+  \pgfkeys{/studio/toc/.cd,title={Contents},variant=auto,#1}%
+  \def\studio@autotoc{auto}%
+  \ifx\studio@tocvariant\studio@autotoc
   \begin{frame}[plain]
     \begin{tikzpicture}[remember picture,overlay]
       \node[anchor=west,inner sep=0,text=bitpolito,font=\usebeamerfont{frametitle}]
@@ -87,6 +137,7 @@
         at ([xshift=0.19\paperwidth]current page.center) {\tableofcontents[hideallsubsections]};
     \end{tikzpicture}%
   \end{frame}%
+  \else\studio@measuredtoc\fi
   \endgroup
 }
 \newcommand{\studiosectionframe}[1]{%

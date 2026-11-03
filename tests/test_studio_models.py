@@ -78,7 +78,7 @@ class StudioModelTests(unittest.TestCase):
 const d=JSON.parse(process.argv[2]);
 assert.equal(groupRows(d.rows,d.models,d.selection,'models').length,100);
 assert.equal(groupRows(d.rows,d.models,d.selection,'selected').length,21);
-assert.equal(groupRows(d.rows,d.models,d.selection,'all').length,194);
+assert.equal(groupRows(d.rows,d.models,d.selection,'all').length,195);
 const chosen=groupRows(d.rows,d.models,d.selection,'models',{cover:{variant:'wide-pattern',palette:'blue'}});
 assert.equal(chosen.find(r=>r.model.id==='cover').id,'cover-light');
 assert.equal(chosen.find(r=>r.model.id==='cover').modelPalette,'light');
@@ -111,7 +111,7 @@ assert.equal(pageRows(chosen,0,12).rows.length,12);'''
 
     def test_grouped_subset_export_retains_every_requested_composition(self):
         models=studio_models.load_models(ROOT)['models']
-        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),194)
+        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),195)
         subset=studio_models.expand_model_names(ROOT,['cover','icon-cards'])
         self.assertEqual(len(subset),10)
         self.assertTrue({'cover','cover-light','cover-photo','three-cards','two-cards'}<=set(subset))

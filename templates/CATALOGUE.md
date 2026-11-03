@@ -202,7 +202,8 @@ Browse the [offline visual gallery](../docs/templates/index.html) or compile
 | 191 | [Processing cards](../docs/templates/previews/mining-card-grid.png) | `\studiotemplate{mining-card-grid}` | [mining-card-grid.tex](studio/mining-card-grid.tex) |
 | 192 | [Contact slide with working QR](../docs/templates/previews/contact-qr.png) | `\studiotemplate{contact-qr}` | [contact-qr.tex](studio/contact-qr.tex) |
 | 193 | [Apply Qr](../docs/templates/previews/apply-qr.png) | `\studiotemplate{apply-qr}` | [apply-qr.tex](studio/apply-qr.tex) |
-| 194 | [Standard closing](../docs/templates/previews/closing.png) | `\studiotemplate{closing}` | [closing.tex](studio/closing.tex) |
+| 194 | [Five-section contents](../docs/templates/previews/contents-five.png) | `\studiotemplate{contents-five}` | [contents-five.tex](studio/contents-five.tex) |
+| 195 | [Standard closing](../docs/templates/previews/closing.png) | `\studiotemplate{closing}` | [closing.tex](studio/closing.tex) |
 
 ## Compatibility names
 

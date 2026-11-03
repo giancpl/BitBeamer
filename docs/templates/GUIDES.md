@@ -1,6 +1,6 @@
 # Slide-by-slide guides
 
-194 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
+195 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
 
 [Getting started](../USING-STUDIO.md) · [Visual gallery](index.html)
 
@@ -46,6 +46,7 @@ Start with the selected layouts, then browse the full collection by family.
 - [Cover Wide Title](guides/cover-wide-title.md)
 - [Agenda With Icons](guides/agenda-with-icons.md)
 - [Agenda With Schedule](guides/agenda-with-schedule.md)
+- [Five-section contents](guides/contents-five.md)
 
 ## Statements
 

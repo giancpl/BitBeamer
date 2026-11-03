@@ -19,7 +19,7 @@ from studio_parts import references
 class StudioSlotTests(unittest.TestCase):
     def test_every_public_field_has_a_unique_typed_slot(self):
         entries=studio_templates.inspect_templates(ROOT)
-        self.assertEqual(len(entries),194)
+        self.assertEqual(len(entries),195)
         for entry in entries:
             studio_slots.validate([entry])
             self.assertEqual(len({f['slot']['key'] for f in entry['fields']}),len(entry['fields']))

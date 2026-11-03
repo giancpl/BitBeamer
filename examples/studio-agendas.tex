@@ -1,0 +1,29 @@
+% Editable four- and five-item agendas from the original Figma compositions.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+
+% Four items: change the named fields, not the measured geometry.
+\studiotemplate[variant=panels,title={Contents},
+  item-one={First section},item-two={Second section},
+  item-three={Third section},item-four={Fourth section}
+]{agenda}
+
+% Five items use the denser original panel layout.
+\studiotemplate[variant=panels-five,title={Contents},
+  item-one={First section},item-two={Second section},
+  item-three={Third section},item-four={Fourth section},item-five={Fifth section}
+]{agenda}
+
+% Retained English examples, using the same editable layouts.
+\studiotemplate[variant=panels,title={Contents},
+  item-one={Why Bitcoin?},item-two={Distributed systems},
+  item-three={Blockchain},item-four={Open-source development}
+]{agenda}
+\studiotemplate[variant=panels-five,title={Table of contents},
+  item-one={Introduction to Bitcoin},item-two={Scaling Bitcoin},
+  item-three={ZK-STARKs},item-four={Schnorr based protocols},
+  item-five={Q\&A}
+]{agenda}
+\end{document}

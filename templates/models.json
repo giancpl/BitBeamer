@@ -120,7 +120,32 @@
                 "label-two": "item-2-2",
                 "title": "title",
                 "label-four": "item-2-3",
-                "label-five": "item-2-4"
+                "label-five": "item-2-4",
+                "item-one": "item-2-1",
+                "item-two": "item-2-2",
+                "item-three": "item-2-3",
+                "item-four": "item-2-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "panels-five",
+          "default_source": "contents-five",
+          "compositions": [
+            {
+              "id": "contents-five",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "item-one": "item-one",
+                "item-two": "item-two",
+                "item-three": "item-three",
+                "item-four": "item-four",
+                "item-five": "item-five"
               }
             }
           ]

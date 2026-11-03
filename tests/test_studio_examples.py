@@ -45,8 +45,8 @@ class StudioExamplesTests(unittest.TestCase):
         files = studio_examples.generated(ROOT, self.entries)
         full = files[Path('examples/studio-ready-content.tex')]
         compact = files[Path('examples/studio-reusable.tex')]
-        self.assertEqual(full.count('\\studiotemplate['), 194)
-        self.assertEqual(compact.count('\\studiotemplate['), 3)
+        self.assertEqual(full.count('\\studiotemplate['), 195)
+        self.assertEqual(compact.count('\\studiotemplate['), 4)
         self.assertNotIn('Bitcoin is not', compact)
         self.assertIn('Bitcoin is not', full)
         self.assertEqual(before, hashlib.sha256(ledger.read_bytes()).hexdigest())

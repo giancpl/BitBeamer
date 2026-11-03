@@ -123,9 +123,17 @@ the right. It never recolours or replaces the Academic cover asset. Keep title
 lines concise so they remain clear of the pattern. Empty metadata fields are
 allowed; `\date{}` matches the example.
 
+## Four- and five-item agendas
+
+Use `\studiotocframe[variant=panels]` or `variant=panels-five` to populate the
+measured original layouts from your section names. For manual text, use the `agenda`
+model with `item-one` through `item-four`/`item-five`. See [the agenda guide](STUDIO-AGENDAS.md)
+for full examples, field limits and original references. The default flexible contents
+layout remains available without a variant.
+
 ## One source per composition
 
-The library contains **194 current compositions**. The [gallery](templates/index.html)
+The library contains **195 current compositions**. The [gallery](templates/index.html)
 starts with 21 featured models (24 retained composition choices); choose All models
 for the grouped collection or All compositions for the advanced archive.
 Nine compatibility names preserve earlier commands by loading the same current

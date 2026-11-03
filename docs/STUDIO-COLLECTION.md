@@ -2,7 +2,7 @@
 
 Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
 
-The library has 194 current compositions and nine compatibility names.
+The library has 195 current compositions and nine compatibility names.
 Start with the 21 featured models (24 retained composition choices); the full archive remains available.
 Academic is independent. Compilation never approves a design.
 
@@ -14,7 +14,7 @@ Build a focused review from the existing complete catalogue:
 python3 scripts/review.py pages --open
 ```
 
-The first nine pages show four cover variants, four agenda variants and the closing
+The first ten pages show four cover variants, five agenda variants and the closing
 composition. Five related layouts follow separately: a section divider, an opening
 dashboard, two QR closing layouts and `cover-script-blue`. The latter is classified
 as a cover in the complete catalogue but currently renders a process diagram, so
@@ -27,8 +27,8 @@ editable sources and optional local original references. The quick PDF is
 Review labels sit below the slide in the quick PDF, leaving its full canvas visible.
 
 Use composition IDs to record feedback. This command does not change defaults,
-selection or approvals. Agenda presets currently expose manual catalogue fields;
-automatic section binding follows the visual choice. These are catalogue candidates,
+selection or approvals. Agenda presets expose manual catalogue fields; the plain four/five-item layouts
+also support automatic section binding through `\studiotocframe[variant=...]`. These are catalogue candidates,
 separate from the standard theme helpers used in `start-studio.tex`.
 
 The same candidates can be reviewed with retained English content:
@@ -40,7 +40,7 @@ python3 scripts/review.py pages --content example --open
 This produces a separate gallery and PDFs under `build/review/pages/examples/`.
 The two galleries link to each other. It does not overwrite neutral previews.
 [Ready-content sources](../templates/EXAMPLES.md) preserve the full collection;
-[reusable_selection](../templates/REUSABLE.md) is a separate, initially three-slide
+[reusable_selection](../templates/REUSABLE.md) is a separate, initially four-slide
 shortlist in `review.json`. Existing showcase selection and approvals are retained.
 
 ## Review one slide

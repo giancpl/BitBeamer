@@ -4,7 +4,7 @@ Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanc
 
 For consistent text, icon and image customization, use the [typed content API](STUDIO-CONTENT.md).
 
-Studio has 100 grouped models retaining 194 compositions. Start with the 21 featured models;
+Studio has 100 grouped models retaining 195 compositions. Start with the 21 featured models;
 every composition has a [usage guide](templates/GUIDES.md) and one editable source.
 The collection compiles locally and remains in graphical review.
 
@@ -163,4 +163,4 @@ python3 scripts/check-docs.py
 If the layout or its default content changed, rebuild its catalogue/previews as
 described in [the maintenance workflow](STUDIO-COLLECTION.md). Ordinary slide
 writing needs no regeneration or conversion. Guides are generated files; change
-the field metadata or `scripts/studio_guides.py` instead of editing 194 pages.
+the field metadata or `scripts/studio_guides.py` instead of editing 195 pages.

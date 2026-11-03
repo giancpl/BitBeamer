@@ -17,7 +17,7 @@ from studio_parts import prepare, references
 class CurrentStudioSourceTests(unittest.TestCase):
     def test_every_composition_has_one_distinct_current_implementation(self):
         entries = inspect_templates(ROOT)
-        self.assertEqual(len(entries), 194)
+        self.assertEqual(len(entries), 195)
         self.assertEqual(len({entry['source'] for entry in entries}), len(entries))
         shapes = {}
         for entry in entries:
@@ -38,13 +38,13 @@ class CurrentStudioSourceTests(unittest.TestCase):
         entries = inspect_templates(ROOT)
         aliases = inspect_aliases(ROOT, entries)
         self.assertEqual(len(aliases), 9)
-        self.assertEqual(len(entries) + len(aliases), 203)
+        self.assertEqual(len(entries) + len(aliases), 204)
         sources = {entry['source'] for entry in entries}
         for alias in aliases:
             self.assertIn(alias['source'], sources)
             self.assertFalse((ROOT / 'templates/studio' / (alias['id'] + '.tex')).exists())
         registry = registry_document(entries, aliases)
-        self.assertEqual(registry.count('\\DeclareStudioTemplate{'), 194)
+        self.assertEqual(registry.count('\\DeclareStudioTemplate{'), 195)
         self.assertEqual(registry.count('\\DeclareStudioTemplateAlias{'), 9)
         self.assertIn(r'\DeclareStudioTemplateAlias{photo-triptych-no-title}{photo-triptych}{title={}}', registry)
         wrapper = (ROOT / 'bitpolitostudiopilots.sty').read_text(encoding='utf-8')

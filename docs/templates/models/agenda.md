@@ -23,11 +23,34 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Supporting explanation</code> | 35.4% wide × 5.0% high |
-| `label-two` | <code>Supporting explanation</code> | 35.5% wide × 5.0% high |
-| `title` | <code>Title</code> | 13.7% wide × 7.6% high |
-| `label-four` | <code>Supporting explanation</code> | 35.4% wide × 5.0% high |
-| `label-five` | <code>Supporting explanation</code> | 35.5% wide × 5.7% high |
+| `label-one` | <code>First section</code> | 35.4% wide × 5.0% high |
+| `label-two` | <code>Second section</code> | 35.5% wide × 5.0% high |
+| `title` | <code>Contents</code> | 36.5% wide × 7.6% high |
+| `label-four` | <code>Third section</code> | 35.4% wide × 5.0% high |
+| `label-five` | <code>Fourth section</code> | 35.5% wide × 5.7% high |
+| `item-one` | <code>First section</code> | 35.4% wide × 5.0% high |
+| `item-two` | <code>Second section</code> | 35.5% wide × 5.0% high |
+| `item-three` | <code>Third section</code> | 35.4% wide × 5.0% high |
+| `item-four` | <code>Fourth section</code> | 35.5% wide × 5.7% high |
+
+Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
+
+Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
+
+### panels-five
+
+Original palettes: light.
+
+[Current source](../../../templates/studio/contents-five.tex) · [Full slot guide](../guides/contents-five.md)
+
+| Field | Default | Available space |
+| --- | --- | --- |
+| `title` | <code>Contents</code> | 36.6% wide × 8.8% high |
+| `item-one` | <code>First section</code> | 33.2% wide × 6.0% high |
+| `item-two` | <code>Second section</code> | 33.2% wide × 6.0% high |
+| `item-three` | <code>Third section</code> | 33.2% wide × 6.0% high |
+| `item-four` | <code>Fourth section</code> | 33.2% wide × 6.0% high |
+| `item-five` | <code>Fifth section</code> | 33.2% wide × 6.0% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -91,8 +114,8 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
 \studiotemplate[
   variant={panels},
   palette={light},
-  label-one={Supporting explanation},
-  label-two={Supporting explanation}
+  label-one={First section},
+  label-two={Second section}
 ]{agenda}
 \end{document}
 ```

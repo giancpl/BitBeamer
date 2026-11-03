@@ -21,7 +21,7 @@ to change the arrangement. Defaults remain visible in the review PDF.
 | Selection page | Layout | Use | Source |
 | --- | --- | --- | --- |
 | 1 | `cover` | Demonstrate this reusable composition. | [cover.tex](studio/cover.tex) |
-| 2 | `contents` | Demonstrate this reusable composition. | [contents.tex](studio/contents.tex) |
+| 2 | `contents` | Show four agenda items in the measured panel composition. | [contents.tex](studio/contents.tex) |
 | 3 | `section-divider` | Demonstrate this reusable composition. | [section-divider.tex](studio/section-divider.tex) |
 | 4 | `statement-arrow` | Demonstrate this reusable composition. | [statement-arrow.tex](studio/statement-arrow.tex) |
 | 5 | `glow-statement` | Demonstrate this reusable composition. | [glow-statement.tex](studio/glow-statement.tex) |
@@ -61,15 +61,15 @@ Demonstrate this reusable composition.
 
 ### contents
 
-Demonstrate this reusable composition.
+Show four agenda items in the measured panel composition.
 
 ```latex
 \studiotemplate[
-  title={Title},
-  item-2-1={Supporting explanation},
-  item-2-2={Supporting explanation},
-  item-2-3={Supporting explanation},
-  item-2-4={Supporting explanation}
+  title={Contents},
+  item-2-1={First section},
+  item-2-2={Second section},
+  item-2-3={Third section},
+  item-2-4={Fourth section}
 ]{contents}
 ```
 

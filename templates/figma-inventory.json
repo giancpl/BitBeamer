@@ -15148,10 +15148,9 @@
       "match_status": "Automated thumbnail similarity suggestion; not an exact reconstruction claim.",
       "assignment": {
         "destination": "example",
-        "template": "contents",
-        "reference": "figma-0575",
-        "method": "Nearest composition preview after full contact-sheet inspection; candidate grouping requires graphical review.",
-        "distance": 2.56,
+        "template": "contents-five",
+        "reference": "figma-0883",
+        "method": "Manually verified five-item agenda geometry and seven panels.",
         "grouping_status": "in review"
       }
     },
@@ -22669,11 +22668,10 @@
       ],
       "match_status": "Automated thumbnail similarity suggestion; not an exact reconstruction claim.",
       "assignment": {
-        "destination": "example",
-        "template": "contents",
-        "reference": "figma-0575",
-        "method": "Nearest composition preview after full contact-sheet inspection; candidate grouping requires graphical review.",
-        "distance": 3.041,
+        "destination": "model",
+        "template": "contents-five",
+        "reference": "figma-0883",
+        "method": "Manually verified five-item agenda geometry and seven panels.",
         "grouping_status": "in review"
       }
     },

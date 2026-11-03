@@ -210,11 +210,11 @@
         {
           "name": "title",
           "type": "text",
-          "default": "Title",
+          "default": "Contents",
           "box": [
             139.004,
             516.648,
-            262.17463659004835,
+            700,
             81.57806666666661
           ],
           "source_ink_box": [
@@ -238,7 +238,7 @@
         {
           "name": "item-2-1",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "First section",
           "box": [
             1024.9,
             216.455,
@@ -266,7 +266,7 @@
         {
           "name": "item-2-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Second section",
           "box": [
             1023.53,
             424.856,
@@ -294,7 +294,7 @@
         {
           "name": "item-2-3",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Third section",
           "box": [
             1024.9,
             632.941,
@@ -322,7 +322,7 @@
         {
           "name": "item-2-4",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Fourth section",
           "box": [
             1023.53,
             840.856,
@@ -358,7 +358,8 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Title box extended into the empty left column so English agenda headings fit; original anchor and font size retained."
       ],
       "slot_parts": [],
       "model": "agenda",
@@ -51084,6 +51085,320 @@
       "native_palette": "blue",
       "palettes": [
         "blue"
+      ],
+      "neutral_parts": []
+    },
+    {
+      "id": "contents-five",
+      "number": 195,
+      "title": "Five-section contents",
+      "category": "Opening",
+      "source": "templates/studio/contents-five.tex",
+      "references": [
+        "figma-0883",
+        "figma-0589"
+      ],
+      "notes": "Five-item agenda verified against two source originals. Editable English labels; original panel masks, gradients and clipped edge panels retained.",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "background": "studio-paper",
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "default": "Contents",
+          "box": [
+            252.8125,
+            957.21875,
+            1300,
+            175
+          ],
+          "font_size": 112.735,
+          "leading": 130.772,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "source_node": [
+            0,
+            1
+          ],
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "item-one",
+          "type": "text",
+          "default": "First section",
+          "box": [
+            1898.19921875,
+            322.0234375,
+            1180,
+            120
+          ],
+          "source_ink_box": [
+            1898.19921875,
+            322.0234375,
+            747.4609375,
+            57.96875
+          ],
+          "font_size": 75.16,
+          "leading": 87.2,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "source_node": [
+            0,
+            17
+          ],
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "item-two",
+          "type": "text",
+          "default": "Second section",
+          "box": [
+            1895.66015625,
+            646.6953125,
+            1180,
+            120
+          ],
+          "source_ink_box": [
+            1895.66015625,
+            646.6953125,
+            502.73046875,
+            71.796875
+          ],
+          "font_size": 75.16,
+          "leading": 87.2,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "source_node": [
+            0,
+            18
+          ],
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "item-three",
+          "type": "text",
+          "default": "Third section",
+          "box": [
+            1898.7109375,
+            970.8671875,
+            1180,
+            120
+          ],
+          "source_ink_box": [
+            1898.7109375,
+            970.8671875,
+            398.05078125,
+            58.2421875
+          ],
+          "font_size": 75.16,
+          "leading": 87.2,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "source_node": [
+            0,
+            19
+          ],
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "item-four",
+          "type": "text",
+          "default": "Fourth section",
+          "box": [
+            1897.66015625,
+            1295.87109375,
+            1180,
+            120
+          ],
+          "source_ink_box": [
+            1897.66015625,
+            1295.87109375,
+            838.7109375,
+            70.96875
+          ],
+          "font_size": 75.16,
+          "leading": 87.2,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "source_node": [
+            0,
+            20
+          ],
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "item-five",
+          "type": "text",
+          "default": "Fifth section",
+          "box": [
+            1896.16015625,
+            1620.87109375,
+            1180,
+            120
+          ],
+          "source_ink_box": [
+            1896.16015625,
+            1620.87109375,
+            163.25,
+            63.27734375
+          ],
+          "font_size": 75.16,
+          "leading": 87.2,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "source_node": [
+            0,
+            16
+          ],
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          }
+        },
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-1.pdf}",
+          "box": [
+            1834,
+            221,
+            1351,
+            259
+          ],
+          "slot": {
+            "number": 1,
+            "key": "graphic/1"
+          }
+        },
+        {
+          "name": "graphic-2",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-2.pdf}",
+          "box": [
+            1834,
+            546,
+            1351,
+            258
+          ],
+          "slot": {
+            "number": 2,
+            "key": "graphic/2"
+          }
+        },
+        {
+          "name": "graphic-3",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-3.pdf}",
+          "box": [
+            1834,
+            871,
+            1351,
+            258
+          ],
+          "slot": {
+            "number": 3,
+            "key": "graphic/3"
+          }
+        },
+        {
+          "name": "graphic-4",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-4.pdf}",
+          "box": [
+            1834,
+            1196,
+            1351,
+            258
+          ],
+          "slot": {
+            "number": 4,
+            "key": "graphic/4"
+          }
+        },
+        {
+          "name": "graphic-5",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-5.pdf}",
+          "box": [
+            1834,
+            1520,
+            1351,
+            259
+          ],
+          "slot": {
+            "number": 5,
+            "key": "graphic/5"
+          }
+        },
+        {
+          "name": "graphic-6",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-6.pdf}",
+          "box": [
+            1834,
+            -146,
+            1351,
+            301
+          ],
+          "slot": {
+            "number": 6,
+            "key": "graphic/6"
+          }
+        },
+        {
+          "name": "graphic-7",
+          "type": "graphic",
+          "default": "\\studiopaletteimage[width=1351\\studiounit]{images/studio/collection/figma-0883-agenda-panel-7.pdf}",
+          "box": [
+            1834,
+            1845,
+            1351,
+            301
+          ],
+          "slot": {
+            "number": 7,
+            "key": "graphic/7"
+          }
+        }
+      ],
+      "parts": [
+        "figma-0883-agenda-panel-1",
+        "figma-0883-agenda-panel-2",
+        "figma-0883-agenda-panel-3",
+        "figma-0883-agenda-panel-4",
+        "figma-0883-agenda-panel-5",
+        "figma-0883-agenda-panel-6",
+        "figma-0883-agenda-panel-7"
+      ],
+      "slot_parts": [],
+      "reconstruction": "Measured five-item SVG composition with native editable text.",
+      "intentional_differences": [
+        "Inter replaces SF Pro; English neutral labels replace example content.",
+        "The title text area extends into the empty left column; anchor, font and canvas are unchanged."
+      ],
+      "model": "agenda",
+      "variant": "panels-five",
+      "native_palette": "light",
+      "palettes": [
+        "light"
       ],
       "neutral_parts": []
     }

@@ -16,6 +16,7 @@ to a new root-level `.tex` file. Both are editable and never regenerated.
 | [Studio models](STUDIO-MODELS.md) | Variants, original palettes and semantic fields |
 | [Reusable Studio shortlist](../templates/REUSABLE.md) | Neutral title, contents and closing for new content |
 | [Ready-content examples](../templates/EXAMPLES.md) | Editable retained English content, using shared layouts |
+| [Studio agendas](STUDIO-AGENDAS.md) | Four/five section names or manually edited agenda items |
 | [Studio content API](STUDIO-CONTENT.md) | Text, icon, image and file substitutions |
 | [Studio components](STUDIO.md) | Layout commands and ordinary Beamer frames |
 | [Academic slides](SLIDES.md) | Standard frames, branding, covers and closing |

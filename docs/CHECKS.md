@@ -8,7 +8,7 @@ review; compilation and structural checks do not approve a design.
 | Item | Count |
 | --- | --- |
 | Grouped Studio models | 100 |
-| Retained original composition presets | 194 |
+| Retained original composition presets | 195 |
 | Featured models | 21 |
 | Preserved featured composition choices | 24 |
 | Existing compatibility aliases | 9 |
@@ -25,7 +25,7 @@ opposite-colour slide sources, artwork or thumbnails remain.
 
 ## Completed local checks
 
-- **114 portable tests:** 113 passed; one optional Inkscape converter check skipped.
+- **117 portable tests:** 116 passed; one optional Inkscape converter check skipped.
   Coverage includes complete legacy membership, semantic mappings, real palette
   selection, unsupported choices, subset exports, dependency invalidation, cached
   single-slide reuse, review preservation and deterministic packaging.
@@ -33,7 +33,7 @@ opposite-colour slide sources, artwork or thumbnails remain.
   Their 194 native previews and all generated registries and guides are current.
   Semantic defaults use descriptive English; old example values and original
   references remain in maintenance metadata.
-- **25 real compiler cases** pass: editable and empty fields, icon fitting, structured
+- **32 real compiler cases** pass: editable and empty fields, icon fitting, structured
   text, aliases, missing resources, unknown fields and variants, explicit overflow,
   original palette switching, fixed-colour fallback and ordinary-frame isolation.
   Invalid cases fail with the expected diagnostic.
@@ -217,3 +217,38 @@ to classic, and the photo composition requires a short, single-line title.
   skipped. Sources, guides, links, prepared-artwork checks and Git hygiene pass.
 - Stable packaging requires explicit approval for optional covers as well as the
   showcase selection. No review state, Academic layout or stable release is changed.
+
+## Four- and five-item Studio agendas
+
+Verified locally on 2026-11-03. The existing four-item composition (`figma-0575`)
+and a newly separated five-item composition (`figma-0883`, also represented by
+`figma-0589`) are grouped under the same `agenda` model. The library now has
+195 compositions behind 100 model cards. All previous IDs remain available.
+
+- `variant=panels` and `variant=panels-five` share semantic `item-one` through
+  `item-four`/`item-five` fields. Legacy four-item field names remain compatible.
+  Title text areas extend into the empty left column for English headings;
+  source anchors, font sizes, card geometry and native light treatment are retained.
+- The five-item layout retains seven extracted vector panels with masks and
+  gradients. Their independently checked source bounds differ by at most
+  0.00001 pixels at a 2000px reference height, below the 5px geometry tolerance.
+  Derived SVGs, prepared PDFs and provenance are retained for converter-free builds.
+- Automatic `\studiotocframe` variants read actual top-level section titles and
+  share the manual templates' geometry. Subsections are ignored, unused slots
+  stay blank, and excess sections/unknown fields/text overflow report errors.
+  The existing flexible default contents layout is preserved.
+- All 32 compiler cases pass, including the seven agenda-specific scenarios.
+  The 117-test portable suite passes: 116 passed, one optional Inkscape check skipped.
+  Additional package and agenda-specific checks pass after the final export update.
+- The neutral catalogue compiles to 195 pages. Only the revised four-item preview,
+  the added five-item preview and the closing catalogue page number differ;
+  all other 192 existing previews are pixel-identical. Prepared-part and model
+  gallery caches, generated sources, guides and relative links are current.
+- The four-page editable agenda example is approximately 82 KiB. A separate local
+  comparison page pairs each replica with its original export. Original comparison
+  material remains outside Git and release packages.
+- The Studio review ZIP compiles in isolation, including both automatic agenda
+  variants and the manual examples. It includes prepared panels and both variant
+  sources. The reusable shortlist contains title, both agendas and closing;
+  the existing showcase selection remains unchanged. Stable releases are untouched,
+  and no composition or palette was approved automatically.

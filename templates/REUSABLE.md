@@ -11,12 +11,13 @@ Compile [the compact source](../examples/studio-reusable.tex):
 python3 scripts/build.py examples/studio-reusable.tex build/review --open
 ```
 
-Agenda fields are currently manual. Automatic section binding will follow the visual choice.
+For automatic section binding use `\studiotocframe` with `variant=panels` or `panels-five`. See the Studio agenda guide.
 
 | Role | Composition | Editable source |
 | --- | --- | --- |
 | Pattern cover | `cover` | [cover.tex](studio/cover.tex) |
 | Four-section contents | `contents` | [contents.tex](studio/contents.tex) |
+| Five-section contents | `contents-five` | [contents-five.tex](studio/contents-five.tex) |
 | Standard closing | `closing` | [closing.tex](studio/closing.tex) |
 
 ## Copyable commands
@@ -35,6 +36,15 @@ Agenda fields are currently manual. Automatic section binding will follow the vi
 ```latex
 \studiotemplate[
   variant={panels},
+  palette={light}
+]{agenda}
+```
+
+### contents-five
+
+```latex
+\studiotemplate[
+  variant={panels-five},
   palette={light}
 ]{agenda}
 ```

@@ -88,6 +88,10 @@ def validate(archive, style='academic'):
             if long_title == source:
                 raise RuntimeError('Cannot select the Studio long-title scenario')
             (root / 'studio-long-title.tex').write_text(long_title, encoding='utf-8')
+            variants['studio-agenda-four.tex'] = None
+            (root / 'studio-agenda-four.tex').write_text('\\documentclass[aspectratio=169]{beamer}\\usetheme{bitpolito-studio}\\usepackage{bitpolitostudiotemplates}\\begin{document}\n\\studiotocframe[title={Contents},variant=panels]\n\\section{First section}\n\\subsection{Ignored detail}\\subsubsection{Ignored subdetail}\n\\section{Second section}\n\\section{Third section}\n\\section{Fourth section}\n\\studioframe{Normal frame}{The agenda options stay local.}\\end{document}\n', encoding='utf-8')
+            variants['studio-agenda-five.tex'] = None
+            (root / 'studio-agenda-five.tex').write_text('\\documentclass[aspectratio=169]{beamer}\\usetheme{bitpolito-studio}\\usepackage{bitpolitostudiotemplates}\\begin{document}\n\\studiotocframe[title={Contents},variant=panels-five]\n\\section{First section}\n\\subsection{Ignored detail}\\subsubsection{Ignored subdetail}\n\\section{Second section}\n\\section{Third section}\n\\section{Fourth section}\n\\section{Fifth section}\n\\studioframe{Normal frame}{The agenda options stay local.}\\end{document}\n', encoding='utf-8')
             variants['studio-cover-variants.tex'] = None
             (root / 'studio-cover-variants.tex').write_text('\\documentclass[aspectratio=169]{beamer}\n\\usetheme{bitpolito-studio}\n\\usepackage{bitpolitostudiotemplates}\n\\title{Your title}\\author{Author name}\\institute{Organization}\\date{}\n\\begin{document}\n\\studiotitleframe\n\\studiotitleframe[variant=bitgeneration]\n\\studiotitleframe[variant=bitgeneration-photo]\n\\studiotitleframe\n\\studioframe{Normal frame}{Cover options stay local.}\n\\end{document}\n', encoding='utf-8')
             components = r"""\documentclass[aspectratio=169]{beamer}

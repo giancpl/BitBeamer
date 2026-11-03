@@ -39454,6 +39454,288 @@
       "dependencies": [],
       "definition_ids": [],
       "pdf_sha256": "1c6fe8aa8f089ea17e275efd6c24b025f6a6ec585107d345cbfb1bce00952057"
+    },
+    {
+      "name": "figma-0883-agenda-panel-1",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-1.svg",
+      "source_sha256": "a4f4d03e4d2fa9406939444ff6a2aa206f71aa30ea5e24d75f3487ff766689f9",
+      "nodes": [
+        [
+          0,
+          5
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        221,
+        1351,
+        259
+      ],
+      "content_box": [
+        1835.0,
+        222.171875,
+        1349.0,
+        257.0
+      ],
+      "anchor": [
+        1834,
+        221
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "stroke1_5453_4"
+      ],
+      "pdf_sha256": "1ea1740cd7bf18c062a206c7702615e8de7b143273bf7731b8f223a45acbb13a"
+    },
+    {
+      "name": "figma-0883-agenda-panel-2",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-2.svg",
+      "source_sha256": "64523183c1a23be1986607c554efc6a82330855446781393a706e963d3e70c52",
+      "nodes": [
+        [
+          0,
+          3
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        546,
+        1351,
+        258
+      ],
+      "content_box": [
+        1835.0,
+        547.171875,
+        1349.0,
+        256.0
+      ],
+      "anchor": [
+        1834,
+        546
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "stroke0_5453_4"
+      ],
+      "pdf_sha256": "2ba44422586c456977051aeaa82abc23030f3f229d9c86a3b435494bcef5ec63"
+    },
+    {
+      "name": "figma-0883-agenda-panel-3",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-3.svg",
+      "source_sha256": "c03144e3ab1caa540e4e87c83c47e61f3d74858e0902ac939b6eb6a28f549ed0",
+      "nodes": [
+        [
+          0,
+          7
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        871,
+        1351,
+        258
+      ],
+      "content_box": [
+        1835.0,
+        872.171875,
+        1349.0,
+        256.0
+      ],
+      "anchor": [
+        1834,
+        871
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "stroke2_5453_4"
+      ],
+      "pdf_sha256": "00e90744e486d355ee09f17dfef4d20091e13b2592395db4933e2603f3af0573"
+    },
+    {
+      "name": "figma-0883-agenda-panel-4",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-4.svg",
+      "source_sha256": "2245d63c591bd51c00ecda256436a71500f39bfecac181abab636f9ea9137f78",
+      "nodes": [
+        [
+          0,
+          9
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        1196,
+        1351,
+        258
+      ],
+      "content_box": [
+        1835.0,
+        1197.171875,
+        1349.0,
+        256.0
+      ],
+      "anchor": [
+        1834,
+        1196
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "stroke3_5453_4"
+      ],
+      "pdf_sha256": "c618f57b6481b96eae5d2a92586b0336d5ba19b30f984aa3cf0bdb20e9d8013a"
+    },
+    {
+      "name": "figma-0883-agenda-panel-5",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-5.svg",
+      "source_sha256": "eaa758ac06f8394503eded21a21e4af78e0938cc6db887923b1bfd2487be8257",
+      "nodes": [
+        [
+          0,
+          11
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        1520,
+        1351,
+        259
+      ],
+      "content_box": [
+        1835.0,
+        1521.171875,
+        1349.0,
+        257.0
+      ],
+      "anchor": [
+        1834,
+        1520
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "stroke4_5453_4"
+      ],
+      "pdf_sha256": "78ecb2079f01efe1c389136487efda77980343cc7bcc4419c3e4e5c163e8d366"
+    },
+    {
+      "name": "figma-0883-agenda-panel-6",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-6.svg",
+      "source_sha256": "984d5e3284c227f465d63aa471e2b47d78d689589cb7f86689800fea691340c4",
+      "nodes": [
+        [
+          0,
+          13
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        -146,
+        1351,
+        301
+      ],
+      "content_box": [
+        1835.0,
+        -144.828125,
+        1349.0,
+        299.0
+      ],
+      "anchor": [
+        1834,
+        -146
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "paint0_linear_5453_4",
+        "stroke5_5453_4"
+      ],
+      "pdf_sha256": "ab8233e6fb77e844e874b7d6c19da4f4c4614be4a64e705731b13d58fe19841e"
+    },
+    {
+      "name": "figma-0883-agenda-panel-7",
+      "reference": "figma-0883",
+      "reference_sha256": "f001a22dd66a3f7528c47c9f43e5589518f2836bb166aa47569c3c1f5b269a96",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "source": "images/studio/collection/source/figma-0883-agenda-panel-7.svg",
+      "source_sha256": "e7f7b5b719d92ccb567152d52e512219d51ae020d4f58ba39f4a9e8e49ea0e78",
+      "nodes": [
+        [
+          0,
+          15
+        ]
+      ],
+      "omitted_nodes": [],
+      "render_box": [
+        1834,
+        1845,
+        1351,
+        301
+      ],
+      "content_box": [
+        1835.0,
+        1846.0,
+        1349.0,
+        299.0
+      ],
+      "anchor": [
+        1834,
+        1845
+      ],
+      "dependencies": [],
+      "definition_ids": [
+        "clip0_5453_4",
+        "paint1_linear_5453_4",
+        "stroke6_5453_4"
+      ],
+      "pdf_sha256": "54c70d7f973b042ac9b7178ad92118f3f94e26601e7a13101841ad5cacc176ec"
     }
   ]
 }

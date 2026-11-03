@@ -2,7 +2,7 @@
 
 # Four-section contents
 
-Demonstrate this reusable composition.
+Show four agenda items in the measured panel composition.
 
 Model: `contents` · Family: Opening · Status: **in review**.
 
@@ -67,11 +67,11 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={Title},
-  text/1={Supporting explanation},
-  text/2={Supporting explanation},
-  text/4={Supporting explanation},
-  text/5={Supporting explanation}
+  text/3={Contents},
+  text/1={First section},
+  text/2={Second section},
+  text/4={Third section},
+  text/5={Fourth section}
 ]{contents}
 ```
 
@@ -87,11 +87,11 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={Title},
-  text/1={Supporting explanation},
-  text/2={Supporting explanation},
-  text/4={Supporting explanation},
-  text/5={Supporting explanation}
+  text/3={Contents},
+  text/1={First section},
+  text/2={Second section},
+  text/4={Third section},
+  text/5={Fourth section}
 ]{contents}
 \end{document}
 ```
@@ -117,11 +117,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 40.5% wide × 19.4% high | <code>\studiopaletteimage[width=778\studiounit]{images/studio/collection/figma-0575-part-04.pdf}</code> |
 | <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | upper right | 40.5% wide × 14.4% high | <code>\studiopaletteimage[width=778\studiounit]{images/studio/collection/figma-0575-part-05.pdf}</code> |
 | <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | lower right | 40.5% wide × 9.8% high | <code>\studiopaletteimage[width=778\studiounit]{images/studio/collection/figma-0575-part-06.pdf}</code> |
-| <code>title</code> | Main text (text) | middle left | 13.7% wide × 7.6% high | <code>Title</code> |
-| <code>item-2-1</code> | List or contents entry (text) | upper right | 35.4% wide × 5.0% high | <code>Supporting explanation</code> |
-| <code>item-2-2</code> | List or contents entry (text) | middle right | 35.5% wide × 5.0% high | <code>Supporting explanation</code> |
-| <code>item-2-3</code> | List or contents entry (text) | middle right | 35.4% wide × 5.0% high | <code>Supporting explanation</code> |
-| <code>item-2-4</code> | List or contents entry (text) | lower right | 35.5% wide × 5.7% high | <code>Supporting explanation</code> |
+| <code>title</code> | Main text (text) | middle left | 36.5% wide × 7.6% high | <code>Contents</code> |
+| <code>item-2-1</code> | List or contents entry (text) | upper right | 35.4% wide × 5.0% high | <code>First section</code> |
+| <code>item-2-2</code> | List or contents entry (text) | middle right | 35.5% wide × 5.0% high | <code>Second section</code> |
+| <code>item-2-3</code> | List or contents entry (text) | middle right | 35.4% wide × 5.0% high | <code>Third section</code> |
+| <code>item-2-4</code> | List or contents entry (text) | lower right | 35.5% wide × 5.7% high | <code>Fourth section</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

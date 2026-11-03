@@ -52,13 +52,13 @@
     "contents": {
       "status": "in review",
       "notes": "",
-      "use": "Demonstrate this reusable composition.",
+      "use": "Show four agenda items in the measured panel composition.",
       "example": {
-        "title": "Title",
-        "item-2-1": "Supporting explanation",
-        "item-2-2": "Supporting explanation",
-        "item-2-3": "Supporting explanation",
-        "item-2-4": "Supporting explanation"
+        "title": "Contents",
+        "item-2-1": "First section",
+        "item-2-2": "Second section",
+        "item-2-3": "Third section",
+        "item-2-4": "Fourth section"
       },
       "previous_example": {
         "title": "Contents",
@@ -2530,11 +2530,31 @@
           "notes": ""
         }
       }
+    },
+    "contents-five": {
+      "status": "in review",
+      "notes": "",
+      "use": "Show five agenda items in the measured panel composition.",
+      "example": {
+        "title": "Contents",
+        "item-one": "First section",
+        "item-two": "Second section",
+        "item-three": "Third section",
+        "item-four": "Fourth section",
+        "item-five": "Fifth section"
+      },
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     }
   },
   "reusable_selection": [
     "cover",
     "contents",
+    "contents-five",
     "closing"
   ]
 }

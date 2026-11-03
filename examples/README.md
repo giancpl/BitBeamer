@@ -11,6 +11,7 @@ For your own deck, copy [start-studio.tex](../start-studio.tex) or
 | [icon-cheatsheet.tex](icon-cheatsheet.tex) | Printable icon syntax guide | This file |
 | [cover-layouts.tex](cover-layouts.tex) | Academic cover orientations | This file |
 | [asset-catalogue.tex](asset-catalogue.tex) | Complete icon reference | Artwork and metadata; run `build-asset-catalogue.py` |
+| [studio-agendas.tex](studio-agendas.tex) | Four- and five-item agendas, neutral and ready-content examples | This file |
 | [studio-customization.tex](studio-customization.tex) | Text, icon, image and file substitutions | Generated from the current field contracts |
 | [studio-reusable.tex](studio-reusable.tex) | Neutral title, contents and closing shortlist | `reusable_selection` in `templates/review.json`, then `review.py sync` |
 | [studio-ready-content.tex](studio-ready-content.tex) | Full editable English content examples; compile explicitly | Retained content history and current layouts, then `review.py sync` |

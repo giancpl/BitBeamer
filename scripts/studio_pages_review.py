@@ -104,8 +104,8 @@ body{font:16px/1.5 system-ui,sans-serif;margin:auto;padding:24px;max-width:1200p
 a{color:#001ce0}nav{display:flex;gap:20px;flex-wrap:wrap}section{margin:40px 0}.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,430px),1fr));gap:24px}
 article{padding:18px;background:white;border:1px solid #ddd;border-radius:12px;min-width:0}img{width:100%;height:auto;display:block}pre{white-space:pre-wrap;overflow-wrap:anywhere;background:#eef0ff;padding:10px;font-size:12px}button,summary{cursor:pointer}summary{padding:12px 0}h3{margin-top:0}</style>
 <h1>Studio: title, contents and closing</h1>
-<p>Existing catalogue compositions only. The first nine candidates are four covers, four agendas and one closing. Five related or misclassified layouts follow separately. Native palettes and proportions are retained. No selection, default or approval has changed.</p>
-<p>Choose the visual layouts by their stable IDs. Agenda entries currently use editable catalogue fields; automatic section binding will follow the layout choice.</p>
+<p>Existing catalogue compositions only. Primary cover, agenda and closing candidates are grouped below. Related or misclassified layouts follow separately. Native palettes and proportions are retained. No selection, default or approval has changed.</p>
+<p>Choose the visual layouts by their stable IDs. Plain four/five-item agendas support editable fields and automatic section binding. Other agenda compositions retain their current field APIs.</p>
 <p><a href="studio-pages-overview.pdf">Quick review PDF</a> · <a href="studio-pages-catalogue.pdf">Editable/vector PDF</a> · <a href="candidates.json">Candidate metadata</a></p>
 <nav><a href="#title">Title</a><a href="#contents">Contents</a><a href="#closing">Closing</a><a href="#related">Related layouts</a></nav>
 '''
