@@ -1,10 +1,30 @@
 # Use a Studio slide
 
+Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
+
 For consistent text, icon and image customization, use the [typed content API](STUDIO-CONTENT.md).
 
-Studio has 194 current compositions. Start with the 24 selected layouts;
+Studio has 100 grouped models retaining 194 compositions. Start with the 21 featured models;
 every composition has a [usage guide](templates/GUIDES.md) and one editable source.
 The collection compiles locally and remains in graphical review.
+
+## Two ways to start
+
+- [Reusable layouts](../templates/REUSABLE.md): neutral fields for a new presentation;
+  the initial shortlist contains title, contents and closing.
+- [Ready-content examples](../templates/EXAMPLES.md): retained English content and
+  original graphic parts, with the same editable layouts. Historical facts and
+  figures are examples to check before use.
+
+To inspect the same slide with its retained example content:
+
+```sh
+python3 scripts/review.py slide three-cards --content example --open
+```
+
+Omit `--content example` for neutral defaults. Neither mode changes the composition,
+its native palette or approval status. The two catalogues share sources; original
+Figma exports remain optional local comparisons.
 
 ## 1. Choose a layout
 
@@ -25,8 +45,9 @@ The [guide index](templates/GUIDES.md) groups every layout by family and lists t
 
 ## 2. Create your document
 
-Start from [start-studio.tex](../start-studio.tex), an editable four-slide document
-that is never regenerated. It demonstrates a cover, ordinary frame, cards and closing:
+Start from [start-studio.tex](../start-studio.tex), an editable five-slide document
+that is never regenerated. It includes a cover, automatic contents, two content
+slides and a closing page:
 
 ```sh
 cp start-studio.tex my-slides.tex
@@ -36,6 +57,10 @@ python3 scripts/build.py my-slides.tex --open
 On Windows use `Copy-Item start-studio.tex my-slides.tex` and replace `python3`
 with `py -3`. Keep your document at the repository root beside the theme files.
 Change title, author and institute, then replace the example frames.
+The cover is classic blue by default. Choose `\studiotitleframe[variant=bitgeneration]`
+for the light lettering cover or `variant=bitgeneration-photo` for the photographic
+version. Both use the same title, author and institute; see [cover options](STUDIO.md#choose-the-cover)
+for title limits and available metadata.
 For measured templates, use the following complete alternative:
 
 ```latex
@@ -44,13 +69,15 @@ For measured templates, use the following complete alternative:
 \usepackage{bitpolitostudiotemplates}
 \usepackage[backend=biber]{biblatex}
 \addbibresource{bibliography.bib}
+\title{Your presentation}
+\author{Your name}
+\institute{Your institute}
+\date{}
 \begin{document}
 
-\studiotemplate[
-  title={Your talk\\title},
-  author={Your name},
-  institute={Your institute}
-]{cover}
+\studiotitleframe
+\studiotocframe
+\section{First ideas}
 
 \studiotemplate[
   title={Three useful tools},
@@ -64,7 +91,9 @@ For measured templates, use the following complete alternative:
 \end{document}
 ```
 
-Every `\studiotemplate` inserts a complete frame. Place it outside another
+The standard cover, contents, base content and closing commands are described in
+[Studio standard pages](STUDIO.md#standard-pages-and-the-default-frame). Every
+`\studiotemplate` inserts a complete frame. Place it outside another
 `frame` environment. You can repeat a layout with different field values;
 each call starts with its own defaults. A guide's **Complete one-slide example**
 is also ready to paste into a new root-level document.

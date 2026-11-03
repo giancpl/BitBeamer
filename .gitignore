@@ -24,6 +24,11 @@ Thumbs.db
 *.swo
 *~
 .venv/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
 
 # Compiled previews and downloadable archives stay local.
 /*.pdf

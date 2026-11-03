@@ -1,5 +1,6 @@
 # Maintain BitBeamer
 
+See [the repository map](STRUCTURE.md) for editable sources and generated output.
 Daily layout work uses [the review launcher](STUDIO-COLLECTION.md).
 Use these lower-level tools only when changing their source inputs.
 
@@ -9,6 +10,7 @@ Use these lower-level tools only when changing their source inputs.
 | Studio theme derivatives | `prepare-studio-assets.py` | [Studio](STUDIO.md) |
 | Extracted graphic part | `studio_parts.py` or `studio_collection.py`, then `catalogue-studio-collection.py --previews` | [Parts](STUDIO-PARTS.md) |
 | New Figma reconstruction | Extraction and measurements before preparation | [Figma](FIGMA.md) |
+| Named-icon contrast resources | `studio_palettes.py prepare`; ordinary checks never convert | [Models](STUDIO-MODELS.md) |
 | Metadata, review or selection | `review.py sync` | [Review](STUDIO-COLLECTION.md) |
 | Release | `release.py` after approval | [Releasing](RELEASING.md) |
 

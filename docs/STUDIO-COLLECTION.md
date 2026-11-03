@@ -1,8 +1,47 @@
 # Refine the Studio library
 
+Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
+
 The library has 194 current compositions and nine compatibility names.
-Start with the 24 featured layouts; the full archive remains available.
+Start with the 21 featured models (24 retained composition choices); the full archive remains available.
 Academic is independent. Compilation never approves a design.
+
+## Choose title, contents and closing layouts
+
+Build a focused review from the existing complete catalogue:
+
+```sh
+python3 scripts/review.py pages --open
+```
+
+The first nine pages show four cover variants, four agenda variants and the closing
+composition. Five related layouts follow separately: a section divider, an opening
+dashboard, two QR closing layouts and `cover-script-blue`. The latter is classified
+as a cover in the complete catalogue but currently renders a process diagram, so
+it is flagged separately for review. Only their retained native palettes are used.
+
+Open `build/review/pages/index.html` for grouped previews, copyable commands,
+editable sources and optional local original references. The quick PDF is
+`build/review/pages/studio-pages-overview.pdf`; the separate
+`studio-pages-catalogue.pdf` preserves vector graphics and selectable slide text.
+Review labels sit below the slide in the quick PDF, leaving its full canvas visible.
+
+Use composition IDs to record feedback. This command does not change defaults,
+selection or approvals. Agenda presets currently expose manual catalogue fields;
+automatic section binding follows the visual choice. These are catalogue candidates,
+separate from the standard theme helpers used in `start-studio.tex`.
+
+The same candidates can be reviewed with retained English content:
+
+```sh
+python3 scripts/review.py pages --content example --open
+```
+
+This produces a separate gallery and PDFs under `build/review/pages/examples/`.
+The two galleries link to each other. It does not overwrite neutral previews.
+[Ready-content sources](../templates/EXAMPLES.md) preserve the full collection;
+[reusable_selection](../templates/REUSABLE.md) is a separate, initially three-slide
+shortlist in `review.json`. Existing showcase selection and approvals are retained.
 
 ## Review one slide
 
@@ -27,9 +66,11 @@ Changing the field API or measured boxes also requires the corresponding update 
 
 Edit [review.json](../templates/review.json):
 
-- `selection`: ordered canonical IDs shown first and exported in the compact Studio project.
+- `reusable_selection`: ordered neutral layouts for creating new content, initially title, contents and closing.
+- `selection`: ordered composition IDs. The gallery and showcase group these into 21 featured models; the compact project retains all 24 selected composition choices.
 - `templates.<id>.status`: `in review`, `changes requested`, `approved` or `supplementary`.
 - `notes`: requested changes or review observations.
+- `palette_reviews`: explicit review state for the retained original colour treatment.
 - `use` and `example`: purpose and copyable field overrides.
 
 Selection is separate from approval. Supplementary models have no corresponding

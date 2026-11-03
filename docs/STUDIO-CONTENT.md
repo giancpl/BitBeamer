@@ -1,5 +1,7 @@
 # Studio content API
 
+Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
+
 Use one interface across all 194 Studio compositions. Copy a complete example
 from an [individual guide](templates/GUIDES.md), or start with the
 [customization examples](../examples/studio-customization.tex).
@@ -95,8 +97,8 @@ A slot can contain a whole diagram, screenshot, background or decoration; do not
 assume every graphic is an isolated icon.
 
 Use an asset name without a leading backslash for `icon/N`. Use `graphic/N` when
-you want a command such as `\alice`, `\studiopart` or `\qrcode`. Colours inside a
-prepared asset stay fixed; text colour does not recolour an imported image.
+you want a command such as `\alice`, `\studiopart` or `\qrcode`. Images and literal graphic commands retain their colours. Named monochrome icons use prepared
+Studio alternatives on blue slides; the shared asset library itself stays unchanged.
 Only graphics are fitted. Text is never scaled to make it fit. On blue slides,
 choose artwork with enough contrast. Prepared white character variants can be
 used with `image/1={images/studio/alice-white.pdf}` (also `bob-white.pdf` and

@@ -1,5 +1,7 @@
 # Studio template structure
 
+Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
+
 For slide writing, start with [Use a Studio slide](USING-STUDIO.md) and the
 [individual guides](templates/GUIDES.md). For visual refinement, use
 [the review workflow](STUDIO-COLLECTION.md).
@@ -10,11 +12,12 @@ For slide writing, start with [Use a Studio slide](USING-STUDIO.md) and the
 | --- | --- |
 | Layout, native diagrams and fixed geometry | `templates/studio/<id>.tex` |
 | Fields, boxes, references and compatibility mappings | [index.json](../templates/index.json) |
+| Grouped models, variants, original palettes and semantic field mappings | [models.json](../templates/models.json) |
 | Review status, notes, ordered selection and examples | [review.json](../templates/review.json) |
 | Prepared graphic dependencies and provenance | [parts guide](STUDIO-PARTS.md) |
 
 There is one implementation for each of 194 compositions. Nine aliases share current
-sources with compatible defaults. The 24 featured models are a working selection,
+sources with compatible defaults. The featured models are a working selection,
 not a separate library. IDs stay stable when a layout is refined.
 
 Registry, command indices, CSV review sheet, showcase, gallery and per-slide guides

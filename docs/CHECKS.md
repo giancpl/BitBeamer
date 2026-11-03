@@ -1,138 +1,219 @@
 # Verification report
 
-Local content-API verification completed on **2026-11-02**. The repository is ready for
-individual graphical refinement and selection. No model was approved automatically.
+Verified locally on **2026-11-03**, on Linux. Studio is ready for individual graphical
+review; compilation and structural checks do not approve a design.
 
-## Current library
+## Current collection
 
 | Item | Count |
 | --- | --- |
-| Unique Studio compositions | 194 |
-| Featured working selection | 24 |
-| Public names, including compatibility aliases | 203 |
-| Reference graphic parts | 867 |
-| Separated replacement-card panels | 34 |
-| Illustrations | 171 |
+| Grouped Studio models | 100 |
+| Retained original composition presets | 194 |
+| Featured models | 21 |
+| Preserved featured composition choices | 24 |
+| Existing compatibility aliases | 9 |
+| Shared illustrations | 171 |
 
-Each composition has one current editable source and one generated usage guide.
-[review.json](../templates/review.json) is the sole editable source for review
-status, feedback, ordered selection and examples. CSV, guides, registries and
-showcase follow that ledger; generated files are marked.
+[models.json](../templates/models.json) records variants, semantic fields and original
+palette choices. [review.json](../templates/review.json) remains the editable source
+for notes, status, ordered selection and examples. No graphical approval was inferred.
 
-## Collection cleanup (2026-11-02)
+A composition advertises only its original colour treatment. The retained light/blue
+`levels` pair supports a palette switch. Compact light and large blue icon spotlights
+remain different variants because their original proportions differ. No synthetic
+opposite-colour slide sources, artwork or thumbnails remain.
 
-The supplementary `quotation` preset (Quiet quotation) was removed because it has
-no matching Figma original. The featured selection remains unchanged at 24 layouts.
-The earlier checks below record the collection before this removal. The 194-page
-catalogue and 204-page indexed review were rebuilt, along with previews and local
-original/replica comparisons. The 98-test suite passes (one optional converter
-check skipped); generated-file freshness and offline documentation checks pass.
+## Completed local checks
 
-## Typed content API checks (2026-11-02)
+- **114 portable tests:** 113 passed; one optional Inkscape converter check skipped.
+  Coverage includes complete legacy membership, semantic mappings, real palette
+  selection, unsupported choices, subset exports, dependency invalidation, cached
+  single-slide reuse, review preservation and deterministic packaging.
+- All **194 native composition defaults** compile in the full vector catalogue.
+  Their 194 native previews and all generated registries and guides are current.
+  Semantic defaults use descriptive English; old example values and original
+  references remain in maintenance metadata.
+- **25 real compiler cases** pass: editable and empty fields, icon fitting, structured
+  text, aliases, missing resources, unknown fields and variants, explicit overflow,
+  original palette switching, fixed-colour fallback and ordinary-frame isolation.
+  Invalid cases fail with the expected diagnostic.
+- The grouped vector catalogue and quick overview each contain **100 pages**.
+  The quick PDF is approximately **4.6 MiB**, with selectable command captions and
+  no blank interleaved pages. Its builder verifies the final page count. The separate
+  vector catalogue preserves selectable slide text and full graphics quality.
+- The selected catalogue and showcase contain **21 pages**. All 24 previously
+  selected composition IDs remain in the ledger; the compact project additionally includes
+  the two optional BitGeneration cover sources.
+- The main Studio review ZIP compiles independently: showcase, editable starter,
+  all 171 illustrations, icon cheat sheet, selected catalogue, customization examples,
+  wrapped headings and Studio components. pdfLaTeX and Biber run without a checkout
+  mount, SVG converters, network access or shell escape.
+- An additional isolated four-composition project verifies both original `levels`
+  colours and both icon spotlight variants. Its catalogue, guide example and explicit
+  bibliography verification compile; embedded fonts are checked.
+- A clean source copy in a directory containing spaces builds the Studio showcase
+  with the native launcher and the starter with Docker. Native TeX runs inside the
+  existing Linux compiler container; the host has no separate native TeX installation.
+- The offline gallery renders in Firefox. It presents grouped models, existing
+  variants, palette controls only for original pairs, semantic field names and
+  matching copyable commands. Filtering and bounded pagination have behaviour tests;
+  image previews and comparison details load progressively.
+- Offline documentation links, prospective Git content, prepared-artwork hashes,
+  generated-file freshness and whitespace checks pass. Review ZIPs remain below
+  the 45 MiB target and reproduce identical bytes for unchanged inputs.
 
-- Every field in all 195 models has a stable typed slot: `text/N`, `icon/N`,
-  `image/N`, `graphic/N` or `file/N`. Seven mixed text blocks also support
-  `heading/N` and `body/N`. Existing fields and all nine aliases remain compatible.
-- All 195 defaults and all 195 guide examples compile without overflow. Default
-  preview PNGs are byte-identical to the pre-API baseline on every page at 480px.
-- The eight-page customization example compiles with replacement icons, images,
-  lists, heading/body blocks and code-file input. Replacements preserve fixed text
-  styles and graphic proportions; 34 separated card frames retain their shadows.
-- Nine real compiler cases pass: clear-option ordering, fitted/empty graphics,
-  empty structured text, alias handling, unknown fields, missing icons/images/files
-  and excessive text. Expected error cases fail with model/field diagnostics.
-- The 98-test suite passes with one optional Inkscape converter check skipped.
-- An isolated eight-model Overleaf review project compiles its main document,
-  catalogue, typed customization example, guide example and Biber verification.
-  The compiler has no source-checkout mount, converter, network or shell escape.
-- Generated guides, template dependencies, prepared panels and offline links are
-  current. Original artwork and Academic layout files are unchanged. No graphical
-  approval, stable-artifact replacement, commit or push is part of this work.
+## Focused title, contents and closing review
 
-See [the content API](STUDIO-CONTENT.md) and
-[the editable examples](../examples/studio-customization.tex).
+`python3 scripts/review.py pages` compiles 14 existing catalogue compositions:
+four cover candidates, four agenda candidates, one closing, plus five related or
+misclassified layouts in a separate group. `cover-script-blue` currently renders
+a process diagram and is flagged rather than treated as a title-page candidate.
+`tabbed-agenda` and `agenda-with-icons` are flagged as visually similar.
 
-## Earlier baseline checks (2026-11-01)
+Both PDFs have exactly 14 pages. The quick overview is approximately 0.74 MiB;
+the separate editable/vector catalogue is approximately 12.24 MiB. Review labels
+are outside the slide canvas. All 14 canonical commands resolve to their exact
+source compositions and native palettes. Gallery images and local links exist.
+The overview fonts are embedded; slide text remains selectable in the vector PDF.
+The existing 14 review-workflow tests pass, and the read-only repository review
+check passes. The ledger, selected layouts and approvals remain unchanged.
+These artifacts are local review outputs, not stable release replacements.
 
-- **91 regression tests:** 90 passed; one optional Inkscape converter test skipped.
-- All **195 compositions compile**, with embedded fonts and selectable text.
-  The full command also produces the **205-page indexed review** automatically.
-- The compact selection and showcase contain **24 pages**. Single-slide compilation
-  and cached-PDF reuse pass; source/part/data changes invalidate the affected models.
-  Notes and selection changes do not invalidate artwork previews.
-- Field customization, empty content, graphic replacement, code/CSV input and return
-  to ordinary frames pass. All nine compatibility names and pilot commands compile.
-  Unknown fields, excessive text and oversized graphics fail with model/field diagnostics.
-- Academic is pixel-identical to the saved baseline on all **11 pages** in both
-  **16:9 and 4:3**, compared at 800px width. The recorded Academic and source-artwork
-  hashes are unchanged.
-- Both candidate Overleaf ZIPs pass isolated validation. Academic logo/cover variants,
-  wrapped headings, Studio components, all 171 illustrations and bibliography checks pass.
-- All **five split review projects** compile independently: **20 documents**, including
-  all **195 catalogue pages**, guide examples and explicit Biber verification.
-  The extracted projects have no checkout mount, converter, network or shell escape.
-- The compact Studio ZIP is **3,118,802 bytes (2.97 MiB)**. Split ZIPs account for guides
-  and ZIP overhead and remain below the 45 MiB budget; the largest is 44,381,074 bytes.
-  Both main ZIPs reproduce identical bytes and match the validated candidates.
-- A clean source copy in a path containing spaces builds Academic, Studio and the
-  selection with the native launcher. This uses installed Linux TeX inside the existing
-  compiler container; it is not a claim of a separate native-host installation.
-- Docker-only thumbnail generation and PDF merging pass with host Poppler hidden.
-  The compiler image now includes those tools; ordinary builds need no SVG conversion.
-- The parts gallery displays at most 24 entries. Pagination, filtering, empty results
-  and copying pass behaviour tests; Firefox renders the offline page successfully.
-  The existing slide-gallery navigation and field-map tests continue to pass.
-- Offline documentation links, generated-file freshness, prepared dependencies and
-  tracked/prospective repository-content checks pass. Stable artifacts remain byte-identical.
+## Ready content and neutral reusable layouts
 
-## Studio typography refinement
+Verified on 2026-11-03. All 194 compositions are preserved. Retained English text
+is recovered for 180 compositions; the other 14 keep their current defaults.
+Original prepared graphics previously replaced by neutral placeholders are selected
+through explicit numbered graphic slots. No layout, artwork source or approval is
+duplicated or changed. The historical code block's doubled escapes are decoded in
+the example generator without altering the archived content.
 
-The latest graphical pass revised 35 compositions: stronger Inter text, source
-left edges, centred icon captions, checklist hierarchy and the clockwise diagonal
-title. Text boxes and English copy were adjusted explicitly where needed; fonts
-never shrink automatically. Academic and original artwork stayed unchanged.
-All current templates still require human graphical approval.
+- The complete ready-content source compiles to exactly 194 pages, with no text
+  or graphic overflow, overfull boxes, missing glyphs or unresolved references.
+  Its optional vector PDF is approximately 178 MiB and remains an ignored local
+  output; ordinary galleries do not load it.
+- The independent neutral shortlist contains title, contents and closing: three
+  pages, approximately 70 KiB. `reusable_selection` is editable in the review ledger;
+  the existing showcase selection and graphical approval states are preserved.
+- All 14 opening/closing candidates also compile with recovered content. Their
+  separate quick PDF is approximately 0.81 MiB. Both gallery paths and original
+  reference links are checked; switching modes does not replace neutral thumbnails.
+- The 114-test portable suite passes (113 passed, one optional Inkscape check
+  skipped), including new content-restoration and neutral-default isolation cases.
+  Generated source and guide freshness, offline links and Git content checks pass.
 
-## Editable starters and clone handoff
+English reconstructions remain editable examples. Historical numbers and links
+need checking before reuse; original Figma exports stay local and optional.
+Release artifacts and theme defaults are unchanged.
 
-`start-academic.tex` and `start-studio.tex` are short editable documents, independent
-of catalogue regeneration. Both compile to four pages with the shared launcher.
-VS Code provides named starter tasks and an active-document build task. The clone
-guides distinguish these documents from the full Academic and generated Studio showcases.
-Each Overleaf package also contains a corresponding editable `start.tex`, included
-in isolated package validation. The 91-test suite passes with one optional converter skip.
+## Studio default and Academic
 
-## Start the graphical review
+`main.tex`, the default build task and the no-argument package/validation commands
+now select Studio. Explicit Academic commands and the legacy Academic theme name
+retain their behaviour. The launcher follows local TeX inputs when checking artwork,
+so the default wrapper performs the same checks as `main-studio.tex`.
 
-```sh
-python3 scripts/review.py slide three-cards --open
-python3 scripts/review.py selection --open
-```
+- The default `build/main.pdf` is pixel-identical to the selected Studio showcase
+  on all **21 pages**, compared at 480px width.
+- Academic's Overleaf `main.tex` is the **four-slide editable starter**.
+  `academic-showcase.tex` preserves the full example; the theme retains its existing
+  layouts, options, font and all 171 illustrations. `make start-academic` builds the starter.
+- Review ZIP sizes are approximately **0.58 MiB for Academic** and **15.24 MiB
+  for Studio**. The Academic archive contains no Studio layouts, parts or registry.
+  Both archives reproduce the exact validated bytes.
+- Isolated validation covers the short Academic main, optional full Academic showcase,
+  logos, covers, 4:3 variants and bibliography, plus the selected Studio project.
+  The validator passes the selected style explicitly into its compiler container.
+- Studio's graphical approval gate still applies to stable exports. All new packages
+  are review candidates under `build/review/`; stable files and legacy download
+  names were not replaced.
 
-Use [the gallery](templates/index.html), [individual slide guides](templates/GUIDES.md)
-and [review workflow](STUDIO-COLLECTION.md). Refine the current source, record notes
-and status in the ledger, then run `review.py sync` and `review.py check`.
-Fonts and geometry remain fixed; compilation is not graphical approval.
+## Academic and graphical evidence
 
-Current local outputs:
+Academic layout files and shared font/palette configuration are unchanged. The saved
+Academic baseline comparison records **11 pixel-identical pages**, at 800px width,
+for both **16:9 and 4:3**. Studio's 194 source canvases, measured field boxes and
+native drawing geometry retain their recorded dimensions.
 
-- `build/review/slides/<id>/slide.pdf`: one composition.
-- `build/review/studio-selected-templates.pdf`: labelled working selection.
-- `build/review/bitbeamer-studio-review.pdf`: complete indexed review.
-- `build/review/release/`: both validated candidate ZIPs and preview PDFs.
-- `build/review/finalization-checks.json`: aggregate machine report.
-- `build/review/finalize-overleaf-validation/report.json`: isolated full-library checks.
+Local original/replica comparisons remain under ignored `design-references/figma/`.
+They include 2000px-high renders, overlays and separate graphical comparisons.
+Neutral wording and image placeholders are intentional differences from the original
+content. These comparisons are review evidence, not a claim that every original
+matches within five pixels or that visual refinement is complete.
 
-Stable files in `dist/` are preserved. Review packages remain available without
-approval; stable Studio exports require every selected model to be explicitly approved.
+Use [the grouped gallery](templates/index.html), [model guide](STUDIO-MODELS.md)
+and [review workflow](STUDIO-COLLECTION.md) to choose and refine one composition.
+Full-resolution originals, comparison PDFs, build logs and candidate packages stay
+outside Git. The full 194-composition vector archive is an explicit export.
 
-## Pending outside this local verification
+## Repository structure cleanup
 
-Graphical refinement, approval and final selection remain human review decisions.
-Original-frame geometry/effect comparisons are a separate optional maintenance
-workflow; the checks above do not newly certify every reconstruction against Figma.
+The README and documentation map now lead to separate authoring, graphical review
+and maintenance workflows. The repository map and directory guides identify editable
+sources and generated references. Theme files and public TeX paths remain in place.
+The contribution entry point links to the same workflows.
 
-Linux/macOS/Windows portable jobs and native Linux CI are configured. Hosted jobs,
-a real Overleaf service upload, version-tag checks and publication have not run in
-this local session. This report records local verification. Repository synchronization is recorded in
-Git history; no version tag or release publication is part of this handoff.
+Obsolete empty palette manifests and duplicate-palette bookkeeping were removed.
+Real neutral images, icon contrast files and shared geometry remain explicit package
+dependencies. Cache folders are ignored and rejected by the prospective Git-content
+check; VS Code search excludes generated builds and local original exports.
+
+The 111-test suite passes (one optional converter check skipped), and all **327
+Markdown files** pass offline link checks. A source-only copy in a path containing
+spaces passes the complete read-only review check and compiles the default Studio
+presentation with Docker, without original Figma exports. Both review ZIPs are
+byte-identical to the candidates from before this cleanup. Build and release files
+remain local; no stable artifact replacement, commit or push was performed.
+
+## Studio standard presentation pages
+
+The editable Studio starter now contains **five pages**: cover, automatic contents,
+two content examples and closing. The theme provides `\studiotitleframe`, the
+existing `\studiotocframe` with an optional heading, `\studioframe` for a simple
+aligned body, and the existing `\closingframe`. They are available without the
+optional catalogue package. Normal Beamer frames and catalogue commands remain supported.
+
+Three additional real compiler cases verify metadata, actual section names in the
+contents, optional subtitle reset, empty fields, theme-only use, invalid options
+and return to an ordinary frame after closing. All **21 content cases** and the
+111 portable tests pass (one optional converter test skipped). The refreshed Studio
+ZIP compiles in isolation, including its five-page starter and catalogue examples;
+its portable documentation links also pass.
+
+All **194 catalogue preview PNGs remain byte-identical** after recompilation, and
+their dependency fingerprints are refreshed. No measured composition or Academic
+layout was changed. The standard pages are authoring helpers, not new catalogue
+variants or automatic graphical approvals. Stable release files remain untouched.
+
+## Hosted checks and remaining decisions
+
+Linux, macOS and Windows launcher checks and native Linux builds are configured in
+CI. They were not run on GitHub during this local change. macOS and Windows are not
+claimed as locally tested environments.
+
+Remaining decisions are graphical corrections, explicit approval and final selection.
+Stable release artifacts were not replaced. No commit, push, tag or publication was
+performed. See [release instructions](RELEASING.md) for the separate approval gate.
+
+## Studio cover selector
+
+Verified on 2026-11-03. `\studiotitleframe` defaults to the existing classic blue
+cover. `variant=bitgeneration` and `variant=bitgeneration-photo` select the retained
+light and photo catalogue sources using the document title, author and institute.
+Canonical `wide-pattern` and `photo` names remain accepted; `classic` aliases the
+default. Every call resets its cover choice. Subtitle/date slots remain exclusive
+to classic, and the photo composition requires a short, single-line title.
+
+- All 25 real content cases pass, including cover metadata, empty values, option
+  reset, normal-frame colours, missing optional library and invalid variants.
+- All 194 catalogue previews are pixel-identical after recompilation; fingerprints
+  are refreshed only after this comparison. All five default starter pages also
+  match their previous rendering at 480px width.
+- The compact Studio review ZIP includes the two optional cover sources, their
+  prepared graphics and guides. The existing catalogue/showcase selection is
+  unchanged. The archive is approximately 15.24 MiB, below the 45 MiB budget.
+- Isolated archive validation passes all documents, including a new cover-variant
+  fixture. The 114 portable tests pass: 113 passed and one optional Inkscape check
+  skipped. Sources, guides, links, prepared-artwork checks and Git hygiene pass.
+- Stable packaging requires explicit approval for optional covers as well as the
+  showcase selection. No review state, Academic layout or stable release is changed.

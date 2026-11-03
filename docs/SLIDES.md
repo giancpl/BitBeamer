@@ -1,5 +1,9 @@
 # Write slides with BitBeamer Academic
 
+Academic is the simpler alternative to the default Studio design. Its Overleaf
+ZIP opens a four-slide editable starter and contains no Studio layout library.
+The theme keeps its existing names and features.
+
 The sample [main-academic.tex](../main-academic.tex) demonstrates the template rather than giving
 a full Bitcoin lecture. It contains 10 numbered frames and 11 PDF pages,
 including a single additional overlay page. Everything is in English.
@@ -40,7 +44,8 @@ Build the complete visual inventory with
 
 Use `\usetheme{bitpolito-academic}` for this design. The original
 `\usetheme{bitpolito}` is a compatibility name with the same options and layout.
-`main.tex` forwards to `main-academic.tex`; your own deck should start from the editable starter.
+`main.tex` now opens Studio. Build `main-academic.tex` explicitly for the Academic
+showcase, or copy `start-academic.tex` for your own deck.
 
 The default logo pair is PoliTo + the white BitPolito bull head. The branding options below select the explicit wordmark, monogram, and CrypTO alternatives. The header uses
 a slightly shorter blue band with a pale blue diagonal accent on the right;

@@ -1,7 +1,9 @@
 # Build setup
 
 After cloning as shown in [the README](../README.md), open a terminal in the
-repository root. **Docker is the default compiler backend.** Install Python
+repository root. `main.tex` opens **Studio** by default. Build `main-academic.tex`
+explicitly for the Academic showcase, or `start-academic.tex` for the short editable starter.
+**Docker is the default compiler backend.** Install Python
 3.10+ and Docker; local TeX packages are only needed for the native alternative.
 
 ## Docker setup (default)
@@ -111,7 +113,7 @@ required. Windows filenames and project paths may contain spaces.
 
 ## IDE workflow
 
-Open the repository in VS Code. **Ctrl+Shift+B** builds Academic through the compatible `main.tex` entry point
+Open the repository in VS Code. **Ctrl+Shift+B** builds Studio through the default `main.tex` entry point
 with Docker. For your own talk, copy `start-academic.tex` or `start-studio.tex` to
 a new root-level document. Starter tasks compile each editable example; **Build active
 document** compiles the open .tex file. The separate showcase tasks retain their defaults.

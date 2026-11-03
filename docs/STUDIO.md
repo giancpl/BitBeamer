@@ -1,15 +1,94 @@
 # BitBeamer Studio
 
-Studio is the visual design for workshops and public talks. **BitBeamer Academic**
-is the separate academic design and remains the default. Both share Inter
+Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
+
+Studio is the default design for workshops and public talks. **BitBeamer Academic**
+is the separate, simpler alternative for standard Beamer authoring and Overleaf. Both share Inter
 Regular/Semibold and the 171-icon library; their layouts are independent.
 Studio uses blue `#001CE0`, a light `#F9F9F9` canvas and lilac accents.
 The current collection supports **16:9**.
 
+## Standard pages and the default frame
+
+The theme provides complete-frame commands for a consistent presentation structure:
+
+| Command | Purpose | Content source |
+| --- | --- | --- |
+| `\studiotitleframe` | Blue cover with logos and pattern | `\title`, `\subtitle`, `\author`, `\institute`, `\date` |
+| `\studiotocframe` | Automatic contents page | The document's `\section` declarations |
+| `\studioframe[subtitle={...}]{Title}{Content}` | Default top-aligned content frame | Your title, optional subtitle and LaTeX body |
+| `\closingframe` | Blue closing page | Optional `title`, `subtitle`, `copyright` keys |
+
+These commands are available with `\usetheme{bitpolito-studio}` alone. They each
+create a complete slide; place them outside another `frame` or `\studioframe`.
+The catalogue additionally requires `\usepackage{bitpolitostudiotemplates}`.
+
+```latex
+\studiotitleframe
+\studiotocframe % Or \studiotocframe[title={Agenda}]
+
+\section{First ideas}
+\studioframe{One clear idea}{Your explanation.}
+
+\section{Examples}
+\studiotemplate[variant=three,title={Three concepts},
+  caption-one={Learn},caption-two={Build},caption-three={Share}
+]{icon-cards}
+
+\closingframe
+```
+
+Declare metadata in the preamble. The contents page picks up section names during
+the launcher's or Overleaf's repeat runs. Sections do not insert separator slides
+automatically. The catalogue's `agenda` variants retain their explicit editable
+labels; `\studiotocframe` uses the actual document sections.
+
+`\studioframe` uses the theme's margins, title typography and a stable top-aligned
+body. Its subtitle resets for each call. Omit it or use `subtitle={}` to leave it
+empty. Normal Beamer `frame` environments remain available; use `[fragile]` for
+literal verbatim code, or the catalogue's file-based code template.
+
+## Choose the cover
+
+The classic blue cover is the default for both `\studiotitleframe` and `\titlepage`.
+Use `variant` on the complete-frame command for a different cover:
+
+```latex
+\title{Your title}
+\author{Author name}
+\institute{Department or organization}
+\date{}
+
+\studiotitleframe                              % Classic blue; default
+% Choose one of these instead:
+% \studiotitleframe[variant=bitgeneration]       % Light, with BitGeneration lettering
+% \studiotitleframe[variant=bitgeneration-photo] % Photo, with BitGeneration lettering
+```
+
+| `variant` | Cover | Content |
+| --- | --- | --- |
+| `pattern` (default), `classic` | Blue background, white pattern and logos | Standard Beamer metadata, including subtitle and date |
+| `bitgeneration`, `wide-pattern` | Light background with the original BitGeneration lettering | Title, author and institute |
+| `bitgeneration-photo`, `photo` | Original photographic BitGeneration composition | Title, author and institute |
+
+The two BitGeneration variants require `\usepackage{bitpolitostudiotemplates}`
+in the preamble. Their existing sources and prepared graphics are shared with the
+catalogue; clone and compact Studio Overleaf projects include them. Custom subset
+exports must include `cover-light` and/or `cover-photo` when using these variants.
+A missing variant produces an explicit error.
+
+Every call starts with the classic blue cover unless `variant` is set on that call.
+The alternatives keep their original light/photo treatments even when a global
+catalogue palette is set. Metadata stays editable and the lettering remains part
+of the prepared graphic. The photo variant needs a short, single-line title;
+longer content reports overflow instead of shrinking the font. Only the classic
+cover has subtitle/date slots. Use the advanced `cover` model for individual
+field or graphic overrides.
+
 ## Choose, edit, and build
 
 Start with [start-studio.tex](../start-studio.tex), the short editable document.
-The generated [main-studio.tex](../main-studio.tex) is the **24-layout showcase**; copy it before editing.
+The generated [main-studio.tex](../main-studio.tex) is the **21-model showcase**; copy it before editing.
 Each command loads the latest composition from `templates/studio/`. Change its
 named fields to write your talk; edit that single source when refining a layout.
 The [selected-layout guide](../templates/SELECTION.md) has copyable examples.
@@ -24,7 +103,7 @@ The [full collection](TEMPLATES.md) contains every unique composition.
 \institute{Your Community}
 \date{}
 \begin{document}
-\begin{frame}[plain]\titlepage\end{frame}
+\studiotitleframe
 \begin{frame}{A normal slide}{An optional subtitle}
   Your editable Beamer content.
 \end{frame}
@@ -47,7 +126,8 @@ allowed; `\date{}` matches the example.
 ## One source per composition
 
 The library contains **194 current compositions**. The [gallery](templates/index.html)
-starts with the 24-layout selection; choose Full archive for every composition.
+starts with 21 featured models (24 retained composition choices); choose All models
+for the grouped collection or All compositions for the advanced archive.
 Nine compatibility names preserve earlier commands by loading the same current
 source, with their original example defaults. They are not separate slides.
 
@@ -151,8 +231,8 @@ sources when replacing illustrative values with factual claims.
 The interface matches Academic. An empty field hides that element, and every
 call resets to “Thank You!”, “Questions?”, and the current-year BitPolito
 copyright. Studio places the copyright at the top; Academic keeps it below.
-Complete-frame commands belong outside another frame. `\titlepage` belongs
-inside a plain frame; cards, statistics, panels, and timelines belong inside one.
+Complete-frame commands belong outside another frame. `\studiotitleframe` wraps
+`\titlepage` in a plain frame; cards, statistics, panels, and timelines belong inside one.
 
 ## Maintenance and Figma references
 

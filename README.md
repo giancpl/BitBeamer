@@ -1,80 +1,89 @@
 # BitBeamer
 
-Two independent BitPolito Beamer designs, sharing **Inter** and **171 vector illustrations**.
+**BitBeamer Studio** is the default design. **BitBeamer Academic** is the simpler
+alternative for standard Beamer authoring. Both share **Inter** and **171 vector illustrations**.
 
-| Design | Best for | Showcase | Theme |
+| Design | Editable starter | Showcase | Theme |
 | --- | --- | --- | --- |
-| **BitBeamer Academic** — default | Academic talks and structured presentations | `main-academic.tex` | `bitpolito-academic` |
-| **BitBeamer Studio** | Visual talks and fixed-composition slides | `main-studio.tex` | `bitpolito-studio` |
-
-Studio contains **194 unique compositions**, with **24 featured layouts**.
-All remain available; graphical approval and selection are explicit review decisions.
+| **Studio** — default | [start-studio.tex](start-studio.tex) | `main-studio.tex` | `bitpolito-studio` |
+| **Academic** | [start-academic.tex](start-academic.tex) | `main-academic.tex` | `bitpolito-academic` |
 
 ## Clone and build
 
-Install **Python 3.10+** and **Docker**, then start Docker.
+Install **Python 3.10+** and **Docker**, start Docker, then run:
 
 ```sh
 git clone https://github.com/giancpl/BitBeamer.git
 cd BitBeamer
 python3 scripts/build.py
-python3 scripts/build.py main-studio.tex
 ```
 
-Outputs: `build/main.pdf` and `build/main-studio.pdf`.
-On Windows replace `python3` with `py -3`. VS Code's default build task uses the same launcher.
-The first Docker build prepares the compiler image; later builds reuse it offline.
-With TeX Live or MacTeX, latexmk and Biber installed, add `--backend native`.
-See [installation and troubleshooting](docs/SETUP.md).
+Output: `build/main.pdf`, the selected Studio showcase. The first build prepares
+the compiler image; later builds reuse it offline. With TeX Live/MacTeX, latexmk
+and Biber installed, add `--backend native`. See [setup and troubleshooting](docs/SETUP.md).
+On Windows replace `python3` with `py -3`. VS Code tasks use the same launcher.
 
-## Create a presentation
+## Create your presentation
 
-Choose an editable starting document. These files are never regenerated:
+Copy a starter to a new `.tex` file at the repository root:
 
-| Starting document | Build | Output |
-| --- | --- | --- |
-| [start-academic.tex](start-academic.tex) | `python3 scripts/build.py start-academic.tex` | `build/start-academic.pdf` |
-| [start-studio.tex](start-studio.tex) | `python3 scripts/build.py start-studio.tex` | `build/start-studio.pdf` |
+```sh
+cp start-studio.tex my-slides.tex
+python3 scripts/build.py my-slides.tex --open
+```
 
-Copy either file to `my-slides.tex` in the repository root, change its metadata
-and content, then run `python3 scripts/build.py my-slides.tex --open`.
-On Windows copy with `Copy-Item start-studio.tex my-slides.tex` and use `py -3`.
-VS Code provides named starter tasks and **Build active document**; LaTeX Workshop
-also builds the open document through the same launcher.
+Use `start-academic.tex` for Academic. On Windows copy with
+`Copy-Item start-studio.tex my-slides.tex`.
+Edit the title, author and content in your copied file; starter files are never regenerated.
+Studio includes standard cover, automatic contents and closing commands; see
+[standard pages](docs/STUDIO.md#standard-pages-and-the-default-frame).
+The title page is classic blue; [optional BitGeneration covers](docs/STUDIO.md#choose-the-cover) use the `variant` field.
 
-- **Academic:** [slide-writing guide](docs/SLIDES.md), branding, covers and standard Beamer features.
-- **Studio:** [choose a layout](docs/templates/index.html), then [use its documented fields](docs/USING-STUDIO.md).
-  The [content API](docs/STUDIO-CONTENT.md) provides consistent text, icon and image keys.
+- **Studio:** [browse the gallery](docs/templates/index.html), then use the [model and palette guide](docs/STUDIO-MODELS.md).
+  Each model has copyable examples and named fields for text and graphics.
+- **Academic:** use ordinary Beamer frames; see [writing slides](docs/SLIDES.md).
 - **Icons:** `\alice[height=2cm]`, `\cow[width=3cm]` or `\asset[width=2cm]{qrcode-one}`.
-  See [the icon guide](docs/ICONS.md) and [printable cheat sheet](examples/icon-cheatsheet.tex).
+  See [icons](docs/ICONS.md) and the [printable cheat sheet](examples/icon-cheatsheet.tex).
 
-`main-academic.tex` is the full Academic showcase; `main.tex` forwards to it.
-`main-studio.tex` is a generated Studio showcase. Copy it before editing, because
-`review.py sync` regenerates it from the selected layouts.
-Every Studio slide has a [copyable usage guide](docs/templates/GUIDES.md).
-Ordinary builds use included prepared graphics and need no converter or Figma export.
+`main.tex` forwards to Studio. `main-studio.tex` is generated from the working
+selection; copy it before editing. `main-academic.tex` is the full Academic showcase.
+Explicit Academic theme names and the legacy `\usetheme{bitpolito}` remain available.
 
-## Improve the library
+Studio offers two complementary catalogues: [neutral reusable layouts](templates/REUSABLE.md)
+for a new presentation, and [ready-content examples](templates/EXAMPLES.md) retaining
+editable English subject matter. Both use the same layout sources. The reusable
+shortlist starts with title, contents and closing; the full collection remains available.
+
+## Find files and refine the library
+
+[Repository map](docs/STRUCTURE.md) · [Documentation](docs/README.md) · [Examples](examples/README.md)
+
+Edit the current composition under `templates/studio/`; keep notes and selection
+in `templates/review.json`. [The review workflow](docs/STUDIO-COLLECTION.md) explains
+source files, generated references and graphical approval.
 
 ```sh
 python3 scripts/review.py slide three-cards --open
-python3 scripts/review.py selection --open
 python3 scripts/review.py sync
 python3 scripts/review.py check
 ```
 
-Edit a composition's current source, inspect its individual PDF, and record notes,
-status and selection in `templates/review.json`. Single-slide updates reuse cached
-outputs and refresh only affected previews. The full archive is an explicit `review.py all` operation.
-See [the review workflow](docs/STUDIO-COLLECTION.md).
+Use `review.py models --open` for the quick model PDF. The complete archive is an
+explicit `review.py all` operation. See [maintenance](docs/MAINTENANCE.md) and
+[contributing](.github/CONTRIBUTING.md) for tooling and checks.
 
-## Overleaf and maintenance
+## Overleaf downloads
 
-Academic and Studio have [separate Overleaf projects](docs/README.md#overleaf).
-The main Studio download contains the compact selection and its dependencies;
-custom exports can contain any subset. The complete collection stays in the clone.
+[Studio](docs/OVERLEAF-STUDIO.md) and [Academic](docs/OVERLEAF.md) have separate ZIPs.
+Studio includes the curated selection. Academic opens a short editable starter and
+includes its full showcase separately. Both contain prepared icons and need no
+Python, Docker or converters after upload.
 
-Use [the documentation map](docs/README.md) for writing, review and maintenance.
-[Release instructions](docs/RELEASING.md) explain validation and approval gates.
-`build/`, `dist/` and original-reference comparisons are local outputs, excluded from Git.
-`main.tex` and `\usetheme{bitpolito}` remain compatible Academic entry points.
+```sh
+python3 scripts/package.py --review
+python3 scripts/package.py --style academic --review
+```
+
+Candidates go to `build/review/packages/`. [Releasing](docs/RELEASING.md) covers
+validation, approval and stable artifacts. `build/`, `dist/` and original Figma
+comparisons are local outputs, excluded from Git. `make clean` removes `build/`.

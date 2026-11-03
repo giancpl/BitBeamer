@@ -4,17 +4,23 @@
 2. Select **main.tex** as the main document and **pdfLaTeX** as the compiler.
 3. Edit the title, author, date, and slide content. Overleaf runs Biber for citations.
 
-For a shorter editable document, select `start.tex` as the main document. It includes
-a cover, ordinary frames, an illustration and a closing slide. `main.tex` is the full showcase.
+`main.tex` is a short editable four-slide document: a cover, ordinary frames,
+an illustration and a closing slide. `start.tex` retains the same starter for compatibility.
+Select `academic-showcase.tex` to explore the full Academic showcase.
+
+The Academic project includes its theme and all 171 icons, with no Studio
+composition library, extracted graphic parts or review catalogue. It is the simpler
+Overleaf project when you prefer ordinary Beamer frames.
 
 The default typeface is Inter, with Regular body text and Semibold headings.
 It uses the TeX distribution's Inter package with pdfLaTeX.
 
-This is **BitBeamer Academic**. **BitBeamer Studio** is a separate download,
+This is **BitBeamer Academic**. **BitBeamer Studio** is the default design
+in the repository and has a separate download,
 `bitbeamer-studio-overleaf.zip`. The legacy `\usetheme{bitpolito}` also selects
 Academic.
 
-The compact English showcase has 10 numbered frames and 11 PDF pages, including
+The optional `academic-showcase.tex` has 10 numbered frames and 11 PDF pages, including
 one overlay. Its source comments identify columns, blocks, diagrams, formulas,
 tables, code, footnotes, and navigation.
 
@@ -70,13 +76,14 @@ Select another main document to explore the supplied references:
 
 | Document | Contents |
 | --- | --- |
+| `academic-showcase.tex` | Full showcase: blocks, overlays, mathematics, code and bibliography |
 | `cover-layouts.tex` | Two finalized cover orientations |
 | `assets-example.tex` | Alice and cow usage examples |
 | `icon-cheatsheet.tex` | Printable two-page icon cheat sheet |
 | `asset-catalogue.tex` | All 171 icons with copyable commands |
 
 These filenames refer to files in the release ZIP. In the source repository, the
-four reference documents are under `examples/`.
+icon and cover reference documents are under `examples/`; the full showcase is `main-academic.tex`.
 
 ## Compile or add artwork
 

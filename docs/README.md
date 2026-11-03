@@ -1,39 +1,52 @@
 # Documentation
 
+Start with [the repository map](STRUCTURE.md) to find editable sources, generated
+references and local output. Studio is the default; Academic is the separate
+standard Beamer design.
+
 ## Create a presentation
 
-Copy [the Academic starter](../start-academic.tex) or [the Studio starter](../start-studio.tex)
-to a new root-level document. These are editable; generated showcases are references.
+Copy [the Studio starter](../start-studio.tex) or [the Academic starter](../start-academic.tex)
+to a new root-level `.tex` file. Both are editable and never regenerated.
 
 | Guide | Purpose |
 | --- | --- |
-| [Setup](SETUP.md) | Docker, native TeX, Windows/macOS/Linux and troubleshooting |
-| [Academic slides](SLIDES.md) | Standard Beamer content, covers, branding and closing |
-| [Use a Studio slide](USING-STUDIO.md) | Choose a composition and create a personal deck |
-| [Studio components](STUDIO.md) | Reusable layout commands and ordinary frames |
-| [Studio gallery](templates/index.html) / [slide guides](templates/GUIDES.md) | Current previews, fields and copyable complete examples |
+| [Setup](SETUP.md) | Docker, native TeX and platform troubleshooting |
+| [Use a Studio slide](USING-STUDIO.md) | Choose a composition and write a personal deck |
+| [Studio models](STUDIO-MODELS.md) | Variants, original palettes and semantic fields |
+| [Reusable Studio shortlist](../templates/REUSABLE.md) | Neutral title, contents and closing for new content |
+| [Ready-content examples](../templates/EXAMPLES.md) | Editable retained English content, using shared layouts |
+| [Studio content API](STUDIO-CONTENT.md) | Text, icon, image and file substitutions |
+| [Studio components](STUDIO.md) | Layout commands and ordinary Beamer frames |
+| [Academic slides](SLIDES.md) | Standard frames, branding, covers and closing |
 | [Icons](ICONS.md) | Shortcuts, sizing and printable references |
+
+Browse [the Studio gallery](templates/index.html), [individual slide guides](templates/GUIDES.md)
+and [focused examples](../examples/README.md) for copyable sources.
 
 ## Refine the library
 
-Start with [the review workflow](STUDIO-COLLECTION.md).
-[Template structure](TEMPLATES.md) explains the source/metadata boundary;
-[graphic parts](STUDIO-PARTS.md) and [Figma reconstruction](FIGMA.md) cover artwork.
-The [review ledger](../templates/review.json) is the only editable review/selection file.
-The [CSV sheet](../templates/REVIEW.csv) is generated for reading and sharing.
+| Guide | Purpose |
+| --- | --- |
+| [Review workflow](STUDIO-COLLECTION.md) | Change one composition, inspect it and record feedback |
+| [Template structure](TEMPLATES.md) | Canonical sources, grouping and generated files |
+| [Graphic parts](STUDIO-PARTS.md) | Prepared reusable artwork |
+| [Figma reconstruction](FIGMA.md) | Optional original comparisons and measurements |
+
+[review.json](../templates/review.json) is the editable source for notes, status and
+selection; [REVIEW.csv](../templates/REVIEW.csv) is a generated export.
 
 ## Maintain and verify
 
-[Maintenance](MAINTENANCE.md) maps source preparation and checks.
-[Release instructions](RELEASING.md) explain deterministic exports and approval requirements.
-[Verification report](CHECKS.md) distinguishes local evidence from pending hosted checks.
+[Maintenance](MAINTENANCE.md) maps preparation tools and read-only checks.
+[Release instructions](RELEASING.md) cover deterministic exports and approval.
+[Verification report](CHECKS.md) separates local evidence from hosted checks.
+[Contributing](../.github/CONTRIBUTING.md) gives the checklist for sharing changes.
 
 ## Overleaf
 
-- [BitBeamer Academic](OVERLEAF.md): `bitbeamer-academic-overleaf.zip`.
-- [BitBeamer Studio](OVERLEAF-STUDIO.md): `bitbeamer-studio-overleaf.zip`, containing the curated selection.
+- [BitBeamer Studio](OVERLEAF-STUDIO.md), default: `bitbeamer-studio-overleaf.zip`, containing the selected models.
+- [BitBeamer Academic](OVERLEAF.md): `bitbeamer-academic-overleaf.zip`, opening a short editable starter.
 
-Use the release asset, rather than GitHub's automatic source archive.
-Unapproved Studio work is available through separate review packages.
-
-For reusable composition content, see [Studio content API](STUDIO-CONTENT.md).
+Use the prepared release asset instead of GitHub's automatic source archive.
+Unapproved work is shared through separate review packages.
