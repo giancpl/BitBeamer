@@ -14,6 +14,18 @@ Model: `two-radial-groups` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/radial.md)
+
+```latex
+\studiotemplate[variant=two-groups,palette=light]{radial}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -49,8 +61,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Running a node:\\network benefits},
-  text/4={A voice in\\consensus}
+  text/2={Slide title},
+  text/4={Item}
 ]{two-radial-groups}
 ```
 
@@ -66,8 +78,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Running a node:\\network benefits},
-  text/4={A voice in\\consensus}
+  text/2={Slide title},
+  text/4={Item}
 ]{two-radial-groups}
 \end{document}
 ```
@@ -87,11 +99,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 37.1% wide × 61.4% high | <code>\includegraphics[width=712\studiounit]{images/studio/collection/figma-0067-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 37.1% wide × 13.5% high | <code>Running a node:\\network benefits</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 12.3% wide × 10.9% high | <code>A voice in\\consensus</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 13.4% wide × 11.0% high | <code>An active\\contribution</code> |
-| <code>text-4</code> | Editable text (text) | upper centre | 21.1% wide × 6.3% high | <code>Network support</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 37.1% wide × 61.4% high | <code>\studiopaletteimage[width=712\studiounit]{images/studio/collection/figma-0067-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle centre | 37.1% wide × 13.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 12.3% wide × 10.9% high | <code>Item</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 13.4% wide × 11.0% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | upper centre | 21.1% wide × 6.3% high | <code>Label 1</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

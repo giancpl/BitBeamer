@@ -14,6 +14,18 @@ Model: `screenshot-callout` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/screenshots.md)
+
+```latex
+\studiotemplate[variant=callout,palette=light]{screenshots}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -49,8 +61,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Difficulty},
-  text/3={The hash must fall below\\a target threshold (Bits)}
+  text/1={Title},
+  text/3={Supporting explanation}
 ]{screenshot-callout}
 ```
 
@@ -66,8 +78,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Difficulty},
-  text/3={The hash must fall below\\a target threshold (Bits)}
+  text/1={Title},
+  text/3={Supporting explanation}
 ]{screenshot-callout}
 \end{document}
 ```
@@ -87,11 +99,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 52.9% wide × 82.4% high | <code>\includegraphics[width=1881\studiounit]{images/studio/collection/figma-0530-part-01.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle left | 30.6% wide × 10.4% high | <code>The hash must fall below\\a target threshold (Bits)</code> |
-| <code>text-2</code> | Editable text (text) | lower left | 23.0% wide × 10.4% high | <code>Retarget every 2016\\blocks (about 2 weeks)</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 44.2% wide × 9.8% high | <code>Indicates the difficulty\\of Proof-of-Work</code> |
-| <code>title</code> | Main text (text) | upper left | 15.3% wide × 8.5% high | <code>Difficulty</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 52.9% wide × 82.4% high | <code>\studiopaletteimage[width=1881\studiounit]{images/studio/neutral/screenshot-callout-graphic-1.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle left | 30.6% wide × 10.4% high | <code>Supporting explanation</code> |
+| <code>text-2</code> | Editable text (text) | lower left | 23.0% wide × 10.4% high | <code>Label 4</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 44.2% wide × 9.8% high | <code>Supporting explanation</code> |
+| <code>title</code> | Main text (text) | upper left | 15.3% wide × 8.5% high | <code>Title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `photo-collage-banner` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/collage.md)
+
+```latex
+\studiotemplate[variant=banner,palette=light]{collage}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -80,10 +92,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>image-1</code> | Complete graphic, image or decoration (graphic) | upper left | 50.0% wide × 50.0% high | <code>\includegraphics[width=1778\studiounit]{images/studio/collection/figma-0007-region-1.pdf}</code> |
-| <code>image-2</code> | Complete graphic, image or decoration (graphic) | upper right | 50.0% wide × 50.0% high | <code>\includegraphics[width=1778\studiounit]{images/studio/collection/figma-0007-region-2.pdf}</code> |
-| <code>image-3</code> | Complete graphic, image or decoration (graphic) | lower left | 50.0% wide × 50.0% high | <code>\includegraphics[width=1778\studiounit]{images/studio/collection/figma-0007-region-3.pdf}</code> |
-| <code>image-4</code> | Complete graphic, image or decoration (graphic) | lower right | 50.0% wide × 50.0% high | <code>\includegraphics[width=1778\studiounit]{images/studio/collection/figma-0007-region-4.pdf}</code> |
+| <code>image-1</code> | Complete graphic, image or decoration (graphic) | upper left | 50.0% wide × 50.0% high | <code>\studiopaletteimage[width=1778\studiounit]{images/studio/collection/figma-0007-region-1.pdf}</code> |
+| <code>image-2</code> | Complete graphic, image or decoration (graphic) | upper right | 50.0% wide × 50.0% high | <code>\studiopaletteimage[width=1778\studiounit]{images/studio/collection/figma-0007-region-2.pdf}</code> |
+| <code>image-3</code> | Complete graphic, image or decoration (graphic) | lower left | 50.0% wide × 50.0% high | <code>\studiopaletteimage[width=1778\studiounit]{images/studio/collection/figma-0007-region-3.pdf}</code> |
+| <code>image-4</code> | Complete graphic, image or decoration (graphic) | lower right | 50.0% wide × 50.0% high | <code>\studiopaletteimage[width=1778\studiounit]{images/studio/collection/figma-0007-region-4.pdf}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

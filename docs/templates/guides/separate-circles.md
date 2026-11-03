@@ -14,6 +14,18 @@ Model: `separate-circles` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/sets.md)
+
+```latex
+\studiotemplate[variant=separate,palette=light]{sets}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -48,8 +60,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Real overview\\of ``Crypto world''},
-  text/3={Altcoins}
+  text/2={Slide title},
+  text/3={Label 3}
 ]{separate-circles}
 ```
 
@@ -65,8 +77,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Real overview\\of ``Crypto world''},
-  text/3={Altcoins}
+  text/2={Slide title},
+  text/3={Label 3}
 ]{separate-circles}
 \end{document}
 ```
@@ -86,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 53.7% wide × 86.3% high | <code>\includegraphics[width=1909\studiounit]{images/studio/collection/figma-0355-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle left | 27.5% wide × 15.6% high | <code>Real overview\\of ``Crypto world&#x27;&#x27;</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 17.0% wide × 6.3% high | <code>Altcoins</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 10.0% wide × 6.3% high | <code>Bitcoin</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 53.7% wide × 86.3% high | <code>\studiopaletteimage[width=1909\studiounit]{images/studio/collection/figma-0355-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle left | 27.5% wide × 15.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 17.0% wide × 6.3% high | <code>Label 3</code> |
+| <code>text-3</code> | Editable text (text) | middle centre | 10.0% wide × 6.3% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `photo-split` · Family: Comparisons · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/photo-split.md)
+
+```latex
+\studiotemplate[variant=default,palette=blue]{photo-split}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -47,8 +59,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Gold},
-  text/2={Bitcoin}
+  text/1={Title},
+  text/2={Item}
 ]{photo-split}
 ```
 
@@ -64,8 +76,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Gold},
-  text/2={Bitcoin}
+  text/1={Title},
+  text/2={Item}
 ]{photo-split}
 \end{document}
 ```
@@ -85,9 +97,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 100.0% wide × 73.6% high | <code>\includegraphics[width=3556\studiounit]{images/studio/collection/figma-0810-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | lower left | 7.4% wide × 7.6% high | <code>Gold</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 12.0% wide × 7.5% high | <code>Bitcoin</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 100.0% wide × 73.6% high | <code>\studiopaletteimage[width=3556\studiounit]{images/studio/collection/figma-0810-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | lower left | 7.4% wide × 7.6% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 12.0% wide × 7.5% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

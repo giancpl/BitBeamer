@@ -2,7 +2,7 @@
 
 # Illustrative line chart
 
-Present a chart; data can come from CSV.
+Demonstrate this reusable composition.
 
 Model: `line-chart` · Family: Data · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `line-chart` · Family: Data · Status: **in review**.
 ![Illustrative line chart](../previews/line-chart.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/charts.md)
+
+```latex
+\studiotemplate[variant=line,palette=light]{charts}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -50,10 +62,10 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Demo},
-  text/1={Example curve},
-  text/3={},
-  text/4={Illustrative data},
+  text/2={Title},
+  text/1={Label 1},
+  text/3={Item},
+  text/4={Supporting explanation},
   file/1={examples/data/studio-line.csv}
 ]{line-chart}
 ```
@@ -70,10 +82,10 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Demo},
-  text/1={Example curve},
-  text/3={},
-  text/4={Illustrative data},
+  text/2={Title},
+  text/1={Label 1},
+  text/3={Item},
+  text/4={Supporting explanation},
   file/1={examples/data/studio-line.csv}
 ]{line-chart}
 \end{document}
@@ -94,11 +106,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 100.0% wide × 100.0% high | <code>\includegraphics[width=3556\studiounit]{images/studio/collection/figma-0818-part-01.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper left | 18.1% wide × 5.0% high | <code>Peak hashrate</code> |
-| <code>title</code> | Headline value (text) | upper left | 41.3% wide × 17.8% high | <code>1.039 ZH/s*</code> |
-| <code>text-3</code> | Editable text (text) | upper left | 8.3% wide × 4.9% high | <code>35,7 \%</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 39.8% wide × 6.4% high | <code>*815 ha of 1,000 W bulbs</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 100.0% wide × 100.0% high | <code>\studiopaletteimage[width=3556\studiounit]{images/studio/collection/figma-0818-part-01.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | upper left | 18.1% wide × 5.0% high | <code>Label 1</code> |
+| <code>title</code> | Headline value (text) | upper left | 41.3% wide × 17.8% high | <code>Title</code> |
+| <code>text-3</code> | Editable text (text) | upper left | 8.3% wide × 4.9% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 39.8% wide × 6.4% high | <code>Supporting explanation</code> |
 | <code>data-file</code> | Path to an x,y CSV file (file) | See source | Source-defined | <code>(empty)</code> |
 
 Truncated values are shown in full at the start of the current source file.

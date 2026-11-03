@@ -1,0 +1,725 @@
+{
+  "schema": 1,
+  "parts": [
+    {
+      "name": "partner-rail-graphic-1",
+      "source": "images/studio/neutral/source/partner-rail-graphic-1.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-1.pdf",
+      "source_sha256": "28311b3c40514d57bcb88e76f4bf5d98a4a94942a78d9415efaf9c0bbba66abe",
+      "pdf_sha256": "87b55b42c599bd1973f02fe0cab5d690e57c9a583923b7a8057bece637700ed3",
+      "composition": "partner-rail",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-2",
+      "source": "images/studio/neutral/source/partner-rail-graphic-2.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-2.pdf",
+      "source_sha256": "b345b7c0af14760d9477a514f5e8eed23f3466b78047804bd0dfc681f260f8ca",
+      "pdf_sha256": "a1f29c103789d41cc5302fc26574c0c69d2c763e3af7ac52f42982a432669936",
+      "composition": "partner-rail",
+      "field": "graphic-2",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-3",
+      "source": "images/studio/neutral/source/partner-rail-graphic-3.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-3.pdf",
+      "source_sha256": "b654b31dca3aadd5fec38bd72a457cbbf3ef9ff2aca6bc0e7e1bb94ec125f333",
+      "pdf_sha256": "32abd7fc506135b424e005a96188c08f339702c6b4c944b66b8b1c71224f470d",
+      "composition": "partner-rail",
+      "field": "graphic-3",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-4",
+      "source": "images/studio/neutral/source/partner-rail-graphic-4.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-4.pdf",
+      "source_sha256": "af75cdd01197ac49e1c0fa9c2f6617c690291c6740dd83657681978f09c65b42",
+      "pdf_sha256": "c563f9cf306120bb08e11d771159408dcde8dfb4e37145762215bf941fbe98e3",
+      "composition": "partner-rail",
+      "field": "graphic-4",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-5",
+      "source": "images/studio/neutral/source/partner-rail-graphic-5.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-5.pdf",
+      "source_sha256": "b942809df7fd42eb48b9ca8e17e0ef37c4fe3c4e3efc844c05139fdbe15918a7",
+      "pdf_sha256": "f02f363a3c82a6b7cb222d49db1c6c282ac6a119757257c68e03d290197fd362",
+      "composition": "partner-rail",
+      "field": "graphic-5",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-6",
+      "source": "images/studio/neutral/source/partner-rail-graphic-6.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-6.pdf",
+      "source_sha256": "dc1bdad4ed33089f6b6d2c62191582fa62d76f3fdc3162c3250fa36593a2dfe1",
+      "pdf_sha256": "72af3629cd3ddb9f33674c6592cd81f319ed42e79d2285548a763b69aa622aaf",
+      "composition": "partner-rail",
+      "field": "graphic-6",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-7",
+      "source": "images/studio/neutral/source/partner-rail-graphic-7.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-7.pdf",
+      "source_sha256": "9d210ebd4f7a11ba702d38b212229fa301ed8474a6e53dbf4d67960618fba3f3",
+      "pdf_sha256": "a760a3042eba1ade3d24f78791484b2cc6c8fac8b298a19e430371c6d3e7cb7e",
+      "composition": "partner-rail",
+      "field": "graphic-7",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-8",
+      "source": "images/studio/neutral/source/partner-rail-graphic-8.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-8.pdf",
+      "source_sha256": "50a4910fe1ab68b2ef533f14a39445c88668924a3c01c0024adff656291b8923",
+      "pdf_sha256": "8dbb6985e5fd3eedb3d0f69863f5279cf5262306982d353cb0c7cd6f4ae41e22",
+      "composition": "partner-rail",
+      "field": "graphic-8",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-9",
+      "source": "images/studio/neutral/source/partner-rail-graphic-9.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-9.pdf",
+      "source_sha256": "a9f5c8ec5f8540ff1e9eb2b50304753c3f86868542adf9863d066ba27639b6f5",
+      "pdf_sha256": "899a612fac739de19d5c532fd9e7e6b8d09aa08f777dce5090808d865d56d97b",
+      "composition": "partner-rail",
+      "field": "graphic-9",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-10",
+      "source": "images/studio/neutral/source/partner-rail-graphic-10.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-10.pdf",
+      "source_sha256": "28311b3c40514d57bcb88e76f4bf5d98a4a94942a78d9415efaf9c0bbba66abe",
+      "pdf_sha256": "87b55b42c599bd1973f02fe0cab5d690e57c9a583923b7a8057bece637700ed3",
+      "composition": "partner-rail",
+      "field": "graphic-10",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-11",
+      "source": "images/studio/neutral/source/partner-rail-graphic-11.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-11.pdf",
+      "source_sha256": "50a4910fe1ab68b2ef533f14a39445c88668924a3c01c0024adff656291b8923",
+      "pdf_sha256": "8dbb6985e5fd3eedb3d0f69863f5279cf5262306982d353cb0c7cd6f4ae41e22",
+      "composition": "partner-rail",
+      "field": "graphic-11",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-12",
+      "source": "images/studio/neutral/source/partner-rail-graphic-12.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-12.pdf",
+      "source_sha256": "a9f5c8ec5f8540ff1e9eb2b50304753c3f86868542adf9863d066ba27639b6f5",
+      "pdf_sha256": "899a612fac739de19d5c532fd9e7e6b8d09aa08f777dce5090808d865d56d97b",
+      "composition": "partner-rail",
+      "field": "graphic-12",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-13",
+      "source": "images/studio/neutral/source/partner-rail-graphic-13.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-13.pdf",
+      "source_sha256": "53b34d32f4e5393058cb383421e8194bc79dce0f10524fc9ac98242c55e71f94",
+      "pdf_sha256": "909c05a74bb264cacc8815a09fcaeadaa9b5c1529945fed35f5d0f7f3509b4bf",
+      "composition": "partner-rail",
+      "field": "graphic-13",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-14",
+      "source": "images/studio/neutral/source/partner-rail-graphic-14.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-14.pdf",
+      "source_sha256": "50a4910fe1ab68b2ef533f14a39445c88668924a3c01c0024adff656291b8923",
+      "pdf_sha256": "8dbb6985e5fd3eedb3d0f69863f5279cf5262306982d353cb0c7cd6f4ae41e22",
+      "composition": "partner-rail",
+      "field": "graphic-14",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-15",
+      "source": "images/studio/neutral/source/partner-rail-graphic-15.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-15.pdf",
+      "source_sha256": "a9f5c8ec5f8540ff1e9eb2b50304753c3f86868542adf9863d066ba27639b6f5",
+      "pdf_sha256": "899a612fac739de19d5c532fd9e7e6b8d09aa08f777dce5090808d865d56d97b",
+      "composition": "partner-rail",
+      "field": "graphic-15",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-rail-graphic-16",
+      "source": "images/studio/neutral/source/partner-rail-graphic-16.svg",
+      "pdf": "images/studio/neutral/partner-rail-graphic-16.pdf",
+      "source_sha256": "28311b3c40514d57bcb88e76f4bf5d98a4a94942a78d9415efaf9c0bbba66abe",
+      "pdf_sha256": "87b55b42c599bd1973f02fe0cab5d690e57c9a583923b7a8057bece637700ed3",
+      "composition": "partner-rail",
+      "field": "graphic-16",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "screenshot-callout-graphic-1",
+      "source": "images/studio/neutral/source/screenshot-callout-graphic-1.svg",
+      "pdf": "images/studio/neutral/screenshot-callout-graphic-1.pdf",
+      "source_sha256": "fea966bb0c26e68ec2150f0c66cea9afd2354fac529f323c7043adf654d4ba56",
+      "pdf_sha256": "641aa8743b67742b59e7950a944d49d2e6c17211a1a81a511044b64a3720f162",
+      "composition": "screenshot-callout",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "resource-grid-graphic-1",
+      "source": "images/studio/neutral/source/resource-grid-graphic-1.svg",
+      "pdf": "images/studio/neutral/resource-grid-graphic-1.pdf",
+      "source_sha256": "a38495a70ca2821d4534e3f1b367334d04fcad95ec489114678ec2c8aa8b70bf",
+      "pdf_sha256": "4127515f0d70173396d9b3abbb262cb015bab14f1d4aa6526b2659bc9b90654a",
+      "composition": "resource-grid",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "resource-grid-graphic-2",
+      "source": "images/studio/neutral/source/resource-grid-graphic-2.svg",
+      "pdf": "images/studio/neutral/resource-grid-graphic-2.pdf",
+      "source_sha256": "a38495a70ca2821d4534e3f1b367334d04fcad95ec489114678ec2c8aa8b70bf",
+      "pdf_sha256": "4127515f0d70173396d9b3abbb262cb015bab14f1d4aa6526b2659bc9b90654a",
+      "composition": "resource-grid",
+      "field": "graphic-2",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "resource-grid-graphic-3",
+      "source": "images/studio/neutral/source/resource-grid-graphic-3.svg",
+      "pdf": "images/studio/neutral/resource-grid-graphic-3.pdf",
+      "source_sha256": "a38495a70ca2821d4534e3f1b367334d04fcad95ec489114678ec2c8aa8b70bf",
+      "pdf_sha256": "4127515f0d70173396d9b3abbb262cb015bab14f1d4aa6526b2659bc9b90654a",
+      "composition": "resource-grid",
+      "field": "graphic-3",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "resource-grid-graphic-4",
+      "source": "images/studio/neutral/source/resource-grid-graphic-4.svg",
+      "pdf": "images/studio/neutral/resource-grid-graphic-4.pdf",
+      "source_sha256": "a38495a70ca2821d4534e3f1b367334d04fcad95ec489114678ec2c8aa8b70bf",
+      "pdf_sha256": "4127515f0d70173396d9b3abbb262cb015bab14f1d4aa6526b2659bc9b90654a",
+      "composition": "resource-grid",
+      "field": "graphic-4",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-1",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-1.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-1.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-2",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-2.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-2.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-2",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-3",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-3.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-3.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-3",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-4",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-4.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-4.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-4",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-5",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-5.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-5.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-5",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-6",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-6.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-6.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-6",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-7",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-7.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-7.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-7",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-8",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-8.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-8.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-8",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "nine-logo-grid-graphic-9",
+      "source": "images/studio/neutral/source/nine-logo-grid-graphic-9.svg",
+      "pdf": "images/studio/neutral/nine-logo-grid-graphic-9.pdf",
+      "source_sha256": "b69d489dd51b224e54a25a810311719fa4e90e8cb9d1ff329cbcefe8b5b295d3",
+      "pdf_sha256": "d97ac04028078112492b625e5853055034f3cbe49123b9f9996e270304828212",
+      "composition": "nine-logo-grid",
+      "field": "graphic-9",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "screenshot-pair-graphic-1",
+      "source": "images/studio/neutral/source/screenshot-pair-graphic-1.svg",
+      "pdf": "images/studio/neutral/screenshot-pair-graphic-1.pdf",
+      "source_sha256": "e388e4a93742b199607bfeeb2c97ac51fad440138f844b8480cefb0598fad994",
+      "pdf_sha256": "bd01377525631cf544c69a736a01aa7cd2c54fdc67fc03e52b34303ea51bf66a",
+      "composition": "screenshot-pair",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "screenshot-pair-graphic-2",
+      "source": "images/studio/neutral/source/screenshot-pair-graphic-2.svg",
+      "pdf": "images/studio/neutral/screenshot-pair-graphic-2.pdf",
+      "source_sha256": "4d44caa9ebf8a1e036eb27a8bb82fd695500479a7a2db2fc8b9a138e9320cae9",
+      "pdf_sha256": "2ea903e67653a07cd15f6058259cd84e4ab9189838b192454474d8b3570abfb5",
+      "composition": "screenshot-pair",
+      "field": "graphic-2",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "phone-screenshot-graphic-1",
+      "source": "images/studio/neutral/source/phone-screenshot-graphic-1.svg",
+      "pdf": "images/studio/neutral/phone-screenshot-graphic-1.pdf",
+      "source_sha256": "bb7310f8fbf505c93c4cebc7e0439d567d5f554402fb13a59441619ab31d34ec",
+      "pdf_sha256": "b1b52fd973d10549330a754e1a828b6471cb3b5dee299d1bd3b92e4470455003",
+      "composition": "phone-screenshot",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "whitepaper-blue-graphic-1",
+      "source": "images/studio/neutral/source/whitepaper-blue-graphic-1.svg",
+      "pdf": "images/studio/neutral/whitepaper-blue-graphic-1.pdf",
+      "source_sha256": "6a78146e0b72a9d8c9ada8a9556d60e9396162c219289b8014e93be72b3bc3b6",
+      "pdf_sha256": "001bec626270f53ce62e3a04ca32fb341bf5c9c9110776a1b706bdc09179adb5",
+      "composition": "whitepaper-blue",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-1",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-1.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-1.pdf",
+      "source_sha256": "eca35116320549219e3bbf30dc5669cf1ceff333b2929bb299f1deaad47c5b7d",
+      "pdf_sha256": "d9e48015a8815639d49290597e384e52ffa4bbfdcb4a8f3bbd90cc657cb6f1d7",
+      "composition": "partner-media-grid",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-2",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-2.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-2.pdf",
+      "source_sha256": "36eebc18ebfaf9a219b7f111717b74d6b15655a994f012bf185312b1fc836300",
+      "pdf_sha256": "d28b7779d2b6bd42fda9b9f1c5b50bf47d4f58a088b2b85e13570df568161ec9",
+      "composition": "partner-media-grid",
+      "field": "graphic-2",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-3",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-3.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-3.pdf",
+      "source_sha256": "47daf1a8ad45e126472efbc4266dc3b2bf40c2d8d22b40b3219524c08cd06b7a",
+      "pdf_sha256": "70ab68a5b2fcc104e637304115b471ac1405744dc35ebe8581d9d093484518b0",
+      "composition": "partner-media-grid",
+      "field": "graphic-3",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-4",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-4.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-4.pdf",
+      "source_sha256": "45ec758ebf3e03d1ac08d6551441c3458258fc9719971ad3096eeb73161215fb",
+      "pdf_sha256": "447c5b8a91bae1fb01a9a122b193fbff8564a6624c3d4d3792152f834bb532cb",
+      "composition": "partner-media-grid",
+      "field": "graphic-4",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-5",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-5.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-5.pdf",
+      "source_sha256": "615994ef2d4b604fcce2899f1140c66b17031a40d4d913ebc247d97a1dbdf928",
+      "pdf_sha256": "9fd57af98cb2cf03fab1e86820faa3b74e2531a4d1e799b97167bf41a129cb77",
+      "composition": "partner-media-grid",
+      "field": "graphic-5",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-6",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-6.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-6.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-6",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-7",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-7.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-7.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-7",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-8",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-8.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-8.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-8",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-9",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-9.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-9.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-9",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-10",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-10.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-10.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-10",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-11",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-11.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-11.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-11",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-12",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-12.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-12.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-12",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-13",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-13.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-13.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-13",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-14",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-14.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-14.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-14",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-15",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-15.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-15.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-15",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-16",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-16.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-16.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-16",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-17",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-17.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-17.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-17",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-18",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-18.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-18.pdf",
+      "source_sha256": "dd3320874c950f78f940891a7b60e02a6ab56df518a9e95aee40192ba20dedb5",
+      "pdf_sha256": "18dcedb7e3642fc7d109252f8cb1d4077d9f49e97872c385c86676086e0f9d83",
+      "composition": "partner-media-grid",
+      "field": "graphic-18",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-19",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-19.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-19.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-19",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-20",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-20.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-20.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-20",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-21",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-21.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-21.pdf",
+      "source_sha256": "dd3320874c950f78f940891a7b60e02a6ab56df518a9e95aee40192ba20dedb5",
+      "pdf_sha256": "18dcedb7e3642fc7d109252f8cb1d4077d9f49e97872c385c86676086e0f9d83",
+      "composition": "partner-media-grid",
+      "field": "graphic-21",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-22",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-22.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-22.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-22",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-23",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-23.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-23.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-23",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-24",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-24.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-24.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-24",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-25",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-25.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-25.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-25",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-26",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-26.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-26.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-26",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-27",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-27.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-27.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-27",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-28",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-28.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-28.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-28",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-29",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-29.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-29.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-29",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-30",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-30.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-30.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-30",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-31",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-31.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-31.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-31",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-32",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-32.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-32.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-32",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-33",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-33.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-33.pdf",
+      "source_sha256": "3d0cf4a7b3fe055c60c49697beae1f51e2615bdd653306756937004381d9d9aa",
+      "pdf_sha256": "059754a58d94cbb3f837bd9ce67d0a294a9570c02edcc50fba70340020e29d25",
+      "composition": "partner-media-grid",
+      "field": "graphic-33",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-34",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-34.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-34.pdf",
+      "source_sha256": "76d8a2f64fb37f433242ea61f186eb3ed8eff1b8138a86e14003bda5cd24d754",
+      "pdf_sha256": "0eb87a89606aef6eba1594e96c17cb4bf24ce14f8d095a34a18228ad25637041",
+      "composition": "partner-media-grid",
+      "field": "graphic-34",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "partner-media-grid-graphic-35",
+      "source": "images/studio/neutral/source/partner-media-grid-graphic-35.svg",
+      "pdf": "images/studio/neutral/partner-media-grid-graphic-35.pdf",
+      "source_sha256": "54775e6b396cb2adfa9c2ad885388e64ba102dc5b87ca91afd2b9f55ba65f343",
+      "pdf_sha256": "52f4083d6ba8fa176c5923e9f2f09bdde73744571560cf6452369130fbb11201",
+      "composition": "partner-media-grid",
+      "field": "graphic-35",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "image-logo-pair-graphic-1",
+      "source": "images/studio/neutral/source/image-logo-pair-graphic-1.svg",
+      "pdf": "images/studio/neutral/image-logo-pair-graphic-1.pdf",
+      "source_sha256": "ef00c4a6a946b92fbac0195375a1fba1266f31f780850db7d8a64a9ce4cc6ad6",
+      "pdf_sha256": "db38de2e7d86fcab42a7fb99c371dd5c805833f328078da7ea254aac3c8c24dd",
+      "composition": "image-logo-pair",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "blue-resources-columns-graphic-1",
+      "source": "images/studio/neutral/source/blue-resources-columns-graphic-1.svg",
+      "pdf": "images/studio/neutral/blue-resources-columns-graphic-1.pdf",
+      "source_sha256": "a3d70b59aa1a69a548e8403429b07125c0ceec7a630999791646a723920046ac",
+      "pdf_sha256": "a8a281eccef8e52532dd92d7aed37db59e637e73487b0a89cd1128590250ba98",
+      "composition": "blue-resources-columns",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    },
+    {
+      "name": "contact-qr-graphic-1",
+      "source": "images/studio/neutral/source/contact-qr-graphic-1.svg",
+      "pdf": "images/studio/neutral/contact-qr-graphic-1.pdf",
+      "source_sha256": "3212a0e85cbdf5091d77a9b771f4126b76a7cadc4aa5bb6cb52d722bbf2c3ae4",
+      "pdf_sha256": "9ba2b2cd87c114566ecd8e35e324bcd537e3da89a39598c397a1310810948589",
+      "composition": "contact-qr",
+      "field": "graphic-1",
+      "purpose": "Neutral editable-image placeholder; original artwork remains retained separately."
+    }
+  ]
+}

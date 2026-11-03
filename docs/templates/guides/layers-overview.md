@@ -14,6 +14,18 @@ Model: `layers-overview` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/layer-stack.md)
+
+```latex
+\studiotemplate[variant=overview,palette=light]{layer-stack}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -81,8 +93,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={BOLT (Basis of Lightning Technology)},
-  text/36={DNS bootstrap\\Bolt 10}
+  text/1={Slide title},
+  text/36={Label 36}
 ]{layers-overview}
 ```
 
@@ -98,8 +110,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={BOLT (Basis of Lightning Technology)},
-  text/36={DNS bootstrap\\Bolt 10}
+  text/1={Slide title},
+  text/36={Label 36}
 ]{layers-overview}
 \end{document}
 ```
@@ -119,43 +131,43 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 75.5% wide × 70.5% high | <code>\includegraphics[width=2685\studiounit]{images/studio/collection/figma-0642-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 57.2% wide × 8.6% high | <code>BOLT (Basis of Lightning Technology)</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 13.5% wide × 6.2% high | <code>DNS bootstrap\\Bolt 10</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 16.8% wide × 3.9% high | <code>Network I/O</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 12.1% wide × 15.8% high | <code>Noise\_XK\\Secp256k1\\Handshakes\par DH Key Exchange\\Key Rotation</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 24.5% wide × 6.2% high | <code>Transport\\Bolt 08</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 72.0% wide × 9.7% high | <code>Network\\connection\\layer</code> |
-| <code>text-7</code> | Editable text (text) | middle centre | 17.4% wide × 9.3% high | <code>Framing and message\\format\\Bolt 01</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 71.8% wide × 6.7% high | <code>Messaging\\layer</code> |
-| <code>item-9-1</code> | List or contents entry (text) | middle left | 13.2% wide × 3.6% high | <code>Control messages</code> |
-| <code>item-9-2</code> | List or contents entry (text) | middle left | 11.2% wide × 3.6% high | <code>Type: O - 31</code> |
-| <code>item-9-3</code> | List or contents entry (text) | middle centre | 9.8% wide × 3.2% high | <code>Bolt 09</code> |
-| <code>item-9-4</code> | List or contents entry (text) | lower left | 11.2% wide × 3.2% high | <code>Feature bits</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 15.4% wide × 6.7% high | <code>Channel state machine\\Type: 128 - 255</code> |
-| <code>text-11</code> | Editable text (text) | middle centre | 27.6% wide × 9.7% high | <code>Channel open\\and close\\Type: 32 - 127</code> |
-| <code>text-12</code> | Editable text (text) | middle centre | 71.5% wide × 6.6% high | <code>Peer-to-\\peer layer</code> |
-| <code>text-13</code> | Editable text (text) | upper centre | 71.2% wide × 6.6% high | <code>Payment\\layer</code> |
-| <code>text-14</code> | Editable text (text) | middle centre | 70.8% wide × 6.7% high | <code>Routing\\layer</code> |
-| <code>text-15</code> | Editable text (text) | upper left | 14.4% wide × 9.3% high | <code>Invoices: payment\\hash and preimage\\Bolt 11</code> |
-| <code>text-16</code> | Editable text (text) | middle left | 14.4% wide × 6.7% high | <code>Atomic and trustless\\multihop contracts</code> |
-| <code>item-17-1</code> | List or contents entry (text) | middle centre | 12.2% wide × 3.6% high | <code>Adding, settling,</code> |
-| <code>item-17-2</code> | List or contents entry (text) | middle centre | 11.4% wide × 3.7% high | <code>failing HTLCs</code> |
-| <code>item-17-3</code> | List or contents entry (text) | middle centre | 9.4% wide × 3.2% high | <code>Bolt 02</code> |
-| <code>item-18-1</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.5% high | <code>Payment attempts</code> |
-| <code>item-18-2</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.6% high | <code>trial and error loop</code> |
-| <code>item-18-3</code> | List or contents entry (text) | middle centre | 9.2% wide × 3.2% high | <code>Bolt 04</code> |
-| <code>item-18-4</code> | List or contents entry (text) | middle centre | 13.4% wide × 3.2% high | <code>Source-based onion</code> |
-| <code>item-18-5</code> | List or contents entry (text) | middle centre | 21.4% wide × 3.9% high | <code>Type</code> |
-| <code>item-19-1</code> | List or contents entry (text) | upper right | 11.1% wide × 3.2% high | <code>Path selection</code> |
-| <code>item-19-2</code> | List or contents entry (text) | middle right | 8.8% wide × 3.2% high | <code>Bolt 07</code> |
-| <code>item-19-3</code> | List or contents entry (text) | middle right | 10.6% wide × 3.6% high | <code>Routing fees</code> |
-| <code>item-19-4</code> | List or contents entry (text) | middle right | 12.4% wide × 3.2% high | <code>Channel metadata</code> |
-| <code>item-19-5</code> | List or contents entry (text) | middle right | 11.5% wide × 3.6% high | <code>Gossip relaying</code> |
-| <code>item-19-6</code> | List or contents entry (text) | middle right | 10.2% wide × 3.9% high | <code>Query/reply</code> |
-| <code>item-19-7</code> | List or contents entry (text) | middle right | 11.2% wide × 3.6% high | <code>Type: 256-511</code> |
-| <code>text-20</code> | Editable text (text) | upper centre | 14.2% wide × 6.7% high | <code>Pathfinding (MPP,\\rebalancing, ...)</code> |
-| <code>text-21</code> | Editable text (text) | lower right | 13.5% wide × 9.2% high | <code>Type\\Length\\Value</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 75.5% wide × 70.5% high | <code>\studiopaletteimage[width=2685\studiounit]{images/studio/collection/figma-0642-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 57.2% wide × 8.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 13.5% wide × 6.2% high | <code>Label 36</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 16.8% wide × 3.9% high | <code>Label 35</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 12.1% wide × 15.8% high | <code>Label 32</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 24.5% wide × 6.2% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | lower centre | 72.0% wide × 9.7% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-7</code> | Editable text (text) | middle centre | 17.4% wide × 9.3% high | <code>Label 29</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 71.8% wide × 6.7% high | <code>Supporting explanation</code> |
+| <code>item-9-1</code> | List or contents entry (text) | middle left | 13.2% wide × 3.6% high | <code>Label 22</code> |
+| <code>item-9-2</code> | List or contents entry (text) | middle left | 11.2% wide × 3.6% high | <code>Label 25</code> |
+| <code>item-9-3</code> | List or contents entry (text) | middle centre | 9.8% wide × 3.2% high | <code>Label 27</code> |
+| <code>item-9-4</code> | List or contents entry (text) | lower left | 11.2% wide × 3.2% high | <code>Label 31</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 15.4% wide × 6.7% high | <code>Label 23</code> |
+| <code>text-11</code> | Editable text (text) | middle centre | 27.6% wide × 9.7% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-12</code> | Editable text (text) | middle centre | 71.5% wide × 6.6% high | <code>Supporting explanation</code> |
+| <code>text-13</code> | Editable text (text) | upper centre | 71.2% wide × 6.6% high | <code>Supporting explanation</code> |
+| <code>text-14</code> | Editable text (text) | middle centre | 70.8% wide × 6.7% high | <code>Supporting explanation</code> |
+| <code>text-15</code> | Editable text (text) | upper left | 14.4% wide × 9.3% high | <code>Label 3</code> |
+| <code>text-16</code> | Editable text (text) | middle left | 14.4% wide × 6.7% high | <code>Label 11</code> |
+| <code>item-17-1</code> | List or contents entry (text) | middle centre | 12.2% wide × 3.6% high | <code>Label 13</code> |
+| <code>item-17-2</code> | List or contents entry (text) | middle centre | 11.4% wide × 3.7% high | <code>Label 14</code> |
+| <code>item-17-3</code> | List or contents entry (text) | middle centre | 9.4% wide × 3.2% high | <code>Label 19</code> |
+| <code>item-18-1</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.5% high | <code>Label 5</code> |
+| <code>item-18-2</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.6% high | <code>Label 4</code> |
+| <code>item-18-3</code> | List or contents entry (text) | middle centre | 9.2% wide × 3.2% high | <code>Label 9</code> |
+| <code>item-18-4</code> | List or contents entry (text) | middle centre | 13.4% wide × 3.2% high | <code>Label 12</code> |
+| <code>item-18-5</code> | List or contents entry (text) | middle centre | 21.4% wide × 3.9% high | <code>Label 16</code> |
+| <code>item-19-1</code> | List or contents entry (text) | upper right | 11.1% wide × 3.2% high | <code>Label 7</code> |
+| <code>item-19-2</code> | List or contents entry (text) | middle right | 8.8% wide × 3.2% high | <code>Label 8</code> |
+| <code>item-19-3</code> | List or contents entry (text) | middle right | 10.6% wide × 3.6% high | <code>Label 15</code> |
+| <code>item-19-4</code> | List or contents entry (text) | middle right | 12.4% wide × 3.2% high | <code>Label 17</code> |
+| <code>item-19-5</code> | List or contents entry (text) | middle right | 11.5% wide × 3.6% high | <code>Label 20</code> |
+| <code>item-19-6</code> | List or contents entry (text) | middle right | 10.2% wide × 3.9% high | <code>Label 24</code> |
+| <code>item-19-7</code> | List or contents entry (text) | middle right | 11.2% wide × 3.6% high | <code>Label 26</code> |
+| <code>text-20</code> | Editable text (text) | upper centre | 14.2% wide × 6.7% high | <code>Label 6</code> |
+| <code>text-21</code> | Editable text (text) | lower right | 13.5% wide × 9.2% high | <code>Label 30</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `vertical-timeline` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/timeline.md)
+
+```latex
+\studiotemplate[variant=vertical,palette=light]{timeline}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -49,8 +61,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={Free Software},
-  text/1={1960s: Rise of the hacker's\\culture at MIT}
+  text/3={Slide title},
+  text/1={Label 1}
 ]{vertical-timeline}
 ```
 
@@ -66,8 +78,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={Free Software},
-  text/1={1960s: Rise of the hacker's\\culture at MIT}
+  text/3={Slide title},
+  text/1={Label 1}
 ]{vertical-timeline}
 \end{document}
 ```
@@ -87,11 +99,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | middle left | 22.5% wide × 7.6% high | <code>Free Software</code> |
-| <code>text-2</code> | Editable text (text) | upper centre | 27.5% wide × 9.8% high | <code>1960s: Rise of the hacker&#x27;s\\culture at MIT</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 19.4% wide × 5.7% high | <code>1983: GNU Project</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 29.8% wide × 10.5% high | <code>1985: GNU Manifesto (To run,\\study, share, and modify)</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 29.6% wide × 5.0% high | <code>1991: Linux Kernel under GPL</code> |
+| <code>title</code> | Main text (text) | middle left | 22.5% wide × 7.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | upper centre | 27.5% wide × 9.8% high | <code>Label 1</code> |
+| <code>text-3</code> | Editable text (text) | middle centre | 19.4% wide × 5.7% high | <code>Label 2</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 29.8% wide × 10.5% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 29.6% wide × 5.0% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -99,9 +99,9 @@ class ReleaseTests(unittest.TestCase):
                          (self.root / 'dist/bitbeamer-academic-preview.pdf').read_bytes())
         self.assertEqual(set(p.name for p in (self.root / 'dist').iterdir()),
                          {self.archive.name, *release.PREVIEWS.values(), release.LEGACY_ARCHIVE, release.LEGACY_PREVIEW})
-        self.assertEqual(len(build.call_args_list), len(DOCUMENT_SOURCES))
+        self.assertEqual(len(build.call_args_list), len(set(DOCUMENT_SOURCES.values())))
         self.assertEqual([call.args[0][0] for call in build.call_args_list],
-                         list(DOCUMENT_SOURCES.values()))
+                         list(dict.fromkeys(DOCUMENT_SOURCES.values())))
         for call in build.call_args_list:
             self.assertEqual(call.args[0][-4:], ['--backend', 'docker', '--image', 'local-image'])
             self.assertEqual(call.kwargs['root'], self.root)

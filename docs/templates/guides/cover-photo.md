@@ -14,6 +14,18 @@ Model: `cover-photo` · Family: Opening · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/cover.md)
+
+```latex
+\studiotemplate[variant=photo,palette=light]{cover}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -48,8 +60,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Cryptography},
-  text/1={Gianluca Cappiello}
+  text/2={Your title},
+  text/1={Author name}
 ]{cover-photo}
 ```
 
@@ -65,8 +77,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Cryptography},
-  text/1={Gianluca Cappiello}
+  text/2={Your title},
+  text/1={Author name}
 ]{cover-photo}
 \end{document}
 ```
@@ -86,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 100.0% wide × 100.0% high | <code>\includegraphics[width=3556\studiounit]{images/studio/collection/figma-0416-part-01.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle left | 25.9% wide × 7.5% high | <code>Gianluca Cappiello</code> |
-| <code>title</code> | Main text (text) | middle left | 44.5% wide × 18.2% high | <code>Cryptography</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 31.2% wide × 4.2% high | <code>BitGeneration --- Politecnico di Torino</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 100.0% wide × 100.0% high | <code>\studiopaletteimage[width=3556\studiounit]{images/studio/collection/figma-0416-part-01.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle left | 25.9% wide × 7.5% high | <code>Author name</code> |
+| <code>title</code> | Main text (text) | middle left | 44.5% wide × 18.2% high | <code>Your title</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 31.2% wide × 4.2% high | <code>Organization</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

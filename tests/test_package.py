@@ -21,9 +21,9 @@ class PackageTests(unittest.TestCase):
             before = {path: path.stat().st_mtime_ns for path in (ROOT / 'assets/generated').iterdir()}
             with mock.patch.object(asset_library, 'render_svg', side_effect=AssertionError('Must not convert')), \
                     mock.patch('zipfile.zlib', None):
-                package.package(ROOT, target)
+                package.package(ROOT, target, style='academic')
             first = target.read_bytes()
-            package.package(ROOT, target)
+            package.package(ROOT, target, style='academic')
             self.assertEqual(first, target.read_bytes(), 'Packaging should be reproducible')
             for path, stamp in before.items():
                 self.assertEqual(path.stat().st_mtime_ns, stamp)
@@ -32,6 +32,9 @@ class PackageTests(unittest.TestCase):
                 self.assertIsNone(archive.testzip())
                 self.assertTrue(set(package.DOCUMENTS).issubset(names))
                 self.assertIn('bitpolitoassets.sty', names)
+                self.assertEqual(archive.read('main.tex'),(ROOT/'start-academic.tex').read_bytes())
+                self.assertEqual(archive.read('academic-showcase.tex'),(ROOT/'main-academic.tex').read_bytes())
+                self.assertFalse(any('studio' in name for name in names))
                 self.assertIn('ICONS.md', names)
                 self.assertIn('icon-cheatsheet.tex', names)
                 for name, source in package.DOCUMENT_SOURCES.items():
@@ -80,18 +83,30 @@ class PackageTests(unittest.TestCase):
             with mock.patch.object(package, 'check_prepared'), \
                     mock.patch.object(package, 'check_catalogue'), \
                     mock.patch.object(package, 'inspect_library', return_value=asset_library.inspect_library(ROOT)):
-                package.package(root, target)
+                package.package(root, target, style='academic')
                 with ZipFile(target) as archive:
                     self.assertNotIn('images/bitpolito/local-experiment.pdf', archive.namelist())
                     self.assertNotIn('beamerthemelocalbitpolito.sty', archive.namelist())
-                canonical = package.package(root)
+                canonical = package.package(root, style='academic')
                 self.assertEqual(canonical.name, 'bitbeamer-academic-overleaf.zip')
                 self.assertEqual((root / 'dist/bitbeamer-overleaf.zip').read_bytes(), canonical.read_bytes())
                 previous = target.read_bytes()
                 (root / package.THEME_FILES[0]).unlink()
                 with self.assertRaises(FileNotFoundError):
-                    package.package(root, target)
+                    package.package(root, target, style='academic')
                 self.assertEqual(target.read_bytes(), previous)
+
+    def test_default_package_uses_studio_and_preserves_review_gate(self):
+        import contextlib,io
+        with mock.patch.object(package.sys,'argv',['package.py','--review']), \
+                mock.patch.object(package,'package',return_value=Path('studio.zip')) as create, \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertEqual(package.main(),0)
+        self.assertEqual(create.call_args.kwargs['style'],'studio')
+        self.assertTrue(create.call_args.kwargs['review'])
+        with tempfile.TemporaryDirectory() as directory:
+            with self.assertRaisesRegex(RuntimeError,'explicit approval'):
+                package.package(ROOT,Path(directory)/'studio.zip')
 
     def test_studio_archive_is_independent_and_reproducible(self):
         with tempfile.TemporaryDirectory() as directory:
@@ -121,12 +136,12 @@ class PackageTests(unittest.TestCase):
                 self.assertIn(b'latexmk -pdf studio-template-catalogue.tex', archive.read('TEMPLATES.md'))
                 self.assertIn('studio-template-catalogue.tex', names)
                 self.assertIn('templates/studio/registry.tex', names)
-                self.assertEqual(sum(name.startswith('templates/studio/') and name.endswith('.tex') for name in names), 1 + len(__import__('studio_review').selected(ROOT)))
+                self.assertEqual(sum(name.startswith('templates/studio/') and name.endswith('.tex') for name in names), 1 + len(__import__('studio_review').package_selection(ROOT)))
                 self.assertFalse(any(name.startswith(('docs/templates/', 'design-references/')) for name in names))
                 self.assertFalse(any(name.endswith(('.svg', '.py', '.json')) for name in names))
                 extracted = Path(directory) / 'extracted'
                 archive.extractall(extracted)
-            self.assertEqual(check_docs(extracted), 5 + len(__import__('studio_review').selected(ROOT)))
+            self.assertEqual(check_docs(extracted),7+len(__import__('studio_review').package_selection(ROOT))+len(__import__('studio_models').load_models(ROOT)['selection']))
             self.assertTrue((extracted / 'guides/three-cards.md').is_file())
             self.assertNotIn('Show editable areas', (extracted / 'guides/three-cards.md').read_text())
 

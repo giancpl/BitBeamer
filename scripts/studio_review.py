@@ -16,11 +16,19 @@ def load_review(root, entries=None):
     chosen = data.get('selection', [])
     if not isinstance(chosen, list) or not chosen or len(set(chosen)) != len(chosen) or set(chosen) - set(known):
         raise RuntimeError('Invalid or repeated selected template in templates/review.json')
+    reusable = data.get('reusable_selection', [])
+    if not isinstance(reusable, list) or len(reusable) != len(set(reusable)) or set(reusable) - set(known):
+        raise RuntimeError('Invalid reusable_selection in templates/review.json')
     for name, item in data['templates'].items():
         if item.get('status') not in STATUSES or not isinstance(item.get('notes'), str):
             raise RuntimeError('Invalid review status or notes for ' + name)
         if not isinstance(item.get('use', ''), str) or not isinstance(item.get('example', {}), dict):
             raise RuntimeError('Invalid usage example for ' + name)
+        palette_reviews=item.get('palette_reviews',{})
+        if set(palette_reviews)-set(known[name].get('palettes',[])):
+            raise RuntimeError('Unknown palette review for '+name)
+        for palette,review in palette_reviews.items():
+            if review.get('status') not in STATUSES or not isinstance(review.get('notes'),str):raise RuntimeError('Invalid palette review for '+name+'/'+palette)
         unknown = set(item.get('example', {})) - {f['name'] for f in known[name].get('fields', [])}
         if unknown:
             raise RuntimeError('Unknown example fields for ' + name + ': ' + ', '.join(sorted(unknown)))
@@ -32,7 +40,8 @@ def load_review(root, entries=None):
 def reviewed_entries(root, entries):
     ledger = load_review(root, entries)
     return [dict(e, status=ledger['templates'][e['id']]['status'],
-                 review_notes=ledger['templates'][e['id']]['notes']) for e in entries]
+                 review_notes=ledger['templates'][e['id']]['notes'],
+                 palette_reviews=ledger['templates'][e['id']].get('palette_reviews',{})) for e in entries]
 
 
 def selected(root, entries=None):
@@ -51,8 +60,22 @@ def review_csv(root, entries):
     return output.getvalue()
 
 
+STANDARD_COVERS = ('cover', 'cover-light', 'cover-photo')
+
+
+def package_selection(root):
+    # Include optional covers without changing the showcase selection.
+    data = load_review(root)
+    names = list(dict.fromkeys(data['selection'] + list(STANDARD_COVERS)))
+    return [dict(id=name, **data['templates'][name]) for name in names]
+
+
 def require_approved(root):
-    pending = [item['id'] for item in selected(root) if item['status'] != 'approved']
+    pending = [item['id'] for item in package_selection(root) if item['status'] != 'approved']
+    metadata={e['id']:e for e in json.loads((root/'templates/index.json').read_text())['templates']}
+    for item in package_selection(root):
+        for palette in metadata[item['id']].get('palettes',[]):
+            if item.get('palette_reviews',{}).get(palette,{}).get('status')!='approved':pending.append(item['id']+'/'+palette)
     if pending:
         raise RuntimeError('Studio release requires explicit approval of selected models: ' + ', '.join(pending)
                            + '. Use review packaging until graphical review is complete.')

@@ -30,1232 +30,2511 @@
     "cover": {
       "status": "in review",
       "notes": "",
-      "use": "Introduce a talk and its author.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Presentation\\\\title",
+        "author": "Author name",
+        "institute": "Department or organization"
+      },
+      "previous_example": {
         "title": "Your talk\\\\title",
         "author": "Your name",
         "institute": "Your institute"
+      },
+      "previous_use": "Introduce a talk and its author.",
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "contents": {
       "status": "in review",
       "notes": "",
-      "use": "Outline four sections.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Title",
+        "item-2-1": "Supporting explanation",
+        "item-2-2": "Supporting explanation",
+        "item-2-3": "Supporting explanation",
+        "item-2-4": "Supporting explanation"
+      },
+      "previous_example": {
         "title": "Contents",
         "item-2-1": "Motivation",
         "item-2-2": "How it works",
         "item-2-3": "Examples",
         "item-2-4": "Discussion"
+      },
+      "previous_use": "Outline four sections.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "section-divider": {
       "status": "in review",
       "notes": "",
-      "use": "Separate sections.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your section"
+      },
+      "previous_use": "Separate sections.",
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "tabbed-agenda": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cover-light": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cover-photo": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cover-script-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cover-dashboard": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cover-wide-title": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "agenda-with-icons": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "agenda-with-schedule": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "statement-arrow": {
       "status": "in review",
       "notes": "",
-      "use": "Introduce a short claim.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your statement"
+      },
+      "previous_use": "Introduce a short claim.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "glow-statement": {
       "status": "in review",
       "notes": "",
-      "use": "Emphasize a central message.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "statement": "Slide title"
+      },
+      "previous_example": {
         "statement": "Your main idea"
+      },
+      "previous_use": "Emphasize a central message.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "blue-statement": {
       "status": "in review",
       "notes": "",
-      "use": "Present a statement on blue.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your statement"
+      },
+      "previous_use": "Present a statement on blue.",
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "icon-spotlight-light": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "icon-spotlight-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "oversized-word": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "chat-dialogue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "speech-panel": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "chat-three-messages": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "oversized-number-light": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "oversized-number-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "diagonal-photo-title": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "title-paragraphs": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "title-centered-paragraphs": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "statement-with-credit": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "people-speech-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "paired-icons-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-columns": {
       "status": "in review",
       "notes": "",
-      "use": "Explain two approaches side by side.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Two approaches"
+      },
+      "previous_use": "Explain two approaches side by side.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "list-rail-light": {
       "status": "in review",
       "notes": "",
-      "use": "Pair a concept with a short list.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Title"
+      },
+      "previous_example": {
         "title": "Your concept"
+      },
+      "previous_use": "Pair a concept with a short list.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "list-rail-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "grouped-rail": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "labelled-rows": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "checklist-rail": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "feature-spotlight": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "privacy-levels": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "title-two-column-list": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "partner-rail": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "icon-rail": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "privacy-levels-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "stepped-rail-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "three-cards": {
       "status": "in review",
       "notes": "",
-      "use": "Show three illustrated concepts.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title",
+        "caption-one": "Label 2",
+        "caption-two": "Label 3",
+        "caption-three": "Label 4",
+        "graphic-one": "\\asset[width=1cm]{alice}"
+      },
+      "previous_example": {
         "title": "Three useful tools",
         "caption-one": "Learn",
         "caption-two": "Build",
         "caption-three": "Share",
         "graphic-one": "\\asset[width=1cm]{alice}"
+      },
+      "previous_use": "Show three illustrated concepts.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "three-step-process": {
       "status": "in review",
       "notes": "",
-      "use": "Explain a three-step process.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title",
+        "text-2": "Label 3",
+        "text-3": "Label 1"
+      },
+      "previous_example": {
         "title": "First step",
         "text-2": "Second step",
         "text-3": "Third step"
+      },
+      "previous_use": "Explain a three-step process.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "two-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "four-card-grid": {
       "status": "in review",
       "notes": "",
-      "use": "Group four short explanations.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Four ideas"
+      },
+      "previous_use": "Group four short explanations.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "eight-icon-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "four-step-process": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-step-process": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "milestone-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "twelve-word-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "three-card-summary": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "four-pillar-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "hardware-options": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "software-options": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-card-vertical": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "callout-explanation": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "six-outline-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "six-explanation-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "five-icon-row": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "square-icon-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "incentives-card-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "network-environments": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "node-type-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "horizontal-split": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "benefits-limits": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "before-after": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "vertical-split": {
       "status": "in review",
       "notes": "",
-      "use": "Compare two alternatives.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title",
+        "text-1": "Supporting explanation.\\\\Add your own details."
+      },
+      "previous_example": {
         "title": "Second option",
         "text-1": "First option"
+      },
+      "previous_use": "Compare two alternatives.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "onchain-offchain": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "photo-split": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "split-outline-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "split-process-cards": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "coin-comparison": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "image-left": {
       "status": "in review",
       "notes": "",
-      "use": "Pair a large image with a short label.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title",
+        "graphic-1": "\\asset[width=3cm]{alice}"
+      },
+      "previous_example": {
         "title": "Your subject",
         "graphic-1": "\\asset[width=3cm]{alice}"
+      },
+      "previous_use": "Pair a large image with a short label.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "image-right": {
       "status": "in review",
       "notes": "",
-      "use": "Explain a figure or photograph.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your example"
+      },
+      "previous_use": "Explain a figure or photograph.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "image-overlay": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "four-images": {
       "status": "in review",
       "notes": "",
-      "use": "Compare four images.",
-      "example": {}
+      "use": "Demonstrate this reusable composition.",
+      "example": {},
+      "previous_use": "Compare four images.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "three-portraits": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-image-comparison": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "gallery-collage": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "screenshot-callout": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "resource-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "photo-collage-banner": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "photo-collage-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "photo-triptych": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "image-pair-title": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "nine-logo-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "screenshot-pair": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "phone-screenshot": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "photo-center-two-icons": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "abacus-explanation": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "whitepaper-blue": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "partner-media-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "mission-badges": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "image-logo-pair": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "hero-number": {
       "status": "in review",
       "notes": "",
-      "use": "Highlight one key number.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Title",
+        "text-2": "Supporting explanation"
+      },
+      "previous_example": {
         "title": "21 million",
         "text-2": "A short explanation"
+      },
+      "previous_use": "Highlight one key number.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "three-statistics": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "line-chart": {
       "status": "in review",
       "notes": "",
-      "use": "Present a chart; data can come from CSV.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Title",
+        "text-1": "Label 1",
+        "text-3": "Item",
+        "text-4": "Supporting explanation",
+        "data-file": "examples/data/studio-line.csv"
+      },
+      "previous_example": {
         "title": "Demo",
         "text-1": "Example curve",
         "text-3": "",
         "text-4": "Illustrative data",
         "data-file": "examples/data/studio-line.csv"
+      },
+      "previous_use": "Present a chart; data can come from CSV.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "diagonal-number": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "unit-conversion": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "bar-comparison": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "scatter-comparison": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "adoption-curve": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "metric-dashboard": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "ranked-podium": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-charts": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "three-charts": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "world-map": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "europe-map": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "bubble-chart": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "price-lines": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "purchasing-power": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "currency-equivalence": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "photo-statistics-collage": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "split-currency": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "success-dashboard": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "diagram-annotated-energy": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "card-statistics-process": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-key-pair": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "large-figure": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "horizontal-timeline": {
       "status": "in review",
       "notes": "",
-      "use": "Show events along a timeline.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your timeline"
+      },
+      "previous_use": "Show events along a timeline.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "vertical-timeline": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cycle": {
       "status": "in review",
       "notes": "",
-      "use": "Explain a repeating process.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your process"
+      },
+      "previous_use": "Explain a repeating process.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "decision-tree": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "system-architecture": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "radial-goals": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "nested-circles": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "separate-circles": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "triangle-tradeoff": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "layered-stack": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "alternating-timeline": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "network-topologies": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "five-spoke-values": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "three-spoke-benefits": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-radial-groups": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "personal-timeline": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "nested-outline-circles": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "two-steps-outline": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "bullseye-values": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "table": {
       "status": "supplementary",
       "notes": "",
-      "use": "Present a compact table.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title"
+      },
+      "previous_example": {
         "title": "Your table"
+      },
+      "previous_use": "Present a compact table.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "equation": {
       "status": "in review",
       "notes": "",
-      "use": "Explain a formula.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
         "expression": "\\color{bitpolito}\\Large$E=mc^2$"
+      },
+      "previous_use": "Explain a formula.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "code": {
       "status": "in review",
       "notes": "",
-      "use": "Show code from a separate text file.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Slide title",
+        "code-file": "examples/code/studio-transaction.txt"
+      },
+      "previous_example": {
         "title": "Your example",
         "code-file": "examples/code/studio-transaction.txt"
+      },
+      "previous_use": "Show code from a separate text file.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "references": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "hash-avalanche": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "key-derivation": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "signature-flow": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-sequence": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "block-chain": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "merkle-tree": {
       "status": "in review",
       "notes": "",
-      "use": "Explain a tree with editable labels.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Binary\\\\tree"
+      },
+      "previous_example": {
         "title": "Merkle\\\\Tree"
+      },
+      "previous_use": "Explain a tree with editable labels.",
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     },
     "fork-branches": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "transaction-flow": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cipher-mapping": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "encryption-flow": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "payoff-matrix": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "payment-channel": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "proof-of-work-flow": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "seed-key-tree": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cryptographic-assumptions": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "routing-graph": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-symmetric": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-public-keys": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-key-lock": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-key-exchange": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-signed-message": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-encrypted-message": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-unlock-message": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-signed-payload": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-key-setup": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-token-transfer": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-token-routing": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-key-aggregation": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-aggregate-signature": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-eavesdropping": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "protocol-encrypted-channel": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "symmetric-encryption": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "asymmetric-encryption": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "merkle-tree-wide": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "diagram-transaction-inputs": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "seed-grid-caption": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "diagram-pool-shares": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "layers-overview": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "multi-signature": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "blockchain-with-list": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "double-spend-diagram": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "key-to-addresses": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "dual-consensus-diagram": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "cipher-wheel": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "blue-resources-columns": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "genesis-information": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "regtest-instructions": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "block-inspection": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "mining-card-grid": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "contact-qr": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "apply-qr": {
       "status": "in review",
       "notes": "",
       "use": "",
-      "example": {}
+      "example": {},
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     },
     "closing": {
       "status": "in review",
       "notes": "",
-      "use": "Close the talk.",
+      "use": "Demonstrate this reusable composition.",
       "example": {
+        "title": "Thank you"
+      },
+      "previous_example": {
         "title": "Thank you!"
+      },
+      "previous_use": "Close the talk.",
+      "palette_reviews": {
+        "blue": {
+          "status": "in review",
+          "notes": ""
+        }
       }
     }
-  }
+  },
+  "reusable_selection": [
+    "cover",
+    "contents",
+    "closing"
+  ]
 }

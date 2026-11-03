@@ -33,7 +33,10 @@ def input_sets(root, entries):
     results = {}
     for number, entry in enumerate(entries, 1):
         files = {root/entry['source']}
+        from studio_models import dependencies as palette_dependencies
+        files.update(p for name,p in palette_dependencies(root,[entry]).items() if not name.startswith('images/studio/icon-palettes/'))
         files.update(root/name for name in entry.get('slot_parts', []))
+        files.update(root/name for name in entry.get('shared_sources', []))
         source = (root/entry['source']).read_text(encoding='utf-8')
         source += json.dumps(entry.get('fields', []))
         # Include literal graphic, code and data paths in both source and defaults.
@@ -58,6 +61,10 @@ def input_sets(root, entries):
         if re.search(r'\\(?:cite|printbibliography)|references', source):
             files.add(root/'bibliography.bib')
         fields = {key:entry[key] for key in ('id','source','fields','canvas','background','parts','slot_parts') if key in entry}
+        from studio_models import membership
+        member=membership(root).get(entry['id'])
+        if member:fields['model_contract']={'id':member[0]['id'],'variant':member[1]['id'],'composition':member[2]}
+        fields['neutral_parts']=entry.get('neutral_parts',[])
         fields['page'] = number
         values = dict(common)
         values.update(hashed(path) for path in files)

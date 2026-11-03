@@ -14,6 +14,18 @@ Model: `benefits-limits` · Family: Comparisons · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/benefits-limits.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{benefits-limits}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -51,8 +63,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Free market vs. monopoly},
-  text/2={Free market}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{benefits-limits}
 ```
 
@@ -68,8 +80,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Free market vs. monopoly},
-  text/2={Free market}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{benefits-limits}
 \end{document}
 ```
@@ -89,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 34.7% high | <code>\includegraphics[width=805\studiounit]{images/studio/collection/figma-0064-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 34.5% high | <code>\includegraphics[width=805\studiounit]{images/studio/collection/figma-0064-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 44.2% wide × 8.5% high | <code>Free market vs. monopoly</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.0% high | <code>Free market</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 36.1% wide × 9.9% high | <code>Many sellers and buyers.\\Prices set by supply and demand.\\Competition drives innovation.</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 35.9% wide × 5.6% high | <code>Monopoly</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 35.3% wide × 16.8% high | <code>One seller dominates the market.\par Prices imposed without alternatives\\for consumers.\par Innovation slows without...</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 34.7% high | <code>\studiopaletteimage[width=805\studiounit]{images/studio/collection/figma-0064-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 34.5% high | <code>\studiopaletteimage[width=805\studiounit]{images/studio/collection/figma-0064-part-02.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 44.2% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 36.1% wide × 9.9% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 35.9% wide × 5.6% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 35.3% wide × 16.8% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

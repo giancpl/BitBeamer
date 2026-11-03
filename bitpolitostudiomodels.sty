@@ -1,0 +1,117 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bitpolitostudiomodels}[2026/11/02 Grouped Studio models and semantic palettes]
+\colorlet{studio-background}{studio-paper}
+\colorlet{studio-foreground}{bitpolito}
+\colorlet{studio-surface}{white}
+\colorlet{studio-soft}{studio-paper}
+\newif\ifstudio@canonical
+\def\studio@globalpalette{}
+\pgfkeys{/studio setup/.is family,
+ /studio setup/palette/.is choice,
+ /studio setup/palette/light/.code=\def\studio@globalpalette{light},
+ /studio setup/palette/blue/.code=\def\studio@globalpalette{blue},
+ /studio setup/palette/native/.code=\def\studio@globalpalette{},
+ /studio setup/.unknown/.code=\PackageError{bitpolitostudiomodels}{Unknown Studio setup key '\pgfkeyscurrentname'}{Use palette=light, blue or native.}}
+\newcommand{\studiosetup}[1]{\pgfqkeys{/studio setup}{#1}}
+\newcommand{\DeclareStudioModel}[2]{\expandafter\def\csname studio@model@#1\endcsname{#2}}
+\newcommand{\DeclareStudioVariant}[5]{%
+ \expandafter\def\csname studio@variant@#1@#2\endcsname{#3}%
+ \expandafter\def\csname studio@variantnative@#1@#2\endcsname{#4}%
+}
+\newcommand{\DeclareStudioChoice}[4]{\expandafter\def\csname studio@choice@#1@#2@#3\endcsname{#4}}
+\newcommand{\DeclareStudioMembership}[5]{%
+ \expandafter\def\csname studio@member@#1\endcsname{#2}%
+ \expandafter\def\csname studio@membervariant@#1\endcsname{#3}%
+ \expandafter\def\csname studio@native@#1\endcsname{#4}%
+ \@for\studio@p:=#5\do{\expandafter\def\csname studio@supports@#1@\studio@p\endcsname{yes}}%
+}
+\newcommand{\DeclareStudioSemantic}[3]{%
+ \studio@addslot{#1}{\ifstudio@canonical\pgfkeys{/studio fields/#2/.code=\pgfkeyssetvalue{/studio values/#3}{##1},/studio fields/text/#2/.code=\pgfkeyssetvalue{/studio values/#3}{##1}}\fi}%
+}
+\newcommand{\DeclareStudioRejectedSemantic}[2]{%
+ \studio@addslot{#1}{\ifstudio@canonical\pgfkeys{/studio fields/#2/.code=\PackageError{bitpolitostudiomodels}{Field '#2' is not available in \studiocurrenttemplate/\studio@variant}{Choose its documented caption fields or a variant with a heading.}}\fi}%
+}
+\newcommand{\DeclareStudioGraphicSemantic}[3]{%
+ \studio@addslot{#1}{\ifstudio@canonical\pgfkeys{/studio fields/icon-#2/.style={icon/#3={##1}},/studio fields/image-#2/.style={image/#3={##1}},/studio fields/graphic-#2/.style={graphic/#3={##1}}}\fi}%
+}
+\newcommand{\DeclareStudioMirror}[3]{%
+ \studio@addslot{#1}{\ifstudio@canonical\pgfkeys{/studio fields/#2/.append code=\pgfkeyssetvalue{/studio values/#3}{##1}}\fi}%
+}
+\newcommand{\DeclareStudioIconPalette}[2]{\expandafter\def\csname studio@iconpalette@#1\endcsname{#2}}
+\newcommand{\DeclareStudioPaletteAsset}[3]{\expandafter\def\csname studio@asset@#1@#2\endcsname{#3}}
+\newcommand{\studio@collectoption}[2]{%
+ \expandafter\def\expandafter\studiotemplateoptions\expandafter{\studiotemplateoptions#1={#2},}%
+}
+\newcommand{\studio@resolve}[2]{%
+ \studio@canonicalfalse\ifcsname studio@model@#1\endcsname\studio@canonicaltrue\fi\def\studio@requested{#1}\def\studio@variant{}\def\studio@explicitpalette{}%
+ \def\studiotemplateoptions{}%
+ \pgfkeys{/studio resolve/.is family,
+ /studio resolve/variant/.code=\def\studio@variant{##1},
+ /studio resolve/palette/.code=\def\studio@explicitpalette{##1},
+ /studio resolve/.unknown/.code={\edef\studio@key{\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/text/.is family,/studio resolve/text/.unknown/.code={\edef\studio@key{text/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/icon/.is family,/studio resolve/icon/.unknown/.code={\edef\studio@key{icon/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/image/.is family,/studio resolve/image/.unknown/.code={\edef\studio@key{image/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/graphic/.is family,/studio resolve/graphic/.unknown/.code={\edef\studio@key{graphic/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/file/.is family,/studio resolve/file/.unknown/.code={\edef\studio@key{file/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/heading/.is family,/studio resolve/heading/.unknown/.code={\edef\studio@key{heading/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/body/.is family,/studio resolve/body/.unknown/.code={\edef\studio@key{body/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfqkeys{/studio resolve}{#2}%
+ \def\studio@source{#1}%
+ \ifcsname studio@template@#1\endcsname\edef\studio@source{\csname studio@template@#1\endcsname}\fi
+ \edef\studio@model{#1}%
+ \ifcsname studio@member@\studio@source\endcsname
+  \edef\studio@model{\csname studio@member@\studio@source\endcsname}%
+ \fi
+ \ifcsname studio@model@#1\endcsname
+  \def\studio@model{#1}%
+  \ifx\studio@variant\@empty\edef\studio@variant{\csname studio@model@#1\endcsname}\fi
+ \else
+  \ifx\studio@variant\@empty
+   \ifcsname studio@membervariant@\studio@source\endcsname
+    \edef\studio@variant{\csname studio@membervariant@\studio@source\endcsname}%
+   \fi
+  \fi
+ \fi
+ \ifcsname studio@variant@\studio@model @\studio@variant\endcsname
+  % Legacy identifiers keep their exact source unless a variant was requested.
+  \ifcsname studio@model@#1\endcsname
+   \edef\studio@source{\csname studio@variant@\studio@model @\studio@variant\endcsname}%
+  \else
+   \edef\studio@membervariant{\csname studio@membervariant@\studio@source\endcsname}%
+   \ifx\studio@membervariant\studio@variant\else
+    \edef\studio@source{\csname studio@variant@\studio@model @\studio@variant\endcsname}%
+   \fi
+  \fi
+ \else
+  \PackageError{bitpolitostudiomodels}{Unknown model or variant '#1/\studio@variant'}{Use a model and variant from the Studio model catalogue.}%
+ \fi
+ \edef\studio@palette{\studio@explicitpalette}%
+ \ifx\studio@palette\@empty\edef\studio@palette{\studio@globalpalette}\fi
+ \ifx\studio@palette\@empty\edef\studio@palette{\csname studio@native@\studio@source\endcsname}\fi
+ \ifcsname studio@choice@\studio@model @\studio@variant @\studio@palette\endcsname
+  \edef\studio@source{\csname studio@choice@\studio@model @\studio@variant @\studio@palette\endcsname}%
+ \else
+  \ifx\studio@explicitpalette\@empty
+   \edef\studio@palette{\csname studio@native@\studio@source\endcsname}%
+  \else
+   \PackageError{bitpolitostudiomodels}{Unsupported palette '\studio@palette' in #1/\studio@variant}{Only palettes present in the original composition are available. See the model guide.}%
+  \fi
+ \fi
+ \edef\studio@nativepalette{\csname studio@native@\studio@source\endcsname}%
+ \def\studio@blue{blue}%
+ \ifx\studio@palette\studio@blue
+  \colorlet{studio-background}{bitpolito}\colorlet{studio-foreground}{white}%
+  \colorlet{studio-surface}{bitpolito!85!white}\colorlet{studio-soft}{bitpolito!70!white}%
+ \else
+  \colorlet{studio-background}{studio-paper}\colorlet{studio-foreground}{bitpolito}%
+  \colorlet{studio-surface}{white}\definecolor{studio-soft}{HTML}{EEF0FF}%
+ \fi
+ \setbeamercolor{background canvas}{bg=studio-background}%
+ \setbeamercolor{normal text}{fg=studio-foreground}%
+ \setbeamercolor{frametitle}{fg=studio-foreground}%
+ \setbeamercolor{itemize item}{fg=studio-foreground}%
+}
+% Compatibility wrapper: retain prepared artwork colours and proportions.
+\newcommand{\studiopaletteimage}[2][]{\includegraphics[#1]{#2}}
+\endinput

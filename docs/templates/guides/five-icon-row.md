@@ -14,6 +14,18 @@ Model: `five-icon-row` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-grid.md)
+
+```latex
+\studiotemplate[variant=row,palette=light]{icon-grid}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -55,8 +67,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Benefits},
-  text/6={Low\\fees}
+  text/1={Title},
+  text/6={Label 6}
 ]{five-icon-row}
 ```
 
@@ -72,8 +84,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Benefits},
-  text/6={Low\\fees}
+  text/1={Title},
+  text/6={Label 6}
 ]{five-icon-row}
 \end{document}
 ```
@@ -93,17 +105,17 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-02.pdf}</code> |
-| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-03.pdf}</code> |
-| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-04.pdf}</code> |
-| <code>graphic-5</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1022-part-05.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 15.1% wide × 8.6% high | <code>Benefits</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Low\\fees</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Micropayment\\support</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Low energy\\use</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 17.4% wide × 10.8% high | <code>More\\privacy</code> |
-| <code>text-6</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Fast\\transactions</code> |
+| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-01.pdf}</code> |
+| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-02.pdf}</code> |
+| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-03.pdf}</code> |
+| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-04.pdf}</code> |
+| <code>graphic-5</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-05.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 15.1% wide × 8.6% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Label 6</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Label 5</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 17.4% wide × 10.8% high | <code>Label 4</code> |
+| <code>text-6</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Label 2</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

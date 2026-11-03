@@ -14,6 +14,18 @@ Model: `two-card-vertical` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-cards.md)
+
+```latex
+\studiotemplate[variant=two-vertical,palette=light]{icon-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -50,8 +62,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Scaling a protocol},
-  text/1={Upper layers\\\textbullet{} Rapid innovation\\\textbullet{} Protocol competition}
+  text/2={Slide title},
+  text/1={Supporting explanation.\\Add your own details.}
 ]{two-card-vertical}
 ```
 
@@ -67,8 +79,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Scaling a protocol},
-  text/1={Upper layers\\\textbullet{} Rapid innovation\\\textbullet{} Protocol competition}
+  text/2={Slide title},
+  text/1={Supporting explanation.\\Add your own details.}
 ]{two-card-vertical}
 \end{document}
 ```
@@ -88,12 +100,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 37.5% wide × 27.7% high | <code>\includegraphics[width=1333\studiounit]{images/studio/collection/figma-0649-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 37.5% wide × 35.4% high | <code>\includegraphics[width=1333\studiounit]{images/studio/collection/figma-0649-part-02.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper right | 30.3% wide × 12.9% high | <code>Upper layers\\\textbullet{} Rapid innovation\\\textbullet{} Protocol competition</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 30.3% wide × 20.8% high | <code>Lower layers\\\textbullet{} Stability\\\textbullet{} Robustness\\\textbullet{} Ossification\\\textbullet{} Convergence</code> |
-| <code>title</code> | Main text (text) | middle left | 33.1% wide × 8.4% high | <code>Scaling a protocol</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 35.9% wide × 17.6% high | <code>Layered architectures help engineers\\build systems with greater stability\\and robustness, much like the\\structure ...</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 37.5% wide × 27.7% high | <code>\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0649-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 37.5% wide × 35.4% high | <code>\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0649-part-02.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | upper right | 30.3% wide × 12.9% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 30.3% wide × 20.8% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>title</code> | Main text (text) | middle left | 33.1% wide × 8.4% high | <code>Slide title</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 35.9% wide × 17.6% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -88,7 +88,8 @@ class StudioGuideTests(unittest.TestCase):
     def test_portable_guides_reference_only_the_included_project(self):
         entries = [entry for entry in self.entries if entry['id'] in ['three-cards','line-chart','code','table','equation']]
         data = portable_guides(ROOT, entries)
-        self.assertEqual(len(data), len(entries) + 3)
+        from studio_models import model_guides
+        self.assertEqual(len(data),len(entries)+len(model_guides(ROOT,entries))+5)
         with tempfile.TemporaryDirectory() as temporary:
             root = Path(temporary)
             for name, value in data.items():

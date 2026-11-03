@@ -2,7 +2,7 @@
 
 # Merkle hash tree
 
-Explain a tree with editable labels.
+Demonstrate this reusable composition.
 
 Model: `merkle-tree` · Family: Technical · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `merkle-tree` · Family: Technical · Status: **in review**.
 ![Merkle hash tree](../previews/merkle-tree.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/binary-tree.md)
+
+```latex
+\studiotemplate[variant=compact,palette=light]{binary-tree}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -57,7 +69,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Merkle\\Tree}
+  text/1={Binary\\tree}
 ]{merkle-tree}
 ```
 
@@ -73,7 +85,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Merkle\\Tree}
+  text/1={Binary\\tree}
 ]{merkle-tree}
 \end{document}
 ```
@@ -93,19 +105,19 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper left | 16.9% wide × 14.0% high | <code>Merkle\\Tree</code> |
-| <code>explanation</code> | Supporting explanation (text) | middle left | 15.5% wide × 27.5% high | <code>To prove TX C is in\\the block, you only\\need:\\* Hash(D) +\\* Hash(AB) +\\the root =\\Merkle Proof</code> |
-| <code>root</code> | Root label (text) | upper centre | 20.8% wide × 3.5% high | <code>Merkle Root</code> |
-| <code>ab</code> | Left intermediate hash label (text) | middle centre | 7.2% wide × 3.5% high | <code>Hash AB</code> |
-| <code>cd</code> | Right intermediate hash label (text) | middle right | 7.2% wide × 3.5% high | <code>Hash CD</code> |
-| <code>hash-0</code> | Leaf hash label (text) | middle left | 7.2% wide × 3.5% high | <code>Hash A</code> |
-| <code>tx-0</code> | Transaction label (text) | lower left | 7.2% wide × 3.5% high | <code>Tx A</code> |
-| <code>hash-1</code> | Leaf hash label (text) | middle centre | 7.2% wide × 3.5% high | <code>Hash B</code> |
-| <code>tx-1</code> | Transaction label (text) | lower centre | 7.2% wide × 3.5% high | <code>Tx B</code> |
-| <code>hash-2</code> | Leaf hash label (text) | middle right | 7.2% wide × 3.5% high | <code>Hash C</code> |
-| <code>tx-2</code> | Transaction label (text) | lower right | 7.2% wide × 3.5% high | <code>Tx C</code> |
-| <code>hash-3</code> | Leaf hash label (text) | middle right | 7.2% wide × 3.5% high | <code>Hash D</code> |
-| <code>tx-3</code> | Transaction label (text) | lower right | 7.2% wide × 3.5% high | <code>Tx D</code> |
+| <code>title</code> | Main text (text) | upper left | 16.9% wide × 14.0% high | <code>Binary\\tree</code> |
+| <code>explanation</code> | Supporting explanation (text) | middle left | 15.5% wide × 27.5% high | <code>Root node\\Two branches\\Four items</code> |
+| <code>root</code> | Root label (text) | upper centre | 20.8% wide × 3.5% high | <code>Root</code> |
+| <code>ab</code> | Left intermediate hash label (text) | middle centre | 7.2% wide × 3.5% high | <code>Item</code> |
+| <code>cd</code> | Right intermediate hash label (text) | middle right | 7.2% wide × 3.5% high | <code>Item</code> |
+| <code>hash-0</code> | Leaf hash label (text) | middle left | 7.2% wide × 3.5% high | <code>Node 6</code> |
+| <code>tx-0</code> | Transaction label (text) | lower left | 7.2% wide × 3.5% high | <code>Item 10</code> |
+| <code>hash-1</code> | Leaf hash label (text) | middle centre | 7.2% wide × 3.5% high | <code>Node 7</code> |
+| <code>tx-1</code> | Transaction label (text) | lower centre | 7.2% wide × 3.5% high | <code>Item 11</code> |
+| <code>hash-2</code> | Leaf hash label (text) | middle right | 7.2% wide × 3.5% high | <code>Node 8</code> |
+| <code>tx-2</code> | Transaction label (text) | lower right | 7.2% wide × 3.5% high | <code>Item 12</code> |
+| <code>hash-3</code> | Leaf hash label (text) | middle right | 7.2% wide × 3.5% high | <code>Node 9</code> |
+| <code>tx-3</code> | Transaction label (text) | lower right | 7.2% wide × 3.5% high | <code>Item 13</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

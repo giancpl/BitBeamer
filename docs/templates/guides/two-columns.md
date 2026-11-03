@@ -2,7 +2,7 @@
 
 # Two-column explanation
 
-Explain two approaches side by side.
+Demonstrate this reusable composition.
 
 Model: `two-columns` · Family: Lists · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `two-columns` · Family: Lists · Status: **in review**.
 ![Two-column explanation](../previews/two-columns.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/two-columns.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{two-columns}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -50,7 +62,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Two approaches}
+  text/1={Slide title}
 ]{two-columns}
 ```
 
@@ -66,7 +78,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Two approaches}
+  text/1={Slide title}
 ]{two-columns}
 \end{document}
 ```
@@ -86,12 +98,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 50.5% wide × 8.5% high | <code>Different approaches</code> |
-| <code>text-2</code> | Editable text (text) | lower left | 38.5% wide × 43.0% high | <code>Asynchronous transactions\par UTXOs, coin selection and\\transaction construction\par Send and receive funds\par Fee ...</code> |
-| <code>text-3</code> | Editable text (text) | lower right | 38.1% wide × 43.0% high | <code>Synchronous transactions\par Receiving funds requires\\inbound liquidity\par Channels, liquidity and\\balancing\par R...</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 21.9% wide × 6.4% high | <code>Bitcoin Base Layer</code> |
-| <code>text-5</code> | Editable text (text) | middle centre | 21.1% wide × 6.4% high | <code>Layer 2: Lightning</code> |
-| <code>text-6</code> | Editable text (text) | upper centre | 80.2% wide × 9.7% high | <code>Lightning enables even very small payments, transferred instantly\\with minimal fees.</code> |
+| <code>title</code> | Main text (text) | upper centre | 50.5% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower left | 38.5% wide × 43.0% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-3</code> | Editable text (text) | lower right | 38.1% wide × 43.0% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 21.9% wide × 6.4% high | <code>Label 3</code> |
+| <code>text-5</code> | Editable text (text) | middle centre | 21.1% wide × 6.4% high | <code>Label 4</code> |
+| <code>text-6</code> | Editable text (text) | upper centre | 80.2% wide × 9.7% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

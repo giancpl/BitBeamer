@@ -14,6 +14,18 @@ Model: `protocol-public-keys` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/protocol.md)
+
+```latex
+\studiotemplate[variant=public-nodes,palette=light]{protocol}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -53,7 +65,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Asymmetric cryptography}
+  text/1={Slide title}
 ]{protocol-public-keys}
 ```
 
@@ -69,7 +81,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Asymmetric cryptography}
+  text/1={Slide title}
 ]{protocol-public-keys}
 \end{document}
 ```
@@ -89,15 +101,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 7.7% wide × 13.0% high | <code>\includegraphics[width=273\studiounit]{images/studio/collection/figma-0423-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper left | 7.7% wide × 13.0% high | <code>\includegraphics[width=273\studiounit]{images/studio/collection/figma-0423-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 7.3% wide × 13.0% high | <code>\includegraphics[width=260\studiounit]{images/studio/collection/figma-0423-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.4% wide × 13.0% high | <code>\includegraphics[width=228\studiounit]{images/studio/collection/figma-0423-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 5.5% wide × 12.8% high | <code>\includegraphics[width=195\studiounit]{images/studio/collection/figma-0423-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 5.5% wide × 12.8% high | <code>\includegraphics[width=195\studiounit]{images/studio/collection/figma-0423-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle right | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0423-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0423-part-08.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 65.3% wide × 8.6% high | <code>Asymmetric cryptography</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 7.7% wide × 13.0% high | <code>\studiopaletteimage[width=273\studiounit]{images/studio/collection/figma-0423-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper left | 7.7% wide × 13.0% high | <code>\studiopaletteimage[width=273\studiounit]{images/studio/collection/figma-0423-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 7.3% wide × 13.0% high | <code>\studiopaletteimage[width=260\studiounit]{images/studio/collection/figma-0423-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.4% wide × 13.0% high | <code>\studiopaletteimage[width=228\studiounit]{images/studio/collection/figma-0423-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 5.5% wide × 12.8% high | <code>\studiopaletteimage[width=195\studiounit]{images/studio/collection/figma-0423-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 5.5% wide × 12.8% high | <code>\studiopaletteimage[width=195\studiounit]{images/studio/collection/figma-0423-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle right | 7.7% wide × 7.5% high | <code>\studiopaletteimage[width=274\studiounit]{images/studio/collection/figma-0423-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 7.5% high | <code>\studiopaletteimage[width=274\studiounit]{images/studio/collection/figma-0423-part-08.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 65.3% wide × 8.6% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

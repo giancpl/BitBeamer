@@ -14,6 +14,18 @@ Model: `cipher-mapping` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/transformation.md)
+
+```latex
+\studiotemplate[variant=mapping,palette=light]{transformation}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -50,7 +62,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={To hide the message, each letter is replaced by the letter a fixed\\number of positions ahead in the alphabet. This number is the key\\(in this example, the key is 3).}
+  text/1={Slide title}
 ]{cipher-mapping}
 ```
 
@@ -66,7 +78,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={To hide the message, each letter is replaced by the letter a fixed\\number of positions ahead in the alphabet. This number is the key\\(in this example, the key is 3).}
+  text/1={Slide title}
 ]{cipher-mapping}
 \end{document}
 ```
@@ -86,12 +98,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 34.1% wide × 17.1% high | <code>\includegraphics[width=1211\studiounit]{images/studio/collection/figma-0543-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 4.4% wide × 8.3% high | <code>\includegraphics[width=157\studiounit]{images/studio/collection/figma-0543-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 34.1% wide × 17.1% high | <code>\includegraphics[width=1211\studiounit]{images/studio/collection/figma-0543-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.9% wide × 8.3% high | <code>\includegraphics[width=139\studiounit]{images/studio/collection/figma-0543-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.3% wide × 8.5% high | <code>\includegraphics[width=154\studiounit]{images/studio/collection/figma-0543-part-05.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 60.6% wide × 13.3% high | <code>To hide the message, each letter is replaced by the letter a fixed\\number of positions ahead in the alphabet. This n...</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 34.1% wide × 17.1% high | <code>\studiopaletteimage[width=1211\studiounit]{images/studio/collection/figma-0543-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 4.4% wide × 8.3% high | <code>\studiopaletteimage[width=157\studiounit]{images/studio/collection/figma-0543-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 34.1% wide × 17.1% high | <code>\studiopaletteimage[width=1211\studiounit]{images/studio/collection/figma-0543-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.9% wide × 8.3% high | <code>\studiopaletteimage[width=139\studiounit]{images/studio/collection/figma-0543-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.3% wide × 8.5% high | <code>\studiopaletteimage[width=154\studiounit]{images/studio/collection/figma-0543-part-05.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 60.6% wide × 13.3% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

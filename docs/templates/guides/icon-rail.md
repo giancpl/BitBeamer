@@ -14,6 +14,18 @@ Model: `icon-rail` · Family: Lists · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-rail.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{icon-rail}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -49,8 +61,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Video Maker},
-  text/4={Graphic Designer}
+  text/2={Title},
+  text/4={Label 4}
 ]{icon-rail}
 ```
 
@@ -66,8 +78,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Video Maker},
-  text/4={Graphic Designer}
+  text/2={Title},
+  text/4={Label 4}
 ]{icon-rail}
 \end{document}
 ```
@@ -87,11 +99,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-1026-part-01.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | lower centre | 18.1% wide × 5.7% high | <code>Graphic Designer</code> |
-| <code>title</code> | Main text (text) | middle centre | 13.5% wide × 5.0% high | <code>Video Maker</code> |
-| <code>text-3</code> | Editable text (text) | upper centre | 13.1% wide × 5.0% high | <code>Video Editor</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 10.9% wide × 5.6% high | <code>Marketing</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1026-part-01.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | lower centre | 18.1% wide × 5.7% high | <code>Label 4</code> |
+| <code>title</code> | Main text (text) | middle centre | 13.5% wide × 5.0% high | <code>Title</code> |
+| <code>text-3</code> | Editable text (text) | upper centre | 13.1% wide × 5.0% high | <code>Label 1</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 10.9% wide × 5.6% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `references` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/references.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{references}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -65,8 +77,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={References},
-  text/2={Blocks, transactions and Bitcoin supply}
+  text/1={Title},
+  text/2={Supporting explanation}
 ]{references}
 ```
 
@@ -82,8 +94,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={References},
-  text/2={Blocks, transactions and Bitcoin supply}
+  text/1={Title},
+  text/2={Supporting explanation}
 ]{references}
 \end{document}
 ```
@@ -103,27 +115,27 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 37.6% wide × 11.4% high | <code>\includegraphics[width=1336\studiounit]{images/studio/collection/figma-0526-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper left | 50.4% wide × 8.4% high | <code>\includegraphics[width=1793\studiounit]{images/studio/collection/figma-0526-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 56.0% wide × 29.4% high | <code>\includegraphics[width=1990\studiounit]{images/studio/collection/figma-0526-part-03.pdf}</code> |
-| <code>item-1-1</code> | List or contents entry (text) | upper left | 37.7% wide × 5.7% high | <code>Blocks, transactions and Bitcoin supply</code> |
-| <code>item-1-2</code> | List or contents entry (text) | upper left | 15.3% wide × 3.5% high | <code>https://mempool.space</code> |
-| <code>item-1-3</code> | List or contents entry (text) | middle left | 37.2% wide × 3.5% high | <code>https://www.blockchain.com/explorer/charts/total-bitcoins</code> |
-| <code>item-1-4</code> | List or contents entry (text) | middle left | 36.6% wide × 3.6% high | <code>https://stormgain.com/blog/bitcoin-halving-dates-history</code> |
-| <code>item-1-5</code> | List or contents entry (text) | middle left | 45.1% wide × 5.7% high | <code>Mining, Proof-of-Work and statistics</code> |
-| <code>item-1-6</code> | List or contents entry (text) | middle left | 50.0% wide × 3.6% high | <code>https://braiins.com/blog/bitcoin-mining-pools-luck-shares-estimated-hashrate</code> |
-| <code>item-1-7</code> | List or contents entry (text) | middle left | 19.7% wide × 3.6% high | <code>https://insights.braiins.com/en</code> |
-| <code>item-1-8</code> | List or contents entry (text) | middle left | 39.0% wide × 5.7% high | <code>Energy use and environmental impact</code> |
-| <code>item-1-9</code> | List or contents entry (text) | middle left | 19.5% wide × 3.8% high | <code>https://ccaf.io/cbeci/index</code> |
-| <code>item-1-10</code> | List or contents entry (text) | lower left | 40.8% wide × 3.6% high | <code>https://papers.ssrn.com/sol3/papers.cfm?abstract\_id=4125499</code> |
-| <code>item-1-11</code> | List or contents entry (text) | lower left | 40.8% wide × 3.6% high | <code>https://bitcoinminingcouncil.com/wp-content/uploads/2022/05/</code> |
-| <code>item-1-12</code> | List or contents entry (text) | lower left | 39.2% wide × 3.6% high | <code>Bitcoin\_Letter\_to\_the\_Environmental\_Protection\_Agency.pdf</code> |
-| <code>item-1-13</code> | List or contents entry (text) | lower left | 46.0% wide × 3.6% high | <code>https://bitcoinmagazine.com/business/not-science-digiconomist-bitcoin</code> |
-| <code>item-1-14</code> | List or contents entry (text) | lower centre | 55.5% wide × 3.6% high | <code>https://bitcoinmagazine.com/business/exxon-is-mining-bitcoin-with-excess-gas-report</code> |
-| <code>item-1-15</code> | List or contents entry (text) | lower left | 47.4% wide × 3.6% high | <code>https://bitcoinmagazine.com/business/bitcoin-mining-drives-clean-energy</code> |
-| <code>item-1-16</code> | List or contents entry (text) | lower left | 41.7% wide × 3.6% high | <code>https://bitcoinmagazine.com/search?query=mining+consumption</code> |
-| <code>item-1-17</code> | List or contents entry (text) | lower left | 44.9% wide × 3.6% high | <code>https://bitcoinmagazine.com/business/climate-problem-bitcoin-mining</code> |
-| <code>title</code> | Main text (text) | upper left | 17.8% wide × 7.6% high | <code>References</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 37.6% wide × 11.4% high | <code>\studiopaletteimage[width=1336\studiounit]{images/studio/collection/figma-0526-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper left | 50.4% wide × 8.4% high | <code>\studiopaletteimage[width=1793\studiounit]{images/studio/collection/figma-0526-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 56.0% wide × 29.4% high | <code>\studiopaletteimage[width=1990\studiounit]{images/studio/collection/figma-0526-part-03.pdf}</code> |
+| <code>item-1-1</code> | List or contents entry (text) | upper left | 37.7% wide × 5.7% high | <code>Supporting explanation</code> |
+| <code>item-1-2</code> | List or contents entry (text) | upper left | 15.3% wide × 3.5% high | <code>Label 3</code> |
+| <code>item-1-3</code> | List or contents entry (text) | middle left | 37.2% wide × 3.5% high | <code>Supporting explanation</code> |
+| <code>item-1-4</code> | List or contents entry (text) | middle left | 36.6% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-5</code> | List or contents entry (text) | middle left | 45.1% wide × 5.7% high | <code>Supporting explanation</code> |
+| <code>item-1-6</code> | List or contents entry (text) | middle left | 50.0% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-7</code> | List or contents entry (text) | middle left | 19.7% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-8</code> | List or contents entry (text) | middle left | 39.0% wide × 5.7% high | <code>Supporting explanation</code> |
+| <code>item-1-9</code> | List or contents entry (text) | middle left | 19.5% wide × 3.8% high | <code>Label 10</code> |
+| <code>item-1-10</code> | List or contents entry (text) | lower left | 40.8% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-11</code> | List or contents entry (text) | lower left | 40.8% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-12</code> | List or contents entry (text) | lower left | 39.2% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-13</code> | List or contents entry (text) | lower left | 46.0% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-14</code> | List or contents entry (text) | lower centre | 55.5% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-15</code> | List or contents entry (text) | lower left | 47.4% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-16</code> | List or contents entry (text) | lower left | 41.7% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>item-1-17</code> | List or contents entry (text) | lower left | 44.9% wide × 3.6% high | <code>Supporting explanation</code> |
+| <code>title</code> | Main text (text) | upper left | 17.8% wide × 7.6% high | <code>Title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

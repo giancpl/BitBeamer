@@ -27,15 +27,21 @@ class ValidationBackendTests(unittest.TestCase):
                 mock.patch.object(validator, 'validate') as native:
             self.assertEqual(validator.main([str(self.archive)]), 0)
             native.assert_not_called()
-        self.assertEqual(run.call_args.args[0][-4:],
-                         ['scripts/validate-release.py', '/release.zip', '--backend', 'native'])
+        self.assertEqual(run.call_args.args[0][-6:],
+                         ['scripts/validate-release.py', '/release.zip', '--backend', 'native', '--style', 'studio'])
 
     def test_explicit_native_validation_does_not_access_docker(self):
         with mock.patch.object(validator, 'docker_image') as docker, \
                 mock.patch.object(validator, 'validate') as native:
             self.assertEqual(validator.main([str(self.archive), '--backend', 'native']), 0)
             docker.assert_not_called()
-            native.assert_called_once_with(self.archive)
+            native.assert_called_once_with(self.archive,style='studio')
+
+    def test_academic_selection_is_explicit_inside_container(self):
+        with mock.patch.object(validator,'docker_image',return_value='docker'), \
+                mock.patch.object(validator.subprocess,'run') as run:
+            self.assertEqual(validator.main([str(self.archive),'--style','academic']),0)
+        self.assertEqual(run.call_args.args[0][-2:],['--style','academic'])
 
     def test_studio_selection_reaches_the_isolated_container(self):
         with mock.patch.object(validator, 'docker_image', return_value='docker'), \

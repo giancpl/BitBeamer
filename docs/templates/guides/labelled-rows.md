@@ -14,6 +14,18 @@ Model: `labelled-rows` · Family: Lists · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/labelled-rows.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{labelled-rows}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -51,8 +63,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={What if\\someone cheats?},
-  text/1={The change}
+  text/3={Slide title},
+  text/1={Label 1}
 ]{labelled-rows}
 ```
 
@@ -68,8 +80,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={What if\\someone cheats?},
-  text/1={The change}
+  text/3={Slide title},
+  text/1={Label 1}
 ]{labelled-rows}
 \end{document}
 ```
@@ -89,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>text-1</code> | Editable text (text) | upper centre | 13.3% wide × 4.1% high | <code>The change</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 13.3% wide × 4.1% high | <code>The comparison</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 13.3% wide × 4.6% high | <code>Who comes later</code> |
-| <code>text-4</code> | Editable text (text) | upper right | 25.0% wide × 3.5% high | <code>A friend changes only their own notebook</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 23.9% wide × 6.1% high | <code>Others see that it does not match\\and discard it.</code> |
-| <code>text-6</code> | Editable text (text) | lower right | 33.9% wide × 6.5% high | <code>Copy and check from page one:\\do not trust, verify.</code> |
-| <code>title</code> | Main text (text) | middle left | 42.8% wide × 15.6% high | <code>What if\\someone cheats?</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 13.3% wide × 4.1% high | <code>Label 1</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 13.3% wide × 4.1% high | <code>Label 4</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 13.3% wide × 4.6% high | <code>Label 6</code> |
+| <code>text-4</code> | Editable text (text) | upper right | 25.0% wide × 3.5% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 23.9% wide × 6.1% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | lower right | 33.9% wide × 6.5% high | <code>Supporting explanation</code> |
+| <code>title</code> | Main text (text) | middle left | 42.8% wide × 15.6% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -2,7 +2,7 @@
 
 # Plain blue statement
 
-Present a statement on blue.
+Demonstrate this reusable composition.
 
 Model: `blue-statement` · Family: Statements · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `blue-statement` · Family: Statements · Status: **in review**.
 ![Plain blue statement](../previews/blue-statement.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/statement.md)
+
+```latex
+\studiotemplate[variant=plain,palette=blue]{statement}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -45,7 +57,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your statement}
+  text/1={Slide title}
 ]{blue-statement}
 ```
 
@@ -61,7 +73,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your statement}
+  text/1={Slide title}
 ]{blue-statement}
 \end{document}
 ```
@@ -81,7 +93,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | middle centre | 76.6% wide × 9.2% high | <code>Every UTXO needs a signature to be spent</code> |
+| <code>title</code> | Main text (text) | middle centre | 76.6% wide × 9.2% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

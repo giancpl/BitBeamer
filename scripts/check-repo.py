@@ -7,10 +7,10 @@ import subprocess
 import sys
 
 ROOT = Path(__file__).resolve().parents[1]
-OUTPUT_FOLDERS = {'build', 'dist', '__pycache__', '.venv', '.pytest_cache'}
+OUTPUT_FOLDERS = {'build', 'dist', '__pycache__', '.venv', '.pytest_cache', '.mypy_cache', '.ruff_cache', 'htmlcov'}
 TEX_OUTPUTS = {'.aux', '.bbl', '.bcf', '.blg', '.fdb_latexmk', '.fls', '.log',
                '.nav', '.out', '.snm', '.toc', '.vrb', '.synctex.gz', '.run.xml'}
-LOCAL_FILES = {'.DS_Store', 'Thumbs.db'}
+LOCAL_FILES = {'.DS_Store', 'Thumbs.db', '.coverage'}
 
 
 def unwanted_paths(paths):

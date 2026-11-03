@@ -2,7 +2,7 @@
 
 # Editable code
 
-Show code from a separate text file.
+Demonstrate this reusable composition.
 
 Model: `code` · Family: Technical · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `code` · Family: Technical · Status: **in review**.
 ![Editable code](../previews/code.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/code.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{code}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -47,7 +59,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your example},
+  text/1={Slide title},
   file/1={examples/code/studio-transaction.txt}
 ]{code}
 ```
@@ -64,7 +76,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your example},
+  text/1={Slide title},
   file/1={examples/code/studio-transaction.txt}
 ]{code}
 \end{document}
@@ -85,8 +97,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 45.5% wide × 8.5% high | <code>Making Your First Transaction</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 79.6% wide × 71.5% high | <code>1. Get a second address (recipient) &gt;\\\\\\textbf{bitcoin-cli -regtest getnewaddress &quot;alice&quot;}\\\\2. Send BTC &gt;\\\\\\t...</code> |
+| <code>title</code> | Main text (text) | upper centre | 45.5% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 79.6% wide × 71.5% high | <code>\texttt{input = read(data)}\\\texttt{result = transform(input)}\\\texttt{display(result)}</code> |
 | <code>code-file</code> | Path to a literal code file (file) | See source | Source-defined | <code>(empty)</code> |
 
 Truncated values are shown in full at the start of the current source file.

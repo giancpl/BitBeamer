@@ -14,6 +14,18 @@ Model: `metric-dashboard` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/metrics.md)
+
+```latex
+\studiotemplate[variant=four-panels,palette=light]{metrics}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -53,7 +65,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/6={Key Metrics},
+  text/6={Slide title},
   text/1={50}
 ]{metric-dashboard}
 ```
@@ -70,7 +82,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/6={Key Metrics},
+  text/6={Slide title},
   text/1={50}
 ]{metric-dashboard}
 \end{document}
@@ -91,15 +103,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | middle left | 30.9% wide × 8.0% high | <code>Key Metrics</code> |
+| <code>title</code> | Main text (text) | middle left | 30.9% wide × 8.0% high | <code>Slide title</code> |
 | <code>participants-number</code> | Editable text (text) | upper right | 14.3% wide × 10.5% high | <code>50</code> |
-| <code>participants-caption</code> | Editable text (text) | upper right | 14.3% wide × 4.5% high | <code>Participants</code> |
+| <code>participants-caption</code> | Editable text (text) | upper right | 14.3% wide × 4.5% high | <code>Label 3</code> |
 | <code>alumni-number</code> | Editable text (text) | upper right | 12.4% wide × 10.5% high | <code>140</code> |
-| <code>alumni-caption</code> | Editable text (text) | upper right | 12.4% wide × 4.5% high | <code>Alumni</code> |
-| <code>followers-number</code> | Editable text (text) | middle right | 28.7% wide × 10.5% high | <code>\textasciitilde6000</code> |
-| <code>followers-caption</code> | Editable text (text) | middle right | 28.7% wide × 4.5% high | <code>Social media followers</code> |
+| <code>alumni-caption</code> | Editable text (text) | upper right | 12.4% wide × 4.5% high | <code>Label 4</code> |
+| <code>followers-number</code> | Editable text (text) | middle right | 28.7% wide × 10.5% high | <code>Item</code> |
+| <code>followers-caption</code> | Editable text (text) | middle right | 28.7% wide × 4.5% high | <code>Supporting explanation</code> |
 | <code>events-number</code> | Editable text (text) | lower right | 18.1% wide × 10.5% high | <code>30+</code> |
-| <code>events-caption</code> | Editable text (text) | lower right | 18.1% wide × 4.5% high | <code>Events organized</code> |
+| <code>events-caption</code> | Editable text (text) | lower right | 18.1% wide × 4.5% high | <code>Label 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

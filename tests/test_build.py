@@ -61,6 +61,16 @@ class LauncherTests(unittest.TestCase):
             run.assert_not_called()
         self.assertIn('prepare-assets.py', self.stderr.getvalue())
 
+    def test_default_wrapper_checks_studio_before_compiling(self):
+        (self.root/'main.tex').write_text(r'\input{main-studio.tex}')
+        (self.root/'main-studio.tex').write_text(r'\usetheme{bitpolito-studio}')
+        with mock.patch.object(build,'prepare_studio',side_effect=RuntimeError('Stale Studio artwork')) as prepare, \
+                mock.patch.object(build.subprocess,'run') as run:
+            self.assertEqual(build.main([],root=self.root),1)
+            prepare.assert_called_once_with(self.root,check=True)
+            run.assert_not_called()
+        self.assertIn('Stale Studio artwork',self.stderr.getvalue())
+
     def test_external_document_is_rejected(self):
         with tempfile.TemporaryDirectory() as outside:
             doc = Path(outside) / 'outside.tex'
@@ -113,6 +123,8 @@ class LauncherTests(unittest.TestCase):
     def test_editor_tasks_use_launcher_with_docker_default(self):
         data = json.loads((ROOT / '.vscode/tasks.json').read_text(encoding='utf-8'))
         default = next(task for task in data['tasks'] if task.get('group', {}).get('isDefault'))
+        self.assertIn('Studio',default['label'])
+        self.assertIn(r'\input{main-studio.tex}',(ROOT/'main.tex').read_text())
         self.assertIn('${workspaceFolder}/scripts/build.py', default['args'])
         self.assertNotIn('--backend', default['args'])
         self.assertNotIn('--backend', default['windows']['args'])

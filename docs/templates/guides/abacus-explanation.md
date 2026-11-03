@@ -14,6 +14,18 @@ Model: `abacus-explanation` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/abacus-explanation.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{abacus-explanation}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -47,8 +59,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={The abacus model},
-  text/2={Think of a Lightning\\payment channel as\\an abacus: the beads\\represent bitcoin\\inside the channel.}
+  text/1={Slide title},
+  text/2={Label 2}
 ]{abacus-explanation}
 ```
 
@@ -64,8 +76,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={The abacus model},
-  text/2={Think of a Lightning\\payment channel as\\an abacus: the beads\\represent bitcoin\\inside the channel.}
+  text/1={Slide title},
+  text/2={Label 2}
 ]{abacus-explanation}
 \end{document}
 ```
@@ -85,9 +97,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 47.6% wide × 82.7% high | <code>\includegraphics[width=1691\studiounit]{images/studio/collection/figma-0644-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle left | 28.3% wide × 7.6% high | <code>The abacus model</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 24.5% wide × 21.1% high | <code>Think of a Lightning\\payment channel as\\an abacus: the beads\\represent bitcoin\\inside the channel.</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 47.6% wide × 82.7% high | <code>\studiopaletteimage[width=1691\studiounit]{images/studio/collection/figma-0644-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle left | 28.3% wide × 7.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 24.5% wide × 21.1% high | <code>Label 2</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `statement-with-credit` · Family: Statements · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/statement.md)
+
+```latex
+\studiotemplate[variant=credit,palette=light]{statement}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -56,8 +68,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={The scale of numbers},
-  text/4={10\textsuperscript{12} s}
+  text/1={Slide title},
+  text/4={Label 4}
 ]{statement-with-credit}
 ```
 
@@ -73,8 +85,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={The scale of numbers},
-  text/4={10\textsuperscript{12} s}
+  text/1={Slide title},
+  text/4={Label 4}
 ]{statement-with-credit}
 \end{document}
 ```
@@ -94,18 +106,18 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 20.8% wide × 12.6% high | <code>\includegraphics[width=741\studiounit]{images/studio/collection/figma-0667-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 16.8% wide × 3.5% high | <code>\includegraphics[width=599\studiounit]{images/studio/collection/figma-0667-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.9% wide × 3.5% high | <code>\includegraphics[width=600\studiounit]{images/studio/collection/figma-0667-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 16.9% wide × 3.5% high | <code>\includegraphics[width=600\studiounit]{images/studio/collection/figma-0667-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 20.8% wide × 12.6% high | <code>\includegraphics[width=741\studiounit]{images/studio/collection/figma-0667-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 20.8% wide × 12.6% high | <code>\includegraphics[width=740\studiounit]{images/studio/collection/figma-0667-part-06.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 38.9% wide × 7.6% high | <code>The scale of numbers</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 13.9% wide × 4.4% high | <code>10\textsuperscript{12} s</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 10.6% wide × 4.0% high | <code>30,000 BCE</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 16.9% wide × 4.1% high | <code>32 years ago</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 16.9% wide × 4.6% high | <code>11 days ago</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 16.9% wide × 4.4% high | <code>10\textsuperscript{9} s</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 20.8% wide × 12.6% high | <code>\studiopaletteimage[width=741\studiounit]{images/studio/collection/figma-0667-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 16.8% wide × 3.5% high | <code>\studiopaletteimage[width=599\studiounit]{images/studio/collection/figma-0667-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.9% wide × 3.5% high | <code>\studiopaletteimage[width=600\studiounit]{images/studio/collection/figma-0667-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 16.9% wide × 3.5% high | <code>\studiopaletteimage[width=600\studiounit]{images/studio/collection/figma-0667-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 20.8% wide × 12.6% high | <code>\studiopaletteimage[width=741\studiounit]{images/studio/collection/figma-0667-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 20.8% wide × 12.6% high | <code>\studiopaletteimage[width=740\studiounit]{images/studio/collection/figma-0667-part-06.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 38.9% wide × 7.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 13.9% wide × 4.4% high | <code>Label 4</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 10.6% wide × 4.0% high | <code>Label 2</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 16.9% wide × 4.1% high | <code>Label 6</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 16.9% wide × 4.6% high | <code>Label 3</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 16.9% wide × 4.4% high | <code>Label 5</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

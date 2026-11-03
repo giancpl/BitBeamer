@@ -14,6 +14,18 @@ Model: `four-pillar-cards` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-cards.md)
+
+```latex
+\studiotemplate[variant=four-pillars,palette=light]{icon-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -56,8 +68,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Bitcoin consensus},
-  text/2={Shared rules}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{four-pillar-cards}
 ```
 
@@ -73,8 +85,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Bitcoin consensus},
-  text/2={Shared rules}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{four-pillar-cards}
 \end{document}
 ```
@@ -94,18 +106,18 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 28.1% high | <code>\includegraphics[width=805\studiounit]{images/studio/collection/figma-0065-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 28.1% high | <code>\includegraphics[width=805\studiounit]{images/studio/collection/figma-0065-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 82.4% wide × 28.1% high | <code>\includegraphics[width=1583\studiounit]{images/studio/collection/figma-0065-part-03.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 33.7% wide × 7.5% high | <code>Bitcoin consensus</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.7% high | <code>Shared rules</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 36.2% wide × 6.7% high | <code>Nodes enforce the same rules, ensuring\\consistency across the network.</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 35.9% wide × 5.6% high | <code>Example</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 36.2% wide × 6.7% high | <code>Every new block may create only a\\limited number of new bitcoin.</code> |
-| <code>text-6</code> | Editable text (text) | middle left | 35.9% wide × 5.6% high | <code>Outside consensus</code> |
-| <code>text-7</code> | Editable text (text) | lower left | 38.0% wide × 10.4% high | <code>Some protocol rules fall outside network\\consensus, such as the algorithm used\\to gossip messages.</code> |
-| <code>text-8</code> | Editable text (text) | middle right | 35.9% wide × 5.0% high | <code>Changing consensus</code> |
-| <code>text-9</code> | Editable text (text) | lower right | 36.2% wide × 7.1% high | <code>Soft fork: add new consensus rules.\\Hard fork: remove consensus rules.</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 28.1% high | <code>\studiopaletteimage[width=805\studiounit]{images/studio/collection/figma-0065-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 28.1% high | <code>\studiopaletteimage[width=805\studiounit]{images/studio/collection/figma-0065-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 82.4% wide × 28.1% high | <code>\studiopaletteimage[width=1583\studiounit]{images/studio/collection/figma-0065-part-03.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 33.7% wide × 7.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.7% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 36.2% wide × 6.7% high | <code>Supporting explanation</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 35.9% wide × 5.6% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 36.2% wide × 6.7% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | middle left | 35.9% wide × 5.6% high | <code>Supporting explanation</code> |
+| <code>text-7</code> | Editable text (text) | lower left | 38.0% wide × 10.4% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-8</code> | Editable text (text) | middle right | 35.9% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>text-9</code> | Editable text (text) | lower right | 36.2% wide × 7.1% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

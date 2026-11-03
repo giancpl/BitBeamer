@@ -14,6 +14,18 @@ Model: `triangle-tradeoff` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/triangle-tradeoff.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{triangle-tradeoff}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -49,8 +61,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Blockchain Trilemma},
-  text/4={Security}
+  text/1={Slide title},
+  text/4={Item}
 ]{triangle-tradeoff}
 ```
 
@@ -66,8 +78,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Blockchain Trilemma},
-  text/4={Security}
+  text/1={Slide title},
+  text/4={Item}
 ]{triangle-tradeoff}
 \end{document}
 ```
@@ -87,11 +99,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 27.4% wide × 42.4% high | <code>\includegraphics[width=974\studiounit]{images/studio/collection/figma-0911-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 32.5% wide × 7.5% high | <code>Blockchain Trilemma</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 10.8% wide × 6.4% high | <code>Security</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 19.5% wide × 5.6% high | <code>Decentralization</code> |
-| <code>text-4</code> | Editable text (text) | lower left | 13.0% wide × 6.4% high | <code>Scalability</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 27.4% wide × 42.4% high | <code>\studiopaletteimage[width=974\studiounit]{images/studio/collection/figma-0911-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 32.5% wide × 7.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 10.8% wide × 6.4% high | <code>Item</code> |
+| <code>text-3</code> | Editable text (text) | middle centre | 19.5% wide × 5.6% high | <code>Label 2</code> |
+| <code>text-4</code> | Editable text (text) | lower left | 13.0% wide × 6.4% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

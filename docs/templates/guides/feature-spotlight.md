@@ -14,6 +14,18 @@ Model: `feature-spotlight` · Family: Lists · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/feature-spotlight.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{feature-spotlight}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -52,8 +64,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={Scaling a protocol},
-  text/4={A system can handle more\\data or users without\\compromising performance\\or stability.}
+  text/3={Slide title},
+  text/4={Supporting explanation.\\Add your own details.}
 ]{feature-spotlight}
 ```
 
@@ -69,8 +81,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={Scaling a protocol},
-  text/4={A system can handle more\\data or users without\\compromising performance\\or stability.}
+  text/3={Slide title},
+  text/4={Supporting explanation.\\Add your own details.}
 ]{feature-spotlight}
 \end{document}
 ```
@@ -90,14 +102,14 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower right | 46.6% wide × 41.4% high | <code>\includegraphics[width=1656\studiounit]{images/studio/collection/figma-0648-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 46.6% wide × 41.4% high | <code>\includegraphics[width=1656\studiounit]{images/studio/collection/figma-0648-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | middle left | 33.1% wide × 8.4% high | <code>Scaling a protocol</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 31.9% wide × 17.0% high | <code>A system can handle more\\data or users without\\compromising performance\\or stability.</code> |
-| <code>text-3</code> | Editable text (text) | lower right | 28.7% wide × 21.1% high | <code>Handle more transactions\\per second with lower\\fees, while preserving\\security and\\decentralization.</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 38.9% wide × 5.6% high | <code>Bitcoin</code> |
-| <code>text-5</code> | Editable text (text) | upper right | 28.7% wide × 21.7% high | <code>Handle more simultaneous\\connections, increase\\data transmission speed\\or provide greater\\processing capacity.</code> |
-| <code>text-6</code> | Editable text (text) | middle right | 39.7% wide × 5.5% high | <code>Internet</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower right | 46.6% wide × 41.4% high | <code>\studiopaletteimage[width=1656\studiounit]{images/studio/collection/figma-0648-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 46.6% wide × 41.4% high | <code>\studiopaletteimage[width=1656\studiounit]{images/studio/collection/figma-0648-part-02.pdf}</code> |
+| <code>title</code> | Main text (text) | middle left | 33.1% wide × 8.4% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 31.9% wide × 17.0% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-3</code> | Editable text (text) | lower right | 28.7% wide × 21.1% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 38.9% wide × 5.6% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | upper right | 28.7% wide × 21.7% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-6</code> | Editable text (text) | middle right | 39.7% wide × 5.5% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

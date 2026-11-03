@@ -23,12 +23,12 @@ Start with the selected layouts, then browse the full collection by family.
 - [Image on the left](guides/image-left.md)
 - [Image on the right](guides/image-right.md)
 - [Four-image grid](guides/four-images.md)
-- [Hero number](guides/hero-number.md)
+- [Headline number](guides/hero-number.md)
 - [Illustrative line chart](guides/line-chart.md)
 - [Horizontal timeline](guides/horizontal-timeline.md)
 - [Development cycle](guides/cycle.md)
 - [Merkle hash tree](guides/merkle-tree.md)
-- [Transaction table](guides/table.md)
+- [Data table](guides/table.md)
 - [Equation and example](guides/equation.md)
 - [Editable code](guides/code.md)
 - [Standard closing](guides/closing.md)
@@ -42,7 +42,7 @@ Start with the selected layouts, then browse the full collection by family.
 - [Cover Light](guides/cover-light.md)
 - [Cover Photo](guides/cover-photo.md)
 - [Cover Script Blue](guides/cover-script-blue.md)
-- [Cover Dashboard](guides/cover-dashboard.md)
+- [Overview dashboard](guides/cover-dashboard.md)
 - [Cover Wide Title](guides/cover-wide-title.md)
 - [Agenda With Icons](guides/agenda-with-icons.md)
 - [Agenda With Schedule](guides/agenda-with-schedule.md)
@@ -78,7 +78,7 @@ Start with the selected layouts, then browse the full collection by family.
 - [Heading beside two feature panels](guides/feature-spotlight.md)
 - [Privacy Levels](guides/privacy-levels.md)
 - [Title Two Column List](guides/title-two-column-list.md)
-- [Partner Rail](guides/partner-rail.md)
+- [Organization rail](guides/partner-rail.md)
 - [Icon Rail](guides/icon-rail.md)
 - [Privacy Levels Blue](guides/privacy-levels-blue.md)
 - [Stepped Rail Blue](guides/stepped-rail-blue.md)
@@ -105,8 +105,8 @@ Start with the selected layouts, then browse the full collection by family.
 - [Five Icon Row](guides/five-icon-row.md)
 - [Square Icon Grid](guides/square-icon-grid.md)
 - [Incentives Card Grid](guides/incentives-card-grid.md)
-- [Network Environments](guides/network-environments.md)
-- [Node Type Grid](guides/node-type-grid.md)
+- [Three environments](guides/network-environments.md)
+- [Three node types](guides/node-type-grid.md)
 
 ## Comparisons
 
@@ -114,11 +114,11 @@ Start with the selected layouts, then browse the full collection by family.
 - [Benefits and responsibilities](guides/benefits-limits.md)
 - [Before and after panels](guides/before-after.md)
 - [Vertical light and blue comparison](guides/vertical-split.md) — selected
-- [Onchain Offchain](guides/onchain-offchain.md)
+- [Two approaches](guides/onchain-offchain.md)
 - [Photo Split](guides/photo-split.md)
 - [Split Outline Cards](guides/split-outline-cards.md)
 - [Split Process Cards](guides/split-process-cards.md)
-- [Two-icon comparison](guides/coin-comparison.md)
+- [Two-symbol comparison](guides/coin-comparison.md)
 
 ## Images
 
@@ -135,20 +135,20 @@ Start with the selected layouts, then browse the full collection by family.
 - [Photo Collage Grid](guides/photo-collage-grid.md)
 - [Photo Triptych](guides/photo-triptych.md)
 - [Image Pair Title](guides/image-pair-title.md)
-- [Nine Logo Grid](guides/nine-logo-grid.md)
+- [Nine-symbol grid](guides/nine-logo-grid.md)
 - [Screenshot Pair](guides/screenshot-pair.md)
 - [Phone Screenshot](guides/phone-screenshot.md)
 - [Photo Center Two Icons](guides/photo-center-two-icons.md)
 - [Abacus Explanation](guides/abacus-explanation.md)
-- [Whitepaper Blue](guides/whitepaper-blue.md)
-- [Partner Media Grid](guides/partner-media-grid.md)
-- [Mission Badges](guides/mission-badges.md)
-- [Image Logo Pair](guides/image-logo-pair.md)
+- [Document spotlight](guides/whitepaper-blue.md)
+- [Media grid](guides/partner-media-grid.md)
+- [Three badges](guides/mission-badges.md)
+- [Image and symbol](guides/image-logo-pair.md)
 
 ## Data
 
-- [Hero number](guides/hero-number.md) — selected
-- [Mining metrics: four counters](guides/three-statistics.md)
+- [Headline number](guides/hero-number.md) — selected
+- [Four counters](guides/three-statistics.md)
 - [Illustrative line chart](guides/line-chart.md) — selected
 - [Diagonal hero number](guides/diagonal-number.md)
 - [Two-column conversion table](guides/unit-conversion.md)
@@ -163,18 +163,18 @@ Start with the selected layouts, then browse the full collection by family.
 - [Europe Map](guides/europe-map.md)
 - [Bubble Chart](guides/bubble-chart.md)
 - [Price Lines](guides/price-lines.md)
-- [Purchasing Power](guides/purchasing-power.md)
-- [Currency Equivalence](guides/currency-equivalence.md)
+- [Value over time](guides/purchasing-power.md)
+- [Equivalent values](guides/currency-equivalence.md)
 - [Photo Statistics Collage](guides/photo-statistics-collage.md)
-- [Split Currency](guides/split-currency.md)
+- [Split value comparison](guides/split-currency.md)
 - [Success Dashboard](guides/success-dashboard.md)
-- [Diagram Annotated Energy](guides/diagram-annotated-energy.md)
-- [Card Statistics Process](guides/card-statistics-process.md)
+- [Annotated system](guides/diagram-annotated-energy.md)
+- [Cards and counters](guides/card-statistics-process.md)
 
 ## Diagrams
 
 - [Protocol key pair](guides/protocol-key-pair.md)
-- [Large network figure](guides/large-figure.md)
+- [Large diagram](guides/large-figure.md)
 - [Horizontal timeline](guides/horizontal-timeline.md) — selected
 - [Vertical timeline](guides/vertical-timeline.md)
 - [Development cycle](guides/cycle.md) — selected
@@ -197,26 +197,26 @@ Start with the selected layouts, then browse the full collection by family.
 
 ## Technical
 
-- [Transaction table](guides/table.md) — selected
+- [Data table](guides/table.md) — selected
 - [Equation and example](guides/equation.md) — selected
 - [Editable code](guides/code.md) — selected
 - [Bibliography and resources](guides/references.md)
-- [Hash avalanche comparison](guides/hash-avalanche.md)
-- [Key derivation path](guides/key-derivation.md)
-- [Signature input and output](guides/signature-flow.md)
-- [Three-lane protocol sequence](guides/protocol-sequence.md)
+- [Input and output comparison](guides/hash-avalanche.md)
+- [Derivation path](guides/key-derivation.md)
+- [Input and output flow](guides/signature-flow.md)
+- [Three-lane sequence](guides/protocol-sequence.md)
 - [Chain with block headers](guides/block-chain.md)
 - [Merkle hash tree](guides/merkle-tree.md) — selected
 - [Forked chain branches](guides/fork-branches.md)
-- [Two-lane transaction process](guides/transaction-flow.md)
+- [Two-lane process](guides/transaction-flow.md)
 - [Cipher substitution mapping](guides/cipher-mapping.md)
 - [Encryption and decryption pipeline](guides/encryption-flow.md)
-- [Two-player outcome matrix](guides/payoff-matrix.md)
-- [Payment-channel diagram](guides/payment-channel.md)
-- [Proof-of-work input flow](guides/proof-of-work-flow.md)
+- [Outcome matrix](guides/payoff-matrix.md)
+- [Two-way channel](guides/payment-channel.md)
+- [Processing flow](guides/proof-of-work-flow.md)
 - [Seed Key Tree](guides/seed-key-tree.md)
-- [Cryptographic Assumptions](guides/cryptographic-assumptions.md)
-- [Routing Graph](guides/routing-graph.md)
+- [Three assumptions](guides/cryptographic-assumptions.md)
+- [Routing diagram](guides/routing-graph.md)
 - [Protocol Symmetric](guides/protocol-symmetric.md)
 - [Protocol Public Keys](guides/protocol-public-keys.md)
 - [Protocol Key Lock](guides/protocol-key-lock.md)
@@ -235,21 +235,21 @@ Start with the selected layouts, then browse the full collection by family.
 - [Symmetric Encryption](guides/symmetric-encryption.md)
 - [Asymmetric Encryption](guides/asymmetric-encryption.md)
 - [Merkle Tree Wide](guides/merkle-tree-wide.md)
-- [Diagram Transaction Inputs](guides/diagram-transaction-inputs.md)
-- [Seed Grid Caption](guides/seed-grid-caption.md)
-- [Diagram Pool Shares](guides/diagram-pool-shares.md)
+- [Inputs and outputs](guides/diagram-transaction-inputs.md)
+- [Word grid and caption](guides/seed-grid-caption.md)
+- [Shared work diagram](guides/diagram-pool-shares.md)
 - [Layers Overview](guides/layers-overview.md)
-- [Multi Signature](guides/multi-signature.md)
+- [Multiple approvals](guides/multi-signature.md)
 - [Blockchain With List](guides/blockchain-with-list.md)
 - [Double Spend Diagram](guides/double-spend-diagram.md)
-- [Key To Addresses](guides/key-to-addresses.md)
-- [Dual Consensus Diagram](guides/dual-consensus-diagram.md)
-- [Cipher Wheel](guides/cipher-wheel.md)
-- [Blue Resources Columns](guides/blue-resources-columns.md)
-- [Genesis Information](guides/genesis-information.md)
-- [Regtest Instructions](guides/regtest-instructions.md)
-- [Block Inspection](guides/block-inspection.md)
-- [Mining Card Grid](guides/mining-card-grid.md)
+- [One-to-many mapping](guides/key-to-addresses.md)
+- [Two-system comparison](guides/dual-consensus-diagram.md)
+- [Letter wheel](guides/cipher-wheel.md)
+- [Resource columns](guides/blue-resources-columns.md)
+- [Record information](guides/genesis-information.md)
+- [Practical instructions](guides/regtest-instructions.md)
+- [Record inspection](guides/block-inspection.md)
+- [Processing cards](guides/mining-card-grid.md)
 
 ## Closing
 

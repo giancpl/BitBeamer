@@ -1,0 +1,1346 @@
+{
+  "schema": 1,
+  "description": "Monochrome named-icon alternatives for blue Studio slides; originals remain unchanged.",
+  "parts": [
+    {
+      "name": "pirate-emblem",
+      "parent": "assets/characters/pirate-emblem.svg",
+      "parent_sha256": "a73153bb48b753be863503f79a75aad3be390698f08ee6db5297eef1c7a70b67",
+      "source": "images/studio/icon-palettes/source/pirate-emblem.svg",
+      "source_sha256": "a6fb5dbadd8de1ea14f633a9abb9e554687312ec48f6ba2bd39fa8fc1ea7f644",
+      "pdf": "images/studio/icon-palettes/pirate-emblem.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "38ad4916f4299d99f05c50342fd8238b8708b4dff30c62182f5a6cd52bb1b58c"
+    },
+    {
+      "name": "share-outline",
+      "parent": "assets/symbols/share-outline.svg",
+      "parent_sha256": "d6e607abe60b2da1964fff4f24cf1d41eabbc6bedf5361c4356bb42ac6f3f5ba",
+      "source": "images/studio/icon-palettes/source/share-outline.svg",
+      "source_sha256": "b6b6240cc9ee7c5225e8733c0b4ae9490e0202f083dd5e294e9819316070789d",
+      "pdf": "images/studio/icon-palettes/share-outline.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "d0ff77ceef1116a43be4e06622ec9d969f56f51d2bf2c91715fd54c7f5fa6f25"
+    },
+    {
+      "name": "unlocked",
+      "parent": "assets/objects/security/unlocked.svg",
+      "parent_sha256": "3fd67263c5d577c1e7b7c161a30792160614c6f5a6beec32a61c9667595dc2d5",
+      "source": "images/studio/icon-palettes/source/unlocked.svg",
+      "source_sha256": "b15dd253f1412520145eab2af336b63a02cae12f6b7630e05a7a01b66304ddba",
+      "pdf": "images/studio/icon-palettes/unlocked.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "05035f2026a70d71ce3966c2e65b79c763087de92bbc9eea31e381da72283431"
+    },
+    {
+      "name": "paperclip",
+      "parent": "assets/objects/tools/paperclip.svg",
+      "parent_sha256": "3493fd30bdd90ef79dec3d77098b0cce4dca64b466622688074eeb3feec1c841",
+      "source": "images/studio/icon-palettes/source/paperclip.svg",
+      "source_sha256": "0f142135627c43838651050611d514b84ab867c5f952c8effee3d03515912cbc",
+      "pdf": "images/studio/icon-palettes/paperclip.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "9b41fcfeaaf2832ce23256a6b6910abc88457cd3883da953beac2fdf77e5f61b"
+    },
+    {
+      "name": "cow",
+      "parent": "assets/objects/animals/cow.svg",
+      "parent_sha256": "30bb9e6ad5c114ffee0df32989f9292026b91e7014759fcdb12e27d51281169f",
+      "source": "images/studio/icon-palettes/source/cow.svg",
+      "source_sha256": "b8661be2c1fea774f8b0e23d84a41a118dd3ad14eb8de8eb9b4e593689280d8f",
+      "pdf": "images/studio/icon-palettes/cow.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "c06453a5989b414c234911244d9dafff9c22c77b9ecc6cde93c11ab6e858f0d2"
+    },
+    {
+      "name": "alice-and-bob",
+      "parent": "assets/characters/alice-and-bob.svg",
+      "parent_sha256": "1165ce9bed0e74b5212540ddfe1900d5048b2e5a4657b14dbe7679bfd868c29e",
+      "source": "images/studio/icon-palettes/source/alice-and-bob.svg",
+      "source_sha256": "b1cc1bd1eed34d5c75bcf7f02ef562c98d642d35e3ada9ca083499821858db45",
+      "pdf": "images/studio/icon-palettes/alice-and-bob.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "fa2838230f745996182db102d2a659756603d341b82204c7165bbde0399239ce"
+    },
+    {
+      "name": "heart",
+      "parent": "assets/symbols/heart.svg",
+      "parent_sha256": "a283742e94371aec78eb7de824cbfcba6467b5f48083e4089d2f39148a6e82fd",
+      "source": "images/studio/icon-palettes/source/heart.svg",
+      "source_sha256": "bb851875fbac163cfcc07ed8dcdc02af7ae558d48c3423c9a7413215e23c1215",
+      "pdf": "images/studio/icon-palettes/heart.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "0c21563c51da686f9b94750298a0b1e8fc1748fcc7189c35df9e86d6a2ab18ca"
+    },
+    {
+      "name": "bull",
+      "parent": "assets/objects/animals/bull.svg",
+      "parent_sha256": "4ea7db41540f38a5d1ac7fd25c9627309fe96b48d2042a10792dce878937502a",
+      "source": "images/studio/icon-palettes/source/bull.svg",
+      "source_sha256": "f1d5f9a10777d937e37d8377737706c54fd77eb85753ea4dea20bf6465fb22ae",
+      "pdf": "images/studio/icon-palettes/bull.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "aa870dbfcf5d2bf1705101faf43a43459ceff895e3b26637d742bb646c4fec73"
+    },
+    {
+      "name": "bull-alternate",
+      "parent": "assets/objects/animals/bull-alternate.svg",
+      "parent_sha256": "4ea7db41540f38a5d1ac7fd25c9627309fe96b48d2042a10792dce878937502a",
+      "source": "images/studio/icon-palettes/source/bull-alternate.svg",
+      "source_sha256": "f1d5f9a10777d937e37d8377737706c54fd77eb85753ea4dea20bf6465fb22ae",
+      "pdf": "images/studio/icon-palettes/bull-alternate.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "aa870dbfcf5d2bf1705101faf43a43459ceff895e3b26637d742bb646c4fec73"
+    },
+    {
+      "name": "cow-compact",
+      "parent": "assets/objects/animals/cow-compact.svg",
+      "parent_sha256": "9824c26bb1662d5a234a0a7b7337539d2ec7157828061a566e9cb0b0dfea3763",
+      "source": "images/studio/icon-palettes/source/cow-compact.svg",
+      "source_sha256": "f709af91688e60387ede394ee83f33086235f53fd8b9de4028626bbcd508c3cd",
+      "pdf": "images/studio/icon-palettes/cow-compact.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "8c5bfc4f23e797b37c671745ecb3c48a4b334f20aebd2fd00872f03636acad52"
+    },
+    {
+      "name": "cow-solid",
+      "parent": "assets/objects/animals/cow-solid.svg",
+      "parent_sha256": "c38e12a8421201fbd9d6e6ff545ca026571df45bbb71365b7adaddc72eb5b882",
+      "source": "images/studio/icon-palettes/source/cow-solid.svg",
+      "source_sha256": "3c85bbc13729724a0f190d165dd4009d88cf3dbf2bbaadea0239b38e721f7fc8",
+      "pdf": "images/studio/icon-palettes/cow-solid.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "c3ff536006218d33662e7584fe9e1f8ea6b264057e0212ceba9dedd573de2c96"
+    },
+    {
+      "name": "apple",
+      "parent": "assets/objects/food/apple.svg",
+      "parent_sha256": "6c5b7843daca8cc3231a6255411a39c9552aa7da34ecb5b91a07405e1bf3d6fc",
+      "source": "images/studio/icon-palettes/source/apple.svg",
+      "source_sha256": "85a5c482b05153d644ea926aa2ce00023667ee1074e7be8f8597b08fb971a71c",
+      "pdf": "images/studio/icon-palettes/apple.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "28574b4c3a65cc754de002cd08560ccb19a73f7e9b4a5387abf7a577fc80a54a"
+    },
+    {
+      "name": "apple-small",
+      "parent": "assets/objects/food/apple-small.svg",
+      "parent_sha256": "e9aa4a0720d4b5a65c36d53a79b7804b0f5a7ac8f783307a4fe7188e8630b8e5",
+      "source": "images/studio/icon-palettes/source/apple-small.svg",
+      "source_sha256": "3fcd4fd2533d172d30e3e11c49e1d62c373bdc555577d62a05f76bc37843b7b7",
+      "pdf": "images/studio/icon-palettes/apple-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "bfbf18d0076d4a493bcedcbf7341ca7d0365a5ff91bf2f61764578b455d8da4e"
+    },
+    {
+      "name": "apple-tiny",
+      "parent": "assets/objects/food/apple-tiny.svg",
+      "parent_sha256": "219f63a7e5d34ad375cb9ec3ca6e482b5f6ee012cb20f7eaf070c8b144c01869",
+      "source": "images/studio/icon-palettes/source/apple-tiny.svg",
+      "source_sha256": "9d2c93b66a1bc9129f18b1a5196a81cf4550fc8a43535a5359a5efde386e5365",
+      "pdf": "images/studio/icon-palettes/apple-tiny.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "627453af7231a43fec3de87b44ce052d5705ce91920db83cf6d418aec9e60e48"
+    },
+    {
+      "name": "bitcoin",
+      "parent": "assets/symbols/bitcoin/bitcoin.svg",
+      "parent_sha256": "0d22e2d4b9cd92685bce545f4f5802537e7cf711dbc7723ed37e18fddca4cb92",
+      "source": "images/studio/icon-palettes/source/bitcoin.svg",
+      "source_sha256": "804a490594b8d6d649814fe467a15deb491dab4a0b7732f63ca1dafa8a4cbebf",
+      "pdf": "images/studio/icon-palettes/bitcoin.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "bebdf16c8c3951c00d25fdf9031fdba7bc2ff6734413ea69a6200533e02d6027"
+    },
+    {
+      "name": "bookmark",
+      "parent": "assets/objects/bookmark.svg",
+      "parent_sha256": "a8d36b3f6cda4f7a87c27092652763eb83eae4753c87a60d3a7a8431de4dae37",
+      "source": "images/studio/icon-palettes/source/bookmark.svg",
+      "source_sha256": "e179b3e4ce88c0aee27b018bc930567fcc2fecd01933b99f968134e3b24587aa",
+      "pdf": "images/studio/icon-palettes/bookmark.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "5a952f58019157e13567ee76fd950848edd44c614f7ccd2b05209ac4ad0a397b"
+    },
+    {
+      "name": "brain",
+      "parent": "assets/objects/brain.svg",
+      "parent_sha256": "78373c0ca2eb81a648a22c1d84cc8029fd7b20523298e420437aa10e7fac3f1a",
+      "source": "images/studio/icon-palettes/source/brain.svg",
+      "source_sha256": "5ff2901897ab0739ea30875fe20056ccf72b4d4c697a54be276d4977bc2bf02c",
+      "pdf": "images/studio/icon-palettes/brain.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "418e14f7c56faabf58ce1ff0881f3724421813334612bb0164d30cb50adee008"
+    },
+    {
+      "name": "clock",
+      "parent": "assets/objects/technology/clock.svg",
+      "parent_sha256": "a89b442b08119fa49dae827540ed156d7aa6e79252318d24df1778a801a10a98",
+      "source": "images/studio/icon-palettes/source/clock.svg",
+      "source_sha256": "aa034a1dd3c9e1c4edfe4948d27a70135e9f3750b266044f0c1eed422348aaae",
+      "pdf": "images/studio/icon-palettes/clock.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "d46b12ef2a9207bab5a7b0721d33832936cd95ecfd5c7f8da88a211f26a3d2ac"
+    },
+    {
+      "name": "code",
+      "parent": "assets/symbols/code.svg",
+      "parent_sha256": "a3a6ed317c23fbddaa96859ee3c984538dab2d45aee4b084253981dfc777f31b",
+      "source": "images/studio/icon-palettes/source/code.svg",
+      "source_sha256": "9fd26405b0f2aaa637245ddc6ddb3527066e68d20d3031e29980c19ca8a66ded",
+      "pdf": "images/studio/icon-palettes/code.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "d09934694b429daeb5d95732d359ef1d7df9dc7d3b880dbe52413cfd5be51a21"
+    },
+    {
+      "name": "worker",
+      "parent": "assets/characters/worker.svg",
+      "parent_sha256": "baad6445d99b2ad5827383bc26bf088af6fc85f7cd491105c1f6aab40bfc81a6",
+      "source": "images/studio/icon-palettes/source/worker.svg",
+      "source_sha256": "aef5fd19dd860fef595e351fa5c42ee60769ff65144495951739503b9b1ae071",
+      "pdf": "images/studio/icon-palettes/worker.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f825ef4c852dd6160bcf88980ba9dc56301ca52c4bdeab630d226e8aa4b97d27"
+    },
+    {
+      "name": "confetti",
+      "parent": "assets/symbols/confetti.svg",
+      "parent_sha256": "78f131fa643ec72a782bdcbf5578f2491fabe93cef3f35b5c1a8079d8e7dc319",
+      "source": "images/studio/icon-palettes/source/confetti.svg",
+      "source_sha256": "bee42b0e7aa75d9a48cecef69f529d1bcae069f8bce8650b3aed2579b20e937e",
+      "pdf": "images/studio/icon-palettes/confetti.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "15063252ffb802f581189f0b0081e8fb49f59cbff9954d39f94c827bc76fea29"
+    },
+    {
+      "name": "crown-count",
+      "parent": "assets/symbols/heraldry/crown-count.svg",
+      "parent_sha256": "99d49d4b282cc0e3aa559d0ff96085c1aaacfc5dc81bd119bfee67ba4643cdd4",
+      "source": "images/studio/icon-palettes/source/crown-count.svg",
+      "source_sha256": "af59f4d4a2fb44a2e8309eef0efbb1622ec41236eeb5f5cf86cb602a9b54d7fb",
+      "pdf": "images/studio/icon-palettes/crown-count.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "865261499cde31d65fde4a0edad57bac7e81e7b57eda2b6d894745b4bc1d0a72"
+    },
+    {
+      "name": "bitcoin-grid",
+      "parent": "assets/symbols/bitcoin/bitcoin-grid.svg",
+      "parent_sha256": "c3bdf0cda53f10b79ae9452bf2d3fef0ee448e2fcf0a13336a4a52fa91be626f",
+      "source": "images/studio/icon-palettes/source/bitcoin-grid.svg",
+      "source_sha256": "e182116e1d0c5289b385d51d5cd277959834609275963654e1e75caffae99e4d",
+      "pdf": "images/studio/icon-palettes/bitcoin-grid.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "67937d15fd98900fb2f0f9971b9e3ebe1cf068dd54d0371fd7c788e5173b6753"
+    },
+    {
+      "name": "crown-province",
+      "parent": "assets/symbols/heraldry/crown-province.svg",
+      "parent_sha256": "e6695554b85519f3619994fbd7e83b5842508d30391e436e0d57165835cc1aac",
+      "source": "images/studio/icon-palettes/source/crown-province.svg",
+      "source_sha256": "383058f5f0f253f9f45d7a7e86836f65c68eab68aa5d2f991ba51b7d4b0d939e",
+      "pdf": "images/studio/icon-palettes/crown-province.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f0d2a09da97ce32589cce8496c0e74366eea47c58c7988133faa9bafb96142f3"
+    },
+    {
+      "name": "crown-imperial",
+      "parent": "assets/symbols/heraldry/crown-imperial.svg",
+      "parent_sha256": "55ead0e19f2d6c88daeaf0dc2e45686b80b12db97a687a95e38d601c32cfb9d6",
+      "source": "images/studio/icon-palettes/source/crown-imperial.svg",
+      "source_sha256": "bbafeff14c3ff2637ea241d050731018f30e310cfa576aefb763d76fc234c1c1",
+      "pdf": "images/studio/icon-palettes/crown-imperial.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "cb900aa8659921f94922782a48afa0d6b015230ee440aff15373dea84f81ab57"
+    },
+    {
+      "name": "crown-mural",
+      "parent": "assets/symbols/heraldry/crown-mural.svg",
+      "parent_sha256": "29c0453a2cbedc78e4983f2fa607552e4513d68683f80253fcd5a2f50daa8f07",
+      "source": "images/studio/icon-palettes/source/crown-mural.svg",
+      "source_sha256": "7302522ace2fa88144ec0cd76b7dbf04a71a151700af0304a133c734f02e7354",
+      "pdf": "images/studio/icon-palettes/crown-mural.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "b6bbe0cc1ae933ccd9aa3b1a660f9792805387d2b96410c586f5124c251f85ed"
+    },
+    {
+      "name": "qrcode-one",
+      "parent": "assets/symbols/qr-codes/qrcode-one.svg",
+      "parent_sha256": "8a59a306be8df2caab49a7762c1d658d8ab4a9a77e32627f8380428191b86ada",
+      "source": "images/studio/icon-palettes/source/qrcode-one.svg",
+      "source_sha256": "f697dd152ac5d93c301d33f29e58db9ada3c6764eaefcca5bb2bfd77f86a84c2",
+      "pdf": "images/studio/icon-palettes/qrcode-one.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "c3e39a5c1d451f9d2464975c66a87716fc9a6d2b111d1a6074348517a64c6888"
+    },
+    {
+      "name": "qrcode-two",
+      "parent": "assets/symbols/qr-codes/qrcode-two.svg",
+      "parent_sha256": "98aac8f6fa54051270751f6e314020418a7492160a9560cfff08555594841d8c",
+      "source": "images/studio/icon-palettes/source/qrcode-two.svg",
+      "source_sha256": "ffc75456b15c3b4a20caf333ec62ae9329795698dd527743ae9073411e4af582",
+      "pdf": "images/studio/icon-palettes/qrcode-two.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "2b12974f35bdcab44d18269c31e968318f55ecae3032a25589830caeec8e6693"
+    },
+    {
+      "name": "qrcode-three",
+      "parent": "assets/symbols/qr-codes/qrcode-three.svg",
+      "parent_sha256": "5942f42e03a76ece31f3073fd03e1642baa8037cd2135dcb93572be931005c55",
+      "source": "images/studio/icon-palettes/source/qrcode-three.svg",
+      "source_sha256": "183b4ef810eb7e391659b22bd1deb5a82f71b0e12d70ae563d76054bd4f1d17b",
+      "pdf": "images/studio/icon-palettes/qrcode-three.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "143e8e7d7e1676ed8c0d6840581e08790146b0afb9c6f1eaf1744e97e51d08c2"
+    },
+    {
+      "name": "qrcode-four",
+      "parent": "assets/symbols/qr-codes/qrcode-four.svg",
+      "parent_sha256": "1b9c30cfa5dde6fc591d3278b44085837e7bdaf1cae025120fdef2fe4abed7e8",
+      "source": "images/studio/icon-palettes/source/qrcode-four.svg",
+      "source_sha256": "10e043c758494ad16eb0856ad945e2f5c7882799491c40dca0b4f459328b8a75",
+      "pdf": "images/studio/icon-palettes/qrcode-four.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "a2402b229da8e80babd16142e9093c1d98d8231b5635d8356aac1823cf024a75"
+    },
+    {
+      "name": "heart-sparkle",
+      "parent": "assets/symbols/heart-sparkle.svg",
+      "parent_sha256": "844f2c3c79f4d3589ea9dab7327f124239f55153d59fdf052d786fb5324ec422",
+      "source": "images/studio/icon-palettes/source/heart-sparkle.svg",
+      "source_sha256": "e1a83bee115890315c0a36edef2a31ffa07476f298107f6d5d966fa26cc3aae3",
+      "pdf": "images/studio/icon-palettes/heart-sparkle.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "71f65132a0bbb1356e1d2b5650099a2c0ba79b5a45759e88a22d84ca5d544db4"
+    },
+    {
+      "name": "heart-sparkles",
+      "parent": "assets/symbols/heart-sparkles.svg",
+      "parent_sha256": "5acccb27b0986d87fc0b8142522ce5b3ca6c2ab017cf4a448a2fcbb4f6f847ed",
+      "source": "images/studio/icon-palettes/source/heart-sparkles.svg",
+      "source_sha256": "57a951be1f97791606ca1850cd7765d2eb61d0d8b4862673808fc18e91a3a0df",
+      "pdf": "images/studio/icon-palettes/heart-sparkles.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "0740decc8166ae8d98b705b5d6b247b2d75e78bf5033180a34edd0339310e25d"
+    },
+    {
+      "name": "heart-large",
+      "parent": "assets/symbols/heart-large.svg",
+      "parent_sha256": "929db13da25a6e47a3ce5c4001f2c067be00b51410323496aa9bd322bf154e55",
+      "source": "images/studio/icon-palettes/source/heart-large.svg",
+      "source_sha256": "2228cad2928ae83495fbf18fb8a3ff16cb05b4745c4bab2d5459cc0957ea553d",
+      "pdf": "images/studio/icon-palettes/heart-large.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "135ab385f500f36ed107a2d6a89009c601dba785bd6ba8334ca44bac0941957b"
+    },
+    {
+      "name": "heart-small",
+      "parent": "assets/symbols/heart-small.svg",
+      "parent_sha256": "d46cdf124ec0ec8f8a7084a19ef0d9b463222151f26a0025a09b616e39e92946",
+      "source": "images/studio/icon-palettes/source/heart-small.svg",
+      "source_sha256": "f5ea5b46f8b67715210f44d73b40d13ed20219320781da6e5eedf86244bf6af0",
+      "pdf": "images/studio/icon-palettes/heart-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "eb9ea55d25ace645cfae6497f41ab48e6efbe686ed65d64836d7e101a2245c00"
+    },
+    {
+      "name": "heart-tiny",
+      "parent": "assets/symbols/heart-tiny.svg",
+      "parent_sha256": "c742a360cf43c01fa9976884e12b41707e55a5da39e10f499eb39ce66f66c8f8",
+      "source": "images/studio/icon-palettes/source/heart-tiny.svg",
+      "source_sha256": "66e89cc0d4b48986b007bccbb226dc57432a4addc5181b9d47abd4c2e83ed569",
+      "pdf": "images/studio/icon-palettes/heart-tiny.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "04b8fd88f93002d6b3469aef5b8f3d071bc75497d885319b0dfcbab8c6c5a298"
+    },
+    {
+      "name": "alice",
+      "parent": "assets/characters/alice.svg",
+      "parent_sha256": "e853b91531a4d8aeaf070c53de6fcb4e8e11e7c8a8834999a18ae40fcd8af00c",
+      "source": "images/studio/icon-palettes/source/alice.svg",
+      "source_sha256": "707c0cc393b4d209c03588b8bce3a1f5a161a19f40db3bba274f5f6c9b36d31b",
+      "pdf": "images/studio/icon-palettes/alice.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e3d5bd95ecebaaff22180140bcd8fcb4016ddfaedc17b44e7bdf382e77ba0279"
+    },
+    {
+      "name": "snake",
+      "parent": "assets/objects/animals/snake.svg",
+      "parent_sha256": "3ccc8f1cf936c353490feba933792f1e669d699140d1c57ef11fcd48e78f262a",
+      "source": "images/studio/icon-palettes/source/snake.svg",
+      "source_sha256": "5f147532f5b194cafcf1b7adb32e3cc4dea6d9b8f1d3976ce13c36230109bcac",
+      "pdf": "images/studio/icon-palettes/snake.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f19630228f62dd06313fa2f5f21f23ca4a83124dcea57fb00dc40823cc545692"
+    },
+    {
+      "name": "bean",
+      "parent": "assets/objects/food/bean.svg",
+      "parent_sha256": "5b896ee59a3237087bd5a9ea6193a7533764a5a2dc25c0b92c7fd3572605868e",
+      "source": "images/studio/icon-palettes/source/bean.svg",
+      "source_sha256": "fac522c27b6f49551ffd2715a6ed4c9e81e6bb690c2a67fe453d4c2d57035a4f",
+      "pdf": "images/studio/icon-palettes/bean.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "2b59d1fa40d8e13525b04ae493eb026b7c4796394f54112eda11eed495146c2f"
+    },
+    {
+      "name": "snowflake",
+      "parent": "assets/symbols/weather/snowflake.svg",
+      "parent_sha256": "d4004ca935aa7421220dfe4c81fba3ee78528ff61db55655afc5aebccbe266f1",
+      "source": "images/studio/icon-palettes/source/snowflake.svg",
+      "source_sha256": "f585726f8005cec1472486a97256a87bb66b4fe205bf5f0944ca5bc7da5e9bf6",
+      "pdf": "images/studio/icon-palettes/snowflake.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "ca76ed941b5f421fb27aa07a6cfb954637ed97811003347032c8f568522466de"
+    },
+    {
+      "name": "hospital",
+      "parent": "assets/objects/buildings/hospital.svg",
+      "parent_sha256": "c9375c7b71aa7e3e681de01d80db91f3cb7a580b32788afad4c65151b9ccb5fb",
+      "source": "images/studio/icon-palettes/source/hospital.svg",
+      "source_sha256": "a2b393dff2eb37909cb86723984230e5cb5b2c11e2ec29dae862cbabe162277b",
+      "pdf": "images/studio/icon-palettes/hospital.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f21c2a8a9b6a75b9524410d5f818271a9510256e0576916e8b1a08de9c44f3b8"
+    },
+    {
+      "name": "house",
+      "parent": "assets/objects/buildings/house.svg",
+      "parent_sha256": "37da25ffdf2e391c140ef54fcd2e73b7f03b0dacaae6a8b5c214d134622818cc",
+      "source": "images/studio/icon-palettes/source/house.svg",
+      "source_sha256": "5a98e14d76400dcd3e45880bef8395ed0f1391b8b1f59aa597cf65b4946f7162",
+      "pdf": "images/studio/icon-palettes/house.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "10061be56b6129f00e02634a16ec45552c65e8f3b21479294bef24fd4a3afa2a"
+    },
+    {
+      "name": "key",
+      "parent": "assets/objects/security/key.svg",
+      "parent_sha256": "e1d0c95f330c01d7ac83fcabf729b8322e5caf9aade7c4d62049174cae88dd0d",
+      "source": "images/studio/icon-palettes/source/key.svg",
+      "source_sha256": "915bb62f5d750aaa69c63c3a3f3b5e16b401318c3b573c6a620c4bb8cf40ba30",
+      "pdf": "images/studio/icon-palettes/key.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f5291e4c348d44404fa27bedf59305eebd3ec373bca12be27b7a80eaed4725ec"
+    },
+    {
+      "name": "key-square",
+      "parent": "assets/objects/security/key-square.svg",
+      "parent_sha256": "71a91b8b394f5f0abcc4ef7bd3d349c8666d5681d77a9255b5cb0f8f4495c9c7",
+      "source": "images/studio/icon-palettes/source/key-square.svg",
+      "source_sha256": "d273cde9a8da1dce8b04e9f51670b36776550a96aa9452f3b560cc3c237e67e3",
+      "pdf": "images/studio/icon-palettes/key-square.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "45f3baba3d05ae1ceacd23b7088328a334a83131e25c65f87ec15f60f6d79a25"
+    },
+    {
+      "name": "key-round",
+      "parent": "assets/objects/security/key-round.svg",
+      "parent_sha256": "f026d07c1a2b62c299ae93dda7ca2a41aa1a9c754ac039f15ac14157755f03c3",
+      "source": "images/studio/icon-palettes/source/key-round.svg",
+      "source_sha256": "f06c94b27ba68f64a22f08a19f2aa42fb69219fa286c5a29b00c191244c4f77f",
+      "pdf": "images/studio/icon-palettes/key-round.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "0f3e14c9becc7355342dfb29c6b4fbeb75df4c7f383644387d9b338399c5e02e"
+    },
+    {
+      "name": "bible",
+      "parent": "assets/objects/bible.svg",
+      "parent_sha256": "c0039bb51f65503b7d421d962961d69b525540c133628fb259a3313db2c1c4ee",
+      "source": "images/studio/icon-palettes/source/bible.svg",
+      "source_sha256": "946e8b58cbdeacfd5a5fd24fa6ea4e1ab88d7f1dae9126930d0f4b676ccbdd47",
+      "pdf": "images/studio/icon-palettes/bible.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "17c831bd86496c9fc43e01021f3d07c11d8223efb3b27e41d3231f0ae6dab159"
+    },
+    {
+      "name": "whitepaper",
+      "parent": "assets/objects/whitepaper.svg",
+      "parent_sha256": "cba38094b1cf238483e068c992c43f3838c01f1e72cfc8906a22615ca94ba340",
+      "source": "images/studio/icon-palettes/source/whitepaper.svg",
+      "source_sha256": "4c07a22048ce5da38d5f846a01361cdaecf63d659cdb6f2073ed92f958166d01",
+      "pdf": "images/studio/icon-palettes/whitepaper.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "234e9eba94303f8b909fd1d99a5499ce395b3a58bf8b846bb0f441a056fec861"
+    },
+    {
+      "name": "book",
+      "parent": "assets/objects/book.svg",
+      "parent_sha256": "53f9465cea339780a6b1151da7057b40afaf9796347b40e5bf70757b2040f30c",
+      "source": "images/studio/icon-palettes/source/book.svg",
+      "source_sha256": "e1920364af0f6b68e70f1e67e91afbc3ff3b805cb56a3967d66968bb3ecbba75",
+      "pdf": "images/studio/icon-palettes/book.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "a962b14243e900420f327b50e46bce1bce7080dfa54a9a91ba01f1feebf53ed5"
+    },
+    {
+      "name": "lightning",
+      "parent": "assets/symbols/bitcoin/lightning.svg",
+      "parent_sha256": "667da089c44ec8a17b359a69cd0c4cadea7962aa28a57fb9c0c63bb76373de05",
+      "source": "images/studio/icon-palettes/source/lightning.svg",
+      "source_sha256": "9def4acf6a57fee3fd367ae5781bff8229308b8314d5ee22923d0063857106c5",
+      "pdf": "images/studio/icon-palettes/lightning.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "18fc33ebd064d9c6bfd68f13e5bb7868a0f65bc3008533f277748328070c3e5f"
+    },
+    {
+      "name": "lightning-small",
+      "parent": "assets/symbols/bitcoin/lightning-small.svg",
+      "parent_sha256": "277a779a1d3459b4095f24e18c6231182261f05e0c32bd8fa6973f5506a4f11f",
+      "source": "images/studio/icon-palettes/source/lightning-small.svg",
+      "source_sha256": "9950b84208ec8039935729d955e5ada7ed97581a37d267ca1acbd18ca4d34fea",
+      "pdf": "images/studio/icon-palettes/lightning-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e8089ec513aa43cdb296397aff26ea12532107268ebe1a4516ce794859ffcc7a"
+    },
+    {
+      "name": "padlock",
+      "parent": "assets/objects/security/padlock.svg",
+      "parent_sha256": "73a7163dcd59246b3b6361c316eb8bd2d00b889a3fb9443ef2db49eb24702d76",
+      "source": "images/studio/icon-palettes/source/padlock.svg",
+      "source_sha256": "3ecaf2c12b2120cc09e93ff77858d9ca0adb55d80821fa3b8c0c16246c2472cc",
+      "pdf": "images/studio/icon-palettes/padlock.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "11eff7a487e9bfa38e4c6e044a51354111bf31a94c9f93442f9077046c3c2c94"
+    },
+    {
+      "name": "envelope",
+      "parent": "assets/objects/technology/envelope.svg",
+      "parent_sha256": "3c4d6c9a6f41095270b67eeb5f0460797f14b6ffeb0727e65379684e92ce0af4",
+      "source": "images/studio/icon-palettes/source/envelope.svg",
+      "source_sha256": "6b8a7d2abe0cbf62837c70525b51052d5e4decc5174a495801fb6e231914259e",
+      "pdf": "images/studio/icon-palettes/envelope.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "5933200868402d45f4aeb4cd86ab62258e6d03ae65f72363e4fad6b04e25bbed"
+    },
+    {
+      "name": "moon",
+      "parent": "assets/symbols/weather/moon.svg",
+      "parent_sha256": "b2b362b394ef3acb9524082c0f76cda9e70adbef56bb31a500943510f2ccc641",
+      "source": "images/studio/icon-palettes/source/moon.svg",
+      "source_sha256": "6cf145e57ab05fac5d132bcffeb54464c3d3eee1d132f63d1d92efaa5fd0505d",
+      "pdf": "images/studio/icon-palettes/moon.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "c2477db0228caa28afae083fd4a7bdc69f95e534d8d14c7e9720cd8fff9302db"
+    },
+    {
+      "name": "moon-small",
+      "parent": "assets/symbols/weather/moon-small.svg",
+      "parent_sha256": "67df1123f3052bf6c4eb1ccc9c5447e7e435ca547af82f758b0945342b739430",
+      "source": "images/studio/icon-palettes/source/moon-small.svg",
+      "source_sha256": "18f89b7257b6ddb3063659d1a55a0b13747544fb8c55e13696a916c769a09909",
+      "pdf": "images/studio/icon-palettes/moon-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "4191540e48e27b3b359c27e78120544b2df6e6c3ec39c04f416ee4b379f248aa"
+    },
+    {
+      "name": "microscope",
+      "parent": "assets/objects/microscope.svg",
+      "parent_sha256": "b4bc49a4a9570f7a0710f1d5cd25acaf0007a3c9226882071efb8bb6dccab0e6",
+      "source": "images/studio/icon-palettes/source/microscope.svg",
+      "source_sha256": "2247c7000f9df6892a88cd8368081c9c8d3bb09b1218c042743834280ad37121",
+      "pdf": "images/studio/icon-palettes/microscope.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "78187d766d4b83937aab6e59b1acb9924997a240daeba36a1b11109b5da0ea1f"
+    },
+    {
+      "name": "cloud",
+      "parent": "assets/symbols/weather/cloud.svg",
+      "parent_sha256": "c2f04f765e7ee47de605905420c06dca46262a22cd7edd0e724542872d7b17ae",
+      "source": "images/studio/icon-palettes/source/cloud.svg",
+      "source_sha256": "b5a2ff834420b34d2d5571d9c809adacf102ad416e0cb651b3bd64d1c9a5d591",
+      "pdf": "images/studio/icon-palettes/cloud.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e29637f083928a7c2c6b88a4996b5332cec96fc3bc091654ce05d59809259c98"
+    },
+    {
+      "name": "cloud-small",
+      "parent": "assets/symbols/weather/cloud-small.svg",
+      "parent_sha256": "c2d3e3ff99d0aba982c95cc91b80e301685548c589d2b5bd9faa346b1871f210",
+      "source": "images/studio/icon-palettes/source/cloud-small.svg",
+      "source_sha256": "6f3023f0044c9b3c620fd08df2519ad94ddf8f5b8434d909df444c41e6c8ff18",
+      "pdf": "images/studio/icon-palettes/cloud-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "6b1fb2b486c6a0f9213d00682b06419ae51d5bc0a99aa6c5d3ff286e655bbee3"
+    },
+    {
+      "name": "pepe",
+      "parent": "assets/characters/pepe.svg",
+      "parent_sha256": "c16a69f096d55f32957bb162ad3f72ade89848c63ec1b6e17d46329efb0133d0",
+      "source": "images/studio/icon-palettes/source/pepe.svg",
+      "source_sha256": "7bde4ea96648b7f45f20c1f41b2856f0d059b7a11f0094950c05bc8bb9248f1b",
+      "pdf": "images/studio/icon-palettes/pepe.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "da1fd9763a7c502b53dcb0825aa5b2faee822b92e89754475d30d92d0f280316"
+    },
+    {
+      "name": "peapod",
+      "parent": "assets/objects/food/peapod.svg",
+      "parent_sha256": "14d8166d3949f50beb8d0b084c69d07dd48c3084e18dc605e75c5fc52627fb97",
+      "source": "images/studio/icon-palettes/source/peapod.svg",
+      "source_sha256": "dba4e17e98d394baca68311abaa6ce9da3aa3a58d7c064c57b8676ff04bd0c39",
+      "pdf": "images/studio/icon-palettes/peapod.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "be346c62057cfe81cd409fd6149a977d9894beb1ceb3c76cc35988b175b2475b"
+    },
+    {
+      "name": "pizza",
+      "parent": "assets/objects/food/pizza.svg",
+      "parent_sha256": "a201c7c13b75203b6a1163314e58c4912f3035da929650cb87f5f59ff8b52ca4",
+      "source": "images/studio/icon-palettes/source/pizza.svg",
+      "source_sha256": "ed3ff39415e65e137310ddd982b50ed0dd2f77fa57ff8baabddd42c77dbab420",
+      "pdf": "images/studio/icon-palettes/pizza.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "1eaf6a3c444d38d9445cb5ea93907294b9f110545b7a73b3857b7a78bab16ca2"
+    },
+    {
+      "name": "pig",
+      "parent": "assets/objects/animals/pig.svg",
+      "parent_sha256": "c5f2f8bf98c2c35fb3c77c507859ceb1e4325c6d86995665cb7d24c28a5d5f14",
+      "source": "images/studio/icon-palettes/source/pig.svg",
+      "source_sha256": "5bd06f1ad3d255ef321b91992559d1afaa8ded58159cb32bf81cca633e5e85c1",
+      "pdf": "images/studio/icon-palettes/pig.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "41f5c3537223ef30c94a12c74d7c6a44fd40c361cc96c91efc4606a66607df24"
+    },
+    {
+      "name": "pig-small",
+      "parent": "assets/objects/animals/pig-small.svg",
+      "parent_sha256": "155bb2a881cefc9f3501a70ba51364f30e6658d461d8c3638756c0eb407c23dc",
+      "source": "images/studio/icon-palettes/source/pig-small.svg",
+      "source_sha256": "aaf393851a336663defe71e1c32d2b4d7e00fb1f8684403cd069c22c86f1e2a1",
+      "pdf": "images/studio/icon-palettes/pig-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "cac133acb69477de8fcdca51c4911d256f6a1e544445ed318517648f943ce0ef"
+    },
+    {
+      "name": "wallet",
+      "parent": "assets/objects/wallet.svg",
+      "parent_sha256": "1327b0b76c60b7f816b0d0b10906b50e8e2c8a602945b7856cfccac9f2485abe",
+      "source": "images/studio/icon-palettes/source/wallet.svg",
+      "source_sha256": "02804326622942fee4517bcde759d0cfb192ed1d950349bcfc2479913cb1fd02",
+      "pdf": "images/studio/icon-palettes/wallet.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "3fd2d75445f85c797e2a684199415b09841c9c6d7bf262a526a6945c8c94fdd2"
+    },
+    {
+      "name": "gift",
+      "parent": "assets/objects/gift.svg",
+      "parent_sha256": "b204f194acaf0deab8c56df3662f8ccad5581b41b7abefc966ab2085ffb19a20",
+      "source": "images/studio/icon-palettes/source/gift.svg",
+      "source_sha256": "919c331cdd80679eecbfd8e46a35336fed7688293481f4ed8f742d3317f8ab3c",
+      "pdf": "images/studio/icon-palettes/gift.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "37d3fa04e74fa729bbf22fe3c216f200f1d41656b8b6e62f75e8b0d9c91f55f6"
+    },
+    {
+      "name": "share",
+      "parent": "assets/symbols/share.svg",
+      "parent_sha256": "4a4b2a2674ee5529787b981d0dad38061f6b1d74d7053f6860b8d9d251b3212e",
+      "source": "images/studio/icon-palettes/source/share.svg",
+      "source_sha256": "a0fc8808db5ee5e67d5ece5ec2f9bddbc3d9206056013a78c12167011fc0ee03",
+      "pdf": "images/studio/icon-palettes/share.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "530537af208f5e3b7803475a3a45aaf1710bed2eaeb369e8f88f77bac19f545b"
+    },
+    {
+      "name": "sun",
+      "parent": "assets/symbols/weather/sun.svg",
+      "parent_sha256": "40af521238ed65bd96fa18d9b74ca1d178c723f1bd33ba93679f765dd17ba87d",
+      "source": "images/studio/icon-palettes/source/sun.svg",
+      "source_sha256": "e18ffde2d97b8ced0d4b9c0ea2575581ce5e792a7b39bb7fe8875853e207d905",
+      "pdf": "images/studio/icon-palettes/sun.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "ffd29ecaf71842bfe504ef43d9f2dd829fdd27fc9e465c9e94a8d07ae229901d"
+    },
+    {
+      "name": "sun-small",
+      "parent": "assets/symbols/weather/sun-small.svg",
+      "parent_sha256": "8213d55fcacd3d7633acab677602dc742fb517504503f255e5492a5bbc64bb17",
+      "source": "images/studio/icon-palettes/source/sun-small.svg",
+      "source_sha256": "6636a38fa1124e458447b6090027acc4cd12948c779ea18aba2657d395bc97b8",
+      "pdf": "images/studio/icon-palettes/sun-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "7e512b2d2b036e0b7d36bbdc27e39fd075b7b4f864b3648d2aae21881c097ece"
+    },
+    {
+      "name": "staricon",
+      "parent": "assets/symbols/staricon.svg",
+      "parent_sha256": "03e7d95d8226fecbc1de25b1a95c04dbd4392fa84367a74f102bba0c41398dc7",
+      "source": "images/studio/icon-palettes/source/staricon.svg",
+      "source_sha256": "0ec774f2e98a4baf032f0c8129fbe1985c99b142365d3e0a7f2d7d2aa10ccf48",
+      "pdf": "images/studio/icon-palettes/staricon.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "90046a61eb5a297fdf0c36c6d50904f08418ccf91faff25e71668320244e4101"
+    },
+    {
+      "name": "earth",
+      "parent": "assets/symbols/weather/earth.svg",
+      "parent_sha256": "0f716561a681f63686e7bef9597088eaade12aa6deae70b2fac630df51424731",
+      "source": "images/studio/icon-palettes/source/earth.svg",
+      "source_sha256": "430dee0308a5cb993fd8efd2d40cd1af0629c2d62702ef65c40d2f77cba5c2ef",
+      "pdf": "images/studio/icon-palettes/earth.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "2755715eb41bc86bf70a823b693f2e49df2da876aad370a0670a86659cd2f27b"
+    },
+    {
+      "name": "earth-small",
+      "parent": "assets/symbols/weather/earth-small.svg",
+      "parent_sha256": "10ed1d88a45f2bfd943bd4a419e50ab0c8f08ad10ba2f29893f280c86214657b",
+      "source": "images/studio/icon-palettes/source/earth-small.svg",
+      "source_sha256": "653a062dba7c9d4a2b9b9fda16331317a49271691f07038b67dff248586c42ca",
+      "pdf": "images/studio/icon-palettes/earth-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "87f84a6b2b1cc1ea6ba82933f9b3ffe039184cd7c47e44be2d9a0af302a414ae"
+    },
+    {
+      "name": "bob",
+      "parent": "assets/characters/bob.svg",
+      "parent_sha256": "2a150d60cd96ed7c0e35ea5e78dae398634ac87947ff1ab043cce213569844e0",
+      "source": "images/studio/icon-palettes/source/bob.svg",
+      "source_sha256": "d6638add041bfbcab5e08b6a057a23a429c5602940fd000a5c6496c68d891690",
+      "pdf": "images/studio/icon-palettes/bob.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "8fde0b04340705d96d4d523aa479ebba815537ede9d9c3e3b833e7b254b360c1"
+    },
+    {
+      "name": "bull-large",
+      "parent": "assets/objects/animals/bull-large.svg",
+      "parent_sha256": "1be26d5917d3ad724aa564e9cacb68e7bb69fee4c78c137418f5dae3c705576f",
+      "source": "images/studio/icon-palettes/source/bull-large.svg",
+      "source_sha256": "0c78aaf36a482c33ab791a0d6fa920c3713fe21c1864802834da8628930e0d14",
+      "pdf": "images/studio/icon-palettes/bull-large.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "023c34cf6a8ad122ea7e0721c0094a379e652a507f66dcaec8caf0fa58677cc5"
+    },
+    {
+      "name": "bull-small",
+      "parent": "assets/objects/animals/bull-small.svg",
+      "parent_sha256": "fe85e189e3baebe7b49c08776c9d5b497c2255bc118d6d0779607fc3c52b0183",
+      "source": "images/studio/icon-palettes/source/bull-small.svg",
+      "source_sha256": "1b9bc608827f5bcd7704810b811cdc2f5b0736093d8bc2fb96ccf636f124f722",
+      "pdf": "images/studio/icon-palettes/bull-small.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "596c28ad930b2e5c0a346eacd71f16d9a7cee0105114cc45c41c344f2774d0da"
+    },
+    {
+      "name": "bull-tiny",
+      "parent": "assets/objects/animals/bull-tiny.svg",
+      "parent_sha256": "73d8969f30b8c922a2339dc52d6d8a9ab3768233a07a01c92b8edeccaf70cfac",
+      "source": "images/studio/icon-palettes/source/bull-tiny.svg",
+      "source_sha256": "4c05295c1c3a47a4b4d344797b6e658e81bcedf5eef5adffcbb0d02e8f07a7e7",
+      "pdf": "images/studio/icon-palettes/bull-tiny.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "d6c594112ac2ea60625ff7c2432e5b62422729e2d30133287ba9d0bba883b047"
+    },
+    {
+      "name": "bull-minimal",
+      "parent": "assets/objects/animals/bull-minimal.svg",
+      "parent_sha256": "bcba79f8eccda6824234337c6884bc8400867ab50e430766504f166eb6c87038",
+      "source": "images/studio/icon-palettes/source/bull-minimal.svg",
+      "source_sha256": "209f08bdd8ba3c6c1cebea5633d02bb86eae06f04fec5dde4311f280e1fca57b",
+      "pdf": "images/studio/icon-palettes/bull-minimal.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f15e3e7382f765a237ba42249e4cb1e9b3784adf9556cb078d597a26a834e09a"
+    },
+    {
+      "name": "warning",
+      "parent": "assets/symbols/warning.svg",
+      "parent_sha256": "61dfeb2ecddf1b3e3430e0bb725e0d99dc40b9b041de3d8bbf70fb65f213450f",
+      "source": "images/studio/icon-palettes/source/warning.svg",
+      "source_sha256": "632ad18395608850f6790d1e7a5c31ec60c3dc432ee200516d2be93de16caac2",
+      "pdf": "images/studio/icon-palettes/warning.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "868212a9592ddef860fb18b0cf831254ad4eb124829717e5ba73583555666eba"
+    },
+    {
+      "name": "question",
+      "parent": "assets/symbols/question.svg",
+      "parent_sha256": "aab242a68190c1217138aa6023504f512d16d2c3a6bc5990063e34f0aec5545f",
+      "source": "images/studio/icon-palettes/source/question.svg",
+      "source_sha256": "20403a59275bdf7253b725013d9060fc6e8ca36d3e6229fe3553eed00fe6d50d",
+      "pdf": "images/studio/icon-palettes/question.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "cbfabedf21234b3490c617de41de5d3b0ca5529a1f6547e06b0d46367a1af5ca"
+    },
+    {
+      "name": "bell",
+      "parent": "assets/objects/bell.svg",
+      "parent_sha256": "6afe472ead0bd26007673332aa765b907ee2e2063edc3b3dd6b69bf1a0be0302",
+      "source": "images/studio/icon-palettes/source/bell.svg",
+      "source_sha256": "455901cde82cf6a3b09f6dfb8d437817aa66916d093a35bf1c234f791c31f94f",
+      "pdf": "images/studio/icon-palettes/bell.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "26e42353fb579a68c66447af0fd05014621e0cebc004783f53f74ea3797aafd2"
+    },
+    {
+      "name": "leaf",
+      "parent": "assets/symbols/weather/leaf.svg",
+      "parent_sha256": "dada2e06c925782925d55da0e84a82e774aa848db89a19900dc40c8ed5de0730",
+      "source": "images/studio/icon-palettes/source/leaf.svg",
+      "source_sha256": "b1e3f17e587cc07074bd454c93f025b2d138d7cd7b492ff55a96d5810e5e90c8",
+      "pdf": "images/studio/icon-palettes/leaf.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "565fcfeaa94516ef4a7075329f8c3598e98e992bf183ea470fcb5a37e9843aac"
+    },
+    {
+      "name": "poop",
+      "parent": "assets/characters/poop.svg",
+      "parent_sha256": "06774ad2aeb256182ee0ddb0c55b2c986a76ba0b97a720e7bab2b09807c283b8",
+      "source": "images/studio/icon-palettes/source/poop.svg",
+      "source_sha256": "ec726a29f998e529a3da1682be5bd7c9ecd875999655487638564652bf31d0da",
+      "pdf": "images/studio/icon-palettes/poop.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "34e97f468dc367171cd6c98bc4ee81d748a29d316f71917335cf82a1fa514fad"
+    },
+    {
+      "name": "gavel",
+      "parent": "assets/objects/tools/gavel.svg",
+      "parent_sha256": "3e119af0cddc6571a5da789b626f7930bad68d701b06a667708f396263a04213",
+      "source": "images/studio/icon-palettes/source/gavel.svg",
+      "source_sha256": "2d5968bb977a2d87e6194b4084ea5ebd2393285f38c6d2a00a6910d15e6c9201",
+      "pdf": "images/studio/icon-palettes/gavel.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "061aeee0d29abc4a32a4e95e1dc44af3b34e1b59376e051883c128fb4f7c55e1"
+    },
+    {
+      "name": "face-sad",
+      "parent": "assets/characters/faces/face-sad.svg",
+      "parent_sha256": "1dcad7d75231786c69ea5a9850d50f0d72e39e7c7715dc8e8192e79831ed03d1",
+      "source": "images/studio/icon-palettes/source/face-sad.svg",
+      "source_sha256": "baae955ca08333e0752f0bec8b7fb16aa575bdf60ab468577a7bfad8bb5c41d2",
+      "pdf": "images/studio/icon-palettes/face-sad.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "4bb8f09062825a57a41315572797cb9986b537a8555cfd3f27c28d3822cbc90a"
+    },
+    {
+      "name": "face-crying",
+      "parent": "assets/characters/faces/face-crying.svg",
+      "parent_sha256": "3e879f1bda305cefba2f50084c85aac0f091bf64bc34a339accf5f3956f9a763",
+      "source": "images/studio/icon-palettes/source/face-crying.svg",
+      "source_sha256": "132062defff943d6fb7562276360502fee9c9b3971addff01c07265396f609f7",
+      "pdf": "images/studio/icon-palettes/face-crying.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "9437c55c8e444f6400ea6f4e0f9a1b2986709d9aa42649eb5b93ed6f4f1805aa"
+    },
+    {
+      "name": "arrow-right",
+      "parent": "assets/symbols/arrows/arrow-right.svg",
+      "parent_sha256": "f4e950421e97cc6ecc4a5a57f5f9b77519de74914e3f57fdfb8a426185a4debb",
+      "source": "images/studio/icon-palettes/source/arrow-right.svg",
+      "source_sha256": "5c64d418e72cf5f68dc979e2880a9d569be82e9f330831453e325b288708f7b5",
+      "pdf": "images/studio/icon-palettes/arrow-right.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f8395e860221a298765e82c6fe4a8dcca5fddc2a8ed2c099410e1b713bd24d3e"
+    },
+    {
+      "name": "arrow-down",
+      "parent": "assets/symbols/arrows/arrow-down.svg",
+      "parent_sha256": "bb33ea38cc66f816e43baa90c3d76e86a88ec9c42f6f1ddc06a2106f64a81fd0",
+      "source": "images/studio/icon-palettes/source/arrow-down.svg",
+      "source_sha256": "caf29630c69e92d8c923e44b6899dbf0442026fb3805d5e8a5c29aa287b276f1",
+      "pdf": "images/studio/icon-palettes/arrow-down.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "de17ec04a1c50b80b65294ed3bfce1c0bfff8bd13958cdcc03586b7ab5b19152"
+    },
+    {
+      "name": "arrow-up",
+      "parent": "assets/symbols/arrows/arrow-up.svg",
+      "parent_sha256": "a3e24da36e93b54282cde113e7fc6d2112cc525598cffd088416dbd9924e7abe",
+      "source": "images/studio/icon-palettes/source/arrow-up.svg",
+      "source_sha256": "02ce99e2906b1a0f9c24ed46dc9aaa7582d8154ac2b34556792410bd8ed4e234",
+      "pdf": "images/studio/icon-palettes/arrow-up.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e38ef954179d1827bee8f5870c3ef4978e056ccb36c6a62d48df3ce4551d2b03"
+    },
+    {
+      "name": "arrow-down-left",
+      "parent": "assets/symbols/arrows/arrow-down-left.svg",
+      "parent_sha256": "9de1612fcb2a94b87c2d2f6a9069f76f22a50c850ea3627a0d00380c341ec1e2",
+      "source": "images/studio/icon-palettes/source/arrow-down-left.svg",
+      "source_sha256": "7469ef01391428bc99ab6e317726d124e94750f26b607c71749d597c0ea967cf",
+      "pdf": "images/studio/icon-palettes/arrow-down-left.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "5f2ac1efb45b48cba7f4410f652329ada059d8723cda59e1e01272011629e406"
+    },
+    {
+      "name": "arrow-down-right",
+      "parent": "assets/symbols/arrows/arrow-down-right.svg",
+      "parent_sha256": "119773b5f5d86d415767292c49b0d0f6597c76ceaca7a2394be2c1470e24e1da",
+      "source": "images/studio/icon-palettes/source/arrow-down-right.svg",
+      "source_sha256": "f786ad3f6f91fec0343adc63f50077819904c3a668d87571dfacd1b730f3b9bc",
+      "pdf": "images/studio/icon-palettes/arrow-down-right.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "b960b5ce056a27c86d03569726b3c02501e359a0ea5d33aa1209a05494874045"
+    },
+    {
+      "name": "arrow-up-right",
+      "parent": "assets/symbols/arrows/arrow-up-right.svg",
+      "parent_sha256": "186f76e37556f4a8a93b32810f95f5bb3cef7054cdfceb18f7a88236cfd2e363",
+      "source": "images/studio/icon-palettes/source/arrow-up-right.svg",
+      "source_sha256": "885a4f8f165e37681dd56d3bfe47280bf8e331db4bad6ffd18128f5db5341f81",
+      "pdf": "images/studio/icon-palettes/arrow-up-right.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "fde432c34d4536de2d5b026fef164d414c9d14570e088e8583d6187d8b273027"
+    },
+    {
+      "name": "arrow-up-left",
+      "parent": "assets/symbols/arrows/arrow-up-left.svg",
+      "parent_sha256": "a255d8cb3495c4916e3c10a312fa91e17ed933539cea8353097012e598079c74",
+      "source": "images/studio/icon-palettes/source/arrow-up-left.svg",
+      "source_sha256": "3c2dd5b8a0ad5edef2256f670254e4d5df849213043eb15846f674802aa807f4",
+      "pdf": "images/studio/icon-palettes/arrow-up-left.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "38e97071a6d7a9b3fa908442ac70b602fda6a16c920d61e6a9062941ff57b86d"
+    },
+    {
+      "name": "arrow-left",
+      "parent": "assets/symbols/arrows/arrow-left.svg",
+      "parent_sha256": "6d8cb9bf231fc64df04061cf20420587ae0f73c59985b56f757e59327e594886",
+      "source": "images/studio/icon-palettes/source/arrow-left.svg",
+      "source_sha256": "43986f37c59cb2f0f6e4782808ca0d3e8fd75523d08f4edf5630c0c1eabaf123",
+      "pdf": "images/studio/icon-palettes/arrow-left.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "b962700452359cbeaccedca6832c2ee53f3dfd32133701f1801f38f8cd750ce4"
+    },
+    {
+      "name": "face-smile",
+      "parent": "assets/characters/faces/face-smile.svg",
+      "parent_sha256": "cdffef3daaafbb4d76f95206c5f13ba0f28f343a7074b7eda321270ebec535c1",
+      "source": "images/studio/icon-palettes/source/face-smile.svg",
+      "source_sha256": "7d0fe95ed34f1d66327530ad4f04148b8651996a1ab529695b568f33c86b650f",
+      "pdf": "images/studio/icon-palettes/face-smile.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "0a406ce5f5ef502070cb1cf4e8224d830181b1d459a2b565aefdf3799bf4f780"
+    },
+    {
+      "name": "skull",
+      "parent": "assets/characters/faces/skull.svg",
+      "parent_sha256": "b54e622b4d135b9c7a2960c0c146de03d3273a7f88200878c195953df7ebf607",
+      "source": "images/studio/icon-palettes/source/skull.svg",
+      "source_sha256": "3556af292ebf6aa288985b68488b4f666b1d070b883d4415b0b419f72d43e16a",
+      "pdf": "images/studio/icon-palettes/skull.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "cbda60d1c7419c559d88dedc4d7f8c37ede8ee3d14f901be50236683a2ef045e"
+    },
+    {
+      "name": "face-sweat",
+      "parent": "assets/characters/faces/face-sweat.svg",
+      "parent_sha256": "c128e77c31f9922a11b70bfb31ddb8dd19d79cbb8459446a2653ab0c2c16da1b",
+      "source": "images/studio/icon-palettes/source/face-sweat.svg",
+      "source_sha256": "37347e60e4d7ddc0ffad5299e6e4a0032afa2d26cbbcdd43edf004f18f7f2569",
+      "pdf": "images/studio/icon-palettes/face-sweat.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "7967c75c70cf971e6a1fdea1e3c9eadc012b60d619f248831b51745f99ea6c15"
+    },
+    {
+      "name": "face-laugh",
+      "parent": "assets/characters/faces/face-laugh.svg",
+      "parent_sha256": "e1bdf7f8a5d1ff0bbd37e76478e17e452e9c5762e7e81e05f1bc7cf562e0d7b8",
+      "source": "images/studio/icon-palettes/source/face-laugh.svg",
+      "source_sha256": "8a3ed65e76b5cfb124ecc3d159128523b8d92c8b60b0fab2c1b18124425c9e49",
+      "pdf": "images/studio/icon-palettes/face-laugh.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "183942850930a3b4575a353f6bc29a52b86c0dbcdb5fcba3f53603f9ceb67f84"
+    },
+    {
+      "name": "face-smirk",
+      "parent": "assets/characters/faces/face-smirk.svg",
+      "parent_sha256": "5a0062a06e422a0d96f1fb5996b31f9e5e6e0deb1cb7e5fc50da6a26d6e32aca",
+      "source": "images/studio/icon-palettes/source/face-smirk.svg",
+      "source_sha256": "94ac671d369552e5bee6374d9b0fdd5380cc41d5cce6ead13880cec7ed7fdd81",
+      "pdf": "images/studio/icon-palettes/face-smirk.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "bd3ac4aedf93391df7f3c7cf8cf236d3a32d0c5b8d3350de90b07c8d211e4aaa"
+    },
+    {
+      "name": "face-star-eyes",
+      "parent": "assets/characters/faces/face-star-eyes.svg",
+      "parent_sha256": "c17cbf7b8c9bd70156c9339b4393e2db839b8ddf12d9f885aacc489c0f05c2cc",
+      "source": "images/studio/icon-palettes/source/face-star-eyes.svg",
+      "source_sha256": "44307c480676d80763ebb401040a305bd1e4ebb79ae8f99708cae1d591fbf1f9",
+      "pdf": "images/studio/icon-palettes/face-star-eyes.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e355457ad12e0372c6ce71219131eaef74521290f86c8674ff84a72fd32208ff"
+    },
+    {
+      "name": "face-sunglasses",
+      "parent": "assets/characters/faces/face-sunglasses.svg",
+      "parent_sha256": "f6bf307cbec75d1c964401be2d0b8e2e06f90446b46dced441a7b20c5531fd86",
+      "source": "images/studio/icon-palettes/source/face-sunglasses.svg",
+      "source_sha256": "d5e7c2eb8e16f323cbf4e73f4eaad9197a3f30e6aaf131cedf67105fe72e152b",
+      "pdf": "images/studio/icon-palettes/face-sunglasses.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "1a25c234c0ff70099c6147930d575decd2cb89bd22688a0556f6daf8181451b0"
+    },
+    {
+      "name": "face-thinking",
+      "parent": "assets/characters/faces/face-thinking.svg",
+      "parent_sha256": "53f551cb78712fa95e7679f7081de821d13764db2f482ab48dbe75f0bcabefc0",
+      "source": "images/studio/icon-palettes/source/face-thinking.svg",
+      "source_sha256": "213c563db7cbdd3115bce9b82a25fb7065d7ee8bc82db0e536515dccacc5d6a6",
+      "pdf": "images/studio/icon-palettes/face-thinking.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "1bfd667e4fe3d047e007cebcfcee51b6aaaa3418226962b3fa905021e3e145a5"
+    },
+    {
+      "name": "face-wide-eyed",
+      "parent": "assets/characters/faces/face-wide-eyed.svg",
+      "parent_sha256": "06955baa55d57407d8b0b1834f33ef7f8f5aed17b8c23588aaa0b9f483be96e7",
+      "source": "images/studio/icon-palettes/source/face-wide-eyed.svg",
+      "source_sha256": "2740427bf8e5d5d037c2957c5091ae727bbdc1a5ac35b12f7977dcf5531a1880",
+      "pdf": "images/studio/icon-palettes/face-wide-eyed.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "6dea945e2e19c1c9a31fdcad8e493a92d0476f5c6a6d381fad7c449e4c0ade2f"
+    },
+    {
+      "name": "face-angry",
+      "parent": "assets/characters/faces/face-angry.svg",
+      "parent_sha256": "3c1c74e407308ae249f783d7a813be6d85bb00b1c6e7f2ad71f17d6b5b21f01c",
+      "source": "images/studio/icon-palettes/source/face-angry.svg",
+      "source_sha256": "7a7d27859fa6e2dfeae10473edc26051ab28dd5facdd4737c87bdda2e29aeb36",
+      "pdf": "images/studio/icon-palettes/face-angry.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "fbb315f4a4e7ef98ee2577904aa19911c20319e7be7357b9bbabb04753f7a5bb"
+    },
+    {
+      "name": "face-devil",
+      "parent": "assets/characters/faces/face-devil.svg",
+      "parent_sha256": "2d921560bf4df599189a2bbdb5b66772d1b5ef3436b8bd1477c8e807df5a3a35",
+      "source": "images/studio/icon-palettes/source/face-devil.svg",
+      "source_sha256": "9e8704a527127650b244ff7de88e98f99e00d137e6a754884dc7c1ba3205f62e",
+      "pdf": "images/studio/icon-palettes/face-devil.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f04de474318a5f87bd4d43763765b517deb14e2a846656a5e9c1cf1d911691b2"
+    },
+    {
+      "name": "face-upside-down",
+      "parent": "assets/characters/faces/face-upside-down.svg",
+      "parent_sha256": "7817ba92d8f55c917fbabb5cc000dc29cf9cfc37c49da33098467d177bea17c3",
+      "source": "images/studio/icon-palettes/source/face-upside-down.svg",
+      "source_sha256": "e197b651868cc6f828f221fdb4bc346d181eb435a2fb693bb61d766b51d18ad9",
+      "pdf": "images/studio/icon-palettes/face-upside-down.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "449eec2a83677147770d2346d1c78d8d5769968b88ed7e006a511322173af209"
+    },
+    {
+      "name": "face-steaming",
+      "parent": "assets/characters/faces/face-steaming.svg",
+      "parent_sha256": "bb36e0dcf9a6ff85948c0e44b53dfbcbff55559d25dc0983b33100fec53a70f6",
+      "source": "images/studio/icon-palettes/source/face-steaming.svg",
+      "source_sha256": "b97aad868145d4fca773ac6edc7f9e4edc140da8f5f86a798a4517a24d03a841",
+      "pdf": "images/studio/icon-palettes/face-steaming.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "52007dafabf6b0b4d3a87606a6f7c93f7ac4287c10d7cc64d8231ce30e6557ba"
+    },
+    {
+      "name": "face-scrunched",
+      "parent": "assets/characters/faces/face-scrunched.svg",
+      "parent_sha256": "fc2cba9832bce7bacfa16180f48cfed1db924a1cfb4eb611582dbd1eff5eb020",
+      "source": "images/studio/icon-palettes/source/face-scrunched.svg",
+      "source_sha256": "1da7bd792c0d2f319da854d4637c40e1f805bf3fc2f57f9a92b723cb407cce61",
+      "pdf": "images/studio/icon-palettes/face-scrunched.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "30bf02ab2a668eabc1f5a53609a6e238cb61c40aa7ffee87a5e6828fb065b0ed"
+    },
+    {
+      "name": "face-distressed",
+      "parent": "assets/characters/faces/face-distressed.svg",
+      "parent_sha256": "719fb2b0156d0ab1aadecad57dee10abd0690cd61d4d162df844bc3c4f50b64a",
+      "source": "images/studio/icon-palettes/source/face-distressed.svg",
+      "source_sha256": "f504bcbaef8ddeeb3e84c5ef1822e8f56769b8a523174d451a3d9211daf85de6",
+      "pdf": "images/studio/icon-palettes/face-distressed.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e00ba85fbb683ec05507c3f80501085a04a594574d581df2a9c66d6755d36b9f"
+    },
+    {
+      "name": "face-tears",
+      "parent": "assets/characters/faces/face-tears.svg",
+      "parent_sha256": "e75cede9074c564a291bb0b232d20a4e1e78be167a6b6e5f0fdee77837f058e9",
+      "source": "images/studio/icon-palettes/source/face-tears.svg",
+      "source_sha256": "8ebfa1c0d6890bd289d27119ce1c5d64dca4a1d8bdda70c17aded3671c5b0a2c",
+      "pdf": "images/studio/icon-palettes/face-tears.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "1747612597ff8d69fae6023703ff844b0ca8a0cd8f67f3628f6b2c10bb415d82"
+    },
+    {
+      "name": "face-weeping",
+      "parent": "assets/characters/faces/face-weeping.svg",
+      "parent_sha256": "4afab4e57febfa5698da6bef78050881dd8ddd2f174f3b3f78d2a0f20129c61f",
+      "source": "images/studio/icon-palettes/source/face-weeping.svg",
+      "source_sha256": "45b3c595044787e94f0a6d343de79780c9aceb5eb68a4eca746b9d681dd16fdb",
+      "pdf": "images/studio/icon-palettes/face-weeping.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "de5fbd1977e33945bfc8edb73135e89c2b146c34327ebc70f08e75adbd746a2b"
+    },
+    {
+      "name": "face-worried",
+      "parent": "assets/characters/faces/face-worried.svg",
+      "parent_sha256": "d71614c8805ced1b4d892c2dbff0c642736c04341d8f2c135190d66c5f2f610e",
+      "source": "images/studio/icon-palettes/source/face-worried.svg",
+      "source_sha256": "90d19a3fd0bc72cf64f05be3169b04be38fa346b0126d89c51a5359853d213e6",
+      "pdf": "images/studio/icon-palettes/face-worried.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "94c3a2a5eddac65307bf1663629245e728559fae5f5aa8477aba85eede878b8b"
+    },
+    {
+      "name": "phone",
+      "parent": "assets/objects/technology/phone.svg",
+      "parent_sha256": "696437b9a414697cf65841e84361e4362de099933f613214d143725a10df28d2",
+      "source": "images/studio/icon-palettes/source/phone.svg",
+      "source_sha256": "2c04420726ac7629d4eee51fe96fe89b3cab7a387424ee5ed876c882bd4b89ac",
+      "pdf": "images/studio/icon-palettes/phone.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "206de3ed5ac76c717cb85cb466505f91c71ccc3e9425fc4ca4ad50fdd3ca1704"
+    },
+    {
+      "name": "phone-keypad",
+      "parent": "assets/objects/technology/phone-keypad.svg",
+      "parent_sha256": "b87d3d9a0176dc7841a508734674f8e2a0bbc0a3f1de3d9ddc75a3a3d92a729c",
+      "source": "images/studio/icon-palettes/source/phone-keypad.svg",
+      "source_sha256": "cd28e4aafdeb57fed0ce34cc8853554c70aa8226d59afa0f7dce4aadc45787e2",
+      "pdf": "images/studio/icon-palettes/phone-keypad.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "dd65d96772d63b13392ab396cf63e631420fb2f6328e5335efaaea35617aeb79"
+    },
+    {
+      "name": "hammer",
+      "parent": "assets/objects/tools/hammer.svg",
+      "parent_sha256": "c4a76b9d0f29c2175f7af4acd8665478da69167e5b19be11657abac833b54b73",
+      "source": "images/studio/icon-palettes/source/hammer.svg",
+      "source_sha256": "de925b3ac26c3346f19564eb3e63703ce01aa263f0aff011147d1dcf14831861",
+      "pdf": "images/studio/icon-palettes/hammer.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "026d15cb9cedbce919bef1c492fc614fefef375b6a754cebe7efd0bfb86b112b"
+    },
+    {
+      "name": "phone-button",
+      "parent": "assets/objects/technology/phone-button.svg",
+      "parent_sha256": "7a9b909d6757f519a81affcc3438efbf48554fd31117e60465abaf2d9a6301c2",
+      "source": "images/studio/icon-palettes/source/phone-button.svg",
+      "source_sha256": "512fb06d9a4d3b5ea01ee481ccf8b942ce8699f32ccf7bd7d9165bd4ccb2f736",
+      "pdf": "images/studio/icon-palettes/phone-button.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f6ead4bc27e07baf2289cf54ae2aa12e517a474e9e6cb0d7cafe6cf0b2691f43"
+    },
+    {
+      "name": "face-kiss",
+      "parent": "assets/characters/faces/face-kiss.svg",
+      "parent_sha256": "bf7aa2eca63affd4d1bb081d571c3d4e7054b9a201e62c7958be25f02127f736",
+      "source": "images/studio/icon-palettes/source/face-kiss.svg",
+      "source_sha256": "81c1160a938ba616f753a547bab453c1465f52548d33c5ba7b5d3ae025a601a9",
+      "pdf": "images/studio/icon-palettes/face-kiss.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "a9ec7653cd37cc26f9d7a10e87c3ac7b550abb49071a37012b66aa64f8e345ce"
+    },
+    {
+      "name": "hourglass",
+      "parent": "assets/objects/hourglass.svg",
+      "parent_sha256": "9eef146aa187219c2326d69c0374a7679849abad1d141ed6c2d565e336a91edb",
+      "source": "images/studio/icon-palettes/source/hourglass.svg",
+      "source_sha256": "e1c4cd35f5ab42c90ee9955c562c40903b37dd4890738665b2ac8b7c6010c5e1",
+      "pdf": "images/studio/icon-palettes/hourglass.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "ebbbc77029e9f1a59fe016ca95c4bf8a2700f30b1a84bb6cccdd6a0467a75915"
+    },
+    {
+      "name": "screwdriver",
+      "parent": "assets/objects/tools/screwdriver.svg",
+      "parent_sha256": "eefb77b1041c8f4cd3a4496d4d2118f7a6d9545cf7ea3f2a5b62afe14e36d842",
+      "source": "images/studio/icon-palettes/source/screwdriver.svg",
+      "source_sha256": "5328b510d39231dd628dcb92e45c3cc90e793ce16d8ef2e39093d6dc6e204bd5",
+      "pdf": "images/studio/icon-palettes/screwdriver.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "2319be1b81ba524a23534c50aa9d2d1a3f915f81c9bff9438d477cb9e822855c"
+    },
+    {
+      "name": "shield",
+      "parent": "assets/objects/security/shield.svg",
+      "parent_sha256": "ceb03e3e00c4fbf01c14a107b5562fabddf58db0236bd0ab4cc2e6d7bff65917",
+      "source": "images/studio/icon-palettes/source/shield.svg",
+      "source_sha256": "407a3e34acda8697290a0357bb5818ea8f3807a759a87efbbbe8a8b0cfe147e9",
+      "pdf": "images/studio/icon-palettes/shield.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f6df4a3cc80cc4b387d6b25376a5b9f71b66e952f65d28fb89d4866fdc2b5246"
+    },
+    {
+      "name": "wrench",
+      "parent": "assets/objects/tools/wrench.svg",
+      "parent_sha256": "d402779ba1bf21579228004093619c0d7f2f45de39166a33454c6e8b22ccc4d9",
+      "source": "images/studio/icon-palettes/source/wrench.svg",
+      "source_sha256": "ce1afba083156a1cde9c7bafde555968b4e59a32b503199d778a0d85238c5e5f",
+      "pdf": "images/studio/icon-palettes/wrench.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "a0f5ecce77b8c639693f8d41c55b729fec2f01e3cc96cd27c2f41859ad67a9b8"
+    },
+    {
+      "name": "shovel",
+      "parent": "assets/objects/tools/shovel.svg",
+      "parent_sha256": "3f5732efad67b839e8b26577fcb232e8edf1999a588a4cdc409452d16da414bc",
+      "source": "images/studio/icon-palettes/source/shovel.svg",
+      "source_sha256": "b0e41dff09366887c38f9431877ad0e7113d183bc805abbe0f9f9bbf2feefdc1",
+      "pdf": "images/studio/icon-palettes/shovel.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "1dc91005993a708276d79ca131c29bedcc2db429102ca816bf6c564a8cddff49"
+    },
+    {
+      "name": "storm",
+      "parent": "assets/symbols/weather/storm.svg",
+      "parent_sha256": "5af55e972853fe000038d2e9c7c4ebc3e6ffe64cbfffd50c6128445d92bf8c01",
+      "source": "images/studio/icon-palettes/source/storm.svg",
+      "source_sha256": "af414e6d67f8139321d8416726a680fc3b908555adcf5aa086ea438398b693ea",
+      "pdf": "images/studio/icon-palettes/storm.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "20b63a02bd3334494d7b6fa60ea64767cfb1e1eb0cd9a2b5980cdfeb49aa8727"
+    },
+    {
+      "name": "rain",
+      "parent": "assets/symbols/weather/rain.svg",
+      "parent_sha256": "1c8d828767ffebee572cde34a4e87dca90f394c877a0983369efb1e06238e9a7",
+      "source": "images/studio/icon-palettes/source/rain.svg",
+      "source_sha256": "12c99aeb00f846f1d8ff3165a3f88649ce895ec8aaab99df1ad85f3c15fef27d",
+      "pdf": "images/studio/icon-palettes/rain.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "30ac09b1ae5ac6bd98cf55a87c0838b36507e80e393fdd29c61e371231b105d5"
+    },
+    {
+      "name": "snow",
+      "parent": "assets/symbols/weather/snow.svg",
+      "parent_sha256": "adb6f1cfc7c6793660d4bc19e4bbb3fc76bdbcf2083a1874163bba3a23dd2934",
+      "source": "images/studio/icon-palettes/source/snow.svg",
+      "source_sha256": "37fffbb9f33d20a2f3e996602d2b26f3ee448a54ec45ac3548ee9be159cfa7e2",
+      "pdf": "images/studio/icon-palettes/snow.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "7d1ef2af03e3b642dd861e4daad330a8ad03a4117049276464d30d990b0c1167"
+    },
+    {
+      "name": "pickaxe",
+      "parent": "assets/objects/tools/pickaxe.svg",
+      "parent_sha256": "65c847f55a5f7da88cd67f86e52c3166a3286756c882f5c0b2e7bd7f28f72616",
+      "source": "images/studio/icon-palettes/source/pickaxe.svg",
+      "source_sha256": "62e439207039e649927cfea867ed5043aee32178dac6c31073471f0114bc28f1",
+      "pdf": "images/studio/icon-palettes/pickaxe.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "b0b8d839b9c834355e5b28563661cfa7861a4bbe18471bd578d20d7f42caef9b"
+    },
+    {
+      "name": "face-zipper",
+      "parent": "assets/characters/faces/face-zipper.svg",
+      "parent_sha256": "c1df0595a429c373854b488c29c3fba0606c17010766dc9c2ef951af5b8bc07a",
+      "source": "images/studio/icon-palettes/source/face-zipper.svg",
+      "source_sha256": "0c466e87bb57fad30db1c0158d6ac1a0c5de3f826fd31f9023f5cee1f37ef733",
+      "pdf": "images/studio/icon-palettes/face-zipper.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "d30f2c7ff0d6c262fd85fc7986c18a2361ed9c63f3ce76aa52131615c13f07c5"
+    },
+    {
+      "name": "door",
+      "parent": "assets/objects/buildings/door.svg",
+      "parent_sha256": "407f6400b434fb02af19f86d20632e5c93b980ec6db5d0679d87fcfc1fd2e3eb",
+      "source": "images/studio/icon-palettes/source/door.svg",
+      "source_sha256": "68a5801a0cec763a0229bcdcd330bdda214450dcb93b8825cf5e594d4f3827dd",
+      "pdf": "images/studio/icon-palettes/door.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "91bed11d4d55ab7e7b8ffa0ef577f8c5a606f40b58808e6502be425d8c20ed0f"
+    },
+    {
+      "name": "information",
+      "parent": "assets/symbols/information.svg",
+      "parent_sha256": "0c793e8c7b431c229290e10f565ecd96fc99a44b34e56e8c62d401e96b34e98c",
+      "source": "images/studio/icon-palettes/source/information.svg",
+      "source_sha256": "c01f0738c4a3e3f961c5db8851f91c4f66747416f7b815b865e127ed30c922d4",
+      "pdf": "images/studio/icon-palettes/information.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e18560d80f25acf69c7a9b3e8e5a8c23a8dcae6e9d60bd7de14f6d6903fe6ab7"
+    },
+    {
+      "name": "coin",
+      "parent": "assets/objects/coin.svg",
+      "parent_sha256": "bc648773927bd1b2b854aec8dfc3f51bc964570b8108f958745afb4e76d6a2e2",
+      "source": "images/studio/icon-palettes/source/coin.svg",
+      "source_sha256": "dba8a1d28c4b24267b2aeff66e6e16b1a867e6fe371d2de7be0a8269bb6c6927",
+      "pdf": "images/studio/icon-palettes/coin.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "db35660b4cfeae2191672820095e8c172081f49c41e31e8e73b5ced215d70117"
+    },
+    {
+      "name": "face-neutral",
+      "parent": "assets/characters/faces/face-neutral.svg",
+      "parent_sha256": "f618baa9362d68fda106f772dbd6b2f3f8e0cc6a689bad999fb1a73114fb7b53",
+      "source": "images/studio/icon-palettes/source/face-neutral.svg",
+      "source_sha256": "82aebbc5eabfbcd6faaba8c1ded880fc21e0dfad7e15b8bf088b9ecd230b3350",
+      "pdf": "images/studio/icon-palettes/face-neutral.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "972e4d360c641653c009ee9193bb74d8b82ab2b86a3e0bd2678b60ebb4ddec06"
+    },
+    {
+      "name": "face-angel",
+      "parent": "assets/characters/faces/face-angel.svg",
+      "parent_sha256": "09ca98032d13c012a637066dd4e6fdc12abe3c501c8afd3180ac8308d43e2a40",
+      "source": "images/studio/icon-palettes/source/face-angel.svg",
+      "source_sha256": "ca24c7f9751755178ba73125ee7034a902fb7ff450debd30899d5cd4a705ff85",
+      "pdf": "images/studio/icon-palettes/face-angel.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "c13b176d5ec6088204c8c820b1cdb9fdddac923cf8616f9747265a8ff86e2ea7"
+    },
+    {
+      "name": "flag",
+      "parent": "assets/symbols/flag.svg",
+      "parent_sha256": "728287347fd8df10a9cc2441c23c89e51ee0796557faf01f80092613c2efbec6",
+      "source": "images/studio/icon-palettes/source/flag.svg",
+      "source_sha256": "957171a89b831cd4606ca30ac51f1b64b44416fa6c342aa2dcdd456197a2c53e",
+      "pdf": "images/studio/icon-palettes/flag.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "fa7d9fdf4f477a42c26980a0b7eb586e76a13e1d428bd423c7fab49ee69a9706"
+    },
+    {
+      "name": "flag-checkered",
+      "parent": "assets/symbols/flag-checkered.svg",
+      "parent_sha256": "63fbe91b259a06ca224275148eb6daede3cbc8966804dd0fcf7b53cda419bcc0",
+      "source": "images/studio/icon-palettes/source/flag-checkered.svg",
+      "source_sha256": "35d4361706c4b8aca0f9d6fef7ee6e89d5e3b8fff197b35c74157b47a290f5a0",
+      "pdf": "images/studio/icon-palettes/flag-checkered.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "a45880e4bb8068c0a7d5cde3afeb81319b253de09f0a516a83e656264547688f"
+    },
+    {
+      "name": "face-shocked",
+      "parent": "assets/characters/faces/face-shocked.svg",
+      "parent_sha256": "40a86d7443ada015a0b24c82c16a297c97f2fb8eeee57b5895fca79cbd5a04d3",
+      "source": "images/studio/icon-palettes/source/face-shocked.svg",
+      "source_sha256": "ea9ba33a89b1b03162ba44ad6787e2808c2cf2d2f6b7c5f023e308b7683c524a",
+      "pdf": "images/studio/icon-palettes/face-shocked.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "b03d55bd122dc9e23ce18b4ef01eb7c89a9a123075b9d0f60ce8bc3f317faf0f"
+    },
+    {
+      "name": "laptop",
+      "parent": "assets/objects/technology/laptop.svg",
+      "parent_sha256": "324782e1d845b7eba7139ac00ea9009d5d4629bcc1992a1b86060b32b67c8277",
+      "source": "images/studio/icon-palettes/source/laptop.svg",
+      "source_sha256": "c0386fc5819417d312fa54bda8067e18468f7dc1fc7bfaaa27e0be9edeae7caa",
+      "pdf": "images/studio/icon-palettes/laptop.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "e67571448d9102a5c7b7c907ed4967a2100484bda0dce4511a00b17299b3f952"
+    },
+    {
+      "name": "trooper-helmet",
+      "parent": "assets/characters/trooper-helmet.svg",
+      "parent_sha256": "446c50be6899121fd27fe4fe952a8f97d1039b7d2ed55bc5014c906d90e57fad",
+      "source": "images/studio/icon-palettes/source/trooper-helmet.svg",
+      "source_sha256": "387e7332f7485d5ccdd1307e16751eb9c204901316ae2db4fbd08fff255cf2af",
+      "pdf": "images/studio/icon-palettes/trooper-helmet.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "f42ce13e4772805785a18ac5454cc391c96a569780ce93475edd4b9e5db816cf"
+    },
+    {
+      "name": "space-station",
+      "parent": "assets/objects/space-station.svg",
+      "parent_sha256": "aa70ba1f4e059359946a5fd99721163f6671a915418446ef7d0fef84cfabbb0f",
+      "source": "images/studio/icon-palettes/source/space-station.svg",
+      "source_sha256": "7e9e44b6faad61de62e9de4eb48545769dd7a5b173b4f226e9a3619276686cd5",
+      "pdf": "images/studio/icon-palettes/space-station.pdf",
+      "crop": "same ink bounds as original library",
+      "pdf_sha256": "97b329329befc0c84c256cf03edc0d1590ad1787ad416bd73bc6df08ca96d153"
+    }
+  ]
+}

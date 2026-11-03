@@ -14,6 +14,18 @@ Model: `contact-qr` · Family: Closing · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/contact.md)
+
+```latex
+\studiotemplate[variant=contact,palette=blue]{contact}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -48,8 +60,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={@BitPolito},
-  text/1={\textcopyright{} 2026 BitPolito}
+  text/2={Title},
+  text/1={Label 1}
 ]{contact-qr}
 ```
 
@@ -65,8 +77,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={@BitPolito},
-  text/1={\textcopyright{} 2026 BitPolito}
+  text/2={Title},
+  text/1={Label 1}
 ]{contact-qr}
 \end{document}
 ```
@@ -86,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 28.0% wide × 13.7% high | <code>\includegraphics[width=537\studiounit]{images/studio/collection/figma-0943-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 30.5% wide × 92.9% high | <code>\includegraphics[width=585\studiounit]{images/studio/collection/figma-0943-part-02.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper centre | 13.1% wide × 3.9% high | <code>\textcopyright{} 2026 BitPolito</code> |
-| <code>title</code> | Main text (text) | middle right | 17.2% wide × 8.2% high | <code>@BitPolito</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 28.0% wide × 13.7% high | <code>\studiopaletteimage[width=537\studiounit]{images/studio/neutral/contact-qr-graphic-1.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 30.5% wide × 92.9% high | <code>{\color{black}\qrcode[height=497.25\studiounit]{https://example.org}}</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 13.1% wide × 3.9% high | <code>Label 1</code> |
+| <code>title</code> | Main text (text) | middle right | 17.2% wide × 8.2% high | <code>Title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -2,7 +2,7 @@
 
 # Section divider with line
 
-Separate sections.
+Demonstrate this reusable composition.
 
 Model: `section-divider` · Family: Opening · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `section-divider` · Family: Opening · Status: **in review**.
 ![Section divider with line](../previews/section-divider.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/section-divider.md)
+
+```latex
+\studiotemplate[variant=default,palette=blue]{section-divider}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -46,7 +58,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your section}
+  text/1={Slide title}
 ]{section-divider}
 ```
 
@@ -62,7 +74,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your section}
+  text/1={Slide title}
 ]{section-divider}
 \end{document}
 ```
@@ -82,8 +94,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.3% wide × 39.6% high | <code>\includegraphics[width=152\studiounit]{images/studio/collection/figma-0697-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 70.3% wide × 15.8% high | <code>Why Bitcoin?</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.3% wide × 39.6% high | <code>\studiopaletteimage[width=152\studiounit]{images/studio/collection/figma-0697-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle centre | 70.3% wide × 15.8% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

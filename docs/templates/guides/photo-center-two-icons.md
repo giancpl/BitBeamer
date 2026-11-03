@@ -14,6 +14,18 @@ Model: `photo-center-two-icons` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/photo-center-two-icons.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{photo-center-two-icons}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -46,7 +58,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={``Rules without rulers''}
+  text/1={Slide title}
 ]{photo-center-two-icons}
 ```
 
@@ -62,7 +74,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={``Rules without rulers''}
+  text/1={Slide title}
 ]{photo-center-two-icons}
 \end{document}
 ```
@@ -82,8 +94,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 45.7% wide × 73.6% high | <code>\includegraphics[width=1626\studiounit]{images/studio/collection/figma-0620-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 33.8% wide × 7.5% high | <code>``Rules without rulers&#x27;&#x27;</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 45.7% wide × 73.6% high | <code>\studiopaletteimage[width=1626\studiounit]{images/studio/collection/figma-0620-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 33.8% wide × 7.5% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

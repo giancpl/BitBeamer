@@ -2,7 +2,7 @@
 
 # Image on the left
 
-Pair a large image with a short label.
+Demonstrate this reusable composition.
 
 Model: `image-left` · Family: Images · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `image-left` · Family: Images · Status: **in review**.
 ![Image on the left](../previews/image-left.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/image-text.md)
+
+```latex
+\studiotemplate[variant=left,palette=light]{image-text}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -46,7 +58,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your subject},
+  text/1={Slide title},
   graphic/1={\asset[width=3cm]{alice}}
 ]{image-left}
 ```
@@ -63,7 +75,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your subject},
+  text/1={Slide title},
   graphic/1={\asset[width=3cm]{alice}}
 ]{image-left}
 \end{document}
@@ -84,8 +96,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 59.3% wide × 100.0% high | <code>\includegraphics[width=2107\studiounit]{images/studio/collection/figma-0701-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle right | 24.0% wide × 8.4% high | <code>Wallet desktop</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 59.3% wide × 100.0% high | <code>\studiopaletteimage[width=2107\studiounit]{images/studio/collection/figma-0701-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle right | 24.0% wide × 8.4% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

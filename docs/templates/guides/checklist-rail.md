@@ -14,6 +14,18 @@ Model: `checklist-rail` · Family: Lists · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/checklist-rail.md)
+
+```latex
+\studiotemplate[variant=default,palette=blue]{checklist-rail}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -49,9 +61,9 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={Installing\\RaspiBlitz},
-  heading/1={Download the RaspiBlitz image},
-  body/1={From the official GitHub repository or website.}
+  text/3={Title},
+  heading/1={Step 1},
+  body/1={Supporting detail.}
 ]{checklist-rail}
 ```
 
@@ -67,9 +79,9 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={Installing\\RaspiBlitz},
-  heading/1={Download the RaspiBlitz image},
-  body/1={From the official GitHub repository or website.}
+  text/3={Title},
+  heading/1={Step 1},
+  body/1={Supporting detail.}
 ]{checklist-rail}
 \end{document}
 ```
@@ -89,11 +101,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | middle left | 20.5% wide × 15.6% high | <code>Installing\\RaspiBlitz</code> |
-| <code>text-2</code> | Editable text (text) | upper right | 40.8% wide × 9.5% high | <code>\textbf{Download the RaspiBlitz image}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont From the official GitHub ...</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Write the image to an SD card}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Use balenaEtcher to write...</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Configure the device}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Insert the SD card and SSD into th...</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 40.8% wide × 9.5% high | <code>\textbf{Start RaspiBlitz}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Connect network and power; use a monit...</code> |
+| <code>title</code> | Main text (text) | middle left | 20.5% wide × 15.6% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | upper right | 40.8% wide × 9.5% high | <code>\textbf{Step 1}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Step 2}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Step 4}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 40.8% wide × 9.5% high | <code>\textbf{Step 5}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

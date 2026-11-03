@@ -14,6 +14,18 @@ Model: `encryption-flow` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/transformation.md)
+
+```latex
+\studiotemplate[variant=flow,palette=light]{transformation}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -64,8 +76,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/6={Encryption},
-  text/1={Data}
+  text/6={Title},
+  text/1={1}
 ]{encryption-flow}
 ```
 
@@ -81,8 +93,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/6={Encryption},
-  text/1={Data}
+  text/6={Title},
+  text/1={1}
 ]{encryption-flow}
 \end{document}
 ```
@@ -102,26 +114,26 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.7% wide × 7.5% high | <code>\includegraphics[width=274\studiounit]{images/studio/collection/figma-0593-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.6% wide × 8.5% high | <code>\includegraphics[width=271\studiounit]{images/studio/collection/figma-0593-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.5% wide × 12.8% high | <code>\includegraphics[width=195\studiounit]{images/studio/collection/figma-0593-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper left | 6.6% wide × 17.1% high | <code>\includegraphics[width=235\studiounit]{images/studio/collection/figma-0593-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.6% wide × 17.1% high | <code>\includegraphics[width=235\studiounit]{images/studio/collection/figma-0593-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | upper right | 6.6% wide × 17.1% high | <code>\includegraphics[width=235\studiounit]{images/studio/collection/figma-0593-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 13.0% high | <code>\includegraphics[width=273\studiounit]{images/studio/collection/figma-0593-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.0% wide × 13.8% high | <code>\includegraphics[width=106\studiounit]{images/studio/collection/figma-0593-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.0% wide × 13.8% high | <code>\includegraphics[width=106\studiounit]{images/studio/collection/figma-0593-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle right | 7.7% wide × 13.0% high | <code>\includegraphics[width=273\studiounit]{images/studio/collection/figma-0593-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.5% wide × 12.9% high | <code>\includegraphics[width=195\studiounit]{images/studio/collection/figma-0593-part-11.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle left | 4.4% wide × 4.3% high | <code>Data</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 16.9% wide × 4.4% high | <code>Encrypted data</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 4.4% wide × 4.3% high | <code>Data</code> |
-| <code>title</code> | Main text (text) | middle centre | 12.2% wide × 5.7% high | <code>Encryption</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 20.5% wide × 4.9% high | <code>Bob&#x27;s public key</code> |
-| <code>text-6</code> | Editable text (text) | middle left | 5.3% wide × 4.3% high | <code>Alice</code> |
-| <code>text-7</code> | Editable text (text) | middle right | 4.4% wide × 4.3% high | <code>Bob</code> |
-| <code>text-8</code> | Editable text (text) | lower centre | 19.0% wide × 4.9% high | <code>Bob&#x27;s private key</code> |
-| <code>text-9</code> | Editable text (text) | middle centre | 13.8% wide × 5.7% high | <code>Decryption</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.7% wide × 7.5% high | <code>\studiopaletteimage[width=274\studiounit]{images/studio/collection/figma-0593-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.6% wide × 8.5% high | <code>\studiopaletteimage[width=271\studiounit]{images/studio/collection/figma-0593-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.5% wide × 12.8% high | <code>\studiopaletteimage[width=195\studiounit]{images/studio/collection/figma-0593-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper left | 6.6% wide × 17.1% high | <code>\studiopaletteimage[width=235\studiounit]{images/studio/collection/figma-0593-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.6% wide × 17.1% high | <code>\studiopaletteimage[width=235\studiounit]{images/studio/collection/figma-0593-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | upper right | 6.6% wide × 17.1% high | <code>\studiopaletteimage[width=235\studiounit]{images/studio/collection/figma-0593-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 13.0% high | <code>\studiopaletteimage[width=273\studiounit]{images/studio/collection/figma-0593-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.0% wide × 13.8% high | <code>\studiopaletteimage[width=106\studiounit]{images/studio/collection/figma-0593-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.0% wide × 13.8% high | <code>\studiopaletteimage[width=106\studiounit]{images/studio/collection/figma-0593-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle right | 7.7% wide × 13.0% high | <code>\studiopaletteimage[width=273\studiounit]{images/studio/collection/figma-0593-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.5% wide × 12.9% high | <code>\studiopaletteimage[width=195\studiounit]{images/studio/collection/figma-0593-part-11.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle left | 4.4% wide × 4.3% high | <code>1</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 16.9% wide × 4.4% high | <code>Label 2</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 4.4% wide × 4.3% high | <code>3</code> |
+| <code>title</code> | Main text (text) | middle centre | 12.2% wide × 5.7% high | <code>Title</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 20.5% wide × 4.9% high | <code>Label 8</code> |
+| <code>text-6</code> | Editable text (text) | middle left | 5.3% wide × 4.3% high | <code>4</code> |
+| <code>text-7</code> | Editable text (text) | middle right | 4.4% wide × 4.3% high | <code>5</code> |
+| <code>text-8</code> | Editable text (text) | lower centre | 19.0% wide × 4.9% high | <code>Label 9</code> |
+| <code>text-9</code> | Editable text (text) | middle centre | 13.8% wide × 5.7% high | <code>Label 7</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

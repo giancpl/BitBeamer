@@ -14,6 +14,18 @@ Model: `screenshot-pair` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/screenshots.md)
+
+```latex
+\studiotemplate[variant=pair,palette=light]{screenshots}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -47,7 +59,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={LNURLp decode}
+  text/1={Slide title}
 ]{screenshot-pair}
 ```
 
@@ -63,7 +75,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={LNURLp decode}
+  text/1={Slide title}
 ]{screenshot-pair}
 \end{document}
 ```
@@ -83,9 +95,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 48.0% wide × 59.6% high | <code>\includegraphics[width=1708\studiounit]{images/studio/collection/figma-0199-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 42.6% wide × 59.7% high | <code>\includegraphics[width=1515\studiounit]{images/studio/collection/figma-0199-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 26.1% wide × 8.4% high | <code>LNURLp decode</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 48.0% wide × 59.6% high | <code>\studiopaletteimage[width=1708\studiounit]{images/studio/neutral/screenshot-pair-graphic-1.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 42.6% wide × 59.7% high | <code>\studiopaletteimage[width=1515\studiounit]{images/studio/neutral/screenshot-pair-graphic-2.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 26.1% wide × 8.4% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `title-two-column-list` · Family: Lists · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/title-two-column-list.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{title-two-column-list}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -47,7 +59,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Summary}
+  text/1={Title},
+  text/2={Supporting explanation.\\Add your own details.}
 ]{title-two-column-list}
 ```
 
@@ -63,7 +76,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Summary}
+  text/1={Title},
+  text/2={Supporting explanation.\\Add your own details.}
 ]{title-two-column-list}
 \end{document}
 ```
@@ -83,9 +97,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 17.2% wide × 7.6% high | <code>Summary</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 37.9% wide × 53.1% high | <code>\textbullet{} Bitcoin on-chain: base layer and\\layer 2\par\hangindent=1em\textbullet{} Different ideas, timing, fee ...</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 37.0% wide × 53.1% high | <code>\textbullet{} Explore a Lightning node\par\hangindent=1em\textbullet{} Privacy differences\par\hangindent=1em\textbul...</code> |
+| <code>title</code> | Main text (text) | upper centre | 17.2% wide × 7.6% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 37.9% wide × 53.1% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 37.0% wide × 53.1% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

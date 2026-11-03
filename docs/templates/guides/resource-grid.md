@@ -14,6 +14,18 @@ Model: `resource-grid` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/resource-grid.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{resource-grid}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -53,8 +65,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Resources},
-  text/5={Nick Szabo\\Shelling Out: The Origin of Money}
+  text/1={Title},
+  text/5={Supporting explanation}
 ]{resource-grid}
 ```
 
@@ -70,8 +82,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Resources},
-  text/5={Nick Szabo\\Shelling Out: The Origin of Money}
+  text/1={Title},
+  text/5={Supporting explanation}
 ]{resource-grid}
 \end{document}
 ```
@@ -91,15 +103,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 20.3% wide × 51.3% high | <code>\includegraphics[width=722\studiounit]{images/studio/collection/figma-0563-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 20.3% wide × 51.3% high | <code>\includegraphics[width=722\studiounit]{images/studio/collection/figma-0563-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 20.3% wide × 51.3% high | <code>\includegraphics[width=722\studiounit]{images/studio/collection/figma-0563-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 20.3% wide × 51.3% high | <code>\includegraphics[width=722\studiounit]{images/studio/collection/figma-0563-part-04.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 15.8% wide × 7.5% high | <code>Resources</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 23.6% wide × 7.2% high | <code>Nick Szabo\\Shelling Out: The Origin of Money</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 13.4% wide × 6.7% high | <code>Saifedean Ammous\\Bitcoin Standard</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 10.9% wide × 7.2% high | <code>Knut Svanholm\\Praxeology</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 13.4% wide × 6.7% high | <code>Saifedean Ammous\\Fiat Standard</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 20.3% wide × 51.3% high | <code>\studiopaletteimage[width=722\studiounit]{images/studio/neutral/resource-grid-graphic-1.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 20.3% wide × 51.3% high | <code>\studiopaletteimage[width=722\studiounit]{images/studio/neutral/resource-grid-graphic-2.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 20.3% wide × 51.3% high | <code>\studiopaletteimage[width=722\studiounit]{images/studio/neutral/resource-grid-graphic-3.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 20.3% wide × 51.3% high | <code>\studiopaletteimage[width=722\studiounit]{images/studio/neutral/resource-grid-graphic-4.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 15.8% wide × 7.5% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 23.6% wide × 7.2% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 13.4% wide × 6.7% high | <code>Label 2</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 10.9% wide × 7.2% high | <code>Label 4</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 13.4% wide × 6.7% high | <code>Label 3</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `callout-explanation` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/text-cards.md)
+
+```latex
+\studiotemplate[variant=callout,palette=light]{text-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -54,8 +66,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={ZK-STARKs for\\Lightning Network},
-  text/2={Off-chain channels\hspace{220\studiounit}scalable payments}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{callout-explanation}
 ```
 
@@ -71,8 +83,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={ZK-STARKs for\\Lightning Network},
-  text/2={Off-chain channels\hspace{220\studiounit}scalable payments}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{callout-explanation}
 \end{document}
 ```
@@ -92,16 +104,16 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 40.6% wide × 30.8% high | <code>\includegraphics[width=1443\studiounit]{images/studio/collection/figma-0924-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | upper left | 29.4% wide × 15.1% high | <code>ZK-STARKs for\\Lightning Network</code> |
-| <code>item-2-1</code> | List or contents entry (text) | middle left | 40.7% wide × 5.0% high | <code>Off-chain channels\hspace{220\studiounit}scalable payments</code> |
-| <code>item-2-2</code> | List or contents entry (text) | middle left | 34.5% wide × 4.9% high | <code>\textbullet{} Privacy = balance / route proofs</code> |
-| <code>item-2-3</code> | List or contents entry (text) | middle left | 20.0% wide × 4.9% high | <code>without revealing data</code> |
-| <code>item-2-4</code> | List or contents entry (text) | middle left | 35.5% wide × 4.9% high | <code>\textbullet{} Security = compact proofs of channel</code> |
-| <code>item-2-5</code> | List or contents entry (text) | middle left | 5.5% wide × 4.0% high | <code>state</code> |
-| <code>item-2-6</code> | List or contents entry (text) | lower left | 38.9% wide × 4.9% high | <code>\textbullet{} Challenge = Integration with LN protocols,</code> |
-| <code>item-2-7</code> | List or contents entry (text) | lower left | 25.5% wide × 4.9% high | <code>efficient verification required</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 35.9% wide × 19.9% high | <code>Use STARKs to prove channel\\correctness without revealing\\balances or requiring full\\channel history</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 40.6% wide × 30.8% high | <code>\studiopaletteimage[width=1443\studiounit]{images/studio/collection/figma-0924-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | upper left | 29.4% wide × 15.1% high | <code>Slide title</code> |
+| <code>item-2-1</code> | List or contents entry (text) | middle left | 40.7% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>item-2-2</code> | List or contents entry (text) | middle left | 34.5% wide × 4.9% high | <code>Supporting explanation</code> |
+| <code>item-2-3</code> | List or contents entry (text) | middle left | 20.0% wide × 4.9% high | <code>Label 5</code> |
+| <code>item-2-4</code> | List or contents entry (text) | middle left | 35.5% wide × 4.9% high | <code>Supporting explanation</code> |
+| <code>item-2-5</code> | List or contents entry (text) | middle left | 5.5% wide × 4.0% high | <code>Item</code> |
+| <code>item-2-6</code> | List or contents entry (text) | lower left | 38.9% wide × 4.9% high | <code>Supporting explanation</code> |
+| <code>item-2-7</code> | List or contents entry (text) | lower left | 25.5% wide × 4.9% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 35.9% wide × 19.9% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

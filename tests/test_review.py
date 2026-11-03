@@ -141,7 +141,9 @@ class ReviewTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);shutil.copytree(ROOT/'templates',root/'templates')
             data=studio_review.load_review(root)
-            for name in data['selection']:data['templates'][name]['status']='approved'
+            for name in [item['id'] for item in studio_review.package_selection(root)]:
+                data['templates'][name]['status']='approved'
+                for review in data['templates'][name].get('palette_reviews',{}).values():review['status']='approved'
             (root/'templates/review.json').write_text(json.dumps(data))
             studio_review.require_approved(root)
             data['templates'][data['selection'][-1]]['status']='changes requested'
@@ -162,12 +164,12 @@ class ReviewTests(unittest.TestCase):
             target=package.package(ROOT,Path(directory)/'studio.zip',style='studio',review=True)
             with ZipFile(target) as archive:
                 sources={name for name in archive.namelist() if name.startswith('templates/studio/') and name.endswith('.tex') and not name.endswith('/registry.tex')}
-                expected={'templates/studio/'+name+'.tex' for name in studio_review.load_review(ROOT)['selection']}
+                expected={'templates/studio/'+name+'.tex' for name in [item['id'] for item in studio_review.package_selection(ROOT)]}
                 self.assertEqual(sources,expected)
                 self.assertIn('assets/generated/catalogue.tex',archive.namelist())
                 self.assertLess(target.stat().st_size,package.BUDGET)
                 self.assertNotIn('templates/studio/photo-triptych.tex',archive.namelist())
-                self.assertEqual(len([n for n in archive.namelist() if n.startswith('guides/')]),24)
+                self.assertEqual(len([n for n in archive.namelist() if n.startswith('guides/')]),len(studio_review.package_selection(ROOT)))
 
     def test_parts_gallery_has_no_initial_image_or_article_nodes(self):
         from html.parser import HTMLParser

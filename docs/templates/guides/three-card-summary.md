@@ -14,6 +14,18 @@ Model: `three-card-summary` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-cards.md)
+
+```latex
+\studiotemplate[variant=summary,palette=light]{icon-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -54,8 +66,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Key concepts recap},
-  text/2={Decentralization}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{three-card-summary}
 ```
 
@@ -71,8 +83,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Key concepts recap},
-  text/2={Decentralization}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{three-card-summary}
 \end{document}
 ```
@@ -92,16 +104,16 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 31.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0049-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 31.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0049-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 41.9% wide × 31.4% high | <code>\includegraphics[width=1490\studiounit]{images/studio/collection/figma-0049-part-03.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 43.3% wide × 8.5% high | <code>Key concepts recap</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.0% high | <code>Decentralization</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 36.2% wide × 6.7% high | <code>A foundation of Bitcoin: provides\\security and censorship resistance.</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 35.9% wide × 5.0% high | <code>The role of nodes</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 38.0% wide × 10.5% high | <code>Independent validation: each node checks\\the protocol rules; the timechain preserves\\a history of transactions.</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 35.9% wide × 5.7% high | <code>Workshop goal</code> |
-| <code>text-7</code> | Editable text (text) | lower centre | 36.2% wide × 7.1% high | <code>Explore options for running a node;\\provide practical steps to get started.</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 41.9% wide × 31.4% high | <code>\studiopaletteimage[width=1490\studiounit]{images/studio/collection/figma-0049-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 41.9% wide × 31.4% high | <code>\studiopaletteimage[width=1490\studiounit]{images/studio/collection/figma-0049-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 41.9% wide × 31.4% high | <code>\studiopaletteimage[width=1490\studiounit]{images/studio/collection/figma-0049-part-03.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 43.3% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 36.2% wide × 6.7% high | <code>Supporting explanation</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 35.9% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 38.0% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-6</code> | Editable text (text) | lower centre | 35.9% wide × 5.7% high | <code>Supporting explanation</code> |
+| <code>text-7</code> | Editable text (text) | lower centre | 36.2% wide × 7.1% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

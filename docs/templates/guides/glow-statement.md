@@ -2,7 +2,7 @@
 
 # Radial glow statement
 
-Emphasize a central message.
+Demonstrate this reusable composition.
 
 Model: `glow-statement` · Family: Statements · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `glow-statement` · Family: Statements · Status: **in review**.
 ![Radial glow statement](../previews/glow-statement.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/statement.md)
+
+```latex
+\studiotemplate[variant=glow,palette=light]{statement}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -45,7 +57,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your main idea}
+  text/1={Slide title}
 ]{glow-statement}
 ```
 
@@ -61,7 +73,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your main idea}
+  text/1={Slide title}
 ]{glow-statement}
 \end{document}
 ```
@@ -81,7 +93,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>statement</code> | Central statement (text) | middle centre | 39.0% wide × 14.5% high | <code>Bridging university and\\Bitcoin industry</code> |
+| <code>statement</code> | Central statement (text) | middle centre | 39.0% wide × 14.5% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

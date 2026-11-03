@@ -14,6 +14,18 @@ Model: `merkle-tree-wide` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/binary-tree.md)
+
+```latex
+\studiotemplate[variant=wide,palette=light]{binary-tree}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -82,8 +94,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Merkle\\Tree},
-  text/11={Hash 3}
+  text/2={Title},
+  text/11={Item}
 ]{merkle-tree-wide}
 ```
 
@@ -99,8 +111,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Merkle\\Tree},
-  text/11={Hash 3}
+  text/2={Title},
+  text/11={Item}
 ]{merkle-tree-wide}
 \end{document}
 ```
@@ -120,44 +132,44 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 34.1% wide × 13.0% high | <code>\includegraphics[width=1211\studiounit]{images/studio/collection/figma-0597-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 17.4% wide × 13.0% high | <code>\includegraphics[width=619\studiounit]{images/studio/collection/figma-0597-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 17.4% wide × 13.0% high | <code>\includegraphics[width=619\studiounit]{images/studio/collection/figma-0597-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower centre | 8.2% wide × 8.9% high | <code>\includegraphics[width=291\studiounit]{images/studio/collection/figma-0597-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 8.2% wide × 8.9% high | <code>\includegraphics[width=291\studiounit]{images/studio/collection/figma-0597-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | lower left | 8.2% wide × 8.8% high | <code>\includegraphics[width=291\studiounit]{images/studio/collection/figma-0597-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 15.6% wide × 8.9% high | <code>\includegraphics[width=556\studiounit]{images/studio/collection/figma-0597-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 26.6% wide × 12.9% high | <code>\includegraphics[width=946\studiounit]{images/studio/collection/figma-0597-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 26.6% wide × 12.9% high | <code>\includegraphics[width=946\studiounit]{images/studio/collection/figma-0597-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower right | 8.2% wide × 8.9% high | <code>\includegraphics[width=292\studiounit]{images/studio/collection/figma-0597-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower centre | 8.2% wide × 8.8% high | <code>\includegraphics[width=292\studiounit]{images/studio/collection/figma-0597-part-11.pdf}</code> |
-| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower right | 8.2% wide × 8.8% high | <code>\includegraphics[width=292\studiounit]{images/studio/collection/figma-0597-part-12.pdf}</code> |
-| <code>graphic-13</code> | Complete graphic, image or decoration (graphic) | middle centre | 43.3% wide × 12.9% high | <code>\includegraphics[width=1538\studiounit]{images/studio/collection/figma-0597-part-13.pdf}</code> |
-| <code>graphic-14</code> | Complete graphic, image or decoration (graphic) | upper centre | 21.0% wide × 13.6% high | <code>\includegraphics[width=745\studiounit]{images/studio/collection/figma-0597-part-14.pdf}</code> |
-| <code>title</code> | Main text (text) | upper left | 12.1% wide × 14.5% high | <code>Merkle\\Tree</code> |
-| <code>text-2</code> | Editable text (text) | lower centre | 5.3% wide × 3.5% high | <code>Hash 3</code> |
-| <code>text-3</code> | Editable text (text) | lower right | 5.4% wide × 3.4% high | <code>Hash 7</code> |
-| <code>text-4</code> | Editable text (text) | lower left | 5.4% wide × 3.4% high | <code>Hash 1</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Hash 5</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 5.3% wide × 3.5% high | <code>Tx 3</code> |
-| <code>text-7</code> | Editable text (text) | lower right | 5.4% wide × 3.4% high | <code>Tx 7</code> |
-| <code>text-8</code> | Editable text (text) | lower left | 5.4% wide × 3.4% high | <code>TX 1</code> |
-| <code>text-9</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Tx 5</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 9.5% wide × 3.5% high | <code>Hash 34</code> |
-| <code>text-11</code> | Editable text (text) | middle right | 9.5% wide × 3.5% high | <code>Hash 78</code> |
-| <code>text-12</code> | Editable text (text) | middle left | 5.3% wide × 3.4% high | <code>Hash 12</code> |
-| <code>text-13</code> | Editable text (text) | middle centre | 9.5% wide × 3.5% high | <code>Hash 56</code> |
-| <code>text-14</code> | Editable text (text) | upper centre | 18.1% wide × 3.4% high | <code>Merkle Root</code> |
-| <code>text-15</code> | Editable text (text) | lower centre | 5.4% wide × 3.4% high | <code>Hash 4</code> |
-| <code>text-16</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Hash 8</code> |
-| <code>text-17</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Hash 2</code> |
-| <code>text-18</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Hash 6</code> |
-| <code>text-19</code> | Editable text (text) | middle right | 5.4% wide × 3.4% high | <code>Hash</code> |
-| <code>text-20</code> | Editable text (text) | middle centre | 5.4% wide × 3.4% high | <code>Hash</code> |
-| <code>text-21</code> | Editable text (text) | lower centre | 5.4% wide × 3.4% high | <code>Tx 4</code> |
-| <code>text-22</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Tx 8</code> |
-| <code>text-23</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Tx 2</code> |
-| <code>text-24</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Tx 6</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 34.1% wide × 13.0% high | <code>\studiopaletteimage[width=1211\studiounit]{images/studio/collection/figma-0597-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 17.4% wide × 13.0% high | <code>\studiopaletteimage[width=619\studiounit]{images/studio/collection/figma-0597-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 17.4% wide × 13.0% high | <code>\studiopaletteimage[width=619\studiounit]{images/studio/collection/figma-0597-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower centre | 8.2% wide × 8.9% high | <code>\studiopaletteimage[width=291\studiounit]{images/studio/collection/figma-0597-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 8.2% wide × 8.9% high | <code>\studiopaletteimage[width=291\studiounit]{images/studio/collection/figma-0597-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | lower left | 8.2% wide × 8.8% high | <code>\studiopaletteimage[width=291\studiounit]{images/studio/collection/figma-0597-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 15.6% wide × 8.9% high | <code>\studiopaletteimage[width=556\studiounit]{images/studio/collection/figma-0597-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 26.6% wide × 12.9% high | <code>\studiopaletteimage[width=946\studiounit]{images/studio/collection/figma-0597-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 26.6% wide × 12.9% high | <code>\studiopaletteimage[width=946\studiounit]{images/studio/collection/figma-0597-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower right | 8.2% wide × 8.9% high | <code>\studiopaletteimage[width=292\studiounit]{images/studio/collection/figma-0597-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower centre | 8.2% wide × 8.8% high | <code>\studiopaletteimage[width=292\studiounit]{images/studio/collection/figma-0597-part-11.pdf}</code> |
+| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower right | 8.2% wide × 8.8% high | <code>\studiopaletteimage[width=292\studiounit]{images/studio/collection/figma-0597-part-12.pdf}</code> |
+| <code>graphic-13</code> | Complete graphic, image or decoration (graphic) | middle centre | 43.3% wide × 12.9% high | <code>\studiopaletteimage[width=1538\studiounit]{images/studio/collection/figma-0597-part-13.pdf}</code> |
+| <code>graphic-14</code> | Complete graphic, image or decoration (graphic) | upper centre | 21.0% wide × 13.6% high | <code>\studiopaletteimage[width=745\studiounit]{images/studio/collection/figma-0597-part-14.pdf}</code> |
+| <code>title</code> | Main text (text) | upper left | 12.1% wide × 14.5% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | lower centre | 5.3% wide × 3.5% high | <code>Item</code> |
+| <code>text-3</code> | Editable text (text) | lower right | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | lower left | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Item</code> |
+| <code>text-6</code> | Editable text (text) | lower centre | 5.3% wide × 3.5% high | <code>Item</code> |
+| <code>text-7</code> | Editable text (text) | lower right | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-8</code> | Editable text (text) | lower left | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-9</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Item</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 9.5% wide × 3.5% high | <code>Label 6</code> |
+| <code>text-11</code> | Editable text (text) | middle right | 9.5% wide × 3.5% high | <code>Label 8</code> |
+| <code>text-12</code> | Editable text (text) | middle left | 5.3% wide × 3.4% high | <code>Item</code> |
+| <code>text-13</code> | Editable text (text) | middle centre | 9.5% wide × 3.5% high | <code>Label 7</code> |
+| <code>text-14</code> | Editable text (text) | upper centre | 18.1% wide × 3.4% high | <code>Label 1</code> |
+| <code>text-15</code> | Editable text (text) | lower centre | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-16</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Item</code> |
+| <code>text-17</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Item</code> |
+| <code>text-18</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Item</code> |
+| <code>text-19</code> | Editable text (text) | middle right | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-20</code> | Editable text (text) | middle centre | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-21</code> | Editable text (text) | lower centre | 5.4% wide × 3.4% high | <code>Item</code> |
+| <code>text-22</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Item</code> |
+| <code>text-23</code> | Editable text (text) | lower centre | 5.3% wide × 3.4% high | <code>Item</code> |
+| <code>text-24</code> | Editable text (text) | lower right | 5.3% wide × 3.5% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

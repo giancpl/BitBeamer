@@ -14,6 +14,18 @@ Model: `split-outline-cards` · Family: Comparisons · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/split-comparison.md)
+
+```latex
+\studiotemplate[variant=outlines,palette=light]{split-comparison}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -59,8 +71,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Students},
-  text/4={Education paths}
+  text/1={Slide title},
+  text/4={Label 4}
 ]{split-outline-cards}
 ```
 
@@ -76,8 +88,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Students},
-  text/4={Education paths}
+  text/1={Slide title},
+  text/4={Label 4}
 ]{split-outline-cards}
 \end{document}
 ```
@@ -97,21 +109,21 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 51.3% wide × 100.0% high | <code>\includegraphics[width=1826\studiounit]{images/studio/collection/figma-0989-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 34.4% wide × 17.3% high | <code>\includegraphics[width=1225\studiounit]{images/studio/collection/figma-0989-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 34.4% wide × 17.3% high | <code>\includegraphics[width=1225\studiounit]{images/studio/collection/figma-0989-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 34.4% wide × 17.3% high | <code>\includegraphics[width=1225\studiounit]{images/studio/collection/figma-0989-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 34.4% wide × 17.3% high | <code>\includegraphics[width=1225\studiounit]{images/studio/collection/figma-0989-part-05.pdf}</code> |
-| <code>item-1-1</code> | List or contents entry (text) | upper right | 24.1% wide × 5.0% high | <code>Education paths</code> |
-| <code>item-1-2</code> | List or contents entry (text) | middle right | 24.2% wide × 5.0% high | <code>Visibility</code> |
-| <code>item-1-3</code> | List or contents entry (text) | lower right | 24.2% wide × 5.5% high | <code>Event organization</code> |
-| <code>item-1-4</code> | List or contents entry (text) | lower right | 24.1% wide × 5.7% high | <code>FOSS development</code> |
-| <code>title</code> | Main text (text) | upper left | 40.0% wide × 7.6% high | <code>Students</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 17.2% wide × 7.6% high | <code>Companies</code> |
-| <code>student-1</code> | Editable text (text) | upper left | 24.1% wide × 5.8% high | <code>Practical experience</code> |
-| <code>student-2</code> | Editable text (text) | middle left | 24.1% wide × 5.8% high | <code>Campus life</code> |
-| <code>student-3</code> | Editable text (text) | lower left | 24.1% wide × 5.8% high | <code>Guided learning</code> |
-| <code>student-4</code> | Editable text (text) | lower left | 24.1% wide × 5.8% high | <code>Job opportunities</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 51.3% wide × 100.0% high | <code>\studiopaletteimage[width=1826\studiounit]{images/studio/collection/figma-0989-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 34.4% wide × 17.3% high | <code>\studiopaletteimage[width=1225\studiounit]{images/studio/collection/figma-0989-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 34.4% wide × 17.3% high | <code>\studiopaletteimage[width=1225\studiounit]{images/studio/collection/figma-0989-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 34.4% wide × 17.3% high | <code>\studiopaletteimage[width=1225\studiounit]{images/studio/collection/figma-0989-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 34.4% wide × 17.3% high | <code>\studiopaletteimage[width=1225\studiounit]{images/studio/collection/figma-0989-part-05.pdf}</code> |
+| <code>item-1-1</code> | List or contents entry (text) | upper right | 24.1% wide × 5.0% high | <code>Label 4</code> |
+| <code>item-1-2</code> | List or contents entry (text) | middle right | 24.2% wide × 5.0% high | <code>Label 6</code> |
+| <code>item-1-3</code> | List or contents entry (text) | lower right | 24.2% wide × 5.5% high | <code>Label 8</code> |
+| <code>item-1-4</code> | List or contents entry (text) | lower right | 24.1% wide × 5.7% high | <code>Label 10</code> |
+| <code>title</code> | Main text (text) | upper left | 40.0% wide × 7.6% high | <code>Slide title</code> |
+| <code>text-3</code> | Editable text (text) | upper right | 17.2% wide × 7.6% high | <code>Label 2</code> |
+| <code>student-1</code> | Editable text (text) | upper left | 24.1% wide × 5.8% high | <code>Label 3</code> |
+| <code>student-2</code> | Editable text (text) | middle left | 24.1% wide × 5.8% high | <code>Label 5</code> |
+| <code>student-3</code> | Editable text (text) | lower left | 24.1% wide × 5.8% high | <code>Label 7</code> |
+| <code>student-4</code> | Editable text (text) | lower left | 24.1% wide × 5.8% high | <code>Label 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

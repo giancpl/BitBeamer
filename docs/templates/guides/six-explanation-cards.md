@@ -14,6 +14,18 @@ Model: `six-explanation-cards` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/text-cards.md)
+
+```latex
+\studiotemplate[variant=six-detailed,palette=light]{text-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -51,8 +63,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Wallet Lightning Network},
-  text/3={A keystore holding secrets, such as\\private keys}
+  text/1={Slide title},
+  text/3={Supporting explanation}
 ]{six-explanation-cards}
 ```
 
@@ -68,8 +80,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Wallet Lightning Network},
-  text/3={A keystore holding secrets, such as\\private keys}
+  text/1={Slide title},
+  text/3={Supporting explanation}
 ]{six-explanation-cards}
 \end{document}
 ```
@@ -89,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 39.4% wide × 8.5% high | <code>Wallet Lightning Network</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 37.7% wide × 8.5% high | <code>A keystore holding secrets, such as\\private keys</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 36.5% wide × 4.6% high | <code>Manages channel opening and closing</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 36.5% wide × 8.5% high | <code>Finds a connected channel route from\\the payer to the payment recipient</code> |
-| <code>text-5</code> | Editable text (text) | middle left | 37.7% wide × 7.9% high | <code>A Bitcoin node stores blockchain data\\and communicates with other nodes</code> |
-| <code>text-6</code> | Editable text (text) | middle left | 35.3% wide × 8.5% high | <code>A Lightning node communicates on\\the peer-to-peer network</code> |
-| <code>text-7</code> | Editable text (text) | lower left | 37.7% wide × 4.5% high | <code>A map of announced nodes and channels</code> |
+| <code>title</code> | Main text (text) | upper centre | 39.4% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 37.7% wide × 8.5% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 36.5% wide × 4.6% high | <code>Supporting explanation</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 36.5% wide × 8.5% high | <code>Supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | middle left | 37.7% wide × 7.9% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | middle left | 35.3% wide × 8.5% high | <code>Supporting explanation</code> |
+| <code>text-7</code> | Editable text (text) | lower left | 37.7% wide × 4.5% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

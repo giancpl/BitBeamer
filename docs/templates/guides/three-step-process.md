@@ -2,7 +2,7 @@
 
 # Three-step process
 
-Explain a three-step process.
+Demonstrate this reusable composition.
 
 Model: `three-step-process` · Family: Cards · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `three-step-process` · Family: Cards · Status: **in review**.
 ![Three-step process](../previews/three-step-process.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/icon-process.md)
+
+```latex
+\studiotemplate[variant=three,palette=light]{icon-process}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -50,9 +62,9 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={First step},
-  text/3={Second step},
-  text/1={Third step}
+  text/2={Slide title},
+  text/3={Label 3},
+  text/1={Label 1}
 ]{three-step-process}
 ```
 
@@ -68,9 +80,9 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={First step},
-  text/3={Second step},
-  text/1={Third step}
+  text/2={Slide title},
+  text/3={Label 3},
+  text/1={Label 1}
 ]{three-step-process}
 \end{document}
 ```
@@ -90,12 +102,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0079-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0079-part-02.pdf}</code> |
-| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0079-part-03.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 16.5% wide × 5.0% high | <code>360\textdegree{} education</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 15.6% wide × 5.6% high | <code>In-depth study</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 16.7% wide × 5.0% high | <code>Global overview</code> |
+| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0079-part-01.pdf}</code> |
+| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0079-part-02.pdf}</code> |
+| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0079-part-03.pdf}</code> |
+| <code>title</code> | Main text (text) | middle centre | 16.5% wide × 5.0% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 15.6% wide × 5.6% high | <code>Label 3</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 16.7% wide × 5.0% high | <code>Label 1</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

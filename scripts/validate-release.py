@@ -52,7 +52,8 @@ def validate(archive, style='academic'):
                         'main-monogram.tex': 'group=bitpolito,bitpolitologo=monogram',
                         'main-bull.tex': 'group=bitpolito,bitpolitologo=bull',
                         'main-image-right.tex': 'cover=image-right'}
-            source = (root / 'main.tex').read_text(encoding='utf-8')
+            showcase = root / 'academic-showcase.tex'
+            source = (showcase if showcase.is_file() else root / 'main.tex').read_text(encoding='utf-8')
             for document, option in variants.items():
                 (root / document).write_text(select_theme(source, option), encoding='utf-8')
             legacy = source.replace(r'\usetheme{bitpolito-academic}', r'\usetheme{bitpolito}')
@@ -82,11 +83,13 @@ def validate(archive, style='academic'):
             # Generated only inside the extracted archive, never shipped as a fixture.
             source = (root / 'main.tex').read_text(encoding='utf-8')
             variants = {'studio-long-title.tex': None, 'studio-components.tex': None, 'studio-library-components.tex': None}
-            long_title = source.replace(r'\title{Bitcoin\\Slide Layouts}',
-                r'\title{Bitcoin and\\Open money}')
+            long_title = source.replace(r'\title{Presentation\\Slide Layouts}',
+                r'\title{Shared ideas\\and examples}')
             if long_title == source:
                 raise RuntimeError('Cannot select the Studio long-title scenario')
             (root / 'studio-long-title.tex').write_text(long_title, encoding='utf-8')
+            variants['studio-cover-variants.tex'] = None
+            (root / 'studio-cover-variants.tex').write_text('\\documentclass[aspectratio=169]{beamer}\n\\usetheme{bitpolito-studio}\n\\usepackage{bitpolitostudiotemplates}\n\\title{Your title}\\author{Author name}\\institute{Organization}\\date{}\n\\begin{document}\n\\studiotitleframe\n\\studiotitleframe[variant=bitgeneration]\n\\studiotitleframe[variant=bitgeneration-photo]\n\\studiotitleframe\n\\studioframe{Normal frame}{Cover options stay local.}\n\\end{document}\n', encoding='utf-8')
             components = r"""\documentclass[aspectratio=169]{beamer}
 \usetheme{bitpolito-studio}
 \begin{document}
@@ -202,7 +205,7 @@ Text uses the regular Studio foreground and background.
 def main(argv=None):
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('archive', nargs='?', type=Path, help='Archive path; defaults to the selected style in dist/')
-    parser.add_argument('--style', choices=(*STYLES, 'all'), default='academic')
+    parser.add_argument('--style', choices=(*STYLES, 'all'), default='studio')
     parser.add_argument('--backend', choices=('native', 'docker'), default='docker')
     parser.add_argument('--image', default=os.environ.get('LATEX_IMAGE', 'bitbeamer-latex:local'))
     args = parser.parse_args(argv)
@@ -226,8 +229,7 @@ def main(argv=None):
                         '--mount', f'type=bind,source={archive},target=/release.zip,readonly',
                         '--workdir', '/source', '--entrypoint', 'python3', args.image,
                         'scripts/validate-release.py', '/release.zip', '--backend', 'native']
-            if args.style != 'academic':
-                command += ['--style', args.style]
+            command += ['--style', args.style]
             subprocess.run(command, check=True)
         else:
             if args.style == 'academic':

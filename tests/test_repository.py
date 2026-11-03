@@ -21,7 +21,8 @@ class RepositoryTests(unittest.TestCase):
     def test_local_outputs_and_redundant_placeholders_are_rejected(self):
         paths = ['build/main.pdf', 'dist/template.zip', 'main.pdf', 'examples/preview.pdf',
                  'main.aux', 'main.run.xml', 'main.synctex.gz', 'scripts/__pycache__/build.pyc',
-                 'notes.md~', '.DS_Store', 'assets/characters/.gitkeep', 'assets/characters/alice.svg']
+                 'notes.md~', '.DS_Store', '.coverage', '.ruff_cache/cache', '.mypy_cache/cache',
+                 '.pytest_cache/cache', 'htmlcov/index.html', 'assets/characters/.gitkeep', 'assets/characters/alice.svg']
         self.assertEqual(set(checks['unwanted_paths'](paths)), set(paths) - {'assets/characters/alice.svg'})
 
     @unittest.skipUnless(shutil.which('git'), 'Git is required')

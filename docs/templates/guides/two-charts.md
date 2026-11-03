@@ -14,6 +14,18 @@ Model: `two-charts` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/charts.md)
+
+```latex
+\studiotemplate[variant=two,palette=light]{charts}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -77,7 +89,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Purchasing power},
+  text/2={Slide title},
   text/6={1920}
 ]{two-charts}
 ```
@@ -94,7 +106,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Purchasing power},
+  text/2={Slide title},
   text/6={1920}
 ]{two-charts}
 \end{document}
@@ -115,10 +127,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 1.5% wide × 100.0% high | <code>\includegraphics[width=53\studiounit]{images/studio/collection/figma-0737-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 45.7% wide × 59.8% high | <code>\includegraphics[width=1624\studiounit]{images/studio/collection/figma-0737-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 45.4% wide × 50.0% high | <code>\includegraphics[width=1616\studiounit]{images/studio/collection/figma-0737-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper centre | 2.4% wide × 6.2% high | <code>\includegraphics[width=84\studiounit]{images/studio/collection/figma-0737-part-04.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 1.5% wide × 100.0% high | <code>\studiopaletteimage[width=53\studiounit]{images/studio/collection/figma-0737-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 45.7% wide × 59.8% high | <code>\studiopaletteimage[width=1624\studiounit]{images/studio/collection/figma-0737-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 45.4% wide × 50.0% high | <code>\studiopaletteimage[width=1616\studiounit]{images/studio/collection/figma-0737-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper centre | 2.4% wide × 6.2% high | <code>\studiopaletteimage[width=84\studiounit]{images/studio/collection/figma-0737-part-04.pdf}</code> |
 | <code>text-1</code> | Editable text (text) | lower left | 3.4% wide × 2.7% high | <code>1920</code> |
 | <code>text-2</code> | Editable text (text) | lower left | 3.4% wide × 2.7% high | <code>1930</code> |
 | <code>text-3</code> | Editable text (text) | lower left | 3.4% wide × 2.7% high | <code>1940</code> |
@@ -130,10 +142,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>text-9</code> | Editable text (text) | lower centre | 3.6% wide × 2.7% high | <code>2000</code> |
 | <code>text-10</code> | Editable text (text) | lower centre | 3.4% wide × 2.7% high | <code>2010</code> |
 | <code>text-11</code> | Editable text (text) | lower centre | 3.5% wide × 2.7% high | <code>2020</code> |
-| <code>text-12</code> | Editable text (text) | upper left | 34.6% wide × 8.4% high | <code>Monetary expansion</code> |
-| <code>text-13</code> | Editable text (text) | lower left | 14.5% wide × 3.1% high | <code>Source: US Fed</code> |
-| <code>text-14</code> | Editable text (text) | upper left | 8.5% wide × 2.5% high | <code>Billions of dollars</code> |
-| <code>text-15</code> | Editable text (text) | lower centre | 1.5% wide × 3.2% high | <code>Ke)\\An</code> |
+| <code>text-12</code> | Editable text (text) | upper left | 34.6% wide × 8.4% high | <code>Label 1</code> |
+| <code>text-13</code> | Editable text (text) | lower left | 14.5% wide × 3.1% high | <code>Label 28</code> |
+| <code>text-14</code> | Editable text (text) | upper left | 8.5% wide × 2.5% high | <code>Label 3</code> |
+| <code>text-15</code> | Editable text (text) | lower centre | 1.5% wide × 3.2% high | <code>5</code> |
 | <code>text-16</code> | Editable text (text) | lower centre | 3.4% wide × 2.7% high | <code>1920</code> |
 | <code>text-17</code> | Editable text (text) | lower centre | 3.4% wide × 2.7% high | <code>1930</code> |
 | <code>text-18</code> | Editable text (text) | lower centre | 3.4% wide × 2.7% high | <code>1940</code> |
@@ -145,9 +157,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>text-24</code> | Editable text (text) | lower right | 3.6% wide × 2.7% high | <code>2000</code> |
 | <code>text-25</code> | Editable text (text) | lower right | 3.4% wide × 2.7% high | <code>2010</code> |
 | <code>text-26</code> | Editable text (text) | lower right | 3.5% wide × 2.7% high | <code>2020</code> |
-| <code>title</code> | Main text (text) | upper right | 27.5% wide × 8.5% high | <code>Purchasing power</code> |
-| <code>text-28</code> | Editable text (text) | lower centre | 14.5% wide × 3.5% high | <code>Source: Visual Capitalist</code> |
-| <code>text-29</code> | Editable text (text) | upper centre | 9.6% wide × 2.5% high | <code>Value of one dollar</code> |
+| <code>title</code> | Main text (text) | upper right | 27.5% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-28</code> | Editable text (text) | lower centre | 14.5% wide × 3.5% high | <code>Label 29</code> |
+| <code>text-29</code> | Editable text (text) | upper centre | 9.6% wide × 2.5% high | <code>Label 4</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

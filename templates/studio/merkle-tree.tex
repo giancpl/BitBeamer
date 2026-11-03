@@ -1,59 +1,59 @@
-% Editable defaults and source-coordinate composition.
-\studiodeclarefield{title}{Merkle\\Tree}
-\studiodeclarefield{explanation}{To prove TX C is in\\the block, you only\\need:\\* Hash(D) +\\* Hash(AB) +\\the root =\\Merkle Proof}
-\studiodeclarefield{root}{Merkle Root}
-\studiodeclarefield{ab}{Hash AB}
-\studiodeclarefield{cd}{Hash CD}
-\studiodeclarefield{hash-0}{Hash A}
-\studiodeclarefield{tx-0}{Tx A}
-\studiodeclarefield{hash-1}{Hash B}
-\studiodeclarefield{tx-1}{Tx B}
-\studiodeclarefield{hash-2}{Hash C}
-\studiodeclarefield{tx-2}{Tx C}
-\studiodeclarefield{hash-3}{Hash D}
-\studiodeclarefield{tx-3}{Tx D}
+% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
+\studiodeclarefield{title}{Binary\\tree}
+\studiodeclarefield{explanation}{Root node\\Two branches\\Four items}
+\studiodeclarefield{root}{Root}
+\studiodeclarefield{ab}{Item}
+\studiodeclarefield{cd}{Item}
+\studiodeclarefield{hash-0}{Node 6}
+\studiodeclarefield{tx-0}{Item 10}
+\studiodeclarefield{hash-1}{Node 7}
+\studiodeclarefield{tx-1}{Item 11}
+\studiodeclarefield{hash-2}{Node 8}
+\studiodeclarefield{tx-2}{Item 12}
+\studiodeclarefield{hash-3}{Node 9}
+\studiodeclarefield{tx-3}{Item 13}
 \studioapplyfields
 % Measured reconstruction; pending visual approval. Units match the 3556 x 2000 SVG.
-\studiopilotcanvas{merkle-tree}{studio-paper}{
+\studiopilotcanvas{merkle-tree}{studio-background}{
 \studiopilottext{title}{257}{380}{600}{280}{120}{140}{\bfseries}{\studiofield{title}}
 \studiopilottext{explanation}{255}{838}{550}{550}{64}{76}{\bfseries}{\studiofield{explanation}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (1739.1,377.5) rectangle (2480.3,611.3);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (1739.1,377.5) rectangle (2480.3,611.3);
 \studiopilottext{root}{1739.1}{473.4}{741.2}{70}{54}{64}{\centering\bfseries}{\studiofield{root}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (1318.3,813.6) rectangle (1573.3999999999999,946.5);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (1318.3,813.6) rectangle (1573.3999999999999,946.5);
 \studiopilottext{ab}{1318.3}{859.0500000000001}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{ab}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (2654.4,813.8) rectangle (2909.5,946.6999999999999);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (2654.4,813.8) rectangle (2909.5,946.6999999999999);
 \studiopilottext{cd}{2654.4}{859.25}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{cd}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (947.5,1151.3) rectangle (1202.6,1284.2);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (947.5,1151.3) rectangle (1202.6,1284.2);
 \studiopilottext{hash-0}{947.5}{1196.75}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{hash-0}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (947.5,1408.6) rectangle (1202.6,1541.5);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (947.5,1408.6) rectangle (1202.6,1541.5);
 \studiopilottext{tx-0}{947.5}{1454.05}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{tx-0}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (1646.3,1151.3) rectangle (1901.3999999999999,1284.2);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (1646.3,1151.3) rectangle (1901.3999999999999,1284.2);
 \studiopilottext{hash-1}{1646.3}{1196.75}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{hash-1}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (1646.3,1408.6) rectangle (1901.3999999999999,1541.5);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (1646.3,1408.6) rectangle (1901.3999999999999,1541.5);
 \studiopilottext{tx-1}{1646.3}{1454.05}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{tx-1}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (2289.4,1151.3) rectangle (2544.5,1284.2);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (2289.4,1151.3) rectangle (2544.5,1284.2);
 \studiopilottext{hash-2}{2289.4}{1196.75}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{hash-2}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (2289.4,1408.6) rectangle (2544.5,1541.5);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (2289.4,1408.6) rectangle (2544.5,1541.5);
 \studiopilottext{tx-2}{2289.4}{1454.05}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{tx-2}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (2991.4,1151.3) rectangle (3246.5,1284.2);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (2991.4,1151.3) rectangle (3246.5,1284.2);
 \studiopilottext{hash-3}{2991.4}{1196.75}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{hash-3}}
-\draw[bitpolito,line width={5\studiounit},rounded corners=27.5\studiounit] (2991.4,1408.6) rectangle (3246.5,1541.5);
+\draw[studio-foreground,line width={5\studiounit},rounded corners=27.5\studiounit] (2991.4,1408.6) rectangle (3246.5,1541.5);
 \studiopilottext{tx-3}{2991.4}{1454.05}{255.1}{70}{54}{64}{\centering\bfseries}{\studiofield{tx-3}}
-\draw[bitpolito,line width={5\studiounit}] (2110.41,635.097)--(2110.41,724.875);
-\draw[bitpolito,line width={5\studiounit}] (1440.16,971.971)--(1440.16,1062.01);
-\draw[bitpolito,line width={5\studiounit}] (2776.66,971.971)--(2776.66,1062.01);
-\draw[bitpolito,line width={5\studiounit}] (1071.53,1314.75)--(1071.53,1410.22);
-\draw[bitpolito,line width={5\studiounit}] (1770.29,1313.69)--(1770.29,1409.16);
-\draw[bitpolito,line width={5\studiounit}] (2413.35,1313.69)--(2413.35,1409.16);
-\draw[bitpolito,line width={5\studiounit}] (3115.37,1313.69)--(3115.37,1409.16);
-\draw[bitpolito,line width={5\studiounit}] (1442.7,813)--(1442.7,727.1)--(2778.7,727.1)--(2778.7,813);
-\draw[bitpolito,line width={5\studiounit}] (1077.7,1151)--(1077.7,1064.6)--(1779.2,1064.6)--(1779.2,1151);
-\draw[bitpolito,line width={5\studiounit}] (2414.2,1151)--(2414.2,1064.6)--(3115.7,1064.6)--(3115.7,1151);
-\fill[bitpolito] (2110.41,612.597)--(2095.975,637.597)--(2124.845,637.597)--cycle;
-\fill[bitpolito] (1440.16,949.471)--(1425.7250000000001,974.471)--(1454.595,974.471)--cycle;
-\fill[bitpolito] (2776.66,949.471)--(2762.225,974.471)--(2791.095,974.471)--cycle;
-\fill[bitpolito] (1071.53,1292.25)--(1057.095,1317.25)--(1085.965,1317.25)--cycle;
-\fill[bitpolito] (1770.29,1291.19)--(1755.855,1316.19)--(1784.725,1316.19)--cycle;
-\fill[bitpolito] (2413.35,1291.19)--(2398.915,1316.19)--(2427.785,1316.19)--cycle;
-\fill[bitpolito] (3115.37,1291.19)--(3100.935,1316.19)--(3129.805,1316.19)--cycle;
+\draw[studio-foreground,line width={5\studiounit}] (2110.41,635.097)--(2110.41,724.875);
+\draw[studio-foreground,line width={5\studiounit}] (1440.16,971.971)--(1440.16,1062.01);
+\draw[studio-foreground,line width={5\studiounit}] (2776.66,971.971)--(2776.66,1062.01);
+\draw[studio-foreground,line width={5\studiounit}] (1071.53,1314.75)--(1071.53,1410.22);
+\draw[studio-foreground,line width={5\studiounit}] (1770.29,1313.69)--(1770.29,1409.16);
+\draw[studio-foreground,line width={5\studiounit}] (2413.35,1313.69)--(2413.35,1409.16);
+\draw[studio-foreground,line width={5\studiounit}] (3115.37,1313.69)--(3115.37,1409.16);
+\draw[studio-foreground,line width={5\studiounit}] (1442.7,813)--(1442.7,727.1)--(2778.7,727.1)--(2778.7,813);
+\draw[studio-foreground,line width={5\studiounit}] (1077.7,1151)--(1077.7,1064.6)--(1779.2,1064.6)--(1779.2,1151);
+\draw[studio-foreground,line width={5\studiounit}] (2414.2,1151)--(2414.2,1064.6)--(3115.7,1064.6)--(3115.7,1151);
+\fill[studio-foreground] (2110.41,612.597)--(2095.975,637.597)--(2124.845,637.597)--cycle;
+\fill[studio-foreground] (1440.16,949.471)--(1425.7250000000001,974.471)--(1454.595,974.471)--cycle;
+\fill[studio-foreground] (2776.66,949.471)--(2762.225,974.471)--(2791.095,974.471)--cycle;
+\fill[studio-foreground] (1071.53,1292.25)--(1057.095,1317.25)--(1085.965,1317.25)--cycle;
+\fill[studio-foreground] (1770.29,1291.19)--(1755.855,1316.19)--(1784.725,1316.19)--cycle;
+\fill[studio-foreground] (2413.35,1291.19)--(2398.915,1316.19)--(2427.785,1316.19)--cycle;
+\fill[studio-foreground] (3115.37,1291.19)--(3100.935,1316.19)--(3129.805,1316.19)--cycle;
 }

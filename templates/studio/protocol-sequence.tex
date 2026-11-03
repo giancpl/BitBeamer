@@ -1,17 +1,17 @@
-% Editable defaults and source-coordinate composition.
-\studiodeclarefield{message}{Hi, will you come to\\BitCuneo?}
-\studiodeclarefield{warning}{Insecure channel}
+% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
+\studiodeclarefield{message}{Label 1}
+\studiodeclarefield{warning}{Label 2}
 \studioapplyfields
 % Measured reconstruction; pending visual approval. Units match the 3556 x 2000 SVG.
-\studiopilotcanvas{protocol-sequence}{studio-paper}{
+\studiopilotcanvas{protocol-sequence}{studio-background}{
 \studiopilotpart{protocol-alice}{603}{308}{224}
 \studiopilotpart{protocol-observer}{1687}{308}{180}
 \studiopilotpart{protocol-bob}{2754}{308}{224}
 \studiopilotpart{protocol-warning}{1319}{1610}{212}
-\draw[bitpolito,line width={19\studiounit}] (1120.5,526)--(1120.5,1826);
-\draw[bitpolito,line width={15\studiounit}] (2450,520)--(2446.5,1820);
-\draw[bitpolito,line width={15\studiounit}] (1312,1141)--(2242,1141);
+\draw[studio-foreground,line width={19\studiounit}] (1120.5,526)--(1120.5,1826);
+\draw[studio-foreground,line width={15\studiounit}] (2450,520)--(2446.5,1820);
+\draw[studio-foreground,line width={15\studiounit}] (1312,1141)--(2242,1141);
 \studiopilottext{message}{1390}{900}{760}{190}{80}{94}{\centering\itshape}{\studiofield{message}}
 \studiopilottext{warning}{1630}{1687}{950}{100}{80}{94}{}{\studiofield{warning}}
-\fill[bitpolito] (2242,1141)--(2156,1098)--(2156,1184)--cycle;
+\fill[studio-foreground] (2242,1141)--(2156,1098)--(2156,1184)--cycle;
 }

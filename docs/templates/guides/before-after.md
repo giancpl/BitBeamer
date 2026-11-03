@@ -14,6 +14,18 @@ Model: `before-after` · Family: Comparisons · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/before-after.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{before-after}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -54,8 +66,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/7={690\texteuro{}},
-  text/3={in 2020}
+  text/7={Title},
+  text/3={Item}
 ]{before-after}
 ```
 
@@ -71,8 +83,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/7={690\texteuro{}},
-  text/3={in 2020}
+  text/7={Title},
+  text/3={Item}
 ]{before-after}
 \end{document}
 ```
@@ -92,16 +104,16 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 14.6% wide × 12.2% high | <code>\includegraphics[width=520\studiounit]{images/studio/collection/figma-0742-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 14.9% wide × 12.2% high | <code>\includegraphics[width=531\studiounit]{images/studio/collection/figma-0742-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 14.6% wide × 12.2% high | <code>\includegraphics[width=520\studiounit]{images/studio/collection/figma-0742-part-03.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle left | 6.3% wide × 3.2% high | <code>in 2020</code> |
-| <code>text-2</code> | Editable text (text) | upper left | 16.3% wide × 12.0% high | <code>Kept under\\the mattress</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 6.3% wide × 3.2% high | <code>in 2025</code> |
-| <code>title</code> | Main text (text) | lower right | 42.7% wide × 16.8% high | <code>690\texteuro{}</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 48.6% wide × 3.2% high | <code>in 2020</code> |
-| <code>text-6</code> | Editable text (text) | upper right | 47.4% wide × 12.2% high | <code>Invested in\\Bitcoin</code> |
-| <code>text-7</code> | Editable text (text) | lower right | 48.6% wide × 3.2% high | <code>in 2025</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 14.6% wide × 12.2% high | <code>\studiopaletteimage[width=520\studiounit]{images/studio/collection/figma-0742-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 14.9% wide × 12.2% high | <code>\studiopaletteimage[width=531\studiounit]{images/studio/collection/figma-0742-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 14.6% wide × 12.2% high | <code>\studiopaletteimage[width=520\studiounit]{images/studio/collection/figma-0742-part-03.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle left | 6.3% wide × 3.2% high | <code>Item</code> |
+| <code>text-2</code> | Editable text (text) | upper left | 16.3% wide × 12.0% high | <code>Label 1</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 6.3% wide × 3.2% high | <code>Item</code> |
+| <code>title</code> | Main text (text) | lower right | 42.7% wide × 16.8% high | <code>Title</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 48.6% wide × 3.2% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | upper right | 47.4% wide × 12.2% high | <code>Supporting explanation</code> |
+| <code>text-7</code> | Editable text (text) | lower right | 48.6% wide × 3.2% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

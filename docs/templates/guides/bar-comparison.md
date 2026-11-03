@@ -14,6 +14,18 @@ Model: `bar-comparison` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/charts.md)
+
+```latex
+\studiotemplate[variant=bars,palette=light]{charts}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -82,8 +94,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/12={\$905},
-  text/24={Ukraine}
+  text/12={Title},
+  text/24={Item}
 ]{bar-comparison}
 ```
 
@@ -99,8 +111,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/12={\$905},
-  text/24={Ukraine}
+  text/12={Title},
+  text/24={Item}
 ]{bar-comparison}
 \end{document}
 ```
@@ -120,44 +132,44 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 19.4% wide × 16.4% high | <code>\includegraphics[width=689\studiounit]{images/studio/collection/figma-0028-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 19.4% wide × 16.4% high | <code>\includegraphics[width=689\studiounit]{images/studio/collection/figma-0028-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 64.1% wide × 5.9% high | <code>\includegraphics[width=2281\studiounit]{images/studio/collection/figma-0028-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper centre | 43.5% wide × 5.8% high | <code>\includegraphics[width=1548\studiounit]{images/studio/collection/figma-0028-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 43.5% wide × 6.1% high | <code>\includegraphics[width=1548\studiounit]{images/studio/collection/figma-0028-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 31.7% wide × 6.1% high | <code>\includegraphics[width=1126\studiounit]{images/studio/collection/figma-0028-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 28.3% wide × 5.9% high | <code>\includegraphics[width=1006\studiounit]{images/studio/collection/figma-0028-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 28.3% wide × 5.9% high | <code>\includegraphics[width=1006\studiounit]{images/studio/collection/figma-0028-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle left | 22.0% wide × 6.1% high | <code>\includegraphics[width=781\studiounit]{images/studio/collection/figma-0028-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle left | 18.3% wide × 6.1% high | <code>\includegraphics[width=651\studiounit]{images/studio/collection/figma-0028-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower left | 18.3% wide × 5.8% high | <code>\includegraphics[width=651\studiounit]{images/studio/collection/figma-0028-part-11.pdf}</code> |
-| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower left | 16.3% wide × 5.9% high | <code>\includegraphics[width=581\studiounit]{images/studio/collection/figma-0028-part-12.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | lower left | 5.5% wide × 3.2% high | <code>Ukraine</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 19.4% wide × 16.4% high | <code>\studiopaletteimage[width=689\studiounit]{images/studio/collection/figma-0028-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 19.4% wide × 16.4% high | <code>\studiopaletteimage[width=689\studiounit]{images/studio/collection/figma-0028-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 64.1% wide × 5.9% high | <code>\studiopaletteimage[width=2281\studiounit]{images/studio/collection/figma-0028-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper centre | 43.5% wide × 5.8% high | <code>\studiopaletteimage[width=1548\studiounit]{images/studio/collection/figma-0028-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 43.5% wide × 6.1% high | <code>\studiopaletteimage[width=1548\studiounit]{images/studio/collection/figma-0028-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 31.7% wide × 6.1% high | <code>\studiopaletteimage[width=1126\studiounit]{images/studio/collection/figma-0028-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 28.3% wide × 5.9% high | <code>\studiopaletteimage[width=1006\studiounit]{images/studio/collection/figma-0028-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 28.3% wide × 5.9% high | <code>\studiopaletteimage[width=1006\studiounit]{images/studio/collection/figma-0028-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle left | 22.0% wide × 6.1% high | <code>\studiopaletteimage[width=781\studiounit]{images/studio/collection/figma-0028-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle left | 18.3% wide × 6.1% high | <code>\studiopaletteimage[width=651\studiounit]{images/studio/collection/figma-0028-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower left | 18.3% wide × 5.8% high | <code>\studiopaletteimage[width=651\studiounit]{images/studio/collection/figma-0028-part-11.pdf}</code> |
+| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower left | 16.3% wide × 5.9% high | <code>\studiopaletteimage[width=581\studiounit]{images/studio/collection/figma-0028-part-12.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | lower left | 5.5% wide × 3.2% high | <code>Item</code> |
 | <code>text-2</code> | Editable text (text) | lower right | 3.5% wide × 3.1% high | <code>14.4</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 8.1% wide × 3.5% high | <code>Bangladesh</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 8.1% wide × 3.5% high | <code>Label 15</code> |
 | <code>text-4</code> | Editable text (text) | lower right | 3.4% wide × 3.1% high | <code>15.5</code> |
-| <code>text-5</code> | Editable text (text) | middle left | 6.0% wide × 3.1% high | <code>Vietnam</code> |
+| <code>text-5</code> | Editable text (text) | middle left | 6.0% wide × 3.1% high | <code>Item</code> |
 | <code>text-6</code> | Editable text (text) | middle right | 3.5% wide × 3.2% high | <code>15.9</code> |
-| <code>text-7</code> | Editable text (text) | middle left | 6.0% wide × 3.1% high | <code>Pakistan</code> |
+| <code>text-7</code> | Editable text (text) | middle left | 6.0% wide × 3.1% high | <code>Item</code> |
 | <code>text-8</code> | Editable text (text) | middle right | 3.4% wide × 3.2% high | <code>21.0</code> |
-| <code>text-9</code> | Editable text (text) | lower centre | 28.0% wide × 5.0% high | <code>vs. 2023</code> |
-| <code>text-10</code> | Editable text (text) | lower left | 5.1% wide × 3.6% high | <code>Nigeria</code> |
+| <code>text-9</code> | Editable text (text) | lower centre | 28.0% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>text-10</code> | Editable text (text) | lower left | 5.1% wide × 3.6% high | <code>Item</code> |
 | <code>text-11</code> | Editable text (text) | middle right | 3.6% wide × 3.2% high | <code>24.3</code> |
 | <code>text-12</code> | Editable text (text) | middle right | 3.6% wide × 3.2% high | <code>28.9</code> |
-| <code>text-13</code> | Editable text (text) | middle left | 4.4% wide × 3.6% high | <code>Egypt</code> |
+| <code>text-13</code> | Editable text (text) | middle left | 4.4% wide × 3.6% high | <code>Item</code> |
 | <code>text-14</code> | Editable text (text) | middle right | 3.6% wide × 3.2% high | <code>33.8</code> |
-| <code>text-15</code> | Editable text (text) | middle left | 6.6% wide × 3.5% high | <code>Philippines</code> |
+| <code>text-15</code> | Editable text (text) | middle left | 6.6% wide × 3.5% high | <code>Item</code> |
 | <code>text-16</code> | Editable text (text) | middle right | 3.5% wide × 3.2% high | <code>35.7</code> |
-| <code>text-17</code> | Editable text (text) | middle left | 5.9% wide × 3.1% high | <code>Mexico</code> |
+| <code>text-17</code> | Editable text (text) | middle left | 5.9% wide × 3.1% high | <code>Item</code> |
 | <code>text-18</code> | Editable text (text) | upper right | 3.5% wide × 3.2% high | <code>67.4</code> |
-| <code>text-19</code> | Editable text (text) | upper left | 3.7% wide × 3.1% high | <code>India</code> |
+| <code>text-19</code> | Editable text (text) | upper left | 3.7% wide × 3.1% high | <code>2</code> |
 | <code>text-20</code> | Editable text (text) | upper right | 3.6% wide × 3.2% high | <code>78.6</code> |
-| <code>text-21</code> | Editable text (text) | upper left | 3.6% wide × 3.2% high | <code>China</code> |
-| <code>text-22</code> | Editable text (text) | lower left | 11.7% wide × 3.1% high | <code>Source: World Bank</code> |
-| <code>text-23</code> | Editable text (text) | upper left | 43.6% wide × 6.4% high | <code>Top remittance recipients in 2024</code> |
-| <code>text-24</code> | Editable text (text) | middle centre | 16.1% wide × 4.4% high | <code>Billion transferred</code> |
-| <code>title</code> | Main text (text) | middle centre | 14.2% wide × 8.8% high | <code>\$905</code> |
-| <code>text-26</code> | Editable text (text) | lower centre | 14.8% wide × 7.5% high | <code>+4.5\%</code> |
+| <code>text-21</code> | Editable text (text) | upper left | 3.6% wide × 3.2% high | <code>4</code> |
+| <code>text-22</code> | Editable text (text) | lower left | 11.7% wide × 3.1% high | <code>Label 26</code> |
+| <code>text-23</code> | Editable text (text) | upper left | 43.6% wide × 6.4% high | <code>Supporting explanation</code> |
+| <code>text-24</code> | Editable text (text) | middle centre | 16.1% wide × 4.4% high | <code>Label 16</code> |
+| <code>title</code> | Main text (text) | middle centre | 14.2% wide × 8.8% high | <code>Title</code> |
+| <code>text-26</code> | Editable text (text) | lower centre | 14.8% wide × 7.5% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

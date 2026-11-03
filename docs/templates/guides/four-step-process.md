@@ -14,6 +14,18 @@ Model: `four-step-process` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-process.md)
+
+```latex
+\studiotemplate[variant=four,palette=light]{icon-process}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -53,8 +65,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Student's journey},
-  text/2={Understand\\Bitcoin's potential}
+  text/1={Slide title},
+  text/2={Label 2}
 ]{four-step-process}
 ```
 
@@ -70,8 +82,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Student's journey},
-  text/2={Understand\\Bitcoin's potential}
+  text/1={Slide title},
+  text/2={Label 2}
 ]{four-step-process}
 \end{document}
 ```
@@ -91,15 +103,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0054-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0054-part-02.pdf}</code> |
-| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0054-part-03.pdf}</code> |
-| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0054-part-04.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 25.5% wide × 7.8% high | <code>Student&#x27;s journey</code> |
-| <code>text-2</code> | Editable text (text) | lower left | 18.1% wide × 10.3% high | <code>Understand\\Bitcoin&#x27;s potential</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 15.8% wide × 10.3% high | <code>Attend\\education path</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 16.3% wide × 10.4% high | <code>Get a job in\\Bitcoin industry</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 14.5% wide × 10.3% high | <code>Acquire new\\competences</code> |
+| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-01.pdf}</code> |
+| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-02.pdf}</code> |
+| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-03.pdf}</code> |
+| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-04.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 25.5% wide × 7.8% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower left | 18.1% wide × 10.3% high | <code>Label 2</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 15.8% wide × 10.3% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 16.3% wide × 10.4% high | <code>Label 5</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 14.5% wide × 10.3% high | <code>Label 4</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

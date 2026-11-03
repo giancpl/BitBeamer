@@ -14,6 +14,18 @@ Model: `image-pair-title` · Family: Images · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/image-grid.md)
+
+```latex
+\studiotemplate[variant=title-pair,palette=light]{image-grid}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -47,7 +59,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Central Bank Digital Currency}
+  text/1={Slide title}
 ]{image-pair-title}
 ```
 
@@ -63,7 +75,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Central Bank Digital Currency}
+  text/1={Slide title}
 ]{image-pair-title}
 \end{document}
 ```
@@ -83,9 +95,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 38.6% wide × 67.1% high | <code>\includegraphics[width=1373\studiounit]{images/studio/collection/figma-0037-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 40.9% wide × 67.1% high | <code>\includegraphics[width=1454\studiounit]{images/studio/collection/figma-0037-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 45.7% wide × 8.6% high | <code>Central Bank Digital Currency</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 38.6% wide × 67.1% high | <code>\studiopaletteimage[width=1373\studiounit]{images/studio/collection/figma-0037-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 40.9% wide × 67.1% high | <code>\studiopaletteimage[width=1454\studiounit]{images/studio/collection/figma-0037-part-02.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 45.7% wide × 8.6% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

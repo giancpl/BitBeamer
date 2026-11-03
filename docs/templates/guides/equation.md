@@ -2,7 +2,7 @@
 
 # Equation and example
 
-Explain a formula.
+Demonstrate this reusable composition.
 
 Model: `equation` · Family: Technical · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `equation` · Family: Technical · Status: **in review**.
 ![Equation and example](../previews/equation.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/equation.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{equation}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -81,7 +93,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>expression</code> | Displayed formula (graphic) | middle centre | 53.8% wide × 41.7% high | <code>\fontsize{220\studiounit}{260\studiounit}\selectfont\color{bitpolito}$\displaystyle\sum_{i=0}^{32}210\,000\cdot\frac{...</code> |
+| <code>expression</code> | Displayed formula (graphic) | middle centre | 53.8% wide × 41.7% high | <code>\fontsize{220\studiounit}{260\studiounit}\selectfont\color{studio-foreground}$y = a x + b$</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

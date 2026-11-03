@@ -2,7 +2,7 @@
 
 # Standard closing
 
-Close the talk.
+Demonstrate this reusable composition.
 
 Model: `closing` · Family: Closing · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `closing` · Family: Closing · Status: **in review**.
 ![Standard closing](../previews/closing.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/closing.md)
+
+```latex
+\studiotemplate[variant=default,palette=blue]{closing}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -50,7 +62,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Thank you!}
+  text/2={Thank you}
 ]{closing}
 ```
 
@@ -66,7 +78,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Thank you!}
+  text/2={Thank you}
 ]{closing}
 \end{document}
 ```
@@ -86,12 +98,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\includegraphics[width=242\studiounit]{images/studio/collection/figma-0934-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\includegraphics[width=242\studiounit]{images/studio/collection/figma-0934-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\includegraphics[width=242\studiounit]{images/studio/collection/figma-0934-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\includegraphics[width=242\studiounit]{images/studio/collection/figma-0934-part-04.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-04.pdf}</code> |
 | <code>text-1</code> | Editable text (text) | upper centre | 6.9% wide × 7.0% high | <code>\textcopyright{} 2026\\BitPolito</code> |
-| <code>title</code> | Main text (text) | middle centre | 17.2% wide × 8.2% high | <code>@BitPolito</code> |
+| <code>title</code> | Main text (text) | middle centre | 17.2% wide × 8.2% high | <code>Thank you</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

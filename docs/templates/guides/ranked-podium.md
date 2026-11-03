@@ -14,6 +14,18 @@ Model: `ranked-podium` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/ranked-podium.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{ranked-podium}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -57,8 +69,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Game theory},
-  text/2={Winner takes all effect}
+  text/1={Title},
+  text/2={Label 2}
 ]{ranked-podium}
 ```
 
@@ -74,8 +86,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Game theory},
-  text/2={Winner takes all effect}
+  text/1={Title},
+  text/2={Label 2}
 ]{ranked-podium}
 \end{document}
 ```
@@ -95,19 +107,19 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 5.7% wide × 19.3% high | <code>\includegraphics[width=204\studiounit]{images/studio/collection/figma-0281-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 5.4% wide × 59.4% high | <code>\includegraphics[width=191\studiounit]{images/studio/collection/figma-0281-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 5.5% wide × 11.1% high | <code>\includegraphics[width=197\studiounit]{images/studio/collection/figma-0281-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 46.3% wide × 49.5% high | <code>\includegraphics[width=1647\studiounit]{images/studio/collection/figma-0281-part-04.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 21.3% wide × 8.5% high | <code>Game theory</code> |
-| <code>text-2</code> | Editable text (text) | upper left | 26.1% wide × 5.7% high | <code>Winner takes all effect</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 14.5% wide × 6.4% high | <code>Lindy effect</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 3.5% wide × 2.8% high | <code>LOW</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 3.5% wide × 2.7% high | <code>NEW</code> |
-| <code>text-6</code> | Editable text (text) | lower right | 3.2% wide × 2.8% high | <code>OLD</code> |
-| <code>text-7</code> | Editable text (text) | middle centre | 3.8% wide × 2.8% high | <code>HIGH</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 11.3% wide × 3.9% high | <code>Life expectancy</code> |
-| <code>text-9</code> | Editable text (text) | lower right | 13.2% wide × 3.9% high | <code>Time being around</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 5.7% wide × 19.3% high | <code>\studiopaletteimage[width=204\studiounit]{images/studio/collection/figma-0281-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 5.4% wide × 59.4% high | <code>\studiopaletteimage[width=191\studiounit]{images/studio/collection/figma-0281-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 5.5% wide × 11.1% high | <code>\studiopaletteimage[width=197\studiounit]{images/studio/collection/figma-0281-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 46.3% wide × 49.5% high | <code>\studiopaletteimage[width=1647\studiounit]{images/studio/collection/figma-0281-part-04.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 21.3% wide × 8.5% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | upper left | 26.1% wide × 5.7% high | <code>Label 2</code> |
+| <code>text-3</code> | Editable text (text) | upper right | 14.5% wide × 6.4% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 3.5% wide × 2.8% high | <code>6</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 3.5% wide × 2.7% high | <code>Item</code> |
+| <code>text-6</code> | Editable text (text) | lower right | 3.2% wide × 2.8% high | <code>8</code> |
+| <code>text-7</code> | Editable text (text) | middle centre | 3.8% wide × 2.8% high | <code>Item</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 11.3% wide × 3.9% high | <code>Label 4</code> |
+| <code>text-9</code> | Editable text (text) | lower right | 13.2% wide × 3.9% high | <code>Label 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -2,6 +2,7 @@
 
 import argparse
 import os
+import re
 from pathlib import Path
 import shutil
 import subprocess
@@ -63,6 +64,31 @@ def docker_command(docker, root, output, document, image, force=False):
     return command + ['./' + document.as_posix()]
 
 
+def document_sources_text(root, document):
+    """Inspect project-local TeX inputs, including a thin default entry point."""
+    pending = [document]
+    visited = set()
+    texts = []
+    while pending:
+        source = pending.pop().resolve()
+        if source in visited or not source.is_relative_to(root) or not source.is_file():
+            continue
+        visited.add(source)
+        text = source.read_text(encoding='utf-8')
+        texts.append(text)
+        for name in re.findall(r'\\(?:input|include)\s*\{([^{}\n]+)\}', text):
+            if any(token in name for token in ('\\', '#')):
+                continue
+            relative = Path(name)
+            if not relative.suffix:
+                relative = relative.with_suffix('.tex')
+            candidates = [source.parent / relative, root / relative]
+            local = next((path for path in candidates if path.is_file()), None)
+            if local is not None:
+                pending.append(local)
+    return '\n'.join(texts)
+
+
 def main(argv=None, root=None):
     root = (root or ROOT).resolve()
     parser = argparse.ArgumentParser(description=__doc__)
@@ -90,16 +116,19 @@ def main(argv=None, root=None):
             output = root / output
         output = output.resolve()
         count = check_prepared(root)
-        if 'bitpolito-studio' in document.read_text(encoding='utf-8'):
+        source_text = document_sources_text(root, document)
+        if 'bitpolito-studio' in source_text:
             prepare_studio(root, check=True)
-        if any(package in document.read_text(encoding='utf-8') for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/parts/manifest.json').is_file():
+        if any(package in source_text for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/parts/manifest.json').is_file():
             from studio_parts import prepare as check_studio_parts
             check_studio_parts(root, check=True)
-        if any(package in document.read_text(encoding='utf-8') for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/collection/manifest.json').is_file():
+        if any(package in source_text for package in ('bitpolitostudiopilots', 'bitpolitostudiotemplates')) and (root / 'images/studio/collection/manifest.json').is_file():
             from studio_collection import prepare as check_collection
             check_collection(root, check=True)
             from studio_slots import prepare as check_slots
             check_slots(root, check=True)
+            from studio_palettes import check as check_palettes
+            check_palettes(root)
         tool = native_tools() if args.backend == 'native' else docker_image(root, args.image)
         print(f'Ready: {args.backend} compiler; {count} prepared assets.', flush=True)
         if args.setup:

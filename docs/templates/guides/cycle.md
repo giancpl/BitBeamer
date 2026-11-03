@@ -2,7 +2,7 @@
 
 # Development cycle
 
-Explain a repeating process.
+Demonstrate this reusable composition.
 
 Model: `cycle` · Family: Diagrams · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `cycle` · Family: Diagrams · Status: **in review**.
 ![Development cycle](../previews/cycle.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/cycle.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{cycle}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -56,7 +68,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Your process}
+  text/2={Slide title}
 ]{cycle}
 ```
 
@@ -72,7 +84,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Your process}
+  text/2={Slide title}
 ]{cycle}
 \end{document}
 ```
@@ -92,18 +104,18 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 14.5% wide × 10.8% high | <code>\includegraphics[width=514\studiounit]{images/studio/collection/figma-0581-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 14.5% wide × 10.8% high | <code>\includegraphics[width=514\studiounit]{images/studio/collection/figma-0581-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 14.5% wide × 10.8% high | <code>\includegraphics[width=514\studiounit]{images/studio/collection/figma-0581-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper right | 14.5% wide × 10.8% high | <code>\includegraphics[width=514\studiounit]{images/studio/collection/figma-0581-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 14.5% wide × 10.8% high | <code>\includegraphics[width=514\studiounit]{images/studio/collection/figma-0581-part-05.pdf}</code> |
-| <code>title</code> | Main text (text) | middle left | 21.6% wide × 15.6% high | <code>Bitcoin\\Development</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 29.8% wide × 4.9% high | <code>BIP: Bitcoin Improvement Proposal</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 11.7% wide × 3.8% high | <code>Proposal</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 11.7% wide × 3.4% high | <code>Discussion</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 11.7% wide × 3.8% high | <code>Implementation</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 11.7% wide × 3.3% high | <code>Test</code> |
-| <code>text-7</code> | Editable text (text) | middle centre | 11.7% wide × 3.4% high | <code>Adoption</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 14.5% wide × 10.8% high | <code>\studiopaletteimage[width=514\studiounit]{images/studio/collection/figma-0581-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 14.5% wide × 10.8% high | <code>\studiopaletteimage[width=514\studiounit]{images/studio/collection/figma-0581-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 14.5% wide × 10.8% high | <code>\studiopaletteimage[width=514\studiounit]{images/studio/collection/figma-0581-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper right | 14.5% wide × 10.8% high | <code>\studiopaletteimage[width=514\studiounit]{images/studio/collection/figma-0581-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 14.5% wide × 10.8% high | <code>\studiopaletteimage[width=514\studiounit]{images/studio/collection/figma-0581-part-05.pdf}</code> |
+| <code>title</code> | Main text (text) | middle left | 21.6% wide × 15.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 29.8% wide × 4.9% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | upper right | 11.7% wide × 3.8% high | <code>Label 1</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 11.7% wide × 3.4% high | <code>Label 4</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 11.7% wide × 3.8% high | <code>Label 7</code> |
+| <code>text-6</code> | Editable text (text) | lower centre | 11.7% wide × 3.3% high | <code>Label 6</code> |
+| <code>text-7</code> | Editable text (text) | middle centre | 11.7% wide × 3.4% high | <code>Label 3</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

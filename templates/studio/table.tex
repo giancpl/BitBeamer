@@ -1,18 +1,23 @@
-\studiodeclarefield{title}{An illustrative transaction}
-\studiodeclarefield{body}{  \centering
-  \begin{tabular}{@{}lr@{}}
-    \toprule
-    \textbf{Item} & \textbf{Amount (sat)} \\
-    \midrule
-    Input & 60,000 \\
-    Payment & 40,000 \\
-    Change & 19,000 \\
-    Fee & 1,000 \\
-    \bottomrule
-  \end{tabular}
-  \par\bigskip{\small Example values for demonstrating the table layout.}
-}
+% Supplementary ordinary-frame table; fixed typography and illustrative data.
+\studiodeclarefield{title}{Data table}
+\studiodeclarefield{body}{\centering
+\begin{tabular}{@{}lr@{}}
+\toprule
+\textbf{Item} & \textbf{Value} \\
+\midrule
+First row & 40 \\
+Second row & 30 \\
+Third row & 20 \\
+Fourth row & 10 \\
+\bottomrule
+\end{tabular}
+\par\smallskip{\footnotesize Illustrative values.}}
 \studioapplyfields
+% Ordinary-frame content must actively select its palette foreground.
+\setbeamercolor{normal text}{fg=studio-foreground,bg=studio-background}
+\setbeamercolor{frametitle}{fg=studio-foreground,bg=studio-background}
+\usebeamercolor[fg]{normal text}
 \begin{frame}{\studiofield{title}}
+\typeout{STUDIO-FIELD: table/body}
 \studiofield{body}
 \end{frame}

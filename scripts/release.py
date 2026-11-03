@@ -45,7 +45,7 @@ def release(root=ROOT, backend='docker', image=None, style='all', review=False):
     if 'studio' in styles:
         prepare_studio(root, check=True)
         prepare_catalogue(root, check=True)
-    documents = list(DOCUMENT_SOURCES.values()) if 'academic' in styles else []
+    documents = list(dict.fromkeys(DOCUMENT_SOURCES.values())) if 'academic' in styles else []
     previews = dict(PREVIEWS) if 'academic' in styles else {}
     if 'studio' in styles:
         documents += ['main-studio.tex', 'examples/studio-selected-templates.tex']

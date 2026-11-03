@@ -13,7 +13,8 @@ from studio_templates import inspect_templates, inspect_aliases, prepare_catalog
 
 ROOT = Path(__file__).resolve().parents[1]
 DOCUMENT_SOURCES = {
-    'main.tex': 'main-academic.tex',
+    'main.tex': 'start-academic.tex',
+    'academic-showcase.tex': 'main-academic.tex',
     'start.tex': 'start-academic.tex',
     'assets-example.tex': 'examples/assets-example.tex',
     'asset-catalogue.tex': 'examples/asset-catalogue.tex',
@@ -39,10 +40,11 @@ STYLES = ('academic', 'studio')
 ARCHIVES = {'academic': 'bitbeamer-academic-overleaf.zip', 'studio': 'bitbeamer-studio-overleaf.zip'}
 STUDIO_DOCUMENT_SOURCES = {**DOCUMENT_SOURCES, 'main.tex': 'main-studio.tex', 'start.tex': 'start-studio.tex'}
 STUDIO_DOCUMENT_SOURCES.pop('cover-layouts.tex')
+STUDIO_DOCUMENT_SOURCES.pop('academic-showcase.tex')
 STUDIO_DOCUMENT_SOURCES['studio-template-catalogue.tex'] = 'examples/studio-template-catalogue.tex'
 STUDIO_DOCUMENT_SOURCES['customization.tex'] = 'examples/studio-customization.tex'
 STUDIO_THEME_FILES = (
-    'bitpolitostudioslots.sty', 'bitpolitostudiopilots.sty', 'bitpolitostudiotemplates.sty', 'bitpolitostudiolayouts.sty', 'bitpolitostudiomeasured.sty',
+    'bitpolitostudiomodels.sty', 'bitpolitostudioslots.sty', 'bitpolitostudiopilots.sty', 'bitpolitostudiotemplates.sty', 'bitpolitostudiolayouts.sty', 'bitpolitostudiomeasured.sty',
     'beamerthemebitpolito-studio.sty', 'beamerinnerthemebitpolito-studio.sty',
     'beamerouterthemebitpolito-studio.sty', 'beamerfontthemebitpolito-studio.sty',
     'beamerfontthemebitpolito.sty', 'beamercolorthemebitpolito.sty', 'bitpolitoassets.sty',
@@ -63,21 +65,26 @@ UPLOAD_LIMIT = 50 * 1024 * 1024
 
 
 def studio_data(root):
-    from studio_review import selected
+    from studio_review import selected, package_selection
     from studio_guides import portable_guides
     prepare_studio(root, check=True)
     from studio_slots import prepare as check_slots
     check_slots(root, check=True)
+    from studio_palettes import check as check_palettes
+    check_palettes(root)
     prepare_catalogue(root, check=True)
     all_entries = inspect_templates(root)
     by_id = {e['id']:e for e in all_entries}
-    entries = [by_id[item['id']] for item in selected(root,all_entries)]
+    catalogue_entries = [by_id[item['id']] for item in selected(root,all_entries)]
+    entries = [by_id[item['id']] for item in package_selection(root)]
     names = {e['id'] for e in entries}
     aliases = [a for a in inspect_aliases(root,all_entries) if a['alias_of'] in names]
     files = {name:root/name for name in STUDIO_THEME_FILES}
     files.update({name:root/name for name in ('bibliography.bib','LICENSE','.latexmkrc')})
     files.update({'images/bitpolito/'+name:root/'images/bitpolito'/name for name in STUDIO_BRAND_FILES})
     files.update({'images/studio/'+name:root/'images/studio'/name for name in STUDIO_ASSETS})
+    from studio_models import dependencies as palette_dependencies
+    files.update(palette_dependencies(root, entries + aliases))
     for entry in entries + aliases:
         files[entry['source']] = root/entry['source']
         for name in entry.get('slot_parts', []):
@@ -98,7 +105,7 @@ def studio_data(root):
             from studio_content_examples import document as customization_document
             data[name] = customization_document(entries).encode()
         elif name == 'studio-template-catalogue.tex':
-            data[name] = catalogue_document(entries).encode()
+            data[name] = catalogue_document(catalogue_entries).encode()
         else:
             raw = (root/source).read_bytes()
             if name in ('assets-example.tex','asset-catalogue.tex'):
@@ -109,15 +116,16 @@ def studio_data(root):
     data['README.md'] = ('''# BitBeamer Studio — Overleaf
 
 Open main.tex and select pdfLaTeX. It contains the current compact selection.
-For a small editable starting document, select start.tex and replace its example content.
-Select studio-template-catalogue.tex for a labelled view of every included model.
+For an editable starting document, select start.tex: cover, automatic contents, two content slides and closing.
+Select studio-template-catalogue.tex for a labelled view of the working selection.
+The classic blue title page is the default. Optional BitGeneration covers are included.
 
 See [slide guides](TEMPLATES.md), [Studio commands](STUDIO.md) and [icons](ICONS.md).
 Create a new .tex file at the project root and copy a guide's complete example.
 No Python, Docker, converter, shell escape or original Figma export is needed.
 With installed TeX Live or MacTeX, run `latexmk -pdf main.tex`.
 
-This project includes only the selected compositions and their dependencies.
+This project includes selected compositions, the optional standard covers and their dependencies.
 The full repository retains every composition and supports custom review exports.
 Compilation checks do not imply graphical approval.
 ''').encode()
@@ -129,6 +137,16 @@ Each `\\studiotemplate[fields]{name}` creates a complete frame, outside a frame 
 The [individual guides](TEMPLATES.md) list included models, exact fields and complete examples.
 Empty fields preserve geometry. Unknown fields and overflow produce diagnostics.
 Edit the corresponding source under templates/studio for structural changes.
+
+Standard pages use `\\studiotitleframe`, `\\studiotocframe` and `\\closingframe`.
+The cover uses document metadata; contents uses `\\section` declarations.
+The default cover is classic blue. Use `\\studiotitleframe[variant=bitgeneration]`
+for the light BitGeneration cover or `\\studiotitleframe[variant=bitgeneration-photo]`
+for its photographic version. Both use `\\title`, `\\author` and `\\institute`.
+Classic also supports `\\subtitle` and `\\date`; variants retain their original text slots.
+Use `\\studiotocframe[title={Agenda}]` to change its heading and
+`\\studioframe[subtitle={Optional subtitle}]{Title}{Content}` for a simple aligned slide.
+All these commands create complete frames. Place catalogue calls outside them.
 
 Normal Beamer frames and Studio components remain available alongside templates:
 `\\studiotocframe`, `\\studiosectionframe{title}`, `\\studiostatementframe{text}`,
@@ -173,7 +191,7 @@ def write_archive(target, data, budget=None):
     return target
 
 
-def package(root=ROOT, target=None, style='academic', review=False):
+def package(root=ROOT, target=None, style='studio', review=False):
     root = root.resolve()
     if style not in STYLES:
         raise ValueError('Select academic or studio')
@@ -214,7 +232,7 @@ def package(root=ROOT, target=None, style='academic', review=False):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output',type=Path)
-    parser.add_argument('--style',choices=(*STYLES,'all'),default='academic')
+    parser.add_argument('--style',choices=(*STYLES,'all'),default='studio')
     parser.add_argument('--review',action='store_true',help='Package unapproved work under build/review/, never dist/')
     args = parser.parse_args()
     try:

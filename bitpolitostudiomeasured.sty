@@ -7,8 +7,8 @@
 \providecommand{\studiopartpath}{images/studio/parts}
 \newcommand{\studiopart}[2][width=2cm]{%
   \IfFileExists{\studiopartpath/#2.pdf}{%
-    \includegraphics[#1,keepaspectratio]{\studiopartpath/#2.pdf}%
-  }{\IfFileExists{images/studio/collection/#2.pdf}{\includegraphics[#1,keepaspectratio]{images/studio/collection/#2.pdf}}{\PackageError{bitpolitostudiomeasured}{Missing Studio part '#2'}{Restore the prepared PDF from the repository.}}}%
+    \studiopaletteimage[#1,keepaspectratio]{\studiopartpath/#2.pdf}%
+  }{\IfFileExists{images/studio/collection/#2.pdf}{\studiopaletteimage[#1,keepaspectratio]{images/studio/collection/#2.pdf}}{\PackageError{bitpolitostudiomeasured}{Missing Studio part '#2'}{Restore the prepared PDF from the repository.}}}%
 }
 \newdimen\studiounit
 \newdimen\studiofitunit
@@ -31,7 +31,7 @@
  \begin{tikzpicture}[remember picture,overlay]
  \fill[#4] (current page.south west) rectangle (current page.north east);
  \begin{scope}[shift={([xshift=\studiooffsetx,yshift=-\studiooffsety]current page.north west)},
-  x=\studiounit,y=-\studiounit,every node/.style={inner sep=0,outer sep=0},text=bitpolito]
+  x=\studiounit,y=-\studiounit,every node/.style={inner sep=0,outer sep=0},text=studio-foreground]
  \clip (0,0) rectangle (#1,#2);
  #5
  \end{scope}

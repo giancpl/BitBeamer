@@ -2,7 +2,7 @@
 
 # Image on the right
 
-Explain a figure or photograph.
+Demonstrate this reusable composition.
 
 Model: `image-right` · Family: Images · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `image-right` · Family: Images · Status: **in review**.
 ![Image on the right](../previews/image-right.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/image-text.md)
+
+```latex
+\studiotemplate[variant=right,palette=light]{image-text}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -49,7 +61,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your example}
+  text/1={Slide title}
 ]{image-right}
 ```
 
@@ -65,7 +77,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your example}
+  text/1={Slide title}
 ]{image-right}
 \end{document}
 ```
@@ -85,11 +97,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 52.9% wide × 82.4% high | <code>\includegraphics[width=1881\studiounit]{images/studio/collection/figma-0032-part-01.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle left | 33.5% wide × 5.6% high | <code>Torture and kidnapping</code> |
-| <code>text-2</code> | Editable text (text) | lower left | 24.2% wide × 5.7% high | <code>Frozen accounts</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 22.6% wide × 5.6% high | <code>Violent suppression</code> |
-| <code>title</code> | Main text (text) | upper left | 22.0% wide × 8.6% high | <code>Nigeria, 2020</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 52.9% wide × 82.4% high | <code>\studiopaletteimage[width=1881\studiounit]{images/studio/collection/figma-0032-part-01.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle left | 33.5% wide × 5.6% high | <code>Supporting explanation</code> |
+| <code>text-2</code> | Editable text (text) | lower left | 24.2% wide × 5.7% high | <code>Label 4</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 22.6% wide × 5.6% high | <code>Label 2</code> |
+| <code>title</code> | Main text (text) | upper left | 22.0% wide × 8.6% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

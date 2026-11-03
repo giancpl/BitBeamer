@@ -2,7 +2,7 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "BitBeamer Academic: build presentation (default)",
+      "label": "BitBeamer Studio: build presentation (default)",
       "type": "process",
       "command": "python3",
       "args": [
@@ -23,6 +23,27 @@
         "kind": "build",
         "isDefault": true
       }
+    },
+    {
+      "label": "BitBeamer Academic: build full showcase",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/build.py",
+        "main-academic.tex"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/build.py",
+          "main-academic.tex"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
     },
     {
       "label": "BitBeamer: preview illustrations",
@@ -197,7 +218,7 @@
       "problemMatcher": []
     },
     {
-      "label": "BitBeamer Studio: build presentation (24 current layouts)",
+      "label": "BitBeamer Studio: build presentation (21 featured models)",
       "type": "process",
       "command": "python3",
       "args": [
@@ -405,6 +426,27 @@
           "-3",
           "${workspaceFolder}/scripts/build.py",
           "examples/studio-customization.tex"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer Studio: grouped model catalogue",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/review.py",
+        "models"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/review.py",
+          "models"
         ]
       },
       "options": {

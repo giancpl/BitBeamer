@@ -26,6 +26,8 @@ def common_files(root):
 def entry_files(root,entry):
     files={entry['source']:root/entry['source']}
     files.update({name:root/name for name in entry.get('slot_parts',[])})
+    from studio_models import dependencies as palette_dependencies
+    files.update(palette_dependencies(root,[entry]))
     for part in entry.get('parts',[]):
         folder='images/studio/parts' if (root/'images/studio/parts'/(part+'.pdf')).exists() else 'images/studio/collection'
         name=folder+'/'+part+'.pdf';files[name]=root/name
@@ -111,10 +113,14 @@ if __name__=='__main__':
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--output', type=Path)
     choice=parser.add_mutually_exclusive_group()
+    choice.add_argument('--models',help='Comma-separated grouped model IDs, including their available variants')
     choice.add_argument('--templates', help='Comma-separated model IDs; default is the complete collection')
     choice.add_argument('--selection', action='store_true', help='Package the curated working set into a separate output folder')
     args=parser.parse_args()
     names=args.templates.split(',') if args.templates else None
+    if args.models:
+        from studio_models import expand_model_names
+        names=expand_model_names(ROOT,args.models.split(','))
     output=args.output
     if args.selection:
         from studio_gallery import selection

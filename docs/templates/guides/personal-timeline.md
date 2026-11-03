@@ -14,6 +14,18 @@ Model: `personal-timeline` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/timeline.md)
+
+```latex
+\studiotemplate[variant=milestones,palette=light]{timeline}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -56,8 +68,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={My Journey},
-  text/5={BSc Thesis: Pell's\\equation and\\cryptographic\\applications}
+  text/1={Title},
+  text/5={Label 5}
 ]{personal-timeline}
 ```
 
@@ -73,8 +85,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={My Journey},
-  text/5={BSc Thesis: Pell's\\equation and\\cryptographic\\applications}
+  text/1={Title},
+  text/5={Label 5}
 ]{personal-timeline}
 \end{document}
 ```
@@ -94,18 +106,18 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 75.3% wide × 34.4% high | <code>\includegraphics[width=1445\studiounit]{images/studio/collection/figma-0138-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 19.3% wide × 8.4% high | <code>My Journey</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 12.3% wide × 13.6% high | <code>BSc Thesis: Pell&#x27;s\\equation and\\cryptographic\\applications</code> |
-| <code>text-3</code> | Editable text (text) | upper left | 6.1% wide × 2.9% high | <code>Dec 2021</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 6.8% wide × 3.2% high | <code>Sept 2023</code> |
-| <code>text-5</code> | Editable text (text) | middle centre | 6.2% wide × 2.9% high | <code>Oct 2023</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 6.2% wide × 2.9% high | <code>Oct 2025</code> |
-| <code>text-7</code> | Editable text (text) | middle right | 6.2% wide × 3.2% high | <code>Apr 2026</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 10.1% wide × 6.7% high | <code>BitPolito\\Student Team</code> |
-| <code>text-9</code> | Editable text (text) | middle right | 11.8% wide × 10.4% high | <code>Research Fellow\\@ CrypTO\\Research Group</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 12.5% wide × 6.7% high | <code>DeComponendis\\Cifris Association</code> |
-| <code>text-11</code> | Editable text (text) | middle centre | 10.2% wide × 3.4% high | <code>Master Thesis</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 75.3% wide × 34.4% high | <code>\studiopaletteimage[width=1445\studiounit]{images/studio/collection/figma-0138-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 19.3% wide × 8.4% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 12.3% wide × 13.6% high | <code>Label 5</code> |
+| <code>text-3</code> | Editable text (text) | upper left | 6.1% wide × 2.9% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 6.8% wide × 3.2% high | <code>Label 10</code> |
+| <code>text-5</code> | Editable text (text) | middle centre | 6.2% wide × 2.9% high | <code>Item</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 6.2% wide × 2.9% high | <code>Item</code> |
+| <code>text-7</code> | Editable text (text) | middle right | 6.2% wide × 3.2% high | <code>Item</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 10.1% wide × 6.7% high | <code>Label 6</code> |
+| <code>text-9</code> | Editable text (text) | middle right | 11.8% wide × 10.4% high | <code>Label 7</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 12.5% wide × 6.7% high | <code>Label 8</code> |
+| <code>text-11</code> | Editable text (text) | middle centre | 10.2% wide × 3.4% high | <code>Label 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

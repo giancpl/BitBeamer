@@ -14,6 +14,18 @@ Model: `price-lines` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/charts.md)
+
+```latex
+\studiotemplate[variant=series,palette=light]{charts}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -73,8 +85,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Price changes 2000-2020},
-  text/4={University tuition}
+  text/1={Slide title},
+  text/4={Label 4}
 ]{price-lines}
 ```
 
@@ -90,8 +102,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Price changes 2000-2020},
-  text/4={University tuition}
+  text/1={Slide title},
+  text/4={Label 4}
 ]{price-lines}
 \end{document}
 ```
@@ -111,35 +123,35 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 7.6% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 8.6% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 5.5% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 8.0% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 9.0% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 8.9% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | upper left | 2.2% wide × 9.3% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0016-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 65.9% wide × 67.6% high | <code>\includegraphics[width=2344\studiounit]{images/studio/collection/figma-0016-part-08.pdf}</code> |
-| <code>title</code> | Main text (text) | upper left | 51.6% wide × 8.6% high | <code>Price changes 2000-2020</code> |
-| <code>text-2</code> | Editable text (text) | upper right | 12.3% wide × 2.6% high | <code>University tuition</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 9.5% wide × 3.0% high | <code>Hospital care</code> |
-| <code>text-4</code> | Editable text (text) | upper right | 13.4% wide × 3.0% high | <code>College tuition</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 7.9% wide × 2.7% high | <code>Medical care</code> |
-| <code>text-6</code> | Editable text (text) | middle right | 4.7% wide × 2.6% high | <code>Childcare</code> |
-| <code>text-7</code> | Editable text (text) | middle right | 6.0% wide × 2.6% high | <code>Food</code> |
-| <code>text-8</code> | Editable text (text) | middle right | 5.4% wide × 3.0% high | <code>Proprieta</code> |
-| <code>text-9</code> | Editable text (text) | middle right | 6.3% wide × 2.6% high | <code>Cars</code> |
-| <code>text-10</code> | Editable text (text) | middle right | 4.4% wide × 2.6% high | <code>Furniture</code> |
-| <code>text-11</code> | Editable text (text) | lower right | 5.4% wide × 2.7% high | <code>Software</code> |
-| <code>text-12</code> | Editable text (text) | lower right | 5.5% wide × 2.6% high | <code>Televisions</code> |
-| <code>text-13</code> | Editable text (text) | lower right | 8.7% wide × 2.7% high | <code>Mobile phones</code> |
-| <code>text-14</code> | Editable text (text) | middle right | 8.3% wide × 3.0% high | <code>Clothing</code> |
-| <code>text-15</code> | Editable text (text) | lower right | 5.7% wide × 2.7% high | <code>Toys</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 7.6% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 8.6% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 5.5% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 8.0% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 9.0% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 8.9% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | upper left | 2.2% wide × 9.3% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0016-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 65.9% wide × 67.6% high | <code>\studiopaletteimage[width=2344\studiounit]{images/studio/collection/figma-0016-part-08.pdf}</code> |
+| <code>title</code> | Main text (text) | upper left | 51.6% wide × 8.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | upper right | 12.3% wide × 2.6% high | <code>Label 4</code> |
+| <code>text-3</code> | Editable text (text) | upper right | 9.5% wide × 3.0% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | upper right | 13.4% wide × 3.0% high | <code>Label 5</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 7.9% wide × 2.7% high | <code>Label 6</code> |
+| <code>text-6</code> | Editable text (text) | middle right | 4.7% wide × 2.6% high | <code>Item</code> |
+| <code>text-7</code> | Editable text (text) | middle right | 6.0% wide × 2.6% high | <code>Label 8</code> |
+| <code>text-8</code> | Editable text (text) | middle right | 5.4% wide × 3.0% high | <code>Item</code> |
+| <code>text-9</code> | Editable text (text) | middle right | 6.3% wide × 2.6% high | <code>Label 10</code> |
+| <code>text-10</code> | Editable text (text) | middle right | 4.4% wide × 2.6% high | <code>Item</code> |
+| <code>text-11</code> | Editable text (text) | lower right | 5.4% wide × 2.7% high | <code>Item</code> |
+| <code>text-12</code> | Editable text (text) | lower right | 5.5% wide × 2.6% high | <code>Item</code> |
+| <code>text-13</code> | Editable text (text) | lower right | 8.7% wide × 2.7% high | <code>Label 13</code> |
+| <code>text-14</code> | Editable text (text) | middle right | 8.3% wide × 3.0% high | <code>Label 11</code> |
+| <code>text-15</code> | Editable text (text) | lower right | 5.7% wide × 2.7% high | <code>Item</code> |
 | <code>text-16</code> | Editable text (text) | lower left | 3.6% wide × 2.7% high | <code>2000</code> |
 | <code>text-17</code> | Editable text (text) | lower left | 3.6% wide × 2.7% high | <code>2005</code> |
 | <code>text-18</code> | Editable text (text) | lower centre | 3.4% wide × 2.7% high | <code>2010</code> |
 | <code>text-19</code> | Editable text (text) | lower centre | 3.4% wide × 2.7% high | <code>2015</code> |
 | <code>text-20</code> | Editable text (text) | lower right | 3.5% wide × 2.7% high | <code>2020</code> |
-| <code>text-21</code> | Editable text (text) | upper left | 19.1% wide × 3.0% high | <code>Source: Visual Capitalist Data Stream</code> |
+| <code>text-21</code> | Editable text (text) | upper left | 19.1% wide × 3.0% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

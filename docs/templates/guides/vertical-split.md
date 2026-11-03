@@ -2,7 +2,7 @@
 
 # Vertical light and blue comparison
 
-Compare two alternatives.
+Demonstrate this reusable composition.
 
 Model: `vertical-split` · Family: Comparisons · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `vertical-split` · Family: Comparisons · Status: **in review**.
 ![Vertical light and blue comparison](../previews/vertical-split.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/split-comparison.md)
+
+```latex
+\studiotemplate[variant=vertical,palette=light]{split-comparison}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -48,8 +60,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Second option},
-  text/3={First option}
+  text/2={Slide title},
+  text/3={Supporting explanation.\\Add your own details.}
 ]{vertical-split}
 ```
 
@@ -65,8 +77,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Second option},
-  text/3={First option}
+  text/2={Slide title},
+  text/3={Supporting explanation.\\Add your own details.}
 ]{vertical-split}
 \end{document}
 ```
@@ -86,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>text-1</code> | Editable text (text) | middle left | 32.2% wide × 37.9% high | <code>- Pubblic code\par - Everyone can modify\par \textbullet{} Community driven\par - Peer review\par \textbullet{} Free ...</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 29.1% wide × 37.9% high | <code>- Hidden code\par \textbullet{} Only the owner can modify\\- Business driven\par \textbullet{} Auditing\par - Control...</code> |
-| <code>title</code> | Main text (text) | upper right | 23.5% wide × 7.6% high | <code>Closed Source</code> |
-| <code>text-4</code> | Editable text (text) | upper left | 21.2% wide × 8.5% high | <code>Open Source</code> |
+| <code>text-1</code> | Editable text (text) | middle left | 32.2% wide × 37.9% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 29.1% wide × 37.9% high | <code>Supporting explanation</code> |
+| <code>title</code> | Main text (text) | upper right | 23.5% wide × 7.6% high | <code>Slide title</code> |
+| <code>text-4</code> | Editable text (text) | upper left | 21.2% wide × 8.5% high | <code>Label 1</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

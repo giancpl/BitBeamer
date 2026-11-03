@@ -2,7 +2,7 @@
 
 # Three soft icon cards
 
-Show three illustrated concepts.
+Demonstrate this reusable composition.
 
 Model: `three-cards` · Family: Cards · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `three-cards` · Family: Cards · Status: **in review**.
 ![Three soft icon cards](../previews/three-cards.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/icon-cards.md)
+
+```latex
+\studiotemplate[variant=three,palette=light]{icon-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -51,10 +63,10 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Three useful tools},
-  text/2={Learn},
-  text/3={Build},
-  text/4={Share},
+  text/1={Slide title},
+  text/2={Label 2},
+  text/3={Label 3},
+  text/4={Label 4},
   graphic/1={\asset[width=1cm]{alice}}
 ]{three-cards}
 ```
@@ -71,10 +83,10 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Three useful tools},
-  text/2={Learn},
-  text/3={Build},
-  text/4={Share},
+  text/1={Slide title},
+  text/2={Label 2},
+  text/3={Label 3},
+  text/4={Label 4},
   graphic/1={\asset[width=1cm]{alice}}
 ]{three-cards}
 \end{document}
@@ -95,10 +107,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 54.4% wide × 7.5% high | <code>Financial exclusion</code> |
-| <code>caption-one</code> | First caption (text) | lower left | 18.6% wide × 5.5% high | <code>Unbanked</code> |
-| <code>caption-two</code> | Second caption (text) | lower centre | 18.6% wide × 5.5% high | <code>Remittances</code> |
-| <code>caption-three</code> | Third caption (text) | lower right | 18.6% wide × 5.5% high | <code>Censorship</code> |
+| <code>title</code> | Main text (text) | upper centre | 54.4% wide × 7.5% high | <code>Slide title</code> |
+| <code>caption-one</code> | First caption (text) | lower left | 18.6% wide × 5.5% high | <code>Label 2</code> |
+| <code>caption-two</code> | Second caption (text) | lower centre | 18.6% wide × 5.5% high | <code>Label 3</code> |
+| <code>caption-three</code> | Third caption (text) | lower right | 18.6% wide × 5.5% high | <code>Label 4</code> |
 | <code>graphic-one</code> | Icon or image inside a fixed composition (graphic) | middle left | 9.0% wide × 16.0% high | <code>\studiopart[width=180.9\studiounit]{card-icon-1}</code> |
 | <code>graphic-two</code> | Icon or image inside a fixed composition (graphic) | middle centre | 9.0% wide × 16.0% high | <code>\studiopart[width=162\studiounit]{card-icon-2}</code> |
 | <code>graphic-three</code> | Icon or image inside a fixed composition (graphic) | middle right | 9.0% wide × 16.0% high | <code>\studiopart[width=221.4\studiounit]{card-icon-3}</code> |

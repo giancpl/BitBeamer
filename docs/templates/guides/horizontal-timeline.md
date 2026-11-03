@@ -2,7 +2,7 @@
 
 # Horizontal timeline
 
-Show events along a timeline.
+Demonstrate this reusable composition.
 
 Model: `horizontal-timeline` · Family: Diagrams · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `horizontal-timeline` · Family: Diagrams · Status: **in review**.
 ![Horizontal timeline](../previews/horizontal-timeline.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/timeline.md)
+
+```latex
+\studiotemplate[variant=horizontal,palette=light]{timeline}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -65,7 +77,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Your timeline}
+  text/1={Slide title}
 ]{horizontal-timeline}
 ```
 
@@ -81,7 +93,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Your timeline}
+  text/1={Slide title}
 ]{horizontal-timeline}
 \end{document}
 ```
@@ -101,27 +113,27 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0084-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0084-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0084-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0084-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0084-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 16.3% wide × 13.3% high | <code>\includegraphics[width=580\studiounit]{images/studio/collection/figma-0084-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0084-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0084-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0084-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0084-part-10.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 23.3% wide × 7.5% high | <code>The DAO hack</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 10.5% wide × 10.0% high | <code>Ethereum idea\\proposed by\\Vitalik Buterin</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0084-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0084-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0084-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0084-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0084-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 16.3% wide × 13.3% high | <code>\studiopaletteimage[width=580\studiounit]{images/studio/collection/figma-0084-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0084-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0084-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0084-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0084-part-10.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 23.3% wide × 7.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 10.5% wide × 10.0% high | <code>Label 5</code> |
 | <code>text-3</code> | Editable text (text) | middle left | 3.7% wide × 2.8% high | <code>2014</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 6.4% wide × 3.2% high | <code>July 2015</code> |
-| <code>text-5</code> | Editable text (text) | middle centre | 6.7% wide × 3.3% high | <code>April 2016</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 6.9% wide × 2.8% high | <code>June 2016</code> |
-| <code>text-7</code> | Editable text (text) | middle right | 6.9% wide × 2.8% high | <code>June 2016</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 10.7% wide × 10.5% high | <code>The DAO kicks\\off and starts\\fundraising</code> |
-| <code>text-9</code> | Editable text (text) | middle right | 12.5% wide × 10.0% high | <code>Hard fork results\\in Ethereum and\\Ethereum Classic</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 8.7% wide × 6.7% high | <code>Ethereum is\\launched</code> |
-| <code>text-11</code> | Editable text (text) | middle centre | 8.3% wide × 6.7% high | <code>The DAO is\\hacked</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 6.4% wide × 3.2% high | <code>Item</code> |
+| <code>text-5</code> | Editable text (text) | middle centre | 6.7% wide × 3.3% high | <code>Label 3</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 6.9% wide × 2.8% high | <code>Label 11</code> |
+| <code>text-7</code> | Editable text (text) | middle right | 6.9% wide × 2.8% high | <code>Label 4</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 10.7% wide × 10.5% high | <code>Label 6</code> |
+| <code>text-9</code> | Editable text (text) | middle right | 12.5% wide × 10.0% high | <code>Label 7</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 8.7% wide × 6.7% high | <code>Label 8</code> |
+| <code>text-11</code> | Editable text (text) | middle centre | 8.3% wide × 6.7% high | <code>Label 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

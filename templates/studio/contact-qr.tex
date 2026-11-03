@@ -1,13 +1,13 @@
-% Source-coordinate reconstruction. Edit named defaults or copy this entire composition.
-\studiodeclarefield{graphic-1}{\includegraphics[width=537\studiounit]{images/studio/collection/figma-0943-part-01.pdf}}
-\studiodeclarefield{graphic-2}{\includegraphics[width=585\studiounit]{images/studio/collection/figma-0943-part-02.pdf}}
-\studiodeclarefield{text-1}{\textcopyright{} 2026 BitPolito}
-\studiodeclarefield{title}{@BitPolito}
+% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
+\studiodeclarefield{graphic-1}{\studiopaletteimage[width=537\studiounit]{images/studio/neutral/contact-qr-graphic-1.pdf}}
+\studiodeclarefield{graphic-2}{{\color{black}\qrcode[height=497.25\studiounit]{https://example.org}}}
+\studiodeclarefield{text-1}{Label 1}
+\studiodeclarefield{title}{Title}
 \studioapplyfields
-\studiomeasuredcanvas{1920}{1080}{contact-qr}{bitpolito}{
-\studiomeasuredtext{text-1}{844.965}{52.711}{251.406}{42.0808}{31.4469}{36.4784}{\color{white}}{\studiofield{text-1}}
+\studiomeasuredcanvas{1920}{1080}{contact-qr}{studio-background}{
+\studiomeasuredtext{text-1}{844.965}{52.711}{251.406}{42.0808}{31.4469}{36.4784}{\color{studio-foreground}}{\studiofield{text-1}}
 \studiographfield{graphic-1}{1078}{540}{537}{148}{}{}
-\path[fill=white,draw=none,line width=1\studiounit] (1489.9,570.164)--(1540.26,570.164)--(1540.26,575.795)--(1545.86,575.795)--(1545.86,603.948)--(1540.26,603.948)--(1540.26,609.579)--(1489.9,609.579)--(1489.9,603.948)--(1484.3,603.948)--(1484.3,575.795)--(1489.9,575.795)--(1489.9,570.164)--cycle (1523.47,592.687)--(1523.47,587.056)--(1517.88,587.056)--(1517.88,581.426)--(1512.28,581.426)--(1512.28,598.318)--(1517.88,598.318)--(1517.88,592.687)--(1523.47,592.687)--cycle;
-\studiomeasuredtext{title}{1164.53}{425.934}{330.213}{88.0211}{60.8693}{70.6084}{\color{white}}{\studiofield{title}}
+\path[fill=studio-foreground,draw=none,line width=1\studiounit] (1489.9,570.164)--(1540.26,570.164)--(1540.26,575.795)--(1545.86,575.795)--(1545.86,603.948)--(1540.26,603.948)--(1540.26,609.579)--(1489.9,609.579)--(1489.9,603.948)--(1484.3,603.948)--(1484.3,575.795)--(1489.9,575.795)--(1489.9,570.164)--cycle (1523.47,592.687)--(1523.47,587.056)--(1517.88,587.056)--(1517.88,581.426)--(1512.28,581.426)--(1512.28,598.318)--(1517.88,598.318)--(1517.88,592.687)--(1523.47,592.687)--cycle;
+\studiomeasuredtext{title}{1164.53}{425.934}{330.213}{88.0211}{60.8693}{70.6084}{\color{studio-foreground}}{\studiofield{title}}
 \studiographfield{graphic-2}{354}{47}{585}{1003}{}{}
 }

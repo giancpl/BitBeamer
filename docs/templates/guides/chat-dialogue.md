@@ -14,6 +14,18 @@ Model: `chat-dialogue` · Family: Statements · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/dialogue.md)
+
+```latex
+\studiotemplate[variant=two-messages,palette=blue]{dialogue}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -47,7 +59,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={--- Eric Hughes, A Cypherpunk''s Manifesto, 1993}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{chat-dialogue}
 ```
 
@@ -63,7 +76,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={--- Eric Hughes, A Cypherpunk''s Manifesto, 1993}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{chat-dialogue}
 \end{document}
 ```
@@ -83,9 +97,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 60.8% wide × 47.5% high | <code>\includegraphics[width=2163\studiounit]{images/studio/collection/figma-0757-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 57.1% wide × 27.1% high | <code>&quot;A private matter is something one does not\\want the whole world to know, while a secret\\matter is something one do...</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 57.8% wide × 4.3% high | <code>--- Eric Hughes, A Cypherpunk&#x27;&#x27;s Manifesto, 1993</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 60.8% wide × 47.5% high | <code>\studiopaletteimage[width=2163\studiounit]{images/studio/collection/figma-0757-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle centre | 57.1% wide × 27.1% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 57.8% wide × 4.3% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

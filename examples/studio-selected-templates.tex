@@ -18,174 +18,54 @@ font=\fontsize{5}{6}\selectfont] at ([yshift=0.012\paperheight]current page.sout
 \begin{document}
 \section{Opening}
 \gdef\studiocataloguename{\detokenize{cover}}
-% Customization example:
-% \studiotemplate[
-%   title={Your talk\\title},
-%   author={Your name},
-%   institute={Your institute}
-% ]{cover}
-\studiotemplate{cover}
+\studiotemplate[variant={pattern},palette={blue}]{cover}
 \gdef\studiocataloguename{\detokenize{contents}}
-% Customization example:
-% \studiotemplate[
-%   title={Contents},
-%   item-2-1={Motivation},
-%   item-2-2={How it works},
-%   item-2-3={Examples},
-%   item-2-4={Discussion}
-% ]{contents}
-\studiotemplate{contents}
+\studiotemplate[variant={panels},palette={light}]{agenda}
 \gdef\studiocataloguename{\detokenize{section-divider}}
-% Customization example:
-% \studiotemplate[
-%   title={Your section}
-% ]{section-divider}
-\studiotemplate{section-divider}
+\studiotemplate[variant={default},palette={blue}]{section-divider}
 \section{Statements}
 \gdef\studiocataloguename{\detokenize{statement-arrow}}
-% Customization example:
-% \studiotemplate[
-%   title={Your statement}
-% ]{statement-arrow}
-\studiotemplate{statement-arrow}
-\gdef\studiocataloguename{\detokenize{glow-statement}}
-% Customization example:
-% \studiotemplate[
-%   statement={Your main idea}
-% ]{glow-statement}
-\studiotemplate{glow-statement}
-\gdef\studiocataloguename{\detokenize{blue-statement}}
-% Customization example:
-% \studiotemplate[
-%   title={Your statement}
-% ]{blue-statement}
-\studiotemplate{blue-statement}
+\studiotemplate[variant={arrow},palette={light}]{statement}
 \section{Lists}
 \gdef\studiocataloguename{\detokenize{two-columns}}
-% Customization example:
-% \studiotemplate[
-%   title={Two approaches}
-% ]{two-columns}
-\studiotemplate{two-columns}
+\studiotemplate[variant={default},palette={light}]{two-columns}
 \gdef\studiocataloguename{\detokenize{list-rail-light}}
-% Customization example:
-% \studiotemplate[
-%   title={Your concept}
-% ]{list-rail-light}
-\studiotemplate{list-rail-light}
+\studiotemplate[variant={three-items},palette={light}]{list-rail}
 \section{Cards}
 \gdef\studiocataloguename{\detokenize{three-cards}}
-% Customization example:
-% \studiotemplate[
-%   title={Three useful tools},
-%   caption-one={Learn},
-%   caption-two={Build},
-%   caption-three={Share},
-%   graphic-one={\asset[width=1cm]{alice}}
-% ]{three-cards}
-\studiotemplate{three-cards}
+\studiotemplate[variant={three},palette={light}]{icon-cards}
 \gdef\studiocataloguename{\detokenize{three-step-process}}
-% Customization example:
-% \studiotemplate[
-%   title={First step},
-%   text-2={Second step},
-%   text-3={Third step}
-% ]{three-step-process}
-\studiotemplate{three-step-process}
+\studiotemplate[variant={three},palette={light}]{icon-process}
 \gdef\studiocataloguename{\detokenize{four-card-grid}}
-% Customization example:
-% \studiotemplate[
-%   title={Four ideas}
-% ]{four-card-grid}
-\studiotemplate{four-card-grid}
+\studiotemplate[variant={four},palette={light}]{text-cards}
 \section{Comparisons}
 \gdef\studiocataloguename{\detokenize{vertical-split}}
-% Customization example:
-% \studiotemplate[
-%   title={Second option},
-%   text-1={First option}
-% ]{vertical-split}
-\studiotemplate{vertical-split}
+\studiotemplate[variant={vertical},palette={light}]{split-comparison}
 \section{Images}
 \gdef\studiocataloguename{\detokenize{image-left}}
-% Customization example:
-% \studiotemplate[
-%   title={Your subject},
-%   graphic-1={\asset[width=3cm]{alice}}
-% ]{image-left}
-\studiotemplate{image-left}
-\gdef\studiocataloguename{\detokenize{image-right}}
-% Customization example:
-% \studiotemplate[
-%   title={Your example}
-% ]{image-right}
-\studiotemplate{image-right}
+\studiotemplate[variant={left},palette={light}]{image-text}
 \gdef\studiocataloguename{\detokenize{four-images}}
-% Customization example:
-% \studiotemplate{four-images}
-\studiotemplate{four-images}
+\studiotemplate[variant={four},palette={light}]{image-grid}
 \section{Data}
 \gdef\studiocataloguename{\detokenize{hero-number}}
-% Customization example:
-% \studiotemplate[
-%   title={21 million},
-%   text-2={A short explanation}
-% ]{hero-number}
-\studiotemplate{hero-number}
+\studiotemplate[variant={default},palette={light}]{hero-number}
 \gdef\studiocataloguename{\detokenize{line-chart}}
-% Customization example:
-% \studiotemplate[
-%   title={Demo},
-%   text-1={Example curve},
-%   text-3={},
-%   text-4={Illustrative data},
-%   data-file={examples/data/studio-line.csv}
-% ]{line-chart}
-\studiotemplate{line-chart}
+\studiotemplate[variant={line},palette={light}]{charts}
 \section{Diagrams}
 \gdef\studiocataloguename{\detokenize{horizontal-timeline}}
-% Customization example:
-% \studiotemplate[
-%   title={Your timeline}
-% ]{horizontal-timeline}
-\studiotemplate{horizontal-timeline}
+\studiotemplate[variant={horizontal},palette={light}]{timeline}
 \gdef\studiocataloguename{\detokenize{cycle}}
-% Customization example:
-% \studiotemplate[
-%   title={Your process}
-% ]{cycle}
-\studiotemplate{cycle}
+\studiotemplate[variant={default},palette={light}]{cycle}
 \section{Technical}
 \gdef\studiocataloguename{\detokenize{merkle-tree}}
-% Customization example:
-% \studiotemplate[
-%   title={Merkle\\Tree}
-% ]{merkle-tree}
-\studiotemplate{merkle-tree}
+\studiotemplate[variant={compact},palette={light}]{binary-tree}
 \gdef\studiocataloguename{\detokenize{table}}
-% Customization example:
-% \studiotemplate[
-%   title={Your table}
-% ]{table}
-\studiotemplate{table}
+\studiotemplate[variant={default},palette={light}]{table}
 \gdef\studiocataloguename{\detokenize{equation}}
-% Customization example:
-% \studiotemplate[
-%   expression={\color{bitpolito}\Large$E=mc^2$}
-% ]{equation}
-\studiotemplate{equation}
+\studiotemplate[variant={default},palette={light}]{equation}
 \gdef\studiocataloguename{\detokenize{code}}
-% Customization example:
-% \studiotemplate[
-%   title={Your example},
-%   code-file={examples/code/studio-transaction.txt}
-% ]{code}
-\studiotemplate{code}
+\studiotemplate[variant={default},palette={light}]{code}
 \section{Closing}
 \gdef\studiocataloguename{\detokenize{closing}}
-% Customization example:
-% \studiotemplate[
-%   title={Thank you!}
-% ]{closing}
-\studiotemplate{closing}
+\studiotemplate[variant={default},palette={blue}]{closing}
 \end{document}

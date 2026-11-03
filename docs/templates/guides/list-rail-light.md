@@ -2,7 +2,7 @@
 
 # Light list with vertical rail
 
-Pair a concept with a short list.
+Demonstrate this reusable composition.
 
 Model: `list-rail-light` · Family: Lists · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `list-rail-light` · Family: Lists · Status: **in review**.
 ![Light list with vertical rail](../previews/list-rail-light.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/list-rail.md)
+
+```latex
+\studiotemplate[variant=three-items,palette=light]{list-rail}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -48,7 +60,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Your concept}
+  text/2={Title}
 ]{list-rail-light}
 ```
 
@@ -64,7 +76,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Your concept}
+  text/2={Title}
 ]{list-rail-light}
 \end{document}
 ```
@@ -84,10 +96,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | middle left | 17.0% wide × 14.7% high | <code>Distributed\\systems</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 30.6% wide × 5.0% high | <code>No central coordinator</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 15.5% wide × 5.6% high | <code>Common rules</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 23.8% wide × 4.8% high | <code>Client-server symmetry</code> |
+| <code>title</code> | Main text (text) | middle left | 17.0% wide × 14.7% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 30.6% wide × 5.0% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle centre | 15.5% wide × 5.6% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 23.8% wide × 4.8% high | <code>Label 4</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

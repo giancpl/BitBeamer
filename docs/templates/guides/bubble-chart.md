@@ -14,6 +14,18 @@ Model: `bubble-chart` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/charts.md)
+
+```latex
+\studiotemplate[variant=bubbles,palette=light]{charts}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -80,8 +92,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={US bank failures (2001-2023): 564},
-  text/2={Source: Visual Capitalist Data Stream}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{bubble-chart}
 ```
 
@@ -97,8 +109,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={US bank failures (2001-2023): 564},
-  text/2={Source: Visual Capitalist Data Stream}
+  text/1={Slide title},
+  text/2={Supporting explanation}
 ]{bubble-chart}
 \end{document}
 ```
@@ -118,21 +130,21 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 6.2% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 6.3% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 6.3% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 6.2% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 7.2% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 7.1% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 7.2% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | upper left | 2.2% wide × 7.2% high | <code>\includegraphics[width=80\studiounit]{images/studio/collection/figma-0006-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 70.4% wide × 15.5% high | <code>\includegraphics[width=2502\studiounit]{images/studio/collection/figma-0006-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower centre | 70.4% wide × 2.6% high | <code>\includegraphics[width=2502\studiounit]{images/studio/collection/figma-0006-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 13.9% wide × 39.2% high | <code>\includegraphics[width=493\studiounit]{images/studio/collection/figma-0006-part-11.pdf}</code> |
-| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | middle left | 13.5% wide × 24.1% high | <code>\includegraphics[width=480\studiounit]{images/studio/collection/figma-0006-part-12.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 61.4% wide × 8.6% high | <code>US bank failures (2001-2023): 564</code> |
-| <code>text-2</code> | Editable text (text) | upper left | 19.1% wide × 3.0% high | <code>Source: Visual Capitalist Data Stream</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 1.4% wide × 3.4% high | <code>faa)\\(oe)</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 6.2% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 2.2% wide × 6.3% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 6.3% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 6.2% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 7.2% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 7.1% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle left | 2.2% wide × 7.2% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | upper left | 2.2% wide × 7.2% high | <code>\studiopaletteimage[width=80\studiounit]{images/studio/collection/figma-0006-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 70.4% wide × 15.5% high | <code>\studiopaletteimage[width=2502\studiounit]{images/studio/collection/figma-0006-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower centre | 70.4% wide × 2.6% high | <code>\studiopaletteimage[width=2502\studiounit]{images/studio/collection/figma-0006-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 13.9% wide × 39.2% high | <code>\studiopaletteimage[width=493\studiounit]{images/studio/collection/figma-0006-part-11.pdf}</code> |
+| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | middle left | 13.5% wide × 24.1% high | <code>\studiopaletteimage[width=480\studiounit]{images/studio/collection/figma-0006-part-12.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 61.4% wide × 8.6% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | upper left | 19.1% wide × 3.0% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | lower left | 1.4% wide × 3.4% high | <code>12</code> |
 | <code>text-4</code> | Editable text (text) | lower left | 3.6% wide × 2.7% high | <code>2000</code> |
 | <code>text-5</code> | Editable text (text) | lower left | 3.5% wide × 2.7% high | <code>2002</code> |
 | <code>text-6</code> | Editable text (text) | lower left | 3.6% wide × 2.7% high | <code>2004</code> |
@@ -145,15 +157,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>text-13</code> | Editable text (text) | lower right | 3.4% wide × 2.7% high | <code>2018</code> |
 | <code>text-14</code> | Editable text (text) | lower right | 3.5% wide × 2.7% high | <code>2020</code> |
 | <code>text-15</code> | Editable text (text) | lower right | 3.5% wide × 2.7% high | <code>2022</code> |
-| <code>text-16</code> | Editable text (text) | middle left | 20.4% wide × 3.1% high | <code>Sold to JPMorgan Chase for \$1.9B</code> |
-| <code>text-17</code> | Editable text (text) | middle left | 9.4% wide × 6.6% high | <code>\$188B</code> |
-| <code>text-18</code> | Editable text (text) | middle centre | 9.7% wide × 6.6% high | <code>\$175B</code> |
-| <code>text-19</code> | Editable text (text) | upper right | 9.7% wide × 4.4% high | <code>SVB Bank</code> |
-| <code>text-20</code> | Editable text (text) | middle left | 17.9% wide × 5.0% high | <code>Washington Mutual</code> |
-| <code>text-21</code> | Editable text (text) | middle right | 17.7% wide × 4.9% high | <code>First Republic Bank</code> |
-| <code>text-22</code> | Editable text (text) | middle right | 14.4% wide × 5.0% high | <code>Signature Bank</code> |
-| <code>text-23</code> | Editable text (text) | middle centre | 10.9% wide × 3.7% high | <code>\$104B</code> |
-| <code>text-24</code> | Editable text (text) | middle centre | 10.9% wide × 3.7% high | <code>\$89B</code> |
+| <code>text-16</code> | Editable text (text) | middle left | 20.4% wide × 3.1% high | <code>Supporting explanation</code> |
+| <code>text-17</code> | Editable text (text) | middle left | 9.4% wide × 6.6% high | <code>Item</code> |
+| <code>text-18</code> | Editable text (text) | middle centre | 9.7% wide × 6.6% high | <code>Item</code> |
+| <code>text-19</code> | Editable text (text) | upper right | 9.7% wide × 4.4% high | <code>Item</code> |
+| <code>text-20</code> | Editable text (text) | middle left | 17.9% wide × 5.0% high | <code>Label 7</code> |
+| <code>text-21</code> | Editable text (text) | middle right | 17.7% wide × 4.9% high | <code>Label 6</code> |
+| <code>text-22</code> | Editable text (text) | middle right | 14.4% wide × 5.0% high | <code>Label 10</code> |
+| <code>text-23</code> | Editable text (text) | middle centre | 10.9% wide × 3.7% high | <code>Label 8</code> |
+| <code>text-24</code> | Editable text (text) | middle centre | 10.9% wide × 3.7% high | <code>Label 11</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

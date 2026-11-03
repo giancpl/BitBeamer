@@ -14,6 +14,18 @@ Model: `alternating-timeline` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/timeline.md)
+
+```latex
+\studiotemplate[variant=alternating,palette=light]{timeline}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -65,8 +77,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={The Schnorr Legacy},
-  text/5={Schnorr patent\\\& Bitcoin\\whitepaper}
+  text/1={Slide title},
+  text/5={Label 5}
 ]{alternating-timeline}
 ```
 
@@ -82,8 +94,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={The Schnorr Legacy},
-  text/5={Schnorr patent\\\& Bitcoin\\whitepaper}
+  text/1={Slide title},
+  text/5={Label 5}
 ]{alternating-timeline}
 \end{document}
 ```
@@ -103,27 +115,27 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0928-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0928-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0928-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0928-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 12.9% wide × 3.2% high | <code>\includegraphics[width=460\studiounit]{images/studio/collection/figma-0928-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 16.3% wide × 13.3% high | <code>\includegraphics[width=580\studiounit]{images/studio/collection/figma-0928-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0928-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0928-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0928-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\includegraphics[width=568\studiounit]{images/studio/collection/figma-0928-part-10.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 31.8% wide × 8.5% high | <code>The Schnorr Legacy</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 10.8% wide × 10.5% high | <code>Schnorr patent\\\&amp; Bitcoin\\whitepaper</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0928-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0928-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0928-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0928-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 12.9% wide × 3.2% high | <code>\studiopaletteimage[width=460\studiounit]{images/studio/collection/figma-0928-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 16.3% wide × 13.3% high | <code>\studiopaletteimage[width=580\studiounit]{images/studio/collection/figma-0928-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0928-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0928-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0928-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle centre | 16.0% wide × 13.3% high | <code>\studiopaletteimage[width=568\studiounit]{images/studio/collection/figma-0928-part-10.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 31.8% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 10.8% wide × 10.5% high | <code>Label 5</code> |
 | <code>text-3</code> | Editable text (text) | middle left | 3.9% wide × 2.8% high | <code>2008</code> |
 | <code>text-4</code> | Editable text (text) | middle left | 3.9% wide × 2.8% high | <code>2020</code> |
 | <code>text-5</code> | Editable text (text) | middle centre | 3.6% wide × 2.8% high | <code>2021</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 7.7% wide × 2.8% high | <code>March 2025</code> |
-| <code>text-7</code> | Editable text (text) | middle right | 6.8% wide × 3.3% high | <code>April 2025</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 7.0% wide × 6.7% high | <code>Taproot\\Soft Fork</code> |
-| <code>text-9</code> | Editable text (text) | middle right | 6.7% wide × 3.5% high | <code>DahLIAS</code> |
-| <code>text-10</code> | Editable text (text) | middle left | 5.8% wide × 3.9% high | <code>Musig2</code> |
-| <code>text-11</code> | Editable text (text) | middle centre | 9.1% wide × 10.5% high | <code>Cross-Input\\Signature\\Aggregation</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 7.7% wide × 2.8% high | <code>Label 11</code> |
+| <code>text-7</code> | Editable text (text) | middle right | 6.8% wide × 3.3% high | <code>Label 4</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 7.0% wide × 6.7% high | <code>Item</code> |
+| <code>text-9</code> | Editable text (text) | middle right | 6.7% wide × 3.5% high | <code>Item</code> |
+| <code>text-10</code> | Editable text (text) | middle left | 5.8% wide × 3.9% high | <code>Item</code> |
+| <code>text-11</code> | Editable text (text) | middle centre | 9.1% wide × 10.5% high | <code>Label 8</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

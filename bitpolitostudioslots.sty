@@ -48,7 +48,18 @@
  \def\studio@content{#7}%
  \ifx\studio@value\@empty\def\studio@content{}\else
   \ifx\studio@kind\studio@iconkind
-   \IfFileExists{assets/generated/#7.pdf}{\def\studio@content{\includegraphics{assets/generated/#7.pdf}}}{%
+   \IfFileExists{assets/generated/#7.pdf}{%
+    \def\studio@content{\includegraphics{assets/generated/#7.pdf}}%
+    \ifdefined\studio@palette
+     \def\studio@bluepalette{blue}%
+     \ifx\studio@palette\studio@bluepalette
+      \ifcsname studio@iconpalette@#7\endcsname
+       \edef\studio@preparedicon{\csname studio@iconpalette@#7\endcsname}%
+       \def\studio@content{\includegraphics{\studio@preparedicon}}%
+      \fi
+     \fi
+    \fi
+   }{%
     \PackageError{bitpolitostudioslots}{Unknown icon '#7' in \studiocurrenttemplate/#1}{Use a name from the icon catalogue.}}%
   \fi
   \ifx\studio@kind\studio@imagekind
@@ -61,7 +72,7 @@
  \else
   \begin{tikzpicture}[x=\studiounit,y=\studiounit,baseline=0pt,every node/.style={inner sep=0,outer sep=0}]
    \path[use as bounding box] (0,0) rectangle (#2,#3);
-   \node[anchor=south west] at (0,0) {\includegraphics[width=#2\studiounit]{#4}};
+   \node[anchor=south west] at (0,0) {\studiopaletteimage[width=#2\studiounit]{#4}};
    \node at (\studio@cx,{#3-\studio@cy}) {\studio@fitcontent{\studio@fw}{\studio@fh}{\studio@content}};
   \end{tikzpicture}%
  \fi\endgroup

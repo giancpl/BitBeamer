@@ -24,20 +24,70 @@
       \ifx\insertdate\@empty\else\vspace{0.01\paperheight}{\scriptsize\insertdate\par}\fi};
   \end{tikzpicture}%
 }
+% Complete-frame helpers keep the theme's margins and typography in one place.
+% The classic blue cover is the default. Optional catalogue variants share metadata.
+\pgfkeys{/studio/cover/.is family,
+  /studio/cover/variant/.is choice,
+  /studio/cover/variant/pattern/.code=\def\studio@covervariant{pattern},
+  /studio/cover/variant/classic/.style={/studio/cover/variant=pattern},
+  /studio/cover/variant/wide-pattern/.code=\def\studio@covervariant{wide-pattern},
+  /studio/cover/variant/bitgeneration/.style={/studio/cover/variant=wide-pattern},
+  /studio/cover/variant/photo/.code=\def\studio@covervariant{photo},
+  /studio/cover/variant/bitgeneration-photo/.style={/studio/cover/variant=photo}}
+\newcommand{\studio@cataloguecover}[1]{%
+  \@ifpackageloaded{bitpolitostudiotemplates}{%
+    \ifcsname studio@choice@cover@#1@light\endcsname
+      \studiotemplate[variant=#1,palette=light,title={\inserttitle},
+        author={\insertauthor},institute={\insertinstitute}]{cover}%
+    \else
+      \PackageError{bitpolito-studio}{Cover variant '#1' is not included in this project}%
+        {Include this cover variant and its prepared artwork. The classic blue cover is always available.}%
+    \fi
+  }{%
+    \PackageError{bitpolito-studio}{Optional cover variants require bitpolitostudiotemplates}%
+      {Load bitpolitostudiotemplates in the preamble. The classic blue cover needs only the Studio theme.}%
+  }%
+}
+\newcommand{\studiotitleframe}[1][]{%
+  \begingroup
+  \pgfkeys{/studio/cover/.cd,variant=pattern,#1}%
+  \def\studio@classiccover{pattern}%
+  \ifx\studio@covervariant\studio@classiccover
+    \begin{frame}[plain]\titlepage\end{frame}%
+  \else
+    \expandafter\studio@cataloguecover\expandafter{\studio@covervariant}%
+  \fi
+  \endgroup
+}
+\pgfkeys{/studio/frame/.is family,
+  /studio/frame/subtitle/.store in=\studio@framesubtitle}
+\newcommand{\studioframe}[3][]{%
+  \begingroup
+  \pgfkeys{/studio/frame/.cd,subtitle={},#1}%
+  \begin{frame}[t]{#2}{\studio@framesubtitle}
+    #3
+  \end{frame}%
+  \endgroup
+}
+\pgfkeys{/studio/toc/.is family,
+  /studio/toc/title/.store in=\studio@toctitle}
 \setbeamertemplate{section in toc}{%
   \tikz\node[draw=bitpolito,line width=0.5pt,rounded corners=6pt,
     text width=0.32\paperwidth,minimum height=0.12\paperheight,
     inner xsep=7pt,align=left,font=\normalsize]{\inserttocsection};\par\vspace{0.025\paperheight}%
 }
-\newcommand{\studiotocframe}{%
+\newcommand{\studiotocframe}[1][]{%
+  \begingroup
+  \pgfkeys{/studio/toc/.cd,title={Contents},#1}%
   \begin{frame}[plain]
     \begin{tikzpicture}[remember picture,overlay]
       \node[anchor=west,inner sep=0,text=bitpolito,font=\usebeamerfont{frametitle}]
-        at ([xshift=\studio@margin]current page.west) {Contents};
+        at ([xshift=\studio@margin]current page.west) {\studio@toctitle};
       \node[anchor=center,inner sep=0,text width=0.39\paperwidth]
         at ([xshift=0.19\paperwidth]current page.center) {\tableofcontents[hideallsubsections]};
     \end{tikzpicture}%
   \end{frame}%
+  \endgroup
 }
 \newcommand{\studiosectionframe}[1]{%
   \begin{frame}[plain]

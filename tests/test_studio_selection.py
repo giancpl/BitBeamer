@@ -36,8 +36,11 @@ class StudioSelectionTests(unittest.TestCase):
         self.assertTrue(all(item['use'] for item in chosen))
         generated = studio_templates.generated_files(ROOT)
         deck = generated[Path('examples/studio-selected-templates.tex')]
+        from studio_models import load_models
+        grouped=load_models(ROOT)['selection']
+        self.assertEqual(deck.count(r'\studiotemplate['),len(grouped))
+        for group in grouped:self.assertIn(']{'+group['model']+'}',deck)
         for item in chosen:
-            self.assertIn('\\studiotemplate{' + item['id'] + '}', deck)
             self.assertIn(studio_gallery.example_command(item), generated[Path('templates/SELECTION.md')])
 
     def test_unknown_selection_id_and_example_field_are_rejected(self):

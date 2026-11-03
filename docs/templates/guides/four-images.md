@@ -2,7 +2,7 @@
 
 # Four-image grid
 
-Compare four images.
+Demonstrate this reusable composition.
 
 Model: `four-images` · Family: Images · Status: **in review**.
 
@@ -13,6 +13,18 @@ Model: `four-images` · Family: Images · Status: **in review**.
 ![Four-image grid](../previews/four-images.png)
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
+
+## Grouped model
+
+[Model variants and named fields](../models/image-grid.md)
+
+```latex
+\studiotemplate[variant=four,palette=light]{image-grid}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
 
 ## Typed content slots
 
@@ -80,10 +92,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 45.1% wide × 46.8% high | <code>\includegraphics[width=1604\studiounit]{images/studio/collection/figma-0018-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 45.1% wide × 46.8% high | <code>\includegraphics[width=1604\studiounit]{images/studio/collection/figma-0018-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 45.1% wide × 46.8% high | <code>\includegraphics[width=1604\studiounit]{images/studio/collection/figma-0018-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 45.1% wide × 46.8% high | <code>\includegraphics[width=1604\studiounit]{images/studio/collection/figma-0018-part-04.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 45.1% wide × 46.8% high | <code>\studiopaletteimage[width=1604\studiounit]{images/studio/collection/figma-0018-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 45.1% wide × 46.8% high | <code>\studiopaletteimage[width=1604\studiounit]{images/studio/collection/figma-0018-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 45.1% wide × 46.8% high | <code>\studiopaletteimage[width=1604\studiounit]{images/studio/collection/figma-0018-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 45.1% wide × 46.8% high | <code>\studiopaletteimage[width=1604\studiounit]{images/studio/collection/figma-0018-part-04.pdf}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

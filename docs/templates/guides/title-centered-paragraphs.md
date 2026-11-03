@@ -14,6 +14,18 @@ Model: `title-centered-paragraphs` · Family: Statements · Status: **in review*
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/paragraphs.md)
+
+```latex
+\studiotemplate[variant=centered,palette=light]{paragraphs}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -48,8 +60,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Bolt-12},
-  text/2={BOLT12 offers a similar service without a web server, with improved\\privacy. It is native to Lightning.}
+  text/1={Title},
+  text/2={Supporting explanation}
 ]{title-centered-paragraphs}
 ```
 
@@ -65,8 +77,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Bolt-12},
-  text/2={BOLT12 offers a similar service without a web server, with improved\\privacy. It is native to Lightning.}
+  text/1={Title},
+  text/2={Supporting explanation}
 ]{title-centered-paragraphs}
 \end{document}
 ```
@@ -86,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 12.6% wide × 7.5% high | <code>Bolt-12</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 70.9% wide × 10.4% high | <code>BOLT12 offers a similar service without a web server, with improved\\privacy. It is native to Lightning.</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 73.6% wide × 10.4% high | <code>LNURL is widely adopted and field-tested. It can suit shops and\\businesses that already operate web servers.</code> |
-| <code>text-4</code> | Editable text (text) | middle centre | 8.4% wide × 5.5% high | <code>BUT</code> |
+| <code>title</code> | Main text (text) | upper centre | 12.6% wide × 7.5% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 70.9% wide × 10.4% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 73.6% wide × 10.4% high | <code>Supporting explanation</code> |
+| <code>text-4</code> | Editable text (text) | middle centre | 8.4% wide × 5.5% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

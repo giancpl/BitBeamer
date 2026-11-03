@@ -14,6 +14,18 @@ Model: `scatter-comparison` · Family: Data · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/charts.md)
+
+```latex
+\studiotemplate[variant=scatter,palette=light]{charts}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -70,7 +82,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Methods compared},
+  text/1={Slide title},
   text/7={50}
 ]{scatter-comparison}
 ```
@@ -87,7 +99,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Methods compared},
+  text/1={Slide title},
   text/7={50}
 ]{scatter-comparison}
 \end{document}
@@ -108,32 +120,32 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 2.7% wide × 5.9% high | <code>\includegraphics[width=95\studiounit]{images/studio/collection/figma-0371-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 2.7% wide × 4.2% high | <code>\includegraphics[width=95\studiounit]{images/studio/collection/figma-0371-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 2.3% wide × 4.8% high | <code>\includegraphics[width=83\studiounit]{images/studio/collection/figma-0371-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.3% wide × 4.8% high | <code>\includegraphics[width=118\studiounit]{images/studio/collection/figma-0371-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 3.3% wide × 4.7% high | <code>\includegraphics[width=117\studiounit]{images/studio/collection/figma-0371-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 3.1% wide × 13.7% high | <code>\includegraphics[width=112\studiounit]{images/studio/collection/figma-0371-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle left | 2.6% wide × 5.9% high | <code>\includegraphics[width=94\studiounit]{images/studio/collection/figma-0371-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | upper left | 2.7% wide × 7.5% high | <code>\includegraphics[width=95\studiounit]{images/studio/collection/figma-0371-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 69.0% wide × 2.6% high | <code>\includegraphics[width=2452\studiounit]{images/studio/collection/figma-0371-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower centre | 69.2% wide × 2.6% high | <code>\includegraphics[width=2460\studiounit]{images/studio/collection/figma-0371-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 69.0% wide × 2.6% high | <code>\includegraphics[width=2452\studiounit]{images/studio/collection/figma-0371-part-11.pdf}</code> |
-| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | middle centre | 69.0% wide × 2.6% high | <code>\includegraphics[width=2452\studiounit]{images/studio/collection/figma-0371-part-12.pdf}</code> |
-| <code>graphic-13</code> | Complete graphic, image or decoration (graphic) | upper centre | 69.0% wide × 2.6% high | <code>\includegraphics[width=2452\studiounit]{images/studio/collection/figma-0371-part-13.pdf}</code> |
-| <code>graphic-14</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.6% wide × 8.6% high | <code>\includegraphics[width=198\studiounit]{images/studio/collection/figma-0371-part-14.pdf}</code> |
-| <code>graphic-15</code> | Complete graphic, image or decoration (graphic) | lower right | 5.6% wide × 8.6% high | <code>\includegraphics[width=198\studiounit]{images/studio/collection/figma-0371-part-15.pdf}</code> |
-| <code>graphic-16</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.8% wide × 8.5% high | <code>\includegraphics[width=170\studiounit]{images/studio/collection/figma-0371-part-16.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower left | 2.7% wide × 5.9% high | <code>\studiopaletteimage[width=95\studiounit]{images/studio/collection/figma-0371-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 2.7% wide × 4.2% high | <code>\studiopaletteimage[width=95\studiounit]{images/studio/collection/figma-0371-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 2.3% wide × 4.8% high | <code>\studiopaletteimage[width=83\studiounit]{images/studio/collection/figma-0371-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower centre | 3.3% wide × 4.8% high | <code>\studiopaletteimage[width=118\studiounit]{images/studio/collection/figma-0371-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | lower right | 3.3% wide × 4.7% high | <code>\studiopaletteimage[width=117\studiounit]{images/studio/collection/figma-0371-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle left | 3.1% wide × 13.7% high | <code>\studiopaletteimage[width=112\studiounit]{images/studio/collection/figma-0371-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle left | 2.6% wide × 5.9% high | <code>\studiopaletteimage[width=94\studiounit]{images/studio/collection/figma-0371-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | upper left | 2.7% wide × 7.5% high | <code>\studiopaletteimage[width=95\studiounit]{images/studio/collection/figma-0371-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 69.0% wide × 2.6% high | <code>\studiopaletteimage[width=2452\studiounit]{images/studio/collection/figma-0371-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower centre | 69.2% wide × 2.6% high | <code>\studiopaletteimage[width=2460\studiounit]{images/studio/collection/figma-0371-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 69.0% wide × 2.6% high | <code>\studiopaletteimage[width=2452\studiounit]{images/studio/collection/figma-0371-part-11.pdf}</code> |
+| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | middle centre | 69.0% wide × 2.6% high | <code>\studiopaletteimage[width=2452\studiounit]{images/studio/collection/figma-0371-part-12.pdf}</code> |
+| <code>graphic-13</code> | Complete graphic, image or decoration (graphic) | upper centre | 69.0% wide × 2.6% high | <code>\studiopaletteimage[width=2452\studiounit]{images/studio/collection/figma-0371-part-13.pdf}</code> |
+| <code>graphic-14</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.6% wide × 8.6% high | <code>\studiopaletteimage[width=198\studiounit]{images/studio/collection/figma-0371-part-14.pdf}</code> |
+| <code>graphic-15</code> | Complete graphic, image or decoration (graphic) | lower right | 5.6% wide × 8.6% high | <code>\studiopaletteimage[width=198\studiounit]{images/studio/collection/figma-0371-part-15.pdf}</code> |
+| <code>graphic-16</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.8% wide × 8.5% high | <code>\studiopaletteimage[width=170\studiounit]{images/studio/collection/figma-0371-part-16.pdf}</code> |
 | <code>text-1</code> | Editable text (text) | lower centre | 3.1% wide × 4.0% high | <code>50</code> |
 | <code>text-2</code> | Editable text (text) | lower right | 4.0% wide × 4.0% high | <code>100</code> |
-| <code>axis-label</code> | Complete graphic, image or decoration (graphic) | middle left | 1.6% wide × 4.0% high | <code>\includegraphics[width=56\studiounit]{images/studio/collection/figma-0371-axis-label.pdf}</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 10.2% wide × 5.0% high | <code>Simplicity</code> |
-| <code>title</code> | Main text (text) | upper centre | 29.9% wide × 7.6% high | <code>Methods compared</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 5.2% wide × 5.0% high | <code>P2P</code> |
-| <code>text-7</code> | Editable text (text) | lower right | 16.6% wide × 5.0% high | <code>Banks and TradFi</code> |
-| <code>text-8</code> | Editable text (text) | lower centre | 10.8% wide × 5.6% high | <code>Exchange</code> |
-| <code>text-9</code> | Editable text (text) | middle right | 5.7% wide × 4.9% high | <code>ATM</code> |
-| <code>text-10</code> | Editable text (text) | middle right | 12.4% wide × 5.6% high | <code>App Bitcoin</code> |
+| <code>axis-label</code> | Complete graphic, image or decoration (graphic) | middle left | 1.6% wide × 4.0% high | <code>\studiopaletteimage[width=56\studiounit]{images/studio/collection/figma-0371-axis-label.pdf}</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 10.2% wide × 5.0% high | <code>Label 9</code> |
+| <code>title</code> | Main text (text) | upper centre | 29.9% wide × 7.6% high | <code>Slide title</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 5.2% wide × 5.0% high | <code>2</code> |
+| <code>text-7</code> | Editable text (text) | lower right | 16.6% wide × 5.0% high | <code>Label 6</code> |
+| <code>text-8</code> | Editable text (text) | lower centre | 10.8% wide × 5.6% high | <code>Item</code> |
+| <code>text-9</code> | Editable text (text) | middle right | 5.7% wide × 4.9% high | <code>4</code> |
+| <code>text-10</code> | Editable text (text) | middle right | 12.4% wide × 5.6% high | <code>Label 3</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

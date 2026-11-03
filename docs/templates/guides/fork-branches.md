@@ -14,6 +14,18 @@ Model: `fork-branches` · Family: Technical · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/chain.md)
+
+```latex
+\studiotemplate[variant=branches,palette=light]{chain}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -73,8 +85,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Unintentional forks},
-  text/7={Block\\1}
+  text/1={Slide title},
+  text/7={7}
 ]{fork-branches}
 ```
 
@@ -90,8 +102,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Unintentional forks},
-  text/7={Block\\1}
+  text/1={Slide title},
+  text/7={7}
 ]{fork-branches}
 \end{document}
 ```
@@ -111,35 +123,35 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle left | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle left | 6.3% wide × 10.8% high | <code>\includegraphics[width=225\studiounit]{images/studio/collection/figma-0586-part-11.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 42.6% wide × 7.5% high | <code>Unintentional forks</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 3.6% wide × 6.5% high | <code>Block\\1</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 3.5% wide × 6.5% high | <code>Block\\2</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 3.5% wide × 6.6% high | <code>Block\\3</code> |
-| <code>text-5</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>Block\\4A</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>Block\\5</code> |
-| <code>text-7</code> | Editable text (text) | middle left | 3.6% wide × 6.5% high | <code>Block\\1</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>Block\\4B</code> |
-| <code>text-9</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>Block\\6</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>Block\\7B</code> |
-| <code>text-11</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>Block\\8B</code> |
-| <code>text-12</code> | Editable text (text) | middle right | 3.5% wide × 6.6% high | <code>Block\\9</code> |
-| <code>text-13</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>Block\\7A</code> |
-| <code>text-14</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>Block\\8A</code> |
-| <code>text-15</code> | Editable text (text) | middle right | 3.5% wide × 6.6% high | <code>Block\\10</code> |
-| <code>text-16</code> | Editable text (text) | middle right | 3.6% wide × 6.5% high | <code>Block\\11</code> |
-| <code>text-17</code> | Editable text (text) | lower centre | 49.2% wide × 8.5% high | <code>Information propagates\\across the network with a delay.</code> |
-| <code>text-18</code> | Editable text (text) | lower right | 43.2% wide × 9.1% high | <code>Two valid versions briefly coexist;\\nodes converge on the chain with more work.</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle right | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-07.pdf}</code> |
+| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-08.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-09.pdf}</code> |
+| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle left | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-10.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle left | 6.3% wide × 10.8% high | <code>\studiopaletteimage[width=225\studiounit]{images/studio/collection/figma-0586-part-11.pdf}</code> |
+| <code>title</code> | Main text (text) | upper centre | 42.6% wide × 7.5% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 3.6% wide × 6.5% high | <code>7</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 3.5% wide × 6.5% high | <code>9</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 3.5% wide × 6.6% high | <code>10</code> |
+| <code>text-5</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>4</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>5</code> |
+| <code>text-7</code> | Editable text (text) | middle left | 3.6% wide × 6.5% high | <code>8</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>16</code> |
+| <code>text-9</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>6</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>11</code> |
+| <code>text-11</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>12</code> |
+| <code>text-12</code> | Editable text (text) | middle right | 3.5% wide × 6.6% high | <code>13</code> |
+| <code>text-13</code> | Editable text (text) | middle centre | 3.6% wide × 6.5% high | <code>2</code> |
+| <code>text-14</code> | Editable text (text) | middle centre | 3.5% wide × 6.6% high | <code>3</code> |
+| <code>text-15</code> | Editable text (text) | middle right | 3.5% wide × 6.6% high | <code>14</code> |
+| <code>text-16</code> | Editable text (text) | middle right | 3.6% wide × 6.5% high | <code>15</code> |
+| <code>text-17</code> | Editable text (text) | lower centre | 49.2% wide × 8.5% high | <code>Supporting explanation</code> |
+| <code>text-18</code> | Editable text (text) | lower right | 43.2% wide × 9.1% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -2,7 +2,7 @@
 \ProvidesPackage{bitpolitostudiotemplates}[2026/10/31 Named Studio template library]
 \@ifpackageloaded{beamerthemebitpolito-studio}{}{%
   \PackageError{bitpolitostudiotemplates}{Select the Studio theme first}{Use usetheme bitpolito-studio before loading this optional package.}}
-\RequirePackage{bitpolitostudiolayouts,bitpolitostudiomeasured,bitpolitostudioslots,booktabs,pgfplots,qrcode}
+\RequirePackage{bitpolitostudiolayouts,bitpolitostudiomeasured,bitpolitostudioslots,bitpolitostudiomodels,booktabs,pgfplots,qrcode}
 \pgfplotsset{compat=1.18}
 \providecommand{\studiotemplatepath}{templates/studio}
 \newcommand{\DeclareStudioTemplate}[1]{\expandafter\def\csname studio@template@#1\endcsname{#1}}
@@ -12,17 +12,14 @@
  \expandafter\def\csname studio@defaults@#1\endcsname{#3}%
 }
 \newcommand{\studiotemplate}[2][]{%
-  \begingroup\def\studiocurrenttemplate{#2}\def\studiotemplateoptions{#1}%
-  \let\studiotemplatedefaults\@empty
-  \ifcsname studio@defaults@#2\endcsname
-   \expandafter\let\expandafter\studiotemplatedefaults\csname studio@defaults@#2\endcsname
-  \fi
-  \ifcsname studio@template@#2\endcsname
-    \edef\studio@source{\csname studio@template@#2\endcsname}%
-    \input{\studiotemplatepath/\studio@source.tex}%
-  \else
-    \PackageError{bitpolitostudiotemplates}{Unknown Studio template '#2'}{Choose a name from templates/CATALOGUE.md.}%
-  \fi\endgroup
+ \begingroup\def\studiocurrenttemplate{#2}%
+ \studio@resolve{#2}{#1}%
+ \let\studiotemplatedefaults\@empty
+ \ifcsname studio@defaults@#2\endcsname
+  \expandafter\let\expandafter\studiotemplatedefaults\csname studio@defaults@#2\endcsname
+ \fi
+ \input{\studiotemplatepath/\studio@source.tex}%
+ \endgroup
 }
 
 \newcommand{\studiocodeoverride}[1]{%

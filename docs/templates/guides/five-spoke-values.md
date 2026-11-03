@@ -14,6 +14,18 @@ Model: `five-spoke-values` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/radial.md)
+
+```latex
+\studiotemplate[variant=five,palette=light]{radial}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -51,8 +63,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/4={Bitcoin\\values},
-  text/3={Independence}
+  text/4={Title},
+  text/3={Label 3}
 ]{five-spoke-values}
 ```
 
@@ -68,8 +80,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/4={Bitcoin\\values},
-  text/3={Independence}
+  text/4={Title},
+  text/3={Label 3}
 ]{five-spoke-values}
 \end{document}
 ```
@@ -89,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 32.7% wide × 55.3% high | <code>\includegraphics[width=1164\studiounit]{images/studio/collection/figma-0063-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 11.0% wide × 13.4% high | <code>Bitcoin\\values</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 16.6% wide × 6.4% high | <code>Independence</code> |
-| <code>text-3</code> | Editable text (text) | upper centre | 11.2% wide × 5.6% high | <code>Freedom</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 16.3% wide × 6.4% high | <code>Open-source</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 17.6% wide × 5.6% high | <code>Proof-of-Work</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 9.6% wide × 6.4% high | <code>Privacy</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 32.7% wide × 55.3% high | <code>\studiopaletteimage[width=1164\studiounit]{images/studio/collection/figma-0063-part-01.pdf}</code> |
+| <code>title</code> | Main text (text) | middle centre | 11.0% wide × 13.4% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 16.6% wide × 6.4% high | <code>Label 3</code> |
+| <code>text-3</code> | Editable text (text) | upper centre | 11.2% wide × 5.6% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 16.3% wide × 6.4% high | <code>Label 2</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 17.6% wide × 5.6% high | <code>Label 6</code> |
+| <code>text-6</code> | Editable text (text) | lower centre | 9.6% wide × 6.4% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

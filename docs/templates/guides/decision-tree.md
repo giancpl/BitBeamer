@@ -14,6 +14,18 @@ Model: `decision-tree` · Family: Diagrams · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/decision-tree.md)
+
+```latex
+\studiotemplate[variant=default,palette=light]{decision-tree}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -60,8 +72,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Choosing the right solution},
-  text/2={Personal assessment}
+  text/1={Slide title},
+  text/2={Label 2}
 ]{decision-tree}
 ```
 
@@ -77,8 +89,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Choosing the right solution},
-  text/2={Personal assessment}
+  text/1={Slide title},
+  text/2={Label 2}
 ]{decision-tree}
 \end{document}
 ```
@@ -98,22 +110,22 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 33.4% wide × 15.8% high | <code>\includegraphics[width=1187\studiounit]{images/studio/collection/figma-0382-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 45.9% wide × 17.4% high | <code>\includegraphics[width=1632\studiounit]{images/studio/collection/figma-0382-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower right | 52.8% wide × 23.5% high | <code>\includegraphics[width=1876\studiounit]{images/studio/collection/figma-0382-part-03.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle centre | 15.0% wide × 3.2% high | <code>Personal assessment</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 30.4% wide × 3.3% high | <code>Set your budget, skills and available time</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 12.2% wide × 2.9% high | <code>Define goals</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 12.8% wide × 2.9% high | <code>Install a basic node</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 34.5% wide × 3.3% high | <code>Choose advanced options (Lightning, privacy)</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 28.9% wide × 3.3% high | <code>Start small and ask the community</code> |
-| <code>text-7</code> | Editable text (text) | middle right | 28.1% wide × 3.3% high | <code>Gain skills or adjust your time and budget</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 9.6% wide × 1.7% high | <code>REQUIREMENTS MET?</code> |
-| <code>text-9</code> | Editable text (text) | middle centre | 9.6% wide × 1.6% high | <code>NETWORK SUPPORT ONLY</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 1.4% wide × 1.6% high | <code>NO</code> |
-| <code>text-11</code> | Editable text (text) | lower centre | 1.4% wide × 1.6% high | <code>NO</code> |
-| <code>title</code> | Main text (text) | upper centre | 52.9% wide × 8.5% high | <code>Choosing the right solution</code> |
-| <code>text-13</code> | Editable text (text) | middle left | 22.4% wide × 24.6% high | <code>Tips:\par Start small: you can upgrade\\or change your setup\\later.\par Ask the community: seek\\advice in forums an...</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 33.4% wide × 15.8% high | <code>\studiopaletteimage[width=1187\studiounit]{images/studio/collection/figma-0382-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 45.9% wide × 17.4% high | <code>\studiopaletteimage[width=1632\studiounit]{images/studio/collection/figma-0382-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower right | 52.8% wide × 23.5% high | <code>\studiopaletteimage[width=1876\studiounit]{images/studio/collection/figma-0382-part-03.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle centre | 15.0% wide × 3.2% high | <code>Label 2</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 30.4% wide × 3.3% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle centre | 12.2% wide × 2.9% high | <code>Label 7</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 12.8% wide × 2.9% high | <code>Label 11</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 34.5% wide × 3.3% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | lower centre | 28.9% wide × 3.3% high | <code>Supporting explanation</code> |
+| <code>text-7</code> | Editable text (text) | middle right | 28.1% wide × 3.3% high | <code>Supporting explanation</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 9.6% wide × 1.7% high | <code>Supporting explanation</code> |
+| <code>text-9</code> | Editable text (text) | middle centre | 9.6% wide × 1.6% high | <code>Supporting explanation</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 1.4% wide × 1.6% high | <code>6</code> |
+| <code>text-11</code> | Editable text (text) | lower centre | 1.4% wide × 1.6% high | <code>10</code> |
+| <code>title</code> | Main text (text) | upper centre | 52.9% wide × 8.5% high | <code>Slide title</code> |
+| <code>text-13</code> | Editable text (text) | middle left | 22.4% wide × 24.6% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

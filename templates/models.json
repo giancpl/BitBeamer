@@ -1,0 +1,4863 @@
+{
+  "schema": 1,
+  "models": [
+    {
+      "id": "cover",
+      "title": "Presentation cover",
+      "category": "Opening",
+      "default_variant": "pattern",
+      "variants": [
+        {
+          "id": "pattern",
+          "default_source": "cover",
+          "compositions": [
+            {
+              "id": "cover",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "author": "author",
+                "title": "title",
+                "institute": "institute"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wide-pattern",
+          "default_source": "cover-light",
+          "compositions": [
+            {
+              "id": "cover-light",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "author": "text-1",
+                "title": "title",
+                "institute": "text-3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "photo",
+          "default_source": "cover-photo",
+          "compositions": [
+            {
+              "id": "cover-photo",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "author": "text-1",
+                "title": "title",
+                "institute": "text-3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "script",
+          "default_source": "cover-script-blue",
+          "compositions": [
+            {
+              "id": "cover-script-blue",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "text-2",
+                "subtitle": "text-3",
+                "decoration": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wide-title",
+          "default_source": "cover-wide-title",
+          "compositions": [
+            {
+              "id": "cover-wide-title",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "author": "text-2",
+                "date": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "agenda",
+      "title": "Agenda",
+      "category": "Opening",
+      "default_variant": "panels",
+      "variants": [
+        {
+          "id": "panels",
+          "default_source": "contents",
+          "compositions": [
+            {
+              "id": "contents",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "item-2-1",
+                "label-two": "item-2-2",
+                "title": "title",
+                "label-four": "item-2-3",
+                "label-five": "item-2-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "rail",
+          "default_source": "tabbed-agenda",
+          "compositions": [
+            {
+              "id": "tabbed-agenda",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "icons",
+          "default_source": "agenda-with-icons",
+          "compositions": [
+            {
+              "id": "agenda-with-icons",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "schedule",
+          "default_source": "agenda-with-schedule",
+          "compositions": [
+            {
+              "id": "agenda-with-schedule",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-4",
+                "label-two": "text-5",
+                "title": "title",
+                "label-four": "text-3",
+                "label-five": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "section-divider",
+      "title": "Section divider with line",
+      "category": "Opening",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "section-divider",
+          "compositions": [
+            {
+              "id": "section-divider",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cover-dashboard",
+      "title": "Overview dashboard",
+      "category": "Opening",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "cover-dashboard",
+          "compositions": [
+            {
+              "id": "cover-dashboard",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "label-one": "participants-number",
+                "label-two": "alumni-number",
+                "label-three": "participants-label",
+                "label-four": "alumni-label",
+                "label-five": "item-4-1",
+                "label-six": "item-4-2",
+                "label-seven": "item-5-1",
+                "label-eight": "item-5-2",
+                "label-nine": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "statement",
+      "title": "Statement",
+      "category": "Statements",
+      "default_variant": "arrow",
+      "variants": [
+        {
+          "id": "arrow",
+          "default_source": "statement-arrow",
+          "compositions": [
+            {
+              "id": "statement-arrow",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "glow",
+          "default_source": "glow-statement",
+          "compositions": [
+            {
+              "id": "glow-statement",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "statement": "statement"
+              }
+            }
+          ]
+        },
+        {
+          "id": "plain",
+          "default_source": "blue-statement",
+          "compositions": [
+            {
+              "id": "blue-statement",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "clipped",
+          "default_source": "oversized-word",
+          "compositions": [
+            {
+              "id": "oversized-word",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "credit",
+          "default_source": "statement-with-credit",
+          "compositions": [
+            {
+              "id": "statement-with-credit",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-5",
+                "label-four": "text-2",
+                "label-five": "text-6",
+                "label-six": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icon-spotlight",
+      "title": "Icon spotlight",
+      "category": "Statements",
+      "default_variant": "compact",
+      "variants": [
+        {
+          "id": "compact",
+          "default_source": "icon-spotlight-light",
+          "compositions": [
+            {
+              "id": "icon-spotlight-light",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "large",
+          "default_source": "icon-spotlight-blue",
+          "compositions": [
+            {
+              "id": "icon-spotlight-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "title": "Dialogue",
+      "category": "Statements",
+      "default_variant": "two-messages",
+      "variants": [
+        {
+          "id": "two-messages",
+          "default_source": "chat-dialogue",
+          "compositions": [
+            {
+              "id": "chat-dialogue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "people",
+          "default_source": "speech-panel",
+          "compositions": [
+            {
+              "id": "speech-panel",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "three-messages",
+          "default_source": "chat-three-messages",
+          "compositions": [
+            {
+              "id": "chat-three-messages",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-3",
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "cards",
+          "default_source": "people-speech-cards",
+          "compositions": [
+            {
+              "id": "people-speech-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "title": "title",
+                "label-seven": "text-7"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "oversized-number",
+      "title": "Oversized number",
+      "category": "Statements",
+      "default_variant": "plain",
+      "variants": [
+        {
+          "id": "plain",
+          "default_source": "oversized-number-light",
+          "compositions": [
+            {
+              "id": "oversized-number-light",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "captioned",
+          "default_source": "oversized-number-blue",
+          "compositions": [
+            {
+              "id": "oversized-number-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image-text",
+      "title": "Image and text",
+      "category": "Images",
+      "default_variant": "left",
+      "variants": [
+        {
+          "id": "diagonal",
+          "default_source": "diagonal-photo-title",
+          "compositions": [
+            {
+              "id": "diagonal-photo-title",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "left",
+          "default_source": "image-left",
+          "compositions": [
+            {
+              "id": "image-left",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "right",
+          "default_source": "image-right",
+          "compositions": [
+            {
+              "id": "image-right",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-1",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "overlay",
+          "default_source": "image-overlay",
+          "compositions": [
+            {
+              "id": "image-overlay",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paragraphs",
+      "title": "Heading and paragraphs",
+      "category": "Statements",
+      "default_variant": "left",
+      "variants": [
+        {
+          "id": "left",
+          "default_source": "title-paragraphs",
+          "compositions": [
+            {
+              "id": "title-paragraphs",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-6",
+                "label-three": "text-2",
+                "label-four": "text-3",
+                "label-five": "text-5",
+                "label-six": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "centered",
+          "default_source": "title-centered-paragraphs",
+          "compositions": [
+            {
+              "id": "title-centered-paragraphs",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-4",
+                "label-four": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paired-icons-blue",
+      "title": "Paired Icons Blue",
+      "category": "Statements",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "paired-icons-blue",
+          "compositions": [
+            {
+              "id": "paired-icons-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-columns",
+      "title": "Two-column explanation",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "two-columns",
+          "compositions": [
+            {
+              "id": "two-columns",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-6",
+                "label-three": "text-4",
+                "label-four": "text-5",
+                "label-five": "text-2",
+                "label-six": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "list-rail",
+      "title": "List beside a rail",
+      "category": "Lists",
+      "default_variant": "three-items",
+      "variants": [
+        {
+          "id": "three-items",
+          "default_source": "list-rail-light",
+          "compositions": [
+            {
+              "id": "list-rail-light",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "item-one": "text-2",
+                "item-two": "text-3",
+                "item-three": "text-4"
+              },
+              "rejected_semantic_fields": []
+            }
+          ]
+        },
+        {
+          "id": "four-items",
+          "default_source": "list-rail-blue",
+          "compositions": [
+            {
+              "id": "list-rail-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "item-one": "item-1",
+                "item-two": "item-2",
+                "item-three": "item-3",
+                "item-four": "item-4"
+              },
+              "rejected_semantic_fields": []
+            }
+          ]
+        },
+        {
+          "id": "grouped",
+          "default_source": "grouped-rail",
+          "compositions": [
+            {
+              "id": "grouped-rail",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-3",
+                "label-three": "text-4",
+                "label-four": "text-1",
+                "title": "title",
+                "label-six": "text-6",
+                "label-seven": "text-7"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stepped",
+          "default_source": "stepped-rail-blue",
+          "compositions": [
+            {
+              "id": "stepped-rail-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "item-5-1",
+                "label-four": "item-5-2",
+                "label-five": "text-2",
+                "label-six": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "labelled-rows",
+      "title": "Label and explanation rows",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "labelled-rows",
+          "compositions": [
+            {
+              "id": "labelled-rows",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-4",
+                "title": "title",
+                "label-four": "text-2",
+                "label-five": "text-5",
+                "label-six": "text-3",
+                "label-seven": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "checklist-rail",
+      "title": "Practical checklist",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "checklist-rail",
+          "compositions": [
+            {
+              "id": "checklist-rail",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-3",
+                "title": "title",
+                "label-four": "text-4",
+                "label-five": "text-5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "feature-spotlight",
+      "title": "Heading beside two feature panels",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "feature-spotlight",
+          "compositions": [
+            {
+              "id": "feature-spotlight",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-5",
+                "label-two": "text-6",
+                "title": "title",
+                "label-four": "text-2",
+                "label-five": "text-3",
+                "label-six": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "levels",
+      "title": "Three levels",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "privacy-levels",
+          "compositions": [
+            {
+              "id": "privacy-levels",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "caption-one": "text-4",
+                "caption-two": "text-3",
+                "caption-three": "text-2"
+              },
+              "rejected_semantic_fields": []
+            },
+            {
+              "id": "privacy-levels-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "caption-one": "text-4",
+                "caption-two": "text-3",
+                "caption-three": "text-2"
+              },
+              "rejected_semantic_fields": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "title-two-column-list",
+      "title": "Title Two Column List",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "title-two-column-list",
+          "compositions": [
+            {
+              "id": "title-two-column-list",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partner-rail",
+      "title": "Organization rail",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "partner-rail",
+          "compositions": [
+            {
+              "id": "partner-rail",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-2",
+                "label-three": "text-5",
+                "label-four": "text-6",
+                "label-five": "text-7",
+                "title": "title",
+                "label-seven": "text-8",
+                "label-eight": "text-9",
+                "label-nine": "text-10",
+                "label-ten": "text-3",
+                "label-eleven": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icon-rail",
+      "title": "Icon Rail",
+      "category": "Lists",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "icon-rail",
+          "compositions": [
+            {
+              "id": "icon-rail",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "text-4",
+                "label-four": "text-1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icon-cards",
+      "title": "Icon cards",
+      "category": "Cards",
+      "default_variant": "three",
+      "variants": [
+        {
+          "id": "three",
+          "default_source": "three-cards",
+          "compositions": [
+            {
+              "id": "three-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "caption-one": "caption-one",
+                "caption-two": "caption-two",
+                "caption-three": "caption-three"
+              }
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "default_source": "two-cards",
+          "compositions": [
+            {
+              "id": "two-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "caption-one": "text-2",
+                "caption-two": "title"
+              },
+              "rejected_semantic_fields": [
+                "title"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "default_source": "three-card-summary",
+          "compositions": [
+            {
+              "id": "three-card-summary",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "caption-one": "text-2",
+                "body-one": "text-3",
+                "caption-two": "text-4",
+                "body-two": "text-5",
+                "caption-three": "text-6",
+                "body-three": "text-7"
+              },
+              "rejected_semantic_fields": []
+            }
+          ]
+        },
+        {
+          "id": "four-pillars",
+          "default_source": "four-pillar-cards",
+          "compositions": [
+            {
+              "id": "four-pillar-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "caption-one": "text-2",
+                "body-one": "text-3",
+                "caption-two": "text-4",
+                "body-two": "text-5",
+                "caption-three": "text-6",
+                "body-three": "text-7",
+                "caption-four": "text-8",
+                "body-four": "text-9"
+              },
+              "rejected_semantic_fields": []
+            }
+          ]
+        },
+        {
+          "id": "two-vertical",
+          "default_source": "two-card-vertical",
+          "compositions": [
+            {
+              "id": "two-card-vertical",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "body": "text-4",
+                "caption-one": "text-1",
+                "caption-two": "text-2"
+              },
+              "rejected_semantic_fields": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icon-process",
+      "title": "Icon process",
+      "category": "Cards",
+      "default_variant": "two",
+      "variants": [
+        {
+          "id": "three",
+          "default_source": "three-step-process",
+          "compositions": [
+            {
+              "id": "three-step-process",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "default_source": "four-step-process",
+          "compositions": [
+            {
+              "id": "four-step-process",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-5",
+                "label-five": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "default_source": "two-step-process",
+          "compositions": [
+            {
+              "id": "two-step-process",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "milestones",
+          "default_source": "milestone-cards",
+          "compositions": [
+            {
+              "id": "milestone-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cards",
+      "title": "Text cards",
+      "category": "Cards",
+      "default_variant": "four",
+      "variants": [
+        {
+          "id": "four",
+          "default_source": "four-card-grid",
+          "compositions": [
+            {
+              "id": "four-card-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-4",
+                "label-four": "item-3-1",
+                "label-five": "text-5",
+                "label-six": "item-3-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "callout",
+          "default_source": "callout-explanation",
+          "compositions": [
+            {
+              "id": "callout-explanation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-2-1",
+                "label-three": "text-3",
+                "label-four": "item-2-2",
+                "label-five": "item-2-3",
+                "label-six": "item-2-4",
+                "label-seven": "item-2-5",
+                "label-eight": "item-2-6",
+                "label-nine": "item-2-7"
+              }
+            }
+          ]
+        },
+        {
+          "id": "six-outline",
+          "default_source": "six-outline-cards",
+          "compositions": [
+            {
+              "id": "six-outline-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-5",
+                "label-three": "text-2",
+                "label-four": "text-6",
+                "label-five": "text-3",
+                "label-six": "text-7",
+                "label-seven": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "six-detailed",
+          "default_source": "six-explanation-cards",
+          "compositions": [
+            {
+              "id": "six-explanation-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-5",
+                "label-three": "text-2",
+                "label-four": "text-6",
+                "label-five": "text-3",
+                "label-six": "text-4",
+                "label-seven": "text-7"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "icon-grid",
+      "title": "Labelled icon grid",
+      "category": "Cards",
+      "default_variant": "four",
+      "variants": [
+        {
+          "id": "eight",
+          "default_source": "eight-icon-grid",
+          "compositions": [
+            {
+              "id": "eight-icon-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-4",
+                "title": "title",
+                "label-four": "text-2",
+                "label-five": "text-3",
+                "label-six": "text-6",
+                "label-seven": "text-5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "twelve",
+          "default_source": "twelve-word-grid",
+          "compositions": [
+            {
+              "id": "twelve-word-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-6",
+                "label-four": "text-10",
+                "label-five": "text-3",
+                "label-six": "text-7",
+                "label-seven": "text-11",
+                "label-eight": "text-4",
+                "label-nine": "text-8",
+                "label-ten": "text-5",
+                "label-eleven": "text-9",
+                "label-twelve": "text-12"
+              }
+            }
+          ]
+        },
+        {
+          "id": "row",
+          "default_source": "five-icon-row",
+          "compositions": [
+            {
+              "id": "five-icon-row",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-6",
+                "label-three": "text-3",
+                "label-four": "text-5",
+                "label-five": "text-4",
+                "label-six": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "four",
+          "default_source": "square-icon-grid",
+          "compositions": [
+            {
+              "id": "square-icon-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "title": "title",
+                "label-three": "text-3",
+                "label-four": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "options",
+      "title": "Options",
+      "category": "Cards",
+      "default_variant": "devices",
+      "variants": [
+        {
+          "id": "devices",
+          "default_source": "hardware-options",
+          "compositions": [
+            {
+              "id": "hardware-options",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "label-two": "text-1",
+                "label-three": "text-4",
+                "title": "title",
+                "label-five": "text-6",
+                "label-six": "text-2",
+                "label-seven": "text-5",
+                "label-eight": "text-7"
+              }
+            }
+          ]
+        },
+        {
+          "id": "applications",
+          "default_source": "software-options",
+          "compositions": [
+            {
+              "id": "software-options",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-3",
+                "label-three": "text-4",
+                "title": "title",
+                "label-five": "text-2",
+                "label-six": "text-5",
+                "label-seven": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "incentives-card-grid",
+      "title": "Incentives Card Grid",
+      "category": "Cards",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "incentives-card-grid",
+          "compositions": [
+            {
+              "id": "incentives-card-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-9",
+                "label-four": "text-2",
+                "label-five": "text-8",
+                "label-six": "text-11",
+                "label-seven": "text-5",
+                "label-eight": "text-4",
+                "label-nine": "text-10",
+                "label-ten": "text-7",
+                "label-eleven": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "network-environments",
+      "title": "Three environments",
+      "category": "Cards",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "network-environments",
+          "compositions": [
+            {
+              "id": "network-environments",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-4",
+                "label-four": "text-3",
+                "label-five": "text-5",
+                "label-six": "text-6",
+                "label-seven": "text-8",
+                "label-eight": "text-7",
+                "label-nine": "text-9"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "node-type-grid",
+      "title": "Three node types",
+      "category": "Cards",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "node-type-grid",
+          "compositions": [
+            {
+              "id": "node-type-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-7",
+                "label-three": "text-5",
+                "label-four": "text-8",
+                "label-five": "text-6",
+                "label-six": "text-1",
+                "label-seven": "text-3",
+                "label-eight": "text-2",
+                "label-nine": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "split-comparison",
+      "title": "Panel comparison",
+      "category": "Comparisons",
+      "default_variant": "horizontal",
+      "variants": [
+        {
+          "id": "horizontal",
+          "default_source": "horizontal-split",
+          "compositions": [
+            {
+              "id": "horizontal-split",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-2",
+                "title": "title",
+                "label-four": "text-3",
+                "label-five": "text-4",
+                "label-six": "text-6",
+                "label-seven": "text-8",
+                "label-eight": "text-7"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vertical",
+          "default_source": "vertical-split",
+          "compositions": [
+            {
+              "id": "vertical-split",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-4",
+                "title": "title",
+                "label-three": "text-1",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "outlines",
+          "default_source": "split-outline-cards",
+          "compositions": [
+            {
+              "id": "split-outline-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "student-1",
+                "label-four": "item-1-1",
+                "label-five": "student-2",
+                "label-six": "item-1-2",
+                "label-seven": "student-3",
+                "label-eight": "item-1-3",
+                "label-nine": "student-4",
+                "label-ten": "item-1-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "process",
+          "default_source": "split-process-cards",
+          "compositions": [
+            {
+              "id": "split-process-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-4",
+                "label-four": "text-5",
+                "label-five": "text-6",
+                "label-six": "text-7"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "benefits-limits",
+      "title": "Benefits and responsibilities",
+      "category": "Comparisons",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "benefits-limits",
+          "compositions": [
+            {
+              "id": "benefits-limits",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-4",
+                "label-four": "text-3",
+                "label-five": "text-5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "before-after",
+      "title": "Before and after panels",
+      "category": "Comparisons",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "before-after",
+          "compositions": [
+            {
+              "id": "before-after",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-6",
+                "label-three": "text-1",
+                "label-four": "text-5",
+                "label-five": "text-3",
+                "label-six": "text-7",
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "onchain-offchain",
+      "title": "Two approaches",
+      "category": "Comparisons",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "onchain-offchain",
+          "compositions": [
+            {
+              "id": "onchain-offchain",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-4",
+                "label-three": "text-1",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo-split",
+      "title": "Photo Split",
+      "category": "Comparisons",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "photo-split",
+          "compositions": [
+            {
+              "id": "photo-split",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "coin-comparison",
+      "title": "Two-symbol comparison",
+      "category": "Comparisons",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "coin-comparison",
+          "compositions": [
+            {
+              "id": "coin-comparison",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image-grid",
+      "title": "Image grid",
+      "category": "Images",
+      "default_variant": "four",
+      "variants": [
+        {
+          "id": "four",
+          "default_source": "four-images",
+          "compositions": [
+            {
+              "id": "four-images",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "portraits",
+          "default_source": "three-portraits",
+          "compositions": [
+            {
+              "id": "three-portraits",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pair",
+          "default_source": "two-image-comparison",
+          "compositions": [
+            {
+              "id": "two-image-comparison",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "triptych",
+          "default_source": "photo-triptych",
+          "compositions": [
+            {
+              "id": "photo-triptych",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "title-pair",
+          "default_source": "image-pair-title",
+          "compositions": [
+            {
+              "id": "image-pair-title",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "collage",
+      "title": "Image collage",
+      "category": "Images",
+      "default_variant": "asymmetric",
+      "variants": [
+        {
+          "id": "asymmetric",
+          "default_source": "gallery-collage",
+          "compositions": [
+            {
+              "id": "gallery-collage",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "banner",
+          "default_source": "photo-collage-banner",
+          "compositions": [
+            {
+              "id": "photo-collage-banner",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "grid",
+          "default_source": "photo-collage-grid",
+          "compositions": [
+            {
+              "id": "photo-collage-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "statistics",
+          "default_source": "photo-statistics-collage",
+          "compositions": [
+            {
+              "id": "photo-statistics-collage",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "item-8-1",
+                "label-two": "alumni-number",
+                "label-three": "item-8-2",
+                "label-four": "alumni-label",
+                "label-five": "text-5",
+                "label-six": "item-9-1",
+                "label-seven": "item-9-2",
+                "label-eight": "text-4",
+                "label-nine": "text-3",
+                "label-ten": "text-6",
+                "label-eleven": "item-10-1",
+                "label-twelve": "item-10-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "screenshots",
+      "title": "Application screenshots",
+      "category": "Images",
+      "default_variant": "callout",
+      "variants": [
+        {
+          "id": "callout",
+          "default_source": "screenshot-callout",
+          "compositions": [
+            {
+              "id": "screenshot-callout",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-1",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "pair",
+          "default_source": "screenshot-pair",
+          "compositions": [
+            {
+              "id": "screenshot-pair",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "phone",
+          "default_source": "phone-screenshot",
+          "compositions": [
+            {
+              "id": "phone-screenshot",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "resource-grid",
+      "title": "Four-resource grid",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "resource-grid",
+          "compositions": [
+            {
+              "id": "resource-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-5",
+                "label-four": "text-4",
+                "label-five": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "nine-logo-grid",
+      "title": "Nine-symbol grid",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "nine-logo-grid",
+          "compositions": [
+            {
+              "id": "nine-logo-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "photo-center-two-icons",
+      "title": "Photo Center Two Icons",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "photo-center-two-icons",
+          "compositions": [
+            {
+              "id": "photo-center-two-icons",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "abacus-explanation",
+      "title": "Abacus Explanation",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "abacus-explanation",
+          "compositions": [
+            {
+              "id": "abacus-explanation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "whitepaper-blue",
+      "title": "Document spotlight",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "whitepaper-blue",
+          "compositions": [
+            {
+              "id": "whitepaper-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "partner-media-grid",
+      "title": "Media grid",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "partner-media-grid",
+          "compositions": [
+            {
+              "id": "partner-media-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "label-two": "text-4",
+                "label-three": "text-6",
+                "label-four": "text-5",
+                "label-five": "text-7",
+                "label-six": "text-8",
+                "label-seven": "text-10",
+                "label-eight": "text-9",
+                "label-nine": "text-11",
+                "title": "title",
+                "label-eleven": "text-12",
+                "label-twelve": "text-14",
+                "label-thirteen": "text-13",
+                "label-fourteen": "text-15",
+                "label-fifteen": "text-16",
+                "label-sixteen": "text-18",
+                "label-seventeen": "text-17",
+                "label-eighteen": "text-19",
+                "label-nineteen": "item-2-1",
+                "label-twenty": "text-20",
+                "label-21": "text-22",
+                "label-22": "text-21",
+                "label-23": "text-23",
+                "label-24": "item-2-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mission-badges",
+      "title": "Three badges",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "mission-badges",
+          "compositions": [
+            {
+              "id": "mission-badges",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-2-1",
+                "label-three": "text-3",
+                "label-four": "text-1",
+                "label-five": "item-2-2",
+                "label-six": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "image-logo-pair",
+      "title": "Image and symbol",
+      "category": "Images",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "image-logo-pair",
+          "compositions": [
+            {
+              "id": "image-logo-pair",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hero-number",
+      "title": "Headline number",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "hero-number",
+          "compositions": [
+            {
+              "id": "hero-number",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "metrics",
+      "title": "Metric dashboard",
+      "category": "Data",
+      "default_variant": "four-counters",
+      "variants": [
+        {
+          "id": "four-counters",
+          "default_source": "three-statistics",
+          "compositions": [
+            {
+              "id": "three-statistics",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-7",
+                "title": "title",
+                "label-four": "text-10",
+                "label-five": "text-6",
+                "label-six": "text-2",
+                "label-seven": "text-11",
+                "label-eight": "text-9",
+                "label-nine": "text-5",
+                "label-ten": "text-8",
+                "label-eleven": "text-4",
+                "label-twelve": "text-12"
+              }
+            }
+          ]
+        },
+        {
+          "id": "four-panels",
+          "default_source": "metric-dashboard",
+          "compositions": [
+            {
+              "id": "metric-dashboard",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "participants-number",
+                "label-two": "alumni-number",
+                "label-three": "participants-caption",
+                "label-four": "alumni-caption",
+                "label-five": "followers-number",
+                "title": "title",
+                "label-seven": "followers-caption",
+                "label-eight": "events-number",
+                "label-nine": "events-caption"
+              }
+            }
+          ]
+        },
+        {
+          "id": "summary",
+          "default_source": "success-dashboard",
+          "compositions": [
+            {
+              "id": "success-dashboard",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-5",
+                "label-two": "participants-number",
+                "label-three": "alumni-number",
+                "label-four": "text-6",
+                "label-five": "participants-label",
+                "label-six": "alumni-label",
+                "label-seven": "item-3-1",
+                "label-eight": "item-3-2",
+                "label-nine": "item-4-1",
+                "label-ten": "item-4-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "charts",
+      "title": "Charts",
+      "category": "Data",
+      "default_variant": "line",
+      "variants": [
+        {
+          "id": "line",
+          "default_source": "line-chart",
+          "compositions": [
+            {
+              "id": "line-chart",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "data-file": "data-file",
+                "title": "title",
+                "label-three": "text-3",
+                "label-four": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bars",
+          "default_source": "bar-comparison",
+          "compositions": [
+            {
+              "id": "bar-comparison",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-23",
+                "label-two": "text-19",
+                "label-three": "text-20",
+                "label-four": "text-21",
+                "label-five": "text-18",
+                "label-six": "text-17",
+                "label-seven": "text-16",
+                "label-eight": "text-15",
+                "label-nine": "text-14",
+                "label-ten": "text-13",
+                "label-eleven": "text-12",
+                "title": "title",
+                "label-thirteen": "text-7",
+                "label-fourteen": "text-11",
+                "label-fifteen": "text-3",
+                "label-sixteen": "text-24",
+                "label-seventeen": "text-8",
+                "label-eighteen": "text-5",
+                "label-nineteen": "text-6",
+                "label-twenty": "text-26",
+                "label-21": "text-10",
+                "label-22": "text-9",
+                "label-23": "text-4",
+                "label-24": "text-1",
+                "label-25": "text-2",
+                "label-26": "text-22"
+              }
+            }
+          ]
+        },
+        {
+          "id": "scatter",
+          "default_source": "scatter-comparison",
+          "compositions": [
+            {
+              "id": "scatter-comparison",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-6",
+                "label-three": "text-10",
+                "label-four": "text-9",
+                "label-five": "text-8",
+                "label-six": "text-7",
+                "label-seven": "text-1",
+                "label-eight": "text-2",
+                "label-nine": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "stages",
+          "default_source": "adoption-curve",
+          "compositions": [
+            {
+              "id": "adoption-curve",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-1",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "label-six": "text-2",
+                "label-seven": "text-7",
+                "label-eight": "text-8",
+                "label-nine": "text-9",
+                "label-ten": "text-10",
+                "label-eleven": "text-11"
+              }
+            }
+          ]
+        },
+        {
+          "id": "two",
+          "default_source": "two-charts",
+          "compositions": [
+            {
+              "id": "two-charts",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-12",
+                "title": "title",
+                "label-three": "text-14",
+                "label-four": "text-29",
+                "label-five": "text-15",
+                "label-six": "text-1",
+                "label-seven": "text-2",
+                "label-eight": "text-3",
+                "label-nine": "text-4",
+                "label-ten": "text-5",
+                "label-eleven": "text-6",
+                "label-twelve": "text-7",
+                "label-thirteen": "text-8",
+                "label-fourteen": "text-9",
+                "label-fifteen": "text-10",
+                "label-sixteen": "text-11",
+                "label-seventeen": "text-16",
+                "label-eighteen": "text-17",
+                "label-nineteen": "text-18",
+                "label-twenty": "text-19",
+                "label-21": "text-20",
+                "label-22": "text-21",
+                "label-23": "text-22",
+                "label-24": "text-23",
+                "label-25": "text-24",
+                "label-26": "text-25",
+                "label-27": "text-26",
+                "label-28": "text-13",
+                "label-29": "text-28"
+              }
+            }
+          ]
+        },
+        {
+          "id": "three",
+          "default_source": "three-charts",
+          "compositions": [
+            {
+              "id": "three-charts",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-7",
+                "label-three": "text-6",
+                "label-four": "text-5",
+                "label-five": "text-4",
+                "label-six": "text-3",
+                "label-seven": "text-2",
+                "label-eight": "text-1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "bubbles",
+          "default_source": "bubble-chart",
+          "compositions": [
+            {
+              "id": "bubble-chart",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-17",
+                "label-four": "text-18",
+                "label-five": "text-19",
+                "label-six": "text-21",
+                "label-seven": "text-20",
+                "label-eight": "text-23",
+                "label-nine": "text-16",
+                "label-ten": "text-22",
+                "label-eleven": "text-24",
+                "label-twelve": "text-3",
+                "label-thirteen": "text-4",
+                "label-fourteen": "text-5",
+                "label-fifteen": "text-6",
+                "label-sixteen": "text-7",
+                "label-seventeen": "text-8",
+                "label-eighteen": "text-9",
+                "label-nineteen": "text-10",
+                "label-twenty": "text-11",
+                "label-21": "text-12",
+                "label-22": "text-13",
+                "label-23": "text-14",
+                "label-24": "text-15"
+              }
+            }
+          ]
+        },
+        {
+          "id": "series",
+          "default_source": "price-lines",
+          "compositions": [
+            {
+              "id": "price-lines",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-21",
+                "label-three": "text-3",
+                "label-four": "text-2",
+                "label-five": "text-4",
+                "label-six": "text-5",
+                "label-seven": "text-6",
+                "label-eight": "text-7",
+                "label-nine": "text-8",
+                "label-ten": "text-9",
+                "label-eleven": "text-14",
+                "label-twelve": "text-10",
+                "label-thirteen": "text-13",
+                "label-fourteen": "text-11",
+                "label-fifteen": "text-15",
+                "label-sixteen": "text-12",
+                "label-seventeen": "text-16",
+                "label-eighteen": "text-17",
+                "label-nineteen": "text-18",
+                "label-twenty": "text-19",
+                "label-21": "text-20"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diagonal-number",
+      "title": "Diagonal hero number",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "diagonal-number",
+          "compositions": [
+            {
+              "id": "diagonal-number",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "unit-conversion",
+      "title": "Two-column conversion table",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "unit-conversion",
+          "compositions": [
+            {
+              "id": "unit-conversion",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-1",
+                "label-five": "text-4",
+                "label-six": "text-5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ranked-podium",
+      "title": "Ranked podium",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "ranked-podium",
+          "compositions": [
+            {
+              "id": "ranked-podium",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-8",
+                "label-five": "text-7",
+                "label-six": "text-4",
+                "label-seven": "text-5",
+                "label-eight": "text-6",
+                "label-nine": "text-9"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "map",
+      "title": "Annotated map",
+      "category": "Data",
+      "default_variant": "world",
+      "variants": [
+        {
+          "id": "world",
+          "default_source": "world-map",
+          "compositions": [
+            {
+              "id": "world-map",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "label-six": "text-6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "region",
+          "default_source": "europe-map",
+          "compositions": [
+            {
+              "id": "europe-map",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "label-six": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "purchasing-power",
+      "title": "Value over time",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "purchasing-power",
+          "compositions": [
+            {
+              "id": "purchasing-power",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-11",
+                "label-two": "text-5",
+                "label-three": "text-8",
+                "label-four": "text-9",
+                "label-five": "text-10",
+                "title": "title",
+                "label-seven": "text-7",
+                "label-eight": "text-4",
+                "label-nine": "text-2",
+                "label-ten": "text-6",
+                "label-eleven": "text-1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "currency-equivalence",
+      "title": "Equivalent values",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "currency-equivalence",
+          "compositions": [
+            {
+              "id": "currency-equivalence",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "split-currency",
+      "title": "Split value comparison",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "split-currency",
+          "compositions": [
+            {
+              "id": "split-currency",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-4",
+                "title": "title",
+                "label-four": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diagram-annotated-energy",
+      "title": "Annotated system",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "diagram-annotated-energy",
+          "compositions": [
+            {
+              "id": "diagram-annotated-energy",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-9",
+                "label-four": "text-8",
+                "label-five": "text-6",
+                "label-six": "text-7",
+                "label-seven": "text-2",
+                "label-eight": "text-4",
+                "label-nine": "text-5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "card-statistics-process",
+      "title": "Cards and counters",
+      "category": "Data",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "card-statistics-process",
+          "compositions": [
+            {
+              "id": "card-statistics-process",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-4",
+                "label-three": "text-1",
+                "label-four": "text-3",
+                "label-five": "text-5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protocol",
+      "title": "Message exchange",
+      "category": "Diagrams",
+      "default_variant": "paired-nodes",
+      "variants": [
+        {
+          "id": "paired-nodes",
+          "default_source": "protocol-key-pair",
+          "compositions": [
+            {
+              "id": "protocol-key-pair",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "symmetric",
+          "default_source": "protocol-symmetric",
+          "compositions": [
+            {
+              "id": "protocol-symmetric",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "public-nodes",
+          "default_source": "protocol-public-keys",
+          "compositions": [
+            {
+              "id": "protocol-public-keys",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "lock",
+          "default_source": "protocol-key-lock",
+          "compositions": [
+            {
+              "id": "protocol-key-lock",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "exchange",
+          "default_source": "protocol-key-exchange",
+          "compositions": [
+            {
+              "id": "protocol-key-exchange",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "signed",
+          "default_source": "protocol-signed-message",
+          "compositions": [
+            {
+              "id": "protocol-signed-message",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "encrypted",
+          "default_source": "protocol-encrypted-message",
+          "compositions": [
+            {
+              "id": "protocol-encrypted-message",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "unlock",
+          "default_source": "protocol-unlock-message",
+          "compositions": [
+            {
+              "id": "protocol-unlock-message",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "payload",
+          "default_source": "protocol-signed-payload",
+          "compositions": [
+            {
+              "id": "protocol-signed-payload",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "setup",
+          "default_source": "protocol-key-setup",
+          "compositions": [
+            {
+              "id": "protocol-key-setup",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "transfer",
+          "default_source": "protocol-token-transfer",
+          "compositions": [
+            {
+              "id": "protocol-token-transfer",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "routing",
+          "default_source": "protocol-token-routing",
+          "compositions": [
+            {
+              "id": "protocol-token-routing",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "aggregation",
+          "default_source": "protocol-key-aggregation",
+          "compositions": [
+            {
+              "id": "protocol-key-aggregation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "aggregate",
+          "default_source": "protocol-aggregate-signature",
+          "compositions": [
+            {
+              "id": "protocol-aggregate-signature",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        },
+        {
+          "id": "observer",
+          "default_source": "protocol-eavesdropping",
+          "compositions": [
+            {
+              "id": "protocol-eavesdropping",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-4",
+                "title": "title",
+                "label-three": "text-3",
+                "label-four": "text-1"
+              }
+            }
+          ]
+        },
+        {
+          "id": "channel",
+          "default_source": "protocol-encrypted-channel",
+          "compositions": [
+            {
+              "id": "protocol-encrypted-channel",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "large-figure",
+      "title": "Large diagram",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "large-figure",
+          "compositions": [
+            {
+              "id": "large-figure",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "timeline",
+      "title": "Timeline",
+      "category": "Diagrams",
+      "default_variant": "horizontal",
+      "variants": [
+        {
+          "id": "horizontal",
+          "default_source": "horizontal-timeline",
+          "compositions": [
+            {
+              "id": "horizontal-timeline",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-5",
+                "label-four": "text-7",
+                "label-five": "text-2",
+                "label-six": "text-8",
+                "label-seven": "text-9",
+                "label-eight": "text-10",
+                "label-nine": "text-11",
+                "label-ten": "text-4",
+                "label-eleven": "text-6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "vertical",
+          "default_source": "vertical-timeline",
+          "compositions": [
+            {
+              "id": "vertical-timeline",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-3",
+                "title": "title",
+                "label-four": "text-4",
+                "label-five": "text-5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "alternating",
+          "default_source": "alternating-timeline",
+          "compositions": [
+            {
+              "id": "alternating-timeline",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-5",
+                "label-four": "text-7",
+                "label-five": "text-2",
+                "label-six": "text-8",
+                "label-seven": "text-9",
+                "label-eight": "text-11",
+                "label-nine": "text-10",
+                "label-ten": "text-4",
+                "label-eleven": "text-6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "milestones",
+          "default_source": "personal-timeline",
+          "compositions": [
+            {
+              "id": "personal-timeline",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-5",
+                "label-four": "text-7",
+                "label-five": "text-2",
+                "label-six": "text-8",
+                "label-seven": "text-9",
+                "label-eight": "text-10",
+                "label-nine": "text-11",
+                "label-ten": "text-4",
+                "label-eleven": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cycle",
+      "title": "Development cycle",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "cycle",
+          "compositions": [
+            {
+              "id": "cycle",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "text-7",
+                "label-four": "text-4",
+                "label-five": "text-2",
+                "label-six": "text-6",
+                "label-seven": "text-5"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "decision-tree",
+      "title": "Decision tree",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "decision-tree",
+          "compositions": [
+            {
+              "id": "decision-tree",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-1",
+                "label-three": "text-13",
+                "label-four": "text-2",
+                "label-five": "text-8",
+                "label-six": "text-10",
+                "label-seven": "text-3",
+                "label-eight": "text-7",
+                "label-nine": "text-9",
+                "label-ten": "text-11",
+                "label-eleven": "text-4",
+                "label-twelve": "text-5",
+                "label-thirteen": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "system-architecture",
+      "title": "System architecture",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "system-architecture",
+          "compositions": [
+            {
+              "id": "system-architecture",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-4",
+                "title": "title",
+                "label-four": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "radial",
+      "title": "Radial diagram",
+      "category": "Diagrams",
+      "default_variant": "goals",
+      "variants": [
+        {
+          "id": "goals",
+          "default_source": "radial-goals",
+          "compositions": [
+            {
+              "id": "radial-goals",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-5",
+                "title": "title",
+                "label-four": "text-3",
+                "label-five": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "five",
+          "default_source": "five-spoke-values",
+          "compositions": [
+            {
+              "id": "five-spoke-values",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "label-two": "text-4",
+                "label-three": "text-2",
+                "title": "title",
+                "label-five": "text-6",
+                "label-six": "text-5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "three",
+          "default_source": "three-spoke-benefits",
+          "compositions": [
+            {
+              "id": "three-spoke-benefits",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-4",
+                "title": "title",
+                "label-three": "text-3",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "two-groups",
+          "default_source": "two-radial-groups",
+          "compositions": [
+            {
+              "id": "two-radial-groups",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-4",
+                "title": "title",
+                "label-three": "text-3",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "target",
+          "default_source": "bullseye-values",
+          "compositions": [
+            {
+              "id": "bullseye-values",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "title": "title",
+                "label-three": "text-5",
+                "label-four": "text-3",
+                "label-five": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sets",
+      "title": "Set relationships",
+      "category": "Diagrams",
+      "default_variant": "nested",
+      "variants": [
+        {
+          "id": "nested",
+          "default_source": "nested-circles",
+          "compositions": [
+            {
+              "id": "nested-circles",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "separate",
+          "default_source": "separate-circles",
+          "compositions": [
+            {
+              "id": "separate-circles",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "title": "title",
+                "label-three": "text-2"
+              }
+            }
+          ]
+        },
+        {
+          "id": "outlined",
+          "default_source": "nested-outline-circles",
+          "compositions": [
+            {
+              "id": "nested-outline-circles",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-1",
+                "label-three": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "triangle-tradeoff",
+      "title": "Three-way trade-off",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "triangle-tradeoff",
+          "compositions": [
+            {
+              "id": "triangle-tradeoff",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-4",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "layer-stack",
+      "title": "Layered structure",
+      "category": "Diagrams",
+      "default_variant": "purposes",
+      "variants": [
+        {
+          "id": "purposes",
+          "default_source": "layered-stack",
+          "compositions": [
+            {
+              "id": "layered-stack",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "label-two": "text-3",
+                "label-three": "text-1",
+                "label-four": "text-4",
+                "label-five": "text-11",
+                "label-six": "text-5",
+                "label-seven": "text-13",
+                "label-eight": "text-6",
+                "title": "title",
+                "label-ten": "text-12",
+                "label-eleven": "text-7",
+                "label-twelve": "text-14",
+                "label-thirteen": "text-8",
+                "label-fourteen": "text-15",
+                "label-fifteen": "text-9",
+                "label-sixteen": "text-16",
+                "label-seventeen": "text-10"
+              }
+            }
+          ]
+        },
+        {
+          "id": "overview",
+          "default_source": "layers-overview",
+          "compositions": [
+            {
+              "id": "layers-overview",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-13",
+                "label-three": "text-15",
+                "label-four": "item-18-2",
+                "label-five": "item-18-1",
+                "label-six": "text-20",
+                "label-seven": "item-19-1",
+                "label-eight": "item-19-2",
+                "label-nine": "item-18-3",
+                "label-ten": "text-14",
+                "label-eleven": "text-16",
+                "label-twelve": "item-18-4",
+                "label-thirteen": "item-17-1",
+                "label-fourteen": "item-17-2",
+                "label-fifteen": "item-19-3",
+                "label-sixteen": "item-18-5",
+                "label-seventeen": "item-19-4",
+                "label-eighteen": "text-11",
+                "label-nineteen": "item-17-3",
+                "label-twenty": "item-19-5",
+                "label-21": "text-12",
+                "label-22": "item-9-1",
+                "label-23": "text-10",
+                "label-24": "item-19-6",
+                "label-25": "item-9-2",
+                "label-26": "item-19-7",
+                "label-27": "item-9-3",
+                "label-28": "text-8",
+                "label-29": "text-7",
+                "label-30": "text-21",
+                "label-31": "item-9-4",
+                "label-32": "text-4",
+                "label-33": "text-6",
+                "label-34": "text-5",
+                "label-35": "text-3",
+                "label-36": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "network-topologies",
+      "title": "Three network topologies",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "network-topologies",
+          "compositions": [
+            {
+              "id": "network-topologies",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-5",
+                "label-three": "text-6",
+                "label-four": "text-7",
+                "label-five": "text-1",
+                "label-six": "text-3",
+                "label-seven": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "two-steps-outline",
+      "title": "Two Steps Outline",
+      "category": "Diagrams",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "two-steps-outline",
+          "compositions": [
+            {
+              "id": "two-steps-outline",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "title": "title",
+                "label-three": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "table",
+      "title": "Data table",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "table",
+          "compositions": [
+            {
+              "id": "table",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "body": "body"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "equation",
+      "title": "Equation and example",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "equation",
+          "compositions": [
+            {
+              "id": "equation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {}
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "code",
+      "title": "Editable code",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "code",
+          "compositions": [
+            {
+              "id": "code",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "code-file": "code-file",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "references",
+      "title": "Bibliography and resources",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "references",
+          "compositions": [
+            {
+              "id": "references",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-1-1",
+                "label-three": "item-1-2",
+                "label-four": "item-1-3",
+                "label-five": "item-1-4",
+                "label-six": "item-1-5",
+                "label-seven": "item-1-6",
+                "label-eight": "item-1-7",
+                "label-nine": "item-1-8",
+                "label-ten": "item-1-9",
+                "label-eleven": "item-1-10",
+                "label-twelve": "item-1-11",
+                "label-thirteen": "item-1-12",
+                "label-fourteen": "item-1-13",
+                "label-fifteen": "item-1-14",
+                "label-sixteen": "item-1-15",
+                "label-seventeen": "item-1-16",
+                "label-eighteen": "item-1-17"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hash-avalanche",
+      "title": "Input and output comparison",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "hash-avalanche",
+          "compositions": [
+            {
+              "id": "hash-avalanche",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-4",
+                "label-four": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-derivation",
+      "title": "Derivation path",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "key-derivation",
+          "compositions": [
+            {
+              "id": "key-derivation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "label-two": "text-5",
+                "label-three": "text-4",
+                "label-four": "text-9",
+                "label-five": "text-11",
+                "label-six": "text-10",
+                "label-seven": "text-12",
+                "title": "title",
+                "label-nine": "text-8",
+                "label-ten": "text-1",
+                "label-eleven": "text-7"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "signature-flow",
+      "title": "Input and output flow",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "signature-flow",
+          "compositions": [
+            {
+              "id": "signature-flow",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-5",
+                "label-five": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "protocol-sequence",
+      "title": "Three-lane sequence",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "protocol-sequence",
+          "compositions": [
+            {
+              "id": "protocol-sequence",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "message",
+                "label-two": "warning"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chain",
+      "title": "Linked nodes",
+      "category": "Technical",
+      "default_variant": "headers",
+      "variants": [
+        {
+          "id": "headers",
+          "default_source": "block-chain",
+          "compositions": [
+            {
+              "id": "block-chain",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-5",
+                "label-three": "text-6",
+                "label-four": "text-7",
+                "label-five": "text-1",
+                "label-six": "text-2",
+                "label-seven": "text-3",
+                "label-eight": "text-8",
+                "label-nine": "text-9",
+                "label-ten": "text-10",
+                "label-eleven": "text-11",
+                "label-twelve": "text-12",
+                "label-thirteen": "text-13",
+                "label-fourteen": "text-14",
+                "label-fifteen": "text-15",
+                "label-sixteen": "text-22",
+                "label-seventeen": "text-18",
+                "label-eighteen": "text-16",
+                "label-nineteen": "text-20",
+                "label-twenty": "text-19",
+                "label-21": "text-17",
+                "label-22": "text-21"
+              }
+            }
+          ]
+        },
+        {
+          "id": "branches",
+          "default_source": "fork-branches",
+          "compositions": [
+            {
+              "id": "fork-branches",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-13",
+                "label-three": "text-14",
+                "label-four": "text-5",
+                "label-five": "text-6",
+                "label-six": "text-9",
+                "label-seven": "text-2",
+                "label-eight": "text-7",
+                "label-nine": "text-3",
+                "label-ten": "text-4",
+                "label-eleven": "text-10",
+                "label-twelve": "text-11",
+                "label-thirteen": "text-12",
+                "label-fourteen": "text-15",
+                "label-fifteen": "text-16",
+                "label-sixteen": "text-8",
+                "label-seventeen": "text-17",
+                "label-eighteen": "text-18"
+              }
+            }
+          ]
+        },
+        {
+          "id": "annotated",
+          "default_source": "blockchain-with-list",
+          "compositions": [
+            {
+              "id": "blockchain-with-list",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-7",
+                "label-four": "text-8",
+                "label-five": "text-9",
+                "label-six": "text-10",
+                "label-seven": "text-3",
+                "label-eight": "text-6",
+                "label-nine": "text-15",
+                "label-ten": "text-16",
+                "label-eleven": "text-11",
+                "label-twelve": "text-12",
+                "label-thirteen": "text-13",
+                "label-fourteen": "text-14",
+                "label-fifteen": "text-4",
+                "label-sixteen": "text-5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "conflict",
+          "default_source": "double-spend-diagram",
+          "compositions": [
+            {
+              "id": "double-spend-diagram",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-2",
+                "title": "title",
+                "label-three": "text-1",
+                "label-four": "text-3",
+                "label-five": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "binary-tree",
+      "title": "Binary tree",
+      "category": "Technical",
+      "default_variant": "compact",
+      "variants": [
+        {
+          "id": "compact",
+          "default_source": "merkle-tree",
+          "compositions": [
+            {
+              "id": "merkle-tree",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "root": "root",
+                "explanation": "explanation",
+                "label-four": "ab",
+                "label-five": "cd",
+                "label-six": "hash-0",
+                "label-seven": "hash-1",
+                "label-eight": "hash-2",
+                "label-nine": "hash-3",
+                "label-ten": "tx-0",
+                "label-eleven": "tx-1",
+                "label-twelve": "tx-2",
+                "label-thirteen": "tx-3"
+              }
+            }
+          ]
+        },
+        {
+          "id": "hierarchy",
+          "default_source": "seed-key-tree",
+          "compositions": [
+            {
+              "id": "seed-key-tree",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "wide",
+          "default_source": "merkle-tree-wide",
+          "compositions": [
+            {
+              "id": "merkle-tree-wide",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-14",
+                "title": "title",
+                "label-three": "text-20",
+                "label-four": "text-19",
+                "label-five": "text-12",
+                "label-six": "text-10",
+                "label-seven": "text-13",
+                "label-eight": "text-11",
+                "label-nine": "text-4",
+                "label-ten": "text-17",
+                "label-eleven": "text-2",
+                "label-twelve": "text-15",
+                "label-thirteen": "text-5",
+                "label-fourteen": "text-18",
+                "label-fifteen": "text-3",
+                "label-sixteen": "text-16",
+                "label-seventeen": "text-8",
+                "label-eighteen": "text-23",
+                "label-nineteen": "text-6",
+                "label-twenty": "text-21",
+                "label-21": "text-9",
+                "label-22": "text-24",
+                "label-23": "text-7",
+                "label-24": "text-22"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transaction-flow",
+      "title": "Two-lane process",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "transaction-flow",
+          "compositions": [
+            {
+              "id": "transaction-flow",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-10",
+                "label-three": "text-5",
+                "label-four": "text-3",
+                "label-five": "text-4",
+                "label-six": "text-2",
+                "label-seven": "text-11",
+                "label-eight": "text-9",
+                "label-nine": "text-7",
+                "label-ten": "text-8",
+                "label-eleven": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "transformation",
+      "title": "Transformation pipeline",
+      "category": "Technical",
+      "default_variant": "symmetric",
+      "variants": [
+        {
+          "id": "mapping",
+          "default_source": "cipher-mapping",
+          "compositions": [
+            {
+              "id": "cipher-mapping",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "flow",
+          "default_source": "encryption-flow",
+          "compositions": [
+            {
+              "id": "encryption-flow",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-6",
+                "label-five": "text-7",
+                "title": "title",
+                "label-seven": "text-9",
+                "label-eight": "text-5",
+                "label-nine": "text-8"
+              }
+            }
+          ]
+        },
+        {
+          "id": "symmetric",
+          "default_source": "symmetric-encryption",
+          "compositions": [
+            {
+              "id": "symmetric-encryption",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-3",
+                "label-three": "text-6",
+                "label-four": "text-2",
+                "title": "title",
+                "label-six": "text-5",
+                "label-seven": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "asymmetric",
+          "default_source": "asymmetric-encryption",
+          "compositions": [
+            {
+              "id": "asymmetric-encryption",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-3",
+                "label-three": "text-6",
+                "label-four": "text-8",
+                "title": "title",
+                "label-six": "text-5",
+                "label-seven": "text-2",
+                "label-eight": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "payoff-matrix",
+      "title": "Outcome matrix",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "payoff-matrix",
+          "compositions": [
+            {
+              "id": "payoff-matrix",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "label-two": "text-2",
+                "label-three": "text-6",
+                "label-four": "text-3",
+                "label-five": "text-5",
+                "label-six": "text-7",
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "payment-channel",
+      "title": "Two-way channel",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "payment-channel",
+          "compositions": [
+            {
+              "id": "payment-channel",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "label-six": "text-6",
+                "label-seven": "text-7",
+                "label-eight": "text-8"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "proof-of-work-flow",
+      "title": "Processing flow",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "proof-of-work-flow",
+          "compositions": [
+            {
+              "id": "proof-of-work-flow",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-5",
+                "title": "title",
+                "label-three": "text-6",
+                "label-four": "text-9",
+                "label-five": "text-7",
+                "label-six": "text-8",
+                "label-seven": "text-10",
+                "label-eight": "text-4",
+                "label-nine": "text-13",
+                "label-ten": "text-2",
+                "label-eleven": "text-11",
+                "label-twelve": "text-14",
+                "label-thirteen": "text-12",
+                "label-fourteen": "text-3",
+                "label-fifteen": "text-15",
+                "label-sixteen": "text-17",
+                "label-seventeen": "text-16"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cryptographic-assumptions",
+      "title": "Three assumptions",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "cryptographic-assumptions",
+          "compositions": [
+            {
+              "id": "cryptographic-assumptions",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-4",
+                "label-three": "text-2",
+                "label-four": "text-5",
+                "label-five": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "routing-graph",
+      "title": "Routing diagram",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "routing-graph",
+          "compositions": [
+            {
+              "id": "routing-graph",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diagram-transaction-inputs",
+      "title": "Inputs and outputs",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "diagram-transaction-inputs",
+          "compositions": [
+            {
+              "id": "diagram-transaction-inputs",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-19",
+                "label-two": "text-1",
+                "title": "title",
+                "label-four": "text-6",
+                "label-five": "text-7",
+                "label-six": "text-8",
+                "label-seven": "text-22",
+                "label-eight": "text-5",
+                "label-nine": "text-2",
+                "label-ten": "text-9",
+                "label-eleven": "text-11",
+                "label-twelve": "text-4",
+                "label-thirteen": "text-18",
+                "label-fourteen": "text-20",
+                "label-fifteen": "text-13",
+                "label-sixteen": "text-3",
+                "label-seventeen": "text-10",
+                "label-eighteen": "text-14",
+                "label-nineteen": "text-16",
+                "label-twenty": "text-12",
+                "label-21": "text-15",
+                "label-22": "text-17"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "seed-grid-caption",
+      "title": "Word grid and caption",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "seed-grid-caption",
+          "compositions": [
+            {
+              "id": "seed-grid-caption",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-4",
+                "label-three": "item-2-1",
+                "label-four": "item-2-2",
+                "label-five": "text-5",
+                "label-six": "text-9",
+                "label-seven": "text-13",
+                "label-eight": "item-2-3",
+                "label-nine": "item-2-4",
+                "label-ten": "item-2-5",
+                "label-eleven": "text-6",
+                "label-twelve": "text-10",
+                "label-thirteen": "text-14",
+                "label-fourteen": "text-7",
+                "label-fifteen": "text-11",
+                "label-sixteen": "item-3-1",
+                "label-seventeen": "item-3-2",
+                "label-eighteen": "text-8",
+                "label-nineteen": "text-12",
+                "label-twenty": "text-15",
+                "label-21": "item-3-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "diagram-pool-shares",
+      "title": "Shared work diagram",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "diagram-pool-shares",
+          "compositions": [
+            {
+              "id": "diagram-pool-shares",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-9",
+                "label-three": "text-18",
+                "label-four": "text-10",
+                "label-five": "text-2",
+                "label-six": "text-7",
+                "label-seven": "text-3",
+                "label-eight": "text-12",
+                "label-nine": "text-5",
+                "label-ten": "text-17",
+                "label-eleven": "text-16",
+                "label-twelve": "text-11",
+                "label-thirteen": "text-8",
+                "label-fourteen": "text-13",
+                "label-fifteen": "text-6",
+                "label-sixteen": "text-14",
+                "label-seventeen": "text-15",
+                "label-eighteen": "text-4",
+                "label-nineteen": "text-19"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "multi-signature",
+      "title": "Multiple approvals",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "multi-signature",
+          "compositions": [
+            {
+              "id": "multi-signature",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-2-1",
+                "label-three": "item-2-2",
+                "label-four": "item-2-3",
+                "label-five": "item-2-4",
+                "label-six": "item-2-5",
+                "label-seven": "item-2-6",
+                "label-eight": "item-2-7",
+                "label-nine": "item-2-8",
+                "label-ten": "item-2-9",
+                "label-eleven": "item-2-10"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "key-to-addresses",
+      "title": "One-to-many mapping",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "key-to-addresses",
+          "compositions": [
+            {
+              "id": "key-to-addresses",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "label-one": "text-3",
+                "label-two": "text-1",
+                "title": "title",
+                "label-four": "text-4",
+                "label-five": "text-5",
+                "label-six": "text-6"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dual-consensus-diagram",
+      "title": "Two-system comparison",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "dual-consensus-diagram",
+          "compositions": [
+            {
+              "id": "dual-consensus-diagram",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cipher-wheel",
+      "title": "Letter wheel",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "cipher-wheel",
+          "compositions": [
+            {
+              "id": "cipher-wheel",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-2-1",
+                "label-three": "item-2-2",
+                "label-four": "item-2-3",
+                "label-five": "item-2-4",
+                "label-six": "item-2-5",
+                "label-seven": "item-2-6",
+                "label-eight": "item-2-7",
+                "label-nine": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "blue-resources-columns",
+      "title": "Resource columns",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "blue-resources-columns",
+          "compositions": [
+            {
+              "id": "blue-resources-columns",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "genesis-information",
+      "title": "Record information",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "genesis-information",
+          "compositions": [
+            {
+              "id": "genesis-information",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "regtest-instructions",
+      "title": "Practical instructions",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "regtest-instructions",
+          "compositions": [
+            {
+              "id": "regtest-instructions",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-2-1",
+                "label-three": "item-2-2",
+                "label-four": "item-2-3",
+                "label-five": "item-2-4",
+                "label-six": "item-2-5",
+                "label-seven": "item-2-6",
+                "label-eight": "item-2-7",
+                "label-nine": "item-2-8",
+                "label-ten": "item-2-9"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "block-inspection",
+      "title": "Record inspection",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "block-inspection",
+          "compositions": [
+            {
+              "id": "block-inspection",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-2",
+                "label-three": "text-3"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "mining-card-grid",
+      "title": "Processing cards",
+      "category": "Technical",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "mining-card-grid",
+          "compositions": [
+            {
+              "id": "mining-card-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-3",
+                "label-three": "text-7",
+                "label-four": "text-2",
+                "label-five": "text-6",
+                "label-six": "text-5",
+                "label-seven": "text-4"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact and next steps",
+      "category": "Closing",
+      "default_variant": "contact",
+      "variants": [
+        {
+          "id": "contact",
+          "default_source": "contact-qr",
+          "compositions": [
+            {
+              "id": "contact-qr",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "title": "title"
+              }
+            }
+          ]
+        },
+        {
+          "id": "action",
+          "default_source": "apply-qr",
+          "compositions": [
+            {
+              "id": "apply-qr",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "closing",
+      "title": "Standard closing",
+      "category": "Closing",
+      "default_variant": "default",
+      "variants": [
+        {
+          "id": "default",
+          "default_source": "closing",
+          "compositions": [
+            {
+              "id": "closing",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {
+                "label-one": "text-1",
+                "title": "title"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

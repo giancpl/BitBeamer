@@ -138,6 +138,11 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
         lines += [f'[Open this slide individually](../index.html?template={name})', '',
                   f"![{entry['title']}](../previews/{name}.png)", '',
                   'The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.', '']
+    from studio_models import membership
+    member=membership().get(name)
+    if member and not portable:
+        model,variant,composition=member
+        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
     lines += ['## Typed content slots', '',
               'Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,',
               'and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored',
@@ -277,4 +282,19 @@ All reconstructed compositions remain in graphical review until explicitly appro
     api=api.replace('templates/GUIDES.md','TEMPLATES.md').replace('../examples/studio-customization.tex','customization.tex')
     files['STUDIO-CONTENT.md']=api.encode('utf-8')
     files['customization.tex']=customization_document(entries).encode('utf-8')
+    from studio_models import model_guides,load_models
+    model_files=model_guides(root,entries)
+    for path,text in model_files.items():
+        text=text.replace('../../../templates/MODELS.md','../MODELS.md').replace('../../STUDIO-MODELS.md','../STUDIO-MODELS.md').replace('../../../templates/studio/','../templates/studio/')
+        files['models/'+path.name]=text.encode('utf-8')
+    files['MODELS.md']=('# Included Studio models\n\n'+''.join('- ['+path.stem+'](models/'+path.name+')\n' for path in model_files)).encode('utf-8')
+    text=(root/'docs/STUDIO-MODELS.md').read_text()
+    text=text[:text.index('## Review one choice')]
+    start=text.index('```latex');end=text.index('```',start+8)+3
+    first=next(iter(model_files)).stem if model_files else entries[0]['id']
+    text=text[:start]+'```latex\n'+r'\studiosetup{palette=light}'+'\n'+r'\studiotemplate{'+first+'}\n```'+text[end:]
+    text=text.replace('The library retains all 194 compositions behind 100 model cards. The featured set contains\n21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.','This standalone project contains only the models and variants listed in MODELS.md.')
+    text=text.replace('templates/index.html','MODELS.md').replace('../templates/MODELS.md','MODELS.md').replace('templates/GUIDES.md','TEMPLATES.md')
+    text=text.replace('[theme commands](STUDIO.md)','theme commands')
+    files['STUDIO-MODELS.md']=text.encode('utf-8')
     return files

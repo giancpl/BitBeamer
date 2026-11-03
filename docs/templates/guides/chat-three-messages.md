@@ -14,6 +14,18 @@ Model: `chat-three-messages` · Family: Statements · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/dialogue.md)
+
+```latex
+\studiotemplate[variant=three-messages,palette=light]{dialogue}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -50,8 +62,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={It's not needed.},
-  text/1={Hurry up, you are going to be the next\\enlightened ruling class!}
+  text/3={Slide title},
+  text/1={Supporting explanation}
 ]{chat-three-messages}
 ```
 
@@ -67,8 +79,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={It's not needed.},
-  text/1={Hurry up, you are going to be the next\\enlightened ruling class!}
+  text/3={Slide title},
+  text/1={Supporting explanation}
 ]{chat-three-messages}
 \end{document}
 ```
@@ -88,12 +100,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 47.7% wide × 16.8% high | <code>\includegraphics[width=1695\studiounit]{images/studio/collection/figma-0046-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 31.7% wide × 10.8% high | <code>\includegraphics[width=1127\studiounit]{images/studio/collection/figma-0046-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 48.5% wide × 22.0% high | <code>\includegraphics[width=1724\studiounit]{images/studio/collection/figma-0046-part-03.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle centre | 43.5% wide × 11.5% high | <code>Hurry up, you are going to be the next\\enlightened ruling class!</code> |
-| <code>title</code> | Main text (text) | lower centre | 26.1% wide × 5.6% high | <code>It&#x27;s not needed.</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 44.7% wide × 15.9% high | <code>But you had never explained me how\\the society works and what are the\\values behind it...</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 47.7% wide × 16.8% high | <code>\studiopaletteimage[width=1695\studiounit]{images/studio/collection/figma-0046-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 31.7% wide × 10.8% high | <code>\studiopaletteimage[width=1127\studiounit]{images/studio/collection/figma-0046-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 48.5% wide × 22.0% high | <code>\studiopaletteimage[width=1724\studiounit]{images/studio/collection/figma-0046-part-03.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | middle centre | 43.5% wide × 11.5% high | <code>Supporting explanation</code> |
+| <code>title</code> | Main text (text) | lower centre | 26.1% wide × 5.6% high | <code>Slide title</code> |
+| <code>text-3</code> | Editable text (text) | middle centre | 44.7% wide × 15.9% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -14,6 +14,18 @@ Model: `two-cards` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/icon-cards.md)
+
+```latex
+\studiotemplate[variant=two,palette=light]{icon-cards}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -48,8 +60,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Security},
-  text/1={Privacy}
+  text/2={Item 2},
+  text/1={Item 1}
 ]{two-cards}
 ```
 
@@ -65,8 +77,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Security},
-  text/1={Privacy}
+  text/2={Item 2},
+  text/1={Item 1}
 ]{two-cards}
 \end{document}
 ```
@@ -86,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0070-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\includegraphics[width=488\studiounit]{images/studio/collection/figma-0070-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 10.7% wide × 5.0% high | <code>Security</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 8.3% wide × 5.6% high | <code>Privacy</code> |
+| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0070-part-01.pdf}</code> |
+| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0070-part-02.pdf}</code> |
+| <code>title</code> | Main text (text) | middle centre | 10.7% wide × 5.0% high | <code>Item 2</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 8.3% wide × 5.6% high | <code>Item 1</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

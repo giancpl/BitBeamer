@@ -14,6 +14,18 @@ Model: `software-options` · Family: Cards · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/options.md)
+
+```latex
+\studiotemplate[variant=applications,palette=light]{options}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -51,8 +63,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/4={Available\\software},
-  text/1={Umbrel}
+  text/4={Title},
+  text/1={Label 1}
 ]{software-options}
 ```
 
@@ -68,8 +80,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/4={Available\\software},
-  text/1={Umbrel}
+  text/4={Title},
+  text/1={Label 1}
 ]{software-options}
 \end{document}
 ```
@@ -89,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>text-1</code> | Editable text (text) | upper centre | 13.3% wide × 4.0% high | <code>Umbrel</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 13.3% wide × 4.6% high | <code>MyNode</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 22.9% wide × 12.6% high | <code>Features:\\An intuitive interface\\An app store for extending\\functionality</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 24.0% wide × 18.7% high | <code>Installation:\\Download the image to a\\bootable USB drive or SD card,\\then follow the installation\\wizard on the d...</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 24.0% wide × 13.1% high | <code>Features:\\Free version with basic functions\\Premium version with additional\\features</code> |
-| <code>text-6</code> | Editable text (text) | lower right | 24.0% wide × 12.6% high | <code>Installazione:\\\textbullet{} Richiede alcuni passaggi\\manuali, ma offre maggiore\\controllo sull&#x27;hardware dedicato</code> |
-| <code>title</code> | Main text (text) | middle left | 17.0% wide × 15.6% high | <code>Available\\software</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 13.3% wide × 4.0% high | <code>Label 1</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 13.3% wide × 4.6% high | <code>Label 5</code> |
+| <code>text-3</code> | Editable text (text) | upper right | 22.9% wide × 12.6% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 24.0% wide × 18.7% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 24.0% wide × 13.1% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-6</code> | Editable text (text) | lower right | 24.0% wide × 12.6% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>title</code> | Main text (text) | middle left | 17.0% wide × 15.6% high | <code>Title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

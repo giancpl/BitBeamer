@@ -25,7 +25,13 @@ class CurrentStudioSourceTests(unittest.TestCase):
             source = re.sub(r'^\\studiodeclarefield[^\n]*\n', '', source, flags=re.M)
             source = re.sub(r'%[^\n]*', '', source).replace('{' + entry['id'] + '}', '{MODEL}')
             shape = re.sub(r'\s+', '', source)
-            self.assertNotIn(shape, shapes, 'Duplicate layout: ' + entry['id'] + ' and ' + shapes.get(shape, ''))
+            if shape in shapes:
+                from studio_models import membership
+                members=membership(ROOT);previous=next(e for e in entries if e['id']==shapes[shape])
+                self.assertEqual((members[entry['id']][0]['id'],members[entry['id']][1]['id']),
+                                 (members[previous['id']][0]['id'],members[previous['id']][1]['id']))
+                self.assertTrue(entry.get('shared_sources'))
+                self.assertEqual(entry['shared_sources'],previous.get('shared_sources'))
             shapes[shape] = entry['id']
 
     def test_compatibility_names_preserve_the_public_api_without_source_copies(self):
@@ -59,7 +65,8 @@ class CurrentStudioSourceTests(unittest.TestCase):
         selected = __import__('studio_review').selected(ROOT)
         main = (ROOT / 'main-studio.tex').read_text(encoding='utf-8')
         names = re.findall(r'\\studiotemplate(?:\[.*?\])?\{([^}]+)\}', main)
-        self.assertEqual(names, [entry['id'] for entry in selected])
+        from studio_models import load_models
+        self.assertEqual(names,[entry['model'] for entry in load_models(ROOT)['selection']])
         measurements = json.loads((ROOT / 'templates/measurements.json').read_text(encoding='utf-8'))['models']
         self.assertEqual(len(measurements), 8)
         for entry in measurements:

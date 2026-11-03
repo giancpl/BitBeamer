@@ -1,6 +1,6 @@
-# Selected Studio layouts
+# Selected Studio models
 
-A proposed working set of 24 distinct, reusable compositions. Selection is not graphical approval.
+The showcase presents 21 models. The ledger retains 24 selected composition choices, including alternate variants. Selection is not graphical approval.
 All other commands remain in the [full archive](CATALOGUE.md).
 Browse the [paginated gallery](../docs/templates/index.html) or build the
 [copyable selected deck](../examples/studio-selected-templates.tex):
@@ -20,190 +20,190 @@ to change the arrangement. Defaults remain visible in the review PDF.
 
 | Selection page | Layout | Use | Source |
 | --- | --- | --- | --- |
-| 1 | `cover` | Introduce a talk and its author. | [cover.tex](studio/cover.tex) |
-| 2 | `contents` | Outline four sections. | [contents.tex](studio/contents.tex) |
-| 3 | `section-divider` | Separate sections. | [section-divider.tex](studio/section-divider.tex) |
-| 4 | `statement-arrow` | Introduce a short claim. | [statement-arrow.tex](studio/statement-arrow.tex) |
-| 5 | `glow-statement` | Emphasize a central message. | [glow-statement.tex](studio/glow-statement.tex) |
-| 6 | `blue-statement` | Present a statement on blue. | [blue-statement.tex](studio/blue-statement.tex) |
-| 7 | `two-columns` | Explain two approaches side by side. | [two-columns.tex](studio/two-columns.tex) |
-| 8 | `list-rail-light` | Pair a concept with a short list. | [list-rail-light.tex](studio/list-rail-light.tex) |
-| 9 | `three-cards` | Show three illustrated concepts. | [three-cards.tex](studio/three-cards.tex) |
-| 10 | `three-step-process` | Explain a three-step process. | [three-step-process.tex](studio/three-step-process.tex) |
-| 11 | `four-card-grid` | Group four short explanations. | [four-card-grid.tex](studio/four-card-grid.tex) |
-| 12 | `vertical-split` | Compare two alternatives. | [vertical-split.tex](studio/vertical-split.tex) |
-| 13 | `image-left` | Pair a large image with a short label. | [image-left.tex](studio/image-left.tex) |
-| 14 | `image-right` | Explain a figure or photograph. | [image-right.tex](studio/image-right.tex) |
-| 15 | `four-images` | Compare four images. | [four-images.tex](studio/four-images.tex) |
-| 16 | `hero-number` | Highlight one key number. | [hero-number.tex](studio/hero-number.tex) |
-| 17 | `line-chart` | Present a chart; data can come from CSV. | [line-chart.tex](studio/line-chart.tex) |
-| 18 | `horizontal-timeline` | Show events along a timeline. | [horizontal-timeline.tex](studio/horizontal-timeline.tex) |
-| 19 | `cycle` | Explain a repeating process. | [cycle.tex](studio/cycle.tex) |
-| 20 | `merkle-tree` | Explain a tree with editable labels. | [merkle-tree.tex](studio/merkle-tree.tex) |
-| 21 | `table` | Present a compact table. | [table.tex](studio/table.tex) |
-| 22 | `equation` | Explain a formula. | [equation.tex](studio/equation.tex) |
-| 23 | `code` | Show code from a separate text file. | [code.tex](studio/code.tex) |
-| 24 | `closing` | Close the talk. | [closing.tex](studio/closing.tex) |
+| 1 | `cover` | Demonstrate this reusable composition. | [cover.tex](studio/cover.tex) |
+| 2 | `contents` | Demonstrate this reusable composition. | [contents.tex](studio/contents.tex) |
+| 3 | `section-divider` | Demonstrate this reusable composition. | [section-divider.tex](studio/section-divider.tex) |
+| 4 | `statement-arrow` | Demonstrate this reusable composition. | [statement-arrow.tex](studio/statement-arrow.tex) |
+| 5 | `glow-statement` | Demonstrate this reusable composition. | [glow-statement.tex](studio/glow-statement.tex) |
+| 6 | `blue-statement` | Demonstrate this reusable composition. | [blue-statement.tex](studio/blue-statement.tex) |
+| 7 | `two-columns` | Demonstrate this reusable composition. | [two-columns.tex](studio/two-columns.tex) |
+| 8 | `list-rail-light` | Demonstrate this reusable composition. | [list-rail-light.tex](studio/list-rail-light.tex) |
+| 9 | `three-cards` | Demonstrate this reusable composition. | [three-cards.tex](studio/three-cards.tex) |
+| 10 | `three-step-process` | Demonstrate this reusable composition. | [three-step-process.tex](studio/three-step-process.tex) |
+| 11 | `four-card-grid` | Demonstrate this reusable composition. | [four-card-grid.tex](studio/four-card-grid.tex) |
+| 12 | `vertical-split` | Demonstrate this reusable composition. | [vertical-split.tex](studio/vertical-split.tex) |
+| 13 | `image-left` | Demonstrate this reusable composition. | [image-left.tex](studio/image-left.tex) |
+| 14 | `image-right` | Demonstrate this reusable composition. | [image-right.tex](studio/image-right.tex) |
+| 15 | `four-images` | Demonstrate this reusable composition. | [four-images.tex](studio/four-images.tex) |
+| 16 | `hero-number` | Demonstrate this reusable composition. | [hero-number.tex](studio/hero-number.tex) |
+| 17 | `line-chart` | Demonstrate this reusable composition. | [line-chart.tex](studio/line-chart.tex) |
+| 18 | `horizontal-timeline` | Demonstrate this reusable composition. | [horizontal-timeline.tex](studio/horizontal-timeline.tex) |
+| 19 | `cycle` | Demonstrate this reusable composition. | [cycle.tex](studio/cycle.tex) |
+| 20 | `merkle-tree` | Demonstrate this reusable composition. | [merkle-tree.tex](studio/merkle-tree.tex) |
+| 21 | `table` | Demonstrate this reusable composition. | [table.tex](studio/table.tex) |
+| 22 | `equation` | Demonstrate this reusable composition. | [equation.tex](studio/equation.tex) |
+| 23 | `code` | Demonstrate this reusable composition. | [code.tex](studio/code.tex) |
+| 24 | `closing` | Demonstrate this reusable composition. | [closing.tex](studio/closing.tex) |
 
 ## Copyable examples
 
 ### cover
 
-Introduce a talk and its author.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your talk\\title},
-  author={Your name},
-  institute={Your institute}
+  title={Presentation\\title},
+  author={Author name},
+  institute={Department or organization}
 ]{cover}
 ```
 
 ### contents
 
-Outline four sections.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Contents},
-  item-2-1={Motivation},
-  item-2-2={How it works},
-  item-2-3={Examples},
-  item-2-4={Discussion}
+  title={Title},
+  item-2-1={Supporting explanation},
+  item-2-2={Supporting explanation},
+  item-2-3={Supporting explanation},
+  item-2-4={Supporting explanation}
 ]{contents}
 ```
 
 ### section-divider
 
-Separate sections.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your section}
+  title={Slide title}
 ]{section-divider}
 ```
 
 ### statement-arrow
 
-Introduce a short claim.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your statement}
+  title={Slide title}
 ]{statement-arrow}
 ```
 
 ### glow-statement
 
-Emphasize a central message.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  statement={Your main idea}
+  statement={Slide title}
 ]{glow-statement}
 ```
 
 ### blue-statement
 
-Present a statement on blue.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your statement}
+  title={Slide title}
 ]{blue-statement}
 ```
 
 ### two-columns
 
-Explain two approaches side by side.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Two approaches}
+  title={Slide title}
 ]{two-columns}
 ```
 
 ### list-rail-light
 
-Pair a concept with a short list.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your concept}
+  title={Title}
 ]{list-rail-light}
 ```
 
 ### three-cards
 
-Show three illustrated concepts.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Three useful tools},
-  caption-one={Learn},
-  caption-two={Build},
-  caption-three={Share},
+  title={Slide title},
+  caption-one={Label 2},
+  caption-two={Label 3},
+  caption-three={Label 4},
   graphic-one={\asset[width=1cm]{alice}}
 ]{three-cards}
 ```
 
 ### three-step-process
 
-Explain a three-step process.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={First step},
-  text-2={Second step},
-  text-3={Third step}
+  title={Slide title},
+  text-2={Label 3},
+  text-3={Label 1}
 ]{three-step-process}
 ```
 
 ### four-card-grid
 
-Group four short explanations.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Four ideas}
+  title={Slide title}
 ]{four-card-grid}
 ```
 
 ### vertical-split
 
-Compare two alternatives.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Second option},
-  text-1={First option}
+  title={Slide title},
+  text-1={Supporting explanation.\\Add your own details.}
 ]{vertical-split}
 ```
 
 ### image-left
 
-Pair a large image with a short label.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your subject},
+  title={Slide title},
   graphic-1={\asset[width=3cm]{alice}}
 ]{image-left}
 ```
 
 ### image-right
 
-Explain a figure or photograph.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your example}
+  title={Slide title}
 ]{image-right}
 ```
 
 ### four-images
 
-Compare four images.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate{four-images}
@@ -211,72 +211,72 @@ Compare four images.
 
 ### hero-number
 
-Highlight one key number.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={21 million},
-  text-2={A short explanation}
+  title={Title},
+  text-2={Supporting explanation}
 ]{hero-number}
 ```
 
 ### line-chart
 
-Present a chart; data can come from CSV.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Demo},
-  text-1={Example curve},
-  text-3={},
-  text-4={Illustrative data},
+  title={Title},
+  text-1={Label 1},
+  text-3={Item},
+  text-4={Supporting explanation},
   data-file={examples/data/studio-line.csv}
 ]{line-chart}
 ```
 
 ### horizontal-timeline
 
-Show events along a timeline.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your timeline}
+  title={Slide title}
 ]{horizontal-timeline}
 ```
 
 ### cycle
 
-Explain a repeating process.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your process}
+  title={Slide title}
 ]{cycle}
 ```
 
 ### merkle-tree
 
-Explain a tree with editable labels.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Merkle\\Tree}
+  title={Binary\\tree}
 ]{merkle-tree}
 ```
 
 ### table
 
-Present a compact table.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your table}
+  title={Slide title}
 ]{table}
 ```
 
 ### equation
 
-Explain a formula.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
@@ -286,22 +286,22 @@ Explain a formula.
 
 ### code
 
-Show code from a separate text file.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Your example},
+  title={Slide title},
   code-file={examples/code/studio-transaction.txt}
 ]{code}
 ```
 
 ### closing
 
-Close the talk.
+Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Thank you!}
+  title={Thank you}
 ]{closing}
 ```
 

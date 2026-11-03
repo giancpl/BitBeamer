@@ -14,6 +14,18 @@ Model: `people-speech-cards` · Family: Statements · Status: **in review**.
 
 The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.
 
+## Grouped model
+
+[Model variants and named fields](../models/dialogue.md)
+
+```latex
+\studiotemplate[variant=cards,palette=light]{dialogue}
+```
+
+Named fields are coherent across related variants. All old fields and numbered slots remain available.
+
+Numeric defaults and charts are illustrative.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -58,8 +70,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/6={Gates},
-  text/1={Linux is\\a cancer}
+  text/6={Title},
+  text/1={Label 1}
 ]{people-speech-cards}
 ```
 
@@ -75,8 +87,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/6={Gates},
-  text/1={Linux is\\a cancer}
+  text/6={Title},
+  text/1={Label 1}
 ]{people-speech-cards}
 \end{document}
 ```
@@ -96,20 +108,20 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 17.2% wide × 19.1% high | <code>\includegraphics[width=331\studiounit]{images/studio/collection/figma-0765-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper centre | 23.0% wide × 19.1% high | <code>\includegraphics[width=441\studiounit]{images/studio/collection/figma-0765-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper right | 22.9% wide × 19.1% high | <code>\includegraphics[width=440\studiounit]{images/studio/collection/figma-0765-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 10.2% wide × 18.2% high | <code>\includegraphics[width=196\studiounit]{images/studio/collection/figma-0765-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 10.3% wide × 18.2% high | <code>\includegraphics[width=197\studiounit]{images/studio/collection/figma-0765-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 10.3% wide × 18.2% high | <code>\includegraphics[width=197\studiounit]{images/studio/collection/figma-0765-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 63.4% wide × 24.5% high | <code>\includegraphics[width=1217\studiounit]{images/studio/collection/figma-0765-part-07.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper left | 12.8% wide × 8.3% high | <code>Linux is\\a cancer</code> |
-| <code>text-2</code> | Editable text (text) | upper centre | 18.6% wide × 8.3% high | <code>Open source is\\un-American</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 18.6% wide × 8.2% high | <code>Free software\\is communism</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 8.7% wide × 4.9% high | <code>Ballmer</code> |
-| <code>text-5</code> | Editable text (text) | middle centre | 8.0% wide × 5.0% high | <code>Allchin</code> |
-| <code>title</code> | Main text (text) | middle right | 7.1% wide × 5.1% high | <code>Gates</code> |
-| <code>text-7</code> | Editable text (text) | lower centre | 58.7% wide × 10.5% high | <code>GNU and Linux scared entrenched powers, but just\\worked better and developed a global community</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 17.2% wide × 19.1% high | <code>\studiopaletteimage[width=331\studiounit]{images/studio/collection/figma-0765-part-01.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper centre | 23.0% wide × 19.1% high | <code>\studiopaletteimage[width=441\studiounit]{images/studio/collection/figma-0765-part-02.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper right | 22.9% wide × 19.1% high | <code>\studiopaletteimage[width=440\studiounit]{images/studio/collection/figma-0765-part-03.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 10.2% wide × 18.2% high | <code>\studiopaletteimage[width=196\studiounit]{images/studio/collection/figma-0765-part-04.pdf}</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 10.3% wide × 18.2% high | <code>\studiopaletteimage[width=197\studiounit]{images/studio/collection/figma-0765-part-05.pdf}</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 10.3% wide × 18.2% high | <code>\studiopaletteimage[width=197\studiounit]{images/studio/collection/figma-0765-part-06.pdf}</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 63.4% wide × 24.5% high | <code>\studiopaletteimage[width=1217\studiounit]{images/studio/collection/figma-0765-part-07.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | upper left | 12.8% wide × 8.3% high | <code>Label 1</code> |
+| <code>text-2</code> | Editable text (text) | upper centre | 18.6% wide × 8.3% high | <code>Label 2</code> |
+| <code>text-3</code> | Editable text (text) | upper right | 18.6% wide × 8.2% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 8.7% wide × 4.9% high | <code>Item</code> |
+| <code>text-5</code> | Editable text (text) | middle centre | 8.0% wide × 5.0% high | <code>Item</code> |
+| <code>title</code> | Main text (text) | middle right | 7.1% wide × 5.1% high | <code>Title</code> |
+| <code>text-7</code> | Editable text (text) | lower centre | 58.7% wide × 10.5% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
