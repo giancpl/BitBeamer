@@ -8084,8 +8084,9 @@
       "composition": "closing",
       "field": "text-1",
       "role": "label-one",
-      "previous": "\\textcopyright{} 2026\\\\BitPolito",
-      "default": "\\textcopyright{} 2026\\\\BitPolito"
+      "previous": "\\textcopyright{} 2026 BitPolito",
+      "default": "\\textcopyright{} \\the\\year\\ BitPolito",
+      "legacy_previous": "\\textcopyright{} 2026\\\\BitPolito"
     },
     {
       "composition": "closing",
@@ -8135,6 +8136,54 @@
       "role": "item-five",
       "previous": "Q\\&A",
       "default": "Fifth section"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "value-one",
+      "previous": "50+",
+      "default": "50+"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "caption-one",
+      "previous": "Active members",
+      "default": "Active members"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "value-two",
+      "previous": "210",
+      "default": "210"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "caption-two",
+      "previous": "Alumni",
+      "default": "Alumni"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "value-three",
+      "previous": "8000+",
+      "default": "8000+"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "caption-three",
+      "previous": "Followers on social media",
+      "default": "Followers on social media"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "value-four",
+      "previous": "25+",
+      "default": "25+"
+    },
+    {
+      "composition": "team-presentation",
+      "field": "caption-four",
+      "previous": "Working in Bitcoin",
+      "default": "Industry members"
     }
   ]
 }

@@ -122,7 +122,7 @@ def representatives(root,entries):
 def dependencies(root, entries):
     """Prepared content and shared geometry required by the included compositions."""
     result = {name: root / name for entry in entries
-              for name in entry.get('neutral_parts', []) + entry.get('shared_sources', [])}
+              for name in entry.get('neutral_parts', []) + entry.get('shared_sources', []) + list(entry.get('prepared_resources', {}))}
     icons = root / 'images/studio/icon-palettes/manifest.json'
     if entries and icons.exists():
         result.update({part['pdf']: root / part['pdf']
@@ -255,6 +255,8 @@ def model_guides(root,entries):
                 value=f['default'].replace('|','&#124;').replace('\n',' ')
                 from studio_guides import dimensions
                 lines.append('| `'+semantic+'` | <code>'+__import__('html').escape(value[:110])+'</code> | '+dimensions(e,f)+' |')
+            if e.get('options'):
+                lines += ['', 'Layout options: ' + ', '.join('`'+key+'='+str(option['default']).lower()+'` ('+option['type']+')' for key,option in e['options'].items()) + '. See the full slot guide for both treatments.']
             graphics=[f for f in e['fields'] if f['type']=='graphic']
             if graphics:lines+=['','Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.']
             lines+=['','Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.','']

@@ -141,7 +141,10 @@ class PackageTests(unittest.TestCase):
                 self.assertFalse(any(name.endswith(('.svg', '.py', '.json')) for name in names))
                 extracted = Path(directory) / 'extracted'
                 archive.extractall(extracted)
-            self.assertEqual(check_docs(extracted),7+len(__import__('studio_review').package_selection(ROOT))+len(__import__('studio_models').load_models(ROOT)['selection']))
+            packaged = __import__('studio_review').package_selection(ROOT)
+            members = __import__('studio_models').membership(ROOT)
+            model_count = len({members[item['id']][0]['id'] for item in packaged})
+            self.assertEqual(check_docs(extracted),7+len(packaged)+model_count)
             self.assertTrue((extracted / 'guides/three-cards.md').is_file())
             self.assertNotIn('Show editable areas', (extracted / 'guides/three-cards.md').read_text())
 

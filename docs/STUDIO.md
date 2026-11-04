@@ -17,14 +17,18 @@ The theme provides complete-frame commands for a consistent presentation structu
 | `\studiotitleframe` | Blue cover with logos and pattern | `\title`, `\subtitle`, `\author`, `\institute`, `\date` |
 | `\studiotocframe` | Automatic contents page | The document's `\section` declarations |
 | `\studioframe[subtitle={...}]{Title}{Content}` | Default top-aligned content frame | Your title, optional subtitle and LaTeX body |
-| `\closingframe` | Blue closing page | Optional `title`, `subtitle`, `copyright` keys |
+| `\closingframe` | Blue closing page | `title`, `subtitle`, `copyright`, `qrcode` keys |
 
 These commands are available with `\usetheme{bitpolito-studio}` alone. They each
 create a complete slide; place them outside another `frame` or `\studioframe`.
+The optional [team introduction](STUDIO-TEAM.md), `\studioteamframe`, goes between
+the cover and contents and needs the catalogue package. Its values and captions
+are editable; the original collage is retained as one replaceable illustration.
 The catalogue additionally requires `\usepackage{bitpolitostudiotemplates}`.
 
 ```latex
 \studiotitleframe
+\studioteamframe % Optional: requires the catalogue package.
 \studiotocframe % Or \studiotocframe[title={Agenda}]
 
 \section{First ideas}
@@ -133,7 +137,7 @@ layout remains available without a variant.
 
 ## One source per composition
 
-The library contains **195 current compositions**. The [gallery](templates/index.html)
+The library contains **196 current compositions**. The [gallery](templates/index.html)
 starts with 21 featured models (24 retained composition choices); choose All models
 for the grouped collection or All compositions for the advanced archive.
 Nine compatibility names preserve earlier commands by loading the same current
@@ -233,12 +237,17 @@ sources when replacing illustrative values with factual claims.
 ## Closing
 
 ```latex
+\closingframe                 % Original QR visible by default.
+\closingframe[qrcode=false]   % Centre the text and social icons without a QR.
 \closingframe[title={Thank you!},subtitle={Questions?},copyright={}]
 ```
 
-The interface matches Academic. An empty field hides that element, and every
-call resets to “Thank You!”, “Questions?”, and the current-year BitPolito
-copyright. Studio places the copyright at the top; Academic keeps it below.
+Studio uses the supplied blue closing, white social handle and icons. Each call
+resets to `@BitPolito`, an empty subtitle, current-year BitPolito copyright and
+`qrcode=true`. Empty text fields hide that element; `qr-image={images/my-qr.pdf}`
+selects another QR. Invalid booleans report an error. The copyright stays at the top.
+See [the closing guide](STUDIO-CLOSING.md) for customization and the shared catalogue API.
+Academic keeps its own closing implementation and existing options.
 Complete-frame commands belong outside another frame. `\studiotitleframe` wraps
 `\titlepage` in a plain frame; cards, statistics, panels, and timelines belong inside one.
 

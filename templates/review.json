@@ -2549,6 +2549,27 @@
           "notes": ""
         }
       }
+    },
+    "team-presentation": {
+      "status": "in review",
+      "notes": "",
+      "use": "Introduce the team between the cover and the contents page. Replace values, captions or the complete collage.",
+      "example": {
+        "value-one": "50+",
+        "caption-one": "Active members",
+        "value-two": "210",
+        "caption-two": "Alumni",
+        "value-three": "8000+",
+        "caption-three": "Followers on social media",
+        "value-four": "25+",
+        "caption-four": "Industry members"
+      },
+      "palette_reviews": {
+        "light": {
+          "status": "in review",
+          "notes": ""
+        }
+      }
     }
   },
   "reusable_selection": [

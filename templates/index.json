@@ -50945,10 +50945,10 @@
       "references": [
         "figma-0934"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Standard closing with an optional QR. The supplied PDF defines the QR-on geometry. QR-off centres the same title/social group. Existing field names and numbered slots remain compatible.",
       "canvas": [
-        3556.0,
-        2000.0
+        1920,
+        1080
       ],
       "background": "bitpolito",
       "fields": [
@@ -50956,12 +50956,12 @@
           "name": "graphic-1",
           "type": "graphic",
           "box": [
-            1326,
-            1030,
-            242,
-            231
+            1088,
+            557,
+            103,
+            98
           ],
-          "default": "\\studiopaletteimage[width=242\\studiounit]{images/studio/collection/figma-0934-part-01.pdf}",
+          "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/telegram.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
@@ -50972,12 +50972,12 @@
           "name": "graphic-2",
           "type": "graphic",
           "box": [
-            1563,
-            1030,
-            242,
-            231
+            1216,
+            557,
+            103,
+            98
           ],
-          "default": "\\studiopaletteimage[width=242\\studiounit]{images/studio/collection/figma-0934-part-02.pdf}",
+          "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/instagram.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
@@ -50988,12 +50988,12 @@
           "name": "graphic-3",
           "type": "graphic",
           "box": [
-            1800,
-            1030,
-            242,
-            231
+            1344,
+            557,
+            103,
+            98
           ],
-          "default": "\\studiopaletteimage[width=242\\studiounit]{images/studio/collection/figma-0934-part-03.pdf}",
+          "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/twitter.pdf}",
           "slot": {
             "number": 3,
             "key": "graphic/3",
@@ -51004,12 +51004,12 @@
           "name": "graphic-4",
           "type": "graphic",
           "box": [
-            2037,
-            1030,
-            242,
-            231
+            1472,
+            557,
+            103,
+            98
           ],
-          "default": "\\studiopaletteimage[width=242\\studiounit]{images/studio/collection/figma-0934-part-04.pdf}",
+          "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/youtube.pdf}",
           "slot": {
             "number": 4,
             "key": "graphic/4",
@@ -51019,12 +51019,12 @@
         {
           "name": "text-1",
           "type": "text",
-          "default": "\\textcopyright{} 2026\\\\BitPolito",
+          "default": "\\textcopyright{} \\the\\year\\ BitPolito",
           "box": [
-            1675.32,
-            96.906,
-            246.3263,
-            140.74009999999998
+            400,
+            50,
+            1120,
+            90
           ],
           "source_ink_box": [
             1675.32,
@@ -51032,25 +51032,27 @@
             208.469,
             108.707
           ],
-          "font_size": 58.242,
-          "leading": 67.561,
+          "font_size": 32,
+          "leading": 38,
           "source_node": [
             1
           ],
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "regular",
+          "alignment": "center"
         },
         {
           "name": "title",
           "type": "text",
           "default": "Thank you",
           "box": [
-            1447.5602333333334,
-            817.047,
-            611.5785333333334,
-            163.0200666666667
+            1031.45,
+            438,
+            600,
+            88
           ],
           "source_ink_box": [
             1484.199,
@@ -51058,26 +51060,59 @@
             538.301,
             101.016
           ],
-          "font_size": 112.735,
-          "leading": 130.772,
+          "font_size": 64,
+          "leading": 74,
           "source_node": [
             14
           ],
           "slot": {
             "number": 2,
             "key": "text/2"
+          },
+          "font_weight": "semibold",
+          "alignment": "center"
+        },
+        {
+          "name": "subtitle",
+          "type": "text",
+          "default": "",
+          "box": [
+            1031.45,
+            510,
+            600,
+            42
+          ],
+          "font_size": 32,
+          "leading": 38,
+          "font_weight": "regular",
+          "alignment": "center",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "qr-graphic",
+          "type": "graphic",
+          "default": "\\includegraphics[width=554\\studiounit]{images/studio/closing/qrcode.pdf}",
+          "box": [
+            277,
+            263,
+            554,
+            554
+          ],
+          "slot": {
+            "number": 5,
+            "key": "graphic/5"
           }
         }
       ],
-      "parts": [
-        "figma-0934-part-01",
-        "figma-0934-part-02",
-        "figma-0934-part-03",
-        "figma-0934-part-04"
-      ],
-      "reconstruction": "measured",
+      "parts": [],
+      "reconstruction": "Shared Studio closing engine; editable Inter text and lossless prepared QR/social parts.",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces SF Pro in title and copyright.",
+        "The catalogue keeps a neutral Thank you title; the helper and ready-content example use @BitPolito.",
+        "The qrcode=false treatment removes the QR and centres the unchanged text/social group."
       ],
       "slot_parts": [],
       "model": "closing",
@@ -51086,7 +51121,29 @@
       "palettes": [
         "blue"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "external_reference": {
+        "name": "final-slide.pdf",
+        "sha256": "2803d785f46f7ff70f4b0839dbb98d5c2458f37ff8a56b2c61fcc11fd278e0ca",
+        "canvas": [
+          1920,
+          1080
+        ]
+      },
+      "options": {
+        "qrcode": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the supplied QR; false centres the text and social group."
+        }
+      },
+      "prepared_resources": {
+        "images/studio/closing/qrcode.pdf": "901418781a48a2da4c8052d1c41d285323a0f8882df1b7d4b612853b1089587c",
+        "images/studio/closing/telegram.pdf": "ca0c00da2435984a02a1f2c5ceb1cfe4a3bbd248380cbec806a722af4cf78a82",
+        "images/studio/closing/instagram.pdf": "d95fa99be2ead2e3bdba4245c2920f8f7c4307cc8e880f913e6d397b682bd4cd",
+        "images/studio/closing/twitter.pdf": "8c255177f9f0d03feb2e59242b09e26a350a9ff2b363ea8ea681f9a63b582d9a",
+        "images/studio/closing/youtube.pdf": "46ee76af4e368775badd90de081e50925d4861525c7be44e6fff5b0979774808"
+      }
     },
     {
       "id": "contents-five",
@@ -51401,6 +51458,215 @@
         "light"
       ],
       "neutral_parts": []
+    },
+    {
+      "id": "team-presentation",
+      "number": 196,
+      "title": "Team presentation",
+      "category": "Opening",
+      "source": "templates/studio/team-presentation.tex",
+      "references": [],
+      "external_reference": {
+        "name": "team-presentation.pdf",
+        "sha256": "a56cb83386d6572e50bae5d03f0200d2e1fd4fd00ef5a1cad345cc3efaa32ca8",
+        "canvas": [
+          1920,
+          1080
+        ]
+      },
+      "notes": "Team introduction after the cover and before the agenda. Supplied PDF is the measured reference; no Figma export is required. The collage is a replaceable original illustration; all four values and captions are native editable text.",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "background": "studio-paper",
+      "fields": [
+        {
+          "name": "value-one",
+          "type": "text",
+          "default": "50+",
+          "box": [
+            1260,
+            206,
+            272,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "caption-one",
+          "type": "text",
+          "default": "Active members",
+          "box": [
+            1255,
+            303,
+            284,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "value-two",
+          "type": "text",
+          "default": "210",
+          "box": [
+            1598,
+            206,
+            228,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "caption-two",
+          "type": "text",
+          "default": "Alumni",
+          "box": [
+            1600,
+            303,
+            224,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "value-three",
+          "type": "text",
+          "default": "8000+",
+          "box": [
+            1274,
+            455,
+            447,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "caption-three",
+          "type": "text",
+          "default": "Followers on social media",
+          "box": [
+            1266,
+            553,
+            463,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          }
+        },
+        {
+          "name": "value-four",
+          "type": "text",
+          "default": "25+",
+          "box": [
+            1420,
+            700,
+            314,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 7,
+            "key": "text/7"
+          }
+        },
+        {
+          "name": "caption-four",
+          "type": "text",
+          "default": "Industry members",
+          "box": [
+            1417,
+            798,
+            320,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          }
+        },
+        {
+          "name": "collage",
+          "type": "graphic",
+          "default": "\\includegraphics[width=988\\studiounit]{images/studio/team/collage.pdf}",
+          "box": [
+            0,
+            0,
+            988,
+            1080
+          ],
+          "slot": {
+            "number": 1,
+            "key": "graphic/1"
+          }
+        }
+      ],
+      "parts": [],
+      "slot_parts": [],
+      "prepared_resources": {
+        "images/studio/team/collage.pdf": "1c9611ffda5bfcff8d750e1dec4f96126296c4ee5e9448b868fb4016f4f5456f",
+        "images/studio/team/panels.pdf": "29e42481cf59d6da58d02c8e49855f9b8cd7550c69ee17c4453d1abbf09c10d7"
+      },
+      "reconstruction": "Measured supplied PDF with retained vector illustration and text-free decoration; native Inter statistic fields.",
+      "intentional_differences": [
+        "Inter replaces SF Pro in the editable statistic fields.",
+        "Industry members is the neutral fourth caption; the team helper restores Working in Bitcoin.",
+        "Text inside the supplied collage remains part of its replaceable artwork."
+      ],
+      "model": "team",
+      "variant": "collage",
+      "native_palette": "light",
+      "palettes": [
+        "light"
+      ]
     }
   ],
   "aliases": [

@@ -1,0 +1,43 @@
+{
+  "schema": 1,
+  "reference": "team-presentation.pdf",
+  "reference_sha256": "a56cb83386d6572e50bae5d03f0200d2e1fd4fd00ef5a1cad345cc3efaa32ca8",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "description": "User-supplied BitPolito team slide. Cropped original vector collage and text-free outlined panel decoration; editable statistics are rebuilt in LaTeX.",
+  "resources": {
+    "images/studio/team/collage.pdf": "1c9611ffda5bfcff8d750e1dec4f96126296c4ee5e9448b868fb4016f4f5456f",
+    "images/studio/team/panels.pdf": "29e42481cf59d6da58d02c8e49855f9b8cd7550c69ee17c4453d1abbf09c10d7"
+  },
+  "parts": [
+    {
+      "name": "collage",
+      "file": "images/studio/team/collage.pdf",
+      "render_box": [
+        0,
+        0,
+        988,
+        1080
+      ],
+      "content": "Original collage, brand wordmark, embedded poster lettering and mission badges. Artwork lettering and the QR are part of this replaceable illustration."
+    },
+    {
+      "name": "panels",
+      "file": "images/studio/team/panels.pdf",
+      "render_box": [
+        1048,
+        0,
+        872,
+        1080
+      ],
+      "content": "Original rounded panel geometry, masks, edge fades and clipping, with all statistic lettering removed."
+    }
+  ],
+  "retained_source": "Prepared PDF parts are the retained vector sources; ordinary compilation needs no original export or PDF processing library.",
+  "intentional_differences": [
+    "Four statistics and their captions use editable Inter instead of the original SF Pro outlines.",
+    "The reusable template uses a generic fourth caption; the team helper and ready-content example restore the supplied Bitcoin wording."
+  ]
+}

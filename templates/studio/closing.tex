@@ -1,17 +1,24 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
-\studiodeclarefield{graphic-1}{\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-01.pdf}}
-\studiodeclarefield{graphic-2}{\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-02.pdf}}
-\studiodeclarefield{graphic-3}{\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-03.pdf}}
-\studiodeclarefield{graphic-4}{\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-04.pdf}}
-\studiodeclarefield{text-1}{\textcopyright{} 2026\\BitPolito}
+% Compatible catalogue adapter; the Studio theme owns the shared closing layout.
+\studiodeclarefield{graphic-1}{\includegraphics[width=103\studiounit]{images/studio/closing/telegram.pdf}}
+\studiodeclarefield{graphic-2}{\includegraphics[width=103\studiounit]{images/studio/closing/instagram.pdf}}
+\studiodeclarefield{graphic-3}{\includegraphics[width=103\studiounit]{images/studio/closing/twitter.pdf}}
+\studiodeclarefield{graphic-4}{\includegraphics[width=103\studiounit]{images/studio/closing/youtube.pdf}}
+\studiodeclarefield{text-1}{\textcopyright{} \the\year\ BitPolito}
 \studiodeclarefield{title}{Thank you}
+\studiodeclarefield{subtitle}{}
+\studiodeclarefield{qr-graphic}{\includegraphics[width=554\studiounit]{images/studio/closing/qrcode.pdf}}
+\def\studioclosingqrvalue{true}
+\pgfkeys{/studio fields/qrcode/.store in=\studioclosingqrvalue}
 \studioapplyfields
-\studiomeasuredcanvas{3556}{2000}{closing}{studio-background}{
-\studiomeasuredtext{text-1}{1675.32}{96.906}{246.326}{140.74}{58.242}{67.5607}{\color{studio-foreground}}{\studiofield{text-1}}
-\studiographfield{graphic-1}{1326}{1030}{242}{231}{}{}
-\studiographfield{graphic-2}{1563}{1030}{242}{231}{}{}
-\studiographfield{graphic-3}{1800}{1030}{242}{231}{}{}
-\path[fill=studio-foreground,draw=none,line width=1\studiounit] (2087.42,1085)--(2180.69,1085)--(2180.69,1095.43)--(2191.05,1095.43)--(2191.05,1147.57)--(2180.69,1147.57)--(2180.69,1158)--(2087.42,1158)--(2087.42,1147.57)--(2077.05,1147.57)--(2077.05,1095.43)--(2087.42,1095.43)--(2087.42,1085)--cycle (2149.6,1126.71)--(2149.6,1116.29)--(2139.24,1116.29)--(2139.24,1105.86)--(2128.87,1105.86)--(2128.87,1137.14)--(2139.24,1137.14)--(2139.24,1126.71)--(2149.6,1126.71)--cycle;
-\studiographfield{graphic-4}{2037}{1030}{242}{231}{}{}
-\studiomeasuredtext{title}{1447.56}{817.047}{611.579}{163.02}{112.735}{130.772}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
-}
+\studiounit=\dimexpr\paperwidth/1920\relax
+\studiofitunit=\dimexpr\paperheight/1080\relax
+\ifdim\studiofitunit<\studiounit\studiounit=\studiofitunit\fi
+\ifstudiogeometryonly
+  \closingframe[qrcode=\studioclosingqrvalue,title={},subtitle={},copyright={}]
+\else
+  \closingframe[qrcode=\studioclosingqrvalue,
+    title={\studiofield{title}},subtitle={\studiofield{subtitle}},copyright={\studiofield{text-1}},
+    qr-graphic={\studiofield{qr-graphic}},
+    social-one={\studiofield{graphic-1}},social-two={\studiofield{graphic-2}},
+    social-three={\studiofield{graphic-3}},social-four={\studiofield{graphic-4}}]
+\fi

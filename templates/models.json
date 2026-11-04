@@ -4860,6 +4860,38 @@
       ]
     },
     {
+      "id": "team",
+      "title": "Team introduction",
+      "category": "Opening",
+      "default_variant": "collage",
+      "variants": [
+        {
+          "id": "collage",
+          "default_source": "team-presentation",
+          "compositions": [
+            {
+              "id": "team-presentation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "value-one": "value-one",
+                "caption-one": "caption-one",
+                "value-two": "value-two",
+                "caption-two": "caption-two",
+                "value-three": "value-three",
+                "caption-three": "caption-three",
+                "value-four": "value-four",
+                "caption-four": "caption-four",
+                "collage": "collage"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
       "id": "closing",
       "title": "Standard closing",
       "category": "Closing",
@@ -4877,7 +4909,9 @@
               ],
               "fields": {
                 "label-one": "text-1",
-                "title": "title"
+                "title": "title",
+                "subtitle": "subtitle",
+                "copyright": "text-1"
               }
             }
           ]

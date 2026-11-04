@@ -143,6 +143,12 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
     if member and not portable:
         model,variant,composition=member
         lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
+    if entry.get('options'):
+        lines += ['## Layout options', '', '| Option | Type | Default | Purpose |', '| --- | --- | --- | --- |']
+        for key, option in entry['options'].items():
+            default = str(option['default']).lower()
+            lines.append(f"| `{key}` | {option['type']} | `{default}` | {option['description']} |")
+        lines += ['', 'For example: `\\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.', '']
     lines += ['## Typed content slots', '',
               'Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,',
               'and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored',
@@ -221,7 +227,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
         lines += ['- `' + command(alias['id']) + '`' for alias in matching]
         lines += ['']
     if not portable:
-        lines += ['## Review', '', 'Reference: ' + (', '.join(entry['references']) or 'Supplementary; no original Figma reference') + '.', '',
+        lines += ['## Review', '', 'Reference: ' + (', '.join(entry['references']) or entry.get('external_reference',{}).get('name') or 'Supplementary; no original Figma reference') + '.', '',
                   'Review margins, text, crops, shadows and optical balance using this stable model ID.',
                   'Record feedback in [the review ledger](../../../templates/review.json). Compilation is not graphical approval.', '']
     return '\n'.join(lines)

@@ -203,7 +203,8 @@ Browse the [offline visual gallery](../docs/templates/index.html) or compile
 | 192 | [Contact slide with working QR](../docs/templates/previews/contact-qr.png) | `\studiotemplate{contact-qr}` | [contact-qr.tex](studio/contact-qr.tex) |
 | 193 | [Apply Qr](../docs/templates/previews/apply-qr.png) | `\studiotemplate{apply-qr}` | [apply-qr.tex](studio/apply-qr.tex) |
 | 194 | [Five-section contents](../docs/templates/previews/contents-five.png) | `\studiotemplate{contents-five}` | [contents-five.tex](studio/contents-five.tex) |
-| 195 | [Standard closing](../docs/templates/previews/closing.png) | `\studiotemplate{closing}` | [closing.tex](studio/closing.tex) |
+| 195 | [Team presentation](../docs/templates/previews/team-presentation.png) | `\studiotemplate{team-presentation}` | [team-presentation.tex](studio/team-presentation.tex) |
+| 196 | [Standard closing](../docs/templates/previews/closing.png) | `\studiotemplate{closing}` | [closing.tex](studio/closing.tex) |
 
 ## Compatibility names
 

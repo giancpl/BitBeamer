@@ -1,0 +1,26 @@
+% Measured 1920 x 1080 team composition; see docs/STUDIO-TEAM.md.
+\studiodeclarefield{value-one}{50+}
+\studiodeclarefield{caption-one}{Active members}
+\studiodeclarefield{value-two}{210}
+\studiodeclarefield{caption-two}{Alumni}
+\studiodeclarefield{value-three}{8000+}
+\studiodeclarefield{caption-three}{Followers on social media}
+\studiodeclarefield{value-four}{25+}
+\studiodeclarefield{caption-four}{Industry members}
+\studiodeclarefield{collage}{\includegraphics[width=988\studiounit]{images/studio/team/collage.pdf}}
+\studioapplyfields
+\studiomeasuredcanvas{1920}{1080}{team-presentation}{studio-background}{
+\node[anchor=north west] at (1048,0) {\includegraphics[width=872\studiounit]{images/studio/team/panels.pdf}};
+\studiographfield{collage}{0}{0}{988}{1080}{}{}
+% Cover only the half-unit antialias seams of the PDF crop edges.
+\fill[studio-background] (987.5,0) rectangle (988.5,1080);
+\fill[studio-background] (1047.5,0) rectangle (1048.5,1080);
+\studiomeasuredtext{value-one}{1260}{206}{272}{112}{108}{120}{\color{studio-foreground}\bfseries\centering}{\studiofield{value-one}}
+\studiomeasuredtext{caption-one}{1255}{303}{284}{49}{36}{42}{\color{studio-foreground}\bfseries\centering}{\studiofield{caption-one}}
+\studiomeasuredtext{value-two}{1598}{206}{228}{112}{108}{120}{\color{studio-foreground}\bfseries\centering}{\studiofield{value-two}}
+\studiomeasuredtext{caption-two}{1600}{303}{224}{49}{36}{42}{\color{studio-foreground}\bfseries\centering}{\studiofield{caption-two}}
+\studiomeasuredtext{value-three}{1274}{455}{447}{112}{108}{120}{\color{studio-foreground}\bfseries\centering}{\studiofield{value-three}}
+\studiomeasuredtext{caption-three}{1266}{553}{463}{49}{36}{42}{\color{studio-foreground}\bfseries\centering}{\studiofield{caption-three}}
+\studiomeasuredtext{value-four}{1420}{700}{314}{112}{108}{120}{\color{studio-foreground}\bfseries\centering}{\studiofield{value-four}}
+\studiomeasuredtext{caption-four}{1417}{798}{320}{49}{36}{42}{\color{studio-foreground}\bfseries\centering}{\studiofield{caption-four}}
+}

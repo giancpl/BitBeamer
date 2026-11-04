@@ -46,4 +46,7 @@ def prepare_studio(root, check=False):
         records[name] = record
     if not check:
         write_if_changed(manifest, (json.dumps(records, indent=2) + '\n').encode())
+    if check:
+        from studio_templates import check_prepared_resources
+        check_prepared_resources(root)
     return len(records)

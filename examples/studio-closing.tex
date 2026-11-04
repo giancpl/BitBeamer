@@ -1,0 +1,13 @@
+% Editable comparison of the standard Studio closing with and without its QR.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+\closingframe
+\closingframe[qrcode=false]
+% Every call resets: the QR is shown again here.
+\closingframe[title={Thank you!},subtitle={Questions?},copyright={}]
+% The catalogue uses the same engine and retains its named/numbered fields.
+\studiotemplate[qrcode=false,title={Your handle},copyright={}]{closing}
+\studioframe{Normal frame}{Closing options stay local.}
+\end{document}

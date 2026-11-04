@@ -62,12 +62,13 @@ def review_csv(root, entries):
 
 STANDARD_COVERS = ('cover', 'cover-light', 'cover-photo')
 STANDARD_AGENDAS = ('contents', 'contents-five')
+STANDARD_INTRODUCTIONS = ('team-presentation',)
 
 
 def package_selection(root):
-    # Include optional covers and measured agendas without changing the showcase selection.
+    # Include optional covers, team introduction and measured agendas without changing the showcase selection.
     data = load_review(root)
-    names = list(dict.fromkeys(data['selection'] + list(STANDARD_COVERS) + list(STANDARD_AGENDAS)))
+    names = list(dict.fromkeys(data['selection'] + list(STANDARD_COVERS) + list(STANDARD_AGENDAS) + list(STANDARD_INTRODUCTIONS)))
     return [dict(id=name, **data['templates'][name]) for name in names]
 
 

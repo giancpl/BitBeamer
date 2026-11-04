@@ -44,6 +44,8 @@ STUDIO_DOCUMENT_SOURCES.pop('academic-showcase.tex')
 STUDIO_DOCUMENT_SOURCES['studio-template-catalogue.tex'] = 'examples/studio-template-catalogue.tex'
 STUDIO_DOCUMENT_SOURCES['customization.tex'] = 'examples/studio-customization.tex'
 STUDIO_DOCUMENT_SOURCES['studio-agendas.tex'] = 'examples/studio-agendas.tex'
+STUDIO_DOCUMENT_SOURCES['studio-team.tex'] = 'examples/studio-team.tex'
+STUDIO_DOCUMENT_SOURCES['studio-closing.tex'] = 'examples/studio-closing.tex'
 STUDIO_THEME_FILES = (
     'bitpolitostudiomodels.sty', 'bitpolitostudioslots.sty', 'bitpolitostudiopilots.sty', 'bitpolitostudiotemplates.sty', 'bitpolitostudiolayouts.sty', 'bitpolitostudiomeasured.sty',
     'beamerthemebitpolito-studio.sty', 'beamerinnerthemebitpolito-studio.sty',
@@ -51,7 +53,9 @@ STUDIO_THEME_FILES = (
     'beamerfontthemebitpolito.sty', 'beamercolorthemebitpolito.sty', 'bitpolitoassets.sty',
 )
 STUDIO_BRAND_FILES = ('bull-white.pdf', 'polito-coat-of-arms-white.pdf', 'LICENSE')
-STUDIO_ASSETS = ('alice-white.pdf', 'bob-white.pdf', 'pig-white.pdf', 'cover-pattern-white.pdf')
+STUDIO_ASSETS = ('alice-white.pdf', 'bob-white.pdf', 'pig-white.pdf', 'cover-pattern-white.pdf',
+                 'closing/qrcode.pdf', 'closing/telegram.pdf', 'closing/instagram.pdf',
+                 'closing/twitter.pdf', 'closing/youtube.pdf')
 LEGACY_ARCHIVE = 'bitbeamer-overleaf.zip'
 
 
@@ -117,7 +121,7 @@ def studio_data(root):
     data['README.md'] = ('''# BitBeamer Studio — Overleaf
 
 Open main.tex and select pdfLaTeX. It contains the current compact selection.
-For an editable starting document, select start.tex: cover, automatic contents, two content slides and closing.
+For an editable starting document, select start.tex: cover, team introduction, automatic contents, two content slides and closing.
 Select studio-template-catalogue.tex for a labelled view of the working selection.
 The classic blue title page is the default. Optional BitGeneration covers are included.
 
@@ -126,7 +130,7 @@ Create a new .tex file at the project root and copy a guide's complete example.
 No Python, Docker, converter, shell escape or original Figma export is needed.
 With installed TeX Live or MacTeX, run `latexmk -pdf main.tex`.
 
-This project includes selected compositions, the optional standard covers and four/five-item agendas with their dependencies.
+This project includes selected compositions, the optional standard covers, team introduction and four/five-item agendas with their dependencies.
 The full repository retains every composition and supports custom review exports.
 Compilation checks do not imply graphical approval.
 ''').encode()
@@ -145,6 +149,13 @@ The default cover is classic blue. Use `\\studiotitleframe[variant=bitgeneration
 for the light BitGeneration cover or `\\studiotitleframe[variant=bitgeneration-photo]`
 for its photographic version. Both use `\\title`, `\\author` and `\\institute`.
 Classic also supports `\\subtitle` and `\\date`; variants retain their original text slots.
+Insert `\\studioteamframe` between cover and contents for the supplied team slide.
+Its four values and captions are editable; `image-one` replaces the entire collage.
+The supplied team figures are examples: update them before presenting.
+The closing QR is visible by default: use `\\closingframe[qrcode=false]` to hide it
+and centre the same text/social group. `qr-image={images/my-qr.pdf}` replaces it.
+Title, subtitle and copyright remain editable; each call resets its options.
+See studio-closing.tex for examples.
 Use `\\studiotocframe[variant=panels]` for four section titles or
 `\\studiotocframe[variant=panels-five]` for five. These preserve the original panel
 geometry, ignore subsections and leave unused panels blank. Too many sections

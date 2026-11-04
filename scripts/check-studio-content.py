@@ -108,6 +108,41 @@ for count,variant in [(4,'panels'),(5,'panels-five')]:
 CASES['agenda-too-many-sections']=(r'\studiotocframe[variant=panels]'+''.join(r'\section{Section '+str(i)+'}' for i in range(5))+r'\studioframe{Normal frame}{Content.}', 'Too many sections')
 
 
+CASES.update({
+ 'team-standard':(r"""\title{Your title}\author{Author name}\date{}
+\studiotitleframe
+\studioteamframe[value-one={60+},caption-one={Members},value-four={30+},caption-four={Contributors}]
+\studiotocframe[variant=panels]
+\section{First section}
+\studioframe{Normal frame}{Team fields stay local.}
+""",None),
+ 'team-empty-and-image':(r"""\studioteamframe[value-one={},caption-one={},value-two={},caption-two={},value-three={},caption-three={},value-four={},caption-four={},icon-one={alice}]
+\studioteamframe
+\studioframe{Normal frame}{The original defaults return.}
+""",None),
+ 'team-unknown-field':(r'\studioteamframe[unknown-team-field={Value}]','Unknown field'),
+ 'team-overflow':(r'\studioteamframe[caption-one={One\\Two\\Three\\Four\\Five}]','Text overflow'),
+ 'team-unsupported-palette':(r'\studioteamframe[palette=blue]','Unsupported palette')
+})
+
+
+CASES.update({
+ 'closing-qr-reset':(r"""\closingframe
+\closingframe[qrcode=false]
+\closingframe
+\studioframe{Normal frame}{Closing options stay local.}
+""",None),
+ 'closing-qr-hidden':(r'\closingframe[qrcode=false,qr-image={missing-disabled-qr.pdf}]',None),
+ 'closing-qr-invalid-boolean':(r'\closingframe[qrcode=maybe]','Invalid boolean'),
+ 'closing-qr-missing-image':(r'\closingframe[qr-image={missing-visible-qr.pdf}]','Missing closing QR image'),
+ 'closing-qr-catalogue':(r"""\studiotemplate[qrcode=false,title={Your handle},subtitle={Questions?},copyright={}]{closing}
+\studiotemplate[qrcode=true,title={},clear=text]{closing}
+\studioframe{Normal frame}{Catalogue options stay local.}
+""",None),
+ 'closing-qr-overflow':(r'\closingframe[title={One\\Two\\Three\\Four\\Five}]','Text overflow in closing/title')
+})
+
+
 def corner(pdf,page,backend,image,full=False):
     options=['-f',str(page),'-singlefile','-scale-to-x','320' if full else '16','-scale-to-y','180' if full else '9']
     tool=shutil.which('pdftoppm')
@@ -157,6 +192,17 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local'):
                 words=['First','Second','Third','Fourth','Fifth'][:int(name[-1])]
                 if len(pages)!=2 or any(word+' section' not in pages[0] for word in words) or 'Hidden' in pages[0] or 'section' in pages[1]:
                     raise RuntimeError('Measured agenda did not bind top-level sections or isolate its state')
+            if name=='closing-qr-hidden':
+                inputs=(folder/'test.fls').read_text(errors='replace')
+                if 'closing/qrcode.pdf' in inputs or 'missing-disabled-qr.pdf' in inputs:
+                    raise RuntimeError('A disabled QR was still loaded.')
+            if name=='closing-qr-reset':
+                if corner(folder/'test.pdf',1,backend,image,full=True)!=corner(folder/'test.pdf',3,backend,image,full=True):
+                    raise RuntimeError('Closing QR boolean did not reset to true.')
+                if corner(folder/'test.pdf',1,backend,image,full=True)==corner(folder/'test.pdf',2,backend,image,full=True):
+                    raise RuntimeError('Closing QR false did not change the composition.')
+                if corner(folder/'test.pdf',4,backend,image)!=(249,249,249):
+                    raise RuntimeError('Closing state leaked into a normal frame.')
             if name=='standard-cover-variants':
                 pages=[' '.join(p.split()) for p in pdf_text(folder/'test.pdf',backend,image).split('\f') if p.strip()]
                 if len(pages)!=8 or any(not all(value in page for value in ('Your title','Author name','Organization')) for page in pages[:7]):

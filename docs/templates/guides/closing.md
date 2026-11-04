@@ -26,6 +26,14 @@ Named fields are coherent across related variants. All old fields and numbered s
 
 Numeric defaults and charts are illustrative.
 
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `qrcode` | boolean | `true` | Show the supplied QR; false centres the text and social group. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -44,6 +52,8 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `icon/4`, `image/4`, `graphic/4` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
 | `text/1` | `text-1` | Editable text |
 | `text/2` | `title` | Main text |
+| `text/3` | `subtitle` | Editable text |
+| `icon/5`, `image/5`, `graphic/5` | `qr-graphic` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -98,12 +108,14 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.8% wide × 11.6% high | <code>\studiopaletteimage[width=242\studiounit]{images/studio/collection/figma-0934-part-04.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper centre | 6.9% wide × 7.0% high | <code>\textcopyright{} 2026\\BitPolito</code> |
-| <code>title</code> | Main text (text) | middle centre | 17.2% wide × 8.2% high | <code>Thank you</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/telegram.pdf}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/instagram.pdf}</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/twitter.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/youtube.pdf}</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 58.3% wide × 8.3% high | <code>\textcopyright{} \the\year\ BitPolito</code> |
+| <code>title</code> | Main text (text) | middle right | 31.2% wide × 8.1% high | <code>Thank you</code> |
+| <code>subtitle</code> | Editable text (text) | middle right | 31.2% wide × 3.9% high | <code>(empty)</code> |
+| <code>qr-graphic</code> | Complete graphic, image or decoration (graphic) | middle left | 28.9% wide × 51.3% high | <code>\includegraphics[width=554\studiounit]{images/studio/closing/qrcode.pdf}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

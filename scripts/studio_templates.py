@@ -16,6 +16,24 @@ ROOT = Path(__file__).resolve().parents[1]
 NAME = re.compile(r'[a-z][a-z0-9-]*\Z')
 
 
+def check_prepared_resources(root=ROOT, entries=None):
+    """Verify retained PDF parts without importing any conversion library."""
+    if entries is None:
+        index = root / 'templates/index.json'
+        if not index.exists():
+            return 0
+        entries = json.loads(index.read_text(encoding='utf-8'))['templates']
+    # Retained vector PDF parts need no conversion or access to their original export.
+    for entry in entries:
+        for relative, expected in entry.get('prepared_resources', {}).items():
+            path = root / relative
+            if not path.resolve().is_relative_to(root.resolve()) or not path.is_file():
+                raise RuntimeError('Missing prepared Studio resource: ' + relative)
+            if hashlib.sha256(path.read_bytes()).hexdigest() != expected:
+                raise RuntimeError('Changed prepared Studio resource: ' + relative)
+    return sum(len(entry.get('prepared_resources', {})) for entry in entries)
+
+
 def inspect_templates(root=ROOT):
     data = json.loads((root / 'templates/index.json').read_text(encoding='utf-8'))
     entries = data['templates']
@@ -70,6 +88,7 @@ def inspect_aliases(root=ROOT, entries=None):
                  slot_parts=known[a['alias_of']].get('slot_parts', []),
                  neutral_parts=known[a['alias_of']].get('neutral_parts', []),
                  shared_sources=known[a['alias_of']].get('shared_sources', []),
+                 prepared_resources=known[a['alias_of']].get('prepared_resources', {}),
                  status=ledger['templates'][a['alias_of']]['status']) for a in aliases]
 
 
@@ -270,6 +289,7 @@ def prepare_catalogue(root=ROOT, check=False):
             write_if_changed(path, data)
     if check:
         check_gallery(root)
+        check_prepared_resources(root)
     return len(inspect_templates(root))
 
 

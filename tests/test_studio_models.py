@@ -18,7 +18,7 @@ import studio_templates
 class StudioModelTests(unittest.TestCase):
     def test_every_legacy_composition_maps_once_without_merging_distinct_geometry(self):
         entries=studio_templates.inspect_templates(ROOT)
-        self.assertEqual(studio_models.validate(ROOT,entries),100)
+        self.assertEqual(studio_models.validate(ROOT,entries),101)
         members=studio_models.membership(ROOT)
         self.assertEqual(set(members),{e['id'] for e in entries})
         self.assertEqual(members['privacy-levels'][0]['id'],members['privacy-levels-blue'][0]['id'])
@@ -76,9 +76,9 @@ class StudioModelTests(unittest.TestCase):
         rows=[{'id':c['id'],'title':c['id'],'references':[]} for m in config['models'] for v in m['variants'] for c in v['compositions']]
         script=r'''const assert=require('node:assert/strict');const {groupRows,pageRows}=require(process.argv[1]);
 const d=JSON.parse(process.argv[2]);
-assert.equal(groupRows(d.rows,d.models,d.selection,'models').length,100);
+assert.equal(groupRows(d.rows,d.models,d.selection,'models').length,101);
 assert.equal(groupRows(d.rows,d.models,d.selection,'selected').length,21);
-assert.equal(groupRows(d.rows,d.models,d.selection,'all').length,195);
+assert.equal(groupRows(d.rows,d.models,d.selection,'all').length,196);
 const chosen=groupRows(d.rows,d.models,d.selection,'models',{cover:{variant:'wide-pattern',palette:'blue'}});
 assert.equal(chosen.find(r=>r.model.id==='cover').id,'cover-light');
 assert.equal(chosen.find(r=>r.model.id==='cover').modelPalette,'light');
@@ -111,7 +111,7 @@ assert.equal(pageRows(chosen,0,12).rows.length,12);'''
 
     def test_grouped_subset_export_retains_every_requested_composition(self):
         models=studio_models.load_models(ROOT)['models']
-        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),195)
+        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),196)
         subset=studio_models.expand_model_names(ROOT,['cover','icon-cards'])
         self.assertEqual(len(subset),10)
         self.assertTrue({'cover','cover-light','cover-photo','three-cards','two-cards'}<=set(subset))

@@ -1,0 +1,24 @@
+% Editable example: cover, team introduction, agenda, content and closing.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\title{Your presentation}
+\author{Author name}
+\institute{Organization}
+\date{}
+\begin{document}
+\studiotitleframe
+% Figures are retained from the supplied example; update before presenting.
+\studioteamframe[
+  value-one={50+},caption-one={Active members},
+  value-two={210},caption-two={Alumni},
+  value-three={8000+},caption-three={Followers on social media},
+  value-four={25+},caption-four={Working in Bitcoin}
+]
+\studiotocframe[variant=panels]
+\section{Introduction}
+\studioframe{One clear idea}{Your content.}
+\section{Discussion}
+\studioframe{Next steps}{Your content.}
+\closingframe
+\end{document}

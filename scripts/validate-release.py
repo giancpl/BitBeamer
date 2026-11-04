@@ -88,6 +88,10 @@ def validate(archive, style='academic'):
             if long_title == source:
                 raise RuntimeError('Cannot select the Studio long-title scenario')
             (root / 'studio-long-title.tex').write_text(long_title, encoding='utf-8')
+            variants['studio-closing-toggle.tex'] = None
+            (root / 'studio-closing-toggle.tex').write_text('\\documentclass[aspectratio=169]{beamer}\\usetheme{bitpolito-studio}\\begin{document}\\closingframe\\closingframe[qrcode=false]\\closingframe\\studioframe{Normal frame}{Closing options stay local.}\\end{document}\n', encoding='utf-8')
+            variants['studio-team-custom.tex'] = None
+            (root / 'studio-team-custom.tex').write_text('\\documentclass[aspectratio=169]{beamer}\\usetheme{bitpolito-studio}\\usepackage{bitpolitostudiotemplates}\\begin{document}\\studioteamframe[value-one={60+},caption-one={Members},caption-four={Contributors}]\\studioframe{Normal frame}{Team options stay local.}\\end{document}\n', encoding='utf-8')
             variants['studio-agenda-four.tex'] = None
             (root / 'studio-agenda-four.tex').write_text('\\documentclass[aspectratio=169]{beamer}\\usetheme{bitpolito-studio}\\usepackage{bitpolitostudiotemplates}\\begin{document}\n\\studiotocframe[title={Contents},variant=panels]\n\\section{First section}\n\\subsection{Ignored detail}\\subsubsection{Ignored subdetail}\n\\section{Second section}\n\\section{Third section}\n\\section{Fourth section}\n\\studioframe{Normal frame}{The agenda options stay local.}\\end{document}\n', encoding='utf-8')
             variants['studio-agenda-five.tex'] = None

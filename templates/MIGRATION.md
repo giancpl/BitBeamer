@@ -199,4 +199,5 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `mining-card-grid` | `mining-card-grid` | `default` | light |
 | `contact-qr` | `contact` | `contact` | blue |
 | `apply-qr` | `contact` | `action` | blue |
+| `team-presentation` | `team` | `collage` | light |
 | `closing` | `closing` | `default` | blue |

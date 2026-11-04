@@ -23,8 +23,12 @@ Original palettes: blue.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>\textcopyright{} 2026\\BitPolito</code> | 6.9% wide × 7.0% high |
-| `title` | <code>Thank you</code> | 17.2% wide × 8.2% high |
+| `label-one` | <code>\textcopyright{} \the\year\ BitPolito</code> | 58.3% wide × 8.3% high |
+| `title` | <code>Thank you</code> | 31.2% wide × 8.1% high |
+| `subtitle` | <code></code> | 31.2% wide × 3.9% high |
+| `copyright` | <code>\textcopyright{} \the\year\ BitPolito</code> | 58.3% wide × 8.3% high |
+
+Layout options: `qrcode=true` (boolean). See the full slot guide for both treatments.
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -42,7 +46,7 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
 \studiotemplate[
   variant={default},
   palette={blue},
-  label-one={\textcopyright{} 2026\\BitPolito},
+  label-one={\textcopyright{} \the\year\ BitPolito},
   title={Thank you}
 ]{closing}
 \end{document}

@@ -2,7 +2,7 @@
 
 Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
 
-Use one interface across all 195 Studio compositions. Copy a complete example
+Use one interface across all 196 Studio compositions. Copy a complete example
 from an [individual guide](templates/GUIDES.md), or start with the
 [customization examples](../examples/studio-customization.tex).
 

@@ -2,7 +2,7 @@
 
 Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanced composition API remains compatible.
 
-The library has 195 current compositions and nine compatibility names.
+The library has 196 current compositions and nine compatibility names.
 Start with the 21 featured models (24 retained composition choices); the full archive remains available.
 Academic is independent. Compilation never approves a design.
 
