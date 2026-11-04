@@ -113,18 +113,22 @@ required. Windows filenames and project paths may contain spaces.
 
 ## IDE workflow
 
-Open the repository in VS Code. **Ctrl+Shift+B** builds Studio through the default `main.tex` entry point
-with Docker. For your own talk, copy `start-academic.tex` or `start-studio.tex` to
-a new root-level document. Starter tasks compile each editable example; **Build active
-document** compiles the open .tex file. The separate showcase tasks retain their defaults.
-Run Task also offers the separate Studio presentation, illustrations, the catalogue, icon cheat sheet, both covers,
-Docker preparation, documentation checks, and an explicit native build/setup.
-Windows tasks use `py -3`; Linux and macOS tasks use `python3`.
+Open the repository in VS Code. **Ctrl+Shift+B** retains the Studio showcase build.
+For a personal talk, use **BitBeamer: create a personal deck**, then **build a personal
+deck** or **check a personal deck and render pages**. Tasks ask for the deck name
+and backend, and use `scripts/deck.py`. See [authoring](AUTHORING.md).
+**Build active document** uses the common `build.py` launcher, which also isolates
+personal project outputs. Starter, catalogue and library review tasks remain separate.
+Windows tasks use `py -3`; Linux and macOS use `python3`.
 
 LaTeX Workshop selects **BitBeamer: Docker** by default. On Windows choose
-**BitBeamer: Docker — Windows**. Native TeX Live recipes remain available and
-pass `--backend native`. Document build tasks and recipes use `scripts/build.py`; review tasks use
-`review.py`, which delegates compilation to that same launcher.
+**BitBeamer: Docker — Windows**. Native recipes pass `--backend native`.
+The extension uses the full root `.tex` filename and a relative-directory output
+path: personal decks open `build/presentations/<name>/main.pdf`; root documents
+remain under `build/`, while focused examples use `build/examples/` in the IDE.
+These are the documented [LaTeX Workshop placeholders](https://github.com/James-Yu/LaTeX-Workshop/wiki/Compile).
+All compilation runs from the repository root. Terminal `deck.py` tasks and IDE
+personal-deck tasks use the same output paths and independent latexmk caches.
 
 ```sh
 python3 scripts/build.py main-academic.tex

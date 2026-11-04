@@ -4,12 +4,14 @@ Run from the repository root with Python 3.10+ (`py -3` on Windows).
 
 | Entry point | Purpose |
 | --- | --- |
+| `deck.py` | Discover layouts, scaffold private decks, build and inspect their final logs/PDFs |
 | `build.py` | Compile any deck; Docker default, `--backend native` for local TeX |
 | `review.py` | Build one Studio model, the selection or the full archive; sync/check review material |
 | `package.py` | Create named Overleaf ZIPs; `--review` keeps candidates outside stable outputs |
 | `release.py` | Build and validate staged artifacts before replacement; `--review` preserves dist |
 
 Make and VS Code tasks call these same Python launchers.
+For ordinary deck creation, follow [authoring](../docs/AUTHORING.md); no catalogue sync is needed.
 Use [the repository map](../docs/STRUCTURE.md) to distinguish source and generated files.
 See [the review workflow](../docs/STUDIO-COLLECTION.md),
 [maintenance map](../docs/MAINTENANCE.md) and [release guide](../docs/RELEASING.md).
@@ -58,3 +60,7 @@ and the neutral reusable shortlist during sync; neither duplicates layout source
 Use `review.py slide <id> --content example` or `review.py pages --content example`
 for focused builds. Neutral remains the default. Edit `reusable_selection` in the
 review ledger to curate general layouts independently of the existing showcase.
+
+`check-deck-workflow.py --backend native` is a real-compiler integration check for
+private assets, bibliographies, caches, previews and expected errors. It creates
+ignored synthetic projects and writes reports under `build/authoring-checks/`.

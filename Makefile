@@ -84,3 +84,16 @@ studio-palettes:
 .PHONY: studio-overview
 studio-overview:
 	$(PYTHON) scripts/build-studio-overview.py --backend $(BACKEND)
+
+# Personal decks: make deck-new DECK=my-talk; use BACKEND=native when installed.
+DECK ?= my-talk
+STYLE ?= studio
+.PHONY: deck-new deck-build deck-check deck-layouts
+deck-new:
+	$(PYTHON) scripts/deck.py new $(DECK) --style $(STYLE)
+deck-build:
+	$(PYTHON) scripts/deck.py build $(DECK) --backend $(BACKEND)
+deck-check:
+	$(PYTHON) scripts/deck.py check $(DECK) --backend $(BACKEND) --preview
+deck-layouts:
+	$(PYTHON) scripts/deck.py layouts

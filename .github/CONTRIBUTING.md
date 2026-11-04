@@ -1,5 +1,9 @@
 # Contributing
 
+For a personal deck, read [AGENTS.md](../AGENTS.md) and
+[the authoring guide](../docs/AUTHORING.md); work in its ignored project folder.
+The guidance below is for shared library changes.
+
 Use the [repository map](../docs/STRUCTURE.md) to find the canonical source for a change.
 For a Studio layout, follow [the review workflow](../docs/STUDIO-COLLECTION.md).
 For artwork or tooling, use [maintenance](../docs/MAINTENANCE.md).

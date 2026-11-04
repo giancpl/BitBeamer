@@ -40,3 +40,7 @@ htmlcov/
 
 # Local frame exports used for visual reconstruction; never release these.
 /design-references/figma/
+
+# Private presentation sources; only the shared entry guide is versioned.
+/presentations/*
+!/presentations/README.md

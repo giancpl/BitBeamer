@@ -6,16 +6,20 @@ standard Beamer design.
 
 ## Create a presentation
 
-Copy [the Studio starter](../start-studio.tex) or [the Academic starter](../start-academic.tex)
-to a new root-level `.tex` file. Both are editable and never regenerated.
+Use `python3 scripts/deck.py new my-talk` for a private project, or add
+`--style academic`. Read [the authoring guide](AUTHORING.md) and
+[agent instructions](../AGENTS.md) before writing.
 
 | Guide | Purpose |
 | --- | --- |
+| [Authoring](AUTHORING.md) | Private projects, brief, fields, bibliography and verification |
 | [Setup](SETUP.md) | Docker, native TeX and platform troubleshooting |
 | [Use a Studio slide](USING-STUDIO.md) | Choose a composition and write a personal deck |
 | [Studio models](STUDIO-MODELS.md) | Variants, original palettes and semantic fields |
 | [Reusable Studio shortlist](../templates/REUSABLE.md) | Neutral title, contents and closing for new content |
 | [Ready-content examples](../templates/EXAMPLES.md) | Editable retained English content, using shared layouts |
+| [Studio closing](STUDIO-CLOSING.md) | Default QR, QR-free ending and editable social handle |
+| [Studio team introduction](STUDIO-TEAM.md) | Cover, editable team statistics and contents sequence |
 | [Studio agendas](STUDIO-AGENDAS.md) | Four/five section names or manually edited agenda items |
 | [Studio content API](STUDIO-CONTENT.md) | Text, icon, image and file substitutions |
 | [Studio components](STUDIO.md) | Layout commands and ordinary Beamer frames |

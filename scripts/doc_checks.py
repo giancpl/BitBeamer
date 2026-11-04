@@ -19,6 +19,8 @@ def check_docs(root=ROOT):
     for path in sorted(root.rglob('*.md')):
         if any(part in IGNORED for part in path.relative_to(root).parts):
             continue
+        if path.relative_to(root).parts[0] == 'presentations' and path.relative_to(root).as_posix() != 'presentations/README.md':
+            continue
         count += 1
         fence = None
         for number, line in enumerate(path.read_text(encoding='utf-8').splitlines(), 1):

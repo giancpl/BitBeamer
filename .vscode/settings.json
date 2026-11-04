@@ -1,5 +1,5 @@
 {
-  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build",
+  "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/%RELATIVE_DIR%",
   "latex-workshop.latex.recipe.default": "first",
   "latex-workshop.latex.tools": [
     {
@@ -7,7 +7,7 @@
       "command": "python3",
       "args": [
         "%WORKSPACE_FOLDER%/scripts/build.py",
-        "%DOC%",
+        "%DOC_EXT%",
         "%OUTDIR%",
         "--backend",
         "native"
@@ -19,7 +19,7 @@
       "args": [
         "-3",
         "%WORKSPACE_FOLDER%/scripts/build.py",
-        "%DOC%",
+        "%DOC_EXT%",
         "%OUTDIR%",
         "--backend",
         "native"
@@ -30,7 +30,7 @@
       "command": "python3",
       "args": [
         "%WORKSPACE_FOLDER%/scripts/build.py",
-        "%DOC%",
+        "%DOC_EXT%",
         "%OUTDIR%",
         "--backend",
         "docker"
@@ -42,7 +42,7 @@
       "args": [
         "-3",
         "%WORKSPACE_FOLDER%/scripts/build.py",
-        "%DOC%",
+        "%DOC_EXT%",
         "%OUTDIR%",
         "--backend",
         "docker"

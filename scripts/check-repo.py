@@ -20,6 +20,7 @@ def unwanted_paths(paths):
     for name in sorted(paths):
         path = PurePosixPath(name)
         output = (any(part in OUTPUT_FOLDERS for part in path.parts)
+                  or (path.parts[0] == 'presentations' and name != 'presentations/README.md')
                   or path.name in LOCAL_FILES
                   or path.is_relative_to(PurePosixPath('design-references/figma'))
                   or any(path.name.endswith(suffix) for suffix in TEX_OUTPUTS)

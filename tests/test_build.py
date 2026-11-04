@@ -48,6 +48,14 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual(run.call_args.kwargs['cwd'], self.root)
         self.assertNotIn('shell', run.call_args.kwargs)
 
+    def test_nested_personal_documents_get_unique_default_outputs(self):
+        source = self.root / 'presentations/my-talk/main.tex'
+        source.parent.mkdir(parents=True)
+        source.write_text('test', encoding='utf-8')
+        with mock.patch.object(build.shutil, 'which', side_effect=lambda name: name), mock.patch.object(build.subprocess, 'run') as run:
+            self.assertEqual(build.main([str(source), '--backend', 'native'], root=self.root), 0)
+        self.assertIn('-outdir=' + (self.root / 'build/presentations/my-talk').as_posix(), run.call_args.args[0])
+
     def test_native_setup_does_not_compile_or_create_output(self):
         with mock.patch.object(build.shutil, 'which', side_effect=lambda name: name), mock.patch.object(build.subprocess, 'run') as run:
             self.assertEqual(build.main(['--backend', 'native', '--setup'], root=self.root), 0)
@@ -131,7 +139,9 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual(default['windows']['command'], 'py')
         recipes = json.loads((ROOT / '.vscode/settings.json').read_text(encoding='utf-8'))
         self.assertIn('Docker', recipes['latex-workshop.latex.recipes'][0]['name'])
+        self.assertIn('%RELATIVE_DIR%', recipes['latex-workshop.latex.outDir'])
         for tool in recipes['latex-workshop.latex.tools']:
+            self.assertIn('%DOC_EXT%', tool['args'])
             if tool['name'].startswith('bitbeamer-native'):
                 self.assertEqual(tool['args'][-2:], ['--backend', 'native'])
 

@@ -93,7 +93,7 @@ def main(argv=None, root=None):
     root = (root or ROOT).resolve()
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('document', nargs='?', default='main.tex')
-    parser.add_argument('output', nargs='?', default='build')
+    parser.add_argument('output', nargs='?', help='Output directory (personal decks are isolated automatically)')
     parser.add_argument('--backend', choices=('native', 'docker'), default='docker')
     parser.add_argument('--image', default=os.environ.get('LATEX_IMAGE', 'bitbeamer-latex:local'))
     parser.add_argument('--setup', action='store_true', help='Prepare the selected backend without compiling (builds a missing Docker image)')
@@ -111,7 +111,9 @@ def main(argv=None, root=None):
             relative = document.relative_to(root)
         except ValueError as error:
             raise RuntimeError('The document must be inside the project.') from error
-        output = Path(args.output)
+        personal = len(relative.parts) >= 3 and relative.parts[0] == 'presentations'
+        default_output = Path('build/presentations') / relative.parts[1] if personal else Path('build')
+        output = Path(args.output) if args.output else default_output
         if not output.is_absolute():
             output = root / output
         output = output.resolve()

@@ -85,12 +85,12 @@ def save_manifest(root, manifest):
                      (json.dumps(manifest,indent=2,sort_keys=True)+'\n').encode())
 
 
-def thumbnail(root, pdf, target, backend='docker', image='bitbeamer-latex:local', page=1):
+def thumbnail(root, pdf, target, backend='docker', image='bitbeamer-latex:local', page=1, width=480):
     """Use installed Poppler or the existing compiler image; never convert SVGs."""
     target.parent.mkdir(parents=True,exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='thumbnail-',dir=target.parent) as temporary:
         prefix = Path(temporary)/'page'
-        options = ['-png','-singlefile','-f',str(page),'-l',str(page),'-scale-to-x','480','-scale-to-y','-1']
+        options = ['-png','-singlefile','-f',str(page),'-l',str(page),'-scale-to-x',str(width),'-scale-to-y','-1']
         if shutil.which('pdftocairo'):
             command = [shutil.which('pdftocairo'),*options,str(pdf),str(prefix)]
         elif backend == 'docker':

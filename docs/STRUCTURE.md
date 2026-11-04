@@ -1,14 +1,17 @@
 # Repository structure
 
-Start with [the Studio starter](../start-studio.tex) or [the Academic starter](../start-academic.tex).
-Copy it to a new `.tex` file at the repository root and build with `python3 scripts/build.py my-slides.tex`.
-On Windows use `py -3`. Docker is the default backend; `--backend native` uses installed TeX.
+There are two workflows: [create a presentation](AUTHORING.md) in a private project,
+or [refine the shared library](STUDIO-COLLECTION.md). Studio is the default;
+Academic remains independent. Docker is the default backend; `--backend native`
+uses installed TeX. On Windows use `py -3` instead of `python3`.
 
 ## Where to work
 
 | Location | Role | Edit directly? |
 | --- | --- | --- |
-| `start-studio.tex`, `start-academic.tex` | Short editable starting documents | Yes; copy one for a personal deck |
+| `presentations/<name>/` | Private deck, brief, assets and bibliography; ignored by Git | Yes, only the current deck |
+| `AGENTS.md`, `docs/AUTHORING.md` | Agent entry point and complete authoring workflow | When maintaining authoring guidance |
+| `start-studio.tex`, `start-academic.tex` | Short editable starting documents | Used by `deck.py new`; never regenerated |
 | `main.tex` | Default entry point, forwarding to Studio | Only to change the project entry point |
 | `main-studio.tex` | Selected Studio showcase | Generated; copy before editing |
 | `main-academic.tex` | Full Academic feature showcase | Yes, or use its starter |
@@ -50,6 +53,7 @@ ordinary build output; preserve them and their provenance when refining a layout
 
 | Location | Contents | Included in Git? |
 | --- | --- | --- |
+| `build/presentations/<name>/` | Per-deck PDF, cache, report and numbered preview pages | No |
 | `build/` | Compiled PDFs, logs, caches, comparisons and review ZIPs | No |
 | `dist/` | Validated stable release artifacts | No |
 | `design-references/figma/` | Original exports and local graphical comparisons | No |
@@ -61,6 +65,8 @@ The ordinary build and review workflow never publishes, commits or pushes change
 ## Useful commands
 
 ```sh
+python3 scripts/deck.py new my-talk
+python3 scripts/deck.py check my-talk --preview
 python3 scripts/build.py
 python3 scripts/build.py start-academic.tex
 python3 scripts/review.py slide three-cards --open

@@ -40,6 +40,11 @@ class RepositoryTests(unittest.TestCase):
             with self.assertRaisesRegex(RuntimeError, 'main.pdf'):
                 checks['check_repository'](root)
 
+    def test_private_presentations_cannot_be_force_added(self):
+        self.assertEqual(checks['unwanted_paths'](['presentations/README.md']), [])
+        paths = ['presentations/my-talk/main.tex', 'presentations/my-talk/brief.md']
+        self.assertEqual(checks['unwanted_paths'](paths), sorted(paths))
+
     def test_figma_references_are_local_inputs_not_repository_sources(self):
         self.assertEqual(checks['unwanted_paths'](['design-references/README.md']), [])
         paths = ['design-references/figma/frame.svg', 'design-references/figma/slide.pdf']

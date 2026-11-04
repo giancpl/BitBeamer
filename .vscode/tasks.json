@@ -453,6 +453,110 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: create a personal deck",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "new",
+        "${input:deckName}",
+        "--style",
+        "${input:deckStyle}"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "new",
+          "${input:deckName}",
+          "--style",
+          "${input:deckStyle}"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: build a personal deck",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "build",
+        "${input:deckName}",
+        "--backend",
+        "${input:deckBackend}"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "build",
+          "${input:deckName}",
+          "--backend",
+          "${input:deckBackend}"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: check a personal deck and render pages",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "check",
+        "${input:deckName}",
+        "--backend",
+        "${input:deckBackend}",
+        "--preview"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "check",
+          "${input:deckName}",
+          "--backend",
+          "${input:deckBackend}",
+          "--preview"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: browse featured layouts",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "layouts"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "layouts"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
     }
   ],
   "inputs": [
@@ -461,6 +565,32 @@
       "type": "promptString",
       "description": "Studio model ID (see the gallery)",
       "default": "three-cards"
+    },
+    {
+      "id": "deckName",
+      "type": "promptString",
+      "description": "Personal presentation name (lowercase kebab-case)",
+      "default": "my-talk"
+    },
+    {
+      "id": "deckStyle",
+      "type": "pickString",
+      "description": "Presentation design",
+      "options": [
+        "studio",
+        "academic"
+      ],
+      "default": "studio"
+    },
+    {
+      "id": "deckBackend",
+      "type": "pickString",
+      "description": "Compiler backend",
+      "options": [
+        "docker",
+        "native"
+      ],
+      "default": "docker"
     }
   ]
 }
