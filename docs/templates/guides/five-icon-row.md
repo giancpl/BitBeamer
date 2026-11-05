@@ -8,7 +8,7 @@ Model: `five-icon-row` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/five-icon-row.tex)
 
-[Open this slide individually](../index.html?template=five-icon-row)
+[Open this slide individually](../../slides/index.html?template=five-icon-row)
 
 ![Five Icon Row](../previews/five-icon-row.png)
 

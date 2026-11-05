@@ -1,0 +1,389 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g id="part-4">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-7">
+<ns0:path d="M1326 1030H1520V1213H1326Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:mask id="part-10">
+<ns0:g>
+<ns0:image id="part-12" width="3556" height="2000" ns1:href="resources/c603dad13723681d816d95a9877a59b83fefbce49784e00ed48d635bb811f150.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:g mask="url(#part-10)">
+<ns0:g>
+<ns0:image id="part-15" width="3556" height="2000" ns1:href="resources/6abc5ad91ba022776621603a5b2a9caa6e4311137460e31103d04d73620cc6db.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-16" mask-type="alpha">
+<ns0:use ns1:href="#part-4" />
+</ns0:mask>
+<ns0:clipPath id="part-18">
+<ns0:path d="M1326 1030H1520V1213H1326Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-20">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-22">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g id="part-24">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-27">
+<ns0:path d="M1563 1030H1757V1213H1563Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-27)">
+<ns0:mask id="part-30">
+<ns0:g>
+<ns0:image id="part-32" width="3556" height="2000" ns1:href="resources/99db062c4adfb7bb59909ae14bc2d03557d058c06c5e1d6e524c1d98dcd8686f.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:g mask="url(#part-30)">
+<ns0:g>
+<ns0:image id="part-35" width="3556" height="2000" ns1:href="resources/6abc5ad91ba022776621603a5b2a9caa6e4311137460e31103d04d73620cc6db.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-36" mask-type="alpha">
+<ns0:use ns1:href="#part-24" />
+</ns0:mask>
+<ns0:clipPath id="part-38">
+<ns0:path d="M1563 1030H1757V1213H1563Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-40">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-42">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g id="part-44">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-47">
+<ns0:path d="M1800 1030H1994V1213H1800Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-47)">
+<ns0:mask id="part-50">
+<ns0:g>
+<ns0:image id="part-52" width="3556" height="2000" ns1:href="resources/ef774c390d907b41e1fb2d0fef465122585ea781f254c38d27a0fab2a373653e.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:g mask="url(#part-50)">
+<ns0:g>
+<ns0:image id="part-55" width="3556" height="2000" ns1:href="resources/6abc5ad91ba022776621603a5b2a9caa6e4311137460e31103d04d73620cc6db.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-56" mask-type="alpha">
+<ns0:use ns1:href="#part-44" />
+</ns0:mask>
+<ns0:clipPath id="part-58">
+<ns0:path d="M1800 1030H1994V1213H1800Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-60">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-62">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g id="part-64">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-67">
+<ns0:path d="M2037 1030H2231V1213H2037Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-67)">
+<ns0:mask id="part-70">
+<ns0:g>
+<ns0:image id="part-72" width="3556" height="2000" ns1:href="resources/1ffa1fd7f41beab04d6dd26fb611569cd43728e5c702f39cdeef0e9440b72328.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:g mask="url(#part-70)">
+<ns0:g>
+<ns0:image id="part-75" width="3556" height="2000" ns1:href="resources/6abc5ad91ba022776621603a5b2a9caa6e4311137460e31103d04d73620cc6db.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-76" mask-type="alpha">
+<ns0:use ns1:href="#part-64" />
+</ns0:mask>
+<ns0:clipPath id="part-78">
+<ns0:path d="M2037 1030H2231V1213H2037Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-80">
+<ns0:path d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:path d="M0 0H3556V2000H0Z" fill="#001ce0" />
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-16)">
+<ns0:g>
+<ns0:g clip-path="url(#part-18)">
+<ns0:g clip-path="url(#part-20)">
+<ns0:path stroke-width="6" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M1345.238 1210H1499.781C1505.461 1210 1508.309 1210 1510.48 1208.891 1512.391 1207.922 1513.941 1206.371 1514.91 1204.461 1516.02 1202.289 1516.02 1199.441 1516.02 1193.762V1049.238C1516.02 1043.559 1516.02 1040.711 1514.91 1038.539 1513.941 1036.629 1512.391 1035.078 1510.48 1034.109 1508.309 1033 1505.461 1033 1499.781 1033H1345.238C1339.559 1033 1336.711 1033 1334.539 1034.109 1332.629 1035.078 1331.078 1036.629 1330.109 1038.539 1329 1040.711 1329 1043.559 1329 1049.238V1193.762C1329 1199.441 1329 1202.289 1330.109 1204.461 1331.078 1206.371 1332.629 1207.922 1334.539 1208.891 1336.711 1210 1339.559 1210 1345.238 1210ZM1345.238 1210" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path d="M1366 1116.809H1376.363V1127.172H1366Z" fill="#ffffff" />
+<ns0:path d="M1376.371 1116.809H1386.734V1127.172H1376.371Z" fill="#ffffff" />
+<ns0:path d="M1376.371 1127.172H1386.734V1137.531H1376.371Z" fill="#ffffff" />
+<ns0:path d="M1386.73 1106.469H1397.093V1116.832H1386.73Z" fill="#ffffff" />
+<ns0:path d="M1386.73 1116.809H1397.093V1127.172H1386.73Z" fill="#ffffff" />
+<ns0:path d="M1386.73 1127.172H1397.093V1137.531H1386.73Z" fill="#ffffff" />
+<ns0:path d="M1397.102 1106.469H1407.461V1116.832H1397.102Z" fill="#ffffff" />
+<ns0:path d="M1397.102 1116.809H1407.461V1127.172H1397.102Z" fill="#ffffff" />
+<ns0:path d="M1397.102 1127.172H1407.461V1137.531H1397.102Z" fill="#ffffff" />
+<ns0:path d="M1407.441 1096.102H1417.8041V1106.461H1407.441Z" fill="#ffffff" />
+<ns0:path d="M1407.441 1106.469H1417.8041V1116.832H1407.441Z" fill="#ffffff" />
+<ns0:path d="M1407.441 1116.809H1417.8041V1127.172H1407.441Z" fill="#ffffff" />
+<ns0:path d="M1417.801 1096.102H1428.1641V1106.461H1417.801Z" fill="#ffffff" />
+<ns0:path d="M1417.801 1106.469H1428.1641V1116.832H1417.801Z" fill="#ffffff" />
+<ns0:path d="M1417.801 1127.172H1428.1641V1137.531H1417.801Z" fill="#ffffff" />
+<ns0:path d="M1417.801 1137.539H1428.1641V1147.902H1417.801Z" fill="#ffffff" />
+<ns0:path d="M1417.801 1147.898H1428.1641V1158.261H1417.801Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1085.73H1438.531V1096.093H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1096.102H1438.531V1106.461H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1116.809H1438.531V1127.172H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1127.172H1438.531V1137.531H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1137.539H1438.531V1147.902H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1147.898H1438.531V1158.261H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1428.172 1158.27H1438.531V1168.633H1428.172Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1085.73H1448.902V1096.093H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1106.469H1448.902V1116.832H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1116.809H1448.902V1127.172H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1127.172H1448.902V1137.531H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1137.539H1448.902V1147.902H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1147.898H1448.902V1158.261H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1158.27H1448.902V1168.633H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1438.539 1168.641H1448.902V1179.004H1438.539Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1075.371H1459.2731V1085.734H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1096.102H1459.2731V1106.461H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1106.469H1459.2731V1116.832H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1116.809H1459.2731V1127.172H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1127.172H1459.2731V1137.531H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1137.539H1459.2731V1147.902H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1448.91 1147.898H1459.2731V1158.261H1448.91Z" fill="#ffffff" />
+<ns0:path d="M1469.629 1065H1479.9921V1075.363H1469.629Z" fill="#ffffff" />
+<ns0:path d="M1459.27 1075.371H1469.633V1085.734H1459.27Z" fill="#ffffff" />
+<ns0:path d="M1469.629 1075.371H1479.9921V1085.734H1469.629Z" fill="#ffffff" />
+<ns0:path d="M1459.27 1085.73H1469.633V1096.093H1459.27Z" fill="#ffffff" />
+<ns0:path d="M1469.629 1085.73H1479.9921V1096.093H1469.629Z" fill="#ffffff" />
+<ns0:path d="M1459.27 1096.102H1469.633V1106.461H1459.27Z" fill="#ffffff" />
+<ns0:path d="M1459.27 1106.469H1469.633V1116.832H1459.27Z" fill="#ffffff" />
+<ns0:path d="M1459.27 1116.809H1469.633V1127.172H1459.27Z" fill="#ffffff" />
+<ns0:g>
+<ns0:g clip-path="url(#part-22)">
+<ns0:g mask="url(#part-36)">
+<ns0:g>
+<ns0:g clip-path="url(#part-38)">
+<ns0:g clip-path="url(#part-40)">
+<ns0:path stroke-width="6" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M1582.262 1210H1736.789C1742.48 1210 1745.32 1210 1747.488 1208.891 1749.398 1207.922 1750.961 1206.371 1751.93 1204.461 1753.031 1202.289 1753.031 1199.441 1753.031 1193.762V1049.238C1753.031 1043.559 1753.031 1040.711 1751.93 1038.539 1750.961 1036.629 1749.398 1035.078 1747.488 1034.109 1745.32 1033 1742.48 1033 1736.789 1033H1582.262C1576.57 1033 1573.73 1033 1571.559 1034.109 1569.648 1035.078 1568.102 1036.629 1567.121 1038.539 1566.02 1040.711 1566.02 1043.559 1566.02 1049.238V1193.762C1566.02 1199.441 1566.02 1202.289 1567.121 1204.461 1568.102 1206.371 1569.648 1207.922 1571.559 1208.891 1573.73 1210 1576.57 1210 1582.262 1210ZM1582.262 1210" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path d="M1602.762 1085.988H1614.231V1097.461H1602.762Z" fill="#ffffff" />
+<ns0:path d="M1602.762 1097.48H1614.231V1108.949H1602.762Z" fill="#ffffff" />
+<ns0:path d="M1602.762 1108.949H1614.231V1120.418H1602.762Z" fill="#ffffff" />
+<ns0:path d="M1602.762 1120.41H1614.231V1131.879H1602.762Z" fill="#ffffff" />
+<ns0:path d="M1602.762 1131.879H1614.231V1143.352H1602.762Z" fill="#ffffff" />
+<ns0:path d="M1602.762 1143.34H1614.231V1154.809H1602.762Z" fill="#ffffff" />
+<ns0:path d="M1614.23 1074.531H1625.699V1086H1614.23Z" fill="#ffffff" />
+<ns0:path d="M1614.23 1154.809H1625.699V1166.282H1614.23Z" fill="#ffffff" />
+<ns0:path d="M1625.691 1063.059H1637.16V1074.532H1625.691Z" fill="#ffffff" />
+<ns0:path d="M1625.691 1108.949H1637.16V1120.418H1625.691Z" fill="#ffffff" />
+<ns0:path d="M1625.691 1120.41H1637.16V1131.879H1625.691Z" fill="#ffffff" />
+<ns0:path d="M1625.691 1166.301H1637.16V1177.77H1625.691Z" fill="#ffffff" />
+<ns0:path d="M1637.172 1063.059H1648.641V1074.532H1637.172Z" fill="#ffffff" />
+<ns0:path d="M1637.172 1097.48H1648.641V1108.949H1637.172Z" fill="#ffffff" />
+<ns0:path d="M1637.172 1131.879H1648.641V1143.352H1637.172Z" fill="#ffffff" />
+<ns0:path d="M1637.172 1166.301H1648.641V1177.77H1637.172Z" fill="#ffffff" />
+<ns0:path d="M1648.641 1063.059H1660.11V1074.532H1648.641Z" fill="#ffffff" />
+<ns0:path d="M1648.641 1085.988H1660.11V1097.461H1648.641Z" fill="#ffffff" />
+<ns0:path d="M1648.641 1143.34H1660.11V1154.809H1648.641Z" fill="#ffffff" />
+<ns0:path d="M1660.109 1063.059H1671.578V1074.532H1660.109Z" fill="#ffffff" />
+<ns0:path d="M1660.109 1085.988H1671.578V1097.461H1660.109Z" fill="#ffffff" />
+<ns0:path d="M1660.109 1143.34H1671.578V1154.809H1660.109Z" fill="#ffffff" />
+<ns0:path d="M1660.109 1166.301H1671.578V1177.77H1660.109Z" fill="#ffffff" />
+<ns0:path d="M1671.578 1063.059H1683.051V1074.532H1671.578Z" fill="#ffffff" />
+<ns0:path d="M1671.578 1097.48H1683.051V1108.949H1671.578Z" fill="#ffffff" />
+<ns0:path d="M1671.578 1131.879H1683.051V1143.352H1671.578Z" fill="#ffffff" />
+<ns0:path d="M1671.578 1166.301H1683.051V1177.77H1671.578Z" fill="#ffffff" />
+<ns0:path d="M1683.039 1063.059H1694.512V1074.532H1683.039Z" fill="#ffffff" />
+<ns0:path d="M1683.039 1085.988H1694.512V1097.461H1683.039Z" fill="#ffffff" />
+<ns0:path d="M1683.039 1108.949H1694.512V1120.418H1683.039Z" fill="#ffffff" />
+<ns0:path d="M1683.039 1120.41H1694.512V1131.879H1683.039Z" fill="#ffffff" />
+<ns0:path d="M1683.039 1166.301H1694.512V1177.77H1683.039Z" fill="#ffffff" />
+<ns0:path d="M1694.512 1074.531H1705.981V1086H1694.512Z" fill="#ffffff" />
+<ns0:path d="M1705.988 1085.988H1717.461V1097.461H1705.988Z" fill="#ffffff" />
+<ns0:path d="M1705.988 1097.48H1717.461V1108.949H1705.988Z" fill="#ffffff" />
+<ns0:path d="M1705.988 1108.949H1717.461V1120.418H1705.988Z" fill="#ffffff" />
+<ns0:path d="M1705.988 1120.41H1717.461V1131.879H1705.988Z" fill="#ffffff" />
+<ns0:path d="M1705.988 1131.879H1717.461V1143.352H1705.988Z" fill="#ffffff" />
+<ns0:path d="M1705.988 1143.34H1717.461V1154.809H1705.988Z" fill="#ffffff" />
+<ns0:path d="M1694.512 1154.809H1705.981V1166.282H1694.512Z" fill="#ffffff" />
+<ns0:path d="M1648.641 1166.301H1660.11V1177.77H1648.641Z" fill="#ffffff" />
+<ns0:g>
+<ns0:g clip-path="url(#part-42)">
+<ns0:g mask="url(#part-56)">
+<ns0:g>
+<ns0:g clip-path="url(#part-58)">
+<ns0:g clip-path="url(#part-60)">
+<ns0:path stroke-width="6" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M1819.281 1210H1973.82C1979.5 1210 1982.34 1210 1984.52 1208.891 1986.43 1207.922 1987.98 1206.371 1988.949 1204.461 1990.059 1202.289 1990.059 1199.441 1990.059 1193.762V1049.238C1990.059 1043.559 1990.059 1040.711 1988.949 1038.539 1987.98 1036.629 1986.43 1035.078 1984.52 1034.109 1982.34 1033 1979.5 1033 1973.82 1033H1819.281C1813.59 1033 1810.75 1033 1808.578 1034.109 1806.672 1035.078 1805.121 1036.629 1804.148 1038.539 1803.039 1040.711 1803.039 1043.559 1803.039 1049.238V1193.762C1803.039 1199.441 1803.039 1202.289 1804.148 1204.461 1805.121 1206.371 1806.672 1207.922 1808.578 1208.891 1810.75 1210 1813.59 1210 1819.281 1210ZM1819.281 1210" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path d="M1842.441 1095.219H1852.578V1105.36H1842.441Z" fill="#ffffff" />
+<ns0:path d="M1842.441 1105.359H1852.578V1115.5H1842.441Z" fill="#ffffff" />
+<ns0:path d="M1842.441 1115.5H1852.578V1125.641H1842.441Z" fill="#ffffff" />
+<ns0:path d="M1842.441 1125.641H1852.578V1135.778H1842.441Z" fill="#ffffff" />
+<ns0:path d="M1842.441 1135.762H1852.578V1145.8989H1842.441Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1085.078H1862.719V1095.219H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1095.219H1862.719V1105.36H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1105.359H1862.719V1115.5H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1115.5H1862.719V1125.641H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1125.641H1862.719V1135.778H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1135.762H1862.719V1145.8989H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1852.578 1145.91H1862.719V1156.051H1852.578Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1085.078H1872.86V1095.219H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1095.219H1872.86V1105.36H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1105.359H1872.86V1115.5H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1115.5H1872.86V1125.641H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1125.641H1872.86V1135.778H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1135.762H1872.86V1145.8989H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1862.719 1145.91H1872.86V1156.051H1862.719Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1085.078H1883V1095.219H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1095.219H1883V1105.36H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1105.359H1883V1115.5H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1115.5H1883V1125.641H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1125.641H1883V1135.778H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1135.762H1883V1145.8989H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1872.859 1145.91H1883V1156.051H1872.859Z" fill="#ffffff" />
+<ns0:path d="M1883 1085.078H1893.141V1095.219H1883Z" fill="#ffffff" />
+<ns0:path d="M1883 1095.219H1893.141V1105.36H1883Z" fill="#ffffff" />
+<ns0:path d="M1883 1105.359H1893.141V1115.5H1883Z" fill="#ffffff" />
+<ns0:path d="M1883 1115.5H1893.141V1125.641H1883Z" fill="#ffffff" />
+<ns0:path d="M1883 1125.641H1893.141V1135.778H1883Z" fill="#ffffff" />
+<ns0:path d="M1883 1135.762H1893.141V1145.8989H1883Z" fill="#ffffff" />
+<ns0:path d="M1883 1145.91H1893.141V1156.051H1883Z" fill="#ffffff" />
+<ns0:path d="M1893.141 1085.078H1903.278V1095.219H1893.141Z" fill="#ffffff" />
+<ns0:path d="M1893.141 1095.219H1903.278V1105.36H1893.141Z" fill="#ffffff" />
+<ns0:path d="M1893.141 1135.762H1903.278V1145.8989H1893.141Z" fill="#ffffff" />
+<ns0:path d="M1893.141 1145.91H1903.278V1156.051H1893.141Z" fill="#ffffff" />
+<ns0:path d="M1903.281 1085.078H1913.418V1095.219H1903.281Z" fill="#ffffff" />
+<ns0:path d="M1903.281 1095.219H1913.418V1105.36H1903.281Z" fill="#ffffff" />
+<ns0:path d="M1903.281 1105.359H1913.418V1115.5H1903.281Z" fill="#ffffff" />
+<ns0:path d="M1903.281 1125.641H1913.418V1135.778H1903.281Z" fill="#ffffff" />
+<ns0:path d="M1903.281 1135.762H1913.418V1145.8989H1903.281Z" fill="#ffffff" />
+<ns0:path d="M1903.281 1145.91H1913.418V1156.051H1903.281Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1085.078H1923.539V1095.219H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1095.219H1923.539V1105.36H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1105.359H1923.539V1115.5H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1115.5H1923.539V1125.641H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1125.641H1923.539V1135.778H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1135.762H1923.539V1145.8989H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1913.398 1145.91H1923.539V1156.051H1913.398Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1085.078H1933.6799V1095.219H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1095.219H1933.6799V1105.36H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1105.359H1933.6799V1115.5H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1115.5H1933.6799V1125.641H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1125.641H1933.6799V1135.778H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1135.762H1933.6799V1145.8989H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1923.539 1145.91H1933.6799V1156.051H1923.539Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1085.078H1943.821V1095.219H1933.68Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1095.219H1943.821V1105.36H1933.68Z" fill="#ffffff" />
+<ns0:path d="M1943.82 1095.219H1953.9569V1105.36H1943.82Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1105.359H1943.821V1115.5H1933.68Z" fill="#ffffff" />
+<ns0:path d="M1943.82 1105.359H1953.9569V1115.5H1943.82Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1115.5H1943.821V1125.641H1933.68Z" fill="#ffffff" />
+<ns0:path d="M1943.82 1115.5H1953.9569V1125.641H1943.82Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1125.641H1943.821V1135.778H1933.68Z" fill="#ffffff" />
+<ns0:path d="M1943.82 1125.641H1953.9569V1135.778H1943.82Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1135.762H1943.821V1145.8989H1933.68Z" fill="#ffffff" />
+<ns0:path d="M1943.82 1135.762H1953.9569V1145.8989H1943.82Z" fill="#ffffff" />
+<ns0:path d="M1933.68 1145.91H1943.821V1156.051H1933.68Z" fill="#ffffff" />
+<ns0:g>
+<ns0:g clip-path="url(#part-62)">
+<ns0:g mask="url(#part-76)">
+<ns0:g>
+<ns0:g clip-path="url(#part-78)">
+<ns0:g clip-path="url(#part-80)">
+<ns0:path stroke-width="6" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#ffffff" d="M2056.289 1210H2210.828C2216.52 1210 2219.359 1210 2221.531 1208.891 2223.441 1207.922 2224.988 1206.371 2225.969 1204.461 2227.07 1202.289 2227.07 1199.441 2227.07 1193.762V1049.238C2227.07 1043.559 2227.07 1040.711 2225.969 1038.539 2224.988 1036.629 2223.441 1035.078 2221.531 1034.109 2219.359 1033 2216.52 1033 2210.828 1033H2056.289C2050.609 1033 2047.77 1033 2045.602 1034.109 2043.691 1035.078 2042.129 1036.629 2041.16 1038.539 2040.051 1040.711 2040.051 1043.559 2040.051 1049.238V1193.762C2040.051 1199.441 2040.051 1202.289 2041.16 1204.461 2042.129 1206.371 2043.691 1207.922 2045.602 1208.891 2047.77 1210 2050.609 1210 2056.289 1210ZM2056.289 1210" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path d="M2180.637 1095.262H2191V1105.625H2180.637Z" fill="#ffffff" />
+<ns0:path d="M2180.637 1105.621H2191V1115.984H2180.637Z" fill="#ffffff" />
+<ns0:path d="M2180.637 1115.988H2191V1126.355H2180.637Z" fill="#ffffff" />
+<ns0:path d="M2180.637 1126.352H2191V1136.7151H2180.637Z" fill="#ffffff" />
+<ns0:path d="M2180.637 1136.719H2191V1147.0859H2180.637Z" fill="#ffffff" />
+<ns0:path d="M2170.266 1084.898H2180.6292V1095.2649H2170.266Z" fill="#ffffff" />
+<ns0:path d="M2170.266 1147.078H2180.6292V1157.445H2170.266Z" fill="#ffffff" />
+<ns0:path d="M2159.906 1074.539H2170.269V1084.902H2159.906Z" fill="#ffffff" />
+<ns0:path d="M2159.906 1105.621H2170.269V1115.984H2159.906Z" fill="#ffffff" />
+<ns0:path d="M2159.906 1157.441H2170.269V1167.8041H2159.906Z" fill="#ffffff" />
+<ns0:path d="M2149.547 1064.172H2159.9102V1074.535H2149.547Z" fill="#ffffff" />
+<ns0:path d="M2149.547 1095.262H2159.9102V1105.625H2149.547Z" fill="#ffffff" />
+<ns0:path d="M2149.547 1126.352H2159.9102V1136.7151H2149.547Z" fill="#ffffff" />
+<ns0:path d="M2149.547 1167.809H2159.9102V1178.1759H2149.547Z" fill="#ffffff" />
+<ns0:path d="M2139.188 1064.172H2149.551V1074.535H2139.188Z" fill="#ffffff" />
+<ns0:path d="M2139.188 1095.262H2149.551V1105.625H2139.188Z" fill="#ffffff" />
+<ns0:path d="M2139.188 1115.988H2149.551V1126.355H2139.188Z" fill="#ffffff" />
+<ns0:path d="M2139.188 1147.078H2149.551V1157.445H2139.188Z" fill="#ffffff" />
+<ns0:path d="M2139.188 1167.809H2149.551V1178.1759H2139.188Z" fill="#ffffff" />
+<ns0:path d="M2128.816 1064.172H2139.179V1074.535H2128.816Z" fill="#ffffff" />
+<ns0:path d="M2128.816 1095.262H2139.179V1105.625H2128.816Z" fill="#ffffff" />
+<ns0:path d="M2128.816 1115.988H2139.179V1126.355H2128.816Z" fill="#ffffff" />
+<ns0:path d="M2128.816 1136.719H2139.179V1147.0859H2128.816Z" fill="#ffffff" />
+<ns0:path d="M2128.816 1167.809H2139.179V1178.1759H2128.816Z" fill="#ffffff" />
+<ns0:path d="M2118.457 1064.172H2128.82V1074.535H2118.457Z" fill="#ffffff" />
+<ns0:path d="M2118.457 1095.262H2128.82V1105.625H2118.457Z" fill="#ffffff" />
+<ns0:path d="M2118.457 1115.988H2128.82V1126.355H2118.457Z" fill="#ffffff" />
+<ns0:path d="M2118.457 1136.719H2128.82V1147.0859H2118.457Z" fill="#ffffff" />
+<ns0:path d="M2118.457 1167.809H2128.82V1178.1759H2118.457Z" fill="#ffffff" />
+<ns0:path d="M2108.086 1064.172H2118.449V1074.535H2108.086Z" fill="#ffffff" />
+<ns0:path d="M2108.086 1095.262H2118.449V1105.625H2108.086Z" fill="#ffffff" />
+<ns0:path d="M2108.086 1115.988H2118.449V1126.355H2108.086Z" fill="#ffffff" />
+<ns0:path d="M2108.086 1136.719H2118.449V1147.0859H2108.086Z" fill="#ffffff" />
+<ns0:path d="M2108.086 1167.809H2118.449V1178.1759H2108.086Z" fill="#ffffff" />
+<ns0:path d="M2097.727 1074.539H2108.09V1084.902H2097.727Z" fill="#ffffff" />
+<ns0:path d="M2097.727 1095.262H2108.09V1105.625H2097.727Z" fill="#ffffff" />
+<ns0:path d="M2097.727 1115.988H2108.09V1126.355H2097.727Z" fill="#ffffff" />
+<ns0:path d="M2097.727 1157.441H2108.09V1167.8041H2097.727Z" fill="#ffffff" />
+<ns0:path d="M2087.367 1084.898H2097.73V1095.2649H2087.367Z" fill="#ffffff" />
+<ns0:path d="M2077.008 1095.262H2087.371V1105.625H2077.008Z" fill="#ffffff" />
+<ns0:path d="M2077.008 1105.621H2087.371V1115.984H2077.008Z" fill="#ffffff" />
+<ns0:path d="M2077.008 1115.988H2087.371V1126.355H2077.008Z" fill="#ffffff" />
+<ns0:path d="M2077.008 1126.352H2087.371V1136.7151H2077.008Z" fill="#ffffff" />
+<ns0:path d="M2077.008 1136.719H2087.371V1147.0859H2077.008Z" fill="#ffffff" />
+<ns0:path d="M2087.367 1147.078H2097.73V1157.445H2087.367Z" fill="#ffffff" />
+</ns0:g>
+</ns0:svg>

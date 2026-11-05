@@ -8,7 +8,7 @@ Model: `protocol-sequence` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-sequence.tex)
 
-[Open this slide individually](../index.html?template=protocol-sequence)
+[Open this slide individually](../../slides/index.html?template=protocol-sequence)
 
 ![Three-lane sequence](../previews/protocol-sequence.png)
 

@@ -1,0 +1,55 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-9">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-11">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-13">
+<ns0:path transform="matrix(1,0,0,-1,489,3910)" d="M50 3411H2528C2555.6143 3411 2578 3388.6143 2578 3361V50C2578 22.385743 2555.6143 0 2528 0H50C22.385764 0 0 22.385743 0 50V3361C0 3388.6143 22.385764 3411 50 3411Z" />
+</ns0:clipPath>
+<ns0:mask id="part-15">
+<ns0:g transform="matrix(2.5782316,0,0,2.5782314,488.88438,499)">
+<ns0:image id="part-17" width="1000" height="1323" ns1:href="resources/a29581e1b96e12bfdb7120725cf713d40190d1cd1bc9de4805d07cb83119a6e6.jpg" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:g mask="url(#part-9)">
+<ns0:g>
+<ns0:g clip-path="url(#part-11)">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" fill="#001ce0" />
+<ns0:g clip-path="url(#part-13)">
+<ns0:g mask="url(#part-15)">
+<ns0:g transform="matrix(2.5782316,0,0,2.5782314,488.88438,499)">
+<ns0:image id="part-26" width="1000" height="1323" ns1:href="resources/279ea6ace35f7a094f086fdbb388a1e5a894bf9dc164a7cd654e7258848f98cb.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

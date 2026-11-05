@@ -8,7 +8,7 @@ Model: `image-left` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/image-left.tex)
 
-[Open this slide individually](../index.html?template=image-left)
+[Open this slide individually](../../slides/index.html?template=image-left)
 
 ![Image on the left](../previews/image-left.png)
 

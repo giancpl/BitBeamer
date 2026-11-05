@@ -8,7 +8,7 @@ Model: `protocol-public-keys` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-public-keys.tex)
 
-[Open this slide individually](../index.html?template=protocol-public-keys)
+[Open this slide individually](../../slides/index.html?template=protocol-public-keys)
 
 ![Protocol Public Keys](../previews/protocol-public-keys.png)
 

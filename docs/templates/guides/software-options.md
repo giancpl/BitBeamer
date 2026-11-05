@@ -8,7 +8,7 @@ Model: `software-options` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/software-options.tex)
 
-[Open this slide individually](../index.html?template=software-options)
+[Open this slide individually](../../slides/index.html?template=software-options)
 
 ![Software Options](../previews/software-options.png)
 

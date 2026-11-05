@@ -1,0 +1,20 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path d="M.496 .496H3555.496V1999.496H.496Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-4">
+<ns0:path transform="matrix(1,0,0,1,.496094,.49609376)" d="M0 0H3555V1999H0Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:g clip-path="url(#part-4)">
+<ns0:g transform="matrix(.8679213,0,0,.8677299,.496094,-.06262207)">
+<ns0:image id="part-10" width="4096" height="2305" ns1:href="resources/1e8aa0afdf85c91ef37ade4a1bf0d527e179c6d8ec07cb78741c1777c1856656.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path stroke-width=".995818" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#000000" d="M.496 .496H3555.496V1999.496H.496Z" />
+</ns0:g>
+</ns0:svg>

@@ -8,7 +8,7 @@ Model: `protocol-key-setup` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-key-setup.tex)
 
-[Open this slide individually](../index.html?template=protocol-key-setup)
+[Open this slide individually](../../slides/index.html?template=protocol-key-setup)
 
 ![Protocol Key Setup](../previews/protocol-key-setup.png)
 

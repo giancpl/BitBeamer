@@ -1,0 +1,48 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" version="1.1" width="3556" height="1994.8574" viewBox="0 0 3556 1994.8574">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(1,0,0,-1,0,1994.8574)" d="M0 0H3556V1994.8574H0Z" clip-rule="evenodd" />
+</ns0:clipPath>
+<ns0:g id="part-4">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-7">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-11">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-13">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-11)">
+<ns0:g>
+<ns0:g clip-path="url(#part-13)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="#f9f9f9" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0-151.426H17890V19948.575H0Z" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M20960 17278.6H21760V17079.7H21160V16880.8H20960V15886.4H21160V15687.5H21760V15488.6H20960V15687.5H20760V15886.4H20560V16880.8H20760V17079.7H20960V17278.6ZM21960 15886.4H21760V15687.5H21960V15886.4ZM21960 15886.4H22160V16880.8H21960V17079.7H21760V16880.8H21960V15886.4ZM21560 16880.8H21360V15886.4H21560V16880.8" fill="#001ce0" fill-rule="evenodd" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M3899.99 16978.6H3699.99V16578.5H3499.99V16178.6H3299.99V15778.6H3499.99V16178.6H3699.99V16578.5H3899.99V16978.5 16978.6ZM3100 16878.5H2900V16678.5H2700V16478.5H2500V16278.6H2700V16078.6H2900V15878.6H3100V16078.6H2900V16278.6H2700V16478.5H2900V16678.5H3100V16878.5ZM4300 16878.5H4100V16678.5H4300V16478.5H4500V16278.6H4300V16078.6H4100V15878.6H4300V16078.6H4500V16278.6H4700V16478.5H4500V16678.5H4300V16878.5" fill="#ffffff" fill-rule="evenodd" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

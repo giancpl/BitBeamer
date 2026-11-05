@@ -17,7 +17,8 @@ Give your agent this prompt, adding your topic and requirements:
 
 ```text
 Read AGENTS.md and docs/AUTHORING.md. Create a Studio presentation in
-presentations/my-talk/ using the existing featured layouts. Complete brief.md
+presentations/my-talk/ reusing relevant lessons or topic blocks first,
+then existing featured layouts. Complete brief.md
 with my goal, audience, duration, language, sources and your assumptions.
 Use the standard cover, team, contents and closing where appropriate.
 Replace the example content, compile, run checks and visually inspect every
@@ -26,6 +27,11 @@ My brief: [topic, audience, duration, real author and sources].
 ```
 
 [Agent instructions](AGENTS.md) · [Authoring guide](docs/AUTHORING.md)
+
+Browse presentations and blocks in the [slide guide](docs/slides/index.html?view=decks) or list it with
+`python3 scripts/deck.py library`. Copy a complete lesson with
+`python3 scripts/deck.py new my-talk --from bitcoin-introduction-short`, then
+edit its private sources. All reconstructions remain in review.
 
 ## Create manually
 
@@ -49,7 +55,8 @@ installed TeX Live/MacTeX is available with `--backend native`.
 | **Studio** | `deck.py new my-talk` | [start-studio.tex](start-studio.tex) | `bitpolito-studio` |
 | **Academic** | `deck.py new my-talk --style academic` | [start-academic.tex](start-academic.tex) | `bitpolito-academic` |
 
-Browse the [Studio gallery](docs/templates/index.html), inspect fields with
+Browse the [slide guide with previews and commands](docs/slides/index.html)
+(`python3 scripts/review.py guide --open`), inspect fields with
 `python3 scripts/deck.py layouts --model icon-cards --json`, or use
 [ordinary Academic frames](docs/SLIDES.md). [Icons](docs/ICONS.md) work with both:
 `\alice[height=2cm]` or `\asset[width=2cm]{coin}`.

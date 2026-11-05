@@ -8,7 +8,7 @@ Model: `partner-rail` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/partner-rail.tex)
 
-[Open this slide individually](../index.html?template=partner-rail)
+[Open this slide individually](../../slides/index.html?template=partner-rail)
 
 ![Organization rail](../previews/partner-rail.png)
 

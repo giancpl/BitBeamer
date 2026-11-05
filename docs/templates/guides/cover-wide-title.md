@@ -8,7 +8,7 @@ Model: `cover-wide-title` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-wide-title.tex)
 
-[Open this slide individually](../index.html?template=cover-wide-title)
+[Open this slide individually](../../slides/index.html?template=cover-wide-title)
 
 ![Cover Wide Title](../previews/cover-wide-title.png)
 

@@ -8,7 +8,7 @@ Model: `twelve-word-grid` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/twelve-word-grid.tex)
 
-[Open this slide individually](../index.html?template=twelve-word-grid)
+[Open this slide individually](../../slides/index.html?template=twelve-word-grid)
 
 ![Twelve labelled tiles](../previews/twelve-word-grid.png)
 
@@ -62,6 +62,7 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `text/4` | `text-10` | Editable text |
 | `text/7` | `text-11` | Editable text |
 | `text/12` | `text-12` | Editable text |
+| `text/13` | `text-13` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -81,7 +82,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 ```latex
 \studiotemplate[
   text/1={Slide title},
-  text/2={Label 2}
+  text/2={Item 1}
 ]{twelve-word-grid}
 ```
 
@@ -98,7 +99,7 @@ Create `my-slide.tex` in the project root and paste:
 \begin{document}
 \studiotemplate[
   text/1={Slide title},
-  text/2={Label 2}
+  text/2={Item 1}
 ]{twelve-word-grid}
 \end{document}
 ```
@@ -128,20 +129,21 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-08.pdf}</code> |
 | <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-09.pdf}</code> |
 | <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-11.pdf}</code> |
+| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-10.pdf}</code> |
 | <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-12.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 23.0% wide × 8.5% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 14.9% wide × 4.0% high | <code>Label 2</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 14.9% wide × 4.6% high | <code>Label 5</code> |
-| <code>text-4</code> | Editable text (text) | lower left | 14.9% wide × 4.0% high | <code>Label 8</code> |
-| <code>text-5</code> | Editable text (text) | lower left | 14.8% wide × 4.7% high | <code>Label 10</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Label 3</code> |
-| <code>text-7</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Label 6</code> |
-| <code>text-8</code> | Editable text (text) | lower centre | 14.8% wide × 4.1% high | <code>Label 9</code> |
-| <code>text-9</code> | Editable text (text) | lower centre | 14.9% wide × 4.0% high | <code>Label 11</code> |
-| <code>text-10</code> | Editable text (text) | middle right | 14.8% wide × 4.6% high | <code>Label 4</code> |
-| <code>text-11</code> | Editable text (text) | middle right | 14.8% wide × 4.1% high | <code>Label 7</code> |
-| <code>text-12</code> | Editable text (text) | lower right | 14.8% wide × 4.6% high | <code>Label 12</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 14.9% wide × 4.0% high | <code>Item 1</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 14.9% wide × 4.6% high | <code>Item 4</code> |
+| <code>text-4</code> | Editable text (text) | lower left | 14.9% wide × 4.0% high | <code>Item 7</code> |
+| <code>text-5</code> | Editable text (text) | lower left | 14.8% wide × 4.7% high | <code>Item 10</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Item 2</code> |
+| <code>text-7</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Item 5</code> |
+| <code>text-8</code> | Editable text (text) | lower centre | 14.8% wide × 4.1% high | <code>Item 8</code> |
+| <code>text-9</code> | Editable text (text) | lower centre | 14.9% wide × 4.0% high | <code>Item 11</code> |
+| <code>text-10</code> | Editable text (text) | middle right | 14.8% wide × 4.6% high | <code>Item 3</code> |
+| <code>text-11</code> | Editable text (text) | middle right | 14.8% wide × 4.1% high | <code>Item 6</code> |
+| <code>text-12</code> | Editable text (text) | lower right | 14.8% wide × 4.6% high | <code>Item 12</code> |
+| <code>text-13</code> | Editable text (text) | lower right | 14.8% wide × 4.1% high | <code>Item 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

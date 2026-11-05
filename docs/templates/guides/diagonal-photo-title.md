@@ -8,7 +8,7 @@ Model: `diagonal-photo-title` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/diagonal-photo-title.tex)
 
-[Open this slide individually](../index.html?template=diagonal-photo-title)
+[Open this slide individually](../../slides/index.html?template=diagonal-photo-title)
 
 ![Diagonal Photo Title](../previews/diagonal-photo-title.png)
 

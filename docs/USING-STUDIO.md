@@ -29,17 +29,18 @@ Figma exports remain optional local comparisons.
 
 ## 1. Choose a layout
 
-Open [the visual gallery](templates/index.html). Select a family or search a
-layout name. Choose **Open slide** to inspect one composition at a time, or
-**Usage guide** for its copyable examples and field table.
+Open [the slide guide](slides/index.html). Select a family or search a
+layout name. Open the preview to inspect one composition at a time, or
+**Field guide** for its copyable examples and field table.
 
 In the individual view, enable **Show editable areas** or select a field. The
 coloured outlines locate its allocated box; they are guide overlays and never
 appear in your PDF. Some graphics combine a panel, image and decoration into one
 replaceable part. Native shapes may require library maintenance; the [standard closing QR](STUDIO-CLOSING.md) has a boolean option.
 
-Gallery previews stay lightweight. Use the vector review PDF or the 2000px images
-in the local comparison gallery when checking fine graphical details.
+Thumbnails are 640 px; opening the detail loads the 1600 px full-canvas preview.
+Optional local original comparisons are in the same guide with `?maintenance=1`;
+see [maintenance](STUDIO-COLLECTION.md).
 
 The [guide index](templates/GUIDES.md) groups every layout by family and lists the
 24 selected layouts first. Compatibility names lead to the same current source.
@@ -145,7 +146,7 @@ not executed, and example chart values are illustrative. The
 
 ## 5. Review and refine a composition
 
-Open a single slide from the gallery and review its margins, hierarchy, text,
+Open a single slide from the guide and review its margins, hierarchy, text,
 crops and effects. Use the stable composition ID when adding comments to
 [review.json](../templates/review.json). The CSV sheet is a generated export. The source comparison workflow is in
 [the collection guide](STUDIO-COLLECTION.md). A successful build does not approve

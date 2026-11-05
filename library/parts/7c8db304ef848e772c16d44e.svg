@@ -1,0 +1,30 @@
+<svg:svg xmlns:ns1="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<svg:defs>
+<svg:mask id="part-2">
+<svg:g>
+<svg:image id="part-4" width="3556" height="2000" ns1:href="resources/fa0c4dc1b161324f8ff73e20634674996b1227ad8e5b8ae87b9d64d3d4ad2c0a.png" />
+</svg:g>
+</svg:mask>
+<svg:clipPath id="part-5">
+<svg:path d="M649.074 553.5H2906.812C2931.188 553.5 2950.945 573.258 2950.945 597.633V1682.367C2950.945 1706.742 2931.188 1726.5 2906.812 1726.5H649.074C624.703 1726.5 604.945 1706.742 604.945 1682.367V597.633C604.945 573.258 624.703 553.5 649.074 553.5ZM649.074 553.5" />
+</svg:clipPath>
+<svg:clipPath id="part-7">
+<svg:path transform="matrix(1,0,0,1,604.9453,553.5)" d="M0 0H2346V1173H0Z" />
+</svg:clipPath>
+</svg:defs>
+<svg:g>
+<svg:path d="M0 0H3556V2000H0Z" fill="#f9f9f9" />
+<svg:g mask="url(#part-2)">
+<svg:g>
+<svg:image id="part-13" width="3556" height="2000" ns1:href="resources/a77afdcc24b2e5b1dc7c62e9782e9663a0679b9bf57d473be142d22042dd79be.png" />
+</svg:g>
+</svg:g>
+<svg:g clip-path="url(#part-5)">
+<svg:g clip-path="url(#part-7)">
+<svg:g transform="matrix(1.9549992,0,0,1.9550039,604.9453,553.5)">
+<svg:image id="part-17" width="1200" height="600" ns1:href="resources/df3a753fa925799a32eb35a42bdd5f2b04dc319f48bbb17db4d568cb1a33f0ce.png" />
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:svg>

@@ -8,7 +8,7 @@ Model: `metric-dashboard` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/metric-dashboard.tex)
 
-[Open this slide individually](../index.html?template=metric-dashboard)
+[Open this slide individually](../../slides/index.html?template=metric-dashboard)
 
 ![Four-metric dashboard](../previews/metric-dashboard.png)
 

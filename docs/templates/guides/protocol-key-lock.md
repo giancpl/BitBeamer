@@ -8,7 +8,7 @@ Model: `protocol-key-lock` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-key-lock.tex)
 
-[Open this slide individually](../index.html?template=protocol-key-lock)
+[Open this slide individually](../../slides/index.html?template=protocol-key-lock)
 
 ![Protocol Key Lock](../previews/protocol-key-lock.png)
 

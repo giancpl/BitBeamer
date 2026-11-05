@@ -8,7 +8,7 @@ Model: `three-spoke-benefits` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-spoke-benefits.tex)
 
-[Open this slide individually](../index.html?template=three-spoke-benefits)
+[Open this slide individually](../../slides/index.html?template=three-spoke-benefits)
 
 ![Three Spoke Benefits](../previews/three-spoke-benefits.png)
 

@@ -8,7 +8,7 @@ Model: `cover-photo` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-photo.tex)
 
-[Open this slide individually](../index.html?template=cover-photo)
+[Open this slide individually](../../slides/index.html?template=cover-photo)
 
 ![Cover Photo](../previews/cover-photo.png)
 

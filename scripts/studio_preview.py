@@ -17,7 +17,7 @@ def digest(path):
 
 
 def input_sets(root, entries):
-    shared = [p for p in root.glob('*.sty') if 'studio' in p.name or p.name in {
+    shared = [p for p in root.glob('*.sty') if ('studio' in p.name and p.name != 'bitpolitostudiolibrary.sty') or p.name in {
         'beamerfontthemebitpolito.sty','beamercolorthemebitpolito.sty','bitpolitoassets.sty'}]
     shared += [root/'.latexmkrc', root/'assets/generated/catalogue.tex']
     shared += [root/'images/bitpolito'/name for name in ('bull-white.pdf','polito-coat-of-arms-white.pdf')]
@@ -83,6 +83,8 @@ def load_manifest(root):
 def save_manifest(root, manifest):
     write_if_changed(root/'docs/templates/previews/manifest.json',
                      (json.dumps(manifest,indent=2,sort_keys=True)+'\n').encode())
+    from slide_guide import refresh_if_present
+    refresh_if_present(root)
 
 
 def thumbnail(root, pdf, target, backend='docker', image='bitbeamer-latex:local', page=1, width=480):

@@ -8,7 +8,7 @@ Model: `seed-key-tree` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/seed-key-tree.tex)
 
-[Open this slide individually](../index.html?template=seed-key-tree)
+[Open this slide individually](../../slides/index.html?template=seed-key-tree)
 
 ![Seed Key Tree](../previews/seed-key-tree.png)
 

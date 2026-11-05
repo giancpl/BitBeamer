@@ -8,7 +8,7 @@ Model: `block-chain` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/block-chain.tex)
 
-[Open this slide individually](../index.html?template=block-chain)
+[Open this slide individually](../../slides/index.html?template=block-chain)
 
 ![Chain with block headers](../previews/block-chain.png)
 

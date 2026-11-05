@@ -8,7 +8,7 @@ Model: `multi-signature` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/multi-signature.tex)
 
-[Open this slide individually](../index.html?template=multi-signature)
+[Open this slide individually](../../slides/index.html?template=multi-signature)
 
 ![Multiple approvals](../previews/multi-signature.png)
 

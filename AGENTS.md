@@ -17,6 +17,17 @@ shared files; ordinary presentation authoring must not.
 - Use English unless the brief explicitly requests another language. All library
   documentation, comments and official examples must remain in English.
 
+## Reuse lessons before designing new content
+
+- Search `python3 scripts/deck.py library` for relevant lessons and topic blocks.
+  Inspect `library --deck <id> --json` or `library --block <id> --json`.
+- Copy a lesson with `new <name> --from <id>` or insert a block with
+  `add <name> --block <id>`. Work on the personal copies, never shared lesson files.
+- Read provenance, historical dates, translation and update notes. All lessons
+  remain in review: a successful build is not content or graphic approval.
+- The source lesson sequence takes priority over the generic starter sequence.
+  Do not download originals or regenerate the collection during normal authoring.
+
 ## Use the existing visual system
 
 - Discover featured models with `python3 scripts/deck.py layouts`. Inspect fields
@@ -48,3 +59,16 @@ Normal authoring must not regenerate catalogues, change shared themes, update
 review approvals or replace stable releases. Commits, pushes, publication and
 library approval require an explicit request. For library work, follow
 [CONTRIBUTING](.github/CONTRIBUTING.md) and [MAINTENANCE](docs/MAINTENANCE.md).
+
+## Shared-library maintenance only
+
+For tasks that adjust a shared template or component, automatically follow the
+[default maintainer correction workflow](.github/CONTRIBUTING.md#default-template-correction-workflow).
+During library maintenance, feedback illustrated by one lesson slide also requires
+checking its canonical layout and other consumers. Update the unified slide guide
+in `docs/slides/` with its preview and command as part of the same correction.
+Apply the workflow without
+waiting for a separate request to propagate or verify the correction.
+
+This scope covers repository maintenance. Presentation authors continue to use
+the authoring workflow above; existing personal copies remain independent.

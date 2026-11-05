@@ -26,8 +26,8 @@ Original palettes: blue.
 | `label-one` | <code>\textbf{Step 1}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> | 40.8% wide × 9.5% high |
 | `label-two` | <code>\textbf{Step 2}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> | 40.8% wide × 9.5% high |
 | `title` | <code>Title</code> | 20.5% wide × 15.6% high |
-| `label-four` | <code>\textbf{Step 4}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> | 40.8% wide × 9.5% high |
-| `label-five` | <code>\textbf{Step 5}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> | 40.8% wide × 9.5% high |
+| `label-four` | <code>\textbf{Step 3}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> | 40.8% wide × 9.5% high |
+| `label-five` | <code>\textbf{Step 4}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> | 40.8% wide × 9.5% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 

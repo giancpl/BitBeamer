@@ -1,0 +1,7 @@
+% Shared lesson components use the same prepared soft panel as three-cards.
+% Arguments: content-panel left/top and the name of its editable graphic field.
+\providecommand{\studiolessoniconcard}[3]{%
+  \node[anchor=north west] at ({#1-44},{#2-18})
+    {\includegraphics[width=488\studiounit]{images/studio/parts/card-1.pdf}};
+  \studiographfield{#3}{#1+70}{#2+70}{260}{260}{}{}
+}

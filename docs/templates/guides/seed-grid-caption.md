@@ -8,7 +8,7 @@ Model: `seed-grid-caption` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/seed-grid-caption.tex)
 
-[Open this slide individually](../index.html?template=seed-grid-caption)
+[Open this slide individually](../../slides/index.html?template=seed-grid-caption)
 
 ![Word grid and caption](../previews/seed-grid-caption.png)
 
@@ -71,6 +71,7 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `text/7` | `text-13` | Editable text |
 | `text/13` | `text-14` | Editable text |
 | `text/20` | `text-15` | Editable text |
+| `text/24` | `text-16` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -135,7 +136,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-06.pdf}</code> |
 | <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower left | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-07.pdf}</code> |
 | <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-09.pdf}</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-08.pdf}</code> |
 | <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | lower left | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-10.pdf}</code> |
 | <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-11.pdf}</code> |
 | <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.1% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0662-part-12.pdf}</code> |
@@ -160,6 +161,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>text-13</code> | Editable text (text) | middle centre | 14.8% wide × 4.6% high | <code>Label 7</code> |
 | <code>text-14</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Label 13</code> |
 | <code>text-15</code> | Editable text (text) | lower centre | 14.8% wide × 4.6% high | <code>Label 20</code> |
+| <code>text-16</code> | Editable text (text) | lower centre | 14.8% wide × 4.1% high | <code>Item 9</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

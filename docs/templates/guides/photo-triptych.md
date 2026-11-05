@@ -8,7 +8,7 @@ Model: `photo-triptych` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/photo-triptych.tex)
 
-[Open this slide individually](../index.html?template=photo-triptych)
+[Open this slide individually](../../slides/index.html?template=photo-triptych)
 
 ![Photo Triptych](../previews/photo-triptych.png)
 

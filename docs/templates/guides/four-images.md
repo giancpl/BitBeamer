@@ -8,7 +8,7 @@ Model: `four-images` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/four-images.tex)
 
-[Open this slide individually](../index.html?template=four-images)
+[Open this slide individually](../../slides/index.html?template=four-images)
 
 ![Four-image grid](../previews/four-images.png)
 

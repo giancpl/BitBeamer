@@ -4,7 +4,7 @@
 
 Generated from [index.json](index.json). Each entry inserts one complete, editable 16:9 frame.
 Read [the template guide](../docs/TEMPLATES.md) for setup and customization.
-Browse the [offline visual gallery](../docs/templates/index.html) or compile
+Browse the [offline visual gallery](../docs/slides/index.html) or compile
 [the full-size PDF catalogue](../examples/studio-template-catalogue.tex).
 
 | PDF page | Template | Command | Editable source |
@@ -15,7 +15,7 @@ Browse the [offline visual gallery](../docs/templates/index.html) or compile
 | 4 | [Outline agenda with icon rows](../docs/templates/previews/tabbed-agenda.png) | `\studiotemplate{tabbed-agenda}` | [tabbed-agenda.tex](studio/tabbed-agenda.tex) |
 | 5 | [Cover Light](../docs/templates/previews/cover-light.png) | `\studiotemplate{cover-light}` | [cover-light.tex](studio/cover-light.tex) |
 | 6 | [Cover Photo](../docs/templates/previews/cover-photo.png) | `\studiotemplate{cover-photo}` | [cover-photo.tex](studio/cover-photo.tex) |
-| 7 | [Cover Script Blue](../docs/templates/previews/cover-script-blue.png) | `\studiotemplate{cover-script-blue}` | [cover-script-blue.tex](studio/cover-script-blue.tex) |
+| 7 | [Three-party message relay](../docs/templates/previews/cover-script-blue.png) | `\studiotemplate{cover-script-blue}` | [cover-script-blue.tex](studio/cover-script-blue.tex) |
 | 8 | [Overview dashboard](../docs/templates/previews/cover-dashboard.png) | `\studiotemplate{cover-dashboard}` | [cover-dashboard.tex](studio/cover-dashboard.tex) |
 | 9 | [Cover Wide Title](../docs/templates/previews/cover-wide-title.png) | `\studiotemplate{cover-wide-title}` | [cover-wide-title.tex](studio/cover-wide-title.tex) |
 | 10 | [Agenda With Icons](../docs/templates/previews/agenda-with-icons.png) | `\studiotemplate{agenda-with-icons}` | [agenda-with-icons.tex](studio/agenda-with-icons.tex) |
@@ -26,7 +26,7 @@ Browse the [offline visual gallery](../docs/templates/index.html) or compile
 | 15 | [Light icon spotlight](../docs/templates/previews/icon-spotlight-light.png) | `\studiotemplate{icon-spotlight-light}` | [icon-spotlight-light.tex](studio/icon-spotlight-light.tex) |
 | 16 | [Blue icon spotlight](../docs/templates/previews/icon-spotlight-blue.png) | `\studiotemplate{icon-spotlight-blue}` | [icon-spotlight-blue.tex](studio/icon-spotlight-blue.tex) |
 | 17 | [Oversized clipped word](../docs/templates/previews/oversized-word.png) | `\studiotemplate{oversized-word}` | [oversized-word.tex](studio/oversized-word.tex) |
-| 18 | [Chat dialogue](../docs/templates/previews/chat-dialogue.png) | `\studiotemplate{chat-dialogue}` | [chat-dialogue.tex](studio/chat-dialogue.tex) |
+| 18 | [Quotation with attribution](../docs/templates/previews/chat-dialogue.png) | `\studiotemplate{chat-dialogue}` | [chat-dialogue.tex](studio/chat-dialogue.tex) |
 | 19 | [Speech panel over three people](../docs/templates/previews/speech-panel.png) | `\studiotemplate{speech-panel}` | [speech-panel.tex](studio/speech-panel.tex) |
 | 20 | [Chat Three Messages](../docs/templates/previews/chat-three-messages.png) | `\studiotemplate{chat-three-messages}` | [chat-three-messages.tex](studio/chat-three-messages.tex) |
 | 21 | [Oversized Number Light](../docs/templates/previews/oversized-number-light.png) | `\studiotemplate{oversized-number-light}` | [oversized-number-light.tex](studio/oversized-number-light.tex) |
@@ -34,7 +34,7 @@ Browse the [offline visual gallery](../docs/templates/index.html) or compile
 | 23 | [Diagonal Photo Title](../docs/templates/previews/diagonal-photo-title.png) | `\studiotemplate{diagonal-photo-title}` | [diagonal-photo-title.tex](studio/diagonal-photo-title.tex) |
 | 24 | [Title Paragraphs](../docs/templates/previews/title-paragraphs.png) | `\studiotemplate{title-paragraphs}` | [title-paragraphs.tex](studio/title-paragraphs.tex) |
 | 25 | [Title Centered Paragraphs](../docs/templates/previews/title-centered-paragraphs.png) | `\studiotemplate{title-centered-paragraphs}` | [title-centered-paragraphs.tex](studio/title-centered-paragraphs.tex) |
-| 26 | [Statement With Credit](../docs/templates/previews/statement-with-credit.png) | `\studiotemplate{statement-with-credit}` | [statement-with-credit.tex](studio/statement-with-credit.tex) |
+| 26 | [Three milestone timeline](../docs/templates/previews/statement-with-credit.png) | `\studiotemplate{statement-with-credit}` | [statement-with-credit.tex](studio/statement-with-credit.tex) |
 | 27 | [People Speech Cards](../docs/templates/previews/people-speech-cards.png) | `\studiotemplate{people-speech-cards}` | [people-speech-cards.tex](studio/people-speech-cards.tex) |
 | 28 | [Paired Icons Blue](../docs/templates/previews/paired-icons-blue.png) | `\studiotemplate{paired-icons-blue}` | [paired-icons-blue.tex](studio/paired-icons-blue.tex) |
 | 29 | [Two-column explanation](../docs/templates/previews/two-columns.png) | `\studiotemplate{two-columns}` | [two-columns.tex](studio/two-columns.tex) |

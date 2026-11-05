@@ -8,7 +8,7 @@ Model: `agenda-with-icons` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/agenda-with-icons.tex)
 
-[Open this slide individually](../index.html?template=agenda-with-icons)
+[Open this slide individually](../../slides/index.html?template=agenda-with-icons)
 
 ![Agenda With Icons](../previews/agenda-with-icons.png)
 

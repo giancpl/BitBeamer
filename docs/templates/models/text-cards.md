@@ -24,11 +24,11 @@ Original palettes: light.
 | Field | Default | Available space |
 | --- | --- | --- |
 | `title` | <code>Slide title</code> | 35.2% wide × 7.5% high |
-| `label-two` | <code>\textbf{Step 2}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}</code> | 33.3% wide × 16.3% high |
-| `label-three` | <code>\textbf{Step 3}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}</code> | 34.1% wide × 13.3% high |
-| `label-four` | <code>Supporting explanation</code> | 30.0% wide × 6.2% high |
-| `label-five` | <code>\textbf{Step 5}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}</code> | 34.1% wide × 9.4% high |
-| `label-six` | <code>Supporting explanation</code> | 29.1% wide × 4.6% high |
+| `label-two` | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 1}\\Supporting detail.</code> | 33.3% wide × 16.3% high |
+| `label-three` | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 2}\\Supporting detail.</code> | 34.1% wide × 13.3% high |
+| `label-four` | <code>Concept 3</code> | 30.0% wide × 6.2% high |
+| `label-five` | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 4}\\Supporting detail.</code> | 34.1% wide × 9.4% high |
+| `label-six` | <code>Supporting detail.</code> | 29.1% wide × 4.6% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -43,14 +43,15 @@ Original palettes: light.
 | Field | Default | Available space |
 | --- | --- | --- |
 | `title` | <code>Slide title</code> | 29.4% wide × 15.1% high |
-| `label-two` | <code>Supporting explanation</code> | 40.7% wide × 5.0% high |
+| `label-two` | <code>Input</code> | 16.9% wide × 5.0% high |
 | `label-three` | <code>Supporting explanation.\\Add your own details.</code> | 35.9% wide × 19.9% high |
-| `label-four` | <code>Supporting explanation</code> | 34.5% wide × 4.9% high |
-| `label-five` | <code>Label 5</code> | 20.0% wide × 4.9% high |
-| `label-six` | <code>Supporting explanation</code> | 35.5% wide × 4.9% high |
-| `label-seven` | <code>Item</code> | 5.5% wide × 4.0% high |
-| `label-eight` | <code>Supporting explanation</code> | 38.9% wide × 4.9% high |
-| `label-nine` | <code>Supporting explanation</code> | 25.5% wide × 4.9% high |
+| `label-four` | <code>\textbullet\enspace First concept</code> | 34.5% wide × 4.9% high |
+| `label-five` | <code>Supporting detail</code> | 20.0% wide × 4.9% high |
+| `label-six` | <code>\textbullet\enspace Second concept</code> | 35.5% wide × 4.9% high |
+| `label-seven` | <code>Detail</code> | 5.5% wide × 4.0% high |
+| `label-eight` | <code>\textbullet\enspace Third concept</code> | 38.9% wide × 4.9% high |
+| `label-nine` | <code>Supporting detail</code> | 25.5% wide × 4.9% high |
+| `result` | <code>Output</code> | 17.4% wide × 5.0% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -105,7 +106,7 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
   variant={four},
   palette={light},
   title={Slide title},
-  label-two={\textbf{Step 2}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}}
+  label-two={{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 1}\\Supporting detail.}
 ]{text-cards}
 \end{document}
 ```

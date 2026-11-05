@@ -5,13 +5,13 @@
 
 | Model | Variants | Default source |
 | --- | --- | --- |
-| `cover` | `pattern`, `wide-pattern`, `photo`, `script`, `wide-title` | `cover` |
+| `cover` | `pattern`, `wide-pattern`, `photo`, `wide-title` | `cover` |
 | `agenda` | `panels`, `panels-five`, `rail`, `icons`, `schedule` | `contents` |
 | `section-divider` | `default` | `section-divider` |
 | `cover-dashboard` | `default` | `cover-dashboard` |
-| `statement` | `arrow`, `glow`, `plain`, `clipped`, `credit` | `statement-arrow` |
+| `statement` | `arrow`, `glow`, `plain`, `clipped` | `statement-arrow` |
 | `icon-spotlight` | `compact`, `large` | `icon-spotlight-light` |
-| `dialogue` | `two-messages`, `people`, `three-messages`, `cards` | `chat-dialogue` |
+| `dialogue` | `quotation`, `people`, `three-messages`, `cards` | `chat-dialogue` |
 | `oversized-number` | `plain`, `captioned` | `oversized-number-light` |
 | `image-text` | `diagonal`, `left`, `right`, `overlay` | `image-left` |
 | `paragraphs` | `left`, `centered` | `title-paragraphs` |
@@ -62,9 +62,9 @@
 | `split-currency` | `default` | `split-currency` |
 | `diagram-annotated-energy` | `default` | `diagram-annotated-energy` |
 | `card-statistics-process` | `default` | `card-statistics-process` |
-| `protocol` | `paired-nodes`, `symmetric`, `public-nodes`, `lock`, `exchange`, `signed`, `encrypted`, `unlock`, `payload`, `setup`, `transfer`, `routing`, `aggregation`, `aggregate`, `observer`, `channel` | `protocol-key-pair` |
+| `protocol` | `paired-nodes`, `symmetric`, `public-nodes`, `lock`, `exchange`, `signed`, `encrypted`, `unlock`, `payload`, `setup`, `transfer`, `routing`, `aggregation`, `aggregate`, `observer`, `channel`, `message-relay` | `protocol-key-pair` |
 | `large-figure` | `default` | `large-figure` |
-| `timeline` | `horizontal`, `vertical`, `alternating`, `milestones` | `horizontal-timeline` |
+| `timeline` | `horizontal`, `vertical`, `alternating`, `milestones`, `three-milestones` | `horizontal-timeline` |
 | `cycle` | `default` | `cycle` |
 | `decision-tree` | `default` | `decision-tree` |
 | `system-architecture` | `default` | `system-architecture` |

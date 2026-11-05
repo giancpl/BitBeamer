@@ -8,7 +8,7 @@ Model: `horizontal-timeline` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/horizontal-timeline.tex)
 
-[Open this slide individually](../index.html?template=horizontal-timeline)
+[Open this slide individually](../../slides/index.html?template=horizontal-timeline)
 
 ![Horizontal timeline](../previews/horizontal-timeline.png)
 

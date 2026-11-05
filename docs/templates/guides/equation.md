@@ -8,7 +8,7 @@ Model: `equation` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/equation.tex)
 
-[Open this slide individually](../index.html?template=equation)
+[Open this slide individually](../../slides/index.html?template=equation)
 
 ![Equation and example](../previews/equation.png)
 

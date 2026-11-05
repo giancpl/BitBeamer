@@ -8,7 +8,7 @@ Model: `photo-collage-grid` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/photo-collage-grid.tex)
 
-[Open this slide individually](../index.html?template=photo-collage-grid)
+[Open this slide individually](../../slides/index.html?template=photo-collage-grid)
 
 ![Photo Collage Grid](../previews/photo-collage-grid.png)
 

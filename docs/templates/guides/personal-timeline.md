@@ -8,7 +8,7 @@ Model: `personal-timeline` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/personal-timeline.tex)
 
-[Open this slide individually](../index.html?template=personal-timeline)
+[Open this slide individually](../../slides/index.html?template=personal-timeline)
 
 ![Personal Timeline](../previews/personal-timeline.png)
 

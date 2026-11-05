@@ -8,7 +8,7 @@ Model: `contents-five` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/contents-five.tex)
 
-[Open this slide individually](../index.html?template=contents-five)
+[Open this slide individually](../../slides/index.html?template=contents-five)
 
 ![Five-section contents](../previews/contents-five.png)
 

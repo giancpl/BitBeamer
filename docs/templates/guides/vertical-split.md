@@ -8,7 +8,7 @@ Model: `vertical-split` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/vertical-split.tex)
 
-[Open this slide individually](../index.html?template=vertical-split)
+[Open this slide individually](../../slides/index.html?template=vertical-split)
 
 ![Vertical light and blue comparison](../previews/vertical-split.png)
 

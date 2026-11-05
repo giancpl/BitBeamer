@@ -8,7 +8,7 @@ Model: `privacy-levels` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/privacy-levels.tex)
 
-[Open this slide individually](../index.html?template=privacy-levels)
+[Open this slide individually](../../slides/index.html?template=privacy-levels)
 
 ![Privacy Levels](../previews/privacy-levels.png)
 

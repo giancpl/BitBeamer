@@ -8,7 +8,7 @@ Model: `oversized-number-blue` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/oversized-number-blue.tex)
 
-[Open this slide individually](../index.html?template=oversized-number-blue)
+[Open this slide individually](../../slides/index.html?template=oversized-number-blue)
 
 ![Oversized Number Blue](../previews/oversized-number-blue.png)
 

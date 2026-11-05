@@ -44,3 +44,9 @@ htmlcov/
 # Private presentation sources; only the shared entry guide is versioned.
 /presentations/*
 !/presentations/README.md
+
+# Transient lock used while refreshing lesson previews.
+/library/previews/manifest.lock
+
+# Transient lock for independent HD preview updates.
+/docs/slides/previews/manifest.lock

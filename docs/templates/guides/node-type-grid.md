@@ -8,7 +8,7 @@ Model: `node-type-grid` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/node-type-grid.tex)
 
-[Open this slide individually](../index.html?template=node-type-grid)
+[Open this slide individually](../../slides/index.html?template=node-type-grid)
 
 ![Three node types](../previews/node-type-grid.png)
 

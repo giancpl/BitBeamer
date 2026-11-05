@@ -8,7 +8,7 @@ Model: `four-card-grid` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/four-card-grid.tex)
 
-[Open this slide individually](../index.html?template=four-card-grid)
+[Open this slide individually](../../slides/index.html?template=four-card-grid)
 
 ![Four soft text cards](../previews/four-card-grid.png)
 
@@ -107,11 +107,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 38.7% wide × 29.4% high | <code>\studiopaletteimage[width=1375\studiounit]{images/studio/collection/figma-0603-part-03.pdf}</code> |
 | <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 38.7% wide × 29.4% high | <code>\studiopaletteimage[width=1375\studiounit]{images/studio/collection/figma-0603-part-04.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 35.2% wide × 7.5% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 33.3% wide × 16.3% high | <code>\textbf{Step 2}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}</code> |
-| <code>item-3-1</code> | List or contents entry (text) | lower left | 30.0% wide × 6.2% high | <code>Supporting explanation</code> |
-| <code>item-3-2</code> | List or contents entry (text) | lower left | 29.1% wide × 4.6% high | <code>Supporting explanation</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 34.1% wide × 13.3% high | <code>\textbf{Step 3}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 34.1% wide × 9.4% high | <code>\textbf{Step 5}\\{\fontsize{61.96\studiounit}{71.8736\studiounit}\selectfont Supporting detail.}</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 33.3% wide × 16.3% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 1}\\Supporting detail.</code> |
+| <code>item-3-1</code> | List or contents entry (text) | lower left | 30.0% wide × 6.2% high | <code>Concept 3</code> |
+| <code>item-3-2</code> | List or contents entry (text) | lower left | 29.1% wide × 4.6% high | <code>Supporting detail.</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 34.1% wide × 13.3% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 2}\\Supporting detail.</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 34.1% wide × 9.4% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 4}\\Supporting detail.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

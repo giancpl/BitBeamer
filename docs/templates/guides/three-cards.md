@@ -8,7 +8,7 @@ Model: `three-cards` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-cards.tex)
 
-[Open this slide individually](../index.html?template=three-cards)
+[Open this slide individually](../../slides/index.html?template=three-cards)
 
 ![Three soft icon cards](../previews/three-cards.png)
 

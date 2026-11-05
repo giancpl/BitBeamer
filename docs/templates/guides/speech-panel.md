@@ -8,7 +8,7 @@ Model: `speech-panel` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/speech-panel.tex)
 
-[Open this slide individually](../index.html?template=speech-panel)
+[Open this slide individually](../../slides/index.html?template=speech-panel)
 
 ![Speech panel over three people](../previews/speech-panel.png)
 
@@ -63,7 +63,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 ```latex
 \studiotemplate[
   text/1={Slide title},
-  text/2={Supporting explanation}
+  text/2={Date or supporting note}
 ]{speech-panel}
 ```
 
@@ -80,7 +80,7 @@ Create `my-slide.tex` in the project root and paste:
 \begin{document}
 \studiotemplate[
   text/1={Slide title},
-  text/2={Supporting explanation}
+  text/2={Date or supporting note}
 ]{speech-panel}
 \end{document}
 ```
@@ -105,7 +105,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 15.4% wide × 27.2% high | <code>\studiopaletteimage[width=295\studiounit]{images/studio/collection/figma-0482-part-03.pdf}</code> |
 | <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 15.3% wide × 27.2% high | <code>\studiopaletteimage[width=294\studiounit]{images/studio/collection/figma-0482-part-04.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 53.6% wide × 12.5% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 51.9% wide × 4.3% high | <code>Supporting explanation</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 51.9% wide × 4.3% high | <code>Date or supporting note</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

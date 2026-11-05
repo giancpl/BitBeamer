@@ -8,7 +8,7 @@ Model: `payoff-matrix` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/payoff-matrix.tex)
 
-[Open this slide individually](../index.html?template=payoff-matrix)
+[Open this slide individually](../../slides/index.html?template=payoff-matrix)
 
 ![Outcome matrix](../previews/payoff-matrix.png)
 
@@ -66,8 +66,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/7={Slide title},
-  text/1={Label 1}
+  text/7={8},
+  text/1={Outcome matrix}
 ]{payoff-matrix}
 ```
 
@@ -83,8 +83,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/7={Slide title},
-  text/1={Label 1}
+  text/7={8},
+  text/1={Outcome matrix}
 ]{payoff-matrix}
 \end{document}
 ```
@@ -107,13 +107,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 9.1% wide × 16.1% high | <code>\studiopaletteimage[width=322\studiounit]{images/studio/collection/figma-0534-part-01.pdf}</code> |
 | <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 10.6% wide × 18.8% high | <code>\studiopaletteimage[width=376\studiounit]{images/studio/collection/figma-0534-part-02.pdf}</code> |
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 58.8% wide × 47.0% high | <code>\studiopaletteimage[width=2092\studiounit]{images/studio/collection/figma-0534-part-03.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper centre | 36.8% wide × 8.5% high | <code>Label 1</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 55.1% wide × 5.6% high | <code>Supporting explanation</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 52.8% wide × 5.6% high | <code>Supporting explanation</code> |
-| <code>title</code> | Main text (text) | lower centre | 32.3% wide × 9.8% high | <code>Slide title</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 36.8% wide × 8.5% high | <code>Outcome matrix</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 15.7% wide × 5.6% high | <code>Option A</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 13.2% wide × 5.6% high | <code>Option A</code> |
+| <code>title</code> | Main text (text) | lower centre | 4.2% wide × 9.8% high | <code>8</code> |
 | <code>text-5</code> | Editable text (text) | middle right | 3.2% wide × 9.8% high | <code>8</code> |
-| <code>text-6</code> | Editable text (text) | middle right | 11.5% wide × 5.1% high | <code>Item</code> |
-| <code>text-7</code> | Editable text (text) | lower centre | 50.3% wide × 5.1% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | middle right | 11.5% wide × 5.1% high | <code>Option B</code> |
+| <code>text-7</code> | Editable text (text) | lower left | 12.7% wide × 5.1% high | <code>Option B</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

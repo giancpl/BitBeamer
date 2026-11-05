@@ -23,13 +23,15 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Label 1</code> | 36.8% wide × 8.5% high |
-| `label-two` | <code>Supporting explanation</code> | 55.1% wide × 5.6% high |
-| `label-three` | <code>Item</code> | 11.5% wide × 5.1% high |
-| `label-four` | <code>Supporting explanation</code> | 52.8% wide × 5.6% high |
+| `label-one` | <code>Outcome matrix</code> | 36.8% wide × 8.5% high |
+| `label-two` | <code>Option A</code> | 15.7% wide × 5.6% high |
+| `label-three` | <code>Option B</code> | 11.5% wide × 5.1% high |
+| `label-four` | <code>Option A</code> | 13.2% wide × 5.6% high |
 | `label-five` | <code>8</code> | 3.2% wide × 9.8% high |
-| `label-six` | <code>Supporting explanation</code> | 50.3% wide × 5.1% high |
-| `title` | <code>Slide title</code> | 32.3% wide × 9.8% high |
+| `label-six` | <code>Option B</code> | 12.7% wide × 5.1% high |
+| `title` | <code>8</code> | 4.2% wide × 9.8% high |
+| `value-one` | <code>8</code> | 4.2% wide × 9.8% high |
+| `heading-title` | <code>Outcome matrix</code> | 36.8% wide × 8.5% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -47,8 +49,8 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
 \studiotemplate[
   variant={default},
   palette={light},
-  label-one={Label 1},
-  label-two={Supporting explanation}
+  label-one={Outcome matrix},
+  label-two={Option A}
 ]{payoff-matrix}
 \end{document}
 ```

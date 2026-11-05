@@ -137,7 +137,7 @@ layout remains available without a variant.
 
 ## One source per composition
 
-The library contains **196 current compositions**. The [gallery](templates/index.html)
+The library contains **196 current compositions**. The [gallery](slides/index.html)
 starts with 21 featured models (24 retained composition choices); choose All models
 for the grouped collection or All compositions for the advanced archive.
 Nine compatibility names preserve earlier commands by loading the same current

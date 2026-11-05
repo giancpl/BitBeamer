@@ -8,7 +8,7 @@ Model: `transaction-flow` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/transaction-flow.tex)
 
-[Open this slide individually](../index.html?template=transaction-flow)
+[Open this slide individually](../../slides/index.html?template=transaction-flow)
 
 ![Two-lane process](../previews/transaction-flow.png)
 

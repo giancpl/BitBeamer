@@ -55,7 +55,7 @@
  \pgfkeys{/studio resolve/graphic/.is family,/studio resolve/graphic/.unknown/.code={\edef\studio@key{graphic/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
  \pgfkeys{/studio resolve/file/.is family,/studio resolve/file/.unknown/.code={\edef\studio@key{file/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
  \pgfkeys{/studio resolve/heading/.is family,/studio resolve/heading/.unknown/.code={\edef\studio@key{heading/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
- \pgfkeys{/studio resolve/body/.is family,/studio resolve/body/.unknown/.code={\edef\studio@key{body/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
+ \pgfkeys{/studio resolve/body/.is family,/studio resolve/body/.code=\studio@collectoption{body}{##1},/studio resolve/body/.unknown/.code={\edef\studio@key{body/\pgfkeyscurrentname}\expandafter\studio@collectoption\expandafter{\studio@key}{##1}}}%
  \pgfqkeys{/studio resolve}{#2}%
  \def\studio@source{#1}%
  \ifcsname studio@template@#1\endcsname\edef\studio@source{\csname studio@template@#1\endcsname}\fi

@@ -26,8 +26,10 @@ Use `python3 scripts/deck.py new my-talk` for a private project, or add
 | [Academic slides](SLIDES.md) | Standard frames, branding, covers and closing |
 | [Icons](ICONS.md) | Shortcuts, sizing and printable references |
 
-Browse [the Studio gallery](templates/index.html), [individual slide guides](templates/GUIDES.md)
-and [focused examples](../examples/README.md) for copyable sources.
+Start with [the unified slide guide](slides/index.html): each preview has its copyable
+command beside it, covering Studio models and additional lesson layouts.
+[Individual field guides](templates/GUIDES.md) and the
+[advanced field inspector](slides/index.html) provide detailed editing references.
 
 ## Refine the library
 

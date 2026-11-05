@@ -8,7 +8,7 @@ Model: `bubble-chart` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/bubble-chart.tex)
 
-[Open this slide individually](../index.html?template=bubble-chart)
+[Open this slide individually](../../slides/index.html?template=bubble-chart)
 
 ![Bubble Chart](../previews/bubble-chart.png)
 

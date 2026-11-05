@@ -72,20 +72,20 @@ class StudioModelTests(unittest.TestCase):
 
     @unittest.skipUnless(shutil.which('node'),'Optional Node runtime unavailable')
     def test_browser_grouping_preserves_variants_and_filters_before_loading(self):
-        config=studio_models.load_models(ROOT)
-        rows=[{'id':c['id'],'title':c['id'],'references':[]} for m in config['models'] for v in m['variants'] for c in v['compositions']]
-        script=r'''const assert=require('node:assert/strict');const {groupRows,pageRows}=require(process.argv[1]);
-const d=JSON.parse(process.argv[2]);
-assert.equal(groupRows(d.rows,d.models,d.selection,'models').length,101);
-assert.equal(groupRows(d.rows,d.models,d.selection,'selected').length,21);
-assert.equal(groupRows(d.rows,d.models,d.selection,'all').length,196);
-const chosen=groupRows(d.rows,d.models,d.selection,'models',{cover:{variant:'wide-pattern',palette:'blue'}});
-assert.equal(chosen.find(r=>r.model.id==='cover').id,'cover-light');
-assert.equal(chosen.find(r=>r.model.id==='cover').modelPalette,'light');
-const pair=groupRows(d.rows,d.models,d.selection,'models',{levels:{palette:'blue'}});
-assert.equal(pair.find(r=>r.model.id==='levels').id,'privacy-levels-blue');
-assert.equal(pageRows(chosen,0,12).rows.length,12);'''
-        subprocess.run(['node','-e',script,str(ROOT/'scripts/studio-gallery.js'),json.dumps(dict(config,rows=rows))],check=True,capture_output=True,text=True)
+        from slide_guide import catalogue
+        data=catalogue(ROOT)
+        data['variant_aliases']=studio_models.load_models(ROOT).get('variant_aliases',[])
+        script=r'''const assert=require('node:assert/strict');const {matches,pageRows,resolveChoice}=require(process.argv[1]);
+const d=JSON.parse(require('node:fs').readFileSync(0,'utf8'));
+assert.equal(matches(d.rows,'','studio').length,101);
+assert.equal(matches(d.rows,'','featured').length,21);
+assert.equal(resolveChoice(d,'cover','pattern','blue').row.id,'cover');
+assert.equal(resolveChoice(d,'levels','default','blue').row.choices[resolveChoice(d,'levels','default','blue').index].id,'privacy-levels-blue');
+assert.equal(resolveChoice(d,'cover','script').row.id,'protocol');
+assert.equal(resolveChoice(d,'statement','credit').row.id,'timeline');
+assert.equal(resolveChoice(d,'dialogue','two-messages').row.choices[resolveChoice(d,'dialogue','two-messages').index].id,'chat-dialogue');
+assert.equal(pageRows(d.rows,0).length,12);'''
+        subprocess.run(['node','-e',script,str(ROOT/'docs/slides/guide.js')],input=json.dumps(data),check=True,capture_output=True,text=True)
 
     def test_only_original_colour_versions_are_declared(self):
         entries=studio_templates.inspect_templates(ROOT)
@@ -113,7 +113,7 @@ assert.equal(pageRows(chosen,0,12).rows.length,12);'''
         models=studio_models.load_models(ROOT)['models']
         self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),196)
         subset=studio_models.expand_model_names(ROOT,['cover','icon-cards'])
-        self.assertEqual(len(subset),10)
+        self.assertEqual(len(subset),9)
         self.assertTrue({'cover','cover-light','cover-photo','three-cards','two-cards'}<=set(subset))
         with self.assertRaisesRegex(ValueError,'Unknown Studio models'):
             studio_models.expand_model_names(ROOT,['missing-model'])

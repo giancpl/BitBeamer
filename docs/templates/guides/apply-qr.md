@@ -8,7 +8,7 @@ Model: `apply-qr` · Family: Closing · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/apply-qr.tex)
 
-[Open this slide individually](../index.html?template=apply-qr)
+[Open this slide individually](../../slides/index.html?template=apply-qr)
 
 ![Apply Qr](../previews/apply-qr.png)
 
@@ -94,7 +94,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 24.7% wide × 44.0% high | <code>{\color{black}\qrcode[height=748\studiounit]{https://example.org}}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 24.7% wide × 44.0% high | <code>{\color{studio-foreground}\qrcode[height=748\studiounit]{https://example.org}}</code> |
 | <code>title</code> | Main text (text) | upper centre | 18.5% wide × 8.4% high | <code>Title</code> |
 
 Truncated values are shown in full at the start of the current source file.

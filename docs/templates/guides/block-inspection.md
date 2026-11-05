@@ -8,7 +8,7 @@ Model: `block-inspection` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/block-inspection.tex)
 
-[Open this slide individually](../index.html?template=block-inspection)
+[Open this slide individually](../../slides/index.html?template=block-inspection)
 
 ![Record inspection](../previews/block-inspection.png)
 

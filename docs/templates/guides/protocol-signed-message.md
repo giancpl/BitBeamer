@@ -8,7 +8,7 @@ Model: `protocol-signed-message` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-signed-message.tex)
 
-[Open this slide individually](../index.html?template=protocol-signed-message)
+[Open this slide individually](../../slides/index.html?template=protocol-signed-message)
 
 ![Protocol Signed Message](../previews/protocol-signed-message.png)
 

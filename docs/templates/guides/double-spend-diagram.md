@@ -8,7 +8,7 @@ Model: `double-spend-diagram` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/double-spend-diagram.tex)
 
-[Open this slide individually](../index.html?template=double-spend-diagram)
+[Open this slide individually](../../slides/index.html?template=double-spend-diagram)
 
 ![Double Spend Diagram](../previews/double-spend-diagram.png)
 

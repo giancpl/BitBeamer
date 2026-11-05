@@ -36,10 +36,15 @@ def project_path(root, name, existing=True):
     return project
 
 
-def create_deck(root, name, style='studio'):
+def create_deck(root, name, style='studio', from_library=None):
     project = project_path(root, name, existing=False)
     if project.exists():
         raise ValueError(f'Already exists: {project}. Choose another name; existing projects are never overwritten.')
+    if from_library:
+        if style != 'studio':
+            raise ValueError('--from requires Studio; Academic remains a separate workflow.')
+        from lesson_library import create_from_library
+        return create_from_library(root, name, from_library, project)
     source = (root / f'start-{style}.tex').read_text(encoding='utf-8')
     prefix = f'presentations/{name}'
     setup = ('% Paths are relative to the repository root, where compilation runs.\n'
@@ -49,6 +54,9 @@ def create_deck(root, name, style='studio'):
              + '% \\usepackage[backend=biber,style=numeric]{biblatex}\n'
              + '% \\addbibresource{' + prefix + '/references.bib}\n\n')
     source = source.replace(r'\begin{document}', setup + r'\begin{document}', 1)
+    if style == 'studio':
+        from lesson_library import MARKER
+        source = source.replace(r'\closingframe', MARKER + '\n' + r'\closingframe', 1)
     brief = f'''# {name}
 
 ## Goal
@@ -154,7 +162,12 @@ def log_issues(text):
         ('TeX error', r'^!\s*[^\n]+'),
     ]
     for kind, pattern in patterns:
-        errors.extend({'kind': kind, 'message': m.group(0).strip()} for m in re.finditer(pattern, text, re.I | re.M))
+        for match in re.finditer(pattern,text,re.I|re.M):
+            message=match.group(0).strip()
+            if kind in ('overflow','layout overflow'):
+                fields=list(re.finditer(r'STUDIO-FIELD: ([^\n]+)',text[:match.start()]))
+                if fields:message+=' ['+fields[-1][1].strip()+']'
+            errors.append({'kind':kind,'message':message})
     return errors
 
 
@@ -186,6 +199,7 @@ def pdf_tool(root, name, pdf, backend, image):
                    '--entrypoint', name, image, '/input/' + pdf.name]
     else:
         raise RuntimeError(f'{name} is missing. Install Poppler (poppler-utils / brew install poppler / conda install -c conda-forge poppler), or use --backend docker.')
+    if name == 'pdftotext':command.append('-')
     return subprocess.run(command, check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE, text=True).stdout
 
 
@@ -265,7 +279,16 @@ def main(argv=None, root=None):
     layouts.add_argument('--json', action='store_true')
     new = commands.add_parser('new', help='Create an ignored personal project from an editable starter')
     new.add_argument('name')
+    new.add_argument('--from', dest='from_library', help='Copy a complete ready-content Studio lesson')
     new.add_argument('--style', choices=('studio', 'academic'), default='studio')
+    library = commands.add_parser('library', help='Find complete lessons and reusable topic blocks')
+    selection = library.add_mutually_exclusive_group()
+    selection.add_argument('--deck')
+    selection.add_argument('--block')
+    library.add_argument('--json', action='store_true')
+    add = commands.add_parser('add', help='Copy a reusable topic block into a personal Studio project')
+    add.add_argument('name')
+    add.add_argument('--block', required=True)
     for name in ('build', 'check'):
         command = commands.add_parser(name)
         command.add_argument('name')
@@ -278,6 +301,13 @@ def main(argv=None, root=None):
             command.add_argument('--preview', action='store_true')
     args = parser.parse_args(argv)
     try:
+        if args.command == 'layouts' and args.model and (args.model.startswith('official-layout-') or ((root/'library/index.json').is_file() and args.model not in {m['id'] for m in load_models(root)['models']})):
+            from lesson_library import load
+            collection=load(root)
+            lesson=collection['layouts'].get(args.model) or collection.get('presets',{}).get(args.model)
+            if lesson is None:raise ValueError('Unknown lesson layout: '+args.model)
+            print(json.dumps(dict(id=args.model,**lesson),indent=2))
+            return 0
         if args.command == 'layouts':
             data = layout_catalogue(root, args.all, args.model)
             if args.json:
@@ -296,8 +326,26 @@ def main(argv=None, root=None):
                                 if choice['options']:
                                     print('    options: ' + json.dumps(choice['options']))
             return 0
+        if args.command == 'library':
+            from lesson_library import catalogue
+            result = catalogue(root, args.deck, args.block)
+            if args.json:
+                print(json.dumps(result, indent=2))
+            elif args.deck or args.block:
+                print(json.dumps(result, indent=2))
+            else:
+                for kind in ('decks', 'blocks'):
+                    print(kind.upper())
+                    for item in result[kind]:
+                        print(f'  {item["id"]}: {item["title"]} ({item["slide_count"]} slides; {item["status"]})')
+            return 0
+        if args.command == 'add':
+            from lesson_library import add_block
+            count = add_block(root, project_path(root, args.name), args.block)
+            print(f'Imported {count} slides into {args.name}; inspect and adapt the personal copies.')
+            return 0
         if args.command == 'new':
-            create_deck(root, args.name, args.style)
+            create_deck(root, args.name, args.style, args.from_library)
             return 0
         if args.command == 'build':
             return build_deck(root, args.name, args.backend, args.image, args.open, args.force)

@@ -8,7 +8,7 @@ Model: `grouped-rail` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/grouped-rail.tex)
 
-[Open this slide individually](../index.html?template=grouped-rail)
+[Open this slide individually](../../slides/index.html?template=grouped-rail)
 
 ![Grouped vertical list](../previews/grouped-rail.png)
 

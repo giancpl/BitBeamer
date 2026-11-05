@@ -8,7 +8,7 @@ Model: `onchain-offchain` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/onchain-offchain.tex)
 
-[Open this slide individually](../index.html?template=onchain-offchain)
+[Open this slide individually](../../slides/index.html?template=onchain-offchain)
 
 ![Two approaches](../previews/onchain-offchain.png)
 

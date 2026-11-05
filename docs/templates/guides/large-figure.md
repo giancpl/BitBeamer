@@ -8,7 +8,7 @@ Model: `large-figure` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/large-figure.tex)
 
-[Open this slide individually](../index.html?template=large-figure)
+[Open this slide individually](../../slides/index.html?template=large-figure)
 
 ![Large diagram](../previews/large-figure.png)
 

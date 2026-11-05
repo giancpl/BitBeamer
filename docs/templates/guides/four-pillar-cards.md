@@ -8,7 +8,7 @@ Model: `four-pillar-cards` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/four-pillar-cards.tex)
 
-[Open this slide individually](../index.html?template=four-pillar-cards)
+[Open this slide individually](../../slides/index.html?template=four-pillar-cards)
 
 ![Four Pillar Cards](../previews/four-pillar-cards.png)
 

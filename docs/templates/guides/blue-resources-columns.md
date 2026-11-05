@@ -8,7 +8,7 @@ Model: `blue-resources-columns` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/blue-resources-columns.tex)
 
-[Open this slide individually](../index.html?template=blue-resources-columns)
+[Open this slide individually](../../slides/index.html?template=blue-resources-columns)
 
 ![Resource columns](../previews/blue-resources-columns.png)
 

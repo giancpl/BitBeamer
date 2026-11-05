@@ -157,6 +157,7 @@
 \DeclareStudioTextSlot{statement-with-credit}{6}{text-4}
 \DeclareStudioTextSlot{statement-with-credit}{3}{text-5}
 \DeclareStudioTextSlot{statement-with-credit}{5}{text-6}
+\DeclareStudioTextSlot{statement-with-credit}{7}{value-two}
 \DeclareStudioTemplate{people-speech-cards}
 \DeclareStudioGraphicSlot{people-speech-cards}{1}{graphic-1}{331}{206}{}{165.5,103,297.9,185.4}
 \DeclareStudioGraphicSlot{people-speech-cards}{2}{graphic-2}{441}{206}{}{220.5,103,396.9,185.4}
@@ -317,13 +318,13 @@
 \DeclareStudioGraphicSlot{four-card-grid}{4}{graphic-4}{1375}{589}{}{687.5,294.5,1237.5,530.1}
 \DeclareStudioTextSlot{four-card-grid}{1}{title}
 \DeclareStudioTextSlot{four-card-grid}{2}{text-2}
-\DeclareStudioBlockSlot{four-card-grid}{2}{text-2}{Step 2}{Supporting detail.}{75.16}{87.1856}{61.96}{71.8736}
+\DeclareStudioBlockSlot{four-card-grid}{2}{text-2}{Concept 1}{Supporting detail.}{75.16}{87.1856}{61.96}{71.8736}
 \DeclareStudioTextSlot{four-card-grid}{4}{item-3-1}
 \DeclareStudioTextSlot{four-card-grid}{6}{item-3-2}
 \DeclareStudioTextSlot{four-card-grid}{3}{text-4}
-\DeclareStudioBlockSlot{four-card-grid}{3}{text-4}{Step 3}{Supporting detail.}{75.16}{87.1856}{61.96}{71.8736}
+\DeclareStudioBlockSlot{four-card-grid}{3}{text-4}{Concept 2}{Supporting detail.}{75.16}{87.1856}{61.96}{71.8736}
 \DeclareStudioTextSlot{four-card-grid}{5}{text-5}
-\DeclareStudioBlockSlot{four-card-grid}{5}{text-5}{Step 5}{Supporting detail.}{75.16}{87.1856}{61.96}{71.8736}
+\DeclareStudioBlockSlot{four-card-grid}{5}{text-5}{Concept 4}{Supporting detail.}{75.16}{87.1856}{61.96}{71.8736}
 \DeclareStudioTemplate{eight-icon-grid}
 \DeclareStudioGraphicSlot{eight-icon-grid}{1}{graphic-1}{488}{489}{images/studio/slots/figma-0429-part-01-panel.pdf}{244,218,260,260}
 \DeclareStudioGraphicSlot{eight-icon-grid}{6}{graphic-2}{488}{489}{images/studio/slots/figma-0429-part-02-panel.pdf}{244,218.77,260,260}
@@ -393,6 +394,7 @@
 \DeclareStudioTextSlot{twelve-word-grid}{4}{text-10}
 \DeclareStudioTextSlot{twelve-word-grid}{7}{text-11}
 \DeclareStudioTextSlot{twelve-word-grid}{12}{text-12}
+\DeclareStudioTextSlot{twelve-word-grid}{13}{text-13}
 \DeclareStudioTemplate{three-card-summary}
 \DeclareStudioGraphicSlot{three-card-summary}{1}{graphic-1}{1490}{628}{}{745,314,1341,565.2}
 \DeclareStudioGraphicSlot{three-card-summary}{2}{graphic-2}{1490}{628}{}{745,314,1341,565.2}
@@ -452,6 +454,7 @@
 \DeclareStudioTextSlot{callout-explanation}{8}{item-2-6}
 \DeclareStudioTextSlot{callout-explanation}{9}{item-2-7}
 \DeclareStudioTextSlot{callout-explanation}{3}{text-3}
+\DeclareStudioTextSlot{callout-explanation}{10}{result}
 \DeclareStudioTemplate{six-outline-cards}
 \DeclareStudioTextSlot{six-outline-cards}{1}{title}
 \DeclareStudioTextSlot{six-outline-cards}{3}{text-2}
@@ -1990,6 +1993,7 @@
 \DeclareStudioTextSlot{seed-grid-caption}{7}{text-13}
 \DeclareStudioTextSlot{seed-grid-caption}{13}{text-14}
 \DeclareStudioTextSlot{seed-grid-caption}{20}{text-15}
+\DeclareStudioTextSlot{seed-grid-caption}{24}{text-16}
 \DeclareStudioTemplate{diagram-pool-shares}
 \DeclareStudioGraphicSlot{diagram-pool-shares}{1}{graphic-1}{2162}{1539}{}{1081,769.5,1945.8,1385.1}
 \DeclareStudioGraphicSlot{diagram-pool-shares}{2}{graphic-2}{1136}{1139}{}{568,569.5,1022.4,1025.1}
@@ -2230,8 +2234,6 @@
 \DeclareStudioChoice{cover}{wide-pattern}{light}{cover-light}
 \DeclareStudioVariant{cover}{photo}{cover-photo}{light}{light}
 \DeclareStudioChoice{cover}{photo}{light}{cover-photo}
-\DeclareStudioVariant{cover}{script}{cover-script-blue}{light}{light}
-\DeclareStudioChoice{cover}{script}{light}{cover-script-blue}
 \DeclareStudioVariant{cover}{wide-title}{cover-wide-title}{blue}{blue}
 \DeclareStudioChoice{cover}{wide-title}{blue}{cover-wide-title}
 \DeclareStudioModel{agenda}{panels}
@@ -2260,16 +2262,14 @@
 \DeclareStudioChoice{statement}{plain}{blue}{blue-statement}
 \DeclareStudioVariant{statement}{clipped}{oversized-word}{light}{light}
 \DeclareStudioChoice{statement}{clipped}{light}{oversized-word}
-\DeclareStudioVariant{statement}{credit}{statement-with-credit}{light}{light}
-\DeclareStudioChoice{statement}{credit}{light}{statement-with-credit}
 \DeclareStudioModel{icon-spotlight}{compact}
 \DeclareStudioVariant{icon-spotlight}{compact}{icon-spotlight-light}{light}{light}
 \DeclareStudioChoice{icon-spotlight}{compact}{light}{icon-spotlight-light}
 \DeclareStudioVariant{icon-spotlight}{large}{icon-spotlight-blue}{blue}{blue}
 \DeclareStudioChoice{icon-spotlight}{large}{blue}{icon-spotlight-blue}
-\DeclareStudioModel{dialogue}{two-messages}
-\DeclareStudioVariant{dialogue}{two-messages}{chat-dialogue}{blue}{blue}
-\DeclareStudioChoice{dialogue}{two-messages}{blue}{chat-dialogue}
+\DeclareStudioModel{dialogue}{quotation}
+\DeclareStudioVariant{dialogue}{quotation}{chat-dialogue}{blue}{blue}
+\DeclareStudioChoice{dialogue}{quotation}{blue}{chat-dialogue}
 \DeclareStudioVariant{dialogue}{people}{speech-panel}{light}{light}
 \DeclareStudioChoice{dialogue}{people}{light}{speech-panel}
 \DeclareStudioVariant{dialogue}{three-messages}{chat-three-messages}{light}{light}
@@ -2548,6 +2548,8 @@
 \DeclareStudioChoice{protocol}{observer}{light}{protocol-eavesdropping}
 \DeclareStudioVariant{protocol}{channel}{protocol-encrypted-channel}{light}{light}
 \DeclareStudioChoice{protocol}{channel}{light}{protocol-encrypted-channel}
+\DeclareStudioVariant{protocol}{message-relay}{cover-script-blue}{light}{light}
+\DeclareStudioChoice{protocol}{message-relay}{light}{cover-script-blue}
 \DeclareStudioModel{large-figure}{default}
 \DeclareStudioVariant{large-figure}{default}{large-figure}{light}{light}
 \DeclareStudioChoice{large-figure}{default}{light}{large-figure}
@@ -2560,6 +2562,8 @@
 \DeclareStudioChoice{timeline}{alternating}{light}{alternating-timeline}
 \DeclareStudioVariant{timeline}{milestones}{personal-timeline}{light}{light}
 \DeclareStudioChoice{timeline}{milestones}{light}{personal-timeline}
+\DeclareStudioVariant{timeline}{three-milestones}{statement-with-credit}{light}{light}
+\DeclareStudioChoice{timeline}{three-milestones}{light}{statement-with-credit}
 \DeclareStudioModel{cycle}{default}
 \DeclareStudioVariant{cycle}{default}{cycle}{light}{light}
 \DeclareStudioChoice{cycle}{default}{light}{cycle}
@@ -2715,6 +2719,23 @@
 \DeclareStudioModel{closing}{default}
 \DeclareStudioVariant{closing}{default}{closing}{blue}{blue}
 \DeclareStudioChoice{closing}{default}{blue}{closing}
+\DeclareStudioVariant{cover}{script}{cover-script-blue}{light}{light}
+\DeclareStudioChoice{cover}{script}{light}{cover-script-blue}
+\DeclareStudioSemantic{cover-script-blue}{title}{text-2}
+\DeclareStudioSemantic{cover-script-blue}{subtitle}{text-3}
+\DeclareStudioSemantic{cover-script-blue}{decoration}{title}
+\DeclareStudioVariant{statement}{credit}{statement-with-credit}{light}{light}
+\DeclareStudioChoice{statement}{credit}{light}{statement-with-credit}
+\DeclareStudioSemantic{statement-with-credit}{title}{title}
+\DeclareStudioSemantic{statement-with-credit}{label-two}{text-3}
+\DeclareStudioSemantic{statement-with-credit}{label-three}{text-5}
+\DeclareStudioSemantic{statement-with-credit}{label-four}{text-2}
+\DeclareStudioSemantic{statement-with-credit}{label-five}{text-6}
+\DeclareStudioSemantic{statement-with-credit}{label-six}{text-4}
+\DeclareStudioVariant{dialogue}{two-messages}{chat-dialogue}{blue}{blue}
+\DeclareStudioChoice{dialogue}{two-messages}{blue}{chat-dialogue}
+\DeclareStudioSemantic{chat-dialogue}{title}{title}
+\DeclareStudioSemantic{chat-dialogue}{text-2}{text-2}
 \DeclareStudioMembership{abacus-explanation}{abacus-explanation}{default}{light}{light}
 \DeclareStudioGraphicSemantic{abacus-explanation}{one}{1}
 \DeclareStudioSemantic{abacus-explanation}{label-two}{text-2}
@@ -2953,9 +2974,10 @@
 \DeclareStudioSemantic{card-statistics-process}{label-three}{text-1}
 \DeclareStudioSemantic{card-statistics-process}{label-four}{text-3}
 \DeclareStudioSemantic{card-statistics-process}{label-five}{text-5}
-\DeclareStudioMembership{chat-dialogue}{dialogue}{two-messages}{blue}{blue}
+\DeclareStudioMembership{chat-dialogue}{dialogue}{quotation}{blue}{blue}
 \DeclareStudioGraphicSemantic{chat-dialogue}{one}{1}
-\DeclareStudioSemantic{chat-dialogue}{label-two}{text-2}
+\DeclareStudioSemantic{chat-dialogue}{quote}{title}
+\DeclareStudioSemantic{chat-dialogue}{credit}{text-2}
 \DeclareStudioMembership{chat-three-messages}{dialogue}{three-messages}{light}{light}
 \DeclareStudioGraphicSemantic{chat-three-messages}{one}{1}
 \DeclareStudioGraphicSemantic{chat-three-messages}{three}{3}
@@ -3060,15 +3082,15 @@
 \DeclareStudioGraphicSemantic{cover-photo}{one}{1}
 \DeclareStudioSemantic{cover-photo}{author}{text-1}
 \DeclareStudioSemantic{cover-photo}{institute}{text-3}
-\DeclareStudioMembership{cover-script-blue}{cover}{script}{light}{light}
+\DeclareStudioMembership{cover-script-blue}{protocol}{message-relay}{light}{light}
 \DeclareStudioGraphicSemantic{cover-script-blue}{three}{3}
 \DeclareStudioGraphicSemantic{cover-script-blue}{one}{1}
 \DeclareStudioGraphicSemantic{cover-script-blue}{two}{2}
 \DeclareStudioGraphicSemantic{cover-script-blue}{four}{4}
 \DeclareStudioGraphicSemantic{cover-script-blue}{five}{5}
-\DeclareStudioSemantic{cover-script-blue}{title}{text-2}
-\DeclareStudioSemantic{cover-script-blue}{subtitle}{text-3}
-\DeclareStudioSemantic{cover-script-blue}{decoration}{title}
+\DeclareStudioSemantic{cover-script-blue}{payload}{title}
+\DeclareStudioSemantic{cover-script-blue}{message-one}{text-2}
+\DeclareStudioSemantic{cover-script-blue}{message-two}{text-3}
 \DeclareStudioMirror{cover-script-blue}{title}{text-3}
 \DeclareStudioMembership{cover-wide-title}{cover}{wide-title}{blue}{blue}
 \DeclareStudioGraphicSemantic{cover-wide-title}{one}{1}
@@ -3862,6 +3884,8 @@
 \DeclareStudioSemantic{payoff-matrix}{label-four}{text-3}
 \DeclareStudioSemantic{payoff-matrix}{label-five}{text-5}
 \DeclareStudioSemantic{payoff-matrix}{label-six}{text-7}
+\DeclareStudioSemantic{payoff-matrix}{value-one}{title}
+\DeclareStudioSemantic{payoff-matrix}{heading-title}{text-1}
 \DeclareStudioMembership{people-speech-cards}{dialogue}{cards}{light}{light}
 \DeclareStudioGraphicSemantic{people-speech-cards}{one}{1}
 \DeclareStudioGraphicSemantic{people-speech-cards}{two}{2}
@@ -4333,6 +4357,7 @@
 \DeclareStudioSemantic{seed-grid-caption}{label-nineteen}{text-12}
 \DeclareStudioSemantic{seed-grid-caption}{label-twenty}{text-15}
 \DeclareStudioSemantic{seed-grid-caption}{label-21}{item-3-3}
+\DeclareStudioSemantic{seed-grid-caption}{caption-nine}{text-16}
 \DeclareStudioMembership{seed-key-tree}{binary-tree}{hierarchy}{light}{light}
 \DeclareStudioGraphicSemantic{seed-key-tree}{one}{1}
 \DeclareStudioGraphicSemantic{seed-key-tree}{three}{3}
@@ -4442,18 +4467,18 @@
 \DeclareStudioMembership{statement-arrow}{statement}{arrow}{light}{light}
 \DeclareStudioGraphicSemantic{statement-arrow}{one}{1}
 \DeclareStudioGraphicSemantic{statement-arrow}{two}{2}
-\DeclareStudioMembership{statement-with-credit}{statement}{credit}{light}{light}
+\DeclareStudioMembership{statement-with-credit}{timeline}{three-milestones}{light}{light}
 \DeclareStudioGraphicSemantic{statement-with-credit}{two}{2}
 \DeclareStudioGraphicSemantic{statement-with-credit}{three}{3}
 \DeclareStudioGraphicSemantic{statement-with-credit}{four}{4}
 \DeclareStudioGraphicSemantic{statement-with-credit}{five}{5}
 \DeclareStudioGraphicSemantic{statement-with-credit}{one}{1}
 \DeclareStudioGraphicSemantic{statement-with-credit}{six}{6}
-\DeclareStudioSemantic{statement-with-credit}{label-two}{text-3}
-\DeclareStudioSemantic{statement-with-credit}{label-three}{text-5}
-\DeclareStudioSemantic{statement-with-credit}{label-four}{text-2}
-\DeclareStudioSemantic{statement-with-credit}{label-five}{text-6}
-\DeclareStudioSemantic{statement-with-credit}{label-six}{text-4}
+\DeclareStudioSemantic{statement-with-credit}{label-one}{text-3}
+\DeclareStudioSemantic{statement-with-credit}{value-one}{text-2}
+\DeclareStudioSemantic{statement-with-credit}{label-two}{text-5}
+\DeclareStudioSemantic{statement-with-credit}{label-three}{text-4}
+\DeclareStudioSemantic{statement-with-credit}{value-three}{text-6}
 \DeclareStudioMembership{stepped-rail-blue}{list-rail}{stepped}{blue}{blue}
 \DeclareStudioGraphicSemantic{stepped-rail-blue}{one}{1}
 \DeclareStudioSemantic{stepped-rail-blue}{label-one}{text-3}
@@ -4634,6 +4659,18 @@
 \DeclareStudioSemantic{twelve-word-grid}{label-ten}{text-5}
 \DeclareStudioSemantic{twelve-word-grid}{label-eleven}{text-9}
 \DeclareStudioSemantic{twelve-word-grid}{label-twelve}{text-12}
+\DeclareStudioSemantic{twelve-word-grid}{caption-one}{text-2}
+\DeclareStudioSemantic{twelve-word-grid}{caption-two}{text-6}
+\DeclareStudioSemantic{twelve-word-grid}{caption-three}{text-10}
+\DeclareStudioSemantic{twelve-word-grid}{caption-four}{text-3}
+\DeclareStudioSemantic{twelve-word-grid}{caption-five}{text-7}
+\DeclareStudioSemantic{twelve-word-grid}{caption-six}{text-11}
+\DeclareStudioSemantic{twelve-word-grid}{caption-seven}{text-4}
+\DeclareStudioSemantic{twelve-word-grid}{caption-eight}{text-8}
+\DeclareStudioSemantic{twelve-word-grid}{caption-nine}{text-13}
+\DeclareStudioSemantic{twelve-word-grid}{caption-ten}{text-5}
+\DeclareStudioSemantic{twelve-word-grid}{caption-eleven}{text-9}
+\DeclareStudioSemantic{twelve-word-grid}{caption-twelve}{text-12}
 \DeclareStudioMembership{two-card-vertical}{icon-cards}{two-vertical}{light}{light}
 \DeclareStudioGraphicSemantic{two-card-vertical}{one}{1}
 \DeclareStudioGraphicSemantic{two-card-vertical}{two}{2}

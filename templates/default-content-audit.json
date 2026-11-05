@@ -315,14 +315,14 @@
       "field": "title",
       "role": "title",
       "previous": "\"A private matter is something one does not\\\\want the whole world to know, while a secret\\\\matter is something one does not want anyone\\\\to know. Privacy is the power to selectively\\\\reveal oneself to the world.\"",
-      "default": "Slide title"
+      "default": "A concise quotation, kept as one paragraph. Replace it with the words you want to highlight."
     },
     {
       "composition": "chat-dialogue",
       "field": "text-2",
       "role": "label-two",
       "previous": "--- Eric Hughes, A Cypherpunk''s Manifesto, 1993",
-      "default": "Supporting explanation"
+      "default": "Source or reference"
     },
     {
       "composition": "speech-panel",
@@ -336,7 +336,7 @@
       "field": "text-2",
       "role": "label-two",
       "previous": "February 2020",
-      "default": "Supporting explanation"
+      "default": "Date or supporting note"
     },
     {
       "composition": "chat-three-messages",
@@ -756,28 +756,28 @@
       "field": "text-2",
       "role": "label-one",
       "previous": "\\textbf{Download the RaspiBlitz image}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont From the official GitHub repository or website.}",
-      "default": "\\textbf{Step 1} Supporting detail."
+      "default": "\\textbf{Step 1}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}"
     },
     {
       "composition": "checklist-rail",
       "field": "text-3",
       "role": "label-two",
       "previous": "\\textbf{Write the image to an SD card}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Use balenaEtcher to write it to a microSD card.}",
-      "default": "\\textbf{Step 2} Supporting detail."
+      "default": "\\textbf{Step 2}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}"
     },
     {
       "composition": "checklist-rail",
       "field": "text-4",
       "role": "label-four",
       "previous": "\\textbf{Configure the device}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Insert the SD card and SSD into the Raspberry Pi.}",
-      "default": "\\textbf{Step 4} Supporting detail."
+      "default": "\\textbf{Step 3}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}"
     },
     {
       "composition": "checklist-rail",
       "field": "text-5",
       "role": "label-five",
       "previous": "\\textbf{Start RaspiBlitz}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Connect network and power; use a monitor\\\\to follow the installation.}",
-      "default": "\\textbf{Step 5} Supporting detail."
+      "default": "\\textbf{Step 4}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}"
     },
     {
       "composition": "feature-spotlight",
@@ -1022,28 +1022,28 @@
       "field": "text-3",
       "role": "label-one",
       "previous": "Raspberry Pi 4\\\\{\\fontsize{40\\studiounit}{46\\studiounit}\\selectfont 4GB or 8GB preferred}",
-      "default": "Supporting explanation"
+      "default": "First item"
     },
     {
       "composition": "stepped-rail-blue",
       "field": "text-4",
       "role": "label-six",
       "previous": "Power supply and cables,\\\\with an optional display\\\\for monitoring",
-      "default": "Supporting explanation.\\\\Add your own details."
+      "default": "Third item\\\\Supporting detail."
     },
     {
       "composition": "stepped-rail-blue",
       "field": "item-5-1",
       "role": "label-three",
       "previous": "External SSD",
-      "default": "Example label"
+      "default": "Second item"
     },
     {
       "composition": "stepped-rail-blue",
       "field": "item-5-2",
       "role": "label-four",
       "previous": "1TB recommended",
-      "default": "Supporting explanation"
+      "default": "Supporting detail."
     },
     {
       "composition": "three-cards",
@@ -1120,35 +1120,35 @@
       "field": "text-2",
       "role": "label-two",
       "previous": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont Proof of Work (What)}\\\\\\textbullet{} Scarcity vs. privacy\\\\\\textbullet{} Hashes and difficulty adjustment",
-      "default": "\\textbf{Step 2} Supporting detail."
+      "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 1}\\\\Supporting detail."
     },
     {
       "composition": "four-card-grid",
       "field": "item-3-1",
       "role": "label-four",
       "previous": "Timechain (When)",
-      "default": "Supporting explanation"
+      "default": "Concept 3"
     },
     {
       "composition": "four-card-grid",
       "field": "item-3-2",
       "role": "label-six",
       "previous": "\\textbullet{} Durability/Scarcity",
-      "default": "Supporting explanation"
+      "default": "Supporting detail."
     },
     {
       "composition": "four-card-grid",
       "field": "text-4",
       "role": "label-three",
       "previous": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont Proof of Knowledge (Who)}\\\\\\textbullet{} Privacy vs. scarcity\\\\\\textbullet{} Asymmetric cryptography",
-      "default": "\\textbf{Step 3} Supporting detail."
+      "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 2}\\\\Supporting detail."
     },
     {
       "composition": "four-card-grid",
       "field": "text-5",
       "role": "label-five",
       "previous": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont Lightning Network (Where)}\\\\\\textbullet{} Scalability/Privacy",
-      "default": "\\textbf{Step 5} Supporting detail."
+      "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 4}\\\\Supporting detail."
     },
     {
       "composition": "eight-icon-grid",
@@ -1302,77 +1302,77 @@
       "field": "text-2",
       "role": "label-two",
       "previous": "1. issue",
-      "default": "Label"
+      "default": "Item 1"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-3",
       "role": "label-five",
       "previous": "4. lyrics",
-      "default": "Label"
+      "default": "Item 4"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-4",
       "role": "label-eight",
       "previous": "7. announce",
-      "default": "Label"
+      "default": "Item 7"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-5",
       "role": "label-ten",
       "previous": "10. damage",
-      "default": "Label"
+      "default": "Item 10"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-6",
       "role": "label-three",
       "previous": "2. flame",
-      "default": "Label"
+      "default": "Item 2"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-7",
       "role": "label-six",
       "previous": "5. find",
-      "default": "Label"
+      "default": "Item 5"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-8",
       "role": "label-nine",
       "previous": "8. banner",
-      "default": "Label"
+      "default": "Item 8"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-9",
       "role": "label-eleven",
       "previous": "11. civil",
-      "default": "Label"
+      "default": "Item 11"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-10",
       "role": "label-four",
       "previous": "3.sample",
-      "default": "Label"
+      "default": "Item 3"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-11",
       "role": "label-seven",
       "previous": "6. vault",
-      "default": "Label"
+      "default": "Item 6"
     },
     {
       "composition": "twelve-word-grid",
       "field": "text-12",
       "role": "label-twelve",
       "previous": "12. goat",
-      "default": "Label"
+      "default": "Item 12"
     },
     {
       "composition": "three-card-summary",
@@ -1630,50 +1630,50 @@
       "composition": "callout-explanation",
       "field": "item-2-1",
       "role": "label-two",
-      "previous": "Off-chain channels\\hspace{220\\studiounit}scalable payments",
-      "default": "Supporting explanation"
+      "previous": "Off-chain channels",
+      "default": "Input"
     },
     {
       "composition": "callout-explanation",
       "field": "item-2-2",
       "role": "label-four",
       "previous": "\\textbullet{} Privacy = balance / route proofs",
-      "default": "Supporting explanation"
+      "default": "\\textbullet\\enspace First concept"
     },
     {
       "composition": "callout-explanation",
       "field": "item-2-3",
       "role": "label-five",
       "previous": "without revealing data",
-      "default": "Example label"
+      "default": "Supporting detail"
     },
     {
       "composition": "callout-explanation",
       "field": "item-2-4",
       "role": "label-six",
       "previous": "\\textbullet{} Security = compact proofs of channel",
-      "default": "Supporting explanation"
+      "default": "\\textbullet\\enspace Second concept"
     },
     {
       "composition": "callout-explanation",
       "field": "item-2-5",
       "role": "label-seven",
       "previous": "state",
-      "default": "Item"
+      "default": "Detail"
     },
     {
       "composition": "callout-explanation",
       "field": "item-2-6",
       "role": "label-eight",
       "previous": "\\textbullet{} Challenge = Integration with LN protocols,",
-      "default": "Supporting explanation"
+      "default": "\\textbullet\\enspace Third concept"
     },
     {
       "composition": "callout-explanation",
       "field": "item-2-7",
       "role": "label-nine",
       "previous": "efficient verification required",
-      "default": "Supporting explanation"
+      "default": "Supporting detail"
     },
     {
       "composition": "callout-explanation",
@@ -6209,28 +6209,28 @@
       "field": "text-1",
       "role": "label-one",
       "previous": "Prisoner's dilemma",
-      "default": "Example label"
+      "default": "Outcome matrix"
     },
     {
       "composition": "payoff-matrix",
       "field": "text-2",
       "role": "label-two",
       "previous": "Confess",
-      "default": "Supporting explanation"
+      "default": "Option A"
     },
     {
       "composition": "payoff-matrix",
       "field": "text-3",
       "role": "label-four",
       "previous": "Confess",
-      "default": "Supporting explanation"
+      "default": "Option A"
     },
     {
       "composition": "payoff-matrix",
       "field": "title",
       "role": "title",
       "previous": "8",
-      "default": "Slide title"
+      "default": "8"
     },
     {
       "composition": "payoff-matrix",
@@ -6244,14 +6244,14 @@
       "field": "text-6",
       "role": "label-three",
       "previous": "Stay silent",
-      "default": "Item"
+      "default": "Option B"
     },
     {
       "composition": "payoff-matrix",
       "field": "text-7",
       "role": "label-six",
       "previous": "Stay silent",
-      "default": "Supporting explanation"
+      "default": "Option B"
     },
     {
       "composition": "payment-channel",
@@ -7308,245 +7308,245 @@
       "field": "text-2",
       "role": "label-36",
       "previous": "DNS bootstrap\\\\Bolt 10",
-      "default": "Example label"
+      "default": "Item 2"
     },
     {
       "composition": "layers-overview",
       "field": "text-3",
       "role": "label-35",
       "previous": "Network I/O",
-      "default": "Example label"
+      "default": "Item 3"
     },
     {
       "composition": "layers-overview",
       "field": "text-4",
       "role": "label-32",
       "previous": "Noise\\_XK\\\\Secp256k1\\\\Handshakes\\par DH Key Exchange\\\\Key Rotation",
-      "default": "Example label"
+      "default": "Item 4"
     },
     {
       "composition": "layers-overview",
       "field": "text-5",
       "role": "label-34",
       "previous": "Transport\\\\Bolt 08",
-      "default": "Supporting explanation"
+      "default": "Item 5"
     },
     {
       "composition": "layers-overview",
       "field": "text-6",
       "role": "label-33",
       "previous": "Network\\\\connection\\\\layer",
-      "default": "Supporting explanation.\\\\Add your own details."
+      "default": "Layer 5"
     },
     {
       "composition": "layers-overview",
       "field": "text-7",
       "role": "label-29",
       "previous": "Framing and message\\\\format\\\\Bolt 01",
-      "default": "Example label"
+      "default": "Item 7"
     },
     {
       "composition": "layers-overview",
       "field": "text-8",
       "role": "label-28",
       "previous": "Messaging\\\\layer",
-      "default": "Supporting explanation"
+      "default": "Layer 4"
     },
     {
       "composition": "layers-overview",
       "field": "item-9-1",
       "role": "label-22",
       "previous": "Control messages",
-      "default": "Example label"
+      "default": "Item 9"
     },
     {
       "composition": "layers-overview",
       "field": "item-9-2",
       "role": "label-25",
       "previous": "Type: O - 31",
-      "default": "Label"
+      "default": "Item 10"
     },
     {
       "composition": "layers-overview",
       "field": "item-9-3",
       "role": "label-27",
       "previous": "Bolt 09",
-      "default": "Label"
+      "default": "Item 11"
     },
     {
       "composition": "layers-overview",
       "field": "item-9-4",
       "role": "label-31",
       "previous": "Feature bits",
-      "default": "Label"
+      "default": "Item 12"
     },
     {
       "composition": "layers-overview",
       "field": "text-10",
       "role": "label-23",
       "previous": "Channel state machine\\\\Type: 128 - 255",
-      "default": "Example label"
+      "default": "Item 13"
     },
     {
       "composition": "layers-overview",
       "field": "text-11",
       "role": "label-eighteen",
       "previous": "Channel open\\\\and close\\\\Type: 32 - 127",
-      "default": "Supporting explanation.\\\\Add your own details."
+      "default": "Item 14"
     },
     {
       "composition": "layers-overview",
       "field": "text-12",
       "role": "label-21",
       "previous": "Peer-to-\\\\peer layer",
-      "default": "Supporting explanation"
+      "default": "Layer 3"
     },
     {
       "composition": "layers-overview",
       "field": "text-13",
       "role": "label-two",
       "previous": "Payment\\\\layer",
-      "default": "Supporting explanation"
+      "default": "Layer 1"
     },
     {
       "composition": "layers-overview",
       "field": "text-14",
       "role": "label-ten",
       "previous": "Routing\\\\layer",
-      "default": "Supporting explanation"
+      "default": "Layer 2"
     },
     {
       "composition": "layers-overview",
       "field": "text-15",
       "role": "label-three",
       "previous": "Invoices: payment\\\\hash and preimage\\\\Bolt 11",
-      "default": "Example label"
+      "default": "Item 18"
     },
     {
       "composition": "layers-overview",
       "field": "text-16",
       "role": "label-eleven",
       "previous": "Atomic and trustless\\\\multihop contracts",
-      "default": "Example label"
+      "default": "Item 19"
     },
     {
       "composition": "layers-overview",
       "field": "item-17-1",
       "role": "label-thirteen",
       "previous": "Adding, settling,",
-      "default": "Example label"
+      "default": "Item 20"
     },
     {
       "composition": "layers-overview",
       "field": "item-17-2",
       "role": "label-fourteen",
       "previous": "failing HTLCs",
-      "default": "Label"
+      "default": "Item 21"
     },
     {
       "composition": "layers-overview",
       "field": "item-17-3",
       "role": "label-nineteen",
       "previous": "Bolt 02",
-      "default": "Label"
+      "default": "Item 22"
     },
     {
       "composition": "layers-overview",
       "field": "item-18-1",
       "role": "label-five",
       "previous": "Payment attempts",
-      "default": "Example label"
+      "default": "Item 23"
     },
     {
       "composition": "layers-overview",
       "field": "item-18-2",
       "role": "label-four",
       "previous": "trial and error loop",
-      "default": "Example label"
+      "default": "Item 24"
     },
     {
       "composition": "layers-overview",
       "field": "item-18-3",
       "role": "label-nine",
       "previous": "Bolt 04",
-      "default": "Label"
+      "default": "Item 25"
     },
     {
       "composition": "layers-overview",
       "field": "item-18-4",
       "role": "label-twelve",
       "previous": "Source-based onion",
-      "default": "Example label"
+      "default": "Item 26"
     },
     {
       "composition": "layers-overview",
       "field": "item-18-5",
       "role": "label-sixteen",
       "previous": "Type",
-      "default": "Example label"
+      "default": "Item 27"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-1",
       "role": "label-seven",
       "previous": "Path selection",
-      "default": "Label"
+      "default": "Item 28"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-2",
       "role": "label-eight",
       "previous": "Bolt 07",
-      "default": "Label"
+      "default": "Item 29"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-3",
       "role": "label-fifteen",
       "previous": "Routing fees",
-      "default": "Label"
+      "default": "Item 30"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-4",
       "role": "label-seventeen",
       "previous": "Channel metadata",
-      "default": "Example label"
+      "default": "Item 31"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-5",
       "role": "label-twenty",
       "previous": "Gossip relaying",
-      "default": "Label"
+      "default": "Item 32"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-6",
       "role": "label-24",
       "previous": "Query/reply",
-      "default": "Label"
+      "default": "Item 33"
     },
     {
       "composition": "layers-overview",
       "field": "item-19-7",
       "role": "label-26",
       "previous": "Type: 256-511",
-      "default": "Label"
+      "default": "Item 34"
     },
     {
       "composition": "layers-overview",
       "field": "text-20",
       "role": "label-six",
       "previous": "Pathfinding (MPP,\\\\rebalancing, ...)",
-      "default": "Example label"
+      "default": "Item 35"
     },
     {
       "composition": "layers-overview",
       "field": "text-21",
       "role": "label-30",
       "previous": "Type\\\\Length\\\\Value",
-      "default": "Example label"
+      "default": "Item 36"
     },
     {
       "composition": "multi-signature",
@@ -7699,28 +7699,28 @@
       "composition": "blockchain-with-list",
       "field": "text-11",
       "role": "label-eleven",
-      "previous": "T\u2122X1",
+      "previous": "T™X1",
       "default": "Example label"
     },
     {
       "composition": "blockchain-with-list",
       "field": "text-12",
       "role": "label-twelve",
-      "previous": "T\u2122X1",
+      "previous": "T™X1",
       "default": "Example label"
     },
     {
       "composition": "blockchain-with-list",
       "field": "text-13",
       "role": "label-thirteen",
-      "previous": "T\u2122X1",
+      "previous": "T™X1",
       "default": "Example label"
     },
     {
       "composition": "blockchain-with-list",
       "field": "text-14",
       "role": "label-fourteen",
-      "previous": "T\u2122X1",
+      "previous": "T™X1",
       "default": "Example label"
     },
     {
@@ -8184,6 +8184,35 @@
       "field": "caption-four",
       "previous": "Working in Bitcoin",
       "default": "Industry members"
+    },
+    {
+      "composition": "statement-with-credit",
+      "field": "value-two",
+      "role": "author",
+      "previous": "$10^{6}$ s",
+      "default": "Author name",
+      "current": "Value 2"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "text-13",
+      "role": "caption-nine",
+      "previous": "9. cute",
+      "default": "Item 9"
+    },
+    {
+      "composition": "callout-explanation",
+      "field": "result",
+      "role": "result",
+      "previous": "Scalable payments",
+      "default": "Output"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "text-16",
+      "role": "caption-nine",
+      "previous": "9. cute",
+      "default": "Item 9"
     }
   ]
 }

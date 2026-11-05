@@ -123,7 +123,7 @@ if __name__=='__main__':
         names=expand_model_names(ROOT,args.models.split(','))
     output=args.output
     if args.selection:
-        from studio_gallery import selection
+        from studio_review import selected as selection
         entries=json.loads((ROOT/'templates/index.json').read_text(encoding='utf-8'))['templates']
         names=[item['id'] for item in selection(ROOT,entries)]
         output=output or ROOT/'build/review/selection-overleaf'

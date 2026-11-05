@@ -4,6 +4,28 @@ This workflow is for an author or an agent working in a clone. Read the root
 [agent instructions](../AGENTS.md). Studio is the default; Academic is available
 for conventional Beamer authoring. Both use the existing shared themes and icons.
 
+## Reuse a lesson or topic block
+
+Search the [slide guide](slides/index.html?view=decks) before designing a new deck:
+
+```sh
+python3 scripts/deck.py library
+python3 scripts/deck.py library --deck bitcoin-introduction-short --json
+python3 scripts/deck.py library --block hashing --json
+python3 scripts/deck.py new my-talk --from bitcoin-introduction-short
+python3 scripts/deck.py add my-talk --block hashing
+```
+
+A full copy preserves its source sequence; blocks contain content only. Imports
+copy editable slides, measured layout sources, required artwork and references.
+Change these personal copies independently. Shared themes, fonts and icons remain
+common. Read the copied provenance and review flags before using historical data.
+For unchanged educational illustrations, [fixed-content presets](../library/FIXED.md)
+provide calls such as `\studiotemplate{bitcoin-supply}` with no customization fields.
+Choose a parameterized composition when you need different content.
+Duplicate imports, source collisions and bibliography key collisions fail before
+changing the project. See the [library guide](../library/README.md).
+
 ## 1. Start a private project
 
 Install [Python and a compiler backend](SETUP.md), then run from the repository root:
@@ -64,7 +86,7 @@ python3 scripts/deck.py layouts --model icon-cards --json
 python3 scripts/deck.py layouts --all
 ```
 
-Start with featured models. The [grouped gallery](templates/index.html) and
+Start with featured models. The [slide guide](slides/index.html) and
 [individual model guides](STUDIO-MODELS.md) show alternatives. Each variant has its
 own supported palettes and fields; do not assume every layout has a light/blue pair.
 `--json` reports the actual field defaults, types, boxes, source and options.

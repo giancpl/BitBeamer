@@ -8,7 +8,7 @@ Model: `protocol-aggregate-signature` · Family: Technical · Status: **in revie
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-aggregate-signature.tex)
 
-[Open this slide individually](../index.html?template=protocol-aggregate-signature)
+[Open this slide individually](../../slides/index.html?template=protocol-aggregate-signature)
 
 ![Protocol Aggregate Signature](../previews/protocol-aggregate-signature.png)
 

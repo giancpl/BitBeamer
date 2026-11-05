@@ -8,7 +8,7 @@ Model: `key-to-addresses` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/key-to-addresses.tex)
 
-[Open this slide individually](../index.html?template=key-to-addresses)
+[Open this slide individually](../../slides/index.html?template=key-to-addresses)
 
 ![One-to-many mapping](../previews/key-to-addresses.png)
 

@@ -1,0 +1,43 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-9">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-11">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:g mask="url(#part-9)">
+<ns0:g>
+<ns0:g clip-path="url(#part-11)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" fill="#f9f9f9" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0-100H17890V20000H0Z" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M20960 17330H21760V17131.1H21160V16932.2H20960V15937.8H21160V15738.9H21760V15540H20960V15738.9H20760V15937.8H20560V16932.2H20760V17131.1H20960V17330ZM21960 15937.8H21760V15738.9H21960V15937.8ZM21960 15937.8H22160V16932.2H21960V17131.1H21760V16932.2H21960V15937.8ZM21560 16932.2H21360V15937.8H21560V16932.2" fill="#001ce0" fill-rule="evenodd" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M3899.99 17030H3699.99V16630H3499.99V16230H3299.99V15830H3499.99V16230H3699.99V16630H3899.99V17030ZM3100 16930H2900V16730H2700V16530H2500V16330H2700V16130H2900V15930H3100V16130H2900V16330H2700V16530H2900V16730H3100V16930ZM4300 16930H4100V16730H4300V16530H4500V16330H4300V16130H4100V15930H4300V16130H4500V16330H4700V16530H4500V16730H4300V16930" fill="#ffffff" fill-rule="evenodd" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

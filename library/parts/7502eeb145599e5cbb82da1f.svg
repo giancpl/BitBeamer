@@ -1,0 +1,38 @@
+<svg:svg xmlns:ns1="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<svg:defs>
+<svg:mask id="part-2">
+<svg:g>
+<svg:image id="part-4" width="3556" height="2000" ns1:href="resources/8f865b5c05c9842683869de83d2f8635000f8e31f1da7eb2ff5dd0df93395d23.png" />
+</svg:g>
+</svg:mask>
+<svg:clipPath id="part-5">
+<svg:path d="M868.246 534.609H2695.551C2720.191 534.609 2740.164 554.582 2740.164 579.223V1675.785C2740.164 1700.426 2720.191 1720.398 2695.551 1720.398H868.246C843.605 1720.398 823.633 1700.426 823.633 1675.785V579.223C823.633 554.582 843.605 534.609 868.246 534.609ZM868.246 534.609" />
+</svg:clipPath>
+<svg:g id="part-7">
+<svg:clipPath id="part-8">
+<svg:path transform="matrix(1,0,0,1,823.6328,534.6094)" d="M0 0H1916V1185H0Z" />
+</svg:clipPath>
+<svg:g clip-path="url(#part-8)">
+<svg:g transform="matrix(1.7515315,0,0,1.751529,727.0937,534.6094)">
+<svg:image id="part-12" width="1262" height="677" ns1:href="resources/3774674650ce66c6c593297fb0f62cf557d1411bb803258b5ee47ef3e5106fe9.png" />
+</svg:g>
+</svg:g>
+</svg:g>
+<svg:pattern id="part-13" patternUnits="userSpaceOnUse" patternContentUnits="userSpaceOnUse" x="0" y="0" width="1916" height="1185">
+<svg:g transform="matrix(1,-0,-0,1,-823.6328,-534.6094)">
+<svg:use x="0" y="0" ns1:href="#part-7" />
+</svg:g>
+</svg:pattern>
+</svg:defs>
+<svg:g>
+<svg:path d="M0 0H3556V2000H0Z" fill="#f9f9f9" />
+<svg:g mask="url(#part-2)">
+<svg:g>
+<svg:image id="part-20" width="3556" height="2000" ns1:href="resources/bc9d06ccb6ac53378192dae84a8383330c9369d77b04a2ca77897fa3e13978f6.png" />
+</svg:g>
+</svg:g>
+<svg:g clip-path="url(#part-5)">
+<svg:rect transform="matrix(1,0,0,1,823.6328,534.6094)" fill="url(#part-13)" x=".00018310547" y="-.00036621095" width="1916.531" height="1185.789" />
+</svg:g>
+</svg:g>
+</svg:svg>

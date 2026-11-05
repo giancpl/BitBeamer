@@ -8,7 +8,7 @@ Model: `cipher-wheel` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cipher-wheel.tex)
 
-[Open this slide individually](../index.html?template=cipher-wheel)
+[Open this slide individually](../../slides/index.html?template=cipher-wheel)
 
 ![Letter wheel](../previews/cipher-wheel.png)
 

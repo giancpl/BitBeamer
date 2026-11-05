@@ -72,12 +72,12 @@ Original palettes: blue.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Supporting explanation</code> | 32.2% wide × 8.2% high |
+| `label-one` | <code>First item</code> | 32.2% wide × 8.2% high |
 | `title` | <code>Title</code> | 20.5% wide × 15.6% high |
-| `label-three` | <code>Label 3</code> | 28.2% wide × 5.7% high |
-| `label-four` | <code>Supporting explanation</code> | 28.7% wide × 2.5% high |
+| `label-three` | <code>Second item</code> | 28.2% wide × 5.7% high |
+| `label-four` | <code>Supporting detail.</code> | 28.7% wide × 2.5% high |
 | `label-five` | <code>Supporting explanation</code> | 38.1% wide × 6.4% high |
-| `label-six` | <code>Supporting explanation.\\Add your own details.</code> | 48.8% wide × 17.1% high |
+| `label-six` | <code>Third item\\Supporting detail.</code> | 48.8% wide × 17.1% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

@@ -8,7 +8,7 @@ Model: `agenda-with-schedule` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/agenda-with-schedule.tex)
 
-[Open this slide individually](../index.html?template=agenda-with-schedule)
+[Open this slide individually](../../slides/index.html?template=agenda-with-schedule)
 
 ![Agenda With Schedule](../previews/agenda-with-schedule.png)
 

@@ -8,7 +8,7 @@ Model: `five-spoke-values` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/five-spoke-values.tex)
 
-[Open this slide individually](../index.html?template=five-spoke-values)
+[Open this slide individually](../../slides/index.html?template=five-spoke-values)
 
 ![Five Spoke Values](../previews/five-spoke-values.png)
 

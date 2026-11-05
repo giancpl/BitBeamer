@@ -8,7 +8,7 @@ Model: `gallery-collage` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/gallery-collage.tex)
 
-[Open this slide individually](../index.html?template=gallery-collage)
+[Open this slide individually](../../slides/index.html?template=gallery-collage)
 
 ![Asymmetric image collage](../previews/gallery-collage.png)
 

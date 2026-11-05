@@ -8,7 +8,6 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `cover` | `cover` | `pattern` | blue |
 | `cover-light` | `cover` | `wide-pattern` | light |
 | `cover-photo` | `cover` | `photo` | light |
-| `cover-script-blue` | `cover` | `script` | light |
 | `cover-wide-title` | `cover` | `wide-title` | blue |
 | `contents` | `agenda` | `panels` | light |
 | `contents-five` | `agenda` | `panels-five` | light |
@@ -21,10 +20,9 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `glow-statement` | `statement` | `glow` | light |
 | `blue-statement` | `statement` | `plain` | blue |
 | `oversized-word` | `statement` | `clipped` | light |
-| `statement-with-credit` | `statement` | `credit` | light |
 | `icon-spotlight-light` | `icon-spotlight` | `compact` | light |
 | `icon-spotlight-blue` | `icon-spotlight` | `large` | blue |
-| `chat-dialogue` | `dialogue` | `two-messages` | blue |
+| `chat-dialogue` | `dialogue` | `quotation` | blue |
 | `speech-panel` | `dialogue` | `people` | light |
 | `chat-three-messages` | `dialogue` | `three-messages` | light |
 | `people-speech-cards` | `dialogue` | `cards` | light |
@@ -139,11 +137,13 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `protocol-aggregate-signature` | `protocol` | `aggregate` | light |
 | `protocol-eavesdropping` | `protocol` | `observer` | light |
 | `protocol-encrypted-channel` | `protocol` | `channel` | light |
+| `cover-script-blue` | `protocol` | `message-relay` | light |
 | `large-figure` | `large-figure` | `default` | light |
 | `horizontal-timeline` | `timeline` | `horizontal` | light |
 | `vertical-timeline` | `timeline` | `vertical` | light |
 | `alternating-timeline` | `timeline` | `alternating` | light |
 | `personal-timeline` | `timeline` | `milestones` | light |
+| `statement-with-credit` | `timeline` | `three-milestones` | light |
 | `cycle` | `cycle` | `default` | light |
 | `decision-tree` | `decision-tree` | `default` | light |
 | `system-architecture` | `system-architecture` | `default` | light |
@@ -201,3 +201,11 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `apply-qr` | `contact` | `action` | blue |
 | `team-presentation` | `team` | `collage` | light |
 | `closing` | `closing` | `default` | blue |
+
+## Compatible model/variant names
+
+| Previous access | Current access |
+| --- | --- |
+| `cover/script` | `protocol/message-relay` |
+| `statement/credit` | `timeline/three-milestones` |
+| `dialogue/two-messages` | `dialogue/quotation` |

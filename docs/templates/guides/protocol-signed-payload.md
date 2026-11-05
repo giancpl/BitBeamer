@@ -8,7 +8,7 @@ Model: `protocol-signed-payload` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-signed-payload.tex)
 
-[Open this slide individually](../index.html?template=protocol-signed-payload)
+[Open this slide individually](../../slides/index.html?template=protocol-signed-payload)
 
 ![Protocol Signed Payload](../previews/protocol-signed-payload.png)
 

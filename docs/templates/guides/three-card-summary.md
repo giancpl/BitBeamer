@@ -8,7 +8,7 @@ Model: `three-card-summary` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-card-summary.tex)
 
-[Open this slide individually](../index.html?template=three-card-summary)
+[Open this slide individually](../../slides/index.html?template=three-card-summary)
 
 ![Three Card Summary](../previews/three-card-summary.png)
 

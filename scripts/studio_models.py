@@ -7,7 +7,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 # Explicit editorial groupings, not similarity-based or title-based inference.
 GROUPS = [
- ('cover','Presentation cover',[('pattern','cover'),('wide-pattern','cover-light'),('photo','cover-photo'),('script','cover-script-blue'),('wide-title','cover-wide-title')]),
+ ('cover','Presentation cover',[('pattern','cover'),('wide-pattern','cover-light'),('photo','cover-photo'),('wide-title','cover-wide-title')]),
  ('agenda','Agenda',[('panels','contents'),('rail','tabbed-agenda'),('icons','agenda-with-icons'),('schedule','agenda-with-schedule')]),
  ('statement','Statement',[('arrow','statement-arrow'),('glow','glow-statement'),('plain','blue-statement'),('clipped','oversized-word'),('credit','statement-with-credit')]),
  ('icon-spotlight','Icon spotlight',[('compact','icon-spotlight-light'),('large','icon-spotlight-blue')]),
@@ -35,7 +35,7 @@ GROUPS = [
  ('layer-stack','Layered structure',[('purposes','layered-stack'),('overview','layers-overview')]),
  ('binary-tree','Binary tree',[('compact','merkle-tree'),('wide','merkle-tree-wide'),('hierarchy','seed-key-tree')]),
  ('chain','Linked nodes',[('headers','block-chain'),('branches','fork-branches'),('annotated','blockchain-with-list'),('conflict','double-spend-diagram')]),
- ('protocol','Message exchange',[('paired-nodes','protocol-key-pair'),('symmetric','protocol-symmetric'),('public-nodes','protocol-public-keys'),('lock','protocol-key-lock'),('exchange','protocol-key-exchange'),('signed','protocol-signed-message'),('encrypted','protocol-encrypted-message'),('unlock','protocol-unlock-message'),('payload','protocol-signed-payload'),('setup','protocol-key-setup'),('transfer','protocol-token-transfer'),('routing','protocol-token-routing'),('aggregation','protocol-key-aggregation'),('aggregate','protocol-aggregate-signature'),('observer','protocol-eavesdropping'),('channel','protocol-encrypted-channel')]),
+ ('protocol','Message exchange',[('paired-nodes','protocol-key-pair'),('symmetric','protocol-symmetric'),('public-nodes','protocol-public-keys'),('lock','protocol-key-lock'),('exchange','protocol-key-exchange'),('signed','protocol-signed-message'),('encrypted','protocol-encrypted-message'),('unlock','protocol-unlock-message'),('payload','protocol-signed-payload'),('setup','protocol-key-setup'),('transfer','protocol-token-transfer'),('routing','protocol-token-routing'),('aggregation','protocol-key-aggregation'),('aggregate','protocol-aggregate-signature'),('observer','protocol-eavesdropping'),('channel','protocol-encrypted-channel'),('message-relay','cover-script-blue')]),
  ('transformation','Transformation pipeline',[('symmetric','symmetric-encryption'),('asymmetric','asymmetric-encryption'),('flow','encryption-flow'),('mapping','cipher-mapping')]),
  ('contact','Contact and next steps',[('contact','contact-qr'),('action','apply-qr')]),
 ]
@@ -99,6 +99,16 @@ def validate(root, entries):
                 if set(item['fields'].values())- {f['name'] for e in entries if e['id']==item['id'] for f in e['fields']}:
                     raise RuntimeError('Unknown semantic field in '+item['id'])
         if model['default_variant'] not in variants:raise RuntimeError('Missing default variant '+model['id'])
+    aliases=set();by_model={m['id']:m for m in data['models']}
+    for alias in data.get('variant_aliases',[]):
+        key=(alias['model'],alias['variant'])
+        if key in aliases or alias['model'] not in by_model:raise RuntimeError('Invalid compatibility model variant: '+str(key))
+        aliases.add(key)
+        if any(v['id']==alias['variant'] for v in by_model[alias['model']]['variants']):raise RuntimeError('Compatibility variant shadows a current variant: '+str(key))
+        target=by_model.get(alias['target_model'],{})
+        variant=next((v for v in target.get('variants',[]) if v['id']==alias['target_variant']),None)
+        if variant is None:raise RuntimeError('Missing compatibility variant target: '+str(key))
+        if any(set(alias.get('fields',{}).values())-set(c['fields']) for c in variant['compositions']):raise RuntimeError('Unknown compatibility field target: '+str(key))
     if set(assigned)!=known or len(assigned)!=len(known):raise RuntimeError('Every composition must belong to one model variant')
     return len(ids)
 
@@ -150,6 +160,19 @@ def registry(root, entries):
             for p in palettes:
                 chosen=next((c for c in cs if c['native_palette']==p),next(c for c in cs if p in c['palettes']))
                 lines.append(r'\DeclareStudioChoice{'+model['id']+'}{'+v['id']+'}{'+p+'}{'+chosen['id']+'}')
+    for alias in load_models(root).get('variant_aliases',[]):
+        target=next(m for m in load_models(root)['models'] if m['id']==alias['target_model'])
+        variant=next(v for v in target['variants'] if v['id']==alias['target_variant'])
+        cs=[c for c in variant['compositions'] if c['id'] in included]
+        if not cs:continue
+        c=cs[0]
+        if not any(line.startswith(r'\DeclareStudioModel{'+alias['model']+'}') for line in lines):
+            lines.append(r'\DeclareStudioModel{'+alias['model']+'}{'+alias['variant']+'}')
+        lines.append(r'\DeclareStudioVariant{'+alias['model']+'}{'+alias['variant']+'}{'+c['id']+'}{'+c['native_palette']+'}{'+','.join(c['palettes'])+'}')
+        for palette in c['palettes']:
+            lines.append(r'\DeclareStudioChoice{'+alias['model']+'}{'+alias['variant']+'}{'+palette+'}{'+c['id']+'}')
+        for old,new in alias.get('fields',{}).items():
+            lines.append(r'\DeclareStudioSemantic{'+c['id']+'}{'+old+'}{'+c['fields'][new]+'}')
     for name in sorted(included):
         if name not in member:continue
         m,v,c=member[name]
@@ -197,6 +220,8 @@ def generated(root,entries):
         lines.append('| `'+m['id']+'` | '+', '.join('`'+v['id']+'`' for v in m['variants'])+' | `'+next(v['default_source'] for v in m['variants'] if v['id']==m['default_variant'])+'` |')
         for v in m['variants']:
             for c in v['compositions']:migration.append('| `'+c['id']+'` | `'+m['id']+'` | `'+v['id']+'` | '+c['native_palette']+' |')
+    migration+=['','## Compatible model/variant names','','| Previous access | Current access |','| --- | --- |']
+    for a in data.get('variant_aliases',[]):migration.append('| `'+a['model']+'/'+a['variant']+'` | `'+a['target_model']+'/'+a['target_variant']+'` |')
     guides=model_guides(root,entries)
     return {**guides, Path('templates/MODELS.md'):'\n'.join(lines)+'\n',Path('templates/MIGRATION.md'):'\n'.join(migration)+'\n',
             Path('examples/studio-model-catalogue.tex'):model_document(root,entries)}
@@ -204,6 +229,9 @@ def generated(root,entries):
 
 def resolve(root,name,variant=None,palette=None):
     data=load_models(root);member=membership(root);models={m['id']:m for m in data['models']}
+    for alias in data.get('variant_aliases',[]):
+        if name==alias['model'] and variant==alias['variant']:
+            return resolve(root,alias['target_model'],alias['target_variant'],palette)
     if name in models:
         model=models[name];vid=variant or model['default_variant']
         v=next((v for v in model['variants'] if v['id']==vid),None)

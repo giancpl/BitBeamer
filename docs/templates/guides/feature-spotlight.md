@@ -8,7 +8,7 @@ Model: `feature-spotlight` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/feature-spotlight.tex)
 
-[Open this slide individually](../index.html?template=feature-spotlight)
+[Open this slide individually](../../slides/index.html?template=feature-spotlight)
 
 ![Heading beside two feature panels](../previews/feature-spotlight.png)
 

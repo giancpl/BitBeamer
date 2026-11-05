@@ -1,0 +1,65 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="1994.8574" viewBox="0 0 3556 1994.8574">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(1,0,0,-1,0,1994.8574)" d="M0 0H3556V1994.8574H0Z" clip-rule="evenodd" />
+</ns0:clipPath>
+<ns0:g id="part-4">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-7">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-11">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-13">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-15">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-17">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M5390 14958.6H30170C30446.1 14958.6 30670 14734.7 30670 14458.6V-18651.4C30670-18927.6 30446.1-19151.4 30170-19151.4H5390C5113.86-19151.4 4890-18927.6 4890-18651.4V14458.6C4890 14734.7 5113.86 14958.6 5390 14958.6Z" />
+</ns0:clipPath>
+<ns0:mask id="part-19">
+<ns0:g transform="matrix(2.5782305,0,0,2.5782314,488.884,498.99757)">
+<ns0:image id="part-21" width="1000" height="1323" ns1:href="resources/b4062529e8c3de739401eb4f8d59abeb0c606e1822017a8f9597eea9b287697b.png" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-11)">
+<ns0:g>
+<ns0:g clip-path="url(#part-13)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="#001ce0" />
+<ns0:g clip-path="url(#part-15)">
+<ns0:g clip-path="url(#part-17)">
+<ns0:g mask="url(#part-19)">
+<ns0:g transform="matrix(2.5782305,0,0,2.5782314,488.884,498.99757)">
+<ns0:image id="part-32" width="1000" height="1323" ns1:href="resources/268bb92587a845e54745bc3e010931103818c7a715bcc494ca07e04b5de4b891.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

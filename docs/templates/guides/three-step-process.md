@@ -8,7 +8,7 @@ Model: `three-step-process` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-step-process.tex)
 
-[Open this slide individually](../index.html?template=three-step-process)
+[Open this slide individually](../../slides/index.html?template=three-step-process)
 
 ![Three-step process](../previews/three-step-process.png)
 

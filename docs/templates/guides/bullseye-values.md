@@ -8,7 +8,7 @@ Model: `bullseye-values` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/bullseye-values.tex)
 
-[Open this slide individually](../index.html?template=bullseye-values)
+[Open this slide individually](../../slides/index.html?template=bullseye-values)
 
 ![Bullseye Values](../previews/bullseye-values.png)
 

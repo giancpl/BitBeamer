@@ -8,7 +8,7 @@ Model: `cipher-mapping` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cipher-mapping.tex)
 
-[Open this slide individually](../index.html?template=cipher-mapping)
+[Open this slide individually](../../slides/index.html?template=cipher-mapping)
 
 ![Cipher substitution mapping](../previews/cipher-mapping.png)
 

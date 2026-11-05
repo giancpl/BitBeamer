@@ -8,7 +8,7 @@ Model: `line-chart` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/line-chart.tex)
 
-[Open this slide individually](../index.html?template=line-chart)
+[Open this slide individually](../../slides/index.html?template=line-chart)
 
 ![Illustrative line chart](../previews/line-chart.png)
 

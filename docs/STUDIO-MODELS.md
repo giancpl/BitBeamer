@@ -1,6 +1,6 @@
 # Studio models, variants and palettes
 
-Start with the [grouped gallery](templates/index.html) or the [101-model index](../templates/MODELS.md).
+Start with the [slide guide](slides/index.html) or the [101-model index](../templates/MODELS.md).
 The library retains all 196 compositions behind 101 model cards. The featured set contains
 21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.
 
@@ -108,3 +108,12 @@ review. Packaging checks selected approvals and preserves previous stable artifa
 Composition approval and each supplied palette are separate review records in `review.json`.
 Approving a composition does not approve its other colours. Stable packaging requires explicit
 approval of the selected compositions and their included palettes; review packages remain available.
+
+## Corrected composition names
+
+The three-party relay is `protocol` with `variant=message-relay`; `cover-script-blue`
+and `cover/script` remain compatible. The former `statement-with-credit` is a
+`timeline` with `variant=three-milestones`. Quotations use `dialogue` with
+`variant=quotation`, including a single `quote` paragraph and separate `credit`.
+Previous `statement/credit` and `dialogue/two-messages` calls remain accepted.
+See [the migration table](../templates/MIGRATION.md).

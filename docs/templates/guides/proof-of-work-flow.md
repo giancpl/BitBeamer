@@ -8,7 +8,7 @@ Model: `proof-of-work-flow` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/proof-of-work-flow.tex)
 
-[Open this slide individually](../index.html?template=proof-of-work-flow)
+[Open this slide individually](../../slides/index.html?template=proof-of-work-flow)
 
 ![Processing flow](../previews/proof-of-work-flow.png)
 

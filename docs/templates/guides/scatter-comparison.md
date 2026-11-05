@@ -8,7 +8,7 @@ Model: `scatter-comparison` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/scatter-comparison.tex)
 
-[Open this slide individually](../index.html?template=scatter-comparison)
+[Open this slide individually](../../slides/index.html?template=scatter-comparison)
 
 ![Two-axis comparison](../previews/scatter-comparison.png)
 

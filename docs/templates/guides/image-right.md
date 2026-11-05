@@ -8,7 +8,7 @@ Model: `image-right` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/image-right.tex)
 
-[Open this slide individually](../index.html?template=image-right)
+[Open this slide individually](../../slides/index.html?template=image-right)
 
 ![Image on the right](../previews/image-right.png)
 

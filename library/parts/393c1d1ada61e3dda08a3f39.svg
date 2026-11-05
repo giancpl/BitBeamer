@@ -1,0 +1,112 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:clipPath id="part-8">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M6900 6930V3550H5340V6930H6900" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-8)">
+<ns0:image x="534" y="1307" width="156" height="338" ns1:href="resources/29c5c7598a4a30ba02f6e481a573be4ab3d5f153a6b04b266e3476ac7c79fe84.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-12" mask-type="luminance">
+<ns0:use ns1:href="#part-2" />
+</ns0:mask>
+<ns0:clipPath id="part-14">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M5340 3550H6900V6930H5340Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-16">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M6900 6930V3550H5340V6930H6900" />
+</ns0:clipPath>
+<ns0:g id="part-18">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-21">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-21)">
+<ns0:clipPath id="part-24">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M9020 14940V3550H7590V14940H9020" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-24)">
+<ns0:image x="759" y="506" width="143" height="1139" ns1:href="resources/7dd993d71a0ea0f4871504cdf6edc475c4324d7eaede57735f57217156de761f.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-28" mask-type="luminance">
+<ns0:use ns1:href="#part-18" />
+</ns0:mask>
+<ns0:clipPath id="part-30">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M7590 3550H9020V14940H7590Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-32">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M9020 14940V3550H7590V14940H9020" />
+</ns0:clipPath>
+<ns0:g id="part-34">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-37">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-37)">
+<ns0:clipPath id="part-40">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M11200 5280V3550H9710V5280H11200" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-40)">
+<ns0:image x="971" y="1472" width="149" height="173" ns1:href="resources/dd2b2ab2c6636af66f16dcdc87b39d11559cb1296bc110bd305d732da8fe2206.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-44" mask-type="luminance">
+<ns0:use ns1:href="#part-34" />
+</ns0:mask>
+<ns0:clipPath id="part-46">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M9710 3550H11200V5280H9710Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-48">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M11200 5280V3550H9710V5280H11200" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="#f9f9f9" />
+<ns0:g mask="url(#part-12)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-14)">
+<ns0:g clip-path="url(#part-16)">
+<ns0:image x="534" y="1307" width="156" height="338" ns1:href="resources/c84654fd69a1a18833bf2cfcfdb1001a7d15a78a74e11f2332e2af161e05682a.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-28)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-30)">
+<ns0:g clip-path="url(#part-32)">
+<ns0:image x="759" y="506" width="143" height="1139" ns1:href="resources/109cd3be19dc8a06b2934e43d98f16ef8981df9348f8db5b770a603034d64f46.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-44)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-46)">
+<ns0:g clip-path="url(#part-48)">
+<ns0:image x="971" y="1472" width="149" height="173" ns1:href="resources/d59c919677343d8880b5da57cbdede4590e0697ed7d38d58312ff2bbd9f0f65b.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M17657.7 13687.7C17647.9 13697.4 17632.1 13697.4 17622.3 13687.7L17463.2 13528.6C17453.5 13518.8 17453.5 13503 17463.2 13493.2 17473 13483.5 17488.8 13483.5 17498.6 13493.2L17640 13634.6 17781.4 13493.2C17791.2 13483.5 17807 13483.5 17816.8 13493.2 17826.5 13503 17826.5 13518.8 17816.8 13528.6L17657.7 13687.7ZM17640 13670H17615V4260H17665V13670H17640" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M32717.7 5122.32C32727.4 5132.09 32727.4 5147.91 32717.7 5157.68L32558.6 5316.78C32548.8 5326.54 32533 5326.54 32523.2 5316.78 32513.5 5307.01 32513.5 5291.18 32523.2 5281.42L32664.6 5140 32523.2 4998.58C32513.5 4988.82 32513.5 4972.99 32523.2 4963.22 32533 4953.46 32548.8 4953.46 32558.6 4963.22L32717.7 5122.32ZM32700 5140V5165H16730V5115H32700V5140" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M32700 13670 32122.7 13675.4 32406.6 13172.7 32700 13670ZM17600 5140 17624.6 5096.46 32332.8 13405.1 32308.2 13448.7 32283.6 13492.2 17575.4 5183.54 17600 5140" fill="#001ce0" />
+</ns0:g>
+</ns0:svg>

@@ -8,7 +8,7 @@ Model: `milestone-cards` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/milestone-cards.tex)
 
-[Open this slide individually](../index.html?template=milestone-cards)
+[Open this slide individually](../../slides/index.html?template=milestone-cards)
 
 ![Numbered milestone cards](../previews/milestone-cards.png)
 

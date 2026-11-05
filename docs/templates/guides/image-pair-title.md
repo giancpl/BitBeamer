@@ -8,7 +8,7 @@ Model: `image-pair-title` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/image-pair-title.tex)
 
-[Open this slide individually](../index.html?template=image-pair-title)
+[Open this slide individually](../../slides/index.html?template=image-pair-title)
 
 ![Image Pair Title](../previews/image-pair-title.png)
 

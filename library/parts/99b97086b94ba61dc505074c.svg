@@ -1,0 +1,108 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2006" viewBox="0 0 3556 2006">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 0H35560V20060H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 20060H35560V0H0V20060" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-9">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 0H35560V20060H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 20060H35560V0H0V20060" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-11">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 0H35560V20060H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-13">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 0H35560V20060H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-15">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M16686.9 21491.6H39592.2V-1413.74H16686.9V21491.6Z" />
+</ns0:clipPath>
+<ns0:mask id="part-17">
+<ns0:g transform="matrix(2.2368458,0,0,2.2368458,1668.6901,-143.156)">
+<ns0:image id="part-19" width="1024" height="1024" ns1:href="resources/b85abc736674223dd853cae60487ddc1f258d9e7ddc8fa0572872c6951d9abb9.jpg" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:g mask="url(#part-9)">
+<ns0:g>
+<ns0:g clip-path="url(#part-11)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M0 20060H35560V0H0V20060" fill="#001ce0" />
+<ns0:g clip-path="url(#part-13)">
+<ns0:g clip-path="url(#part-15)">
+<ns0:g mask="url(#part-17)">
+<ns0:g transform="matrix(2.2368458,0,0,2.2368458,1668.6901,-143.156)">
+<ns0:image id="part-29" width="1024" height="1024" ns1:href="resources/e306ed6779bc3efa805f139f5b464b37105a5390591e93f386a09e29ce5e510b.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4182.9 17964.6H4359.42V17788.1H4182.9V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4359.42 18141.2H4535.94V17964.7H4359.42V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4359.42 17964.6H4535.94V17788.1H4359.42V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4535.92 18494.2H4712.44V18317.7H4535.92V18494.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4535.95 18317.7H4712.46V18141.2H4535.95V18317.7" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4535.95 18141.2H4712.46V17964.7H4535.95V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4535.95 17964.6H4712.46V17788.1H4535.95V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4535.95 17788.1H4712.46V17613.1H4535.95V17788.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4712.45 18317.7H4888.96V18141.2H4712.45V18317.7" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4712.45 18141.2H4888.96V17964.7H4712.45V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4712.45 17964.6H4888.96V17788.1H4712.45V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4712.45 17613.1H4888.96V17436.6H4712.45V17613.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4712.45 17436.6H4888.96V17260.1H4712.45V17436.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4712.45 17260.1H4888.96V17083.6H4712.45V17260.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4888.95 18141.2H5065.46V17964.7H4888.95V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4888.95 17964.6H5065.46V17788.1H4888.95V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4888.95 17788.1H5065.46V17613.1H4888.95V17788.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4888.95 17613.1H5065.46V17436.6H4888.95V17613.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4888.97 17436.6H5065.49V17260.1H4888.97V17436.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M4888.97 17083.6H5065.49V16907H4888.97V17083.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 18141.2H5242.01V17964.7H5065.49V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 17964.6H5242.01V17788.1H5065.49V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 17788.1H5242.01V17613.1H5065.49V17788.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 17613.1H5242.01V17436.6H5065.49V17613.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 17436.6H5242.01V17260.1H5065.49V17436.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 17260.1H5242.01V17083.6H5065.49V17260.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5065.49 17083.6H5242.01V16907H5065.49V17083.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5242.02 18141.2H5418.54V17964.7H5242.02V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5242.02 17964.6H5418.54V17788.1H5242.02V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5242.02 17788.1H5418.54V17613.1H5242.02V17788.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5242.02 17613.1H5418.54V17436.6H5242.02V17613.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5242.02 17436.6H5418.54V17260.1H5242.02V17436.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5242.02 17083.6H5418.54V16907H5242.02V17083.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5418.52 18317.7H5595.04V18141.2H5418.52V18317.7" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5418.52 18141.2H5595.04V17964.7H5418.52V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5418.52 17964.6H5595.04V17788.1H5418.52V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5418.52 17613.1H5595.04V17436.6H5418.52V17613.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5418.52 17436.6H5595.04V17260.1H5418.52V17436.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5418.52 17260.1H5595.04V17083.6H5418.52V17260.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5595.04 18494.2H5771.56V18317.7H5595.04V18494.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5595.04 18317.7H5771.56V18141.2H5595.04V18317.7" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5595.04 18141.2H5771.56V17964.7H5595.04V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5595.04 17964.6H5771.56V17788.1H5595.04V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5595.04 17788.1H5771.56V17613.1H5595.04V17788.1" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5771.54 18141.2H5948.06V17964.7H5771.54V18141.2" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5771.54 17964.6H5948.06V17788.1H5771.54V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M5948.09 17964.6H6123.11V17788.1H5948.09V17964.6" fill="#ffffff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2006)" d="M7481.75 18494.2H7336.25V18349.6H7190.76V18060.5H7336.25V17915.9H7481.75V18060.5H7627.25V18349.6H7481.75V18494.2ZM7481.75 18349.6V18205H7336.25V18349.6H7481.75ZM7045.26 18349.6H6899.76V18205H6754.27V18060.5H6608.77V17337.6H6754.27V17193H6899.76V17048.4H7045.26V16903.8H7336.25V17048.4H7045.26V17193H6899.76V17482.1H7336.25V17626.7H7481.75V17482.1H7918.24V17193H7772.74V17048.4H7481.75V16903.8H7772.74V17048.4H7918.24V17193H8063.74V17337.6H8209.23V18060.5H8063.74V18205H7918.24V18349.6H7772.74V18205H7918.24V18060.5H7772.74V17915.9H7627.25V17771.3H7190.76V17915.9H7045.26V18060.5H6899.76V18205H7045.26V18349.6ZM6899.76 18060.5H6754.27V17482.1H6899.76V18060.5ZM7918.24 18060.5H8063.74V17482.1H7918.24V18060.5ZM7190.76 17337.6V17193H7627.25V17337.6H7190.76" fill="#ffffff" fill-rule="evenodd" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

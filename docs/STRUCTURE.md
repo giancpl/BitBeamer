@@ -22,6 +22,7 @@ uses installed TeX. On Windows use `py -3` instead of `python3`.
 | [assets](ASSETS.md) | Shared icon source artwork and prepared library | Use the preparation workflow |
 | `images/bitpolito/` | Theme logos and cover artwork | Keep sources, prepared files and manifests together |
 | `images/studio/` | Prepared parts, retained derived sources, neutral images and icon contrast alternatives | Use the artwork workflow |
+| `docs/slides/` | Unified generated preview/command guide; authored browser assets | Use sync; edit browser assets for presentation changes |
 | [docs](README.md) | Authored guides and generated visual references | Follow generated-file notices |
 | [scripts](../scripts/README.md) | Build, review, validation and maintenance tools | When maintaining tooling |
 | `tests/` | Portable regression tests and TeX fixtures | When verifying changed behaviour |
@@ -39,7 +40,7 @@ Its measured fields belong in `templates/index.json`; grouping, variants and nam
 field mappings belong in `templates/models.json`. Review notes, approval and ordered
 selection belong only in `templates/review.json`.
 
-`review.py sync` generates registries, guides, gallery pages, indices, the CSV sheet
+`review.py sync` generates registries, guides, the unified guide, indices, the CSV sheet
 and the selected showcase. `review.py slide <id>` compiles one source and refreshes
 its preview. `review.py check` verifies freshness without changing files. Prepared
 artwork and browser previews are retained in Git so a clone can build and browse
@@ -77,3 +78,13 @@ python3 scripts/review.py check
 For artwork preparation see [maintenance](MAINTENANCE.md); for candidates and stable
 exports see [releasing](RELEASING.md). Each Overleaf ZIP has its own `main.tex` and
 contains only that design's selected dependencies, prepared icons and relevant guides.
+
+## Ready-content lesson library
+
+`library/` contains editable English lessons and reusable topic blocks, distinct
+from neutral `templates/` layouts and ignored `presentations/` personal projects.
+Use the [slide guide](slides/index.html?view=decks), [usage guide](../library/README.md), and
+[maintenance guide](../library/MAINTENANCE.md). Prepared parts keep conversion out
+of normal builds. Lesson PDFs and original/replica comparisons stay local under
+`build/library/` and `design-references/figma/official-decks/`. Existing Overleaf
+packages do not include the lesson corpus.

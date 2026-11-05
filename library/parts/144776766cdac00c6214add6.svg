@@ -1,0 +1,43 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-9">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-11">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:g mask="url(#part-9)">
+<ns0:g>
+<ns0:g clip-path="url(#part-11)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="#f9f9f9" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H17705.6V-95.6094H0V20000" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M20600 17600H20843.3V17356.7H21330V17113.3H21573.3V16626.7H21816.7V16140H22060V15653.3H21816.7V15410H20113.3V15653.3H19870V16140H20113.3V16626.7H20356.7V17113.3H20600V17600ZM21330 16626.7V16383.3H21086.7V16626.7H21330ZM21330 16140H20600V15896.7H20843.3V15653.3H21086.7V15896.7H21330V16140ZM20843.3 16626.7V16383.3H20600V16626.7H20843.3" fill="#001ce0" fill-rule="evenodd" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2905 17600H3875V17356.7H3147.5V17113.3H2905V15896.7H3147.5V15653.3H3875V15410H2905V15653.3H2662.5V15896.7H2420V17113.3H2662.5V17356.7H2905V17600ZM4117.5 15896.7H3875V15653.3H4117.5V15896.7ZM4117.5 15896.7H4360V17113.3H4117.5V17356.7H3875V17113.3H4117.5V15896.7ZM3632.5 17113.3H3390V15896.7H3632.5V17113.3" fill="#ffffff" fill-rule="evenodd" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

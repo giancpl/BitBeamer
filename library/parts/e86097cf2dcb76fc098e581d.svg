@@ -1,0 +1,79 @@
+<svg:svg xmlns:ns1="http://www.w3.org/1999/xlink" xmlns:svg="http://www.w3.org/2000/svg" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<svg:defs>
+<svg:mask id="part-2">
+<svg:g>
+<svg:image id="part-4" width="3556" height="2000" ns1:href="resources/1e0a6b3d55700c8c76c60ac1d90aaa5c6e819221499cfb659eade15ba23d7262.png" />
+</svg:g>
+</svg:mask>
+<svg:clipPath id="part-5">
+<svg:path d="M0 0H3556V2000H0Z" />
+</svg:clipPath>
+<svg:g id="part-7">
+<svg:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<svg:g>
+<svg:clipPath id="part-10">
+<svg:path d="M1644 272H3254V1871H1644Z" />
+</svg:clipPath>
+<svg:g clip-path="url(#part-10)">
+<svg:mask id="part-13">
+<svg:g>
+<svg:image id="part-15" width="3556" height="2000" ns1:href="resources/8c88f307fcb4ddb5aa610a46088f4ba3018528f373c2cb935e283a37347ebc8c.png" />
+</svg:g>
+</svg:mask>
+<svg:g mask="url(#part-13)">
+<svg:g>
+<svg:image id="part-18" width="3556" height="2000" ns1:href="resources/6abc5ad91ba022776621603a5b2a9caa6e4311137460e31103d04d73620cc6db.png" />
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+<svg:mask id="part-19" mask-type="alpha">
+<svg:use ns1:href="#part-7" />
+</svg:mask>
+<svg:clipPath id="part-21">
+<svg:path d="M1644 272H3254V1871H1644Z" />
+</svg:clipPath>
+<svg:clipPath id="part-23">
+<svg:path d="M0 0H3556V2000H0Z" />
+</svg:clipPath>
+<svg:clipPath id="part-25">
+<svg:path d="M1644 272H3254V1871H1644Z" />
+</svg:clipPath>
+<svg:clipPath id="part-27">
+<svg:path transform="matrix(1,0,0,1,1644,272)" d="M0 0H1610V1599H0Z" />
+</svg:clipPath>
+<svg:clipPath id="part-29">
+<svg:path transform="matrix(1,0,0,1,1644,272)" d="M0 0H1610V1598.996H0Z" />
+</svg:clipPath>
+</svg:defs>
+<svg:g>
+<svg:path d="M0 0H3556V2000H0Z" fill="#f9f9f9" />
+<svg:g mask="url(#part-2)">
+<svg:g>
+<svg:image id="part-35" width="3556" height="2000" ns1:href="resources/ec0860df4b76f15ebb27c7ab317ff3aa7ce436e80b9f1d543f1cc2ca6397647b.png" />
+</svg:g>
+</svg:g>
+<svg:g>
+<svg:g clip-path="url(#part-5)">
+<svg:g mask="url(#part-19)">
+<svg:g>
+<svg:g clip-path="url(#part-21)">
+<svg:g clip-path="url(#part-23)">
+<svg:g clip-path="url(#part-25)">
+<svg:g clip-path="url(#part-27)">
+<svg:g clip-path="url(#part-29)">
+<svg:g transform="matrix(2.7664309,0,0,2.76643,1644,272)">
+<svg:image id="part-46" width="582" height="578" ns1:href="resources/40ce61d9571d34267a499478d913b0f7e33777cddf907338a7528caac8d82e8d.png" />
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:g>
+</svg:svg>

@@ -8,7 +8,7 @@ Model: `section-divider` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/section-divider.tex)
 
-[Open this slide individually](../index.html?template=section-divider)
+[Open this slide individually](../../slides/index.html?template=section-divider)
 
 ![Section divider with line](../previews/section-divider.png)
 

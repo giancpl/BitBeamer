@@ -8,7 +8,7 @@ Model: `photo-collage-banner` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/photo-collage-banner.tex)
 
-[Open this slide individually](../index.html?template=photo-collage-banner)
+[Open this slide individually](../../slides/index.html?template=photo-collage-banner)
 
 ![Photo Collage Banner](../previews/photo-collage-banner.png)
 

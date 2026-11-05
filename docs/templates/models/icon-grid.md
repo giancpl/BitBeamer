@@ -44,17 +44,29 @@ Original palettes: light.
 | Field | Default | Available space |
 | --- | --- | --- |
 | `title` | <code>Slide title</code> | 23.0% wide × 8.5% high |
-| `label-two` | <code>Label 2</code> | 14.9% wide × 4.0% high |
-| `label-three` | <code>Label 3</code> | 14.8% wide × 4.1% high |
-| `label-four` | <code>Label 4</code> | 14.8% wide × 4.6% high |
-| `label-five` | <code>Label 5</code> | 14.9% wide × 4.6% high |
-| `label-six` | <code>Label 6</code> | 14.8% wide × 4.1% high |
-| `label-seven` | <code>Label 7</code> | 14.8% wide × 4.1% high |
-| `label-eight` | <code>Label 8</code> | 14.9% wide × 4.0% high |
-| `label-nine` | <code>Label 9</code> | 14.8% wide × 4.1% high |
-| `label-ten` | <code>Label 10</code> | 14.8% wide × 4.7% high |
-| `label-eleven` | <code>Label 11</code> | 14.9% wide × 4.0% high |
-| `label-twelve` | <code>Label 12</code> | 14.8% wide × 4.6% high |
+| `label-two` | <code>Item 1</code> | 14.9% wide × 4.0% high |
+| `label-three` | <code>Item 2</code> | 14.8% wide × 4.1% high |
+| `label-four` | <code>Item 3</code> | 14.8% wide × 4.6% high |
+| `label-five` | <code>Item 4</code> | 14.9% wide × 4.6% high |
+| `label-six` | <code>Item 5</code> | 14.8% wide × 4.1% high |
+| `label-seven` | <code>Item 6</code> | 14.8% wide × 4.1% high |
+| `label-eight` | <code>Item 7</code> | 14.9% wide × 4.0% high |
+| `label-nine` | <code>Item 8</code> | 14.8% wide × 4.1% high |
+| `label-ten` | <code>Item 10</code> | 14.8% wide × 4.7% high |
+| `label-eleven` | <code>Item 11</code> | 14.9% wide × 4.0% high |
+| `label-twelve` | <code>Item 12</code> | 14.8% wide × 4.6% high |
+| `caption-one` | <code>Item 1</code> | 14.9% wide × 4.0% high |
+| `caption-two` | <code>Item 2</code> | 14.8% wide × 4.1% high |
+| `caption-three` | <code>Item 3</code> | 14.8% wide × 4.6% high |
+| `caption-four` | <code>Item 4</code> | 14.9% wide × 4.6% high |
+| `caption-five` | <code>Item 5</code> | 14.8% wide × 4.1% high |
+| `caption-six` | <code>Item 6</code> | 14.8% wide × 4.1% high |
+| `caption-seven` | <code>Item 7</code> | 14.9% wide × 4.0% high |
+| `caption-eight` | <code>Item 8</code> | 14.8% wide × 4.1% high |
+| `caption-nine` | <code>Item 9</code> | 14.8% wide × 4.1% high |
+| `caption-ten` | <code>Item 10</code> | 14.8% wide × 4.7% high |
+| `caption-eleven` | <code>Item 11</code> | 14.9% wide × 4.0% high |
+| `caption-twelve` | <code>Item 12</code> | 14.8% wide × 4.6% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

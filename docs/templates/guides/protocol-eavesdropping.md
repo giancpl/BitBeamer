@@ -8,7 +8,7 @@ Model: `protocol-eavesdropping` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-eavesdropping.tex)
 
-[Open this slide individually](../index.html?template=protocol-eavesdropping)
+[Open this slide individually](../../slides/index.html?template=protocol-eavesdropping)
 
 ![Protocol Eavesdropping](../previews/protocol-eavesdropping.png)
 

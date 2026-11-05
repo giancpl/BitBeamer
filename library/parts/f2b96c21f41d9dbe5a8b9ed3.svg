@@ -1,0 +1,54 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="1994.8574" viewBox="0 0 3556 1994.8574">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(1,0,0,-1,0,1994.8574)" d="M0 0H3556V1994.8574H0Z" clip-rule="evenodd" />
+</ns0:clipPath>
+<ns0:g id="part-4">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-7">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-11">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-13">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:mask id="part-15">
+<ns0:g transform="matrix(1.8520835,0,0,1.8520833,0,-2.6968995)">
+<ns0:image id="part-17" width="1920" height="1080" ns1:href="resources/01a1834d1a10ffafad6042d2498a292f8624433872d81a9df5c5f1a503ceed55.png" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-11)">
+<ns0:g>
+<ns0:g clip-path="url(#part-13)">
+<ns0:g mask="url(#part-15)">
+<ns0:g transform="matrix(1.8520835,0,0,1.8520833,0,-2.6968995)">
+<ns0:image id="part-25" width="1920" height="1080" ns1:href="resources/1aa4c83d063ef1fd78069bdbacbf7ecbdf1e3b0ff2aa9ab900c6d6b701432f19.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

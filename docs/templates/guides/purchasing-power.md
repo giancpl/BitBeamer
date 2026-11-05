@@ -8,7 +8,7 @@ Model: `purchasing-power` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/purchasing-power.tex)
 
-[Open this slide individually](../index.html?template=purchasing-power)
+[Open this slide individually](../../slides/index.html?template=purchasing-power)
 
 ![Value over time](../previews/purchasing-power.png)
 

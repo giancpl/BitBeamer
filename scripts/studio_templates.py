@@ -160,7 +160,7 @@ def catalogue_markdown(entries, aliases=()):
     lines = ['# Advanced Studio composition catalogue', '', '[Browse grouped models](MODELS.md) or compile the compact `examples/studio-model-catalogue.tex` first.', '',
              'Generated from [index.json](index.json). Each entry inserts one complete, editable 16:9 frame.',
              'Read [the template guide](../docs/TEMPLATES.md) for setup and customization.',
-             'Browse the [offline visual gallery](../docs/templates/index.html) or compile',
+             'Browse the [offline visual gallery](../docs/slides/index.html) or compile',
              '[the full-size PDF catalogue](../examples/studio-template-catalogue.tex).', '',
              '| PDF page | Template | Command | Editable source |', '| --- | --- | --- | --- |']
     for page, e in enumerate(entries, 1):
@@ -175,12 +175,12 @@ def catalogue_markdown(entries, aliases=()):
 
 
 def gallery_html(entries, root=ROOT):
-    from studio_gallery import gallery_html as render_gallery
-    return render_gallery(entries, root)
+    from slide_guide import redirect_page
+    return redirect_page('../slides/index.html')
 
 
 def selected_documents(root, entries):
-    from studio_gallery import selection, example_command
+    from studio_review import selected as selection, example_command
     chosen = selection(root, entries)
     by_id = {entry['id']: entry for entry in entries}
     document = catalogue_document([by_id[item['id']] for item in chosen])
@@ -189,7 +189,7 @@ def selected_documents(root, entries):
     lines = ['# Selected Studio models', '',
              f'The showcase presents {model_count} models. The ledger retains {len(chosen)} selected composition choices, including alternate variants. Selection is not graphical approval.',
              'All other commands remain in the [full archive](CATALOGUE.md).',
-             'Browse the [paginated gallery](../docs/templates/index.html) or build the',
+             'Browse the [paginated gallery](../docs/slides/index.html) or build the',
              '[copyable selected deck](../examples/studio-selected-templates.tex):', '',
              '```sh', 'python3 scripts/build.py examples/studio-selected-templates.tex build/review', '```', '',
              'Output: `build/review/studio-selected-templates.pdf`. Use `py -3` on Windows;',
@@ -290,6 +290,8 @@ def prepare_catalogue(root=ROOT, check=False):
     if check:
         check_gallery(root)
         check_prepared_resources(root)
+    from slide_guide import refresh_if_present
+    refresh_if_present(root,check=check)
     return len(inspect_templates(root))
 
 

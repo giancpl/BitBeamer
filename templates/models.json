@@ -62,24 +62,6 @@
           ]
         },
         {
-          "id": "script",
-          "default_source": "cover-script-blue",
-          "compositions": [
-            {
-              "id": "cover-script-blue",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "text-2",
-                "subtitle": "text-3",
-                "decoration": "title"
-              }
-            }
-          ]
-        },
-        {
           "id": "wide-title",
           "default_source": "cover-wide-title",
           "compositions": [
@@ -330,27 +312,6 @@
               }
             }
           ]
-        },
-        {
-          "id": "credit",
-          "default_source": "statement-with-credit",
-          "compositions": [
-            {
-              "id": "statement-with-credit",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-3",
-                "label-three": "text-5",
-                "label-four": "text-2",
-                "label-five": "text-6",
-                "label-six": "text-4"
-              }
-            }
-          ]
         }
       ]
     },
@@ -396,12 +357,12 @@
     },
     {
       "id": "dialogue",
-      "title": "Dialogue",
+      "title": "Speech and quotations",
       "category": "Statements",
-      "default_variant": "two-messages",
+      "default_variant": "quotation",
       "variants": [
         {
-          "id": "two-messages",
+          "id": "quotation",
           "default_source": "chat-dialogue",
           "compositions": [
             {
@@ -411,8 +372,8 @@
                 "blue"
               ],
               "fields": {
-                "title": "title",
-                "label-two": "text-2"
+                "quote": "title",
+                "credit": "text-2"
               }
             }
           ]
@@ -1242,7 +1203,8 @@
                 "label-six": "item-2-4",
                 "label-seven": "item-2-5",
                 "label-eight": "item-2-6",
-                "label-nine": "item-2-7"
+                "label-nine": "item-2-7",
+                "result": "result"
               }
             }
           ]
@@ -1343,7 +1305,19 @@
                 "label-nine": "text-8",
                 "label-ten": "text-5",
                 "label-eleven": "text-9",
-                "label-twelve": "text-12"
+                "label-twelve": "text-12",
+                "caption-one": "text-2",
+                "caption-two": "text-6",
+                "caption-three": "text-10",
+                "caption-four": "text-3",
+                "caption-five": "text-7",
+                "caption-six": "text-11",
+                "caption-seven": "text-4",
+                "caption-eight": "text-8",
+                "caption-nine": "text-13",
+                "caption-ten": "text-5",
+                "caption-eleven": "text-9",
+                "caption-twelve": "text-12"
               }
             }
           ]
@@ -3127,6 +3101,24 @@
               }
             }
           ]
+        },
+        {
+          "id": "message-relay",
+          "default_source": "cover-script-blue",
+          "compositions": [
+            {
+              "id": "cover-script-blue",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "payload": "title",
+                "message-one": "text-2",
+                "message-two": "text-3"
+              }
+            }
+          ]
         }
       ]
     },
@@ -3254,6 +3246,28 @@
                 "label-nine": "text-11",
                 "label-ten": "text-4",
                 "label-eleven": "text-6"
+              }
+            }
+          ]
+        },
+        {
+          "id": "three-milestones",
+          "default_source": "statement-with-credit",
+          "compositions": [
+            {
+              "id": "statement-with-credit",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-one": "text-3",
+                "value-one": "text-2",
+                "label-two": "text-5",
+                "value-two": "value-two",
+                "label-three": "text-4",
+                "value-three": "text-6"
               }
             }
           ]
@@ -4298,7 +4312,9 @@
                 "label-four": "text-3",
                 "label-five": "text-5",
                 "label-six": "text-7",
-                "title": "title"
+                "title": "title",
+                "value-one": "title",
+                "heading-title": "text-1"
               }
             }
           ]
@@ -4510,7 +4526,8 @@
                 "label-eighteen": "text-8",
                 "label-nineteen": "text-12",
                 "label-twenty": "text-15",
-                "label-21": "item-3-3"
+                "label-21": "item-3-3",
+                "caption-nine": "text-16"
               }
             }
           ]
@@ -4917,6 +4934,46 @@
           ]
         }
       ]
+    }
+  ],
+  "variant_aliases": [
+    {
+      "model": "cover",
+      "variant": "script",
+      "target_model": "protocol",
+      "target_variant": "message-relay",
+      "fields": {
+        "title": "message-one",
+        "subtitle": "message-two",
+        "decoration": "payload"
+      },
+      "note": "Compatibility access for a protocol diagram previously misclassified as a cover."
+    },
+    {
+      "model": "statement",
+      "variant": "credit",
+      "target_model": "timeline",
+      "target_variant": "three-milestones",
+      "fields": {
+        "title": "title",
+        "label-two": "label-one",
+        "label-three": "label-two",
+        "label-four": "value-one",
+        "label-five": "value-three",
+        "label-six": "label-three"
+      },
+      "note": "Compatibility access for the figma-0667 timeline previously named statement-with-credit."
+    },
+    {
+      "model": "dialogue",
+      "variant": "two-messages",
+      "target_model": "dialogue",
+      "target_variant": "quotation",
+      "fields": {
+        "title": "quote",
+        "text-2": "credit"
+      },
+      "note": "Compatibility access for the existing quote and attribution panel."
     }
   ]
 }

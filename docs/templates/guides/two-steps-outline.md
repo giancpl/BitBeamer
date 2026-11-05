@@ -8,7 +8,7 @@ Model: `two-steps-outline` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-steps-outline.tex)
 
-[Open this slide individually](../index.html?template=two-steps-outline)
+[Open this slide individually](../../slides/index.html?template=two-steps-outline)
 
 ![Two Steps Outline](../previews/two-steps-outline.png)
 

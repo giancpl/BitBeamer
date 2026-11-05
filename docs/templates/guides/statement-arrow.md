@@ -8,7 +8,7 @@ Model: `statement-arrow` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/statement-arrow.tex)
 
-[Open this slide individually](../index.html?template=statement-arrow)
+[Open this slide individually](../../slides/index.html?template=statement-arrow)
 
 ![Statement with incoming arrow](../previews/statement-arrow.png)
 

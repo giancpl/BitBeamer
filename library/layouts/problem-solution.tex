@@ -1,0 +1,20 @@
+% Two shared 400 x 400 panels; complete shadow bounds are retained.
+\input{library/layouts/components.tex}
+\studiolibrarypalette{light}
+\studiolibraryfield{title-one}{1}{First concept}
+\studiolibraryfield{title-two}{2}{Second concept}
+\studiolibraryfield{caption-one}{3}{First explanation}
+\studiolibraryfield{caption-two}{4}{Second explanation}
+\studiodeclarefield{graphic-one}{\asset[width=215\studiounit]{face-sad}}
+\studiodeclarefield{graphic-two}{\asset[width=215\studiounit]{face-smile}}
+\studioapplyfields
+\studiolibrarycanvas{3556}{2000}{problem-solution}{studio-paper}{
+\studiolibrarytext{title-one}{632.5}{666}{1000}{174}{120}{138}{001CE0}{\bfseries\centering}
+\studiolibrarytext{title-two}{1922.5}{666}{1000}{174}{120}{138}{001CE0}{\bfseries\centering}
+\studiolessoniconcard{932.5}{782}{graphic-one}
+\studiolessoniconcard{2222.5}{782}{graphic-two}
+\path[fill=bitpolito] (1663,992.5) rectangle (1818,1007.5);
+\path[fill=bitpolito] (1818,957) -- (1893,1000) -- (1818,1043) -- cycle;
+\studiolibrarytext{caption-one}{632.5}{1334}{1000}{240}{80}{95}{001CE0}{\bfseries\centering}
+\studiolibrarytext{caption-two}{1922.5}{1334}{1000}{240}{80}{95}{001CE0}{\bfseries\centering}
+}

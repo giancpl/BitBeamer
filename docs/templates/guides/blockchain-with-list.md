@@ -8,7 +8,7 @@ Model: `blockchain-with-list` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/blockchain-with-list.tex)
 
-[Open this slide individually](../index.html?template=blockchain-with-list)
+[Open this slide individually](../../slides/index.html?template=blockchain-with-list)
 
 ![Blockchain With List](../previews/blockchain-with-list.png)
 

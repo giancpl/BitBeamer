@@ -8,7 +8,7 @@ Model: `callout-explanation` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/callout-explanation.tex)
 
-[Open this slide individually](../index.html?template=callout-explanation)
+[Open this slide individually](../../slides/index.html?template=callout-explanation)
 
 ![Callout Explanation](../previews/callout-explanation.png)
 
@@ -48,6 +48,7 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `text/8` | `item-2-6` | List or contents entry |
 | `text/9` | `item-2-7` | List or contents entry |
 | `text/3` | `text-3` | Editable text |
+| `text/10` | `result` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -67,7 +68,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 ```latex
 \studiotemplate[
   text/1={Slide title},
-  text/2={Supporting explanation}
+  text/2={Input}
 ]{callout-explanation}
 ```
 
@@ -84,7 +85,7 @@ Create `my-slide.tex` in the project root and paste:
 \begin{document}
 \studiotemplate[
   text/1={Slide title},
-  text/2={Supporting explanation}
+  text/2={Input}
 ]{callout-explanation}
 \end{document}
 ```
@@ -106,14 +107,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | --- | --- | --- | --- | --- |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 40.6% wide × 30.8% high | <code>\studiopaletteimage[width=1443\studiounit]{images/studio/collection/figma-0924-part-01.pdf}</code> |
 | <code>title</code> | Main text (text) | upper left | 29.4% wide × 15.1% high | <code>Slide title</code> |
-| <code>item-2-1</code> | List or contents entry (text) | middle left | 40.7% wide × 5.0% high | <code>Supporting explanation</code> |
-| <code>item-2-2</code> | List or contents entry (text) | middle left | 34.5% wide × 4.9% high | <code>Supporting explanation</code> |
-| <code>item-2-3</code> | List or contents entry (text) | middle left | 20.0% wide × 4.9% high | <code>Label 5</code> |
-| <code>item-2-4</code> | List or contents entry (text) | middle left | 35.5% wide × 4.9% high | <code>Supporting explanation</code> |
-| <code>item-2-5</code> | List or contents entry (text) | middle left | 5.5% wide × 4.0% high | <code>Item</code> |
-| <code>item-2-6</code> | List or contents entry (text) | lower left | 38.9% wide × 4.9% high | <code>Supporting explanation</code> |
-| <code>item-2-7</code> | List or contents entry (text) | lower left | 25.5% wide × 4.9% high | <code>Supporting explanation</code> |
+| <code>item-2-1</code> | List or contents entry (text) | middle left | 16.9% wide × 5.0% high | <code>Input</code> |
+| <code>item-2-2</code> | List or contents entry (text) | middle left | 34.5% wide × 4.9% high | <code>\textbullet\enspace First concept</code> |
+| <code>item-2-3</code> | List or contents entry (text) | middle left | 20.0% wide × 4.9% high | <code>Supporting detail</code> |
+| <code>item-2-4</code> | List or contents entry (text) | middle left | 35.5% wide × 4.9% high | <code>\textbullet\enspace Second concept</code> |
+| <code>item-2-5</code> | List or contents entry (text) | middle left | 5.5% wide × 4.0% high | <code>Detail</code> |
+| <code>item-2-6</code> | List or contents entry (text) | lower left | 38.9% wide × 4.9% high | <code>\textbullet\enspace Third concept</code> |
+| <code>item-2-7</code> | List or contents entry (text) | lower left | 25.5% wide × 4.9% high | <code>Supporting detail</code> |
 | <code>text-3</code> | Editable text (text) | middle right | 35.9% wide × 19.9% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>result</code> | Editable text (text) | middle centre | 17.4% wide × 5.0% high | <code>Output</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

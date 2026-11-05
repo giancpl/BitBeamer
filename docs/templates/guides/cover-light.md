@@ -8,7 +8,7 @@ Model: `cover-light` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-light.tex)
 
-[Open this slide individually](../index.html?template=cover-light)
+[Open this slide individually](../../slides/index.html?template=cover-light)
 
 ![Cover Light](../previews/cover-light.png)
 

@@ -8,7 +8,7 @@ Model: `triangle-tradeoff` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/triangle-tradeoff.tex)
 
-[Open this slide individually](../index.html?template=triangle-tradeoff)
+[Open this slide individually](../../slides/index.html?template=triangle-tradeoff)
 
 ![Three-way trade-off](../previews/triangle-tradeoff.png)
 

@@ -135,7 +135,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
              f"Model: `{name}` · Family: {entry['category']} · Status: **{entry.get('status', 'in review')}**.", '',
              f'[Getting started]({home}) · [All slide guides]({index}) · [Content API]({api}) · [Current LaTeX source]({source})', '']
     if not portable:
-        lines += [f'[Open this slide individually](../index.html?template={name})', '',
+        lines += [f'[Open this slide individually](../../slides/index.html?template={name})', '',
                   f"![{entry['title']}](../previews/{name}.png)", '',
                   'The preview shows the shipped defaults. The thin bottom label belongs to the review catalogue.', '']
     from studio_models import membership
@@ -238,7 +238,7 @@ def guides_index(entries, selected, portable=False):
     lines = ['# Slide-by-slide guides', '',
              f'{len(entries)} current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.', '']
     if not portable:
-        lines += ['[Getting started](../USING-STUDIO.md) · [Visual gallery](index.html)', '',
+        lines += ['[Getting started](../USING-STUDIO.md) · [Slide guide](../slides/index.html)', '',
                   'Start with the selected layouts, then browse the full collection by family.', '',
                   '## Selected layouts', '']
         by_id = {entry['id']: entry for entry in entries}
@@ -300,7 +300,7 @@ All reconstructed compositions remain in graphical review until explicitly appro
     first=next(iter(model_files)).stem if model_files else entries[0]['id']
     text=text[:start]+'```latex\n'+r'\studiosetup{palette=light}'+'\n'+r'\studiotemplate{'+first+'}\n```'+text[end:]
     text=text.replace('The library retains all 194 compositions behind 100 model cards. The featured set contains\n21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.','This standalone project contains only the models and variants listed in MODELS.md.')
-    text=text.replace('templates/index.html','MODELS.md').replace('../templates/MODELS.md','MODELS.md').replace('templates/GUIDES.md','TEMPLATES.md')
+    text=text.replace('slides/index.html','MODELS.md').replace('templates/index.html','MODELS.md').replace('../templates/MODELS.md','MODELS.md').replace('templates/GUIDES.md','TEMPLATES.md')
     text=text.replace('[theme commands](STUDIO.md)','theme commands')
     files['STUDIO-MODELS.md']=text.encode('utf-8')
     return files

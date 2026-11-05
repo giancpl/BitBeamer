@@ -1,0 +1,109 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:clipPath id="part-8">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M23180 6090V2410H21280V6090H23180" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-8)">
+<ns0:image x="2128" y="1391" width="190" height="368" ns1:href="resources/c87d9d6c9c4683edde2b01d7608859902a68fc1fc4d27e107c073fa0dac989ea.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-12" mask-type="luminance">
+<ns0:use ns1:href="#part-2" />
+</ns0:mask>
+<ns0:clipPath id="part-14">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M21280 2410H23180V6090H21280Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-16">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M23180 6090V2410H21280V6090H23180" />
+</ns0:clipPath>
+<ns0:g id="part-18">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-21">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-21)">
+<ns0:clipPath id="part-24">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M26974.6 16300V2410H25230.7V16300H26974.6" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-24)">
+<ns0:image x="2523" y="370" width="175" height="1389" ns1:href="resources/a4b374dd0cf8e887e5b9e4843ad1d6d3882b6b80f2f906d07183f04bae5cf5a0.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-28" mask-type="luminance">
+<ns0:use ns1:href="#part-18" />
+</ns0:mask>
+<ns0:clipPath id="part-30">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M25230.7 2410H26974.6V16300H25230.7Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-32">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M26974.6 16300V2410H25230.7V16300H26974.6" />
+</ns0:clipPath>
+<ns0:g id="part-34">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-37">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-37)">
+<ns0:clipPath id="part-40">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M19630 4110V2410H17820V4110H19630" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-40)">
+<ns0:image x="1782" y="1589" width="181" height="170" ns1:href="resources/266101dd164d71d59031cca913686941e568f522468c8ebae8e917fd7a7230a3.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-44" mask-type="luminance">
+<ns0:use ns1:href="#part-34" />
+</ns0:mask>
+<ns0:clipPath id="part-46">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M17820 2410H19630V4110H17820Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-48">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M19630 4110V2410H17820V4110H19630" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="#f9f9f9" />
+<ns0:g mask="url(#part-12)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-14)">
+<ns0:g clip-path="url(#part-16)">
+<ns0:image x="2128" y="1391" width="190" height="368" ns1:href="resources/b788e5a65c87263c299cd161329e471d05e2bfacdf0ca5af172532261e4fe998.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-28)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-30)">
+<ns0:g clip-path="url(#part-32)">
+<ns0:image x="2523" y="370" width="175" height="1389" ns1:href="resources/71300823afbac0107d47488f2eecf297292e852712021bb078f74f3112882e40.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-44)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-46)">
+<ns0:g clip-path="url(#part-48)">
+<ns0:image x="1782" y="1589" width="181" height="170" ns1:href="resources/f7f6069e57f7b319e6ecb094423d54d8b524c9102fbefd752af35e670b667929.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

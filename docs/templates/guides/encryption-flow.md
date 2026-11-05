@@ -8,7 +8,7 @@ Model: `encryption-flow` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/encryption-flow.tex)
 
-[Open this slide individually](../index.html?template=encryption-flow)
+[Open this slide individually](../../slides/index.html?template=encryption-flow)
 
 ![Encryption and decryption pipeline](../previews/encryption-flow.png)
 

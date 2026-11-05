@@ -1,0 +1,147 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="1994.8574" viewBox="0 0 3556 1994.8574">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(1,0,0,-1,0,1994.8574)" d="M0 0H3556V1994.8574H0Z" clip-rule="evenodd" />
+</ns0:clipPath>
+<ns0:clipPath id="part-4">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M5780 1998.57H7340V5378.57H5780Z" />
+</ns0:clipPath>
+<ns0:g id="part-6">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-9">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-9)">
+<ns0:clipPath id="part-12">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M5780 1998.57H7340V5378.57H5780Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-12)">
+<ns0:image x="578" y="1457" width="156" height="338" ns1:href="resources/29c5c7598a4a30ba02f6e481a573be4ab3d5f153a6b04b266e3476ac7c79fe84.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-16" mask-type="luminance">
+<ns0:use ns1:href="#part-6" />
+</ns0:mask>
+<ns0:clipPath id="part-18">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M5780 1998.57H7340V5378.57H5780Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-20">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M5780 1998.57H7340V5378.57H5780Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-22">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M5780 1998.57H7340V5378.57H5780Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-24">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M8030 1998.57H9460V13388.57H8030Z" />
+</ns0:clipPath>
+<ns0:g id="part-26">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-29">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-29)">
+<ns0:clipPath id="part-32">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M8030 1998.57H9460V13388.57H8030Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-32)">
+<ns0:image x="803" y="656" width="143" height="1139" ns1:href="resources/3820d942760e9c09c0aa9be47d9e563721d5235ce866259ac027a2d576e836af.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-36" mask-type="luminance">
+<ns0:use ns1:href="#part-26" />
+</ns0:mask>
+<ns0:clipPath id="part-38">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M8030 1998.57H9460V13388.6H8030Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-40">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M8030 1998.57H9460V13388.57H8030Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-42">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M8030 1998.57H9460V13388.57H8030Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-44">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M10150 1998.57H11640V3728.5699H10150Z" />
+</ns0:clipPath>
+<ns0:g id="part-46">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-49">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 0H35560V19948.6H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-49)">
+<ns0:clipPath id="part-52">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M10150 1998.57H11640V3728.5699H10150Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-52)">
+<ns0:image x="1015" y="1622" width="149" height="173" ns1:href="resources/dd2b2ab2c6636af66f16dcdc87b39d11559cb1296bc110bd305d732da8fe2206.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-56" mask-type="luminance">
+<ns0:use ns1:href="#part-46" />
+</ns0:mask>
+<ns0:clipPath id="part-58">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M10150 1998.57H11640V3728.57H10150Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-60">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M10150 1998.57H11640V3728.5699H10150Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-62">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M10150 1998.57H11640V3728.5699H10150Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="#f9f9f9" />
+<ns0:g clip-path="url(#part-4)">
+<ns0:g mask="url(#part-16)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-18)">
+<ns0:g clip-path="url(#part-20)">
+<ns0:g clip-path="url(#part-22)">
+<ns0:image x="578" y="1457" width="156" height="338" ns1:href="resources/c84654fd69a1a18833bf2cfcfdb1001a7d15a78a74e11f2332e2af161e05682a.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-24)">
+<ns0:g mask="url(#part-36)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-38)">
+<ns0:g clip-path="url(#part-40)">
+<ns0:g clip-path="url(#part-42)">
+<ns0:image x="803" y="656" width="143" height="1139" ns1:href="resources/109cd3be19dc8a06b2934e43d98f16ef8981df9348f8db5b770a603034d64f46.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-44)">
+<ns0:g mask="url(#part-56)">
+<ns0:g opacity=".7">
+<ns0:g clip-path="url(#part-58)">
+<ns0:g clip-path="url(#part-60)">
+<ns0:g clip-path="url(#part-62)">
+<ns0:image x="1015" y="1622" width="149" height="173" ns1:href="resources/d59c919677343d8880b5da57cbdede4590e0697ed7d38d58312ff2bbd9f0f65b.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M18097.7 12136.3C18087.9 12146 18072.1 12146 18062.3 12136.3L17903.2 11977.2C17893.5 11967.4 17893.5 11951.6 17903.2 11941.8 17913 11932 17928.8 11932 17938.6 11941.8L18080 12083.2 18221.4 11941.8C18231.2 11932 18247 11932 18256.8 11941.8 18266.5 11951.6 18266.5 11967.4 18256.8 11977.2L18097.7 12136.3ZM18080 12118.6H18055V2708.57H18105V12118.6H18080" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M33157.7 3570.9C33167.4 3580.66 33167.4 3596.49 33157.7 3606.25L32998.6 3765.35C32988.8 3775.11 32973 3775.11 32963.2 3765.35 32953.5 3755.59 32953.5 3739.76 32963.2 3730L33104.6 3588.57 32963.2 3447.15C32953.5 3437.39 32953.5 3421.56 32963.2 3411.8 32973 3402.04 32988.8 3402.04 32998.6 3411.8L33157.7 3570.9ZM33140 3588.57V3613.57H17170V3563.57H33140V3588.57" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M33140 12118.6 32562.7 12124 32846.6 11621.3 33140 12118.6ZM18040 3588.57 18064.6 3545.04 32772.8 11853.7 32748.2 11897.2 32723.6 11940.8 18015.4 3632.11 18040 3588.57" fill="#001ce0" />
+</ns0:g>
+</ns0:g>
+</ns0:svg>

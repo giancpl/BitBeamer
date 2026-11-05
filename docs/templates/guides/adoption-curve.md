@@ -8,7 +8,7 @@ Model: `adoption-curve` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/adoption-curve.tex)
 
-[Open this slide individually](../index.html?template=adoption-curve)
+[Open this slide individually](../../slides/index.html?template=adoption-curve)
 
 ![Adoption curve with stages](../previews/adoption-curve.png)
 

@@ -34,27 +34,15 @@ def original(task):
         surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,3556,2000);ctx=cairo.Context(surface);ctx.set_source_rgb(249/255,249/255,249/255);ctx.paint();vp=Rsvg.Rectangle();vp.x=vp.y=0;vp.width=3556;vp.height=2000;handle.render_document(ctx,vp);surface.write_to_png(str(target));cache.write_text(json.dumps(key)+'\n', encoding='utf-8')
     return reference
 
-def navigation(root):
-    base='../../../'
-    links='<nav data-review-navigation><p><a href="'+base+'build/review/bitbeamer-studio-review.pdf">Complete indexed PDF</a> · <a href="'+base+'templates/REVIEW.csv">Review sheet</a> · <a href="'+base+'docs/templates/index.html">Replica gallery and fields</a> · <a href="'+base+'docs/studio-parts/index.html">Reusable parts</a></p>'
-    links+='<details><summary>Family comparison PDFs and Overleaf projects</summary><ul>'
-    for pdf in sorted((root/'build/review/comparisons').glob('*.pdf')):
-        links+='<li><a href="'+base+pdf.relative_to(root).as_posix()+'">'+html.escape(pdf.stem.replace('-',' ').title())+' comparisons</a></li>'
-    index=root/'build/review/overleaf/index.json'
-    if index.exists():
-        for archive in json.loads(index.read_text(encoding='utf-8'))['archives']:
-            links+='<li><a href="'+base+'build/review/overleaf/'+archive['archive']+'">'+archive['archive']+'</a> ('+str(len(archive['models']))+' models)</li>'
-    return links+'</ul></details></nav>'
-
 
 def main():
     parser=argparse.ArgumentParser(description=__doc__);parser.add_argument('--pdf',type=Path,default=ROOT/'build/review/studio-template-catalogue.pdf');parser.add_argument('--geometry-pdf',type=Path,default=ROOT/'build/review/studio-collection-geometry.pdf');parser.add_argument('--workers',type=int,default=2);parser.add_argument('--skip-render',action='store_true',help='Reuse existing PDF raster pages after checking their source hashes');parser.add_argument('--refresh-pages',help='Explicit comma-separated changed PDF page numbers; other cached pages must be unchanged')
-    parser.add_argument('--gallery-only', action='store_true', help='Refresh lightweight web previews from cached comparisons without compiling or rendering PDFs')
+    parser.add_argument('--gallery-only', action='store_true', help='Compatibility option: refresh local comparison data for the unified guide')
     args=parser.parse_args()
     if args.gallery_only:
-        from studio_gallery import prepare_comparison_gallery
-        prepare_comparison_gallery(ROOT, OUT, navigation(ROOT))
-        print(OUT / 'index.html')
+        from guide_comparisons import sync
+        sync(ROOT)
+        print(ROOT / 'docs/slides/index.html')
         return
     from PIL import Image,ImageChops,ImageFilter
     import numpy as np
@@ -136,7 +124,7 @@ def main():
                         thumbnail=Image.open(img).convert('RGB');thumbnail.thumbnail((1140,642));buffer=io.BytesIO();thumbnail.save(buffer,format='PNG');buffer.seek(0);image=cairo.ImageSurface.create_from_png(buffer);ctx.save();ctx.translate(x,45);ctx.scale(570/image.get_width(),321/image.get_height());ctx.set_source_surface(image);ctx.paint();ctx.restore()
                 ctx.set_font_size(9);ctx.move_to(24,397);ctx.show_text('Original / editable reconstruction. Inter and English copy intentionally differ. Status: '+e.get('status','in review')+'.');ctx.show_page()
     (OUT/'measurements.json').write_text(json.dumps(report,indent=2)+'\n', encoding='utf-8')
-    from studio_gallery import prepare_comparison_gallery
-    prepare_comparison_gallery(ROOT, OUT, navigation(ROOT))
-    print(OUT/'index.html')
+    from guide_comparisons import sync
+    sync(ROOT)
+    print(ROOT/'docs/slides/index.html')
 if __name__=='__main__':main()

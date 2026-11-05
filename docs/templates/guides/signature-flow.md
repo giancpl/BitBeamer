@@ -8,7 +8,7 @@ Model: `signature-flow` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/signature-flow.tex)
 
-[Open this slide individually](../index.html?template=signature-flow)
+[Open this slide individually](../../slides/index.html?template=signature-flow)
 
 ![Input and output flow](../previews/signature-flow.png)
 

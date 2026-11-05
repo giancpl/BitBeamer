@@ -8,7 +8,7 @@ Model: `square-icon-grid` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/square-icon-grid.tex)
 
-[Open this slide individually](../index.html?template=square-icon-grid)
+[Open this slide individually](../../slides/index.html?template=square-icon-grid)
 
 ![Square Icon Grid](../previews/square-icon-grid.png)
 

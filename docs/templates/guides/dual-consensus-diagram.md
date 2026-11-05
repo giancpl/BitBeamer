@@ -8,7 +8,7 @@ Model: `dual-consensus-diagram` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/dual-consensus-diagram.tex)
 
-[Open this slide individually](../index.html?template=dual-consensus-diagram)
+[Open this slide individually](../../slides/index.html?template=dual-consensus-diagram)
 
 ![Two-system comparison](../previews/dual-consensus-diagram.png)
 

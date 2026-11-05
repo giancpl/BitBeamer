@@ -64,7 +64,7 @@
           ],
           "font_size": 64.0,
           "leading": 75.0,
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 3,
@@ -684,7 +684,7 @@
             0,
             3
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 3,
@@ -853,8 +853,8 @@
     },
     {
       "id": "cover-script-blue",
-      "title": "Cover Script Blue",
-      "category": "Opening",
+      "title": "Three-party message relay",
+      "category": "Diagrams",
       "references": [
         "figma-0545"
       ],
@@ -950,7 +950,7 @@
         {
           "name": "title",
           "type": "text",
-          "default": "PRESENTATION",
+          "default": "Encoded payload",
           "box": [
             1322.301,
             1227.73,
@@ -978,7 +978,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Presentation\\\\title",
+          "default": "First message",
           "box": [
             378.789,
             667.227,
@@ -1006,7 +1006,7 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Label 2",
+          "default": "Second message",
           "box": [
             2557.789,
             667.227,
@@ -1042,11 +1042,12 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Classified as a message relay after inspecting figma-0545. The old composition ID and cover/script adapter remain compatible."
       ],
       "slot_parts": [],
-      "model": "cover",
-      "variant": "script",
+      "model": "protocol",
+      "variant": "message-relay",
       "native_palette": "light",
       "palettes": [
         "light"
@@ -2454,7 +2455,7 @@
     {
       "id": "chat-dialogue",
       "number": 19,
-      "title": "Chat dialogue",
+      "title": "Quotation with attribution",
       "category": "Statements",
       "source": "templates/studio/chat-dialogue.tex",
       "references": [
@@ -2486,7 +2487,7 @@
         {
           "name": "title",
           "type": "text",
-          "default": "Slide title",
+          "default": "A concise quotation, kept as one paragraph. Replace it with the words you want to highlight.",
           "box": [
             790.57,
             635.816,
@@ -2514,7 +2515,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Source or reference",
           "box": [
             791.492,
             1281.52,
@@ -2550,7 +2551,7 @@
       ],
       "slot_parts": [],
       "model": "dialogue",
-      "variant": "two-messages",
+      "variant": "quotation",
       "native_palette": "blue",
       "palettes": [
         "blue"
@@ -2668,7 +2669,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Date or supporting note",
           "box": [
             491.824,
             423.004,
@@ -2686,7 +2687,7 @@
           "source_node": [
             3
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 2,
@@ -3454,8 +3455,8 @@
     },
     {
       "id": "statement-with-credit",
-      "title": "Statement With Credit",
-      "category": "Statements",
+      "title": "Three milestone timeline",
+      "category": "Diagrams",
       "references": [
         "figma-0667"
       ],
@@ -3477,7 +3478,7 @@
             741,
             251
           ],
-          "default": "\\studiopaletteimage[width=741\\studiounit]{images/studio/collection/figma-0667-part-01.pdf}",
+          "default": "\\studiopaletteimage[width=741\\studiounit]{images/studio/collection/figma-0667-part-05.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
@@ -3567,7 +3568,7 @@
         {
           "name": "title",
           "type": "text",
-          "default": "Slide title",
+          "default": "Timeline",
           "box": [
             1087.2692333333334,
             321.047,
@@ -3595,7 +3596,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Label 4",
+          "default": "Value 1",
           "box": [
             793.246,
             852.859,
@@ -3613,7 +3614,7 @@
           "source_node": [
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 4,
@@ -3623,7 +3624,7 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Label 2",
+          "default": "Event 1",
           "box": [
             792.406,
             708.125,
@@ -3651,7 +3652,7 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "Label 6",
+          "default": "Event 3",
           "box": [
             1500.41,
             1365.69,
@@ -3679,7 +3680,7 @@
         {
           "name": "text-5",
           "type": "text",
-          "default": "Label 3",
+          "default": "Event 2",
           "box": [
             2196.78,
             706.688,
@@ -3707,7 +3708,7 @@
         {
           "name": "text-6",
           "type": "text",
-          "default": "Label 5",
+          "default": "Value 3",
           "box": [
             1501.25,
             1205.86,
@@ -3725,11 +3726,39 @@
           "source_node": [
             7
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 5,
             "key": "text/5"
+          }
+        },
+        {
+          "name": "value-two",
+          "type": "text",
+          "default": "Value 2",
+          "box": [
+            2196.78,
+            852.859,
+            600,
+            88.3331
+          ],
+          "source_ink_box": [
+            2196.78,
+            852.859,
+            270,
+            68
+          ],
+          "font_size": 67.9493,
+          "leading": 78.8212,
+          "font_weight": "regular",
+          "alignment": "left",
+          "source_node": [
+            6
+          ],
+          "slot": {
+            "number": 7,
+            "key": "text/7"
           }
         }
       ],
@@ -3745,11 +3774,14 @@
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
         "English text boxes expanded within existing blank space while preserving source anchors: text-2, text-4, text-6.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Verified figma-0667 is a timeline; public legacy composition and statement/credit remain compatible.",
+        "Reuses the existing blank gradient panel for the right milestone, separating its embedded numeric label into the editable value-two field.",
+        "Numeric value fields retain Regular weight; event labels retain Semibold as in the original."
       ],
       "slot_parts": [],
-      "model": "statement",
-      "variant": "credit",
+      "model": "timeline",
+      "variant": "three-milestones",
       "native_palette": "light",
       "palettes": [
         "light"
@@ -5199,7 +5231,7 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "\\textbf{Step 4}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}",
+          "default": "\\textbf{Step 3}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}",
           "box": [
             1901.0,
             1086.7,
@@ -5238,7 +5270,7 @@
         {
           "name": "text-5",
           "type": "text",
-          "default": "\\textbf{Step 5}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}",
+          "default": "\\textbf{Step 4}\\\\{\\fontsize{36\\studiounit}{43\\studiounit}\\selectfont Supporting detail.}",
           "box": [
             1901.0,
             1398.85,
@@ -6902,7 +6934,7 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "First item",
           "box": [
             2033.8282,
             589.707,
@@ -6929,7 +6961,7 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
+          "default": "Third item\\\\Supporting detail.",
           "box": [
             1466.2299999999996,
             1162.711,
@@ -6956,7 +6988,7 @@
         {
           "name": "item-5-1",
           "type": "text",
-          "default": "Label 3",
+          "default": "Second item",
           "box": [
             1976.99,
             865.532,
@@ -6983,7 +7015,7 @@
         {
           "name": "item-5-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Supporting detail.",
           "box": [
             1975.86,
             949.816,
@@ -7637,7 +7669,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "\\textbf{Step 2}\\\\{\\fontsize{61.96\\studiounit}{71.8736\\studiounit}\\selectfont Supporting detail.}",
+          "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 1}\\\\Supporting detail.",
           "box": [
             579.961,
             712.656,
@@ -7655,26 +7687,26 @@
           "source_node": [
             3
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 2,
             "key": "text/2"
           },
           "block": {
-            "heading": "Step 2",
+            "heading": "Concept 1",
             "body": "Supporting detail.",
             "heading_size": 75.16,
             "heading_leading": 87.1856,
             "body_size": 61.96,
             "body_leading": 71.8736,
-            "body_weight": "semibold"
+            "body_weight": "regular"
           }
         },
         {
           "name": "item-3-1",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Concept 3",
           "box": [
             612.875,
             1287.03,
@@ -7702,7 +7734,7 @@
         {
           "name": "item-3-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Supporting detail.",
           "box": [
             652.895,
             1376.44,
@@ -7720,7 +7752,7 @@
           "source_node": [
             5
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 6,
@@ -7730,7 +7762,7 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "\\textbf{Step 3}\\\\{\\fontsize{61.96\\studiounit}{71.8736\\studiounit}\\selectfont Supporting detail.}",
+          "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 2}\\\\Supporting detail.",
           "box": [
             1951.96,
             712.812,
@@ -7748,26 +7780,26 @@
           "source_node": [
             7
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 3,
             "key": "text/3"
           },
           "block": {
-            "heading": "Step 3",
+            "heading": "Concept 2",
             "body": "Supporting detail.",
             "heading_size": 75.16,
             "heading_leading": 87.1856,
             "body_size": 61.96,
             "body_leading": 71.8736,
-            "body_weight": "semibold"
+            "body_weight": "regular"
           }
         },
         {
           "name": "text-5",
           "type": "text",
-          "default": "\\textbf{Step 5}\\\\{\\fontsize{61.96\\studiounit}{71.8736\\studiounit}\\selectfont Supporting detail.}",
+          "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 4}\\\\Supporting detail.",
           "box": [
             1951.96,
             1287.03,
@@ -7785,20 +7817,20 @@
           "source_node": [
             9
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 5,
             "key": "text/5"
           },
           "block": {
-            "heading": "Step 5",
+            "heading": "Concept 4",
             "body": "Supporting detail.",
             "heading_size": 75.16,
             "heading_leading": 87.1856,
             "body_size": 61.96,
             "body_leading": 71.8736,
-            "body_weight": "semibold"
+            "body_weight": "regular"
           }
         }
       ],
@@ -9139,7 +9171,7 @@
             678,
             280
           ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-11.pdf}",
+          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-10.pdf}",
           "slot": {
             "number": 9,
             "key": "graphic/9",
@@ -9193,7 +9225,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Label 2",
+          "default": "Item 1",
           "box": [
             842.532,
             732.566,
@@ -9221,7 +9253,7 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Label 5",
+          "default": "Item 4",
           "box": [
             842.5333333333333,
             1015.57,
@@ -9249,7 +9281,7 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "Label 8",
+          "default": "Item 7",
           "box": [
             842.5333333333333,
             1299.199,
@@ -9277,7 +9309,7 @@
         {
           "name": "text-5",
           "type": "text",
-          "default": "Label 10",
+          "default": "Item 10",
           "box": [
             843.5466666666666,
             1581.441,
@@ -9305,7 +9337,7 @@
         {
           "name": "text-6",
           "type": "text",
-          "default": "Label 3",
+          "default": "Item 2",
           "box": [
             1514.04,
             732.441,
@@ -9333,7 +9365,7 @@
         {
           "name": "text-7",
           "type": "text",
-          "default": "Label 6",
+          "default": "Item 5",
           "box": [
             1514.04,
             1015.539,
@@ -9361,7 +9393,7 @@
         {
           "name": "text-8",
           "type": "text",
-          "default": "Label 9",
+          "default": "Item 8",
           "box": [
             1514.5466666666666,
             1298.441,
@@ -9389,7 +9421,7 @@
         {
           "name": "text-9",
           "type": "text",
-          "default": "Label 11",
+          "default": "Item 11",
           "box": [
             1513.5333333333333,
             1581.57,
@@ -9417,7 +9449,7 @@
         {
           "name": "text-10",
           "type": "text",
-          "default": "Label 4",
+          "default": "Item 3",
           "box": [
             2185.548,
             732.441,
@@ -9445,7 +9477,7 @@
         {
           "name": "text-11",
           "type": "text",
-          "default": "Label 7",
+          "default": "Item 6",
           "box": [
             2185.5466666666666,
             1015.441,
@@ -9473,7 +9505,7 @@
         {
           "name": "text-12",
           "type": "text",
-          "default": "Label 12",
+          "default": "Item 12",
           "box": [
             2185.04,
             1581.441,
@@ -9496,6 +9528,34 @@
           "slot": {
             "number": 12,
             "key": "text/12"
+          }
+        },
+        {
+          "name": "text-13",
+          "type": "text",
+          "default": "Item 9",
+          "box": [
+            2185.04,
+            1298.44,
+            527.92,
+            82.02
+          ],
+          "source_ink_box": [
+            2343.21,
+            1298.44,
+            213.34,
+            47.32
+          ],
+          "font_size": 62.08,
+          "leading": 72.013,
+          "source_node": [
+            23
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 13,
+            "key": "text/13"
           }
         }
       ],
@@ -9670,7 +9730,7 @@
             2,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 4,
@@ -9728,7 +9788,7 @@
             3,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 5,
@@ -9786,7 +9846,7 @@
             4,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 7,
@@ -9898,7 +9958,7 @@
           "source_node": [
             1
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 1,
@@ -9927,7 +9987,7 @@
             2,
             1
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 2,
@@ -9956,7 +10016,7 @@
             2,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 4,
@@ -9985,7 +10045,7 @@
             3,
             1
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 3,
@@ -10014,7 +10074,7 @@
             3,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 5,
@@ -10043,7 +10103,7 @@
             4,
             1
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 6,
@@ -10072,7 +10132,7 @@
             4,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 8,
@@ -10101,7 +10161,7 @@
             5,
             1
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 7,
@@ -10130,7 +10190,7 @@
             5,
             2
           ],
-          "font_weight": "semibold",
+          "font_weight": "regular",
           "alignment": "left",
           "slot": {
             "number": 9,
@@ -10859,11 +10919,11 @@
         {
           "name": "item-2-1",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Input",
           "box": [
             252.666,
             805.277,
-            1445.5489333333333,
+            600,
             99.44926666666657
           ],
           "source_ink_box": [
@@ -10887,7 +10947,7 @@
         {
           "name": "item-2-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "\\textbullet\\enspace First concept",
           "box": [
             295.117,
             973.961,
@@ -10915,7 +10975,7 @@
         {
           "name": "item-2-3",
           "type": "text",
-          "default": "Label 5",
+          "default": "Supporting detail",
           "box": [
             355.854,
             1058.0,
@@ -10943,7 +11003,7 @@
         {
           "name": "item-2-4",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "\\textbullet\\enspace Second concept",
           "box": [
             295.117,
             1141.86,
@@ -10971,7 +11031,7 @@
         {
           "name": "item-2-5",
           "type": "text",
-          "default": "Item",
+          "default": "Detail",
           "box": [
             357.085,
             1230.68,
@@ -10999,7 +11059,7 @@
         {
           "name": "item-2-6",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "\\textbullet\\enspace Third concept",
           "box": [
             295.117,
             1309.86,
@@ -11027,7 +11087,7 @@
         {
           "name": "item-2-7",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Supporting detail",
           "box": [
             357.051,
             1393.96,
@@ -11078,6 +11138,34 @@
           "slot": {
             "number": 3,
             "key": "text/3"
+          }
+        },
+        {
+          "name": "result",
+          "type": "text",
+          "default": "Output",
+          "box": [
+            1080,
+            805.277,
+            620,
+            99.4493
+          ],
+          "source_ink_box": [
+            252.666,
+            805.277,
+            1392.174,
+            62.753999999999905
+          ],
+          "font_size": 66.719,
+          "leading": 77.394,
+          "source_node": [
+            2
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 10,
+            "key": "text/10"
           }
         }
       ],
@@ -37961,7 +38049,7 @@
         {
           "name": "text-1",
           "type": "text",
-          "default": "Label 1",
+          "default": "Outcome matrix",
           "box": [
             1126.8022333333333,
             326.047,
@@ -37987,12 +38075,12 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Option A",
           "box": [
-            754.2876666666667,
+            1450,
             835.664,
-            1958.0386666666666,
-            112.43773333333334
+            560,
+            112.438
           ],
           "source_ink_box": [
             1556.512,
@@ -38013,12 +38101,12 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Option A",
           "box": [
             867.383,
             1135.66,
-            1876.4116666666664,
-            112.44466666666662
+            470,
+            112.445
           ],
           "source_ink_box": [
             867.383,
@@ -38039,12 +38127,12 @@
         {
           "name": "title",
           "type": "text",
-          "default": "Slide title",
+          "default": "8",
           "box": [
-            1570.941,
-            1412.969,
-            1150.2156666666665,
-            195.60866666666664
+            1570.94,
+            1412.97,
+            150,
+            195.609
           ],
           "source_ink_box": [
             1570.941,
@@ -38091,7 +38179,7 @@
         {
           "name": "text-6",
           "type": "text",
-          "default": "Item",
+          "default": "Option B",
           "box": [
             2338.301,
             841.598,
@@ -38117,12 +38205,12 @@
         {
           "name": "text-7",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Option B",
           "box": [
-            959.141,
-            1435.602,
-            1786.9963333333328,
-            102.82133333333346
+            900,
+            1435.6,
+            450,
+            102.821
           ],
           "source_ink_box": [
             959.141,
@@ -45616,7 +45704,7 @@
             678,
             281
           ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-09.pdf}",
+          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-08.pdf}",
           "slot": {
             "number": 9,
             "key": "graphic/9",
@@ -46215,6 +46303,32 @@
           "slot": {
             "number": 20,
             "key": "text/20"
+          }
+        },
+        {
+          "name": "text-16",
+          "type": "text",
+          "default": "Item 9",
+          "box": [
+            1646.04,
+            1301.44,
+            527.92,
+            82.02
+          ],
+          "source_ink_box": [
+            1810,
+            1301.44,
+            213,
+            47
+          ],
+          "font_size": 62.08,
+          "leading": 72.013,
+          "source_node": [
+            23
+          ],
+          "slot": {
+            "number": 24,
+            "key": "text/24"
           }
         }
       ],
@@ -46886,11 +47000,11 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Label 36",
+          "default": "Item 2",
           "box": [
-            2567.3,
+            2626.4,
             1590.441,
-            479.3999999999999,
+            371.90000000000003,
             124.91000000000004
           ],
           "source_ink_box": [
@@ -46912,11 +47026,11 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Label 35",
+          "default": "Item 3",
           "box": [
             1900.238,
             1620.441,
-            597.9253333333332,
+            316.3027,
             78.02033333333341
           ],
           "source_ink_box": [
@@ -46938,7 +47052,7 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "Label 32",
+          "default": "Item 4",
           "box": [
             1383.672,
             1498.039,
@@ -46964,11 +47078,11 @@
         {
           "name": "text-5",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Item 5",
           "box": [
             941.398,
             1576.07,
-            870.2513333333334,
+            259.2957,
             124.81633333333322
           ],
           "source_ink_box": [
@@ -46990,11 +47104,11 @@
         {
           "name": "text-6",
           "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
+          "default": "Layer 5",
           "box": [
             520.641,
             1572.07,
-            2559.5916666666667,
+            300,
             193.04766666666671
           ],
           "source_ink_box": [
@@ -47016,11 +47130,11 @@
         {
           "name": "text-7",
           "type": "text",
-          "default": "Label 29",
+          "default": "Item 7",
           "box": [
-            1877.1200000000001,
+            1919.472,
             1240.039,
-            617.7599999999999,
+            533.7950000000001,
             186.11400000000003
           ],
           "source_ink_box": [
@@ -47042,11 +47156,11 @@
         {
           "name": "text-8",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Layer 4",
           "box": [
             525.324,
             1265.039,
-            2554.792,
+            300,
             133.26200000000006
           ],
           "source_ink_box": [
@@ -47068,11 +47182,11 @@
         {
           "name": "item-9-1",
           "type": "text",
-          "default": "Label 22",
+          "default": "Item 9",
           "box": [
             899.791,
             1033.44,
-            470.32499999999993,
+            447.35499999999996,
             72.33200000000001
           ],
           "source_ink_box": [
@@ -47094,11 +47208,11 @@
         {
           "name": "item-9-2",
           "type": "text",
-          "default": "Label 25",
+          "default": "Item 10",
           "box": [
             971.56,
             1094.44,
-            398.08933333333346,
+            299.91569999999996,
             72.59533333333314
           ],
           "source_ink_box": [
@@ -47120,11 +47234,11 @@
         {
           "name": "item-9-3",
           "type": "text",
-          "default": "Label 27",
+          "default": "Item 11",
           "box": [
             1022.36,
             1216.44,
-            347.2893333333334,
+            203.91570000000007,
             64.44533333333305
           ],
           "source_ink_box": [
@@ -47146,11 +47260,11 @@
         {
           "name": "item-9-4",
           "type": "text",
-          "default": "Label 31",
+          "default": "Item 12",
           "box": [
             972.157,
             1338.04,
-            397.83299999999997,
+            304.1729999999999,
             64.21000000000005
           ],
           "source_ink_box": [
@@ -47172,7 +47286,7 @@
         {
           "name": "text-10",
           "type": "text",
-          "default": "Label 23",
+          "default": "Item 13",
           "box": [
             1951.148,
             1041.039,
@@ -47198,11 +47312,11 @@
         {
           "name": "text-11",
           "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
+          "default": "Item 14",
           "box": [
             1517.871,
             987.441,
-            980.5676666666666,
+            359.2823,
             194.13866666666664
           ],
           "source_ink_box": [
@@ -47224,11 +47338,11 @@
         {
           "name": "text-12",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Layer 3",
           "box": [
             537.824,
             1034.07,
-            2542.4086666666667,
+            300,
             132.04766666666671
           ],
           "source_ink_box": [
@@ -47250,11 +47364,11 @@
         {
           "name": "text-13",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Layer 1",
           "box": [
             549.977,
             561.066,
-            2530.2538,
+            300,
             132.05059999999997
           ],
           "source_ink_box": [
@@ -47276,11 +47390,11 @@
         {
           "name": "text-14",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Layer 2",
           "box": [
             561.48,
             779.047,
-            2518.7508,
+            300,
             133.07059999999996
           ],
           "source_ink_box": [
@@ -47302,11 +47416,11 @@
         {
           "name": "text-15",
           "type": "text",
-          "default": "Label 3",
+          "default": "Item 18",
           "box": [
-            851.956,
+            868.5686000000001,
             522.047,
-            511.088,
+            467.16380000000004,
             185.8286
           ],
           "source_ink_box": [
@@ -47328,11 +47442,11 @@
         {
           "name": "text-16",
           "type": "text",
-          "default": "Label 11",
+          "default": "Item 19",
           "box": [
-            851.956,
+            850.3376000000001,
             779.047,
-            511.088,
+            501.5738,
             133.01959999999997
           ],
           "source_ink_box": [
@@ -47354,11 +47468,11 @@
         {
           "name": "item-17-1",
           "type": "text",
-          "default": "Label 13",
+          "default": "Item 20",
           "box": [
             2063.25,
             772.045,
-            435.23673333333335,
+            401.8680999999999,
             72.9291333333334
           ],
           "source_ink_box": [
@@ -47380,11 +47494,11 @@
         {
           "name": "item-17-2",
           "type": "text",
-          "default": "Label 14",
+          "default": "Item 21",
           "box": [
             2092.61,
             833.045,
-            405.53933333333316,
+            342.62569999999977,
             73.45933333333346
           ],
           "source_ink_box": [
@@ -47406,11 +47520,11 @@
         {
           "name": "item-17-3",
           "type": "text",
-          "default": "Label 19",
+          "default": "Item 22",
           "box": [
             2164.3,
             955.443,
-            333.8493333333331,
+            201.00569999999988,
             64.44533333333345
           ],
           "source_ink_box": [
@@ -47432,11 +47546,11 @@
         {
           "name": "item-18-1",
           "type": "text",
-          "default": "Label 5",
+          "default": "Item 23",
           "box": [
             1471.75,
             522.066,
-            451.6086666666667,
+            450.0423,
             70.85066666666657
           ],
           "source_ink_box": [
@@ -47458,11 +47572,11 @@
         {
           "name": "item-18-2",
           "type": "text",
-          "default": "Label 4",
+          "default": "Item 24",
           "box": [
             1471.72,
             582.045,
-            451.5108,
+            447.6808,
             72.02260000000003
           ],
           "source_ink_box": [
@@ -47484,11 +47598,11 @@
         {
           "name": "item-18-3",
           "type": "text",
-          "default": "Label 9",
+          "default": "Item 25",
           "box": [
             1595.56,
             684.443,
-            327.08933333333334,
+            204.18570000000017,
             64.44533333333345
           ],
           "source_ink_box": [
@@ -47510,7 +47624,7 @@
         {
           "name": "item-18-4",
           "type": "text",
-          "default": "Label 12",
+          "default": "Item 26",
           "box": [
             1447.86,
             786.045,
@@ -47536,11 +47650,11 @@
         {
           "name": "item-18-5",
           "type": "text",
-          "default": "Label 16",
+          "default": "Item 27",
           "box": [
-            1293.3867166666664,
+            1455.74015,
             847.045,
-            760.1365666666668,
+            435.42970000000014,
             78.93733333333338
           ],
           "source_ink_box": [
@@ -47562,11 +47676,11 @@
         {
           "name": "item-19-1",
           "type": "text",
-          "default": "Label 7",
+          "default": "Item 28",
           "box": [
             2660.66,
             540.045,
-            393.5708000000002,
+            354.5208000000001,
             63.82960000000004
           ],
           "source_ink_box": [
@@ -47588,11 +47702,11 @@
         {
           "name": "item-19-2",
           "type": "text",
-          "default": "Label 8",
+          "default": "Item 29",
           "box": [
             2739.25,
             662.443,
-            314.3993333333333,
+            199.2356999999999,
             64.44533333333345
           ],
           "source_ink_box": [
@@ -47614,11 +47728,11 @@
         {
           "name": "item-19-3",
           "type": "text",
-          "default": "Label 15",
+          "default": "Item 30",
           "box": [
             2678.64,
             784.045,
-            375.3467333333335,
+            320.20810000000006,
             72.9291333333334
           ],
           "source_ink_box": [
@@ -47640,7 +47754,7 @@
         {
           "name": "item-19-4",
           "type": "text",
-          "default": "Label 17",
+          "default": "Item 31",
           "box": [
             2611.35,
             845.443,
@@ -47666,11 +47780,11 @@
         {
           "name": "item-19-5",
           "type": "text",
-          "default": "Label 20",
+          "default": "Item 32",
           "box": [
             2644.97,
             967.045,
-            409.14413333333357,
+            384.88050000000004,
             72.72993333333336
           ],
           "source_ink_box": [
@@ -47692,11 +47806,11 @@
         {
           "name": "item-19-6",
           "type": "text",
-          "default": "Label 24",
+          "default": "Item 33",
           "box": [
             2686.18,
             1028.44,
-            363.98333333333346,
+            314.8297,
             78.07333333333332
           ],
           "source_ink_box": [
@@ -47718,11 +47832,11 @@
         {
           "name": "item-19-7",
           "type": "text",
-          "default": "Label 26",
+          "default": "Item 34",
           "box": [
             2653.91,
             1089.44,
-            399.73933333333355,
+            364.21570000000037,
             72.59533333333314
           ],
           "source_ink_box": [
@@ -47744,11 +47858,11 @@
         {
           "name": "text-20",
           "type": "text",
-          "default": "Label 6",
+          "default": "Item 35",
           "box": [
-            1989.3046666666667,
+            2028.3449500000002,
             554.047,
-            505.3906666666667,
+            438.42810000000003,
             133.92613333333333
           ],
           "source_ink_box": [
@@ -47770,11 +47884,11 @@
         {
           "name": "text-21",
           "type": "text",
-          "default": "Label 30",
+          "default": "Item 36",
           "box": [
-            2566.9533333333334,
+            2718.41085,
             1241.07,
-            480.09333333333325,
+            195.8663,
             184.79766666666671
           ],
           "source_ink_box": [
@@ -50780,7 +50894,7 @@
             585,
             1003
           ],
-          "default": "{\\color{black}\\qrcode[height=497.25\\studiounit]{https://example.org}}",
+          "default": "{\\color{studio-foreground}\\qrcode[height=497.25\\studiounit]{https://example.org}}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
@@ -50885,7 +50999,7 @@
             880,
             880
           ],
-          "default": "{\\color{black}\\qrcode[height=748\\studiounit]{https://example.org}}",
+          "default": "{\\color{studio-foreground}\\qrcode[height=748\\studiounit]{https://example.org}}",
           "slot": {
             "number": 1,
             "key": "graphic/1",

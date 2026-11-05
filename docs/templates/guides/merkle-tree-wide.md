@@ -8,7 +8,7 @@ Model: `merkle-tree-wide` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/merkle-tree-wide.tex)
 
-[Open this slide individually](../index.html?template=merkle-tree-wide)
+[Open this slide individually](../../slides/index.html?template=merkle-tree-wide)
 
 ![Merkle Tree Wide](../previews/merkle-tree-wide.png)
 

@@ -8,7 +8,7 @@ Model: `tabbed-agenda` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/tabbed-agenda.tex)
 
-[Open this slide individually](../index.html?template=tabbed-agenda)
+[Open this slide individually](../../slides/index.html?template=tabbed-agenda)
 
 ![Outline agenda with icon rows](../previews/tabbed-agenda.png)
 

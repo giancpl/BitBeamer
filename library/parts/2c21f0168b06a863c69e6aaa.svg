@@ -1,0 +1,67 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-9">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-11">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g id="part-13">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-16">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-16)">
+<ns0:clipPath id="part-19">
+<ns0:path transform="matrix(1,0,0,-1,136,2236)" d="M3284 1236C3284 553.3761 2548.8514 0 1642 0 735.1485 0 0 553.3761 0 1236 0 1918.624 735.1485 2472 1642 2472 2548.8514 2472 3284 1918.624 3284 1236Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-19)">
+<ns0:image x="136" y="0" width="3284" height="2000" ns1:href="resources/84bbb9fab15eb578b2352c599c041c42c900005b687453d4320a9e6994b0ceeb.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-23" mask-type="luminance">
+<ns0:use ns1:href="#part-13" />
+</ns0:mask>
+<ns0:clipPath id="part-25">
+<ns0:path transform="matrix(1,0,0,-1,136,2236)" d="M3284 1236C3284 553.3761 2548.8514 0 1642 0 735.1485 0 0 553.3761 0 1236 0 1918.624 735.1485 2472 1642 2472 2548.8514 2472 3284 1918.624 3284 1236Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:g>
+<ns0:g mask="url(#part-9)">
+<ns0:g>
+<ns0:g clip-path="url(#part-11)">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" fill="#f9f9f9" />
+<ns0:g mask="url(#part-23)">
+<ns0:g clip-path="url(#part-25)">
+<ns0:image x="136" y="0" width="3284" height="2000" ns1:href="resources/62154fb0338ba5b82883d6b1f5390c3eb01d46f71c47ae5e4dc7d66f014cba15.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

@@ -8,7 +8,7 @@ Model: `europe-map` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/europe-map.tex)
 
-[Open this slide individually](../index.html?template=europe-map)
+[Open this slide individually](../../slides/index.html?template=europe-map)
 
 ![Europe Map](../previews/europe-map.png)
 

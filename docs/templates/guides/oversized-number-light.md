@@ -8,7 +8,7 @@ Model: `oversized-number-light` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/oversized-number-light.tex)
 
-[Open this slide individually](../index.html?template=oversized-number-light)
+[Open this slide individually](../../slides/index.html?template=oversized-number-light)
 
 ![Oversized Number Light](../previews/oversized-number-light.png)
 

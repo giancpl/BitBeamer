@@ -8,7 +8,7 @@ Model: `fork-branches` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/fork-branches.tex)
 
-[Open this slide individually](../index.html?template=fork-branches)
+[Open this slide individually](../../slides/index.html?template=fork-branches)
 
 ![Forked chain branches](../previews/fork-branches.png)
 

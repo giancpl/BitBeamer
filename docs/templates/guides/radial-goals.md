@@ -8,7 +8,7 @@ Model: `radial-goals` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/radial-goals.tex)
 
-[Open this slide individually](../index.html?template=radial-goals)
+[Open this slide individually](../../slides/index.html?template=radial-goals)
 
 ![Radial goals](../previews/radial-goals.png)
 

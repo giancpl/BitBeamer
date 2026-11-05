@@ -1,0 +1,26 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M23760 12080H25920V9870H23760V12080Z" />
+</ns0:clipPath>
+<ns0:mask id="part-4">
+<ns0:g transform="matrix(1.407643,0,0,1.4076433,2375.61,792)">
+<ns0:image id="part-6" width="154" height="157" ns1:href="resources/7ac1c87c79ae267c68ba495e188f1c6174e1676fcc9d7b950a676a2c76a1a566.jpg" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="#f9f9f9" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M31117.1 12080H31318.6V11878.2H31117.1V12080ZM30512.9 10061.8H30714.3V10263.6H30915.7V10465.5H31117.1V10667.3H31318.6V10869.1H31520V11070.9H30915.7V11474.5H31117.1V11878.2H30915.7V11676.4H30714.3V11474.5H30512.9V11272.7H30311.4V11070.9H30110V10869.1H30714.3V10465.5H30512.9V10061.8ZM30512.9 10061.8V9860H30311.4V10061.8H30512.9" fill="#001ce0" fill-rule="evenodd" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M18361.4 12080H19368.6V11878.2H19167.1V11676.4H18562.9V11878.2H18361.4V12080ZM18361.4 10061.8H18160V11878.2H18361.4V10061.8ZM19368.6 10061.8H19570V11878.2H19368.6V10061.8ZM19368.6 10061.8H18361.4V9860H19368.6V10061.8" fill="#001ce0" fill-rule="evenodd" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M23260 10970 22760 11258.7V10681.3L23260 10970ZM22810 10970V11020H20070V10970 10920H22810V10970" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M29610 10970 29110 11258.7V10681.3L29610 10970ZM29160 10970V11020H26420V10970 10920H29160V10970" fill="#001ce0" />
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-4)">
+<ns0:g transform="matrix(1.407643,0,0,1.4076433,2375.61,792)">
+<ns0:image id="part-17" width="154" height="157" ns1:href="resources/8a7b7f8a41e560599d0926ce9563b2f72c3ea7f17fe6d0c546293a30af770993.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

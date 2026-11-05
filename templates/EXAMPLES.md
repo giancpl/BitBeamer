@@ -45,7 +45,7 @@ Layout geometry, fonts and field APIs are shared with neutral templates. Topic-s
 | `diagonal-photo-title` | 1 fields | [diagonal-photo-title.tex](studio/diagonal-photo-title.tex) |
 | `title-paragraphs` | 6 fields | [title-paragraphs.tex](studio/title-paragraphs.tex) |
 | `title-centered-paragraphs` | 4 fields | [title-centered-paragraphs.tex](studio/title-centered-paragraphs.tex) |
-| `statement-with-credit` | 6 fields | [statement-with-credit.tex](studio/statement-with-credit.tex) |
+| `statement-with-credit` | 7 fields | [statement-with-credit.tex](studio/statement-with-credit.tex) |
 | `people-speech-cards` | 7 fields | [people-speech-cards.tex](studio/people-speech-cards.tex) |
 | `paired-icons-blue` | 0 fields | [paired-icons-blue.tex](studio/paired-icons-blue.tex) |
 | `two-columns` | 6 fields | [two-columns.tex](studio/two-columns.tex) |
@@ -69,13 +69,13 @@ Layout geometry, fonts and field APIs are shared with neutral templates. Topic-s
 | `four-step-process` | 5 fields | [four-step-process.tex](studio/four-step-process.tex) |
 | `two-step-process` | 2 fields | [two-step-process.tex](studio/two-step-process.tex) |
 | `milestone-cards` | 6 fields | [milestone-cards.tex](studio/milestone-cards.tex) |
-| `twelve-word-grid` | 12 fields | [twelve-word-grid.tex](studio/twelve-word-grid.tex) |
+| `twelve-word-grid` | 13 fields | [twelve-word-grid.tex](studio/twelve-word-grid.tex) |
 | `three-card-summary` | 7 fields | [three-card-summary.tex](studio/three-card-summary.tex) |
 | `four-pillar-cards` | 9 fields | [four-pillar-cards.tex](studio/four-pillar-cards.tex) |
 | `hardware-options` | 8 fields | [hardware-options.tex](studio/hardware-options.tex) |
 | `software-options` | 7 fields | [software-options.tex](studio/software-options.tex) |
 | `two-card-vertical` | 4 fields | [two-card-vertical.tex](studio/two-card-vertical.tex) |
-| `callout-explanation` | 9 fields | [callout-explanation.tex](studio/callout-explanation.tex) |
+| `callout-explanation` | 10 fields | [callout-explanation.tex](studio/callout-explanation.tex) |
 | `six-outline-cards` | 7 fields | [six-outline-cards.tex](studio/six-outline-cards.tex) |
 | `six-explanation-cards` | 7 fields | [six-explanation-cards.tex](studio/six-explanation-cards.tex) |
 | `five-icon-row` | 6 fields | [five-icon-row.tex](studio/five-icon-row.tex) |
@@ -197,7 +197,7 @@ Layout geometry, fonts and field APIs are shared with neutral templates. Topic-s
 | `asymmetric-encryption` | 8 fields | [asymmetric-encryption.tex](studio/asymmetric-encryption.tex) |
 | `merkle-tree-wide` | 24 fields | [merkle-tree-wide.tex](studio/merkle-tree-wide.tex) |
 | `diagram-transaction-inputs` | 22 fields | [diagram-transaction-inputs.tex](studio/diagram-transaction-inputs.tex) |
-| `seed-grid-caption` | 21 fields | [seed-grid-caption.tex](studio/seed-grid-caption.tex) |
+| `seed-grid-caption` | 22 fields | [seed-grid-caption.tex](studio/seed-grid-caption.tex) |
 | `diagram-pool-shares` | 19 fields | [diagram-pool-shares.tex](studio/diagram-pool-shares.tex) |
 | `layers-overview` | 36 fields | [layers-overview.tex](studio/layers-overview.tex) |
 | `multi-signature` | 11 fields | [multi-signature.tex](studio/multi-signature.tex) |

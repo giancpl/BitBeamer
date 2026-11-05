@@ -8,7 +8,7 @@ Model: `split-outline-cards` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/split-outline-cards.tex)
 
-[Open this slide individually](../index.html?template=split-outline-cards)
+[Open this slide individually](../../slides/index.html?template=split-outline-cards)
 
 ![Split Outline Cards](../previews/split-outline-cards.png)
 

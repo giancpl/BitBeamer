@@ -44,6 +44,7 @@ Original palettes: light.
 | `label-nineteen` | <code>Label 19</code> | 14.9% wide × 4.0% high |
 | `label-twenty` | <code>Label 20</code> | 14.8% wide × 4.6% high |
 | `label-21` | <code>Label 21</code> | 15.1% wide × 4.0% high |
+| `caption-nine` | <code>Item 9</code> | 14.8% wide × 4.1% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

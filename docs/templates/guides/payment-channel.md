@@ -8,7 +8,7 @@ Model: `payment-channel` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/payment-channel.tex)
 
-[Open this slide individually](../index.html?template=payment-channel)
+[Open this slide individually](../../slides/index.html?template=payment-channel)
 
 ![Two-way channel](../previews/payment-channel.png)
 

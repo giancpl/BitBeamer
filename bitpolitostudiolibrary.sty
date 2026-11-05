@@ -1,0 +1,94 @@
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{bitpolitostudiolibrary}[2026/11/04 Editable official lesson layouts]
+\RequirePackage{bitpolitostudiotemplates}
+\newcommand{\DeclareStudioLibraryLayout}[2]{%
+  \expandafter\def\csname studio@library@#1\endcsname{#2}%
+}
+\RequirePackage{letltxmacro}
+\LetLtxMacro\studio@coretemplate\studiotemplate
+\renewcommand{\studiotemplate}[2][]{%
+  \ifcsname studio@library@#2\endcsname
+    \begingroup
+    \def\studiocurrenttemplate{#2}%
+    \def\studiotemplatedefaults{}\def\studiotemplateoptions{#1}%
+    \let\studio@prepareslots\relax\let\studio@clearslots\relax
+    \input{\csname studio@library@#2\endcsname}%
+    \endgroup
+  \else\studio@coretemplate[#1]{#2}\fi
+}
+\newcommand{\studiolibraryfield}[3]{%
+  \studiodeclarefield{#1}{#3}%
+  \pgfkeys{/studio fields/text/#2/.style={#1={##1}},
+    /studio fields/text/#1/.style={#1={##1}}}%
+}
+\newcommand{\studiolibrarypalette}[1]{%
+  \def\studio@librarypalette{#1}%
+  \pgfkeys{/studio fields/palette/.code={%
+    \def\studio@askedpalette{##1}\def\studio@nativeword{native}%
+    \ifx\studio@askedpalette\studio@librarypalette\else
+      \ifx\studio@askedpalette\studio@nativeword\else
+      \PackageError{bitpolitostudiolibrary}{Unsupported palette '##1' in \studiocurrenttemplate}%
+        {This source composition has only its documented original palette.}%
+      \fi
+    \fi},
+    /studio fields/variant/.is choice,
+    /studio fields/variant/original/.code={},
+    /studio fields/variant/default/.code={}}%
+}
+\newcommand{\studiolibrarycanvas}[5]{%
+ \begingroup
+ \def\studiopilotname{#3}%
+ \pgfmathsetlength{\studiounit}{\paperwidth/(#1)}
+ \pgfmathsetlength{\studiofitunit}{\paperheight/(#2)}
+ \ifdim\studiofitunit<\studiounit\studiounit=\studiofitunit\fi
+ \studiooffsetx=\dimexpr(\paperwidth-#1\studiounit)/2\relax
+ \studiooffsety=\dimexpr(\paperheight-#2\studiounit)/2\relax
+ \begin{frame}[plain]
+ \begin{tikzpicture}[remember picture,overlay]
+ \fill[#4] (current page.south west) rectangle (current page.north east);
+ \begin{scope}[shift={([xshift=\studiooffsetx,yshift=-\studiooffsety]current page.north west)},
+  x=\studiounit,y=-\studiounit,every node/.style={inner sep=0,outer sep=0},text=studio-foreground]
+ \clip (0,0) rectangle (#1,#2);
+ #5
+ \end{scope}
+ \end{tikzpicture}
+ \end{frame}
+ \endgroup
+}
+
+\newcommand{\studiolibraryrotation}{0}
+\newbox\studio@librarytextbox
+% Fixed source-coordinate baseline, width, height, font size, leading and colour.
+\newcommand{\studiolibrarytext}[9]{%
+  \ifstudiogeometryonly\else
+  \typeout{STUDIO-FIELD: \studiocurrenttemplate/#1}%
+  \definecolor{studio-library-ink}{HTML}{#8}%
+  \node[anchor=base west,rotate=\studiolibraryrotation] at (#2,#3) {%
+  \color{studio-library-ink}%
+  \setbox\studio@librarytextbox=\vtop{%
+    \hsize=#4\studiounit\parindent=0pt\hfuzz=.1pt
+    \normalfont\sffamily\fontsize{#6\studiounit}{#7\studiounit}\selectfont
+    \raggedright#9\noindent\studiofield{#1}\par}%
+  \ifdim\dimexpr\ht\studio@librarytextbox+\dp\studio@librarytextbox\relax>#5\studiounit
+    \ifstudioreviewdiagnostics\PackageWarning{bitpolitostudiolibrary}{Text overflow in \studiocurrenttemplate/#1}%
+    \else\PackageError{bitpolitostudiolibrary}{Text overflow in \studiocurrenttemplate/#1}%
+      {Shorten or rephrase the field. Its font size and geometry are fixed.}\fi%
+  \fi
+  \box\studio@librarytextbox};%
+  \fi
+}
+
+\newbox\studio@librarygraphicbox
+\newcommand{\studiolibrarygraphic}[2]{%
+  \node[anchor=north west] at (0,0) {%
+    \setbox\studio@librarygraphicbox=\hbox{\studiofield{graphic-one}}%
+    \ifdim\wd\studio@librarygraphicbox>\dimexpr#1\studiounit+.1pt\relax
+      \PackageError{bitpolitostudiolibrary}{Graphic overflow in \studiocurrenttemplate/graphic-one}{Keep the replacement within its documented fixed canvas.}%
+    \fi
+    \ifdim\dimexpr\ht\studio@librarygraphicbox+\dp\studio@librarygraphicbox\relax>\dimexpr#2\studiounit+.1pt\relax
+      \PackageError{bitpolitostudiolibrary}{Graphic overflow in \studiocurrenttemplate/graphic-one}{Keep the replacement within its documented fixed canvas.}%
+    \fi
+    \box\studio@librarygraphicbox};%
+}
+\IfFileExists{library/layouts/registry.tex}{\input{library/layouts/registry.tex}}{}
+\endinput

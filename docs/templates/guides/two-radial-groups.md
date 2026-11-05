@@ -8,7 +8,7 @@ Model: `two-radial-groups` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-radial-groups.tex)
 
-[Open this slide individually](../index.html?template=two-radial-groups)
+[Open this slide individually](../../slides/index.html?template=two-radial-groups)
 
 ![Two Radial Groups](../previews/two-radial-groups.png)
 

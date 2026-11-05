@@ -66,25 +66,6 @@ Original palettes: light.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
-### credit
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/statement-with-credit.tex) · [Full slot guide](../guides/statement-with-credit.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `title` | <code>Slide title</code> | 38.9% wide × 7.6% high |
-| `label-two` | <code>Label 2</code> | 10.6% wide × 4.0% high |
-| `label-three` | <code>Label 3</code> | 16.9% wide × 4.6% high |
-| `label-four` | <code>Label 4</code> | 13.9% wide × 4.4% high |
-| `label-five` | <code>Label 5</code> | 16.9% wide × 4.4% high |
-| `label-six` | <code>Label 6</code> | 16.9% wide × 4.1% high |
-
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
 ## Complete one-slide example
 
 ```latex

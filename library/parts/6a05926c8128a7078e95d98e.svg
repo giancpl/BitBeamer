@@ -1,0 +1,87 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-9">
+<ns0:g>
+<ns0:rect x="0" y="0" width="100%" height="100%" fill-opacity="0" fill="white" />
+<ns0:g>
+<ns0:clipPath>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" fill="white" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="white" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-11">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-13">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-15">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M21016.3 17033.4H29110.4C29441.8 17033.4 29710.4 16764.7 29710.4 16433.4V-2503.9C29710.4-2835.27 29441.8-3103.9 29110.4-3103.9H21016.3C20684.9-3103.9 20416.3-2835.27 20416.3-2503.9V16433.4C20416.3 16764.7 20684.9 17033.4 21016.3 17033.4Z" />
+</ns0:clipPath>
+<ns0:mask id="part-17">
+<ns0:g transform="matrix(1.0757084,0,0,1.0757084,2041.6301,270.84693)">
+<ns0:image id="part-19" width="864" height="1920" ns1:href="resources/7ca5f09481a6e928e7dae58a876c7af8e6a369b81540b8eae1273762de12c2c3.jpg" />
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-20">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" />
+</ns0:clipPath>
+<ns0:clipPath id="part-22">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M17780 18210H32346.7V-3952.9H17780V18210Z" />
+</ns0:clipPath>
+<ns0:mask id="part-24">
+<ns0:g transform="matrix(.5421176,0,0,.54211917,1778,176.88599)">
+<ns0:image id="part-26" width="2687" height="4096" ns1:href="resources/9e8cef90ac0d4f20bc42de6db6c5e6eeb4864110e963ffbbdb766d50e6797b4c.jpg" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:g mask="url(#part-9)">
+<ns0:g>
+<ns0:g clip-path="url(#part-11)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 20000H35560V0H0V20000" fill="#f9f9f9" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2890 12955C2890 12847.3 2802.7 12760 2695 12760 2587.3 12760 2500 12847.3 2500 12955 2500 13062.7 2587.3 13150 2695 13150 2802.7 13150 2890 13062.7 2890 12955" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2890 10045C2890 9937.3 2802.7 9850 2695 9850 2587.3 9850 2500 9937.3 2500 10045 2500 10152.7 2587.3 10240 2695 10240 2802.7 10240 2890 10152.7 2890 10045" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2890 7135C2890 7027.3 2802.7 6940 2695 6940 2587.3 6940 2500 7027.3 2500 7135 2500 7242.7 2587.3 7330 2695 7330 2802.7 7330 2890 7242.7 2890 7135" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2890 4225C2890 4117.3 2802.7 4030 2695 4030 2587.3 4030 2500 4117.3 2500 4225 2500 4332.7 2587.3 4420 2695 4420 2802.7 4420 2890 4332.7 2890 4225" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2700 12480V12480C2744.18 12480 2780 12444.2 2780 12400V10600C2780 10555.8 2744.18 10520 2700 10520 2655.82 10520 2620 10555.8 2620 10600V12400C2620 12444.2 2655.82 12480 2700 12480" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2700 9570V9570C2744.18 9570 2780 9534.18 2780 9490V7690C2780 7645.82 2744.18 7610 2700 7610 2655.82 7610 2620 7645.82 2620 7690V9490C2620 9534.18 2655.82 9570 2700 9570" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2700 6660V6660C2744.18 6660 2780 6624.18 2780 6580V4780C2780 4735.82 2744.18 4700 2700 4700 2655.82 4700 2620 4735.82 2620 4780V6580C2620 6624.18 2655.82 6660 2700 6660" fill="#001ce0" />
+<ns0:g clip-path="url(#part-13)">
+<ns0:g clip-path="url(#part-15)">
+<ns0:g mask="url(#part-17)">
+<ns0:g transform="matrix(1.0757084,0,0,1.0757084,2041.6301,270.84693)">
+<ns0:image id="part-43" width="864" height="1920" ns1:href="resources/f52e4c4fea5f0e5ea9e47cee1483416e4f3f62e35adb1902f626875f81945fcc.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-20)">
+<ns0:g clip-path="url(#part-22)">
+<ns0:g mask="url(#part-24)">
+<ns0:g transform="matrix(.5421176,0,0,.54211917,1778,176.88599)">
+<ns0:image id="part-48" width="2687" height="4096" ns1:href="resources/9049b1cdf2347ad195800782caa3d19a011dccf99b61173ac5e6a6c94ebf3146.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

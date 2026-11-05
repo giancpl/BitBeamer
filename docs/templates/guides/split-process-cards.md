@@ -8,7 +8,7 @@ Model: `split-process-cards` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/split-process-cards.tex)
 
-[Open this slide individually](../index.html?template=split-process-cards)
+[Open this slide individually](../../slides/index.html?template=split-process-cards)
 
 ![Split Process Cards](../previews/split-process-cards.png)
 

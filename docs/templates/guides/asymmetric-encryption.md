@@ -8,7 +8,7 @@ Model: `asymmetric-encryption` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/asymmetric-encryption.tex)
 
-[Open this slide individually](../index.html?template=asymmetric-encryption)
+[Open this slide individually](../../slides/index.html?template=asymmetric-encryption)
 
 ![Asymmetric Encryption](../previews/asymmetric-encryption.png)
 

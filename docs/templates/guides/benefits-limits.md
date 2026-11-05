@@ -8,7 +8,7 @@ Model: `benefits-limits` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/benefits-limits.tex)
 
-[Open this slide individually](../index.html?template=benefits-limits)
+[Open this slide individually](../../slides/index.html?template=benefits-limits)
 
 ![Benefits and responsibilities](../previews/benefits-limits.png)
 

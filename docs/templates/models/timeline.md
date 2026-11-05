@@ -103,6 +103,26 @@ Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (the
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
+### three-milestones
+
+Original palettes: light.
+
+[Current source](../../../templates/studio/statement-with-credit.tex) · [Full slot guide](../guides/statement-with-credit.md)
+
+| Field | Default | Available space |
+| --- | --- | --- |
+| `title` | <code>Timeline</code> | 38.9% wide × 7.6% high |
+| `label-one` | <code>Event 1</code> | 10.6% wide × 4.0% high |
+| `value-one` | <code>Value 1</code> | 13.9% wide × 4.4% high |
+| `label-two` | <code>Event 2</code> | 16.9% wide × 4.6% high |
+| `value-two` | <code>Value 2</code> | 16.9% wide × 4.4% high |
+| `label-three` | <code>Event 3</code> | 16.9% wide × 4.1% high |
+| `value-three` | <code>Value 3</code> | 16.9% wide × 4.4% high |
+
+Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
+
+Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
+
 ## Complete one-slide example
 
 ```latex

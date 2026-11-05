@@ -8,7 +8,7 @@ Model: `oversized-word` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/oversized-word.tex)
 
-[Open this slide individually](../index.html?template=oversized-word)
+[Open this slide individually](../../slides/index.html?template=oversized-word)
 
 ![Oversized clipped word](../previews/oversized-word.png)
 

@@ -8,7 +8,7 @@ Model: `merkle-tree` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/merkle-tree.tex)
 
-[Open this slide individually](../index.html?template=merkle-tree)
+[Open this slide individually](../../slides/index.html?template=merkle-tree)
 
 ![Merkle hash tree](../previews/merkle-tree.png)
 

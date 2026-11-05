@@ -8,7 +8,7 @@ Model: `protocol-encrypted-channel` · Family: Technical · Status: **in review*
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-encrypted-channel.tex)
 
-[Open this slide individually](../index.html?template=protocol-encrypted-channel)
+[Open this slide individually](../../slides/index.html?template=protocol-encrypted-channel)
 
 ![Protocol Encrypted Channel](../previews/protocol-encrypted-channel.png)
 

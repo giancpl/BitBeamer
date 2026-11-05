@@ -143,6 +143,17 @@ CASES.update({
 })
 
 
+CASES['bare-body-followed-by-caption']=(r'\studiotemplate[variant=two-vertical,body={First concept\\Supporting detail},caption-one={First},caption-two={Second}]{icon-cards}',None)
+CASES['reclassified-variant-compatibility']=(r'''\studiotemplate[variant=message-relay,payload={Payload},message-one={First},message-two={Second}]{protocol}
+\studiotemplate[variant=script,title={First},subtitle={Second},decoration={Payload}]{cover}
+\studiotemplate[variant=three-milestones,value-two={Value 2}]{timeline}
+\studiotemplate[variant=credit,title={Timeline}]{statement}
+\studiotemplate[variant=quotation,quote={A short quotation.},credit={Attribution}]{dialogue}
+\studiotemplate[variant=two-messages,title={A short quotation.}]{dialogue}
+\studioframe{Normal frame}{Options stay local.}
+''',None)
+
+
 def corner(pdf,page,backend,image,full=False):
     options=['-f',str(page),'-singlefile','-scale-to-x','320' if full else '16','-scale-to-y','180' if full else '9']
     tool=shutil.which('pdftoppm')
@@ -222,6 +233,10 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local'):
                     raise RuntimeError('Default frame options or closing state leaked into another page')
                 for page,expected in [(1,(0,28,224)),(2,(249,249,249)),(7,(249,249,249))]:
                     if corner(folder/'test.pdf',page,backend,image)!=expected:raise RuntimeError('Unexpected standard page background')
+            if name=='reclassified-variant-compatibility':
+                pages=[' '.join(p.split()) for p in pdf_text(folder/'test.pdf',backend,image).split('\f') if p.strip()]
+                if len(pages)!=7 or pages[0]!=pages[1] or pages[2]!=pages[3] or not all(word in pages[0] for word in ('First','Second','Payload')) or 'Attribution' not in pages[4]:
+                    raise RuntimeError('A compatibility adapter changed the target fields or content.')
             if name=='clear-order':
                 text=pdf_text(folder/'test.pdf',backend,image)
                 if text.count('People')!=2 or any(word in text for word in ['Security','Privacy']):

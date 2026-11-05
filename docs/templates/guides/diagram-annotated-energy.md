@@ -8,7 +8,7 @@ Model: `diagram-annotated-energy` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/diagram-annotated-energy.tex)
 
-[Open this slide individually](../index.html?template=diagram-annotated-energy)
+[Open this slide individually](../../slides/index.html?template=diagram-annotated-energy)
 
 ![Annotated system](../previews/diagram-annotated-energy.png)
 

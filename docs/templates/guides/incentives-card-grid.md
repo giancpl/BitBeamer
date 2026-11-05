@@ -8,7 +8,7 @@ Model: `incentives-card-grid` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/incentives-card-grid.tex)
 
-[Open this slide individually](../index.html?template=incentives-card-grid)
+[Open this slide individually](../../slides/index.html?template=incentives-card-grid)
 
 ![Incentives Card Grid](../previews/incentives-card-grid.png)
 

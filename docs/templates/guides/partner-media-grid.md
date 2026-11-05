@@ -8,7 +8,7 @@ Model: `partner-media-grid` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/partner-media-grid.tex)
 
-[Open this slide individually](../index.html?template=partner-media-grid)
+[Open this slide individually](../../slides/index.html?template=partner-media-grid)
 
 ![Media grid](../previews/partner-media-grid.png)
 

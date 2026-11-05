@@ -8,7 +8,7 @@ Model: `two-image-comparison` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-image-comparison.tex)
 
-[Open this slide individually](../index.html?template=two-image-comparison)
+[Open this slide individually](../../slides/index.html?template=two-image-comparison)
 
 ![Two framed images](../previews/two-image-comparison.png)
 

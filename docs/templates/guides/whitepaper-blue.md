@@ -8,7 +8,7 @@ Model: `whitepaper-blue` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/whitepaper-blue.tex)
 
-[Open this slide individually](../index.html?template=whitepaper-blue)
+[Open this slide individually](../../slides/index.html?template=whitepaper-blue)
 
 ![Document spotlight](../previews/whitepaper-blue.png)
 

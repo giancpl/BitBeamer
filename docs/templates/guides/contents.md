@@ -8,7 +8,7 @@ Model: `contents` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/contents.tex)
 
-[Open this slide individually](../index.html?template=contents)
+[Open this slide individually](../../slides/index.html?template=contents)
 
 ![Four-section contents](../previews/contents.png)
 

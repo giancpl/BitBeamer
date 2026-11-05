@@ -8,7 +8,7 @@ Model: `diagram-pool-shares` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/diagram-pool-shares.tex)
 
-[Open this slide individually](../index.html?template=diagram-pool-shares)
+[Open this slide individually](../../slides/index.html?template=diagram-pool-shares)
 
 ![Shared work diagram](../previews/diagram-pool-shares.png)
 

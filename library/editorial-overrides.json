@@ -1,0 +1,4145 @@
+{
+  "schema": 1,
+  "fields": {
+    "aef57cb6f92e6633d77f5fd218c28017b3c5c1d58d2b890c390559fcfa8f52c1": {
+      "english": "History and properties of money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2e40b75ccbf6b96e4cf46ee557e0b5274fc6a46d20cd75e6dac1dd3961b911db": {
+      "english": "Debunking common myths",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "49ad62b2a7071e85965c033b5b1aa2816ed1537d097e862585e0fb5197e12a5a": {
+      "english": "Properties of money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "067eceaf12b4b81f60f7a482533b893ba5287446bfb8051637ddc1982380d228": {
+      "english": "Crusoe's economic principles",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8d993d9b2419ce2a4eb703d338cb1e0dc9e50cf31460235f6c97c0db44e119ff": {
+      "english": "Persistence of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d817d83bdeb845fee140007af3952f31825c6abe06ac3a3558e1b16a4cbc2f53": {
+      "english": "wants",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3b1cb17e07dddd0458f0bb87c9412090da81c326dfa0e7ad96a067c5cdc25837": {
+      "english": "Scarce and",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3d0a7c5d7db8be27b9cbf26dd794e719fda2ed214e3c09aecee810279b37834c": {
+      "english": "durable asset",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e0fc9523dfc2543d0065bd388dc58ede3163c33ecb58458cbbdc6d792c847793": {
+      "english": "Economic role",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dedd7f48320a11a39e8e137ffc6c2004843eecf79dbf26f82325bc719fe31534": {
+      "english": "Utility vs people",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d104ab42a0659306be77e3665223300a9a2a55f08afe9428cceafd3da1361949": {
+      "english": "Coincidence of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e8154f5e145474db5b1fa39e7046131157779d9827a28c61af8af60dcf78c11e": {
+      "english": "Bearer instrument",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1d7d7c3fe3980af77e48024fa7b3436efcd44df0c464c9ba3de7cc5daf7c4b82": {
+      "english": "Evolution of money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bbf3258aaa8db640a073a8010550cd4a5f10c14ff00b1b307d019ef512b68e02": {
+      "english": "Colored",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9154d0ad0866822e66435c4047ee141683e58a94d1d28abb2b45f216fff6c29c": {
+      "english": "pebbles",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4a523f5897326c28075f4fc39125a5f06c2e86b2b35c89eb0887fffc8487a608": {
+      "english": "Money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "77adc14d3a1451cca681a39e8c598802837a79927c414902acd2a67c73d8c707": {
+      "english": "Dematerializing money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6fe9878719e0a2e3c93a04a64c400a9a3389695dc1a4dce810457907d35d343d": {
+      "english": "Online transferability",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5f961ae80eacfc6e10c37fc1ec05f226c2f97adcb58e9b8ff5be33a7090ffcf8": {
+      "english": "More centralization and",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0030e06841e168f544d4a62e0f8d91aebf5e9915559601e583feab693cba4e4e": {
+      "english": "fractional reserves",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "654fdf0dbba1d7347a58b4e94aa3392e61db94f3913fdca3de08e3c43862667a": {
+      "english": "Centralized; expandable supply;",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c82ae636c3e1023800cdc7727f7dd5b119fc2d320ba62f988105bd49ab88a41c": {
+      "english": "reduced privacy; custodial",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0635d2c773408bd53e3821c24cae25a56811c116868c5b97db09d196fdc45a72": {
+      "english": "of value",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "987807d0ddd8626cca7a6ac7e4c374f7aa8dd5c60ecfd439970ba1086cee7ae3": {
+      "english": "Why Bitcoin?",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "36b92329f808f5eb83e280432b0c77a1e6360c87fc3ac4b563182c0cd4f3d785": {
+      "english": "The economic and",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5e44a17c2239f8fd66fac9f98fd88847553a6d1f76e36e548375efae47ca0c58": {
+      "english": "monetary system is in crisis",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2daf241573a886efcd435e67aab5b16d8d5e6fb4b96fe78ed65f626ef1ef0095": {
+      "english": "Central bank money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9811d8cec7e793d780a8cb0b341ffede564ba04df3b3fe88c80dfbc90aca2f15": {
+      "english": "Confiscation",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "70a0671d7186bc96afe1232434f94c17925f86a745615e8e0e55527c8c3548c8": {
+      "english": "World inflation rates (2024)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7b6b56a319bc7a4dcec038674d2863d641eae0d1997292ba0b49178c3505a432": {
+      "english": "Inflation rates in",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cb4bdb90649e70d127b93f8fe5f8bdfdbb27629622e0419da079ebc7dc59b5f4": {
+      "english": "Europe (2024)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c9449ea1ce20f5ebc0da284dabfc76cc47deae6c961c0e6bc4fd9b0493809a8b": {
+      "english": "Purchasing power",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9aa6be20c3851fc16448eef8a8e160f149a993451e83d943ff074c27302f4986": {
+      "english": "Price changes, 2000–2020",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3c4c71acdb1b7c57bac10d57c5fe3939f3509076d78983f291bb9e665d945502": {
+      "english": "School education",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "049ff258a92d8dfa6e4d6f6d95234138e009b4e451dd3a4054b50ae133de8fa3": {
+      "english": "Childcare",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2781e37b8d2351b797bf8175d6e701b746e1827d0663ce8f23941162b83e56da": {
+      "english": "Housing",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7cd5cb41647ae4b3dd394f3d4e4fe759bb42c94a85c6298984d555cc62ad6593": {
+      "english": "Mobile phones",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4a4a6ef1962f50aaff401b84822ef4615ee050004f89b64b198da2222623f1ec": {
+      "english": "Dollar and euro purchasing power",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b8988ac0908fc5a1ede8670f83ea4beb5b22b4837bf4c9cb6c2fa2cc6743dbdf": {
+      "english": "US debt growth (1970–2024)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0aa1cd762dd4c2a34102b073cf2d085f2e3e86a145cb2403a2ada99a2a65aaae": {
+      "english": "US debt (2024): $36T",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7ca0efc93daf77f5ec91f35dffb36658020892d72ef34c5ab18e05753e72f240": {
+      "english": "US bank failures (2001–2023): 564",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8f4cfc53ca31505c3535a675f731061c821497794bd6d6f758298c979113af37": {
+      "english": "Encouraged by inflation",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6c7dd91a73339210d19405d1a95a812f50f3c5d6a9daa7e137f272a92160b66b": {
+      "english": "Postponing consumption",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e7cce140b3df054d0e27517f0c9ca3f781d9befe2d84200238edbf1ae8c94e82": {
+      "english": "for future benefits",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "34dc667c22b84aceb44e72f87041c7223b85a666cbf01ec332958132d8e635a7": {
+      "english": "Encouraged by saving",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "698c9f1e434623f5346ec7f8afc33ff54410061b1993b3487215094e6470252b": {
+      "english": "Consensus-enforced rules",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8c73e15f62dd2b9018c0e1ee8819864ce94d4e0ce378e43803696ed1adc1d0d1": {
+      "english": "Cryptography and validation",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3af6351fb2ade3fe58cabb503f198f1c5cd0b8cab6a85bf1510caef788dcab22": {
+      "english": "Encourages saving",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "74083c2bb09a5504644f2ea168e41ead511b1d6d578b3db63ecd2f2c6307d3a5": {
+      "english": "Open participation; privacy tools",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8ef4af7d3cbe21cb6cea7b016630e9007011aeaacfc744cf249e60d0378abf53": {
+      "english": "Network fees; no gatekeeper",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8da108c2c4ccc2155603cfe5d65678821e201ae0f29019173139454f03ad054a": {
+      "english": "Central-bank monetary policy",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "07b5e8dc3b7174570497b2ff7ebbc5c8326b9bffa3d3f95d4f0a90b5cfc939bc": {
+      "english": "Encourages spending",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6f9f537797511bb06782287184f3a8a7b9ee82c01bcc41b54655a09979507ab7": {
+      "english": "Legal-tender requirements",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5242fad1e3d89b759fa9949120b886f6cd033af112330fa680650c33fd7da5c9": {
+      "english": "Perception",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "402b3bb4db0912b3b26785fac221b26d4f63f41231584b2ae2f765bb7bc11789": {
+      "english": "distorted view of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "732a06eedc384d5a51557acfe65f7f7a7a8f36467ce9bac9189fb938d6d4382e": {
+      "english": "\"Crypto\"",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e7c2a0c1a3dd49a2d5bec7f4c10dfe20ac78dc6cf275c75e028f8e0ea7118891": {
+      "english": "actual view of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1ad531ed0e2b4cf776ed49891b24d35b41d14428ee16a0ad6262e0dc66b32710": {
+      "english": "Others",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1664a68638161f4907a4f7940286f8a53fcc6620a616f256c72c034581ecf2fc": {
+      "english": "Why call them shitcoins?",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "72d32eedfeeb9345bbb5861bd70f1746f61fffa7873348a767dd9cf65662f0d1": {
+      "english": "Speculative",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "abccca656f862639c6a196c2217e141dbe47e6248454e2468f17088817b1a9f2": {
+      "english": "\"Only for speculation\"",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d4a157fab80b48ecef9dba9d771a71b75ed2ce1c7d64e9192475156307d7dd92": {
+      "english": "Other common myths",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9797c48d90a8aeca84c399560bd1d5812f685f538f7fc99e4c0635e03322226b": {
+      "english": "\"Criminals use it\"",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "473665cb8edd5d3a6a5b5f926e18b3dfaa03024e2ab372bf4d65f70ff02d9257": {
+      "english": "Remittances",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fd4dde8f8753ac91948f371c96f91cec1860cb6ba7b71e88a347af904ebabd71": {
+      "english": "People without",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7dd4121f9d9ac5ddf629d52940f6c4cc5d10ad3ef72ae41e6ccd23cc3f3c1de1": {
+      "english": "Own",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0393ffc6e5ef6c8d9f385bab84cb76d6564905084460d396b1a020c14bfa6f2a": {
+      "english": "Top remittance recipients (2024)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "72a5de57554bc1758d77a040d1c349e7aa3147d0cb3d42fff274c26de187738b": {
+      "english": "Billions transferred",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4dfd0bafc3f15eee52955100262b3afe7f84a4d2a2f5b9014d6b2f2fdb46442d": {
+      "english": "A. Navalny",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e2f03a4ea5a4ef547983e634256dbf7ddb1bb127ed90ec8a44487ecadec1a066": {
+      "english": "$3.8M seized",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6c2c9e026d6c9992e19742a586896750719b719d56182248405c97f76f9dc847": {
+      "english": "Arbitrary political choice",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "484f5dcd4c5d393c761586dfd9038738ba923c5d0dd9c518bbca1f133f82df0e": {
+      "english": "“The technology is so strong that I do not see",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9d905ebd1d9ecdacbb91dac8657f39ee3fa80bfb05d63b9991837fb01b57a597": {
+      "english": "what we can do about it through",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "78a00c6c5553ea49a25e19c5bfb4651b354acb795267ede19236bbda39abc04b": {
+      "english": "regulation. Bitcoin has made our",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1b2603bc0ab20515fe9a7b090861830213eb93e9344a41e0353a3e9658991b4e": {
+      "english": "currency almost worthless.”",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b32e6de35e2e7ea4a1779a196139fae7ba75db5a5d2f7e32267ff79ef716eb54": {
+      "english": "— Sani Musa, Nigerian senator, 2021",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "103ba9ef3ce96898b87b255114b34ddf7856cd0401349a4b00bca15debea9abb": {
+      "english": "Mining and energy",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "21440956231d48ead586331672c63c21da6569d0b7e3dfdf1212d08959af158f": {
+      "english": "Can use surplus",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e5943c15b6274399716d4b522418a857eddcbbd8b9052a09c86ac42ff266bb9a": {
+      "english": "energy; effects depend on",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e9702e598e73fc4ceeed11e2d9457e873ddb3cd45b74b3026e9ada316b7072bf": {
+      "english": "local power systems",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "45751cb6a179fcee5756ee20934dac5ffcd3f1935af31b384a3119e192a9b153": {
+      "english": "Austrian economics",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e0f1ec40f7f894e9c3a9e9649180f00d6e36ed82aadc92a2a375e31b0b710ec0": {
+      "english": "Cyberspace",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "30d2b544ac80b7358304ac800282788dbd0636dc86dcb10e11451a1349dd445a": {
+      "english": "Austrian school",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a82d5696b225d0097aa362014aa54665b899f744142003c80f55682f712f8d8b": {
+      "english": "Separation of state and money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a0b7d2cb21ece04b5fd19c30212d43ca33031fdabd571977d1216bc2eedca397": {
+      "english": "Subjective value",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "aad82f893b5f731be2691829c4649a2e486db440fbbb126acc734bb7e052cffc": {
+      "english": "Command",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "20851a3ce1b18c897dfe44a137bc2c17043f6fa7c64056c6cda5bff243db2bfe": {
+      "english": "line",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "46d889a6d376dca83ec64b0b29a8375eba57a2ac45bcbffa03e29956a44ed627": {
+      "english": "Graphical",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b45de25eb691a99e5b2cd8604517f6e7ae888bd19e8599cf2cc085fa8854d3ab": {
+      "english": "User",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2ed7b50a2cbbbe0639be57262ced071c236304de4e2431d699466d01123f1913": {
+      "english": "experience",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4954e38f4fba22ba2b1d2b1ac73205d9ce0ebe9869821f4e65363f600e8afc32": {
+      "english": "Price snapshot: 2025-10-28",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f5b2e3efdb0730abb467b3eefd5823e8a241f579f90f39f8e1d897d56be2074c": {
+      "english": "Free education",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b4deabe062e5027604d53e3d5282d7d76caa1856a966dfd16065af97cb7af1df": {
+      "english": "Ways to",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6423f4828ed53e012f9e5a984914efa007b87152d6dbce664bc796b8de7e7742": {
+      "english": "buy",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "93bb406be398d7b90905dad60cfcb9788b1f3794d338e13c8babbdfa90c78d1f": {
+      "english": "Banks and traditional finance",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d9a3df2c9fdb23355493c3d4907da39d471c7a953124ddfc93c5555352b570d1": {
+      "english": "Cryptocurrency exchanges",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "66fa3588049fe0d8129cdd953172e0eec6e830c7e7514881d48ab2e67bc212fd": {
+      "english": "Earn bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1da4f80da524ea7dc2df730862f004c2fb9c525fb4336e782f82be77bf7dec2c": {
+      "english": "Levels of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ceebf78fc9fadb13bc9a6d6d001221d8ed5e753ce2fd9fd122278b25de8b053b": {
+      "english": "Soft KYC: limited personal",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4206ab169849fa71e23d0c8ec0db6db10452a79d5e88b565c1cef55132f8e455": {
+      "english": "information",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6b72a624c69fcc866150871fbcf2500a949684a5b3b3e63833d4a98a9e2b06c5": {
+      "english": "No KYC: no identity documents",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c4e47e7ab564c292ede79d3020483fce860f6bc046cefaf7e3e24a5256bc9c9d": {
+      "english": "Comparing methods",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e783032aa71c2aa4f5cd69adbbbc4bd0c18160622976eedf627b841cbb73f0cc": {
+      "english": "$24.78B",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ef3c386b811eafe67a47fdb57ed45852167942660f41e9b92185609d2666e7c8": {
+      "english": "Transacted in 2024",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8213a3d0964c31bbcfd186a7cbb209c035f0742c71ef7ba46304aa63feaa78d4": {
+      "english": "$38.98B",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "87163588fac33b36edd78da017cf7fa742afcdd07369cecbed6ad3c08fb41fd1": {
+      "english": "$46.40B",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "71f0489b293e860d649b38b57d3b94ffde56338f1e4a1ec67d49ac12cab435d6": {
+      "english": "Basics of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "226c0db721c8cb431454c98ee2ce80053b099a828337521981c5af1b2f40d4f9": {
+      "english": "BitGeneration — Politecnico di Torino",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ca45e8232c7d35fed586e2bfe224ebec7a865cde3cdb7996d4bf190382eb92b9": {
+      "english": "“A private matter is something one does not",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0086f137b6f8c06b6096d216c65914a119946be68f01e510eb7a4d8d94d6f704": {
+      "english": "want the whole world to know; a",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3029a52bc5c816fb6fe29322fb049f7cf60ef96bafcf4547ab21ba1a791e5d23": {
+      "english": "secret is something one wants no one",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dd6e058129ad8da54e8a23dfb364ebe626aef47fc6248fd9af67baf534865285": {
+      "english": "to know. Privacy is the power to reveal",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ee380a4b824438652c227fde9188935bd2dd7d6bcc3993ddce050a1df4604f43": {
+      "english": "oneself selectively to the world.”",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9d472771dcbbaea11a907a50f2619a9e8461d234dff0c3f2ff5b31955086cd3a": {
+      "english": "Cryptography studies methods to",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4ec63ca7dbaa2b6f29f42771137f52c902a4c20a27a952d3834c9547a000dd78": {
+      "english": "protect information and verify",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b72a3d10c4989a78babf9e3afd06eb0c028fa094b22bea6be533502476d46aa0": {
+      "english": "the authenticity of messages",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "338544039640ae5e20dc609a41c05b583ffdab9073b0721970145e26c91a8fe9": {
+      "english": "“Hello!”",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c177b732f5c5a6748c7ed96a229a8020340fbb7c868c760d8fa660613989a69a": {
+      "english": "“Khoor!”",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bf24b8422fde48ce3e41f0cf1a86d1803883fe14cb46ffe24f8350c7412b0af8": {
+      "english": "Caesar cipher",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2bb872f365ec97e96e67a2172b663c977409995a90f28c8b6d03684afe8fe30c": {
+      "english": "One of the earliest recorded",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8a91847b4fa30f975f1fbcdff2a2072cf01801540a3926c0291e549ec9921c26": {
+      "english": "uses of encryption.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d9008e22565d43bdd1bfe441fe45059b931e71c42aa9ba299289301d305ccd7e": {
+      "english": "To communicate with his generals,",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9ade24c6a25ad096f32f7c89e91ab44db979c6543eb8337f52265d62e6f106fe": {
+      "english": "Julius Caesar encrypted messages",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9021ce79879419f55140d1daa0e93b0d9000b1f0f037757d429d52cfb740a281": {
+      "english": "so that only the intended",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9cb547cff00ae175560f5362441854bfe242e59e1022f5d16d9347166ac4a4e3": {
+      "english": "recipients could",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d82a8f4a54bb585670e1ca7c83138a5940f07c786459143aa3dde56913f640a2": {
+      "english": "understand them.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "03b219e54fbd5352d189afa3c797a078e63ed77b88a93710dc594e3439ef603c": {
+      "english": "by a letter a fixed number of positions later",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "86667da09fda9fb0049c46c2a7cf049189eaf23ec3d5b8576b8d95055050feff": {
+      "english": "in the alphabet. The shift is the key (here, 3).",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "25c73520e69f4bf229811e8e46ffe7d80471544b9bee15ed25044b86be4115ad": {
+      "english": "Hello",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b0ebdc32452d1faa6a20ccf9f0f22d49af74f2e0340f4f6981542a564b7685c1": {
+      "english": "BitPolito",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1ff450beaa90b0de4dcfb61f949ca1c0c8c7b554af271f39fc633d8c1e6566cc": {
+      "english": "Encrypted",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fcc7ae0dbd0df0a8282598370a3f8be856a81323ac30c6de046ceb935fdf8f04": {
+      "english": "Not meaningful",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e3786c45ed3517ef48e16b04cf6700499f9f871552670da07d397925c77b3e07": {
+      "english": "The meaningful result",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cae483dd69bcc60a9fb38f3b7d148bb34f8d59c2e8c8960ba76cab611eb69d59": {
+      "english": "Symmetric encryption",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cec3a9b89b2e391393d0f68e4bc12a9fa6cf358b3cdf79496dc442d52b8dd528": {
+      "english": "Data",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fc06e4498a55234cdc71b2d8a15e4e8b7f0548adf25ab023484273f1ad32253a": {
+      "english": "of symmetric",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ba47a6a0bbd3e91ebf6d17af3be12dc317642a189849a77975a6d9f4a7c71ced": {
+      "english": "encryption",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ef400a7ac981b36fc75cdaf36da00a0fb7a834342ece14c18a8d8b19f5bbf3aa": {
+      "english": "A shared key for each pair of users",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dc8a9f73566ce02d3db434fef3f15b8c2a3c6f856b55cc471fa136db2eaf67d2": {
+      "english": "Keys need sufficient entropy",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0468f88281eccd646846a9cb2c2dc25e701bd9971ea11328bb50c8f86f294f2a": {
+      "english": "Security should depend on the key,",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f40ef421320798cd3f9191f753619de80093f41ebded86ed8b1fa1865e7e7bf7": {
+      "english": "not on a secret algorithm",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5583e0df59aefaf395aa0261a6e28d1766a2c02c1c8afcc121b200c75ef70b96": {
+      "english": "Long keys are secure but require",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "27f302ef8b48aff804db1aecb7c57c71e2acce778c5ae65f0631613b10e920fb": {
+      "english": "a secure way to exchange them",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fbf1557b5d0bc8da1baa73a032a814e035f94334271d7f98bccbb74cdf9ad8b7": {
+      "english": "Public-key idea (Diffie and Hellman, 1976): a key pair for each user",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f4147413f9e1d0d90ca366c24d098f84a9e1873b6901ea890d521f5338e0379c": {
+      "english": "Private key",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8804d881a6a37c369a61fe5044dd9f1609c35d5f2b8d236f13b8be6443be00a9": {
+      "english": "secrecy of the shared key",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f709caeb6f0fafbfe07f27a54437273c36bcbf0c2bab4a624caf62ab73598736": {
+      "english": "n users → n(n-1)/2 shared keys",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fcc5663555799cf156a11eb63ffdf8b8e92bd5de83c9aff516b26f5bcc4ed390": {
+      "english": "secrecy of the private key",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ee5e665a0e92f968a1f178ba6e7bfdcd3917e31155d2345ceefb57d7bf121b6f": {
+      "english": "n users → 2n keys",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e6bf95236edd5f6a9d1928cdfc40d0e03f8822031f12d13e7e3eec6c23e820d9": {
+      "english": "Cryptographic assumptions",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ab6e14b03860ce4242bff53458ab1828c44cd80089e4872fa91813696637df72": {
+      "english": "Given N = p*q, find p and q",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bbd431e8725d3542ef52c6e49f174d5a0dce9f8bb1c2576a74ab0a1e6494c7e6": {
+      "english": "Discrete logarithm",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "170f715516a5879394b4ee691663c77dbf4a44cd0fcbe4efb03a5597a7111630": {
+      "english": "Given y = g^x, find x",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f1a73e2204a114077f988c9da98d7f8b604ab250496f25aeb3cbd153f5369c83": {
+      "english": "Signature",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1b04ef3948e4e80fffd9e42d8f640f7d04f9f5766230450769290e709760b059": {
+      "english": "Hash function",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "43b3680324c4287a0cc2de352d503dd0c3084603be02e8364e7e6b82ece19d3e": {
+      "english": "Preimage resistant; one-way",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "62da87333e7742a47efc8ee8f03e0f1b80d92cea56cb7021ca537aba80804b16": {
+      "english": "BitPolito",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "86e53ad6711c8e2c7d1315a9c23a32eb3c96911c03a6636ebd95dd15e4444fbc": {
+      "english": "Cryptography in Bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "911635dc5051c99861b6fb4ec238320327dc95d47d6e73409ed0b583ba59e53c": {
+      "english": "Example address formats",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9f5c701acec5733caf1e943ad45a6680bd6c75f66d793315c8304cea3bf05f86": {
+      "english": "Legacy: 1 or 3",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2d5f86c08e6be64d1ccf66d0751b5cf9def95c488758bb7f6e1c8174c580f915": {
+      "english": "SegWit: bc1",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f696c94e68233c3b66de6d9cc38698c38a3a6f89b8b6a75c29599d7b12f5328e": {
+      "english": "Public-key hash",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b4ee65787a8f877209aab2fbbdd3afb8587dec59df6246f2a744a6dde31a6a7b": {
+      "english": "Private key A",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6bc94faa64d746f6b1413d67a43ce87ac876a97b122e3c6805ee2fb27af11be6": {
+      "english": "Public-key hash A",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "791478279b0bcd0c7f587652049c1eda9f180d87dcf4b039e98292cd5a18e026": {
+      "english": "Locked funds",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0202e2021d4369fa31d8776ed60387e596a3f793a3b212c5a2719c777ed67b45": {
+      "english": "Bitcoin outputs specify",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "255afce46090d872d52de69963b91c968fc97c4a7de850c4298eb658050bac41": {
+      "english": "locking conditions, such as",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "18ac86fb531df0707fe40c9bc069712953fbc0a1b5156c96d942de009a4a030c": {
+      "english": "a public-key hash or key",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4b8fe7f7d5d6ffaf5979d8f94ff4567a192f3391ae9a8501d3968326a193a538": {
+      "english": "Signed transaction",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e141081616112a71a8b5d5d628ab9a44461a0e306905cffb260856ce1c75f6a4": {
+      "english": "Bitcoin is a tool for",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "425148c01d8a26b98047f9ee6f06f69f31a69140293524636ae973b28d4160ec": {
+      "english": "freedom and",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "48f0772b545a921f34a5f65495a71a6b317c25b036e2476ddc67a94511ac23dd": {
+      "english": "Peer-to-peer",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "61accbfad0c19be72f8f95ee447b4c9ce0b6fb10730b7e5626e8461118e6da5c": {
+      "english": "value transfer",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "82de43564663cab5b3998b138b80013e0fa067c3bb070a69aac01e56d45187ff": {
+      "english": "Alice's bank",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3d7b2c538596ea39969b1baa1253396af9352fd82257f8992d5d420a0d0e8743": {
+      "english": "Bob's bank",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ff1c4c68e711623472384d00718c112eed9013e43228a1d0c5d5036f90e7ab72": {
+      "english": "Computer",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0b00df9408cd4eb2d8dff78f49b901aa0a0ed78f401b285e9e86ce24e69c04eb": {
+      "english": "architectures",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4a74ae233f8392a1b631e123d8ecd4a05777b29ad6ea17cbdd37f04a52b64e8a": {
+      "english": "Client-server",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fd30c8e5cb2b67d96daa7943557460a69c6687bd131b86925d3b3a0504c5ea95": {
+      "english": "Fiat money",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "17e9247a3c022098d373ab233a3088b5afc28ca9e4141ff3d9c171c91431e430": {
+      "english": "Network architectures",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "94a7c5f0d4b96f7b1b0529eeaa018a79191bac1412a5a5305be2cf29fd270d5d": {
+      "english": "Distributed system",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ac634fa112317b083c985b70e358c5118edaa699609d1a97be29fba0358172e3": {
+      "english": "Distributed",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1232302314d81e97e6becb52e946273e95526ad0335ca7bdda07421b72719d2e": {
+      "english": "systems",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "104fb7cdbf4c4b8c8830517863a474466d2e618df74bad1336fd3263d8b98987": {
+      "english": "The double-spending",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c27ebcd8d7f448ec642b5f3c78f831198de3c8c823676252ffba9ae2c1c2cd80": {
+      "english": "problem",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0350fdf19bdd76a4a1efb37e4b4e104a7b9c4a69bc9e53111e48da4100442498": {
+      "english": "Orders and validates transactions",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fc14ab1ea8a719300c90079c1a76f8db8529ad591abe6132c0b70d676d3d91ff": {
+      "english": "A ledger shared by validating nodes",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ce1266c92b119d2aa0b415439ed9013e8667ff25025e5a4c660184633f477826": {
+      "english": "Public, tamper-evident history",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "03b464dec47498b80d1f6af21fadf41a7c993eaecdcb971122a19b8de8780fa7": {
+      "english": "Transaction 1",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "61e6649627fbb101c4e3f519d72e8a60cf2a2fcf2ac00ecafed3bef5dea4b932": {
+      "english": "Transaction 2",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "06b061d555f6858a92d0fed0c08496bc692c239d029453136e275809fdc332fe": {
+      "english": "Transaction 3",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "47d307ec2690d185b822840e8b0c704aad6aaa598f8c13454af0146c1962ca3b": {
+      "english": "Transaction 4",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "190bee465d618bc8c60965812b2866145f04261c014f796e753ba0742a0c7088": {
+      "english": "Transaction 5",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8394821fe1c86b872f21d7eeae1275214ba21cbe21b28bd07da30543e1fc2ed8": {
+      "english": "Transaction 6",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8c787f183142ac291b69dbb7e9b42436fb1cbbdc6c1168ecaeac672560ffbd59": {
+      "english": "Transaction 7",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2d2dd32f14360b5191b60425c79a3dd01dbff19587a237c31bcc23833e7efd3c": {
+      "english": "Transaction 8",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8e656aba0dd771c724f9d4f6aa86ed3aef644e0ba97df07f3329d8ddf7222e43": {
+      "english": "Consensus",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1c39d1c9f702ba37de32812bc97456e1b397f9d6eabfd52ad4104c146a52dfd2": {
+      "english": "mechanism",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6aa9844a717a33af3f278d30d9124bdf38267b5d7a0917021c9d34d0f630b3e7": {
+      "english": "Block target: ~10 min",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cb111b303bab9e46bdc4cc4d5a9a0cdd3876359b15f8cb435732374f700ae121": {
+      "english": "Halving: 210,000 blocks",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "713baa01b66b845595459a80da86c0805cca0faf019f2ec9f73d151a12cf2ace": {
+      "english": "Previous block",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d667e882a4324144c4ed1b4abadb37559c28fe64b1c6b73dac76c2dd60d58df1": {
+      "english": "header hash",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "956ad77474918faac5bfebcb8df46c1aa7042b50925211c5d98f346ddbc92f4e": {
+      "english": "Merkle root of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e26bd07d9e7dad7681b12fe8c095cb1316c075620cc8893703af03e48633990d": {
+      "english": "Functions such as",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0da662aaf8363625b86d72905033df44dd9183194b9bd6545148c6fc8aacd9b0": {
+      "english": "Information takes time to",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "55c3c5e8833d07241441c3e98dc4b0fecd774c5abd860c64fc20bc90252c51df": {
+      "english": "propagate across the network.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d0acace0ebba3fa548a9895c219582df8ff03065ab079399a35b54de00a7cf94": {
+      "english": "Temporary forks",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9a002d805e66bf7d8dd76ee95bc55cfc0b03e400478436f62e9582f5c893eda5": {
+      "english": "Competing valid branches may coexist;",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "24afc3e79af96b5927f9fdcb75b7afedc31a2e86ff675357b54dd41f5d776117": {
+      "english": "nodes follow the most accumulated work.",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c4682e6a92f61f9efde99e517d2fdb7de019723f646365448b0995ceda727ea5": {
+      "english": "Community-driven",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ea58f2f38f1d363804d5a036ec29d51a373efd0f12bc83219ed9cc161fc5a742": {
+      "english": "Open and permissionless",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d91e956d8c3bc11709fec72e2f00c35c6f588d7d26504742a14af331978bf84b": {
+      "english": "Reproducible",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "56f8e3822fbac84771d4cdd4e7d51b2464945e15f568209f2ea508bc1ef85ef7": {
+      "english": "Modified by its owner",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e2e53b72a8dca26eb1a2cbd88a9b619c8d822dee087c50186f9ca33aa0a5a64c": {
+      "english": "Business-driven",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "86949e0ac56818b53a4f05d38c84e70bc1e035d2a2c8be1a9adc5757bb49e11e": {
+      "english": "License purchase",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bcd5d876d1500c075e712ef23f27e7a109bdafa877fb4ff91f1f05443adbad13": {
+      "english": "A backward-compatible change",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "08815425660b2bcf54cbd4a5ee89755bfc184275c4a1e0518b0d8bb0aaada2f3": {
+      "english": "to consensus rules",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "acdad15a2adf63ce7fdaf426f5ea0987ea27dee06cf3c7288645acdba201f527": {
+      "english": "Activation follows the chosen",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cf31b89ce1dd33a65c2caab2c40bc14f4e4d9663425cf144c2cbac5cb06ceaeb": {
+      "english": "deployment rules and thresholds",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "da07f9edc78200f4e75818132578acd4ff2ec7ceab1e0362471097c81a937846": {
+      "english": "A non-backward-compatible rule change",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "044e3a543bbc9c73988026e54806cf28e17e41afacfee58da4d0012664a3b9ea": {
+      "english": "May split the chain if",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6a13b07d2adfcac80410f62c8b8ef01c5b4c666fe83ce12e4531d3573ec99c54": {
+      "english": "participants adopt different rules",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9ba03b28bf0726fa7b41ee2d57730dd0220d85497a6459891026f4d523d03177": {
+      "english": "Published 2008-10-31",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "83905c45024a5a6e7268d0ea548731d2a97d48410d8afc115896d41b7d5192af": {
+      "english": "Game",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9b155f3f64e5b8dd6fd5aed186ff2265e7f6df98b647100df992ae67065027b1": {
+      "english": "theory",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0b32de94e840a49b6a82bd2165a5f307b1662710b04fc7ce232051516fb18e0e": {
+      "english": "Bitcoin prehistory",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1eea0a29e15b3569fd6793062bc218cb9d0a6a847a390b386fb40a217322e7e2": {
+      "english": "The Byzantine generals' problem",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "47f04aa3504e8daf083dfd3b39be1cb3f1d95d6ad00ce4ddd28eac5ece6aa0a2": {
+      "english": "Nash equilibrium",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a996ca7b29b0f58a52f391d7c93402763a9b379b3e6452e0d741e36fe0ea81a7": {
+      "english": "Prisoner's dilemma",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9fe4266418677a73581d67d0dfa03a8bf5c1780b5e25d8cc54bee679e2d402fb": {
+      "english": "Confess",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1c10c953810fe84dc00a48fe908e6fd1f543bd4ae11dbc7ac336479bc195eaf3": {
+      "english": "Stay silent",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ff4cb3b4cf1e42c98289631a5b1c8880e3100f666f9b09d55f5725349676c840": {
+      "english": "Participants in the ecosystem",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "502d900944576d7ff89fab84503be1b36b1cc39dcecec7a2daf6f6291fb84386": {
+      "english": "Weavers of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3c839833759e78e3e8178f5a6ff663df1b4efae8a1000ec68a98d0ae85426171": {
+      "english": "Builders of the",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "67eef370edbfb3b451a3171866c92f92f062781c9b9336847980cd38cccf6219": {
+      "english": "Try",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "28353bed17691efb77d92088357057382e9921a06d44b77b23d7bd0f078630bc": {
+      "english": "many hashes",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "711255b3ae38fe4c899334d5fd16bfc2e22f17ca54c0ac1e0dcd2427197bed91": {
+      "english": "Find a valid",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "735a72fe7c82be1ef60f740d13389f62d5018773005d3ef356c98d06e5f6b0e3": {
+      "english": "proof of work",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9b8d1fe55e00e85f44b355c872d63cbf6b3fdfd758ad6bb183ea9626a924702c": {
+      "english": "Earn",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e496040766b03e1f23a9b8f79880cea98d1178df75b300f9ff7846a56bd43211": {
+      "english": "the block reward",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bac5a0d053e9866c653eed4d4c3d3aa6802793ab3e6821b04d8477d04ec2fd49": {
+      "english": "Scarcity",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "877ec77b7a490ba28f05aa284d388c4a4af735a1ffc87cb879e4c62379840326": {
+      "english": "Immaculate",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dc027f286c1f57da79da97afa6855bc55fd67421b4b3dba6eb08e36ebd5eaa42": {
+      "english": "conception",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a9395db16c6044533f9c79e884edd2e84e8540a93214f5a099eacd6052ee58e2": {
+      "english": "Winner-takes-all effect",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ae910523bd9ff2756d135491cd8b1e569ea5e6fa6f06abc7f608186f1a7f3d0d": {
+      "english": "Why Bitcoin needs mining",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d2ee3c8d6b8a2785269350d39fd9833db49db001d83297103cf9478aa4d0b7fc": {
+      "english": "Solo vs pooled mining",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "687a44ed04a80d908b0a071f9d6df8c2d93bfb149dbb3e995227209ddae161cb": {
+      "english": "Let's mine Bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "61d4a8c32b058ac34e84a29ab859ca19bfcd31b62cbbded2b4bc79a73e19ac8b": {
+      "english": "Issue new bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "edcfc724e1d76a01ec59d52c2f95ddfdcce563bbfdda8d30a372d93c884bc062": {
+      "english": "BTC issued (source snapshot)",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "189a6c1758174ecae7fd8bc1b0c1980374c1d81ab18e841b8646fd9b76462bd7": {
+      "english": "BTC remaining (source snapshot)",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8b43ea50d613eeadcb6d2a7e60b755dad4d92120d16cf3c917d20353d15a4808": {
+      "english": "BTC/day at target block rate",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0a2ce71118886164d343b8a19cdf8fd90e069aa086fe9a9a7ac3c699488494c3": {
+      "english": "Transaction",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0bdec814b486a0e08fd6250fc4fea437e98571be53fef78d8a44ca91821a2fa1": {
+      "english": "Sign the",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4953c67135fcaf9125741b8efa33d8c9d4dca640f3d204c35f2a9f2ec0a58b62": {
+      "english": "Send the",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1e824d7976193d7870572fd8aee6cc472502006fcd107497109cb7d79eca1f25": {
+      "english": "Nodes",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2b7210920a3fd472b30e1ea2dfb1b33e22925afea46a4c6bcd089e4b668ee1d2": {
+      "english": "receipt",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "81a5aeccf9f794b1e2a34ad6cf789e7f7ff4d65e474200eb02e4370346c3c749": {
+      "english": "validate it",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "61feb4e4768a9816b989d53a8b75a81373b4197cb1d575cca4df5956b3311153": {
+      "english": "is mined",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "132668b101f9c824655ed8c6f7440f3bdb0a86ee2168938f30c053394e116775": {
+      "english": "Year",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "06867a0640df349bdaa7ea0c30eef9da9ca52d4f3dc4fb80ff280bddf2abb375": {
+      "english": "Inflation and",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "379277e2736daff2c2274d4d7dcb051d4136744d463788e2d03c26246f2e705c": {
+      "english": "bitcoin supply",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f8ebc425bcc9f6efc5ad4dd2e64d9c4bfa939490bebb0dc8e9fb8fb7811f86a3": {
+      "english": "Bitcoin issued",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c00ef3add9125100d46af01d16e54e5fd5838b0ab25c210b9a2dba3342a3f4aa": {
+      "english": "New bitcoin issuance",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a33ef0cd4e36d71cf7a880445f79a9caf5a3a361100fec2317d6e8e322f47e6f": {
+      "english": ".space",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0a3f63a1d499d20979c997fb5c4351b025fc5366897c84af653fcd0f16aa673e": {
+      "english": "Solo CK",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c65d0203d7cfbf5d700cb9a0de8d0833be892d1bc7e3535f800e7ca88987c86d": {
+      "english": "Encodes the proof-of-work target",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f9c348c29ee6dd34a5f9aea249ce238e44434429e8ef89cfe3f8daba2e376480": {
+      "english": "A valid header hash must be below",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f9ac6418b987fe28aee4abf005f618a1d0e7caa952c63fbfb163957b4c6de811": {
+      "english": "the target encoded by nBits",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e15204a9e3d1be7442fe9e588bdcd612d54cafc693055f76e1f971097d287bf5": {
+      "english": "Retargeted every 2,016",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1ddad9c364c82c4c90e86aad13be4c546448ec11b0408a5bdf284997cfebb173": {
+      "english": "blocks (~2 weeks)",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "71846332e02fd148d63fea193f04d2e23dc978efbaa804a62305c4bfa20ee474": {
+      "english": "Source detail: verify",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2b06ca9bfcc7542a3dca5b80ce03168e0e88c619d5bc99e03dce2074f673e40f": {
+      "english": "of difficulty",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "be056348e3c9e4f212e99d9ccf26a9f66611b5d6681e1e59cdf4976d985047bf": {
+      "english": "Hashrate snapshot",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9ffff10f64d1217df9d0c320a2d0cbc71cbea2cc5a27c7c05bf2d10f8961f337": {
+      "english": "Solo mining",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7ae74aa8bd5bbfb512c768933b1d9d3dfaf9451360d46a2696eebe689cd33ff6": {
+      "english": "The miner searches for a valid hash",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f2ae957c4bca9defc68e000148224ed15f978e39327ffef1ef73056b0976ac24": {
+      "english": "The miner searches for a valid hash",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f5b96f1a5fa5b2d1bffcb6a6f85da5423daa97f780acdba7094d94c6b0ca0fac": {
+      "english": "using its own hashrate",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1bed23dad6f62cd82eb19383b11999c698825e35739b6107c9710ae0f6ff5a96": {
+      "english": "by combining hashrate with",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5997ee5da53cad7a77592d43a70307a0fe4c06939518eb31cebe522f84aa8ac4": {
+      "english": "other miners in the same pool",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a8d382d04a74148df709f0e829b9f5619d4700c1a1d275920fc3948a939328e2": {
+      "english": "• Block subsidy plus transaction fees",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "38b571444e1358dc38179809da86817e13e92313177920d11a5d1c4b1ed9a19a": {
+      "english": "are awarded to the successful",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "72d673878fc1da09f5d4347eacd8308da6d8e869dd985f6da7d4967d29f449d9": {
+      "english": "• The block reward is paid",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "db8f232e623edb3c9fdc04219841b88b4c890a7237af1b4a5c25d4ecbcab14e7": {
+      "english": "solo miner",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e30ce7d75447fdb44a395ff1820679b391d48fe0a42af5f6465e0ef06dc7828b": {
+      "english": "to the mining pool",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "43b0765e2517442fe0cb764576747fd71bc5ae106831a6cb8843435c0cb24ded": {
+      "english": "• Payouts have high variance",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fcd3b7f2f9a9a2af3d3c0306641f664382312092a3e583517c6278653bd38fc1": {
+      "english": "• The pool distributes proceeds",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b09a4310d9fb42fe21604c5847063fd219970bd3ce23eae2aee378a4e44d6e67": {
+      "english": "and may be infrequent",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b25f21e513c61edf488bed956dd23b8f7763e7448e1055046379bf7311fe683d": {
+      "english": "among contributing miners",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ee9fb62dc446804aad0e1ac557638438e87139116722a0cb8b57cea5898ac653": {
+      "english": "• Hash < 4: finds a block and a share",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ecfe16450d05eb5a6d889259d55dc56446aa006ff990e0b6fc9ef9b81cd7df66": {
+      "english": "• Hash < 99: meets the share target",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7a491c89561ddbf04e29eaa27d7660b2d27f7ff983827faae6bd807e7b070724": {
+      "english": "• Hash > 99: no valid share is submitted",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8d2936e9c160c5c022ca7ba91fc8540f309f49af9c255a68651381a0061737bb": {
+      "english": "Mining and energy",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ea231cdb65f670b84dfa8447fc90562278d3f93bd7fd83bce3186659c380cf23": {
+      "english": "Mining and energy production",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "39a60a3d67deb1c0c334e50ae177358de816d456a5f5203224cef173128e6892": {
+      "english": "the base load",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c7154baf8d0544724568a74e3c07d047b096c1f1a92e402ff3f13a7c95d236f0": {
+      "english": "Supply power",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cad9a8d439fa6ae3580165e07e9de807d980c278c2c4b32635c4e3567f3227c7": {
+      "english": "to the grid",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a5d8d832192f5954aa7715c55332e7184c821bbfa4425ecddd539bbf81e0c9a7": {
+      "english": "Renewable-energy estimate",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0d263fb1e7383f55cabba5b149bf1aa2a919ea378045a5296aa5b92b9d3528c5": {
+      "english": "Emissions depend on the energy source",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "942ccb5fff668dfae412a6b11940fb31a3d7dd53150fa200c255abc0809a5f5c": {
+      "english": "Mining and",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5ed198d12dbeadaabf95e59976b3984d18a0f4bf8aed27eb2e9c2cc0568ae08f": {
+      "english": "Can provide flexible electricity demand",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "da072e08956e23fdf34b6524a3b5f916e618e6a199ba4c280828b836509df522": {
+      "english": "Economic effects depend on local conditions",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f9c7ac2e37a8b2125854af99df87163402262d625f04b982d6f94e04a1fad39b": {
+      "english": "What is Lightning Network?",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0f9dcbec5b28313bceaa960e0a20132218597438c88fe4f23838d53e2ac84575": {
+      "english": "Currency: bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4d55eac00a00957cc778786087b0aa1d51f18f4a35f6bd9e70e09e24e72ff1ea": {
+      "english": "Handle more",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "02fdfdd6715b8f0d27b1060a11408b59f9083d6257d8318e8541b2203443eb5f": {
+      "english": "connections.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "002903d1507d6b94c98eb13345e47b3ff9d89d46f8036ad676c1476956d83644": {
+      "english": "transactions.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b8ee267ef9bdfe0974919fdec9aabae2c46baf3f18da5a99ec5adcf3c8355dab": {
+      "english": "Higher layers",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ea444fbafc6f79cdec220ac088d4b2e807defa380e675188d7a9a65d74d766dd": {
+      "english": "Lower layers",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ef1d318b2b6a3f36cb9e8becad4ee70ecb777ae98998164e71caae3eddf35734": {
+      "english": "Resilience",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "63ea23b761ef5a507edbec5ff24bffc44bf9ba51cc271e3a930e0f58e3f9ef5e": {
+      "english": "A layered architecture",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ae81b7ee6606798f60badce1065ea17c4e875ad95a1dab4c2d8385e547b76bfb": {
+      "english": "Data Link",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c72752d1c5f70ffd89241d9da20084026e7f4006258810ff4473d0bf05f1b5b5": {
+      "english": "Transaction A",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b16faa7c7fe2fe942f68c4c3f4efcf802fded19d3311c75e98f2fcda6a209027": {
+      "english": "Transaction B",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3435c4e0edf1e982f2b9d3a1e9dc3688c32fa4a3da716e28c96ba61a603ad042": {
+      "english": "Illustrative transactions",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ef241ae60d2a3bcd3bb979c29848bdaf15b7d10f85da2b1ca149923ecb44a6c4": {
+      "english": "Transaction C",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3ba1a7b9e5154085d7a74caeec59cde3823da98bc1df740fafbba4f11da548be": {
+      "english": "Transaction D",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "414802e88dcf54399b7b4f75cd67174d3d94238d04f935fc403f63321d9d3095": {
+      "english": "Script operations (opcodes)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "93e8fd38e5084d6ee12076b48b8b78c8ed1f92b3ed80a5c2b0681728b93ea2cf": {
+      "english": "define output spending conditions",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4c9b020f84e9c4ed27ded5ec2650988b711ed4b309d46c84f8fa6438c5ffe816": {
+      "english": "Restricted execution limits",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "11cdb612ef9f92f46d5d5adf4e4415d6d958e364ee3067d9f23a9f5c55133861": {
+      "english": "resource use during validation",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "38b0df3d61b6a3e9527caed5ebae2d3d22e195825b6575a45a5808583243b0f5": {
+      "english": "Managing shared funds in",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "269ff07f3987899780d3bdd4e9ca2cc8992cf157b6aa0a1c0caca10b687a5eff": {
+      "english": "an organization",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3ccb293642e98f4f03b55d5642fcc8f925b5c89f1072cad98e842b1c26ecba1e": {
+      "english": "Lightning payment channels",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5fffa928c04be06c3d79d8164e45dad94195b2b899fb039e9bc4dc72ea833334": {
+      "english": "(introduced later)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "877af6a33e5be6cabc2b77a9f94142b1f1ef9c8fa046328fc5ecbc1c2e58605f": {
+      "english": "Base-layer",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "88c8bce46dda3674f2f21ee33399949ef641761bc523e2d167e98f97dd80f19e": {
+      "english": "trade-offs",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f9c3c8a4bd9b116b2c550da455784c617d76f9b4aa35cb4c1184118ec7233adf": {
+      "english": "Replicated state has resource costs",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2e1a02b4e3b96ed5f3f783d7f79c6b22aa163eed0ff89c6163cd4c3b21551755": {
+      "english": "Full nodes download and validate",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ebe084677023741606e8ba09d69b4495ffd8dfff5c44f9ccaff31a8d58e14cdd": {
+      "english": "blocks; pruned nodes can discard old data",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4b6da4a404c4f3d968e778ca60c3fa3adeaa7d5b915721637f6de70ca5038afc": {
+      "english": "Limited blockspace creates competition",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "74fdcc8d1feb12795c30ccba0afb2bf2616f017340dc385a876a50c0ec44c32e": {
+      "english": "for confirmation during high demand",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "103e37748bdf74c380dc44cf99dc91accf05104f71e56aeead6a3771c56b2b48": {
+      "english": "Scaling and privacy trade-offs",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d68fcfa19aa5baef19eaed22ae3414d22a5fc59550914dc536d5585e3f29975a": {
+      "english": "Storage (GB)",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "99924f242f39d4f7b7b4c318f156825192bf962efffe58e1cb3897f93be7f6e4": {
+      "english": "Propagation time",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "edb00fb99db9e10af91e5ecb15a8b3de04b6b21903615dc0dbcddaf06cd50851": {
+      "english": "Mining centralization pressures",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "83c105a9454164362c5e2eb5b3dcc22cc7e953741da48b0c44df0be05a359e7a": {
+      "english": "Transaction-fee considerations",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7e7eac7f2bad9757406079440dadeb6cc065a197174ecc986c1ad74699a96fdc": {
+      "english": "Since 2017: a limit of 4 million",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2d4c5ddb19233700914e0fefd03a7ee4775dcd7fb85a913710c3ad6adc5d47c4": {
+      "english": "weight units under SegWit",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "51b4fd6413d4c8ba780ae7a59a69cde37c9f3b43477040c9f90a4347308db752": {
+      "english": "Argued that larger blocks",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "53f3db2b3691a54398a67311daebd3f11737f2adcbfdc1d1a8ffeb5f0478acea": {
+      "english": "would increase resource costs",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "474be6fbb33519f45eb47be7b8c7bc5940c29b6b2d079455f5cc3db4575fa75d": {
+      "english": "and centralization pressures.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4015c5b93f315af288818e929b36b20ce10eb0e6c1a26fea179a9f415fa13943": {
+      "english": "Argued for larger blocks",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e4edf57f85aaa9f71da32c8730c67e055d7a505f62402e89a04b3cf91251006b": {
+      "english": "to increase transaction capacity",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9005c3f3f8008a41f02b1e591990587659543c0b09220f8cf283db80dbaea395": {
+      "english": "at the base layer.",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3cce2c975e4d0819997ae2ee7a89dfc131ccb23b028cd18753f984aad695eb0d": {
+      "english": "Scalability",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dfedcc1d731e26eaadb3c0fdca9bcb7bccac71faf5dbc969a7e6a746a4c3b411": {
+      "english": "Scaling Bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "24c1a6241eef096ad34fa0d3065a3cc19fe945b479502cce4a04b43b9ddd834f": {
+      "english": "What is Lightning?",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "696618abc8aec62af639ccaff65e39b11b63a0e171c7796a2ab7f7d0122318fb": {
+      "english": "A network for fast payments",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c1c2c0f6678613a69e6a0f9eadbec0dfab0ec57b24ba901d4681968752c45253": {
+      "english": "built on top of Bitcoin.",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "360b0e46f15b39af261f9121b8f6d6accbf6416e933fe7a22eeffbaa44051298": {
+      "english": "Designed to increase payment capacity",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fd0cfec41573e89fdbee683a6ed4a78e602820c158d946ad4abbff44bf08132b": {
+      "english": "Creates peer-to-peer",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d4f1a86a4a82fc05532ce5d298e4495293c86383b82dd5968afad306d97030b0": {
+      "english": "payment channels",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6e28a4b66f0a97181516d57fe56c57ce5e790296d190087abe68ce4c8ecb6916": {
+      "english": "Payments depend on liquidity and routes",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "29ae331c26c87aeb52e60a2c1904a6d7a3e81d0ea7b40b0de05b5b671f10ef2d": {
+      "english": "Improved",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c2f5cac2992da5335eccc1d28efbbf44cd8791016cc91c13e3892671089b5e77": {
+      "english": "Routing fees",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ad6da8a17847823f0b901ea9dba3e1100982cb0b4befe1ace7df5afdf0bbbc4c": {
+      "english": "depend on the route",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a2ae61fffce09decf1fa4ce45d7709720eb3e484843df523b704efa02243b6ac": {
+      "english": "Units of account",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bca237f00defd6cfb521671a45e8944e2f91048d02bb2835c112c48be644a9b9": {
+      "english": "Lightning use cases",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b2b87d8e477290f7e61b2bb3fb24c0ffa95a17211567b11a09b7ccaeae27cf65": {
+      "english": "Micropayments",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "272d7ce5d8c2c8e7ac56ce2c13bdd8266ef8609399a74f659370603b2c3c0ec4": {
+      "english": "The idea of payment",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ba49c2975a21d7cc852cb119fd67b73f0f0d80258531c5405f2bb0b463b71a8a": {
+      "english": "channels",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dcc2a0e6004c0ee9ed222dc9b96e5e521e72803d01a191ebd5e2806255c0c9bd": {
+      "english": "as a scaling",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3dd7a8eeebf8fbfeb85523465e4ea6122f7e3bd5ba4a3b34d36e7390414e5958": {
+      "english": "approach",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "865ec1ea0daba83eaa6c65e3a387670cb26700e8b7fba24852e370f3967748ff": {
+      "english": "Lightning history",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bbcc1c8afab49340f17d172557a73ce5af9e04158d29f388303d690793d07db7": {
+      "english": "released an early",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b95f1bb420894a450cc7ea369d08060cb90f206f4fc50a3e3a69d76283881a86": {
+      "english": "working version",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c9220134190964db7341ee5e0c658fd3500d337984a3dc7072381179aa72e05d": {
+      "english": "brought developers together in Milan",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e5885b068a11fcbd77d366381da83fedee6a516112732d83fe15aa112aa303f3": {
+      "english": "with implementation teams",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e3bb8573dbd8ff940ffd9ef69636000470895b6fb4099371a2df24c85fd27f94": {
+      "english": "to define interoperable",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "93ad3cc55b7667cb6665da25d0a4198545b9b940d4b364594422c6691a47457c": {
+      "english": "protocol specifications",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6c71acb6ad9cecbd483f213a40e10d80ace88817cdb78dccb903bc65cbd4e999": {
+      "english": "for their implementations",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a543b79936bb3fcc3dbf6cc45bcff87669baed911a3a919940f9430373d72a5d": {
+      "english": "Late 2016",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1d4ea80a285de3bec2aebd88969b717250cb4e056056fbb1a7576c6480c7323b": {
+      "english": "The Lightning Torch experiment",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1fc9910df0656e8300c1de427d407067c2296a61c4f4d6d60a58fdd1bb75e983": {
+      "english": "Path selection",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "868ed13715c2be619d6bb0b9bc7f6a55275aea3a8771c479c67411888104044d": {
+      "english": "Gossip relaying",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "becf6ae1d417c6e9c66529a669dffef08e2185ea3cbaff598d4ee9723a8fb7d2": {
+      "english": "Peer-to-",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fb561a10cd9837c228bd75d6beed83556c12ca657378a7aca62c9957b9b91960": {
+      "english": "Va",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0062c6d4b052ee73e939dc15d32fe36b724bfc929d097dbce02516b7951f60cd": {
+      "english": "lue",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "141305f2a224002daa47d752a49ef5a17e6b93c21f448b1bf42ddb92a2212a5e": {
+      "english": "Lightning nodes",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e93b65ca23d54f2f0c254d0384ba3ffd174108819a58604048cd94d2a6aaa110": {
+      "english": "payments over Lightning and Bitcoin",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "962ccb7a84fb256f1ea7f448c2f8d0afec592dd470ee44e02e8f794e5dbb2e80": {
+      "english": "Store channel states and",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "816cc64bdd0a2d688258724b2e65e3d8aacb355e218e6140b452fb185a9a0882": {
+      "english": "transactions not yet confirmed on-chain",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fd5df6ff5c76dd4cb3e37cde85e6ea680ef7e9a60812d7e608913ca6c491936b": {
+      "english": "Payment",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cba19243805cad0d4962641d732db2ccc3a38e8c21d6f8729bf120173ad168a4": {
+      "english": "Opening",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1abcc4280fa87d26fca4f02e87735f41c90f220e4a1f189432957ffacaffb4e6": {
+      "english": "a channel",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "eee46f82963c8ffa506d50251cff05401e949ca53a53de4584e05bb982fefa2b": {
+      "english": "A funding transaction locks bitcoin",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5f46870f43be5f041c8487ba4ace8a5a19b332f1097778c7e1a4bc069122614c": {
+      "english": "in an agreed channel output",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e1f71eb4e874d7971534f3d71e8e54545fca8146db55b23eba54fb2a29ff185c": {
+      "english": "The funding transaction is on-chain",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ee429145720adc34d829dd587f5646c7d5bfc593b48cbf89fbd2e74b4d8decdf": {
+      "english": "Channel capacity equals",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ad9086b89507ae19bb78901fd9ee247364e87e2f4c422dc1d0026b29670a8423": {
+      "english": "the funding output amount",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0ecea6acff4e4505b95bb093a4168c4717247e6faa0fcfaf80f3ad237386cabb": {
+      "english": "Update the distribution of",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c04652c32b84fbdf2676b9ec0e5b64272bf8920012136913aeb3bca9321436ea": {
+      "english": "channel balances",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "52e9e8361bf78511d4f6fe372f0bc0a0cdb602b1cb4c725d10f684214ecb6f7b": {
+      "english": "The channel funds are settled",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d30bc8f54b2e4b466bd81cb8a44cb776be7bd30267f67f400961cecbb79e06dc": {
+      "english": "between the two participants",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "16c503200af07c13b6e4c8df64e235a06277ecf3409537c0b29b7beae17799b2": {
+      "english": "Enforces the agreed balances",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2ae317945bea374f50b7b0ea6aff2e6d2014430701f04b0b2dcde2228a642732": {
+      "english": "using timelocks and contract rules",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6e8a7de027a26ea1d8dc7686ad4c5c6a76a693f655bf065999e47cf24451ac33": {
+      "english": "Channel closure types",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bc0adf40455dbb70858a8135b3f279d36b4a4eabbd001b42ad5010a027863570": {
+      "english": "Unilateral",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c08a7026c9039b870b87ed098ed678af3f38a5a737c91841bccae55c1b87556e": {
+      "english": "Breach",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8d1cf39eb30af6560f48a8f047f632f15b40bbd7a8dbdef17d1ba4f68fe5ead5": {
+      "english": "Cooperative",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "620b9fb8cbca72e9256cd27a69ee551fafa38d88edcc3c3194b959692506b24f": {
+      "english": "Watchtower",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "63cb3126b2d0d8972a6d6c260b78c2c3803e55255d9985e07b2d1bdc480a03fc": {
+      "english": "Service roles can include:",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "61c81a3ed99913d6e24e5fa543f72972c4a63df1d2ebeac8eb4d7eb3c34e4b27": {
+      "english": "Providing inbound liquidity",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e7f1c107fe4ed767ee45299a73ae5fd57f77769ab8d5734425b0a34ecbe7bbd2": {
+      "english": "Channel recovery support",
+      "kind": "content update",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "449c73e689f81102883d0bce3f9ff9d5551d6f8904a45d10dff2b07af713d559": {
+      "english": "Recipient",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "91e0d01af437b7b14d4ba4f53e64b62863277bd4079f03385f6d9f01cb1850a6": {
+      "english": "Amount",
+      "kind": "translation correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2743299bf29c821d74e96552a8d24bb609fafa24fcb5195c93625937af296bc9": {
+      "english": "US bank failures (2001–2023): 564",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "74b6975376ad751480f0da8f79ef7495dbb2582e17df75c68eab5e706bcb82a9": {
+      "english": "One issuer prints",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "482910077d9b2a8facbcc18e098eef13520d79fd39b73b0429061fbbda6ff8f5": {
+      "english": "Nobody prints",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a8f2ce8a74cf87e662c8b04f322db37c45c1a4be26e216b5820fe31d9115cc4a": {
+      "english": "Social media followers",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7bd865cb1843587e692b11464a3571d1aac579aa5315cf65c4a24db95b1e3e6a": {
+      "english": "Scarcity",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f1878909d270d044ed85ceff2a13c465fdb35f5ac84d82446c0523e97bb48c36": {
+      "english": "Saleability of money",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "56de83cd30c88d6e83df8c7fa5777fffbe41d1266f9ec58fd436d15bf4ae80e1": {
+      "english": "Across different scales",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e64ff41ec5b810d409750b4c4796272588637121ec8729a0c30d575f50539d93": {
+      "english": "Global inflation rates, 2023",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "631b78156e2486cc71265c454aa9c275c013f10dbc129442fc0d9074a74c61b9": {
+      "english": "European, 2023",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0b64ef9aaf83ff91e522d9b948893b570b02bd9de21fbdca115239eb4b74f53e": {
+      "english": "US wealth distribution",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "aba9ceb2b59d24ff17794661c52e9485aad289f8b2b1dccc000b72387c59f1db": {
+      "english": "Largest remittance recipients, 2024 ($B)",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "48d4d54f11170d46d9b8a89ce184feaad74e64ee39e3363ec7fa899e4809d180": {
+      "english": "are widespread and structurally",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2fc400c197b33d2dc6f668a4d7314f9387959afc68ed6928ec3ea8c158a6be6d": {
+      "english": "entrenched (1 point)",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "90fd54bb848e5dee3be23206992380d26b3e28004c502d75fa2faa9a67031132": {
+      "english": "A high level of",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6ea536957a70573d9d75a26b299c1c2191fb1b182de5464d3406090fff6528f2": {
+      "english": "social inclusion",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d67905970e694ee1bef759a7b739dc838c0db9f4fd9087b78eee8914df2a6f1c": {
+      "english": "The ban remained; convertibility",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e1cef850ff3b9d699c7aaa9910640609a95c20b6256c66076ae86a261412ac48": {
+      "english": "was restricted to central banks.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "aff77ec69fad5118c781270b2f1cf04bc4385871d2248271d676eaf9cccca550": {
+      "english": "A bank deposit creates a claim",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9c88cd273a7559baf973db71ea3515aebb3a938247f64b8aa45f6392673dd851": {
+      "english": "against the bank.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ee87ca936c77aae4e78d4245da842f0b5ffe42c6e0d047b49bb07680dd9b33de": {
+      "english": "Permissionless",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c69c3ab09a75e957abaf1d8ca3bcffd75942b7b5b0806983d5d1e736c1ff6c86": {
+      "english": "Tamper-evident and",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f64426b6eda448aa07f1a983069d39f76b874f6f11320c89b57991f953403eeb": {
+      "english": "censorship-resistant",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "685f6518daa705d7c91d5b6920c7aa196115f048b06e8c4ddb73c4cd28d83cd9": {
+      "english": "Privacy-aware and",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6320dd5cf401487f7c20daa39ebf553337a6d144d5a54db9e4c72b5d30f569ef": {
+      "english": "independently verifiable",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7f6e858b12ba4d9cd25301bda09cf18cc0e2dd126e03433dde64466e109da548": {
+      "english": "Globally accessible and",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4cc909bc5a048bf506cddfbd97c0368cfbfe1a5714e1cddb062aa557b4f229d7": {
+      "english": "always available",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9487a8b0bd6108578d45c41dabfd7b5900c781bb6e8c7a16ca72b1e89b34f935": {
+      "english": "Network uptime",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "262a24cd7758114a55bb341f074d64f9fef75a60c558fd95b786ac3587c58306": {
+      "english": "Historical incidents",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4ecbd6b161ef75d3601b67b7f334ecf4576e3d5d4ec49397e8cc67090218e1fa": {
+      "english": "Time: 12:34–13:10 EST",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0c6fe5f61c138e3551019ac7f55347aa5407fe71e6decfbb782e040b27acd0f2": {
+      "english": "Reachable node count",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "228b3ec4e59765d4dd165618ba629bd8e512373d38eb339b90f1cad5def980ac": {
+      "english": "Hashrate",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d5ab02ab988c1b19be365da4fc3903b9e4271d6ee498ae12a7e37802c86ae749": {
+      "english": "Companies",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "949dab2bf27a3706a1a4b96495ca55704b9ff4125b8bf584c29f422f54ea28f0": {
+      "english": "Funds and ETFs",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7c672eaaad91388152540ad8de59fd447b8d952fe42948d67ebcb23423b465e0": {
+      "english": "Stores of value",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fa3e4d721f4df20b2e4d6f36e4b2953b8dfa644d17d84039c9fd530daeccf543": {
+      "english": "Bitcoin: <1% in the source comparison",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cf60a8769bff814fda22e6f6b2c3a4370e651ecf052304fb28ad38d4ea8bbd9a": {
+      "english": "Scarce",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "82bfc755e19c85ac9fa2c5ea88f72619df52ef9a8d65cf6d665fcdd16a3f7526": {
+      "english": "Limited supply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "23ddcc1ba1e9fc0d6c233def7e4ddf2c2c89bcf55bbc50212b7fb89fb4ad71dc": {
+      "english": "Fungible",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d5e6205c5f36e826314bfd73e34a8b0e12609403e30848d57297b185a5939ce9": {
+      "english": "Verifiable supply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "79f7970df558210cab16c2364943c6d7d002a22325123350b89b3dd888763005": {
+      "english": "Self-custodial",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5c5201b7090279e123bd90123c5ec54c44ea489d615eda7df6e0629576a359eb": {
+      "english": "Monetary",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7f6c26dfc7894b5299da4d4f762e8a036af0d258bdff3ed1214383ca127edd0a": {
+      "english": "Recession",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c2bf18eea9036dcf951b9859a0bc3228e2ed90c43b7b575608571ff543215c31": {
+      "english": "Recovery",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3faf91d552a6f2d9a2ab651c18cc144321f2a982fb7357d4f031854f54f22bb0": {
+      "english": "Your own",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "294073cd2362d3459635447d8916a2e2cb9efb9102ef0b0a6b972a005d7febd5": {
+      "english": "bank",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bea3424e2499784ab72698580295814a812d6b9956e0d0f8e719cdc3e4cb65b8": {
+      "english": "Core building blocks",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4370744dba584c91426511455d12a0d87ad31911bc82f02d61086ed5aa6973e8": {
+      "english": "Game theory",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0650f474608c7ff8838f7af4f7e61f22498a79bbf02e866f91ffc7f9fcfe54f6": {
+      "english": "No central coordinator",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9fecec8d12a0ed0a809b06f4e655a2354c69aa311a322e1e02b4d54471e1e78d": {
+      "english": "Prevents double spending",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "598d677270d8b116cbe182988ea558d2f2b5cb8cb5c9d25d77d7306f7c9cc863": {
+      "english": "nodes converge on the most accumulated work",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "08f0a5ecccb53e97b1cae4f076526c1deab62f74fd5ef0fc844c79f6b341d417": {
+      "english": "Supply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f3636c08c54fae107a7067241112fcf8e067e609bf524538ca17a23991f48a85": {
+      "english": "of bitcoin",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "407ecf894a7418b31e475fd8190a20e9e60e10c4a39be747b7b3d038235a519e": {
+      "english": "bitcoin issued in",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "aa4d4619b993b508a3bb92e31c400a0f09826d402b90047f6a9a3bc89df73f0d": {
+      "english": "each block.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "89c0bcf00edfb51d51968616c1dc3d29fd81c8897b43d0225807135f2a5603d5": {
+      "english": "At block 6,930,000",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3ffd47d36921b6da38bbe64f686e0ea01d48fd0dd86610c4fde37763d0d627cc": {
+      "english": "(33 × 210,000), the subsidy",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2bff70fe999734ae52262d8da8b163648e967a00713a27df9903db9d5c67e288": {
+      "english": "reaches zero satoshis.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c02427423f254a8ae54aa3cfbe997438a2492104137c10ae709db5f762b4a699": {
+      "english": "geometrically, where i is",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "15cc31e23e641173fb04620c5a548e7ebe16bfe73881d34e281dd6c0c9c6b6c3": {
+      "english": "the halving event number.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4d59533b6d6f4c95da8ed1e369954d5399b2b2e4d187e1c84971a0c0afb51b87": {
+      "english": "of mining hardware",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d9b54269151bf583783a70518a2c6db0ea02176a5aa63f528979e972f312ea36": {
+      "english": "Electric",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6eb9fd9740c71a9b71cff35143a8769ed3de2886ecb980c2be20fd3b9e9ffd59": {
+      "english": "power",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "daa84e8f2c1e94dabf6692114f370bf9210159e9094d54d84f2f10e2cdf0276f": {
+      "english": "Can provide flexible electricity demand",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b4c9a43c451952bc6554edc550024cbb48e6c5178d3a2c2c0c104338d5569e95": {
+      "english": "Energy costs depend on local conditions",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bcfac4b7059d779734991bd43476a9f92663ccc56e465d3f6097331060c6e68b": {
+      "english": "May support local economies",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "757103bde2dbcbe9bc9dd4f0393507c25de99aeebb8c3bb891f3b30fef5580c6": {
+      "english": "Full reward",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f6d6f2d9815a8fdb58826a5546e1e104c6dcef80f7865cb69987d74230eecc49": {
+      "english": "Shared reward",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5b8d3592de62b4217e7d323c59c8186285013084d9690d6ec6174f70c8765ceb": {
+      "english": "power",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "efbc3ffda5acb046481abe844c6ecf4733389008ce595c79924e4930bc2863ec": {
+      "english": "Find the miner",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d80309e02b3832f2eda83b9e0187c4ecf818eba346e291d51df03215365fce8a": {
+      "english": "IP address",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7e1b0d5641f2640ce9a953ec231eea2c27a2a7633f7d3c273e5735e2b30c10b7": {
+      "english": "Create an account",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5a5cc3cbc3b3d9aeb71413980c1e37fd2487bc6754b48b11c1f3782a6ec5da3d": {
+      "english": "with the pool",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d5eafa9048610d2afd24ebac94e610d6b19739ae9d0ba341253cf6c6c2430160": {
+      "english": "to the pool",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "755a18add70549b5adf03e4e4e203dd590bd5d0c06fded205f138e4ed729a98f": {
+      "english": "Controls spending",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "88c7c38eda1d2116fa7dfc9c2a55ca3af3aa04cad0c44ba1ee305ddf7a33c9da": {
+      "english": "Derives addresses",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4e19ccc3e38866ebd543bcf277710226d147419947aef93787fe78cfe36a3df9": {
+      "english": "Identify payment destinations",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "448b88657031afefdefdeee028fdb12fbd5f8350be8ee672d83538edd1b7f6ef": {
+      "english": "Full nodes enforce the agreed issuance rules.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "47fb5a4ba9603ff2ce4a62794b665e6d4fe65686d191b54a30187c355b2d6245": {
+      "english": "Those rules limit the total bitcoin supply.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8a3162324d8c926f0e0fbb257ffb89b2da091d2975aa30962ba5291627ecdaac": {
+      "english": "Miners compete to earn the subsidy and transaction fees.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a7beec75f2afa819dceeaf2cdd3f2b6d1b5c7dabccaaf3ac444fa6e762ab4ed6": {
+      "english": "Proof of work makes rewriting confirmed history costly.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6664285c312f94cff5a1e29bdc2e13b7fcf9c395df140c746dffb3dd291746aa": {
+      "english": "Independent validation enforces the consensus rules.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "98f4a21a28a6a28042ab256dbcf560b9738d890631d24d5ccb1b70c4c75a07dc": {
+      "english": "Adoption and demand can affect market prices.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a76875fe65f24616ab4568c0f35d6cd2c891342c221c1352641b7805bd26f301": {
+      "english": "Prices can rise or fall; returns are not guaranteed.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9f63f618aec045f5c3595889dd8a2c5009be2e506be0e39a1d508e0dab475513": {
+      "english": "Designed to scale Bitcoin payments",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6e8445e5b4873a7e3471666956b7cec438e7a0ed0faadb3dcf97eb5867798c72": {
+      "english": "Peer-to-peer payment channels",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "721fda74bd2cf371cfe913bc90d2c7174e0000e298b644911607882f13a3158d": {
+      "english": "Different privacy trade-offs",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6aeb14bb9a2708d8605ca79f71859ee4a802129ec11e639db8cd66391588b0d7": {
+      "english": "On-chain settlement",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "55e35592f39656634fc4a9c12f02db8a8515fd5cb965475a068b325cecce804c": {
+      "english": "Fast small payments",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c8c71304adaa663573bef204fa93ff56e88be5a03387e14c1d26bcf3e65abdbd": {
+      "english": "Privacy and payment capacity",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c7302413e8fbd597e161b40501808bf999a01ad7a6718237ddddc4b35192a2b4": {
+      "english": "Few understand its inner workings",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3e400d42b48916f2aa9d899aa8b6376ccc1bda55836090444593bf56db468636": {
+      "english": "Requires secure key management",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5e1ea5e80ed5f4d17d44b4e51bcb2f75a7403ff51ebe5e7e8edb62087c716100": {
+      "english": "Validate independently",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "26f81f434e5f8af13660299e4fc44e9999a0249143dd58e975012e39fb5ce0bb": {
+      "english": "of other nodes",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fe3225ce4c3e058e4dc35107e6c74da423d36900b09f01891bd8e4980ba323d0": {
+      "english": "A digital asset",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ce2c67991dc1719df5194b1271970bd702bbb66d56fbe0f95d2eaaa6b9efacdf": {
+      "english": "with limited supply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "38dcd9a6dbd9001bf9c0db556437296a0cc75681b9009bb91a8d85208191aa09": {
+      "english": "Some alternative systems explore",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2df967a3cb364813129b83fd31f543a7e19407dc9216f12443891dd5c304972c": {
+      "english": "different scaling trade-offs",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "259e19a9ce292ab3715659a0bea930d9e63b600b5943011c2815ebe7d5bbf099": {
+      "english": "Transaction latency",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0c04961b236b6dcdbf5de00f9eaee8df10c2cd231ee4b0f2ff0c0926900e1106": {
+      "english": "Various cryptoassets",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3681f66f4f98da12e4945cc2b33c8abb4377094b484a649dfd9dd1e6abeb47e9": {
+      "english": "A tangible good; value depends",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "085947d5cbe9e91ae9eaefc7378c5702258b5bb74252b24351609b57b1e30c97": {
+      "english": "on the utility perceived",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "56e5bc2069ccf2b63642abedbb29464c5ab002c52b13179a17c40f9deec9649e": {
+      "english": "by the economic actor.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "01603d80d2f7be59ee56e6b5dfd11601fbe12fd9a35d122e9d8334c6b5a6be2d": {
+      "english": "by the utility received",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "61906fe760a463b4a34374d1d2b4e387d103010f6027130387e0a0e84807c883": {
+      "english": "“For assets other than Bitcoin, identify",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f69f8a9eac6e7375a391483741d7722f898b69e59aac7630f2782450eddf4f41": {
+      "english": "the issuer, governance and legal structure.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4c846cf73b38c2f226fc5b0a9e2ab44fa16639a26b408067f5d8fad9f352d486": {
+      "english": "Complex promotion does not establish value.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3b8173bb2069ebac7676fca3ba7d0930cbdb80c96f5b03f37bc816ba4016f89c": {
+      "english": "Securities classification depends on the",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5d7c07996dec79cd331f9621b468ed5b020b17de0c327c5921aa846d22dfec89": {
+      "english": "facts and the applicable jurisdiction;",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ff751a609088458d09db0528d751a6e406fea76d6120cb80b67f581a6f8487c1": {
+      "english": "do not infer legal status from a label.”",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a4ed9939fab6b3ac6cdf210af845005ae31ef97edabf48af88fc1cca5bba4f96": {
+      "english": "Bandwidth",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b1eabf94529a6fb24c39f65ef3d81860535240c2ce77ab0d99e4db0b8a950ae4": {
+      "english": "Physical",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5245518dbe085f586071fc84a96fd1fd20e912a2af9811b73f0e88e9627cf089": {
+      "english": "Destination addressing",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "db9fa883b65b0e28ec832f16ba5bbd854399c7c6ac9106d519474b32d8eb12fa": {
+      "english": "Asymmetric",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f056ac26645c438fbbb37b634ad5826eec51a8b594fd4392cc14443cd4bb8781": {
+      "english": "of Bitcoin",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6d1487ba83101de19a6d5ae7e1bbb90391797439f2532d7cdc3b053e45c9ac41": {
+      "english": "Limited supply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a633645d078dc2daf80bcbcde96360e184117656f062f4321f50afd3576a62f8": {
+      "english": "Consensus",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "40e2bdca83064f1d2c262cca2637b262c22454d2f5ddba5e01b82dd2b66840a9": {
+      "english": "the amount",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2a44cd4cafdb63b847e1f21fa5c8a1b7a15a74b1ad2a40c18d14f48a41b11b52": {
+      "english": "Ecosystem roles",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4541e4dce7168425960ac25e980acf593515cc386c8b6ed0104077d811fa34d0": {
+      "english": "pseudonymity",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2a97ae450167c279b582a363ce94ef6119fd7f0cc1cdea10447953da7d3835ab": {
+      "english": "Do I control",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a33801bfc73a78db72b7a506a2ba495f445ed0ea0754bb698f3b28242371024d": {
+      "english": "the bitcoin I bought?",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0755d677e73edbd74103750c62dc5e450ded8806a02d7c40f0cc1044dbc946cf": {
+      "english": "On Bitcoin mainnet,",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1fa8bdbebce285695cf8b8efb0c151dd5f23961c46691332cd3ae79ad33e8501": {
+      "english": "transactions are confirmed",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "35c53a9dcb6d92698211ced20b48c4888fd78ce4d95387d8efe33cbff42ad085": {
+      "english": "on-chain and independently",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "104a7c3b01edd2b95b6148be48928b448b3067f315e30e73437d202b5a3c2c97": {
+      "english": "validated under the",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0b78f6adf67d9cc672f3a865c64b288b78d97974ba7b66e99d44826358fa3a2c": {
+      "english": "network consensus rules.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a781138cd19aabe66bec99af8d3077ffc3248a612b4fdcc97665c51eca540e3d": {
+      "english": "On Lightning, payment",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "eaf17c0a0df87a857a9e801a06cd96193c360b30a55e061ac1bb2bf19555b1ef": {
+      "english": "updates occur off-chain;",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dc13e5f4cf5f9b7c0040d83f6690a84ef81c4877611c7839c2387e6fcc217782": {
+      "english": "channel funding and closure",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1edde0822f1a88b8a0456afe532aaf82a7fd31fb63017762570188ecdf52b77a": {
+      "english": "use Bitcoin transactions.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c331d2211e09f56b65780b38a4add887e863bc62844f8b508db8558448d4fa5b": {
+      "english": "Privacy and fees vary.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "73f5490b6c038c1d48cf2362d44bb47cb762e49f3c951cee0b0be7b33486c164": {
+      "english": "Different privacy trade-offs",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f83e864deef618d3ffec428c98155aa991242e78ccc3ba678c703aa4e918a187": {
+      "english": "traditional",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a1127007cf746f9884ad284aa9ef6ce8c2058054c30743d38d4b84f28cabf831": {
+      "english": "finance",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a5a1f45d3fb4483e30b1b4b92f097b445ea30340a305eba09da50355a41ea7cf": {
+      "english": "Provider examples: source snapshot",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "560ee42387f2d7a7c4de8f262d895936e024906c4a38d4d5198cf8a1ea8c04d6": {
+      "english": "Identity checks often required",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b87b5d248112ed3b8caa25a88f99cc2e0f0e6e235fbf05b20c02054f1eac2a66": {
+      "english": "A third party controls",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d00173846ce2f7dfbfcc357001adca26a21c488de59a17abaa2b59f023a549f3": {
+      "english": "the custody of the funds",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9c877d25cce975d8d181b40177777e31037da4a8fc8bca68bc44428f22ef57ac": {
+      "english": "Withdrawal support varies by service",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fb218b0196047f93ac1c312a7e375e63c65ff2b21cfdb5847a9bf4b59fdf49b9": {
+      "english": "Exchanges: verify current status",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9b43b6b1a095174c56f7676af1dc8c8801a0645bdbce6acc152e3b5a63741a7b": {
+      "english": "Withdrawal fees may apply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "eb54dbf088f8e69821531259ac613d7bb5a8ce122a2fbafa19665d6ab737f142": {
+      "english": "Apps: source-period examples",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "795a05b720713f5bfeb5a9a352748a3f1897750558011ee73bedef097ff8ea82": {
+      "english": "Self-custodial wallet",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4de6786d522d2b360eba2d1483b10747ecb6e6da7fd8a573363ebdebbacece35": {
+      "english": "Identity checks depend on the service",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a12e6f06d983e548f5fa35434c573bdca6b4cfc093236626aebbef21d996e187": {
+      "english": "High fees may apply",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5c9aa26d53e59a709f1c101f703b3a6bc444cdac03c8dc0dcbee470217cf9da9": {
+      "english": "Identity checks depend on jurisdiction",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "78a43ae055ceaaeda3a2b4b338a928b6cf6eccdc469b691bbc13ba0e2462289c": {
+      "english": "Identity requirements vary",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "052e5af5fb651df998bd09cc9c497d46f4efab76799406d81a7eb6e20b30decd": {
+      "english": "Counterparty and fraud risks remain",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7735eb6881c35ae0cd73ab5773c2796ca6f27c7a0a8400b6fc7bfbfcacf73664": {
+      "english": "Understand Bitcoin",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "36b184a085f9a9948ab8b51aef07343a9e661bb8f90e3eca39f8be6af0c2dff3": {
+      "english": "and the concept of",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "461c342d4ea8f230f20fbae4b23b326bb0dd2d4f03e862807e6d08b377828ef0": {
+      "english": "Explore the essential",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5d3251e0697a54921060a16c16c9a73d85f0754c888ad02e298093b9d0018342": {
+      "english": "role of nodes",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b643c29ead9504f1dacf739ac5356a88f52c1c7cc691bd70a1f846ea9e7f9723": {
+      "english": "across many participants,",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b40fcf9b3c564c833beaba80db33b33b964fd43eba62c782100492a9a08d5daa": {
+      "english": "avoiding a single point",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ea524c5f129106b771b54e12a45e5f02bf9b819df81967591072e44ebd8fa3fc": {
+      "english": "of control.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d6be988912021ee11bab5728caff2fa0f8de1c307a47c13c3bb765e8a5b2200e": {
+      "english": "Re: Bitcoin P2P e-cash paper,",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0451ee258fdb449bd40457c483a5e2a1939a936c74c3d1ed0e4eabf91863838d": {
+      "english": "Political problems cannot be solved",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3f5922002ff88355c047c7ddad5fde2452e92e8ea097b7ce784408490ae88f0d": {
+      "english": "by cryptography alone.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3c562bd2e5db0eb429c97de70f2742661d1bc1db792e25438ee44adfe515e583": {
+      "english": "Yet cryptography can help win",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dce33a0468d417b3c0c2dd6d3e3ce5ee774c8852c507327203efc9d0f23d3377": {
+      "english": "important battles and",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e6290c88c17052517b31acf63b0ebded97a106684fd7d81ec93d78df28c1020b": {
+      "english": "preserve areas of freedom",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0f1eba9decc6bf1de7f84f9aeb46a0804ae361553fd95878519a782bd09248b9": {
+      "english": "for a time. (Paraphrase)",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "69b0258d6720a50fbaec7917afe53001d4c34273ae011d3d30a48e41daab981b": {
+      "english": "Why it matters",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7f0de4ecf69abe8a44942b8e52f8bf98dd3832e34a70c08fc2a178f3bd966ef4": {
+      "english": "No single point of failure",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c7eed575ef21ae7896f2dc502f7ca4a1bc380563bac515621bd2b08fd53170fa": {
+      "english": "If one node fails, others can continue",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "59f830191402c7c7272d29a7c1c8448991db40a05713b3587598c4b155475cb3": {
+      "english": "from central",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "7adff0d66c4d1e05831150cc21378d434eaa20102ac66db3d3b412974d6ed5d4": {
+      "english": "authorities",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b73cfe8498487b5f7487a64b6d9ea505ca31642cc034c718647e46ce90df1b8e": {
+      "english": "No single authority dictates",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9428115e1206eae9db47e9f3a9ec66367a6e1af6c2467d20dc2fcc7afc954319": {
+      "english": "the rules to all participants.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2bfb6411c58048ad5331a0d3ac6619605250578474b5d5bd1a28465d42704171": {
+      "english": "The blockchain is a public, tamper-evident ledger",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "450c0e59f0978aa1c1efe23675dbcbc2d55805beff01db72402379e546ec35c4": {
+      "english": "Rules enforced",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "33e247597a6473f7f8159fa05f504ca3d95da3162015b53885f7edd19bea3208": {
+      "english": "through independent",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6cf28ceadb7dd9fd8acd276e5098fc29d3dc80d46261046b282be0f0aedec984": {
+      "english": "network validation",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "69d58094ef7b9589fb4ca63d3dbaf3fde5eb375bf3f6d4d817d2dcde6af68b8f": {
+      "english": "What are",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0808955b5d9932ab240f75b69269202c8879c9d4313f9da0e51d342f559b0cd7": {
+      "english": "nodes?",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6486a0b31f1f8e4ef3a558e4e20edf2d2da6211fc6990b3cbf91663e7e66133b": {
+      "english": "Full node:",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e8e3938c6667c5f91155eee381b8f88ab5ae7d815ff59e4a0abc2da1c2ca82d6": {
+      "english": "Independently validates;",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "31041a982eed324003080bc491b717946ec8fcd613fdf801234d772795753722": {
+      "english": "may retain or prune old blocks",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ed27931ba2e2d15e4c5694d32fc4ecc0ff3cc6287032ef156b8a71217db37f80": {
+      "english": "Lightweight (SPV) client:",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9d903ef2975676da7a8be432c63b3d4f7437d557d515f7449c6f87e7c2fb9b8c": {
+      "english": "Checks proofs with limited",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0abfe04ce2d895a45a7dfbe8d59d2d55f3ce40d8a3506fb67068278577ae59fa": {
+      "english": "validation and trust trade-offs",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "057b68b0f26ba0f5e683bc0879edb552973cefec2c252dc5c137c2613c3ebcf8": {
+      "english": "of nodes",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b3b5619a8c8a51acea5b1df64afcdd4ee2b680c63a5fa1561d70e3080833ba28": {
+      "english": "of consensus",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a5336712c1f0e13557834bfaa0881d9558a46ed5e112289571822f32e766387b": {
+      "english": "Bitcoin consensus",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4a03dc9799aa98d0e55c3f85d244560d42c6975ed5cbe668cb682503109b6814": {
+      "english": "A new block must respect the",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b2bc9dcd3a786d9bd6582bfb626a9d665e60d289571cdaf96bd9400928a8a3b1": {
+      "english": "scheduled maximum subsidy",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e495ef7acc0d9b1b1c257c9213ef0b83a555568db5bc2a6eafc0b24f70473ff3": {
+      "english": "Outside consensus rules",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "092ca673748d06c63ae20e2a906d113b9653035c4b6565d491733a36e8e3b431": {
+      "english": "Not all network behaviour is part",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "1f61e628ac363031926c093bd49ce69d4021a9b8a63c6514c1a3771949fe6b31": {
+      "english": "of consensus (for example, peer relay).",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cd97b33b064e4fda1133fa317719a87d963cf7661087cfd1b82263612cb36a67": {
+      "english": "Changing consensus rules",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ddb696439a5de3b5006932ea8efa30f68469d54409998ad7f36394a6e2df4145": {
+      "english": "Soft fork: restricts the set of valid blocks.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8060454e5825c50af4a8f84991b1eb04edb53aa51f1c13f5b21c72cb9c838d8b": {
+      "english": "Hard fork: changes rules incompatibly.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cef2102dbd5be61380879bd0ee78af732d430c4b17d36e36ab45d869d6da4c5b": {
+      "english": "for Bitcoin nodes",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "72336becee1c1cf21752568f4df3f569ba96800d9e684fedf3fb31a3c852b14f": {
+      "english": "Friends share a ledger",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "23090e1cadb73db5d24f2ef23e3baaee71413727b8910299ffe6290f82abf9ad": {
+      "english": "to track their expenses. Each keeps a",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ae3eae9f5cd9b46bbd40021bf366e086cd7ddd50f0d5595425c9d6a895a66ffd": {
+      "english": "notebook (node) with the transactions.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a64cf955f42c5e8b3cca9997d40d6c2298b9e692e97edef264ae894763add502": {
+      "english": "Everyone checks",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bf3a1cefef685fe5014e09e4b417b86a935797dd658046e0681252fd06b2c26c": {
+      "english": "Keep the network operating",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d69cb97114ccd7201e1a8dfbb7dfb3c858bf7f8bec97ddf0a90c226d9656c632": {
+      "english": "Enforce consensus rules independently",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "69337810e400679d62eff0d90391d6b5457125fb57a268517008178d2e81b47a": {
+      "english": "Independent",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "716cdcd8c66d7211873fb210fb812aece131a9bf4edf0c217f7a5e0a2eb14b3a": {
+      "english": "validation",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fa6201feebf44c847e0cc2e45f81fcae2ff8a5927f145062e6cc61d088e93169": {
+      "english": "Independently verifiable",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "fe025fecaf9a71bc3b5be90b60544797a0c0c0379eb9d40a8bc66c0fc784653b": {
+      "english": "Tamper-evident",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "0085376d016d6855c6d3f5ced6805c24a15c9678e7ef9c7e056f8f8756a81ced": {
+      "english": "Why mine?",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5a0f4592e121ecc59e1f413d503616e51cea6d81dde6c73fdca7ae286cc7bd40": {
+      "english": "Order and confirm transactions",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "568f7278c8659600750d4128462367bd75600f42e872e92730e8ecf6494c9ec8": {
+      "english": "Other consensus mechanisms",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b641c02aae272d4f1465a28b4532069f864bd056fdee92c203d9410740eaf0f8": {
+      "english": "Payout method",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "010721101aa90dd067b122287f1953c1370a118fe64f80d39de6cb96e7831476": {
+      "english": "A chance of finding a block",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "497cfcbec48436711227b68137b273491aa64af558c442adc6e190fd7a3f518e": {
+      "english": "two nodes",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "50175c88b07c5d8f2d23cd8eb2aee5c34a48eca7d2b60e0afff89d28c569e029": {
+      "english": "Hashrate",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c2d17c8d7348d6651a70c0ea3819f4a206a17b7b2b514b0ac85fee5c0f1db6df": {
+      "english": "Source example price: €200",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "bd54d79361af5fd5023b60198df0ed50f865a693e2e10fa69afe60371c7ec4fa": {
+      "english": "Power: 1,432 W = 1.432 kW",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "aa70c47c24a0aa55b448eb41c73e0ff67d592c30b8058b749a8430593c9d3523": {
+      "english": "Nominal efficiency: 110 J/TH",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "06c9722ee05584d3215bdaf45180cc4ef9da82db464b3dde8d8bd81d770a47b3": {
+      "english": "mining",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "aaff1120f0a111c3357e1263a00b4958be0e565a65f1058e5fb4f07939c2fc49": {
+      "english": "Surplus self-generated electricity",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cfc39fbbb399853204f182adc0423ab7fcf29a6912fc5a4acc54bd77102f1de8": {
+      "english": "Access to low-cost electricity",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "87c1d95716f80bcbf3b83f07b79498ba3ce873b701e724edc296614d39766b1a": {
+      "english": "Energy still has an opportunity cost",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3e9afea027a86edecd972f522e80ed430fba00ee987e95181166c99edf7df234": {
+      "english": "Learning",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "990b87cf848b582d17b0147cd4673aad3d7bcd00f304f153534d697dfeee8e7d": {
+      "english": "May support",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "87942c535d6c868693768ed330012836e32fc616f3b48322ab3da6faf3eda652": {
+      "english": "some renewable projects",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d3dc20ea5e8077317c8db242ef627f18f6e27766ed330a5009b475e2a6efb0ac": {
+      "english": "Can provide",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "19b273b18999b2faf1c373733e2eeb39bd14ba496d6cf106d704486d6592ea7b": {
+      "english": "flexible demand",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a228e5cf3125177c33b029c84ddb76b50b33e68c55d0e20cf97db5630bdfc206": {
+      "english": "Costs depend on",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8c877a6ea61c761303fffd511e8afeac883d6c68bc7209e4b87e2b49be4b33a4": {
+      "english": "local conditions",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4da10799aeafdde2971d142dfb8f84f2af8d368ff13591ecfbad5f23daaf8a71": {
+      "english": "Potential local",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "af80d2bb9566b269faf87bd51d6ae7a5b68c06e50eb12c4b9d763d14375fa890": {
+      "english": "economic activity",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6573c3a6ce753ec33cf3657fdff811079e6c1d5d122bdbdde018f60e200855f2": {
+      "english": "Control board: the green circuit board",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b8c8bab49791b35bf94e7209105dc7b8c22c62a5067e379d4c3e721d6f38c2f4": {
+      "english": "Firmware: the software",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d8a992fe1d1e7ac40c52cff6dd7df9ada2923a822b10f956521a503c8844d957": {
+      "english": "running the miner",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "38fd188e13549e88452d5a33034ea9661920cda8e2114faf92a4c86d9d53418b": {
+      "english": "Disassemble the miner",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8c902bd7d0d264c72ce661111ab54c51842ebebf43ae4678bbd016713e385e2d": {
+      "english": "The control board",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "46dd275d2187e12a662a493a64b33347dbe05aa860b9575cdff2f1a30062fa67": {
+      "english": "coordinates work and",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3e9813d41acb396682fdbe318a5796e3550f9c86fa6856d21a5dad4ef8d987a4": {
+      "english": "sends instructions",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "44b07fb4af4b65ea963632f1359c244553e0987807f48b83eadccc2df0b3c8b5": {
+      "english": "to the hashboards.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b4e4aa6158489b25db0381ee0339257da35abbd8d285c7f86064eba9ade11b70": {
+      "english": "It controls boards and",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "69fb1a32f1f6c0f1676127796825c5d1a9c4322570b4ef26a14054e94736f4b7": {
+      "english": "collects their results",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "cc164a79fbddb88f9eced1f771d3f9c162919651eaaa8b82decaf3695b3f59a4": {
+      "english": "per hashboard",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2c87e3335c717f890d4baf5fd32bcc585108e3d50e22dea694982919cab98777": {
+      "english": "189 chips in this S9 example",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ee1ea2fa68ff58ba5c171c8f55a2d93aca8676f0c415070c6c50fa01248ce37f": {
+      "english": "Industrial miners vs small miners",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8e9483f77dff5c5ac9a475971c788dea7494f61909a8829a9f3148c711765e5b": {
+      "english": "and thermal throttling (model-dependent)",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "825a07d1863d1478356f826abd738b1c8bad5efc541601f60b2298e0812b1e1f": {
+      "english": "Repurpose older",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9e37e5e9dca4a38c25d3f4b92505ff26405bd721ac77a027b6bcc67dfa17ee2b": {
+      "english": "converts incoming work",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "63cbd688dc04f7df6a7ec7168b13b7de300f6be22aca64848a9096cf11f16594": {
+      "english": "into instructions for the",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ad4034084252c2e9f7219ddf998493bc6f952d61a114fead87351ca4600f9746": {
+      "english": "hashboards and collects",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "2fc39249f55236759f7100be06cf3bdde730d9cea8c5c5f9b059f20a4e207f2c": {
+      "english": "their results",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d39945f9f7b9c5bd1900f19e66ce3edb96a7d25461788864135587f85c7307c8": {
+      "english": "protocol rules; retaining or pruning",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "270b0a2e3c4ecd7e975dba416bcc42007c1bb1f9727b97cb5ed3807aee1ab7c6": {
+      "english": "historical block data as configured.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b700b383f6da061b1e7b5b1cc2b4b30afbc13f3884b52cb1fff27fc83681ae76": {
+      "english": "Casa Node (historical example)",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "128f2953dc48d75ffec1db8a1f25ad78fe35a131de8f425ca79146bd5f60f341": {
+      "english": "Historical source price:",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "e1dc9faf589c31f7f15f6ad081cfd9c7b7b29c144f7a8d1aa3ae628295cd5290": {
+      "english": "Source example: from $500",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ad6102ba7aba38076333917692569d462825e95def0eb2fb5b3a1fff147fe82d": {
+      "english": "higher than an HDD",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d8a131195b77f271d8ec13b757adfb28491144b0c62e172755a09e9a19fc22bb": {
+      "english": "Download the official image to",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d26d250a461539a2071014ddd69015ee8a60339bf99b1e4203c8caab2a60f4fe": {
+      "english": "boot media supported by your",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f17098d54673d5ebb9838c96029e4361f5fe3e179d4d2d01ca7c1af8b8c4db3b": {
+      "english": "device; follow the current",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "dd24802a6165f18eab932f44c15fa9ca145732ae4ae4b63a5278737afa049721": {
+      "english": "installation instructions",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b4c143a5e486f509618e05385b51b8444f5abbdf1e57e11415be6f2583416eba": {
+      "english": "Optional paid features vary",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "88c6485eefcd768299b5062f2e8c119a26c151eacfe39fae232b7f092c911927": {
+      "english": "by product and release",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "f76f47f3ab0fe1d0f69c313ccf4d23437e4ab3c7d8a4ddd0fec996889b46caf1": {
+      "english": "manual steps, but gives more",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "28e204ea9d69ddbefa2a486f2969a671e38c7db184a329f5328e5e901b7671f5": {
+      "english": "control over your hardware",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "876cffd963e47a66cc43d96d04ad29c9536babb407705dfd1fa5ad5a0a1d7207": {
+      "english": "such as an Electrum server",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "b09eca165a76bf5d38cbc73b8db76ef76494418cf698a7d69bfb543f3b6a2214": {
+      "english": "to detail",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6c522bd497586bd75af4bf4c6a8d1cc9c2e0fbf3be5e99af5cc9e4a8aebec297": {
+      "english": "For example: https://",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "73329c99d83c5542028026db10b11d7c3ba038194a34331daa33a6d6a9775279": {
+      "english": "officinebitcoin.it",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "4500862e0645e7dbce210e8ffec961a5b7e44a37c848d20eed6cc463a5889a4a": {
+      "english": "Are the prerequisites met?",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3e4412f7d065335dbdf9abe6cba1c86ce5e8a5925b579cecdb4197581d86f7ee": {
+      "english": "Capacity: follow current requirements",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "5078db684d2c160c0aebb23b5152db5365c4602b17a27484778d6ec8e64feea8": {
+      "english": "Use a verified image-writing tool",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a62c248968cd1785e90ab0a44c1ce578fd4196c008fc5c8d5338419c7364b1b4": {
+      "english": "with channel-dependent privacy",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "df6ed2dc21a00eb05d163a1b2644b4fd8bbc80d83bb5fa6e4bb0d0c120965893": {
+      "english": "management of a Lightning node",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "8936add9295ff1983744f0148acbff1f14419f51dcce61d74d76016c31971e62": {
+      "english": "Electrs: connect your wallet",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "33d5aa298b02110a65d3b9b0d9047351ca992324bc0aef2610d2a74584a7a175": {
+      "english": "to your own Bitcoin node",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d5ff2160860f6baa242fd458ef58125dc78033b8f2778c1f15b49d9705a6c877": {
+      "english": "a Bitcoin node",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "3cfae316eb859832da2be994b9cfcf2e4259494b438337321024d3601b02cce7": {
+      "english": "Place the node in a secure location",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "d0e4caf8845b33ccd93ff65b5013ac1f30d6d6a8c0318ec247821228a72e26c3": {
+      "english": "Use strong, unique credentials",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "02f77c1b6dd3a4fcd273bfe0d474fadd843ea5b9e520ec25d170fa22b66489f1": {
+      "english": "such as Umbrel can support Tor",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "ae70ffc75a43a1744d803d0f65d7e69a8bc4435a449cac0eaa9fa6e279686fe7": {
+      "english": "Free online events held",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "c7543984c0f99587286688f6b538fe780545b8365fdbbcd4bc197658171394bf": {
+      "english": "regularly, covering",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "089fdbb13f697d298f87799a778daf1685a179d56121e1695221a239a5d32616": {
+      "english": "Bitcoin and related topics.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "be1633a5f672efa102a1b5e4ba90b8f4c00fa359366cc0056e7db16704a85a4f": {
+      "english": "Explains how Bitcoin works",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6ec3c09f80543afa8c301132128fcc9be360389bbc34a1f4b3202f9c82888356": {
+      "english": "in detail, while avoiding",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "9b30011f61a221aed1fdc7a875df0bd70721285e3b5900691ba92f2dcc98ae6e": {
+      "english": "overly technical language.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "6debcf4c1f4f10c58bb402d3fa4abca05ee38664bedee92ff8c463c8c6a33e15": {
+      "english": "Platforms such as PlanB Network offer",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "662842d4a2d4644071d8ed3092f73f4678a92b268d4b156af541c8777384f7b5": {
+      "english": "Bitcoin learning materials, including",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "a040089d5b666f58aa9ac4c388fe6fd97c75ea73d15a06cf3a1d6608645355f3": {
+      "english": "technical courses and assessments;",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    },
+    "eacdfa304100480f5febf460eae4b985fa470babdce1febc6fab6d9b9399f9cf": {
+      "english": "check each course for details.",
+      "kind": "editorial correction",
+      "status": "in review",
+      "checked": "2026-11-04"
+    }
+  }
+}

@@ -8,7 +8,7 @@ Model: `stepped-rail-blue` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/stepped-rail-blue.tex)
 
-[Open this slide individually](../index.html?template=stepped-rail-blue)
+[Open this slide individually](../../slides/index.html?template=stepped-rail-blue)
 
 ![Stepped Rail Blue](../previews/stepped-rail-blue.png)
 
@@ -104,10 +104,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 33.5% wide × 100.0% high | <code>\studiopaletteimage[width=1193\studiounit]{images/studio/collection/figma-1024-part-01.pdf}</code> |
 | <code>title</code> | Main text (text) | middle left | 20.5% wide × 15.6% high | <code>Title</code> |
 | <code>text-2</code> | Editable text (text) | middle left | 38.1% wide × 6.4% high | <code>Supporting explanation</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 32.2% wide × 8.2% high | <code>Supporting explanation</code> |
-| <code>text-4</code> | Editable text (text) | middle centre | 48.8% wide × 17.1% high | <code>Supporting explanation.\\Add your own details.</code> |
-| <code>item-5-1</code> | List or contents entry (text) | middle right | 28.2% wide × 5.7% high | <code>Label 3</code> |
-| <code>item-5-2</code> | List or contents entry (text) | middle right | 28.7% wide × 2.5% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 32.2% wide × 8.2% high | <code>First item</code> |
+| <code>text-4</code> | Editable text (text) | middle centre | 48.8% wide × 17.1% high | <code>Third item\\Supporting detail.</code> |
+| <code>item-5-1</code> | List or contents entry (text) | middle right | 28.2% wide × 5.7% high | <code>Second item</code> |
+| <code>item-5-2</code> | List or contents entry (text) | middle right | 28.7% wide × 2.5% high | <code>Supporting detail.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

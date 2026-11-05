@@ -1,0 +1,221 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path d="M1982.262 822.855 1759.68 781.312V1474.809H1982.262ZM1982.262 822.855" />
+</ns0:clipPath>
+<ns0:g id="part-4">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-7">
+<ns0:path d="M1759 781H1983V1475H1759Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-7)">
+<ns0:image x="1759" y="781" width="224" height="694" ns1:href="resources/c9afc3f294e8655668ff37fa12cdba185f2dd1ac180bbcbd084bce96d17691c7.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-11" mask-type="luminance">
+<ns0:use ns1:href="#part-4" />
+</ns0:mask>
+<ns0:clipPath id="part-13">
+<ns0:path d="M1759.66 1474.809V708.699L1747.52 704.676C1621.898 663.047 1537.09 545.598 1537.09 413.258L1537.078 1474.809ZM1759.66 1474.809" />
+</ns0:clipPath>
+<ns0:g id="part-15">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-18">
+<ns0:path d="M1537 413H1760V1475H1537Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-18)">
+<ns0:image x="1537" y="413" width="223" height="1062" ns1:href="resources/986630e992213cd610be9f67f5110de1ae252ba9482664af47988e1dece25df3.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-22" mask-type="luminance">
+<ns0:use ns1:href="#part-15" />
+</ns0:mask>
+<ns0:clipPath id="part-24">
+<ns0:path d="M2204.84 901.312 1982.262 880.539V1474.801H2204.84ZM2204.84 901.312" />
+</ns0:clipPath>
+<ns0:g id="part-26">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-29">
+<ns0:path d="M1982 880H2205V1475H1982Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-29)">
+<ns0:image x="1982" y="880" width="223" height="595" ns1:href="resources/51e9f37a5efbbe44b6ebc7ffb385957bcaaebdbf3564e6e520c6481d9799e29a.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-33" mask-type="luminance">
+<ns0:use ns1:href="#part-26" />
+</ns0:mask>
+<ns0:clipPath id="part-35">
+<ns0:path d="M2204.84 978.977H2427.4302V1474.809H2204.84Z" />
+</ns0:clipPath>
+<ns0:g id="part-37">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-40">
+<ns0:path d="M2204 978H2428V1475H2204Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-40)">
+<ns0:image x="2204" y="978" width="224" height="497" ns1:href="resources/c05c730f0615cdd604f9ec361716beba77385e3e23ddba63fdcb904b663e818c.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-44" mask-type="luminance">
+<ns0:use ns1:href="#part-37" />
+</ns0:mask>
+<ns0:clipPath id="part-46">
+<ns0:path d="M2427.43 1051.07H2650.02V1474.808H2427.43Z" />
+</ns0:clipPath>
+<ns0:g id="part-48">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-51">
+<ns0:path d="M2427 1051H2651V1475H2427Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-51)">
+<ns0:image x="2427" y="1051" width="224" height="424" ns1:href="resources/7555ec836982fb85ce9df7b45780fe846da82d4f9c07721fc5a3b65c9b948d6e.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-55" mask-type="luminance">
+<ns0:use ns1:href="#part-48" />
+</ns0:mask>
+<ns0:clipPath id="part-57">
+<ns0:path d="M2650.02 1120.871H2872.602V1474.809H2650.02Z" />
+</ns0:clipPath>
+<ns0:g id="part-59">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-62">
+<ns0:path d="M2650 1120H2873V1475H2650Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-62)">
+<ns0:image x="2650" y="1120" width="223" height="355" ns1:href="resources/e326ed8dad98dd670ad7942c6ee3c51cf3bbec5569bf5cf1c6fc3efe0748b059.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-66" mask-type="luminance">
+<ns0:use ns1:href="#part-59" />
+</ns0:mask>
+<ns0:clipPath id="part-68">
+<ns0:path d="M2872.609 1186.648H3095.191V1474.808H2872.609Z" />
+</ns0:clipPath>
+<ns0:g id="part-70">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-73">
+<ns0:path d="M2872 1186H3096V1475H2872Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-73)">
+<ns0:image x="2872" y="1186" width="224" height="289" ns1:href="resources/5c4a2b0633e513962babc3c3c264074f667a0685126bc1daa9d7f0ba05b1c7f2.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-77" mask-type="luminance">
+<ns0:use ns1:href="#part-70" />
+</ns0:mask>
+<ns0:clipPath id="part-79">
+<ns0:path d="M3095.191 1256.969H3317.769V1474.809H3095.191Z" />
+</ns0:clipPath>
+<ns0:g id="part-81">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-84">
+<ns0:path d="M3095 1256H3318V1475H3095Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-84)">
+<ns0:image x="3095" y="1256" width="223" height="219" ns1:href="resources/812d036611b0bae1d0c82891613a80f0be9d7349e1d7694fda510021d4b20065.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-88" mask-type="luminance">
+<ns0:use ns1:href="#part-81" />
+</ns0:mask>
+<ns0:clipPath id="part-90">
+<ns0:path d="M1625.199 1174.078 1537.078 1428.352H3317.77V364.227L2741.961 370.297C2629.672 371.48 2518.102 388.48 2410.559 420.801 2043.02 531.25 1750.879 811.465 1625.199 1174.078ZM1625.199 1174.078" />
+</ns0:clipPath>
+<ns0:g id="part-92">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-95">
+<ns0:path d="M1537 364H3318V1429H1537Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-95)">
+<ns0:image x="1537" y="364" width="1781" height="1065" ns1:href="resources/bdad4b95449802915f45a41ea2f99cd8d7dd565ac0bc2f7c44ec4b34eba80fba.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-99" mask-type="luminance">
+<ns0:use ns1:href="#part-92" />
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:path d="M0 0H3556V2000H0Z" fill="#f9f9f9" />
+<ns0:path d="M1894.141 1765.559C1908.5 1765.559 1920.141 1777.199 1920.141 1791.559 1920.141 1805.918 1908.5 1817.559 1894.141 1817.559 1879.781 1817.559 1868.141 1805.918 1868.141 1791.559 1868.141 1777.199 1879.781 1765.559 1894.141 1765.559ZM1894.141 1765.559" fill="#001ce0" />
+<ns0:path d="M2521.32 1765.559C2535.68 1765.559 2547.32 1777.199 2547.32 1791.559 2547.32 1805.918 2535.68 1817.559 2521.32 1817.559 2506.961 1817.559 2495.32 1805.918 2495.32 1791.559 2495.32 1777.199 2506.961 1765.559 2521.32 1765.559ZM2521.32 1765.559" fill="#ff8a00" />
+<ns0:path d="M3391.07 1428.852C3391.07 1426.441 3390.449 1424.371 3389.199 1422.629 3387.961 1420.879 3386.191 1419.539 3383.91 1418.609 3381.609 1417.68 3378.898 1417.219 3375.77 1417.219H3375.73C3372.602 1417.219 3369.891 1417.68 3367.609 1418.609 3365.309 1419.539 3363.551 1420.879 3362.32 1422.629 3361.07 1424.371 3360.449 1426.441 3360.449 1428.852 3360.449 1431.27 3361.07 1433.352 3362.32 1435.078 3363.551 1436.82 3365.309 1438.148 3367.609 1439.078 3369.891 1440.012 3372.602 1440.48 3375.73 1440.48H3375.77C3378.898 1440.48 3381.609 1440.012 3383.91 1439.078 3386.191 1438.148 3387.961 1436.82 3389.199 1435.078 3390.449 1433.352 3391.07 1431.27 3391.07 1428.852ZM3386.738 1428.852C3386.738 1430.191 3386.301 1431.328 3385.43 1432.27 3384.551 1433.199 3383.289 1433.91 3381.648 1434.41 3380.012 1434.898 3378.051 1435.141 3375.77 1435.141H3375.73C3373.441 1435.141 3371.488 1434.898 3369.859 1434.41 3368.219 1433.91 3366.969 1433.199 3366.109 1432.27 3365.23 1431.328 3364.801 1430.191 3364.801 1428.852 3364.801 1427.52 3365.23 1426.391 3366.109 1425.441 3366.969 1424.5 3368.219 1423.781 3369.859 1423.289 3371.488 1422.801 3373.441 1422.551 3375.73 1422.551H3375.77C3378.051 1422.551 3380.012 1422.801 3381.648 1423.289 3383.289 1423.781 3384.551 1424.5 3385.43 1425.441 3386.301 1426.391 3386.738 1427.52 3386.738 1428.852ZM3386.738 1428.852" fill="#ff6b00" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M1759.691 781.312 1982.27 822.855" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M1982.27 880.539 2204.852 901.312" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M2204.852 978.977H2427.43" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M2427.441 1051.07H2650.02" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M2650.02 1120.871H2872.609" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M2872.621 1186.648H3095.199" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M3095.199 1256.969H3317.781" />
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#001ce0" d="M1537.09 364.805V413.258C1537.09 545.598 1621.898 663.047 1747.52 704.676L1759.66 708.699" />
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-11)">
+<ns0:image x="1759" y="781" width="224" height="694" ns1:href="resources/d0e7b35ba625106c463b0fd46a2e39ec5104e656c1878896de5782f8c4c37849.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-13)">
+<ns0:g mask="url(#part-22)">
+<ns0:image x="1537" y="413" width="223" height="1062" ns1:href="resources/975a63e71df4f6c7644978858a285bf2edef1823ced34435ffb2b1aad5395dc7.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-24)">
+<ns0:g mask="url(#part-33)">
+<ns0:image x="1982" y="880" width="223" height="595" ns1:href="resources/0628029a5c8d5f524d453bc3ed9a3e0e7e2d24d07ef128f20d18437d1659b646.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-35)">
+<ns0:g mask="url(#part-44)">
+<ns0:image x="2204" y="978" width="224" height="497" ns1:href="resources/cc9d658432e1f9cda36632fd89eb46dd6abd116aa060a379941cbbf8e77ae618.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-46)">
+<ns0:g mask="url(#part-55)">
+<ns0:image x="2427" y="1051" width="224" height="424" ns1:href="resources/db50beda5874fb9ac32496803865525818d5f6539c548de1ced85ccc0ca73451.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-57)">
+<ns0:g mask="url(#part-66)">
+<ns0:image x="2650" y="1120" width="223" height="355" ns1:href="resources/ba7288c4bb66a71ffcd71089abbab9b1aa6dbe895f2aee7e01881e653110b2bb.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-68)">
+<ns0:g mask="url(#part-77)">
+<ns0:image x="2872" y="1186" width="224" height="289" ns1:href="resources/d2066464c027b7620b34f8467ffcff48ce4ff11026309af59d1dcad6ca768ca8.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-79)">
+<ns0:g mask="url(#part-88)">
+<ns0:image x="3095" y="1256" width="223" height="219" ns1:href="resources/df7fca278ebcb75b1d6ae321be06aa848e5a6261e638127dec4ddd483993c319.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-90)">
+<ns0:g mask="url(#part-99)">
+<ns0:image x="1537" y="364" width="1781" height="1065" ns1:href="resources/e83f6b8e3044128a0d7c1bb755a497894b7b8406f95022221c93aafb1a1c046f.png" />
+</ns0:g>
+</ns0:g>
+<ns0:path stroke-width="5" stroke-linecap="butt" stroke-miterlimit="4" stroke-linejoin="miter" fill="none" stroke="#ff8a00" d="M1537.078 1428.352 1625.199 1174.078C1750.879 811.465 2043.02 531.25 2410.559 420.801 2518.102 388.48 2629.672 371.48 2741.961 370.297L3317.77 364.227" />
+<ns0:path d="M2332.398 151.266V148.766H1559.891V153.766H2332.398ZM1537.391 151.266 1562.391 165.699V136.832ZM1537.391 151.266" fill="#001ce0" />
+<ns0:path d="M2209.602 1688.352V1685.852H1559.891V1690.852H2209.602ZM1537.391 1688.352 1562.391 1702.789V1673.922ZM1537.391 1688.352" fill="#001ce0" />
+<ns0:path d="M2522.77 151.262V153.762H3295.281V148.762H2522.77ZM3317.781 151.262 3292.781 136.828V165.695ZM3317.781 151.262" fill="#001ce0" />
+<ns0:path d="M2652.949 1688.352V1690.852H3295.281V1685.852H2652.949ZM3317.781 1688.352 3292.781 1673.922V1702.789ZM3317.781 1688.352" fill="#001ce0" />
+</ns0:g>
+</ns0:svg>

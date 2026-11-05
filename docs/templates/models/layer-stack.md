@@ -54,41 +54,41 @@ Original palettes: light.
 | Field | Default | Available space |
 | --- | --- | --- |
 | `title` | <code>Slide title</code> | 57.2% wide × 8.6% high |
-| `label-two` | <code>Supporting explanation</code> | 71.2% wide × 6.6% high |
-| `label-three` | <code>Label 3</code> | 14.4% wide × 9.3% high |
-| `label-four` | <code>Label 4</code> | 12.7% wide × 3.6% high |
-| `label-five` | <code>Label 5</code> | 12.7% wide × 3.5% high |
-| `label-six` | <code>Label 6</code> | 14.2% wide × 6.7% high |
-| `label-seven` | <code>Label 7</code> | 11.1% wide × 3.2% high |
-| `label-eight` | <code>Label 8</code> | 8.8% wide × 3.2% high |
-| `label-nine` | <code>Label 9</code> | 9.2% wide × 3.2% high |
-| `label-ten` | <code>Supporting explanation</code> | 70.8% wide × 6.7% high |
-| `label-eleven` | <code>Label 11</code> | 14.4% wide × 6.7% high |
-| `label-twelve` | <code>Label 12</code> | 13.4% wide × 3.2% high |
-| `label-thirteen` | <code>Label 13</code> | 12.2% wide × 3.6% high |
-| `label-fourteen` | <code>Label 14</code> | 11.4% wide × 3.7% high |
-| `label-fifteen` | <code>Label 15</code> | 10.6% wide × 3.6% high |
-| `label-sixteen` | <code>Label 16</code> | 21.4% wide × 3.9% high |
-| `label-seventeen` | <code>Label 17</code> | 12.4% wide × 3.2% high |
-| `label-eighteen` | <code>Supporting explanation.\\Add your own details.</code> | 27.6% wide × 9.7% high |
-| `label-nineteen` | <code>Label 19</code> | 9.4% wide × 3.2% high |
-| `label-twenty` | <code>Label 20</code> | 11.5% wide × 3.6% high |
-| `label-21` | <code>Supporting explanation</code> | 71.5% wide × 6.6% high |
-| `label-22` | <code>Label 22</code> | 13.2% wide × 3.6% high |
-| `label-23` | <code>Label 23</code> | 15.4% wide × 6.7% high |
-| `label-24` | <code>Label 24</code> | 10.2% wide × 3.9% high |
-| `label-25` | <code>Label 25</code> | 11.2% wide × 3.6% high |
-| `label-26` | <code>Label 26</code> | 11.2% wide × 3.6% high |
-| `label-27` | <code>Label 27</code> | 9.8% wide × 3.2% high |
-| `label-28` | <code>Supporting explanation</code> | 71.8% wide × 6.7% high |
-| `label-29` | <code>Label 29</code> | 17.4% wide × 9.3% high |
-| `label-30` | <code>Label 30</code> | 13.5% wide × 9.2% high |
-| `label-31` | <code>Label 31</code> | 11.2% wide × 3.2% high |
-| `label-32` | <code>Label 32</code> | 12.1% wide × 15.8% high |
-| `label-33` | <code>Supporting explanation.\\Add your own details.</code> | 72.0% wide × 9.7% high |
-| `label-34` | <code>Supporting explanation</code> | 24.5% wide × 6.2% high |
-| `label-35` | <code>Label 35</code> | 16.8% wide × 3.9% high |
-| `label-36` | <code>Label 36</code> | 13.5% wide × 6.2% high |
+| `label-two` | <code>Layer 1</code> | 8.4% wide × 6.6% high |
+| `label-three` | <code>Item 18</code> | 13.1% wide × 9.3% high |
+| `label-four` | <code>Item 24</code> | 12.6% wide × 3.6% high |
+| `label-five` | <code>Item 23</code> | 12.7% wide × 3.5% high |
+| `label-six` | <code>Item 35</code> | 12.3% wide × 6.7% high |
+| `label-seven` | <code>Item 28</code> | 10.0% wide × 3.2% high |
+| `label-eight` | <code>Item 29</code> | 5.6% wide × 3.2% high |
+| `label-nine` | <code>Item 25</code> | 5.7% wide × 3.2% high |
+| `label-ten` | <code>Layer 2</code> | 8.4% wide × 6.7% high |
+| `label-eleven` | <code>Item 19</code> | 14.1% wide × 6.7% high |
+| `label-twelve` | <code>Item 26</code> | 13.4% wide × 3.2% high |
+| `label-thirteen` | <code>Item 20</code> | 11.3% wide × 3.6% high |
+| `label-fourteen` | <code>Item 21</code> | 9.6% wide × 3.7% high |
+| `label-fifteen` | <code>Item 30</code> | 9.0% wide × 3.6% high |
+| `label-sixteen` | <code>Item 27</code> | 12.2% wide × 3.9% high |
+| `label-seventeen` | <code>Item 31</code> | 12.4% wide × 3.2% high |
+| `label-eighteen` | <code>Item 14</code> | 10.1% wide × 9.7% high |
+| `label-nineteen` | <code>Item 22</code> | 5.7% wide × 3.2% high |
+| `label-twenty` | <code>Item 32</code> | 10.8% wide × 3.6% high |
+| `label-21` | <code>Layer 3</code> | 8.4% wide × 6.6% high |
+| `label-22` | <code>Item 9</code> | 12.6% wide × 3.6% high |
+| `label-23` | <code>Item 13</code> | 15.4% wide × 6.7% high |
+| `label-24` | <code>Item 33</code> | 8.9% wide × 3.9% high |
+| `label-25` | <code>Item 10</code> | 8.4% wide × 3.6% high |
+| `label-26` | <code>Item 34</code> | 10.2% wide × 3.6% high |
+| `label-27` | <code>Item 11</code> | 5.7% wide × 3.2% high |
+| `label-28` | <code>Layer 4</code> | 8.4% wide × 6.7% high |
+| `label-29` | <code>Item 7</code> | 15.0% wide × 9.3% high |
+| `label-30` | <code>Item 36</code> | 5.5% wide × 9.2% high |
+| `label-31` | <code>Item 12</code> | 8.6% wide × 3.2% high |
+| `label-32` | <code>Item 4</code> | 12.1% wide × 15.8% high |
+| `label-33` | <code>Layer 5</code> | 8.4% wide × 9.7% high |
+| `label-34` | <code>Item 5</code> | 7.3% wide × 6.2% high |
+| `label-35` | <code>Item 3</code> | 8.9% wide × 3.9% high |
+| `label-36` | <code>Item 2</code> | 10.5% wide × 6.2% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

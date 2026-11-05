@@ -1,0 +1,41 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:mask id="part-2">
+<ns0:g>
+<ns0:image id="part-4" width="3556" height="2000" ns1:href="resources/48395a3839a97c6043a473dd0315b242710be4cf00284380f5ed6e02f4a1a415.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:mask id="part-5">
+<ns0:g>
+<ns0:image id="part-7" width="3556" height="2000" ns1:href="resources/57e3e7544c891fbe271938bff9be37a43efb4e872fc95dd24fa4c0c864dc94c0.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:mask id="part-8">
+<ns0:g>
+<ns0:image id="part-10" width="3556" height="2000" ns1:href="resources/b4011310d232a245100814b9694e3b0483bc4b1d202da76dc4a4393922e6c586.png" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:path d="M0 0H3556V2000H0Z" fill="#f9f9f9" />
+<ns0:path d="M2276.5 915V907.5H2114V922.5H2276.5ZM2344 915 2269 871.699V958.301ZM2344 915" fill="#001ce0" />
+<ns0:path d="M1332.5 915V907.5H1170V922.5H1332.5ZM1400 915 1325 871.699V958.301ZM1400 915" fill="#001ce0" />
+<ns0:g mask="url(#part-2)">
+<ns0:g>
+<ns0:image id="part-17" width="3556" height="2000" ns1:href="resources/4bdc1b554c479379485f92916997d3742d650e9f4fd4831c8c0e37fb85c6a32d.png" />
+</ns0:g>
+</ns0:g>
+<ns0:path d="M1746 750H1767V791.801H1746ZM1746 833.602V791.801H1725V833.602H1641V854.5H1683V875.398H1704V917.199H1683V959H1704V938.102H1725V917.199H1746V896.301H1767V917.199H1788V938.102H1809V959H1830V917.199H1809V875.398H1830V854.5H1872V833.602H1788V791.801H1767V833.602ZM1746 833.602H1725V854.5H1746ZM1746 833.602" fill="#001ce0" fill-rule="evenodd" />
+<ns0:g mask="url(#part-5)">
+<ns0:g>
+<ns0:image id="part-21" width="3556" height="2000" ns1:href="resources/299ccf3502f12a7c84b3d3fa64310764d05d20e635c2ddc0e02c0cbbd24f1a48.png" />
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-8)">
+<ns0:g>
+<ns0:image id="part-24" width="3556" height="2000" ns1:href="resources/1f7ea5291764eddd34ee846f8388ea6e13a6cbb1c218221de8c6bb9d7d2fe9bf.png" />
+</ns0:g>
+</ns0:g>
+<ns0:path d="M761 761H866V782H761ZM740 803V782H761V803ZM740 908H719V803H740ZM761 929H740V908H761ZM866 929V950H761V929ZM887 908H866V929H887ZM887 887V908H908V803H887V782H866V803H887ZM803 842H782V863H803V887H782V908H845V887H824V842ZM824 798.5H803V824H824ZM824 798.5" fill="#001ce0" fill-rule="evenodd" />
+</ns0:g>
+</ns0:svg>

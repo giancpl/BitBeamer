@@ -8,7 +8,7 @@ Model: `protocol-encrypted-message` · Family: Technical · Status: **in review*
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-encrypted-message.tex)
 
-[Open this slide individually](../index.html?template=protocol-encrypted-message)
+[Open this slide individually](../../slides/index.html?template=protocol-encrypted-message)
 
 ![Protocol Encrypted Message](../previews/protocol-encrypted-message.png)
 

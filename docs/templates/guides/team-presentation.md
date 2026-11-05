@@ -8,7 +8,7 @@ Model: `team-presentation` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/team-presentation.tex)
 
-[Open this slide individually](../index.html?template=team-presentation)
+[Open this slide individually](../../slides/index.html?template=team-presentation)
 
 ![Team presentation](../previews/team-presentation.png)
 

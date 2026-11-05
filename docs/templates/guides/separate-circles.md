@@ -8,7 +8,7 @@ Model: `separate-circles` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/separate-circles.tex)
 
-[Open this slide individually](../index.html?template=separate-circles)
+[Open this slide individually](../../slides/index.html?template=separate-circles)
 
 ![Separate set comparison](../previews/separate-circles.png)
 

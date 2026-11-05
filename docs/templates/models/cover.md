@@ -61,22 +61,6 @@ Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (the
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
-### script
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/cover-script-blue.tex) · [Full slot guide](../guides/cover-script-blue.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `title` | <code>Presentation\\title</code> | 19.7% wide × 14.3% high |
-| `subtitle` | <code>Label 2</code> | 19.7% wide × 14.3% high |
-| `decoration` | <code>PRESENTATION</code> | 25.0% wide × 9.8% high |
-
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
 ### wide-title
 
 Original palettes: blue.

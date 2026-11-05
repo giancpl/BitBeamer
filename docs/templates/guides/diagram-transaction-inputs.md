@@ -8,7 +8,7 @@ Model: `diagram-transaction-inputs` · Family: Technical · Status: **in review*
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/diagram-transaction-inputs.tex)
 
-[Open this slide individually](../index.html?template=diagram-transaction-inputs)
+[Open this slide individually](../../slides/index.html?template=diagram-transaction-inputs)
 
 ![Inputs and outputs](../previews/diagram-transaction-inputs.png)
 

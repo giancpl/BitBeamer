@@ -8,7 +8,7 @@ Model: `layers-overview` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/layers-overview.tex)
 
-[Open this slide individually](../index.html?template=layers-overview)
+[Open this slide individually](../../slides/index.html?template=layers-overview)
 
 ![Layers Overview](../previews/layers-overview.png)
 
@@ -94,7 +94,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 ```latex
 \studiotemplate[
   text/1={Slide title},
-  text/36={Label 36}
+  text/36={Item 2}
 ]{layers-overview}
 ```
 
@@ -111,7 +111,7 @@ Create `my-slide.tex` in the project root and paste:
 \begin{document}
 \studiotemplate[
   text/1={Slide title},
-  text/36={Label 36}
+  text/36={Item 2}
 ]{layers-overview}
 \end{document}
 ```
@@ -133,41 +133,41 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | --- | --- | --- | --- | --- |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 75.5% wide × 70.5% high | <code>\studiopaletteimage[width=2685\studiounit]{images/studio/collection/figma-0642-part-01.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 57.2% wide × 8.6% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 13.5% wide × 6.2% high | <code>Label 36</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 16.8% wide × 3.9% high | <code>Label 35</code> |
-| <code>text-4</code> | Editable text (text) | lower centre | 12.1% wide × 15.8% high | <code>Label 32</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 24.5% wide × 6.2% high | <code>Supporting explanation</code> |
-| <code>text-6</code> | Editable text (text) | lower centre | 72.0% wide × 9.7% high | <code>Supporting explanation.\\Add your own details.</code> |
-| <code>text-7</code> | Editable text (text) | middle centre | 17.4% wide × 9.3% high | <code>Label 29</code> |
-| <code>text-8</code> | Editable text (text) | middle centre | 71.8% wide × 6.7% high | <code>Supporting explanation</code> |
-| <code>item-9-1</code> | List or contents entry (text) | middle left | 13.2% wide × 3.6% high | <code>Label 22</code> |
-| <code>item-9-2</code> | List or contents entry (text) | middle left | 11.2% wide × 3.6% high | <code>Label 25</code> |
-| <code>item-9-3</code> | List or contents entry (text) | middle centre | 9.8% wide × 3.2% high | <code>Label 27</code> |
-| <code>item-9-4</code> | List or contents entry (text) | lower left | 11.2% wide × 3.2% high | <code>Label 31</code> |
-| <code>text-10</code> | Editable text (text) | middle centre | 15.4% wide × 6.7% high | <code>Label 23</code> |
-| <code>text-11</code> | Editable text (text) | middle centre | 27.6% wide × 9.7% high | <code>Supporting explanation.\\Add your own details.</code> |
-| <code>text-12</code> | Editable text (text) | middle centre | 71.5% wide × 6.6% high | <code>Supporting explanation</code> |
-| <code>text-13</code> | Editable text (text) | upper centre | 71.2% wide × 6.6% high | <code>Supporting explanation</code> |
-| <code>text-14</code> | Editable text (text) | middle centre | 70.8% wide × 6.7% high | <code>Supporting explanation</code> |
-| <code>text-15</code> | Editable text (text) | upper left | 14.4% wide × 9.3% high | <code>Label 3</code> |
-| <code>text-16</code> | Editable text (text) | middle left | 14.4% wide × 6.7% high | <code>Label 11</code> |
-| <code>item-17-1</code> | List or contents entry (text) | middle centre | 12.2% wide × 3.6% high | <code>Label 13</code> |
-| <code>item-17-2</code> | List or contents entry (text) | middle centre | 11.4% wide × 3.7% high | <code>Label 14</code> |
-| <code>item-17-3</code> | List or contents entry (text) | middle centre | 9.4% wide × 3.2% high | <code>Label 19</code> |
-| <code>item-18-1</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.5% high | <code>Label 5</code> |
-| <code>item-18-2</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.6% high | <code>Label 4</code> |
-| <code>item-18-3</code> | List or contents entry (text) | middle centre | 9.2% wide × 3.2% high | <code>Label 9</code> |
-| <code>item-18-4</code> | List or contents entry (text) | middle centre | 13.4% wide × 3.2% high | <code>Label 12</code> |
-| <code>item-18-5</code> | List or contents entry (text) | middle centre | 21.4% wide × 3.9% high | <code>Label 16</code> |
-| <code>item-19-1</code> | List or contents entry (text) | upper right | 11.1% wide × 3.2% high | <code>Label 7</code> |
-| <code>item-19-2</code> | List or contents entry (text) | middle right | 8.8% wide × 3.2% high | <code>Label 8</code> |
-| <code>item-19-3</code> | List or contents entry (text) | middle right | 10.6% wide × 3.6% high | <code>Label 15</code> |
-| <code>item-19-4</code> | List or contents entry (text) | middle right | 12.4% wide × 3.2% high | <code>Label 17</code> |
-| <code>item-19-5</code> | List or contents entry (text) | middle right | 11.5% wide × 3.6% high | <code>Label 20</code> |
-| <code>item-19-6</code> | List or contents entry (text) | middle right | 10.2% wide × 3.9% high | <code>Label 24</code> |
-| <code>item-19-7</code> | List or contents entry (text) | middle right | 11.2% wide × 3.6% high | <code>Label 26</code> |
-| <code>text-20</code> | Editable text (text) | upper centre | 14.2% wide × 6.7% high | <code>Label 6</code> |
-| <code>text-21</code> | Editable text (text) | lower right | 13.5% wide × 9.2% high | <code>Label 30</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 10.5% wide × 6.2% high | <code>Item 2</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 8.9% wide × 3.9% high | <code>Item 3</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 12.1% wide × 15.8% high | <code>Item 4</code> |
+| <code>text-5</code> | Editable text (text) | lower left | 7.3% wide × 6.2% high | <code>Item 5</code> |
+| <code>text-6</code> | Editable text (text) | lower left | 8.4% wide × 9.7% high | <code>Layer 5</code> |
+| <code>text-7</code> | Editable text (text) | middle centre | 15.0% wide × 9.3% high | <code>Item 7</code> |
+| <code>text-8</code> | Editable text (text) | middle left | 8.4% wide × 6.7% high | <code>Layer 4</code> |
+| <code>item-9-1</code> | List or contents entry (text) | middle left | 12.6% wide × 3.6% high | <code>Item 9</code> |
+| <code>item-9-2</code> | List or contents entry (text) | middle left | 8.4% wide × 3.6% high | <code>Item 10</code> |
+| <code>item-9-3</code> | List or contents entry (text) | middle left | 5.7% wide × 3.2% high | <code>Item 11</code> |
+| <code>item-9-4</code> | List or contents entry (text) | lower left | 8.6% wide × 3.2% high | <code>Item 12</code> |
+| <code>text-10</code> | Editable text (text) | middle centre | 15.4% wide × 6.7% high | <code>Item 13</code> |
+| <code>text-11</code> | Editable text (text) | middle centre | 10.1% wide × 9.7% high | <code>Item 14</code> |
+| <code>text-12</code> | Editable text (text) | middle left | 8.4% wide × 6.6% high | <code>Layer 3</code> |
+| <code>text-13</code> | Editable text (text) | upper left | 8.4% wide × 6.6% high | <code>Layer 1</code> |
+| <code>text-14</code> | Editable text (text) | middle left | 8.4% wide × 6.7% high | <code>Layer 2</code> |
+| <code>text-15</code> | Editable text (text) | upper left | 13.1% wide × 9.3% high | <code>Item 18</code> |
+| <code>text-16</code> | Editable text (text) | middle left | 14.1% wide × 6.7% high | <code>Item 19</code> |
+| <code>item-17-1</code> | List or contents entry (text) | middle centre | 11.3% wide × 3.6% high | <code>Item 20</code> |
+| <code>item-17-2</code> | List or contents entry (text) | middle centre | 9.6% wide × 3.7% high | <code>Item 21</code> |
+| <code>item-17-3</code> | List or contents entry (text) | middle centre | 5.7% wide × 3.2% high | <code>Item 22</code> |
+| <code>item-18-1</code> | List or contents entry (text) | upper centre | 12.7% wide × 3.5% high | <code>Item 23</code> |
+| <code>item-18-2</code> | List or contents entry (text) | upper centre | 12.6% wide × 3.6% high | <code>Item 24</code> |
+| <code>item-18-3</code> | List or contents entry (text) | middle centre | 5.7% wide × 3.2% high | <code>Item 25</code> |
+| <code>item-18-4</code> | List or contents entry (text) | middle centre | 13.4% wide × 3.2% high | <code>Item 26</code> |
+| <code>item-18-5</code> | List or contents entry (text) | middle centre | 12.2% wide × 3.9% high | <code>Item 27</code> |
+| <code>item-19-1</code> | List or contents entry (text) | upper right | 10.0% wide × 3.2% high | <code>Item 28</code> |
+| <code>item-19-2</code> | List or contents entry (text) | middle right | 5.6% wide × 3.2% high | <code>Item 29</code> |
+| <code>item-19-3</code> | List or contents entry (text) | middle right | 9.0% wide × 3.6% high | <code>Item 30</code> |
+| <code>item-19-4</code> | List or contents entry (text) | middle right | 12.4% wide × 3.2% high | <code>Item 31</code> |
+| <code>item-19-5</code> | List or contents entry (text) | middle right | 10.8% wide × 3.6% high | <code>Item 32</code> |
+| <code>item-19-6</code> | List or contents entry (text) | middle right | 8.9% wide × 3.9% high | <code>Item 33</code> |
+| <code>item-19-7</code> | List or contents entry (text) | middle right | 10.2% wide × 3.6% high | <code>Item 34</code> |
+| <code>text-20</code> | Editable text (text) | upper centre | 12.3% wide × 6.7% high | <code>Item 35</code> |
+| <code>text-21</code> | Editable text (text) | lower right | 5.5% wide × 9.2% high | <code>Item 36</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

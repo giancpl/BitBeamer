@@ -8,7 +8,7 @@ Model: `cryptographic-assumptions` · Family: Technical · Status: **in review**
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cryptographic-assumptions.tex)
 
-[Open this slide individually](../index.html?template=cryptographic-assumptions)
+[Open this slide individually](../../slides/index.html?template=cryptographic-assumptions)
 
 ![Three assumptions](../previews/cryptographic-assumptions.png)
 

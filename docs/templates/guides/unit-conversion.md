@@ -8,7 +8,7 @@ Model: `unit-conversion` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/unit-conversion.tex)
 
-[Open this slide individually](../index.html?template=unit-conversion)
+[Open this slide individually](../../slides/index.html?template=unit-conversion)
 
 ![Two-column conversion table](../previews/unit-conversion.png)
 

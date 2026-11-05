@@ -8,7 +8,7 @@ Model: `cover` · Family: Opening · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover.tex)
 
-[Open this slide individually](../index.html?template=cover)
+[Open this slide individually](../../slides/index.html?template=cover)
 
 ![Pattern cover](../previews/cover.png)
 

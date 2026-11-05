@@ -2,7 +2,7 @@
 
 196 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
 
-[Getting started](../USING-STUDIO.md) · [Visual gallery](index.html)
+[Getting started](../USING-STUDIO.md) · [Slide guide](../slides/index.html)
 
 Start with the selected layouts, then browse the full collection by family.
 
@@ -41,13 +41,38 @@ Start with the selected layouts, then browse the full collection by family.
 - [Outline agenda with icon rows](guides/tabbed-agenda.md)
 - [Cover Light](guides/cover-light.md)
 - [Cover Photo](guides/cover-photo.md)
-- [Cover Script Blue](guides/cover-script-blue.md)
 - [Overview dashboard](guides/cover-dashboard.md)
 - [Cover Wide Title](guides/cover-wide-title.md)
 - [Agenda With Icons](guides/agenda-with-icons.md)
 - [Agenda With Schedule](guides/agenda-with-schedule.md)
 - [Five-section contents](guides/contents-five.md)
 - [Team presentation](guides/team-presentation.md)
+
+## Diagrams
+
+- [Three-party message relay](guides/cover-script-blue.md)
+- [Three milestone timeline](guides/statement-with-credit.md)
+- [Protocol key pair](guides/protocol-key-pair.md)
+- [Large diagram](guides/large-figure.md)
+- [Horizontal timeline](guides/horizontal-timeline.md) — selected
+- [Vertical timeline](guides/vertical-timeline.md)
+- [Development cycle](guides/cycle.md) — selected
+- [Decision tree](guides/decision-tree.md)
+- [System architecture](guides/system-architecture.md)
+- [Radial goals](guides/radial-goals.md)
+- [Nested set comparison](guides/nested-circles.md)
+- [Separate set comparison](guides/separate-circles.md)
+- [Three-way trade-off](guides/triangle-tradeoff.md)
+- [Layer and purpose stack](guides/layered-stack.md)
+- [Alternating horizontal timeline](guides/alternating-timeline.md)
+- [Three network topologies](guides/network-topologies.md)
+- [Five Spoke Values](guides/five-spoke-values.md)
+- [Three Spoke Benefits](guides/three-spoke-benefits.md)
+- [Two Radial Groups](guides/two-radial-groups.md)
+- [Personal Timeline](guides/personal-timeline.md)
+- [Nested Outline Circles](guides/nested-outline-circles.md)
+- [Two Steps Outline](guides/two-steps-outline.md)
+- [Bullseye Values](guides/bullseye-values.md)
 
 ## Statements
 
@@ -57,7 +82,7 @@ Start with the selected layouts, then browse the full collection by family.
 - [Light icon spotlight](guides/icon-spotlight-light.md)
 - [Blue icon spotlight](guides/icon-spotlight-blue.md)
 - [Oversized clipped word](guides/oversized-word.md)
-- [Chat dialogue](guides/chat-dialogue.md)
+- [Quotation with attribution](guides/chat-dialogue.md)
 - [Speech panel over three people](guides/speech-panel.md)
 - [Chat Three Messages](guides/chat-three-messages.md)
 - [Oversized Number Light](guides/oversized-number-light.md)
@@ -65,7 +90,6 @@ Start with the selected layouts, then browse the full collection by family.
 - [Diagonal Photo Title](guides/diagonal-photo-title.md)
 - [Title Paragraphs](guides/title-paragraphs.md)
 - [Title Centered Paragraphs](guides/title-centered-paragraphs.md)
-- [Statement With Credit](guides/statement-with-credit.md)
 - [People Speech Cards](guides/people-speech-cards.md)
 - [Paired Icons Blue](guides/paired-icons-blue.md)
 
@@ -172,30 +196,6 @@ Start with the selected layouts, then browse the full collection by family.
 - [Success Dashboard](guides/success-dashboard.md)
 - [Annotated system](guides/diagram-annotated-energy.md)
 - [Cards and counters](guides/card-statistics-process.md)
-
-## Diagrams
-
-- [Protocol key pair](guides/protocol-key-pair.md)
-- [Large diagram](guides/large-figure.md)
-- [Horizontal timeline](guides/horizontal-timeline.md) — selected
-- [Vertical timeline](guides/vertical-timeline.md)
-- [Development cycle](guides/cycle.md) — selected
-- [Decision tree](guides/decision-tree.md)
-- [System architecture](guides/system-architecture.md)
-- [Radial goals](guides/radial-goals.md)
-- [Nested set comparison](guides/nested-circles.md)
-- [Separate set comparison](guides/separate-circles.md)
-- [Three-way trade-off](guides/triangle-tradeoff.md)
-- [Layer and purpose stack](guides/layered-stack.md)
-- [Alternating horizontal timeline](guides/alternating-timeline.md)
-- [Three network topologies](guides/network-topologies.md)
-- [Five Spoke Values](guides/five-spoke-values.md)
-- [Three Spoke Benefits](guides/three-spoke-benefits.md)
-- [Two Radial Groups](guides/two-radial-groups.md)
-- [Personal Timeline](guides/personal-timeline.md)
-- [Nested Outline Circles](guides/nested-outline-circles.md)
-- [Two Steps Outline](guides/two-steps-outline.md)
-- [Bullseye Values](guides/bullseye-values.md)
 
 ## Technical
 

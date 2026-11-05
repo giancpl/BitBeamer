@@ -235,6 +235,22 @@ Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (the
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
+### message-relay
+
+Original palettes: light.
+
+[Current source](../../../templates/studio/cover-script-blue.tex) · [Full slot guide](../guides/cover-script-blue.md)
+
+| Field | Default | Available space |
+| --- | --- | --- |
+| `payload` | <code>Encoded payload</code> | 25.0% wide × 9.8% high |
+| `message-one` | <code>First message</code> | 19.7% wide × 14.3% high |
+| `message-two` | <code>Second message</code> | 19.7% wide × 14.3% high |
+
+Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
+
+Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
+
 ## Complete one-slide example
 
 ```latex

@@ -1,0 +1,4 @@
+# Only for lesson import, graphic optimization and source comparisons.
+# Ordinary builds and personal imports use the Python standard library.
+PyMuPDF>=1.26
+Pillow>=10

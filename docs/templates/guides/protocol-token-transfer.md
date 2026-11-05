@@ -8,7 +8,7 @@ Model: `protocol-token-transfer` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-token-transfer.tex)
 
-[Open this slide individually](../index.html?template=protocol-token-transfer)
+[Open this slide individually](../../slides/index.html?template=protocol-token-transfer)
 
 ![Protocol Token Transfer](../previews/protocol-token-transfer.png)
 

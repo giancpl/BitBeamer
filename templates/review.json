@@ -29,7 +29,7 @@
   "templates": {
     "cover": {
       "status": "in review",
-      "notes": "",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Presentation\\\\title",
@@ -47,7 +47,33 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "cover-author",
+          "source": "User review in the current conversation",
+          "issue": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The blue canvas, white pixel pattern and logo positions closely match the reference. Review the optical author/title balance with Inter; preserve the left alignment and original proportions.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "contents": {
       "status": "in review",
@@ -73,7 +99,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Inter Semibold for the title and all four entries. Card positions and intentional edge crops remain unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: title, item-2-1, item-2-2, item-2-3, item-2-4",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "section-divider": {
       "status": "in review",
@@ -91,7 +135,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The full blue canvas, centred heading and descending white line establish the intended transition style. Preserve the generous negative space.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "tabbed-agenda": {
       "status": "in review",
@@ -107,7 +161,7 @@
     },
     "cover-light": {
       "status": "in review",
-      "notes": "",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -115,11 +169,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "cover-author",
+          "source": "User review in the current conversation",
+          "issue": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "cover-photo": {
       "status": "in review",
-      "notes": "",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -127,11 +199,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "cover-author",
+          "source": "User review in the current conversation",
+          "issue": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "cover-script-blue": {
       "status": "in review",
-      "notes": "",
+      "notes": "The verified figma-0545 original is a message relay. Classify it under protocol/message-relay and preserve legacy adapters.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -139,7 +221,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "relay-classification",
+          "source": "User review in the current conversation",
+          "issue": "The verified figma-0545 original is a message relay. Classify it under protocol/message-relay and preserve legacy adapters.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "cover-dashboard": {
       "status": "in review",
@@ -155,7 +247,7 @@
     },
     "cover-wide-title": {
       "status": "in review",
-      "notes": "",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -163,7 +255,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "cover-author",
+          "source": "User review in the current conversation",
+          "issue": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "agenda-with-icons": {
       "status": "in review",
@@ -191,7 +293,7 @@
     },
     "statement-arrow": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nKeep the incoming-arrow statement Semibold and optically centred.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -205,7 +307,41 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "statement-center",
+          "source": "User review in the current conversation",
+          "issue": "Keep the incoming-arrow statement Semibold and optically centred.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Inter Semibold for the statement. Its alignment remains a separate graphical review item; arrow and allocated box are unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: title",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "glow-statement": {
       "status": "in review",
@@ -223,7 +359,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The glow, canvas coverage and centred message closely follow the original. Keep this as the reference for gradient/effect treatment.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "blue-statement": {
       "status": "in review",
@@ -241,7 +387,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The centred white statement on solid blue belongs to the same visual family. Review long copy in its fixed box rather than reducing the font.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "icon-spotlight-light": {
       "status": "in review",
@@ -281,7 +437,7 @@
     },
     "chat-dialogue": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nKeep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -289,11 +445,37 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "quote-credit",
+          "source": "User review in the current conversation",
+          "issue": "Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "speech-panel": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -301,11 +483,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "chat-three-messages": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -313,7 +513,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "oversized-number-light": {
       "status": "in review",
@@ -341,7 +551,7 @@
     },
     "diagonal-photo-title": {
       "status": "in review",
-      "notes": "",
+      "notes": "Match the original headline angle, position and intended canvas clipping.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -349,11 +559,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "diagonal-headline",
+          "source": "User review in the current conversation",
+          "issue": "Match the original headline angle, position and intended canvas clipping.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "title-paragraphs": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -361,11 +581,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "title-centered-paragraphs": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -373,11 +603,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "statement-with-credit": {
       "status": "in review",
-      "notes": "",
+      "notes": "Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -385,11 +625,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "quote-credit",
+          "source": "User review in the current conversation",
+          "issue": "Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "timeline-classification-and-values",
+          "source": "Visual inspection of figma-0667",
+          "issue": "The source is a timeline; one value was baked into its panel and could not be edited.",
+          "action": "Move to timeline/three-milestones, expose all labels/values, reuse blank panel, preserve old adapters.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "people-speech-cards": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -397,7 +655,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "paired-icons-blue": {
       "status": "in review",
@@ -427,11 +695,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold for the introduction, column headings and explanatory text to match the stronger source. Bullet markers and item spacing remain separate review items.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-2, text-3, text-4, text-5, text-6",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "list-rail-light": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Title"
@@ -445,11 +731,37 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold list text. The title, rail, anchors and text box sizes remain unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-2, text-3, text-4",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "list-rail-blue": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -457,11 +769,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "grouped-rail": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -469,7 +791,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "labelled-rows": {
       "status": "in review",
@@ -485,7 +817,7 @@
     },
     "checklist-rail": {
       "status": "in review",
-      "notes": "",
+      "notes": "Preserve heading/body structure and mixed emphasis; avoid malformed wrapped list text.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -493,11 +825,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "checklist-format",
+          "source": "User review in the current conversation",
+          "issue": "Preserve heading/body structure and mixed emphasis; avoid malformed wrapped list text.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "feature-spotlight": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -505,11 +855,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "privacy-levels": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -517,11 +877,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "title-two-column-list": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -529,7 +899,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "partner-rail": {
       "status": "in review",
@@ -545,7 +925,7 @@
     },
     "icon-rail": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -553,11 +933,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "privacy-levels-blue": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -565,7 +955,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "stepped-rail-blue": {
       "status": "in review",
@@ -577,11 +977,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "full-collection-audit",
+          "source": "Full-collection contact-sheet and original audit, 2026-11-05",
+          "issue": "Overlapping generic labels or an embedded ninth tile label.",
+          "action": "Bounded text slots to their original cells; shortened defaults; separated the missing native tile label where applicable.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "three-cards": {
       "status": "in review",
-      "notes": "",
+      "notes": "Preserve the accepted 10% icon reduction, centres, proportions and complete panel shadows.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title",
@@ -603,7 +1013,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "card-icon-scale",
+          "source": "User review in the current conversation",
+          "issue": "Preserve the accepted 10% icon reduction, centres, proportions and complete panel shadows.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The three square cards, soft shadows and centred icons are close to the reference. The agreed 10% icon reduction leaves internal clearance; do not enlarge them again as a blanket change.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "three-step-process": {
       "status": "in review",
@@ -625,11 +1053,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold captions beneath the three icons. Card and arrow geometry is unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: title, text-2, text-3",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "two-cards": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -637,11 +1083,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "four-card-grid": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -655,7 +1111,41 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold headings, including headings inside mixed body fields. Body text stays Regular where the source distinguishes it; bullet consistency is a separate review item.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: item-3-1, text-2, text-4, text-5",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "eight-icon-grid": {
       "status": "in review",
@@ -671,7 +1161,7 @@
     },
     "four-step-process": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -679,11 +1169,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "two-step-process": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -691,11 +1191,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "milestone-cards": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -703,11 +1213,21 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "twelve-word-grid": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -715,11 +1235,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "three-card-summary": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -727,11 +1265,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "four-pillar-cards": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -739,11 +1295,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "hardware-options": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -751,7 +1325,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "software-options": {
       "status": "in review",
@@ -779,7 +1363,7 @@
     },
     "callout-explanation": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -787,11 +1371,29 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "guide-field-audit",
+          "source": "Original/current contact-sheet audit, 2026-11-05",
+          "issue": "Default field roles, caption weight, or embedded text required refinement.",
+          "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "six-outline-cards": {
       "status": "in review",
-      "notes": "",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -799,7 +1401,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "six-explanation-cards": {
       "status": "in review",
@@ -815,7 +1427,7 @@
     },
     "five-icon-row": {
       "status": "in review",
-      "notes": "",
+      "notes": "Centre the five icons and their labels as one visual row.",
       "use": "",
       "example": {},
       "palette_reviews": {
@@ -823,7 +1435,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "icon-row-center",
+          "source": "User review in the current conversation",
+          "issue": "Centre the five icons and their labels as one visual row.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "square-icon-grid": {
       "status": "in review",
@@ -927,7 +1549,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored the stronger list weight from the source. The equal split, heading positions and colours remain unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-1, text-2",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "onchain-offchain": {
       "status": "in review",
@@ -1007,7 +1647,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The laptop silhouette, crop and text relationship reproduce the reference well. Preserve the image proportions and its existing transparent boundary.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "image-right": {
       "status": "in review",
@@ -1025,7 +1675,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold list text. The photograph, mask, frame, rail and crop are unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-1, text-2, text-3",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "image-overlay": {
       "status": "in review",
@@ -1050,7 +1718,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Keep the four framed-image slots as a distinct composition. Retain the source crops and shared soft-shadow treatment; embedded screenshot text is part of the imagery.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "three-portraits": {
       "status": "in review",
@@ -1286,7 +1964,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Keep the dominant number and subordinate caption. Use English number grouping (21,000,000) in the English default; verify the caption remains subordinate within its existing box.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "three-statistics": {
       "status": "in review",
@@ -1324,7 +2012,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold for the label and footnote. The equivalent English note uses ha and bulbs to fit the original box; curve and font sizes are unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-1, text-4",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "diagonal-number": {
       "status": "in review",
@@ -1606,7 +2312,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold dates while keeping descriptive text Regular, preserving the source hierarchy. All timeline positions and strokes are unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-3, text-4, text-5, text-6, text-7",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "vertical-timeline": {
       "status": "in review",
@@ -1636,7 +2360,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold subtitle and node labels. The English BIP expansion uses a colon to preserve its original single line; geometry and sizes remain unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-2, text-3, text-4, text-5, text-6, text-7",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "decision-tree": {
       "status": "in review",
@@ -1846,7 +2588,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "No original Figma frame exists for this model. Assess it against the Studio family separately: the small centred table and academic rules need an explicit visual decision.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "equation": {
       "status": "in review",
@@ -1861,7 +2613,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Keep this as the full-canvas mathematical composition. Check optical centring and the declared mathematical font substitution separately from Inter body typography.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "code": {
       "status": "in review",
@@ -1881,7 +2643,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored Semibold for the seven command runs while leaving instructions Regular. Step spacing, indentation and arrow characters remain separate graphical review items.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: text-2",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "references": {
       "status": "in review",
@@ -1971,7 +2751,25 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "Restored stronger proof text and node labels using Inter Semibold. Tree geometry, connectors, box sizes and font sizes remain unchanged.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "archived-field-weight-audit",
+          "source": "Archived typography/changes.json",
+          "issue": "Previous stronger-weight corrections: explanation, root, ab, cd, hash-0, tx-0, hash-1, tx-1, hash-2, tx-2, hash-3, tx-3",
+          "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "fork-branches": {
       "status": "in review",
@@ -2031,7 +2829,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "full-collection-audit",
+          "source": "Full-collection contact-sheet and original audit, 2026-11-05",
+          "issue": "Overlapping generic labels or an embedded ninth tile label.",
+          "action": "Bounded text slots to their original cells; shortened defaults; separated the missing native tile label where applicable.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "payment-channel": {
       "status": "in review",
@@ -2331,7 +3139,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "full-collection-audit",
+          "source": "Full-collection contact-sheet and original audit, 2026-11-05",
+          "issue": "Overlapping generic labels or an embedded ninth tile label.",
+          "action": "Bounded text slots to their original cells; shortened defaults; separated the missing native tile label where applicable.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "diagram-pool-shares": {
       "status": "in review",
@@ -2355,7 +3173,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "full-collection-audit",
+          "source": "Full-collection contact-sheet and original audit, 2026-11-05",
+          "issue": "Overlapping generic labels or an embedded ninth tile label.",
+          "action": "Bounded text slots to their original cells; shortened defaults; separated the missing native tile label where applicable.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "multi-signature": {
       "status": "in review",
@@ -2499,7 +3327,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "qr-contrast-audit",
+          "source": "Full-collection HD audit, 2026-11-05",
+          "issue": "A neutral black QR had insufficient contrast against the blue canvas.",
+          "action": "Use the semantic foreground for the native QR; preserve its size and destination.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "apply-qr": {
       "status": "in review",
@@ -2511,7 +3349,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "qr-contrast-audit",
+          "source": "Full-collection HD audit, 2026-11-05",
+          "issue": "A neutral black QR had insufficient contrast against the blue canvas.",
+          "action": "Use the semantic foreground for the native QR; preserve its size and destination.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        }
+      ]
     },
     "closing": {
       "status": "in review",
@@ -2529,7 +3377,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "archived-visual-assessment",
+          "source": "Archived style-validation/assessment.json",
+          "issue": "The blue canvas, social-icon row, handle and upper copyright match the reference closely. Preserve the hierarchy; the updated year is intentional.",
+          "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
+          "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        }
+      ]
     },
     "contents-five": {
       "status": "in review",

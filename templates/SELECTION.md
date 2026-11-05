@@ -2,7 +2,7 @@
 
 The showcase presents 21 models. The ledger retains 24 selected composition choices, including alternate variants. Selection is not graphical approval.
 All other commands remain in the [full archive](CATALOGUE.md).
-Browse the [paginated gallery](../docs/templates/index.html) or build the
+Browse the [paginated gallery](../docs/slides/index.html) or build the
 [copyable selected deck](../examples/studio-selected-templates.tex):
 
 ```sh

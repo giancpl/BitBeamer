@@ -8,7 +8,7 @@ Model: `hero-number` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/hero-number.tex)
 
-[Open this slide individually](../index.html?template=hero-number)
+[Open this slide individually](../../slides/index.html?template=hero-number)
 
 ![Headline number](../previews/hero-number.png)
 

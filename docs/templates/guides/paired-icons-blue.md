@@ -8,7 +8,7 @@ Model: `paired-icons-blue` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/paired-icons-blue.tex)
 
-[Open this slide individually](../index.html?template=paired-icons-blue)
+[Open this slide individually](../../slides/index.html?template=paired-icons-blue)
 
 ![Paired Icons Blue](../previews/paired-icons-blue.png)
 

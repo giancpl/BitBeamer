@@ -18,6 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def single_document(entry, page):
     source = catalogue_document([entry])
+    source = source[:source.index('% Catalogue labels')] + source[source.index(r'\begin{document}'):]
     return source.replace(r'\begin{document}', r'\begin{document}'+'\n'+r'\setcounter{framenumber}{'+str(page-1)+'}',1)
 
 
@@ -71,12 +72,15 @@ def render_slide(root, entry, page, values, backend, image):
         manifest.pop('inputs',None)
         save_manifest(root,manifest)
         print('Updated preview: '+entry['id'])
+    from guide_previews import refresh
+    refresh(root,entry['id'],pdf,backend=backend,image=image)
+    updated=load_manifest(root);updated.setdefault('previews',{})[entry['id']]=digest(root/'docs/templates/previews'/(entry['id']+'.png'));save_manifest(root,updated)
     return pdf
 
 
 def main(argv=None, root=ROOT):
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action',choices=('slide','selection','models','pages','palettes','all','sync','check'))
+    parser.add_argument('action',choices=('slide','selection','models','pages','palettes','all','sync','check','guide'))
     parser.add_argument('id',nargs='?')
     parser.add_argument('--previews',action='store_true',help='Refresh prepared palette previews after compiling palettes')
     parser.add_argument('--variant',help='Composition variant for a single grouped model')
@@ -114,23 +118,34 @@ def main(argv=None, root=ROOT):
             check_palette_previews(root,inspect_templates(root))
             runpy.run_path(str(root/'scripts/catalogue-studio-collection.py'))['catalogue'](root,check=True)
             runpy.run_path(str(root/'scripts/check-repo.py'))['check_repository'](root)
+            from guide_previews import check as check_hd
+            check_hd(root)
+            from guide_checks import check_retired_galleries, check_guide_links
+            check_retired_galleries(root)
+            check_guide_links(root)
             print('Review sources, documentation, prepared parts and previews are current.')
             return 0
         prepare_catalogue(root)
         if args.action == 'sync':
             import runpy
             runpy.run_path(str(root/'scripts/catalogue-studio-collection.py'))['catalogue'](root)
-            print('Synchronized review sheet, registries, guides, galleries and selection showcase. No slides compiled.')
+            print('Synchronized review sheet, registries, field guides, unified slide guide and selection showcase. No slides compiled.')
+            return 0
+        if args.action == 'guide':
+            from slide_guide import sync
+            print('Slide guide:',sync(root))
+            page=root/'docs/slides/index.html'
+            if args.open:webbrowser.open(page.as_uri())
+            print('Guide:',page)
             return 0
         entries = inspect_templates(root)
         by_id = {e['id']:(i,e) for i,e in enumerate(entries,1)}
         if args.action == 'pages':
-            from studio_pages_review import build_review
-            pdf, gallery = build_review(root, entries, args.backend, args.image, compile_document, content=args.content)
-            if args.open:
-                open_pdf(pdf)
-            print('Review PDF: ' + str(pdf))
-            print('Review gallery: ' + str(gallery))
+            from urllib.parse import urlencode
+            query=urlencode({'roles':'pages','content':args.content})
+            url=(root/'docs/slides/index.html').as_uri()+'?'+query
+            if args.open:webbrowser.open(url)
+            print('Focused guide:',url)
             return 0
         if args.action == 'slide' and args.content == 'example':
             from studio_models import resolve
@@ -168,6 +183,9 @@ def main(argv=None, root=ROOT):
             inputs=input_sets(root,entries)
             target=root/'docs/templates/previews'/(entry['id']+'.png');thumbnail(root,pdf,target,args.backend,args.image)
             manifest=load_manifest(root);manifest.setdefault('models',{})[entry['id']]=inputs[entry['id']];manifest.setdefault('previews',{})[entry['id']]=digest(target);save_manifest(root,manifest)
+            from guide_previews import refresh
+            refresh(root,entry['id'],pdf,backend=args.backend,image=args.image)
+            updated=load_manifest(root);updated.setdefault('previews',{})[entry['id']]=digest(target);save_manifest(root,updated)
             if args.open:open_pdf(pdf)
             print('Review PDF: '+str(pdf));return 0
         if args.action == 'slide':

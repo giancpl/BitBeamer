@@ -1,6 +1,8 @@
 * text=auto eol=lf
-*.pdf -text
-*.png -text
-*.jpg -text
-*.jpeg -text
-*.zip -text
+*.pdf binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.zip binary
+
+*.webp binary

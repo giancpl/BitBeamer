@@ -81,3 +81,8 @@ def require_approved(root):
     if pending:
         raise RuntimeError('Studio release requires explicit approval of selected models: ' + ', '.join(pending)
                            + '. Use review packaging until graphical review is complete.')
+
+
+def example_command(item):
+    from studio_guides import command
+    return command(item['id'],item.get('example',{}))

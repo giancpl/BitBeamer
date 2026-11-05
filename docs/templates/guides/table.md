@@ -8,7 +8,7 @@ Model: `table` · Family: Technical · Status: **supplementary**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/table.tex)
 
-[Open this slide individually](../index.html?template=table)
+[Open this slide individually](../../slides/index.html?template=table)
 
 ![Data table](../previews/table.png)
 

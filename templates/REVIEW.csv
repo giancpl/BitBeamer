@@ -1,63 +1,65 @@
 id,category,reference,status,catalogue_page,alias_of,requested_changes
-cover,Opening,figma-0175,in review,1,,
+cover,Opening,figma-0175,in review,1,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
 contents,Opening,figma-0575,in review,2,,
 section-divider,Opening,figma-0697,in review,3,,
 tabbed-agenda,Opening,figma-1057,in review,4,,
-cover-light,Opening,figma-0584,in review,5,,
-cover-photo,Opening,figma-0416,in review,6,,
-cover-script-blue,Opening,figma-0545,in review,7,,
+cover-light,Opening,figma-0584,in review,5,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+cover-photo,Opening,figma-0416,in review,6,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+cover-script-blue,Diagrams,figma-0545,in review,7,,The verified figma-0545 original is a message relay. Classify it under protocol/message-relay and preserve legacy adapters.
 cover-dashboard,Opening,figma-0610,in review,8,,
-cover-wide-title,Opening,figma-0779,in review,9,,
+cover-wide-title,Opening,figma-0779,in review,9,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
 agenda-with-icons,Opening,figma-0521,in review,10,,
 agenda-with-schedule,Opening,figma-1010,in review,11,,
-statement-arrow,Statements,figma-0055,in review,12,,
+statement-arrow,Statements,figma-0055,in review,12,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
+Keep the incoming-arrow statement Semibold and optically centred."
 glow-statement,Statements,figma-0793,in review,13,,
 blue-statement,Statements,figma-0121,in review,14,,
 icon-spotlight-light,Statements,figma-1003,in review,15,,
 icon-spotlight-blue,Statements,figma-0383,in review,16,,
 oversized-word,Statements,figma-0895,in review,17,,
-chat-dialogue,Statements,figma-0757,in review,18,,
-speech-panel,Statements,figma-0482,in review,19,,
-chat-three-messages,Statements,figma-0046,in review,20,,
+chat-dialogue,Statements,figma-0757,in review,18,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
+Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines."
+speech-panel,Statements,figma-0482,in review,19,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+chat-three-messages,Statements,figma-0046,in review,20,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 oversized-number-light,Statements,figma-0554,in review,21,,
 oversized-number-blue,Statements,figma-0555,in review,22,,
-diagonal-photo-title,Statements,figma-0557,in review,23,,
-title-paragraphs,Statements,figma-0198,in review,24,,
-title-centered-paragraphs,Statements,figma-0196,in review,25,,
-statement-with-credit,Statements,figma-0667,in review,26,,
-people-speech-cards,Statements,figma-0765,in review,27,,
+diagonal-photo-title,Statements,figma-0557,in review,23,,"Match the original headline angle, position and intended canvas clipping."
+title-paragraphs,Statements,figma-0198,in review,24,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+title-centered-paragraphs,Statements,figma-0196,in review,25,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+statement-with-credit,Diagrams,figma-0667,in review,26,,Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.
+people-speech-cards,Statements,figma-0765,in review,27,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 paired-icons-blue,Statements,figma-0038,in review,28,,
 two-columns,Lists,figma-0185,in review,29,,
-list-rail-light,Lists,figma-0702,in review,30,,
-list-rail-blue,Lists,figma-0395,in review,31,,
-grouped-rail,Lists,figma-0725,in review,32,,
+list-rail-light,Lists,figma-0702,in review,30,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+list-rail-blue,Lists,figma-0395,in review,31,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+grouped-rail,Lists,figma-0725,in review,32,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 labelled-rows,Lists,figma-0390,in review,33,,
-checklist-rail,Lists,figma-0384,in review,34,,
-feature-spotlight,Lists,figma-0648,in review,35,,
-privacy-levels,Lists,figma-0098,in review,36,,
-title-two-column-list,Lists,figma-0183,in review,37,,
+checklist-rail,Lists,figma-0384,in review,34,,Preserve heading/body structure and mixed emphasis; avoid malformed wrapped list text.
+feature-spotlight,Lists,figma-0648,in review,35,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+privacy-levels,Lists,figma-0098,in review,36,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+title-two-column-list,Lists,figma-0183,in review,37,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 partner-rail,Lists,figma-0996,in review,38,,
-icon-rail,Lists,figma-1026,in review,39,,
-privacy-levels-blue,Lists,figma-1023,in review,40,,
+icon-rail,Lists,figma-1026,in review,39,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+privacy-levels-blue,Lists,figma-1023,in review,40,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 stepped-rail-blue,Lists,figma-1024,in review,41,,
-three-cards,Cards,figma-0021,in review,42,,
+three-cards,Cards,figma-0021,in review,42,,"Preserve the accepted 10% icon reduction, centres, proportions and complete panel shadows."
 three-step-process,Cards,figma-0079,in review,43,,
-two-cards,Cards,figma-0070,in review,44,,
-four-card-grid,Cards,figma-0603,in review,45,,
+two-cards,Cards,figma-0070,in review,44,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+four-card-grid,Cards,figma-0603,in review,45,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 eight-icon-grid,Cards,figma-0429,in review,46,,
-four-step-process,Cards,figma-0054,in review,47,,
-two-step-process,Cards,figma-0048,in review,48,,
-milestone-cards,Cards,figma-0105,in review,49,,
-twelve-word-grid,Cards,figma-0646,in review,50,,
-three-card-summary,Cards,figma-0049,in review,51,,
-four-pillar-cards,Cards,figma-0065,in review,52,,
-hardware-options,Cards,figma-0357,in review,53,,
+four-step-process,Cards,figma-0054,in review,47,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+two-step-process,Cards,figma-0048,in review,48,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+milestone-cards,Cards,figma-0105,in review,49,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+twelve-word-grid,Cards,figma-0646,in review,50,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+three-card-summary,Cards,figma-0049,in review,51,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+four-pillar-cards,Cards,figma-0065,in review,52,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+hardware-options,Cards,figma-0357,in review,53,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 software-options,Cards,figma-0379,in review,54,,
 two-card-vertical,Cards,figma-0649,in review,55,,
-callout-explanation,Cards,figma-0924,in review,56,,
-six-outline-cards,Cards,figma-1013,in review,57,,
+callout-explanation,Cards,figma-0924,in review,56,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+six-outline-cards,Cards,figma-1013,in review,57,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 six-explanation-cards,Cards,figma-1016,in review,58,,
-five-icon-row,Cards,figma-1022,in review,59,,
+five-icon-row,Cards,figma-1022,in review,59,,Centre the five icons and their labels as one visual row.
 square-icon-grid,Cards,figma-1061,in review,60,,
 incentives-card-grid,Cards,figma-0869,in review,61,,
 network-environments,Cards,figma-0873,in review,62,,

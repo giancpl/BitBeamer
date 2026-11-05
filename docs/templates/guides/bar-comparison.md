@@ -8,7 +8,7 @@ Model: `bar-comparison` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/bar-comparison.tex)
 
-[Open this slide individually](../index.html?template=bar-comparison)
+[Open this slide individually](../../slides/index.html?template=bar-comparison)
 
 ![Horizontal bar comparison](../previews/bar-comparison.png)
 

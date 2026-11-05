@@ -8,7 +8,7 @@ Model: `card-statistics-process` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/card-statistics-process.tex)
 
-[Open this slide individually](../index.html?template=card-statistics-process)
+[Open this slide individually](../../slides/index.html?template=card-statistics-process)
 
 ![Cards and counters](../previews/card-statistics-process.png)
 

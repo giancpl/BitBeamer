@@ -1,0 +1,27 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M15390 19200H32610V920H15390V19200Z" />
+</ns0:clipPath>
+<ns0:mask id="part-4">
+<ns0:g transform="matrix(1.000581,0,0,1.0005798,1539,79.47119)">
+<ns0:image id="part-6" width="1721" height="1828" ns1:href="resources/14dd7beed0b953cf8ba3bcddf88c9935c9b3eeff91ca953dfe28bb7d15e2f7e0.jpg" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M0 0H35560V20000H0Z" fill="#f9f9f9" />
+<ns0:g clip-path="url(#part-2)">
+<ns0:g mask="url(#part-4)">
+<ns0:g transform="matrix(1.000581,0,0,1.0005798,1539,79.47119)">
+<ns0:image id="part-12" width="1721" height="1828" ns1:href="resources/cd138f18d7b866800ed7f15c50d2a83aa301b6b5b7dbf3751de0c01872da6f3c.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M2810 8910H3840V8290H2810C2660.88 8290 2540 8410.88 2540 8560V8640C2540 8789.12 2660.88 8910 2810 8910" fill="#000a4c" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M3840 8290H5150V8910H3840Z" fill="#001394" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M5150 8290H6460V8910H5150Z" fill="#001ce0" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M6460 8290H7770V8910H6460Z" fill="#475eff" />
+<ns0:path transform="matrix(.1,0,0,-.1,0,2000)" d="M7770 8910H8800C8949.12 8910 9070 8789.12 9070 8640V8560C9070 8410.88 8949.12 8290 8800 8290H7770V8910" fill="#a7b2ff" />
+</ns0:g>
+</ns0:svg>

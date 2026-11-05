@@ -8,7 +8,7 @@ Model: `two-card-vertical` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-card-vertical.tex)
 
-[Open this slide individually](../index.html?template=two-card-vertical)
+[Open this slide individually](../../slides/index.html?template=two-card-vertical)
 
 ![Two Card Vertical](../previews/two-card-vertical.png)
 

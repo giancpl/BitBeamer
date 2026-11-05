@@ -8,7 +8,7 @@ Model: `checklist-rail` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/checklist-rail.tex)
 
-[Open this slide individually](../index.html?template=checklist-rail)
+[Open this slide individually](../../slides/index.html?template=checklist-rail)
 
 ![Practical checklist](../previews/checklist-rail.png)
 
@@ -104,8 +104,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>title</code> | Main text (text) | middle left | 20.5% wide × 15.6% high | <code>Title</code> |
 | <code>text-2</code> | Editable text (text) | upper right | 40.8% wide × 9.5% high | <code>\textbf{Step 1}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
 | <code>text-3</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Step 2}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Step 4}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 40.8% wide × 9.5% high | <code>\textbf{Step 5}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 40.8% wide × 9.5% high | <code>\textbf{Step 3}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 40.8% wide × 9.5% high | <code>\textbf{Step 4}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Supporting detail.}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

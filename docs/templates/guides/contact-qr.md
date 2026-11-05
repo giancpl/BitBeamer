@@ -8,7 +8,7 @@ Model: `contact-qr` · Family: Closing · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/contact-qr.tex)
 
-[Open this slide individually](../index.html?template=contact-qr)
+[Open this slide individually](../../slides/index.html?template=contact-qr)
 
 ![Contact slide with working QR](../previews/contact-qr.png)
 
@@ -99,7 +99,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle right | 28.0% wide × 13.7% high | <code>\studiopaletteimage[width=537\studiounit]{images/studio/neutral/contact-qr-graphic-1.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 30.5% wide × 92.9% high | <code>{\color{black}\qrcode[height=497.25\studiounit]{https://example.org}}</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 30.5% wide × 92.9% high | <code>{\color{studio-foreground}\qrcode[height=497.25\studiounit]{https://example.org}}</code> |
 | <code>text-1</code> | Editable text (text) | upper centre | 13.1% wide × 3.9% high | <code>Label 1</code> |
 | <code>title</code> | Main text (text) | middle right | 17.2% wide × 8.2% high | <code>Title</code> |
 

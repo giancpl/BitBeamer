@@ -8,7 +8,7 @@ Model: `system-architecture` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/system-architecture.tex)
 
-[Open this slide individually](../index.html?template=system-architecture)
+[Open this slide individually](../../slides/index.html?template=system-architecture)
 
 ![System architecture](../previews/system-architecture.png)
 

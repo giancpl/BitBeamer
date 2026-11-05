@@ -8,7 +8,7 @@ Model: `three-charts` · Family: Data · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-charts.tex)
 
-[Open this slide individually](../index.html?template=three-charts)
+[Open this slide individually](../../slides/index.html?template=three-charts)
 
 ![Three-chart dashboard](../previews/three-charts.png)
 

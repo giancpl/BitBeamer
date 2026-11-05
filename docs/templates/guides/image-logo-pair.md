@@ -8,7 +8,7 @@ Model: `image-logo-pair` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/image-logo-pair.tex)
 
-[Open this slide individually](../index.html?template=image-logo-pair)
+[Open this slide individually](../../slides/index.html?template=image-logo-pair)
 
 ![Image and symbol](../previews/image-logo-pair.png)
 

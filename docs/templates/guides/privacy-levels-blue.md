@@ -8,7 +8,7 @@ Model: `privacy-levels-blue` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/privacy-levels-blue.tex)
 
-[Open this slide individually](../index.html?template=privacy-levels-blue)
+[Open this slide individually](../../slides/index.html?template=privacy-levels-blue)
 
 ![Privacy Levels Blue](../previews/privacy-levels-blue.png)
 

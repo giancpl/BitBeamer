@@ -8,7 +8,7 @@ Model: `before-after` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/before-after.tex)
 
-[Open this slide individually](../index.html?template=before-after)
+[Open this slide individually](../../slides/index.html?template=before-after)
 
 ![Before and after panels](../previews/before-after.png)
 

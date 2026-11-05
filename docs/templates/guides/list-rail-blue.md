@@ -8,7 +8,7 @@ Model: `list-rail-blue` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/list-rail-blue.tex)
 
-[Open this slide individually](../index.html?template=list-rail-blue)
+[Open this slide individually](../../slides/index.html?template=list-rail-blue)
 
 ![Blue list with vertical rail](../previews/list-rail-blue.png)
 

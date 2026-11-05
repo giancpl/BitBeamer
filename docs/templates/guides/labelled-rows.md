@@ -8,7 +8,7 @@ Model: `labelled-rows` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/labelled-rows.tex)
 
-[Open this slide individually](../index.html?template=labelled-rows)
+[Open this slide individually](../../slides/index.html?template=labelled-rows)
 
 ![Label and explanation rows](../previews/labelled-rows.png)
 

@@ -8,7 +8,7 @@ Model: `genesis-information` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/genesis-information.tex)
 
-[Open this slide individually](../index.html?template=genesis-information)
+[Open this slide individually](../../slides/index.html?template=genesis-information)
 
 ![Record information](../previews/genesis-information.png)
 

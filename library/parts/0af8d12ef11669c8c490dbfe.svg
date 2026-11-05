@@ -1,0 +1,281 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="2000" viewBox="0 0 3556 2000">
+<ns0:defs>
+<ns0:g id="part-2">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-5">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-5)">
+<ns0:clipPath id="part-8">
+<ns0:path transform="matrix(1,0,0,-1,1759.6784,1474.8067)" d="M222.58324 651.9528 .000345 693.4961-.000027-.000916H222.58274L222.58324 651.9528Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-8)">
+<ns0:image x="1759" y="781" width="224" height="694" ns1:href="resources/692074467e5e6d9c20e2301eff7b81c3c3eb067bbcaaf73323039eda69058bc0.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-12" mask-type="luminance">
+<ns0:use ns1:href="#part-2" />
+</ns0:mask>
+<ns0:clipPath id="part-14">
+<ns0:path transform="matrix(1,0,0,-1,1759.6784,1474.8067)" d="M222.58324 651.9528 .000345 693.4961-.000027-.000916H222.58274L222.58324 651.9528Z" />
+</ns0:clipPath>
+<ns0:g id="part-16">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-19">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-19)">
+<ns0:clipPath id="part-22">
+<ns0:path transform="matrix(1,0,0,-1,1537.0781,1426.3594)" d="M222.58278-48.452028 222.58119 717.66146 210.44425 721.68338C84.81997 763.3125 .01206 880.7604 .013332 1013.10256L0-48.452028H222.58278Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-22)">
+<ns0:image x="1537" y="413" width="223" height="1062" ns1:href="resources/30f1353e66690d35304a9f3e462d568656ca6b87fd8bcb9fa7323c012f763c17.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-26" mask-type="luminance">
+<ns0:use ns1:href="#part-16" />
+</ns0:mask>
+<ns0:clipPath id="part-28">
+<ns0:path transform="matrix(1,0,0,-1,1537.0781,1426.3594)" d="M222.58278-48.452028 222.58119 717.66146 210.44425 721.68338C84.81997 763.3125 .01206 880.7604 .013332 1013.10256L0-48.452028H222.58278Z" />
+</ns0:clipPath>
+<ns0:g id="part-30">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-33">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-33)">
+<ns0:clipPath id="part-36">
+<ns0:path transform="matrix(1,0,0,-1,1982.2562,1474.8067)" d="M222.58275 573.494 0 594.2656V0H222.58275V573.494Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-36)">
+<ns0:image x="1982" y="880" width="223" height="595" ns1:href="resources/36b5275169343a3ec56d68b94759c928954b38dd2b9d4e0995df5f228ae60c4d.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-40" mask-type="luminance">
+<ns0:use ns1:href="#part-30" />
+</ns0:mask>
+<ns0:clipPath id="part-42">
+<ns0:path transform="matrix(1,0,0,-1,1982.2562,1474.8067)" d="M222.58275 573.494 0 594.2656V0H222.58275V573.494Z" />
+</ns0:clipPath>
+<ns0:g id="part-44">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-47">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-47)">
+<ns0:clipPath id="part-50">
+<ns0:path transform="matrix(1,0,0,-1,2204.8453,1474.8086)" d="M222.58275 495.83009H0V.000977H222.58275V495.83009Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-50)">
+<ns0:image x="2204" y="978" width="224" height="497" ns1:href="resources/ffca13c48392de2f6a1153841d5239613b9aa581031995fc3259c3140f06abe2.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-54" mask-type="luminance">
+<ns0:use ns1:href="#part-44" />
+</ns0:mask>
+<ns0:clipPath id="part-56">
+<ns0:path transform="matrix(1,0,0,-1,2204.8453,1474.8086)" d="M222.58275 495.83009H0V.000977H222.58275V495.83009Z" />
+</ns0:clipPath>
+<ns0:g id="part-58">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-61">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-61)">
+<ns0:clipPath id="part-64">
+<ns0:path transform="matrix(1,0,0,-1,2427.4344,1474.8106)" d="M222.58275 423.7422H0V-.000732H222.58275V423.7422Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-64)">
+<ns0:image x="2427" y="1051" width="224" height="424" ns1:href="resources/679d11ed3173ca080444e8377d3a13b0108fe129200674f4e743a71d9e0e4fa1.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-68" mask-type="luminance">
+<ns0:use ns1:href="#part-58" />
+</ns0:mask>
+<ns0:clipPath id="part-70">
+<ns0:path transform="matrix(1,0,0,-1,2427.4344,1474.8106)" d="M222.58275 423.7422H0V-.000732H222.58275V423.7422Z" />
+</ns0:clipPath>
+<ns0:g id="part-72">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-75">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-75)">
+<ns0:clipPath id="part-78">
+<ns0:path transform="matrix(1,0,0,-1,2650.0196,1474.8125)" d="M222.58275 353.9414H0V.000763H222.58275V353.9414Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-78)">
+<ns0:image x="2650" y="1120" width="223" height="355" ns1:href="resources/4f4ef6e169370a8106f53d5315a90cf6d3927795369c2e7f805bb61c773f7d33.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-82" mask-type="luminance">
+<ns0:use ns1:href="#part-72" />
+</ns0:mask>
+<ns0:clipPath id="part-84">
+<ns0:path transform="matrix(1,0,0,-1,2650.0196,1474.8125)" d="M222.58275 353.9414H0V.000763H222.58275V353.9414Z" />
+</ns0:clipPath>
+<ns0:g id="part-86">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-89">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-89)">
+<ns0:clipPath id="part-92">
+<ns0:path transform="matrix(1,0,0,-1,2872.6087,1474.8106)" d="M222.58275 288.16407H0V-.000031H222.58275V288.16407Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-92)">
+<ns0:image x="2872" y="1186" width="224" height="289" ns1:href="resources/28903c12c96a11b92d12b13bfe1b52c64116de0dd7d4d43cf6c75fba70760748.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-96" mask-type="luminance">
+<ns0:use ns1:href="#part-86" />
+</ns0:mask>
+<ns0:clipPath id="part-98">
+<ns0:path transform="matrix(1,0,0,-1,2872.6087,1474.8106)" d="M222.58275 288.16407H0V-.000031H222.58275V288.16407Z" />
+</ns0:clipPath>
+<ns0:g id="part-100">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-103">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-103)">
+<ns0:clipPath id="part-106">
+<ns0:path transform="matrix(1,0,0,-1,3095.1866,1474.8106)" d="M222.58275 217.8418H0V.00029H222.58275V217.8418Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-106)">
+<ns0:image x="3095" y="1256" width="223" height="219" ns1:href="resources/897554b40e02c92a2e309a612b5fd1feee752fb7fe5aa87250380d7c4e182cfa.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-110" mask-type="luminance">
+<ns0:use ns1:href="#part-100" />
+</ns0:mask>
+<ns0:clipPath id="part-112">
+<ns0:path transform="matrix(1,0,0,-1,3095.1866,1474.8106)" d="M222.58275 217.8418H0V.00029H222.58275V217.8418Z" />
+</ns0:clipPath>
+<ns0:g id="part-114">
+<ns0:rect x="0" y="0" width="100%" height="100%" fill="white" />
+<ns0:g>
+<ns0:clipPath id="part-117">
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 0H3556V2000H0Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-117)">
+<ns0:clipPath id="part-120">
+<ns0:path transform="matrix(1,0,0,-1,1537.0781,1428.3496)" d="M88.12572 254.2757 0 .000488H1780.6901V1064.125L1204.8772 1058.0558C1092.5879 1056.8722 981.0257 1039.8704 873.48129 1007.5517 505.9455 897.10189 213.79866 616.8885 88.12572 254.2757Z" />
+</ns0:clipPath>
+<ns0:g clip-path="url(#part-120)">
+<ns0:image x="1537" y="364" width="1781" height="1065" ns1:href="resources/7a61de6ec1ec38824468e4be37931e11f74304e989697778334c27e5c92f548d.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:mask id="part-124" mask-type="luminance">
+<ns0:use ns1:href="#part-114" />
+</ns0:mask>
+<ns0:clipPath id="part-126">
+<ns0:path transform="matrix(1,0,0,-1,1537.0781,1428.3496)" d="M88.12572 254.2757 0 .000488H1780.6901V1064.125L1204.8772 1058.0558C1092.5879 1056.8722 981.0257 1039.8704 873.48129 1007.5517 505.9455 897.10189 213.79866 616.8885 88.12572 254.2757Z" />
+</ns0:clipPath>
+</ns0:defs>
+<ns0:path transform="matrix(1,0,0,-1,0,2000)" d="M0 2000H3556V0H0V2000Z" fill="#f9f9f9" />
+<ns0:path transform="matrix(1,0,0,-1,1868.1406,1817.5625)" d="M26 52V52C40.359407 52 52 40.359407 52 26 52 11.640594 40.359407 0 26 0 11.640596 0 0 11.640594 0 26 0 40.359407 11.640596 52 26 52Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2495.3243,1817.5625)" d="M26 52V52C40.359407 52 52 40.359407 52 26 52 11.640594 40.359407 0 26 0 11.640596 0 0 11.640594 0 26 0 40.359407 11.640596 52 26 52Z" fill="#ff8a00" />
+<ns0:path transform="matrix(1,0,0,-1,1759.6858,827.7676)" d="M0 46.45703-.458684 43.99947 222.12407 2.456211 222.58275 4.913773 223.04143 7.371334 .458684 48.914594 0 46.45703Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,1982.2637,906.291)" d="M0 25.75-.232293 23.260815 222.35045 2.489185 222.58275 4.978371 222.81505 7.467556 .232293 28.239186 0 25.75Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2204.8529,983.9785)" d="M0 5V2.5H222.58275V5 7.5H0V5Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2427.438,1056.0684)" d="M0 5V2.5H222.58275V5 7.5H0V5Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2650.0235,1125.8711)" d="M0 5V2.5H222.58275V5 7.5H0V5Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2872.6163,1191.6465)" d="M0 5V2.5H222.58275V5 7.5H0V5Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,3095.1978,1261.9688)" d="M0 5V2.5H222.58275V5 7.5H0V5Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,1537.0894,711.0703)" d="M.002131 297.81349-2.497869 297.8135 .002131 297.81349ZM210.43302 6.394287 209.64662 4.021179 210.43302 6.394287ZM.002597 346.26564-2.497403 346.26567-2.497869 297.8135 .002131 297.81349 2.502131 297.81346 2.502597 346.2656 .002597 346.26564ZM210.43302 6.394287 209.64662 4.021179 221.78359-.000732 222.56998 2.372375 223.35637 4.745483 211.2194 8.767395 210.43302 6.394287ZM.002131 297.81349-2.497869 297.8135C-2.499151 164.39363 82.99936 45.98941 209.64662 4.021179L210.43302 6.394287 211.2194 8.767395C86.61815 50.057588 2.500869 166.549 2.502131 297.81346L.002131 297.81349Z" fill="#001ce0" />
+<ns0:g mask="url(#part-12)">
+<ns0:g clip-path="url(#part-14)">
+<ns0:g opacity=".33">
+<ns0:image x="1759" y="781" width="224" height="694" ns1:href="resources/c5e9df0f6a53559c8e22d5dca44a839f59fd79c1fb321bc5f5033c1b93f7a5e6.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-26)">
+<ns0:g clip-path="url(#part-28)">
+<ns0:g opacity=".33">
+<ns0:image x="1537" y="413" width="223" height="1062" ns1:href="resources/e1023f8253e2091d7ea9fae8c5344aeac32f15b84aef2faca56afdb3a0c8f805.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-40)">
+<ns0:g clip-path="url(#part-42)">
+<ns0:g opacity=".33">
+<ns0:image x="1982" y="880" width="223" height="595" ns1:href="resources/c3f6b94c78c6f1a4786d156b5a4b31a3465c66a26ec4f171e909835d3ecc8a15.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-54)">
+<ns0:g clip-path="url(#part-56)">
+<ns0:g opacity=".33">
+<ns0:image x="2204" y="978" width="224" height="497" ns1:href="resources/20b4d43f8cda861c2d3e6d5bd5872f402f88ecde0a131ba74802e88d196b70b0.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-68)">
+<ns0:g clip-path="url(#part-70)">
+<ns0:g opacity=".33">
+<ns0:image x="2427" y="1051" width="224" height="424" ns1:href="resources/7d16c7bbcc045ab1dc11f3292d13918000bc5f0cad5e95536e936ed036191232.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-82)">
+<ns0:g clip-path="url(#part-84)">
+<ns0:g opacity=".33">
+<ns0:image x="2650" y="1120" width="223" height="355" ns1:href="resources/c843de33d189a914d67299443baf90d427163b06dd73c8ea8cf5014f219f6973.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-96)">
+<ns0:g clip-path="url(#part-98)">
+<ns0:g opacity=".33">
+<ns0:image x="2872" y="1186" width="224" height="289" ns1:href="resources/bec7a8e0c010274272e8560c3a767f682ba46feb6527ad5c44adebf86e906599.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-110)">
+<ns0:g clip-path="url(#part-112)">
+<ns0:g opacity=".33">
+<ns0:image x="3095" y="1256" width="223" height="219" ns1:href="resources/e4b45afc8689943161ec6368c758a3eba397020fbadd7f49a1884758d8859168.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g mask="url(#part-124)">
+<ns0:g clip-path="url(#part-126)">
+<ns0:g opacity=".3">
+<ns0:image x="1537" y="364" width="1781" height="1065" ns1:href="resources/e83f6b8e3044128a0d7c1bb755a497894b7b8406f95022221c93aafb1a1c046f.png" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:path transform="matrix(1,0,0,-1,1537.0781,1431.668)" d="M1204.8773 1061.3742 1204.851 1063.874 1204.8773 1061.3742ZM88.12572 257.59407 85.76356 258.41273 88.12572 257.59407ZM0 3.318848 2.362157 2.500122 90.48788 256.7754 88.12572 257.59407 85.76356 258.41273-2.362157 4.137573 0 3.318848ZM1204.8773 1061.3742 1204.9037 1058.8743 1780.7164 1064.9435 1780.6901 1067.4434 1780.6637 1069.9432 1204.851 1063.874 1204.8773 1061.3742ZM873.4813 1010.87008 874.2008 1008.4758C981.52029 1040.7269 1092.8491 1057.6932 1204.9037 1058.8743L1204.8773 1061.3742 1204.851 1063.874C1092.3268 1062.688 980.5311 1045.6505 872.7618 1013.2643L873.4813 1010.87008ZM88.12572 257.59407 90.48788 256.7754C215.89797 618.62979 507.43376 898.257 874.2008 1008.4758L873.4813 1010.87008 872.7618 1013.2643C504.45729 902.58346 211.69937 621.78396 85.76356 258.41273L88.12572 257.59407Z" fill="#ff8a00" />
+<ns0:path transform="matrix(-1,-0,-0,1,2332.4024,122.39844)" d="M795.01638 28.867188 770.01638 43.300947V14.433431L795.01638 28.867188ZM0 28.867188V26.367188H772.51638V28.867188 31.367188H0V28.867188Z" fill="#001ce0" />
+<ns0:path transform="matrix(-1,0,-0,1,2209.6016,1659.4844)" d="M672.2156 28.867188 647.2156 43.300947V14.433431L672.2156 28.867188ZM0 28.867188V26.367188H649.7156V28.867188 31.367188H0V28.867188Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2522.7657,180.1289)" d="M795.01638 28.867188 770.01638 43.300947V14.433431L795.01638 28.867188ZM0 28.867188V26.367188H772.51638V28.867188 31.367188H0V28.867188Z" fill="#001ce0" />
+<ns0:path transform="matrix(1,0,0,-1,2652.9532,1717.2188)" d="M664.82888 28.867188 639.82888 43.300947V14.433431L664.82888 28.867188ZM0 28.867188V26.367188H642.32888V28.867188 31.367188H0V28.867188Z" fill="#001ce0" />
+</ns0:svg>

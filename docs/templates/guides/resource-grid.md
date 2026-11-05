@@ -8,7 +8,7 @@ Model: `resource-grid` · Family: Images · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/resource-grid.tex)
 
-[Open this slide individually](../index.html?template=resource-grid)
+[Open this slide individually](../../slides/index.html?template=resource-grid)
 
 ![Four-resource grid](../previews/resource-grid.png)
 

@@ -1,0 +1,42 @@
+<ns0:svg xmlns:ns0="http://www.w3.org/2000/svg" xmlns:ns1="http://www.w3.org/1999/xlink" version="1.1" width="3556" height="1994.8574" viewBox="0 0 3556 1994.8574">
+<ns0:defs>
+<ns0:clipPath id="part-2">
+<ns0:path transform="matrix(1,0,0,-1,0,1994.8574)" d="M0 0H3556V1994.8574H0Z" clip-rule="evenodd" />
+</ns0:clipPath>
+<ns0:clipPath id="part-4">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M15000 18728.6H33810V1228.57H15000V18728.6Z" />
+</ns0:clipPath>
+<ns0:mask id="part-6">
+<ns0:g transform="matrix(1.220636,0,0,1.2203627,1500,122.00049)">
+<ns0:image id="part-8" width="1541" height="1434" ns1:href="resources/4e3230e817fa141ad02a3d6ddaa607a1f4d82fa7790305652fa354cb85cf39bb.png" />
+</ns0:g>
+</ns0:mask>
+<ns0:clipPath id="part-9">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M17056.1 17188.6H31753.9C32030.1 17188.6 32253.9 16964.7 32253.9 16688.6V4398.57C32253.9 4122.43 32030.1 3898.57 31753.9 3898.57H17056.1C16780 3898.57 16556.1 4122.43 16556.1 4398.57V16688.6C16556.1 16964.7 16780 17188.6 17056.1 17188.6Z" />
+</ns0:clipPath>
+<ns0:mask id="part-11">
+<ns0:g transform="matrix(2.2490235,0,0,2.2490235,1289,-16.124634)">
+<ns0:image id="part-13" width="1024" height="768" ns1:href="resources/b6f8fbd8a4f015e8f3c9ed03c3707e0c88c10e38afee6610f4661d06d5fd058e.png" />
+</ns0:g>
+</ns0:mask>
+</ns0:defs>
+<ns0:g>
+<ns0:g clip-path="url(#part-2)">
+<ns0:path transform="matrix(.1,0,0,-.1,0,1994.8574)" d="M0 .00390625H35560V19948.604H0Z" fill="#f9f9f9" />
+<ns0:g clip-path="url(#part-4)">
+<ns0:g mask="url(#part-6)">
+<ns0:g transform="matrix(1.220636,0,0,1.2203627,1500,122.00049)">
+<ns0:image id="part-20" width="1541" height="1434" ns1:href="resources/e46c252caa712534e91a79da80c3a02ffe127a9b1f114fe4eccda61924bec5e2.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+<ns0:g clip-path="url(#part-9)">
+<ns0:g mask="url(#part-11)">
+<ns0:g transform="matrix(2.2490235,0,0,2.2490235,1289,-16.124634)">
+<ns0:image id="part-24" width="1024" height="768" ns1:href="resources/3cde4a01b6d74e640397a5b1d34d98efed1c2e0d0fd7da99fb0edbedb69d40e9.jpg" />
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:g>
+</ns0:svg>

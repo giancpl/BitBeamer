@@ -8,7 +8,7 @@ Model: `alternating-timeline` · Family: Diagrams · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/alternating-timeline.tex)
 
-[Open this slide individually](../index.html?template=alternating-timeline)
+[Open this slide individually](../../slides/index.html?template=alternating-timeline)
 
 ![Alternating horizontal timeline](../previews/alternating-timeline.png)
 

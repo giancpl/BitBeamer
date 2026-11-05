@@ -8,7 +8,7 @@ Model: `hardware-options` · Family: Cards · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/hardware-options.tex)
 
-[Open this slide individually](../index.html?template=hardware-options)
+[Open this slide individually](../../slides/index.html?template=hardware-options)
 
 ![Hardware Options](../previews/hardware-options.png)
 

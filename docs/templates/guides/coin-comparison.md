@@ -8,7 +8,7 @@ Model: `coin-comparison` · Family: Comparisons · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/coin-comparison.tex)
 
-[Open this slide individually](../index.html?template=coin-comparison)
+[Open this slide individually](../../slides/index.html?template=coin-comparison)
 
 ![Two-symbol comparison](../previews/coin-comparison.png)
 

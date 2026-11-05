@@ -8,7 +8,7 @@ Model: `protocol-key-aggregation` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/protocol-key-aggregation.tex)
 
-[Open this slide individually](../index.html?template=protocol-key-aggregation)
+[Open this slide individually](../../slides/index.html?template=protocol-key-aggregation)
 
 ![Protocol Key Aggregation](../previews/protocol-key-aggregation.png)
 

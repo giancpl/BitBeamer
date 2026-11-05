@@ -8,7 +8,7 @@ Model: `people-speech-cards` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/people-speech-cards.tex)
 
-[Open this slide individually](../index.html?template=people-speech-cards)
+[Open this slide individually](../../slides/index.html?template=people-speech-cards)
 
 ![People Speech Cards](../previews/people-speech-cards.png)
 

@@ -8,7 +8,7 @@ Model: `regtest-instructions` · Family: Technical · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/regtest-instructions.tex)
 
-[Open this slide individually](../index.html?template=regtest-instructions)
+[Open this slide individually](../../slides/index.html?template=regtest-instructions)
 
 ![Practical instructions](../previews/regtest-instructions.png)
 

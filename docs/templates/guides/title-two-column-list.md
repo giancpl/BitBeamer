@@ -8,7 +8,7 @@ Model: `title-two-column-list` · Family: Lists · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/title-two-column-list.tex)
 
-[Open this slide individually](../index.html?template=title-two-column-list)
+[Open this slide individually](../../slides/index.html?template=title-two-column-list)
 
 ![Title Two Column List](../previews/title-two-column-list.png)
 

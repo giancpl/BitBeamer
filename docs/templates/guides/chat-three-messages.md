@@ -8,7 +8,7 @@ Model: `chat-three-messages` · Family: Statements · Status: **in review**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/chat-three-messages.tex)
 
-[Open this slide individually](../index.html?template=chat-three-messages)
+[Open this slide individually](../../slides/index.html?template=chat-three-messages)
 
 ![Chat Three Messages](../previews/chat-three-messages.png)
 
