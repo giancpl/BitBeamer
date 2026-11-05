@@ -17,10 +17,10 @@ class ReferenceTests(unittest.TestCase):
             assets = root / 'assets/objects'
             assets.mkdir(parents=True)
             source = assets / 'new-icon.svg'
-            source.write_text('<svg/>')
+            source.write_text('<svg/>', encoding="utf-8")
             (root / 'assets/index.json').write_text(json.dumps([
                 {'name': 'old-icon', 'description': 'Removed artwork'},
-                {'name': 'new-icon', 'description': 'A useful icon', 'original': 'Original.svg'}]))
+                {'name': 'new-icon', 'description': 'A useful icon', 'original': 'Original.svg'}]), encoding="utf-8")
             files = catalogue_files(root)
             self.assertIn(b'A useful icon', files['assets/CATALOGUE.md'])
             self.assertIn(b'Original.svg', files['assets/CATALOGUE.md'])
@@ -33,7 +33,7 @@ class ReferenceTests(unittest.TestCase):
             self.assertEqual(check_catalogue(root), 2)
             for name, stamp in stamps.items():
                 self.assertEqual((root / name).stat().st_mtime_ns, stamp)
-            (assets / 'unindexed.svg').write_text('<svg/>')
+            (assets / 'unindexed.svg').write_text('<svg/>', encoding="utf-8")
             self.assertIn(b'unindexed', catalogue_files(root)['examples/asset-catalogue.tex'])
             with self.assertRaisesRegex(RuntimeError, 'stale'):
                 check_catalogue(root)
@@ -53,22 +53,22 @@ class ReferenceTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'docs').mkdir()
-            (root / 'docs/with spaces.txt').write_text('target')
+            (root / 'docs/with spaces.txt').write_text('target', encoding="utf-8")
             (root / 'README.md').write_text(
                 '[file](docs/with%20spaces.txt#section)\n'
                 '[reference]: <docs/with spaces.txt>\n'
                 '[online](https://example.invalid/unreachable)\n'
                 '[anchor](#heading)\n'
                 '`[example](missing.txt)`\n'
-                '```md\n[example](missing.txt)\n```\n')
+                '```md\n[example](missing.txt)\n```\n', encoding="utf-8")
             (root / 'build').mkdir()
-            (root / 'build/ignored.md').write_text('[missing](missing.txt)')
+            (root / 'build/ignored.md').write_text('[missing](missing.txt)', encoding="utf-8")
             self.assertEqual(check_docs(root), 1)
 
     def test_broken_document_and_image_links_report_locations(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
-            (root / 'README.md').write_text('[missing](gone.md)\n![image](gone.png)\n')
+            (root / 'README.md').write_text('[missing](gone.md)\n![image](gone.png)\n', encoding="utf-8")
             with self.assertRaises(RuntimeError) as error:
                 check_docs(root)
             self.assertIn('README.md:1', str(error.exception))

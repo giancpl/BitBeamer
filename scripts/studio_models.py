@@ -72,7 +72,7 @@ def load_models(root=ROOT):
     member={c['id']:(m,v,c) for m in data['models'] for v in m['variants'] for c in v['compositions']}
     ledger=root/'templates/review.json';selection=[];known={}
     if ledger.exists():
-        for name in json.loads(ledger.read_text()).get('selection',[]):
+        for name in json.loads(ledger.read_text(encoding="utf-8")).get('selection',[]):
             if name not in member:continue
             m,v,c=member[name]
             if m['id'] not in known:
@@ -136,7 +136,7 @@ def dependencies(root, entries):
     icons = root / 'images/studio/icon-palettes/manifest.json'
     if entries and icons.exists():
         result.update({part['pdf']: root / part['pdf']
-                       for part in json.loads(icons.read_text())['parts']})
+                       for part in json.loads(icons.read_text(encoding="utf-8"))['parts']})
     return result
 
 
@@ -189,7 +189,7 @@ def registry(root, entries):
         for rejected in c.get('rejected_semantic_fields',[]):lines.append(r'\DeclareStudioRejectedSemantic{'+name+'}{'+rejected+'}')
     icons=root/'images/studio/icon-palettes/manifest.json'
     if icons.exists():
-        lines.extend(r'\DeclareStudioIconPalette{'+a['name']+'}{'+a['pdf']+'}' for a in json.loads(icons.read_text())['parts'])
+        lines.extend(r'\DeclareStudioIconPalette{'+a['name']+'}{'+a['pdf']+'}' for a in json.loads(icons.read_text(encoding="utf-8"))['parts'])
     return lines
 
 

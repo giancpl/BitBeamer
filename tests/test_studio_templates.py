@@ -33,10 +33,10 @@ class StudioTemplateTests(unittest.TestCase):
             width, height = struct.unpack('>II', png[16:24])
             self.assertEqual(width, 480)
             self.assertIn(height, (270, 271), 'Poppler rounds the PDF page height to whole pixels')
-            self.assertNotIn('design-references', (ROOT / entry['source']).read_text())
+            self.assertNotIn('design-references', (ROOT / entry['source']).read_text(encoding="utf-8"))
 
     def test_all_exports_have_unique_ids_and_traceable_dispositions(self):
-        data = json.loads((ROOT / 'templates/figma-inventory.json').read_text())
+        data = json.loads((ROOT / 'templates/figma-inventory.json').read_text(encoding="utf-8"))
         frames = data['frames']
         self.assertEqual(len(frames), 1073)
         self.assertEqual(len({frame['id'] for frame in frames}), 1073)
@@ -63,14 +63,14 @@ class StudioTemplateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = self.isolated_library(directory)
             index = root / 'templates/index.json'
-            data = json.loads(index.read_text())
+            data = json.loads(index.read_text(encoding="utf-8"))
             data['templates'][0]['id'] = '../outside'
-            index.write_text(json.dumps(data))
+            index.write_text(json.dumps(data), encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError, 'Invalid or repeated'):
                 studio_templates.inspect_templates(root)
             data['templates'][0]['id'] = 'cover'
             data['templates'][0]['references'] = ['figma-missing']
-            index.write_text(json.dumps(data))
+            index.write_text(json.dumps(data), encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError, 'Missing Figma reference'):
                 studio_templates.inspect_templates(root)
 
@@ -78,10 +78,10 @@ class StudioTemplateTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = self.isolated_library(directory)
             registry = root / 'templates/studio/registry.tex'
-            registry.write_text('% stale\n')
+            registry.write_text('% stale\n', encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError, 'Stale Studio catalogue'):
                 studio_templates.prepare_catalogue(root, check=True)
-            self.assertEqual(registry.read_text(), '% stale\n')
+            self.assertEqual(registry.read_text(encoding="utf-8"), '% stale\n')
 
     def test_changed_render_inputs_make_previews_stale(self):
         with mock.patch('studio_preview.input_sets', return_value={'cover': {'changed.tex': 'new hash'}}):

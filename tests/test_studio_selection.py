@@ -49,14 +49,14 @@ class StudioSelectionTests(unittest.TestCase):
             root = Path(directory)
             (root / 'templates').mkdir()
             target = root / 'templates/review.json'
-            original = json.loads((ROOT/'templates/review.json').read_text())
+            original = json.loads((ROOT/'templates/review.json').read_text(encoding="utf-8"))
             for unknown in (False,True):
                 data = json.loads(json.dumps(original))
                 if unknown:
                     data['templates']['cover']['example']['unknown-field'] = 'Text'
                 else:
                     data['selection'] = ['not-a-template']
-                target.write_text(json.dumps(data))
+                target.write_text(json.dumps(data), encoding="utf-8")
                 with self.assertRaisesRegex(RuntimeError, 'Unknown example fields' if unknown else 'Invalid or repeated'):
                     studio_review.selected(root, self.entries)
 
@@ -70,7 +70,7 @@ class StudioSelectionTests(unittest.TestCase):
         self.assertLess(len(page.encode()),4096)
 
     def test_single_guide_has_no_eager_hd_sources(self):
-        page=(ROOT/'docs/slides/index.html').read_text()
+        page=(ROOT/'docs/slides/index.html').read_text(encoding="utf-8")
         self.assertNotIn('previews/hd/',page)
         self.assertNotIn('catalogue-lessons.js',page)
         self.assertIn('data-view="blocks"',page)

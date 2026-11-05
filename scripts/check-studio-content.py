@@ -190,7 +190,7 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local'):
                 raise RuntimeError('Expected '+error+' for '+name+'. See '+str(folder/'build.txt'))
         else:
             if result.returncode:raise RuntimeError('Content case failed: '+name+'. See '+str(folder/'build.txt'))
-            log=(folder/'test.log').read_text(errors='replace')
+            log=(folder/'test.log').read_text(errors='replace', encoding="utf-8")
             if any(word in log for word in ['Text overflow','Graphic overflow','Overfull \\hbox','Overfull \\vbox','Missing character:']):
                 raise RuntimeError('Unexpected layout diagnostics: '+name)
             if name in ['palette-reset','fixed-table-palette']:
@@ -204,7 +204,7 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local'):
                 if len(pages)!=2 or any(word+' section' not in pages[0] for word in words) or 'Hidden' in pages[0] or 'section' in pages[1]:
                     raise RuntimeError('Measured agenda did not bind top-level sections or isolate its state')
             if name=='closing-qr-hidden':
-                inputs=(folder/'test.fls').read_text(errors='replace')
+                inputs=(folder/'test.fls').read_text(errors='replace', encoding="utf-8")
                 if 'closing/qrcode.pdf' in inputs or 'missing-disabled-qr.pdf' in inputs:
                     raise RuntimeError('A disabled QR was still loaded.')
             if name=='closing-qr-reset':
@@ -241,12 +241,12 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local'):
                 text=pdf_text(folder/'test.pdf',backend,image)
                 if text.count('People')!=2 or any(word in text for word in ['Security','Privacy']):
                     raise RuntimeError('clear=text changed with option order or retained shipped text.')
-                inputs=(folder/'test.fls').read_text(errors='replace')
+                inputs=(folder/'test.fls').read_text(errors='replace', encoding="utf-8")
                 if 'slots/figma-0070-part-02-panel.pdf' not in inputs:
                     raise RuntimeError('Clearing the icon removed its card background.')
         report.append({'case':name,'result':'pass','expected_error':error})
         print('Passed content case:',name,flush=True)
-    (output/'checks.json').write_text(json.dumps({'backend':backend,'cases':report},indent=2)+'\n')
+    (output/'checks.json').write_text(json.dumps({'backend':backend,'cases':report},indent=2)+'\n', encoding="utf-8")
     return len(report)
 
 

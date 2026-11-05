@@ -1252,7 +1252,7 @@
     },
     "diagram-transaction-inputs": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "dbba73298daec0699b267ef8276e2631d9f505aa28b765a275925d40a710aab2",
+      "@layout": "a30fe38759f1df75e60e9de8e73ef7e3abf2f269796ffc8f645d88d1541cfaf1",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -1277,7 +1277,7 @@
       "images/studio/collection/figma-0659-part-04.pdf": "a3d31b4522eb75393401fab14028e0dbe440922ac153099e9402ae7207a03de9",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/diagram-transaction-inputs.tex": "5afde7b7c2779abf9d020383ed861c64dd16b334c4a9422f8d8ff2d998466ac5"
+      "templates/studio/diagram-transaction-inputs.tex": "8ebd035e0b422636dbf6364fe79770f73231b04679ef7e049322f2898dad3bf0"
     },
     "double-spend-diagram": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",

@@ -13,7 +13,7 @@ def optimize(root=ROOT):
         from PIL import Image
     except ImportError as error:
         raise RuntimeError('Optional lossless maintenance optimization needs PyMuPDF and Pillow. Ordinary builds need neither.') from error
-    path=root/'library/parts/manifest.json';manifest=json.loads(path.read_text());before=after=count=0;cache={}
+    path=root/'library/parts/manifest.json';manifest=json.loads(path.read_text(encoding="utf-8"));before=after=count=0;cache={}
     for part in manifest['parts'].values():
         target=root/part['pdf'];before+=target.stat().st_size;originals={}
         for name in part['dependencies']:
@@ -44,11 +44,11 @@ def optimize(root=ROOT):
         after+=target.stat().st_size
         part['pdf_sha256']=hashlib.sha256(target.read_bytes()).hexdigest()
         if changed:part['optimization']='Original JPEG bytes restored only after exact decoded-pixel equality; masks and transforms unchanged.'
-    path.write_text(json.dumps(manifest,indent=2)+'\n')
-    index=root/'library/index.json';data=json.loads(index.read_text())
+    path.write_text(json.dumps(manifest,indent=2)+'\n', encoding="utf-8")
+    index=root/'library/index.json';data=json.loads(index.read_text(encoding="utf-8"))
     for slide in data['slides'].values():
         for name in slide.get('resources',{}):slide['resources'][name]=hashlib.sha256((root/name).read_bytes()).hexdigest()
-    index.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
+    index.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n', encoding="utf-8")
     print(f'JPEG streams restored: {count}; prepared parts: {before/1048576:.1f} → {after/1048576:.1f} MiB')
 
 

@@ -51,7 +51,7 @@ class StudioExamplesTests(unittest.TestCase):
         self.assertIn('Bitcoin is not', full)
         self.assertEqual(before, hashlib.sha256(ledger.read_bytes()).hexdigest())
         for path, content in files.items():
-            self.assertEqual((ROOT / path).read_text(), content, str(path))
+            self.assertEqual((ROOT / path).read_text(encoding="utf-8"), content, str(path))
 
 
 if __name__ == '__main__':

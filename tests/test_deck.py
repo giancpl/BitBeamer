@@ -36,15 +36,15 @@ class DeckTests(unittest.TestCase):
         project = self.create()
         self.assertEqual((self.root / 'start-studio.tex').read_bytes(), original)
         self.assertTrue((project / 'assets').is_dir())
-        self.assertIn('presentations/first-talk/assets/', (project / 'main.tex').read_text())
-        self.assertIn('presentations/first-talk/references.bib', (project / 'main.tex').read_text())
-        self.assertIn('## Sources', (project / 'brief.md').read_text())
-        self.assertIn('bitpolito-studio', (project / 'main.tex').read_text())
+        self.assertIn('presentations/first-talk/assets/', (project / 'main.tex').read_text(encoding="utf-8"))
+        self.assertIn('presentations/first-talk/references.bib', (project / 'main.tex').read_text(encoding="utf-8"))
+        self.assertIn('## Sources', (project / 'brief.md').read_text(encoding="utf-8"))
+        self.assertIn('bitpolito-studio', (project / 'main.tex').read_text(encoding="utf-8"))
         with self.assertRaisesRegex(ValueError, 'Already exists'):
             self.create()
         self.assertEqual(deck.main(['new', 'first-talk'], root=self.root), 1)
         academic = self.create('second-talk', 'academic')
-        self.assertIn('bitpolito-academic', (academic / 'main.tex').read_text())
+        self.assertIn('bitpolito-academic', (academic / 'main.tex').read_text(encoding="utf-8"))
 
     def test_names_are_portable_and_cannot_traverse(self):
         for name in ('../elsewhere', '/tmp/talk', 'has space', 'MixedCase', 'two--dashes', 'trailing-', 'con', 'com1', 'nul', ''):
@@ -109,7 +109,7 @@ Package biblatex Warning: Citation 'missing' on page 1 undefined on input line 8
         with mock.patch.object(deck, 'build_deck', return_value=1), mock.patch.object(deck, 'pdf_tool') as tool, contextlib.redirect_stdout(self.stdout), contextlib.redirect_stderr(self.stderr):
             self.assertEqual(deck.check_deck(self.root, 'first-talk', preview=True), 1)
             tool.assert_not_called()
-        report = json.loads((output / 'check.json').read_text())
+        report = json.loads((output / 'check.json').read_text(encoding="utf-8"))
         self.assertEqual(report['technical_status'], 'failed')
         self.assertFalse(report['preview'])
         self.assertIn('not performed', report['visual_review'])
@@ -118,17 +118,17 @@ Package biblatex Warning: Citation 'missing' on page 1 undefined on input line 8
         project = self.create()
         output = deck.output_path(self.root, 'first-talk')
         output.mkdir(parents=True)
-        (output / 'main.log').write_text('Output written on main.pdf.')
+        (output / 'main.log').write_text('Output written on main.pdf.', encoding="utf-8")
         (output / 'main.pdf').write_bytes(b'PDF')
         (output / 'preview').mkdir()
         (output / 'preview/page-999.png').write_bytes(b'stale')
-        (output / 'preview/keep.txt').write_text('keep')
+        (output / 'preview/keep.txt').write_text('keep', encoding="utf-8")
         def render(root, pdf, target, *args, **kwargs):
             self.assertEqual(kwargs['width'], 1600)
             target.write_bytes(b'PNG')
         with mock.patch.object(deck, 'build_deck', return_value=0), mock.patch.object(deck, 'pdf_tool', side_effect=['Pages: 2\n', 'name type encoding emb sub uni object ID\n---\nInter Type1 Custom yes yes yes 1 0']), mock.patch.object(deck, 'thumbnail', side_effect=render), contextlib.redirect_stdout(self.stdout):
             self.assertEqual(deck.check_deck(self.root, 'first-talk', preview=True), 0)
-        report = json.loads((output / 'check.json').read_text())
+        report = json.loads((output / 'check.json').read_text(encoding="utf-8"))
         self.assertEqual(len(report['preview']), 2)
         self.assertFalse((output / 'preview/page-999.png').exists())
         self.assertTrue((output / 'preview/keep.txt').exists())
@@ -136,19 +136,19 @@ Package biblatex Warning: Citation 'missing' on page 1 undefined on input line 8
 
     def test_local_inputs_and_private_document_links_are_scoped(self):
         project = self.create()
-        (project / 'section.tex').write_text('Author name')
-        with (project / 'main.tex').open('a') as stream:
+        (project / 'section.tex').write_text('Author name', encoding="utf-8")
+        with (project / 'main.tex').open('a', encoding='utf-8') as stream:
             stream.write('\n\\input{presentations/first-talk/section}\n')
         self.assertEqual(len(list(deck.personal_sources(self.root, project))), 2)
-        (project / 'brief.md').write_text('[private source](missing-file.pdf)')
-        (self.root / 'presentations/README.md').write_text('Entry guide')
+        (project / 'brief.md').write_text('[private source](missing-file.pdf)', encoding="utf-8")
+        (self.root / 'presentations/README.md').write_text('Entry guide', encoding="utf-8")
         self.assertEqual(doc_checks.check_docs(self.root), 1)
 
     def test_missing_pdf_tools_are_optional_unless_previews_requested(self):
         self.create()
         output = deck.output_path(self.root, 'first-talk')
         output.mkdir(parents=True)
-        (output / 'main.log').write_text('Output written on main.pdf.')
+        (output / 'main.log').write_text('Output written on main.pdf.', encoding="utf-8")
         (output / 'main.pdf').write_bytes(b'PDF')
         with mock.patch.object(deck, 'build_deck', return_value=0), mock.patch.object(deck, 'pdf_tool', side_effect=RuntimeError('Install Poppler')), contextlib.redirect_stdout(self.stdout), contextlib.redirect_stderr(self.stderr):
             self.assertEqual(deck.check_deck(self.root, 'first-talk', backend='native'), 0)
@@ -158,7 +158,7 @@ Package biblatex Warning: Citation 'missing' on page 1 undefined on input line 8
         self.create()
         output = deck.output_path(self.root, 'first-talk')
         output.mkdir(parents=True)
-        (output / 'main.log').write_text('Output written on main.pdf.')
+        (output / 'main.log').write_text('Output written on main.pdf.', encoding="utf-8")
         (output / 'main.pdf').write_bytes(b'PDF')
         with mock.patch.object(deck, 'build_deck', return_value=0), mock.patch.object(deck, 'pdf_tool', side_effect=['Pages: 1\n', 'name type encoding emb sub uni object ID\n---\nHelvetica Type 1 WinAnsi no no no 1 0']), contextlib.redirect_stdout(self.stdout), contextlib.redirect_stderr(self.stderr):
             self.assertEqual(deck.check_deck(self.root, 'first-talk'), 1)

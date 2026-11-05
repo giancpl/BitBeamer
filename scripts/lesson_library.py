@@ -113,7 +113,7 @@ def source_dependencies(root, slide, include_registered=True):
 def core_dependencies(root, slide):
     if not slide.get('core_reuse'): return {}
     from studio_preview import input_sets
-    entries = json.loads((root/'templates/index.json').read_text())['templates']
+    entries = json.loads((root/'templates/index.json').read_text(encoding="utf-8"))['templates']
     entry = next((e for e in entries if e['id'] == slide['layout']), None)
     if entry is None: raise ValueError('Unknown shared Studio layout: ' + slide['layout'])
     return input_sets(root, [entry])[entry['id']]
@@ -266,7 +266,7 @@ def bundle(root, slide_ids, prefix, data=None):
                 if old.endswith('.tex'):
                     text = text.replace(r'\input{' + old[:-4] + '}', r'\input{' + new + '}')
                 elif Path(old).suffix in ('.pdf', '.png', '.jpg', '.jpeg'):
-                    pattern = r'(\\includegraphics(?:\[[^\]]*\])?\s*\{)' + re.escape(str(Path(old).with_suffix(''))) + r'(\})'
+                    pattern = r'(\\includegraphics(?:\[[^\]]*\])?\s*\{)' + re.escape(Path(old).with_suffix('').as_posix()) + r'(\})'
                     text = re.sub(pattern, lambda match: match[1] + new + match[2], text)
             files[target_name] = text.encode('utf-8')
         else:

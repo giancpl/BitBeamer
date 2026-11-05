@@ -28,7 +28,7 @@ class StudioModelTests(unittest.TestCase):
 
     def test_selection_retains_each_original_choice_and_order(self):
         d=studio_models.load_models(ROOT)
-        original=json.loads((ROOT/'templates/review.json').read_text())['selection']
+        original=json.loads((ROOT/'templates/review.json').read_text(encoding="utf-8"))['selection']
         self.assertEqual(len(d['selection']),21)
         retained=[name for s in d['selection'] for name in s['selected_compositions']]
         self.assertCountEqual(original,retained)
@@ -56,7 +56,7 @@ class StudioModelTests(unittest.TestCase):
         self.assertTrue(all(p.is_file() for p in studio_models.dependencies(ROOT,subset).values()))
 
     def test_palette_check_is_read_only_and_has_no_converter_dependency(self):
-        parts=[a for folder in ['neutral','icon-palettes'] for a in json.loads((ROOT/'images/studio'/folder/'manifest.json').read_text())['parts']]
+        parts=[a for folder in ['neutral','icon-palettes'] for a in json.loads((ROOT/'images/studio'/folder/'manifest.json').read_text(encoding="utf-8"))['parts']]
         before={p:(ROOT/p).stat().st_mtime_ns for a in parts for p in [a['source'],a['pdf']]}
         self.assertTrue(before)
         with mock.patch('asset_library.rsvg_modules',side_effect=AssertionError('No converter')):

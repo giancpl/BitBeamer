@@ -26,7 +26,7 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local',also_native_c
             if not source.is_file():continue
             target=clone/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copy2(source,target)
         shared={p.relative_to(clone).as_posix():digest(p) for p in clone.rglob('*') if p.is_file()}
-        data=json.loads((clone/'library/index.json').read_text());hash_slides=set(data['blocks']['hashing']['slides'])
+        data=json.loads((clone/'library/index.json').read_text(encoding="utf-8"));hash_slides=set(data['blocks']['hashing']['slides'])
         second=next(name for name,item in data['blocks'].items() if not hash_slides.intersection(item['slides']))
         reports=[]
         modes=[backend]+(['native-container'] if also_native_container else [])
@@ -37,7 +37,7 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local',also_native_c
                 command+=['--mount',f'type=bind,source={clone},target=/source','--workdir','/source','--entrypoint','python3',image,'scripts/deck.py',*arguments]
             else:command=[sys.executable,str(clone/'scripts/deck.py'),*arguments]
             result=subprocess.run(command,cwd=clone,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,text=True)
-            (output/(label+'.log')).write_text(result.stdout)
+            (output/(label+'.log')).write_text(result.stdout, encoding="utf-8")
             if result.returncode!=expected:raise RuntimeError(label+': unexpected exit status; inspect '+str(output/(label+'.log')))
             return result.stdout
         for number,mode in enumerate(modes):
@@ -65,7 +65,7 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local',also_native_c
 \closingframe
 \end{document}
 '''
-            (project/'main.tex').write_text(source)
+            (project/'main.tex').write_text(source, encoding="utf-8")
             execute(mode,['add',mixed,'--block','hashing'],token+'-add-hashing')
             execute(mode,['add',mixed,'--block',second],token+'-add-second')
             before={p.relative_to(project).as_posix():digest(p) for p in project.rglob('*') if p.is_file()}
@@ -74,10 +74,10 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local',also_native_c
             # Give each project its own bibliography key and image, then prove content independence.
             shutil.copy2(clone/'assets/generated/coin.pdf',project/'assets/custom.pdf')
             personal='workflow-'+token
-            with (project/'references.bib').open('a') as bib:bib.write('\n@online{'+personal+',title={BitPolito educational presentations},url={https://github.com/BitPolito/decks},urldate={2026-11-04}}\n')
-            main=(project/'main.tex').read_text().replace(r'\cow[height=1.4cm]',r'\includegraphics[height=1.4cm]{'+prefix+'/assets/custom.pdf}'+r'\nocite{'+personal+'}')
-            (project/'main.tex').write_text(main)
-            local_state=json.loads((project/'library-imports.json').read_text());local_slide=project/'slides'/(local_state['slides'][0]+'.tex');original=local_slide.read_text();local_slide.write_text('% Personal copy verification.\n'+original)
+            with (project/'references.bib').open('a', encoding='utf-8') as bib:bib.write('\n@online{'+personal+',title={BitPolito educational presentations},url={https://github.com/BitPolito/decks},urldate={2026-11-04}}\n')
+            main=(project/'main.tex').read_text(encoding="utf-8").replace(r'\cow[height=1.4cm]',r'\includegraphics[height=1.4cm]{'+prefix+'/assets/custom.pdf}'+r'\nocite{'+personal+'}')
+            (project/'main.tex').write_text(main, encoding="utf-8")
+            local_state=json.loads((project/'library-imports.json').read_text(encoding="utf-8"));local_slide=project/'slides'/(local_state['slides'][0]+'.tex');original=local_slide.read_text(encoding="utf-8");local_slide.write_text('% Personal copy verification.\n'+original, encoding="utf-8")
             compiler='native' if mode=='native-container' else mode
             execute(mode,['check',mixed,'--backend',compiler,'--preview'],token+'-mixed-check')
             # The whole copied lesson must build without any shared lesson directory.
@@ -86,13 +86,13 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local',also_native_c
             try:execute(mode,['check',whole,'--backend',compiler,'--preview'],token+'-independent-whole-check')
             finally:hidden.rename(library)
             for name in (whole,mixed):
-                result=json.loads((clone/'build/presentations'/name/'check.json').read_text())
+                result=json.loads((clone/'build/presentations'/name/'check.json').read_text(encoding="utf-8"))
                 if result['errors']:raise RuntimeError('Personal check failed: '+name)
                 reports.append({'project':name,'backend':mode,'pages':result['pages'],'preview_pages':len(result['preview']),'status':'passed'})
         after={name:digest(clone/name) for name in shared}
         if shared!=after:raise RuntimeError('Authoring changed shared source files in the clean copy.')
         report={'status':'passed','source_copy':'tracked and prospective distributable files; ignored originals and personal decks excluded','path_with_spaces':True,'shared_sources_unchanged':True,'independent_lesson_copy':True,'overwrite_and_duplicate_rejection':True,'projects':reports,'visual_approval':'not performed by this technical check'}
-        (output/'report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2));return report
+        (output/'report.json').write_text(json.dumps(report,indent=2)+'\n', encoding="utf-8");print(json.dumps(report,indent=2));return report
 
 
 def main(argv=None):

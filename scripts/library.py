@@ -59,15 +59,15 @@ def render(root, kind, name, backend='docker', image='bitbeamer-latex:local', pr
     source=output/'main.tex';write_if_changed(source,document(root,slide_ids,data,diagnostic).encode())
     signature=hashlib.sha256((fingerprint(root,slide_ids,data)+str(diagnostic)).encode()).hexdigest()
     manifest=output/'build.json'
-    current=json.loads(manifest.read_text()) if manifest.exists() else {}
+    current=json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else {}
     if current.get('fingerprint')!=signature or not (output/'main.pdf').is_file():
         if build.main([str(source),str(output),'--backend',backend,'--image',image],root=root):
-            (output/'check.json').write_text(json.dumps({'status':'failed','errors':[{'kind':'compilation','message':'Compilation failed; any previous PDF is stale.'}],'backend':backend},indent=2)+'\n')
+            (output/'check.json').write_text(json.dumps({'status':'failed','errors':[{'kind':'compilation','message':'Compilation failed; any previous PDF is stale.'}],'backend':backend},indent=2)+'\n', encoding="utf-8")
             raise RuntimeError('Library compilation failed: '+name)
     from deck import log_issues, pdf_tool
     errors=log_issues((output/'main.log').read_text(encoding='utf-8',errors='replace'))
     if errors and not diagnostic:
-        (output/'check.json').write_text(json.dumps({'status':'failed','errors':errors},indent=2)+'\n')
+        (output/'check.json').write_text(json.dumps({'status':'failed','errors':errors},indent=2)+'\n', encoding="utf-8")
         raise RuntimeError('Library diagnostics in '+name+': '+str(errors[:5]))
     info=pdf_tool(root,'pdfinfo',output/'main.pdf',backend,image)
     import re
@@ -96,8 +96,8 @@ def render(root, kind, name, backend='docker', image='bitbeamer-latex:local', pr
         save_preview_records(root,preview_records)
     report={'status':'failed' if errors else 'passed','errors':errors,'pages':count,'fingerprint':signature,'backend':backend,'font_embedding':'checked','selectable_text':'checked' if expects_text else 'artwork-only composition',
             'visual_review':'in review; rendering does not approve a slide'}
-    manifest.write_text(json.dumps(report,indent=2)+'\n')
-    (output/'check.json').write_text(json.dumps(report,indent=2)+'\n')
+    manifest.write_text(json.dumps(report,indent=2)+'\n', encoding="utf-8")
+    (output/'check.json').write_text(json.dumps(report,indent=2)+'\n', encoding="utf-8")
     if errors and not diagnostic:raise RuntimeError('PDF inspection failed: '+name)
     print('Library PDF:',output/'main.pdf',flush=True)
     return output/'main.pdf'
@@ -105,7 +105,7 @@ def render(root, kind, name, backend='docker', image='bitbeamer-latex:local', pr
 
 def preview_manifest(root):
     path=root/'library/previews/manifest.json'
-    return json.loads(path.read_text()).get('slides',{}) if path.exists() else {}
+    return json.loads(path.read_text(encoding="utf-8")).get('slides',{}) if path.exists() else {}
 
 
 def save_preview_records(root,records):
@@ -120,7 +120,7 @@ def save_preview_records(root,records):
             time.sleep(.1)
     try:
         merged=preview_manifest(root);merged.update(records);temporary=path.with_suffix('.tmp')
-        temporary.write_text(json.dumps({'schema':1,'slides':merged},indent=2)+'\n');temporary.replace(path)
+        temporary.write_text(json.dumps({'schema':1,'slides':merged},indent=2)+'\n', encoding="utf-8");temporary.replace(path)
         from slide_guide import refresh_if_present
         refresh_if_present(root)
     finally:lock.unlink(missing_ok=True)
@@ -210,7 +210,7 @@ def prepare_part(name):
     try:render_svg(source,temporary,crop=False)
     except ValueError as error:
         # librsvg's ink bounds omit image-only compositions. Keep their full canvas.
-        if 'no visible artwork' not in str(error) or not any(token in source.read_text() for token in ('<image','<ns0:image')):raise
+        if 'no visible artwork' not in str(error) or not any(token in source.read_text(encoding="utf-8") for token in ('<image','<ns0:image')):raise
         from asset_library import rsvg_modules
         cairo,Rsvg=rsvg_modules();handle=Rsvg.Handle.new_from_file(str(source.resolve()))
         _,width,height=handle.get_intrinsic_size_in_pixels()
@@ -225,7 +225,7 @@ def prepare_part(name):
 def prepare(root=ROOT, backend='docker', image='bitbeamer-latex:local'):
     """Prepare retained vector parts; never needs complete source PDF exports."""
     manifest_path=root/'library/parts/manifest.json'
-    manifest=json.loads(manifest_path.read_text())
+    manifest=json.loads(manifest_path.read_text(encoding="utf-8"))
     pending=[]
     for part in manifest['parts'].values():
         source=safe_file(root,part['source']);target=root/part['pdf']
@@ -313,13 +313,13 @@ def main(argv=None):
                     command=[sys.executable,str(ROOT/'scripts/library.py'),'build','--deck' if kind=='decks' else '--block',name,'--backend',args.backend,'--image',args.image]
                     if args.diagnostic:command.append('--diagnostic')
                     if args.preview and kind=='decks':command.append('--preview')
-                    with (output/'launcher.log').open('w') as log:
+                    with (output/'launcher.log').open('w', encoding='utf-8') as log:
                         result=subprocess.run(command,cwd=ROOT,stdout=log,stderr=subprocess.STDOUT)
-                    report=json.loads((output/'check.json').read_text()) if (output/'check.json').exists() else {'status':'failed','errors':['Compilation failed; inspect launcher.log']}
+                    report=json.loads((output/'check.json').read_text(encoding="utf-8")) if (output/'check.json').exists() else {'status':'failed','errors':['Compilation failed; inspect launcher.log']}
                     print(kind+'/'+name+': '+report['status'],flush=True)
                     return kind+'/'+name,dict(report,exit_code=result.returncode)
                 with concurrent.futures.ThreadPoolExecutor(max_workers=args.jobs) as pool:reports=dict(pool.map(run_job,jobs))
-                (ROOT/'build/library'/('affected-report.json' if args.changed else 'report.json')).write_text(json.dumps(reports,indent=2)+'\n')
+                (ROOT/'build/library'/('affected-report.json' if args.changed else 'report.json')).write_text(json.dumps(reports,indent=2)+'\n', encoding="utf-8")
                 if any(r['exit_code'] or r['status']!='passed' for r in reports.values()) and not args.diagnostic:
                     raise RuntimeError('Collection has failed checks; inspect build/library reports')
             elif args.deck or args.block:

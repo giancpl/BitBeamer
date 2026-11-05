@@ -3127,7 +3127,17 @@
           "status": "in review",
           "notes": ""
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "transaction-label-portability",
+          "source": "GitHub Actions run 41839296079, native TeX Live 2025; retained figma-0659 source paths",
+          "issue": "Two numeric fields exceeded their text allocations with newer Inter metrics.",
+          "action": "Widened four numeric text allocations to 201 source units within existing 217.1-unit nodes. Preserved centres, font sizes, values and original artwork. The independent lesson equivalent already has adequate allocations.",
+          "verification": "Targeted clean guide previews, existing 2000 px comparison and strict compilation are refreshed with this correction. GitHub TeX Live 2025 verification remains pending.",
+          "status": "in review"
+        }
+      ]
     },
     "seed-grid-caption": {
       "status": "in review",

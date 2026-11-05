@@ -31,7 +31,7 @@ recovered; personal snapshots, originals and stable releases were preserved.
 
 ## Graphical feedback and corrections
 
-The editable ledgers contain **92 core observations across 61 compositions** and
+The editable ledgers contain **93 core observations across 62 compositions** and
 seven lesson observations. They combine conversation feedback and archived review
 notes, with a problem, canonical action and verification evidence. A full 196-slide
 overview was inspected; 42 priority compositions received an original/current audit.
@@ -50,6 +50,8 @@ Corrections include:
   foregrounds on blue canvases.
 - Shared problem/solution panels and quotation consumers preserved and rechecked.
   Three-card icons retain the agreed 10% reduction and their original centres.
+- Transaction-node numeric text allocations fit inside the original nodes across
+  Inter metrics, preserving centres, values, font sizes and prepared artwork.
 
 Canonical sources and all affected guide examples were updated together. Existing
 personal copies remain independent. New and corrected designs were not approved.
@@ -91,10 +93,16 @@ within 5 px. Grouped paths, raster regions, shadows and optical spacing remain
 subject to review. Detailed approval of all lesson layouts is still open.
 
 Host-native TeX is not installed. Native launcher verification ran inside the TeX
-container. Windows/macOS portability and native Linux/browser checks are configured
-in GitHub Actions; they have not run on GitHub during this local work.
+container. The previous GitHub run exposed a Windows default-encoding failure and
+two narrow transaction labels under TeX Live 2025. Path-based text reads and writes
+now specify UTF-8; the example tests also pass with UTF-8 locale coercion disabled.
+Extensionless graphic imports keep forward-slash TeX paths on Windows.
+The transaction text boxes were widened within the existing nodes. Portable
+Windows/macOS and native Linux/browser verification is configured in GitHub Actions;
+the new run must confirm these corrections on those platforms.
 
 The detailed report, feedback coverage and baseline/browser evidence are under
 `build/checks/studio-unified/`; command and preview records are under
 `build/checks/slide-guide/`. Stable releases and personal projects were not replaced.
-No commits, pushes, publication or automatic approval were performed.
+The repository changes were committed and pushed at the user's explicit request.
+No release, publication or automatic graphical approval was performed.

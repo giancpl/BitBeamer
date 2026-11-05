@@ -56,7 +56,7 @@ def render_slide(root, entry, page, values, backend, image):
     cache = output/'cache.json'
     pdf = output/'slide.pdf'
     expected = {'inputs':values, 'document':digest(document), 'backend':backend, 'image':image}
-    stored = json.loads(cache.read_text()) if cache.exists() else {}
+    stored = json.loads(cache.read_text(encoding="utf-8")) if cache.exists() else {}
     if stored.get('build') == expected and pdf.is_file() and stored.get('pdf') == digest(pdf):
         print('Reused PDF: '+str(pdf))
     else:

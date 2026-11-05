@@ -36,9 +36,9 @@ def main():
     for number,(model,image) in enumerate(zip(models,images),1):
         command=r'\studiotemplate[variant='+model['default_variant']+']{'+model['id']+'}'
         text+=r'\null\begin{tikzpicture}[remember picture,overlay]\node[inner sep=0pt] at (current page.center) {\includegraphics[width=\paperwidth,height=\paperheight]{'+image.relative_to(ROOT).as_posix()+'}};'+'\n'
-        text+=r'\node[anchor=south,fill=white,text=brand,minimum width=\paperwidth,minimum height=14pt,inner sep=2pt,font=\fontsize{6}{7}\selectfont] at (current page.south) {Image overview '+str(number)+r' \quad\texttt{\detokenize{'+command+'}}};\end{tikzpicture}'+'\n'
+        text+=r'\node[anchor=south,fill=white,text=brand,minimum width=\paperwidth,minimum height=14pt,inner sep=2pt,font=\fontsize{6}{7}\selectfont] at (current page.south) {Image overview '+str(number)+r' \quad\texttt{\detokenize{'+command+r'}}};\end{tikzpicture}'+'\n'
         if number<len(models):text+=r'\newpage'+'\n'
-    text+=r'\end{document}'+'\n';document=folder/'studio-model-overview.tex';document.write_text(text)
+    text+=r'\end{document}'+'\n';document=folder/'studio-model-overview.tex';document.write_text(text, encoding="utf-8")
     if build.main([str(document),str(ROOT/'build/review'),'--backend',a.backend,'--image',a.image],root=ROOT):return 1
     result=ROOT/'build/review/studio-model-overview.pdf'
     if shutil.which('pdfinfo'):

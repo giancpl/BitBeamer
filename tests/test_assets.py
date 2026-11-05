@@ -46,35 +46,35 @@ class AssetPipelineTests(unittest.TestCase):
         self.prepare()
         self.assertEqual((self.output / 'alice.pdf').read_bytes(), source.read_bytes())
         self.assertEqual((self.output / 'bitcoin.png').read_bytes(), PNG)
-        catalogue = (self.output / 'catalogue.tex').read_text()
+        catalogue = (self.output / 'catalogue.tex').read_text(encoding="utf-8")
         self.assertIn(r'\DeclareBitPolitoAsset{alice}{alice.pdf}', catalogue)
         stamp = (self.output / 'alice.pdf').stat().st_mtime_ns
         self.prepare()
         self.assertEqual((self.output / 'alice.pdf').stat().st_mtime_ns, stamp)
         source.unlink()
         self.prepare()
-        self.assertNotIn('alice', (self.output / 'catalogue.tex').read_text())
+        self.assertNotIn('alice', (self.output / 'catalogue.tex').read_text(encoding="utf-8"))
         self.assertFalse((self.output / 'alice.pdf').exists())
         self.assertTrue((self.sources / 'bitcoin.png').exists())
 
     @unittest.skipUnless(asset_library.converter_available(), 'An SVG converter is required')
     def test_viewbox_only_svg_converts_and_content_changes_refresh_pdf(self):
         source = self.sources / 'cow.svg'
-        source.write_text(SVG.format('#001CE0'))
+        source.write_text(SVG.format('#001CE0'), encoding="utf-8")
         self.prepare()
         original = (self.output / 'cow.pdf').read_bytes()
         self.assertTrue(original.startswith(b'%PDF-'))
-        source.write_text(SVG.format('#FFFFFF'))
+        source.write_text(SVG.format('#FFFFFF'), encoding="utf-8")
         self.prepare()
         self.assertNotEqual((self.output / 'cow.pdf').read_bytes(), original)
-        manifest = json.loads((self.output / 'manifest.json').read_text())
+        manifest = json.loads((self.output / 'manifest.json').read_text(encoding="utf-8"))
         self.assertEqual(manifest['cow']['source'], 'assets/characters/cow.svg')
 
     def test_duplicate_names_fail_without_changing_previous_catalogue(self):
         (self.sources / 'alice.png').write_bytes(PNG)
         self.prepare()
         before = (self.output / 'catalogue.tex').read_bytes()
-        (self.sources / 'alice.svg').write_text(SVG.format('#001CE0'))
+        (self.sources / 'alice.svg').write_text(SVG.format('#001CE0'), encoding="utf-8")
         result = self.prepare(success=False)
         self.assertIn('Duplicate asset name', result.stderr)
         self.assertEqual((self.output / 'catalogue.tex').read_bytes(), before)
@@ -84,7 +84,7 @@ class AssetPipelineTests(unittest.TestCase):
         (self.sources / 'padded.svg').write_text(
             '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">'
             '<rect x="400" y="500" width="20" height="30" fill="blue"/></svg>'
-        )
+        , encoding="utf-8")
         self.prepare()
         info = subprocess.check_output(['pdfinfo', str(self.output / 'padded.pdf')], text=True)
         bounds = re.search(r'Page size:\s+([\d.]+) x ([\d.]+) pts', info)
@@ -116,7 +116,7 @@ class AssetPipelineTests(unittest.TestCase):
 
     def test_auto_converter_uses_inkscape_when_python_libraries_are_missing(self):
         source = self.sources / 'cow.svg'
-        source.write_text(SVG.format('#001CE0'))
+        source.write_text(SVG.format('#001CE0'), encoding="utf-8")
         target = self.root / 'cow.pdf'
         def exported(command, **kwargs):
             filename = next(arg.split('=', 1)[1] for arg in command if arg.startswith('--export-filename='))
@@ -141,7 +141,7 @@ class AssetPipelineTests(unittest.TestCase):
 
     @unittest.skipUnless(asset_library.inkscape_executable(), 'Inkscape is required')
     def test_inkscape_exports_vector_pdf(self):
-        (self.sources / 'cow.svg').write_text(SVG.format('#001CE0'))
+        (self.sources / 'cow.svg').write_text(SVG.format('#001CE0'), encoding="utf-8")
         asset_library.prepare(self.root, converter='inkscape')
         self.assertTrue((self.output / 'cow.pdf').read_bytes().startswith(b'%PDF-'))
         self.assertEqual(asset_library.check_prepared(self.root), 1)

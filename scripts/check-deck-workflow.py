@@ -72,13 +72,13 @@ def main(argv=None):
         (project / 'references.bib').write_text('@misc{local, title={' + ('Alpha', 'Beta')[index] + ' source fixture}, year={2026}, note={Synthetic reference for isolation testing}}\n', encoding='utf-8')
         run(root, ['check', name, *common, '--preview'], report_dir / f'{index}-check.log')
         output = root / 'build/presentations' / name
-        report = json.loads((output / 'check.json').read_text())
+        report = json.loads((output / 'check.json').read_text(encoding="utf-8"))
         if report['technical_status'] != 'passed' or not report['preview'] or report['pages'] != 7:
             raise RuntimeError(f'Unexpected fixture report: {output}')
-        bbl = (output / 'main.bbl').read_text()
+        bbl = (output / 'main.bbl').read_text(encoding="utf-8")
         if ('Alpha', 'Beta')[index] not in bbl or ('Beta', 'Alpha')[index] in bbl:
             raise RuntimeError('Bibliography isolation failed')
-        fls = (output / 'main.fls').read_text()
+        fls = (output / 'main.fls').read_text(encoding="utf-8")
         if f'presentations/{name}/assets/sample.pdf' not in fls.replace('//', '/'):
             raise RuntimeError('Local asset lookup failed')
         run(root, ['new', name], report_dir / f'{index}-overwrite.log', expected=1)
@@ -90,7 +90,7 @@ def main(argv=None):
     beta_output = root / 'build/presentations' / names[1]
     beta_before = hashlib.sha256((beta_output / 'main.pdf').read_bytes()).hexdigest()
     target = root / 'presentations' / names[0] / 'main.tex'
-    original = target.read_text()
+    original = target.read_text(encoding="utf-8")
     cases = {
         'citation': (original.replace(r'\cite{local}', r'\cite{missing}'), 'unresolved citation'),
         'overflow': (original.replace('Synthetic reference:', r'\noindent\rule{40cm}{1pt}\par Synthetic reference:'), 'overflow'),
@@ -100,7 +100,7 @@ def main(argv=None):
     for label, (text, expected_kind) in cases.items():
         target.write_text(text, encoding='utf-8')
         run(root, ['check', names[0], *common], report_dir / f'{label}.log', expected=1 if expected_kind else 0)
-        report = json.loads((root / 'build/presentations' / names[0] / 'check.json').read_text())
+        report = json.loads((root / 'build/presentations' / names[0] / 'check.json').read_text(encoding="utf-8"))
         if expected_kind and not any(e['kind'] == expected_kind for e in report['errors']):
             raise RuntimeError(f'Expected diagnostic not found: {label}')
         if not expected_kind and not any('placeholder' in w for w in report['warnings']):

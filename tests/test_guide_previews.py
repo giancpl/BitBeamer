@@ -36,7 +36,7 @@ class GuidePreviewTests(unittest.TestCase):
     def test_retired_gallery_cannot_be_restored(self):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);(root/'scripts').mkdir();(root/'docs').mkdir();(root/'library').mkdir()
-            (root/'scripts/studio_gallery.py').write_text('obsolete')
+            (root/'scripts/studio_gallery.py').write_text('obsolete', encoding="utf-8")
             with self.assertRaisesRegex(ValueError,'Retired gallery code'):guide_checks.check_retired_galleries(root)
 
     def test_public_guide_links_resolve_offline(self):

@@ -71,7 +71,7 @@ class PackageTests(unittest.TestCase):
                 target.parent.mkdir(parents=True, exist_ok=True)
                 target.write_bytes((ROOT / name).read_bytes())
             (root / 'images/bitpolito/local-experiment.pdf').write_bytes(b'%PDF-test')
-            (root / 'beamerthemelocalbitpolito.sty').write_text('local experiment')
+            (root / 'beamerthemelocalbitpolito.sty').write_text('local experiment', encoding="utf-8")
             records = asset_library.inspect_library(ROOT)[1]
             for record in records.values():
                 source = ROOT / 'assets/generated' / record['output']
@@ -146,7 +146,7 @@ class PackageTests(unittest.TestCase):
             model_count = len({members[item['id']][0]['id'] for item in packaged})
             self.assertEqual(check_docs(extracted),7+len(packaged)+model_count)
             self.assertTrue((extracted / 'guides/three-cards.md').is_file())
-            self.assertNotIn('Show editable areas', (extracted / 'guides/three-cards.md').read_text())
+            self.assertNotIn('Show editable areas', (extracted / 'guides/three-cards.md').read_text(encoding="utf-8"))
 
 
 if __name__ == '__main__':

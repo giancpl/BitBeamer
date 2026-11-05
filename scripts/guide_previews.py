@@ -52,7 +52,7 @@ def context(root):
     from slide_guide import catalogue
     entries=inspect_templates(root)
     core=input_sets(root,entries)
-    path=root/'library/index.json';lessons=json.loads(path.read_text()) if path.exists() else None
+    path=root/'library/index.json';lessons=json.loads(path.read_text(encoding="utf-8")) if path.exists() else None
     choices={c['id']:c for row in catalogue(root)['rows'] for c in row['choices']}
     if lessons:
         from slide_guide import lesson_assets,lesson_command
@@ -135,7 +135,7 @@ def prepare(root=ROOT,names=None,backend='docker',image='bitbeamer-latex:local',
     def run(chunk):
         identity=hashlib.sha256('\n'.join(chunk).encode()).hexdigest()[:16];output=folder/identity;output.mkdir(exist_ok=True)
         source=output/'main.tex';write_if_changed(source,clean_document([ctx['choices'][name]['command'] for name in chunk]).encode())
-        with (output/'launcher.log').open('w') as log:
+        with (output/'launcher.log').open('w', encoding='utf-8') as log:
             command=[sys.executable,str(root/'scripts/build.py'),str(source),str(output),'--backend',backend,'--image',image]
             result=subprocess.run(command,cwd=root,stdout=log,stderr=subprocess.STDOUT)
         if result.returncode:raise RuntimeError('Guide command batch failed: '+str(output/'launcher.log'))
@@ -148,7 +148,7 @@ def prepare(root=ROOT,names=None,backend='docker',image='bitbeamer-latex:local',
         results={name:record(root,name,pdf,page,expected[name],backend,image) for page,name in enumerate(chunk,1)}
         return results,{'pdf':pdf.relative_to(root).as_posix(),'commands':chunk,'status':'passed','font_embedding':'checked','diagnostics':[]}
     previous=folder.parent/'hd-report.json'
-    reports=json.loads(previous.read_text()).get('batches',[]) if previous.exists() else []
+    reports=json.loads(previous.read_text(encoding="utf-8")).get('batches',[]) if previous.exists() else []
     completed=0;errors=[]
     with concurrent.futures.ThreadPoolExecutor(max_workers=jobs) as pool:
         futures=[pool.submit(run,chunk) for chunk in chunks]
@@ -168,14 +168,14 @@ def prepare(root=ROOT,names=None,backend='docker',image='bitbeamer-latex:local',
     save_manifest(root,legacy)
     from slide_guide import sync
     sync(root)
-    (folder.parent/'hd-report.json').write_text(json.dumps({'batches':reports},indent=2)+'\n')
+    (folder.parent/'hd-report.json').write_text(json.dumps({'batches':reports},indent=2)+'\n', encoding="utf-8")
     existing=[name for name in pending if (root/'build/checks/slide-guide/comparisons'/name).is_dir()]
     if existing and not errors:
         from guide_comparisons import prepare as compare
         try:compare(root,existing)
         except (ValueError,RuntimeError,OSError) as error:errors.append(str(error))
     report={'status':'failed' if errors else 'passed','errors':errors,'requested':len(requested),'prepared':len(pending),'reused':len(requested)-len(pending),'batches':reports,'approval':'in review'}
-    (root/'build/checks/slide-guide/hd-report.json').write_text(json.dumps(report,indent=2)+'\n')
+    (root/'build/checks/slide-guide/hd-report.json').write_text(json.dumps(report,indent=2)+'\n', encoding="utf-8")
     if errors:raise RuntimeError('Guide command failures; inspect build/checks/slide-guide/hd-report.json')
     return report
 

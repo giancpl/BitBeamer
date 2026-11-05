@@ -294,7 +294,7 @@ All reconstructed compositions remain in graphical review until explicitly appro
         text=text.replace('../../../templates/MODELS.md','../MODELS.md').replace('../../STUDIO-MODELS.md','../STUDIO-MODELS.md').replace('../../../templates/studio/','../templates/studio/')
         files['models/'+path.name]=text.encode('utf-8')
     files['MODELS.md']=('# Included Studio models\n\n'+''.join('- ['+path.stem+'](models/'+path.name+')\n' for path in model_files)).encode('utf-8')
-    text=(root/'docs/STUDIO-MODELS.md').read_text()
+    text=(root/'docs/STUDIO-MODELS.md').read_text(encoding="utf-8")
     text=text[:text.index('## Review one choice')]
     start=text.index('```latex');end=text.index('```',start+8)+3
     first=next(iter(model_files)).stem if model_files else entries[0]['id']

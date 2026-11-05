@@ -20,7 +20,7 @@ def extract(reference,root=ROOT):
     except ImportError as error:
         raise RuntimeError('Maintenance only: install pypdf in a temporary environment. Normal builds need no PDF library.') from error
     folder = root/'images/studio/closing'
-    manifest = json.loads((folder/'manifest.json').read_text())
+    manifest = json.loads((folder/'manifest.json').read_text(encoding="utf-8"))
     if hashlib.sha256(reference.read_bytes()).hexdigest()!=manifest['reference_sha256']:
         raise RuntimeError('Unmeasured closing reference. Measure a new export before changing extraction ranges.')
     hashes={}
@@ -46,10 +46,10 @@ def extract(reference,root=ROOT):
         with target.open('wb') as output:writer.write(output)
         hashes[target.relative_to(root).as_posix()]=hashlib.sha256(target.read_bytes()).hexdigest()
     manifest['resources']=hashes
-    (folder/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
-    metadata=root/'templates/index.json';data=json.loads(metadata.read_text())
+    (folder/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n', encoding="utf-8")
+    metadata=root/'templates/index.json';data=json.loads(metadata.read_text(encoding="utf-8"))
     next(e for e in data['templates'] if e['id']=='closing')['prepared_resources']=hashes
-    metadata.write_text(json.dumps(data,indent=2)+'\n')
+    metadata.write_text(json.dumps(data,indent=2)+'\n', encoding="utf-8")
     return hashes
 
 

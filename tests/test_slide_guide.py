@@ -19,7 +19,7 @@ class SlideGuideTests(unittest.TestCase):
         temporary=tempfile.TemporaryDirectory(prefix='BitBeamer slide guide ')
         self.addCleanup(temporary.cleanup);self.root=Path(temporary.name)
         def write(name,content):
-            path=self.root/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(content)
+            path=self.root/name;path.parent.mkdir(parents=True,exist_ok=True);path.write_text(content, encoding="utf-8")
         self.write=write
         entry={'id':'cover','title':'Cover','source':'templates/studio/cover.tex',
                'fields':[{'name':'title','type':'text','default':'Presentation title'}]}
@@ -31,7 +31,7 @@ class SlideGuideTests(unittest.TestCase):
         write('templates/studio/cover.tex','% Source fixture\n')
         write('docs/templates/previews/cover.png','preview fixture')
         write('docs/slides/guide.js','// Browser fixture\n')
-        write('scripts/slide-guide.html',(ROOT/'scripts/slide-guide.html').read_text())
+        write('scripts/slide-guide.html',(ROOT/'scripts/slide-guide.html').read_text(encoding="utf-8"))
         write('library/slides/example.tex',r'\studiotemplate[caption={Two\\lines}]{panels}'+'\n'+r'\nocite{source}')
         write('library/layouts/panels.tex','% Shared panels\n')
         write('library/layouts/fixed.tex',r'\studiotemplate[caption={Fixed}]{panels}')
@@ -55,9 +55,9 @@ class SlideGuideTests(unittest.TestCase):
         self.assertIn('palette={blue}',rows['cover']['choices'][0]['command'])
 
     def test_copyable_command_uses_one_preferred_name_per_native_field(self):
-        path=self.root/'templates/models.json';models=json.loads(path.read_text())
+        path=self.root/'templates/models.json';models=json.loads(path.read_text(encoding="utf-8"))
         models['models'][0]['variants'][0]['compositions'][0]['fields']['heading-title']='title'
-        path.write_text(json.dumps(models))
+        path.write_text(json.dumps(models), encoding="utf-8")
         choice=slide_guide.catalogue(self.root)['rows'][0]['choices'][0]
         self.assertIn('heading-title={Presentation title}',choice['command'])
         self.assertNotIn('\n  title={',choice['command'])
@@ -91,7 +91,7 @@ class SlideGuideTests(unittest.TestCase):
 
     def test_current_collection_has_every_retained_composition_once(self):
         result=slide_guide.catalogue(ROOT)
-        core={e['id'] for e in json.loads((ROOT/'templates/index.json').read_text())['templates']}
+        core={e['id'] for e in json.loads((ROOT/'templates/index.json').read_text(encoding="utf-8"))['templates']}
         rows=result['rows'];actual=[c['id'] for row in rows if row['kind']=='studio' for c in row['choices']]
         self.assertEqual(set(actual),core);self.assertEqual(len(actual),len(core))
         self.assertEqual(len({row['id'] for row in rows}),len(rows))

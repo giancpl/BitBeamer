@@ -26,20 +26,20 @@ Original palettes: light.
 | `label-one` | <code>Label 1</code> | 13.2% wide × 4.3% high |
 | `label-two` | <code>2</code> | 4.5% wide × 4.7% high |
 | `title` | <code>Slide title</code> | 13.3% wide × 4.4% high |
-| `label-four` | <code>6.102</code> | 4.4% wide × 4.3% high |
+| `label-four` | <code>6.102</code> | 5.7% wide × 4.3% high |
 | `label-five` | <code>Item</code> | 4.9% wide × 3.5% high |
-| `label-six` | <code>3.12009</code> | 4.9% wide × 3.2% high |
+| `label-six` | <code>3.12009</code> | 5.7% wide × 3.2% high |
 | `label-seven` | <code>Label 7</code> | 13.2% wide × 4.3% high |
 | `label-eight` | <code>8</code> | 4.5% wide × 4.7% high |
 | `label-nine` | <code>9</code> | 4.5% wide × 4.7% high |
 | `label-ten` | <code>Item</code> | 4.9% wide × 3.5% high |
-| `label-eleven` | <code>3.12009</code> | 5.0% wide × 2.9% high |
+| `label-eleven` | <code>3.12009</code> | 5.7% wide × 2.9% high |
 | `label-twelve` | <code>12</code> | 4.5% wide × 4.7% high |
 | `label-thirteen` | <code>Item</code> | 5.1% wide × 3.0% high |
 | `label-fourteen` | <code>Label 14</code> | 13.1% wide × 4.3% high |
 | `label-fifteen` | <code>Item</code> | 6.2% wide × 3.5% high |
 | `label-sixteen` | <code>16</code> | 4.5% wide × 4.7% high |
-| `label-seventeen` | <code>9.23191</code> | 5.0% wide × 2.9% high |
+| `label-seventeen` | <code>9.23191</code> | 5.7% wide × 2.9% high |
 | `label-eighteen` | <code>6.25</code> | 4.4% wide × 4.3% high |
 | `label-nineteen` | <code>6.25</code> | 4.4% wide × 4.3% high |
 | `label-twenty` | <code>Item</code> | 5.1% wide × 3.0% high |

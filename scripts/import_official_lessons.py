@@ -9,7 +9,7 @@ parser.add_argument('analysis',type=Path,help='Explicit local extraction records
 parser.add_argument('--replace-drafts',action='store_true',help='Replace generated drafts; back up all manual curation first')
 args=parser.parse_args()
 BASE=args.analysis.resolve();EX=BASE/'extracted-v3';LIB=ROOT/'library'
-NS='{http://www.w3.org/2000/svg}';HREF='{http://www.w3.org/1999/xlink}href';REV=json.load(open(BASE/'inventory.json'))['revision']
+NS='{http://www.w3.org/2000/svg}';HREF='{http://www.w3.org/1999/xlink}href';REV=json.load(open(BASE/'inventory.json', encoding='utf-8'))['revision']
 WORDS=['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve','thirteen','fourteen','fifteen','sixteen','seventeen','eighteen','nineteen','twenty']
 SPEC={
 'bitgeneration-1':('bitgeneration-economics','BitGeneration 1: Economics and culture','Intermediate learners','money'),
@@ -169,12 +169,12 @@ def main():
  for sub in ('slides','layouts','parts','parts/resources','references','previews'):(LIB/sub).mkdir(parents=True,exist_ok=True)
  data={'schema':1,'upstream':{'repository':'BitPolito/decks','revision':REV},'sources':[],'references':{},'layouts':{},'slides':{},'decks':{},'blocks':{},'aliases':{}}
  for key,(title,url) in REFS.items():
-  source='library/references/'+key+'.bib';(ROOT/source).write_text('@online{'+key+',\n title={'+title+'},\n url={'+url+'},\n urldate={2026-11-04}\n}\n');data['references'][key]={'source':source,'title':title,'url':url,'checked':'2026-11-04'}
- (LIB/'references.bib').write_text('\n'.join((ROOT/r['source']).read_text() for r in data['references'].values()))
- pages=json.load(open(EX/'pages.json'));translations=json.load(open(EX/'translations-opus.json'))
+  source='library/references/'+key+'.bib';(ROOT/source).write_text('@online{'+key+',\n title={'+title+'},\n url={'+url+'},\n urldate={2026-11-04}\n}\n', encoding="utf-8");data['references'][key]={'source':source,'title':title,'url':url,'checked':'2026-11-04'}
+ (LIB/'references.bib').write_text('\n'.join((ROOT/r['source']).read_text(encoding="utf-8") for r in data['references'].values()), encoding="utf-8")
+ pages=json.load(open(EX/'pages.json', encoding='utf-8'));translations=json.load(open(EX/'translations-opus.json', encoding='utf-8'))
  overrides=BASE/'english-overrides.json'
- if overrides.exists():translations.update(json.load(open(overrides)))
- original_sources=json.load(open(BASE/'inventory.json'))['sources'];source_records={r['path']:r for r in original_sources}
+ if overrides.exists():translations.update(json.load(open(overrides, encoding='utf-8')))
+ original_sources=json.load(open(BASE/'inventory.json', encoding='utf-8'))['sources'];source_records={r['path']:r for r in original_sources}
  documents={};parts={};sequences={};layout_sigs={};slide_sigs={};all_values={}
  for count,page in enumerate(pages,1):
   stem=Path(page['source']).stem;deck_id,title,audience,fallback=SPEC[stem]
@@ -198,7 +198,7 @@ def main():
    plate=part_pdf
   else:
    part_id=digest(geometry.encode())[:24];part_source='library/parts/'+part_id+'.tex'
-   if not (ROOT/part_source).exists():(ROOT/part_source).write_text('% Native editable source-coordinate diagram.\n'+geometry+'\n')
+   if not (ROOT/part_source).exists():(ROOT/part_source).write_text('% Native editable source-coordinate diagram.\n'+geometry+'\n', encoding="utf-8")
    plate=part_source
    resources[plate]=digest((ROOT/plate).read_bytes())
    if page.get('native_override')=='flaring':resources['library/parts/resources/'+name]=digest(raw)
@@ -218,7 +218,7 @@ def main():
    for f in fields:
     fmt=r'\bfseries'+(r'\centering' if f['alignment']=='center' else '')
     layout.append(r'\studiolibrarytext{'+f['name']+'}{'+str(f['origin'][0])+'}{'+str(f['origin'][1])+'}{'+str(f['width'])+'}{'+str(f['height'])+'}{'+str(f['font_size'])+'}{'+str(f['leading'])+'}{'+f['color']+'}{'+fmt+'}')
-   layout+=['}',''];(ROOT/layout_source).write_text('\n'.join(layout))
+   layout+=['}',''];(ROOT/layout_source).write_text('\n'.join(layout), encoding="utf-8")
    data['layouts'][layout_id]={'title':' / '.join(values[:2])[:100] or 'Visual composition','source':layout_source,'palette':bg,'canvas':canvas,'fields':field_contract,'graphic':plate,'status':'in review','topic':page_topic,'representation':'native TikZ' if geometry is not None else 'prepared vector parts'}
   layout_source=data['layouts'][layout_id]['source'];resources[layout_source]=digest((ROOT/layout_source).read_bytes())
   if part_pdf:resources[part_pdf]='pending preparation'
@@ -230,7 +230,7 @@ def main():
    if page_topic=='lightning':ref+=['lesson-lightning-bolts']
    if page_topic=='payments':ref+=['lesson-btcpay-docs']
    command=r'\studiotemplate['+'\n'+',\n'.join('  '+f['name']+'={'+tex(f['value'])+'}' for f in fields)+'\n]{'+layout_id+'}' if fields else r'\studiotemplate{'+layout_id+'}'
-   (ROOT/slide_source).write_text('% Editable English lesson content. Layout geometry is shared.\n'+command+'\n'+r'\nocite{'+','.join(ref)+'}\n')
+   (ROOT/slide_source).write_text('% Editable English lesson content. Layout geometry is shared.\n'+command+'\n'+r'\nocite{'+','.join(ref)+'}\n', encoding="utf-8")
    top=sorted(fields,key=lambda f:-f['font_size']);display=' '.join(f['value'] for f in top[:2])[:110] if top else 'Visual example'
    changes=['Inter replaces the original typeface.','English text replaces the original; source sequence and graphic proportions are retained. Typography and translation remain in review.']
    notes=[]
@@ -284,8 +284,8 @@ def main():
  for folder in ('slides','layouts'):
   for obsolete in (LIB/folder).glob('official-*.tex'):
    if obsolete.relative_to(ROOT).as_posix() not in active_sources:obsolete.unlink()
- (LIB/'index.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
- (LIB/'parts/manifest.json').write_text(json.dumps({'schema':1,'parts':parts},indent=2)+'\n')
- registry='\n'.join(r'\DeclareStudioLibraryLayout{'+k+'}{'+v['source']+'}' for k,v in data['layouts'].items())+'\n';(LIB/'layouts/registry.tex').write_text(registry)
+ (LIB/'index.json').write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n', encoding="utf-8")
+ (LIB/'parts/manifest.json').write_text(json.dumps({'schema':1,'parts':parts},indent=2)+'\n', encoding="utf-8")
+ registry='\n'.join(r'\DeclareStudioLibraryLayout{'+k+'}{'+v['source']+'}' for k,v in data['layouts'].items())+'\n';(LIB/'layouts/registry.tex').write_text(registry, encoding="utf-8")
  print('Library:',len(data['sources']),'sources,',len(data['slides']),'slides,',len(data['layouts']),'layouts,',len(data['blocks']),'blocks,',len(data['decks']),'decks',flush=True)
 if __name__=='__main__':main()

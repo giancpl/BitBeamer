@@ -43,7 +43,7 @@ class StudioSlotTests(unittest.TestCase):
         self.assertEqual([f['box'][0] for f in graphics],sorted(f['box'][0] for f in graphics))
 
     def test_separated_cards_keep_the_original_shadow_canvas(self):
-        data=json.loads((ROOT/'images/studio/slots/manifest.json').read_text())
+        data=json.loads((ROOT/'images/studio/slots/manifest.json').read_text(encoding="utf-8"))
         self.assertEqual(len(data['parts']),34)
         for part in data['parts']:
             source=ET.parse(ROOT/part['source']).getroot()
@@ -63,13 +63,13 @@ class StudioSlotTests(unittest.TestCase):
         self.assertEqual({p:p.stat().st_mtime_ns for p in before},before)
 
     def test_stale_slot_pdf_is_rejected_without_overwriting_it(self):
-        item=json.loads((ROOT/'images/studio/slots/manifest.json').read_text())['parts'][0]
+        item=json.loads((ROOT/'images/studio/slots/manifest.json').read_text(encoding="utf-8"))['parts'][0]
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory)
             for name in [item['source'],item['parent'],item['pdf']]:
                 target=root/name;target.parent.mkdir(parents=True,exist_ok=True);shutil.copyfile(ROOT/name,target)
             manifest=root/'images/studio/slots/manifest.json'
-            manifest.write_text(json.dumps({'parts':[item]}))
+            manifest.write_text(json.dumps({'parts':[item]}), encoding="utf-8")
             target=root/item['pdf'];target.write_bytes(b'changed')
             with self.assertRaisesRegex(RuntimeError,'Stale Studio slot background'):
                 studio_slots.prepare(root,check=True)

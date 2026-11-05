@@ -63,11 +63,11 @@ class StudioGuideTests(unittest.TestCase):
             root = Path(temporary)
             path = Path('docs/templates/guides/three-cards.md')
             (root / path).parent.mkdir(parents=True)
-            (root / path).write_text('stale guide')
+            (root / path).write_text('stale guide', encoding="utf-8")
             with mock.patch.object(studio_templates, 'generated_files', return_value={path:'current guide'}):
                 with self.assertRaisesRegex(RuntimeError, 'Stale Studio catalogue'):
                     studio_templates.prepare_catalogue(root, check=True)
-            self.assertEqual((root / path).read_text(), 'stale guide')
+            self.assertEqual((root / path).read_text(encoding="utf-8"), 'stale guide')
 
     def test_archive_validation_reads_a_complete_user_example(self):
         spec=importlib.util.spec_from_file_location('guide_validator',ROOT/'scripts/validate-studio-review.py')
@@ -81,7 +81,7 @@ class StudioGuideTests(unittest.TestCase):
             data=portable_guides(ROOT,[entry])
             (root/'guides/three-cards.md').write_bytes(data['guides/three-cards.md'])
             self.assertEqual(validator.guide_example(root),guide_info(entry,self.selected['three-cards'])['document'])
-            (root/'guides/three-cards.md').write_text('Incomplete guide')
+            (root/'guides/three-cards.md').write_text('Incomplete guide', encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError,'Missing complete example'):
                 validator.guide_example(root)
 
@@ -104,7 +104,7 @@ class StudioGuideTests(unittest.TestCase):
                 target.touch()
             self.assertEqual(check_docs(root), len(data)-1)
             self.assertFalse((root / 'guides/cover.md').exists())
-            self.assertNotIn('Show editable areas', (root / 'guides/table.md').read_text())
+            self.assertNotIn('Show editable areas', (root / 'guides/table.md').read_text(encoding="utf-8"))
 
 
 if __name__ == '__main__':

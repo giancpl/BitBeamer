@@ -45094,9 +45094,9 @@
           "type": "text",
           "default": "6.102",
           "box": [
-            1130.098,
+            1108.221,
             766.258,
-            157.2460000000001,
+            201,
             86.01519999999996
           ],
           "source_ink_box": [
@@ -45113,7 +45113,8 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "text_fit_note": "201-unit text allocation centred in the existing 217.1-unit node. Preserves source centre, font, data and artwork; allows Inter metrics from both TeX Live 2022 and 2025 without horizontal overflow."
         },
         {
           "name": "text-7",
@@ -45146,9 +45147,9 @@
           "type": "text",
           "default": "3.12009",
           "box": [
-            2035.3683333333333,
+            2022.0700000000002,
             917.164,
-            174.40333333333342,
+            201,
             63.71786666666661
           ],
           "source_ink_box": [
@@ -45165,7 +45166,8 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "text_fit_note": "201-unit text allocation centred in the existing 217.1-unit node. Preserves source centre, font, data and artwork; allows Inter metrics from both TeX Live 2022 and 2025 without horizontal overflow."
         },
         {
           "name": "text-9",
@@ -45198,9 +45200,9 @@
           "type": "text",
           "default": "9.23191",
           "box": [
-            2032.9163333333333,
+            2022.0700000000002,
             1266.68,
-            179.30733333333342,
+            201,
             57.34066666666662
           ],
           "source_ink_box": [
@@ -45217,16 +45219,17 @@
           "slot": {
             "number": 17,
             "key": "text/17"
-          }
+          },
+          "text_fit_note": "201-unit text allocation centred in the existing 217.1-unit node. Preserves source centre, font, data and artwork; allows Inter metrics from both TeX Live 2022 and 2025 without horizontal overflow."
         },
         {
           "name": "text-11",
           "type": "text",
           "default": "3.12009",
           "box": [
-            2970.7483333333334,
+            2959.9,
             1074.828,
-            179.30333333333311,
+            201,
             57.340666666666785
           ],
           "source_ink_box": [
@@ -45243,7 +45246,8 @@
           "slot": {
             "number": 11,
             "key": "text/11"
-          }
+          },
+          "text_fit_note": "201-unit text allocation centred in the existing 217.1-unit node. Preserves source centre, font, data and artwork; allows Inter metrics from both TeX Live 2022 and 2025 without horizontal overflow."
         },
         {
           "name": "text-12",
@@ -45540,7 +45544,8 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Numeric label allocations are 201 source units wide inside unchanged 217.1-unit nodes, preserving their centres, font sizes and values across TeX Live Inter metrics. Prepared graphics and source ink boxes are unchanged."
       ],
       "slot_parts": [],
       "model": "diagram-transaction-inputs",

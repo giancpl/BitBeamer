@@ -49,10 +49,10 @@ def main(argv=None):
         from PIL import Image,ImageChops,ImageDraw,ImageOps,ImageStat
     except ImportError:
         parser.error('Comparison maintenance requires PyMuPDF and Pillow; ordinary builds do not.')
-    data=json.loads((ROOT/'library/index.json').read_text());folder=ROOT/'design-references/figma/official-decks/review';folder.mkdir(parents=True,exist_ok=True)
+    data=json.loads((ROOT/'library/index.json').read_text(encoding="utf-8"));folder=ROOT/'design-references/figma/official-decks/review';folder.mkdir(parents=True,exist_ok=True)
     selected=[args.deck] if args.deck else [source['id'] for source in data['sources']]
     if any(name not in data['decks'] and name not in data.get('aliases',{}) for name in selected):parser.error('Unknown lesson ID.')
-    reports=json.loads((folder/'report.json').read_text()) if (folder/'report.json').exists() else {};links=[]
+    reports=json.loads((folder/'report.json').read_text(encoding="utf-8")) if (folder/'report.json').exists() else {};links=[]
     for name in selected:
         canonical=data.get('aliases',{}).get(name,name);deck=data['decks'][canonical];source=next(s for s in data['sources'] if s['id']==name);original=args.originals/Path(source['path']).name
         if not original.exists():parser.error('Missing pinned original: '+str(original)+'. Run scripts/library.py fetch explicitly.')
@@ -63,7 +63,7 @@ def main(argv=None):
         snapshot=target/'replica-snapshot.pdf';shutil.copyfile(pdf,snapshot);pdf=snapshot
         existing_comparison=fitz.open(target/'comparisons.pdf') if args.pages and (target/'comparisons.pdf').exists() else None
         if args.pages and any(n<1 or n>len(deck['slides']) for n in args.pages):parser.error('Page selection is outside this lesson.')
-        previous=json.loads((target/'geometry.json').read_text()) if (target/'geometry.json').exists() else []
+        previous=json.loads((target/'geometry.json').read_text(encoding="utf-8")) if (target/'geometry.json').exists() else []
         with fitz.open(original) as source_pdf,fitz.open(pdf) as replica:
             if len(source_pdf)!=len(replica):parser.error('Source/replica page counts differ: '+name)
             for number,sid in enumerate(deck['slides']):
@@ -109,15 +109,15 @@ def main(argv=None):
                     cp.insert_text((20,20),f'{name} / {number+1:03d} / {sid}',fontsize=10);cp.show_pdf_page(fitz.Rect(10,35,590,362),source_pdf,number);cp.show_pdf_page(fitz.Rect(600,35,1180,362),replica,number)
         if existing_comparison is not None:existing_comparison.close()
         prepared=target/'comparisons.tmp.pdf';comparison.save(prepared,garbage=4,deflate=True);comparison.close();prepared.replace(target/'comparisons.pdf')
-        (target/'geometry.json').write_text(json.dumps(geometry,indent=2)+'\n')
+        (target/'geometry.json').write_text(json.dumps(geometry,indent=2)+'\n', encoding="utf-8")
         from slide_guide import redirect_page
         import os
         destination=os.path.relpath(ROOT/'docs/slides/index.html',target)+'?view=decks&item='+canonical+'&maintenance=1'
         (target/'index.html').write_text(redirect_page(destination),encoding='utf-8')
         reports[name]=geometry
-        (folder/'report.json').write_text(json.dumps(reports,indent=2)+'\n')
+        (folder/'report.json').write_text(json.dumps(reports,indent=2)+'\n', encoding="utf-8")
         print('Compared',name,len(geometry),'pages',flush=True)
-    (folder/'report.json').write_text(json.dumps(reports,indent=2)+'\n')
+    (folder/'report.json').write_text(json.dumps(reports,indent=2)+'\n', encoding="utf-8")
     from guide_comparisons import sync
     sync(ROOT)
     print('Comparison data ready for:',ROOT/'docs/slides/index.html')

@@ -32,8 +32,8 @@ def references(elements):
 
 def extract(root=ROOT, exports=None):
     folder = root / 'images/studio/parts'
-    recipes = json.loads((folder / 'recipes.json').read_text())['parts']
-    inventory = {r['id']: r for r in json.loads((root / 'templates/figma-inventory.json').read_text())['frames']}
+    recipes = json.loads((folder / 'recipes.json').read_text(encoding="utf-8"))['parts']
+    inventory = {r['id']: r for r in json.loads((root / 'templates/figma-inventory.json').read_text(encoding="utf-8"))['frames']}
     exports = exports or root / 'design-references/figma/exports'
     records = []
     for recipe in recipes:
@@ -87,12 +87,12 @@ def extract(root=ROOT, exports=None):
                       reference_sha256=original['sha256'],canvas=[original['width'],original['height']],
                       dependencies=dependencies,definition_ids=sorted(references([svg])))
         records.append(record)
-    (folder/'manifest.json').write_text(json.dumps({'schema':1,'status':'in-review','parts':records},indent=2)+'\n')
+    (folder/'manifest.json').write_text(json.dumps({'schema':1,'status':'in-review','parts':records},indent=2)+'\n', encoding="utf-8")
     return records
 
 def prepare(root=ROOT, check=False, converter='auto'):
     folder=root/'images/studio/parts';manifest=folder/'manifest.json'
-    data=json.loads(manifest.read_text()); records=data['parts']
+    data=json.loads(manifest.read_text(encoding="utf-8")); records=data['parts']
     for part in records:
         source=root/part['source']; target=folder/(part['name']+'.pdf')
         dependencies=all((root/d['path']).is_file() and digest(root/d['path'])==d['sha256'] for d in part['dependencies'])
@@ -126,7 +126,7 @@ def prepare(root=ROOT, check=False, converter='auto'):
                 render_svg(source,target,converter,crop=False)
             part['source_sha256']=digest(source);part['pdf_sha256']=digest(target)
     if not check:
-        manifest.write_text(json.dumps(data,indent=2)+'\n')
+        manifest.write_text(json.dumps(data,indent=2)+'\n', encoding="utf-8")
     return len(records)
 
 def main():

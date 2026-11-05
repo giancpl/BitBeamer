@@ -70,8 +70,8 @@ class LauncherTests(unittest.TestCase):
         self.assertIn('prepare-assets.py', self.stderr.getvalue())
 
     def test_default_wrapper_checks_studio_before_compiling(self):
-        (self.root/'main.tex').write_text(r'\input{main-studio.tex}')
-        (self.root/'main-studio.tex').write_text(r'\usetheme{bitpolito-studio}')
+        (self.root/'main.tex').write_text(r'\input{main-studio.tex}', encoding="utf-8")
+        (self.root/'main-studio.tex').write_text(r'\usetheme{bitpolito-studio}', encoding="utf-8")
         with mock.patch.object(build,'prepare_studio',side_effect=RuntimeError('Stale Studio artwork')) as prepare, \
                 mock.patch.object(build.subprocess,'run') as run:
             self.assertEqual(build.main([],root=self.root),1)
@@ -132,7 +132,7 @@ class LauncherTests(unittest.TestCase):
         data = json.loads((ROOT / '.vscode/tasks.json').read_text(encoding='utf-8'))
         default = next(task for task in data['tasks'] if task.get('group', {}).get('isDefault'))
         self.assertIn('Studio',default['label'])
-        self.assertIn(r'\input{main-studio.tex}',(ROOT/'main.tex').read_text())
+        self.assertIn(r'\input{main-studio.tex}',(ROOT/'main.tex').read_text(encoding="utf-8"))
         self.assertIn('${workspaceFolder}/scripts/build.py', default['args'])
         self.assertNotIn('--backend', default['args'])
         self.assertNotIn('--backend', default['windows']['args'])

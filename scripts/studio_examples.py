@@ -10,7 +10,7 @@ from studio_templates import catalogue_document
 
 def previous_values(root):
     result = {}
-    for item in json.loads((root / 'templates/default-content-audit.json').read_text())['fields']:
+    for item in json.loads((root / 'templates/default-content-audit.json').read_text(encoding="utf-8"))['fields']:
         key = (item['composition'], item['field'])
         if key in result:
             raise RuntimeError('Duplicate historical content field: ' + '/'.join(key))
@@ -66,7 +66,7 @@ def content_document(root, entries, content='example'):
 
 
 def reusable_entries(root, entries):
-    ledger = json.loads((root / 'templates/review.json').read_text())
+    ledger = json.loads((root / 'templates/review.json').read_text(encoding="utf-8"))
     ids = ledger.get('reusable_selection', [])
     known = {entry['id']: entry for entry in entries}
     if not ids or len(ids) != len(set(ids)) or set(ids) - set(known):

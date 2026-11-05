@@ -16,7 +16,7 @@ def check(root=ROOT):
         manifest = root / 'images/studio' / folder / 'manifest.json'
         if not manifest.exists():
             continue
-        for part in json.loads(manifest.read_text())['parts']:
+        for part in json.loads(manifest.read_text(encoding="utf-8"))['parts']:
             keys = ('source', 'pdf', 'parent') if folder == 'icon-palettes' else ('source', 'pdf')
             for key in keys:
                 if digest(root / part[key]) != part[key + '_sha256']:
@@ -29,18 +29,18 @@ def prepare_icons(root=ROOT):
     """Regenerate monochrome icon derivatives without touching the shared library."""
     from asset_library import render_svg,write_if_changed
     folder=root/'images/studio/icon-palettes';(folder/'source').mkdir(parents=True,exist_ok=True)
-    path=folder/'manifest.json';old={a['name']:a for a in json.loads(path.read_text())['parts']} if path.exists() else {}
+    path=folder/'manifest.json';old={a['name']:a for a in json.loads(path.read_text(encoding="utf-8"))['parts']} if path.exists() else {}
     records=[]
     def role(color):
         r,g,b=[int(color[i:i+2],16) for i in (1,3,5)]
         if b>r+60 and b>g+60 or max(r,g,b)<90:return 'ink'
         if min(r,g,b)>225:return 'paper'
         return 'other'
-    for row in json.loads((root/'assets/index.json').read_text()):
+    for row in json.loads((root/'assets/index.json').read_text(encoding="utf-8")):
         if row['category'].split('/')[0] in ['logos','backgrounds']:continue
         parent=root/'assets'/row['category']/(row['name']+'.svg')
         if not parent.exists():continue
-        text=parent.read_text();colors=set(re.findall(r'#[0-9a-fA-F]{6}\b',text))
+        text=parent.read_text(encoding="utf-8");colors=set(re.findall(r'#[0-9a-fA-F]{6}\b',text))
         if not colors or '<image' in text or any(role(c)=='other' for c in colors):continue
         converted=re.sub(r'#[0-9a-fA-F]{6}\b',lambda m:'#FFFFFF' if role(m[0])=='ink' else '#001CE0',text)
         if converted==text:continue
@@ -49,7 +49,7 @@ def prepare_icons(root=ROOT):
         prior=old.get(row['name'])
         if not prior or prior.get('crop')!=record['crop'] or prior['source_sha256']!=record['source_sha256'] or not pdf.exists() or digest(pdf)!=prior['pdf_sha256']:render_svg(source,pdf,crop=True)
         record['pdf_sha256']=digest(pdf);records.append(record)
-    path.write_text(json.dumps({'schema':1,'description':'Monochrome named-icon alternatives for blue Studio slides; originals remain unchanged.','parts':records},indent=2)+'\n')
+    path.write_text(json.dumps({'schema':1,'description':'Monochrome named-icon alternatives for blue Studio slides; originals remain unchanged.','parts':records},indent=2)+'\n', encoding="utf-8")
     return len(records)
 
 def prepare(root=ROOT):

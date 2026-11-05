@@ -14,7 +14,7 @@ SOURCES = {'alice': 'assets/characters/alice.svg',
 def prepare_studio(root, check=False):
     folder = root / 'images/studio'
     manifest = folder / 'manifest.json'
-    previous = json.loads(manifest.read_text()) if manifest.exists() else {}
+    previous = json.loads(manifest.read_text(encoding="utf-8")) if manifest.exists() else {}
     records = {}
     for name, relative in SOURCES.items():
         original = (root / relative).read_bytes().replace(b'\r\n', b'\n')

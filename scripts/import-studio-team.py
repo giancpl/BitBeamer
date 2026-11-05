@@ -19,7 +19,7 @@ def extract(source, root=ROOT):
     except ImportError as error:
         raise RuntimeError('Maintenance only: install pypdf in a temporary virtual environment. Normal builds need no PDF library.') from error
     folder = root / 'images/studio/team'
-    record = json.loads((folder / 'manifest.json').read_text())
+    record = json.loads((folder / 'manifest.json').read_text(encoding="utf-8"))
     if hashlib.sha256(source.read_bytes()).hexdigest() != record['reference_sha256']:
         raise RuntimeError('Unmeasured reference PDF. Measure a new export before changing its extraction recipe.')
     prepared = {}
@@ -81,12 +81,12 @@ def extract(source, root=ROOT):
         relative = 'images/studio/team/'+kind+'.pdf'
         prepared[relative] = hashlib.sha256((root/relative).read_bytes()).hexdigest()
     record['resources'] = prepared
-    (folder/'manifest.json').write_text(json.dumps(record,indent=2)+'\n')
+    (folder/'manifest.json').write_text(json.dumps(record,indent=2)+'\n', encoding="utf-8")
     path = root/'templates/index.json'
-    metadata = json.loads(path.read_text())
+    metadata = json.loads(path.read_text(encoding="utf-8"))
     entry = next(e for e in metadata['templates'] if e['id']=='team-presentation')
     entry['prepared_resources'] = prepared
-    path.write_text(json.dumps(metadata,indent=2)+'\n')
+    path.write_text(json.dumps(metadata,indent=2)+'\n', encoding="utf-8")
     return prepared
 
 

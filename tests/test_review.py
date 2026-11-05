@@ -29,7 +29,7 @@ class ReviewTests(unittest.TestCase):
         data = studio_review.load_review(ROOT)
         self.assertEqual(len(data['templates']),196)
         self.assertEqual(len(data['selection']),24)
-        metadata = json.loads((ROOT/'templates/index.json').read_text())
+        metadata = json.loads((ROOT/'templates/index.json').read_text(encoding="utf-8"))
         self.assertTrue(all('status' not in entry for entry in metadata['templates']))
         rows = list(csv.DictReader(io.StringIO(studio_review.review_csv(ROOT,self.entries))))
         self.assertEqual(len(rows),196)
@@ -44,7 +44,7 @@ class ReviewTests(unittest.TestCase):
         data['selection'][1:3] = reversed(data['selection'][1:3])
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);(root/'templates').mkdir()
-            (root/'templates/review.json').write_text(json.dumps(data))
+            (root/'templates/review.json').write_text(json.dumps(data), encoding="utf-8")
             text=studio_review.review_csv(root,self.entries)
             rows={r['id']:r for r in csv.DictReader(io.StringIO(text))}
             self.assertEqual(rows['cover']['requested_changes'],data['templates']['cover']['notes'])
@@ -62,11 +62,11 @@ class ReviewTests(unittest.TestCase):
             root=Path(directory);(root/'templates').mkdir()
             data=studio_review.load_review(ROOT)
             data['templates']['cover']['status']='automatically approved'
-            (root/'templates/review.json').write_text(json.dumps(data))
+            (root/'templates/review.json').write_text(json.dumps(data), encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError,'Invalid review status'):
                 studio_review.load_review(root,self.entries)
             del data['templates']['cover']
-            (root/'templates/review.json').write_text(json.dumps(data))
+            (root/'templates/review.json').write_text(json.dumps(data), encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError,'every current composition'):
                 studio_review.load_review(root,self.entries)
 
@@ -85,11 +85,11 @@ class ReviewTests(unittest.TestCase):
             root=Path(directory)
             for name in ('.latexmkrc','assets/generated/catalogue.tex','images/bitpolito/bull-white.pdf','images/bitpolito/polito-coat-of-arms-white.pdf','templates/studio/custom.tex'):
                 p=root/name;p.parent.mkdir(parents=True,exist_ok=True);p.write_bytes(b'fixture')
-            (root/'snippet.txt').write_text('first version')
+            (root/'snippet.txt').write_text('first version', encoding="utf-8")
             entry={'id':'custom','source':'templates/studio/custom.tex','parts':[],
                    'fields':[{'name':'code-file','type':'file','default':'snippet.txt'}]}
             before=studio_preview.input_sets(root,[entry])
-            (root/'snippet.txt').write_text('edited code')
+            (root/'snippet.txt').write_text('edited code', encoding="utf-8")
             after=studio_preview.input_sets(root,[entry])
             self.assertNotEqual(before['custom'],after['custom'])
             self.assertIn('snippet.txt',before['custom'])
@@ -144,10 +144,10 @@ class ReviewTests(unittest.TestCase):
             for name in [item['id'] for item in studio_review.package_selection(root)]:
                 data['templates'][name]['status']='approved'
                 for review in data['templates'][name].get('palette_reviews',{}).values():review['status']='approved'
-            (root/'templates/review.json').write_text(json.dumps(data))
+            (root/'templates/review.json').write_text(json.dumps(data), encoding="utf-8")
             studio_review.require_approved(root)
             data['templates'][data['selection'][-1]]['status']='changes requested'
-            (root/'templates/review.json').write_text(json.dumps(data))
+            (root/'templates/review.json').write_text(json.dumps(data), encoding="utf-8")
             with self.assertRaisesRegex(RuntimeError,'closing'):
                 studio_review.require_approved(root)
 
@@ -176,7 +176,7 @@ class ReviewTests(unittest.TestCase):
         class Tags(HTMLParser):
             def __init__(self):super().__init__();self.tags=[]
             def handle_starttag(self,tag,attrs):self.tags.append(tag)
-        page=(ROOT/'docs/studio-parts/index.html').read_text()
+        page=(ROOT/'docs/studio-parts/index.html').read_text(encoding="utf-8")
         parser=Tags();parser.feed(page)
         self.assertNotIn('img',parser.tags)
         self.assertNotIn('article',parser.tags)

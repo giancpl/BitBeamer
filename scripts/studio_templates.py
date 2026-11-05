@@ -109,7 +109,7 @@ def registry_document(entries, aliases=()):
         lines.append(r'\DeclareStudioTemplateAlias{' + alias['id'] + '}{' + alias['alias_of'] + '}{' + defaults + '}')
     from studio_models import registry as model_registry
     model_entries=list(entries)
-    metadata={e['id']:e for e in json.loads((ROOT/'templates/index.json').read_text())['templates']}
+    metadata={e['id']:e for e in json.loads((ROOT/'templates/index.json').read_text(encoding="utf-8"))['templates']}
     for alias in aliases:
         if alias['alias_of'] not in {e['id'] for e in model_entries}:model_entries.append(metadata[alias['alias_of']])
     lines.extend(model_registry(ROOT, model_entries))

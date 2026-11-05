@@ -74,7 +74,7 @@ def package_selection(root):
 
 def require_approved(root):
     pending = [item['id'] for item in package_selection(root) if item['status'] != 'approved']
-    metadata={e['id']:e for e in json.loads((root/'templates/index.json').read_text())['templates']}
+    metadata={e['id']:e for e in json.loads((root/'templates/index.json').read_text(encoding="utf-8"))['templates']}
     for item in package_selection(root):
         for palette in metadata[item['id']].get('palettes',[]):
             if item.get('palette_reviews',{}).get(palette,{}).get('status')!='approved':pending.append(item['id']+'/'+palette)
