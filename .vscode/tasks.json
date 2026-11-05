@@ -557,13 +557,111 @@
         "cwd": "${workspaceFolder}"
       },
       "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: browse reusable lessons",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "library"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "library"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: copy an official lesson",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "new",
+        "${input:deckName}",
+        "--from",
+        "${input:lessonId}"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "new",
+          "${input:deckName}",
+          "--from",
+          "${input:lessonId}"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: insert a lesson block",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/deck.py",
+        "add",
+        "${input:deckName}",
+        "--block",
+        "${input:blockId}"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/deck.py",
+          "add",
+          "${input:deckName}",
+          "--block",
+          "${input:blockId}"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "BitBeamer: open the slide guide",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/review.py",
+        "guide",
+        "--open"
+      ],
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": [],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/review.py",
+          "guide",
+          "--open"
+        ]
+      }
     }
   ],
   "inputs": [
     {
       "id": "studioModel",
       "type": "promptString",
-      "description": "Studio model ID (see the gallery)",
+      "description": "Studio model ID (see the slide guide)",
       "default": "three-cards"
     },
     {
@@ -591,6 +689,18 @@
         "native"
       ],
       "default": "docker"
+    },
+    {
+      "id": "lessonId",
+      "type": "promptString",
+      "description": "Official lesson ID",
+      "default": "bitcoin-introduction-short"
+    },
+    {
+      "id": "blockId",
+      "type": "promptString",
+      "description": "Reusable lesson block ID",
+      "default": "hashing"
     }
   ]
 }

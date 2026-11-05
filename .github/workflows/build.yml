@@ -27,6 +27,7 @@ jobs:
           python-version: '3.12'
       - run: python -m unittest discover -s tests -v
       - run: python scripts/deck.py layouts --json
+      - run: python scripts/library.py check
       - run: python scripts/prepare-assets.py --check
       - run: python scripts/prepare-studio-assets.py --check
       - run: python scripts/build-asset-catalogue.py --check
@@ -48,13 +49,22 @@ jobs:
         run: |
           sudo apt-get update
           sudo apt-get install -y --no-install-recommends \
-            python3 python3-gi python3-gi-cairo python3-cairo gir1.2-rsvg-2.0 inkscape poppler-utils \
+            python3 python3-gi python3-gi-cairo python3-cairo gir1.2-rsvg-2.0 inkscape poppler-utils python3-pil \
             latexmk texlive-latex-extra texlive-fonts-recommended texlive-fonts-extra texlive-lang-greek \
             texlive-bibtex-extra biber
       - name: Test both artwork converters
         run: |
           /usr/bin/python3 -m unittest discover -s tests -v
           /usr/bin/python3 scripts/prepare-assets.py --check
+      - name: Check the unified offline slide guide
+        run: |
+          python3 scripts/slide_guide.py check
+          python3 scripts/guide_previews.py check
+      - uses: actions/setup-node@v6
+        with:
+          node-version: '24'
+      - name: Exercise the offline slide guide in Chromium
+        run: node scripts/check-slide-guide-browser.mjs
       - name: Build the default Studio entry point and both editable starters
         run: |
           python3 scripts/build.py --backend native
@@ -64,6 +74,12 @@ jobs:
           python3 scripts/review.py models --backend native
       - name: Verify isolated private deck authoring and expected diagnostics
         run: python3 scripts/check-deck-workflow.py --backend native
+      - name: Compile official lesson and block sources independently
+        run: |
+          python3 scripts/library.py check
+          python3 scripts/check_lesson_runtime.py --backend native
+          python3 scripts/check_lesson_workflow.py --backend native
+          python3 scripts/library.py build --all --backend native --jobs 2
       - name: Build and verify release artifacts
         run: python3 scripts/release.py --review --backend native
       - name: Verify typed Studio content and expected errors

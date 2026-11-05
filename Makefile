@@ -97,3 +97,25 @@ deck-check:
 	$(PYTHON) scripts/deck.py check $(DECK) --backend $(BACKEND) --preview
 deck-layouts:
 	$(PYTHON) scripts/deck.py layouts
+
+# Official editable lesson collection (clone workflow only).
+LESSON ?= bitcoin-introduction-short
+BLOCK ?= hashing
+.PHONY: library library-check library-build deck-from-library deck-add-block
+library:
+	$(PYTHON) scripts/deck.py library
+library-check:
+	$(PYTHON) scripts/library.py check
+library-build:
+	$(PYTHON) scripts/library.py build --deck $(LESSON) --backend $(BACKEND) --preview
+deck-from-library:
+	$(PYTHON) scripts/deck.py new $(DECK) --from $(LESSON)
+deck-add-block:
+	$(PYTHON) scripts/deck.py add $(DECK) --block $(BLOCK)
+
+.PHONY: slide-guide slide-guide-check
+slide-guide:
+	$(PYTHON) scripts/review.py guide --open
+slide-guide-check:
+	$(PYTHON) scripts/slide_guide.py check
+	$(PYTHON) scripts/guide_previews.py check
