@@ -1,6 +1,6 @@
 {
   "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/%RELATIVE_DIR%",
-  "latex-workshop.latex.recipe.default": "first",
+  "latex-workshop.latex.recipe.default": "lastUsed",
   "latex-workshop.latex.tools": [
     {
       "name": "bitbeamer-native",
@@ -9,6 +9,7 @@
         "%WORKSPACE_FOLDER%/scripts/build.py",
         "%DOC_EXT%",
         "%OUTDIR%",
+        "--open",
         "--backend",
         "native"
       ]
@@ -21,6 +22,7 @@
         "%WORKSPACE_FOLDER%/scripts/build.py",
         "%DOC_EXT%",
         "%OUTDIR%",
+        "--open",
         "--backend",
         "native"
       ]
@@ -32,6 +34,7 @@
         "%WORKSPACE_FOLDER%/scripts/build.py",
         "%DOC_EXT%",
         "%OUTDIR%",
+        "--open",
         "--backend",
         "docker"
       ]
@@ -44,6 +47,7 @@
         "%WORKSPACE_FOLDER%/scripts/build.py",
         "%DOC_EXT%",
         "%OUTDIR%",
+        "--open",
         "--backend",
         "docker"
       ]
@@ -57,7 +61,7 @@
       ]
     },
     {
-      "name": "BitBeamer: Docker \u2014 Windows",
+      "name": "BitBeamer: Docker — Windows",
       "tools": [
         "bitbeamer-docker-windows"
       ]
@@ -69,7 +73,7 @@
       ]
     },
     {
-      "name": "BitBeamer: native TeX Live \u2014 Windows",
+      "name": "BitBeamer: native TeX Live — Windows",
       "tools": [
         "bitbeamer-native-windows"
       ]
@@ -83,5 +87,13 @@
   },
   "files.exclude": {
     "**/__pycache__": true
-  }
+  },
+  "latex-workshop.latex.autoBuild.run": "onSave",
+  "latex-workshop.latex.autoBuild.interval": 0,
+  "latex-workshop.latex.build.enableMagicComments": true,
+  "latex-workshop.view.pdf.viewer": "tab",
+  "workbench.editorAssociations": {
+    "*.pdf": "latex-workshop-pdf-hook"
+  },
+  "workbench.editor.revealIfOpen": true
 }

@@ -2,17 +2,19 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "BitBeamer Studio: build presentation (default)",
+      "label": "BitBeamer Studio: build presentation",
       "type": "process",
       "command": "python3",
       "args": [
-        "${workspaceFolder}/scripts/build.py"
+        "${workspaceFolder}/scripts/build.py",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
-          "${workspaceFolder}/scripts/build.py"
+          "${workspaceFolder}/scripts/build.py",
+          "--open"
         ]
       },
       "options": {
@@ -21,7 +23,7 @@
       "problemMatcher": [],
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": false
       }
     },
     {
@@ -30,14 +32,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "main-academic.tex"
+        "main-academic.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "main-academic.tex"
+          "main-academic.tex",
+          "--open"
         ]
       },
       "options": {
@@ -51,14 +55,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "examples/assets-example.tex"
+        "examples/assets-example.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "examples/assets-example.tex"
+          "examples/assets-example.tex",
+          "--open"
         ]
       },
       "options": {
@@ -72,14 +78,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "examples/asset-catalogue.tex"
+        "examples/asset-catalogue.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "examples/asset-catalogue.tex"
+          "examples/asset-catalogue.tex",
+          "--open"
         ]
       },
       "options": {
@@ -94,7 +102,8 @@
       "args": [
         "${workspaceFolder}/scripts/build.py",
         "--backend",
-        "native"
+        "native",
+        "--open"
       ],
       "windows": {
         "command": "py",
@@ -102,7 +111,8 @@
           "-3",
           "${workspaceFolder}/scripts/build.py",
           "--backend",
-          "native"
+          "native",
+          "--open"
         ]
       },
       "options": {
@@ -137,14 +147,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "examples/icon-cheatsheet.tex"
+        "examples/icon-cheatsheet.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "examples/icon-cheatsheet.tex"
+          "examples/icon-cheatsheet.tex",
+          "--open"
         ]
       },
       "options": {
@@ -177,14 +189,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "examples/cover-layouts.tex"
+        "examples/cover-layouts.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "examples/cover-layouts.tex"
+          "examples/cover-layouts.tex",
+          "--open"
         ]
       },
       "options": {
@@ -223,14 +237,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "main-studio.tex"
+        "main-studio.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "main-studio.tex"
+          "main-studio.tex",
+          "--open"
         ]
       },
       "options": {
@@ -355,14 +371,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "start-academic.tex"
+        "start-academic.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "start-academic.tex"
+          "start-academic.tex",
+          "--open"
         ]
       },
       "options": {
@@ -376,14 +394,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "start-studio.tex"
+        "start-studio.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "start-studio.tex"
+          "start-studio.tex",
+          "--open"
         ]
       },
       "options": {
@@ -392,25 +412,31 @@
       "problemMatcher": []
     },
     {
-      "label": "BitBeamer: build active document",
+      "label": "BitBeamer Studio: build and view active document",
       "type": "process",
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "${file}"
+        "${file}",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "${file}"
+          "${file}",
+          "--open"
         ]
       },
       "options": {
         "cwd": "${workspaceFolder}"
       },
-      "problemMatcher": []
+      "problemMatcher": [],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
     },
     {
       "label": "BitBeamer Studio: build customization examples",
@@ -418,14 +444,16 @@
       "command": "python3",
       "args": [
         "${workspaceFolder}/scripts/build.py",
-        "examples/studio-customization.tex"
+        "examples/studio-customization.tex",
+        "--open"
       ],
       "windows": {
         "command": "py",
         "args": [
           "-3",
           "${workspaceFolder}/scripts/build.py",
-          "examples/studio-customization.tex"
+          "examples/studio-customization.tex",
+          "--open"
         ]
       },
       "options": {
@@ -490,7 +518,8 @@
         "build",
         "${input:deckName}",
         "--backend",
-        "${input:deckBackend}"
+        "${input:deckBackend}",
+        "--open"
       ],
       "windows": {
         "command": "py",
@@ -500,7 +529,8 @@
           "build",
           "${input:deckName}",
           "--backend",
-          "${input:deckBackend}"
+          "${input:deckBackend}",
+          "--open"
         ]
       },
       "options": {
@@ -655,6 +685,31 @@
           "--open"
         ]
       }
+    },
+    {
+      "label": "BitBeamer Studio: build and open all comparisons",
+      "type": "process",
+      "command": "python3",
+      "args": [
+        "${workspaceFolder}/scripts/review_batch.py",
+        "all",
+        "--compare",
+        "--open"
+      ],
+      "windows": {
+        "command": "py",
+        "args": [
+          "-3",
+          "${workspaceFolder}/scripts/review_batch.py",
+          "all",
+          "--compare",
+          "--open"
+        ]
+      },
+      "options": {
+        "cwd": "${workspaceFolder}"
+      },
+      "problemMatcher": []
     }
   ],
   "inputs": [

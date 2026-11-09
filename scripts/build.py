@@ -7,6 +7,7 @@ from pathlib import Path
 import shutil
 import subprocess
 import sys
+import tempfile
 import webbrowser
 
 from asset_library import check_prepared
@@ -64,6 +65,85 @@ def docker_command(docker, root, output, document, image, force=False):
     return command + ['./' + document.as_posix()]
 
 
+
+
+def resolve_tex_root(root, document):
+    """Follow editor root comments when a build task targets an included TeX file."""
+    visited = set()
+    while True:
+        document = document.resolve()
+        if not document.is_relative_to(root):
+            raise RuntimeError('The document must be inside the project.')
+        if document in visited:
+            raise RuntimeError('Cyclic TeX root comments: ' + str(document))
+        visited.add(document)
+        if not document.is_file() or document.suffix.lower() != '.tex':
+            raise RuntimeError('TeX document not found: ' + str(document))
+        header = '\n'.join(document.read_text(encoding='utf-8').splitlines()[:30])
+        match = re.search(r'^\s*%\s*!TEX\s+root\s*=\s*(.+?)\s*$', header, re.I | re.M)
+        if not match:
+            return document
+        name = match[1]
+        if len(name) > 1 and name[0] == name[-1] and name[0] in ('"', "'"):
+            name = name[1:-1]
+        target = (document.parent / name).resolve()
+        if target == document:
+            return document
+        document = target
+
+
+def open_pdf(pdf):
+    """Reuse the VS Code preview in editor sessions; otherwise use the system viewer."""
+    in_editor = (os.environ.get('TERM_PROGRAM') == 'vscode'
+                 or os.environ.get('VSCODE_PID') or os.environ.get('VSCODE_IPC_HOOK_CLI'))
+    if in_editor:
+        code = next((value for name in ('code', 'code-insiders', 'codium')
+                     if (value := shutil.which(name))), None)
+        if code:
+            command = [code, '--reuse-window', str(pdf.resolve())]
+            kwargs = {}
+            if sys.platform == 'win32' and Path(code).suffix.lower() in ('.cmd', '.bat'):
+                # Invoke the shipped CLI through Electron directly, without a
+                # batch shell interpreting special characters in project paths.
+                install = Path(code).resolve().parent.parent
+                cli = install / 'resources/app/out/cli.js'
+                executable = next((install / name for name in ('Code.exe', 'Code - Insiders.exe', 'VSCodium.exe')
+                                   if (install / name).is_file()), None)
+                if executable and cli.is_file():
+                    command = [str(executable), str(cli), '--reuse-window', str(pdf.resolve())]
+                    kwargs['env'] = dict(os.environ, ELECTRON_RUN_AS_NODE='1')
+                else:
+                    command = None
+            if command:
+                subprocess.run(command, check=True, **kwargs)
+                return
+    if sys.platform == 'win32':
+        os.startfile(str(pdf))
+    elif sys.platform == 'darwin':
+        subprocess.run(['open', str(pdf)], check=True)
+    elif shutil.which('xdg-open'):
+        subprocess.run(['xdg-open', str(pdf)], check=True)
+    else:
+        webbrowser.open(pdf.as_uri())
+
+
+def compile_preserving_pdf(command, root, pdf):
+    """Keep the last successful PDF when a new compilation fails or is cancelled."""
+    with tempfile.TemporaryDirectory(prefix='.bitbeamer-pdf-', dir=pdf.parent) as temporary:
+        previous = Path(temporary) / pdf.name
+        if pdf.is_file():
+            shutil.copy2(pdf, previous)
+        try:
+            subprocess.run(command, cwd=root, check=True)
+        except (OSError, subprocess.CalledProcessError, KeyboardInterrupt):
+            if previous.is_file():
+                os.replace(previous, pdf)
+                print(f'Kept last successful PDF: {pdf}', file=sys.stderr, flush=True)
+            else:
+                pdf.unlink(missing_ok=True)
+            raise
+
+
 def document_sources_text(root, document):
     """Inspect project-local TeX inputs, including a thin default entry point."""
     pending = [document]
@@ -98,13 +178,13 @@ def main(argv=None, root=None):
     parser.add_argument('--image', default=os.environ.get('LATEX_IMAGE', 'bitbeamer-latex:local'))
     parser.add_argument('--setup', action='store_true', help='Prepare the selected backend without compiling (builds a missing Docker image)')
     parser.add_argument('--force', '-g', action='store_true', help='Force latexmk to rebuild')
-    parser.add_argument('--open', action='store_true', help='Open the compiled PDF in the default viewer')
+    parser.add_argument('--open', action='store_true', help='Open or reveal the PDF in VS Code when running there, otherwise the system viewer')
     args = parser.parse_args(argv)
     try:
         document = Path(args.document)
         if not document.is_absolute():
             document = root / document
-        document = document.resolve()
+        document = resolve_tex_root(root, document)
         if not document.is_file() or document.suffix.lower() != '.tex':
             raise RuntimeError(f'TeX document not found: {document}')
         try:
@@ -143,18 +223,11 @@ def main(argv=None, root=None):
             command.append('./' + relative.as_posix())
         else:
             command = docker_command(tool, root, output, relative, args.image, args.force)
-        subprocess.run(command, cwd=root, check=True)
         pdf = output / (document.stem + '.pdf')
+        compile_preserving_pdf(command, root, pdf)
         print(f'PDF: {pdf}', flush=True)
         if args.open:
-            if sys.platform == 'win32':
-                os.startfile(str(pdf))
-            elif sys.platform == 'darwin':
-                subprocess.run(['open', str(pdf)], check=True)
-            elif shutil.which('xdg-open'):
-                subprocess.run(['xdg-open', str(pdf)], check=True)
-            else:
-                webbrowser.open(pdf.as_uri())
+            open_pdf(pdf)
         return 0
     except (RuntimeError, ValueError, OSError, subprocess.CalledProcessError) as error:
         print(f'Build failed: {error}', file=sys.stderr)

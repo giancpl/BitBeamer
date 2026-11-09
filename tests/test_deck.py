@@ -83,7 +83,19 @@ class DeckTests(unittest.TestCase):
         pattern = next(v for v in cover['variants'] if v['id'] == 'pattern')['choices'][0]
         self.assertEqual(pattern['palettes'], ['blue'])
         self.assertEqual({f['semantic_name'] for f in pattern['fields']}, {'title', 'author', 'institute'})
-        self.assertIn('qrcode', deck.layout_catalogue(ROOT, model_id='closing')[0]['variants'][0]['choices'][0]['options'])
+        closing=deck.layout_catalogue(ROOT, model_id='closing')[0]['variants'][0]['choices'][0]
+        self.assertTrue(closing['options']['qrcode']['default'])
+        self.assertNotIn('socials',closing['options'])
+        self.assertIn('closing/layout.tex',__import__('package').STUDIO_ASSETS)
+        entry=next(e for e in __import__('studio_templates').inspect_templates(ROOT) if e['id']=='closing')
+        self.assertIn('images/studio/closing/layout.tex',__import__('studio_models').dependencies(ROOT,[entry]))
+        metadata=json.loads((ROOT/'templates/index.json').read_text())
+        fields={f['name']:f for e in metadata['templates'] if e['id']=='closing' for f in e['fields']}
+        self.assertEqual(fields['title']['default'],'@BitPolito')
+        self.assertEqual(fields['graphic-4']['slot']['number'],4)
+        self.assertIn('youtube.pdf',fields['graphic-4']['default'])
+        self.assertEqual(fields['qr-graphic']['slot']['number'],5)
+        self.assertEqual(fields['github-graphic']['slot']['number'],6)
         with self.assertRaisesRegex(ValueError, 'Unknown model'):
             deck.layout_catalogue(ROOT, model_id='not-a-model')
 

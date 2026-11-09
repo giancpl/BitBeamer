@@ -113,7 +113,8 @@ required. Windows filenames and project paths may contain spaces.
 
 ## IDE workflow
 
-Open the repository in VS Code. **Ctrl+Shift+B** retains the Studio showcase build.
+Open the repository in VS Code. **Ctrl+Shift+B** builds and opens the active TeX
+document, following its root comment when it is an included file.
 For a personal talk, use **BitBeamer: create a personal deck**, then **build a personal
 deck** or **check a personal deck and render pages**. Tasks ask for the deck name
 and backend, and use `scripts/deck.py`. See [authoring](AUTHORING.md).
@@ -121,8 +122,46 @@ and backend, and use `scripts/deck.py`. See [authoring](AUTHORING.md).
 personal project outputs. Starter, catalogue and library review tasks remain separate.
 Windows tasks use `py -3`; Linux and macOS use `python3`.
 
-LaTeX Workshop selects **BitBeamer: Docker** by default. On Windows choose
-**BitBeamer: Docker — Windows**. Native recipes pass `--backend native`.
+Install the recommended **LaTeX Workshop** extension (`James-Yu.latex-workshop`).
+The workspace compiles the active LaTeX project automatically when a `.tex` file
+is saved, using the same launcher as the terminal. After a successful build,
+the PDF opens automatically in the existing VS Code window. If already open,
+that tab is reused and refreshed; a manual first opening is not required.
+Build tasks and the LaTeX Workshop Run button have the same behaviour. Workspace
+PDF files use the internal live viewer. The PDF updates after compilation,
+not immediately on each keystroke.
+
+For the graphical review batches, run **BitBeamer Studio: build and open all
+comparisons**. It rebuilds the registered comparisons and opens the combined
+`build/review/batches/comparisons.pdf` in the same editor window. From a terminal,
+include the opening option explicitly:
+
+```sh
+python3 scripts/review_batch.py all --compare --open
+```
+
+Without `--open`, terminal review commands generate PDFs without opening a viewer.
+Single-slide reviews use the same editor-aware viewer as presentation builds.
+
+The first build selects **BitBeamer: Docker**. **LaTeX Workshop: Build with recipe**
+can select another backend; automatic builds reuse the last selected recipe.
+On Windows choose **BitBeamer: Docker — Windows**. Native recipes pass
+`--backend native`. Every save is eligible for a build; the extension serializes
+builds and keeps the latest pending request when saves arrive during compilation.
+
+For an included `.tex` file, add a root comment relative to that file so a save
+builds its containing presentation rather than a fragment. For example, at the
+top of `presentations/my-talk/layouts/example.tex`:
+
+```latex
+% !TEX root = ../main.tex
+```
+
+Keep **BitBeamer: Docker** or a native BitBeamer recipe selected; no separate
+`latexmk` installation is needed for the Docker recipe. If compilation fails,
+the launcher restores the last successful PDF: inspect **Output → LaTeX Workshop**.
+No partial PDF is retained when the very first build fails.
+Numbered PNG previews still require `deck.py check <name> --preview`.
 The extension uses the full root `.tex` filename and a relative-directory output
 path: personal decks open `build/presentations/<name>/main.pdf`; root documents
 remain under `build/`, while focused examples use `build/examples/` in the IDE.

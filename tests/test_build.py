@@ -48,6 +48,35 @@ class LauncherTests(unittest.TestCase):
         self.assertEqual(run.call_args.kwargs['cwd'], self.root)
         self.assertNotIn('shell', run.call_args.kwargs)
 
+    def test_failed_rebuild_restores_previous_pdf_after_compiler_truncates_it(self):
+        output = self.root / 'build'
+        output.mkdir()
+        pdf = output / 'main.pdf'
+        previous = b'%PDF-1.7 last successful presentation'
+        pdf.write_bytes(previous)
+
+        def fail(command, **kwargs):
+            pdf.write_bytes(b'%PDF-1.7 incomplete replacement')
+            raise subprocess.CalledProcessError(1, command)
+
+        with mock.patch.object(build, 'native_tools', return_value='latexmk'), \
+                mock.patch.object(build.subprocess, 'run', side_effect=fail):
+            self.assertEqual(build.main(['--backend', 'native'], root=self.root), 1)
+        self.assertEqual(pdf.read_bytes(), previous)
+        self.assertFalse(list(output.glob('.bitbeamer-pdf-*')))
+
+    def test_failed_first_build_does_not_leave_a_partial_pdf(self):
+        pdf = self.root / 'build/main.pdf'
+
+        def fail(command, **kwargs):
+            pdf.write_bytes(b'%PDF-1.7 incomplete first build')
+            raise subprocess.CalledProcessError(1, command)
+
+        with mock.patch.object(build, 'native_tools', return_value='latexmk'), \
+                mock.patch.object(build.subprocess, 'run', side_effect=fail):
+            self.assertEqual(build.main(['--backend', 'native'], root=self.root), 1)
+        self.assertFalse(pdf.exists())
+
     def test_nested_personal_documents_get_unique_default_outputs(self):
         source = self.root / 'presentations/my-talk/main.tex'
         source.parent.mkdir(parents=True)
@@ -55,6 +84,67 @@ class LauncherTests(unittest.TestCase):
         with mock.patch.object(build.shutil, 'which', side_effect=lambda name: name), mock.patch.object(build.subprocess, 'run') as run:
             self.assertEqual(build.main([str(source), '--backend', 'native'], root=self.root), 0)
         self.assertIn('-outdir=' + (self.root / 'build/presentations/my-talk').as_posix(), run.call_args.args[0])
+
+    def test_included_file_build_targets_its_root_and_isolated_pdf(self):
+        source = self.root / 'presentations/my-talk/main.tex'
+        fragment = source.parent / 'layouts/box with spaces.tex'
+        fragment.parent.mkdir(parents=True)
+        source.write_text('test document', encoding='utf-8')
+        fragment.write_text('% !TEX root = ../main.tex\nFragment', encoding='utf-8')
+        with mock.patch.object(build, 'native_tools', return_value='latexmk'), \
+                mock.patch.object(build.subprocess, 'run') as run:
+            self.assertEqual(build.main([str(fragment), '--backend', 'native'], root=self.root), 0)
+        command = run.call_args.args[0]
+        self.assertEqual(command[-1], './presentations/my-talk/main.tex')
+        self.assertIn('-outdir=' + (self.root / 'build/presentations/my-talk').as_posix(), command)
+
+    def test_root_comment_cycle_stops_before_running_compiler(self):
+        (self.root / 'main.tex').write_text('% !TEX root = other.tex', encoding='utf-8')
+        (self.root / 'other.tex').write_text('% !TEX root = main.tex', encoding='utf-8')
+        with mock.patch.object(build.subprocess, 'run') as run:
+            self.assertEqual(build.main(['--backend', 'native'], root=self.root), 1)
+        run.assert_not_called()
+        self.assertIn('Cyclic TeX root', self.stderr.getvalue())
+
+    def test_root_comment_cannot_escape_the_checkout(self):
+        (self.root / 'main.tex').write_text('% !TEX root = ../outside.tex', encoding='utf-8')
+        with mock.patch.object(build.subprocess, 'run') as run:
+            self.assertEqual(build.main(['--backend', 'native'], root=self.root), 1)
+        run.assert_not_called()
+        self.assertIn('inside the project', self.stderr.getvalue())
+
+    def test_editor_pdf_opening_reuses_canonical_path_without_waiting(self):
+        pdf = self.root / 'build/folder with spaces/main.pdf'
+        with mock.patch.dict(build.os.environ, {'VSCODE_PID': '123'}, clear=True), \
+                mock.patch.object(build.sys, 'platform', 'linux'), \
+                mock.patch.object(build.shutil, 'which', return_value='/usr/bin/code'), \
+                mock.patch.object(build.subprocess, 'run') as run:
+            build.open_pdf(pdf)
+            build.open_pdf(pdf)
+        self.assertEqual(run.call_count, 2)
+        self.assertEqual(run.call_args_list[0], run.call_args_list[1])
+        self.assertEqual(run.call_args.args[0], ['/usr/bin/code', '--reuse-window', str(pdf.resolve())])
+        self.assertNotIn('shell', run.call_args.kwargs)
+        self.assertNotIn('--wait', run.call_args.args[0])
+
+    def test_windows_editor_pdf_opening_avoids_batch_shell_for_special_paths(self):
+        install = self.root / 'VS Code'
+        (install / 'bin').mkdir(parents=True)
+        (install / 'resources/app/out').mkdir(parents=True)
+        (install / 'Code.exe').write_bytes(b'cli executable')
+        (install / 'resources/app/out/cli.js').write_text('// CLI', encoding='utf-8')
+        cmd = install / 'bin/code.cmd'
+        cmd.write_text('@echo off', encoding='utf-8')
+        pdf = self.root / 'talk&notes/main.pdf'
+        with mock.patch.dict(build.os.environ, {'VSCODE_PID': '123'}, clear=True), \
+                mock.patch.object(build.sys, 'platform', 'win32'), \
+                mock.patch.object(build.shutil, 'which', return_value=str(cmd)), \
+                mock.patch.object(build.subprocess, 'run') as run:
+            build.open_pdf(pdf)
+        self.assertEqual(run.call_args.args[0], [str(install / 'Code.exe'),
+                         str(install / 'resources/app/out/cli.js'), '--reuse-window', str(pdf.resolve())])
+        self.assertEqual(run.call_args.kwargs['env']['ELECTRON_RUN_AS_NODE'], '1')
+        self.assertNotIn('shell', run.call_args.kwargs)
 
     def test_native_setup_does_not_compile_or_create_output(self):
         with mock.patch.object(build.shutil, 'which', side_effect=lambda name: name), mock.patch.object(build.subprocess, 'run') as run:
@@ -132,6 +222,8 @@ class LauncherTests(unittest.TestCase):
         data = json.loads((ROOT / '.vscode/tasks.json').read_text(encoding='utf-8'))
         default = next(task for task in data['tasks'] if task.get('group', {}).get('isDefault'))
         self.assertIn('Studio',default['label'])
+        self.assertIn('${file}', default['args'])
+        self.assertIn('--open', default['args'])
         self.assertIn(r'\input{main-studio.tex}',(ROOT/'main.tex').read_text(encoding="utf-8"))
         self.assertIn('${workspaceFolder}/scripts/build.py', default['args'])
         self.assertNotIn('--backend', default['args'])
@@ -142,6 +234,7 @@ class LauncherTests(unittest.TestCase):
         self.assertIn('%RELATIVE_DIR%', recipes['latex-workshop.latex.outDir'])
         for tool in recipes['latex-workshop.latex.tools']:
             self.assertIn('%DOC_EXT%', tool['args'])
+            self.assertIn('--open', tool['args'])
             if tool['name'].startswith('bitbeamer-native'):
                 self.assertEqual(tool['args'][-2:], ['--backend', 'native'])
 
