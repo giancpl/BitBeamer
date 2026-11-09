@@ -191,6 +191,33 @@ These names replace `label-two` through `label-six`; the obsolete keys are rejec
 python3 scripts/build.py examples/studio-two-columns.tex build/review/two-columns --open
 ```
 
+## Current list review
+
+The next pending composition is `list-rail-light`, model `list-rail`, variant
+`three-items`, canonical category Lists. Batch `lists-01` compares it with the
+original. The related `four-items`, `grouped` and `stepped` variants are not added
+to this batch automatically.
+
+[Short and longer examples](../examples/studio-list-rail.tex) include automatic
+and explicit two-line title wrapping. Item text uses the original fixed one-line
+slots; a second line is rejected rather than squeezed into the rail spacing.
+The public command matches the reviewed example:
+
+```latex
+\studiotemplate[
+  variant=three-items,
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies}
+]{list-rail}
+```
+
+```sh
+python3 scripts/review_batch.py all --compare --open
+python3 scripts/build.py examples/studio-list-rail.tex build/review/list-rail --open
+```
+
 ## Correct the canonical source
 
 Follow the [internal correction workflow](../.github/CONTRIBUTING.md#default-template-correction-workflow).

@@ -789,3 +789,22 @@ tests initially found the previous two-column preview signature; after refreshin
 that preview, both passed on rerun, together with all five review-batch tests.
 `review.py check`, `library.py check`, `check-docs.py` and `git diff --check` pass.
 The remote was fetched before committing; local main had no incoming commits.
+
+
+## Next review: light three-item rail list — 2026-11-09
+
+After pushing the three maintenance commits, continued with `list-rail-light`
+(model `list-rail`, variant `three-items`, category Lists). Registered `lists-01`
+with its exact reviewed command. Other list variants remain outside this batch.
+No approval was inferred for the new list or the remaining Statements layouts.
+
+The three-page `examples/studio-list-rail.tex` compiles: short content, longer
+one-line items with a naturally wrapped title, and the same two-line title with
+an explicit break. Visually checked all three pages for alignment and clipping.
+Geometry and native font sizes remain unchanged. A separate negative compilation
+with two lines in item-one reports `Text overflow in list-rail-light/text-2`.
+The title supports two lines; the original item slots support one line each.
+
+The combined comparison is regenerated with only pending layouts, replacing the
+approved two-column review with the new list. Commands remain printed below each
+comparison. Longer text previews are opened separately using the normal launcher.

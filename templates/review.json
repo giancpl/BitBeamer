@@ -3811,6 +3811,23 @@
         "Inspect short and longer automatic/manual wrapping at the original fixed font sizes.",
         "Verify overflow reporting without shrinking text; graphical approval remains explicit."
       ]
+    },
+    {
+      "id": "lists-01",
+      "title": "Three-item list beside a rail — graphical review",
+      "family": "Lists",
+      "compositions": [
+        "list-rail-light"
+      ],
+      "commands": {
+        "list-rail-light": "\\studiotemplate[variant=three-items,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies}]{list-rail}"
+      },
+      "focus": [
+        "Compare the light three-item list with its original reference.",
+        "Check title size, item typography, dot alignment and rail segments.",
+        "Inspect short and longer one-line items, with automatic and explicit two-line title wrapping at fixed sizes.",
+        "List items retain one-line capacities; unsupported wrapping must report overflow. Approval remains explicit."
+      ]
     }
   ]
 }
