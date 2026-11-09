@@ -23,11 +23,36 @@ Original palettes: blue.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `title` | <code>Slide title</code> | 70.3% wide × 15.8% high |
+| `title` | <code>Slide title</code> | 70.3% wide × 29.4% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
+
+## Suggested sequence: Section introduction and key idea
+
+Use the blue divider before the white incoming-arrow statement to continue the line across the two slides. Each slide can also be used independently.
+
+1. [Section divider with line](section-divider.md).
+2. [Statement with incoming arrow](statement.md).
+
+Copy both calls to insert the pair, or use either call on its own.
+
+```latex
+\studiotemplate[
+  variant={default},
+  palette={blue},
+  title={Slide title}
+]{section-divider}
+
+\studiotemplate[
+  variant={arrow},
+  palette={light},
+  title={Slide title}
+]{statement}
+```
+
+The divider title and arrow statement each support two centred lines. Use `\\` for an explicit break; shorten copy that would need a third line. The divider grows upward to preserve its gap above the rail.
 
 ## Complete one-slide example
 

@@ -22,3 +22,12 @@ without writes with `review.py check`.
 
 Start with [grouped models](MODELS.md) to use a slide. See [the review workflow](../docs/STUDIO-COLLECTION.md)
 to refine one, or [the repository map](../docs/STRUCTURE.md) for the wider structure.
+
+## Small graphical review batches
+
+`review.json` also records ordered `review_batches` of one to five existing
+composition IDs, including registered fixed slides. Start with `covers-01`;
+team, contents and closing follow separately. Use the batch selector in the
+[unified slide guide](../docs/slides/index.html) and the
+[review workflow](../docs/STUDIO-COLLECTION.md#review-one-small-family-at-a-time).
+Batch membership never changes review status or duplicates a layout source.

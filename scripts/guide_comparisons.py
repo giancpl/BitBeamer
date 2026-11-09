@@ -29,6 +29,12 @@ def sync(root=ROOT):
             overlay=target/'overlay.webp';difference=target/'difference.webp'
             variants.append({'label':ref,'original':url(original),'overlay':url(overlay) if number==0 and overlay.exists() else None,'difference':url(difference) if number==0 and difference.exists() else None,
               'note':'Original SVG composition. Inter and English text are deliberate adaptations. Component geometry, type and effects need separate review.'})
+        external=entry.get('external_reference',{})
+        external_preview=folder/(entry['id']+'-external-original.png')
+        if external.get('name') and external_preview.is_file():
+            variants.insert(0,{'label':external['name'],'original':url(external_preview),
+                'overlay':None,'difference':None,
+                'note':'Supplied PDF reference for the current composition. Inter and editable defaults are intentional adaptations.'})
         if variants:records[entry['id']]={'variants':variants}
     if lessons:
         mapping=lesson_assets(lessons)
@@ -40,7 +46,11 @@ def sync(root=ROOT):
                 overlay=base/(prefix+'-overlay.png');difference=base/(prefix+'-graphics-difference.png')
                 value={'label':source['id']+' / '+str(page['page']),'original':url(original),'overlay':url(overlay) if overlay.exists() else None,'difference':url(difference) if difference.exists() else None,
                  'note':'Pinned official PDF page. English translation and Inter are intentional. Metrics do not certify every anchor or approve a slide.'}
-                for key in set([sid,mapping[sid]]):records.setdefault(key,{'variants':[]})['variants'].append(value)
+                keys={sid,mapping[sid]}
+                layout=lessons['layouts'].get(lessons['slides'][sid]['layout'],{})
+                if layout.get('registration') and layout.get('example_slide')==sid:
+                    keys.add(lessons['slides'][sid]['layout'])
+                for key in keys:records.setdefault(key,{'variants':[]})['variants'].append(value)
     out=root/'build/checks/slide-guide';out.mkdir(parents=True,exist_ok=True)
     (out/'comparisons.js').write_text('window.BITBEAMER_COMPARISONS='+json.dumps({'records':records},separators=(',',':'))+';\n',encoding='utf-8')
     # Existing bookmarks keep working; there is only one maintained visual interface.
@@ -79,8 +89,13 @@ def prepare(root=ROOT,names=None):
     ctx=context(root);records=[]
     for name in names:
         entry=by_id[name]
-        if not entry['references']:continue
-        original=root/'design-references/figma/collection-review'/(entry['references'][0]+'.png')
+        external=root/'design-references/figma/collection-review'/(name+'-external-original.png')
+        if entry.get('external_reference') and external.exists():
+            original=external;reference_id=entry['external_reference']['name']
+        elif entry['references']:
+            reference_id=entry['references'][0]
+            original=root/'design-references/figma/collection-review'/(reference_id+'.png')
+        else:continue
         if not original.exists():continue
         output=root/'build/checks/slide-guide/comparisons'/name;output.mkdir(parents=True,exist_ok=True)
         pdf,page=cached.get(name,(None,None))
@@ -101,7 +116,7 @@ def prepare(root=ROOT,names=None):
                 x,y,width,height=field['box'];draw.rectangle((ox+x*scale-12,oy+y*scale-12,ox+(x+width)*scale+12,oy+(y+height)*scale+12),fill=0)
         difference=Image.composite(ImageChops.difference(reference,replica),Image.new('RGB',replica.size),mask)
         difference.save(output/'difference.webp','WEBP',lossless=True,method=4)
-        report={'id':name,'reference':entry['references'][0],'signature':signature(root,name,ctx),'height_px':2000,'graphic_mean_absolute_residual':sum(ImageStat.Stat(difference).mean)/3,
+        report={'id':name,'reference':reference_id,'signature':signature(root,name,ctx),'height_px':2000,'graphic_mean_absolute_residual':sum(ImageStat.Stat(difference).mean)/3,
                 'geometry':'Source coordinates retained; pixel residual is not a 5 px anchor certificate.','approval':'in review','type':'Inter and English text intentionally differ'}
         (output/'measurements.json').write_text(json.dumps(report,indent=2)+'\n', encoding="utf-8");records.append(report)
         print('Compared:',name,flush=True)

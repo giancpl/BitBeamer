@@ -524,17 +524,17 @@
         "text_fields": [
           {
             "name": "statement",
-            "x": "1100",
-            "y": "894",
+            "x": "1085",
+            "y": "855",
             "width": "1386",
             "height": "290",
             "font_size": "120",
             "leading": "136"
           }
         ],
-        "native_geometry": "Exact coordinates, corner radii and stroke widths are recorded in the editable source."
+        "native_geometry": "Statement uses the 1386 x 290 capacity centered on the supplied background at (1778, 1000); its top is measured from the one- or two-line text height at fixed 120/136 typography."
       },
-      "intentional_differences": "Exact source radial-gradient transform. White editable text; Inter metrics intentionally differ."
+      "intentional_differences": "Single provisional supplied-PDF background at original proportions, with only the paper normalized to #F9F9F9. Independent editable Inter text. Graphical review deferred."
     },
     {
       "id": "metric-dashboard",

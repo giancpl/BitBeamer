@@ -12,7 +12,10 @@ panels at the top and bottom. Icon lists and schedules remain separate alternati
 Both use Inter and their original light palette. No opposite-colour version is generated.
 The original canvases are 1920 × 1080 and 3556 × 2000 respectively; each composition
 uses one uniform scale. The title text area extends into the empty left column to
-accommodate English headings while retaining its anchor and font size.
+accommodate English headings. Title and item sizes are calibrated for the shared
+Inter scale; item labels use one consistent size within each layout. Left anchors
+compensate glyph side bearings. Panel positions and proportions stay measured
+from the original. Inter glyph widths intentionally differ from SF Pro outlines.
 
 ## Use actual section names
 
@@ -63,7 +66,8 @@ Fields accept LaTeX. `item-five` is available only in `panels-five`; using it on
 four-item template is an error. Omitted fields retain descriptive defaults. Use
 `item-two={}` for empty text while keeping the panel. Font sizes and positions are
 fixed; overlong content reports overflow instead of shrinking. Keep each item to
-one short line. The legacy `\studiotemplate{contents}` and its numbered/old fields
+one short line. Item text is vertically centered using its actual typeset height,
+including descenders; empty fields keep their panel and fixed slot. The legacy `\studiotemplate{contents}` and its numbered/old fields
 remain available.
 
 ## Inspect and refine
@@ -83,5 +87,6 @@ outside any surrounding `frame` environment.
 
 Both layouts and their prepared graphics are included in the main Studio Overleaf
 review ZIP. Custom subset exports must include the variants they use. No converters
-or original Figma exports are needed for ordinary compilation. All templates remain
-in review; selection does not imply graphical approval.
+or original Figma exports are needed for ordinary compilation. Both current agenda
+compositions were explicitly approved by the user on 2026-11-09 after the size and
+vertical-centering corrections. Selection alone never implies graphical approval.

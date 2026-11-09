@@ -5,7 +5,7 @@ The full reference stays in ignored local review storage. `manifest.json` record
 its SHA-256, original canvas and crop rectangles. Existing shared artwork is unchanged.
 
 - `collage.pdf`: the original left illustration, including wordmark and poster lettering.
-- `panels.pdf`: the original right-hand outlined panels, masks and fades, with no statistics.
+- `panels.pdf`: the original full-canvas background with outlined panels, masks and fades, with no statistics. The continuous canvas avoids a separate painted strip beside the collage.
 
 PDF image streams are copied without recompression. These prepared PDF files are
 also the retained vector sources; no SVG conversion is required to use or edit

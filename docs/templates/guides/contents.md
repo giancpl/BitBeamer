@@ -4,7 +4,7 @@
 
 Show four agenda items in the measured panel composition.
 
-Model: `contents` · Family: Opening · Status: **in review**.
+Model: `contents` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/contents.tex)
 
@@ -121,7 +121,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>item-2-1</code> | List or contents entry (text) | upper right | 35.4% wide × 5.0% high | <code>First section</code> |
 | <code>item-2-2</code> | List or contents entry (text) | middle right | 35.5% wide × 5.0% high | <code>Second section</code> |
 | <code>item-2-3</code> | List or contents entry (text) | middle right | 35.4% wide × 5.0% high | <code>Third section</code> |
-| <code>item-2-4</code> | List or contents entry (text) | lower right | 35.5% wide × 5.7% high | <code>Fourth section</code> |
+| <code>item-2-4</code> | List or contents entry (text) | lower right | 35.5% wide × 5.0% high | <code>Fourth section</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

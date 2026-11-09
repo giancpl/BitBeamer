@@ -1,100 +1,74 @@
 # Studio closing and optional QR
 
-The standard ending uses a blue background, white `@BitPolito` handle, the four
-social icons and a top-centred copyright. The QR from the supplied `final-slide.pdf`
-is visible by default. It is the original QR artwork, not a catalogue example.
+The Studio closing has one composition: blue background, editable `@BitPolito`,
+five social marks (Telegram, Instagram, X, GitHub and YouTube), top-centred
+copyright and QR enabled by default. Its geometry and typography are calibrated
+to page 11 of the supplied BitPolito introduction. Inter remains selectable text;
+its glyph design intentionally differs from the original outlined font.
 
 ```latex
-\closingframe                 % Same as qrcode=true.
-\closingframe[qrcode=true]    % QR on the left; text and social icons on the right.
-\closingframe[qrcode=false]   % No QR; text and social icons centred on the slide.
-```
-
-Use this sequence in [the editable starter](../start-studio.tex): cover, team,
-contents, content frames and closing. Each command creates a complete frame:
-
-```latex
-\studiotitleframe
-\studioteamframe
-\studiotocframe
-% Your sections and content frames go here.
 \closingframe
+\closingframe[qrcode=false]
+\studiotemplate{closing}
+\studiotemplate[qrcode=false]{closing}
 ```
 
-The team command requires `bitpolitostudiotemplates`; `\closingframe` needs only
-the Studio theme. Academic retains its separate closing behaviour.
+There is no social-count selector or four-social layout. Disabling the QR centres
+the same handle/social group without changing its typography or icon sizes.
+Every call resets its defaults. Academic retains its separate closing behaviour.
 
-## Change the content
+## Editable content
 
 ```latex
 \closingframe[
-  qrcode=true,
   title={@YourHandle},
   subtitle={Questions?},
-  copyright={\textcopyright{} 2026 Your organization}
+  copyright={\textcopyright{} 2026 Your organization},
+  qr-image={images/my-qr.pdf}
 ]
 ```
 
-The defaults are `title={@BitPolito}`, `subtitle={}`, the current-year BitPolito
-copyright and `qrcode=true`. Empty text fields hide that element. Each call resets
-all defaults, so disabling the QR on one page does not disable it on the next.
-Only `true` and `false` are valid boolean values; other values produce an explicit
-error. Text boxes keep their fixed Inter sizes and report overflow.
+Empty text fields hide that element. The QR is fitted proportionally without
+recolouring; with `qrcode=false` its image is not loaded. Only `true` and `false`
+are valid QR values. Text boxes retain fixed Inter sizes and report overflow.
 
-Title, optional subtitle and copyright are selectable LaTeX text. Original social
-icons, outlined panels and the QR are prepared PDF parts. The source proportions,
-spacing and blue treatment come from the supplied 1920 × 1080 reference. The QR-off
-version centres the same content group without resizing it.
+The handle uses Inter Medium; the copyright uses Inter Regular. Their separately
+measured sizes and letter spacing are applied only inside the closing text boxes. This calibration does not change typography
+in other frames. Custom text keeps the same style; shorten or split overflowing
+copy instead of reducing the font.
 
-## Use another QR
+## Catalogue fields
 
 ```latex
-\closingframe[qr-image={images/my-qr.pdf}]
+\studiotemplate[title={@YourHandle},copyright={}]{closing}
+\studiotemplate[image-five={images/my-qr.pdf}]{closing}
 ```
 
-Use a square PDF or high-resolution PNG with a quiet border. The image is fitted
-proportionally in the original QR box and is not recoloured. It must have sufficient
-contrast against blue, or contain its own contrasting background. When `qrcode=false`,
-the QR image is not loaded or embedded. No QR generation or SVG conversion is needed.
+Existing numbered fields remain compatible: `graphic-one`, `graphic-two` and
+`graphic-three` replace Telegram, Instagram and X; `graphic-four` remains YouTube;
+`image-five` replaces the QR; `github-graphic` or `graphic-six` replaces GitHub.
+Graphic replacements include their panels. Empty graphics retain their space.
 
-## Use the catalogue model
+`\closingframe` requires only the Studio theme; the catalogue command also needs
+`bitpolitostudiotemplates`. The optional clone-only `bitpolito-contact` alias uses
+the same closing implementation and the introduction's prepared QR.
 
-The measured catalogue and `\closingframe` share one layout implementation:
+## Maintenance
 
-```latex
-\studiotemplate[qrcode=true,title={@YourHandle},copyright={}]{closing}
-\studiotemplate[qrcode=false,title={Thank you}]{closing}
-```
+The shared implementation is [layout.tex](../images/studio/closing/layout.tex).
+The [catalogue adapter](../templates/studio/closing.tex) supplies fields; the
+[Studio inner theme](../beamerinnerthemebitpolito-studio.sty) loads the component.
+Keep it in standalone and subset exports. No Python, SVG converter or original
+reference PDF is needed for ordinary compilation.
 
-The catalogue keeps its neutral `Thank you` title. Existing text/graphic fields and
-numbered slots remain compatible. `subtitle` is an additional text field; `qrcode`
-is a strict boolean option, not a text slot. `image-five` or `image/5` replaces the
-QR image; `graphic-one` through `graphic-four` replace the social icons together
-with their outlined panels. Empty graphic fields keep their allocated space.
-
-```latex
-\studiotemplate[qrcode=true,image-five={images/my-qr.pdf}]{closing}
-```
-
-For structural changes, edit [the Studio inner theme](../beamerinnerthemebitpolito-studio.sty).
-[The catalogue adapter](../templates/studio/closing.tex) supplies editable fields;
-it does not duplicate the drawing code.
-
-## Preview and maintenance
-
-[studio-closing.tex](../examples/studio-closing.tex) compares QR on, QR off,
-custom text, the catalogue API and the return to a normal frame:
+[studio-closing.tex](../examples/studio-closing.tex) exercises QR on/off, custom
+copy and the catalogue API. Build it with:
 
 ```sh
 python3 scripts/build.py examples/studio-closing.tex build/review/closing
 ```
 
-This creates `build/review/closing/studio-closing.pdf`. On Windows use `py -3`;
-add `--backend native` for installed TeX. The Studio Overleaf ZIP includes these
-examples and all prepared closing parts. No source PDF, converter or PDF-processing
-library is needed for ordinary compilation.
-
-[Artwork provenance](../images/studio/closing/manifest.json) records the original
-hash and crops. The QR retains its original JPEG stream and alpha mask without
-recompression; social artwork remains vector. See [the extraction notes](../images/studio/closing/README.md)
-for the maintenance-only importer. The updated design remains in review.
+The [artwork notes](../images/studio/closing/README.md) retain crop and provenance
+information. The final five-social closing was explicitly approved on 2026-11-09. Its QR
+remains a boolean option, enabled by default; subsequent graphical changes require
+a new review.

@@ -10,11 +10,9 @@
 \studiodeclarefield{collage}{\includegraphics[width=988\studiounit]{images/studio/team/collage.pdf}}
 \studioapplyfields
 \studiomeasuredcanvas{1920}{1080}{team-presentation}{studio-background}{
-\node[anchor=north west] at (1048,0) {\includegraphics[width=872\studiounit]{images/studio/team/panels.pdf}};
+\node[anchor=north west] at (0,0) {\includegraphics[width=1920\studiounit]{images/studio/team/panels.pdf}};
 \studiographfield{collage}{0}{0}{988}{1080}{}{}
-% Cover only the half-unit antialias seams of the PDF crop edges.
-\fill[studio-background] (987.5,0) rectangle (988.5,1080);
-\fill[studio-background] (1047.5,0) rectangle (1048.5,1080);
+% The full-canvas panel background preserves the source colour across the gap.
 \studiomeasuredtext{value-one}{1260}{206}{272}{112}{108}{120}{\color{studio-foreground}\bfseries\centering}{\studiofield{value-one}}
 \studiomeasuredtext{caption-one}{1255}{303}{284}{49}{36}{42}{\color{studio-foreground}\bfseries\centering}{\studiofield{caption-one}}
 \studiomeasuredtext{value-two}{1598}{206}{228}{112}{108}{120}{\color{studio-foreground}\bfseries\centering}{\studiofield{value-two}}

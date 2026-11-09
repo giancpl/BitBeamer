@@ -327,6 +327,7 @@
       "reference": "figma-0793",
       "group": 0,
       "children": [
+        0,
         1
       ],
       "render_box": [
@@ -345,7 +346,29 @@
         0,
         0
       ],
-      "notes": "Original radial gradient and transform; clipped to the original canvas."
+      "notes": "Single provisional background: supplied native PDF at its original proportions, with only its solid paper rectangle normalized to #F9F9F9. Gradient streams unchanged; experimental variants retired.",
+      "retained_source": "images/studio/parts/source/statement-glow-background-f9f9f9.pdf",
+      "rendering": "copy-pdf",
+      "source_origin": {
+        "kind": "user-supplied background",
+        "original_filename": "statement.pdf",
+        "sha256": "f82a19c0aeb0655052322423f56340367570089b5d80a5c45c0f2274c77ad61d",
+        "companion": {
+          "path": "images/studio/parts/source/resources/statement-glow-gradient.png",
+          "original_filename": "Ellipse 67.png",
+          "sha256": "599aef6363f467d49ba17edba5ee4281f2ee4bf4797d8c3ea0095d3b496c9ae5"
+        }
+      },
+      "canvas": [
+        1920,
+        1080
+      ],
+      "background_override": {
+        "color": "#F9F9F9",
+        "original_source": "images/studio/parts/source/statement-glow-background.pdf",
+        "original_sha256": "f82a19c0aeb0655052322423f56340367570089b5d80a5c45c0f2274c77ad61d",
+        "change": "Only the solid paper fill; all gradient and transparency streams unchanged."
+      }
     },
     {
       "name": "dashboard-grid",

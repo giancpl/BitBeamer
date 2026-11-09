@@ -35,6 +35,38 @@ Read the model's guide before changing variants: a simple cover, for example, do
 have the same content roles as a statistics dashboard. A two-caption composition need
 not have the heading field available in a composition with a separate heading.
 
+## Suggested two-slide sequence
+
+The blue section divider and white incoming-arrow statement can form a continuous
+visual transition. The slide guide links them under **Suggested sequence** and
+lets you copy both commands in their intended order:
+
+```latex
+\studiotemplate[title={A new section}]{section-divider}
+\studiotemplate[variant=arrow,title={Introduce the key idea.}]{statement}
+```
+
+Each call inserts one slide and has its own editable title. The second call also
+works independently, without a preceding divider. See the
+[multiline example](../examples/studio-section-pair.tex) for paired and standalone
+use. The sequence is a recommendation, so no slide is inserted implicitly.
+
+Both compositions support up to two centred lines at fixed font sizes. The
+section title grows upward for its second line, preserving the gap above the
+vertical rail. The arrow statement wraps within its own fixed box below the
+arrow. Use `\\` to choose a deliberate line break:
+
+```latex
+\studiotemplate[title={Understanding\\digital money}]{section-divider}
+\studiotemplate[variant=arrow,
+  title={A shared system\\without a central owner.}]{statement}
+```
+
+Shorten copy that would need a third line; overflow is reported instead of
+reducing the font. The example includes short text, automatic wrapping, explicit
+breaks and independent incoming-arrow statements.
+
+
 ## Change the palette
 
 `\studiosetup{palette=light}` or `palette=blue` sets the default for measured templates.

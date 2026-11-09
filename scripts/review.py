@@ -38,14 +38,8 @@ def compile_document(root, document, output, backend, image, force=False):
 
 
 def open_pdf(path):
-    if sys.platform == 'win32':
-        os.startfile(str(path))
-    elif sys.platform == 'darwin':
-        subprocess.run(['open',str(path)],check=True)
-    elif __import__('shutil').which('xdg-open'):
-        subprocess.run(['xdg-open',str(path)],check=True)
-    else:
-        webbrowser.open(path.as_uri())
+    """Use the same editor-aware viewer as ordinary presentation builds."""
+    build.open_pdf(path)
 
 
 def render_slide(root, entry, page, values, backend, image):

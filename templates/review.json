@@ -28,8 +28,8 @@
   ],
   "templates": {
     "cover": {
-      "status": "in review",
-      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+      "status": "approved",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.\nExplicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Presentation\\\\title",
@@ -44,8 +44,8 @@
       "previous_use": "Introduce a talk and its author.",
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
         }
       },
       "feedback": [
@@ -72,12 +72,20 @@
           "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "covers-01-approval",
+          "source": "Explicit user decision, 2026-11-06",
+          "issue": "Finalize the reviewed cover composition.",
+          "action": "Accepted current shared layout without further graphical changes.",
+          "verification": "User approved the five-cover review batch; technical compilation is recorded separately.",
+          "status": "approved"
         }
       ]
     },
     "contents": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
       "use": "Show four agenda items in the measured panel composition.",
       "example": {
         "title": "Contents",
@@ -96,8 +104,8 @@
       "previous_use": "Outline four sections.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review."
         }
       },
       "feedback": [
@@ -116,12 +124,36 @@
           "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "contents-size-format-2026-11-09",
+          "source": "User review, 2026-11-09",
+          "issue": "Agenda text appears different in size and formatting from the original.",
+          "action": "Calibrate title and item font sizes for the shared 0.95 Inter scale, use consistent item sizes, and align left text anchors without changing panel geometry.",
+          "verification": "Identical source-copy comparison at 2000 px: ink starts differ by at most 3 px and ink heights by at most 3 px. Prepared panel artwork unchanged. Neutral and English examples, custom and empty fields, automatic five-section contents, return to a normal frame, and explicit overflow failures verified. The affected BitGeneration mining deck compiled successfully. Inter word-width differences remain intentional; user graphical approval is pending. Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
+          "status": "approved"
+        },
+        {
+          "id": "agenda-vertical-centering-2026-11-09",
+          "source": "User review, 2026-11-09",
+          "issue": "Center item text vertically within each agenda panel.",
+          "action": "Measure the actual text height, including descenders, and center it on the original panel center. Keep sizes, left anchors and overflow limits fixed.",
+          "verification": "Targeted neutral/custom/empty-field builds and refreshed shared-consumer previews; graphical review pending. Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
+          "status": "approved"
+        },
+        {
+          "id": "contents-01-approval",
+          "source": "Explicit user decision, 2026-11-09",
+          "issue": "Finalize both corrected agenda compositions.",
+          "action": "Accepted measured sizes and dynamic vertical centering without further graphical changes.",
+          "verification": "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
+          "status": "approved"
         }
       ]
     },
     "section-divider": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-09 after reviewing the optional divider/arrow sequence, independent use and automatic/manual two-line text. Fixed fonts, geometry and supported palettes retained. Future graphical changes require a new review.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -132,8 +164,8 @@
       "previous_use": "Separate sections.",
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09, including automatic and explicit two-line examples."
         }
       },
       "feedback": [
@@ -144,6 +176,21 @@
           "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "optional-section-sequence",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The blue divider is often followed by the white incoming-arrow slide, which is also used independently.",
+          "action": "Document and expose an optional ordered sequence in the unified guide and both model field guides; keep each existing single-slide command independent. Review both compositions together.",
+          "status": "in review",
+          "verification": "Offline guide browser check covers sequence copying, ordered links and standalone arrow use. Eight-page example visually inspected with short text, automatic wrapping and explicit two-line copy. Fixed fonts and adjoining connector axis checked; 20 runtime cases pass, including rejected third lines."
+        },
+        {
+          "id": "section-sequence-final-approval",
+          "source": "Explicit user confirmation, 2026-11-09",
+          "issue": "Confirm the divider and incoming-arrow statement, then review the other statements.",
+          "action": "Approve both canonical compositions and their native palettes for paired and independent use, including the reviewed multiline behavior.",
+          "status": "approved"
         }
       ]
     },
@@ -160,14 +207,14 @@
       }
     },
     "cover-light": {
-      "status": "in review",
-      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+      "status": "approved",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.\nExplicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
         }
       },
       "feedback": [
@@ -186,18 +233,26 @@
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "covers-01-approval",
+          "source": "Explicit user decision, 2026-11-06",
+          "issue": "Finalize the reviewed cover composition.",
+          "action": "Accepted current shared layout without further graphical changes.",
+          "verification": "User approved the five-cover review batch; technical compilation is recorded separately.",
+          "status": "approved"
         }
       ]
     },
     "cover-photo": {
-      "status": "in review",
-      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+      "status": "approved",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.\nExplicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
         }
       },
       "feedback": [
@@ -208,6 +263,14 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "covers-01-approval",
+          "source": "Explicit user decision, 2026-11-06",
+          "issue": "Finalize the reviewed cover composition.",
+          "action": "Accepted current shared layout without further graphical changes.",
+          "verification": "User approved the five-cover review batch; technical compilation is recorded separately.",
+          "status": "approved"
         }
       ]
     },
@@ -246,14 +309,14 @@
       }
     },
     "cover-wide-title": {
-      "status": "in review",
-      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.",
+      "status": "approved",
+      "notes": "Keep author roles coherent across actual cover variants; verify hierarchy and alignment.\nExplicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
         }
       },
       "feedback": [
@@ -264,6 +327,14 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "covers-01-approval",
+          "source": "Explicit user decision, 2026-11-06",
+          "issue": "Finalize the reviewed cover composition.",
+          "action": "Accepted current shared layout without further graphical changes.",
+          "verification": "User approved the five-cover review batch; technical compilation is recorded separately.",
+          "status": "approved"
         }
       ]
     },
@@ -292,8 +363,8 @@
       }
     },
     "statement-arrow": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nKeep the incoming-arrow statement Semibold and optically centred.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-09 after reviewing the optional divider/arrow sequence, independent use and automatic/manual two-line text. Fixed fonts, geometry and supported palettes retained. Future graphical changes require a new review.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -304,8 +375,8 @@
       "previous_use": "Introduce a short claim.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09, including automatic and explicit two-line examples."
         }
       },
       "feedback": [
@@ -340,12 +411,27 @@
           "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "optional-section-sequence",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The blue divider is often followed by the white incoming-arrow slide, which is also used independently.",
+          "action": "Document and expose an optional ordered sequence in the unified guide and both model field guides; keep each existing single-slide command independent. Review both compositions together.",
+          "status": "in review",
+          "verification": "Offline guide browser check covers sequence copying, ordered links and standalone arrow use. Eight-page example visually inspected with short text, automatic wrapping and explicit two-line copy. Fixed fonts and adjoining connector axis checked; 20 runtime cases pass, including rejected third lines."
+        },
+        {
+          "id": "section-sequence-final-approval",
+          "source": "Explicit user confirmation, 2026-11-09",
+          "issue": "Confirm the divider and incoming-arrow statement, then review the other statements.",
+          "action": "Approve both canonical compositions and their native palettes for paired and independent use, including the reviewed multiline behavior.",
+          "status": "approved"
         }
       ]
     },
     "glow-statement": {
       "status": "in review",
-      "notes": "",
+      "notes": "User requested cleanup and continuation. Keep only the native supplied-PDF composition with standard #F9F9F9 paper, original proportions and independent text. Remove experimental assets and comparison supplements. Visual issue remains unresolved; review is deferred and no approval is inferred.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "statement": "Slide title"
@@ -367,6 +453,62 @@
           "issue": "The glow, canvas coverage and centred message closely follow the original. Keep this as the reference for gradient/effect treatment.",
           "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-statement-centering-review",
+          "source": "User feedback, 2026-11-09",
+          "issue": "User rejected the gradient background and colors; inspection also found content-dependent vertical text alignment.",
+          "action": "Preserve the original SVG color stops and transform, compose color and opacity jointly on #F9F9F9 before PDF conversion, and remove the PDF soft mask. Center short and two-line text at the same fixed font size. Include short, automatic and explicit longer-text examples.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-concentric-banding",
+          "source": "User feedback, 2026-11-09",
+          "issue": "Many concentric rings are visible; the original transition is smoother. The previous multi-stop vector preparation did not resolve the issue.",
+          "action": "Prepare only the background as a lossless source-resolution image with deterministic stochastic rounding to break quantization contours. Preserve the original continuous profile, center, radii and paper; retain vector editable text and short/long examples.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-soft-profile-redesign",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The gradient is still unsuitable after rendering-only changes. It requires a suitable visual transition.",
+          "action": "Redesign the continuous profile as a soft Gaussian glow without the flat blue core or slope break, retaining center, brand colors and text geometry. Store the adaptation and sigma in the extraction recipe; show short and longer text in the refreshed comparison.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-user-supplied-background",
+          "source": "User-supplied SVG, 2026-11-09",
+          "issue": "Use the attached background and give it a suitable project filename.",
+          "action": "Retain the complete supplied SVG verbatim as statement-glow-background.svg, preserve its provenance and protect it from extraction overwrite. Remove the experimental gradient reconstruction. Center independent editable text on the supplied artwork; regenerate comparisons and longer-text examples.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-user-supplied-pdf",
+          "source": "User-supplied statement.pdf and Ellipse 67.png, 2026-11-09",
+          "issue": "The SVG preparation remains unsuitable; use the supplied finished artwork as a fixed background.",
+          "action": "Copy statement.pdf byte-for-byte into the prepared background. Keep the PNG unchanged as an alternative asset. Remove the SVG-to-raster preparation for this background and compare against the supplied PDF. Preserve independently editable text.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-standard-paper-color",
+          "source": "User feedback, 2026-11-09",
+          "issue": "Use #f9f9f9, the standard background color.",
+          "action": "Normalize only the native PDF solid paper rectangle from 0.975 per channel to DeviceRGB 249/255. Preserve all other decoded streams, including gradient and transparency functions. Refresh comparisons and longer-text previews.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-direct-large-png",
+          "source": "User feedback, 2026-11-09",
+          "issue": "Use the supplied PDF as a background or the PNG as a large image.",
+          "action": "Include the original PNG directly with includegraphics, centered at full slide width on #F9F9F9. Preserve aspect ratio and clip only excess height at canvas boundaries. Keep independent text, short/long previews and the supplied PDF as a comparison reference.",
+          "status": "in review"
+        },
+        {
+          "id": "glow-cleanup-defer",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The gradient is still unsuitable. Clean up the experiments, retain the best provisional version and move on.",
+          "action": "Keep the supplied native PDF at original proportions with standard #F9F9F9 paper. Retire SVG/PNG-derived trials and extra comparisons; preserve original input assets. Defer visual approval and continue with the two-column layout.",
           "status": "in review"
         }
       ]
@@ -680,8 +822,8 @@
       }
     },
     "two-columns": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Approved by the user on 2026-11-09, including short and longer text. Fixed typography: title 120/140, headings 90/105, introduction and bodies 80/95. Public named fields replace the former numbered syntax; obsolete label keys are rejected.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -692,8 +834,8 @@
       "previous_use": "Explain two approaches side by side.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approved the reviewed light composition on 2026-11-09."
         }
       },
       "feedback": [
@@ -712,6 +854,27 @@
           "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "columns-type-size-and-command",
+          "source": "User feedback, 2026-11-09",
+          "issue": "Check text sizes carefully; the overall slide is good. Always provide its actual usage command.",
+          "action": "Use fixed source-scale sizes 120 for title, 90 for both headings, 80 for introduction and both bodies; leading 140/105/95. Retain Inter and original geometry. Inspect short and longer auto/manual wrapping. Show the exact invocation used for the comparison and include it at handoff.",
+          "status": "in review"
+        },
+        {
+          "id": "columns-semantic-commands",
+          "source": "User feedback, 2026-11-09",
+          "issue": "Improve the LaTeX commands.",
+          "action": "Publish descriptive introduction/left-title/right-title/left-body/right-body fields. Keep numbered labels as compatibility aliases and update examples, guides, gallery and PDF invocation without changing the design.",
+          "status": "in review"
+        },
+        {
+          "id": "columns-approved-named-syntax",
+          "status": "approved",
+          "date": "2026-11-09",
+          "feedback": "Confirm this slide; replace old command syntax rather than preserving compatibility.",
+          "action": "Approved the light two-column layout. Removed numbered field aliases, migrated official examples and documentation, and reject obsolete semantic keys."
         }
       ]
     },
@@ -3372,11 +3535,11 @@
       ]
     },
     "closing": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-09 after reviewing the final five-social closing, Inter Medium handle and uniform GitHub panel. Both QR-on and QR-off previews were explicitly confirmed. QR remains editable as a boolean, enabled by default. Future graphical changes require a new review.",
       "use": "Demonstrate this reusable composition.",
       "example": {
-        "title": "Thank you"
+        "title": "@BitPolito"
       },
       "previous_example": {
         "title": "Thank you!"
@@ -3384,8 +3547,8 @@
       "previous_use": "Close the talk.",
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval of the final blue five-social closing on 2026-11-09. QR on/off remains supported."
         }
       },
       "feedback": [
@@ -3396,12 +3559,56 @@
           "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "five-social-default",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The four-social comparison used a generic Thank you title. Five socials should be the default.",
+          "action": "Use @BitPolito in both variants; default to Telegram, Instagram, X, GitHub and YouTube while retaining explicit four-social selection. Combine all current review batches in one PDF.",
+          "status": "in review"
+        },
+        {
+          "id": "five-social-only-typography",
+          "source": "User feedback, 2026-11-09",
+          "issue": "Remove the four-social variant and review the visibly different handle typography.",
+          "action": "Remove the count selectors and four-social drawing; calibrate fixed Inter size, tracking and anchors against the five-social original; publish one closing comparison.",
+          "status": "in review"
+        },
+        {
+          "id": "closing-medium-weight",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The handle looks too bold compared with the original.",
+          "action": "Select Inter Medium locally for the closing handle. Recalibrate to 60 canvas units and y=443.1, retaining tracking 27 and centred placement. Global Inter headings remain unchanged.",
+          "verification": "Compared Semibold, Medium and Regular at identical render scale; verified embedded Inter Medium and refreshed core and lesson consumers. Original outlined font has different glyph proportions; this is an optical adjustment, not an exact font match.",
+          "status": "in review"
+        },
+        {
+          "id": "closing-github-panel",
+          "source": "User feedback, 2026-11-09",
+          "issue": "The GitHub box has a heavier border than the other social boxes.",
+          "action": "Replace its fully exposed outline with the exact Telegram panel path and clip on the common 103 x 98 canvas. Centre the existing GitHub symbol; match the white used by the other socials.",
+          "status": "in review",
+          "verification": "Inspected five vector panels and rendered QR on/off, custom copy and official lesson. At 20x scale GitHub and Telegram have the same 1.60-unit visible left border. Review/library checks and 187 unit tests pass (one environment skip)."
+        },
+        {
+          "id": "closing-final-approval",
+          "source": "Explicit user confirmation, 2026-11-09",
+          "issue": "Confirm the current closing and retain the boolean QR option.",
+          "action": "Approve the final five-social composition and blue palette. Preserve qrcode=true by default and qrcode=false to hide the QR and centre the social group.",
+          "status": "approved"
+        },
+        {
+          "id": "closing-qr-options-approval",
+          "source": "Explicit user confirmation after both previews, 2026-11-09",
+          "issue": "Confirm both QR states and proceed to the next composition.",
+          "action": "Retain approval of the five-social closing with QR enabled and disabled. Begin the section-divider review without approving it automatically.",
+          "status": "approved"
         }
       ]
     },
     "contents-five": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
       "use": "Show five agenda items in the measured panel composition.",
       "example": {
         "title": "Contents",
@@ -3413,14 +3620,40 @@
       },
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "contents-size-format-2026-11-09",
+          "source": "User review, 2026-11-09",
+          "issue": "Agenda text appears different in size and formatting from the original.",
+          "action": "Calibrate title and item font sizes for the shared 0.95 Inter scale, use consistent item sizes, and align left text anchors without changing panel geometry.",
+          "verification": "Identical source-copy comparison at 2000 px: ink starts differ by at most 3 px and ink heights by at most 3 px. Prepared panel artwork unchanged. Neutral and English examples, custom and empty fields, automatic five-section contents, return to a normal frame, and explicit overflow failures verified. The affected BitGeneration mining deck compiled successfully. Inter word-width differences remain intentional; user graphical approval is pending. Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
+          "status": "approved"
+        },
+        {
+          "id": "agenda-vertical-centering-2026-11-09",
+          "source": "User review, 2026-11-09",
+          "issue": "Center item text vertically within each agenda panel.",
+          "action": "Measure the actual text height, including descenders, and center it on the original panel center. Keep sizes, left anchors and overflow limits fixed.",
+          "verification": "Targeted neutral/custom/empty-field builds and refreshed shared-consumer previews; graphical review pending. Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
+          "status": "approved"
+        },
+        {
+          "id": "contents-01-approval",
+          "source": "Explicit user decision, 2026-11-09",
+          "issue": "Finalize both corrected agenda compositions.",
+          "action": "Accepted measured sizes and dynamic vertical centering without further graphical changes.",
+          "verification": "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review.",
+          "status": "approved"
+        }
+      ]
     },
     "team-presentation": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-06 after correction of the continuous Team background in batch team-01. Current graphics finalized; illustrative figures remain editable and are not independently verified live statistics.",
       "use": "Introduce the team between the cover and the contents page. Replace values, captions or the complete collage.",
       "example": {
         "value-one": "50+",
@@ -3434,10 +3667,28 @@
       },
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-06 after correction of the continuous Team background in batch team-01. Current graphics finalized; illustrative figures remain editable and are not independently verified live statistics."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "continuous-team-background",
+          "source": "User review, 2026-11-06",
+          "issue": "Visible light strip between collage and statistic panels.",
+          "action": "Extended the retained vector panel background across the entire canvas, replacing the exposed LaTeX gap and crop-edge paint strips. Geometry and editable fields are unchanged.",
+          "verification": "Canonical template and consuming BitPolito pack compiled; guide and comparison refreshed. User visually approved the result on 2026-11-06.",
+          "status": "approved"
+        },
+        {
+          "id": "team-01-approval",
+          "source": "Explicit user decision, 2026-11-06",
+          "issue": "Finalize the corrected Team composition.",
+          "action": "Accepted the continuous-background composition without further graphical changes.",
+          "verification": "Explicit user approval on 2026-11-06 after correction of the continuous Team background in batch team-01. Current graphics finalized; illustrative figures remain editable and are not independently verified live statistics.",
+          "status": "approved"
+        }
+      ]
     }
   },
   "reusable_selection": [
@@ -3445,5 +3696,121 @@
     "contents",
     "contents-five",
     "closing"
+  ],
+  "review_batches": [
+    {
+      "id": "covers-01",
+      "title": "Covers — first graphical review",
+      "family": "Covers",
+      "compositions": [
+        "cover",
+        "cover-light",
+        "cover-photo",
+        "cover-wide-title",
+        "bitpolito-wordmark-cover"
+      ],
+      "focus": [
+        "Match canvas, cropping and decorative artwork to the original.",
+        "Check title, author and organization alignment, weight and spacing.",
+        "Keep Inter and neutral editable text as intentional differences.",
+        "Verify fixed versus customizable content and the published command.",
+        "Record corrections by composition ID; compilation never grants approval."
+      ]
+    },
+    {
+      "id": "team-01",
+      "title": "Team introduction — graphical review",
+      "family": "Team",
+      "compositions": [
+        "team-presentation"
+      ],
+      "focus": [
+        "Check the collage crop and full-canvas proportions against the reference.",
+        "Check metric alignment, Semibold weights and caption spacing.",
+        "Verify editable values, captions and collage replacement without changing geometry.",
+        "Example figures are not independently verified live team statistics.",
+        "Record feedback by composition ID; approval requires an explicit user decision."
+      ]
+    },
+    {
+      "id": "contents-01",
+      "title": "Contents — graphical review",
+      "family": "Contents",
+      "compositions": [
+        "contents",
+        "contents-five"
+      ],
+      "focus": [
+        "Compare title hierarchy, weights, left alignment and whitespace against the original.",
+        "Check panel proportions, rounded corners, deliberate edge crops and item spacing.",
+        "Check four- and five-item layouts separately; keep the measured geometry fixed.",
+        "Record feedback by composition ID; no approval is inferred from compilation.",
+        "Legacy icon-list and activity-schedule aliases are excluded: their originals are not contents pages."
+      ]
+    },
+    {
+      "id": "closing-01",
+      "title": "Closing slides — graphical review",
+      "family": "Closing",
+      "compositions": [
+        "closing"
+      ],
+      "focus": [
+        "Compare the single five-social closing with the supplied introduction, page 11.",
+        "Check @BitPolito and copyright ink size, spacing, weight and anchors.",
+        "Check QR size and alignment with the social row.",
+        "The QR-off option centres the same composition. No four-social variant remains."
+      ]
+    },
+    {
+      "id": "dividers-01",
+      "title": "Section divider and incoming-arrow statement — graphical review",
+      "family": "Section transitions",
+      "compositions": [
+        "section-divider",
+        "statement-arrow"
+      ],
+      "focus": [
+        "Review the blue divider followed by the white incoming-arrow statement as an optional two-slide sequence.",
+        "Check that the outgoing white line and incoming blue arrow share their horizontal axis and meet the slide edges.",
+        "Check title and statement typography, spacing, line thickness and cropping against each original.",
+        "The white incoming-arrow statement remains independently usable; either slide can be inserted alone.",
+        "Inter and neutral editable English copy are intentional adaptations. Approval remains explicit for each composition."
+      ]
+    },
+    {
+      "id": "statements-01",
+      "title": "Other statements — graphical review",
+      "family": "Statements",
+      "compositions": [
+        "glow-statement",
+        "blue-statement",
+        "oversized-word"
+      ],
+      "focus": [
+        "Compare the radial glow, plain blue statement and oversized-word compositions against their own original references.",
+        "Check native font sizes, weight, alignment and spacing; retain editable neutral English content and Inter.",
+        "Check the complete radial gradient and placement of the white statement.",
+        "Review the wide single-line blue statement and short oversized headline within their fixed text capacities.",
+        "Check the small caption above the oversized word. Approval remains explicit for each composition."
+      ]
+    },
+    {
+      "id": "columns-01",
+      "title": "Two-column explanation — graphical review",
+      "family": "Columns",
+      "compositions": [
+        "two-columns"
+      ],
+      "commands": {
+        "two-columns": "\\studiotemplate[title={Two approaches},introduction={Compare the same idea from two perspectives.},left-title={Centralized},right-title={Distributed},left-body={One operator coordinates decisions.},right-body={Participants independently verify shared rules.}]{two-columns}"
+      },
+      "focus": [
+        "Compare title, introduction, column headings and body alignment against the original.",
+        "Check font weights, whitespace and equal visual balance between columns.",
+        "Inspect short and longer automatic/manual wrapping at the original fixed font sizes.",
+        "Verify overflow reporting without shrinking text; graphical approval remains explicit."
+      ]
+    }
   ]
 }

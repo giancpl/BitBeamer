@@ -22,9 +22,10 @@ shared files; ordinary presentation authoring must not.
 - Search `python3 scripts/deck.py library` for relevant lessons and topic blocks.
   Inspect `library --deck <id> --json` or `library --block <id> --json`.
 - Copy a lesson with `new <name> --from <id>` or insert a block with
-  `add <name> --block <id>`. Work on the personal copies, never shared lesson files.
+  `add <name> --block <id>`. Edit the copied content, never shared lesson files or canonical layouts.
 - Read provenance, historical dates, translation and update notes. All lessons
-  remain in review: a successful build is not content or graphic approval.
+  remain in review until explicitly approved: a successful build is not approval.
+  Prefer Ready entries where available; record the use of in-review content in the brief.
 - The source lesson sequence takes priority over the generic starter sequence.
   Do not download originals or regenerate the collection during normal authoring.
 
@@ -37,7 +38,7 @@ shared files; ordinary presentation authoring must not.
   palettes, margins, proportions and typography; never shrink text or change
   shared layouts to fit more content. Shorten, split or choose another model.
 - Default sequence: classic blue cover → team → contents → content → closing.
-  The closing QR is enabled by default. Adapt optional pages to the actual brief.
+  The closing uses five social icons and its QR is enabled by default. Adapt optional pages to the actual brief.
 - Explicitly replace demonstrative text and images. Check the built-in team
   figures against supplied information; they are example content, not verified
   live statistics. Do not invent authors, organizations, results, numbers or
@@ -69,6 +70,31 @@ checking its canonical layout and other consumers. Update the unified slide guid
 in `docs/slides/` with its preview and command as part of the same correction.
 Apply the workflow without
 waiting for a separate request to propagate or verify the correction.
+During interactive PDF reviews, open or reveal the refreshed comparison in the
+existing VS Code window: use `review_batch.py all --compare --open` for the
+combined review, and retain `--open` on subsequent review builds. Review PDFs must
+exclude explicitly approved compositions, including approved fixed lesson presets.
+At each interactive handoff, report only the compositions still to verify and their
+canonical categories, so the user can decide whether to review related layouts
+together. Always include the exact public LaTeX command for the active layout,
+with descriptive semantic field names and variant matching the reviewed example.
+Prefer purpose-based keys (for example introduction, left-title and left-body)
+to numbered labels. When updating a command, replace its old syntax and migrate
+official callers and documentation; do not retain obsolete syntax as aliases;
+show the command under the PDF
+comparison as well as at handoff. Keep deferred/unresolved designs distinct from
+approved designs.
+For every interactive review of editable text, compile and visually inspect
+representative longer copy as well as the short/default example. Include automatic
+wrapping and explicit `\\` line breaks where supported. Check vertical centering,
+spacing, overlap and clipping at the fixed font sizes. Match samples to the model:
+a word-based layout needs a longer word and caption rather than a paragraph.
+Verify that text beyond the supported capacity produces a clear overflow report;
+never shrink the font to make a sample fit. Include and open the longer-text
+previews with the comparison without waiting for another user request.
 
 This scope covers repository maintenance. Presentation authors continue to use
-the authoring workflow above; existing personal copies remain independent.
+the authoring workflow above. Personal content remains independent; canonical
+layout corrections reach linked decks on their next build. Legacy snapshots require
+explicit migration. Every official pack must use catalogue entries, including
+fixed-content presets when customization is inappropriate.

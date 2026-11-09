@@ -1,18 +1,21 @@
 id,category,reference,status,catalogue_page,alias_of,requested_changes
-cover,Opening,figma-0175,in review,1,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
-contents,Opening,figma-0575,in review,2,,
-section-divider,Opening,figma-0697,in review,3,,
+cover,Opening,figma-0175,approved,1,,"Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
+contents,Opening,figma-0575,approved,2,,"Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review."
+section-divider,Opening,figma-0697,approved,3,,"Explicit user approval on 2026-11-09 after reviewing the optional divider/arrow sequence, independent use and automatic/manual two-line text. Fixed fonts, geometry and supported palettes retained. Future graphical changes require a new review."
 tabbed-agenda,Opening,figma-1057,in review,4,,
-cover-light,Opening,figma-0584,in review,5,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
-cover-photo,Opening,figma-0416,in review,6,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+cover-light,Opening,figma-0584,approved,5,,"Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
+cover-photo,Opening,figma-0416,approved,6,,"Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
 cover-script-blue,Diagrams,figma-0545,in review,7,,The verified figma-0545 original is a message relay. Classify it under protocol/message-relay and preserve legacy adapters.
 cover-dashboard,Opening,figma-0610,in review,8,,
-cover-wide-title,Opening,figma-0779,in review,9,,Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+cover-wide-title,Opening,figma-0779,approved,9,,"Keep author roles coherent across actual cover variants; verify hierarchy and alignment.
+Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
 agenda-with-icons,Opening,figma-0521,in review,10,,
 agenda-with-schedule,Opening,figma-1010,in review,11,,
-statement-arrow,Statements,figma-0055,in review,12,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
-Keep the incoming-arrow statement Semibold and optically centred."
-glow-statement,Statements,figma-0793,in review,13,,
+statement-arrow,Statements,figma-0055,approved,12,,"Explicit user approval on 2026-11-09 after reviewing the optional divider/arrow sequence, independent use and automatic/manual two-line text. Fixed fonts, geometry and supported palettes retained. Future graphical changes require a new review."
+glow-statement,Statements,figma-0793,in review,13,,"User requested cleanup and continuation. Keep only the native supplied-PDF composition with standard #F9F9F9 paper, original proportions and independent text. Remove experimental assets and comparison supplements. Visual issue remains unresolved; review is deferred and no approval is inferred."
 blue-statement,Statements,figma-0121,in review,14,,
 icon-spotlight-light,Statements,figma-1003,in review,15,,
 icon-spotlight-blue,Statements,figma-0383,in review,16,,
@@ -29,7 +32,7 @@ title-centered-paragraphs,Statements,figma-0196,in review,25,,"Verify source-spe
 statement-with-credit,Diagrams,figma-0667,in review,26,,Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.
 people-speech-cards,Statements,figma-0765,in review,27,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 paired-icons-blue,Statements,figma-0038,in review,28,,
-two-columns,Lists,figma-0185,in review,29,,
+two-columns,Lists,figma-0185,approved,29,,"Approved by the user on 2026-11-09, including short and longer text. Fixed typography: title 120/140, headings 90/105, introduction and bodies 80/95. Public named fields replace the former numbered syntax; obsolete label keys are rejected."
 list-rail-light,Lists,figma-0702,in review,30,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 list-rail-blue,Lists,figma-0395,in review,31,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
 grouped-rail,Lists,figma-0725,in review,32,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
@@ -194,6 +197,6 @@ block-inspection,Technical,figma-0872,in review,190,,
 mining-card-grid,Technical,figma-0868,in review,191,,
 contact-qr,Closing,figma-0943,in review,192,,
 apply-qr,Closing,figma-0998,in review,193,,
-contents-five,Opening,"figma-0883,figma-0589",in review,194,,
-team-presentation,Opening,,in review,195,,
-closing,Closing,figma-0934,in review,196,,
+contents-five,Opening,"figma-0883,figma-0589",approved,194,,"Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review."
+team-presentation,Opening,,approved,195,,Explicit user approval on 2026-11-06 after correction of the continuous Team background in batch team-01. Current graphics finalized; illustrative figures remain editable and are not independently verified live statistics.
+closing,Closing,,approved,196,,"Explicitly approved by the user on 2026-11-09 after reviewing the final five-social closing, Inter Medium handle and uniform GitHub panel. Both QR-on and QR-off previews were explicitly confirmed. QR remains editable as a boolean, enabled by default. Future graphical changes require a new review."

@@ -1,0 +1,100 @@
+% Studio closing uses the supplied 1920 x 1080 composition and prepared artwork.
+\newif\ifstudio@closingqr
+\newdimen\studio@closingunit
+\newdimen\studio@closingfitunit
+\newbox\studio@closingtextbox
+\newcommand{\studio@closingboolean}[1]{%
+  \edef\studio@closingvalue{#1}\def\studio@closingtrue{true}\def\studio@closingfalse{false}%
+  \ifx\studio@closingvalue\studio@closingtrue\studio@closingqrtrue\else
+    \ifx\studio@closingvalue\studio@closingfalse\studio@closingqrfalse\else
+      \PackageError{bitpolito-studio}{Invalid boolean '#1' for closing qrcode}{Use qrcode=true or qrcode=false.}%
+    \fi
+  \fi
+}
+\newcommand{\studio@closingimage}[1]{%
+  \IfFileExists{#1}{\includegraphics[width=554\studio@closingunit,height=554\studio@closingunit,keepaspectratio]{#1}}{%
+    \PackageError{bitpolito-studio}{Missing closing QR image '#1'}{Restore the prepared artwork or supply qr-image with a project-relative image path.}%
+  }%
+}
+\pgfkeys{/studio/closing/.is family,
+  /studio/closing/title/.store in=\studio@closingtitle,
+  /studio/closing/subtitle/.store in=\studio@closingsubtitle,
+  /studio/closing/copyright/.store in=\studio@closingcopyright,
+  /studio/closing/qrcode/.code=\studio@closingboolean{#1},
+  /studio/closing/qrcode/.default=true,
+  /studio/closing/qr-image/.code=\def\studio@closingqrgraphic{\studio@closingimage{#1}},
+  /studio/closing/qr-graphic/.store in=\studio@closingqrgraphic,
+  /studio/closing/social-one/.store in=\studio@closingsocialone,
+  /studio/closing/social-two/.store in=\studio@closingsocialtwo,
+  /studio/closing/social-three/.store in=\studio@closingsocialthree,
+  /studio/closing/social-four/.store in=\studio@closingsocialfour,
+  /studio/closing/social-five/.store in=\studio@closingsocialfive}
+% A tracked copy of the current font keeps all other slide typography untouched.
+\newcommand{\studio@closingtrack}[1]{%
+  \ifdefined\letterspacefont
+    \letterspacefont\studio@closingtrackedfont\font #1\relax
+    \fontdimen2\studio@closingtrackedfont=\dimexpr\numexpr1000+#1\relax sp*\fontdimen2\studio@closingtrackedfont/1000\relax
+    \studio@closingtrackedfont
+  \fi
+}
+% Fixed text boxes report overflow instead of shrinking typography.
+\newcommand{\studio@closingtext}[9]{%
+  \node[anchor=north west,inner sep=0] at (#2,#3) {%
+    \setbox\studio@closingtextbox=\vbox{\hsize=#4\studio@closingunit\parindent=0pt
+      \normalfont\sffamily\fontsize{#6\studio@closingunit}{#7\studio@closingunit}\selectfont
+      \color{white}\centering#8\noindent#9\par}%
+    \ifdim\dimexpr\ht\studio@closingtextbox+\dp\studio@closingtextbox\relax>#5\studio@closingunit
+      \PackageError{bitpolito-studio}{Text overflow in closing/#1}{Shorten the text. The closing layout does not shrink fonts.}%
+    \fi
+    \box\studio@closingtextbox};%
+}
+\setbeamertemplate{closing page}{%
+  \studio@closingunit=\dimexpr\paperwidth/1920\relax
+  \studio@closingfitunit=\dimexpr\paperheight/1080\relax
+  \ifdim\studio@closingfitunit<\studio@closingunit\studio@closingunit=\studio@closingfitunit\fi
+  \def\studio@closingoffset{0}%
+  \ifstudio@closingqr\else
+    \def\studio@closingoffset{-410.5}
+  \fi
+  \begin{tikzpicture}[remember picture,overlay]
+    \fill[bitpolito] (current page.south west) rectangle (current page.north east);
+    \begin{scope}[shift={(current page.center)},x=\studio@closingunit,y=-\studio@closingunit,
+      every node/.style={inner sep=0,outer sep=0}]
+      \begin{scope}[shift={(-960,-540)}]
+        \ifstudio@closingqr
+          \node at (554,540) {\studiofitgraphic{554\studio@closingunit}{554\studio@closingunit}{\studio@closingqrgraphic}};
+        \fi
+        \ifx\studio@closingcopyright\@empty\else
+          \studio@closingtext{copyright}{559.7}{52.71}{800}{65}{34.2}{41}{\studio@closingtrack{-43}}{\studio@closingcopyright}%
+        \fi
+        \begin{scope}[shift={(\studio@closingoffset,0)}]
+            \ifx\studio@closingtitle\@empty\else
+              \studio@closingtext{title}{1059.2}{443.1}{621}{110}{60}{71}{\fontseries{medium}\selectfont\studio@closingtrack{27}}{\studio@closingtitle}%
+            \fi
+            \ifx\studio@closingsubtitle\@empty\else
+              \studio@closingtext{subtitle}{1060}{510}{621}{42}{32}{38}{}{\studio@closingsubtitle}%
+            \fi
+            \node at (1112.11,601.785) {\studiofitgraphic{104.22\studio@closingunit}{98.81\studio@closingunit}{\studio@closingsocialone}};
+            \node at (1240.11,601.785) {\studiofitgraphic{104.22\studio@closingunit}{98.81\studio@closingunit}{\studio@closingsocialtwo}};
+            \node at (1368.11,601.785) {\studiofitgraphic{104.22\studio@closingunit}{98.81\studio@closingunit}{\studio@closingsocialthree}};
+            \node at (1498.41,601.785) {\studiofitgraphic{104.22\studio@closingunit}{98.81\studio@closingunit}{\studio@closingsocialfour}};
+            \node at (1626.11,601.785) {\studiofitgraphic{104.22\studio@closingunit}{98.81\studio@closingunit}{\studio@closingsocialfive}};
+        \end{scope}
+      \end{scope}
+    \end{scope}
+  \end{tikzpicture}%
+}
+\newcommand{\closingframe}[1][]{%
+  \begingroup
+  \pgfkeys{/studio/closing/.cd,title={@BitPolito},subtitle={},
+    copyright={\textcopyright{} \the\year\ BitPolito},qrcode=true,
+    qr-image={\bitpolitostudioassetpath/closing/qrcode.pdf},
+    social-one={\includegraphics[width=103\studio@closingunit]{\bitpolitostudioassetpath/closing/telegram.pdf}},
+    social-two={\includegraphics[width=103\studio@closingunit]{\bitpolitostudioassetpath/closing/instagram.pdf}},
+    social-three={\includegraphics[width=103\studio@closingunit]{\bitpolitostudioassetpath/closing/twitter.pdf}},
+    social-four={\includegraphics[width=103\studio@closingunit]{\bitpolitostudioassetpath/closing/github.pdf}},
+    social-five={\includegraphics[width=103\studio@closingunit]{\bitpolitostudioassetpath/closing/youtube.pdf}},#1}%
+  \begin{frame}[plain]\usebeamertemplate{closing page}\end{frame}%
+  \endgroup
+}
+

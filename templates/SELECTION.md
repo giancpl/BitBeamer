@@ -301,7 +301,7 @@ Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Thank you}
+  title={@BitPolito}
 ]{closing}
 ```
 

@@ -1,0 +1,26 @@
+{
+  "source": "Presentazione BitPolito.pdf",
+  "source_sha256": "ae8839aaf99edd445310e6ecbb8403a8f81d98f602cf28bd73b0fea97fa92463",
+  "page": 11,
+  "source_crop": [
+    1446.3,
+    552.38,
+    1550.52,
+    651.19
+  ],
+  "source_cells": 53,
+  "cell_spacing": 5.0904541015625,
+  "change": "Snap subpixel icon-cell drift to the original grid; reuse the Telegram panel outline and clip exactly, matching all other closing socials. Centre the retained pixel-art symbol on the common 103 x 98 canvas and use the same white.",
+  "source_svg": "images/studio/closing/github.svg",
+  "prepared_pdf": "images/studio/closing/github.pdf",
+  "svg_sha256": "dc5f61ed27ab11b11ae60a039cd928e2e824139c1c55ab56a7c0c8763a866e43",
+  "pdf_sha256": "667c88bd4824c3d8ac3a124223f3c4cf27ba5e55b8885fac8247190dba03616c",
+  "vector_shapes": 20,
+  "images": 0,
+  "panel_reference": "images/studio/closing/telegram.pdf",
+  "panel_reference_sha256": "ca0c00da2435984a02a1f2c5ceb1cfe4a3bbd248380cbec806a722af4cf78a82",
+  "canvas": [
+    103,
+    98
+  ]
+}

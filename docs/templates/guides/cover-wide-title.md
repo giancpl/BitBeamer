@@ -4,7 +4,7 @@
 
 Open a talk or introduce its structure using the cover wide title layout.
 
-Model: `cover-wide-title` · Family: Opening · Status: **in review**.
+Model: `cover-wide-title` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-wide-title.tex)
 

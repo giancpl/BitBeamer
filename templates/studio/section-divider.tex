@@ -2,7 +2,28 @@
 \studiodeclarefield{graphic-1}{\studiopaletteimage[width=152\studiounit]{images/studio/collection/figma-0697-part-01.pdf}}
 \studiodeclarefield{title}{Slide title}
 \studioapplyfields
+% Measure outside TikZ so its null font cannot suppress the line-height probe.
+\studiounit=\dimexpr\paperwidth/3556\relax
+\studiofitunit=\dimexpr\paperheight/2000\relax
+\ifdim\studiofitunit<\studiounit\studiounit=\studiofitunit\fi
+% Keep the original one-line position; a second line grows upward, away from the rail.
+\setbox\studiotextbox=\vbox{\hsize=2499.22\studiounit\parindent=0pt
+  \normalfont\sffamily\fontsize{234.863\studiounit}{272.441\studiounit}\selectfont
+  \bfseries\centering\noindent\studiofield{title}\par}%
+\edef\studiodividerheight{\the\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax}%
+\setbox\studiotextbox=\vbox{\hsize=2499.22\studiounit\parindent=0pt
+  \normalfont\sffamily\fontsize{234.863\studiounit}{272.441\studiounit}\selectfont
+  \bfseries\centering\noindent Ag\par}%
+\edef\studiodividerextra{\the\dimexpr\studiodividerheight-\ht\studiotextbox-\dp\studiotextbox\relax}%
+% Quantise to one baseline step; descenders do not move single-line headings.
+\ifdim\studiodividerextra>408.662\studiounit
+  \PackageError{bitpolitostudiotemplates}{Text overflow in section-divider/title}{Use at most two lines. Shorten the title; the layout does not shrink its font.}%
+\fi
+\ifdim\studiodividerextra>136.221\studiounit
+  \edef\studiodividerextra{\the\dimexpr272.441\studiounit\relax}%
+\else\def\studiodividerextra{0pt}\fi
+\pgfmathsetmacro{\studiodividertop}{905.16-\studiodividerextra/\studiounit}%
 \studiomeasuredcanvas{3556}{2000}{section-divider}{studio-background}{
-\studiomeasuredtext{title}{531.639}{905.16}{2499.22}{315.572}{234.863}{272.441}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
+\studiomeasuredtext{title}{531.639}{\studiodividertop}{2499.22}{588.013}{234.863}{272.441}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
 \studiographfield{graphic-1}{1726}{1207}{152}{793}{}{}
 }

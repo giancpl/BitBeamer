@@ -4,9 +4,11 @@
 \studiodeclarefield{graphic-3}{\includegraphics[width=103\studiounit]{images/studio/closing/twitter.pdf}}
 \studiodeclarefield{graphic-4}{\includegraphics[width=103\studiounit]{images/studio/closing/youtube.pdf}}
 \studiodeclarefield{text-1}{\textcopyright{} \the\year\ BitPolito}
-\studiodeclarefield{title}{Thank you}
+\studiodeclarefield{title}{@BitPolito}
 \studiodeclarefield{subtitle}{}
 \studiodeclarefield{qr-graphic}{\includegraphics[width=554\studiounit]{images/studio/closing/qrcode.pdf}}
+% Preserve graphic/4 (YouTube) and graphic/5 (QR); append GitHub as graphic/6.
+\studiodeclarefield{github-graphic}{\includegraphics[width=103\studiounit]{images/studio/closing/github.pdf}}
 \def\studioclosingqrvalue{true}
 \pgfkeys{/studio fields/qrcode/.store in=\studioclosingqrvalue}
 \studioapplyfields
@@ -20,5 +22,5 @@
     title={\studiofield{title}},subtitle={\studiofield{subtitle}},copyright={\studiofield{text-1}},
     qr-graphic={\studiofield{qr-graphic}},
     social-one={\studiofield{graphic-1}},social-two={\studiofield{graphic-2}},
-    social-three={\studiofield{graphic-3}},social-four={\studiofield{graphic-4}}]
+    social-three={\studiofield{graphic-3}},social-four={\studiofield{github-graphic}},social-five={\studiofield{graphic-4}}]
 \fi

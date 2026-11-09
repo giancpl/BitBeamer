@@ -1,0 +1,13 @@
+% Centre the actual text height inside a fixed agenda slot; keep the shared
+% measured-text renderer responsible for overflow and final placement.
+\providecommand{\studioagendatext}[9]{%
+ \begingroup
+ \pgfinterruptpicture
+ \global\setbox\studiotextbox=\vbox{\hsize=#4\studiounit\parindent=0pt
+  \hfuzz=\dimexpr\paperheight/400\relax\overfullrule=2pt\raggedright
+  \normalfont\sffamily\fontsize{#6\studiounit}{#7\studiounit}\selectfont #8\noindent #9\par}%
+ \endpgfinterruptpicture
+ \pgfmathsetmacro{\studioagendatop}{#3+(#5-(\the\ht\studiotextbox+\the\dp\studiotextbox)/(\the\studiounit))/2}%
+ \studiomeasuredtext{#1}{#2}{\studioagendatop}{#4}{#5}{#6}{#7}{#8}{#9}%
+ \endgroup
+}

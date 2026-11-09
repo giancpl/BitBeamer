@@ -29,7 +29,7 @@ class StudioTeamTests(unittest.TestCase):
         self.assertEqual(palette,'light')
         with self.assertRaisesRegex(ValueError,'Unsupported palette'):
             studio_models.resolve(ROOT,'team',palette='blue')
-        self.assertEqual(self.entry['status'],'in review')
+        self.assertEqual(self.entry['status'],studio_review.load_review(ROOT)['templates']['team-presentation']['status'])
 
     def test_subset_resources_and_scoped_preview_invalidation(self):
         resources = self.entry['prepared_resources']

@@ -6,6 +6,7 @@ import hashlib
 import json
 from pathlib import Path
 import re
+import shutil
 import xml.etree.ElementTree as ET
 from asset_library import render_svg, rsvg_modules
 ROOT = Path(__file__).resolve().parents[1]
@@ -39,6 +40,24 @@ def extract(root=ROOT, exports=None):
     for recipe in recipes:
         record = dict(recipe)
         original = inventory[record['reference']]
+        if recipe.get('retained_source'):
+            source = root / recipe['retained_source']
+            if not source.resolve().is_relative_to(root.resolve()) or not source.is_file():
+                raise RuntimeError('Missing or unsafe retained background: ' + str(source))
+            if source.suffix.lower() == '.pdf':
+                canvas, definition_ids = recipe['canvas'], []
+            else:
+                tree = ET.parse(source).getroot()
+                canvas = [float(tree.get('width')), float(tree.get('height'))]
+                definition_ids = sorted(references([tree]))
+            # User-supplied artwork is retained verbatim; extraction must not
+            # replace it with the composition's older Figma reference.
+            record.update(source=recipe['retained_source'], source_sha256=digest(source),
+                          reference_sha256=original['sha256'],
+                          canvas=canvas, dependencies=recipe.get('dependencies', []),
+                          definition_ids=definition_ids)
+            records.append(record)
+            continue
         source = exports / original['file']
         if hashlib.sha256(source.read_bytes()).hexdigest() != original['sha256']:
             raise RuntimeError('Reference changed: ' + str(source))
@@ -122,6 +141,14 @@ def prepare(root=ROOT, check=False, converter='auto'):
                     context.set_source_surface(surface);context.paint()
                 part['effect_fallback']='Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.'
                 part['png_sha256']=digest(png)
+            elif part.get('rendering') == 'copy-pdf':
+                # A supplied finished background is already ready for TeX.
+                # Copy the complete PDF without rendering or rewriting it.
+                if not source.read_bytes().startswith(b'%PDF-'):
+                    raise RuntimeError('Invalid supplied PDF background: ' + str(source))
+                shutil.copyfile(source, target)
+                part.pop('png_sha256', None)
+                part['renderer'] = 'Supplied PDF copied byte-for-byte; fixed background, no conversion, rasterization or reconstruction. Text remains a separate editable layer.'
             else:
                 render_svg(source,target,converter,crop=False)
             part['source_sha256']=digest(source);part['pdf_sha256']=digest(target)

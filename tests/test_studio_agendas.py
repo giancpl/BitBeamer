@@ -1,5 +1,6 @@
 """Verify measured agenda variants, original references and compatible content roles."""
 from pathlib import Path
+import json
 import sys
 import unittest
 
@@ -8,6 +9,7 @@ sys.path.insert(0,str(ROOT/'scripts'))
 import studio_models
 import studio_templates
 import studio_examples
+import studio_review
 
 
 class StudioAgendaTests(unittest.TestCase):
@@ -28,6 +30,18 @@ class StudioAgendaTests(unittest.TestCase):
         self.assertEqual(self.entries['contents']['references'],['figma-0575'])
         self.assertIn('figma-0883',self.entries['contents-five']['references'])
 
+    def test_item_slots_follow_panel_centers_and_export_the_shared_helper(self):
+        parts=json.loads((ROOT/'images/studio/collection/manifest.json').read_text())['parts']
+        parts=parts if isinstance(parts,dict) else {p['name']:p for p in parts}
+        for name in ('contents','contents-five'):
+            entry=self.entries[name]
+            fields=[f for f in entry['fields'] if f['type']=='text' and f['name']!='title']
+            for field,part in zip(fields,entry['parts']):
+                _,top,_,height=parts[part]['content_box']
+                self.assertAlmostEqual(field['box'][1]+field['box'][3]/2,top+height/2,places=5)
+            files=studio_models.dependencies(ROOT,[entry])
+            self.assertIn('templates/studio/components/agenda-text.tex',files)
+
     def test_legacy_item_roles_survive_the_new_semantic_names(self):
         choice=studio_models.resolve(ROOT,'agenda','panels','light')[2]
         self.assertEqual(choice['fields']['item-one'],choice['fields']['label-one'])
@@ -46,8 +60,9 @@ class StudioAgendaTests(unittest.TestCase):
             if field['type']=='graphic':
                 path=ROOT/'images/studio/collection'/(entry['parts'][field['slot']['number']-1]+'.pdf')
                 self.assertTrue(path.is_file())
-        self.assertEqual(entry['status'],'in review')
-        self.assertEqual(entry['palette_reviews']['light']['status'],'in review')
+        review=studio_review.load_review(ROOT)['templates']['contents-five']
+        self.assertEqual(entry['status'],review['status'])
+        self.assertEqual(entry['palette_reviews']['light']['status'],review['palette_reviews']['light']['status'])
 
 
 if __name__=='__main__':unittest.main()

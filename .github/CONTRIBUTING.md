@@ -16,8 +16,10 @@ python3 -m unittest discover -s tests
 ```
 
 Compile the affected document or composition with the existing build launcher.
-Keep authored text and comments in English. Preserve public IDs and compatibility
-aliases. Keep prepared artwork, manifests and provenance with their source changes.
+Keep authored text and comments in English. Preserve public IDs. When command
+syntax changes, replace the old syntax and migrate official callers and guides;
+do not keep obsolete field aliases. Keep prepared artwork, manifests and provenance
+with their source changes.
 Generated files are refreshed through their documented tools. Record review notes
 in `templates/review.json`; graphical approval remains an explicit review decision.
 
@@ -40,7 +42,7 @@ presentation authoring follows [the authoring guide](../docs/AUTHORING.md).
 2. Correct the canonical source once. Reuse existing panels, icon slots and
    quotation fields. Consolidate equivalent lesson copies, extend `reuse_rules`
    with all known consumers and mark superseded layout records with `replaced_by`.
-   Preserve public names and compatibility sources. Record a genuinely different
+   Preserve public IDs and canonical sources; migrate callers when replacing syntax. Record a different
    composition as an explicit variant with its reason.
 3. Identify every affected composition, variant, supported palette and lesson
    consumer. For lessons, run `python3 scripts/library.py affected --changed <path>`;
@@ -60,7 +62,12 @@ presentation authoring follows [the authoring guide](../docs/AUTHORING.md).
    a local correction does not require a blanket catalogue rebuild.
 5. Inspect every affected rendered page for the reported defect and collateral
    changes. Check the applicable field overrides, empty values, overflow handling
-   and supported palettes. Run `review.py check`, `library.py check` when lessons
+   and supported palettes. Always compile and visually inspect longer editable
+   text alongside the short/default example, using automatic wrapping and explicit
+   line breaks where supported. Check centering, spacing, overlap and clipping at
+   fixed font sizes; use longer words/captions for word-based layouts and verify
+   overflow reporting beyond the model's capacity. Include these previews in the
+   interactive review. Run `review.py check`, `library.py check` when lessons
    are affected, and tests appropriate to the actual change. Add a regression
    check for a recurring defect when it can be tested meaningfully. Compilation
    and preview generation do not count as visual approval.
@@ -73,5 +80,7 @@ Commands named without paths above live in `scripts/`. See
 [Studio review](../docs/STUDIO-COLLECTION.md) for core compositions and
 [lesson maintenance](../library/MAINTENANCE.md) for dependency tracking and reuse
 rules. The procedure is internal maintenance policy; it adds no authoring steps,
-new template options or automatic replacements of personal content. It is not
+new authoring obligations or replacements of personal content. Linked layouts
+receive the canonical correction at the next build; legacy snapshots are migrated
+only when explicitly requested. It is not
 included in the Overleaf template's user instructions.

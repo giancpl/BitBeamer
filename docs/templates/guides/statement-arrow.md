@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `statement-arrow` · Family: Statements · Status: **in review**.
+Model: `statement-arrow` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/statement-arrow.tex)
 

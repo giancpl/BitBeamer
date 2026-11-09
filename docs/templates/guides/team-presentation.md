@@ -4,7 +4,7 @@
 
 Open a talk or introduce its structure using the team presentation layout.
 
-Model: `team-presentation` · Family: Opening · Status: **in review**.
+Model: `team-presentation` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/team-presentation.tex)
 

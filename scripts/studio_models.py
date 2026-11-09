@@ -98,6 +98,8 @@ def validate(root, entries):
                     raise RuntimeError('Only original palette choices are supported: '+item['id'])
                 if set(item['fields'].values())- {f['name'] for e in entries if e['id']==item['id'] for f in e['fields']}:
                     raise RuntimeError('Unknown semantic field in '+item['id'])
+                if set(item.get('example_fields',[]))-set(item['fields']):
+                    raise RuntimeError('Unknown example field in '+item['id'])
         if model['default_variant'] not in variants:raise RuntimeError('Missing default variant '+model['id'])
     aliases=set();by_model={m['id']:m for m in data['models']}
     for alias in data.get('variant_aliases',[]):
@@ -110,7 +112,23 @@ def validate(root, entries):
         if variant is None:raise RuntimeError('Missing compatibility variant target: '+str(key))
         if any(set(alias.get('fields',{}).values())-set(c['fields']) for c in variant['compositions']):raise RuntimeError('Unknown compatibility field target: '+str(key))
     if set(assigned)!=known or len(assigned)!=len(known):raise RuntimeError('Every composition must belong to one model variant')
+    suggested_sequences(root)
     return len(ids)
+
+
+def suggested_sequences(root=ROOT):
+    """Ordered editorial recommendations; individual compositions stay independent."""
+    data=load_models(root)
+    known={c['id'] for m in data['models'] for v in m['variants'] for c in v['compositions']}
+    names=set()
+    for sequence in data.get('sequences',[]):
+        name=sequence.get('id','');members=sequence.get('compositions',[])
+        if (not re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*',name)
+                or name in names or not sequence.get('title') or not sequence.get('description')
+                or not 2<=len(members)<=5 or len(set(members))!=len(members) or set(members)-known):
+            raise ValueError('Invalid suggested slide sequence: '+name)
+        names.add(name)
+    return data.get('sequences',[])
 
 
 def membership(root=ROOT):
@@ -260,7 +278,7 @@ def palette_document(root,entries):
 
 
 def model_guides(root,entries):
-    by_id={e['id']:e for e in entries};files={}
+    by_id={e['id']:e for e in entries};files={};sequences=suggested_sequences(root);members=membership(root)
     for m in load_models(root)['models']:
         variants=[(v,[c for c in v['compositions'] if c['id'] in by_id]) for v in m['variants']]
         variants=[(v,cs) for v,cs in variants if cs]
@@ -292,9 +310,26 @@ def model_guides(root,entries):
         first_variant,first_compositions=variants[0]
         first=first_compositions[0];first_entry=by_id[first['id']]
         options={'variant':first_variant['id'],'palette':first['native_palette']}
-        for key,native in list(first['fields'].items())[:2]:
+        for key in first.get('example_fields',list(first['fields'])[:2]):
+            native=first['fields'][key]
             f=next(f for f in first_entry['fields'] if f['name']==native)
-            if f['type']=='text':options[key]=f['default']
+            if f['type']=='text':options[key]=f['default'].replace(r'\\\\',r'\\')
+        current={c['id'] for _,cs in variants for c in cs}
+        for sequence in sequences:
+            if not current.intersection(sequence['compositions']) or not set(sequence['compositions'])<=set(by_id):continue
+            lines+=['## Suggested sequence: '+sequence['title'],'',sequence['description'],'']
+            commands=[]
+            for number,name in enumerate(sequence['compositions'],1):
+                model,variant,composition=members[name];entry=by_id[name]
+                lines.append(str(number)+'. ['+entry['title']+']('+model['id']+'.md).')
+                values={'variant':variant['id'],'palette':composition['native_palette']}
+                preferred={native:semantic for semantic,native in composition['fields'].items()}
+                for native,semantic in preferred.items():
+                    field=next(f for f in entry['fields'] if f['name']==native)
+                    if field['type']=='text':values[semantic]=field['default']
+                commands.append(command(model['id'],values))
+            lines+=['','Copy both calls to insert the pair, or use either call on its own.','','```latex','\n\n'.join(commands),'```','']
+            lines+=['The divider title and arrow statement each support two centred lines. Use `\\\\` for an explicit break; shorten copy that would need a third line. The divider grows upward to preserve its gap above the rail.','']
         lines+=['## Complete one-slide example','','```latex',(PREAMBLE+command(m['id'],options)+'\n'+END).rstrip(),'```','']
         files[Path('docs/templates/models/'+m['id']+'.md')]='\n'.join(lines).rstrip()+'\n'
     return files

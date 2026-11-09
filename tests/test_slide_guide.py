@@ -100,6 +100,43 @@ class SlideGuideTests(unittest.TestCase):
         graphics=[f for f in pair['fields'] if f['type']=='graphic']
         self.assertTrue(all(f['box'][2:]==[260.0,260.0] for f in graphics))
 
+    def test_sequence_retains_order_and_independent_primary_commands(self):
+        choices={choice['id']:choice for row in slide_guide.catalogue(ROOT)['rows'] for choice in row['choices']}
+        divider=choices['section-divider'];arrow=choices['statement-arrow']
+        sequence=divider['sequences'][0]
+        self.assertEqual(sequence,arrow['sequences'][0])
+        self.assertEqual([step['id'] for step in sequence['steps']],['section-divider','statement-arrow'])
+        self.assertEqual(sequence['command'],divider['command']+'\n\n'+arrow['command'])
+        self.assertEqual(divider['command'].count(r'\studiotemplate'),1)
+        self.assertEqual(arrow['command'].count(r'\studiotemplate'),1)
+        self.assertNotIn('sequences',choices['glow-statement'])
+
+    def test_pack_readiness_requires_explicit_approval_of_every_slide(self):
+        slides={'one':{'status':'approved'},'two':{'status':'in review'}}
+        item={'status':'approved','slides':['one','two']}
+        self.assertEqual(slide_guide.collection_status(item,slides),'in review')
+        slides['two']['status']='approved'
+        self.assertEqual(slide_guide.collection_status(item,slides),'approved')
+        item['status']='in review'
+        self.assertEqual(slide_guide.collection_status(item,slides),'in review')
+
+    def test_review_batch_keeps_explicit_order_and_rejects_unknown_or_large_groups(self):
+        ledger=self.root/'templates/review.json';data=json.loads(ledger.read_text())
+        batch={'id':'covers-01','title':'Cover review','family':'Covers','compositions':['fixed','cover'],'focus':['Alignment']}
+        data['review_batches']=[batch];ledger.write_text(json.dumps(data))
+        self.assertEqual(slide_guide.review_batches(self.root)[0]['compositions'],['fixed','cover'])
+        for ids in [['unknown'],['cover','cover'],['cover']*6]:
+            batch['compositions']=ids;ledger.write_text(json.dumps(data))
+            with self.assertRaisesRegex(ValueError,'one to five distinct'):slide_guide.review_batches(self.root)
+        batch['compositions']=['cover'];batch['id']='../outside';ledger.write_text(json.dumps(data))
+        with self.assertRaisesRegex(ValueError,'Invalid review batch'):slide_guide.review_batches(self.root)
+
+    def test_lesson_topics_are_searchable_but_not_visual_families(self):
+        self.data['layouts']['panels']['topic']='mining';self.save()
+        row=next(row for row in slide_guide.catalogue(self.root)['rows'] if row['id']=='panels')
+        self.assertEqual(row['family'],'Needs classification')
+        self.assertEqual(row['topics'],['mining'])
+
     def test_browser_filter_and_pagination_are_bounded(self):
         node=shutil.which('node')
         if not node:self.skipTest('Node is optional outside browser checks.')
@@ -113,6 +150,16 @@ assert.equal(guide.matches(rows,'not present').length,0);
 assert.equal(guide.pageRows(rows,0).length,12);
 assert.equal(guide.pageRows(rows,2).length,6);
 assert.equal(guide.pageRows(rows,3).length,0);
+const grouped=[{id:'cover',title:'Cover',kind:'studio',family:'Covers',choices:[{id:'blue',label:'blue'},{id:'photo',label:'photo'}],default:0}];
+assert.deepEqual(guide.batchRows(grouped,['photo','blue']).map(r=>r.id),['photo','blue']);
+assert.ok(guide.batchRows(grouped,['photo','blue']).every(r=>r.choices.length===1 && r.default===0));
+assert.equal(grouped[0].choices.length,2);
+assert.equal(guide.qualityMatches('in review','ready'),false);
+assert.equal(guide.qualityMatches('approved','ready'),true);
+assert.equal(guide.qualityMatches('changes requested','review'),true);
+const states=[{...rows[0],choices:[{status:'approved'}]},{...rows[1],choices:[{status:'in review'}]}];
+assert.equal(guide.matches(states,'','all','','ready').length,1);
+assert.equal(guide.matches(states,'','all','','review').length,1);
 '''
         subprocess.run([node,'-e',script,str(ROOT/'docs/slides/guide.js')],check=True,capture_output=True,text=True)
 

@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `cover` · Family: Opening · Status: **in review**.
+Model: `cover` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover.tex)
 

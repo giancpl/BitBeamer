@@ -24,11 +24,11 @@ Original palettes: light.
 | Field | Default | Available space |
 | --- | --- | --- |
 | `title` | <code>Slide title</code> | 50.5% wide × 8.5% high |
-| `label-two` | <code>Supporting explanation</code> | 80.2% wide × 9.7% high |
-| `label-three` | <code>Label 3</code> | 21.9% wide × 6.4% high |
-| `label-four` | <code>Label 4</code> | 21.1% wide × 6.4% high |
-| `label-five` | <code>Supporting explanation.\\Add your own details.</code> | 38.5% wide × 43.0% high |
-| `label-six` | <code>Supporting explanation.\\Add your own details.</code> | 38.1% wide × 43.0% high |
+| `introduction` | <code>Supporting explanation</code> | 80.2% wide × 9.7% high |
+| `left-title` | <code>Label 3</code> | 21.9% wide × 6.4% high |
+| `right-title` | <code>Label 4</code> | 21.1% wide × 6.4% high |
+| `left-body` | <code>Supporting explanation.\\Add your own details.</code> | 38.5% wide × 43.0% high |
+| `right-body` | <code>Supporting explanation.\\Add your own details.</code> | 38.1% wide × 43.0% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -45,7 +45,11 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
   variant={default},
   palette={light},
   title={Slide title},
-  label-two={Supporting explanation}
+  introduction={Supporting explanation},
+  left-title={Label 3},
+  right-title={Label 4},
+  left-body={Supporting explanation.\\Add your own details.},
+  right-body={Supporting explanation.\\Add your own details.}
 ]{two-columns}
 \end{document}
 ```

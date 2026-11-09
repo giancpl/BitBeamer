@@ -6,10 +6,10 @@
     1920,
     1080
   ],
-  "description": "User-supplied BitPolito team slide. Cropped original vector collage and text-free outlined panel decoration; editable statistics are rebuilt in LaTeX.",
+  "description": "User-supplied BitPolito team slide. Cropped vector collage over a continuous full-canvas text-free panel background; editable statistics are rebuilt in LaTeX.",
   "resources": {
     "images/studio/team/collage.pdf": "1c9611ffda5bfcff8d750e1dec4f96126296c4ee5e9448b868fb4016f4f5456f",
-    "images/studio/team/panels.pdf": "29e42481cf59d6da58d02c8e49855f9b8cd7550c69ee17c4453d1abbf09c10d7"
+    "images/studio/team/panels.pdf": "6c84970c6a11bc30e5f3c01a013b798351d45869407f07950c3db449e952fed5"
   },
   "parts": [
     {
@@ -27,12 +27,12 @@
       "name": "panels",
       "file": "images/studio/team/panels.pdf",
       "render_box": [
-        1048,
         0,
-        872,
+        0,
+        1920,
         1080
       ],
-      "content": "Original rounded panel geometry, masks, edge fades and clipping, with all statistic lettering removed."
+      "content": "Continuous original full-canvas background with rounded panel geometry, masks, edge fades and clipping; statistic lettering removed."
     }
   ],
   "retained_source": "Prepared PDF parts are the retained vector sources; ordinary compilation needs no original export or PDF processing library.",

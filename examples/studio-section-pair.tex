@@ -1,0 +1,18 @@
+% Three optional divider/arrow pairs, then two independent arrow statements.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+% Pages 1-2: short copy.
+\studiotemplate[title={A new section}]{section-divider}
+\studiotemplate[variant=arrow,title={Introduce the key idea.}]{statement}
+% Pages 3-4: longer copy; both slides wrap automatically.
+\studiotemplate[title={Understanding digital money}]{section-divider}
+\studiotemplate[variant=arrow,title={Technology changes how we exchange value.}]{statement}
+% Pages 5-6: explicit line breaks, without changing font sizes.
+\studiotemplate[title={Understanding\\digital money}]{section-divider}
+\studiotemplate[variant=arrow,title={A shared system\\without a central owner.}]{statement}
+% Pages 7-8: independent arrow slides, automatic and explicit wrapping.
+\studiotemplate[variant=arrow,title={New tools create new ways to coordinate.}]{statement}
+\studiotemplate[variant=arrow,title={An independent idea\\with room for a second line.}]{statement}
+\end{document}

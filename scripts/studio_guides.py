@@ -301,6 +301,14 @@ All reconstructed compositions remain in graphical review until explicitly appro
     text=text[:start]+'```latex\n'+r'\studiosetup{palette=light}'+'\n'+r'\studiotemplate{'+first+'}\n```'+text[end:]
     text=text.replace('The library retains all 194 compositions behind 100 model cards. The featured set contains\n21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.','This standalone project contains only the models and variants listed in MODELS.md.')
     text=text.replace('slides/index.html','MODELS.md').replace('templates/index.html','MODELS.md').replace('../templates/MODELS.md','MODELS.md').replace('templates/GUIDES.md','TEMPLATES.md')
+    # Clone-only examples must not leave broken links or unavailable calls in subsets.
+    start=text.index('## Suggested two-slide sequence')
+    end=text.index('## Change the palette',start)
+    if not {'section-divider','statement-arrow'} <= {entry['id'] for entry in entries}:
+        text=text[:start]+text[end:]
+    else:
+        text=re.sub(r'\[[^]]+\]\(\.\./examples/studio-section-pair\.tex\)',
+                    'paired and standalone commands above',text)
     text=text.replace('[theme commands](STUDIO.md)','theme commands')
     files['STUDIO-MODELS.md']=text.encode('utf-8')
     return files

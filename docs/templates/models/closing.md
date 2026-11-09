@@ -23,10 +23,10 @@ Original palettes: blue.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>\textcopyright{} \the\year\ BitPolito</code> | 58.3% wide × 8.3% high |
-| `title` | <code>Thank you</code> | 31.2% wide × 8.1% high |
-| `subtitle` | <code></code> | 31.2% wide × 3.9% high |
-| `copyright` | <code>\textcopyright{} \the\year\ BitPolito</code> | 58.3% wide × 8.3% high |
+| `label-one` | <code>\textcopyright{} \the\year\ BitPolito</code> | 41.7% wide × 6.0% high |
+| `title` | <code>@BitPolito</code> | 32.3% wide × 10.2% high |
+| `subtitle` | <code></code> | 32.3% wide × 3.9% high |
+| `copyright` | <code>\textcopyright{} \the\year\ BitPolito</code> | 41.7% wide × 6.0% high |
 
 Layout options: `qrcode=true` (boolean). See the full slot guide for both treatments.
 
@@ -47,7 +47,7 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
   variant={default},
   palette={blue},
   label-one={\textcopyright{} \the\year\ BitPolito},
-  title={Thank you}
+  title={@BitPolito}
 ]{closing}
 \end{document}
 ```

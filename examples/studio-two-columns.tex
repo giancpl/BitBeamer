@@ -1,0 +1,25 @@
+% Short, automatically wrapped and explicitly wrapped two-column explanations.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+\studiotemplate[title={Two approaches},
+  introduction={Compare the same idea from two perspectives.},
+  left-title={Centralized},right-title={Distributed},
+  left-body={One operator coordinates decisions.},
+  right-body={Participants independently verify shared rules.}]{two-columns}
+
+% Longer copy wraps naturally within the existing fixed text boxes.
+\studiotemplate[title={Two ways to coordinate},
+  introduction={Compare who maintains the shared state, who checks the rules, and how participants decide which updates to accept.},
+  left-title={One coordinator},right-title={Many verifiers},
+  left-body={One operator records the shared state and decides which updates to accept. Participants rely on that operator to apply the rules consistently and to keep the service available when they need it.},
+  right-body={Each participant can check the shared state against the same public rules. Updates are accepted through a common procedure, so independent copies can be compared and disagreements can be detected.}]{two-columns}
+
+% Explicit line breaks use the same typography and capacities.
+\studiotemplate[title={Two ways to coordinate},
+  introduction={Compare who maintains the shared state\\and who checks the rules before accepting an update.},
+  left-title={One coordinator},right-title={Many verifiers},
+  left-body={One operator records the state.\\It decides which updates to accept.\\Participants depend on the service\\to apply the rules consistently.},
+  right-body={Participants check the shared state.\\They follow the same public rules.\\Compare independent copies\\to detect disagreements.}]{two-columns}
+\end{document}

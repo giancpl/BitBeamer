@@ -2,14 +2,21 @@
 (function () {
   'use strict';
   const PAGE_SIZE = 12;
-  function matches(rows, query = '', kind = 'all', family = '') {
+  function qualityMatches(status, quality) {
+    return quality === 'all' || (quality === 'ready' ? status === 'approved' : status !== 'approved');
+  }
+  function matches(rows, query = '', kind = 'all', family = '', quality = 'all') {
     const q = query.toLowerCase().trim();
-    return rows.filter(row => (kind === 'all' || (kind === 'featured' ? row.featured : row.kind === kind)) &&
+    return rows.filter(row => ((row.choices?.length ? row.choices.some(c => qualityMatches(c.status, quality)) : qualityMatches(row.status, quality))) && (kind === 'all' || (kind === 'featured' ? row.featured : row.kind === kind)) &&
       (!family || row.family === family) && (!q || [row.id, row.title, row.family,
         ...(row.choices || []).flatMap(c => [c.id, c.label, ...(c.fields || []).flatMap(f => [f.name, f.native || ''])]),
         ...(row.topics || []), ...(row.prerequisites || [])].join(' ').toLowerCase().includes(q)));
   }
   function pageRows(rows, page) { return rows.slice(page * PAGE_SIZE, (page + 1) * PAGE_SIZE); }
+  function batchRows(rows, ids) {
+    const entries=new Map(rows.flatMap(row=>row.choices.map(choice=>[choice.id,{...row,id:choice.id,title:row.title+' — '+choice.label,default:0,choices:[choice]}])));
+    return ids.map(id=>entries.get(id)).filter(Boolean);
+  }
   function resolveChoice(data, requested, variant, palette) {
     requested = data.aliases?.[requested] || requested;
     const alias = (data.variant_aliases || []).find(a => a.model === requested && a.variant === variant);
@@ -20,12 +27,14 @@
     if (variant || palette) index = row.choices.findIndex(c => (!variant || c.variant === variant) && (!palette || c.palette === palette));
     return {row, index:index < 0 ? row.default : index};
   }
-  if (typeof module !== 'undefined') module.exports = {matches, pageRows, PAGE_SIZE, resolveChoice};
+  if (typeof module !== 'undefined') module.exports = {matches, pageRows, PAGE_SIZE, resolveChoice, qualityMatches, batchRows};
   if (typeof document === 'undefined') return;
   const data = window.BITBEAMER_SLIDES; if (!data) return;
   const $ = id => document.getElementById(id), choices = new Map(), pending = new Map();
   const params = new URLSearchParams(location.search);
   let page = 0, singleId = null, view = params.get('view') || params.get('kind') || 'templates', request = 0;
+  let batchId=params.get('batch') || '';
+  let quality = params.get('quality') === 'ready' ? 'ready' : batchId ? 'all' : 'review';
   const maintenance = params.get('maintenance') === '1';
   if (!['templates','decks','blocks'].includes(view)) view = 'templates';
   function element(tag, text, cls) { const node=document.createElement(tag); if (text !== undefined) node.textContent=text; if(cls)node.className=cls;return node; }
@@ -36,7 +45,7 @@
     return pending.get(name);
   }
   function button(text,callback) {const b=element('button',text);b.type='button';b.onclick=callback;return b;}
-  function copyButton(text,pre) {return button('Copy command',async event=>{const target=event.currentTarget;try{await navigator.clipboard.writeText(text);target.textContent='Copied';}catch{const range=document.createRange();range.selectNodeContents(pre);const selection=getSelection();selection.removeAllRanges();selection.addRange(range);target.textContent='Selected — copy with Ctrl/Cmd+C';}});}
+  function copyButton(text,pre,label='Copy command') {return button(label,async event=>{const target=event.currentTarget;try{await navigator.clipboard.writeText(text);target.textContent='Copied';}catch{const range=document.createRange();range.selectNodeContents(pre);const selection=getSelection();selection.removeAllRanges();selection.addRange(range);target.textContent='Selected — copy with Ctrl/Cmd+C';}});}
   function previewImage(record,title) {const image=element('img');image.loading='lazy';image.decoding='async';image.width=640;image.height=360;image.src=record.url;image.alt=title;return image;}
   function close() {$('inspector').close();$('inspect-image').removeAttribute('src');$('inspect-comparison').replaceChildren();}
   $('inspect-close').onclick=close;
@@ -75,15 +84,28 @@
     } catch(error){target.replaceChildren(element('p',error.message));}
   }
   function template(row) {
-    const index=choices.get(row.id) ?? row.default,choice=row.choices[index],article=element('article');article.id=row.id;
+    let index=choices.get(row.id) ?? row.default;
+    if(!row.choices[index])index=row.default;
+    if(!qualityMatches(row.choices[index].status,quality))index=row.choices.findIndex(c=>qualityMatches(c.status,quality));
+    const choice=row.choices[index],article=element('article');article.id=row.id;
     const visual=element('div',undefined,'visual');
     if(choice.preview.available){const open=button('',()=>showHD(row.title,choice));open.className='image-button';open.setAttribute('aria-label','Open HD preview: '+row.title);open.append(previewImage(choice.preview,row.title));visual.append(open,element('small','Open the preview for HD and editable areas.'));}else visual.append(element('p','Preview preparation pending.','missing'));
     const body=element('div',undefined,'body');body.append(element('h2',row.title),element('div',row.id,'identity'));
     const badge=element('p');badge.append(element('span',row.kind==='studio'?'Studio model':row.kind==='fixed'?'Fixed content':'Lesson layout','badge'),element('small',row.family+' · '+choice.status));body.append(badge);
-    if(row.choices.length>1){const label=element('label','Composition and original palette'),select=element('select',undefined,'choice');select.setAttribute('aria-label',row.title+' composition');row.choices.forEach((item,i)=>{const o=element('option',item.label);o.value=i;o.selected=i===index;select.append(o);});select.onchange=()=>{choices.set(row.id,Number(select.value));article.replaceWith(template(row));};label.append(select);body.append(label);}
+    if(row.choices.length>1){const label=element('label','Composition and original palette'),select=element('select',undefined,'choice');select.setAttribute('aria-label',row.title+' composition');row.choices.forEach((item,i)=>{if(!qualityMatches(item.status,quality))return;const o=element('option',item.label);o.value=i;o.selected=i===index;select.append(o);});select.onchange=()=>{choices.set(row.id,Number(select.value));article.replaceWith(template(row));};label.append(select);body.append(label);}
+    if(choice.consumers?.length)body.append(element('p','Used by: '+choice.consumers.join(', ')));
     if(choice.preamble)body.append(element('p','Additional preamble: '+choice.preamble));
     const pre=element('pre',choice.command);body.append(pre);
-    const actions=element('div',undefined,'actions');actions.append(copyButton(choice.command,pre),link('Source',choice.source),link('Field guide',choice.guide),link('Permalink','?template='+encodeURIComponent(choice.id)+(maintenance?'&maintenance=1':'')));if(choice.content_source)actions.append(link('Example content',choice.content_source));body.append(actions);
+    const actions=element('div',undefined,'actions');actions.append(copyButton(choice.command,pre),link('Source',choice.source),link('Field guide',choice.guide),link('Permalink','?template='+encodeURIComponent(choice.id)+'&quality='+quality+(batchId?'&batch='+encodeURIComponent(batchId):'')+(maintenance?'&maintenance=1':'')));if(batchId&&maintenance)actions.append(button('Compare original / replica',()=>{showHD(row.title,choice);showComparison(choice);}));if(choice.content_source)actions.append(link('Example content',choice.content_source));body.append(actions);
+    for(const sequence of choice.sequences || []) {
+      const suggested=element('details',undefined,'suggested-sequence');
+      suggested.append(element('summary','Suggested sequence: '+sequence.title),element('p',sequence.description));
+      const order=element('ol');
+      for(const step of sequence.steps){const item=element('li');item.append(link(step.title,'?template='+encodeURIComponent(step.id)));order.append(item);}
+      const commands=element('pre',sequence.command),actions=element('div',undefined,'actions');
+      actions.append(copyButton(sequence.command,commands,'Copy sequence'));
+      suggested.append(order,commands,actions);body.append(suggested);
+    }
     const details=element('details');details.append(element('summary',row.kind==='fixed'?'Fixed slide: no editable fields':'Customize text and graphics ('+choice.fields.length+' fields)'));
     const list=element('ul');choice.fields.forEach(f=>{const li=element('li');li.append(element('code',f.name),document.createTextNode(' · '+f.type));list.append(li);});details.append(list,element('p','Replace text values with your own LaTeX. Empty values keep their space; oversized content is reported.'));
     const graphic=choice.fields.find(f=>f.type==='graphic');
@@ -96,7 +118,7 @@
     const body=element('div',undefined,'body');body.append(element('h2',row.title),element('div',row.id,'identity'),element('p',row.summary || ''),element('p',row.slides.length+' slides · '+(row.audience || '')+' · '+row.status));
     body.append(element('p','Prerequisites: '+((row.prerequisites || []).join(', ') || 'None')));
     const command='python3 scripts/deck.py '+(view==='decks'?'new my-talk --from ':'add my-talk --block ')+row.id,pre=element('pre',command);body.append(pre);
-    const actions=element('div',undefined,'actions');actions.append(copyButton(command,pre),button('Inspect slide sequence',()=>sequence(row)),link('Permalink','?view='+view+'&item='+encodeURIComponent(row.id)));body.append(actions);article.append(visual,body);return article;
+    const actions=element('div',undefined,'actions');actions.append(copyButton(command,pre),button('Inspect slide sequence',()=>sequence(row)),link('Permalink','?view='+view+'&item='+encodeURIComponent(row.id)+'&quality='+quality));body.append(actions);article.append(visual,body);return article;
   }
   function sequence(row) {
     const library=window.BITBEAMER_LIBRARY;let position=0;
@@ -108,28 +130,36 @@
   function families(){const current=$('family').value;$('family').replaceChildren(element('option','All families'));$('family').firstChild.value='';for(const name of [...new Set(data.rows.map(r=>r.family))].sort()){const o=element('option',name);o.value=name;$('family').append(o);}$('family').value=current;}
   function render() {
     let rows;
-    if(view==='templates'){rows=singleId?data.rows.filter(r=>r.id===singleId):matches(data.rows,$('search').value,$('collection').value,$('family').value);if(params.get('roles')==='pages')rows=rows.filter(r=>['cover','agenda','closing'].includes(r.id));}
-    else rows=matches(Object.entries(window.BITBEAMER_LIBRARY[view]).map(([id,item])=>({...item,id,kind:'all',family:'',choices:[]})),$('search').value);
+    if(view==='templates'&&batchId){const batch=(data.review_batches || []).find(b=>b.id===batchId);rows=batch?matches(batchRows(data.rows,batch.compositions),$('search').value,'all','',quality):[];}
+    else if(view==='templates'){rows=singleId?data.rows.filter(r=>r.id===singleId):matches(data.rows,$('search').value,$('collection').value,$('family').value,quality);if(params.get('roles')==='pages')rows=rows.filter(r=>['cover','agenda','closing'].includes(r.id));}
+    else rows=matches(Object.entries(window.BITBEAMER_LIBRARY[view]).map(([id,item])=>({...item,id,kind:'all',family:'',choices:[]})),$('search').value,'all','',quality);
+    rows=rows.filter(row=>row.choices?.length?row.choices.some(c=>qualityMatches(c.status,quality)):qualityMatches(row.status,quality));
     const pages=Math.max(1,Math.ceil(rows.length/PAGE_SIZE));page=Math.max(0,Math.min(page,pages-1));$('slides').replaceChildren(...pageRows(rows,page).map(view==='templates'?template:collectionCard));
     $('count').textContent=rows.length+' '+(view==='templates'?'templates':view==='decks'?'presentations':'blocks')+' · '+(page+1)+' / '+pages+'. Only this page loads thumbnails.';$('page').textContent=(page+1)+' / '+pages;
     document.querySelectorAll('[data-step]').forEach(b=>b.disabled=Number(b.dataset.step)<0?page===0:page===pages-1);
     document.querySelectorAll('[data-view]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.view===view)));
-    $('collection-label').hidden=$('family-label').hidden=view!=='templates';
+    document.querySelectorAll('[data-quality]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.quality===quality)));
+    $('batch-label').hidden=view!=='templates';
+    $('collection-label').hidden=$('family-label').hidden=view!=='templates'||Boolean(batchId);
+    const batch=(data.review_batches || []).find(b=>b.id===batchId);
+    if(batch){$('notice').hidden=false;$('notice').textContent=batch.title+' · '+batch.family+'. '+batch.focus.join(' ');}else $('notice').hidden=true;
   }
   async function update() {
     const token=++request;
     try {
       if(view!=='templates')await load('catalogue-library.js','BITBEAMER_LIBRARY');
-      else if(['all','lesson','fixed'].includes($('collection').value)||singleId&&!data.rows.some(r=>r.id===singleId)){
+      else if(batchId||['all','lesson','fixed'].includes($('collection').value)||singleId&&!data.rows.some(r=>r.id===singleId)){
         const extra=await load('catalogue-lessons.js','BITBEAMER_EXTRA_SLIDES');if(!data.extraLoaded){data.rows.push(...extra.rows);data.extraLoaded=true;families();}
       }
       if(token===request)render();
     }catch(error){$('count').textContent=error.message;}
   }
-  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;singleId=null;page=0;$('search').value='';update();});
+  document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{view=b.dataset.view;singleId=null;batchId='';$('review-batch').value='';page=0;$('search').value='';update();});
+  document.querySelectorAll('[data-quality]').forEach(b=>b.onclick=()=>{quality=b.dataset.quality;page=0;update();});
+  $('review-batch').onchange=()=>{batchId=$('review-batch').value;singleId=null;view='templates';page=0;quality=batchId?'all':'review';$('search').value='';update();};
   $('filters').onsubmit=e=>e.preventDefault();$('search').oninput=$('collection').onchange=$('family').onchange=()=>{singleId=null;page=0;update();};
   document.querySelectorAll('[data-step]').forEach(b=>b.onclick=()=>{page+=Number(b.dataset.step);render();$('count').scrollIntoView({block:'nearest'});});
-  async function start(){families();if([...$('collection').options].some(o=>o.value===params.get('collection')))$('collection').value=params.get('collection');const requested=params.get('template') || location.hash.slice(1);if(requested){if(!resolveChoice(data,requested,params.get('variant'),params.get('palette'))){$('collection').value='all';await update();}const selected=resolveChoice(data,requested,params.get('variant'),params.get('palette'));if(selected){singleId=selected.row.id;choices.set(singleId,selected.index);$('search').value=singleId;}}
+  async function start(){families();(data.review_batches || []).forEach(batch=>{const option=element('option',batch.title+' ('+batch.compositions.length+')');option.value=batch.id;$('review-batch').append(option);});if(!(data.review_batches || []).some(b=>b.id===batchId))batchId='';$('review-batch').value=batchId;if([...$('collection').options].some(o=>o.value===params.get('collection')))$('collection').value=params.get('collection');const requested=params.get('template') || location.hash.slice(1);if(requested){if(!resolveChoice(data,requested,params.get('variant'),params.get('palette'))){$('collection').value='all';await update();}const selected=resolveChoice(data,requested,params.get('variant'),params.get('palette'));if(selected){singleId=selected.row.id;choices.set(singleId,selected.index);quality=selected.row.choices[selected.index].status==='approved'?'ready':'review';$('search').value=singleId;}}
     if(params.get('scope')==='all')$('collection').value='all';if(params.get('scope')==='models')$('collection').value='studio';if(params.get('roles'))$('collection').value='studio';
     await update();if(params.get('item')&&view!=='templates'){const key=window.BITBEAMER_LIBRARY.aliases?.[params.get('item')] || params.get('item');const item=window.BITBEAMER_LIBRARY[view][key];if(item)sequence({...item,id:key});}
     if(params.get('content')==='example'){$('notice').hidden=false;$('notice').textContent='Retained teaching content is available in Presentations and Reusable blocks. Core single-slide English examples remain available through the documented PDF export command.';}

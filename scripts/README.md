@@ -77,3 +77,14 @@ lossless WebP images; `check` verifies freshness without conversion dependencies
 indexes existing comparison images and maintains old-URL redirects.
 The guide uses content-based cache keys and loads at most
 12 rows at a time. No original references or full review PDF is needed to browse.
+
+For a small graphical review, `python3 scripts/review_batch.py <batch-id>` builds
+only the pending compositions in that batch. Add `--compare` for local originals
+and `--open` to open the result. `python3 scripts/review_batch.py all --compare`
+combines pending compositions from registered batches into `build/review/batches/comparisons.pdf`. See the [review workflow](../docs/STUDIO-COLLECTION.md#review-one-small-family-at-a-time).
+
+Graphical review PDFs contain only compositions whose catalogue status is not
+`approved`, for both core templates and fixed lesson presets. Fully approved
+batches are skipped by `review_batch.py all`; direct approved-batch requests
+report that no review is pending. Comparison headers and `all-report.json` list
+the canonical category for each pending composition.

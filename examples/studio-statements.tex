@@ -1,0 +1,19 @@
+% Short and longer copy for the three remaining statement compositions.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+% Radial glow: short copy, automatic wrapping, then explicit line breaks.
+\studiotemplate[variant=glow,statement={One shared idea}]{statement}
+\studiotemplate[variant=glow,
+  statement={Connecting people through shared ideas}]{statement}
+\studiotemplate[variant=glow,
+  statement={Connecting people\\through shared ideas}]{statement}
+% Plain blue: short and longer single-line statements at the same font size.
+\studiotemplate[variant=plain,title={A clear statement}]{statement}
+\studiotemplate[variant=plain,
+  title={Everyone can verify the shared rules}]{statement}
+% Oversized headline: short words, with an independent upper caption.
+\studiotemplate[variant=clipped,title={Trust},label-one={Build}]{statement}
+\studiotemplate[variant=clipped,title={Discovery},label-one={Explore}]{statement}
+\end{document}

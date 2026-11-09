@@ -1,8 +1,18 @@
 % Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
 \studiodeclarefield{statement}{Slide title}
 \studioapplyfields
-% Measured reconstruction; pending visual approval. Units match the 3556 x 2000 SVG.
-\studiopilotcanvas{glow-statement}{studio-background}{
+% Measure the complete statement before TikZ; center either one or two lines
+% on the radial glow at source coordinates (1778, 1000), without scaling text.
+\studiounit=\dimexpr\paperwidth/3556\relax
+\studiofitunit=\dimexpr\paperheight/2000\relax
+\ifdim\studiofitunit<\studiounit\studiounit=\studiofitunit\fi
+\setbox\studiotextbox=\vbox{\hsize=1386\studiounit\parindent=0pt
+  \normalfont\sffamily\fontsize{120\studiounit}{136\studiounit}\selectfont
+  \bfseries\centering\noindent\studiofield{statement}\par}%
+\edef\studioglowheight{\the\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax}%
+\pgfmathsetmacro{\studioglowtop}{1000-\studioglowheight/\studiounit/2}%
+% Provisional fixed PDF background; editable text remains independent.
+\studiopilotcanvas{glow-statement}{studio-paper}{
 \studiopilotpart{radial-glow}{0}{0}{3556}
-\studiopilottext{statement}{1100}{894}{1386}{290}{120}{136}{\color{studio-surface}\centering\bfseries}{\studiofield{statement}}
+\studiopilottext{statement}{1085}{\studioglowtop}{1386}{290}{120}{136}{\color{studio-surface}\centering\bfseries}{\studiofield{statement}}
 }

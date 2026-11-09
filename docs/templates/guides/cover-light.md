@@ -4,7 +4,7 @@
 
 Open a talk or introduce its structure using the cover light layout.
 
-Model: `cover-light` · Family: Opening · Status: **in review**.
+Model: `cover-light` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-light.tex)
 

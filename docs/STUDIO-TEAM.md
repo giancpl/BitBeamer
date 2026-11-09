@@ -78,7 +78,9 @@ is retained as artwork; the template's authored content and documentation are En
 ## Source and review
 
 The reference is the user-supplied `team-presentation.pdf`, one 1920 × 1080 page.
-Both halves preserve their source coordinates, canvas and crop with a single
+The cropped collage sits over a continuous full-canvas vector background, avoiding
+a differently rendered strip between the images and panels. Both parts preserve
+their source coordinates and crop with a single
 uniform scale. The decorative outlines, masks, edge fades and original images
 are retained as PDF parts; four values and four captions are rebuilt as selectable
 LaTeX text. Inter replaces SF Pro in those editable fields. No full-slide bitmap
@@ -89,7 +91,9 @@ exact crop boxes and prepared-part hashes. The retained PDF parts are their own
 vector sources; ordinary builds and Overleaf need no original Figma export,
 Python PDF library, converter or shell escape. A maintenance-only importer can
 re-extract them from the same reference; see the [artwork notes](../images/studio/team/README.md).
-The template remains **in review**.
+The current composition was explicitly **approved** by the user on 2026-11-06
+after the continuous-background correction. This is graphical approval; verify
+the editable example figures before presenting.
 
 Copy [the complete example](../examples/studio-team.tex), or build one slide:
 

@@ -48,7 +48,8 @@ def extract(reference,root=ROOT):
     manifest['resources']=hashes
     (folder/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n', encoding="utf-8")
     metadata=root/'templates/index.json';data=json.loads(metadata.read_text(encoding="utf-8"))
-    next(e for e in data['templates'] if e['id']=='closing')['prepared_resources']=hashes
+    # Preserve independently prepared additions such as the default GitHub mark.
+    next(e for e in data['templates'] if e['id']=='closing').setdefault('prepared_resources',{}).update(hashes)
     metadata.write_text(json.dumps(data,indent=2)+'\n', encoding="utf-8")
     return hashes
 

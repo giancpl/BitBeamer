@@ -436,6 +436,7 @@
       "reference": "figma-0793",
       "group": 0,
       "children": [
+        0,
         1
       ],
       "render_box": [
@@ -454,20 +455,36 @@
         0,
         0
       ],
-      "notes": "Original radial gradient and transform; clipped to the original canvas.",
-      "source": "images/studio/parts/source/radial-glow.svg",
-      "source_sha256": "fea0d86d02d05dff36e323c63fdf56aad9aafbec3ddad9d7b169cbb8249f0526",
+      "notes": "Single provisional background: supplied native PDF at its original proportions, with only its solid paper rectangle normalized to #F9F9F9. Gradient streams unchanged; experimental variants retired.",
+      "source": "images/studio/parts/source/statement-glow-background-f9f9f9.pdf",
+      "source_sha256": "fae641b41caa8f1b8b6f0a61ac791f70fa5f317a4ca999e66ef56535eecda115",
       "reference_sha256": "562051f5fdd056409401289cf8cd4a4b00f962b718a3ead85512824e27d81ee2",
       "canvas": [
-        3556.0,
-        2000.0
+        1920,
+        1080
       ],
       "dependencies": [],
-      "definition_ids": [
-        "clip0_2339_1355",
-        "paint0_radial_2339_1355"
-      ],
-      "pdf_sha256": "6c3c684e4dcfbe0101055b56151bfd1e3b8bd84a7b1aaa09a876dddddb5d77b2"
+      "definition_ids": [],
+      "retained_source": "images/studio/parts/source/statement-glow-background-f9f9f9.pdf",
+      "rendering": "copy-pdf",
+      "source_origin": {
+        "kind": "user-supplied background",
+        "original_filename": "statement.pdf",
+        "sha256": "f82a19c0aeb0655052322423f56340367570089b5d80a5c45c0f2274c77ad61d",
+        "companion": {
+          "path": "images/studio/parts/source/resources/statement-glow-gradient.png",
+          "original_filename": "Ellipse 67.png",
+          "sha256": "599aef6363f467d49ba17edba5ee4281f2ee4bf4797d8c3ea0095d3b496c9ae5"
+        }
+      },
+      "background_override": {
+        "color": "#F9F9F9",
+        "original_source": "images/studio/parts/source/statement-glow-background.pdf",
+        "original_sha256": "f82a19c0aeb0655052322423f56340367570089b5d80a5c45c0f2274c77ad61d",
+        "change": "Only the solid paper fill; all gradient and transparency streams unchanged."
+      },
+      "renderer": "Supplied PDF copied byte-for-byte; fixed background, no conversion, rasterization or reconstruction. Text remains a separate editable layer.",
+      "pdf_sha256": "fae641b41caa8f1b8b6f0a61ac791f70fa5f317a4ca999e66ef56535eecda115"
     },
     {
       "name": "dashboard-grid",

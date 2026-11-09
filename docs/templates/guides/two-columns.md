@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `two-columns` · Family: Lists · Status: **in review**.
+Model: `two-columns` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-columns.tex)
 

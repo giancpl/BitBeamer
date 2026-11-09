@@ -1,4 +1,5 @@
 """One current implementation per composition and compatibility without copies."""
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -11,10 +12,34 @@ import xml.etree.ElementTree as ET
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'scripts'))
 from studio_templates import inspect_templates, inspect_aliases, registry_document
-from studio_parts import prepare, references
+from studio_parts import prepare, references, extract
 
 
 class CurrentStudioSourceTests(unittest.TestCase):
+    def test_user_background_survives_extraction_without_original_exports(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            relative = 'images/studio/parts/source/statement-glow-background-f9f9f9.pdf'
+            supplied = (ROOT / relative).read_bytes()
+            target = root / relative
+            target.parent.mkdir(parents=True)
+            target.write_bytes(supplied)
+            recipe = next(p for p in json.loads((ROOT / 'images/studio/parts/recipes.json').read_text())['parts']
+                          if p['name'] == 'radial-glow')
+            (root / 'images/studio/parts/recipes.json').write_text(json.dumps({'parts': [recipe]}))
+            (root / 'templates').mkdir()
+            (root / 'templates/figma-inventory.json').write_text(json.dumps({'frames': [
+                {'id': recipe['reference'], 'file': 'unavailable-original.svg', 'sha256': 'historical-reference'}]}))
+            records = extract(root, exports=root / 'unavailable-exports')
+            self.assertEqual(target.read_bytes(), supplied)
+            self.assertEqual(records[0]['source'], relative)
+            self.assertEqual(records[0]['canvas'], [1920, 1080])
+            self.assertEqual(records[0]['background_override']['color'], '#F9F9F9')
+            self.assertEqual(records[0]['source_sha256'], hashlib.sha256(supplied).hexdigest())
+            self.assertEqual(records[0]['source_origin']['kind'], 'user-supplied background')
+            self.assertEqual(prepare(root), 1)
+            self.assertEqual((root / 'images/studio/parts/radial-glow.pdf').read_bytes(), supplied)
+
     def test_every_composition_has_one_distinct_current_implementation(self):
         entries = inspect_templates(ROOT)
         self.assertEqual(len(entries), 196)
@@ -82,6 +107,10 @@ class CurrentStudioSourceTests(unittest.TestCase):
         self.assertEqual(prepare(ROOT, check=True), 22)
         manifest = json.loads((ROOT / 'images/studio/parts/manifest.json').read_text(encoding='utf-8'))
         for part in manifest['parts']:
+            if part.get('rendering') == 'copy-pdf':
+                self.assertEqual((ROOT / part['source']).read_bytes(),
+                                 (ROOT / 'images/studio/parts' / (part['name'] + '.pdf')).read_bytes())
+                continue
             svg = ET.parse(ROOT / part['source']).getroot()
             ids = {node.get('id') for node in svg.iter() if node.get('id')}
             self.assertFalse(references([svg]) - ids, part['name'])

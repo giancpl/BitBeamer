@@ -639,12 +639,27 @@
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-6",
-                "label-three": "text-4",
-                "label-four": "text-5",
-                "label-five": "text-2",
-                "label-six": "text-3"
-              }
+                "introduction": "text-6",
+                "left-title": "text-4",
+                "right-title": "text-5",
+                "left-body": "text-2",
+                "right-body": "text-3"
+              },
+              "example_fields": [
+                "title",
+                "introduction",
+                "left-title",
+                "right-title",
+                "left-body",
+                "right-body"
+              ],
+              "rejected_semantic_fields": [
+                "label-two",
+                "label-three",
+                "label-four",
+                "label-five",
+                "label-six"
+              ]
             }
           ]
         }
@@ -4974,6 +4989,17 @@
         "text-2": "credit"
       },
       "note": "Compatibility access for the existing quote and attribution panel."
+    }
+  ],
+  "sequences": [
+    {
+      "id": "section-introduction",
+      "title": "Section introduction and key idea",
+      "description": "Use the blue divider before the white incoming-arrow statement to continue the line across the two slides. Each slide can also be used independently.",
+      "compositions": [
+        "section-divider",
+        "statement-arrow"
+      ]
     }
   ]
 }

@@ -23,7 +23,7 @@ def extract(source, root=ROOT):
     if hashlib.sha256(source.read_bytes()).hexdigest() != record['reference_sha256']:
         raise RuntimeError('Unmeasured reference PDF. Measure a new export before changing its extraction recipe.')
     prepared = {}
-    for kind, box in [('collage',[0,0,988,1080]),('panels',[1048,0,1920,1080])]:
+    for kind, box in [('collage',[0,0,988,1080]),('panels',[0,0,1920,1080])]:
         reader = PdfReader(source)
         if len(reader.pages) != 1:
             raise RuntimeError('Expected the measured single-page team reference.')

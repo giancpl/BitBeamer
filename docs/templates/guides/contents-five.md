@@ -4,7 +4,7 @@
 
 Open a talk or introduce its structure using the five-section contents layout.
 
-Model: `contents-five` · Family: Opening · Status: **in review**.
+Model: `contents-five` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/contents-five.tex)
 
@@ -111,7 +111,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>item-one</code> | List or contents entry (text) | upper right | 33.2% wide × 6.0% high | <code>First section</code> |
 | <code>item-two</code> | List or contents entry (text) | middle right | 33.2% wide × 6.0% high | <code>Second section</code> |
 | <code>item-three</code> | List or contents entry (text) | middle right | 33.2% wide × 6.0% high | <code>Third section</code> |
-| <code>item-four</code> | List or contents entry (text) | lower right | 33.2% wide × 6.0% high | <code>Fourth section</code> |
+| <code>item-four</code> | List or contents entry (text) | middle right | 33.2% wide × 6.0% high | <code>Fourth section</code> |
 | <code>item-five</code> | List or contents entry (text) | lower right | 33.2% wide × 6.0% high | <code>Fifth section</code> |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 38.0% wide × 13.0% high | <code>\studiopaletteimage[width=1351\studiounit]{images/studio/collection/figma-0883-agenda-panel-1.pdf}</code> |
 | <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle right | 38.0% wide × 12.9% high | <code>\studiopaletteimage[width=1351\studiounit]{images/studio/collection/figma-0883-agenda-panel-2.pdf}</code> |

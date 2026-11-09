@@ -117,7 +117,7 @@ def refresh(root,name,pdf,page=1,backend='docker',image='bitbeamer-latex:local',
 
 
 def clean_document(commands):
-    return '\n'.join([r'\documentclass[aspectratio=169]{beamer}',r'\usetheme{bitpolito-studio}',r'\usepackage{bitpolitostudiotemplates}',r'\usepackage{bitpolitostudiolibrary}',r'\usepackage[backend=biber]{biblatex}',r'\addbibresource{bibliography.bib}',r'\addbibresource{library/references.bib}',r'\begin{document}',*commands,r'\end{document}',''])
+    return '\n'.join([r'\ifdefined\pdfminorversion\pdfminorversion=7\fi', r'\documentclass[aspectratio=169]{beamer}',r'\usetheme{bitpolito-studio}',r'\usepackage{bitpolitostudiotemplates}',r'\usepackage{bitpolitostudiolibrary}',r'\usepackage[backend=biber]{biblatex}',r'\addbibresource{bibliography.bib}',r'\addbibresource{library/references.bib}',r'\begin{document}',*commands,r'\end{document}',''])
 
 
 def prepare(root=ROOT,names=None,backend='docker',image='bitbeamer-latex:local',jobs=2):

@@ -55,7 +55,7 @@ STUDIO_THEME_FILES = (
 STUDIO_BRAND_FILES = ('bull-white.pdf', 'polito-coat-of-arms-white.pdf', 'LICENSE')
 STUDIO_ASSETS = ('alice-white.pdf', 'bob-white.pdf', 'pig-white.pdf', 'cover-pattern-white.pdf',
                  'closing/qrcode.pdf', 'closing/telegram.pdf', 'closing/instagram.pdf',
-                 'closing/twitter.pdf', 'closing/youtube.pdf')
+                 'closing/twitter.pdf', 'closing/youtube.pdf', 'closing/github.pdf', 'closing/layout.tex')
 LEGACY_ARCHIVE = 'bitbeamer-overleaf.zip'
 
 

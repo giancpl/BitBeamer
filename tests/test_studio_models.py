@@ -26,6 +26,47 @@ class StudioModelTests(unittest.TestCase):
         self.assertNotEqual(members['cover'][1]['id'],members['cover-light'][1]['id'])
         self.assertNotEqual(members['cover'][0]['id'],members['cover-dashboard'][0]['id'])
 
+    def test_two_columns_uses_named_fields_and_rejects_replaced_syntax(self):
+        entries=studio_templates.inspect_templates(ROOT)
+        composition=studio_models.membership(ROOT)['two-columns'][2]
+        expected={'title':'title','introduction':'text-6','left-title':'text-4',
+                  'right-title':'text-5','left-body':'text-2','right-body':'text-3'}
+        self.assertEqual(composition['fields'],expected)
+        self.assertNotIn('field_aliases',composition)
+        registry='\n'.join(studio_models.registry(ROOT,[e for e in entries if e['id']=='two-columns']))
+        for field,native in expected.items():
+            if field != native:
+                self.assertIn(r'\DeclareStudioSemantic{two-columns}{'+field+'}{'+native+'}',registry)
+        for field in ['label-two','label-three','label-four','label-five','label-six']:
+            self.assertIn(r'\DeclareStudioRejectedSemantic{two-columns}{'+field+'}',registry)
+            self.assertNotIn(r'\DeclareStudioSemantic{two-columns}{'+field+'}',registry)
+        guide=studio_models.model_guides(ROOT,entries)[Path('docs/templates/models/two-columns.md')]
+        for name in expected:
+            self.assertIn('| `'+name+'` |',guide)
+            self.assertIn(name+'={',guide)
+        self.assertNotIn('Compatibility names remain accepted',guide)
+
+    def test_optional_sequences_validate_members_without_merging_models(self):
+        sequence=studio_models.suggested_sequences(ROOT)[0]
+        self.assertEqual(sequence['compositions'],['section-divider','statement-arrow'])
+        self.assertNotEqual(studio_models.membership(ROOT)['section-divider'][0]['id'],
+                            studio_models.membership(ROOT)['statement-arrow'][0]['id'])
+        data=json.loads((ROOT/'templates/models.json').read_text())
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);(root/'templates').mkdir()
+            for members in [['section-divider'],['section-divider','section-divider'],['section-divider','missing']]:
+                data['sequences'][0]['compositions']=members
+                (root/'templates/models.json').write_text(json.dumps(data))
+                with self.assertRaisesRegex(ValueError,'Invalid suggested slide sequence'):
+                    studio_models.suggested_sequences(root)
+
+    def test_single_composition_export_omits_unavailable_sequence_commands(self):
+        entries=studio_templates.inspect_templates(ROOT)
+        divider=[entry for entry in entries if entry['id']=='section-divider']
+        text=studio_models.model_guides(ROOT,divider)[Path('docs/templates/models/section-divider.md')]
+        self.assertNotIn('Suggested sequence',text)
+        self.assertNotIn(']{statement}',text)
+
     def test_selection_retains_each_original_choice_and_order(self):
         d=studio_models.load_models(ROOT)
         original=json.loads((ROOT/'templates/review.json').read_text(encoding="utf-8"))['selection']

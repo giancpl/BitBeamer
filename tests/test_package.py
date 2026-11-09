@@ -12,6 +12,8 @@ sys.path.insert(0, str(ROOT / 'scripts'))
 import asset_library
 from doc_checks import check_docs
 import package
+import studio_models
+import studio_templates
 
 
 class PackageTests(unittest.TestCase):
@@ -136,7 +138,11 @@ class PackageTests(unittest.TestCase):
                 self.assertIn(b'latexmk -pdf studio-template-catalogue.tex', archive.read('TEMPLATES.md'))
                 self.assertIn('studio-template-catalogue.tex', names)
                 self.assertIn('templates/studio/registry.tex', names)
-                self.assertEqual(sum(name.startswith('templates/studio/') and name.endswith('.tex') for name in names), 1 + len(__import__('studio_review').package_selection(ROOT)))
+                selected={item['id'] for item in __import__('studio_review').package_selection(ROOT)}
+                entries=[e for e in studio_templates.inspect_templates(ROOT) if e['id'] in selected]
+                expected={'templates/studio/registry.tex',*(e['source'] for e in entries)}
+                expected.update(name for name in studio_models.dependencies(ROOT,entries) if name.startswith('templates/studio/') and name.endswith('.tex'))
+                self.assertEqual({name for name in names if name.startswith('templates/studio/') and name.endswith('.tex')},expected)
                 self.assertFalse(any(name.startswith(('docs/templates/', 'design-references/')) for name in names))
                 self.assertFalse(any(name.endswith(('.svg', '.py', '.json')) for name in names))
                 extracted = Path(directory) / 'extracted'

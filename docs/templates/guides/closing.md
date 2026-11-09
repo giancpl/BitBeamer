@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `closing` · Family: Closing · Status: **in review**.
+Model: `closing` · Family: Closing · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/closing.tex)
 
@@ -54,6 +54,7 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `text/2` | `title` | Main text |
 | `text/3` | `subtitle` | Editable text |
 | `icon/5`, `image/5`, `graphic/5` | `qr-graphic` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/6`, `image/6`, `graphic/6` | `github-graphic` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -72,7 +73,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Thank you}
+  text/2={@BitPolito}
 ]{closing}
 ```
 
@@ -88,7 +89,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Thank you}
+  text/2={@BitPolito}
 ]{closing}
 \end{document}
 ```
@@ -112,10 +113,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/instagram.pdf}</code> |
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/twitter.pdf}</code> |
 | <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/youtube.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper centre | 58.3% wide × 8.3% high | <code>\textcopyright{} \the\year\ BitPolito</code> |
-| <code>title</code> | Main text (text) | middle right | 31.2% wide × 8.1% high | <code>Thank you</code> |
-| <code>subtitle</code> | Editable text (text) | middle right | 31.2% wide × 3.9% high | <code>(empty)</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 41.7% wide × 6.0% high | <code>\textcopyright{} \the\year\ BitPolito</code> |
+| <code>title</code> | Main text (text) | middle right | 32.3% wide × 10.2% high | <code>@BitPolito</code> |
+| <code>subtitle</code> | Editable text (text) | middle right | 32.3% wide × 3.9% high | <code>(empty)</code> |
 | <code>qr-graphic</code> | Complete graphic, image or decoration (graphic) | middle left | 28.9% wide × 51.3% high | <code>\includegraphics[width=554\studiounit]{images/studio/closing/qrcode.pdf}</code> |
+| <code>github-graphic</code> | Complete graphic, image or decoration (graphic) | middle right | 5.4% wide × 9.1% high | <code>\includegraphics[width=103\studiounit]{images/studio/closing/github.pdf}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
@@ -144,7 +146,7 @@ panel, background, screenshot or decoration. Inspect the preview before replacin
 
 ## Review
 
-Reference: figma-0934.
+Reference: Presentazione BitPolito.pdf / page 11.
 
 Review margins, text, crops, shadows and optical balance using this stable model ID.
 Record feedback in [the review ledger](../../../templates/review.json). Compilation is not graphical approval.

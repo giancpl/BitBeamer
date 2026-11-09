@@ -212,7 +212,7 @@
           "type": "text",
           "default": "Contents",
           "box": [
-            139.004,
+            136.3,
             516.648,
             700,
             81.57806666666661
@@ -223,8 +223,8 @@
             168.18,
             47.613
           ],
-          "font_size": 61.755,
-          "leading": 71.635,
+          "font_size": 64.8,
+          "leading": 77.76,
           "source_node": [
             0,
             1
@@ -240,10 +240,10 @@
           "type": "text",
           "default": "First section",
           "box": [
-            1024.9,
-            216.455,
+            1021.5,
+            204.36328,
             680.0450000000001,
-            54.104
+            54
           ],
           "source_ink_box": [
             1024.9,
@@ -251,8 +251,8 @@
             284.40999999999985,
             31.784999999999997
           ],
-          "font_size": 40.58,
-          "leading": 47.073,
+          "font_size": 43.2,
+          "leading": 51.84,
           "source_node": [
             0,
             2
@@ -261,17 +261,18 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-2-2",
           "type": "text",
           "default": "Second section",
           "box": [
-            1023.53,
-            424.856,
+            1021.5,
+            410.61719,
             681.2082666666669,
-            54.090866666666656
+            54
           ],
           "source_ink_box": [
             1023.53,
@@ -279,8 +280,8 @@
             316.45000000000005,
             31.447000000000003
           ],
-          "font_size": 41.171,
-          "leading": 47.758,
+          "font_size": 43.2,
+          "leading": 51.84,
           "source_node": [
             0,
             2
@@ -289,17 +290,18 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-2-3",
           "type": "text",
           "default": "Third section",
           "box": [
-            1024.9,
-            632.941,
+            1021.5,
+            616.32813,
             680.0450000000001,
-            53.61800000000002
+            54
           ],
           "source_ink_box": [
             1024.9,
@@ -307,8 +309,8 @@
             199.62999999999988,
             31.298999999999978
           ],
-          "font_size": 40.58,
-          "leading": 47.073,
+          "font_size": 43.2,
+          "leading": 51.84,
           "source_node": [
             0,
             2
@@ -317,17 +319,18 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-2-4",
           "type": "text",
           "default": "Fourth section",
           "box": [
-            1023.53,
-            840.856,
+            1021.5,
+            822.04297,
             680.9427333333335,
-            61.38413333333332
+            54
           ],
           "source_ink_box": [
             1023.53,
@@ -335,8 +338,8 @@
             412.0799999999999,
             38.32299999999998
           ],
-          "font_size": 41.929,
-          "leading": 48.638,
+          "font_size": 43.2,
+          "leading": 51.84,
           "source_node": [
             0,
             2
@@ -345,7 +348,8 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "vertical_alignment": "center"
         }
       ],
       "parts": [
@@ -359,7 +363,8 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Title box extended into the empty left column so English agenda headings fit; original anchor and font size retained."
+        "Text sizes calibrated for the shared 0.95 Inter scale; title and item left anchors compensate glyph side bearings. Original panels, source canvas and uniform composition scale are unchanged. Inter glyph widths and English text intentionally differ from SF Pro outlines.",
+        "User-requested vertical centering: editable item text is centered by its actual typeset height in each original panel; font size and left alignment remain fixed."
       ],
       "slot_parts": [],
       "model": "agenda",
@@ -368,7 +373,10 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/agenda-text.tex"
+      ]
     },
     {
       "id": "section-divider",
@@ -379,7 +387,7 @@
       "references": [
         "figma-0697"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Optional companion to the independent incoming-arrow statement. The divider supports one or two centred title lines; the original single-line position is preserved. Pending graphical review.",
       "canvas": [
         3556.0,
         2000.0
@@ -408,9 +416,9 @@
           "default": "Slide title",
           "box": [
             531.6386333333335,
-            905.16,
+            632.719,
             2499.222733333333,
-            315.57246666666674
+            588.0134666666667
           ],
           "source_ink_box": [
             607.969,
@@ -427,7 +435,8 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "notes": "One or two centred lines at the original fixed font size; additional lines grow upward while preserving the last-line position above the rail. Three lines fail explicitly."
         }
       ],
       "parts": [
@@ -2122,15 +2131,15 @@
       "references": [
         "figma-0793"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Single provisional background retained from the supplied native PDF, with original proportions and standard #F9F9F9 paper. Gradient streams unchanged, independently editable centered text. Graphical review deferred.",
       "fields": [
         {
           "name": "statement",
           "type": "text",
           "default": "Slide title",
           "box": [
-            1100.0,
-            894.0,
+            1085.0,
+            855.0,
             1386.0,
             290.0
           ],
@@ -2151,7 +2160,7 @@
         "radial-glow"
       ],
       "intentional_differences": [
-        "Inter replaces outlined SF Pro; copy is English."
+        "Independent editable Inter text and standard #F9F9F9 paper. Supplied native PDF gradient and proportions preserved; no experimental variants retained."
       ],
       "slot_parts": [],
       "model": "statement",
@@ -2160,7 +2169,16 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "external_reference": {
+        "name": "statement.pdf / supplied fixed background",
+        "sha256": "f82a19c0aeb0655052322423f56340367570089b5d80a5c45c0f2274c77ad61d",
+        "page": 1,
+        "canvas": [
+          1920,
+          1080
+        ]
+      }
     },
     {
       "id": "blue-statement",
@@ -4211,7 +4229,7 @@
       "references": [
         "figma-0185"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Reviewed fixed typography: title 120/140, both column headings 90/105, introduction and both bodies 80/95 in source units. Original anchors/capacities retained; Inter is intentional. Pending final graphical confirmation.",
       "canvas": [
         3556.0,
         2000.0
@@ -4234,8 +4252,8 @@
             963.109,
             107.461
           ],
-          "font_size": 112.735,
-          "leading": 130.772,
+          "font_size": 120,
+          "leading": 140,
           "source_node": [
             1
           ],
@@ -4260,8 +4278,8 @@
             1321.328,
             817.969
           ],
-          "font_size": 75.16,
-          "leading": 87.186,
+          "font_size": 80,
+          "leading": 95,
           "source_node": [
             2
           ],
@@ -4287,8 +4305,8 @@
             1306.801,
             817.969
           ],
-          "font_size": 75.16,
-          "leading": 87.186,
+          "font_size": 80,
+          "leading": 95,
           "source_node": [
             3
           ],
@@ -4314,8 +4332,8 @@
             722.418,
             80.684
           ],
-          "font_size": 84.551,
-          "leading": 98.079,
+          "font_size": 90,
+          "leading": 105,
           "source_node": [
             4
           ],
@@ -4341,8 +4359,8 @@
             695.703,
             81.52
           ],
-          "font_size": 85.137,
-          "leading": 98.759,
+          "font_size": 90,
+          "leading": 105,
           "source_node": [
             5
           ],
@@ -4368,8 +4386,8 @@
             2802.621,
             153.867
           ],
-          "font_size": 74.063,
-          "leading": 85.913,
+          "font_size": 80,
+          "leading": 95,
           "source_node": [
             6
           ],
@@ -4384,7 +4402,8 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "English text boxes expanded within existing blank space while preserving source anchors: title."
+        "English text boxes expanded within existing blank space while preserving source anchors: title.",
+        "Unified source-scale hierarchy: title 120, both headings 90, introduction/body 80. Fixed sizes and leading; no fitting by shrinking."
       ],
       "slot_parts": [],
       "model": "two-columns",
@@ -51061,10 +51080,8 @@
       "title": "Standard closing",
       "category": "Closing",
       "source": "templates/studio/closing.tex",
-      "references": [
-        "figma-0934"
-      ],
-      "notes": "Standard closing with an optional QR. The supplied PDF defines the QR-on geometry. QR-off centres the same title/social group. Existing field names and numbered slots remain compatible.",
+      "references": [],
+      "notes": "Five-social closing with editable @BitPolito and QR enabled by default. QR-off centres the same title/social group. There is no four-social variant. Existing graphic slot numbers remain compatible.",
       "canvas": [
         1920,
         1080
@@ -51075,10 +51092,10 @@
           "name": "graphic-1",
           "type": "graphic",
           "box": [
-            1088,
-            557,
-            103,
-            98
+            1060.0,
+            552.38,
+            104.22,
+            98.81
           ],
           "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/telegram.pdf}",
           "slot": {
@@ -51091,10 +51108,10 @@
           "name": "graphic-2",
           "type": "graphic",
           "box": [
-            1216,
-            557,
-            103,
-            98
+            1188.0,
+            552.38,
+            104.22,
+            98.81
           ],
           "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/instagram.pdf}",
           "slot": {
@@ -51107,10 +51124,10 @@
           "name": "graphic-3",
           "type": "graphic",
           "box": [
-            1344,
-            557,
-            103,
-            98
+            1316.0,
+            552.38,
+            104.22,
+            98.81
           ],
           "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/twitter.pdf}",
           "slot": {
@@ -51123,10 +51140,10 @@
           "name": "graphic-4",
           "type": "graphic",
           "box": [
-            1472,
-            557,
-            103,
-            98
+            1574.0,
+            552.38,
+            104.22,
+            98.81
           ],
           "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/youtube.pdf}",
           "slot": {
@@ -51140,65 +51157,63 @@
           "type": "text",
           "default": "\\textcopyright{} \\the\\year\\ BitPolito",
           "box": [
-            400,
-            50,
-            1120,
-            90
+            559.7,
+            52.71,
+            800,
+            65
           ],
           "source_ink_box": [
-            1675.32,
-            96.906,
-            208.469,
-            108.707
+            844.5,
+            52.9,
+            231.7,
+            24.3
           ],
-          "font_size": 32,
-          "leading": 38,
-          "source_node": [
-            1
-          ],
+          "font_size": 34.2,
+          "leading": 41,
+          "source_node": [],
           "slot": {
             "number": 1,
             "key": "text/1"
           },
           "font_weight": "regular",
-          "alignment": "center"
+          "alignment": "center",
+          "letterspacing": -43
         },
         {
           "name": "title",
           "type": "text",
-          "default": "Thank you",
+          "default": "@BitPolito",
           "box": [
-            1031.45,
-            438,
-            600,
-            88
+            1059.2,
+            443.1,
+            621,
+            110
           ],
           "source_ink_box": [
-            1484.199,
-            817.047,
-            538.301,
-            101.016
+            1224.7,
+            442.3,
+            290.5,
+            54.0
           ],
-          "font_size": 64,
-          "leading": 74,
-          "source_node": [
-            14
-          ],
+          "font_size": 60,
+          "leading": 71,
+          "source_node": [],
           "slot": {
             "number": 2,
             "key": "text/2"
           },
-          "font_weight": "semibold",
-          "alignment": "center"
+          "font_weight": "medium",
+          "alignment": "center",
+          "letterspacing": 27
         },
         {
           "name": "subtitle",
           "type": "text",
           "default": "",
           "box": [
-            1031.45,
+            1060,
             510,
-            600,
+            621,
             42
           ],
           "font_size": 32,
@@ -51224,14 +51239,30 @@
             "number": 5,
             "key": "graphic/5"
           }
+        },
+        {
+          "name": "github-graphic",
+          "type": "graphic",
+          "default": "\\includegraphics[width=103\\studiounit]{images/studio/closing/github.pdf}",
+          "box": [
+            1446.3,
+            552.38,
+            104.22,
+            98.81
+          ],
+          "slot": {
+            "number": 6,
+            "key": "graphic/6",
+            "role": "whole graphic"
+          }
         }
       ],
       "parts": [],
       "reconstruction": "Shared Studio closing engine; editable Inter text and lossless prepared QR/social parts.",
       "intentional_differences": [
-        "Inter replaces SF Pro in title and copyright.",
-        "The catalogue keeps a neutral Thank you title; the helper and ready-content example use @BitPolito.",
-        "The qrcode=false treatment removes the QR and centres the unchanged text/social group."
+        "Editable Inter replaces the original outlined type; size, tracking and ink anchors are calibrated independently.",
+        "The qrcode=false treatment removes the QR and centres the unchanged text/social group.",
+        "Graphic/4 remains YouTube and graphic/5 remains QR; GitHub uses graphic/6."
       ],
       "slot_parts": [],
       "model": "closing",
@@ -51242,8 +51273,9 @@
       ],
       "neutral_parts": [],
       "external_reference": {
-        "name": "final-slide.pdf",
-        "sha256": "2803d785f46f7ff70f4b0839dbb98d5c2458f37ff8a56b2c61fcc11fd278e0ca",
+        "name": "Presentazione BitPolito.pdf / page 11",
+        "sha256": "ae8839aaf99edd445310e6ecbb8403a8f81d98f602cf28bd73b0fea97fa92463",
+        "page": 11,
         "canvas": [
           1920,
           1080
@@ -51261,8 +51293,13 @@
         "images/studio/closing/telegram.pdf": "ca0c00da2435984a02a1f2c5ceb1cfe4a3bbd248380cbec806a722af4cf78a82",
         "images/studio/closing/instagram.pdf": "d95fa99be2ead2e3bdba4245c2920f8f7c4307cc8e880f913e6d397b682bd4cd",
         "images/studio/closing/twitter.pdf": "8c255177f9f0d03feb2e59242b09e26a350a9ff2b363ea8ea681f9a63b582d9a",
-        "images/studio/closing/youtube.pdf": "46ee76af4e368775badd90de081e50925d4861525c7be44e6fff5b0979774808"
-      }
+        "images/studio/closing/youtube.pdf": "46ee76af4e368775badd90de081e50925d4861525c7be44e6fff5b0979774808",
+        "images/studio/closing/github.pdf": "667c88bd4824c3d8ac3a124223f3c4cf27ba5e55b8885fac8247190dba03616c"
+      },
+      "shared_sources": [
+        "images/studio/closing/github.pdf",
+        "images/studio/closing/layout.tex"
+      ]
     },
     {
       "id": "contents-five",
@@ -51286,13 +51323,13 @@
           "type": "text",
           "default": "Contents",
           "box": [
-            252.8125,
+            247.5,
             957.21875,
             1300,
             175
           ],
-          "font_size": 112.735,
-          "leading": 130.772,
+          "font_size": 120,
+          "leading": 144.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -51309,8 +51346,8 @@
           "type": "text",
           "default": "First section",
           "box": [
-            1898.19921875,
-            322.0234375,
+            1892,
+            290.671875,
             1180,
             120
           ],
@@ -51320,8 +51357,8 @@
             747.4609375,
             57.96875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -51331,15 +51368,16 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-two",
           "type": "text",
           "default": "Second section",
           "box": [
-            1895.66015625,
-            646.6953125,
+            1892,
+            615.171875,
             1180,
             120
           ],
@@ -51349,8 +51387,8 @@
             502.73046875,
             71.796875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -51360,15 +51398,16 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-three",
           "type": "text",
           "default": "Third section",
           "box": [
-            1898.7109375,
-            970.8671875,
+            1892,
+            940.171875,
             1180,
             120
           ],
@@ -51378,8 +51417,8 @@
             398.05078125,
             58.2421875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -51389,15 +51428,16 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-four",
           "type": "text",
           "default": "Fourth section",
           "box": [
-            1897.66015625,
-            1295.87109375,
+            1892,
+            1265.171875,
             1180,
             120
           ],
@@ -51407,8 +51447,8 @@
             838.7109375,
             70.96875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -51418,15 +51458,16 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-five",
           "type": "text",
           "default": "Fifth section",
           "box": [
-            1896.16015625,
-            1620.87109375,
+            1892,
+            1589.671875,
             1180,
             120
           ],
@@ -51436,8 +51477,8 @@
             163.25,
             63.27734375
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -51447,7 +51488,8 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "graphic-1",
@@ -51568,7 +51610,9 @@
       "reconstruction": "Measured five-item SVG composition with native editable text.",
       "intentional_differences": [
         "Inter replaces SF Pro; English neutral labels replace example content.",
-        "The title text area extends into the empty left column; anchor, font and canvas are unchanged."
+        "The title text area extends into the empty left column; anchor, font and canvas are unchanged.",
+        "Text sizes calibrated for the shared 0.95 Inter scale; title and item left anchors compensate glyph side bearings. Original panels, source canvas and uniform composition scale are unchanged. Inter glyph widths and English text intentionally differ from SF Pro outlines.",
+        "User-requested vertical centering: editable item text is centered by its actual typeset height in each original panel; font size and left alignment remain fixed."
       ],
       "model": "agenda",
       "variant": "panels-five",
@@ -51576,7 +51620,10 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/agenda-text.tex"
+      ]
     },
     {
       "id": "team-presentation",
@@ -51772,7 +51819,7 @@
       "slot_parts": [],
       "prepared_resources": {
         "images/studio/team/collage.pdf": "1c9611ffda5bfcff8d750e1dec4f96126296c4ee5e9448b868fb4016f4f5456f",
-        "images/studio/team/panels.pdf": "29e42481cf59d6da58d02c8e49855f9b8cd7550c69ee17c4453d1abbf09c10d7"
+        "images/studio/team/panels.pdf": "6c84970c6a11bc30e5f3c01a013b798351d45869407f07950c3db449e952fed5"
       },
       "reconstruction": "Measured supplied PDF with retained vector illustration and text-free decoration; native Inter statistic fields.",
       "intentional_differences": [

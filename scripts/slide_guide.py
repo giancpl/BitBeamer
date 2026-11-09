@@ -2,10 +2,13 @@
 import argparse
 import hashlib
 import json
+import re
 from pathlib import Path
 import sys
 import tempfile
 import webbrowser
+
+from lesson_library import collection_status
 
 ROOT = Path(__file__).resolve().parents[1]
 
@@ -122,7 +125,7 @@ def catalogue(root=ROOT):
                     'status':ledger['templates'][entry['id']]['status']})
         default=next((i for i,c in enumerate(choices) if c['id'] in featured),
                      next((i for i,c in enumerate(choices) if c['label'].split(' / ')[0]==model['default_variant']),0))
-        rows.append({'id':model['id'],'title':model['title'],'kind':'studio','family':model['category'],
+        rows.append({'id':model['id'],'title':model['title'],'kind':'studio','family':{'cover':'Covers','team':'Team','agenda':'Contents','closing':'Closing'}.get(model['id'],model['category']),
                      'featured':any(c['id'] in featured for c in choices),'default':default,'choices':choices})
     if (root/'library/index.json').exists():
         data=read(root,'library/index.json')
@@ -132,7 +135,7 @@ def catalogue(root=ROOT):
             if layout.get('registration') or layout.get('replaced_by') or name in entries:continue
             if name in preset_layouts and name not in editable_layouts:continue
             slide=data['slides'][layout['example_slide']]
-            rows.append({'id':name,'title':layout['title'],'kind':'lesson','family':layout.get('topic','Lesson'),
+            rows.append({'id':name,'title':layout['title'],'kind':'lesson','family':layout.get('visual_family','Needs classification'),'topics':[layout.get('topic','Lesson')],
                 'featured':False,'default':0,'choices':[{'id':name,'label':layout.get('palette','native'),
                 'command':lesson_command(root,slide),'fields':field_names(layout.get('fields',[])),'status':slide['status'],'canvas':layout.get('canvas',[3556,2000]),
                 'preview':preview(root,'library/previews/'+layout['example_slide']+'.png',name,assets),
@@ -142,12 +145,25 @@ def catalogue(root=ROOT):
                 'preamble':r'\usepackage{bitpolitostudiolibrary}'}]})
         for name,preset in data.get('presets',{}).items():
             slide=data['slides'][preset['slide']]
-            rows.append({'id':name,'title':preset['title'],'kind':'fixed','family':'Fixed content',
+            rows.append({'id':name,'title':preset['title'],'kind':'fixed','family':preset.get('visual_family','Fixed content'),
                 'featured':False,'default':0,'choices':[{'id':name,'label':'Fixed content',
                 'command':command(name,{}),'fields':[],'status':preset['status'],
                 'preview':preview(root,'library/previews/'+preset['slide']+'.png',name,assets),
                 'source':'../../'+preset['source'],'source_sha256':digest(root/preset['source']),
                 'guide':'../../library/FIXED.md','preamble':r'\usepackage{bitpolitostudiolibrary}'}]})
+    if (root/'library/index.json').exists():
+        data=read(root,'library/index.json')
+        for row in rows:
+            for choice in row['choices']:
+                users={sid for sid,slide in data['slides'].items() if slide['layout']==choice['id'] or slide.get('preset')==choice['id']}
+                choice['consumers']=[name for name,deck in data.get('decks',{}).items() if users.intersection(deck['slides'])]
+    from studio_models import suggested_sequences
+    choices={choice['id']:choice for row in rows if row['kind']=='studio' for choice in row['choices']}
+    for sequence in suggested_sequences(root):
+        steps=[{'id':name,'title':entries[name]['title']} for name in sequence['compositions']]
+        recommendation=dict(sequence,steps=steps,command='\n\n'.join(choices[name]['command'] for name in sequence['compositions']))
+        for name in sequence['compositions']:
+            choices[name].setdefault('sequences',[]).append(recommendation)
     rows.sort(key=lambda row:(not row['featured'],{'studio':0,'lesson':1,'fixed':2}[row['kind']]))
     return {'schema':1,'rows':rows,'counts':{'models':len(rows),
             'compositions':sum(len(row['choices']) for row in rows)}}
@@ -159,7 +175,7 @@ def lesson_catalogue(root=ROOT):
     slides={sid:{'id':sid,'title':slide.get('title',sid),'status':slide['status'],
                    'preview':preview(root,'library/previews/'+sid+'.png',mapping[sid],assets),
                    'source':'../../'+slide['source'],'origins':slide.get('origins',[])} for sid,slide in data['slides'].items()}
-    return {kind:data.get(kind,{}) for kind in ('decks','blocks')} | {'slides':slides,'aliases':data.get('aliases',{})}
+    return {kind:{name:dict(item,status=collection_status(item,data['slides'])) for name,item in data.get(kind,{}).items()} for kind in ('decks','blocks')} | {'slides':slides,'aliases':data.get('aliases',{})}
 
 
 def redirect_page(target):
@@ -170,12 +186,31 @@ def redirect_page(target):
             'target.hash=location.hash;location.replace(target.href);</script></html>\n')
 
 
+def review_batches(root, payload=None):
+    payload = payload if payload is not None else catalogue(root)
+    known = {c['id'] for row in payload['rows'] for c in row['choices']}
+    batches = read(root,'templates/review.json').get('review_batches', [])
+    names = set()
+    for batch in batches:
+        ids = batch.get('compositions', [])
+        if not re.fullmatch(r'[a-z][a-z0-9]*(?:-[a-z0-9]+)*',batch['id']) or batch['id'] in names or not batch.get('title') or not batch.get('family'):
+            raise ValueError('Invalid review batch: ' + batch['id'])
+        if not 1 <= len(ids) <= 5 or len(set(ids)) != len(ids) or set(ids) - known:
+            raise ValueError('Review batches need one to five distinct published compositions: ' + batch['id'])
+        overrides=batch.get('commands',{})
+        if not isinstance(overrides,dict) or set(overrides)-set(ids) or any(not isinstance(command,str) or not command.strip() for command in overrides.values()):
+            raise ValueError('Invalid review batch command overrides: '+batch['id'])
+        names.add(batch['id'])
+    return batches
+
+
 def sync(root=ROOT,check=False):
     payload=catalogue(root)
     models=read(root,'templates/models.json')
     initial=dict(payload,rows=[r for r in payload['rows'] if r['kind']=='studio'])
     initial['aliases']={a['id']:a['alias_of'] for a in read(root,'templates/index.json').get('aliases',[])}
     initial['variant_aliases']=models.get('variant_aliases',[])
+    initial['review_batches']=review_batches(root,payload)
     extra={'rows':[r for r in payload['rows'] if r['kind']!='studio']}
     def script(variable,value):return '// Generated by scripts/slide_guide.py sync; do not edit.\nwindow.'+variable+'='+json.dumps(value,ensure_ascii=False,separators=(',',':'))+';\n'
     first=script('BITBEAMER_SLIDES',initial)

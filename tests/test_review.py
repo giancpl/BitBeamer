@@ -17,6 +17,7 @@ import review
 import studio_review
 import studio_preview
 import studio_templates
+import studio_models
 import package
 import release
 
@@ -24,6 +25,12 @@ import release
 class ReviewTests(unittest.TestCase):
     def setUp(self):
         self.entries = studio_templates.inspect_templates(ROOT)
+
+    def test_review_pdf_uses_the_editor_aware_build_viewer(self):
+        pdf = ROOT / 'build/review/batches/comparisons.pdf'
+        with mock.patch.object(review.build, 'open_pdf') as open_pdf:
+            review.open_pdf(pdf)
+        open_pdf.assert_called_once_with(pdf)
 
     def test_single_ledger_retains_selection_and_drives_generated_sheet(self):
         data = studio_review.load_review(ROOT)
@@ -164,7 +171,10 @@ class ReviewTests(unittest.TestCase):
             target=package.package(ROOT,Path(directory)/'studio.zip',style='studio',review=True)
             with ZipFile(target) as archive:
                 sources={name for name in archive.namelist() if name.startswith('templates/studio/') and name.endswith('.tex') and not name.endswith('/registry.tex')}
-                expected={'templates/studio/'+name+'.tex' for name in [item['id'] for item in studio_review.package_selection(ROOT)]}
+                selected={item['id'] for item in studio_review.package_selection(ROOT)}
+                entries=[e for e in studio_templates.inspect_templates(ROOT) if e['id'] in selected]
+                expected={e['source'] for e in entries}
+                expected.update(name for name in studio_models.dependencies(ROOT,entries) if name.startswith('templates/studio/') and name.endswith('.tex'))
                 self.assertEqual(sources,expected)
                 self.assertIn('assets/generated/catalogue.tex',archive.namelist())
                 self.assertLess(target.stat().st_size,package.BUDGET)

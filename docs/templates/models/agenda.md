@@ -27,11 +27,11 @@ Original palettes: light.
 | `label-two` | <code>Second section</code> | 35.5% wide × 5.0% high |
 | `title` | <code>Contents</code> | 36.5% wide × 7.6% high |
 | `label-four` | <code>Third section</code> | 35.4% wide × 5.0% high |
-| `label-five` | <code>Fourth section</code> | 35.5% wide × 5.7% high |
+| `label-five` | <code>Fourth section</code> | 35.5% wide × 5.0% high |
 | `item-one` | <code>First section</code> | 35.4% wide × 5.0% high |
 | `item-two` | <code>Second section</code> | 35.5% wide × 5.0% high |
 | `item-three` | <code>Third section</code> | 35.4% wide × 5.0% high |
-| `item-four` | <code>Fourth section</code> | 35.5% wide × 5.7% high |
+| `item-four` | <code>Fourth section</code> | 35.5% wide × 5.0% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

@@ -4,7 +4,7 @@
 
 Open a talk or introduce its structure using the cover photo layout.
 
-Model: `cover-photo` · Family: Opening · Status: **in review**.
+Model: `cover-photo` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-photo.tex)
 

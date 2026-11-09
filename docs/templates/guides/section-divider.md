@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `section-divider` · Family: Opening · Status: **in review**.
+Model: `section-divider` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/section-divider.tex)
 
@@ -95,7 +95,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 4.3% wide × 39.6% high | <code>\studiopaletteimage[width=152\studiounit]{images/studio/collection/figma-0697-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 70.3% wide × 15.8% high | <code>Slide title</code> |
+| <code>title</code> | Main text (text) | middle centre | 70.3% wide × 29.4% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
