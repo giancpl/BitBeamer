@@ -1,4 +1,5 @@
-"""Offline lesson discovery and isolated, dependency-scoped personal imports."""
+"""Canonical lesson layouts with independently editable personal content."""
+from functools import lru_cache
 import hashlib
 import json
 from pathlib import Path
@@ -18,6 +19,13 @@ def load(root=ROOT):
     if not path.is_file():
         raise ValueError('The lesson library is not present in this checkout.')
     return json.loads(path.read_text(encoding='utf-8'))
+
+
+def collection_status(item, slides):
+    """A pack is ready only after explicit approval of it and every constituent slide."""
+    states = [item.get('status', 'in review'), *(slides[s]['status'] for s in item['slides'])]
+    if 'changes requested' in states:return 'changes requested'
+    return 'approved' if all(status == 'approved' for status in states) else 'in review'
 
 
 def safe_file(root, relative):
@@ -40,6 +48,7 @@ def catalogue(root=ROOT, deck=None, block=None):
         if name not in data[key]:
             raise ValueError('Unknown library ' + key[:-1] + ': ' + name)
         item = dict(id=name, **data[key][name])
+        item['status'] = collection_status(item, data['slides'])
         slide_ids = item['slides']
         item['slide_details'] = [dict(id=s, **data['slides'][s]) for s in slide_ids]
         keys={key for sid in slide_ids for key in data['slides'][sid].get('references',[])}
@@ -49,8 +58,8 @@ def catalogue(root=ROOT, deck=None, block=None):
         item['command'] = ('python3 scripts/deck.py new my-talk --from ' + name if deck
                            else 'python3 scripts/deck.py add my-talk --block ' + name)
         return item
-    return {kind: [dict(id=name, **{k:v for k,v in item.items() if k != 'slides'},
-                       slide_count=len(item['slides'])) for name,item in data[kind].items()]
+    return {kind: [dict(id=name, **{k:v for k,v in item.items() if k not in ('slides', 'status')},
+                       status=collection_status(item, data['slides']), slide_count=len(item['slides'])) for name,item in data[kind].items()]
             for kind in ('decks', 'blocks')}
 
 
@@ -83,12 +92,22 @@ def template_calls(text):
     return calls
 
 
-def source_dependencies(root, slide, include_registered=True):
+@lru_cache(maxsize=8)
+def _layout_paths(root, timestamp, size):
+    data = load(root)
+    return {name:record['source'] for section in ('layouts','presets')
+            for name,record in data.get(section, {}).items() if record.get('source')}
+
+
+def source_dependencies(root, slide, include_registered=True, follow_templates=True):
     """Follow retained literal inputs and graphics; never execute TeX or converters."""
     pending = [slide['source']]
     if include_registered: pending.extend(slide.get('resources', {}))
     if slide.get('layout_source'): pending.append(slide['layout_source'])
     found = set()
+    registry = root/'library/index.json'
+    stamp = registry.stat() if registry.exists() else None
+    layouts = _layout_paths(root, stamp.st_mtime_ns, stamp.st_size) if stamp else {}
     while pending:
         relative = pending.pop()
         if relative in found: continue
@@ -106,6 +125,14 @@ def source_dependencies(root, slide, include_registered=True):
             literals.add(name)
         for name in re.findall(r'\\asset(?:\[[^\]]*\])?\{([a-z0-9-]+)\}', text):
             literals.add('assets/generated/' + name + '.pdf')
+        # A canonical wrapper or preset can delegate to another registered template.
+        for name in template_calls(text) if follow_templates else []:
+            core = 'templates/studio/' + name + '.tex'
+            target = layouts.get(name)
+            if target:literals.add(target)
+            elif (root/core).is_file():literals.add(core)
+        if re.search(r'\\closingframe\b',text):
+            literals.add('images/studio/closing/layout.tex')
         pending.extend(literals - found)
     return found
 
@@ -128,16 +155,29 @@ def slide_dependencies(root, slide, data=None):
     return paths
 
 
+def canonical_path(relative):
+    """Personal projects and generated outputs must never back a library entry."""
+    return relative.startswith(('library/', 'templates/', 'images/', 'assets/', 'examples/'))
+
+
 def validate_binding(root, data, name):
     """Reject known duplicate compositions and calls that bypass their shared layout."""
     slide = data['slides'][name]
-    layout = data.get('layouts', {}).get(slide['layout'], {})
+    if slide['layout'] not in data.get('layouts', {}):
+        raise ValueError(name + ': unknown canonical layout ' + slide['layout'])
+    layout = data['layouts'][slide['layout']]
+    content = tex_source(safe_file(root, slide['source']).read_text(encoding='utf-8'))
+    if re.search(r'\\(?:DeclareStudioLibraryLayout|studiomeasuredcanvas|studiolibrarycanvas|renewcommand)\b|\\begin\s*\{(?:frame|tikzpicture)\}', content):
+        raise ValueError(name + ': slide content contains a private layout; register a canonical template instead')
     if layout.get('replaced_by'):
         raise ValueError(name + ': layout ' + slide['layout'] + ' was replaced by ' + layout['replaced_by'])
     calls = template_calls(safe_file(root, slide['source']).read_text(encoding='utf-8'))
     expected = slide.get('preset', slide['layout'])
     if calls != [expected]:
         raise ValueError(name + ': source must call the canonical template ' + expected)
+    for relative in (slide['source'], *source_dependencies(root, slide)):
+        if not canonical_path(relative):
+            raise ValueError(name + ': private or generated dependency outside the canonical library: ' + relative)
     if layout.get('registration') == 'shared core' and not slide.get('core_reuse'):
         raise ValueError(name + ': shared Studio layouts require core_reuse dependency tracking.')
     if layout.get('source') and not layout.get('registration') and slide.get('layout_source') != layout['source']:
@@ -208,6 +248,17 @@ def validate(root=ROOT):
             mapped.add(page['slide'])
     if set(slides) - mapped:
         raise ValueError('Slides without an official source-page mapping.')
+    for name, kind in data.get('artwork_manifests', {}).items():
+        manifest = json.loads(safe_file(root, name).read_text(encoding='utf-8'))
+        if kind == 'cropped-pdfs':
+            resources = {part['file']:part['sha256'] for part in manifest['parts'].values()}
+        elif kind == 'derived-vector':
+            resources = {manifest['source_svg']:manifest['svg_sha256'],
+                         manifest['prepared_pdf']:manifest['pdf_sha256']}
+        else:raise ValueError('Unknown artwork manifest kind: ' + kind)
+        for relative, expected in resources.items():
+            if not canonical_path(relative) or hashlib.sha256(safe_file(root,relative).read_bytes()).hexdigest() != expected:
+                raise ValueError('Changed canonical artwork: ' + relative)
     manifest_path=root/'library/parts/manifest.json'
     if manifest_path.exists():
         manifest=json.loads(manifest_path.read_text(encoding='utf-8'))
@@ -242,20 +293,23 @@ def bundle(root, slide_ids, prefix, data=None):
         slide = data['slides'][slide_id]
         validate_binding(root, data, slide_id)
         source_map[slide['source']] = prefix + '/slides/' + slide_id + '.tex'
-        for relative in sorted(source_dependencies(root, slide) - {slide['source']}):
+        # Copy content includes and data, but keep all canonical visual resources linked.
+        direct = source_dependencies(root, {'source': slide['source']}, include_registered=False, follow_templates=False)
+        for relative in sorted(direct - {slide['source']}):
+            if relative.startswith(('library/layouts/', 'library/parts/', 'templates/', 'images/', 'assets/', 'examples/')) and Path(relative).suffix not in ('.csv', '.txt'):
+                continue
             source = safe_file(root, relative)
             digest = hashlib.sha256(source.read_bytes()).hexdigest()
-            if source.suffix == '.tex':
-                target = prefix + '/layouts/' + source.name
-            else:
-                target = prefix + '/assets/library-' + digest[:20] + source.suffix
+            target = prefix + ('/slides/' + source.name if source.suffix == '.tex'
+                               else '/assets/library-' + digest[:20] + source.suffix)
+            if target in source_map.values() and relative not in source_map:
+                raise ValueError('Content dependency collision: ' + target)
             source_map[relative] = target
         if slide.get('layout_source'):
-            source_map[slide['layout_source']] = prefix + '/layouts/' + Path(slide['layout_source']).name
-            layouts[slide['layout']] = source_map[slide['layout_source']]
+            layouts[slide['layout']] = slide['layout_source']
         if slide.get('preset'):
-            preset=data['presets'][slide['preset']]
-            layouts[slide['preset']]=source_map[preset['source']]
+            preset = data['presets'][slide['preset']]
+            layouts[slide['preset']] = preset['source']
         citations.update(slide.get('references', []))
     for source_name, target_name in source_map.items():
         source = safe_file(root, source_name)
@@ -321,7 +375,8 @@ def create_from_library(root, name, deck_id, project):
     inputs=[r'\input{' + prefix + '/slides/' + sid + '.tex}' for sid in sequence]
     inputs.insert(closing,MARKER)
     main = '\n'.join([
-        '% Personal editable copy. Content is independent of the shared lesson library.',
+        '% Personal content uses the canonical shared Studio layouts.',
+        r'\ifdefined\pdfminorversion\pdfminorversion=7\fi',
         r'\documentclass[aspectratio=169]{beamer}', r'\usetheme{bitpolito-studio}',
         r'\usepackage{bitpolitostudiolibrary}', r'\usepackage[backend=biber,style=numeric]{biblatex}',
         r'\addbibresource{' + prefix + '/references.bib}',
@@ -329,7 +384,7 @@ def create_from_library(root, name, deck_id, project):
         *inputs,
         r'\end{document}', ''])
     brief = '# ' + lesson['title'] + '\n\n## Goal\nAdapt the supplied English lesson to the intended audience.\n\n## Audience\n' + lesson['audience'] + '\n\n## Language\nEnglish.\n\n## Duration\nSet the speaking time before presenting.\n\n## Metadata\nCheck speaker, organization and historical credits before delivery.\n\n## Sources\nCopied from library deck `' + deck_id + '`. See library-imports.json for slide provenance and references.\n\n## Outline\n' + '\n'.join('- ' + s for s in lesson['slides']) + '\n\n## Assumptions\nOriginal composition/order are retained; Inter and English text are deliberate adaptations. Read update notes and review flags before presenting.\n\n## Verification\nNot yet built or visually reviewed as a personal deck.\n'
-    state = {'schema': 1, 'deck': deck_id, 'blocks': [], 'slides': list(lesson['slides']),
+    state = {'schema': 1, 'binding': 'shared-layouts', 'deck': deck_id, 'blocks': [], 'slides': list(lesson['slides']),
              'layouts': layouts, 'references': sorted(citations),
              'provenance': {s: {k:v for k,v in data['slides'][s].items() if k in ('origins','changes','editorial_updates','graphic_differences','review_notes','verification_scope','references','status','preset','content_mode')} for s in lesson['slides']}}
     files.update({prefix + '/main.tex': main.encode(), prefix + '/brief.md': brief.encode(),
@@ -357,7 +412,9 @@ def add_block(root, project, block_id):
     if r'\usetheme{bitpolito-studio}' not in main:
         raise ValueError('Lesson blocks require a Studio presentation.')
     state_path = project / 'library-imports.json'
-    state = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {'schema':1,'blocks':[],'slides':[],'layouts':{},'references':[], 'provenance':{}}
+    state = json.loads(state_path.read_text(encoding='utf-8')) if state_path.exists() else {'schema':1,'binding':'shared-layouts','blocks':[],'slides':[],'layouts':{},'references':[], 'provenance':{}}
+    if state.get('binding') != 'shared-layouts':
+        raise ValueError('This project uses legacy layout snapshots. Follow library/MAINTENANCE.md to relink it before importing more blocks. No files were changed.')
     if block_id in state['blocks']:
         raise ValueError('This block is already imported: ' + block_id)
     sequence = data['blocks'][block_id]['slides']

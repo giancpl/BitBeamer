@@ -6,7 +6,7 @@ reused where their measured composition matches the source.
 
 ```latex
 \usepackage{bitpolitostudiolibrary}
-% Then copy an actual model ID and its documented fields from the lesson gallery.
+% Then copy an actual model ID and its documented fields from the unified slide guide.
 ```
 
 Inspect a model with `python3 scripts/deck.py layouts --model official-layout-ID
@@ -18,8 +18,10 @@ the geometry; unknown fields and overflow produce explicit diagnostics.
 `graphic-one`, where listed, replaces the complex artwork plate while preserving
 the editable text layer. Supply appropriately sized LaTeX graphics; the original
 plate includes its measured transparent padding. Small native diagrams remain
-TikZ in the copied part source. Detailed annotations inside historical diagrams,
+TikZ in the canonical part source. Detailed annotations inside historical diagrams,
 photographs and screenshots can remain source artwork; see each slide's notes.
 
-Full lesson imports copy these layouts to the personal project. Their local
-registrations override the shared collection, so edits remain independent.
+Full lesson imports link these canonical layouts and their shared artwork.
+Personal content is copied separately: graphical corrections propagate on the
+next build without overwriting text. Legacy snapshots require explicit migration;
+see [maintenance](../MAINTENANCE.md#legacy-personal-projects).

@@ -87,4 +87,7 @@ Use the [slide guide](slides/index.html?view=decks), [usage guide](../library/RE
 [maintenance guide](../library/MAINTENANCE.md). Prepared parts keep conversion out
 of normal builds. Lesson PDFs and original/replica comparisons stay local under
 `build/library/` and `design-references/figma/official-decks/`. Existing Overleaf
-packages do not include the lesson corpus.
+packages do not include the lesson corpus. Each pack contains only registered
+template or fixed-slide calls. New personal imports copy content and references
+while keeping canonical layouts and prepared artwork linked to the library.
+The guide separates explicitly approved entries from those still in review.

@@ -31,7 +31,9 @@ My brief: [topic, audience, duration, real author and sources].
 Browse presentations and blocks in the [slide guide](docs/slides/index.html?view=decks) or list it with
 `python3 scripts/deck.py library`. Copy a complete lesson with
 `python3 scripts/deck.py new my-talk --from bitcoin-introduction-short`, then
-edit its private sources. All reconstructions remain in review.
+edit its private content. Layouts and artwork stay linked to the canonical library.
+The guide separates **Ready** and **In review**; approval is always explicit.
+The supplied team presentation is available with `--from bitpolito-introduction`.
 
 ## Create manually
 

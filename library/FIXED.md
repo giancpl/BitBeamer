@@ -14,3 +14,4 @@ Load `bitpolitostudiolibrary` after the Studio theme. These ready-made slides ac
 | Historical money collage | `\studiotemplate{historical-money-collage}` | [official-slide-4c5904672754](slides/official-slide-4c5904672754.tex) |
 | Crypto visual collection | `\studiotemplate{crypto-visual-collection}` | [official-slide-289ee0cca861](slides/official-slide-289ee0cca861.tex) |
 | Peer-to-peer payment illustration | `\studiotemplate{peer-to-peer-payments}` | [official-slide-629502ff131a](slides/official-slide-629502ff131a.tex) |
+| BitPolito wordmark cover | `\studiotemplate{bitpolito-wordmark-cover}` | [bitpolito-introduction-01](slides/bitpolito-introduction-01.tex) |

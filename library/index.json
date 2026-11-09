@@ -14518,6 +14518,71 @@
         "network"
       ],
       "family": "Workshops"
+    },
+    {
+      "id": "bitpolito-introduction",
+      "path": "Presentazione BitPolito.pdf",
+      "sha256": "ae8839aaf99edd445310e6ecbb8403a8f81d98f602cf28bd73b0fea97fa92463",
+      "page_count": 11,
+      "origin": "User-supplied draft; complete PDF stays local.",
+      "local_only": true,
+      "pages": [
+        {
+          "page": 1,
+          "slide": "bitpolito-introduction-01",
+          "disposition": "fixed-content composition"
+        },
+        {
+          "page": 2,
+          "slide": "bitpolito-introduction-02",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 3,
+          "slide": "bitpolito-introduction-03",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 4,
+          "slide": "bitpolito-introduction-04",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 5,
+          "slide": "bitpolito-introduction-05",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 6,
+          "slide": "bitpolito-introduction-06",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 7,
+          "slide": "bitpolito-introduction-07",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 8,
+          "slide": "bitpolito-introduction-08",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 9,
+          "slide": "bitpolito-introduction-09",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 10,
+          "slide": "bitpolito-introduction-10",
+          "disposition": "editable reconstruction"
+        },
+        {
+          "page": 11,
+          "slide": "bitpolito-introduction-11",
+          "disposition": "editable reconstruction"
+        }
+      ]
     }
   ],
   "references": {
@@ -91985,13 +92050,13 @@
           "type": "text",
           "default": "Contents",
           "box": [
-            252.8125,
+            247.5,
             957.21875,
             1300,
             175
           ],
-          "font_size": 112.735,
-          "leading": 130.772,
+          "font_size": 120,
+          "leading": 144.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -92008,8 +92073,8 @@
           "type": "text",
           "default": "First section",
           "box": [
-            1898.19921875,
-            322.0234375,
+            1892,
+            290.671875,
             1180,
             120
           ],
@@ -92019,8 +92084,8 @@
             747.4609375,
             57.96875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -92030,15 +92095,16 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-two",
           "type": "text",
           "default": "Second section",
           "box": [
-            1895.66015625,
-            646.6953125,
+            1892,
+            615.171875,
             1180,
             120
           ],
@@ -92048,8 +92114,8 @@
             502.73046875,
             71.796875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -92059,15 +92125,16 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-three",
           "type": "text",
           "default": "Third section",
           "box": [
-            1898.7109375,
-            970.8671875,
+            1892,
+            940.171875,
             1180,
             120
           ],
@@ -92077,8 +92144,8 @@
             398.05078125,
             58.2421875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -92088,15 +92155,16 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-four",
           "type": "text",
           "default": "Fourth section",
           "box": [
-            1897.66015625,
-            1295.87109375,
+            1892,
+            1265.171875,
             1180,
             120
           ],
@@ -92106,8 +92174,8 @@
             838.7109375,
             70.96875
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -92117,15 +92185,16 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "item-five",
           "type": "text",
           "default": "Fifth section",
           "box": [
-            1896.16015625,
-            1620.87109375,
+            1892,
+            1589.671875,
             1180,
             120
           ],
@@ -92135,8 +92204,8 @@
             163.25,
             63.27734375
           ],
-          "font_size": 75.16,
-          "leading": 87.2,
+          "font_size": 80,
+          "leading": 96.0,
           "font_weight": "semibold",
           "alignment": "left",
           "source_node": [
@@ -92146,7 +92215,8 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "vertical_alignment": "center"
         },
         {
           "name": "graphic-1",
@@ -92254,9 +92324,12 @@
           }
         }
       ],
-      "status": "in review",
+      "status": "approved",
       "registration": "shared core",
-      "example_slide": "official-slide-bdf5722cd2c0"
+      "example_slide": "official-slide-bdf5722cd2c0",
+      "review_notes": [
+        "Explicit user approval on 2026-11-09 for batch contents-01 after size, formatting and vertical-centering corrections. Current graphics finalized; later layout changes require renewed review."
+      ]
     },
     "three-statistics": {
       "title": "Four counters",
@@ -94134,6 +94207,1178 @@
       "status": "in review",
       "registration": "shared core",
       "example_slide": "official-slide-b389b7b875ae"
+    },
+    "bitpolito-wordmark": {
+      "title": "BitPolito",
+      "source": "library/layouts/bitpolito-wordmark.tex",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "graphic-one",
+          "type": "graphic",
+          "box": [
+            0.0,
+            338.0,
+            1920.0,
+            403.0
+          ]
+        }
+      ],
+      "palette": "blue",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-01",
+      "status": "approved",
+      "visual_family": "Covers",
+      "review_notes": [
+        "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
+      ]
+    },
+    "speech-panel": {
+      "title": "Speech panel over three people",
+      "source": "templates/studio/speech-panel.tex",
+      "palette": "light",
+      "canvas": [
+        1920.0,
+        1080.0
+      ],
+      "fields": [
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "box": [
+            420,
+            222,
+            1128,
+            376
+          ],
+          "default": "\\studiopaletteimage[width=1128\\studiounit]{images/studio/collection/figma-0482-part-01.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic"
+          }
+        },
+        {
+          "name": "graphic-2",
+          "type": "graphic",
+          "box": [
+            536,
+            589,
+            295,
+            294
+          ],
+          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/collection/figma-0482-part-02.pdf}",
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic"
+          }
+        },
+        {
+          "name": "graphic-3",
+          "type": "graphic",
+          "box": [
+            837,
+            589,
+            295,
+            294
+          ],
+          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/collection/figma-0482-part-03.pdf}",
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "whole graphic"
+          }
+        },
+        {
+          "name": "graphic-4",
+          "type": "graphic",
+          "box": [
+            1138,
+            589,
+            294,
+            294
+          ],
+          "default": "\\studiopaletteimage[width=294\\studiounit]{images/studio/collection/figma-0482-part-04.pdf}",
+          "slot": {
+            "number": 4,
+            "key": "graphic/4",
+            "role": "whole graphic"
+          }
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "default": "Slide title",
+          "box": [
+            491.773,
+            277.715,
+            1028.6,
+            135.304
+          ],
+          "source_ink_box": [
+            491.773,
+            277.715,
+            929.648,
+            107.406
+          ],
+          "font_size": 50.724,
+          "leading": 58.8398,
+          "source_node": [
+            2
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "text-2",
+          "type": "text",
+          "default": "Date or supporting note",
+          "box": [
+            491.824,
+            423.004,
+            996.8292,
+            46.054400000000015
+          ],
+          "source_ink_box": [
+            491.824,
+            423.004,
+            205.793,
+            28.758
+          ],
+          "font_size": 31.448,
+          "leading": 36.48,
+          "source_node": [
+            3
+          ],
+          "font_weight": "regular",
+          "alignment": "left",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        }
+      ],
+      "registration": "shared core",
+      "example_slide": "bitpolito-introduction-02",
+      "status": "in review"
+    },
+    "team-presentation": {
+      "title": "Team presentation",
+      "source": "templates/studio/team-presentation.tex",
+      "palette": "light",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "value-one",
+          "type": "text",
+          "default": "50+",
+          "box": [
+            1260,
+            206,
+            272,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "caption-one",
+          "type": "text",
+          "default": "Active members",
+          "box": [
+            1255,
+            303,
+            284,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "value-two",
+          "type": "text",
+          "default": "210",
+          "box": [
+            1598,
+            206,
+            228,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "caption-two",
+          "type": "text",
+          "default": "Alumni",
+          "box": [
+            1600,
+            303,
+            224,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "value-three",
+          "type": "text",
+          "default": "8000+",
+          "box": [
+            1274,
+            455,
+            447,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "caption-three",
+          "type": "text",
+          "default": "Followers on social media",
+          "box": [
+            1266,
+            553,
+            463,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          }
+        },
+        {
+          "name": "value-four",
+          "type": "text",
+          "default": "25+",
+          "box": [
+            1420,
+            700,
+            314,
+            112
+          ],
+          "font_size": 108,
+          "leading": 120,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 7,
+            "key": "text/7"
+          }
+        },
+        {
+          "name": "caption-four",
+          "type": "text",
+          "default": "Industry members",
+          "box": [
+            1417,
+            798,
+            320,
+            49
+          ],
+          "font_size": 36,
+          "leading": 42,
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          }
+        },
+        {
+          "name": "collage",
+          "type": "graphic",
+          "default": "\\includegraphics[width=988\\studiounit]{images/studio/team/collage.pdf}",
+          "box": [
+            0,
+            0,
+            988,
+            1080
+          ],
+          "slot": {
+            "number": 1,
+            "key": "graphic/1"
+          }
+        }
+      ],
+      "registration": "shared core",
+      "example_slide": "bitpolito-introduction-03",
+      "status": "approved",
+      "review_notes": [
+        "Explicit user approval on 2026-11-06 after correction of the continuous Team background in batch team-01. Current graphics finalized; illustrative figures remain editable and are not independently verified live statistics."
+      ]
+    },
+    "bitpolito-mission": {
+      "title": "Our mission",
+      "source": "library/layouts/bitpolito-mission.tex",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "fields": [
+        {
+          "name": "statement",
+          "type": "text",
+          "box": [
+            1100,
+            894,
+            1386,
+            290
+          ]
+        }
+      ],
+      "palette": "light",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-04",
+      "status": "in review"
+    },
+    "two-step-process": {
+      "title": "Two-step icon process",
+      "source": "templates/studio/two-step-process.tex",
+      "palette": "light",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "fields": [
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "box": [
+            2006,
+            706,
+            488,
+            489
+          ],
+          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0048-part-01.pdf}",
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "card content",
+            "frame": "images/studio/slots/figma-0048-part-01-panel.pdf",
+            "content": [
+              244.0,
+              218.0,
+              260.0,
+              260.0
+            ]
+          }
+        },
+        {
+          "name": "graphic-2",
+          "type": "graphic",
+          "box": [
+            1062,
+            706,
+            488,
+            489
+          ],
+          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0048-part-02.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "card content",
+            "frame": "images/studio/slots/figma-0048-part-02-panel.pdf",
+            "content": [
+              244.0,
+              218.0,
+              260.0,
+              260.0
+            ]
+          }
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "default": "Title",
+          "box": [
+            2052.191,
+            1200.371,
+            445.6820000000001,
+            112.19700000000009
+          ],
+          "source_ink_box": [
+            2052.191,
+            1200.371,
+            396.828,
+            70.859
+          ],
+          "font_size": 75.16,
+          "leading": 87.186,
+          "source_node": [
+            2
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "text-2",
+          "type": "text",
+          "default": "Item",
+          "box": [
+            1191.672,
+            1200.371,
+            275.1343333333334,
+            98.51066666666676
+          ],
+          "source_ink_box": [
+            1191.672,
+            1200.371,
+            226.289,
+            57.18
+          ],
+          "font_size": 75.147,
+          "leading": 87.17,
+          "source_node": [
+            5
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        }
+      ],
+      "registration": "shared core",
+      "example_slide": "bitpolito-introduction-05",
+      "status": "in review"
+    },
+    "bullseye-values": {
+      "title": "Bullseye Values",
+      "source": "templates/studio/bullseye-values.tex",
+      "palette": "light",
+      "canvas": [
+        3556.0,
+        2000.0
+      ],
+      "fields": [
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "box": [
+            1313,
+            512,
+            1033,
+            1033
+          ],
+          "default": "\\studiopaletteimage[width=1033\\studiounit]{images/studio/collection/figma-1051-part-01.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic"
+          }
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "default": "Title",
+          "box": [
+            1451.4848333333334,
+            839.496,
+            711.5933333333334,
+            411.2566666666666
+          ],
+          "source_ink_box": [
+            1645.262,
+            839.496,
+            324.039,
+            340.633
+          ],
+          "font_size": 128.407,
+          "leading": 148.952,
+          "source_node": [
+            1
+          ],
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "text-2",
+          "type": "text",
+          "default": "Label 1",
+          "box": [
+            1439.4490666666666,
+            205.664,
+            735.5078666666667,
+            112.43773333333334
+          ],
+          "source_ink_box": [
+            1467.328,
+            205.664,
+            679.75,
+            65.258
+          ],
+          "font_size": 85.781,
+          "leading": 99.506,
+          "source_node": [
+            9
+          ],
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "text-3",
+          "type": "text",
+          "default": "Label 4",
+          "box": [
+            2547.281,
+            919.531,
+            489.3533333333334,
+            218.8916666666667
+          ],
+          "source_ink_box": [
+            2547.281,
+            919.531,
+            434.398,
+            172.391
+          ],
+          "font_size": 84.547,
+          "leading": 98.074,
+          "source_node": [
+            10
+          ],
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "text-4",
+          "type": "text",
+          "default": "Supporting explanation",
+          "box": [
+            1234.281,
+            1719.531,
+            1166.7406666666668,
+            127.02333333333345
+          ],
+          "source_ink_box": [
+            1234.281,
+            1719.531,
+            1110.988,
+            79.848
+          ],
+          "font_size": 85.773,
+          "leading": 99.497,
+          "source_node": [
+            11
+          ],
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "text-5",
+          "type": "text",
+          "default": "Item",
+          "box": [
+            598.891,
+            919.531,
+            427.35293333333334,
+            218.89386666666667
+          ],
+          "source_ink_box": [
+            598.891,
+            919.531,
+            372.395,
+            172.391
+          ],
+          "font_size": 84.551,
+          "leading": 98.079,
+          "source_node": [
+            12
+          ],
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        }
+      ],
+      "registration": "shared core",
+      "example_slide": "bitpolito-introduction-06",
+      "status": "in review"
+    },
+    "bitpolito-interest": {
+      "title": "Get involved",
+      "source": "library/layouts/bitpolito-interest.tex",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "graphic-one",
+          "type": "graphic",
+          "box": [
+            858.0,
+            0.0,
+            634.0,
+            1080.0
+          ]
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "box": [
+            132.82,
+            475.69,
+            715.0,
+            170.0
+          ]
+        },
+        {
+          "name": "item-one",
+          "type": "text",
+          "box": [
+            931.0,
+            368.1,
+            540.0,
+            78.0
+          ]
+        },
+        {
+          "name": "item-two",
+          "type": "text",
+          "box": [
+            884.0,
+            516.1,
+            580.0,
+            78.0
+          ]
+        },
+        {
+          "name": "item-three",
+          "type": "text",
+          "box": [
+            913.0,
+            671.08,
+            525.0,
+            78.0
+          ]
+        }
+      ],
+      "palette": "light",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-07",
+      "status": "in review"
+    },
+    "bitpolito-benefits": {
+      "title": "Why join BitPolito",
+      "source": "library/layouts/bitpolito-benefits.tex",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "graphic-one",
+          "type": "graphic",
+          "box": [
+            1080.0,
+            0.0,
+            645.0,
+            1080.0
+          ]
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "box": [
+            132.82,
+            516.65,
+            840.0,
+            115.0
+          ]
+        },
+        {
+          "name": "item-one",
+          "type": "text",
+          "box": [
+            1236.21,
+            216.94,
+            450.0,
+            70.0
+          ]
+        },
+        {
+          "name": "item-two",
+          "type": "text",
+          "box": [
+            1236.21,
+            424.94,
+            450.0,
+            70.0
+          ]
+        },
+        {
+          "name": "item-three",
+          "type": "text",
+          "box": [
+            1236.21,
+            632.94,
+            450.0,
+            70.0
+          ]
+        },
+        {
+          "name": "item-four",
+          "type": "text",
+          "box": [
+            1236.21,
+            840.94,
+            450.0,
+            70.0
+          ]
+        }
+      ],
+      "palette": "light",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-08",
+      "status": "in review"
+    },
+    "bitpolito-partners": {
+      "title": "Partners, sponsors and media",
+      "source": "library/layouts/bitpolito-partners.tex",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "box": [
+            99.35,
+            125.23,
+            1100.0,
+            105.0
+          ]
+        },
+        {
+          "name": "graphic-one",
+          "type": "graphic",
+          "box": [
+            94.0,
+            247.0,
+            227.0,
+            751.0
+          ]
+        },
+        {
+          "name": "graphic-two",
+          "type": "graphic",
+          "box": [
+            624.0,
+            247.0,
+            217.0,
+            751.0
+          ]
+        },
+        {
+          "name": "graphic-three",
+          "type": "graphic",
+          "box": [
+            1280.0,
+            200.0,
+            485.0,
+            804.0
+          ]
+        },
+        {
+          "name": "left-website-1",
+          "type": "text",
+          "box": [
+            321.42,
+            287.43,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-handle-1",
+          "type": "text",
+          "box": [
+            318.56,
+            351.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-website-2",
+          "type": "text",
+          "box": [
+            321.42,
+            437.43,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-handle-2",
+          "type": "text",
+          "box": [
+            318.56,
+            501.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-website-3",
+          "type": "text",
+          "box": [
+            321.42,
+            587.4300000000001,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-handle-3",
+          "type": "text",
+          "box": [
+            318.56,
+            651.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-website-4",
+          "type": "text",
+          "box": [
+            321.42,
+            737.4300000000001,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-handle-4",
+          "type": "text",
+          "box": [
+            318.56,
+            801.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-website-5",
+          "type": "text",
+          "box": [
+            321.42,
+            887.4300000000001,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "left-handle-5",
+          "type": "text",
+          "box": [
+            318.56,
+            951.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-website-1",
+          "type": "text",
+          "box": [
+            851.42,
+            287.43,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-handle-1",
+          "type": "text",
+          "box": [
+            848.56,
+            351.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-website-2",
+          "type": "text",
+          "box": [
+            851.42,
+            437.43,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-handle-2",
+          "type": "text",
+          "box": [
+            848.56,
+            501.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-website-3",
+          "type": "text",
+          "box": [
+            851.42,
+            587.4300000000001,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-handle-3",
+          "type": "text",
+          "box": [
+            848.56,
+            651.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-website-4",
+          "type": "text",
+          "box": [
+            851.42,
+            737.4300000000001,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-handle-4",
+          "type": "text",
+          "box": [
+            848.56,
+            801.85,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-website-5",
+          "type": "text",
+          "box": [
+            851.42,
+            887.4300000000001,
+            275.0,
+            44.0
+          ]
+        },
+        {
+          "name": "right-handle-5",
+          "type": "text",
+          "box": [
+            848.56,
+            951.85,
+            275.0,
+            44.0
+          ]
+        }
+      ],
+      "palette": "light",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-09",
+      "status": "in review"
+    },
+    "bitpolito-course": {
+      "title": "Bitcoin course",
+      "source": "library/layouts/bitpolito-course.tex",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "graphic-one",
+          "type": "graphic",
+          "box": [
+            0.0,
+            0.0,
+            1765.0,
+            1080.0
+          ]
+        },
+        {
+          "name": "title",
+          "type": "text",
+          "box": [
+            1160.0,
+            127.95,
+            596.0,
+            150.0
+          ]
+        }
+      ],
+      "palette": "light",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-10",
+      "status": "in review"
+    },
+    "bitpolito-contact": {
+      "title": "Stay in touch",
+      "source": "library/layouts/bitpolito-contact.tex",
+      "canvas": [
+        1920,
+        1080
+      ],
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "box": [
+            1059.2,
+            443.1,
+            621,
+            110
+          ],
+          "font_size": 60,
+          "leading": 71,
+          "letterspacing": 27,
+          "font_weight": "medium"
+        },
+        {
+          "name": "copyright",
+          "type": "text",
+          "box": [
+            559.7,
+            52.71,
+            800,
+            65
+          ],
+          "font_size": 34.2,
+          "leading": 41,
+          "letterspacing": -43
+        },
+        {
+          "name": "qr-graphic",
+          "type": "graphic"
+        },
+        {
+          "name": "qrcode",
+          "type": "boolean"
+        },
+        {
+          "name": "graphic-one",
+          "type": "graphic",
+          "box": [
+            1060,
+            550,
+            104.22,
+            98.81
+          ]
+        },
+        {
+          "name": "graphic-two",
+          "type": "graphic",
+          "box": [
+            1188,
+            550,
+            104.22,
+            98.81
+          ]
+        },
+        {
+          "name": "graphic-three",
+          "type": "graphic",
+          "box": [
+            1316,
+            550,
+            104.22,
+            98.81
+          ]
+        },
+        {
+          "name": "graphic-four",
+          "type": "graphic",
+          "box": [
+            1444,
+            550,
+            104.22,
+            98.81
+          ]
+        },
+        {
+          "name": "graphic-five",
+          "type": "graphic",
+          "box": [
+            1572,
+            550,
+            104.22,
+            98.81
+          ]
+        }
+      ],
+      "palette": "blue",
+      "topic": "BitPolito introduction",
+      "example_slide": "bitpolito-introduction-11",
+      "status": "in review",
+      "visual_family": "Closing"
     }
   },
   "slides": {
@@ -95140,7 +96385,13 @@
       "layout": "four-images",
       "role": "content",
       "topic": "money",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0018-part-01.pdf": "307aa5497d3bc36c616774fe05807519185ce0ea6ef05bfc4eaeffaf93856670",
+        "images/studio/collection/figma-0018-part-02.pdf": "a98e768ed46717904821f54ed663a12e4310ab94fedddd566c49c0fe602c1117",
+        "images/studio/collection/figma-0018-part-03.pdf": "ce9b501f15e243b9577ad5242e5d644c76f6a87bd9b2aa2e93fd973de563f992",
+        "images/studio/collection/figma-0018-part-04.pdf": "24ceb96632b76c29f651257a1079ec43b85aff843133da5508c9e116f3009841",
+        "templates/studio/four-images.tex": "e653d7856861536e9244fab56f29d8144787c31083099241d781245aef71cfbf"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -95778,7 +97029,9 @@
       "layout": "three-cards",
       "role": "content",
       "topic": "money",
-      "resources": {},
+      "resources": {
+        "templates/studio/three-cards.tex": "b7cba071c83982b33c4e55e04d4863c9a820ac8fe6a2c9b629fc05edaebba6f4"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -96215,7 +97468,10 @@
       "layout": "chat-dialogue",
       "role": "content",
       "topic": "money",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0757-part-01.pdf": "103ee3e720ab6b8af2a195482672554e97371663fdb26f66acf815ce69ab781b",
+        "templates/studio/chat-dialogue.tex": "6e6834ddb88230d3c91b17035569b18913bbbd07840f004f437e729486c0af5a"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -100888,7 +102144,17 @@
       "layout": "contents-five",
       "role": "contents",
       "topic": "mining",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0883-agenda-panel-1.pdf": "1ea1740cd7bf18c062a206c7702615e8de7b143273bf7731b8f223a45acbb13a",
+        "images/studio/collection/figma-0883-agenda-panel-2.pdf": "2ba44422586c456977051aeaa82abc23030f3f229d9c86a3b435494bcef5ec63",
+        "images/studio/collection/figma-0883-agenda-panel-3.pdf": "00e90744e486d355ee09f17dfef4d20091e13b2592395db4933e2603f3af0573",
+        "images/studio/collection/figma-0883-agenda-panel-4.pdf": "c618f57b6481b96eae5d2a92586b0336d5ba19b30f984aa3cf0bdb20e9d8013a",
+        "images/studio/collection/figma-0883-agenda-panel-5.pdf": "78ecb2079f01efe1c389136487efda77980343cc7bcc4419c3e4e5c163e8d366",
+        "images/studio/collection/figma-0883-agenda-panel-6.pdf": "ab8233e6fb77e844e874b7d6c19da4f4c4614be4a64e705731b13d58fe19841e",
+        "images/studio/collection/figma-0883-agenda-panel-7.pdf": "54c70d7f973b042ac9b7178ad92118f3f94e26601e7a13101841ad5cacc176ec",
+        "templates/studio/contents-five.tex": "dd39ccea9b64759d215e09794908978799c23786f01c8820ba207de39a4efe9e",
+        "templates/studio/components/agenda-text.tex": "2cfc5a2de066f95f0f38b717a4f80f588430b907589d6d9c599e18cdd6c69185"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -100931,7 +102197,13 @@
       "layout": "three-statistics",
       "role": "content",
       "topic": "transactions",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0626-part-01.pdf": "e837e2194411f8cdec80de2829cf58b425d1fb1cefbee93194ff1e8757f75090",
+        "images/studio/collection/figma-0626-part-02.pdf": "8d9821eb0d55bdde1be579976c0635b1c2ec27df683b1625f901d8f0c0ca6c69",
+        "images/studio/collection/figma-0626-part-03.pdf": "1bc6f6c6365c3e97ed9228e33f7f6103326c6b13031a3fbd2b17cf817893d0f1",
+        "images/studio/collection/figma-0626-part-04.pdf": "0330d6b20be02efd07a8f70b96e87ae08305c2b5e48ffce4536b08e7306b15a0",
+        "templates/studio/three-statistics.tex": "992c03f2c7552091660628248e255a8caa6f7c7207dda2c84fa2e4aa4136d7fc"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -101450,7 +102722,9 @@
       "role": "content",
       "topic": "transactions",
       "resources": {
-        "images/studio/collection/figma-0530-part-01.pdf": "69591799cab4ab8343992e509399ba35c5c38ffc416ddd77da7ab2980106cbf2"
+        "images/studio/collection/figma-0530-part-01.pdf": "69591799cab4ab8343992e509399ba35c5c38ffc416ddd77da7ab2980106cbf2",
+        "images/studio/neutral/screenshot-callout-graphic-1.pdf": "641aa8743b67742b59e7950a944d49d2e6c17211a1a81a511044b64a3720f162",
+        "templates/studio/screenshot-callout.tex": "f222e342264848fac1435b79e31efd9e2f0f6f6c57eea7a03a1635a3096df774"
       },
       "references": [
         "lesson-official-decks",
@@ -101543,7 +102817,10 @@
       "layout": "line-chart",
       "role": "content",
       "topic": "mining",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0818-part-01.pdf": "a178f532de347a4ed76205182b9e5e1eed627e264294bf7cb9ed88929ab7e112",
+        "templates/studio/line-chart.tex": "ea4d86b48a89cbe3eba2c2c319158900861d5d97c44c25243dd9eb19e958ca8f"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -101650,7 +102927,11 @@
       "layout": "diagram-pool-shares",
       "role": "content",
       "topic": "hashing",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0625-part-01.pdf": "62364373dc1dd27d297ec1d1e14644bf10cf26c9872ab012d9ae3c7a641075c6",
+        "images/studio/collection/figma-0625-part-02.pdf": "86d181747f7745967a07730d5f7ef6010066554eaf6824bb9902f1dbaefa88ee",
+        "templates/studio/diagram-pool-shares.tex": "ca5a37a1da8937cf16f74ef47221bd73222d106382ee064af724b5a3b827f006"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -101796,7 +103077,11 @@
       "layout": "coin-comparison",
       "role": "content",
       "topic": "mining",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0532-part-01.pdf": "5546ec75c779bed6c7c84545c54a1f2923b4fd64f56d4be4f489832b86684b32",
+        "images/studio/collection/figma-0532-part-02.pdf": "cd155ebb689d6077ff707e462c2b351fbcd42edeaac0a628bcbf69622dbceb34",
+        "templates/studio/coin-comparison.tex": "01d2717a3522deb7a8b6ec7e36279f7cb14f95ef799db3fe3bbd59cf0dc68af0"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -101884,7 +103169,10 @@
       "layout": "diagram-annotated-energy",
       "role": "content",
       "topic": "mining",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0525-part-01.pdf": "4b13255360d025b909378f23d7c5be126b1532582823023635888cbdae93eb97",
+        "templates/studio/diagram-annotated-energy.tex": "15e1fb4551818a2917029c3adef4f458bb2c5dcee52b28320a96b2dd7c6cb6e2"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -101972,7 +103260,10 @@
       "layout": "oversized-number-blue",
       "role": "content",
       "topic": "mining",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0555-part-01.pdf": "7ef904d5cecb98d4043ecc5dcaffddf9e0fc3c8ee70fd8388735389714ac6084",
+        "templates/studio/oversized-number-blue.tex": "83a99b7a9f9247d8ee95fd36ab450c11964605aaba4070992c2848192b57da40"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq",
@@ -104546,7 +105837,9 @@
       "layout": "three-cards",
       "role": "content",
       "topic": "bitcoin-basics",
-      "resources": {},
+      "resources": {
+        "templates/studio/three-cards.tex": "b7cba071c83982b33c4e55e04d4863c9a820ac8fe6a2c9b629fc05edaebba6f4"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -106403,7 +107696,13 @@
       "layout": "four-images",
       "role": "content",
       "topic": "bitcoin-basics",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0018-part-01.pdf": "307aa5497d3bc36c616774fe05807519185ce0ea6ef05bfc4eaeffaf93856670",
+        "images/studio/collection/figma-0018-part-02.pdf": "a98e768ed46717904821f54ed663a12e4310ab94fedddd566c49c0fe602c1117",
+        "images/studio/collection/figma-0018-part-03.pdf": "ce9b501f15e243b9577ad5242e5d644c76f6a87bd9b2aa2e93fd973de563f992",
+        "images/studio/collection/figma-0018-part-04.pdf": "24ceb96632b76c29f651257a1079ec43b85aff843133da5508c9e116f3009841",
+        "templates/studio/four-images.tex": "e653d7856861536e9244fab56f29d8144787c31083099241d781245aef71cfbf"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -106773,7 +108072,9 @@
       "layout": "three-cards",
       "role": "content",
       "topic": "bitcoin-basics",
-      "resources": {},
+      "resources": {
+        "templates/studio/three-cards.tex": "b7cba071c83982b33c4e55e04d4863c9a820ac8fe6a2c9b629fc05edaebba6f4"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -107355,7 +108656,10 @@
       "layout": "chat-dialogue",
       "role": "content",
       "topic": "bitcoin-basics",
-      "resources": {},
+      "resources": {
+        "images/studio/collection/figma-0757-part-01.pdf": "103ee3e720ab6b8af2a195482672554e97371663fdb26f66acf815ce69ab781b",
+        "templates/studio/chat-dialogue.tex": "6e6834ddb88230d3c91b17035569b18913bbbd07840f004f437e729486c0af5a"
+      },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
@@ -121748,6 +123052,428 @@
         "Residual source text outlines removed from the prepared graphic and supplied by editable English fields; original foreground colours and left-aligned paragraph baselines retained.",
         "Native-palette metadata and outer-canvas fill follow the full-page source background, including the narrow aspect-ratio padding."
       ]
+    },
+    "bitpolito-introduction-01": {
+      "title": "BitPolito",
+      "source": "library/slides/bitpolito-introduction-01.tex",
+      "layout": "bitpolito-wordmark",
+      "role": "cover",
+      "topic": "BitPolito introduction",
+      "fields": {},
+      "resources": {
+        "library/layouts/bitpolito-wordmark.tex": "da59f774ad8dda384873420bd3221e3b13f4f134da0fed9df1ebf6f58b17dd25",
+        "library/layouts/fixed/bitpolito-wordmark-cover.tex": "9ac50686faa209834fba3fd3f6e208023ef68bc63ce534998691f7da06263c84",
+        "library/parts/bitpolito/cover-wordmark.pdf": "8e20b99b14bfebbf7ab5012f3b5d4ddc77ca34a3979f145e3dcbff1856c04f7a"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 1,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "approved",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims.",
+        "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
+      ],
+      "verification_scope": "Fixed wordmark cover visually approved by the user in covers-01 on 2026-11-06; other pack pages remain in review.",
+      "layout_source": "library/layouts/bitpolito-wordmark.tex",
+      "preset": "bitpolito-wordmark-cover",
+      "content_mode": "fixed"
+    },
+    "bitpolito-introduction-02": {
+      "title": "Our beginnings",
+      "source": "library/slides/bitpolito-introduction-02.tex",
+      "layout": "speech-panel",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "Let's talk about Bitcoin in our university!\\\\Of course only technical stuff...",
+        "text-2": "February 2020"
+      },
+      "resources": {
+        "images/studio/collection/figma-0482-part-01.pdf": "aa43f75439fb0817d281681a000ca3949e8bdcc795125b1b861d4bd460614ecd",
+        "images/studio/collection/figma-0482-part-02.pdf": "0bd2ff2fb824d352f61da65a2559c11a967de1d34d381ba715f4333d1bf0caaf",
+        "images/studio/collection/figma-0482-part-03.pdf": "0d1b185b3524deca2bbbb15e48465219d56beb5c464bde90c0b8cbe67eccd53a",
+        "images/studio/collection/figma-0482-part-04.pdf": "d9a94d9461a068842cca7e8c6e33427c82d5130eed040fff4e0320087e521291",
+        "templates/studio/speech-panel.tex": "1825bfdc66ecfda20e1b6b451c81ce88d17a1bf117a555a3c87ad5d2872df475"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 2,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "core_reuse": true
+    },
+    "bitpolito-introduction-03": {
+      "title": "The team",
+      "source": "library/slides/bitpolito-introduction-03.tex",
+      "layout": "team-presentation",
+      "role": "team",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "value-one": "50+",
+        "caption-one": "Active members",
+        "value-two": "210",
+        "caption-two": "Alumni",
+        "value-three": "8000+",
+        "caption-three": "Followers on social media",
+        "value-four": "25+",
+        "caption-four": "Working in Bitcoin"
+      },
+      "resources": {
+        "images/studio/team/collage.pdf": "1c9611ffda5bfcff8d750e1dec4f96126296c4ee5e9448b868fb4016f4f5456f",
+        "images/studio/team/panels.pdf": "6c84970c6a11bc30e5f3c01a013b798351d45869407f07950c3db449e952fed5",
+        "templates/studio/team-presentation.tex": "fdf842489813d4ed7b10b181f6635f5a5d89f32417acf86940617add65975f0a"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 3,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "approved",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims.",
+        "Explicit user approval on 2026-11-06 after correction of the continuous Team background in batch team-01. Current graphics finalized; illustrative figures remain editable and are not independently verified live statistics."
+      ],
+      "verification_scope": "Team graphics explicitly approved on 2026-11-06; example figures remain supplied draft content, not verified live claims.",
+      "core_reuse": true
+    },
+    "bitpolito-introduction-04": {
+      "title": "Our mission",
+      "source": "library/slides/bitpolito-introduction-04.tex",
+      "layout": "bitpolito-mission",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "statement": "Bridging university and\\\\Bitcoin industry"
+      },
+      "resources": {
+        "library/layouts/bitpolito-mission.tex": "12be60991a5eba5d113d5ad32689a8136e1e95090f6a0fa3d6f65e50194f35e9",
+        "templates/studio/glow-statement.tex": "7b44ee44c3ad9c109fb90583e675e8f11bce1735db8a9dc8fdf31ad4c8a609d6",
+        "images/studio/parts/radial-glow.pdf": "fae641b41caa8f1b8b6f0a61ac791f70fa5f317a4ca999e66ef56535eecda115",
+        "images/studio/parts/source/resources/statement-glow-gradient.png": "599aef6363f467d49ba17edba5ee4281f2ee4bf4797d8c3ea0095d3b496c9ae5"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 4,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "layout_source": "library/layouts/bitpolito-mission.tex"
+    },
+    "bitpolito-introduction-05": {
+      "title": "Values and technology",
+      "source": "library/slides/bitpolito-introduction-05.tex",
+      "layout": "two-step-process",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "text-2": "Values",
+        "title": "Technology"
+      },
+      "resources": {
+        "images/studio/collection/figma-0048-part-01.pdf": "a3d099ace7719d4a05d9f86e225feeb332871902e40dec49d4b473b73251e6e9",
+        "images/studio/collection/figma-0048-part-02.pdf": "1bc7d511294b8476dd1bd521a0e75f09c4db776a6687b76d48dc26b3fd6df994",
+        "templates/studio/two-step-process.tex": "b61b85187c7820cd504a8bf06d36a495fb75a75e9d09e7dd3fc7d3590316de2b"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 5,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "core_reuse": true
+    },
+    "bitpolito-introduction-06": {
+      "title": "Why Bitcoin",
+      "source": "library/slides/bitpolito-introduction-06.tex",
+      "layout": "bullseye-values",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "Why\\\\(only)\\\\Bitcoin",
+        "text-2": "Financial freedom",
+        "text-5": "Cultural\\\\revolution",
+        "text-3": "Strong\\\\core values",
+        "text-4": "Open-source and distributed"
+      },
+      "resources": {
+        "images/studio/collection/figma-1051-part-01.pdf": "bb57e43c2288dece8edac5464d2273d4358d2f05dee0943eb5c6a4f8cf650463",
+        "templates/studio/bullseye-values.tex": "c90015e1f77023e2450f8b8fbe737acbf710a6bf3c825dee84894b562a9db7b2"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 6,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "core_reuse": true
+    },
+    "bitpolito-introduction-07": {
+      "title": "Get involved",
+      "source": "library/slides/bitpolito-introduction-07.tex",
+      "layout": "bitpolito-interest",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "Why get interested\\\\in Bitcoin",
+        "item-one": "Self-growth",
+        "item-two": "Job opportunities",
+        "item-three": "Fast-growing sector"
+      },
+      "resources": {
+        "library/layouts/bitpolito-interest.tex": "b0578bc695a8d676606659adbaab7682ba8842ecc31391b4eb470bb4dbd3e471",
+        "library/parts/bitpolito/interest-rail.pdf": "f0e1dd53ff9b8648f309f0b3ca1571866abc995cbcc7553eee8012f8c0a9a6df"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 7,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "layout_source": "library/layouts/bitpolito-interest.tex"
+    },
+    "bitpolito-introduction-08": {
+      "title": "Why join BitPolito",
+      "source": "library/slides/bitpolito-introduction-08.tex",
+      "layout": "bitpolito-benefits",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "Why join BitPolito",
+        "item-one": "Practical experience",
+        "item-two": "University credits",
+        "item-three": "Guided training",
+        "item-four": "Job opportunities"
+      },
+      "resources": {
+        "library/layouts/bitpolito-benefits.tex": "bfc42089c167bab85791e6962e501ebb4c14fc27b19c956f78a224f7d234abba",
+        "library/parts/bitpolito/benefit-panels.pdf": "922d6ef712aa6ca5d057457ff778f2970d0e94a6d1dffe88e721f6aa0670a6a7"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 8,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "layout_source": "library/layouts/bitpolito-benefits.tex"
+    },
+    "bitpolito-introduction-09": {
+      "title": "Partners, sponsors and media",
+      "source": "library/slides/bitpolito-introduction-09.tex",
+      "layout": "bitpolito-partners",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "Partners, Sponsors \\& Media",
+        "left-website-1": "planb.lugano.ch",
+        "left-handle-1": "@LuganoPlanB",
+        "left-website-2": "zebedee.io",
+        "left-handle-2": "@zbdapp",
+        "left-website-3": "fulgur.ventures",
+        "left-handle-3": "@fulgurventures",
+        "left-website-4": "braiins.com",
+        "left-handle-4": "@BraiinsMining",
+        "left-website-5": "blockstream.com",
+        "left-handle-5": "@Blockstream",
+        "right-website-1": "bitbox.swiss",
+        "right-handle-1": "@BitBoxSwiss",
+        "right-website-2": "stratumprotocol.org",
+        "right-handle-2": "@StratumV2",
+        "right-website-3": "relai.app",
+        "right-handle-3": "@relai\\_app",
+        "right-website-4": "vexl.it",
+        "right-handle-4": "@vexl",
+        "right-website-5": "planb.network",
+        "right-handle-5": "@planb\\_network"
+      },
+      "resources": {
+        "library/layouts/bitpolito-partners.tex": "0a0c6f484b9709f5b1dcff54e0773527e19464d6fcf3eb4976ed0c63b9d5026b",
+        "library/parts/bitpolito/media-logos.pdf": "486a8a2e5b40c2554c606946ffe046762e4ba2f7e480df6b1947130b265b3f2f",
+        "library/parts/bitpolito/partner-column-one.pdf": "f23590c02e9a69438a9634a754b46886450ba817009767da9756a5b02dfad7ff",
+        "library/parts/bitpolito/partner-column-two.pdf": "e248c3b08b2cf58d617f97b6fdbcc73988847cbc10cc5fef9f8717ce44b6bda5"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 9,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "layout_source": "library/layouts/bitpolito-partners.tex"
+    },
+    "bitpolito-introduction-10": {
+      "title": "Bitcoin course",
+      "source": "library/slides/bitpolito-introduction-10.tex",
+      "layout": "bitpolito-course",
+      "role": "content",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "Politecnico di Torino\\\\Bitcoin Course"
+      },
+      "resources": {
+        "library/layouts/bitpolito-course.tex": "a492c102c2846251f03f322f04973e26d8552298416076cc67660b32527a743a",
+        "library/parts/bitpolito/course-lettering.pdf": "509ca0ca2dfc65e818e1ec4dfc66c0c00e818b78f21e4df7a4200f02cf6aa38c"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 10,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "layout_source": "library/layouts/bitpolito-course.tex"
+    },
+    "bitpolito-introduction-11": {
+      "title": "Stay in touch",
+      "source": "library/slides/bitpolito-introduction-11.tex",
+      "layout": "bitpolito-contact",
+      "role": "closing",
+      "topic": "BitPolito introduction",
+      "fields": {
+        "title": "@BitPolito",
+        "copyright": "\\textcopyright{} 2026 BitPolito"
+      },
+      "resources": {
+        "library/layouts/bitpolito-contact.tex": "c0a07a7c12d9d110bfd47dcfae1bfd53fe58e43e71f757a24f6504ea27e84589",
+        "library/parts/bitpolito/closing-qr.pdf": "693826a59dc0b94824bba39b2feb24737ec2beb7097fef323f2128ce61a60ff3",
+        "images/studio/closing/github.pdf": "667c88bd4824c3d8ac3a124223f3c4cf27ba5e55b8885fac8247190dba03616c",
+        "images/studio/closing/instagram.pdf": "d95fa99be2ead2e3bdba4245c2920f8f7c4307cc8e880f913e6d397b682bd4cd",
+        "images/studio/closing/telegram.pdf": "ca0c00da2435984a02a1f2c5ceb1cfe4a3bbd248380cbec806a722af4cf78a82",
+        "images/studio/closing/twitter.pdf": "8c255177f9f0d03feb2e59242b09e26a350a9ff2b363ea8ea681f9a63b582d9a",
+        "images/studio/closing/youtube.pdf": "46ee76af4e368775badd90de081e50925d4861525c7be44e6fff5b0979774808",
+        "images/studio/closing/layout.tex": "a9a7018c59a7733ca043f4a179d07100f013ee86c66b0ee7416adcd93e8c6941"
+      },
+      "references": [],
+      "origins": [
+        {
+          "source": "bitpolito-introduction",
+          "path": "Presentazione BitPolito.pdf",
+          "page": 11,
+          "reference_status": "user-supplied PDF measured"
+        }
+      ],
+      "changes": [
+        "Inter and original source geometry are retained.",
+        "Layout is linked to the canonical Studio catalogue; content remains independently editable."
+      ],
+      "status": "in review",
+      "review_notes": [
+        "Historical figures, partners and links are supplied draft content, not independently verified live claims."
+      ],
+      "verification_scope": "Technical reconstruction; content and visual approval remain pending.",
+      "layout_source": "library/layouts/bitpolito-contact.tex"
     }
   },
   "decks": {
@@ -122636,6 +124362,32 @@
       "prerequisites": [
         "Bitcoin basics"
       ]
+    },
+    "bitpolito-introduction": {
+      "title": "Introducing BitPolito",
+      "audience": "University students and prospective partners",
+      "topics": [
+        "team",
+        "community",
+        "education"
+      ],
+      "summary": "The supplied eleven-page introduction, rebuilt using catalogue templates and a fixed brand cover.",
+      "slides": [
+        "bitpolito-introduction-01",
+        "bitpolito-introduction-02",
+        "bitpolito-introduction-03",
+        "bitpolito-introduction-04",
+        "bitpolito-introduction-05",
+        "bitpolito-introduction-06",
+        "bitpolito-introduction-07",
+        "bitpolito-introduction-08",
+        "bitpolito-introduction-09",
+        "bitpolito-introduction-10",
+        "bitpolito-introduction-11"
+      ],
+      "status": "in review",
+      "prerequisites": [],
+      "level": "introductory"
     }
   },
   "blocks": {
@@ -127173,6 +128925,45 @@
       "summary": "Political Answer / Biased view of the “Crypto Space” / Correct view of the “Crypto Space” / It’s not a company! / More false myths \"Only used for speculation\" / Usability progress Command / Mobile wallet / Desktop wallet",
       "verified": "2026-11-04",
       "level": "beginner"
+    },
+    "bitpolito-mission": {
+      "title": "BitPolito: Mission",
+      "audience": "University students",
+      "topics": [
+        "community"
+      ],
+      "prerequisites": [],
+      "slides": [
+        "bitpolito-introduction-04",
+        "bitpolito-introduction-05",
+        "bitpolito-introduction-06"
+      ],
+      "status": "in review",
+      "source_decks": [
+        "bitpolito-introduction"
+      ],
+      "summary": "Reusable editable content from the supplied BitPolito introduction.",
+      "level": "introductory"
+    },
+    "bitpolito-opportunities": {
+      "title": "BitPolito: Opportunities",
+      "audience": "University students",
+      "topics": [
+        "community"
+      ],
+      "prerequisites": [],
+      "slides": [
+        "bitpolito-introduction-07",
+        "bitpolito-introduction-08",
+        "bitpolito-introduction-09",
+        "bitpolito-introduction-10"
+      ],
+      "status": "in review",
+      "source_decks": [
+        "bitpolito-introduction"
+      ],
+      "summary": "Reusable editable content from the supplied BitPolito introduction.",
+      "level": "introductory"
     }
   },
   "aliases": {
@@ -127286,6 +129077,22 @@
       "content_mode": "fixed",
       "status": "in review",
       "summary": "Ready-made content. No text, icon or palette overrides; source files remain available for maintenance."
+    },
+    "bitpolito-wordmark-cover": {
+      "title": "BitPolito wordmark cover",
+      "source": "library/layouts/fixed/bitpolito-wordmark-cover.tex",
+      "slide": "bitpolito-introduction-01",
+      "slides": [
+        "bitpolito-introduction-01"
+      ],
+      "fields": [],
+      "content_mode": "fixed",
+      "status": "approved",
+      "summary": "Fixed oversized BitPolito wordmark. No content overrides.",
+      "visual_family": "Covers",
+      "review_notes": [
+        "Explicitly approved by the user on 2026-11-06 after reviewing batch covers-01. Current composition finalized; future graphical changes require a new review."
+      ]
     }
   },
   "reuse_rules": {
@@ -127314,5 +129121,9 @@
       ],
       "reason": "Keep the complete quote in one paragraph and its credit in a separate shared field."
     }
+  },
+  "artwork_manifests": {
+    "library/parts/bitpolito/manifest.json": "cropped-pdfs",
+    "images/studio/closing/github-manifest.json": "derived-vector"
   }
 }

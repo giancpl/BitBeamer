@@ -27,7 +27,7 @@ class LessonLibraryTests(unittest.TestCase):
         for name in ('cover','first','second','closing'):
             (self.root/f'library/slides/{name}.tex').write_text('\\studiotemplate{official-layout-sample}', encoding="utf-8")
         resources={p:hashlib.sha256((self.root/p).read_bytes()).hexdigest() for p in ('library/parts/panel.pdf','library/layouts/sample.tex')}
-        self.data={'schema':1,'sources':[{'id':'official','page_count':4,'pages':[{'page':i,'slide':s} for i,s in enumerate(('cover','first','second','closing'),1)]}],
+        self.data={'schema':1,'layouts':{'official-layout-sample':{'source':'library/layouts/sample.tex'}},'sources':[{'id':'official','page_count':4,'pages':[{'page':i,'slide':s} for i,s in enumerate(('cover','first','second','closing'),1)]}],
           'references':{'lesson-source':{'source':'library/references/lesson-source.bib'}},
           'slides':{s:{'source':f'library/slides/{s}.tex','layout':'official-layout-sample','layout_source':'library/layouts/sample.tex','status':'in review','resources':resources,'references':['lesson-source'],'role':s if s in ('cover','closing') else 'content','origins':[{'source':'official','page':i}]} for i,s in enumerate(('cover','first','second','closing'),1)},
           'decks':{'intro':{'title':'Introduction','audience':'Beginners','status':'in review','slides':['cover','first','closing']}},
@@ -44,9 +44,11 @@ class LessonLibraryTests(unittest.TestCase):
         project=self.create(from_library='intro')
         self.assertIn('presentations/my-talk/slides/first.tex',(project/'main.tex').read_text(encoding="utf-8"))
         self.assertNotIn('library/slides/',(project/'main.tex').read_text(encoding="utf-8"))
-        layout=(project/'layouts/sample.tex').read_text(encoding="utf-8")
-        self.assertIn('presentations/my-talk/assets/',layout)
-        self.assertNotIn('library/parts/',layout)
+        registrations=(project/'library-layouts.tex').read_text(encoding='utf-8')
+        self.assertIn('library/layouts/sample.tex',registrations)
+        self.assertFalse((project/'layouts').exists())
+        self.assertFalse(list((project/'assets').glob('*')))
+        self.assertEqual(json.loads((project/'library-imports.json').read_text())['binding'],'shared-layouts')
         self.assertTrue((project/'references.bib').is_file())
         self.assertTrue((project/'assets').is_dir())
         self.assertIn(library.MARKER,(project/'main.tex').read_text(encoding="utf-8"))
@@ -64,17 +66,55 @@ class LessonLibraryTests(unittest.TestCase):
         self.assertEqual((self.root/'library/slides/second.tex').read_bytes(),original)
         with self.assertRaisesRegex(ValueError,'already imported'):library.add_block(self.root,project,'hashing')
 
+    def test_explicit_content_data_is_private_while_layouts_stay_shared(self):
+        source=self.root/'examples/data/values.csv';source.parent.mkdir(parents=True)
+        source.write_text('x,y\n1,2\n',encoding='utf-8')
+        slide=self.root/'library/slides/first.tex'
+        slide.write_text(r'\studiotemplate[data-file={examples/data/values.csv}]{official-layout-sample}',encoding='utf-8')
+        project=self.create(from_library='intro')
+        copied=list((project/'assets').glob('*.csv'));self.assertEqual(len(copied),1)
+        self.assertIn(copied[0].name,(project/'slides/first.tex').read_text())
+        self.assertNotIn('examples/data/values.csv',(project/'slides/first.tex').read_text())
+        copied[0].write_text('x,y\n1,9\n',encoding='utf-8')
+        self.assertEqual(source.read_text(),'x,y\n1,2\n')
+        self.assertIn('library/layouts/sample.tex',(project/'library-layouts.tex').read_text())
+
     def test_missing_marker_does_not_copy_any_files(self):
         project=self.create();main=project/'main.tex';main.write_text(main.read_text(encoding="utf-8").replace(library.MARKER,''), encoding="utf-8");before={p.relative_to(project):p.read_bytes() for p in project.rglob('*') if p.is_file()}
         with self.assertRaisesRegex(ValueError,'insertion marker'):library.add_block(self.root,project,'hashing')
         self.assertEqual(before,{p.relative_to(project):p.read_bytes() for p in project.rglob('*') if p.is_file()})
 
-    def test_asset_collision_is_rejected_before_main_or_bibliography_changes(self):
-        project=self.create();(project/'layouts').mkdir();(project/'layouts/sample.tex').write_text('my own layout', encoding="utf-8")
+    def test_existing_legacy_snapshots_are_not_silently_mixed(self):
+        project=self.create()
+        state={'schema':1,'blocks':[],'slides':[],'layouts':{},'references':[]}
+        (project/'library-imports.json').write_text(json.dumps(state),encoding='utf-8')
         before=(project/'main.tex').read_bytes()
-        with self.assertRaisesRegex(ValueError,'collision'):library.add_block(self.root,project,'hashing')
+        with self.assertRaisesRegex(ValueError,'legacy layout snapshots'):
+            library.add_block(self.root,project,'hashing')
         self.assertEqual((project/'main.tex').read_bytes(),before)
-        self.assertFalse((project/'library-imports.json').exists())
+        self.assertFalse((project/'slides').exists())
+
+    def test_shared_geometry_changes_reach_imports_without_rewriting_content(self):
+        project=self.create(from_library='intro')
+        content=project/'slides/first.tex';before=content.read_bytes()
+        shared=self.root/'library/layouts/sample.tex'
+        shared.write_text('% Corrected shared alignment\n',encoding='utf-8')
+        self.assertIn('library/layouts/sample.tex',(project/'library-layouts.tex').read_text())
+        self.assertEqual(content.read_bytes(),before)
+        self.assertNotIn('layouts/sample.tex',[p.relative_to(project).as_posix() for p in project.rglob('*')])
+
+    def test_catalogue_rejects_unknown_and_private_layouts(self):
+        del self.data['layouts']['official-layout-sample'];self.save()
+        with self.assertRaisesRegex(ValueError,'unknown canonical layout'):library.validate(self.root)
+        self.data['layouts']['official-layout-sample']={'source':'library/layouts/sample.tex'}
+        target=self.root/'presentations/private/local.tex';target.parent.mkdir(parents=True);target.write_text('% private')
+        self.data['slides']['first']['layout_source']='presentations/private/local.tex';self.save()
+        with self.assertRaisesRegex(ValueError,'outside the canonical library'):library.validate(self.root)
+
+    def test_content_cannot_append_unregistered_layout_geometry(self):
+        source=self.root/'library/slides/first.tex'
+        source.write_text(source.read_text()+r'\begin{frame}Local layout\end{frame}')
+        with self.assertRaisesRegex(ValueError,'private layout'):library.validate(self.root)
 
     def test_bibliography_collision_is_rejected(self):
         project=self.create();(project/'references.bib').write_text('@misc{lesson-source,title={Personal reference}}', encoding="utf-8")
@@ -194,8 +234,8 @@ class FixedLessonTests(unittest.TestCase):
         registrations=(project/'library-layouts.tex').read_text(encoding="utf-8")
         self.assertIn('{fixed-example}',registrations)
         self.assertIn('{official-layout-sample}',registrations)
-        self.assertTrue((project/'layouts/fixed-example.tex').is_file())
-        self.assertNotIn('library/layouts/',registrations)
+        self.assertFalse((project/'layouts').exists())
+        self.assertIn('library/layouts/fixed-example.tex',registrations)
         library.validate(self.root)
 
 
@@ -218,6 +258,7 @@ class SharedTemplatePropagationTests(unittest.TestCase):
         import library as maintenance
         component=self.shared_component()
         (self.root/'library/layouts/other.tex').write_text('% Unrelated composition\n', encoding="utf-8")
+        self.data['layouts']['other']={'source':'library/layouts/other.tex'}
         self.data['slides']['second'].update(layout='other',layout_source='library/layouts/other.tex',resources={})
         (self.root/'library/slides/second.tex').write_text(r'\studiotemplate{other}', encoding="utf-8")
         before={sid:maintenance.fingerprint(self.root,[sid],self.data) for sid in ('first','cover','second')}
@@ -231,14 +272,15 @@ class SharedTemplatePropagationTests(unittest.TestCase):
         self.assertEqual(set(report['decks']),{'intro'})
         self.assertEqual(report['blocks'],{})
 
-    def test_import_copies_new_indirect_dependencies_and_keeps_snapshot(self):
+    def test_import_links_indirect_shared_dependencies(self):
         component=self.shared_component()
         project=self.create(from_library='intro')
-        local=project/'layouts/components.tex';before=local.read_bytes()
-        self.assertIn('presentations/my-talk/assets/',local.read_text(encoding="utf-8"))
-        self.assertIn('presentations/my-talk/layouts/components.tex',(project/'layouts/sample.tex').read_text(encoding="utf-8"))
-        (self.root/component).write_text('% New shared version\n', encoding="utf-8")
-        self.assertEqual(local.read_bytes(),before)
+        self.assertFalse((project/'layouts').exists())
+        self.assertIn(component,library.source_dependencies(self.root,self.data['slides']['first']))
+        personal=project/'slides/first.tex';before=personal.read_bytes()
+        (self.root/component).write_text('% New shared version\n',encoding='utf-8')
+        self.assertEqual(personal.read_bytes(),before)
+        self.assertIn('library/layouts/sample.tex',(project/'library-layouts.tex').read_text())
 
     def test_unregistered_nested_component_is_reported_without_modifying_registry(self):
         component=self.shared_component();before=(self.root/'library/index.json').read_bytes()
@@ -250,6 +292,8 @@ class SharedTemplatePropagationTests(unittest.TestCase):
     def test_source_call_cannot_bypass_registered_template_even_with_nested_options(self):
         source=self.root/'library/slides/first.tex'
         source.write_text('% \\studiotemplate{old-example}\n'+r'\studiotemplate[title={A {nested} [value]},graphic-one={\asset[width=1cm]{alice}}]{official-layout-sample}', encoding="utf-8")
+        (self.root/'assets/generated').mkdir(parents=True)
+        (self.root/'assets/generated/alice.pdf').write_bytes(b'prepared icon')
         library.validate_binding(self.root,self.data,'first')
         source.write_text(r'\studiotemplate{unreviewed-copy}', encoding="utf-8")
         with self.assertRaisesRegex(ValueError,'canonical template official-layout-sample'):
@@ -283,14 +327,13 @@ class SharedTemplatePropagationTests(unittest.TestCase):
             library.validate_binding(self.root,self.data,'first')
 
 
-    def test_extensionless_graphics_are_discovered_and_rewritten_in_personal_copies(self):
-        (self.root/'art').mkdir();(self.root/'art/local.pdf').write_bytes(b'prepared local drawing')
-        (self.root/'library/layouts/sample.tex').write_text(r'\includegraphics[width=2cm]{art/local}', encoding="utf-8")
+    def test_extensionless_shared_graphics_remain_canonical(self):
+        (self.root/'images').mkdir();(self.root/'images/panel.pdf').write_bytes(b'prepared drawing')
+        (self.root/'library/layouts/sample.tex').write_text(r'\includegraphics[width=2cm]{images/panel}',encoding='utf-8')
         project=self.create(from_library='intro')
-        layout=(project/'layouts/sample.tex').read_text(encoding="utf-8")
-        self.assertIn('presentations/my-talk/assets/',layout)
-        self.assertNotIn('{art/local}',layout)
-        self.assertTrue(any(path.read_bytes()==b'prepared local drawing' for path in (project/'assets').glob('*.pdf')))
+        self.assertIn('images/panel.pdf',library.source_dependencies(self.root,self.data['slides']['first']))
+        self.assertFalse((project/'layouts').exists())
+        self.assertFalse(list((project/'assets').glob('*')))
 
 
 if __name__=='__main__':unittest.main()

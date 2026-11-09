@@ -84,11 +84,28 @@ CI library checks. A shared-component change invalidates all consuming slide
 previews and PDFs; editorial notes alone do not. Visually inspect the affected
 pages before handing them off. No check grants automatic approval.
 
-New imports get the latest corrected layouts. Existing personal lesson copies are
-independent snapshots so user edits are preserved; they do not receive automatic
-content/layout replacements. Shared themes, fonts, core templates and common icons
-continue to follow the checkout. Compare and merge a library correction explicitly
-when it is needed in an existing personal project.
+New imports copy personal content but reference the canonical layouts and shared
+artwork directly. Correct the shared source once; linked decks render that
+correction on their next build. Never replace their personal content files.
+
+## Legacy personal projects
+
+Old imports without `binding: shared-layouts` in `library-imports.json` are frozen
+snapshots. They are not changed automatically, and block import refuses to mix
+snapshot and linked layouts. Back up the project before an explicit migration:
+
+1. Compare each recorded layout with the canonical registry and retain personal
+   structural changes as a separately reviewed library variant if needed.
+2. Replace matching registration paths with their canonical `library/layouts/`
+   paths. Restore canonical shared artwork paths; preserve personal field values,
+   images, references and slide order.
+3. Remove redundant local layout/artwork copies only after a successful build and
+   visual comparison. Record `binding: shared-layouts` in the import manifest.
+4. Run the deck checks and inspect every page. Do not migrate another person's
+   project as a side effect of library maintenance.
+
+The explicitly requested BitPolito introduction has been migrated; its pre-migration
+sources and PDF are backed up locally under `build/checks/canonical-library/before/`.
 
 ## Prepare artwork
 
@@ -168,7 +185,7 @@ python3 scripts/review.py check
 
 Docker is the default; use `--backend native` with installed TeX Live/MacTeX.
 The workflow check uses a clean source copy in a path containing spaces, separate
-personal assets/bibliographies and compilation without the shared lesson folder.
+personal assets/bibliographies and compilation without the shared lesson content folder (canonical layouts remain available).
 `--also-native-in-container` additionally tests the native launcher in the TeX
 container; it does not establish host-native prerequisites.
 
@@ -188,7 +205,22 @@ Each entry points to one existing slide and declares no editable fields. `sync`
 generates its wrapper under `layouts/fixed/` and registers its public name.
 The lesson source calls that public name; its recorded fields remain the canonical
 fixed copy. Include the wrapper in the slide's resource list. Personal imports
-copy and register both the wrapper and underlying measured layout independently.
+reference the shared wrapper and underlying measured layout; they do not copy either.
 Do not freeze covers, speaker metadata, editable lists or figures requiring updates
 merely because the current example already contains text. Fixed status is a content
 policy, not graphical approval; source files remain available for maintenance.
+
+## Add a presentation pack
+
+Register each page in `index.json` with its existing canonical template or fixed
+preset, fields, dependencies, origin and review state. Register a genuinely missing
+composition before using it in a pack. Slide content must not define layouts,
+redirect shared artwork paths or draw private frames. Checks reject these escapes,
+unknown templates, private/build dependencies and incomplete source-page mappings.
+Update the unified guide, command previews and consuming packs together. Keep full
+reference PDFs local; user-supplied local references are marked `local_only` and
+are skipped by the explicit upstream downloader.
+
+The BitPolito parts under `parts/bitpolito/` are retained cropped source PDFs;
+their manifest records source hash, crop, removed text and prepared-file hashes.
+They are artwork only, never full-slide screenshots.

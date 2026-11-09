@@ -1,5 +1,58 @@
 # Lesson-library checks
 
+## Canonical library update — 2026-11-06
+
+The catalogue now backs both ready-content packs and personal imports. New imports
+copy editable content and references, while linking canonical layouts and shared
+artwork. Legacy snapshots require explicit migration; other personal projects were
+not changed. The unified guide separates **Ready** and **In review**, with no
+inferred approvals.
+
+Completed locally:
+
+- **20 source documents / 602 mapped pages**, including the 19 pinned official PDFs
+  and the supplied 11-page introduction: **19 decks, 223 blocks, 555 unique slides**.
+- **242 strict deck/block builds passed**. Every page calls a registered canonical
+  template or fixed preset. Ten fixed presets expose no customization fields.
+- **751 command examples** have current compiled 640/1600 px lossless previews;
+  the guide publishes 729 composition choices. Initial core data is 404,835 bytes.
+- **183 portable tests completed without failures**, with one optional Inkscape-dependent test skipped;
+  15 runtime cases cover custom/empty fields, overflow, fixed-slide restrictions,
+  four/five-social closing variants, invalid options and return to normal frames.
+- Clean source copies in paths containing spaces passed Docker and native TeX
+  **inside the container**. Independent private content, image/bibliography separation,
+  duplicate/overwrite rejection and unchanged shared sources were verified.
+- A temporary canonical colour correction changed an imported deck's rendered
+  preview without changing its personal TeX. Restoring the shared source restored
+  the original rendering. The experiment ran only in the disposable source copy.
+- The BitPolito pack imports independently, with all 11 pages and linked layouts.
+  The active personal deck retains its inline `main.tex`. Its first ten pages are
+  pixel-identical to the preserved PDF at 1600 px width; the closing intentionally
+  uses the shared five-social engine and repaired continuous vector GitHub mark.
+- Academic remains pixel-identical in 16:9 and 4:3, eleven pages each. Both review
+  Overleaf ZIPs compiled after isolated extraction, including catalogue, icon guide,
+  bibliography and applicable logo/layout variants. Stable releases were not replaced.
+- The offline Chromium guide check passed pagination, lazy HD, fields, copying,
+  search, redirects, status filters, sequence navigation and mobile layout.
+  Local 2000 px original/replica comparisons for all eleven new pages are available
+  through the same guide in maintenance mode; no new gallery was introduced.
+
+Evidence: `build/checks/canonical-library/report.json`, `build/library/report.json`,
+`build/library/workflow/report.json`, `build/library/runtime-checks/report.json`,
+and `build/checks/slide-guide/browser/browser.json`. These are ignored local outputs.
+Full originals and comparison images remain local; the clone retains prepared
+artwork, commands and clean previews. Checks reject unknown/private layouts,
+unregistered dependencies, incomplete page mappings and altered retained artwork.
+
+Limits: graphical/content approval remains pending; source team figures, partner
+claims and links are draft historical content. Host-native TeX is not installed;
+Windows, macOS and GitHub-hosted execution remain CI checks. Existing CI invokes
+the extended import, runtime, guide and clean-clone checks. No commit or push was made.
+
+## Earlier verification — 2026-11-05
+
+The following sections retain the previous baseline and its historical counts.
+
 Local verification dated **2026-11-05**. All content and compositions remain
 **in review**. Passing compilation is neither graphic nor editorial approval.
 

@@ -17,9 +17,9 @@ python3 scripts/deck.py add my-talk --block hashing
 ```
 
 A full copy preserves its source sequence; blocks contain content only. Imports
-copy editable slides, measured layout sources, required artwork and references.
-Change these personal copies independently. Shared themes, fonts and icons remain
-common. Read the copied provenance and review flags before using historical data.
+copy editable slide content, data and references. Canonical layouts and artwork
+stay shared, so graphical fixes reach linked decks without replacing personal text.
+Older layout snapshots require explicit migration; they are never overwritten. Read the copied provenance and review flags before using historical data.
 For unchanged educational illustrations, [fixed-content presets](../library/FIXED.md)
 provide calls such as `\studiotemplate{bitcoin-supply}` with no customization fields.
 Choose a parameterized composition when you need different content.
@@ -153,6 +153,10 @@ python3 scripts/deck.py check my-talk --preview
 # Alternative with TeX Live/MacTeX installed:
 python3 scripts/deck.py check my-talk --backend native --preview
 ```
+
+In VS Code, install the recommended LaTeX Workshop extension. Saving a `.tex`
+file then rebuilds its presentation and opens or refreshes its PDF automatically; see
+[IDE setup and included-file root comments](SETUP.md#ide-workflow).
 
 Docker is the default. Its image is prepared on the first build and reused.
 The native backend never starts Docker. Both use the same existing build launcher,

@@ -596,3 +596,14 @@ Every upstream page has a destination. Mappings document reconstruction coverage
 | workshop/bitpolito-workshop-rete.pdf | 19 | [official-slide-d2611bff967e](slides/official-slide-d2611bff967e.tex) | reconstruction |
 | workshop/bitpolito-workshop-rete.pdf | 20 | [official-slide-c9a3da2422ac](slides/official-slide-c9a3da2422ac.tex) | reconstruction |
 | workshop/bitpolito-workshop-rete.pdf | 21 | [official-slide-97c87d6d7909](slides/official-slide-97c87d6d7909.tex) | reconstruction |
+| Presentazione BitPolito.pdf | 1 | [bitpolito-introduction-01](slides/bitpolito-introduction-01.tex) | fixed-content composition |
+| Presentazione BitPolito.pdf | 2 | [bitpolito-introduction-02](slides/bitpolito-introduction-02.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 3 | [bitpolito-introduction-03](slides/bitpolito-introduction-03.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 4 | [bitpolito-introduction-04](slides/bitpolito-introduction-04.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 5 | [bitpolito-introduction-05](slides/bitpolito-introduction-05.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 6 | [bitpolito-introduction-06](slides/bitpolito-introduction-06.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 7 | [bitpolito-introduction-07](slides/bitpolito-introduction-07.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 8 | [bitpolito-introduction-08](slides/bitpolito-introduction-08.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 9 | [bitpolito-introduction-09](slides/bitpolito-introduction-09.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 10 | [bitpolito-introduction-10](slides/bitpolito-introduction-10.tex) | editable reconstruction |
+| Presentazione BitPolito.pdf | 11 | [bitpolito-introduction-11](slides/bitpolito-introduction-11.tex) | editable reconstruction |

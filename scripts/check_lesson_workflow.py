@@ -80,18 +80,34 @@ def check(root=ROOT,backend='docker',image='bitbeamer-latex:local',also_native_c
             local_state=json.loads((project/'library-imports.json').read_text(encoding="utf-8"));local_slide=project/'slides'/(local_state['slides'][0]+'.tex');original=local_slide.read_text(encoding="utf-8");local_slide.write_text('% Personal copy verification.\n'+original, encoding="utf-8")
             compiler='native' if mode=='native-container' else mode
             execute(mode,['check',mixed,'--backend',compiler,'--preview'],token+'-mixed-check')
-            # The whole copied lesson must build without any shared lesson directory.
-            library=clone/'library';hidden=clone/'library unavailable'
+            # Personal content must build without the canonical lesson content directory.
+            library=clone/'library/slides';hidden=clone/'library/slides unavailable'
             library.rename(hidden)
             try:execute(mode,['check',whole,'--backend',compiler,'--preview'],token+'-independent-whole-check')
             finally:hidden.rename(library)
+            if number == 0:
+                whole_project=clone/'presentations'/whole
+                content_before={p.relative_to(whole_project).as_posix():digest(p) for p in whole_project.rglob('*.tex')}
+                whole_report=clone/'build/presentations'/whole/'check.json'
+                preview=clone/json.loads(whole_report.read_text(encoding='utf-8'))['preview'][0]
+                initial_preview=digest(preview)
+                first=data['slides'][data['decks']['bitcoin-introduction-short']['slides'][0]]
+                canonical=clone/first['layout_source'];original_layout=canonical.read_bytes()
+                try:
+                    canonical.write_bytes(b'\\colorlet{bitpolito}{red}\n'+original_layout)
+                    execute(mode,['check',whole,'--backend',compiler,'--preview'],token+'-shared-layout-propagation')
+                    if digest(preview)==initial_preview:raise RuntimeError('Canonical correction did not reach the imported deck.')
+                    if content_before!={p.relative_to(whole_project).as_posix():digest(p) for p in whole_project.rglob('*.tex')}:raise RuntimeError('Canonical correction replaced personal content.')
+                finally:canonical.write_bytes(original_layout)
+                execute(mode,['check',whole,'--backend',compiler,'--preview'],token+'-shared-layout-restored')
+                if digest(preview)!=initial_preview:raise RuntimeError('Restored canonical layout did not restore the original rendering.')
             for name in (whole,mixed):
                 result=json.loads((clone/'build/presentations'/name/'check.json').read_text(encoding="utf-8"))
                 if result['errors']:raise RuntimeError('Personal check failed: '+name)
                 reports.append({'project':name,'backend':mode,'pages':result['pages'],'preview_pages':len(result['preview']),'status':'passed'})
         after={name:digest(clone/name) for name in shared}
         if shared!=after:raise RuntimeError('Authoring changed shared source files in the clean copy.')
-        report={'status':'passed','source_copy':'tracked and prospective distributable files; ignored originals and personal decks excluded','path_with_spaces':True,'shared_sources_unchanged':True,'independent_lesson_copy':True,'overwrite_and_duplicate_rejection':True,'projects':reports,'visual_approval':'not performed by this technical check'}
+        report={'status':'passed','source_copy':'tracked and prospective distributable files; ignored originals and personal decks excluded','path_with_spaces':True,'shared_sources_unchanged':True,'independent_content_copy':True,'canonical_layouts_linked':True,'rendered_shared_fix_propagation':True,'personal_content_unchanged_during_shared_fix':True,'overwrite_and_duplicate_rejection':True,'projects':reports,'visual_approval':'not performed by this technical check'}
         (output/'report.json').write_text(json.dumps(report,indent=2)+'\n', encoding="utf-8");print(json.dumps(report,indent=2));return report
 
 

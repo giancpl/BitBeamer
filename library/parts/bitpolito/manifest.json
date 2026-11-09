@@ -1,0 +1,451 @@
+{
+  "source": "Presentazione BitPolito.pdf",
+  "source_sha256": "ae8839aaf99edd445310e6ecbb8403a8f81d98f602cf28bd73b0fea97fa92463",
+  "canvas": [
+    1920,
+    1080
+  ],
+  "parts": {
+    "cover-wordmark": {
+      "source_page": 1,
+      "crop": [
+        0,
+        338,
+        1920,
+        741
+      ],
+      "removed_outline_regions": [],
+      "file": "library/parts/bitpolito/cover-wordmark.pdf",
+      "sha256": "8e20b99b14bfebbf7ab5012f3b5d4ddc77ca34a3979f145e3dcbff1856c04f7a",
+      "bytes": 5489,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "interest-rail": {
+      "source_page": 7,
+      "crop": [
+        858,
+        0,
+        1492,
+        1080
+      ],
+      "removed_outline_regions": [
+        [
+          131.3232421875,
+          474.1949157714844,
+          671.8302612304688,
+          601.80810546875
+        ],
+        [
+          1075.745361328125,
+          366.5872497558594,
+          1317.1593017578125,
+          413.19842529296875
+        ],
+        [
+          964.8544921875,
+          669.5842895507812,
+          1377.248779296875,
+          716.1005249023438
+        ],
+        [
+          923.12255859375,
+          514.5999755859375,
+          1408.47900390625,
+          560.6890869140625
+        ]
+      ],
+      "file": "library/parts/bitpolito/interest-rail.pdf",
+      "sha256": "f0e1dd53ff9b8648f309f0b3ca1571866abc995cbcc7553eee8012f8c0a9a6df",
+      "bytes": 10868,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "benefit-panels": {
+      "source_page": 8,
+      "crop": [
+        1080,
+        0,
+        1725,
+        1080
+      ],
+      "removed_outline_regions": [
+        [
+          131.3232421875,
+          515.1486206054688,
+          630.38623046875,
+          576.26513671875
+        ],
+        [
+          1234.708984375,
+          215.43792724609375,
+          1612.877685546875,
+          880.6761474609375
+        ]
+      ],
+      "file": "library/parts/bitpolito/benefit-panels.pdf",
+      "sha256": "922d6ef712aa6ca5d057457ff778f2970d0e94a6d1dffe88e721f6aa0670a6a7",
+      "bytes": 16915,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "partner-column-one": {
+      "source_page": 9,
+      "crop": [
+        94,
+        247,
+        321,
+        998
+      ],
+      "removed_outline_regions": [
+        [
+          319.916015625,
+          285.93389892578125,
+          479.597412109375,
+          309.4982604980469
+        ],
+        [
+          317.056640625,
+          350.3489990234375,
+          473.0989990234375,
+          373.9133605957031
+        ],
+        [
+          849.916015625,
+          285.7071533203125,
+          975.6106567382812,
+          305.5304870605469
+        ],
+        [
+          847.056640625,
+          350.076904296875,
+          993.0889282226562,
+          372.4056091308594
+        ],
+        [
+          319.916015625,
+          435.7071533203125,
+          431.49676513671875,
+          455.5304870605469
+        ],
+        [
+          317.056640625,
+          500.3489990234375,
+          415.70245361328125,
+          523.67529296875
+        ],
+        [
+          849.916015625,
+          435.93389892578125,
+          1049.0029296875,
+          459.4982604980469
+        ],
+        [
+          847.056640625,
+          500.076904296875,
+          976.764404296875,
+          522.4055786132812
+        ],
+        [
+          319.916015625,
+          585.5031127929688,
+          476.03778076171875,
+          609.5322875976562
+        ],
+        [
+          317.056640625,
+          649.918212890625,
+          491.2940673828125,
+          673.9473876953125
+        ],
+        [
+          849.916015625,
+          585.7071533203125,
+          937.2706909179688,
+          609.2601928710938
+        ],
+        [
+          847.056640625,
+          650.1222534179688,
+          962.0496826171875,
+          673.67529296875
+        ],
+        [
+          319.916015625,
+          735.7071533203125,
+          436.82489013671875,
+          755.5304565429688
+        ],
+        [
+          317.056640625,
+          800.1222534179688,
+          475.173583984375,
+          823.913330078125
+        ],
+        [
+          849.916015625,
+          735.7071533203125,
+          909.4849853515625,
+          755.5304565429688
+        ],
+        [
+          847.056640625,
+          800.3489990234375,
+          908.8135986328125,
+          822.4055786132812
+        ],
+        [
+          319.916015625,
+          885.9339599609375,
+          493.68865966796875,
+          905.530517578125
+        ],
+        [
+          317.056640625,
+          950.3489990234375,
+          463.9618225097656,
+          972.4055786132812
+        ],
+        [
+          849.916015625,
+          885.9339599609375,
+          995.2000732421875,
+          909.26025390625
+        ],
+        [
+          847.056640625,
+          950.3489990234375,
+          1020.0924072265625,
+          973.67529296875
+        ]
+      ],
+      "file": "library/parts/bitpolito/partner-column-one.pdf",
+      "sha256": "f23590c02e9a69438a9634a754b46886450ba817009767da9756a5b02dfad7ff",
+      "bytes": 263416,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "partner-column-two": {
+      "source_page": 9,
+      "crop": [
+        624,
+        247,
+        841,
+        998
+      ],
+      "removed_outline_regions": [
+        [
+          319.916015625,
+          285.93389892578125,
+          479.597412109375,
+          309.4982604980469
+        ],
+        [
+          317.056640625,
+          350.3489990234375,
+          473.0989990234375,
+          373.9133605957031
+        ],
+        [
+          849.916015625,
+          285.7071533203125,
+          975.6106567382812,
+          305.5304870605469
+        ],
+        [
+          847.056640625,
+          350.076904296875,
+          993.0889282226562,
+          372.4056091308594
+        ],
+        [
+          319.916015625,
+          435.7071533203125,
+          431.49676513671875,
+          455.5304870605469
+        ],
+        [
+          317.056640625,
+          500.3489990234375,
+          415.70245361328125,
+          523.67529296875
+        ],
+        [
+          849.916015625,
+          435.93389892578125,
+          1049.0029296875,
+          459.4982604980469
+        ],
+        [
+          847.056640625,
+          500.076904296875,
+          976.764404296875,
+          522.4055786132812
+        ],
+        [
+          319.916015625,
+          585.5031127929688,
+          476.03778076171875,
+          609.5322875976562
+        ],
+        [
+          317.056640625,
+          649.918212890625,
+          491.2940673828125,
+          673.9473876953125
+        ],
+        [
+          849.916015625,
+          585.7071533203125,
+          937.2706909179688,
+          609.2601928710938
+        ],
+        [
+          847.056640625,
+          650.1222534179688,
+          962.0496826171875,
+          673.67529296875
+        ],
+        [
+          319.916015625,
+          735.7071533203125,
+          436.82489013671875,
+          755.5304565429688
+        ],
+        [
+          317.056640625,
+          800.1222534179688,
+          475.173583984375,
+          823.913330078125
+        ],
+        [
+          849.916015625,
+          735.7071533203125,
+          909.4849853515625,
+          755.5304565429688
+        ],
+        [
+          847.056640625,
+          800.3489990234375,
+          908.8135986328125,
+          822.4055786132812
+        ],
+        [
+          319.916015625,
+          885.9339599609375,
+          493.68865966796875,
+          905.530517578125
+        ],
+        [
+          317.056640625,
+          950.3489990234375,
+          463.9618225097656,
+          972.4055786132812
+        ],
+        [
+          849.916015625,
+          885.9339599609375,
+          995.2000732421875,
+          909.26025390625
+        ],
+        [
+          847.056640625,
+          950.3489990234375,
+          1020.0924072265625,
+          973.67529296875
+        ]
+      ],
+      "file": "library/parts/bitpolito/partner-column-two.pdf",
+      "sha256": "e248c3b08b2cf58d617f97b6fdbcc73988847cbc10cc5fef9f8717ce44b6bda5",
+      "bytes": 263418,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "media-logos": {
+      "source_page": 9,
+      "crop": [
+        1280,
+        200,
+        1765,
+        1004
+      ],
+      "removed_outline_regions": [],
+      "file": "library/parts/bitpolito/media-logos.pdf",
+      "sha256": "486a8a2e5b40c2554c606946ffe046762e4ba2f7e480df6b1947130b265b3f2f",
+      "bytes": 315412,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "course-lettering": {
+      "source_page": 10,
+      "crop": [
+        0,
+        0,
+        1765,
+        1080
+      ],
+      "removed_outline_regions": [
+        [
+          1333.954833984375,
+          126.45415496826172,
+          1756.8603515625,
+          223.2589569091797
+        ]
+      ],
+      "file": "library/parts/bitpolito/course-lettering.pdf",
+      "sha256": "509ca0ca2dfc65e818e1ec4dfc66c0c00e818b78f21e4df7a4200f02cf6aa38c",
+      "bytes": 494043,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "closing-qr": {
+      "source_page": 11,
+      "crop": [
+        277,
+        263,
+        831,
+        817
+      ],
+      "removed_outline_regions": [],
+      "file": "library/parts/bitpolito/closing-qr.pdf",
+      "sha256": "693826a59dc0b94824bba39b2feb24737ec2beb7097fef323f2128ce61a60ff3",
+      "bytes": 325239,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "closing-socials": {
+      "source_page": 11,
+      "crop": [
+        1060,
+        550,
+        1681,
+        654
+      ],
+      "removed_outline_regions": [],
+      "file": "library/parts/bitpolito/closing-socials.pdf",
+      "sha256": "1b2c1c62019940a50d46def6d855c298a9bb543f1e4161479362e4df4e84d7a3",
+      "bytes": 325241,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    },
+    "radial-glow": {
+      "source_page": 4,
+      "crop": [
+        0,
+        0,
+        1920,
+        1080
+      ],
+      "removed_outline_regions": [
+        [
+          658.9652099609375,
+          481.6650085449219,
+          1258.4429931640625,
+          608.9094848632812
+        ]
+      ],
+      "file": "library/parts/bitpolito/radial-glow.pdf",
+      "sha256": "20cf7d909cd145684f0eb5c81123002936d4f900b5efbc5868aa61005099f0a8",
+      "bytes": 6326,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+    }
+  },
+  "notes": [
+    "Prepared graphical parts preserve source proportions and vector paths. Editable copy is removed from both outlined paths and accessibility text.",
+    "No complete presentation page is embedded as a flattened slide.",
+    "Original numeric claims, partner names and links are supplied draft content, not independently verified.",
+    "Accessibility text is removed from the entire source page before each crop to prevent hidden duplicate text in PDF extraction."
+  ],
+  "status": "in review"
+}

@@ -1,0 +1,24 @@
+% Compatibility name for the shared five-social closing composition.
+\studiodeclarefield{title}{@BitPolito}
+\studiodeclarefield{copyright}{\textcopyright{} \the\year\ BitPolito}
+\studiodeclarefield{qr-graphic}{\includegraphics[width=554\studiounit]{library/parts/bitpolito/closing-qr.pdf}}
+\studiodeclarefield{graphic-one}{\includegraphics[width=103\studiounit]{images/studio/closing/telegram.pdf}}
+\studiodeclarefield{graphic-two}{\includegraphics[width=103\studiounit]{images/studio/closing/instagram.pdf}}
+\studiodeclarefield{graphic-three}{\includegraphics[width=103\studiounit]{images/studio/closing/twitter.pdf}}
+\studiodeclarefield{graphic-four}{\includegraphics[width=103\studiounit]{images/studio/closing/github.pdf}}
+\studiodeclarefield{graphic-five}{\includegraphics[width=103\studiounit]{images/studio/closing/youtube.pdf}}
+\def\studioclosingqrvalue{true}
+\pgfkeys{/studio fields/qrcode/.store in=\studioclosingqrvalue}
+\studiolibrarypalette{blue}
+\studioapplyfields
+\studiounit=\dimexpr\paperwidth/1920\relax
+\studiofitunit=\dimexpr\paperheight/1080\relax
+\ifdim\studiofitunit<\studiounit\studiounit=\studiofitunit\fi
+\closingframe[qrcode=\studioclosingqrvalue,
+  title={\studiofield{title}},copyright={\studiofield{copyright}},
+  qr-graphic={\studiofield{qr-graphic}},
+  social-one={\studiofield{graphic-one}},
+  social-two={\studiofield{graphic-two}},
+  social-three={\studiofield{graphic-three}},
+  social-four={\studiofield{graphic-four}},
+  social-five={\studiofield{graphic-five}}]
