@@ -217,9 +217,10 @@
         ]
       ],
       "file": "library/parts/bitpolito/partner-column-one.pdf",
-      "sha256": "f23590c02e9a69438a9634a754b46886450ba817009767da9756a5b02dfad7ff",
-      "bytes": 263416,
-      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+      "sha256": "7d1d0abbf16ec327fed81be8554d124cb9dec8349b8ae047f824cb6424b8ef8c",
+      "bytes": 263394,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX.",
+      "background_cleanup": "Source full-slide paper rectangle removed; transparent artwork inherits the slide background. Logo vectors, embedded images and transforms are preserved."
     },
     "partner-column-two": {
       "source_page": 9,
@@ -352,9 +353,10 @@
         ]
       ],
       "file": "library/parts/bitpolito/partner-column-two.pdf",
-      "sha256": "e248c3b08b2cf58d617f97b6fdbcc73988847cbc10cc5fef9f8717ce44b6bda5",
-      "bytes": 263418,
-      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+      "sha256": "1ca582c08ff4dd992b5c3539da2bffc723d29dbb36a58fca35fc15d452f991d2",
+      "bytes": 263396,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX.",
+      "background_cleanup": "Source full-slide paper rectangle removed; transparent artwork inherits the slide background. Logo vectors, embedded images and transforms are preserved."
     },
     "media-logos": {
       "source_page": 9,
@@ -366,9 +368,10 @@
       ],
       "removed_outline_regions": [],
       "file": "library/parts/bitpolito/media-logos.pdf",
-      "sha256": "486a8a2e5b40c2554c606946ffe046762e4ba2f7e480df6b1947130b265b3f2f",
-      "bytes": 315412,
-      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX."
+      "sha256": "22cb3dfacb1b96541d2b9993f063232b4397440312abd9da7190ae0aec3f16cb",
+      "bytes": 315388,
+      "accessibility_text": "Removed before cropping; all presentation copy is supplied by LaTeX.",
+      "background_cleanup": "Source full-slide paper rectangle removed; transparent artwork inherits the slide background. Logo vectors, embedded images and transforms are preserved."
     },
     "course-lettering": {
       "source_page": 10,

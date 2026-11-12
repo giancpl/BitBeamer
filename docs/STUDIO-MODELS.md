@@ -100,6 +100,11 @@ illustrative. BitPolito and PoliTo remain the theme's branding. External logos, 
 screenshots and specific resource covers use neutral image placeholders; replace these
 with your own project-relative images. Generic QR examples point to `https://example.org`.
 
+Every new template review exposes all user content through semantic fields,
+including titles, body text, numeric values, icons and replaceable artwork.
+Complete examples must show those fields together and demonstrate independent
+replacement and explicit empty values.
+
 Geometry, fonts and alignment stay fixed. Empty fields retain their space. Shorten an
 overflowing text or deliberately edit its source; fonts never shrink automatically.
 

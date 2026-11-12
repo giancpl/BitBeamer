@@ -4,7 +4,7 @@
 
 Organize related explanations or talking points using the label and explanation rows layout.
 
-Model: `labelled-rows` · Family: Lists · Status: **in review**.
+Model: `labelled-rows` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/labelled-rows.tex)
 
@@ -63,8 +63,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={Slide title},
-  text/1={Label 1}
+  text/3={Slide\\title},
+  text/1={First label}
 ]{labelled-rows}
 ```
 
@@ -80,8 +80,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={Slide title},
-  text/1={Label 1}
+  text/3={Slide\\title},
+  text/1={First label}
 ]{labelled-rows}
 \end{document}
 ```
@@ -101,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>text-1</code> | Editable text (text) | upper centre | 13.3% wide × 4.1% high | <code>Label 1</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 13.3% wide × 4.1% high | <code>Label 4</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 13.3% wide × 4.6% high | <code>Label 6</code> |
-| <code>text-4</code> | Editable text (text) | upper right | 25.0% wide × 3.5% high | <code>Supporting explanation</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 23.9% wide × 6.1% high | <code>Supporting explanation</code> |
-| <code>text-6</code> | Editable text (text) | lower right | 33.9% wide × 6.5% high | <code>Supporting explanation</code> |
-| <code>title</code> | Main text (text) | middle left | 42.8% wide × 15.6% high | <code>Slide title</code> |
+| <code>text-1</code> | Editable text (text) | upper centre | 13.3% wide × 4.1% high | <code>First label</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 13.3% wide × 4.1% high | <code>Second label</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 13.3% wide × 4.1% high | <code>Third label</code> |
+| <code>text-4</code> | Editable text (text) | upper right | 22.6% wide × 3.2% high | <code>First supporting explanation</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 22.6% wide × 6.2% high | <code>Second supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | lower right | 22.6% wide × 6.2% high | <code>Third supporting explanation</code> |
+| <code>title</code> | Main text (text) | middle left | 33.9% wide × 15.6% high | <code>Slide\\title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

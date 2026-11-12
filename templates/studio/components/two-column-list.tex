@@ -1,0 +1,18 @@
+% Source-measured bullet lists with a true hanging indent for every item.
+\newcommand{\studiobulletcolumn}[4]{%
+ \ifstudiogeometryonly\else
+ \typeout{STUDIO-FIELD: \studiopilotname/#1}%
+ \pgfkeysgetvalue{/studio values/#1}{\studiocolumnvalue}%
+ \ifx\studiocolumnvalue\empty\else
+ \node[anchor=north west] at (#2,589.852) {\setbox\studiotextbox=\vbox{%
+  \hsize=#3\studiounit\linewidth=\hsize\columnwidth=\hsize\textwidth=\hsize\parindent=0pt\hfuzz=.1pt\overfullrule=2pt
+  \normalfont\sffamily\fontsize{75.16\studiounit}{95.25\studiounit}\selectfont\bfseries\raggedright
+  % A local paragraph item keeps every line within the column even inside Beamer.
+  \leftskip=68\studiounit
+  \def\item{\par\noindent\llap{\textbullet\hskip28\studiounit}\vphantom{ABCDEFGHIJKLMNOPQRSTUVWXYZ}\ignorespaces}%
+  \studiofield{#1}\par}%
+  \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>#4\studiounit
+   \PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}{Shorten or split the list. The original font and leading support at most eleven lines per column.}%
+  \fi
+  \box\studiotextbox};%
+ \fi\fi}

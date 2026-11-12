@@ -1,0 +1,20 @@
+% Label and body fields are grouped top to bottom.
+\newcommand{\studiorowfields}[3]{%
+ \pgfkeys{/studio fields/item-#1/.code={\pgfqkeys{/studio row/#1}{##1}},
+  /studio row/#1/.is family,
+  /studio row/#1/label/.code=\pgfkeyssetvalue{/studio values/#2}{##1},
+  /studio row/#1/body/.code=\pgfkeyssetvalue{/studio values/#3}{##1},
+  /studio row/#1/.unknown/.code=\PackageError{bitpolitostudiomodels}{Unknown item-#1 field '\pgfkeyscurrentname'}{Use label and body.}}}
+% Keep 16 source units clear above and below text, at the original font sizes.
+% Check the padded interior rather than accepting text against panel borders.
+\newcommand{\studiorowtext}[8]{%
+ \ifstudiogeometryonly\else
+ \typeout{STUDIO-FIELD: \studiopilotname/#1}%
+ \node[anchor=north west] at (#2,{#3+16}) {\setbox\studiotextbox=\vbox{\hsize=#4\studiounit\parindent=0pt
+  \hfuzz=.1pt\overfullrule=2pt\raggedright\normalfont\sffamily
+  \fontsize{#6\studiounit}{#7\studiounit}\selectfont #8\noindent\studiofield{#1}\par}%
+ \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>\dimexpr#5\studiounit-32\studiounit\relax
+  \PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}{Use one line for a label or first body, and up to two lines for later bodies. The panel padding and font sizes are fixed.}%
+ \fi
+ \vbox to \dimexpr#5\studiounit-32\studiounit\relax{\vfil\box\studiotextbox\vfil}};%
+ \fi}

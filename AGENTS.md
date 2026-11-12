@@ -88,6 +88,11 @@ official callers and documentation; do not retain obsolete syntax as aliases;
 show the command under the PDF
 comparison as well as at handoff. Keep deferred/unresolved designs distinct from
 approved designs.
+For every new template and interactive review, expose all user content through
+documented semantic fields: titles, headings, captions, bodies, numbers, icons
+and illustrations. Keep text editable rather than embedding it in artwork.
+Demonstrate complete content replacement and explicit empty values; every field
+must be independently customizable while keeping the layout and fixed typography.
 For every template under review, expose every icon through semantic replacement keys
 that follow the same reading order as its captions. Keep the panel independent; fit
 replacement icons, images and custom graphics into fixed bounds with preserved

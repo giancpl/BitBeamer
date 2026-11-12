@@ -870,6 +870,225 @@
       ],
       "retained_source": "images/studio/parts/source/row-icon-5-five.svg",
       "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "partner-panel",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        2
+      ],
+      "render_box": [
+        1948,
+        242,
+        246,
+        246
+      ],
+      "content_box": [
+        1948,
+        242,
+        246,
+        246
+      ],
+      "anchor": [
+        1948,
+        242
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-logo-one",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        3,
+        4,
+        5
+      ],
+      "render_box": [
+        1983.6990013122559,
+        261.2700004577637,
+        175.00000381469727,
+        206.91400527954102
+      ],
+      "content_box": [
+        1983.6990013122559,
+        261.2700004577637,
+        175.00000381469727,
+        206.91400527954102
+      ],
+      "anchor": [
+        1983.6990013122559,
+        261.2700004577637
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-logo-two",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39
+      ],
+      "render_box": [
+        1966.871000289917,
+        626.7419967651367,
+        210.2070026397705,
+        111.53099822998047
+      ],
+      "content_box": [
+        1966.871000289917,
+        626.7419967651367,
+        210.2070026397705,
+        111.53099822998047
+      ],
+      "anchor": [
+        1966.871000289917,
+        626.7419967651367
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-logo-three",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        46
+      ],
+      "render_box": [
+        2004.2809982299805,
+        911.7029991149902,
+        141.93799591064453,
+        176.44499588012695
+      ],
+      "content_box": [
+        2004.2809982299805,
+        911.7029991149902,
+        141.93799591064453,
+        176.44499588012695
+      ],
+      "anchor": [
+        2004.2809982299805,
+        911.7029991149902
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-logo-four",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        53,
+        54,
+        55
+      ],
+      "render_box": [
+        1961.878999710083,
+        1287.5120010375977,
+        216.14100456237793,
+        58.85900115966797
+      ],
+      "content_box": [
+        1961.878999710083,
+        1287.5120010375977,
+        216.14100456237793,
+        58.85900115966797
+      ],
+      "anchor": [
+        1961.878999710083,
+        1287.5120010375977
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-logo-five",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        16
+      ],
+      "render_box": [
+        1975.2110004425049,
+        1542.2379989624023,
+        189.6869945526123,
+        179.2229995727539
+      ],
+      "content_box": [
+        1975.2110004425049,
+        1542.2379989624023,
+        189.6869945526123,
+        179.2229995727539
+      ],
+      "anchor": [
+        1975.2110004425049,
+        1542.2379989624023
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-website",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        9
+      ],
+      "render_box": [
+        2300,
+        270,
+        76,
+        76
+      ],
+      "content_box": [
+        2300,
+        270,
+        76,
+        76
+      ],
+      "anchor": [
+        2300,
+        270
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
+    },
+    {
+      "name": "partner-social",
+      "reference": "figma-0996",
+      "group": null,
+      "children": [
+        8
+      ],
+      "render_box": [
+        2300,
+        389,
+        84,
+        73
+      ],
+      "content_box": [
+        2300,
+        389,
+        84,
+        73
+      ],
+      "anchor": [
+        2300,
+        389
+      ],
+      "notes": "Original vector artwork isolated from the partner rail; panels, logos and contact symbols remain independent."
     }
   ]
 }

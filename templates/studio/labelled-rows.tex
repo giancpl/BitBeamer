@@ -1,30 +1,26 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
-\studiodeclarefield{text-1}{Label 1}
-\studiodeclarefield{text-2}{Label 4}
-\studiodeclarefield{text-3}{Label 6}
-\studiodeclarefield{text-4}{Supporting explanation}
-\studiodeclarefield{text-5}{Supporting explanation}
-\studiodeclarefield{text-6}{Supporting explanation}
-\studiodeclarefield{title}{Slide title}
+% Three editable label and explanation rows, measured from figma-0390.
+\studiodeclarefield{text-1}{First label}
+\studiodeclarefield{text-2}{Second label}
+\studiodeclarefield{text-3}{Third label}
+\studiodeclarefield{text-4}{First supporting explanation}
+\studiodeclarefield{text-5}{Second supporting explanation}
+\studiodeclarefield{text-6}{Third supporting explanation}
+\studiodeclarefield{title}{Slide\\title}
+\input{templates/studio/components/row-options.tex}
 \studioapplyfields
-\studiomeasuredcanvas{1920}{1080}{labelled-rows}{studio-background}{
-\path[fill=studio-surface,draw=none,line width=1\studiounit,rounded corners=15.3881\studiounit] (862.81,292.742) rectangle (1151.34,369.12);
-\path[fill=none,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (862.81,292.742) rectangle (1151.34,369.12);
-\studiomeasuredtext{text-1}{879.534}{317.844}{255.084}{43.8429}{33.4507}{38.8028}{\color{studio-foreground}\centering}{\studiofield{text-1}}
-\path[fill=studio-surface,draw=none,line width=1\studiounit,rounded corners=15.3881\studiounit] (861.81,478.742) rectangle (1150.34,555.12);
-\path[fill=none,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (861.81,478.742) rectangle (1150.34,555.12);
-\studiomeasuredtext{text-2}{878.534}{503.844}{255.084}{43.8429}{33.4507}{38.8028}{\color{studio-foreground}\centering}{\studiofield{text-2}}
-\path[fill=studio-surface,draw=none,line width=1\studiounit,rounded corners=15.3881\studiounit] (862.81,687.742) rectangle (1151.34,764.12);
-\path[fill=none,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (862.81,687.742) rectangle (1151.34,764.12);
-\studiomeasuredtext{text-3}{879.534}{712.789}{255.084}{49.5349}{33.4507}{38.8028}{\color{studio-foreground}\centering}{\studiofield{text-3}}
-\path[fill=studio-foreground,draw=none,line width=1\studiounit,rounded corners=15.3881\studiounit] (1191.31,292.751) rectangle (1696.69,359.847);
-\path[fill=none,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (1191.31,292.751) rectangle (1696.69,359.847);
-\studiomeasuredtext{text-4}{1204.02}{316.961}{479.968}{37.9431}{25.4147}{29.481}{\color{studio-surface}\centering}{\studiofield{text-4}}
-\path[fill=studio-foreground,draw=none,line width=1\studiounit,rounded corners=15.3881\studiounit] (1190.31,478.751) rectangle (1695.69,577.847);
-\path[fill=none,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (1190.31,478.751) rectangle (1695.69,577.847);
-\studiomeasuredtext{text-5}{1227.58}{502.949}{459.219}{65.6031}{25.4147}{29.481}{\color{studio-surface}}{\studiofield{text-5}}
-\path[fill=studio-foreground,draw=none,line width=1\studiounit,rounded corners=15.3881\studiounit] (1191.31,687.99) rectangle (1696.69,787.086);
-\path[fill=none,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (1191.31,687.99) rectangle (1696.69,787.086);
-\studiomeasuredtext{text-6}{1088.98}{712.188}{651.16}{70.4137}{25.7667}{29.8893}{\color{studio-surface}\centering}{\studiofield{text-6}}
-\studiomeasuredtext{title}{137.105}{478.277}{821.747}{167.994}{60.8693}{70.6084}{\color{studio-foreground}}{\studiofield{title}}
+\definecolor{studiorowspaper}{rgb}{0.97648,0.97648,0.97648}
+\studiomeasuredcanvas{1920}{1080}{labelled-rows}{studiorowspaper}{
+\path[fill=studio-surface,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (862.81,292.742) rectangle (1151.34,369.12);
+\studiorowtext{text-1}{879.534}{292.742}{255.084}{76.378}{33.4507}{38.8028}{\color{studio-foreground}\bfseries\centering}
+\path[fill=studio-foreground,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (1191.31,292.751) rectangle (1696.69,359.847);
+\studiorowtext{text-4}{1226.89}{292.751}{434.22}{67.096}{25.4147}{29.481}{\color{studio-surface}\bfseries}
+\path[fill=studio-surface,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (861.81,478.742) rectangle (1150.34,555.12);
+\studiorowtext{text-2}{878.534}{478.742}{255.084}{76.378}{33.4507}{38.8028}{\color{studio-foreground}\bfseries\centering}
+\path[fill=studio-foreground,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (1190.31,478.751) rectangle (1695.69,577.847);
+\studiorowtext{text-5}{1225.89}{478.751}{434.22}{99.096}{25.4147}{29.481}{\color{studio-surface}\bfseries}
+\path[fill=studio-surface,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (862.81,687.742) rectangle (1151.34,764.12);
+\studiorowtext{text-3}{879.534}{687.742}{255.084}{76.378}{33.4507}{38.8028}{\color{studio-foreground}\bfseries\centering}
+\path[fill=studio-foreground,draw=studio-foreground,line width=1.6198\studiounit,rounded corners=15.3881\studiounit] (1191.31,687.99) rectangle (1696.69,787.086);
+\studiorowtext{text-6}{1226.89}{687.99}{434.22}{99.096}{25.4147}{29.481}{\color{studio-surface}\bfseries}
+\studiomeasuredtext{title}{137.105}{478.277}{650}{167.994}{60.8693}{70.6084}{\color{studio-foreground}\bfseries}{\studiofield{title}}
 }

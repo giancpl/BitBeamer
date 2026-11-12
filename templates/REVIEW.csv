@@ -36,14 +36,21 @@ two-columns,Lists,figma-0185,approved,29,,"Approved by the user on 2026-11-09, i
 list-rail-light,Lists,figma-0702,approved,30,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax."
 list-rail-blue,Lists,figma-0395,approved,31,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax."
 grouped-rail,Lists,figma-0725,approved,32,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax."
-labelled-rows,Lists,figma-0390,in review,33,,
+labelled-rows,Lists,figma-0390,approved,33,,"
+Explicit user approval on 2026-11-12 after reviewing corrected padding, fixed typography and uniform longer-text previews."
 checklist-rail,Lists,figma-0384,approved,34,,Preserve heading/body structure and mixed emphasis; avoid malformed wrapped list text. Approved by the user on 2026-11-09 after clarification of the shared syntax.
 feature-spotlight,Lists,figma-0648,approved,35,,"Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained."
-privacy-levels,Lists,figma-0098,in review,36,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
-title-two-column-list,Lists,figma-0183,in review,37,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
-partner-rail,Lists,figma-0996,in review,38,,
+privacy-levels,Lists,figma-0098,approved,36,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
+Current levels-01 review uses verified original SVGs. Captions are vertically centered at fixed semibold size; original symbols are clipped to visible bounds, and replacements share the same 209-unit envelope in top-to-bottom order.
+Explicitly approved by the user on 2026-11-12 after grouped syntax replacement and validation of both palettes, longer captions and independently editable graphics."
+title-two-column-list,Lists,figma-0183,approved,37,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
+Explicit user approval on 2026-11-12 after the two-column short, longer and empty-field review."
+partner-rail,Lists,figma-0996,approved,38,,"Preconfigured five-sponsor composition retained from figma-0996. Contacts are semibold at a consistent size; logos retain source-specific visible dimensions rather than stretching every logo to one maximum. Explicit overrides remain available.
+Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background."
 icon-rail,Lists,figma-1026,approved,39,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Caption centred beneath the icon; short, automatically wrapped and explicit two-line copy checked at the original font size. User approval remains pending. Approved by the user on 2026-11-09 after clarification of the shared syntax."
-privacy-levels-blue,Lists,figma-1023,in review,40,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+privacy-levels-blue,Lists,figma-1023,approved,40,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
+Current levels-01 review uses verified original SVGs. Captions are vertically centered at fixed semibold size; original symbols are clipped to visible bounds, and replacements share the same 209-unit envelope in top-to-bottom order.
+Explicitly approved by the user on 2026-11-12 after grouped syntax replacement and validation of both palettes, longer captions and independently editable graphics."
 three-cards,Cards,figma-0021,approved,41,,"Approved by the user on 2026-11-12: unified two/three/five icon-card rows, optional title, 216 x 216 icon fitting, shared 76-unit caption gap and aligned first baselines. Both title states and short/long captions reviewed."
 three-step-process,Cards,figma-0079,approved,42,,"Explicitly approved by the user on 2026-11-12 after compatibility audit: horizontal two/three/four-stage icon processes, original arrows, fixed two-line captions and 216 x 216 replacement icon envelope. Heading is supported only by the four-stage composition."
 two-cards,Cards,figma-0070,approved,43,,"Approved by the user on 2026-11-12: unified two/three/five icon-card rows, optional title, 216 x 216 icon fitting, shared 76-unit caption gap and aligned first baselines. Both title states and short/long captions reviewed."
@@ -97,7 +104,7 @@ phone-screenshot,Images,figma-0241,in review,85,,
 photo-center-two-icons,Images,figma-0620,in review,86,,
 abacus-explanation,Images,figma-0644,in review,87,,
 whitepaper-blue,Images,figma-0820,in review,88,,
-partner-media-grid,Images,figma-0930,in review,89,,
+partner-media-grid,Lists,figma-0930,approved,89,,"Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background."
 mission-badges,Images,figma-0060,in review,90,,
 image-logo-pair,Images,figma-0538,in review,91,,
 hero-number,Data,figma-0735,in review,92,,

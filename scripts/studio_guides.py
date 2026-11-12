@@ -38,21 +38,21 @@ ROLES = {
 def command(name, values=None):
     values = dict(values or {})
     words = ['one','two','three','four','five']
-    grouped = any(re.fullmatch(r'card-(one|two|three|four|five)(/.*)?', key) for key in values)
+    grouped = any(re.fullmatch(r'(?:card-(?:one|two|three|four|five)(?:/.*)?|item-(?:one|two|three|four|five)/.*)', key) for key in values)
     if grouped:
         groups = {}
         for key in list(values):
-            match = re.fullmatch(r'(card-(?:one|two|three|four|five))/(title|body|icon|image|graphic)',key)
+            match = re.fullmatch(r'((?:card|item)-(?:one|two|three|four|five))/(title|body|text|label|icon|image|graphic)',key)
             if match:groups.setdefault(match[1],{})[match[2]] = values.pop(key)
         for card, fields in groups.items():
-            values[card] = ',\n    '.join(key+'={'+fields[key]+'}' for key in ('title','body','icon','image','graphic') if key in fields)
+            values[card] = ',\n    '.join(key+'={'+fields[key]+'}' for key in ('title','label','body','text','icon','image','graphic') if key in fields)
         general = ['variant','palette','show-title','show-introduction','show-card-titles',
                    'show-card-bodies','show-icons','title','title-icon','title-image','title-graphic','introduction']
         order = [key for key in general if key in values]
-        cards = ['card-'+word for word in words if 'card-'+word in values]
+        cards = [prefix+'-'+word for prefix in ['card','item'] for word in words if prefix+'-'+word in values]
         order += [key for key in values if key not in order and key not in cards]
         order += cards
-        options = ',\n  '.join(key+'={'+ ('\n    '+values[key]+'\n  ' if key.startswith('card-') else values[key]) +'}' for key in order)
+        options = ',\n  '.join(key+'={'+ ('\n    '+values[key]+'\n  ' if key.startswith(('card-','item-')) else values[key]) +'}' for key in order)
     else:
         options = ',\n  '.join(key + '={' + value + '}' for key, value in values.items())
     return '\\studiotemplate' + ('[\n  ' + options + '\n]' if options else '') + '{' + name + '}'

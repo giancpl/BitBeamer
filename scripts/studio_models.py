@@ -214,6 +214,13 @@ def registry(root, entries):
                 lines.append(r'\studio@addslot{'+name+r'}{\ifstudio@canonical\studiocardfields{'+word+'}{'+head+'}{'+body+'}{'+str(slot)+r'}\fi}')
             if c.get('title_graphic_slot'):
                 lines.append(r'\studio@addslot{'+name+r'}{\ifstudio@canonical\studiocardtitlegraphic{'+str(c['title_graphic_slot'])+r'}\fi}')
+        elif m['id']=='labelled-rows':
+            for word in ['one','two','three']:
+                lines.append(r'\studio@addslot{'+name+r'}{\ifstudio@canonical\studiorowfields{'+word+'}{'+c['fields']['item-'+word+'/label']+'}{'+c['fields']['item-'+word+'/body']+r'}\fi}')
+        elif m['id']=='levels':
+            for word,n in c['graphic_slots'].items():
+                native=c['fields']['item-'+word+'/text']
+                lines.append(r'\studio@addslot{'+name+r'}{\ifstudio@canonical\studiolevelfields{'+word+'}{'+native+'}{'+str(n)+r'}\fi}')
         else:
             for word,n in c.get('graphic_slots',graphics).items():
                 lines.append(r'\DeclareStudioGraphicSemantic{'+name+'}{'+word+'}{'+str(n)+'}')
@@ -310,6 +317,8 @@ def model_guides(root,entries):
             lines += ['Use `words={alpha,bravo,charlie,delta,echo,foxtrot,golf,hotel,india,juliet,kilo,lima}` for exactly twelve cells in row-major order. Numbering is automatic; `numbered=false` hides the prefixes. Text keeps its fixed size and supports explicit `\\\\` breaks. The annotated variant adds grid-title, explanation-title, explanation, note-title and note.', '']
         if m['id']=='list-rail':
             lines+=['[Complete usage reference: counts, palettes, defaults and wrapping](../../STUDIO-LISTS.md)','','The number of items is selected explicitly by `variant`; it is not inferred from filled fields.','']
+        if any(by_id[c['id']].get('content_mode')=='sponsor-preset' for _,cs in variants for c in cs):
+            lines+=['Preconfigured sponsor content from the supplied reference. Routine use needs only `\\studiotemplate{'+m['id']+'}`; fields below are optional for deliberate updates. See [paired sponsor presets](../../STUDIO-SPONSORS.md).','']
         for v,cs in variants:
             c=cs[0];e=by_id[c['id']]
             palettes=sorted({p for item in cs for p in item['palettes']})
@@ -329,6 +338,8 @@ def model_guides(root,entries):
                     lines+=['','Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.']
                     if c.get('graphic_slots'):lines+=['Add `icon`, `image` or `graphic` inside each icon-bearing card block.']
                     if c.get('title_graphic_slot'):lines+=['The separate heading symbol uses `title-icon`, `title-image` or `title-graphic`.']
+                elif m['id']=='levels':
+                    lines+=['','Group each row as `item-one={text={...},icon={shield}}`, then `item-two` and `item-three` from top to bottom. Use `image` or `graphic` instead of `icon` for custom artwork. Empty values hide only that field.']
                 elif 'graphic_slots' in c:
                     keys=', '.join('`icon-'+key+'` / `image-'+key+'` / `graphic-'+key+'`' for key in c['graphic_slots'])
                     lines+=['','Editable icons: '+keys+'. These semantic keys select the icon artwork, preserving the panels. See the full slot guide for position and bounds.']

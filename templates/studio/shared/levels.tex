@@ -1,10 +1,23 @@
-% Shared geometry for both retained colour presets.
-\studiomeasuredcanvas{3556}{2000}{\studiocurrenttemplate}{studio-background}{
-\studiomeasuredtext{title}{255.977}{884.047}{480.739}{312.578}{112.735}{130.772}{\color{studio-foreground}\bfseries}{\studiofield{title}}
-\studiomeasuredtext{text-2}{1659.14}{1349.7}{1493.62}{207.311}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{text-2}}
-\studiographfield{graphic-1}{1336}{1331}{257}{257}{}{}
-\studiomeasuredtext{text-3}{1657.66}{881.695}{1486.81}{207.313}{75.156}{87.181}{\color{studio-foreground}\bfseries}{\studiofield{text-3}}
-\studiographfield{graphic-2}{1336}{863}{257}{257}{}{}
-\studiomeasuredtext{text-4}{1655.66}{445.953}{1453.19}{195.203}{75.156}{87.181}{\color{studio-foreground}\bfseries}{\studiofield{text-4}}
-\studiographfield{graphic-3}{1336}{428}{257}{257}{}{}
+% Three top-to-bottom rows; native and replacement icons share visible bounds.
+\def\studiolevelcaption#1#2{%
+ \ifstudiogeometryonly\else
+ \typeout{STUDIO-FIELD: \studiopilotname/#1}%
+ \node[anchor=north west] at (1656,#2) {%
+  \setbox\studiotextbox=\vbox{\hsize=1490\studiounit\parindent=0pt
+   \hfuzz=.1pt\overfullrule=2pt\raggedright
+   \normalfont\sffamily\fontsize{75.16\studiounit}{87.186\studiounit}\selectfont\bfseries
+   \noindent\studiofield{#1}\par}%
+  \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>209\studiounit
+   \PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}{Shorten the caption. The fixed type size supports two lines.}%
+  \fi
+  \vbox to 209\studiounit{\vfil\box\studiotextbox\vfil}};%
+ \fi}
+\studiomeasuredcanvas{3556}{2000}{\studiocurrenttemplate}{studiolevelsbackground}{
+ \studiomeasuredtext{title}{255.977}{884.047}{480.739}{312.578}{112.735}{130.772}{\bfseries}{\studiofield{title}}
+ \studiographfield{graphic-3}{1336}{428}{209}{209}{}{}
+ \studiolevelcaption{text-4}{428}
+ \studiographfield{graphic-2}{1336}{863}{209}{209}{}{}
+ \studiolevelcaption{text-3}{863}
+ \studiographfield{graphic-1}{1336}{1331}{209}{209}{}{}
+ \studiolevelcaption{text-2}{1331}
 }

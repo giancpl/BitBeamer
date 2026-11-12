@@ -96,6 +96,10 @@ def semantic_fields(entry,composition):
                 if composition.get('title_graphic_slot'):names[composition['title_graphic_slot']]='title-graphic'
                 if number not in names:continue
                 name=names[number]
+            elif any(key.startswith('item-') and '/' in key for key in composition['fields']):
+                names={value:'item-'+key+'/graphic' for key,value in composition.get('graphic_slots',{}).items()}
+                if number not in names:continue
+                name=names[number]
             elif 'graphic_slots' in composition:
                 names={value:key for key,value in composition['graphic_slots'].items()}
                 if number not in names:continue
@@ -126,6 +130,7 @@ def catalogue(root=ROOT):
                     field=next((f for f in entry['fields'] if f['name']==native),None)
                     if field and field['type']=='text':
                         options[semantic]=field.get('default','').replace(r'\\\\',r'\\')
+                if entry.get('content_mode')=='sponsor-preset': options={}
                 choices.append({'id':entry['id'],'label':variant['id']+' / '+composition['native_palette'],
                     'command':command(model['id'],options),'fields':semantic_fields(entry,composition),
                     'preview':preview(root,'docs/templates/previews/'+entry['id']+'.png',entry['id'],assets),

@@ -24,11 +24,11 @@ Original palettes: blue, light.
 | Field | Default | Available space |
 | --- | --- | --- |
 | `title` | <code>Title</code> | 13.5% wide × 15.6% high |
-| `caption-one` | <code>Supporting explanation</code> | 40.9% wide × 9.8% high |
-| `caption-two` | <code>Supporting explanation</code> | 41.8% wide × 10.4% high |
-| `caption-three` | <code>Supporting explanation</code> | 42.0% wide × 10.4% high |
+| `item-one/text` | <code>Supporting explanation</code> | 41.9% wide × 10.4% high |
+| `item-two/text` | <code>Supporting explanation</code> | 41.9% wide × 10.4% high |
+| `item-three/text` | <code>Supporting explanation</code> | 41.9% wide × 10.4% high |
 
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
+Group each row as `item-one={text={...},icon={shield}}`, then `item-two` and `item-three` from top to bottom. Use `image` or `graphic` instead of `icon` for custom artwork. Empty values hide only that field.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -45,7 +45,15 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
   variant={default},
   palette={light},
   title={Title},
-  caption-one={Supporting explanation}
+  item-one={
+    text={Supporting explanation}
+  },
+  item-two={
+    text={Supporting explanation}
+  },
+  item-three={
+    text={Supporting explanation}
+  }
 ]{levels}
 \end{document}
 ```

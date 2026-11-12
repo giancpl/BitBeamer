@@ -1,0 +1,51 @@
+% Native-density list, longer automatically wrapped items, explicit breaks and empty fields.
+\ifdefined\pdfminorversion\pdfminorversion=7\fi
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage{bitpolitostudiolibrary}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{library/references.bib}
+\begin{document}
+\studiotemplate[
+  title={Summary},
+  left-items={
+    \item Bitcoin on-chain: base layer and\\layer 2
+    \item Different ideas, timing, fee models\\and scalability
+    \item Why Lightning suits everyday\\payments
+    \item Nodes, channels, liquidity\\and balancing
+    \item Asynchronous on-chain versus\\synchronous Lightning
+    \item Routing
+  },
+  right-items={
+    \item Explore a Lightning node
+    \item Privacy differences
+    \item Self-custodial nodes on local\\hardware or in the cloud
+    \item Lightning service providers
+    \item On-demand nodes
+    \item Custodial and self-custodial\\wallets and LNDHub interfaces
+    \item BOLT11 and LNURL
+    \item Payment processors
+    \item Implementations: LND and CLN
+  }
+]{title-two-column-list}
+\studiotemplate[
+  title={Topics and practical examples},
+  left-items={
+    \item Explore the shared rules and compare the assumptions used by each participant.
+    \item Review the practical example.\\Record the checks performed locally.
+    \item Explain how the available information supports each conclusion.},
+  right-items={
+    \item Compare the available approaches and describe the trade-offs for new participants.
+    \item Repeat the example independently.\\Check the result before accepting it.
+    \item Summarize the remaining questions and identify the next useful experiment.}
+]{title-two-column-list}
+\studiotemplate[
+  title={},
+  left-items={},
+  right-items={
+    \item Only this column is visible.
+    \item Text and heading can be hidden independently.}
+]{title-two-column-list}
+\end{document}

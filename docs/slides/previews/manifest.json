@@ -502,9 +502,9 @@
           "width": 640
         }
       },
-      "page": 21,
+      "page": 9,
       "render_source": "pdf",
-      "signature": "a8f505e1d26858fc5be2327cc94b7bdb421f361a8511ee94dfda01cadc1c4d6c"
+      "signature": "c4fed59c27a833980374e339d2a9a2f9d3927e6f6acb292d382155e10f1b1ceb"
     },
     "bitpolito-wordmark-cover": {
       "canvas": "complete slide; no catalogue labels",
@@ -2163,20 +2163,20 @@
           "file": "docs/slides/previews/hd/labelled-rows.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "4b9b9cdca106d69edd8d3caf83ae87e5272b5ad850bb45e5d38e03e2c899eab1",
+          "sha256": "3c59c0ae7a6f486ed88b49871018fa0ff36c109528e582dc431bb3720fb8099a",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/labelled-rows.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "1c5639146450f46a9a99fde58466fb44e8b08245fd91b5e98faf54541f55825d",
+          "sha256": "80b0df4edaea84eee5b23178773317fce67c9f771f75d0db0877ed20460c05dd",
           "width": 640
         }
       },
-      "page": 8,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "e91d5d1fc2a061e0ef9686032bc1f487e2f658284adf61cdb7e537bfe37438a3"
+      "signature": "63bbf806e7f2629e792e222c5bbcd3c729e2e6d26df17c37b5cf065c5ac6d1ad"
     },
     "large-figure": {
       "canvas": "complete slide; no catalogue labels",
@@ -14483,20 +14483,20 @@
           "file": "docs/slides/previews/hd/partner-media-grid.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "a2381150db5c3166607012236ed98bc586f5cb5baba254339a59e6b01b23c120",
+          "sha256": "402e80eeadf7410dfc71b19901dcf1d2fb94b68cb5a97cb51255b813f55337b0",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/partner-media-grid.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "8998a8fd989aac07de2f7f511a21d1bc88060a4db50cb76480294f1e17bba899",
+          "sha256": "e318d082dc0126b6ae46387b945d2ab6c36dc27ae1770f0f4b56911008a1effd",
           "width": 640
         }
       },
-      "page": 18,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "aaab3e26efdc28bf21da90b7afba2314528165d835ffc64ebaedf97a81bd4de1"
+      "signature": "f563abb98ee37f20db33057271b6e279cf78731bc1a000f12d4b88e5796c1e38"
     },
     "partner-rail": {
       "canvas": "complete slide; no catalogue labels",
@@ -14505,20 +14505,20 @@
           "file": "docs/slides/previews/hd/partner-rail.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "0de213755589948a0eef0bff4c302ef64873c638f49dcf5f3c26d37e492baf48",
+          "sha256": "bc2e512a3a8336393d5349c0521f7a7f48eddda56eed55f679c9b3f52eca1aed",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/partner-rail.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "d3b2f7de9e1d634454cc78335e44ea41eaca3fb56c3b645bad56a0c52932d980",
+          "sha256": "e745efa9a60bfd34d78d10cd78bb464d1f8ddd47d8e046b321f7f132c2e00f50",
           "width": 640
         }
       },
-      "page": 14,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "f7ca843095d8ab63b49e48a1b2411e861c1df3a9264b8486ef4679924df8fa69"
+      "signature": "03f8f8f19d9d9b74781f0280c196272faafbcaf0fe97e1d0a8f566ee1e3181ea"
     },
     "payment-channel": {
       "canvas": "complete slide; no catalogue labels",
@@ -14813,20 +14813,20 @@
           "file": "docs/slides/previews/hd/privacy-levels.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "79307cf98e31757fce5996c942b7d9205588a183f49d4813b468672ce5457c84",
+          "sha256": "0c83159e179c064db0539d8511c82e85e1b37113bc9fada2a0aa4a9a94494831",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/privacy-levels.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "0f75e7061a4afbaaeb05c59f50a9e153a90dbdf7c0f5bfeec4aac1eec33f964f",
+          "sha256": "6d537817b7b23a72d35d1e1717bad5f6d7f85c13193c1fb0b0786ea0410ee88e",
           "width": 640
         }
       },
-      "page": 11,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "0dc4ef75cecf050a3fcc4c0176436c429c3b4b2007a9e16cf558d06d6357b958"
+      "signature": "4238c7b8095ff41be3c3fae8df19a5bd7a4cc005f42ff7dda580805fcb39ab6c"
     },
     "privacy-levels-blue": {
       "canvas": "complete slide; no catalogue labels",
@@ -14835,20 +14835,20 @@
           "file": "docs/slides/previews/hd/privacy-levels-blue.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "ea60e03fef80efc790d147991848c5914f9cb31e4737cf45a6a1fb8923310c0c",
+          "sha256": "a35b40e8bbdc38a12cb12e838effec06ffc389b4a8a169d6fa0d3607b7bd73ec",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/privacy-levels-blue.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "da7c88850ce22d0888286cd2ef30a1e50ad3eb36bf05d9fb11456a52a4e6203e",
+          "sha256": "2b8528672e30dfb1656c02aadd771f588eb891d213fe322fec3ee742e4a54e90",
           "width": 640
         }
       },
-      "page": 12,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "3fcf0d5ac9ca16fba4a4e62faa180216a0f4c495ec1b34524295ea3cb32c8447"
+      "signature": "fbde24a178455ec0ef217b1670abb0a4437c955c599e85f239752b2119a33bfd"
     },
     "problem-solution": {
       "canvas": "complete slide; no catalogue labels",
@@ -16111,20 +16111,20 @@
           "file": "docs/slides/previews/hd/title-two-column-list.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "593cca64cf3a595f662d46898f666e109172ea0ac23bb2bf4ce682387e2bfc5b",
+          "sha256": "7ed713cb8fb8839101633b109d3817c82fc0b7a6c72eae0ceddc8ea61a829cbc",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/title-two-column-list.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "8f61c5d509b2a9d7d7274bb388ea5d1a9aa57d69041df78d18dee65fd09cf7f9",
+          "sha256": "f24b629165a8b4c5db229247f0221200e3aef78f6851b45b86385580bdb38d9c",
           "width": 640
         }
       },
-      "page": 13,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "705b37abb6c7bc10536db181a4da1c494157a9b47a7ae6237d110ce117077174"
+      "signature": "5e96967b0dd61fe75e60e1f2cc586755cd9d65cf0ccc4fa9e9289b97c9e6f581"
     },
     "transaction-flow": {
       "canvas": "complete slide; no catalogue labels",

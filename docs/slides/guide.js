@@ -109,7 +109,7 @@
     const details=element('details');details.append(element('summary',row.kind==='fixed'?'Fixed slide: no editable fields':'Customize text and graphics ('+choice.fields.length+' fields)'));
     const list=element('ul');choice.fields.forEach(f=>{const li=element('li');li.append(element('code',f.name),document.createTextNode(' · '+f.type));list.append(li);});details.append(list,element('p','Replace text values with your own LaTeX. Empty values keep their space; oversized content is reported.'));
     const graphic=choice.fields.find(f=>f.type==='graphic');
-    if(graphic){const example=element('pre','% Replace the '+graphic.name+' field in the command above:\n'+graphic.name+'={\\asset[width=1cm,height=1cm,keepaspectratio]{alice}}');details.append(example,element('small','Use dimensions within the slot bounds shown in the HD inspector. Graphics keep their proportions.'));}
+    if(graphic){const [group,field]=graphic.name.split('/'),artwork='\\asset[width=1cm,height=1cm,keepaspectratio]{alice}',assignment=field?group+'={'+field+'={'+artwork+'}}':group+'={'+artwork+'}';const example=element('pre','% Replace the '+graphic.name+' field in the command above:\n'+assignment);details.append(example,element('small','Use dimensions within the slot bounds shown in the HD inspector. Graphics keep their proportions.'));}
     body.append(details);article.append(visual,body);return article;
   }
   function collectionCard(row) {

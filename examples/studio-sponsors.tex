@@ -1,0 +1,21 @@
+\ifdefined\pdfminorversion\pdfminorversion=7\fi
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage{bitpolitostudiolibrary}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{library/references.bib}
+\begin{document}
+\studiotemplate{partner-rail}
+\studiotemplate{partner-media-grid}
+\studiotemplate[
+  title={Partners and local\\learning communities},
+  website-one={Learning and sharing knowledge with local communities},
+  social-one={Questions and updates\\@community-one}
+]{partner-rail}
+\studiotemplate[
+  left-website-1={learn-and-share.example},
+  right-handle-1={@learning-community}
+]{partner-media-grid}
+\end{document}

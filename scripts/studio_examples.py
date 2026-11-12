@@ -49,9 +49,15 @@ def example_values(root, entry):
 def exact_command(root, entry, content='neutral'):
     model, variant, composition = membership(root)[entry['id']]
     values = {'variant': variant['id'], 'palette': composition['native_palette']}
+    if entry.get('content_mode')=='sponsor-preset':
+        return command(model['id'],values)
     if content == 'example':
         example=example_values(root, entry)
-        if model['id']=='text-cards':
+        if model['id']=='title-two-column-list':
+            for key in ['text/2','text/3']:
+                if key in example:
+                    example[key]=example[key].replace(r'\par\hangindent=1em','').replace(r'\textbullet{}',r'\item')
+        if model['id'] in {'text-cards','levels','labelled-rows','title-two-column-list','partner-rail'}:
             public={next(f['slot']['key'] for f in entry['fields'] if f['name']==native):key for key,native in composition['fields'].items()}
             example={public.get(key,key):value for key,value in example.items()}
         values.update(example)

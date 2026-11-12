@@ -888,7 +888,15 @@
     "row-icon-5-two": "2e729f60f1a9943ef852cd259354574c23a89ebd65b5d81a9a328e38392686b9",
     "row-icon-5-three": "b25b27786b108704e7975fee262b419231593f772d31e1efdc8b2a1b1e992142",
     "row-icon-5-four": "8ab90632534eae181592661072e0c4c6ec0425a46075475ef53fcb841756e425",
-    "row-icon-5-five": "1d3777a2c76799deb64bab39d216671f94b358dcf9653530ae6656af7376e32e"
+    "row-icon-5-five": "1d3777a2c76799deb64bab39d216671f94b358dcf9653530ae6656af7376e32e",
+    "partner-panel": "2536cd5b10ba1e0329b589c68114212af33c7d7d5c5e82d908f357d8ceba9b2d",
+    "partner-logo-one": "75e4083bbc951646e0d8f10249dd08bd74e08b099e31daa22ff0bad6705b2162",
+    "partner-logo-two": "a27239e639bc7712a25de5d331ee10e02e1dc329c393b4104204a95cf94696d1",
+    "partner-logo-three": "6caa5fcb76a9ac7e81b55e5d220fa40ddb23c0e5c32356ac9b92b0d7506b008c",
+    "partner-logo-four": "5794ef3935227751bcea658ac42f11bc955da01a3297552916afe21ef8261be6",
+    "partner-logo-five": "0cd6748a5d847cbd3e97e49552551fbd4b0bb29bbbdde74eb47f1353b6ac0cc9",
+    "partner-website": "765f1247f53444ad33918c178948394624fda1dd6c0a2b7c382765f0ebabade7",
+    "partner-social": "3084b659b336d854b85cf85ee596117761aef2bc9a99b670427c6be892fef3a2"
   },
   "previews": {
     "figma-0575-part-01": "2281b98ff75ea0dd0a4d310b725761d1d536efcdd04c4fab80dcfb305d18c2f5",
@@ -1779,6 +1787,14 @@
     "row-icon-5-two": "df046ad5e36571f8e7fecae5171bb1d0a1f612590c38eb2d9af91b524bea9195",
     "row-icon-5-three": "4e79cc6ce861cf518cdb18a8cbde9b61eb4fcd92b74d94a00799c46bd124a3a5",
     "row-icon-5-four": "f98485a46a4b030fd288d6990638cea2109186a51b73f21cd6484003275cb49a",
-    "row-icon-5-five": "bb57a1cb78df32c2ee0897493ed9e40d2a2660331ed7e9e49725b0d0544032fa"
+    "row-icon-5-five": "bb57a1cb78df32c2ee0897493ed9e40d2a2660331ed7e9e49725b0d0544032fa",
+    "partner-panel": "7d49f4fdf83ab2d957f6bfbc6a55f27fa79092d88abf538b9395d1528064c1a0",
+    "partner-logo-one": "626db4813cf6083d578d4500f68023c2aa83f380221a6e7b455f6357ef91a159",
+    "partner-logo-two": "d128b79da48799d4a53b8e881c52446d79498bd6d2cf1a936db5b078b79fcbe5",
+    "partner-logo-three": "6695e13ff3d1bb3c5194f1754630b82ff06a3e70dbdd280a2467873b75330edc",
+    "partner-logo-four": "49a97a79778a680a04c90ac5c5f5c98954ee311c004538c8827afb3ba1cebf47",
+    "partner-logo-five": "e5395a70f10dff028cced3bb0fc7a6ba5bd2060dc8244e74bd8d742226b2308f",
+    "partner-website": "f750fcd27e4d4c1ed4c44be16a763f29042f045d4e7abdf71c2d3ea8d61ca9ea",
+    "partner-social": "9dfed6c2903368f81c1678f9be2c2c80b16753a4160cb894ea35207696c47d15"
   }
 }

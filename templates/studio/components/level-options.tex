@@ -1,0 +1,9 @@
+% Group each row's text and artwork in visual reading order.
+\newcommand{\studiolevelfields}[3]{%
+ \pgfkeys{/studio fields/item-#1/.code={\pgfqkeys{/studio level/#1}{##1}},
+  /studio level/#1/.is family,
+  /studio level/#1/text/.code=\pgfkeyssetvalue{/studio values/#2}{##1},
+  /studio level/#1/icon/.style={/studio fields/icon/#3={##1}},
+  /studio level/#1/image/.style={/studio fields/image/#3={##1}},
+  /studio level/#1/graphic/.style={/studio fields/graphic/#3={##1}},
+  /studio level/#1/.unknown/.code=\PackageError{bitpolitostudiomodels}{Unknown item-#1 field '\pgfkeyscurrentname'}{Use text, icon, image or graphic.}}}

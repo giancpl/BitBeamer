@@ -23,13 +23,13 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Label 1</code> | 13.3% wide × 4.1% high |
-| `label-two` | <code>Supporting explanation</code> | 25.0% wide × 3.5% high |
-| `title` | <code>Slide title</code> | 42.8% wide × 15.6% high |
-| `label-four` | <code>Label 4</code> | 13.3% wide × 4.1% high |
-| `label-five` | <code>Supporting explanation</code> | 23.9% wide × 6.1% high |
-| `label-six` | <code>Label 6</code> | 13.3% wide × 4.6% high |
-| `label-seven` | <code>Supporting explanation</code> | 33.9% wide × 6.5% high |
+| `title` | <code>Slide\\title</code> | 33.9% wide × 15.6% high |
+| `item-one/label` | <code>First label</code> | 13.3% wide × 4.1% high |
+| `item-one/body` | <code>First supporting explanation</code> | 22.6% wide × 3.2% high |
+| `item-two/label` | <code>Second label</code> | 13.3% wide × 4.1% high |
+| `item-two/body` | <code>Second supporting explanation</code> | 22.6% wide × 6.2% high |
+| `item-three/label` | <code>Third label</code> | 13.3% wide × 4.1% high |
+| `item-three/body` | <code>Third supporting explanation</code> | 22.6% wide × 6.2% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -45,8 +45,19 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
 \studiotemplate[
   variant={default},
   palette={light},
-  label-one={Label 1},
-  label-two={Supporting explanation}
+  title={Slide\\title},
+  item-one={
+    label={First label},
+    body={First supporting explanation}
+  },
+  item-two={
+    label={Second label},
+    body={Second supporting explanation}
+  },
+  item-three={
+    label={Third label},
+    body={Third supporting explanation}
+  }
 ]{labelled-rows}
 \end{document}
 ```

@@ -108,7 +108,7 @@ Layout geometry, fonts and field APIs are shared with neutral templates. Topic-s
 | `photo-center-two-icons` | 1 fields | [photo-center-two-icons.tex](studio/photo-center-two-icons.tex) |
 | `abacus-explanation` | 2 fields | [abacus-explanation.tex](studio/abacus-explanation.tex) |
 | `whitepaper-blue` | 1 fields | [whitepaper-blue.tex](studio/whitepaper-blue.tex) |
-| `partner-media-grid` | 24 fields | [partner-media-grid.tex](studio/partner-media-grid.tex) |
+| `partner-media-grid` | 1 fields | [partner-media-grid.tex](studio/partner-media-grid.tex) |
 | `mission-badges` | 6 fields | [mission-badges.tex](studio/mission-badges.tex) |
 | `image-logo-pair` | 2 fields | [image-logo-pair.tex](studio/image-logo-pair.tex) |
 | `hero-number` | 2 fields | [hero-number.tex](studio/hero-number.tex) |

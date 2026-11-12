@@ -45,8 +45,8 @@ Browse the [offline visual gallery](../docs/slides/index.html) or compile
 | 34 | [Practical checklist](../docs/templates/previews/checklist-rail.png) | `\studiotemplate{checklist-rail}` | [checklist-rail.tex](studio/checklist-rail.tex) |
 | 35 | [Heading beside two feature panels](../docs/templates/previews/feature-spotlight.png) | `\studiotemplate{feature-spotlight}` | [feature-spotlight.tex](studio/feature-spotlight.tex) |
 | 36 | [Privacy Levels](../docs/templates/previews/privacy-levels.png) | `\studiotemplate{privacy-levels}` | [privacy-levels.tex](studio/privacy-levels.tex) |
-| 37 | [Title Two Column List](../docs/templates/previews/title-two-column-list.png) | `\studiotemplate{title-two-column-list}` | [title-two-column-list.tex](studio/title-two-column-list.tex) |
-| 38 | [Organization rail](../docs/templates/previews/partner-rail.png) | `\studiotemplate{partner-rail}` | [partner-rail.tex](studio/partner-rail.tex) |
+| 37 | [Two-column bullet list](../docs/templates/previews/title-two-column-list.png) | `\studiotemplate{title-two-column-list}` | [title-two-column-list.tex](studio/title-two-column-list.tex) |
+| 38 | [Partners and sponsors](../docs/templates/previews/partner-rail.png) | `\studiotemplate{partner-rail}` | [partner-rail.tex](studio/partner-rail.tex) |
 | 39 | [Icon Rail](../docs/templates/previews/icon-rail.png) | `\studiotemplate{icon-rail}` | [icon-rail.tex](studio/icon-rail.tex) |
 | 40 | [Privacy Levels Blue](../docs/templates/previews/privacy-levels-blue.png) | `\studiotemplate{privacy-levels-blue}` | [privacy-levels-blue.tex](studio/privacy-levels-blue.tex) |
 | 41 | [Three soft icon cards](../docs/templates/previews/three-cards.png) | `\studiotemplate{three-cards}` | [three-cards.tex](studio/three-cards.tex) |
@@ -97,7 +97,7 @@ Browse the [offline visual gallery](../docs/slides/index.html) or compile
 | 86 | [Photo Center Two Icons](../docs/templates/previews/photo-center-two-icons.png) | `\studiotemplate{photo-center-two-icons}` | [photo-center-two-icons.tex](studio/photo-center-two-icons.tex) |
 | 87 | [Abacus Explanation](../docs/templates/previews/abacus-explanation.png) | `\studiotemplate{abacus-explanation}` | [abacus-explanation.tex](studio/abacus-explanation.tex) |
 | 88 | [Document spotlight](../docs/templates/previews/whitepaper-blue.png) | `\studiotemplate{whitepaper-blue}` | [whitepaper-blue.tex](studio/whitepaper-blue.tex) |
-| 89 | [Media grid](../docs/templates/previews/partner-media-grid.png) | `\studiotemplate{partner-media-grid}` | [partner-media-grid.tex](studio/partner-media-grid.tex) |
+| 89 | [Partners, sponsors and media](../docs/templates/previews/partner-media-grid.png) | `\studiotemplate{partner-media-grid}` | [partner-media-grid.tex](studio/partner-media-grid.tex) |
 | 90 | [Three badges](../docs/templates/previews/mission-badges.png) | `\studiotemplate{mission-badges}` | [mission-badges.tex](studio/mission-badges.tex) |
 | 91 | [Image and symbol](../docs/templates/previews/image-logo-pair.png) | `\studiotemplate{image-logo-pair}` | [image-logo-pair.tex](studio/image-logo-pair.tex) |
 | 92 | [Headline number](../docs/templates/previews/hero-number.png) | `\studiotemplate{hero-number}` | [hero-number.tex](studio/hero-number.tex) |

@@ -882,14 +882,23 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-1",
-                "label-two": "text-4",
                 "title": "title",
-                "label-four": "text-2",
-                "label-five": "text-5",
-                "label-six": "text-3",
-                "label-seven": "text-6"
-              }
+                "item-one/label": "text-1",
+                "item-one/body": "text-4",
+                "item-two/label": "text-2",
+                "item-two/body": "text-5",
+                "item-three/label": "text-3",
+                "item-three/body": "text-6"
+              },
+              "example_fields": [
+                "title",
+                "item-one/label",
+                "item-one/body",
+                "item-two/label",
+                "item-two/body",
+                "item-three/label",
+                "item-three/body"
+              ]
             }
           ]
         }
@@ -913,11 +922,22 @@
               ],
               "fields": {
                 "title": "title",
-                "caption-one": "text-4",
-                "caption-two": "text-3",
-                "caption-three": "text-2"
+                "item-one/text": "text-4",
+                "item-two/text": "text-3",
+                "item-three/text": "text-2"
               },
-              "rejected_semantic_fields": []
+              "rejected_semantic_fields": [],
+              "graphic_slots": {
+                "one": 1,
+                "two": 2,
+                "three": 3
+              },
+              "example_fields": [
+                "title",
+                "item-one/text",
+                "item-two/text",
+                "item-three/text"
+              ]
             },
             {
               "id": "privacy-levels-blue",
@@ -927,11 +947,22 @@
               ],
               "fields": {
                 "title": "title",
-                "caption-one": "text-4",
-                "caption-two": "text-3",
-                "caption-three": "text-2"
+                "item-one/text": "text-4",
+                "item-two/text": "text-3",
+                "item-three/text": "text-2"
               },
-              "rejected_semantic_fields": []
+              "rejected_semantic_fields": [],
+              "graphic_slots": {
+                "one": 1,
+                "two": 2,
+                "three": 3
+              },
+              "example_fields": [
+                "title",
+                "item-one/text",
+                "item-two/text",
+                "item-three/text"
+              ]
             }
           ]
         }
@@ -939,7 +970,7 @@
     },
     {
       "id": "title-two-column-list",
-      "title": "Title Two Column List",
+      "title": "Two-column bullet list",
       "category": "Lists",
       "default_variant": "default",
       "variants": [
@@ -955,9 +986,14 @@
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-3"
-              }
+                "left-items": "text-2",
+                "right-items": "text-3"
+              },
+              "example_fields": [
+                "title",
+                "left-items",
+                "right-items"
+              ]
             }
           ]
         }
@@ -965,7 +1001,7 @@
     },
     {
       "id": "partner-rail",
-      "title": "Organization rail",
+      "title": "Partners and sponsors",
       "category": "Lists",
       "default_variant": "default",
       "variants": [
@@ -980,18 +1016,60 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-1",
-                "label-two": "text-2",
-                "label-three": "text-5",
-                "label-four": "text-6",
-                "label-five": "text-7",
                 "title": "title",
-                "label-seven": "text-8",
-                "label-eight": "text-9",
-                "label-nine": "text-10",
-                "label-ten": "text-3",
-                "label-eleven": "text-4"
-              }
+                "website-one": "text-1",
+                "social-one": "text-2",
+                "website-two": "text-5",
+                "social-two": "text-6",
+                "website-three": "text-7",
+                "social-three": "text-8",
+                "website-four": "text-9",
+                "social-four": "text-10",
+                "website-five": "text-3",
+                "social-five": "text-4"
+              },
+              "rejected_semantic_fields": [
+                "label-one",
+                "label-two",
+                "label-three",
+                "label-four",
+                "label-five",
+                "label-seven",
+                "label-eight",
+                "label-nine",
+                "label-ten",
+                "label-eleven"
+              ],
+              "graphic_slots": {
+                "website-one": 2,
+                "social-one": 3,
+                "logo-one": 1,
+                "website-two": 5,
+                "social-two": 6,
+                "logo-two": 4,
+                "website-three": 8,
+                "social-three": 9,
+                "logo-three": 7,
+                "website-four": 11,
+                "social-four": 12,
+                "logo-four": 10,
+                "website-five": 14,
+                "social-five": 15,
+                "logo-five": 13
+              },
+              "example_fields": [
+                "title",
+                "website-one",
+                "social-one",
+                "website-two",
+                "social-two",
+                "website-three",
+                "social-three",
+                "website-four",
+                "social-four",
+                "website-five",
+                "social-five"
+              ]
             }
           ]
         }
@@ -2082,8 +2160,8 @@
     },
     {
       "id": "partner-media-grid",
-      "title": "Media grid",
-      "category": "Images",
+      "title": "Partners, sponsors and media",
+      "category": "Lists",
       "default_variant": "default",
       "variants": [
         {
@@ -2097,30 +2175,60 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-3",
-                "label-two": "text-4",
-                "label-three": "text-6",
-                "label-four": "text-5",
-                "label-five": "text-7",
-                "label-six": "text-8",
-                "label-seven": "text-10",
-                "label-eight": "text-9",
-                "label-nine": "text-11",
                 "title": "title",
-                "label-eleven": "text-12",
-                "label-twelve": "text-14",
-                "label-thirteen": "text-13",
-                "label-fourteen": "text-15",
-                "label-fifteen": "text-16",
-                "label-sixteen": "text-18",
-                "label-seventeen": "text-17",
-                "label-eighteen": "text-19",
-                "label-nineteen": "item-2-1",
-                "label-twenty": "text-20",
-                "label-21": "text-22",
-                "label-22": "text-21",
-                "label-23": "text-23",
-                "label-24": "item-2-2"
+                "left-website-1": "left-website-1",
+                "left-handle-1": "left-handle-1",
+                "left-website-2": "left-website-2",
+                "left-handle-2": "left-handle-2",
+                "left-website-3": "left-website-3",
+                "left-handle-3": "left-handle-3",
+                "left-website-4": "left-website-4",
+                "left-handle-4": "left-handle-4",
+                "left-website-5": "left-website-5",
+                "left-handle-5": "left-handle-5",
+                "right-website-1": "right-website-1",
+                "right-handle-1": "right-handle-1",
+                "right-website-2": "right-website-2",
+                "right-handle-2": "right-handle-2",
+                "right-website-3": "right-website-3",
+                "right-handle-3": "right-handle-3",
+                "right-website-4": "right-website-4",
+                "right-handle-4": "right-handle-4",
+                "right-website-5": "right-website-5",
+                "right-handle-5": "right-handle-5"
+              },
+              "example_fields": [
+                "title"
+              ],
+              "rejected_semantic_fields": [
+                "label-one",
+                "label-two",
+                "label-three",
+                "label-four",
+                "label-five",
+                "label-six",
+                "label-seven",
+                "label-eight",
+                "label-nine",
+                "label-eleven",
+                "label-twelve",
+                "label-thirteen",
+                "label-fourteen",
+                "label-fifteen",
+                "label-sixteen",
+                "label-seventeen",
+                "label-eighteen",
+                "label-nineteen",
+                "label-twenty",
+                "label-21",
+                "label-22",
+                "label-23",
+                "label-24"
+              ],
+              "graphic_slots": {
+                "left-sponsors": 2,
+                "right-sponsors": 3,
+                "media": 4
               }
             }
           ]

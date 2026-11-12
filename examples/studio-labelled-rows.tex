@@ -1,0 +1,56 @@
+% Short, longer, explicit-break and independent-empty specimens.
+\ifdefined\pdfminorversion\pdfminorversion=7\fi
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage{bitpolitostudiolibrary}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{library/references.bib}
+\begin{document}
+\studiotemplate[
+  title={What if someone\\tries to cheat?},
+  item-one={
+    label={The change},
+    body={One friend changes their notebook.}
+  },
+  item-two={
+    label={The comparison},
+    body={The others notice the mismatch and discard it.}
+  },
+  item-three={
+    label={New arrivals},
+    body={Copy and verify from the first page: do not trust, verify.}
+  }
+]{labelled-rows}
+\studiotemplate[
+  title={Compare the records\\before accepting them},
+  item-one={
+    label={Local changes},
+    body={A participant edits a local record.}
+  },
+  item-two={
+    label={Shared checks},
+    body={Other participants compare records and reject conflicting changes.}
+  },
+  item-three={
+    label={Final checks},
+    body={Copy the available records.\\Verify every earlier change.}
+  }
+]{labelled-rows}
+\studiotemplate[
+  title={},
+  item-one={
+    label={},
+    body={A body can remain without its label.}
+  },
+  item-two={
+    label={Label only},
+    body={}
+  },
+  item-three={
+    label={},
+    body={}
+  }
+]{labelled-rows}
+\end{document}

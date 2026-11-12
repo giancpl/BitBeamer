@@ -1,7 +1,7 @@
 # Studio graphical parts
 
 Use the [single offline parts gallery](studio-parts/index.html) to browse all
-867 prepared parts, including the 22 parts from the initial measured frames.
+897 prepared parts, including the 22 parts from the initial measured frames.
 They are shared by the current slide sources; there is no separate pilot library.
 
 ```latex
@@ -30,3 +30,6 @@ python3 scripts/catalogue-studio-collection.py --previews
 Use `prepare` instead of `check` after changing artwork. Add
 `--converter inkscape` to choose that converter. See [artwork maintenance](ASSETS.md)
 and [the collection workflow](STUDIO-COLLECTION.md) for extraction and review.
+
+The partner rail also retains its panel, five independent logos and two contact
+symbols as vector parts. See [replacement commands](STUDIO-PARTNER-RAIL.md).

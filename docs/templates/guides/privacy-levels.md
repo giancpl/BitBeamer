@@ -4,7 +4,7 @@
 
 Organize related explanations or talking points using the privacy levels layout.
 
-Model: `privacy-levels` · Family: Lists · Status: **in review**.
+Model: `privacy-levels` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/privacy-levels.tex)
 
@@ -101,13 +101,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 7.2% wide × 12.8% high | <code>\studiopaletteimage[width=257\studiounit]{images/studio/collection/figma-0098-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 7.2% wide × 12.8% high | <code>\studiopaletteimage[width=257\studiounit]{images/studio/collection/figma-0098-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 7.2% wide × 12.8% high | <code>\studiopaletteimage[width=257\studiounit]{images/studio/collection/figma-0098-part-03.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | lower centre | 5.9% wide × 10.4% high | <code>\studiopaletteimage[trim={0 48 48 0},clip,width=209\studiounit,height=209\studiounit,keepaspectratio]{images/studio/c...</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.9% wide × 10.4% high | <code>\studiopaletteimage[trim={0 48 48 0},clip,width=209\studiounit,height=209\studiounit,keepaspectratio]{images/studio/c...</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 5.9% wide × 10.4% high | <code>\studiopaletteimage[trim={0 48 48 0},clip,width=209\studiounit,height=209\studiounit,keepaspectratio]{images/studio/c...</code> |
 | <code>title</code> | Main text (text) | middle left | 13.5% wide × 15.6% high | <code>Title</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 42.0% wide × 10.4% high | <code>Supporting explanation</code> |
-| <code>text-3</code> | Editable text (text) | middle right | 41.8% wide × 10.4% high | <code>Supporting explanation</code> |
-| <code>text-4</code> | Editable text (text) | upper right | 40.9% wide × 9.8% high | <code>Supporting explanation</code> |
+| <code>text-2</code> | Editable text (text) | lower right | 41.9% wide × 10.4% high | <code>Supporting explanation</code> |
+| <code>text-3</code> | Editable text (text) | middle right | 41.9% wide × 10.4% high | <code>Supporting explanation</code> |
+| <code>text-4</code> | Editable text (text) | upper right | 41.9% wide × 10.4% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

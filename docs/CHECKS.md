@@ -1,5 +1,217 @@
 # Verification report
 
+## Approved template checkpoint — 2026-11-12
+
+User-approved families: levels (both palettes), labelled rows, two-column lists
+and both sponsor presets. Approval records, current guides and prepared artwork
+are synchronized; superseded local sponsor comparisons are removed.
+
+Pre-commit validation: `review.py check` passed; the complete test suite ran 213
+tests in 216.403 seconds and passed with one optional check skipped.
+The unrelated global lesson resource-hash limitation is recorded below.
+
+## Sponsor/media background correction — 2026-11-12
+
+Removed the inherited full-slide paper rectangle from the three shared sponsor
+artwork groups. The source `.975` fill rendered as `#f8f8f8`, contrasting with
+the catalogue preset's `#f9f9f9`. Transparent paper now inherits either caller's
+background. No logo rasterization or recoloring was used: embedded image streams
+match HEAD byte for byte, and each group loses exactly one background drawing.
+
+Canonical assets and their provenance/resource hashes were updated together.
+Consumers: `partner-media-grid`, `bitpolito-introduction-09`, introduction lesson
+and opportunities block. The five-sponsor preset is unchanged. Rebuilt both
+lesson consumers, the sponsor specimen (including long copy), the active comparison
+and the unified guide preview; visually inspected the affected sponsor pages.
+Pixel probes across the media-group boundary and both sponsor groups are
+`(249,249,249)` in the catalogue specimen.
+
+Validation: both affected lesson/block builds passed; `review.py check` passed;
+`guide_previews.py check` checked 749 commands; the 25 Studio model tests and
+the sponsor artwork regression passed. Global `library.py check` remains blocked
+by the pre-existing stale resource hash for `images/studio/parts/card-1.pdf`,
+unrelated to these three assets.
+
+Regression: `tests/test_sponsor_artwork.py` checks transparent empty borders,
+visible artwork and retained embedded images for all three groups. Reproduction:
+`scripts/normalize_sponsor_backgrounds.py`. Both sponsor presets were explicitly
+approved by the user on 2026-11-12; the active review list is empty and superseded
+local sponsor comparisons have been removed.
+
+
+## Paired sponsor presets, icon sizing and bold contacts — 2026-11-12
+
+The user requested bold contact copy, corrected icon dimensions and preconfigured
+sponsor content, reviewed alongside related sponsor slides. `partner-rail` now
+retains its actual five sponsors as defaults. The logo widths follow the measured
+ink bounds of each supplied logo: the Bitrefill monogram no longer expands to the
+same maximum height as the taller BitBox mark. Website and social symbols share
+76 x 76 source-unit slots, preserve aspect ratio and align with their first contact
+line. All ten labels use the same 42/50 semibold typography.
+
+Paired it with `partner-media-grid`, reclassified under Lists as a sponsor/media
+composition. Its short command retains ten sponsors and the media artwork.
+It reuses the existing institutional renderer and three prepared vector groups;
+`prepared_resources` pins their hashes. The existing lesson source, its content,
+and its assets are unchanged, and dependency checks report no modified lesson or
+block consumers. The catalogue wrapper supplies only local preset defaults and
+paper colour. Ordinary use needs no library package in addition to Studio.
+The original figma-0930 SVG SHA-256 was verified before comparing the pair.
+
+Both default calls and representative longer contacts compile and were visually
+inspected. The five-sponsor composition supports two-line text; the dense media
+composition keeps one-line headings/contacts. Three negative compilation checks
+verify contact/title overflow at fixed fonts. Core-only two-page compilation
+also passes. Both guide previews and original comparisons were refreshed; only
+these two pending sponsor compositions are active. No approval is inferred.
+The repository review check and whitespace check pass. All 212 tests pass with
+one existing skip; all 25 model tests also pass in the focused run. The paired
+review PDF has four uniform pages with the exact short/default and longer-copy
+commands. RGB249 paper and native Inter SemiBold contacts were verified in both
+compiled preset pages.
+
+## Partner and sponsor rail review — 2026-11-12
+
+Approved `title-two-column-list` and advanced to `partner-rail` (Lists).
+Verified the SHA-256 of the actual supplied Slide 16:9 - 109 / figma-0996 SVG.
+Isolated the original panel, five logos and two contact symbols as eight vector
+parts, with extraction recipes, retained SVGs, dependency hashes and prepared PDFs.
+Removed the stray top-left graphic and the separately hard-coded Z fragment;
+the complete ZBD logo now belongs to its own replaceable slot.
+
+The five rows expose website/social text and independent logo/website/social
+artwork in the same reading order. Replaced obsolete label keys with descriptive
+contact keys. Replacements preserve aspect ratio in fixed slots; logos share
+206 x 206 source-unit interiors. Prepared panels remain independent. Text stays
+editable at its original size, supports two lines and explicit breaks, and never
+shrinks. All-empty fields retain the panels. The paper background is RGB249.
+Short, longer and empty specimens were compiled and inspected; the longer one
+also covers named icons, a wide image and a tall custom graphic. Negative builds
+check website, social and title overflow plus rejection of obsolete public keys.
+No lessons or topic blocks consume this layout. Only the unapproved partner rail
+is active; prior approved slides are excluded. The unified guide and the uniform
+three-page interactive specimen review show current commands and artwork.
+The repository review check and whitespace check pass. All 37 prepared parts
+pass integrity checks; the parts gallery includes 897 current entries. The full
+211-test suite had one existing skip and one failure from the old 29-part count.
+After updating that expectation to 37, all six source/asset tests pass on rerun;
+the remaining full-suite tests and all 24 model tests passed. No failing checks
+remain. Graphical approval is pending.
+
+## Two-column list review — 2026-11-12
+
+Approved labelled rows and advanced to `title-two-column-list` (Lists), using
+BTC Prague 106 / figma-0183. The retained original SVG SHA-256 matches the
+inventory. The canonical list helper now bounds paragraphs to each measured
+column, aligns wrapped lines with the first line, and uses the source 75.16 font
+size and 95.25 leading. The light background renders as RGB 249/249/249.
+
+Replaced `label-two` / `label-three` with `left-items` / `right-items`, containing
+`\item` entries. Migrated official examples and refreshed model documentation,
+thumbs, HD previews and the unified slide guide. All text, including the title,
+can be replaced or hidden independently. Short, automatically wrapped, explicitly
+broken and empty examples compile and were inspected visually. Fixed-font
+capacity is eleven physical lines per column and a one-line heading; negative
+builds verify both column limits, the title limit and rejection of the obsolete
+public key. No linked lessons or blocks consume the corrected layout.
+Repository checks and all 210 tests pass (one existing skip); 749 prepared
+guide previews also pass their freshness check. Whitespace checks pass.
+This composition was explicitly approved on 2026-11-12 and its obsolete local
+batch and disposable negative-build folders were removed. The specimen review uses
+three equal page sizes and includes the actual commands.
+
+## Labelled-row padding and second-page correction — 2026-11-12
+
+The longer specimen accepted a two-line label against the panel border, and
+its review PDF mixed 1400-point comparison pages with 454-point slide pages.
+The canonical row helper now reserves 16 source units above and below text,
+checks overflow against that padded interior, and preserves source fonts and
+panel geometry. Labels and the first body support one line; later bodies two.
+Updated the semantic field bounds, usage guide and longer specimen accordingly.
+
+All three canonical pages compile without layout diagnostics and were inspected
+visually. Raster measurements on every nonempty panel confirm at least 14 source
+units of visible vertical clearance (the measured minimum exceeds 21 units).
+Negative compilation checks reject two-line labels, two-line first bodies and
+three-line later bodies with explicit field diagnostics. The corrected review
+preview uses three equal 1400 x 900 pages and includes the exact commands.
+No lessons or reusable blocks consume this layout. The user approved `labelled-rows` on 2026-11-12; its obsolete local batch
+and disposable padding trials have been removed.
+Repository review checks and whitespace checks pass.
+The full suite passes: 209 tests, one existing skip, no failures.
+
+## Grouped list syntax and next row template — 2026-11-12
+
+Approved both `levels` palettes following the user's explicit instruction.
+The public API now groups each row as `item-one={text={...},icon={...}}`;
+image and custom graphic alternatives remain independent. Obsolete flat fields
+are rejected. Official callers, generated examples and the gallery are migrated.
+All ten canonical pages were compiled and visually inspected, including longer
+copy, explicit breaks, image replacements and empty fields in both palettes.
+Six negative compilation checks passed: two palette overflows, unknown inner
+field, obsolete caption/icon keys, and overflow in the next row template.
+
+The next active family is `labelled-rows` (Lists), based on hash-verified
+`figma-0390`, BTC Prague 68. Label/body blocks follow reading order. Corrected
+body bounds, panel padding, vertical centring and source text weight; checked
+short, longer, explicit-break and independent-empty specimens. No lesson or
+block consumers are affected. The comparison contains only this pending family.
+Superseded levels batch outputs and disposable negative trials were removed;
+canonical examples, prepared artwork and concise proof records remain.
+Repository review checks and whitespace checks pass. The full 209-test run
+found two issues: an accidentally migrated assertion for the unrelated Divisions
+contract, and a guide freshness check concurrent with preview generation. After
+correcting the assertion and synchronizing the guide, both affected test modules
+pass all 29 tests. The full run retained one existing skip. JavaScript syntax
+validation also passes.
+
+## Complete content customization policy — 2026-11-12
+
+The user requires all content to remain customizable in every template review.
+The maintainer rules now cover titles, headings, body text, numeric values,
+icons and illustrations, including independent explicit-empty behavior.
+The current `levels` model already exposes all four text fields and all three
+icon/image/graphic positions. Its metadata now enumerates icon reading order and
+all text example fields explicitly; no renderer or syntax change is needed.
+The main usage example shows all content keys together. Canonical specimens
+add imported PDF images in both palettes and independent hidden content.
+
+All ten canonical pages compile without layout diagnostics. The three added
+image/empty-content pages were visually inspected. PDF text extraction confirms
+that an empty title and caption leave no default labels, and that captions can
+remain when their icons are empty. No renderer change was required.
+Repository review and whitespace checks pass. The full suite completed with
+208 tests, one existing skip and no failures.
+
+## Three icon levels prepared for review — 2026-11-12
+
+After committing and pushing the approved grids, `levels-01` became the only
+active review batch. It contains `privacy-levels` and `privacy-levels-blue`,
+both in Lists. Original hashes were verified for `8800.svg` (figma-0098) and
+`Slide 16_9 - 139.svg` (figma-1023) in the user-supplied export folder.
+The word grids and all other approved families are excluded.
+
+Canonical inputs are the two wrappers and `templates/studio/shared/levels.tex`.
+The original 257-unit graphic PDFs include 48 units of unused right/bottom
+padding. Clipping that padding preserves the original 209-unit visible symbols
+and their positions, while giving native and replacement icons identical bounds.
+Semantic `caption-one` / `icon-one` pairs follow top-to-bottom order, through
+three; image and custom graphic replacements use the same fixed envelope.
+Captions use fixed 75.16/87.186 Inter Semibold and one-/two-line vertical centering.
+The light-paper RGB serialization renders F9F9F9; blue uses its native treatment.
+
+All seven pages of `examples/studio-levels.tex` were visually inspected with no
+layout diagnostics: both original palettes, longer automatic and explicit
+wrapping, every named-icon slot in both palettes, tall/wide graphics and an
+empty icon. No official lesson or block consumes the shared inputs. A regression
+checks semantic order, caption/icon alignment and the visible source bounds.
+The canonical guide and current thumbnails/HD previews are refreshed. Both
+compositions remain in review; successful builds imply no graphical approval.
+
+Both light/blue overflow specimens fail with the intended explicit diagnostic.
+Repository review and whitespace checks pass. The full suite completed with
+208 tests, one existing skip and no failures.
+
 ## Word-grid approval and review cleanup — 2026-11-12
 
 The user explicitly approved `twelve-word-grid` and `seed-grid-caption`, including

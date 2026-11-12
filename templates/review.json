@@ -996,16 +996,32 @@
       ]
     },
     "labelled-rows": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "\nExplicit user approval on 2026-11-12 after reviewing corrected padding, fixed typography and uniform longer-text previews.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 after reviewing corrected padding, fixed typography and uniform longer-text previews."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "labelled-rows-padding",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "The second slide is not displayed correctly; fix the problems.",
+          "action": "Correct padded capacity at fixed font sizes: prevent multiline labels from touching panel borders, retain readable two-line descriptions, and use equal-sized pages in the review preview. Graphical approval remains pending."
+        },
+        {
+          "id": "labelled-rows-approval",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Confirm and proceed.",
+          "action": "Explicit user approval on 2026-11-12 after reviewing corrected padding, fixed typography and uniform longer-text previews."
+        }
+      ]
     },
     "checklist-rail": {
       "status": "approved",
@@ -1095,14 +1111,14 @@
       ]
     },
     "privacy-levels": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nCurrent levels-01 review uses verified original SVGs. Captions are vertically centered at fixed semibold size; original symbols are clipped to visible bounds, and replacements share the same 209-unit envelope in top-to-bottom order.\nExplicitly approved by the user on 2026-11-12 after grouped syntax replacement and validation of both palettes, longer captions and independently editable graphics.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after grouped syntax replacement and validation of both palettes, longer captions and independently editable graphics."
         }
       },
       "feedback": [
@@ -1113,18 +1129,33 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "levels-01-geometry",
+          "source": "Canonical inspection against verified original SVGs, 2026-11-12",
+          "issue": "Native icons had unused right/bottom padding, which displaced replacements; one-line captions sat above icon centers.",
+          "action": "Preserve original visible symbol positions while using independent 209 x 209 icon bounds. Vertically center one-/two-line semibold captions and retain both native palettes.",
+          "verification": "Seven canonical short/long/replacement examples compiled and visually inspected without layout diagnostics; named icons verified in both palettes, plus wide/tall and empty graphics. No official lesson/block consumers. Original reference hashes match. Graphical review pending.",
+          "status": "in review"
+        },
+        {
+          "id": "levels-grouped-approval",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Improve the syntax, confirm and proceed.",
+          "action": "Replaced flat caption and graphic keys with top-to-bottom item blocks containing text and icon/image/graphic. Migrated official examples and guides; verified ten pages, independent empty fields, both palettes and explicit errors."
         }
       ]
     },
     "title-two-column-list": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nExplicit user approval on 2026-11-12 after the two-column short, longer and empty-field review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 after the two-column short, longer and empty-field review."
         }
       },
       "feedback": [
@@ -1135,20 +1166,43 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "two-column-list-approval",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Confirm and proceed.",
+          "action": "Explicit user approval on 2026-11-12 after the two-column short, longer and empty-field review."
         }
       ]
     },
     "partner-rail": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Preconfigured five-sponsor composition retained from figma-0996. Contacts are semibold at a consistent size; logos retain source-specific visible dimensions rather than stretching every logo to one maximum. Explicit overrides remain available.\nExplicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "sponsor-fixed-roster",
+          "date": "2026-11-12",
+          "status": "changes requested",
+          "issue": "Icons are inconsistently sized; contacts need bold weight. Keep sponsors preconfigured and review alongside related sponsor slides.",
+          "action": "Restore source-specific logo ink dimensions, normalize contact-symbol slots and semibold contact typography, retain original sponsor defaults and pair with the shared institutional media composition."
+        },
+        {
+          "id": "sponsor-presets-approval",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Confirm, then commit and push.",
+          "action": "Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background."
+        }
+      ]
     },
     "icon-rail": {
       "status": "approved",
@@ -1187,14 +1241,14 @@
       ]
     },
     "privacy-levels-blue": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nCurrent levels-01 review uses verified original SVGs. Captions are vertically centered at fixed semibold size; original symbols are clipped to visible bounds, and replacements share the same 209-unit envelope in top-to-bottom order.\nExplicitly approved by the user on 2026-11-12 after grouped syntax replacement and validation of both palettes, longer captions and independently editable graphics.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after grouped syntax replacement and validation of both palettes, longer captions and independently editable graphics."
         }
       },
       "feedback": [
@@ -1205,6 +1259,21 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "levels-01-geometry",
+          "source": "Canonical inspection against verified original SVGs, 2026-11-12",
+          "issue": "Native icons had unused right/bottom padding, which displaced replacements; one-line captions sat above icon centers.",
+          "action": "Preserve original visible symbol positions while using independent 209 x 209 icon bounds. Vertically center one-/two-line semibold captions and retain both native palettes.",
+          "verification": "Seven canonical short/long/replacement examples compiled and visually inspected without layout diagnostics; named icons verified in both palettes, plus wide/tall and empty graphics. No official lesson/block consumers. Original reference hashes match. Graphical review pending.",
+          "status": "in review"
+        },
+        {
+          "id": "levels-grouped-approval",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Improve the syntax, confirm and proceed.",
+          "action": "Replaced flat caption and graphic keys with top-to-bottom item blocks containing text and icon/image/graphic. Migrated official examples and guides; verified ten pages, independent empty fields, both palettes and explicit errors."
         }
       ]
     },
@@ -2446,16 +2515,25 @@
       }
     },
     "partner-media-grid": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "sponsor-presets-approval",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Confirm, then commit and push.",
+          "action": "Explicitly approved by the user on 2026-11-12 after reviewing the paired sponsor presets, logo proportions, semibold contacts and transparent artwork on the standard paper background."
+        }
+      ]
     },
     "mission-badges": {
       "status": "in review",
@@ -4151,7 +4229,7 @@
   "review_batches": [
     {
       "id": "covers-01",
-      "title": "Covers \u2014 first graphical review",
+      "title": "Covers — first graphical review",
       "family": "Covers",
       "compositions": [
         "cover",
@@ -4170,7 +4248,7 @@
     },
     {
       "id": "team-01",
-      "title": "Team introduction \u2014 graphical review",
+      "title": "Team introduction — graphical review",
       "family": "Team",
       "compositions": [
         "team-presentation"
@@ -4185,7 +4263,7 @@
     },
     {
       "id": "contents-01",
-      "title": "Contents \u2014 graphical review",
+      "title": "Contents — graphical review",
       "family": "Contents",
       "compositions": [
         "contents",
@@ -4201,7 +4279,7 @@
     },
     {
       "id": "closing-01",
-      "title": "Closing slides \u2014 graphical review",
+      "title": "Closing slides — graphical review",
       "family": "Closing",
       "compositions": [
         "closing"
@@ -4215,7 +4293,7 @@
     },
     {
       "id": "dividers-01",
-      "title": "Section divider and incoming-arrow statement \u2014 graphical review",
+      "title": "Section divider and incoming-arrow statement — graphical review",
       "family": "Section transitions",
       "compositions": [
         "section-divider",
@@ -4231,7 +4309,7 @@
     },
     {
       "id": "statements-01",
-      "title": "Other statements \u2014 graphical review",
+      "title": "Other statements — graphical review",
       "family": "Statements",
       "compositions": [
         "glow-statement",
@@ -4248,7 +4326,7 @@
     },
     {
       "id": "columns-01",
-      "title": "Two-column explanation \u2014 graphical review",
+      "title": "Two-column explanation — graphical review",
       "family": "Columns",
       "compositions": [
         "two-columns"
@@ -4265,7 +4343,7 @@
     },
     {
       "id": "lists-light",
-      "title": "Bullet lists \u2014 light",
+      "title": "Bullet lists — light",
       "family": "Lists",
       "compositions": [
         "list-rail-light",
@@ -4285,7 +4363,7 @@
     },
     {
       "id": "lists-blue",
-      "title": "Bullet lists \u2014 blue",
+      "title": "Bullet lists — blue",
       "family": "Lists",
       "compositions": [
         "list-rail-light",
@@ -4325,7 +4403,7 @@
     },
     {
       "id": "cards-01",
-      "title": "Three icon cards \u2014 graphical review",
+      "title": "Three icon cards — graphical review",
       "family": "Cards",
       "compositions": [
         "three-cards"
@@ -4342,7 +4420,7 @@
     },
     {
       "id": "cards-02",
-      "title": "Two icon cards \u2014 graphical review",
+      "title": "Two icon cards — graphical review",
       "family": "Cards",
       "compositions": [
         "two-cards"
@@ -4381,7 +4459,7 @@
     },
     {
       "id": "icon-process-01",
-      "title": "Icon process \u2014 two, three and four stages",
+      "title": "Icon process — two, three and four stages",
       "family": "Cards",
       "compositions": [
         "two-step-process",
@@ -4434,7 +4512,7 @@
     },
     {
       "id": "soft-cards-01",
-      "title": "Unified soft text cards \u2014 original layouts and optional content (1/2)",
+      "title": "Unified soft text cards — original layouts and optional content (1/2)",
       "family": "Cards",
       "compositions": [
         "three-card-summary",
@@ -4458,7 +4536,7 @@
     },
     {
       "id": "soft-cards-02",
-      "title": "Unified soft text cards \u2014 original layouts and optional content (2/2)",
+      "title": "Unified soft text cards — original layouts and optional content (2/2)",
       "family": "Cards",
       "compositions": [
         "feature-spotlight",
@@ -4482,7 +4560,7 @@
     },
     {
       "id": "divisions-01",
-      "title": "Divisions \u2014 four and eight icon cards",
+      "title": "Divisions — four and eight icon cards",
       "family": "Cards",
       "compositions": [
         "square-icon-grid",
@@ -4500,7 +4578,7 @@
     },
     {
       "id": "word-grid-01",
-      "title": "Twelve-word grids \u2014 plain and annotated",
+      "title": "Twelve-word grids — plain and annotated",
       "family": "Technical",
       "compositions": [
         "twelve-word-grid",
@@ -4514,6 +4592,74 @@
         "Compare with the verified original word-grid SVGs.",
         "Check numbered reading order, fixed text size and centered panel labels.",
         "Review longer words, automatic wrapping, explicit breaks and annotations."
+      ]
+    },
+    {
+      "id": "levels-01",
+      "title": "Three icon levels - light and blue",
+      "family": "Lists",
+      "compositions": [
+        "privacy-levels",
+        "privacy-levels-blue"
+      ],
+      "commands": {
+        "privacy-levels": "\\studiotemplate[\n  palette={light},\n  title={Privacy\\\\levels},\n  item-one={\n    text={Full-KYC: identity verification using submitted documents}\n  },\n  item-two={\n    text={Soft-KYC: limited personal information is requested}\n  },\n  item-three={\n    text={No-KYC: no personal information is requested}\n  }\n]{levels}",
+        "privacy-levels-blue": "\\studiotemplate[\n  palette={blue},\n  title={Privacy\\\\levels},\n  item-one={\n    text={Full-KYC: identity verification using submitted documents}\n  },\n  item-two={\n    text={Soft-KYC: limited personal information is requested}\n  },\n  item-three={\n    text={No-KYC: no personal information is requested}\n  }\n]{levels}"
+      },
+      "focus": [
+        "Compare both palette variants with verified original SVGs 8800.svg and Slide 16_9 - 139.svg.",
+        "Check the left title, top-to-bottom caption and icon order, fixed fonts and spacing.",
+        "Verify longer automatically wrapped captions, explicit breaks and replacement icons in both palettes."
+      ]
+    },
+    {
+      "id": "labelled-rows-01",
+      "title": "Label and explanation rows",
+      "family": "Lists",
+      "compositions": [
+        "labelled-rows"
+      ],
+      "commands": {
+        "labelled-rows": "\\studiotemplate[\n  title={What if someone\\\\tries to cheat?},\n  item-one={\n    label={The change},\n    body={One friend changes their notebook.}\n  },\n  item-two={\n    label={The comparison},\n    body={The others notice the mismatch and discard it.}\n  },\n  item-three={\n    label={New arrivals},\n    body={Copy and verify from the first page: do not trust, verify.}\n  }\n]{labelled-rows}"
+      },
+      "focus": [
+        "Compare the verified BTC Prague 68 original (figma-0390).",
+        "Check left heading weight, centred label text and body padding.",
+        "See the separate longer-copy and empty-field examples."
+      ]
+    },
+    {
+      "id": "two-column-list-01",
+      "title": "Two-column bullet list",
+      "family": "Lists",
+      "compositions": [
+        "title-two-column-list"
+      ],
+      "commands": {
+        "title-two-column-list": "\\studiotemplate[\n  title={Summary},\n  left-items={\\item Bitcoin on-chain: base layer and\\\\layer 2\\item Different ideas, timing, fee models\\\\and scalability\\item Why Lightning suits everyday\\\\payments\\item Nodes, channels, liquidity\\\\and balancing\\item Asynchronous on-chain versus\\\\synchronous Lightning\\item Routing},\n  right-items={\\item Explore a Lightning node\\item Privacy differences\\item Self-custodial nodes on local\\\\hardware or in the cloud\\item Lightning service providers\\item On-demand nodes\\item Custodial and self-custodial\\\\wallets and LNDHub interfaces\\item BOLT11 and LNURL\\item Payment processors\\item Implementations: LND and CLN}\n]{title-two-column-list}"
+      },
+      "focus": [
+        "Verified BTC Prague 106 original (figma-0183).",
+        "Check fixed font sizes, 95.25-unit leading, bullet spacing and per-item hanging indents.",
+        "All text is editable; longer automatic wraps, explicit breaks and independent empty fields are included in the specimen PDF."
+      ]
+    },
+    {
+      "id": "partner-rail-01",
+      "title": "Preconfigured partners, sponsors and media",
+      "family": "Lists",
+      "compositions": [
+        "partner-rail",
+        "partner-media-grid"
+      ],
+      "commands": {
+        "partner-rail": "\\studiotemplate{partner-rail}",
+        "partner-media-grid": "\\studiotemplate{partner-media-grid}"
+      },
+      "focus": [
+        "Fixed sponsor rosters from the supplied originals; no long content command is required.",
+        "Check original logo proportions, contact-symbol size and bold website/social text.",
+        "Review five-sponsor and ten-sponsor/media compositions together."
       ]
     }
   ],

@@ -453,3 +453,24 @@ The plain and annotated layouts share `word-grid`, separately from icon grids.
 Both were explicitly approved on 2026-11-12 after the paper and body-weight
 corrections. General card-shadow refinement remains a deferred cross-family task.
 See the [word list, numbering and annotation commands](STUDIO-WORD-GRID.md).
+
+## Three icon levels
+
+The Lists family `levels`, in the original light and blue palettes, is approved.
+See [commands, caption capacity and editable icons](STUDIO-LEVELS.md) and
+[the short and longer examples](../examples/studio-levels.tex).
+
+## Label and explanation rows
+
+The Lists family `labelled-rows` is approved. See [grouped commands and text capacity](STUDIO-LABELLED-ROWS.md).
+
+## Approved two-column bullet list
+
+The approved Lists model is `title-two-column-list`, from BTC Prague 106.
+See [commands, per-item indentation and capacity](STUDIO-TWO-COLUMN-LIST.md).
+
+## Approved sponsor presets
+
+The approved Lists compositions are `partner-rail` (figma-0996) and
+`partner-media-grid` (figma-0930), retained as preconfigured sponsor slides.
+See [preset commands, bold contacts and original logo sizing](STUDIO-SPONSORS.md).

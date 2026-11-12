@@ -4922,7 +4922,7 @@
       "references": [
         "figma-0390"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Three label and explanation rows from verified figma-0390; editable grouped fields, fixed typography and panel-centred text. Graphical review pending.",
       "canvas": [
         1920.0,
         1080.0
@@ -4932,12 +4932,12 @@
         {
           "name": "text-1",
           "type": "text",
-          "default": "Label 1",
+          "default": "First label",
           "box": [
-            879.5343333333333,
-            317.844,
-            255.08433333333332,
-            43.84286666666669
+            879.534,
+            308.742,
+            255.084,
+            44.378
           ],
           "source_ink_box": [
             921.355,
@@ -4953,17 +4953,18 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
           "type": "text",
-          "default": "Label 4",
+          "default": "Second label",
           "box": [
-            878.5343333333333,
-            503.844,
-            255.0843333333334,
-            43.842866666666644
+            878.534,
+            494.742,
+            255.084,
+            44.378
           ],
           "source_ink_box": [
             922.855,
@@ -4979,17 +4980,18 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
           "type": "text",
-          "default": "Label 6",
+          "default": "Third label",
           "box": [
-            879.5343333333333,
-            712.789,
-            255.0843333333334,
-            49.534866666666645
+            879.534,
+            703.742,
+            255.084,
+            44.378
           ],
           "source_ink_box": [
             893.965,
@@ -5005,17 +5007,18 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "First supporting explanation",
           "box": [
-            1204.0163333333333,
-            316.961,
-            479.96833333333336,
-            37.94306666666665
+            1226.8899999999999,
+            308.75100000000003,
+            434.22,
+            35.096000000000004
           ],
           "source_ink_box": [
             1229.539,
@@ -5023,7 +5026,7 @@
             437.52,
             23.965
           ],
-          "font_size": 25.415,
+          "font_size": 25.4147,
           "leading": 29.481,
           "source_node": [
             12
@@ -5031,17 +5034,18 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Second supporting explanation",
           "box": [
-            1227.578,
-            502.949,
-            459.2188666666667,
-            65.60306666666665
+            1225.8899999999999,
+            494.75100000000003,
+            434.22,
+            67.096
           ],
           "source_ink_box": [
             1227.578,
@@ -5049,7 +5053,7 @@
             375.461,
             51.625
           ],
-          "font_size": 25.415,
+          "font_size": 25.4147,
           "leading": 29.481,
           "source_node": [
             15
@@ -5057,17 +5061,18 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-6",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Third supporting explanation",
           "box": [
-            1088.9804999999997,
-            712.188,
-            651.1600000000001,
-            70.4136666666667
+            1226.8899999999999,
+            703.99,
+            434.22,
+            67.096
           ],
           "source_ink_box": [
             1228.84,
@@ -5075,25 +5080,26 @@
             371.441,
             56.242
           ],
-          "font_size": 25.767,
-          "leading": 29.889,
+          "font_size": 25.4147,
+          "leading": 29.481,
           "source_node": [
             18
           ],
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "title",
           "type": "text",
-          "default": "Slide title",
+          "default": "Slide\\\\title",
           "box": [
             137.105,
             478.277,
-            821.7471133333333,
-            167.9941333333333
+            650,
+            167.994
           ],
           "source_ink_box": [
             137.105,
@@ -5109,7 +5115,8 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "font_weight": "semibold"
         }
       ],
       "parts": [],
@@ -5125,7 +5132,13 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/row-options.tex"
+      ],
+      "layout_notes": [
+        "Reserve 16 source units above and below panel text. Labels and first body support one line; later bodies support two. Reject text beyond this padded capacity at fixed source font sizes."
+      ]
     },
     {
       "id": "checklist-rail",
@@ -5677,14 +5690,20 @@
           "box": [
             1336,
             1331,
-            257,
-            257
+            209,
+            209
           ],
-          "default": "\\studiopaletteimage[width=257\\studiounit]{images/studio/collection/figma-0098-part-01.pdf}",
+          "default": "\\studiopaletteimage[trim={0 48 48 0},clip,width=209\\studiounit,height=209\\studiounit,keepaspectratio]{images/studio/collection/figma-0098-part-01.pdf}",
           "slot": {
             "number": 3,
             "key": "graphic/3",
-            "role": "whole graphic"
+            "role": "icon",
+            "content": [
+              104.5,
+              104.5,
+              209,
+              209
+            ]
           }
         },
         {
@@ -5693,14 +5712,20 @@
           "box": [
             1336,
             863,
-            257,
-            257
+            209,
+            209
           ],
-          "default": "\\studiopaletteimage[width=257\\studiounit]{images/studio/collection/figma-0098-part-02.pdf}",
+          "default": "\\studiopaletteimage[trim={0 48 48 0},clip,width=209\\studiounit,height=209\\studiounit,keepaspectratio]{images/studio/collection/figma-0098-part-02.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
-            "role": "whole graphic"
+            "role": "icon",
+            "content": [
+              104.5,
+              104.5,
+              209,
+              209
+            ]
           }
         },
         {
@@ -5709,14 +5734,20 @@
           "box": [
             1336,
             428,
-            257,
-            257
+            209,
+            209
           ],
-          "default": "\\studiopaletteimage[width=257\\studiounit]{images/studio/collection/figma-0098-part-03.pdf}",
+          "default": "\\studiopaletteimage[trim={0 48 48 0},clip,width=209\\studiounit,height=209\\studiounit,keepaspectratio]{images/studio/collection/figma-0098-part-03.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
+            "role": "icon",
+            "content": [
+              104.5,
+              104.5,
+              209,
+              209
+            ]
           }
         },
         {
@@ -5752,10 +5783,10 @@
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            1659.141,
-            1349.699,
-            1493.6239999999998,
-            207.31099999999992
+            1656,
+            1331,
+            1490,
+            209
           ],
           "source_ink_box": [
             1659.141,
@@ -5780,10 +5811,10 @@
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            1657.66,
-            881.695,
-            1486.8124,
-            207.31279999999998
+            1656,
+            863,
+            1490,
+            209
           ],
           "source_ink_box": [
             1657.66,
@@ -5791,8 +5822,8 @@
             1437.961,
             165.977
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             4
           ],
@@ -5808,10 +5839,10 @@
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            1655.66,
-            445.953,
-            1453.1914,
-            195.2028
+            1656,
+            428,
+            1490,
+            209
           ],
           "source_ink_box": [
             1655.66,
@@ -5819,8 +5850,8 @@
             1404.34,
             153.867
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             6
           ],
@@ -5840,7 +5871,8 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Remove transparent right/bottom icon padding while preserving original visible artwork positions. Native and replacement icons share 209-unit aspect-preserving bounds.",
+        "Captions use one fixed semibold type size and vertical centering for one or two lines."
       ],
       "slot_parts": [],
       "model": "levels",
@@ -5851,18 +5883,19 @@
       ],
       "neutral_parts": [],
       "shared_sources": [
-        "templates/studio/shared/levels.tex"
+        "templates/studio/shared/levels.tex",
+        "templates/studio/components/level-options.tex"
       ]
     },
     {
       "id": "title-two-column-list",
-      "title": "Title Two Column List",
+      "title": "Two-column bullet list",
       "category": "Lists",
       "references": [
         "figma-0183"
       ],
       "source": "templates/studio/title-two-column-list.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Verified original figma-0183, BTC Prague 106. Native light paper, automatic bullets and per-item hanging indent; fixed source typography. Graphical review pending.",
       "number": 38,
       "canvas": [
         3556.0,
@@ -5873,12 +5906,12 @@
         {
           "name": "title",
           "type": "text",
-          "default": "Title",
+          "default": "Topics",
           "box": [
-            1473.0215666666668,
+            327.562,
             207.047,
-            610.8368666666667,
-            152.57073333333332
+            2901.756,
+            152.571
           ],
           "source_ink_box": [
             1510.93,
@@ -5901,7 +5934,7 @@
         {
           "name": "text-2",
           "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
+          "default": "\\item First topic\\item Second topic\\item Third topic",
           "box": [
             327.562,
             589.852,
@@ -5915,7 +5948,7 @@
             1021.637
           ],
           "font_size": 75.16,
-          "leading": 87.186,
+          "leading": 95.25,
           "source_node": [
             2
           ],
@@ -5929,7 +5962,7 @@
         {
           "name": "text-3",
           "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
+          "default": "\\item Fourth topic\\item Fifth topic\\item Sixth topic",
           "box": [
             1999.559,
             589.852,
@@ -5943,7 +5976,7 @@
             1021.637
           ],
           "font_size": 75.16,
-          "leading": 87.186,
+          "leading": 95.25,
           "source_node": [
             3
           ],
@@ -5968,17 +6001,23 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/two-column-list.tex"
+      ],
+      "layout_notes": [
+        "Use left-items and right-items with standard \\item commands. Wrapped and explicitly broken lines align with the item text, leaving 68 source units for bullet and gap. Both columns support eleven lines at fixed 75.16/95.25 typography. The one-line heading stays at the original centre, with a wider editable text area."
+      ]
     },
     {
       "id": "partner-rail",
-      "title": "Organization rail",
+      "title": "Partners and sponsors",
       "category": "Lists",
       "references": [
         "figma-0996"
       ],
       "source": "templates/studio/partner-rail.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Preconfigured five-sponsor composition retained from figma-0996. Contacts are semibold at a consistent size; logos retain source-specific visible dimensions rather than stretching every logo to one maximum. Explicit overrides remain available.",
       "number": 39,
       "canvas": [
         3556.0,
@@ -5987,530 +6026,14 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            1948,
-            242,
-            294,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=294\\studiounit]{images/studio/neutral/partner-rail-graphic-1.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            2300,
-            389,
-            132,
-            119
-          ],
-          "default": "\\studiopaletteimage[width=132\\studiounit]{images/studio/neutral/partner-rail-graphic-2.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            2300,
-            270,
-            123,
-            124
-          ],
-          "default": "\\studiopaletteimage[width=123\\studiounit]{images/studio/neutral/partner-rail-graphic-3.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            1948,
-            1510,
-            293,
-            293
-          ],
-          "default": "\\studiopaletteimage[width=293\\studiounit]{images/studio/neutral/partner-rail-graphic-4.pdf}",
-          "slot": {
-            "number": 14,
-            "key": "graphic/14",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-5",
-          "type": "graphic",
-          "box": [
-            2300,
-            1653,
-            133,
-            119
-          ],
-          "default": "\\studiopaletteimage[width=133\\studiounit]{images/studio/neutral/partner-rail-graphic-5.pdf}",
-          "slot": {
-            "number": 16,
-            "key": "graphic/16",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-6",
-          "type": "graphic",
-          "box": [
-            2300,
-            1534,
-            124,
-            124
-          ],
-          "default": "\\studiopaletteimage[width=124\\studiounit]{images/studio/neutral/partner-rail-graphic-6.pdf}",
-          "slot": {
-            "number": 15,
-            "key": "graphic/15",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-7",
-          "type": "graphic",
-          "box": [
-            0,
-            0,
-            341,
-            100
-          ],
-          "default": "\\studiopaletteimage[width=341\\studiounit]{images/studio/neutral/partner-rail-graphic-7.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-8",
-          "type": "graphic",
-          "box": [
-            2301,
-            706,
-            132,
-            120
-          ],
-          "default": "\\studiopaletteimage[width=132\\studiounit]{images/studio/neutral/partner-rail-graphic-8.pdf}",
-          "slot": {
-            "number": 7,
-            "key": "graphic/7",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-9",
-          "type": "graphic",
-          "box": [
-            2301,
-            588,
-            123,
-            123
-          ],
-          "default": "\\studiopaletteimage[width=123\\studiounit]{images/studio/neutral/partner-rail-graphic-9.pdf}",
-          "slot": {
-            "number": 6,
-            "key": "graphic/6",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-10",
-          "type": "graphic",
-          "box": [
-            1948,
-            560,
-            294,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=294\\studiounit]{images/studio/neutral/partner-rail-graphic-10.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-11",
-          "type": "graphic",
-          "box": [
-            2301,
-            1023,
-            132,
-            120
-          ],
-          "default": "\\studiopaletteimage[width=132\\studiounit]{images/studio/neutral/partner-rail-graphic-11.pdf}",
-          "slot": {
-            "number": 10,
-            "key": "graphic/10",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-12",
-          "type": "graphic",
-          "box": [
-            2301,
-            905,
-            123,
-            123
-          ],
-          "default": "\\studiopaletteimage[width=123\\studiounit]{images/studio/neutral/partner-rail-graphic-12.pdf}",
-          "slot": {
-            "number": 9,
-            "key": "graphic/9",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-13",
-          "type": "graphic",
-          "box": [
-            1948,
-            876,
-            295,
-            295
-          ],
-          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/neutral/partner-rail-graphic-13.pdf}",
-          "slot": {
-            "number": 8,
-            "key": "graphic/8",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-14",
-          "type": "graphic",
-          "box": [
-            2301,
-            1340,
-            132,
-            120
-          ],
-          "default": "\\studiopaletteimage[width=132\\studiounit]{images/studio/neutral/partner-rail-graphic-14.pdf}",
-          "slot": {
-            "number": 13,
-            "key": "graphic/13",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-15",
-          "type": "graphic",
-          "box": [
-            2301,
-            1222,
-            123,
-            123
-          ],
-          "default": "\\studiopaletteimage[width=123\\studiounit]{images/studio/neutral/partner-rail-graphic-15.pdf}",
-          "slot": {
-            "number": 12,
-            "key": "graphic/12",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-16",
-          "type": "graphic",
-          "box": [
-            1948,
-            1194,
-            294,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=294\\studiounit]{images/studio/neutral/partner-rail-graphic-16.pdf}",
-          "slot": {
-            "number": 11,
-            "key": "graphic/11",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "text-1",
-          "type": "text",
-          "default": "Label 1",
-          "box": [
-            2403.559,
-            280.977,
-            251.5496,
-            53.6972
-          ],
-          "source_ink_box": [
-            2403.559,
-            280.977,
-            224.91,
-            31.156
-          ],
-          "font_size": 40.984,
-          "leading": 47.541,
-          "source_node": [
-            6
-          ],
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Label 2",
-          "box": [
-            2403.07,
-            399.621,
-            290.19000000000005,
-            58.75800000000001
-          ],
-          "source_ink_box": [
-            2403.07,
-            399.621,
-            263.059,
-            35.801
-          ],
-          "font_size": 41.74,
-          "leading": 48.418,
-          "source_node": [
-            7
-          ],
-          "slot": {
-            "number": 2,
-            "key": "text/2"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "Label 10",
-          "box": [
-            2401.629,
-            1544.301,
-            298.3299999999999,
-            60.74699999999997
-          ],
-          "source_ink_box": [
-            2401.629,
-            1544.301,
-            272.07,
-            38.527
-          ],
-          "font_size": 40.4,
-          "leading": 46.864,
-          "source_node": [
-            10
-          ],
-          "slot": {
-            "number": 10,
-            "key": "text/10"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Label 11",
-          "box": [
-            2403.039,
-            1667.449,
-            331.3643333333334,
-            61.06266666666668
-          ],
-          "source_ink_box": [
-            2403.039,
-            1667.449,
-            304.723,
-            38.52
-          ],
-          "font_size": 40.987,
-          "leading": 47.545,
-          "source_node": [
-            11
-          ],
-          "slot": {
-            "number": 11,
-            "key": "text/11"
-          }
-        },
-        {
-          "name": "text-5",
-          "type": "text",
-          "default": "Label 3",
-          "box": [
-            2404.371,
-            598.703,
-            314.44626666666665,
-            60.30453333333334
-          ],
-          "source_ink_box": [
-            2404.371,
-            598.703,
-            288.188,
-            38.086
-          ],
-          "font_size": 40.397,
-          "leading": 46.861,
-          "source_node": [
-            17
-          ],
-          "slot": {
-            "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "text-6",
-          "type": "text",
-          "default": "Label 4",
-          "box": [
-            2404.07,
-            717.434,
-            307.9182666666667,
-            60.30453333333334
-          ],
-          "source_ink_box": [
-            2404.07,
-            717.434,
-            281.66,
-            38.086
-          ],
-          "font_size": 40.397,
-          "leading": 46.861,
-          "source_node": [
-            19
-          ],
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "text-7",
-          "type": "text",
-          "default": "Label 5",
-          "box": [
-            2404.559,
-            915.262,
-            237.65160000000006,
-            53.72120000000004
-          ],
-          "source_ink_box": [
-            2404.559,
-            915.262,
-            211.012,
-            31.18
-          ],
-          "font_size": 40.984,
-          "leading": 47.541,
-          "source_node": [
-            40
-          ],
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "text-8",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            2404.07,
-            1033.988,
-            189.75333333333336,
-            61.56266666666669
-          ],
-          "source_ink_box": [
-            2404.07,
-            1033.988,
-            159.238,
-            35.742
-          ],
-          "font_size": 46.947,
-          "leading": 54.458,
-          "source_node": [
-            41
-          ],
-          "slot": {
-            "number": 7,
-            "key": "text/7"
-          }
-        },
-        {
-          "name": "text-9",
-          "type": "text",
-          "default": "Label 8",
-          "box": [
-            2403.93,
-            1232.281,
-            226.01233333333334,
-            53.70266666666667
-          ],
-          "source_ink_box": [
-            2403.93,
-            1232.281,
-            199.371,
-            31.16
-          ],
-          "font_size": 40.987,
-          "leading": 47.545,
-          "source_node": [
-            47
-          ],
-          "slot": {
-            "number": 8,
-            "key": "text/8"
-          }
-        },
-        {
-          "name": "text-10",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            2404.07,
-            1351.43,
-            205.75333333333336,
-            63.4686666666667
-          ],
-          "source_ink_box": [
-            2404.07,
-            1351.43,
-            175.238,
-            37.648
-          ],
-          "font_size": 46.947,
-          "leading": 54.458,
-          "source_node": [
-            48
-          ],
-          "slot": {
-            "number": 9,
-            "key": "text/9"
-          }
-        },
-        {
           "name": "title",
           "type": "text",
-          "default": "Slide title",
+          "default": "Partners \\& Sponsors",
           "box": [
             253.441,
             956.984,
-            981.9025333333333,
-            169.43306666666663
+            1430,
+            300
           ],
           "source_ink_box": [
             253.441,
@@ -6526,10 +6049,620 @@
           "slot": {
             "number": 6,
             "key": "text/6"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "box": [
+            1948,
+            242,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[width=175.0\\studiounit]{images/studio/parts/partner-logo-one.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "logo",
+            "content": [
+              123,
+              123,
+              206,
+              206
+            ]
           }
+        },
+        {
+          "name": "contact-website-one",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-website.pdf}",
+          "box": [
+            2300,
+            257.977,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "website symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "contact-social-one",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-social.pdf}",
+          "box": [
+            2300,
+            376.621,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "social symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "text-1",
+          "type": "text",
+          "default": "bitbox.swiss",
+          "box": [
+            2403.559,
+            280.977,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2403.559,
+            280.977,
+            224.91,
+            31.156
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            6
+          ],
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-2",
+          "type": "text",
+          "default": "@BitBoxSwiss",
+          "box": [
+            2403.07,
+            399.621,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2403.07,
+            399.621,
+            263.059,
+            35.801
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            7
+          ],
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "graphic-10",
+          "type": "graphic",
+          "box": [
+            1948,
+            560,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[width=210.207\\studiounit]{images/studio/parts/partner-logo-two.pdf}",
+          "slot": {
+            "number": 4,
+            "key": "graphic/4",
+            "role": "logo",
+            "content": [
+              123,
+              123,
+              206,
+              206
+            ]
+          }
+        },
+        {
+          "name": "contact-website-two",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-website.pdf}",
+          "box": [
+            2300,
+            575.703,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 5,
+            "key": "graphic/5",
+            "role": "website symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "contact-social-two",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-social.pdf}",
+          "box": [
+            2300,
+            694.434,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 6,
+            "key": "graphic/6",
+            "role": "social symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "text-5",
+          "type": "text",
+          "default": "planb.lugano.ch",
+          "box": [
+            2404.371,
+            598.703,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2404.371,
+            598.703,
+            288.188,
+            38.086
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            17
+          ],
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-6",
+          "type": "text",
+          "default": "@LuganoPlanB",
+          "box": [
+            2404.07,
+            717.434,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2404.07,
+            717.434,
+            281.66,
+            38.086
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            19
+          ],
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "graphic-13",
+          "type": "graphic",
+          "box": [
+            1948,
+            876,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[width=141.938\\studiounit]{images/studio/parts/partner-logo-three.pdf}",
+          "slot": {
+            "number": 7,
+            "key": "graphic/7",
+            "role": "logo",
+            "content": [
+              123,
+              123,
+              206,
+              206
+            ]
+          }
+        },
+        {
+          "name": "contact-website-three",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-website.pdf}",
+          "box": [
+            2300,
+            892.262,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 8,
+            "key": "graphic/8",
+            "role": "website symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "contact-social-three",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-social.pdf}",
+          "box": [
+            2300,
+            1010.988,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 9,
+            "key": "graphic/9",
+            "role": "social symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "text-7",
+          "type": "text",
+          "default": "bitrefill.com",
+          "box": [
+            2404.559,
+            915.262,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2404.559,
+            915.262,
+            211.012,
+            31.18
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            40
+          ],
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-8",
+          "type": "text",
+          "default": "@bitrefill",
+          "box": [
+            2404.07,
+            1033.988,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2404.07,
+            1033.988,
+            159.238,
+            35.742
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            41
+          ],
+          "slot": {
+            "number": 7,
+            "key": "text/7"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "graphic-16",
+          "type": "graphic",
+          "box": [
+            1948,
+            1194,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[width=216.141\\studiounit]{images/studio/parts/partner-logo-four.pdf}",
+          "slot": {
+            "number": 10,
+            "key": "graphic/10",
+            "role": "logo",
+            "content": [
+              123,
+              123,
+              206,
+              206
+            ]
+          }
+        },
+        {
+          "name": "contact-website-four",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-website.pdf}",
+          "box": [
+            2300,
+            1209.281,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 11,
+            "key": "graphic/11",
+            "role": "website symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "contact-social-four",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-social.pdf}",
+          "box": [
+            2300,
+            1328.43,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 12,
+            "key": "graphic/12",
+            "role": "social symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "text-9",
+          "type": "text",
+          "default": "zebedee.io",
+          "box": [
+            2403.93,
+            1232.281,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2403.93,
+            1232.281,
+            199.371,
+            31.16
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            47
+          ],
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-10",
+          "type": "text",
+          "default": "@zbdapp",
+          "box": [
+            2404.07,
+            1351.43,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2404.07,
+            1351.43,
+            175.238,
+            37.648
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            48
+          ],
+          "slot": {
+            "number": 9,
+            "key": "text/9"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "graphic-4",
+          "type": "graphic",
+          "box": [
+            1948,
+            1510,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[width=189.687\\studiounit]{images/studio/parts/partner-logo-five.pdf}",
+          "slot": {
+            "number": 13,
+            "key": "graphic/13",
+            "role": "logo",
+            "content": [
+              123,
+              123,
+              206,
+              206
+            ]
+          }
+        },
+        {
+          "name": "contact-website-five",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-website.pdf}",
+          "box": [
+            2300,
+            1521.301,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 14,
+            "key": "graphic/14",
+            "role": "website symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "contact-social-five",
+          "type": "graphic",
+          "default": "\\includegraphics[width=76\\studiounit,height=76\\studiounit,keepaspectratio]{images/studio/parts/partner-social.pdf}",
+          "box": [
+            2300,
+            1644.449,
+            76,
+            76
+          ],
+          "slot": {
+            "number": 15,
+            "key": "graphic/15",
+            "role": "social symbol",
+            "content": [
+              38,
+              38,
+              76,
+              76
+            ]
+          }
+        },
+        {
+          "name": "text-3",
+          "type": "text",
+          "default": "fulgur.ventures",
+          "box": [
+            2401.629,
+            1544.301,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2401.629,
+            1544.301,
+            272.07,
+            38.527
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            10
+          ],
+          "slot": {
+            "number": 10,
+            "key": "text/10"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-4",
+          "type": "text",
+          "default": "@fulgurventures",
+          "box": [
+            2403.039,
+            1667.449,
+            900,
+            108
+          ],
+          "source_ink_box": [
+            2403.039,
+            1667.449,
+            304.723,
+            38.52
+          ],
+          "font_size": 42,
+          "leading": 50,
+          "source_node": [
+            11
+          ],
+          "slot": {
+            "number": 11,
+            "key": "text/11"
+          },
+          "font_weight": "semibold"
         }
       ],
-      "parts": [],
+      "parts": [
+        "partner-panel",
+        "partner-website",
+        "partner-social",
+        "partner-logo-one",
+        "partner-logo-two",
+        "partner-logo-three",
+        "partner-logo-four",
+        "partner-logo-five"
+      ],
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English."
@@ -6541,42 +6674,9 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": [
-        "images/studio/neutral/partner-rail-graphic-1.pdf",
-        "images/studio/neutral/partner-rail-graphic-2.pdf",
-        "images/studio/neutral/partner-rail-graphic-3.pdf",
-        "images/studio/neutral/partner-rail-graphic-4.pdf",
-        "images/studio/neutral/partner-rail-graphic-5.pdf",
-        "images/studio/neutral/partner-rail-graphic-6.pdf",
-        "images/studio/neutral/partner-rail-graphic-7.pdf",
-        "images/studio/neutral/partner-rail-graphic-8.pdf",
-        "images/studio/neutral/partner-rail-graphic-9.pdf",
-        "images/studio/neutral/partner-rail-graphic-10.pdf",
-        "images/studio/neutral/partner-rail-graphic-11.pdf",
-        "images/studio/neutral/partner-rail-graphic-12.pdf",
-        "images/studio/neutral/partner-rail-graphic-13.pdf",
-        "images/studio/neutral/partner-rail-graphic-14.pdf",
-        "images/studio/neutral/partner-rail-graphic-15.pdf",
-        "images/studio/neutral/partner-rail-graphic-16.pdf"
-      ],
-      "original_parts": [
-        "figma-0996-part-01",
-        "figma-0996-part-02",
-        "figma-0996-part-03",
-        "figma-0996-part-04",
-        "figma-0996-part-05",
-        "figma-0996-part-06",
-        "figma-0996-part-07",
-        "figma-0996-part-08",
-        "figma-0996-part-09",
-        "figma-0996-part-10",
-        "figma-0996-part-11",
-        "figma-0996-part-12",
-        "figma-0996-part-13",
-        "figma-0996-part-14",
-        "figma-0996-part-15",
-        "figma-0996-part-16"
-      ]
+      "neutral_parts": [],
+      "original_parts": [],
+      "content_mode": "sponsor-preset"
     },
     {
       "id": "icon-rail",
@@ -6766,14 +6866,20 @@
           "box": [
             1336,
             1331,
-            257,
-            257
+            209,
+            209
           ],
-          "default": "\\studiopaletteimage[width=257\\studiounit]{images/studio/collection/figma-1023-part-01.pdf}",
+          "default": "\\studiopaletteimage[trim={0 48 48 0},clip,width=209\\studiounit,height=209\\studiounit,keepaspectratio]{images/studio/collection/figma-1023-part-01.pdf}",
           "slot": {
             "number": 3,
             "key": "graphic/3",
-            "role": "whole graphic"
+            "role": "icon",
+            "content": [
+              104.5,
+              104.5,
+              209,
+              209
+            ]
           }
         },
         {
@@ -6782,14 +6888,20 @@
           "box": [
             1336,
             863,
-            257,
-            257
+            209,
+            209
           ],
-          "default": "\\studiopaletteimage[width=257\\studiounit]{images/studio/collection/figma-1023-part-02.pdf}",
+          "default": "\\studiopaletteimage[trim={0 48 48 0},clip,width=209\\studiounit,height=209\\studiounit,keepaspectratio]{images/studio/collection/figma-1023-part-02.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
-            "role": "whole graphic"
+            "role": "icon",
+            "content": [
+              104.5,
+              104.5,
+              209,
+              209
+            ]
           }
         },
         {
@@ -6798,14 +6910,20 @@
           "box": [
             1336,
             428,
-            257,
-            257
+            209,
+            209
           ],
-          "default": "\\studiopaletteimage[width=257\\studiounit]{images/studio/collection/figma-1023-part-03.pdf}",
+          "default": "\\studiopaletteimage[trim={0 48 48 0},clip,width=209\\studiounit,height=209\\studiounit,keepaspectratio]{images/studio/collection/figma-1023-part-03.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
+            "role": "icon",
+            "content": [
+              104.5,
+              104.5,
+              209,
+              209
+            ]
           }
         },
         {
@@ -6841,10 +6959,10 @@
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            1659.141,
-            1349.699,
-            1493.6239999999998,
-            207.31099999999992
+            1656,
+            1331,
+            1490,
+            209
           ],
           "source_ink_box": [
             1659.141,
@@ -6869,10 +6987,10 @@
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            1657.66,
-            881.695,
-            1486.8124,
-            207.31279999999998
+            1656,
+            863,
+            1490,
+            209
           ],
           "source_ink_box": [
             1657.66,
@@ -6880,8 +6998,8 @@
             1437.961,
             165.977
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             4
           ],
@@ -6897,10 +7015,10 @@
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            1655.66,
-            445.953,
-            1453.1914,
-            195.2028
+            1656,
+            428,
+            1490,
+            209
           ],
           "source_ink_box": [
             1655.66,
@@ -6908,8 +7026,8 @@
             1404.34,
             153.867
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             6
           ],
@@ -6928,7 +7046,9 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Remove transparent right/bottom icon padding while preserving original visible artwork positions. Native and replacement icons share 209-unit aspect-preserving bounds.",
+        "Captions use one fixed semibold type size and vertical centering for one or two lines."
       ],
       "slot_parts": [],
       "model": "levels",
@@ -6939,7 +7059,8 @@
       ],
       "neutral_parts": [],
       "shared_sources": [
-        "templates/studio/shared/levels.tex"
+        "templates/studio/shared/levels.tex",
+        "templates/studio/components/level-options.tex"
       ]
     },
     {
@@ -16976,1230 +17097,442 @@
     },
     {
       "id": "partner-media-grid",
-      "title": "Media grid",
-      "category": "Images",
+      "title": "Partners, sponsors and media",
+      "category": "Lists",
       "references": [
         "figma-0930"
       ],
       "source": "templates/studio/partner-media-grid.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Preconfigured ten-sponsor and media composition, shared with the institutional lesson. Contacts remain editable; retained sponsor/media artwork is fixed by default. figma-0930 is the companion original.",
       "number": 93,
       "canvas": [
-        3556.0,
-        2000.0
+        1920,
+        1080
       ],
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            2378,
-            383,
-            915,
-            667
-          ],
-          "default": "\\studiopaletteimage[width=915\\studiounit]{images/studio/neutral/partner-media-grid-graphic-1.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            2378,
-            1420,
-            915,
-            199
-          ],
-          "default": "\\studiopaletteimage[width=915\\studiounit]{images/studio/neutral/partner-media-grid-graphic-2.pdf}",
-          "slot": {
-            "number": 28,
-            "key": "graphic/28",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            2384,
-            1166,
-            550,
-            219
-          ],
-          "default": "\\studiopaletteimage[width=550\\studiounit]{images/studio/neutral/partner-media-grid-graphic-3.pdf}",
-          "slot": {
-            "number": 20,
-            "key": "graphic/20",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            3076,
-            1169,
-            210,
-            218
-          ],
-          "default": "\\studiopaletteimage[width=210\\studiounit]{images/studio/neutral/partner-media-grid-graphic-4.pdf}",
-          "slot": {
-            "number": 21,
-            "key": "graphic/21",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-5",
-          "type": "graphic",
-          "box": [
-            2386,
-            1664,
-            899,
-            205
-          ],
-          "default": "\\studiopaletteimage[width=899\\studiounit]{images/studio/neutral/partner-media-grid-graphic-5.pdf}",
-          "slot": {
-            "number": 33,
-            "key": "graphic/33",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-6",
-          "type": "graphic",
-          "box": [
-            183,
-            487,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-6.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-7",
-          "type": "graphic",
-          "box": [
-            498,
-            511,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-7.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-8",
-          "type": "graphic",
-          "box": [
-            498,
-            630,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-8.pdf}",
-          "slot": {
-            "number": 6,
-            "key": "graphic/6",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-9",
-          "type": "graphic",
-          "box": [
-            1165,
-            487,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-9.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-10",
-          "type": "graphic",
-          "box": [
-            1479,
-            511,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-10.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-11",
-          "type": "graphic",
-          "box": [
-            1479,
-            630,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-11.pdf}",
-          "slot": {
-            "number": 7,
-            "key": "graphic/7",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-12",
-          "type": "graphic",
-          "box": [
-            183,
-            765,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-12.pdf}",
-          "slot": {
-            "number": 8,
-            "key": "graphic/8",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-13",
-          "type": "graphic",
-          "box": [
-            498,
-            789,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-13.pdf}",
-          "slot": {
-            "number": 9,
-            "key": "graphic/9",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-14",
-          "type": "graphic",
-          "box": [
-            498,
-            908,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-14.pdf}",
-          "slot": {
-            "number": 12,
-            "key": "graphic/12",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-15",
-          "type": "graphic",
-          "box": [
-            1165,
-            765,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-15.pdf}",
-          "slot": {
-            "number": 10,
-            "key": "graphic/10",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-16",
-          "type": "graphic",
-          "box": [
-            1479,
-            789,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-16.pdf}",
-          "slot": {
-            "number": 11,
-            "key": "graphic/11",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-17",
-          "type": "graphic",
-          "box": [
-            1479,
-            908,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-17.pdf}",
-          "slot": {
-            "number": 13,
-            "key": "graphic/13",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-18",
-          "type": "graphic",
-          "box": [
-            183,
-            1042,
-            289,
-            290
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-18.pdf}",
-          "slot": {
-            "number": 14,
-            "key": "graphic/14",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-19",
-          "type": "graphic",
-          "box": [
-            498,
-            1066,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-19.pdf}",
-          "slot": {
-            "number": 15,
-            "key": "graphic/15",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-20",
-          "type": "graphic",
-          "box": [
-            498,
-            1186,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-20.pdf}",
-          "slot": {
-            "number": 18,
-            "key": "graphic/18",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-21",
-          "type": "graphic",
-          "box": [
-            1165,
-            1042,
-            289,
-            290
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-21.pdf}",
-          "slot": {
-            "number": 16,
-            "key": "graphic/16",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-22",
-          "type": "graphic",
-          "box": [
-            1479,
-            1066,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-22.pdf}",
-          "slot": {
-            "number": 17,
-            "key": "graphic/17",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-23",
-          "type": "graphic",
-          "box": [
-            1479,
-            1186,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-23.pdf}",
-          "slot": {
-            "number": 19,
-            "key": "graphic/19",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-24",
-          "type": "graphic",
-          "box": [
-            183,
-            1320,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-24.pdf}",
-          "slot": {
-            "number": 22,
-            "key": "graphic/22",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-25",
-          "type": "graphic",
-          "box": [
-            498,
-            1344,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-25.pdf}",
-          "slot": {
-            "number": 24,
-            "key": "graphic/24",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-26",
-          "type": "graphic",
-          "box": [
-            498,
-            1463,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-26.pdf}",
-          "slot": {
-            "number": 26,
-            "key": "graphic/26",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-27",
-          "type": "graphic",
-          "box": [
-            1165,
-            1320,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-27.pdf}",
-          "slot": {
-            "number": 23,
-            "key": "graphic/23",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-28",
-          "type": "graphic",
-          "box": [
-            1479,
-            1344,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-28.pdf}",
-          "slot": {
-            "number": 25,
-            "key": "graphic/25",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-29",
-          "type": "graphic",
-          "box": [
-            1479,
-            1463,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-29.pdf}",
-          "slot": {
-            "number": 27,
-            "key": "graphic/27",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-30",
-          "type": "graphic",
-          "box": [
-            183,
-            1598,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-30.pdf}",
-          "slot": {
-            "number": 29,
-            "key": "graphic/29",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-31",
-          "type": "graphic",
-          "box": [
-            498,
-            1622,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-31.pdf}",
-          "slot": {
-            "number": 30,
-            "key": "graphic/30",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-32",
-          "type": "graphic",
-          "box": [
-            498,
-            1741,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-32.pdf}",
-          "slot": {
-            "number": 34,
-            "key": "graphic/34",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-33",
-          "type": "graphic",
-          "box": [
-            1165,
-            1598,
-            289,
-            289
-          ],
-          "default": "\\studiopaletteimage[width=289\\studiounit]{images/studio/neutral/partner-media-grid-graphic-33.pdf}",
-          "slot": {
-            "number": 31,
-            "key": "graphic/31",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-34",
-          "type": "graphic",
-          "box": [
-            1479,
-            1622,
-            122,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=122\\studiounit]{images/studio/neutral/partner-media-grid-graphic-34.pdf}",
-          "slot": {
-            "number": 32,
-            "key": "graphic/32",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-35",
-          "type": "graphic",
-          "box": [
-            1479,
-            1741,
-            113,
-            122
-          ],
-          "default": "\\studiopaletteimage[width=113\\studiounit]{images/studio/neutral/partner-media-grid-graphic-35.pdf}",
-          "slot": {
-            "number": 35,
-            "key": "graphic/35",
-            "role": "whole graphic"
-          }
-        },
-        {
           "name": "title",
           "type": "text",
-          "default": "Slide title",
           "box": [
-            2392.891,
-            959.188,
-            917.7239333333334,
-            154.73786666666666
+            99.35,
+            125.23,
+            1100.0,
+            105.0
           ],
-          "source_ink_box": [
-            2392.891,
-            959.188,
-            842.07,
-            90.723
-          ],
-          "font_size": 116.391,
-          "leading": 135.013,
-          "source_node": [
-            0,
-            4,
-            0
-          ],
-          "slot": {
-            "number": 10,
-            "key": "text/10"
-          }
-        },
-        {
-          "name": "item-2-1",
-          "type": "text",
-          "default": "19",
-          "box": [
-            2732.27,
-            1637.94,
-            54.98000000000002,
-            45.5
-          ],
-          "source_ink_box": [
-            2732.27,
-            1637.94,
-            26.980000000000018,
-            26.25
-          ],
-          "font_size": 35.0,
-          "leading": 40.6,
-          "source_node": [
-            0,
-            18,
-            0
-          ],
-          "slot": {
-            "number": 19,
-            "key": "text/19"
-          }
-        },
-        {
-          "name": "item-2-2",
-          "type": "text",
-          "default": "Label 24",
-          "box": [
-            2573.86,
-            1788.25,
-            548.0613333333331,
-            56.584666666666536
-          ],
-          "source_ink_box": [
-            2573.86,
-            1788.25,
-            515.56,
-            34.24000000000001
-          ],
-          "font_size": 40.627,
-          "leading": 47.127,
-          "source_node": [
-            0,
-            18,
-            0
-          ],
-          "slot": {
-            "number": 24,
-            "key": "text/24"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "Label 1",
-          "box": [
-            191.441,
-            231.914,
-            1389.8818666666666,
-            170.40273333333334
-          ],
-          "source_ink_box": [
-            191.441,
-            231.914,
-            1315.547,
-            107.504
-          ],
-          "font_size": 114.361,
-          "leading": 132.659,
-          "source_node": [
-            0,
-            20
-          ],
+          "default": "Partners, Sponsors \\& Media",
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_size": 64.792,
+          "leading": 77.75,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-4",
-          "type": "text",
-          "default": "Label 2",
+          "name": "graphic-one",
+          "type": "graphic",
           "box": [
-            597.535,
-            532.285,
-            314.1949333333333,
-            60.29686666666667
+            94.0,
+            247.0,
+            227.0,
+            751.0
           ],
-          "source_ink_box": [
-            597.535,
-            532.285,
-            287.941,
-            38.082
-          ],
-          "font_size": 40.391,
-          "leading": 46.853,
-          "source_node": [
-            0,
-            39
-          ],
+          "default": "\\includegraphics[width=227\\studiounit]{library/parts/bitpolito/partner-column-one.pdf}",
           "slot": {
             "number": 2,
-            "key": "text/2"
+            "key": "graphic/2"
           }
         },
         {
-          "name": "text-5",
-          "type": "text",
-          "default": "Label 4",
+          "name": "graphic-two",
+          "type": "graphic",
           "box": [
-            591.926,
-            651.57,
-            307.77166666666665,
-            60.298333333333304
+            624.0,
+            247.0,
+            217.0,
+            751.0
           ],
-          "source_ink_box": [
-            591.926,
-            651.57,
-            281.516,
-            38.082
-          ],
-          "font_size": 40.393,
-          "leading": 46.856,
-          "source_node": [
-            0,
-            41
-          ],
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "text-6",
-          "type": "text",
-          "default": "Label 3",
-          "box": [
-            1579.301,
-            531.863,
-            251.46326666666673,
-            53.69353333333338
-          ],
-          "source_ink_box": [
-            1579.301,
-            531.863,
-            224.828,
-            31.156
-          ],
-          "font_size": 40.977,
-          "leading": 47.534,
-          "source_node": [
-            0,
-            47
-          ],
+          "default": "\\includegraphics[width=217\\studiounit]{library/parts/bitpolito/partner-column-two.pdf}",
           "slot": {
             "number": 3,
-            "key": "text/3"
+            "key": "graphic/3"
           }
         },
         {
-          "name": "text-7",
-          "type": "text",
-          "default": "Label 5",
+          "name": "graphic-three",
+          "type": "graphic",
           "box": [
-            1573.531,
-            651.066,
-            290.0974,
-            58.75180000000002
+            1280.0,
+            200.0,
+            485.0,
+            804.0
           ],
-          "source_ink_box": [
-            1573.531,
-            651.066,
-            262.969,
-            35.797
+          "default": "\\includegraphics[width=485\\studiounit]{library/parts/bitpolito/media-logos.pdf}",
+          "slot": {
+            "number": 4,
+            "key": "graphic/4"
+          }
+        },
+        {
+          "name": "left-website-1",
+          "type": "text",
+          "box": [
+            321.42,
+            287.43,
+            275.0,
+            44.0
           ],
-          "font_size": 41.736,
-          "leading": 48.414,
-          "source_node": [
-            0,
-            49
-          ],
+          "default": "planb.lugano.ch",
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-8",
+          "name": "left-handle-1",
           "type": "text",
-          "default": "Label 6",
           "box": [
-            597.074,
-            809.645,
-            225.95126666666673,
-            53.68953333333338
+            318.56,
+            351.85,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            597.074,
-            809.645,
-            199.316,
-            31.152
-          ],
-          "font_size": 40.977,
-          "leading": 47.534,
-          "source_node": [
-            0,
-            55
-          ],
+          "default": "@LuganoPlanB",
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-9",
+          "name": "left-website-2",
           "type": "text",
-          "default": "Item",
           "box": [
-            591.926,
-            929.352,
-            205.72373333333334,
-            63.455466666666666
+            321.42,
+            437.43,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            591.926,
-            929.352,
-            175.211,
-            37.637
-          ],
-          "font_size": 46.943,
-          "leading": 54.453,
-          "source_node": [
-            0,
-            57
-          ],
-          "slot": {
-            "number": 8,
-            "key": "text/8"
-          }
-        },
-        {
-          "name": "text-10",
-          "type": "text",
-          "default": "Label 7",
-          "box": [
-            1578.172,
-            810.062,
-            387.75873333333334,
-            59.97346666666665
-          ],
-          "source_ink_box": [
-            1578.172,
-            810.062,
-            361.887,
-            38.082
-          ],
-          "font_size": 39.803,
-          "leading": 46.171,
-          "source_node": [
-            0,
-            61
-          ],
+          "default": "zebedee.io",
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-11",
+          "name": "left-handle-2",
           "type": "text",
-          "default": "Label 9",
           "box": [
-            1573.531,
-            928.848,
-            263.2507333333333,
-            61.611466666666665
+            318.56,
+            501.85,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            1573.531,
-            928.848,
-            232.738,
-            35.793
+          "default": "@zbdapp",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "left-website-3",
+          "type": "text",
+          "box": [
+            321.42,
+            587.4300000000001,
+            275.0,
+            44.0
           ],
-          "font_size": 46.943,
-          "leading": 54.453,
-          "source_node": [
-            0,
-            63
-          ],
+          "default": "fulgur.ventures",
           "slot": {
             "number": 9,
             "key": "text/9"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-12",
+          "name": "left-handle-3",
           "type": "text",
-          "default": "Label 11",
           "box": [
-            596.0,
-            1087.039,
-            309.49833333333333,
-            61.4696666666667
+            318.56,
+            651.85,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            596.0,
-            1087.039,
-            282.883,
-            38.949
+          "default": "@fulgurventures",
+          "slot": {
+            "number": 10,
+            "key": "text/10"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "left-website-4",
+          "type": "text",
+          "box": [
+            321.42,
+            737.4300000000001,
+            275.0,
+            44.0
           ],
-          "font_size": 40.947,
-          "leading": 47.498,
-          "source_node": [
-            0,
-            68
-          ],
+          "default": "braiins.com",
           "slot": {
             "number": 11,
             "key": "text/11"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-13",
+          "name": "left-handle-4",
           "type": "text",
-          "default": "Label 13",
           "box": [
-            592.195,
-            1206.328,
-            341.8856666666668,
-            61.74033333333344
+            318.56,
+            801.85,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            592.195,
-            1206.328,
-            314.941,
-            38.941
-          ],
-          "font_size": 41.453,
-          "leading": 48.086,
-          "source_node": [
-            0,
-            70
-          ],
-          "slot": {
-            "number": 13,
-            "key": "text/13"
-          }
-        },
-        {
-          "name": "text-14",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            1579.141,
-            1087.422,
-            180.23133333333348,
-            60.2716666666668
-          ],
-          "source_ink_box": [
-            1579.141,
-            1087.422,
-            153.98,
-            38.059
-          ],
-          "font_size": 40.387,
-          "leading": 46.849,
-          "source_node": [
-            0,
-            74
-          ],
+          "default": "@BraiinsMining",
           "slot": {
             "number": 12,
             "key": "text/12"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-15",
+          "name": "left-website-5",
           "type": "text",
-          "default": "Label 14",
           "box": [
-            1573.531,
-            1206.711,
-            231.7393333333333,
-            60.27166666666664
+            321.42,
+            887.4300000000001,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            1573.531,
-            1206.711,
-            205.488,
-            38.059
+          "default": "blockstream.com",
+          "slot": {
+            "number": 13,
+            "key": "text/13"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "left-handle-5",
+          "type": "text",
+          "box": [
+            318.56,
+            951.85,
+            275.0,
+            44.0
           ],
-          "font_size": 40.387,
-          "leading": 46.849,
-          "source_node": [
-            0,
-            76
-          ],
+          "default": "@Blockstream",
           "slot": {
             "number": 14,
             "key": "text/14"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-16",
+          "name": "right-website-1",
           "type": "text",
-          "default": "Label 15",
           "box": [
-            597.703,
-            1365.199,
-            228.43633333333318,
-            47.97466666666654
+            851.42,
+            287.43,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            597.703,
-            1365.199,
-            208.555,
-            31.152
-          ],
-          "font_size": 30.587,
-          "leading": 35.481,
-          "source_node": [
-            0,
-            81
-          ],
+          "default": "bitbox.swiss",
           "slot": {
             "number": 15,
             "key": "text/15"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-17",
+          "name": "right-handle-1",
           "type": "text",
-          "default": "Label 17",
           "box": [
-            591.926,
-            1484.488,
-            311.6189999999999,
-            60.71999999999997
+            848.56,
+            351.85,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            591.926,
-            1484.488,
-            285.359,
-            38.5
-          ],
-          "font_size": 40.4,
-          "leading": 46.864,
-          "source_node": [
-            0,
-            83
-          ],
-          "slot": {
-            "number": 17,
-            "key": "text/17"
-          }
-        },
-        {
-          "name": "text-18",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            1577.25,
-            1365.199,
-            130.6613333333335,
-            53.36466666666681
-          ],
-          "source_ink_box": [
-            1577.25,
-            1365.199,
-            104.41,
-            31.152
-          ],
-          "font_size": 40.387,
-          "leading": 46.849,
-          "source_node": [
-            0,
-            88
-          ],
+          "default": "@BitBoxSwiss",
           "slot": {
             "number": 16,
             "key": "text/16"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-19",
+          "name": "right-website-2",
           "type": "text",
-          "default": "18",
           "box": [
-            1573.531,
-            1484.91,
-            137.40633333333338,
-            61.1096666666667
+            851.42,
+            437.43,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            1573.531,
-            1484.91,
-            106.891,
-            35.289
+          "default": "stratumprotocol.org",
+          "slot": {
+            "number": 17,
+            "key": "text/17"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "right-handle-2",
+          "type": "text",
+          "box": [
+            848.56,
+            501.85,
+            275.0,
+            44.0
           ],
-          "font_size": 46.947,
-          "leading": 54.458,
-          "source_node": [
-            0,
-            90
-          ],
+          "default": "@StratumV2",
           "slot": {
             "number": 18,
             "key": "text/18"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-20",
+          "name": "right-website-3",
           "type": "text",
-          "default": "Label 20",
           "box": [
-            597.703,
-            1643.398,
-            340.1223333333333,
-            52.94266666666664
+            851.42,
+            587.4300000000001,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            597.703,
-            1643.398,
-            313.871,
-            30.73
+          "default": "relai.app",
+          "slot": {
+            "number": 19,
+            "key": "text/19"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "right-handle-3",
+          "type": "text",
+          "box": [
+            848.56,
+            651.85,
+            275.0,
+            44.0
           ],
-          "font_size": 40.387,
-          "leading": 46.849,
-          "source_node": [
-            0,
-            95
-          ],
+          "default": "@relai\\_app",
           "slot": {
             "number": 20,
             "key": "text/20"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-21",
+          "name": "right-website-4",
           "type": "text",
-          "default": "Label 22",
           "box": [
-            591.926,
-            1762.68,
-            290.8539999999999,
-            57.50899999999997
+            851.42,
+            737.4300000000001,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            591.926,
-            1762.68,
-            264.594,
-            35.289
-          ],
-          "font_size": 40.4,
-          "leading": 46.864,
-          "source_node": [
-            0,
-            97
-          ],
-          "slot": {
-            "number": 22,
-            "key": "text/22"
-          }
-        },
-        {
-          "name": "text-22",
-          "type": "text",
-          "default": "Label 21",
-          "box": [
-            1579.141,
-            1643.398,
-            287.5213333333333,
-            59.85366666666664
-          ],
-          "source_ink_box": [
-            1579.141,
-            1643.398,
-            261.27,
-            37.641
-          ],
-          "font_size": 40.387,
-          "leading": 46.849,
-          "source_node": [
-            0,
-            103
-          ],
+          "default": "vexl.it",
           "slot": {
             "number": 21,
             "key": "text/21"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         },
         {
-          "name": "text-23",
+          "name": "right-handle-4",
           "type": "text",
-          "default": "Label 23",
           "box": [
-            1573.531,
-            1762.68,
-            339.6213333333334,
-            60.183666666666674
+            848.56,
+            801.85,
+            275.0,
+            44.0
           ],
-          "source_ink_box": [
-            1573.531,
-            1762.68,
-            312.98,
-            37.641
+          "default": "@vexl",
+          "slot": {
+            "number": 22,
+            "key": "text/22"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "right-website-5",
+          "type": "text",
+          "box": [
+            851.42,
+            887.4300000000001,
+            275.0,
+            44.0
           ],
-          "font_size": 40.987,
-          "leading": 47.545,
-          "source_node": [
-            0,
-            105
-          ],
+          "default": "planb.network",
           "slot": {
             "number": 23,
             "key": "text/23"
-          }
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
+        },
+        {
+          "name": "right-handle-5",
+          "type": "text",
+          "box": [
+            848.56,
+            951.85,
+            275.0,
+            44.0
+          ],
+          "default": "@planb\\_network",
+          "slot": {
+            "number": 24,
+            "key": "text/24"
+          },
+          "font_size": 23.217,
+          "leading": 28.0,
+          "font_weight": "semibold"
         }
       ],
       "parts": [],
@@ -18214,80 +17547,17 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": [
-        "images/studio/neutral/partner-media-grid-graphic-1.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-2.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-3.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-4.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-5.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-6.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-7.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-8.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-9.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-10.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-11.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-12.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-13.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-14.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-15.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-16.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-17.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-18.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-19.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-20.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-21.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-22.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-23.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-24.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-25.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-26.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-27.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-28.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-29.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-30.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-31.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-32.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-33.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-34.pdf",
-        "images/studio/neutral/partner-media-grid-graphic-35.pdf"
+      "neutral_parts": [],
+      "original_parts": [],
+      "shared_sources": [
+        "library/layouts/bitpolito-partners.tex"
       ],
-      "original_parts": [
-        "figma-0930-part-01",
-        "figma-0930-part-02",
-        "figma-0930-part-03",
-        "figma-0930-part-04",
-        "figma-0930-part-05",
-        "figma-0930-part-06",
-        "figma-0930-part-07",
-        "figma-0930-part-08",
-        "figma-0930-part-09",
-        "figma-0930-part-10",
-        "figma-0930-part-11",
-        "figma-0930-part-12",
-        "figma-0930-part-13",
-        "figma-0930-part-14",
-        "figma-0930-part-15",
-        "figma-0930-part-16",
-        "figma-0930-part-17",
-        "figma-0930-part-18",
-        "figma-0930-part-19",
-        "figma-0930-part-20",
-        "figma-0930-part-21",
-        "figma-0930-part-22",
-        "figma-0930-part-23",
-        "figma-0930-part-24",
-        "figma-0930-part-25",
-        "figma-0930-part-26",
-        "figma-0930-part-27",
-        "figma-0930-part-28",
-        "figma-0930-part-29",
-        "figma-0930-part-30",
-        "figma-0930-part-31",
-        "figma-0930-part-32",
-        "figma-0930-part-33",
-        "figma-0930-part-34",
-        "figma-0930-part-35"
-      ]
+      "content_mode": "sponsor-preset",
+      "prepared_resources": {
+        "library/parts/bitpolito/partner-column-one.pdf": "7d1d0abbf16ec327fed81be8554d124cb9dec8349b8ae047f824cb6424b8ef8c",
+        "library/parts/bitpolito/partner-column-two.pdf": "1ca582c08ff4dd992b5c3539da2bffc723d29dbb36a58fca35fc15d452f991d2",
+        "library/parts/bitpolito/media-logos.pdf": "22cb3dfacb1b96541d2b9993f063232b4397440312abd9da7190ae0aec3f16cb"
+      }
     },
     {
       "id": "mission-badges",

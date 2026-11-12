@@ -1,0 +1,159 @@
+% Three levels: both palettes, longer captions, explicit breaks and editable icons.
+\ifdefined\pdfminorversion\pdfminorversion=7\fi
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage{bitpolitostudiolibrary}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{library/references.bib}
+\begin{document}
+\studiotemplate[
+  palette={light},
+  title={Privacy\\levels},
+  item-one={
+    text={Full-KYC: identity verification using submitted documents}
+  },
+  item-two={
+    text={Soft-KYC: limited personal information is requested}
+  },
+  item-three={
+    text={No-KYC: no personal information is requested}
+  }
+]{levels}
+\studiotemplate[
+  palette={blue},
+  title={Privacy\\levels},
+  item-one={
+    text={Full-KYC: identity verification using submitted documents}
+  },
+  item-two={
+    text={Soft-KYC: limited personal information is requested}
+  },
+  item-three={
+    text={No-KYC: no personal information is requested}
+  }
+]{levels}
+\studiotemplate[
+  palette={light},
+  title={Shared\\rules},
+  item-one={
+    text={Review the shared rules and compare the checks performed locally.}
+  },
+  item-two={
+    text={Record the assumptions used by each participant in the example.}
+  },
+  item-three={
+    text={Compare the available options.\\Explain the practical trade-offs.}
+  }
+]{levels}
+\studiotemplate[
+  palette={blue},
+  title={Shared\\rules},
+  item-one={
+    text={Review the shared rules and compare the checks performed locally.}
+  },
+  item-two={
+    text={Record the assumptions used by each participant in the example.}
+  },
+  item-three={
+    text={Compare the available options.\\Explain the practical trade-offs.}
+  }
+]{levels}
+\studiotemplate[
+  palette={light},
+  title={Icon\\choices},
+  item-one={
+    text={Check the documented rules.},
+    icon={shield}
+  },
+  item-two={
+    text={Study the example implementation.},
+    icon={code}
+  },
+  item-three={
+    text={Compare the available learning material.},
+    icon={book}
+  }
+]{levels}
+\studiotemplate[
+  palette={blue},
+  title={Icon\\choices},
+  item-one={
+    text={Check the documented rules.},
+    icon={shield}
+  },
+  item-two={
+    text={Study the example implementation.},
+    icon={code}
+  },
+  item-three={
+    text={Compare the available learning material.},
+    icon={book}
+  }
+]{levels}
+\studiotemplate[
+  palette={light},
+  title={Custom\\graphics},
+  item-one={
+    text={A tall graphic keeps its proportions.},
+    graphic={\rule{12\studiounit}{220\studiounit}}
+  },
+  item-two={
+    text={A wide graphic stays within the same bounds.},
+    graphic={\rule{600\studiounit}{25\studiounit}}
+  },
+  item-three={
+    text={An empty icon leaves the text in place.},
+    icon={}
+  }
+]{levels}
+\studiotemplate[
+  palette={light},
+  title={Your\\images},
+  item-one={
+    text={Your first image and description.},
+    image={assets/generated/book.pdf}
+  },
+  item-two={
+    text={Your second image and description.},
+    image={assets/generated/code.pdf}
+  },
+  item-three={
+    text={Your third image and description.},
+    image={assets/generated/shield.pdf}
+  }
+]{levels}
+\studiotemplate[
+  palette={blue},
+  title={Your\\images},
+  item-one={
+    text={Your first image and description.},
+    image={images/studio/icon-palettes/book.pdf}
+  },
+  item-two={
+    text={Your second image and description.},
+    image={images/studio/icon-palettes/code.pdf}
+  },
+  item-three={
+    text={Your third image and description.},
+    image={images/studio/icon-palettes/shield.pdf}
+  }
+]{levels}
+\studiotemplate[
+  palette={light},
+  title={},
+  item-one={
+    text={Keep this description beside its own icon.},
+    icon={shield}
+  },
+  item-two={
+    text={},
+    icon={book}
+  },
+  item-three={
+    text={A caption can remain without its icon.},
+    icon={}
+  }
+]{levels}
+\end{document}

@@ -1,10 +1,12 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
-\studiodeclarefield{title}{Title}
-\studiodeclarefield{text-2}{Supporting explanation.\\Add your own details.}
-\studiodeclarefield{text-3}{Supporting explanation.\\Add your own details.}
+% Title and two independently editable source-measured bullet columns.
+\studiodeclarefield{title}{Topics}
+\studiodeclarefield{text-2}{\item First topic\item Second topic\item Third topic}
+\studiodeclarefield{text-3}{\item Fourth topic\item Fifth topic\item Sixth topic}
+\input{templates/studio/components/two-column-list.tex}
 \studioapplyfields
-\studiomeasuredcanvas{3556}{2000}{title-two-column-list}{studio-background}{
-\studiomeasuredtext{title}{1473.02}{207.047}{610.837}{152.571}{116.641}{135.304}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
-\studiomeasuredtext{text-2}{327.562}{589.852}{1347.64}{1062.97}{75.16}{87.1856}{\color{studio-foreground}\bfseries\hangindent=1em}{\studiofield{text-2}}
-\studiomeasuredtext{text-3}{1999.56}{589.852}{1315.31}{1062.97}{75.16}{87.1856}{\color{studio-foreground}\bfseries\hangindent=1em}{\studiofield{text-3}}
+\definecolor{studiolistpaper}{rgb}{0.97648,0.97648,0.97648}
+\studiomeasuredcanvas{3556}{2000}{title-two-column-list}{studiolistpaper}{
+\studiomeasuredtext{title}{327.562}{207.047}{2901.756}{152.571}{116.641}{135.304}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
+\studiobulletcolumn{text-2}{327.562}{1347.643}{1062.975}
+\studiobulletcolumn{text-3}{1999.559}{1315.307}{1062.975}
 }

@@ -50,6 +50,93 @@ class StudioModelTests(unittest.TestCase):
         icons=next(m for m in models if m['id']=='icon-grid')
         self.assertEqual({v['id'] for v in icons['variants']},{'four','eight'})
 
+    def test_levels_icons_match_caption_order_and_visible_source_bounds(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        members=studio_models.membership(ROOT)
+        for name in ['privacy-levels','privacy-levels-blue']:
+            entry=entries[name];contract=members[name][2]
+            for number,word in enumerate(['one','two','three'],1):
+                graphic=next(f for f in entry['fields'] if f['type']=='graphic' and f['slot']['number']==number)
+                caption=next(f for f in entry['fields'] if f['name']==contract['fields']['item-'+word+'/text'])
+                self.assertEqual(graphic['box'][2:],[209,209])
+                self.assertEqual(graphic['slot']['content'],[104.5,104.5,209,209])
+                self.assertEqual(graphic['box'][1],caption['box'][1])
+                self.assertEqual(caption['box'][3],209)
+                self.assertIn('trim={0 48 48 0}',graphic['default'])
+                self.assertEqual(caption['font_weight'],'semibold')
+
+    def test_grouped_list_commands_keep_each_rows_content_together(self):
+        from studio_guides import command
+        from slide_guide import semantic_fields
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        members=studio_models.membership(ROOT)
+        levels=members['privacy-levels'][2]
+        self.assertEqual({f['name'] for f in semantic_fields(entries['privacy-levels'],levels) if f['type']=='graphic'},
+                         {'item-one/graphic','item-two/graphic','item-three/graphic'})
+        text=command('levels',{'item-one/text':'First','item-one/icon':'shield','item-two/text':'Second'})
+        self.assertIn('item-one={\n    text={First},\n    icon={shield}\n  }',text)
+        self.assertNotIn('item-one/text=',text)
+        self.assertNotIn('caption-one=',text)
+        rows=members['labelled-rows'][2]
+        self.assertEqual(set(rows['fields']),{'title'}|{'item-'+w+'/'+f for w in ['one','two','three'] for f in ['label','body']})
+        text=command('labelled-rows',{'item-one/label':'Name','item-one/body':'Details'})
+        self.assertIn('item-one={\n    label={Name},\n    body={Details}\n  }',text)
+
+    def test_two_column_lists_expose_semantic_items_and_migrate_historical_bullets(self):
+        from studio_examples import exact_command
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        contract=studio_models.membership(ROOT)['title-two-column-list'][2]
+        self.assertEqual(contract['fields'],{'title':'title','left-items':'text-2','right-items':'text-3'})
+        example=exact_command(ROOT,entries['title-two-column-list'],content='example')
+        self.assertIn('left-items={',example)
+        self.assertIn('right-items={',example)
+        self.assertIn(r'\item',example)
+        self.assertNotIn(r'\textbullet',example)
+        self.assertNotIn('label-two=',example)
+        self.assertNotIn('label-three=',example)
+        for name in ['text-2','text-3']:
+            field=next(f for f in entries['title-two-column-list']['fields'] if f['name']==name)
+            self.assertEqual(field['leading'],95.25)
+
+    def test_partner_contacts_follow_reading_order_and_logos_exclude_panels(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        entry=entries['partner-rail'];contract=studio_models.membership(ROOT)['partner-rail'][2]
+        self.assertEqual(len(contract['graphic_slots']),15)
+        for i,word in enumerate(['one','two','three','four','five']):
+            for offset,role in enumerate(['logo','website','social'],1):
+                self.assertEqual(contract['graphic_slots'][role+'-'+word],i*3+offset)
+            for role in ['website','social']:
+                self.assertIn(role+'-'+word,contract['fields'])
+            logo=next(f for f in entry['fields'] if f['type']=='graphic' and f['slot']['number']==i*3+1)
+            self.assertNotIn('frame',logo['slot'])
+            self.assertEqual(logo['slot']['content'],[123,123,206,206])
+        self.assertEqual(entry['parts'][:3],['partner-panel','partner-website','partner-social'])
+        source=(ROOT/entry['source']).read_text()
+        self.assertEqual(source.count(r'\studiomeasuredpart{partner-panel}'),5)
+        self.assertNotIn(r'\path[',source)
+
+    def test_sponsor_presets_keep_real_defaults_bold_contacts_and_short_commands(self):
+        from slide_guide import catalogue
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        for name in ['partner-rail','partner-media-grid']:
+            self.assertEqual(entries[name]['content_mode'],'sponsor-preset')
+            self.assertEqual(entries[name]['category'],'Lists')
+            texts=[f for f in entries[name]['fields'] if f['type']=='text']
+            self.assertTrue(all(f.get('font_weight')=='semibold' for f in texts))
+            self.assertTrue(any('bitbox.swiss' in f['default'] for f in texts))
+        contacts=[f for f in entries['partner-rail']['fields'] if f['name'].startswith('contact-')]
+        self.assertEqual(len(contacts),10)
+        self.assertTrue(all(f['box'][2:]==[76,76] for f in contacts))
+        rail=(ROOT/'templates/studio/partner-rail.tex').read_text()
+        self.assertIn('partner-logo-three.pdf',rail)
+        self.assertNotIn('assets/generated/bitcoin.pdf',rail)
+        media=(ROOT/'templates/studio/partner-media-grid.tex').read_text()
+        self.assertIn(r'\input{library/layouts/bitpolito-partners.tex}',media)
+        self.assertEqual(len(entries['partner-media-grid']['prepared_resources']),3)
+        choices={c['id']:c for row in catalogue(ROOT)['rows'] for c in row['choices']}
+        for name in ['partner-rail','partner-media-grid']:
+            self.assertEqual(choices[name]['command'],r'\studiotemplate{'+name+'}')
+
     def test_division_icons_follow_caption_order_and_have_independent_bounds(self):
         entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
         members=studio_models.membership(ROOT)

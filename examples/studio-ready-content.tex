@@ -281,13 +281,19 @@
 \studiotemplate[
   variant={default},
   palette={light},
-  text/1={The change},
-  text/4={The comparison},
-  text/6={Who comes later},
-  text/2={A friend changes only their own notebook},
-  text/5={Others see that it does not match\\and discard it.},
-  text/7={Copy and check from page one:\\do not trust, verify.},
-  text/3={What if\\someone cheats?}
+  title={What if\\someone cheats?},
+  item-one={
+    label={The change},
+    body={A friend changes only their own notebook}
+  },
+  item-two={
+    label={The comparison},
+    body={Others see that it does not match\\and discard it.}
+  },
+  item-three={
+    label={Who comes later},
+    body={Copy and check from page one:\\do not trust, verify.}
+  }
 ]{labelled-rows}
 \gdef\studiocataloguename{\detokenize{checklist-rail}}
 \studiotemplate[
@@ -318,50 +324,29 @@
 \studiotemplate[
   variant={default},
   palette={light},
-  text/2={Privacy\\levels},
-  text/4={No-KYC: no personal information\\is requested},
-  text/3={Soft-KYC: a minimum of personal\\information is requested},
-  text/1={Full-KYC: identity verification\\by submitting documents}
+  title={Privacy\\levels},
+  item-one={
+    text={Full-KYC: identity verification\\by submitting documents}
+  },
+  item-two={
+    text={Soft-KYC: a minimum of personal\\information is requested}
+  },
+  item-three={
+    text={No-KYC: no personal information\\is requested}
+  }
 ]{levels}
 \gdef\studiocataloguename{\detokenize{title-two-column-list}}
 \studiotemplate[
   variant={default},
   palette={light},
-  text/1={Summary},
-  text/2={\textbullet{} Bitcoin on-chain: base layer and\\layer 2\par\hangindent=1em\textbullet{} Different ideas, timing, fee models\\and scalability\par\hangindent=1em\textbullet{} Why Lightning suits everyday\\payments\par\hangindent=1em\textbullet{} Nodes, channels, liquidity\\and balancing\par\hangindent=1em\textbullet{} Asynchronous on-chain versus\\synchronous Lightning\par\hangindent=1em\textbullet{} Routing},
-  text/3={\textbullet{} Explore a Lightning node\par\hangindent=1em\textbullet{} Privacy differences\par\hangindent=1em\textbullet{} Self-custodial nodes on local\\hardware or in the cloud\par\hangindent=1em\textbullet{} Lightning service providers\par\hangindent=1em\textbullet{} On-demand nodes\par\hangindent=1em\textbullet{} Custodial and self-custodial\\wallets and LNDHub interfaces\par\hangindent=1em\textbullet{} BOLT11 and LNURL\par\hangindent=1em\textbullet{} Payment processors\par\hangindent=1em\textbullet{} Implementations: Core Lightning, LND}
+  title={Summary},
+  left-items={\item Bitcoin on-chain: base layer and\\layer 2\item Different ideas, timing, fee models\\and scalability\item Why Lightning suits everyday\\payments\item Nodes, channels, liquidity\\and balancing\item Asynchronous on-chain versus\\synchronous Lightning\item Routing},
+  right-items={\item Explore a Lightning node\item Privacy differences\item Self-custodial nodes on local\\hardware or in the cloud\item Lightning service providers\item On-demand nodes\item Custodial and self-custodial\\wallets and LNDHub interfaces\item BOLT11 and LNURL\item Payment processors\item Implementations: Core Lightning, LND}
 ]{title-two-column-list}
 \gdef\studiocataloguename{\detokenize{partner-rail}}
 \studiotemplate[
   variant={default},
-  palette={light},
-  text/1={bitbox.swiss},
-  text/2={@BitBoxSwiss},
-  text/10={fulgur.ventures},
-  text/11={@fulgurventures},
-  text/3={planb.lugano.ch},
-  text/4={@LuganoPlanB},
-  text/5={bitrefill.com},
-  text/7={@bitrefill},
-  text/8={zebedee.io},
-  text/9={@zbdapp},
-  text/6={Partner\&Sponsor},
-  graphic/2={\includegraphics{images/studio/collection/figma-0996-part-01.pdf}},
-  graphic/4={\includegraphics{images/studio/collection/figma-0996-part-02.pdf}},
-  graphic/3={\includegraphics{images/studio/collection/figma-0996-part-03.pdf}},
-  graphic/14={\includegraphics{images/studio/collection/figma-0996-part-04.pdf}},
-  graphic/16={\includegraphics{images/studio/collection/figma-0996-part-05.pdf}},
-  graphic/15={\includegraphics{images/studio/collection/figma-0996-part-06.pdf}},
-  graphic/1={\includegraphics{images/studio/collection/figma-0996-part-07.pdf}},
-  graphic/7={\includegraphics{images/studio/collection/figma-0996-part-08.pdf}},
-  graphic/6={\includegraphics{images/studio/collection/figma-0996-part-09.pdf}},
-  graphic/5={\includegraphics{images/studio/collection/figma-0996-part-10.pdf}},
-  graphic/10={\includegraphics{images/studio/collection/figma-0996-part-11.pdf}},
-  graphic/9={\includegraphics{images/studio/collection/figma-0996-part-12.pdf}},
-  graphic/8={\includegraphics{images/studio/collection/figma-0996-part-13.pdf}},
-  graphic/13={\includegraphics{images/studio/collection/figma-0996-part-14.pdf}},
-  graphic/12={\includegraphics{images/studio/collection/figma-0996-part-15.pdf}},
-  graphic/11={\includegraphics{images/studio/collection/figma-0996-part-16.pdf}}
+  palette={light}
 ]{partner-rail}
 \gdef\studiocataloguename{\detokenize{icon-rail}}
 \studiotemplate[
@@ -376,10 +361,16 @@
 \studiotemplate[
   variant={default},
   palette={blue},
-  text/2={Privacy\\levels},
-  text/4={No-KYC: no personal information\\is requested},
-  text/3={Soft-KYC: a minimum of personal\\information is requested},
-  text/1={Full-KYC: identity verification\\by submitting documents}
+  title={Privacy\\levels},
+  item-one={
+    text={Full-KYC: identity verification\\by submitting documents}
+  },
+  item-two={
+    text={Soft-KYC: a minimum of personal\\information is requested}
+  },
+  item-three={
+    text={No-KYC: no personal information\\is requested}
+  }
 ]{levels}
 \section{Cards}
 \gdef\studiocataloguename{\detokenize{three-cards}}
@@ -913,70 +904,13 @@
   text/1={Est. 31/10/2008},
   graphic/1={\includegraphics{images/studio/collection/figma-0820-part-01.pdf}}
 ]{whitepaper-blue}
+\section{Lists}
 \gdef\studiocataloguename{\detokenize{partner-media-grid}}
 \studiotemplate[
   variant={default},
-  palette={light},
-  text/10={AZIENDABANGA},
-  text/19={e},
-  text/24={Information is the asset},
-  text/1={Partner, Sponsor \& Media},
-  text/2={planb.lugano.ch},
-  text/4={@LuganoPlanB},
-  text/3={bitbox.swiss},
-  text/5={@BitBoxSwiss},
-  text/6={zebedee.io},
-  text/8={@zbdapp},
-  text/7={stratumprotocol.org},
-  text/9={@StratumV2},
-  text/11={fulgur.ventures},
-  text/13={@fulgurventures},
-  text/12={relai.app},
-  text/14={@relai\_app},
-  text/15={braiins.com},
-  text/17={@BraiinsMining},
-  text/16={vex\.it},
-  text/18={@vexl},
-  text/20={blockstream.com},
-  text/22={@Blockstream},
-  text/21={planb.network},
-  text/23={@planb\_network},
-  graphic/1={\includegraphics{images/studio/collection/figma-0930-part-01.pdf}},
-  graphic/28={\includegraphics{images/studio/collection/figma-0930-part-02.pdf}},
-  graphic/20={\includegraphics{images/studio/collection/figma-0930-part-03.pdf}},
-  graphic/21={\includegraphics{images/studio/collection/figma-0930-part-04.pdf}},
-  graphic/33={\includegraphics{images/studio/collection/figma-0930-part-05.pdf}},
-  graphic/2={\includegraphics{images/studio/collection/figma-0930-part-06.pdf}},
-  graphic/3={\includegraphics{images/studio/collection/figma-0930-part-07.pdf}},
-  graphic/6={\includegraphics{images/studio/collection/figma-0930-part-08.pdf}},
-  graphic/4={\includegraphics{images/studio/collection/figma-0930-part-09.pdf}},
-  graphic/5={\includegraphics{images/studio/collection/figma-0930-part-10.pdf}},
-  graphic/7={\includegraphics{images/studio/collection/figma-0930-part-11.pdf}},
-  graphic/8={\includegraphics{images/studio/collection/figma-0930-part-12.pdf}},
-  graphic/9={\includegraphics{images/studio/collection/figma-0930-part-13.pdf}},
-  graphic/12={\includegraphics{images/studio/collection/figma-0930-part-14.pdf}},
-  graphic/10={\includegraphics{images/studio/collection/figma-0930-part-15.pdf}},
-  graphic/11={\includegraphics{images/studio/collection/figma-0930-part-16.pdf}},
-  graphic/13={\includegraphics{images/studio/collection/figma-0930-part-17.pdf}},
-  graphic/14={\includegraphics{images/studio/collection/figma-0930-part-18.pdf}},
-  graphic/15={\includegraphics{images/studio/collection/figma-0930-part-19.pdf}},
-  graphic/18={\includegraphics{images/studio/collection/figma-0930-part-20.pdf}},
-  graphic/16={\includegraphics{images/studio/collection/figma-0930-part-21.pdf}},
-  graphic/17={\includegraphics{images/studio/collection/figma-0930-part-22.pdf}},
-  graphic/19={\includegraphics{images/studio/collection/figma-0930-part-23.pdf}},
-  graphic/22={\includegraphics{images/studio/collection/figma-0930-part-24.pdf}},
-  graphic/24={\includegraphics{images/studio/collection/figma-0930-part-25.pdf}},
-  graphic/26={\includegraphics{images/studio/collection/figma-0930-part-26.pdf}},
-  graphic/23={\includegraphics{images/studio/collection/figma-0930-part-27.pdf}},
-  graphic/25={\includegraphics{images/studio/collection/figma-0930-part-28.pdf}},
-  graphic/27={\includegraphics{images/studio/collection/figma-0930-part-29.pdf}},
-  graphic/29={\includegraphics{images/studio/collection/figma-0930-part-30.pdf}},
-  graphic/30={\includegraphics{images/studio/collection/figma-0930-part-31.pdf}},
-  graphic/34={\includegraphics{images/studio/collection/figma-0930-part-32.pdf}},
-  graphic/31={\includegraphics{images/studio/collection/figma-0930-part-33.pdf}},
-  graphic/32={\includegraphics{images/studio/collection/figma-0930-part-34.pdf}},
-  graphic/35={\includegraphics{images/studio/collection/figma-0930-part-35.pdf}}
+  palette={light}
 ]{partner-media-grid}
+\section{Images}
 \gdef\studiocataloguename{\detokenize{mission-badges}}
 \studiotemplate[
   variant={default},

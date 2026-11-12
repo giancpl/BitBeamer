@@ -103,10 +103,11 @@ Start with the selected layouts, then browse the full collection by family.
 - [Practical checklist](guides/checklist-rail.md)
 - [Heading beside two feature panels](guides/feature-spotlight.md)
 - [Privacy Levels](guides/privacy-levels.md)
-- [Title Two Column List](guides/title-two-column-list.md)
-- [Organization rail](guides/partner-rail.md)
+- [Two-column bullet list](guides/title-two-column-list.md)
+- [Partners and sponsors](guides/partner-rail.md)
 - [Icon Rail](guides/icon-rail.md)
 - [Privacy Levels Blue](guides/privacy-levels-blue.md)
+- [Partners, sponsors and media](guides/partner-media-grid.md)
 - [Five-item list with vertical rail](guides/list-rail-five.md)
 
 ## Cards
@@ -221,7 +222,6 @@ Start with the selected layouts, then browse the full collection by family.
 - [Photo Center Two Icons](guides/photo-center-two-icons.md)
 - [Abacus Explanation](guides/abacus-explanation.md)
 - [Document spotlight](guides/whitepaper-blue.md)
-- [Media grid](guides/partner-media-grid.md)
 - [Three badges](guides/mission-badges.md)
 - [Image and symbol](guides/image-logo-pair.md)
 
