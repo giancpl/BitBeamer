@@ -20,7 +20,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "154d2efd685795c1d49b6db8a7dd4bf1d1a7de5340fa39c96eaf52f9630f091a"
+      "signature": "f06953039208f25f51600835694732d29771ea943a7c561cf94f7bfd8118e24e"
     },
     "adoption-curve": {
       "canvas": "complete slide; no catalogue labels",
@@ -42,7 +42,7 @@
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "d7583778359acd654549bc900767fb9e3761eace3d060c54a4cfd1e749016889"
+      "signature": "2fa92baf2bcfd646a8a4c5aaf2863a8c85f67972bcc639bb771b0eecc8f23a6d"
     },
     "agenda-with-icons": {
       "canvas": "complete slide; no catalogue labels",
@@ -108,7 +108,7 @@
       },
       "page": 9,
       "render_source": "pdf",
-      "signature": "07206c2ecb562b930c8d6bef265ad119921794b1656dbb8b1de0f5efb9823c70"
+      "signature": "df73002dbba9e3f91c612edef769663af210dffd51167e3b9cab46956c075e36"
     },
     "apply-qr": {
       "canvas": "complete slide; no catalogue labels",
@@ -130,7 +130,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "b2184c6a3e98723b676132cd29e91d97bd3d8c3a976085fe22c2f9e330ce7fa2"
+      "signature": "b4a2a3a6030de2fb23b66b47fc9db3d3a40ec98ae5aa366c0e67f83880f3db17"
     },
     "asymmetric-encryption": {
       "canvas": "complete slide; no catalogue labels",
@@ -152,7 +152,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "8a6da6d2950da0980913acf83eba4e9dc8393eb37efd726b8179f0a143b0000b"
+      "signature": "c7ec7226eadd29288b60f1dfea58bb2ddeadc66fe71461fdba2c72307fa6e121"
     },
     "bar-comparison": {
       "canvas": "complete slide; no catalogue labels",
@@ -174,7 +174,7 @@
       },
       "page": 24,
       "render_source": "pdf",
-      "signature": "b3d408ad65205cf2c7f7ff2b2a4caf2618f20997412103449e6483afc0549ea0"
+      "signature": "edb91b04d928a0b08bef8cdc49e28d6820e6ac6ccda52bdaf9535afdc4771163"
     },
     "before-after": {
       "canvas": "complete slide; no catalogue labels",
@@ -196,7 +196,7 @@
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "f2c8c87536eb9f482bfccdafdc31314d16c7e56449b1b0668f268bfce38a05a3"
+      "signature": "93f89995ab41ca4e3bd5cd22366089afeeb1783656cbe9e5cd870fd4a0ac574b"
     },
     "benefits-limits": {
       "canvas": "complete slide; no catalogue labels",
@@ -218,7 +218,7 @@
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "62e137dbb1fa6d399555f0b4ad7b678c529261ee4d46accf0316b4ddb4ecd8a1"
+      "signature": "796ae81d34a5af99158c6bb5a966f16350a3a6da7e2bd238f1ca43f919834444"
     },
     "bitcoin-prehistory": {
       "canvas": "complete slide; no catalogue labels",
@@ -548,7 +548,7 @@
       },
       "page": 24,
       "render_source": "pdf",
-      "signature": "007fe1895f18169b8cca4ce9c2cdb392ab92bb3e738fd0db1fbc74b23a9c8cdb"
+      "signature": "21b1b7285e78c61c3fb14bb370d1341a9af61886a875228c650992ac15fbc773"
     },
     "block-inspection": {
       "canvas": "complete slide; no catalogue labels",
@@ -570,7 +570,7 @@
       },
       "page": 24,
       "render_source": "pdf",
-      "signature": "ef782ab6e818f2c61928c3a76f5a4e27334bf15c5aa7797f03affd885beb86c5"
+      "signature": "f44b8ae09e76199553d97f4aebe87a47e9816ad334be4efdce1ece6e83a76c0a"
     },
     "blockchain-with-list": {
       "canvas": "complete slide; no catalogue labels",
@@ -592,7 +592,7 @@
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "296179840f1fdba16a4e5e9f47e2db6c53558f3345805f43f047a32c14b80b4b"
+      "signature": "95a5cd80a0dbc2dfe171bdfc6af66b61f436efc90f997c51ee93a9b3c5ce6258"
     },
     "blue-resources-columns": {
       "canvas": "complete slide; no catalogue labels",
@@ -614,7 +614,7 @@
       },
       "page": 21,
       "render_source": "pdf",
-      "signature": "314d26a7c3a215c282ca85fd528d8674b3a0c4fb4648d3180f1269771e2aefca"
+      "signature": "1e921ce900546a588dc3abaef7b99ae737c5d692be4f2e12924566e8b005172d"
     },
     "blue-statement": {
       "canvas": "complete slide; no catalogue labels",
@@ -658,7 +658,7 @@
       },
       "page": 5,
       "render_source": "pdf",
-      "signature": "fe89d1bff7451b8b4f7b408d05baaff8669bf7797352cb8a58d84c3a55de3965"
+      "signature": "cd7478b7b9f060ffdee9935846c5621ec4857226071a221eaca7ccdd33bf00d2"
     },
     "bullseye-values": {
       "canvas": "complete slide; no catalogue labels",
@@ -680,7 +680,7 @@
       },
       "page": 10,
       "render_source": "pdf",
-      "signature": "cc5ebc21d833414cbb6fbd0751a172a3200882eea89e694f44dc2a62559b14aa"
+      "signature": "2186be8e3606e89ac7db9767f5b90fc50b887f9d33d78e51cb8e86d3664fbbd0"
     },
     "callout-explanation": {
       "canvas": "complete slide; no catalogue labels",
@@ -724,7 +724,7 @@
       },
       "page": 9,
       "render_source": "pdf",
-      "signature": "7cc736dc5cccc6308134c48fb3d5aa90ef910ef95c6e905d679c9131836843de"
+      "signature": "894d0157425cccba82155803e1d01376b9170d5d7f7481f70734fca053d1c0f5"
     },
     "chat-dialogue": {
       "canvas": "complete slide; no catalogue labels",
@@ -812,7 +812,7 @@
       },
       "page": 5,
       "render_source": "pdf",
-      "signature": "9faba13e6332b470df34229f8ca37e1c45b110f824ede690bea85f00bd300533"
+      "signature": "45b17b245f8ec4d55529b7f3086a7ccdacec09102b82deab6fe1c898520cad77"
     },
     "cipher-wheel": {
       "canvas": "complete slide; no catalogue labels",
@@ -834,7 +834,7 @@
       },
       "page": 20,
       "render_source": "pdf",
-      "signature": "17612274f99243ee97e33086d332e69a1762743a64decfea05b63dc534237ad6"
+      "signature": "1855fbe183df3c9a2747a3748debbdb2cecad20ae9b4268f2d1f7b90304e5c2e"
     },
     "closing": {
       "canvas": "complete slide; no catalogue labels",
@@ -856,7 +856,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "c14b0eff099bfe1c3280581cfa4e5f1b9c7c4e0e4bca9e41aae1116c39253187"
+      "signature": "d8daad154fb90dc35e45490cf9ac023ccf34365b6c614e49d8862d04ef8f7cf8"
     },
     "code": {
       "canvas": "complete slide; no catalogue labels",
@@ -878,7 +878,7 @@
       },
       "page": 15,
       "render_source": "pdf",
-      "signature": "68d92e99f2d42e93c8f944f6afd50619a26d7b9cc49da220baa0b1b40d997d1f"
+      "signature": "3649e16b0f37874929f720f361d4ddd577bb1693f6c22a40524e0804041651c3"
     },
     "coin-comparison": {
       "canvas": "complete slide; no catalogue labels",
@@ -900,7 +900,7 @@
       },
       "page": 5,
       "render_source": "pdf",
-      "signature": "3f098080cfedfbcadcb6a7ca7627111a42e6cbb82a543795818dbe4c34766e98"
+      "signature": "bf1b95b7276431accca64868787c5e031627902544ee1ff607e65a18936dd34a"
     },
     "contact-qr": {
       "canvas": "complete slide; no catalogue labels",
@@ -922,7 +922,7 @@
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "eccb2b7cafc5be1782bf1fd1cd974120b30b1f2e921c9885f9f7871db1751258"
+      "signature": "467713ddff669367b5896f128254ae6624dee1ddd8cc4517f0290b96956cc17d"
     },
     "contents": {
       "canvas": "complete slide; no catalogue labels",
@@ -966,7 +966,7 @@
       },
       "page": 6,
       "render_source": "pdf",
-      "signature": "f7d2a89af9d8694b01c1d8c0519fed76e57fe73ffef5cca5a640ce36c677141c"
+      "signature": "7377eeebd7b9a38a0c455b2a843292630dfdf07d097344f4739c6e879e477ac9"
     },
     "cover": {
       "canvas": "complete slide; no catalogue labels",
@@ -1142,7 +1142,7 @@
       },
       "page": 12,
       "render_source": "pdf",
-      "signature": "e28f744ea05d9d4cd0143e743cf833eebaca6ea3e7ecc6afda118dd8cc75415e"
+      "signature": "2b4a2e2a820eddd6c386babfca2dec2553083f1af516e6718d0564e78123936c"
     },
     "currency-equivalence": {
       "canvas": "complete slide; no catalogue labels",
@@ -1164,7 +1164,7 @@
       },
       "page": 6,
       "render_source": "pdf",
-      "signature": "9de81a83153c86379fd20723f854611033da6912cfd50412539283875c0619e6"
+      "signature": "22c5ab5b47d9a258f44b8a370a5defdc373c197dc15c97895b4eef8c0f1d5035"
     },
     "cycle": {
       "canvas": "complete slide; no catalogue labels",
@@ -1186,7 +1186,7 @@
       },
       "page": 12,
       "render_source": "pdf",
-      "signature": "b2a776934b8950da69383354f3e3871b1a0b04398b624c57c6de5e690bcbc25d"
+      "signature": "6ce6d31d45504060c2477a34e31594ae0e9fb3f369f1d92b4ad98dd363dd8ce1"
     },
     "decision-tree": {
       "canvas": "complete slide; no catalogue labels",
@@ -1208,7 +1208,7 @@
       },
       "page": 4,
       "render_source": "pdf",
-      "signature": "3640276e3ab89299ae1edefcb48c9f301432f5e3c12798f59f74caa997003468"
+      "signature": "a0cd8681e4657fd90b9c089fa638d9fe9e09e5ce6ef6e359cdb095458cf2d659"
     },
     "diagonal-number": {
       "canvas": "complete slide; no catalogue labels",
@@ -1230,7 +1230,7 @@
       },
       "page": 24,
       "render_source": "pdf",
-      "signature": "8a102272ee57afa57b92ff52b7c3061f02351c676c4b2128403ada3d231dc51e"
+      "signature": "ef56e4de5e710f4f7a190b3ae4f3ca2551af0157fd78be4f75404417abc22c2e"
     },
     "diagonal-photo-title": {
       "canvas": "complete slide; no catalogue labels",
@@ -1274,7 +1274,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "bbd7fb779f1c8487555a38ba3cb08ba833aad7c41364cf702d77ac1d8bed7fb9"
+      "signature": "289d441e50b50e1ada6658eaded901d28b98c26417b8ff5f39bbfaa7ba169fcd"
     },
     "diagram-pool-shares": {
       "canvas": "complete slide; no catalogue labels",
@@ -1296,7 +1296,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "c7f4f74c41f95afb9fbe7df9f288f4ea85538569a688e0bd4346eced36446c4a"
+      "signature": "b79d2e83e8ffebffc73da3203c5b3acc0252b1f8525c7bd1def4cbc7ebd9e2a6"
     },
     "diagram-transaction-inputs": {
       "canvas": "complete slide; no catalogue labels",
@@ -1318,7 +1318,7 @@
       },
       "page": 14,
       "render_source": "pdf",
-      "signature": "a29b15ef2c58b56ba098fea099aae2e407c5c12993754d6f926a093724ce409f"
+      "signature": "1ec6ddb7075d30aaa897aeca35a1facaa3c904c657cde80e8351c961c4cedf9b"
     },
     "double-spend-diagram": {
       "canvas": "complete slide; no catalogue labels",
@@ -1340,7 +1340,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "99b4d7f4b200828c695ffe1d94a8842cc5f3cf3a9b932afe9a023ed3a9563ec0"
+      "signature": "e581b24052957ec1d3cb551127e081b22532a681223ce3cbdabe6bd95210ca3c"
     },
     "dual-consensus-diagram": {
       "canvas": "complete slide; no catalogue labels",
@@ -1362,7 +1362,7 @@
       },
       "page": 19,
       "render_source": "pdf",
-      "signature": "5a27009a9076faef85c18622f32eee4184dfa44328d608fc7caa305ee3c63776"
+      "signature": "b3c7c26077cf3600e7bd83db2b1c904ffb7e2b6d8b0c8ab5be8c32674a0f8122"
     },
     "eight-icon-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -1371,20 +1371,20 @@
           "file": "docs/slides/previews/hd/eight-icon-grid.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "68cb955f7c35ae09047bdd45a7e631fe53dccfbe9b4f71a7198e29d6090e525a",
+          "sha256": "91c0628acd2a367abf0fe4f81f675ec0b0d1e188c7b5aee5d82ab219c2c59f7d",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/eight-icon-grid.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "0c4d9477af7f78056c83105d3190715fb8bc2e727ee318fdbddff5a4b3fb7126",
+          "sha256": "1437c88b77b56b1b82c356d1d73ed6b572ec1cc1765493ba495c44d135424cca",
           "width": 640
         }
       },
-      "page": 16,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "9558edcfd0a6f97ae80ea9f980df84636ad1f3c38d290192778de72a487f7e6d"
+      "signature": "d2fb75e7a02fdf811c97dc7f674a2db2a59de9fc6f40367c50f71fe1d6fa241a"
     },
     "encryption-flow": {
       "canvas": "complete slide; no catalogue labels",
@@ -1406,7 +1406,7 @@
       },
       "page": 6,
       "render_source": "pdf",
-      "signature": "6a156874a35031f3ff160cc9cec90266db790f803fc6344606c9ba01418d140d"
+      "signature": "02d9affa3cdd0a29e9306249011760ed181d751d196db445dca9a2eb2961e59d"
     },
     "equation": {
       "canvas": "complete slide; no catalogue labels",
@@ -1428,7 +1428,7 @@
       },
       "page": 14,
       "render_source": "pdf",
-      "signature": "782a45b201cb5fa1bc60e70993cb576b0b6b9df69160063c1e104f54089301b4"
+      "signature": "d78a175d6981cc37ea9d2a1fcc25a976a9ce631e54f034ecf1c55fa311084e18"
     },
     "europe-map": {
       "canvas": "complete slide; no catalogue labels",
@@ -1450,7 +1450,7 @@
       },
       "page": 4,
       "render_source": "pdf",
-      "signature": "ebd69c35ecd08f20cb9065790480fd84c79ee5f75d205d7d2acf0a02e1fae0ad"
+      "signature": "86a3eafc586b8673900ed6bc83b48845b191e8d2b8fb3d3da736827b25f10236"
     },
     "factorization-challenge": {
       "canvas": "complete slide; no catalogue labels",
@@ -1538,7 +1538,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "1c397818d98ee9e104905ca0cdd8a1e65e3edd7a443d32075758bcc356bda821"
+      "signature": "9f0410fd04d3d17622b3a1853fe676f43efde9c7da354a1b6b728f5e703e44b5"
     },
     "five-spoke-values": {
       "canvas": "complete slide; no catalogue labels",
@@ -1560,7 +1560,7 @@
       },
       "page": 7,
       "render_source": "pdf",
-      "signature": "494ecae78166af956be3c35434635e73d30b7087ab20509fe54659161c40ff17"
+      "signature": "d46be173744060f1e16942ae25ba8ceefa73adfcdbb92e600c930c242605bb4d"
     },
     "fork-branches": {
       "canvas": "complete slide; no catalogue labels",
@@ -1582,7 +1582,7 @@
       },
       "page": 1,
       "render_source": "pdf",
-      "signature": "3824e3a749e8b5e113bb12440d875e468498b7c741022b7436ee4c5554a58218"
+      "signature": "bce7d4498b294b3f522e404a3ee01db0932d7904045346c03478d44b775019df"
     },
     "four-card-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -1626,7 +1626,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "dc11a1f997004e8dfd58bcc5379e6c8afdf84617ba155b4e74ac7eeba51a55ea"
+      "signature": "794cd7db51ef2cc737a8480d7432925192b60ff8093bd47d8e8dd1bf0bcf7ab1"
     },
     "four-pillar-cards": {
       "canvas": "complete slide; no catalogue labels",
@@ -1692,7 +1692,7 @@
       },
       "page": 6,
       "render_source": "pdf",
-      "signature": "386669d68081a7cb52e014f1953776317adb33196d6ab305b1410f72f0adfde0"
+      "signature": "abc7e5d72e6416b952814b5744b38d14ea2e38edeadfa37bc84aa01d2d894513"
     },
     "genesis-block-message": {
       "canvas": "complete slide; no catalogue labels",
@@ -1736,7 +1736,7 @@
       },
       "page": 22,
       "render_source": "pdf",
-      "signature": "88744b96dc3ee1aff37ba668077083d186a7976f058c67d9b5a4d935df0caae4"
+      "signature": "56c56d128b1b27738c5513abf2f36ff35422c1548944c2106fb81122d655c8c7"
     },
     "glow-statement": {
       "canvas": "complete slide; no catalogue labels",
@@ -1824,7 +1824,7 @@
       },
       "page": 20,
       "render_source": "pdf",
-      "signature": "1d0b43c4ab243d87504e336c3235f3b32e8e7e4c80a05996dd061fc795afb196"
+      "signature": "9281b411bdcf9de4a18d7ca018a354552fba1a8a9ebde896c2746c3884ff8e5a"
     },
     "hero-number": {
       "canvas": "complete slide; no catalogue labels",
@@ -1846,7 +1846,7 @@
       },
       "page": 22,
       "render_source": "pdf",
-      "signature": "c760a0b6eb1a80070c716933778d6536a67513f5099406c6c3f64be0570dec9e"
+      "signature": "8a63f949654354f41a27315d5c6857dc14dba0708d3d09aa1ec00d2be63b4550"
     },
     "historical-money-collage": {
       "canvas": "complete slide; no catalogue labels",
@@ -1890,7 +1890,7 @@
       },
       "page": 13,
       "render_source": "pdf",
-      "signature": "a8ab10169ce8d3d560dd8f6e2d2b96bc99800e8a6e6239f6dbf4b25fe5639a70"
+      "signature": "f50b90682a65ea7235a6810f62d7bc884a77cb8d6e14bc86ecaa74846bac418c"
     },
     "horizontal-timeline": {
       "canvas": "complete slide; no catalogue labels",
@@ -1912,7 +1912,7 @@
       },
       "page": 7,
       "render_source": "pdf",
-      "signature": "2b0639d690dc5963b45b5ce4e925a4ccffc8af91d36110d054c19be15d7eddac"
+      "signature": "0e032725135f83249cab50b82c8184d05d852b4a272fdf4ffc27dd31bdd79cc8"
     },
     "icon-rail": {
       "canvas": "complete slide; no catalogue labels",
@@ -2000,7 +2000,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "01df03908e4af4ca3da7443a6c17e39cc1808f48ccfe853cb29217abfb9f0a2b"
+      "signature": "b2e5dbe26b35e337cdc11d0447b1f20621b4a196932fda095f1a8c1534e42b52"
     },
     "image-logo-pair": {
       "canvas": "complete slide; no catalogue labels",
@@ -2022,7 +2022,7 @@
       },
       "page": 20,
       "render_source": "pdf",
-      "signature": "577420797ac84f36945808dedd47b5e07045c357cdab2157c6fa2df49778ece6"
+      "signature": "74543cae157ddb5983c1536eb301b1c8e8482969c9872a7b5fd1d0e75a13cbf8"
     },
     "image-overlay": {
       "canvas": "complete slide; no catalogue labels",
@@ -2044,7 +2044,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "1058fcdd13c08c76ed3f55b0a71ba900fc118eda6492b29b09c79c6f21ebf88e"
+      "signature": "f1a0c215717a42fc86ed76f73171d2f17d9a407e4ce8ad9ea07103ac0e876d95"
     },
     "image-pair-title": {
       "canvas": "complete slide; no catalogue labels",
@@ -2066,7 +2066,7 @@
       },
       "page": 21,
       "render_source": "pdf",
-      "signature": "a8f56592dda9e697e960f55d3622955a213fce61113527fd6b7d50d9d1e85f5d"
+      "signature": "8e59bddd8f92d67721b2e416f65255429115550eff186d6e52ddfc602d4e9432"
     },
     "image-right": {
       "canvas": "complete slide; no catalogue labels",
@@ -2088,7 +2088,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "22f259fd36ec48b6c4fc4710b83cc7267c26572225149d08a7b5a0b0369ff902"
+      "signature": "02b1ff584eb77fd8e5fc13dd674ea641c9a5b023dd15f62d3a7b495a57585e7b"
     },
     "incentives-card-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -2110,7 +2110,7 @@
       },
       "page": 7,
       "render_source": "pdf",
-      "signature": "2b669ca4c81ca4b87522c883cfc97453d7cb583c3285840a61259f783a02c3a4"
+      "signature": "73026479429b977f417914be887f3facdd6dc97196711c7a6f0cc1160e20efc9"
     },
     "key-derivation": {
       "canvas": "complete slide; no catalogue labels",
@@ -2132,7 +2132,7 @@
       },
       "page": 21,
       "render_source": "pdf",
-      "signature": "e810412e9fcb9b35df2585279df15dbacaeed00c2a16329c0d2ee69858d41615"
+      "signature": "6a7fd026a67912d3036bd02c1ca9e2d2beb48c0f505b8fa28992142b6e1b8f2e"
     },
     "key-to-addresses": {
       "canvas": "complete slide; no catalogue labels",
@@ -2154,7 +2154,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "3541fda6a010bbd4893e797e4b54e80a6178e60585b2e822402977464311b04f"
+      "signature": "588b4eddf38c35e3a27c80f2b075ff074d77dddc6e29f02cb6ee0fcc52b42883"
     },
     "labelled-rows": {
       "canvas": "complete slide; no catalogue labels",
@@ -2198,7 +2198,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "e87c3d7afca7bb669985aac64b1879153c436d422366d1c21888f1afd041528c"
+      "signature": "ee468e5909f5016b974d8518254c3a231acfc473976f537f73c5e644cc21aef0"
     },
     "layered-stack": {
       "canvas": "complete slide; no catalogue labels",
@@ -2220,7 +2220,7 @@
       },
       "page": 15,
       "render_source": "pdf",
-      "signature": "e6b87a8a1c53e1a5587df55f20df5fef7ee98dd7c9f278c82edcf0ba94b332e9"
+      "signature": "e16613746ee15d87bd0fd77049f81ba007db769464f61a77288b46190e9f9942"
     },
     "layers-overview": {
       "canvas": "complete slide; no catalogue labels",
@@ -2242,7 +2242,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "6b6bc9f2ea7517dbadfa97511953c85481e060723f3d408bdefbec8b14aaa61b"
+      "signature": "94232fd56ff9ed761adb0a8f15d974dcda820ededde9c758e0102739669c330b"
     },
     "line-chart": {
       "canvas": "complete slide; no catalogue labels",
@@ -2264,7 +2264,7 @@
       },
       "page": 23,
       "render_source": "pdf",
-      "signature": "2559cf7726ff85d591a70c9fb4ca95799515d9f00051b9be4e376727ce80def5"
+      "signature": "49cddc4eb2a96eb02313c5c61526290bcc87901e9f424ef62d0fcade92b23c25"
     },
     "list-rail-blue": {
       "canvas": "complete slide; no catalogue labels",
@@ -2308,7 +2308,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "d3bdeaf7cf9bae28de371301994e07b41044659a987d2e23d59d28a880730de0"
+      "signature": "46c96cdff715877948ff81888fe9539e22dc1520df85eb892e8aba90df3b1f78"
     },
     "list-rail-light": {
       "canvas": "complete slide; no catalogue labels",
@@ -2352,7 +2352,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "8f7ccab93206b2f95b8ab2448bc4572977cacae572d72cb9a12fd3bd97e8ac2d"
+      "signature": "1704691a0dba1847e6cf6ceac4171cbffe38ab2f28eaee598d48f7c027cf4951"
     },
     "merkle-tree-wide": {
       "canvas": "complete slide; no catalogue labels",
@@ -2374,7 +2374,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "454fc0c2f5d103fa2e436100c5afcf44c2381285b94caf50f6b87071b4a0e1d7"
+      "signature": "5993180a007f10038ea52f21c39f7ba657b8c0743927239356c851f1ae814d3e"
     },
     "metric-dashboard": {
       "canvas": "complete slide; no catalogue labels",
@@ -2396,7 +2396,7 @@
       },
       "page": 22,
       "render_source": "pdf",
-      "signature": "e780a5d75ad4ee236e9d437d90a9c001124d8ef4ef97bd3a19339db55a05ccf7"
+      "signature": "8ce9a2f5044b00ca4338acd3c3637edd7a6896902a901bd92b9242e6da4dccc9"
     },
     "milestone-cards": {
       "canvas": "complete slide; no catalogue labels",
@@ -2440,7 +2440,7 @@
       },
       "page": 10,
       "render_source": "pdf",
-      "signature": "61d761620790dd7413e6331815bcfbe85b6fd2fa7ddaf62a210264e29782a882"
+      "signature": "875a4ee51972085884b3d96e1e0abd237b5e869963f5224f753c600a6ded72c0"
     },
     "mission-badges": {
       "canvas": "complete slide; no catalogue labels",
@@ -2462,7 +2462,7 @@
       },
       "page": 19,
       "render_source": "pdf",
-      "signature": "21e1d62a2a5e90281ca66860c3882332cd3f624db69cf0518266240689875c8a"
+      "signature": "145980fad13aba099cbd5fe6c5141f304924314d79cc3abe898a22684bdde1d3"
     },
     "multi-signature": {
       "canvas": "complete slide; no catalogue labels",
@@ -2484,7 +2484,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "530189e04f746601bcbc12f72b9e77d3884917c24905cb6b8a8037c8d45d8d9c"
+      "signature": "4667077c602a22d1b68a85984998ddae9e2e8a6ae303a8e4740fa5b3af8fb274"
     },
     "nested-circles": {
       "canvas": "complete slide; no catalogue labels",
@@ -2506,7 +2506,7 @@
       },
       "page": 11,
       "render_source": "pdf",
-      "signature": "f22b410fdc9ae8d0983092a5b76a2f3b22b471252a541c74283f75df2f8c1f2e"
+      "signature": "f55cb39a6265f72da567cda9ac1fa4e067ffe30476d6c538ca09a5f575eb5583"
     },
     "nested-outline-circles": {
       "canvas": "complete slide; no catalogue labels",
@@ -2528,7 +2528,7 @@
       },
       "page": 13,
       "render_source": "pdf",
-      "signature": "38562bb2da44d6fa14ff6801aa1469e5d2b0d7a14bd8d69a72dc9b9170d247a8"
+      "signature": "82f7439796e531bbce3bfb21c838e5d5d60d308a259981e5a01e920d953953ca"
     },
     "network-environments": {
       "canvas": "complete slide; no catalogue labels",
@@ -2550,7 +2550,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "2313d16fc322aca60816fdf9bf7521ff4a849b5c59c1392594a26e541046a57d"
+      "signature": "d4a0a200c77294b8a582a54930681a901427d97a7d1e36146d31e4e51ef2a22f"
     },
     "network-topologies": {
       "canvas": "complete slide; no catalogue labels",
@@ -2572,7 +2572,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "70a2dc0b0ac7b17d60304f12c39794cefbd20322dd25b66433d3fba53c0c3242"
+      "signature": "d353a0732e9026dbdf8880fa1adc7760b62a5d0058835789a1a5bf28f056e6ab"
     },
     "nine-logo-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -2594,7 +2594,7 @@
       },
       "page": 14,
       "render_source": "pdf",
-      "signature": "18a74b74583e0fff6a165e21172286ca2044e7dd46dc730a4ec5a93fb5c4bf7f"
+      "signature": "de24240962a6a2a59c0789449e11236c87c952b364ab596c6e747b849afb73e1"
     },
     "node-type-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -2616,7 +2616,7 @@
       },
       "page": 9,
       "render_source": "pdf",
-      "signature": "69abd25656ed390f5514cf91b3b93bf3140ca498e32b2628cd7b461197057d50"
+      "signature": "fcdbd42aa375e42edca45736166365be86b5e33c511c847004d5a68976662133"
     },
     "official-layout-003ab68db3de": {
       "canvas": "complete slide; no catalogue labels",
@@ -14386,7 +14386,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "79aa3e052c258c2176d1f7b67ef5bac55069d673e4d2d4d4db5d56d0cfba1ca7"
+      "signature": "1f5cd1c8beee370160d4b8ecf60e0cd07a7ccfdf11e4f27545ee4d2a1148675f"
     },
     "oversized-number-blue": {
       "canvas": "complete slide; no catalogue labels",
@@ -14496,7 +14496,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "a2992258d183df20945d787b78264edf754b697e6386f9adeffb20178d6bd35e"
+      "signature": "aaab3e26efdc28bf21da90b7afba2314528165d835ffc64ebaedf97a81bd4de1"
     },
     "partner-rail": {
       "canvas": "complete slide; no catalogue labels",
@@ -14540,7 +14540,7 @@
       },
       "page": 10,
       "render_source": "pdf",
-      "signature": "8595be82004db73511ac930a0d6e740742e03b27b53077aae8a6fb582bd1a64c"
+      "signature": "167636c60aa07d19dd39ee01d47cae4091070a9162d72cc37359cd1def9819be"
     },
     "payoff-matrix": {
       "canvas": "complete slide; no catalogue labels",
@@ -14562,7 +14562,7 @@
       },
       "page": 9,
       "render_source": "pdf",
-      "signature": "0ad15a9c775d6d7686adf3ccf355b2a528c45fb23e3fcdfbef8354c856a83131"
+      "signature": "d145a5f4b9758f1adb01b2288785aec758dd4092f09330520028b4c4d79bdeb4"
     },
     "peer-to-peer-payments": {
       "canvas": "complete slide; no catalogue labels",
@@ -14628,7 +14628,7 @@
       },
       "page": 10,
       "render_source": "pdf",
-      "signature": "7535fc344db8484d082b84dde952908c920a0a18e08f0f430c1440621fb6394c"
+      "signature": "d90acb39be43d70e5f0d94d77c751f464faa2f541bbbcd75bdbf76ce493c1721"
     },
     "phone-screenshot": {
       "canvas": "complete slide; no catalogue labels",
@@ -14650,7 +14650,7 @@
       },
       "page": 12,
       "render_source": "pdf",
-      "signature": "bab8de20633c2dd112a6c8b8baba61f6c7fd1ea293c93c32de3e71287594f750"
+      "signature": "60653082ccc9ae132a03fd3b8361305876c1ce7173551bfe16affc59e44215df"
     },
     "photo-center-two-icons": {
       "canvas": "complete slide; no catalogue labels",
@@ -14672,7 +14672,7 @@
       },
       "page": 15,
       "render_source": "pdf",
-      "signature": "2655302b02485adddb8c7820f0e2e340424cde53dad3d480619aabb12b647b09"
+      "signature": "e79e1a9098a6301c2cfd15e812dd962a9afe8a19e1697705e771ab123b29d781"
     },
     "photo-collage-banner": {
       "canvas": "complete slide; no catalogue labels",
@@ -14694,7 +14694,7 @@
       },
       "page": 7,
       "render_source": "pdf",
-      "signature": "161a5a39f7b7f7fa584dc62d6ee4b5be07ad1dbfd97ae7dbe177ba7496bde338"
+      "signature": "2018d33e479f1010b451577832ce6794cfcbb41f007c3a0b54a9a69a28ffb909"
     },
     "photo-collage-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -14716,7 +14716,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "97a7825f1912b56b09ab7a6030f84eca40d7da33aa9608df031489db04509300"
+      "signature": "c3066a47d76e0f52746b6769cfb5b90f1ce7cea67bb7385040249ecff1018e22"
     },
     "photo-split": {
       "canvas": "complete slide; no catalogue labels",
@@ -14738,7 +14738,7 @@
       },
       "page": 4,
       "render_source": "pdf",
-      "signature": "3a34283332ded16f81c9c46aca53663aac81b3987fc7b65cd52512a7f507d8e9"
+      "signature": "cc3ba8bc56cf453fc67f1e52b0bc0d0957167bd42a68d6a46e6a7093496b16d2"
     },
     "photo-statistics-collage": {
       "canvas": "complete slide; no catalogue labels",
@@ -14760,7 +14760,7 @@
       },
       "page": 9,
       "render_source": "pdf",
-      "signature": "a5ac44233c468df950bfb0833ce1071553c338f8e104927a029c98cda1ced736"
+      "signature": "4cf6b3462a2310efeabd22363a544bdc52d92b68daf524e6352a57ac277eead7"
     },
     "photo-triptych": {
       "canvas": "complete slide; no catalogue labels",
@@ -14782,7 +14782,7 @@
       },
       "page": 20,
       "render_source": "pdf",
-      "signature": "5490fc769ab49bf81242ad7b155409eeb37b138028ac2f1c18130dabea6165d8"
+      "signature": "ce3991859974baa81407f963aba078527076b90d15e4934309039b619835b74e"
     },
     "price-lines": {
       "canvas": "complete slide; no catalogue labels",
@@ -14804,7 +14804,7 @@
       },
       "page": 6,
       "render_source": "pdf",
-      "signature": "00d630bfc59b82d7593dd64cdc59fa3d2a016f21ceac0b69a3f0e68708a5517f"
+      "signature": "39cc5ddab2d4c2651cb96e8e07fc5222f2e45d14d565228b5f34d8d6b4ccbb95"
     },
     "privacy-levels": {
       "canvas": "complete slide; no catalogue labels",
@@ -14892,7 +14892,7 @@
       },
       "page": 11,
       "render_source": "pdf",
-      "signature": "b8e97ac9c4804baa6abd29e73188f6fb29da75b435aa168330b1e27c4ff13f71"
+      "signature": "e4e9c526c12001b3e8d14439117377ce95a69787319efa3241c1570528bf4787"
     },
     "protocol-aggregate-signature": {
       "canvas": "complete slide; no catalogue labels",
@@ -14914,7 +14914,7 @@
       },
       "page": 23,
       "render_source": "pdf",
-      "signature": "0cb5722a41f5b2b91178f8143d08378389e60e3278abb8640dac1ec5971b75d2"
+      "signature": "aef1a0440498e5b83fb0ef5e681d8dc861daa617e422f82ae47bc98cf1a35598"
     },
     "protocol-eavesdropping": {
       "canvas": "complete slide; no catalogue labels",
@@ -14936,7 +14936,7 @@
       },
       "page": 24,
       "render_source": "pdf",
-      "signature": "146a379a2c7cae18701fe9c7c3b3c29cb00c52a9708ca588581967bb8d3cccd2"
+      "signature": "f37446b006016338c84f9f674ccf8b5797f794ecfebce4ca23f7a2ec8c8d05cf"
     },
     "protocol-encrypted-channel": {
       "canvas": "complete slide; no catalogue labels",
@@ -14958,7 +14958,7 @@
       },
       "page": 1,
       "render_source": "pdf",
-      "signature": "69f257a7cf96c7ce3f015af3e7cabb06def9b180b887b1b7be03098afc2427b8"
+      "signature": "6c20bbab3c9e438aeb03242085bdd03d7bf9f6f8d082ce9698fcb720cfa16b95"
     },
     "protocol-encrypted-message": {
       "canvas": "complete slide; no catalogue labels",
@@ -14980,7 +14980,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "2483fcff3c91590e270af8c00ea1600bae68375b6ec09ac474c4ebb6c8add295"
+      "signature": "5bbb6f08e0fa0e0462dfd13c52521f758c622cf5a43c892ea33fc247c81f39d2"
     },
     "protocol-key-aggregation": {
       "canvas": "complete slide; no catalogue labels",
@@ -15002,7 +15002,7 @@
       },
       "page": 22,
       "render_source": "pdf",
-      "signature": "904840174ab678e5e7a5566c18b9dffb1557d722d1a4bf5661f5910b43041893"
+      "signature": "a46d252f47b5c8b593cf426e21eea5278db2c5e57f2fa2bc02b2c56ebac492f4"
     },
     "protocol-key-exchange": {
       "canvas": "complete slide; no catalogue labels",
@@ -15024,7 +15024,7 @@
       },
       "page": 14,
       "render_source": "pdf",
-      "signature": "6704f641e13b935a2d58d96118af49598367b825538c0934bb9651876c864acf"
+      "signature": "c16beb08b0a05d3d65b0b9e38e87abda5ae46437a9df7f189f3f283065277a1a"
     },
     "protocol-key-lock": {
       "canvas": "complete slide; no catalogue labels",
@@ -15046,7 +15046,7 @@
       },
       "page": 13,
       "render_source": "pdf",
-      "signature": "1f7b97a6d1615577af1db76f8a7e1a49f0561489b194f7fa221f28e4aea2dd30"
+      "signature": "4bfcf26e9b4f34f856f42e3fbf9f2a7214bdee131d6ae25375b3048e4374545b"
     },
     "protocol-key-pair": {
       "canvas": "complete slide; no catalogue labels",
@@ -15068,7 +15068,7 @@
       },
       "page": 10,
       "render_source": "pdf",
-      "signature": "7017cebc1edc1356c30d52749f7e3367bf76dd2e236544ace88bc25a36f90559"
+      "signature": "650f444fdf74b7db3baa561b8090ca4c3afb61a347700623bf81e333402f040c"
     },
     "protocol-key-setup": {
       "canvas": "complete slide; no catalogue labels",
@@ -15090,7 +15090,7 @@
       },
       "page": 19,
       "render_source": "pdf",
-      "signature": "61bed52319d6f252fa148f2087781f166b6b3df8e636c5b9a1b0c160022703db"
+      "signature": "8c70d668c1172aa7f80f54b38c620b2b6a56ad66ccdefa0acc8f551af322ae5a"
     },
     "protocol-public-keys": {
       "canvas": "complete slide; no catalogue labels",
@@ -15112,7 +15112,7 @@
       },
       "page": 12,
       "render_source": "pdf",
-      "signature": "6cea16af9201a49894f2828309f0c9633dd99fbd5dc2368bd793c63582a9327d"
+      "signature": "30a1265567961635510fa92138a7628ec72a781ef85313083f9ffce13e75fe24"
     },
     "protocol-sequence": {
       "canvas": "complete slide; no catalogue labels",
@@ -15134,7 +15134,7 @@
       },
       "page": 23,
       "render_source": "pdf",
-      "signature": "fd57dd7779d8d1fa8e458bab4ee808d1d6eef880b8a07950cd40e1fa05930779"
+      "signature": "85c29543da0fbf0a44ec9c40e7e94ff563250c1ae8cfafac4b28c32773f4ad80"
     },
     "protocol-signed-message": {
       "canvas": "complete slide; no catalogue labels",
@@ -15156,7 +15156,7 @@
       },
       "page": 15,
       "render_source": "pdf",
-      "signature": "30f4971ae503273ea60143ccd9f63b2807444663e31bb873c1d56d587a0ae759"
+      "signature": "2ad2928e3bf5973e0a1e6b096ac30cf4397436c77e3b5ec2b6439d2f7dfac8e8"
     },
     "protocol-signed-payload": {
       "canvas": "complete slide; no catalogue labels",
@@ -15178,7 +15178,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "b593f1c21fa389e212576d84e419189a467ddedf33820eeae61e111e974b215f"
+      "signature": "b15dfc571b88e536435e45944607be1e92fe360c44337c18efa0bf2f8a7660eb"
     },
     "protocol-symmetric": {
       "canvas": "complete slide; no catalogue labels",
@@ -15200,7 +15200,7 @@
       },
       "page": 11,
       "render_source": "pdf",
-      "signature": "1d5140fba220b5d46a19246e7daa51fd7480d361229cc25fce73b4dacb296898"
+      "signature": "73eaeeacd22c586d6d01b9df40c03ee77bbb6c5826ce7bf6c046614a258d49c0"
     },
     "protocol-token-routing": {
       "canvas": "complete slide; no catalogue labels",
@@ -15222,7 +15222,7 @@
       },
       "page": 21,
       "render_source": "pdf",
-      "signature": "0a5ecbaea63bf1b7165b2692b1051f970c653974b06bbd61ea95b5204b31bd17"
+      "signature": "2f5147debef06bc0347c07cdfc227348ecd2e186fc5ee2f7d812ca714e7fa6db"
     },
     "protocol-token-transfer": {
       "canvas": "complete slide; no catalogue labels",
@@ -15244,7 +15244,7 @@
       },
       "page": 20,
       "render_source": "pdf",
-      "signature": "27baac30ed99b2ccc58cce469109c3fc1fd3c23d579b114d4b5bb9082947b79a"
+      "signature": "299eb5f07099cf18551cfc9296d5f4cdfd5e9fe1757043e7503aa2fcef21c93a"
     },
     "protocol-unlock-message": {
       "canvas": "complete slide; no catalogue labels",
@@ -15266,7 +15266,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "1389a6bcdb1a31322d539bf6e6eddc6bc392a2ab0db0bd0b1c82a8507b0c4aa0"
+      "signature": "28ca8af3a326dcbf7cdaf7f2f66d947258adbf70305c718eb0fd7d7f72372d9f"
     },
     "purchasing-power": {
       "canvas": "complete slide; no catalogue labels",
@@ -15288,7 +15288,7 @@
       },
       "page": 5,
       "render_source": "pdf",
-      "signature": "16ccb21c88ff2da8dbbe987a5665c2b2faf9642046e344cf4024a9d7ecc98d52"
+      "signature": "2f291f8e8c0e05b44d0c8e3b00b635bee1255089a020d57cdb553ae00641ad66"
     },
     "radial-goals": {
       "canvas": "complete slide; no catalogue labels",
@@ -15310,7 +15310,7 @@
       },
       "page": 6,
       "render_source": "pdf",
-      "signature": "932227b2121170834071caac0418ef49999c37dfc49e10b9efcafa68d76518dc"
+      "signature": "7c60eccda7dc1ff478bead516da4278a658edb4968efb616a597e837bfbfd4f6"
     },
     "ranked-podium": {
       "canvas": "complete slide; no catalogue labels",
@@ -15332,7 +15332,7 @@
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "6d3063a67162318660d9b48727fb15e9d9dd42b50e5a7650fb814b8ba0729dc3"
+      "signature": "ee8b0f547e100a023010de5dff4e77640ca24478d0b8e58e396f1d631a5197e0"
     },
     "references": {
       "canvas": "complete slide; no catalogue labels",
@@ -15354,7 +15354,7 @@
       },
       "page": 19,
       "render_source": "pdf",
-      "signature": "b1c5ae33643a5bee6fbe256ea4d64340091fcb7cd1e3343b09f7f42319adce6e"
+      "signature": "ee65dfbc5376e83d68c6cd07fc342766ebff62c4090c79a37acc312c60dcb713"
     },
     "regtest-instructions": {
       "canvas": "complete slide; no catalogue labels",
@@ -15376,7 +15376,7 @@
       },
       "page": 23,
       "render_source": "pdf",
-      "signature": "2b92b0f69c3ac681b68c98cbbde32743f1f43c1b398a84ef5b89e0c1ea034afd"
+      "signature": "44c91f641e5d6a37eaaac9e31fabb36ae6a5e6435d8535abcbe9850f1e0c0fae"
     },
     "resource-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -15398,7 +15398,7 @@
       },
       "page": 13,
       "render_source": "pdf",
-      "signature": "702fac21cfe00c13cb163dba5f9b05fdc9f39c3f0f4accab9ef5c00a550bc7e6"
+      "signature": "4fe5615a9d3ae8fbe3b35339eea28bcffac708c49562c0b0f640376269ecffa2"
     },
     "routing-graph": {
       "canvas": "complete slide; no catalogue labels",
@@ -15420,7 +15420,7 @@
       },
       "page": 13,
       "render_source": "pdf",
-      "signature": "a7bbff9739eddd574f7ee683e8bc5e0cecdb82953f25e17ef3996a7784985c48"
+      "signature": "562a6356dafb077d15c44a24413b045db216687f73098f48d89f7ec869356ae6"
     },
     "scatter-comparison": {
       "canvas": "complete slide; no catalogue labels",
@@ -15442,7 +15442,7 @@
       },
       "page": 1,
       "render_source": "pdf",
-      "signature": "169f8946cbdb2cdb664f0d746fb3b7acfab77e96565aaaef6bf796351f895b50"
+      "signature": "8a2360f5e5851c2ed87fa11087a984eb89a892cfe6d758b5dba3adf34e84b15c"
     },
     "screenshot-callout": {
       "canvas": "complete slide; no catalogue labels",
@@ -15464,7 +15464,7 @@
       },
       "page": 10,
       "render_source": "pdf",
-      "signature": "8fadb823730085cc45f86ded9420c4c390c1b2758ed2285de3afe44b5ab63068"
+      "signature": "c3b92705a77e7b3699ffd89f9e80654bffbbeb27ddb860fb67a59b35d9f872f9"
     },
     "screenshot-pair": {
       "canvas": "complete slide; no catalogue labels",
@@ -15486,7 +15486,7 @@
       },
       "page": 11,
       "render_source": "pdf",
-      "signature": "2195b1987c633be3aa14eeb635983fe41e335f2274ea4147751548cf6644deaa"
+      "signature": "630f65d795f62b26ec58cef6b3f0193f1835d6f1d395a402a38674ae481b442e"
     },
     "section-divider": {
       "canvas": "complete slide; no catalogue labels",
@@ -15517,20 +15517,20 @@
           "file": "docs/slides/previews/hd/seed-grid-caption.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "108349124af2de6b20cefb2057cfe94858a10d3d1d64b097459fc2c3afaca0fd",
+          "sha256": "8fe849e0d21fc6ec4e4a95d2cd1977a0337dc9e7b42c843b2207adcdc24a1374",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/seed-grid-caption.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "4996f6f7630491780f961db9eb1345958650519555c9129911b38e90451afa7d",
+          "sha256": "4f67ac64657ccf831f1fe4519a245a88d38b175dff3ae843229544d386209165",
           "width": 640
         }
       },
-      "page": 15,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "1b4fafbee1fd4298f32f46c1edaa17c703349e409a8b5f827752647544757cab"
+      "signature": "4ee76b42562b7aa7bd75129bb348ce5c207977f115f9c42f886b15c6d4c62ed4"
     },
     "seed-key-tree": {
       "canvas": "complete slide; no catalogue labels",
@@ -15552,7 +15552,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "3832110883a5587a7eff55cfe23d5d2c38d2ef53a8290874412f8883df0a04db"
+      "signature": "c1af131e6ba786bcb1c5fba12e830457efa781a49451c763694f1375b03c1e71"
     },
     "separate-circles": {
       "canvas": "complete slide; no catalogue labels",
@@ -15574,7 +15574,7 @@
       },
       "page": 12,
       "render_source": "pdf",
-      "signature": "cf631ea0d77d4480036b956ca11bd976295c3d5121843142e2f6bcc102fb4c6f"
+      "signature": "0c4c7bd77c0d9f15cb88f4445690d95b59069e17d52cba68a33cdfd6e16157a7"
     },
     "signature-flow": {
       "canvas": "complete slide; no catalogue labels",
@@ -15596,51 +15596,7 @@
       },
       "page": 22,
       "render_source": "pdf",
-      "signature": "977ba5bf871b2537ad1576fe8d6caa160783daac53d1ed625c54636591bb1079"
-    },
-    "six-explanation-cards": {
-      "canvas": "complete slide; no catalogue labels",
-      "images": {
-        "hd": {
-          "file": "docs/slides/previews/hd/six-explanation-cards.webp",
-          "height": 900,
-          "lossless": true,
-          "sha256": "4be215aa68ef87fad62e3713f499b46812030df9eca8bf5f8b3e319250b21311",
-          "width": 1600
-        },
-        "thumb": {
-          "file": "docs/slides/previews/six-explanation-cards.webp",
-          "height": 360,
-          "lossless": true,
-          "sha256": "a6f42daf68bc546b838154871983fe361c84634e6f26123a26a956f2ad1e572a",
-          "width": 640
-        }
-      },
-      "page": 13,
-      "render_source": "pdf",
-      "signature": "550e78019c746cee251ce66e620b219da1061a4dbdd4a4e51ce7d5f14ea9cb3e"
-    },
-    "six-outline-cards": {
-      "canvas": "complete slide; no catalogue labels",
-      "images": {
-        "hd": {
-          "file": "docs/slides/previews/hd/six-outline-cards.webp",
-          "height": 900,
-          "lossless": true,
-          "sha256": "43a22c348cda80671a62a2c1e955935069851a918ad734ad2e4c4a2ddb23fff2",
-          "width": 1600
-        },
-        "thumb": {
-          "file": "docs/slides/previews/six-outline-cards.webp",
-          "height": 360,
-          "lossless": true,
-          "sha256": "ac73802f27facfc2e0642ce85804a2c71afa374f6a3127ae390b1cc4cd108407",
-          "width": 640
-        }
-      },
-      "page": 12,
-      "render_source": "pdf",
-      "signature": "025aa67243e3800dfdd97dbd1567c19e87358fa8744610a702aaca4f4e856d6a"
+      "signature": "1e52dc444402273652fac08bdeb188363e8d66b21d4a3e8dceb83ae7566ff556"
     },
     "software-options": {
       "canvas": "complete slide; no catalogue labels",
@@ -15706,7 +15662,7 @@
       },
       "page": 7,
       "render_source": "pdf",
-      "signature": "895aa81cee7f210c3459b5560e65471f2c2cab2599b3a7cdee2c008c769e79a4"
+      "signature": "77bd8ba516489fae3cca7b63b58eb130ea71f47f92cc5481102ee17c1f73c6f8"
     },
     "split-outline-cards": {
       "canvas": "complete slide; no catalogue labels",
@@ -15728,7 +15684,7 @@
       },
       "page": 15,
       "render_source": "pdf",
-      "signature": "9315aa7b54c13507f48cb184f193349943bde00267a977ae692b2d2be14efa28"
+      "signature": "071f89aaba612ef6d8d2e5c92fd03d0829f3a0261f1d0ad2c73c2ef89f860c34"
     },
     "split-process-cards": {
       "canvas": "complete slide; no catalogue labels",
@@ -15750,7 +15706,7 @@
       },
       "page": 16,
       "render_source": "pdf",
-      "signature": "a10724b8823bd3f5974a737b7e2e1d1cc218b82f778abeeaaaccbe290ca0e5d4"
+      "signature": "e9c5377afe01eb10d5e8f0408a0d2f212d83ad339687f036be6e3487207f4fa7"
     },
     "square-icon-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -15759,20 +15715,20 @@
           "file": "docs/slides/previews/hd/square-icon-grid.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "368a7a4533fe6ea5c70ab0e7d0ae2e57efd6bc9235646b480b66a7392e94e63b",
+          "sha256": "e32c22fee1f22321436aec9d95119e6b67a131ecac794e27b07d7b78ad465db3",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/square-icon-grid.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "834ca8435418296553b0826efe8b36371e8fd37ce5ef83b8d68ae5a293c5fa72",
+          "sha256": "20a0f8bbd0cb4e51a2eb6241b615beb4a673b10252c7a4f61ebbc66d1e818f87",
           "width": 640
         }
       },
-      "page": 19,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "e1fae95c3630d19cdc17561cac5b8e281ec436beb05b5be000d61ca7c3dc047a"
+      "signature": "51be75719645f2476876d000de34a26584f7665f2f4d7e6db033391d652d9e3f"
     },
     "statement-arrow": {
       "canvas": "complete slide; no catalogue labels",
@@ -15838,7 +15794,7 @@
       },
       "page": 23,
       "render_source": "pdf",
-      "signature": "556f60e9f1a29254f5ff936edf56763af0e608653df3efc0cb0fb63d3bd43cc3"
+      "signature": "fcdc032ca9f06c103e98c9c54f8b823c71a8ff590175a438e71f5eb23ce2f35f"
     },
     "symmetric-encryption": {
       "canvas": "complete slide; no catalogue labels",
@@ -15860,7 +15816,7 @@
       },
       "page": 7,
       "render_source": "pdf",
-      "signature": "1cc99c26a4f1cba6bd799c7d2e64b00f0ba38efd2685a2e68ba520583817d864"
+      "signature": "0eefea8921d9692644407bf45e73930c83748970af7140b0e6d57d8a0090d420"
     },
     "system-architecture": {
       "canvas": "complete slide; no catalogue labels",
@@ -15882,7 +15838,7 @@
       },
       "page": 5,
       "render_source": "pdf",
-      "signature": "432e22e23e230b917049c3bf6ff3d896bf2c9a0b22221ed0cfb58db0fc109baa"
+      "signature": "b769a42a0e5a3f68b3697dcd932df97ea6118a0a16ca71a5bfff6c436edb5159"
     },
     "tabbed-agenda": {
       "canvas": "complete slide; no catalogue labels",
@@ -15926,7 +15882,7 @@
       },
       "page": 13,
       "render_source": "pdf",
-      "signature": "29e9fd3d0304dc58b5473a18dafb8cd62e4bf94ee1b3ea0285f29c2ac434e325"
+      "signature": "9cbf564ac92b8e69b8c685f43cf45394fd6f0d8a1c0915055f1b21f78a477fee"
     },
     "team-presentation": {
       "canvas": "complete slide; no catalogue labels",
@@ -15948,7 +15904,7 @@
       },
       "page": 4,
       "render_source": "pdf",
-      "signature": "0e009875f938d1c019ed0e26afd2edb84d4b7956c9b1bfaa50a0dfcbcac2ded8"
+      "signature": "30c9a7de1d1fd5c7d3c5be34dc9aebe0bb24eef0176b5d3880bb43b00ed1a6e0"
     },
     "three-card-summary": {
       "canvas": "complete slide; no catalogue labels",
@@ -16014,7 +15970,7 @@
       },
       "page": 4,
       "render_source": "pdf",
-      "signature": "be472dcc82b0e8f754bb8d9fca734dbda17c536144d607a8c39e4fd0eacfd184"
+      "signature": "338e3709b25280d18ad8e761873e483dcf9abcaed5836442333815af52905fcd"
     },
     "three-portraits": {
       "canvas": "complete slide; no catalogue labels",
@@ -16036,7 +15992,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "5711d5fa85a89808342bcd9d5896be49c5f5014b353e2ed66f654098603a45a5"
+      "signature": "e35ed4dbd496979af21fc44b7331986121c9ed6b9451b43777701332c84fc682"
     },
     "three-spoke-benefits": {
       "canvas": "complete slide; no catalogue labels",
@@ -16058,7 +16014,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "8d4c2a99435dd6a0efb493212de92a6411d153a8ce31deeb7c4acef7fc12df36"
+      "signature": "9e9d18b8d02661332dd12ae8697870699fcb770b0233f472fdb7cf61b2bbd03b"
     },
     "three-statistics": {
       "canvas": "complete slide; no catalogue labels",
@@ -16080,7 +16036,7 @@
       },
       "page": 21,
       "render_source": "pdf",
-      "signature": "bb6cb6934cf55a5d80a4f5333ca248adf24056539a8cf21d60f4583a7eb7072a"
+      "signature": "63fcc787aed04d18c3c6247a484292544fa9efa1443799ec909fda1887f6ddb0"
     },
     "three-step-process": {
       "canvas": "complete slide; no catalogue labels",
@@ -16190,7 +16146,7 @@
       },
       "page": 4,
       "render_source": "pdf",
-      "signature": "b913281969c791b8716abfce5885ba2cc0ea7ffcca37ee3b6c1e356a8028cb9d"
+      "signature": "a414a0c67f0c045c0fbaefb05d0b111f07ce050b00562fb64a04eb360e7d028a"
     },
     "triangle-tradeoff": {
       "canvas": "complete slide; no catalogue labels",
@@ -16212,7 +16168,7 @@
       },
       "page": 14,
       "render_source": "pdf",
-      "signature": "2076b9e59c03bf5578cce8c1c4bb9046ce9ab733040a712d45a56d40ce181a1e"
+      "signature": "d61c1b3ba26d9aa0840ad6eeb71b9ad9400090a1344dddcc51821f16810ca68b"
     },
     "twelve-word-grid": {
       "canvas": "complete slide; no catalogue labels",
@@ -16221,20 +16177,20 @@
           "file": "docs/slides/previews/hd/twelve-word-grid.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "d170c50c3e9259ab53f75e3a44c47fe1ea2c398e65350a1b32a15b3f917efc67",
+          "sha256": "5aea576a878f240d11a80da6c9b94e48c0d3fa27737cb0838b2c999f159bab16",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/twelve-word-grid.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "5f4d0f795dfb2d24cd691214d195962b7b4442de2d703b8d3f6423864f9d4db0",
+          "sha256": "d88b2c8bca1827fd3b3d3f2ef99784376730e90b60787c8708dfe3649f1e1bca",
           "width": 640
         }
       },
-      "page": 17,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "77de823598fe21079138ec14b306e3abcccf6a85a29e43fe4e9ab01edcb95012"
+      "signature": "2d284e8dc401645741e332118410e515d79ddff6e3d75e69c2f8fe9d4b388802"
     },
     "two-card-vertical": {
       "canvas": "complete slide; no catalogue labels",
@@ -16300,7 +16256,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "20657364c5c5a033ae5b103998b238d2759d56fe2904c3fc9f91797f61213060"
+      "signature": "304940e02d7a7c68bf4937f02b677c084cc846bc9acb32620ca8b27655a6ff92"
     },
     "two-columns": {
       "canvas": "complete slide; no catalogue labels",
@@ -16344,7 +16300,7 @@
       },
       "page": 19,
       "render_source": "pdf",
-      "signature": "1ef5684688116f48e0fc93f5274b26cc3875ea128b8b3f9310f2bf64258d94b1"
+      "signature": "d79648f0f07f5d3aa4323a2ca60dd0f3f8bac51c5e3a0372a61ca78f6bd061ce"
     },
     "two-radial-groups": {
       "canvas": "complete slide; no catalogue labels",
@@ -16366,7 +16322,7 @@
       },
       "page": 9,
       "render_source": "pdf",
-      "signature": "206ef39bc664184ce0e6cf63f444b828943a9f8e6c52a771fa755f940bc16480"
+      "signature": "b886cdaf25d2a8a2c8a0cece50a48a6d912039705519385b1434570d2547b345"
     },
     "two-step-process": {
       "canvas": "complete slide; no catalogue labels",
@@ -16410,7 +16366,7 @@
       },
       "page": 18,
       "render_source": "pdf",
-      "signature": "15211b7216c93588cae1387e67ca5a01408ad4890b64c302f60ba897921e8609"
+      "signature": "585649f969f8d11b78882982a00300499cde836cec302b9dedc942fe161304df"
     },
     "unit-conversion": {
       "canvas": "complete slide; no catalogue labels",
@@ -16432,7 +16388,7 @@
       },
       "page": 1,
       "render_source": "pdf",
-      "signature": "92e1950c17ff3e66b5d285b15d5fcb552d48a08e31f554471319b97f5fe698dd"
+      "signature": "bdbf7d63b6e28fd56eddbb7cc5424a5f0ef7520f370b17579fb00b6b5d6a1c15"
     },
     "vertical-split": {
       "canvas": "complete slide; no catalogue labels",
@@ -16454,7 +16410,7 @@
       },
       "page": 14,
       "render_source": "pdf",
-      "signature": "d772ab1198b0afc4abeb5427add2130ecf025a3ee618d20e317513bff4e90b70"
+      "signature": "59a6f00cb0cbec9c18fd1654c25e74f8dddcf2db72b7fefb58c2fd8d7a7c1475"
     },
     "vertical-timeline": {
       "canvas": "complete slide; no catalogue labels",
@@ -16476,7 +16432,7 @@
       },
       "page": 8,
       "render_source": "pdf",
-      "signature": "45663d6344334734f8f1b7c6fda26a3a60274e968da83c5469a66fd5fe088b2a"
+      "signature": "61e71607a49279ab83ec05f651f19cae6db761680d0bbe7a39983b2a7dc5aaa4"
     },
     "whitepaper-blue": {
       "canvas": "complete slide; no catalogue labels",
@@ -16498,7 +16454,7 @@
       },
       "page": 17,
       "render_source": "pdf",
-      "signature": "a2ae7a08108d802928eab20bc3daf95250a3de5d8176780857af78bdf1fc72ca"
+      "signature": "f52b3463b0f75ead3265ba9b32f7be1f5af6997cbdf865b1b8d001b4278f593a"
     },
     "world-map": {
       "canvas": "complete slide; no catalogue labels",
@@ -16520,7 +16476,7 @@
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "e8c2752799ea8b6a618d719c16fb8568139f4cc10a71eec60d31e54efe61c770"
+      "signature": "bab0defbd8f407b4919a99aca5036d8114e25a499829e43e0eeade172f3d4423"
     }
   },
   "schema": 1

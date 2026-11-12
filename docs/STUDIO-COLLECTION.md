@@ -440,3 +440,16 @@ See [all variants, optional content and the exact syntax](STUDIO-SOFT-CARDS.md)
 and [all short and longer text examples](../examples/studio-soft-cards.tex).
 Approved compositions are excluded from pending-review PDFs. The icon examples
 also cover custom images, wide/tall artwork, hidden icons and longer copy.
+
+## Approved Divisions grids
+
+The four- and eight-icon variants were explicitly approved on 2026-11-12.
+They use matching numbered caption and icon keys.
+See the [complete commands and replacement rules](STUDIO-DIVISIONS.md).
+
+## Approved twelve-word grids
+
+The plain and annotated layouts share `word-grid`, separately from icon grids.
+Both were explicitly approved on 2026-11-12 after the paper and body-weight
+corrections. General card-shadow refinement remains a deferred cross-family task.
+See the [word list, numbering and annotation commands](STUDIO-WORD-GRID.md).

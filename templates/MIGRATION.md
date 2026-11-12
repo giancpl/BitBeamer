@@ -65,7 +65,6 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `two-step-process` | `icon-process` | `two` | light |
 | `milestone-cards` | `milestone-badges` | `five` | light |
 | `eight-icon-grid` | `icon-grid` | `eight` | light |
-| `twelve-word-grid` | `icon-grid` | `twelve` | light |
 | `square-icon-grid` | `icon-grid` | `four` | light |
 | `hardware-options` | `options` | `devices` | blue |
 | `software-options` | `options` | `applications` | light |
@@ -184,7 +183,6 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `cryptographic-assumptions` | `cryptographic-assumptions` | `default` | light |
 | `routing-graph` | `routing-graph` | `default` | light |
 | `diagram-transaction-inputs` | `diagram-transaction-inputs` | `default` | light |
-| `seed-grid-caption` | `seed-grid-caption` | `default` | light |
 | `diagram-pool-shares` | `diagram-pool-shares` | `default` | light |
 | `multi-signature` | `multi-signature` | `default` | light |
 | `key-to-addresses` | `key-to-addresses` | `default` | light |
@@ -199,8 +197,8 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `team-presentation` | `team` | `collage` | light |
 | `closing` | `closing` | `default` | blue |
 | `callout-explanation` | `outlined-cards` | `callout` | light |
-| `six-outline-cards` | `outlined-cards` | `six-outline` | light |
-| `six-explanation-cards` | `outlined-cards` | `six-detailed` | light |
+| `twelve-word-grid` | `word-grid` | `plain` | light |
+| `seed-grid-caption` | `word-grid` | `annotated` | light |
 
 ## Compatible model/variant names
 

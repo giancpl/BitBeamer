@@ -1,5 +1,186 @@
 # Verification report
 
+## Word-grid approval and review cleanup — 2026-11-12
+
+The user explicitly approved `twelve-word-grid` and `seed-grid-caption`, including
+light-palette text, geometry and shared panels, after the semibold-body fix.
+The general card-shadow task remains deferred. Both compositions are now excluded
+from pending comparisons. Disposable word-grid batch outputs and count/overflow
+build trials were removed; canonical examples, prepared artwork, current guide
+previews, the small negative-check record and stable releases remain available.
+
+## Semibold word-grid bodies; shadow review deferred — 2026-11-12
+
+The annotated grid's `explanation` and `note` still used Inter Regular.
+Both now use Inter Semibold in the canonical shared component and field metadata,
+at the existing fixed size 62/80 and original text-area dimensions. No public
+syntax change is needed. No official lesson or block consumes this component.
+
+All five canonical examples were rebuilt. The short and long annotated examples
+were visually inspected: body wrapping and spacing fit without diagnostics.
+PDF font inspection confirms all eight short-example and ten long-example
+right-column spans use Inter-SemiBold. Current panel shadows are explicitly
+left for the user's later review across all card families; neither the shadow
+treatment nor these two layouts is marked approved. The command reference and
+unified guide reflect the semibold bodies.
+
+Repository review and whitespace checks pass. The full suite completed with
+207 tests, one existing skip and no failures.
+
+## Shared word-grid panels and exact paper — 2026-11-12
+
+The user prefers the annotated grid's panels for both layouts. Both canonical
+wrappers now use `figma-0662-part-01`, retaining its original rounded rectangle,
+inset highlights and drop shadow. The plain grid keeps its own arrangement;
+its first panel origin moves up one unit to keep the solid panel at the original
+669-unit top edge. The change from the plain original's drop-only panel is
+intentional and documented in the metadata and command reference.
+
+A rendered colour check identified a real one-level paper discrepancy: xcolor's
+serialized 0.97647 RGB value rendered as F8F8F8, while the prepared panel padding
+was F9F9F9. A family-local rounded RGB value now renders all five pages as
+F9F9F9. The shared theme and other approved families are unchanged.
+Both variants use fixed 62/72 Inter Semibold cell labels, thin prefix spacing
+and the existing vertically centred two-line area. Text remains editable.
+
+Canonical inputs: both native wrappers and `components/word-grid.tex`, with
+corresponding metadata, guide and previews. No official deck/block consumers.
+Both two-page comparisons and the five-page short/long/explicit-break example
+were rebuilt and visually inspected. There are no layout diagnostics; the
+11-word and excessive-height specimens still fail with the intended errors.
+All twenty model tests pass. Repository review and whitespace checks pass.
+The full suite completed with 207 tests, one existing skip and no failures.
+Both layouts remain in review, category Technical.
+The uniquely named `word-grid-review.pdf` and the combined comparison both
+contain only these two layouts and show the exact public commands.
+
+## Word-grid comparison sampling — 2026-11-12
+
+The user reported different panel borders and shadows. Both canonical panel
+assets were checked against the retained original SVGs: source rectangles,
+corner radii, filter chains and positions match. At a 3556 x 2000 render,
+all 24 panel borders/shadows differ from the reference by less than 0.24/255
+mean channel intensity when the editable central label area is excluded.
+Rendering a panel in the full source viewport rather than the extracted viewport
+also produces identical pixels, so no speculative filter change was applied.
+
+The comparison previously combined a downsampled reference with live PDF
+artwork. It now renders the current PDF at the reference's source dimensions
+and applies the same 1600 x 900 thumbnail pipeline to both sides, preventing
+different sampling from changing fine borders and soft shadows at review zoom.
+The compiled main PDF remains available separately at full quality. Both pending
+Technical pages were regenerated, opened and visually inspected; no approved
+family was included. Existing five-page long-copy examples remain unchanged.
+A regression checks that identical rounded/shadowed artwork has identical image
+sampling in both comparison placements. All six comparison tests pass.
+Repository review and whitespace checks pass. The full suite completed with
+207 tests, one existing skip and no failures. The two layouts remain in review.
+
+## Divisions approval and twelve-word grids — 2026-11-12
+
+The user explicitly approved `square-icon-grid` and `eight-icon-grid` after the
+editable-icon review. Their light palettes are approved and the disposable
+Divisions batch and negative-build trials were removed. Canonical examples,
+prepared vector icons, guide previews and small verification records are retained.
+
+Only `twelve-word-grid` and `seed-grid-caption` remain in the active comparison,
+both in Technical. The new `word-grid` model groups `plain` and `annotated`;
+`icon-grid/twelve` and the old annotation label syntax were replaced. Native
+composition identifiers remain stable. Each variant uses its own original SVG
+panel and measured placement, with filter rendering on F9F9F9 paper at twice
+source resolution. The shared renderer preserves the source-specific text weight,
+centers cell text vertically and supports two lines at fixed size 62/72.
+
+`words={...}` requires exactly twelve nonempty values in row-major order and
+adds numbering automatically. `numbered=false` hides numeric prefixes. The
+annotated variant exposes a grid heading and two independent title/body areas.
+Official content examples were migrated to the new fields. No lesson or block
+consumes either layout. There are no icon slots in these word-only compositions.
+
+All five pages of `examples/studio-word-grid.tex` were visually inspected after
+final rendering: short words, longer words/phrases in both variants and explicit
+two-line labels without numbers. Their build has no layout diagnostics. An
+11-word list and excessive cell content fail with the expected explicit errors.
+A regression test checks unique cell mappings, row-major order and the separation
+from the approved icon grids. The two current templates remain unapproved.
+See [the command reference](STUDIO-WORD-GRID.md).
+
+Repository review and whitespace checks pass. The full suite completed with
+206 tests, one existing skip and no failures. No graphical approval is inferred
+for the new word-grid family.
+
+## Editable Divisions icons — 2026-11-12
+
+Both current Cards variants expose all their symbols with semantic `icon-one`,
+`image-one` or `graphic-one` keys, through four or eight in the same row-major
+order as the captions. Explicit `graphic_slots` mappings prevent the historical
+technical slot gap in the eight-card source from changing that public order.
+
+The eight original SVG symbols are retained separately from their panels as
+`divisions-icon-*` vector resources, with source-parent hashes and extraction
+provenance in the collection manifest. Native glyph paths are no longer drawn
+outside the graphic fields. All symbols fit a centered 240 × 240 area with aspect
+ratio preserved. Both variants reuse the approved `card-1` panel; replacements
+and empty symbols leave the panel intact.
+
+The seven-page `examples/studio-divisions.tex` covers unchanged original symbols,
+long captions and explicit breaks, every named-icon position, a PDF image, tall
+and wide custom graphics, and an empty icon. The three expected-error specimens
+reject an unknown icon, `icon-five` on the four-card variant and a missing image.
+A regression test verifies the public reading order, independent bounds and
+absence of residual native glyph paths. No official lessons or blocks consume
+these sources. The graphical review remains pending.
+
+The command reference is [Divisions](STUDIO-DIVISIONS.md); the same replacement
+requirement is recorded in the maintainer instructions for subsequent reviews.
+
+The 205-test suite completed with one existing skip and one missing-link error in
+the standalone archive. The clone-only Divisions reference was moved to the full
+collection guide, and the failing standalone reproducibility/link test passed on
+rerun. All other tests passed in the full run. The three example tests also passed
+after restoring IT/R&D as retained historical text fields. Seven pages were
+visually inspected after the final vector conversion; their build has no layout
+diagnostics. Repository review and whitespace checks pass.
+
+## Removal of six outlined-card templates — 2026-11-12
+
+The user explicitly removed both six outlined-card compositions. Their sources,
+public variants, catalogue entries, review examples, guide previews and disposable
+builds were removed. Original SVG inventory records remain as excluded provenance;
+no replacement alias is retained. The callout layout is independent and unchanged.
+The native collection now contains 194 compositions.
+
+## Divisions icon grids — 2026-11-12
+
+The active Cards review contains only `square-icon-grid` (four) and
+`eight-icon-grid` (eight), from original frames `figma-1061` and `figma-0429`.
+The twelve-word grid remains a separate composition. All captions are editable,
+including the previously outlined IT and rasterized R&D labels. The public
+`caption-one` through `caption-eight` fields follow row-major order, with exactly
+four fields for the four-card variant. Removed generic label keys are not aliases.
+
+Captions use fixed Inter Semibold size 75.16, centered beneath each panel; their
+bounds support two lines. The eight-card title remains within its left column.
+Original panel geometry and icon drawings are preserved. Compound SVG filters
+are evaluated at twice source resolution on F9F9F9 paper to remove PDF mask-edge
+seams; prepared resources and part thumbnails are refreshed together.
+
+The four pages of `examples/studio-divisions.tex` were visually inspected with
+short captions, longer automatically wrapped copy and explicit line breaks.
+There are no layout diagnostics. Excessive copy produces the expected
+`Text overflow in square-icon-grid/text-2` error without shrinking fonts.
+No official lesson or block consumes either composition. Graphical approval is
+pending; earlier approved families are excluded from the active comparison.
+
+Removal shifted 138 catalogue positions. Their preview cache signatures were
+migrated only after verifying unchanged source, artwork, field metadata, commands
+and image hashes against HEAD; the local proof is
+`build/checks/divisions-cache-migration.json`. No approved artwork was rebuilt.
+The 204-test run had one existing skip and one inventory error caused by an
+empty suggestion key on records without suggestions. That metadata issue was
+corrected and the failing provenance test passed on rerun; all other tests
+passed in the full run. Repository review and whitespace checks pass.
+
 ## Five-social-only closing and handle calibration — 2026-11-09
 
 The four-social drawing and both social-count selectors have been removed.

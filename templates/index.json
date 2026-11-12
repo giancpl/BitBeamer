@@ -7803,200 +7803,128 @@
           "name": "graphic-1",
           "type": "graphic",
           "box": [
-            972,
-            348,
-            488,
-            489
+            1096,
+            446,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-01.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-it.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-01-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-2",
           "type": "graphic",
           "box": [
-            972,
-            1049,
-            488,
-            489
+            1096,
+            1147,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-02.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-marketing.pdf}",
           "slot": {
             "number": 6,
             "key": "graphic/6",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-02-panel.pdf",
-            "content": [
-              244.0,
-              218.76999999999998,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-3",
           "type": "graphic",
           "box": [
-            1572,
-            1049,
-            488,
-            489
+            1696,
+            1147,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-03.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-design.pdf}",
           "slot": {
             "number": 7,
             "key": "graphic/7",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-03-panel.pdf",
-            "content": [
-              244.0,
-              218.76999999999998,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-4",
           "type": "graphic",
           "box": [
-            2172,
-            348,
-            488,
-            489
+            2296,
+            446,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-04.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-education.pdf}",
           "slot": {
             "number": 3,
             "key": "graphic/3",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-04-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-5",
           "type": "graphic",
           "box": [
-            1573,
-            348,
-            488,
-            489
+            1697,
+            446,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-05.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-research.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-05-panel.pdf",
-            "content": [
-              244.46000000000004,
-              218.0,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-6",
           "type": "graphic",
           "box": [
-            2773,
-            350,
-            488,
-            489
+            2897,
+            448,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-06.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-events.pdf}",
           "slot": {
             "number": 4,
             "key": "graphic/4",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-06-panel.pdf",
-            "content": [
-              244.96000000000004,
-              218.0,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-7",
           "type": "graphic",
           "box": [
-            2772,
-            1049,
-            488,
-            489
+            2896,
+            1147,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-07.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-management.pdf}",
           "slot": {
             "number": 9,
             "key": "graphic/9",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-07-panel.pdf",
-            "content": [
-              244.0,
-              218.76999999999998,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
-          "name": "graphic-8",
-          "type": "graphic",
-          "box": [
-            1742,
-            841,
-            201,
-            107
-          ],
-          "default": "\\studiopaletteimage[width=201\\studiounit]{images/studio/collection/figma-0429-part-08.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "whole graphic"
+            "role": "icon"
           }
         },
         {
           "name": "graphic-9",
           "type": "graphic",
           "box": [
-            2165,
-            1065,
-            488,
-            489
+            2289,
+            1163,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0429-part-09.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-cryptography.pdf}",
           "slot": {
             "number": 8,
             "key": "graphic/8",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0429-part-09-panel.pdf",
-            "content": [
-              244.96000000000004,
-              218.0,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
@@ -8004,10 +7932,10 @@
           "type": "text",
           "default": "Item",
           "box": [
-            2246.98,
-            841.586,
-            387.8129333333333,
-            99.90686666666666
+            2146,
+            842,
+            540,
+            200
           ],
           "source_ink_box": [
             2246.98,
@@ -8015,25 +7943,27 @@
             338.25,
             57.969
           ],
-          "font_size": 76.251,
-          "leading": 88.451,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             13
           ],
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
           "type": "text",
           "default": "Item",
           "box": [
-            1047.762,
-            1543.359,
-            386.3539999999999,
-            112.97899999999993
+            946,
+            1543,
+            540,
+            200
           ],
           "source_ink_box": [
             1047.762,
@@ -8049,17 +7979,19 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
           "type": "text",
           "default": "Item",
           "box": [
-            1700.102,
-            1543.359,
-            281.8619999999999,
-            112.97899999999993
+            1546,
+            1543,
+            540,
+            200
           ],
           "source_ink_box": [
             1700.102,
@@ -8075,17 +8007,19 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
           "type": "text",
           "default": "Item",
           "box": [
-            2905.898,
-            844.367,
-            274.79240000000004,
-            98.52380000000007
+            2746,
+            842,
+            540,
+            200
           ],
           "source_ink_box": [
             2905.898,
@@ -8093,25 +8027,27 @@
             225.941,
             57.188
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             17
           ],
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
           "type": "text",
           "default": "Label 7",
           "box": [
-            2791.711,
-            1544.141,
-            498.8539999999999,
-            112.19699999999992
+            2746,
+            1543,
+            540,
+            200
           ],
           "source_ink_box": [
             2791.711,
@@ -8127,17 +8063,19 @@
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-6",
           "type": "text",
           "default": "Label 6",
           "box": [
-            2172.75,
-            1558.43,
-            524.7450000000001,
-            113.1390000000001
+            2146,
+            1543,
+            540,
+            200
           ],
           "source_ink_box": [
             2172.75,
@@ -8153,7 +8091,9 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "title",
@@ -8162,8 +8102,8 @@
           "box": [
             257.441,
             955.047,
-            542.4965333333333,
-            150.1880666666667
+            700,
+            300
           ],
           "source_ink_box": [
             257.441,
@@ -8180,33 +8120,80 @@
             "number": 3,
             "key": "text/3"
           }
+        },
+        {
+          "name": "text-7",
+          "type": "text",
+          "default": "Caption",
+          "box": [
+            946,
+            842,
+            540,
+            200
+          ],
+          "source_ink_box": [
+            2791.711,
+            1544.141,
+            450.0,
+            70.859
+          ],
+          "font_size": 75.16,
+          "leading": 87.186,
+          "source_node": [
+            18
+          ],
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-8",
+          "type": "text",
+          "default": "Caption",
+          "box": [
+            1546,
+            842,
+            540,
+            200
+          ],
+          "source_ink_box": [
+            2791.711,
+            1544.141,
+            450.0,
+            70.859
+          ],
+          "font_size": 75.16,
+          "leading": 87.186,
+          "source_node": [
+            18
+          ],
+          "slot": {
+            "number": 9,
+            "key": "text/9"
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         }
       ],
       "parts": [
-        "figma-0429-part-01",
-        "figma-0429-part-02",
-        "figma-0429-part-03",
-        "figma-0429-part-04",
-        "figma-0429-part-05",
-        "figma-0429-part-06",
-        "figma-0429-part-07",
-        "figma-0429-part-08",
-        "figma-0429-part-09"
+        "card-1",
+        "divisions-icon-it",
+        "divisions-icon-research",
+        "divisions-icon-education",
+        "divisions-icon-events",
+        "divisions-icon-marketing",
+        "divisions-icon-design",
+        "divisions-icon-cryptography",
+        "divisions-icon-management"
       ],
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English."
       ],
-      "slot_parts": [
-        "images/studio/slots/figma-0429-part-01-panel.pdf",
-        "images/studio/slots/figma-0429-part-02-panel.pdf",
-        "images/studio/slots/figma-0429-part-03-panel.pdf",
-        "images/studio/slots/figma-0429-part-04-panel.pdf",
-        "images/studio/slots/figma-0429-part-05-panel.pdf",
-        "images/studio/slots/figma-0429-part-06-panel.pdf",
-        "images/studio/slots/figma-0429-part-07-panel.pdf",
-        "images/studio/slots/figma-0429-part-09-panel.pdf"
-      ],
+      "slot_parts": [],
       "model": "icon-grid",
       "variant": "eight",
       "native_palette": "light",
@@ -8938,7 +8925,7 @@
       "id": "twelve-word-grid",
       "number": 51,
       "title": "Twelve labelled tiles",
-      "category": "Cards",
+      "category": "Technical",
       "source": "templates/studio/twelve-word-grid.tex",
       "references": [
         "figma-0646"
@@ -8951,556 +8938,234 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            768,
-            652,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            768,
-            935,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-02.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            768,
-            1218,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-03.pdf}",
-          "slot": {
-            "number": 7,
-            "key": "graphic/7",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            768,
-            1501,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-04.pdf}",
-          "slot": {
-            "number": 10,
-            "key": "graphic/10",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-5",
-          "type": "graphic",
-          "box": [
-            1439,
-            652,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-05.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-6",
-          "type": "graphic",
-          "box": [
-            1439,
-            935,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-06.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-7",
-          "type": "graphic",
-          "box": [
-            1439,
-            1218,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-07.pdf}",
-          "slot": {
-            "number": 8,
-            "key": "graphic/8",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-8",
-          "type": "graphic",
-          "box": [
-            1439,
-            1501,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-08.pdf}",
-          "slot": {
-            "number": 11,
-            "key": "graphic/11",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-9",
-          "type": "graphic",
-          "box": [
-            2110,
-            652,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-09.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-10",
-          "type": "graphic",
-          "box": [
-            2110,
-            935,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-10.pdf}",
-          "slot": {
-            "number": 6,
-            "key": "graphic/6",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-11",
-          "type": "graphic",
-          "box": [
-            2110,
-            1218,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-10.pdf}",
-          "slot": {
-            "number": 9,
-            "key": "graphic/9",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-12",
-          "type": "graphic",
-          "box": [
-            2110,
-            1501,
-            678,
-            280
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0646-part-12.pdf}",
-          "slot": {
-            "number": 12,
-            "key": "graphic/12",
-            "role": "whole graphic"
-          }
-        },
-        {
           "name": "title",
           "type": "text",
           "default": "Slide title",
           "box": [
-            1369.2132333333336,
-            326.047,
-            819.2855333333333,
-            169.46506666666667
-          ],
-          "source_ink_box": [
-            1405.852,
-            326.047,
-            746.008,
-            107.461
+            355,
+            326,
+            2846,
+            170
           ],
           "font_size": 112.735,
           "leading": 130.772,
-          "source_node": [
-            1
-          ],
           "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
             "number": 1,
             "key": "text/1"
           }
         },
         {
-          "name": "text-2",
+          "name": "word-1",
           "type": "text",
-          "default": "Item 1",
+          "default": "Word",
           "box": [
-            842.532,
-            732.566,
-            528.936,
-            80.68719999999999
+            842,
+            689,
+            530,
+            152
           ],
-          "source_ink_box": [
-            1010.23,
-            732.566,
-            194.648,
-            47.102
-          ],
-          "font_size": 61.064,
-          "leading": 70.834,
-          "source_node": [
-            3
-          ],
+          "font_size": 62,
+          "leading": 72,
           "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
             "number": 2,
             "key": "text/2"
           }
         },
         {
-          "name": "text-3",
+          "name": "word-2",
           "type": "text",
-          "default": "Item 4",
+          "default": "Word",
           "box": [
-            842.5333333333333,
-            1015.57,
-            528.9333333333334,
-            91.15666666666664
+            1513,
+            689,
+            530,
+            152
           ],
-          "source_ink_box": [
-            1003.719,
-            1015.57,
-            208.043,
-            57.57
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            5
-          ],
+          "font_size": 62,
+          "leading": 72,
           "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Item 7",
-          "box": [
-            842.5333333333333,
-            1299.199,
-            528.9333333333334,
-            80.05966666666663
-          ],
-          "source_ink_box": [
-            942.469,
-            1299.199,
-            329.41,
-            46.473
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            7
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 8,
-            "key": "text/8"
-          }
-        },
-        {
-          "name": "text-5",
-          "type": "text",
-          "default": "Item 10",
-          "box": [
-            843.5466666666666,
-            1581.441,
-            526.9066666666668,
-            93.02933333333328
-          ],
-          "source_ink_box": [
-            949.316,
-            1581.441,
-            317.473,
-            58.328
-          ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            9
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 10,
-            "key": "text/10"
-          }
-        },
-        {
-          "name": "text-6",
-          "type": "text",
-          "default": "Item 2",
-          "box": [
-            1514.04,
-            732.441,
-            527.9200000000001,
-            81.37099999999995
-          ],
-          "source_ink_box": [
-            1672.211,
-            732.441,
-            213.848,
-            47.227
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            11
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
             "number": 3,
             "key": "text/3"
           }
         },
         {
-          "name": "text-7",
+          "name": "word-3",
           "type": "text",
-          "default": "Item 5",
+          "default": "Word",
           "box": [
-            1514.04,
-            1015.539,
-            527.9200000000001,
-            81.36699999999996
+            2184,
+            689,
+            530,
+            152
           ],
-          "source_ink_box": [
-            1696.809,
-            1015.539,
-            163.48,
-            47.223
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            13
-          ],
+          "font_size": 62,
+          "leading": 72,
           "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        },
-        {
-          "name": "text-8",
-          "type": "text",
-          "default": "Item 8",
-          "box": [
-            1514.5466666666666,
-            1298.441,
-            526.9066666666668,
-            82.02133333333329
-          ],
-          "source_ink_box": [
-            1650.25,
-            1298.441,
-            257.371,
-            47.32
-          ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            15
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 9,
-            "key": "text/9"
-          }
-        },
-        {
-          "name": "text-9",
-          "type": "text",
-          "default": "Item 11",
-          "box": [
-            1513.5333333333333,
-            1581.57,
-            528.9333333333334,
-            80.68866666666663
-          ],
-          "source_ink_box": [
-            1685.391,
-            1581.57,
-            184.559,
-            47.102
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            17
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 11,
-            "key": "text/11"
-          }
-        },
-        {
-          "name": "text-10",
-          "type": "text",
-          "default": "Item 3",
-          "box": [
-            2185.548,
-            732.441,
-            526.9040000000001,
-            92.37079999999992
-          ],
-          "source_ink_box": [
-            2318.738,
-            732.441,
-            262.352,
-            57.668
-          ],
-          "font_size": 63.096,
-          "leading": 73.191,
-          "source_node": [
-            19
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
             "number": 4,
             "key": "text/4"
           }
         },
         {
-          "name": "text-11",
+          "name": "word-4",
           "type": "text",
-          "default": "Item 6",
+          "default": "Word",
           "box": [
-            2185.5466666666666,
-            1015.441,
-            526.9066666666668,
-            82.02133333333329
+            842,
+            972,
+            530,
+            152
           ],
-          "source_ink_box": [
-            2351.281,
-            1015.441,
-            195.98,
-            47.32
-          ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            21
-          ],
+          "font_size": 62,
+          "leading": 72,
           "font_weight": "semibold",
-          "alignment": "center",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "word-5",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            1513,
+            972,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          }
+        },
+        {
+          "name": "word-6",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            2184,
+            972,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 7,
             "key": "text/7"
           }
         },
         {
-          "name": "text-12",
+          "name": "word-7",
           "type": "text",
-          "default": "Item 12",
+          "default": "Word",
           "box": [
-            2185.04,
-            1581.441,
-            527.9200000000001,
-            92.47199999999997
+            842,
+            1255,
+            530,
+            152
           ],
-          "source_ink_box": [
-            2343.211,
-            1581.441,
-            213.34,
-            58.328
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            25
-          ],
+          "font_size": 62,
+          "leading": 72,
           "font_weight": "semibold",
-          "alignment": "center",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          }
+        },
+        {
+          "name": "word-8",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            1513,
+            1255,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 9,
+            "key": "text/9"
+          }
+        },
+        {
+          "name": "word-9",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            2184,
+            1255,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 10,
+            "key": "text/10"
+          }
+        },
+        {
+          "name": "word-10",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            842,
+            1538,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 11,
+            "key": "text/11"
+          }
+        },
+        {
+          "name": "word-11",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            1513,
+            1538,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 12,
             "key": "text/12"
           }
         },
         {
-          "name": "text-13",
+          "name": "word-12",
           "type": "text",
-          "default": "Item 9",
+          "default": "Word",
           "box": [
-            2185.04,
-            1298.44,
-            527.92,
-            82.02
+            2184,
+            1538,
+            530,
+            152
           ],
-          "source_ink_box": [
-            2343.21,
-            1298.44,
-            213.34,
-            47.32
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            23
-          ],
+          "font_size": 62,
+          "leading": 72,
           "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
             "number": 13,
             "key": "text/13"
@@ -9508,32 +9173,36 @@
         }
       ],
       "parts": [
-        "figma-0646-part-01",
-        "figma-0646-part-02",
-        "figma-0646-part-03",
-        "figma-0646-part-04",
-        "figma-0646-part-05",
-        "figma-0646-part-06",
-        "figma-0646-part-07",
-        "figma-0646-part-08",
-        "figma-0646-part-09",
-        "figma-0646-part-10",
-        "figma-0646-part-11",
-        "figma-0646-part-12"
+        "figma-0662-part-01"
       ],
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Both variants use the annotated original's rounded inset-shadow panels, as requested by the user. Cell text uses consistent fixed-size semibold type, thin prefix spacing and vertical centering."
       ],
       "slot_parts": [],
-      "model": "icon-grid",
-      "variant": "twelve",
+      "model": "word-grid",
+      "variant": "plain",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/word-grid.tex"
+      ],
+      "options": {
+        "words": {
+          "type": "list",
+          "default": "Word,Word,Word,Word,Word,Word,Word,Word,Word,Word,Word,Word",
+          "description": "Exactly twelve cell values, in row-major order."
+        },
+        "numbered": {
+          "type": "boolean",
+          "default": true,
+          "description": "Prefix each cell with its one-based position."
+        }
+      }
     },
     {
       "id": "three-card-summary",
@@ -11258,461 +10927,6 @@
       "neutral_parts": []
     },
     {
-      "id": "six-outline-cards",
-      "title": "Six Outline Cards",
-      "category": "Cards",
-      "references": [
-        "figma-1013"
-      ],
-      "source": "templates/studio/six-outline-cards.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
-      "number": 58,
-      "canvas": [
-        3556.0,
-        2000.0
-      ],
-      "background": "studio-paper",
-      "fields": [
-        {
-          "name": "title",
-          "type": "text",
-          "default": "Slide title",
-          "box": [
-            1283.3982333333333,
-            326.047,
-            991.2735333333333,
-            151.32406666666668
-          ],
-          "source_ink_box": [
-            1320.57,
-            326.047,
-            916.93,
-            88.418
-          ],
-          "font_size": 114.375,
-          "leading": 132.675,
-          "source_node": [
-            1
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            1883.9766666666667,
-            878.836,
-            1338.0466666666666,
-            81.90633333333335
-          ],
-          "source_ink_box": [
-            2306.711,
-            878.836,
-            493.559,
-            47.832
-          ],
-          "font_size": 61.953,
-          "leading": 71.866,
-          "source_node": [
-            3
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            1883.98,
-            1157.57,
-            1338.04,
-            81.18000000000002
-          ],
-          "source_ink_box": [
-            2328.391,
-            1157.57,
-            450.211,
-            47.102
-          ],
-          "font_size": 61.96,
-          "leading": 71.874,
-          "source_node": [
-            5
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            1883.5333333333333,
-            1434.84,
-            1338.9333333333334,
-            81.41866666666664
-          ],
-          "source_ink_box": [
-            2288.871,
-            1434.84,
-            530.539,
-            47.832
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            7
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 7,
-            "key": "text/7"
-          }
-        },
-        {
-          "name": "text-5",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            383.532,
-            879.566,
-            1338.936,
-            91.79220000000001
-          ],
-          "source_ink_box": [
-            796.047,
-            879.566,
-            514.895,
-            58.207
-          ],
-          "font_size": 61.064,
-          "leading": 70.834,
-          "source_node": [
-            9
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 2,
-            "key": "text/2"
-          }
-        },
-        {
-          "name": "text-6",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            384.5466666666666,
-            1157.441,
-            1336.9066666666668,
-            92.36933333333329
-          ],
-          "source_ink_box": [
-            660.621,
-            1157.441,
-            781.359,
-            57.668
-          ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            11
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "text-7",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            383.5333333333333,
-            1435.441,
-            1338.9333333333334,
-            91.25466666666664
-          ],
-          "source_ink_box": [
-            895.832,
-            1435.441,
-            313.668,
-            57.668
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            13
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        }
-      ],
-      "parts": [],
-      "reconstruction": "measured",
-      "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
-      ],
-      "slot_parts": [],
-      "model": "outlined-cards",
-      "variant": "six-outline",
-      "native_palette": "light",
-      "palettes": [
-        "light"
-      ],
-      "neutral_parts": []
-    },
-    {
-      "id": "six-explanation-cards",
-      "title": "Six Explanation Cards",
-      "category": "Cards",
-      "references": [
-        "figma-1016"
-      ],
-      "source": "templates/studio/six-explanation-cards.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
-      "number": 59,
-      "canvas": [
-        3556.0,
-        2000.0
-      ],
-      "background": "studio-paper",
-      "fields": [
-        {
-          "name": "title",
-          "type": "text",
-          "default": "Slide title",
-          "box": [
-            1078.881233333333,
-            326.047,
-            1400.7185333333334,
-            170.69506666666666
-          ],
-          "source_ink_box": [
-            1115.52,
-            326.047,
-            1327.441,
-            108.691
-          ],
-          "font_size": 112.735,
-          "leading": 130.772,
-          "source_node": [
-            1
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            1974.9,
-            801.566,
-            1338.94,
-            169.128
-          ],
-          "source_ink_box": [
-            1974.898,
-            801.566,
-            1151.281,
-            135.543
-          ],
-          "font_size": 61.064,
-          "leading": 70.8342,
-          "source_node": [
-            3
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            1933.57,
-            1157.44,
-            1298.06,
-            91.2547
-          ],
-          "source_ink_box": [
-            1933.57,
-            1157.441,
-            1070.5,
-            57.668
-          ],
-          "font_size": 61.0667,
-          "leading": 70.8373,
-          "source_node": [
-            5
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            1932.56,
-            1435.57,
-            1299.07,
-            169.786
-          ],
-          "source_ink_box": [
-            1932.559,
-            1435.57,
-            1117.5,
-            136.199
-          ],
-          "font_size": 61.0667,
-          "leading": 70.8373,
-          "source_node": [
-            7
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        },
-        {
-          "name": "text-5",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            499.902,
-            802.066,
-            1338.94,
-            158.687
-          ],
-          "source_ink_box": [
-            499.902,
-            802.066,
-            1152.867,
-            125.102
-          ],
-          "font_size": 61.064,
-          "leading": 70.8342,
-          "source_node": [
-            9
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 2,
-            "key": "text/2"
-          }
-        },
-        {
-          "name": "text-6",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            501.363,
-            1158.07,
-            1255.26,
-            169.126
-          ],
-          "source_ink_box": [
-            501.363,
-            1158.07,
-            995.508,
-            135.539
-          ],
-          "font_size": 61.0667,
-          "leading": 70.8373,
-          "source_node": [
-            11
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "text-7",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            502.223,
-            1514.07,
-            1339.83,
-            90.6343
-          ],
-          "source_ink_box": [
-            502.223,
-            1514.07,
-            1099.379,
-            57.539
-          ],
-          "font_size": 60.1733,
-          "leading": 69.8011,
-          "source_node": [
-            13
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 7,
-            "key": "text/7"
-          }
-        }
-      ],
-      "parts": [],
-      "reconstruction": "measured",
-      "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
-      ],
-      "slot_parts": [],
-      "model": "outlined-cards",
-      "variant": "six-detailed",
-      "native_palette": "light",
-      "palettes": [
-        "light"
-      ],
-      "neutral_parts": []
-    },
-    {
       "id": "five-icon-row",
       "title": "Five Icon Row",
       "category": "Cards",
@@ -12001,85 +11215,64 @@
           "name": "graphic-1",
           "type": "graphic",
           "box": [
-            2561,
-            355,
-            488,
-            489
+            2685,
+            453,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1061-part-01.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-it.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1061-part-01-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-2",
           "type": "graphic",
           "box": [
-            1847,
-            1056,
-            488,
-            489
+            1971,
+            1154,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1061-part-02.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-design.pdf}",
           "slot": {
             "number": 3,
             "key": "graphic/3",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1061-part-02-panel.pdf",
-            "content": [
-              244.46000000000004,
-              218.76999999999998,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
           "name": "graphic-3",
           "type": "graphic",
           "box": [
-            1848,
-            355,
-            488,
-            489
+            1972,
+            453,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1061-part-03.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-education.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
+            "role": "icon"
           }
         },
         {
           "name": "graphic-4",
           "type": "graphic",
           "box": [
-            2561,
-            1056,
-            488,
-            489
+            2685,
+            1154,
+            240,
+            240
           ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1061-part-04.pdf}",
+          "default": "\\studiopaletteimage[width=240\\studiounit,height=240\\studiounit,keepaspectratio]{images/studio/collection/divisions-icon-management.pdf}",
           "slot": {
             "number": 4,
             "key": "graphic/4",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1061-part-04-panel.pdf",
-            "content": [
-              244.03999999999996,
-              218.76999999999998,
-              260.0,
-              260.0
-            ]
+            "role": "icon"
           }
         },
         {
@@ -12089,8 +11282,8 @@
           "box": [
             244.441,
             935.301,
-            542.4930666666667,
-            150.18113333333338
+            1000,
+            300
           ],
           "source_ink_box": [
             244.441,
@@ -12113,10 +11306,10 @@
           "type": "text",
           "default": "Item",
           "box": [
-            1923.48,
-            848.586,
-            387.8129333333333,
-            99.90686666666666
+            1792,
+            848,
+            600,
+            220
           ],
           "source_ink_box": [
             1923.48,
@@ -12124,25 +11317,27 @@
             338.25,
             57.969
           ],
-          "font_size": 76.251,
-          "leading": 88.451,
+          "font_size": 75.16,
+          "leading": 87.186,
           "source_node": [
             42
           ],
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
           "type": "text",
           "default": "Item",
           "box": [
-            1923.219,
-            1550.359,
-            386.3539999999999,
-            112.97899999999993
+            1792,
+            1550,
+            600,
+            220
           ],
           "source_ink_box": [
             1923.219,
@@ -12158,17 +11353,19 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
           "type": "text",
           "default": "Label 4",
           "box": [
-            2580.75,
-            1551.141,
-            498.8539999999999,
-            112.19699999999992
+            2505,
+            1550,
+            600,
+            220
           ],
           "source_ink_box": [
             2580.75,
@@ -12184,24 +11381,51 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
+        },
+        {
+          "name": "text-5",
+          "type": "text",
+          "default": "Caption",
+          "box": [
+            2505,
+            848,
+            600,
+            220
+          ],
+          "source_ink_box": [
+            2580.75,
+            1551.141,
+            450.0,
+            70.859
+          ],
+          "font_size": 75.16,
+          "leading": 87.186,
+          "source_node": [
+            44
+          ],
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          },
+          "alignment": "center",
+          "font_weight": "semibold"
         }
       ],
       "parts": [
-        "figma-1061-part-01",
-        "figma-1061-part-02",
-        "figma-1061-part-03",
-        "figma-1061-part-04"
+        "card-1",
+        "divisions-icon-education",
+        "divisions-icon-it",
+        "divisions-icon-design",
+        "divisions-icon-management"
       ],
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English."
       ],
-      "slot_parts": [
-        "images/studio/slots/figma-1061-part-01-panel.pdf",
-        "images/studio/slots/figma-1061-part-02-panel.pdf",
-        "images/studio/slots/figma-1061-part-04-panel.pdf"
-      ],
+      "slot_parts": [],
       "model": "icon-grid",
       "variant": "four",
       "native_palette": "light",
@@ -45766,797 +44990,361 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            227,
-            651,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            899,
-            651,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-02.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            1571,
-            651,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-03.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            227,
-            931,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-04.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-5",
-          "type": "graphic",
-          "box": [
-            899,
-            931,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-05.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-6",
-          "type": "graphic",
-          "box": [
-            1571,
-            931,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-06.pdf}",
-          "slot": {
-            "number": 6,
-            "key": "graphic/6",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-7",
-          "type": "graphic",
-          "box": [
-            227,
-            1211,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-07.pdf}",
-          "slot": {
-            "number": 7,
-            "key": "graphic/7",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-8",
-          "type": "graphic",
-          "box": [
-            899,
-            1211,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-08.pdf}",
-          "slot": {
-            "number": 8,
-            "key": "graphic/8",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-9",
-          "type": "graphic",
-          "box": [
-            1571,
-            1211,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-08.pdf}",
-          "slot": {
-            "number": 9,
-            "key": "graphic/9",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-10",
-          "type": "graphic",
-          "box": [
-            227,
-            1491,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-10.pdf}",
-          "slot": {
-            "number": 10,
-            "key": "graphic/10",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-11",
-          "type": "graphic",
-          "box": [
-            899,
-            1491,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-11.pdf}",
-          "slot": {
-            "number": 11,
-            "key": "graphic/11",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-12",
-          "type": "graphic",
-          "box": [
-            1571,
-            1491,
-            678,
-            281
-          ],
-          "default": "\\studiopaletteimage[width=678\\studiounit]{images/studio/collection/figma-0662-part-12.pdf}",
-          "slot": {
-            "number": 12,
-            "key": "graphic/12",
-            "role": "whole graphic"
-          }
-        },
-        {
           "name": "title",
           "type": "text",
-          "default": "Title",
+          "default": "Slide title",
           "box": [
-            1437.0802333333336,
-            239.047,
-            683.4185333333332,
-            150.18806666666666
-          ],
-          "source_ink_box": [
-            1473.719,
-            239.047,
-            610.141,
-            88.184
+            355,
+            239,
+            2846,
+            170
           ],
           "font_size": 112.735,
           "leading": 130.772,
-          "source_node": [
-            13
-          ],
+          "font_weight": "semibold",
           "slot": {
             "number": 1,
             "key": "text/1"
           }
         },
         {
-          "name": "item-2-1",
+          "name": "word-1",
           "type": "text",
-          "default": "Item",
+          "default": "Word",
           "box": [
-            2510.96,
-            499.656,
-            272.7990666666668,
-            101.08973333333329
+            301,
+            689,
+            530,
+            152
           ],
-          "source_ink_box": [
-            2510.96,
-            499.656,
-            210.59000000000015,
-            58.32099999999997
-          ],
-          "font_size": 77.761,
-          "leading": 90.203,
-          "source_node": [
-            14
-          ],
-          "slot": {
-            "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "item-2-2",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            2324.0150000000003,
-            638.44,
-            1006.3499999999999,
-            81.30133333333333
-          ],
-          "source_ink_box": [
-            2509.65,
-            638.44,
-            635.0799999999999,
-            47.226999999999975
-          ],
-          "font_size": 61.953,
-          "leading": 71.866,
-          "source_node": [
-            14
-          ],
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "item-2-3",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            2300.8450000000003,
-            717.202,
-            1006.6399999999999,
-            90.49119999999995
-          ],
-          "source_ink_box": [
-            2509.36,
-            717.202,
-            589.6099999999997,
-            56.90599999999995
-          ],
-          "font_size": 61.064,
-          "leading": 70.834,
-          "source_node": [
-            14
-          ],
-          "slot": {
-            "number": 8,
-            "key": "text/8"
-          }
-        },
-        {
-          "name": "item-2-4",
-          "type": "text",
-          "default": "Label 9",
-          "box": [
-            2507.9,
-            794.567,
-            549.3226666666665,
-            81.17433333333338
-          ],
-          "source_ink_box": [
-            2507.9,
-            794.567,
-            499.75999999999976,
-            47.10000000000002
-          ],
-          "font_size": 61.953,
-          "leading": 71.866,
-          "source_node": [
-            14
-          ],
-          "slot": {
-            "number": 9,
-            "key": "text/9"
-          }
-        },
-        {
-          "name": "item-2-5",
-          "type": "text",
-          "default": "2,048",
-          "box": [
-            2403.32382,
-            872.44,
-            364.48235999999974,
-            82.02479999999981
-          ],
-          "source_ink_box": [
-            2509.17,
-            872.44,
-            152.78999999999996,
-            47.32199999999989
-          ],
-          "font_size": 63.096,
-          "leading": 73.191,
-          "source_node": [
-            14
-          ],
-          "slot": {
-            "number": 10,
-            "key": "text/10"
-          }
-        },
-        {
-          "name": "item-3-1",
-          "type": "text",
-          "default": "Label 16",
-          "box": [
-            2307.2927,
-            1381.63,
-            811.0045999999999,
-            111.37799999999989
-          ],
-          "source_ink_box": [
-            2510.96,
-            1381.63,
-            403.6700000000001,
-            70.03999999999996
-          ],
-          "font_size": 75.16,
-          "leading": 87.186,
-          "source_node": [
-            15
-          ],
-          "slot": {
-            "number": 16,
-            "key": "text/16"
-          }
-        },
-        {
-          "name": "item-3-2",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            2283.9226166666667,
-            1519.57,
-            943.0747666666663,
-            91.12666666666661
-          ],
-          "source_ink_box": [
-            2507.9,
-            1519.57,
-            495.1199999999999,
-            57.539999999999964
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            15
-          ],
-          "slot": {
-            "number": 17,
-            "key": "text/17"
-          }
-        },
-        {
-          "name": "item-3-3",
-          "type": "text",
-          "default": "Label 21",
-          "box": [
-            2506.54,
-            1597.57,
-            538.3533333333332,
-            80.68666666666678
-          ],
-          "source_ink_box": [
-            2506.54,
-            1597.57,
-            489.5,
-            47.100000000000136
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            15
-          ],
-          "slot": {
-            "number": 21,
-            "key": "text/21"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Label 2",
-          "box": [
-            273.945,
-            501.488,
-            550.7178666666667,
-            113.72373333333337
-          ],
-          "source_ink_box": [
-            273.945,
-            501.488,
-            493.855,
-            65.609
-          ],
-          "font_size": 87.481,
-          "leading": 101.478,
-          "source_node": [
-            16
-          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 2,
             "key": "text/2"
           }
         },
         {
-          "name": "text-5",
+          "name": "word-2",
           "type": "text",
-          "default": "Label 5",
+          "default": "Word",
           "box": [
-            301.532,
-            732.566,
-            528.936,
-            80.68719999999999
+            973,
+            689,
+            530,
+            152
           ],
-          "source_ink_box": [
-            469.23,
-            732.566,
-            194.652,
-            47.102
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "word-3",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            1645,
+            689,
+            530,
+            152
           ],
-          "font_size": 61.064,
-          "leading": 70.834,
-          "source_node": [
-            17
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "word-4",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            301,
+            969,
+            530,
+            152
           ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 5,
             "key": "text/5"
           }
         },
         {
-          "name": "text-6",
+          "name": "word-5",
           "type": "text",
-          "default": "Label 11",
+          "default": "Word",
           "box": [
-            301.5333333333333,
-            1021.57,
-            528.9333333333334,
-            91.15666666666664
+            973,
+            969,
+            530,
+            152
           ],
-          "source_ink_box": [
-            462.715,
-            1021.57,
-            208.047,
-            57.57
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            18
-          ],
-          "slot": {
-            "number": 11,
-            "key": "text/11"
-          }
-        },
-        {
-          "name": "text-7",
-          "type": "text",
-          "default": "Label 14",
-          "box": [
-            301.5333333333333,
-            1302.199,
-            528.9333333333334,
-            80.05966666666663
-          ],
-          "source_ink_box": [
-            401.469,
-            1302.199,
-            329.41,
-            46.473
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            19
-          ],
-          "slot": {
-            "number": 14,
-            "key": "text/14"
-          }
-        },
-        {
-          "name": "text-8",
-          "type": "text",
-          "default": "Label 18",
-          "box": [
-            302.5466666666666,
-            1581.441,
-            526.9066666666668,
-            93.02933333333328
-          ],
-          "source_ink_box": [
-            408.316,
-            1581.441,
-            317.477,
-            58.328
-          ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            20
-          ],
-          "slot": {
-            "number": 18,
-            "key": "text/18"
-          }
-        },
-        {
-          "name": "text-9",
-          "type": "text",
-          "default": "Label 6",
-          "box": [
-            974.04,
-            732.441,
-            527.9200000000001,
-            81.37099999999995
-          ],
-          "source_ink_box": [
-            1131.211,
-            732.441,
-            213.848,
-            47.227
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            21
-          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 6,
             "key": "text/6"
           }
         },
         {
-          "name": "text-10",
+          "name": "word-6",
           "type": "text",
-          "default": "Label 12",
+          "default": "Word",
           "box": [
-            974.04,
-            1021.539,
-            527.9200000000001,
-            81.36699999999996
+            1645,
+            969,
+            530,
+            152
           ],
-          "source_ink_box": [
-            1155.809,
-            1021.539,
-            163.48,
-            47.223
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            22
-          ],
-          "slot": {
-            "number": 12,
-            "key": "text/12"
-          }
-        },
-        {
-          "name": "text-11",
-          "type": "text",
-          "default": "Label 15",
-          "box": [
-            974.5466666666666,
-            1301.441,
-            526.9066666666668,
-            82.02133333333329
-          ],
-          "source_ink_box": [
-            1109.25,
-            1301.441,
-            257.371,
-            47.32
-          ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            23
-          ],
-          "slot": {
-            "number": 15,
-            "key": "text/15"
-          }
-        },
-        {
-          "name": "text-12",
-          "type": "text",
-          "default": "Label 19",
-          "box": [
-            973.5333333333333,
-            1581.57,
-            528.9333333333334,
-            80.68866666666663
-          ],
-          "source_ink_box": [
-            1144.391,
-            1581.57,
-            184.559,
-            47.102
-          ],
-          "font_size": 61.067,
-          "leading": 70.837,
-          "source_node": [
-            24
-          ],
-          "slot": {
-            "number": 19,
-            "key": "text/19"
-          }
-        },
-        {
-          "name": "text-13",
-          "type": "text",
-          "default": "Label 7",
-          "box": [
-            1646.548,
-            732.441,
-            526.9040000000001,
-            92.37079999999992
-          ],
-          "source_ink_box": [
-            1777.738,
-            732.441,
-            262.352,
-            57.668
-          ],
-          "font_size": 63.096,
-          "leading": 73.191,
-          "source_node": [
-            25
-          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 7,
             "key": "text/7"
           }
         },
         {
-          "name": "text-14",
+          "name": "word-7",
           "type": "text",
-          "default": "Label 13",
+          "default": "Word",
           "box": [
-            1646.5466666666666,
-            1021.441,
-            526.9066666666668,
-            82.02133333333329
+            301,
+            1249,
+            530,
+            152
           ],
-          "source_ink_box": [
-            1810.281,
-            1021.441,
-            195.98,
-            47.32
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          }
+        },
+        {
+          "name": "word-8",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            973,
+            1249,
+            530,
+            152
           ],
-          "font_size": 63.093,
-          "leading": 73.188,
-          "source_node": [
-            26
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 9,
+            "key": "text/9"
+          }
+        },
+        {
+          "name": "word-9",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            1645,
+            1249,
+            530,
+            152
           ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 10,
+            "key": "text/10"
+          }
+        },
+        {
+          "name": "word-10",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            301,
+            1529,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 11,
+            "key": "text/11"
+          }
+        },
+        {
+          "name": "word-11",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            973,
+            1529,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 12,
+            "key": "text/12"
+          }
+        },
+        {
+          "name": "word-12",
+          "type": "text",
+          "default": "Word",
+          "box": [
+            1645,
+            1529,
+            530,
+            152
+          ],
+          "font_size": 62,
+          "leading": 72,
+          "font_weight": "semibold",
           "slot": {
             "number": 13,
             "key": "text/13"
           }
         },
         {
-          "name": "text-15",
+          "name": "grid-title",
           "type": "text",
-          "default": "Label 20",
+          "default": "Word sequence",
           "box": [
-            1646.04,
-            1581.441,
-            527.9200000000001,
-            92.47199999999997
+            274,
+            501,
+            1975,
+            120
           ],
-          "source_ink_box": [
-            1802.211,
-            1581.441,
-            213.34,
-            58.328
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            28
-          ],
+          "font_size": 87.48,
+          "leading": 101.48,
+          "font_weight": "semibold",
           "slot": {
-            "number": 20,
-            "key": "text/20"
+            "number": 14,
+            "key": "text/14"
           }
         },
         {
-          "name": "text-16",
+          "name": "explanation-title",
           "type": "text",
-          "default": "Item 9",
+          "default": "Explanation",
           "box": [
-            1646.04,
-            1301.44,
-            527.92,
-            82.02
+            2508,
+            499,
+            750,
+            125
           ],
-          "source_ink_box": [
-            1810,
-            1301.44,
-            213,
-            47
-          ],
-          "font_size": 62.08,
-          "leading": 72.013,
-          "source_node": [
-            23
-          ],
+          "font_size": 77.76,
+          "leading": 90.2,
+          "font_weight": "semibold",
           "slot": {
-            "number": 24,
-            "key": "text/24"
+            "number": 15,
+            "key": "text/15"
+          }
+        },
+        {
+          "name": "explanation",
+          "type": "text",
+          "default": "Explain the example in a short paragraph.",
+          "box": [
+            2508,
+            638,
+            750,
+            470
+          ],
+          "font_size": 62,
+          "leading": 80,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 16,
+            "key": "text/16"
+          }
+        },
+        {
+          "name": "note-title",
+          "type": "text",
+          "default": "Additional note",
+          "box": [
+            2508,
+            1381,
+            750,
+            125
+          ],
+          "font_size": 75.16,
+          "leading": 87.19,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 17,
+            "key": "text/17"
+          }
+        },
+        {
+          "name": "note",
+          "type": "text",
+          "default": "Add a short supporting note.",
+          "box": [
+            2508,
+            1519,
+            750,
+            220
+          ],
+          "font_size": 62,
+          "leading": 80,
+          "font_weight": "semibold",
+          "slot": {
+            "number": 18,
+            "key": "text/18"
           }
         }
       ],
       "parts": [
-        "figma-0662-part-01",
-        "figma-0662-part-02",
-        "figma-0662-part-03",
-        "figma-0662-part-04",
-        "figma-0662-part-05",
-        "figma-0662-part-06",
-        "figma-0662-part-07",
-        "figma-0662-part-08",
-        "figma-0662-part-09",
-        "figma-0662-part-10",
-        "figma-0662-part-11",
-        "figma-0662-part-12"
+        "figma-0662-part-01"
       ],
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "English text boxes expanded within existing blank space while preserving source anchors: item-2-2, item-2-3, item-2-5, item-3-1, item-3-2."
+        "Both variants use the annotated original's rounded inset-shadow panels, as requested by the user. Cell text uses consistent fixed-size semibold type, thin prefix spacing and vertical centering."
       ],
       "slot_parts": [],
-      "model": "seed-grid-caption",
-      "variant": "default",
+      "model": "word-grid",
+      "variant": "annotated",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/word-grid.tex"
+      ],
+      "options": {
+        "words": {
+          "type": "list",
+          "default": "Word,Word,Word,Word,Word,Word,Word,Word,Word,Word,Word,Word",
+          "description": "Exactly twelve cell values, in row-major order."
+        },
+        "numbered": {
+          "type": "boolean",
+          "default": true,
+          "description": "Prefix each cell with its one-based position."
+        }
+      }
     },
     {
       "id": "diagram-pool-shares",

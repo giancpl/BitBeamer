@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the eight-icon overview layout.
 
-Model: `eight-icon-grid` · Family: Cards · Status: **in review**.
+Model: `eight-icon-grid` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/eight-icon-grid.tex)
 
@@ -38,15 +38,14 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/6`, `image/6`, `graphic/6` | `graphic-2` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/7`, `image/7`, `graphic/7` | `graphic-3` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/3`, `image/3`, `graphic/3` | `graphic-4` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/2`, `image/2`, `graphic/2` | `graphic-5` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/4`, `image/4`, `graphic/4` | `graphic-6` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/9`, `image/9`, `graphic/9` | `graphic-7` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/5`, `image/5`, `graphic/5` | `graphic-8` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/8`, `image/8`, `graphic/8` | `graphic-9` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/6`, `image/6`, `graphic/6` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/7`, `image/7`, `graphic/7` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-6` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/9`, `image/9`, `graphic/9` | `graphic-7` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/8`, `image/8`, `graphic/8` | `graphic-9` | Replaces this complete graphic; other elements stay fixed. |
 | `text/1` | `text-1` | Editable text |
 | `text/4` | `text-2` | Editable text |
 | `text/5` | `text-3` | Editable text |
@@ -54,6 +53,8 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `text/7` | `text-5` | Editable text |
 | `text/6` | `text-6` | Editable text |
 | `text/3` | `title` | Main text |
+| `text/8` | `text-7` | Editable text |
+| `text/9` | `text-8` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -110,22 +111,23 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | upper centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-02.pdf}</code> |
-| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-03.pdf}</code> |
-| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | upper right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-04.pdf}</code> |
-| <code>graphic-5</code> | Icon or image inside a fixed composition (graphic) | upper centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-05.pdf}</code> |
-| <code>graphic-6</code> | Icon or image inside a fixed composition (graphic) | upper right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-06.pdf}</code> |
-| <code>graphic-7</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | middle centre | 5.7% wide × 5.3% high | <code>\studiopaletteimage[width=201\studiounit]{images/studio/collection/figma-0429-part-08.pdf}</code> |
-| <code>graphic-9</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0429-part-09.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle right | 10.9% wide × 5.0% high | <code>Item</code> |
-| <code>text-2</code> | Editable text (text) | lower centre | 10.9% wide × 5.6% high | <code>Item</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 7.9% wide × 5.6% high | <code>Item</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 7.7% wide × 4.9% high | <code>Item</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 14.0% wide × 5.6% high | <code>Label 7</code> |
-| <code>text-6</code> | Editable text (text) | lower right | 14.8% wide × 5.7% high | <code>Label 6</code> |
-| <code>title</code> | Main text (text) | middle left | 15.3% wide × 7.5% high | <code>Title</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | upper right | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | upper right | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle right | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>text-1</code> | Editable text (text) | middle right | 15.2% wide × 10.0% high | <code>Item</code> |
+| <code>text-2</code> | Editable text (text) | lower centre | 15.2% wide × 10.0% high | <code>Item</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 15.2% wide × 10.0% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | middle right | 15.2% wide × 10.0% high | <code>Item</code> |
+| <code>text-5</code> | Editable text (text) | lower right | 15.2% wide × 10.0% high | <code>Label 7</code> |
+| <code>text-6</code> | Editable text (text) | lower right | 15.2% wide × 10.0% high | <code>Label 6</code> |
+| <code>title</code> | Main text (text) | middle left | 19.7% wide × 15.0% high | <code>Title</code> |
+| <code>text-7</code> | Editable text (text) | middle centre | 15.2% wide × 10.0% high | <code>Caption</code> |
+| <code>text-8</code> | Editable text (text) | middle centre | 15.2% wide × 10.0% high | <code>Caption</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

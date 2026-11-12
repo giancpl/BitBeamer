@@ -1,6 +1,6 @@
 # Slide-by-slide guides
 
-196 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
+194 current compositions. Each guide has a complete one-slide example, exact field names and layout constraints.
 
 [Getting started](../USING-STUDIO.md) · [Slide guide](../slides/index.html)
 
@@ -119,20 +119,74 @@ Start with the selected layouts, then browse the full collection by family.
 - [Four-step icon process](guides/four-step-process.md)
 - [Two-step icon process](guides/two-step-process.md)
 - [Hanging milestone badges](guides/milestone-cards.md)
-- [Twelve labelled tiles](guides/twelve-word-grid.md)
 - [Three Card Summary](guides/three-card-summary.md)
 - [Four Pillar Cards](guides/four-pillar-cards.md)
 - [Hardware Options](guides/hardware-options.md)
 - [Software Options](guides/software-options.md)
 - [Two Card Vertical](guides/two-card-vertical.md)
 - [Callout Explanation](guides/callout-explanation.md)
-- [Six Outline Cards](guides/six-outline-cards.md)
-- [Six Explanation Cards](guides/six-explanation-cards.md)
 - [Five Icon Row](guides/five-icon-row.md)
 - [Square Icon Grid](guides/square-icon-grid.md)
 - [Incentives Card Grid](guides/incentives-card-grid.md)
 - [Three environments](guides/network-environments.md)
 - [Three node types](guides/node-type-grid.md)
+
+## Technical
+
+- [Twelve labelled tiles](guides/twelve-word-grid.md)
+- [Data table](guides/table.md) — selected
+- [Equation and example](guides/equation.md) — selected
+- [Editable code](guides/code.md) — selected
+- [Bibliography and resources](guides/references.md)
+- [Input and output comparison](guides/hash-avalanche.md)
+- [Derivation path](guides/key-derivation.md)
+- [Input and output flow](guides/signature-flow.md)
+- [Three-lane sequence](guides/protocol-sequence.md)
+- [Chain with block headers](guides/block-chain.md)
+- [Merkle hash tree](guides/merkle-tree.md) — selected
+- [Forked chain branches](guides/fork-branches.md)
+- [Two-lane process](guides/transaction-flow.md)
+- [Cipher substitution mapping](guides/cipher-mapping.md)
+- [Encryption and decryption pipeline](guides/encryption-flow.md)
+- [Outcome matrix](guides/payoff-matrix.md)
+- [Two-way channel](guides/payment-channel.md)
+- [Processing flow](guides/proof-of-work-flow.md)
+- [Seed Key Tree](guides/seed-key-tree.md)
+- [Three assumptions](guides/cryptographic-assumptions.md)
+- [Routing diagram](guides/routing-graph.md)
+- [Protocol Symmetric](guides/protocol-symmetric.md)
+- [Protocol Public Keys](guides/protocol-public-keys.md)
+- [Protocol Key Lock](guides/protocol-key-lock.md)
+- [Protocol Key Exchange](guides/protocol-key-exchange.md)
+- [Protocol Signed Message](guides/protocol-signed-message.md)
+- [Protocol Encrypted Message](guides/protocol-encrypted-message.md)
+- [Protocol Unlock Message](guides/protocol-unlock-message.md)
+- [Protocol Signed Payload](guides/protocol-signed-payload.md)
+- [Protocol Key Setup](guides/protocol-key-setup.md)
+- [Protocol Token Transfer](guides/protocol-token-transfer.md)
+- [Protocol Token Routing](guides/protocol-token-routing.md)
+- [Protocol Key Aggregation](guides/protocol-key-aggregation.md)
+- [Protocol Aggregate Signature](guides/protocol-aggregate-signature.md)
+- [Protocol Eavesdropping](guides/protocol-eavesdropping.md)
+- [Protocol Encrypted Channel](guides/protocol-encrypted-channel.md)
+- [Symmetric Encryption](guides/symmetric-encryption.md)
+- [Asymmetric Encryption](guides/asymmetric-encryption.md)
+- [Merkle Tree Wide](guides/merkle-tree-wide.md)
+- [Inputs and outputs](guides/diagram-transaction-inputs.md)
+- [Word grid and caption](guides/seed-grid-caption.md)
+- [Shared work diagram](guides/diagram-pool-shares.md)
+- [Layers Overview](guides/layers-overview.md)
+- [Multiple approvals](guides/multi-signature.md)
+- [Blockchain With List](guides/blockchain-with-list.md)
+- [Double Spend Diagram](guides/double-spend-diagram.md)
+- [One-to-many mapping](guides/key-to-addresses.md)
+- [Two-system comparison](guides/dual-consensus-diagram.md)
+- [Letter wheel](guides/cipher-wheel.md)
+- [Resource columns](guides/blue-resources-columns.md)
+- [Record information](guides/genesis-information.md)
+- [Practical instructions](guides/regtest-instructions.md)
+- [Record inspection](guides/block-inspection.md)
+- [Processing cards](guides/mining-card-grid.md)
 
 ## Comparisons
 
@@ -196,62 +250,6 @@ Start with the selected layouts, then browse the full collection by family.
 - [Success Dashboard](guides/success-dashboard.md)
 - [Annotated system](guides/diagram-annotated-energy.md)
 - [Cards and counters](guides/card-statistics-process.md)
-
-## Technical
-
-- [Data table](guides/table.md) — selected
-- [Equation and example](guides/equation.md) — selected
-- [Editable code](guides/code.md) — selected
-- [Bibliography and resources](guides/references.md)
-- [Input and output comparison](guides/hash-avalanche.md)
-- [Derivation path](guides/key-derivation.md)
-- [Input and output flow](guides/signature-flow.md)
-- [Three-lane sequence](guides/protocol-sequence.md)
-- [Chain with block headers](guides/block-chain.md)
-- [Merkle hash tree](guides/merkle-tree.md) — selected
-- [Forked chain branches](guides/fork-branches.md)
-- [Two-lane process](guides/transaction-flow.md)
-- [Cipher substitution mapping](guides/cipher-mapping.md)
-- [Encryption and decryption pipeline](guides/encryption-flow.md)
-- [Outcome matrix](guides/payoff-matrix.md)
-- [Two-way channel](guides/payment-channel.md)
-- [Processing flow](guides/proof-of-work-flow.md)
-- [Seed Key Tree](guides/seed-key-tree.md)
-- [Three assumptions](guides/cryptographic-assumptions.md)
-- [Routing diagram](guides/routing-graph.md)
-- [Protocol Symmetric](guides/protocol-symmetric.md)
-- [Protocol Public Keys](guides/protocol-public-keys.md)
-- [Protocol Key Lock](guides/protocol-key-lock.md)
-- [Protocol Key Exchange](guides/protocol-key-exchange.md)
-- [Protocol Signed Message](guides/protocol-signed-message.md)
-- [Protocol Encrypted Message](guides/protocol-encrypted-message.md)
-- [Protocol Unlock Message](guides/protocol-unlock-message.md)
-- [Protocol Signed Payload](guides/protocol-signed-payload.md)
-- [Protocol Key Setup](guides/protocol-key-setup.md)
-- [Protocol Token Transfer](guides/protocol-token-transfer.md)
-- [Protocol Token Routing](guides/protocol-token-routing.md)
-- [Protocol Key Aggregation](guides/protocol-key-aggregation.md)
-- [Protocol Aggregate Signature](guides/protocol-aggregate-signature.md)
-- [Protocol Eavesdropping](guides/protocol-eavesdropping.md)
-- [Protocol Encrypted Channel](guides/protocol-encrypted-channel.md)
-- [Symmetric Encryption](guides/symmetric-encryption.md)
-- [Asymmetric Encryption](guides/asymmetric-encryption.md)
-- [Merkle Tree Wide](guides/merkle-tree-wide.md)
-- [Inputs and outputs](guides/diagram-transaction-inputs.md)
-- [Word grid and caption](guides/seed-grid-caption.md)
-- [Shared work diagram](guides/diagram-pool-shares.md)
-- [Layers Overview](guides/layers-overview.md)
-- [Multiple approvals](guides/multi-signature.md)
-- [Blockchain With List](guides/blockchain-with-list.md)
-- [Double Spend Diagram](guides/double-spend-diagram.md)
-- [One-to-many mapping](guides/key-to-addresses.md)
-- [Two-system comparison](guides/dual-consensus-diagram.md)
-- [Letter wheel](guides/cipher-wheel.md)
-- [Resource columns](guides/blue-resources-columns.md)
-- [Record information](guides/genesis-information.md)
-- [Practical instructions](guides/regtest-instructions.md)
-- [Record inspection](guides/block-inspection.md)
-- [Processing cards](guides/mining-card-grid.md)
 
 ## Closing
 

@@ -1419,52 +1419,25 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-1",
-                "label-two": "text-4",
                 "title": "title",
-                "label-four": "text-2",
-                "label-five": "text-3",
-                "label-six": "text-6",
-                "label-seven": "text-5"
-              }
-            }
-          ]
-        },
-        {
-          "id": "twelve",
-          "default_source": "twelve-word-grid",
-          "compositions": [
-            {
-              "id": "twelve-word-grid",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-6",
-                "label-four": "text-10",
-                "label-five": "text-3",
-                "label-six": "text-7",
-                "label-seven": "text-11",
-                "label-eight": "text-4",
-                "label-nine": "text-8",
-                "label-ten": "text-5",
-                "label-eleven": "text-9",
-                "label-twelve": "text-12",
-                "caption-one": "text-2",
-                "caption-two": "text-6",
-                "caption-three": "text-10",
-                "caption-four": "text-3",
-                "caption-five": "text-7",
-                "caption-six": "text-11",
-                "caption-seven": "text-4",
-                "caption-eight": "text-8",
-                "caption-nine": "text-13",
-                "caption-ten": "text-5",
-                "caption-eleven": "text-9",
-                "caption-twelve": "text-12"
+                "caption-one": "text-7",
+                "caption-two": "text-8",
+                "caption-three": "text-1",
+                "caption-four": "text-4",
+                "caption-five": "text-2",
+                "caption-six": "text-3",
+                "caption-seven": "text-6",
+                "caption-eight": "text-5"
+              },
+              "graphic_slots": {
+                "one": 1,
+                "two": 2,
+                "three": 3,
+                "four": 4,
+                "five": 6,
+                "six": 7,
+                "seven": 8,
+                "eight": 9
               }
             }
           ]
@@ -1480,10 +1453,17 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-2",
                 "title": "title",
-                "label-three": "text-3",
-                "label-four": "text-4"
+                "caption-one": "text-2",
+                "caption-two": "text-5",
+                "caption-three": "text-3",
+                "caption-four": "text-4"
+              },
+              "graphic_slots": {
+                "one": 1,
+                "two": 2,
+                "three": 3,
+                "four": 4
               }
             }
           ]
@@ -4490,51 +4470,6 @@
       ]
     },
     {
-      "id": "seed-grid-caption",
-      "title": "Word grid and caption",
-      "category": "Technical",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "seed-grid-caption",
-          "compositions": [
-            {
-              "id": "seed-grid-caption",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-4",
-                "label-three": "item-2-1",
-                "label-four": "item-2-2",
-                "label-five": "text-5",
-                "label-six": "text-9",
-                "label-seven": "text-13",
-                "label-eight": "item-2-3",
-                "label-nine": "item-2-4",
-                "label-ten": "item-2-5",
-                "label-eleven": "text-6",
-                "label-twelve": "text-10",
-                "label-thirteen": "text-14",
-                "label-fourteen": "text-7",
-                "label-fifteen": "text-11",
-                "label-sixteen": "item-3-1",
-                "label-seventeen": "item-3-2",
-                "label-eighteen": "text-8",
-                "label-nineteen": "text-12",
-                "label-twenty": "text-15",
-                "label-21": "item-3-3",
-                "caption-nine": "text-16"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "diagram-pool-shares",
       "title": "Shared work diagram",
       "category": "Technical",
@@ -4935,48 +4870,78 @@
               }
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "word-grid",
+      "title": "Twelve-word grid",
+      "category": "Technical",
+      "default_variant": "plain",
+      "variants": [
         {
-          "id": "six-outline",
-          "default_source": "six-outline-cards",
+          "id": "plain",
+          "default_source": "twelve-word-grid",
           "compositions": [
             {
-              "id": "six-outline-cards",
+              "id": "twelve-word-grid",
               "native_palette": "light",
               "palettes": [
                 "light"
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-5",
-                "label-three": "text-2",
-                "label-four": "text-6",
-                "label-five": "text-3",
-                "label-six": "text-7",
-                "label-seven": "text-4"
-              }
+                "word-one": "word-1",
+                "word-two": "word-2",
+                "word-three": "word-3",
+                "word-four": "word-4",
+                "word-five": "word-5",
+                "word-six": "word-6",
+                "word-seven": "word-7",
+                "word-eight": "word-8",
+                "word-nine": "word-9",
+                "word-ten": "word-10",
+                "word-eleven": "word-11",
+                "word-twelve": "word-12"
+              },
+              "graphic_slots": {},
+              "example_fields": [
+                "title"
+              ]
             }
           ]
         },
         {
-          "id": "six-detailed",
-          "default_source": "six-explanation-cards",
+          "id": "annotated",
+          "default_source": "seed-grid-caption",
           "compositions": [
             {
-              "id": "six-explanation-cards",
+              "id": "seed-grid-caption",
               "native_palette": "light",
               "palettes": [
                 "light"
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-5",
-                "label-three": "text-2",
-                "label-four": "text-6",
-                "label-five": "text-3",
-                "label-six": "text-4",
-                "label-seven": "text-7"
-              }
+                "word-one": "word-1",
+                "word-two": "word-2",
+                "word-three": "word-3",
+                "word-four": "word-4",
+                "word-five": "word-5",
+                "word-six": "word-6",
+                "word-seven": "word-7",
+                "word-eight": "word-8",
+                "word-nine": "word-9",
+                "word-ten": "word-10",
+                "word-eleven": "word-11",
+                "word-twelve": "word-12",
+                "grid-title": "grid-title",
+                "explanation-title": "explanation-title",
+                "explanation": "explanation",
+                "note-title": "note-title",
+                "note": "note"
+              },
+              "graphic_slots": {}
             }
           ]
         }

@@ -28,6 +28,49 @@ class StudioModelTests(unittest.TestCase):
         self.assertNotEqual(members['milestone-cards'][0]['id'],members['two-step-process'][0]['id'])
         self.assertEqual(members['milestone-cards'][0]['id'],'milestone-badges')
 
+    def test_word_grids_share_twelve_cells_in_reading_order(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        models=studio_models.load_models(ROOT)['models']
+        model=next(m for m in models if m['id']=='word-grid')
+        self.assertEqual({v['id'] for v in model['variants']},{'plain','annotated'})
+        words=['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve']
+        for variant in model['variants']:
+            contract=variant['compositions'][0];entry=entries[contract['id']]
+            native=[contract['fields']['word-'+w] for w in words]
+            self.assertEqual(len(set(native)),12)
+            positions=[next(f['box'] for f in entry['fields'] if f['name']==n) for n in native]
+            for i in range(11):
+                if i%3==2:self.assertLess(positions[i][1],positions[i+1][1])
+                else:self.assertLess(positions[i][0],positions[i+1][0])
+            self.assertFalse(any(f['type']=='graphic' for f in entry['fields']))
+            self.assertEqual(entry['parts'],['figma-0662-part-01'])
+            self.assertTrue(all(f['font_weight']=='semibold' for f in entry['fields'] if f['name'].startswith('word-')))
+            self.assertEqual(set(entry['options']),{'words','numbered'})
+            self.assertEqual('explanation' in contract['fields'],variant['id']=='annotated')
+        icons=next(m for m in models if m['id']=='icon-grid')
+        self.assertEqual({v['id'] for v in icons['variants']},{'four','eight'})
+
+    def test_division_icons_follow_caption_order_and_have_independent_bounds(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        members=studio_models.membership(ROOT)
+        registry="\n".join(studio_models.registry(ROOT,list(entries.values())))
+        words=['one','two','three','four','five','six','seven','eight']
+        for name,count in [('square-icon-grid',4),('eight-icon-grid',8)]:
+            entry=entries[name];contract=members[name][2]
+            self.assertEqual(list(contract['graphic_slots']),words[:count])
+            self.assertEqual(len([f for f in entry['fields'] if f['type']=='graphic']),count)
+            for word in words[:count]:
+                number=contract['graphic_slots'][word]
+                graphic=next(f for f in entry['fields'] if f['type']=='graphic' and f['slot']['number']==number)
+                caption=next(f for f in entry['fields'] if f['name']==contract['fields']['caption-'+word])
+                self.assertEqual(graphic['box'][2:],[240,240])
+                self.assertNotIn('frame',graphic['slot'])
+                self.assertLess(abs(graphic['box'][0]+120-caption['box'][0]-caption['box'][2]/2),8)
+                self.assertIn('\\DeclareStudioGraphicSemantic{'+name+'}{'+word+'}{'+str(number)+'}',registry)
+            source=(ROOT/entry['source']).read_text()
+            self.assertNotIn('\\path[',source,'Native symbols must disappear when their icon field is replaced')
+            self.assertIn('card-1',entry['parts'])
+
     def test_soft_card_icon_names_target_symbols_instead_of_panels(self):
         entries=studio_templates.inspect_templates(ROOT)
         members=studio_models.membership(ROOT)
@@ -68,7 +111,7 @@ class StudioModelTests(unittest.TestCase):
             self.assertTrue(all(o['type']=='boolean' for o in entry['options'].values()))
             self.assertIn('templates/studio/components/text-card-options.tex',entry['shared_sources'])
         outlines=next(m for m in models if m['id']=='outlined-cards')
-        self.assertEqual({v['id'] for v in outlines['variants']},{'callout','six-outline','six-detailed'})
+        self.assertEqual({v['id'] for v in outlines['variants']},{'callout'})
 
     def test_icon_card_rows_share_count_fields_title_and_renderer(self):
         entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
@@ -255,7 +298,7 @@ assert.equal(pageRows(d.rows,0).length,12);'''
 
     def test_grouped_subset_export_retains_every_requested_composition(self):
         models=studio_models.load_models(ROOT)['models']
-        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),196)
+        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),194)
         subset=studio_models.expand_model_names(ROOT,['cover','icon-cards'])
         self.assertEqual(len(subset),7)
         self.assertTrue({'cover','cover-light','cover-photo','three-cards','two-cards'}<=set(subset))

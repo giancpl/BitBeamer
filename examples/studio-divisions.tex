@@ -1,0 +1,95 @@
+% Divisions: four/eight cards in row-major order, short and longer captions.
+\ifdefined\pdfminorversion\pdfminorversion=7\fi
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage{bitpolitostudiolibrary}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{library/references.bib}
+\begin{document}
+\studiotemplate[
+  variant={four},
+  title={Divisions},
+  caption-one={Education},
+  caption-two={IT},
+  caption-three={Marketing},
+  caption-four={Management}
+]{icon-grid}
+\studiotemplate[
+  variant={eight},
+  title={Divisions},
+  caption-one={IT},
+  caption-two={R\&D},
+  caption-three={Education},
+  caption-four={Events},
+  caption-five={Marketing},
+  caption-six={Design},
+  caption-seven={Cryptography},
+  caption-eight={Management}
+]{icon-grid}
+\studiotemplate[
+  variant={four},
+  title={Working\\together},
+  caption-one={Learning and sharing},
+  caption-two={Research and\\development},
+  caption-three={Public communication},
+  caption-four={Coordination and\\planning}
+]{icon-grid}
+\studiotemplate[
+  variant={eight},
+  title={Working\\together},
+  caption-one={Software tools},
+  caption-two={Research and\\testing},
+  caption-three={Learning and sharing},
+  caption-four={Workshops and\\events},
+  caption-five={Public communication},
+  caption-six={Visual identity},
+  caption-seven={Protocol research},
+  caption-eight={Team coordination}
+]{icon-grid}
+\studiotemplate[
+  variant={four},
+  title={Divisions},
+  caption-one={Education},
+  caption-two={IT},
+  caption-three={Marketing},
+  caption-four={Management},
+  icon-one={book},
+  icon-two={code},
+  icon-three={heart},
+  icon-four={bitcoin}
+]{icon-grid}
+\studiotemplate[
+  variant={eight},
+  title={Divisions},
+  caption-one={IT},
+  caption-two={R\&D},
+  caption-three={Education},
+  caption-four={Events},
+  caption-five={Marketing},
+  caption-six={Design},
+  caption-seven={Cryptography},
+  caption-eight={Management},
+  icon-one={book},
+  icon-two={code},
+  icon-three={heart},
+  icon-four={bitcoin},
+  icon-five={key},
+  icon-six={padlock},
+  icon-seven={shield},
+  icon-eight={alice}
+]{icon-grid}
+\studiotemplate[
+  variant={four},
+  title={Divisions},
+  caption-one={Education},
+  caption-two={IT},
+  caption-three={Marketing},
+  caption-four={Management},
+  image-one={images/studio/collection/divisions-icon-education.pdf},
+  graphic-two={\textcolor{studio-foreground}{\rule{10pt}{100pt}}},
+  graphic-three={\textcolor{studio-foreground}{\rule{100pt}{10pt}}},
+  icon-four={}
+]{icon-grid}
+\end{document}

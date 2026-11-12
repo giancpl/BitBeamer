@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the square icon grid layout.
 
-Model: `square-icon-grid` · Family: Cards · Status: **in review**.
+Model: `square-icon-grid` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/square-icon-grid.tex)
 
@@ -38,14 +38,15 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/2`, `image/2`, `graphic/2` | `graphic-1` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/3`, `image/3`, `graphic/3` | `graphic-2` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/4`, `image/4`, `graphic/4` | `graphic-4` | Card panel and shadow stay in place; only the inner content changes. |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
 | `text/2` | `title` | Main text |
 | `text/1` | `text-2` | Editable text |
 | `text/3` | `text-3` | Editable text |
 | `text/4` | `text-4` | Editable text |
+| `text/5` | `text-5` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -102,14 +103,15 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | upper right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1061-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1061-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1061-part-03.pdf}</code> |
-| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1061-part-04.pdf}</code> |
-| <code>title</code> | Main text (text) | middle left | 15.3% wide × 7.5% high | <code>Title</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 10.9% wide × 5.0% high | <code>Item</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 10.9% wide × 5.6% high | <code>Item</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 14.0% wide × 5.6% high | <code>Label 4</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle right | 6.7% wide × 12.0% high | <code>\studiopaletteimage[width=240\studiounit,height=240\studiounit,keepaspectratio]{images/studio/collection/divisions-ic...</code> |
+| <code>title</code> | Main text (text) | middle left | 28.1% wide × 15.0% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 16.9% wide × 11.0% high | <code>Item</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 16.9% wide × 11.0% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 16.9% wide × 11.0% high | <code>Label 4</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 16.9% wide × 11.0% high | <code>Caption</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
@@ -120,7 +122,7 @@ This example selects an icon by catalogue name; its size and position come from 
 
 ```latex
 \studiotemplate[
-  icon/2={alice}
+  icon/1={alice}
 ]{square-icon-grid}
 ```
 

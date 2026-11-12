@@ -88,6 +88,10 @@ official callers and documentation; do not retain obsolete syntax as aliases;
 show the command under the PDF
 comparison as well as at handoff. Keep deferred/unresolved designs distinct from
 approved designs.
+For every template under review, expose every icon through semantic replacement keys
+that follow the same reading order as its captions. Keep the panel independent; fit
+replacement icons, images and custom graphics into fixed bounds with preserved
+aspect ratio. Include replacement examples in the guide and visual review.
 For every interactive review of editable text, compile and visually inspect
 representative longer copy as well as the short/default example. Include automatic
 wrapping and explicit `\\` line breaks where supported. Check vertical centering,

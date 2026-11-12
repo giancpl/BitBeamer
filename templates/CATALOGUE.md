@@ -64,147 +64,145 @@ Browse the [offline visual gallery](../docs/slides/index.html) or compile
 | 53 | [Software Options](../docs/templates/previews/software-options.png) | `\studiotemplate{software-options}` | [software-options.tex](studio/software-options.tex) |
 | 54 | [Two Card Vertical](../docs/templates/previews/two-card-vertical.png) | `\studiotemplate{two-card-vertical}` | [two-card-vertical.tex](studio/two-card-vertical.tex) |
 | 55 | [Callout Explanation](../docs/templates/previews/callout-explanation.png) | `\studiotemplate{callout-explanation}` | [callout-explanation.tex](studio/callout-explanation.tex) |
-| 56 | [Six Outline Cards](../docs/templates/previews/six-outline-cards.png) | `\studiotemplate{six-outline-cards}` | [six-outline-cards.tex](studio/six-outline-cards.tex) |
-| 57 | [Six Explanation Cards](../docs/templates/previews/six-explanation-cards.png) | `\studiotemplate{six-explanation-cards}` | [six-explanation-cards.tex](studio/six-explanation-cards.tex) |
-| 58 | [Five Icon Row](../docs/templates/previews/five-icon-row.png) | `\studiotemplate{five-icon-row}` | [five-icon-row.tex](studio/five-icon-row.tex) |
-| 59 | [Square Icon Grid](../docs/templates/previews/square-icon-grid.png) | `\studiotemplate{square-icon-grid}` | [square-icon-grid.tex](studio/square-icon-grid.tex) |
-| 60 | [Incentives Card Grid](../docs/templates/previews/incentives-card-grid.png) | `\studiotemplate{incentives-card-grid}` | [incentives-card-grid.tex](studio/incentives-card-grid.tex) |
-| 61 | [Three environments](../docs/templates/previews/network-environments.png) | `\studiotemplate{network-environments}` | [network-environments.tex](studio/network-environments.tex) |
-| 62 | [Three node types](../docs/templates/previews/node-type-grid.png) | `\studiotemplate{node-type-grid}` | [node-type-grid.tex](studio/node-type-grid.tex) |
-| 63 | [Horizontal split comparison](../docs/templates/previews/horizontal-split.png) | `\studiotemplate{horizontal-split}` | [horizontal-split.tex](studio/horizontal-split.tex) |
-| 64 | [Benefits and responsibilities](../docs/templates/previews/benefits-limits.png) | `\studiotemplate{benefits-limits}` | [benefits-limits.tex](studio/benefits-limits.tex) |
-| 65 | [Before and after panels](../docs/templates/previews/before-after.png) | `\studiotemplate{before-after}` | [before-after.tex](studio/before-after.tex) |
-| 66 | [Vertical light and blue comparison](../docs/templates/previews/vertical-split.png) | `\studiotemplate{vertical-split}` | [vertical-split.tex](studio/vertical-split.tex) |
-| 67 | [Two approaches](../docs/templates/previews/onchain-offchain.png) | `\studiotemplate{onchain-offchain}` | [onchain-offchain.tex](studio/onchain-offchain.tex) |
-| 68 | [Photo Split](../docs/templates/previews/photo-split.png) | `\studiotemplate{photo-split}` | [photo-split.tex](studio/photo-split.tex) |
-| 69 | [Split Outline Cards](../docs/templates/previews/split-outline-cards.png) | `\studiotemplate{split-outline-cards}` | [split-outline-cards.tex](studio/split-outline-cards.tex) |
-| 70 | [Split Process Cards](../docs/templates/previews/split-process-cards.png) | `\studiotemplate{split-process-cards}` | [split-process-cards.tex](studio/split-process-cards.tex) |
-| 71 | [Two-symbol comparison](../docs/templates/previews/coin-comparison.png) | `\studiotemplate{coin-comparison}` | [coin-comparison.tex](studio/coin-comparison.tex) |
-| 72 | [Image on the left](../docs/templates/previews/image-left.png) | `\studiotemplate{image-left}` | [image-left.tex](studio/image-left.tex) |
-| 73 | [Image on the right](../docs/templates/previews/image-right.png) | `\studiotemplate{image-right}` | [image-right.tex](studio/image-right.tex) |
-| 74 | [Background image with text overlay](../docs/templates/previews/image-overlay.png) | `\studiotemplate{image-overlay}` | [image-overlay.tex](studio/image-overlay.tex) |
-| 75 | [Four-image grid](../docs/templates/previews/four-images.png) | `\studiotemplate{four-images}` | [four-images.tex](studio/four-images.tex) |
-| 76 | [Three portrait cards](../docs/templates/previews/three-portraits.png) | `\studiotemplate{three-portraits}` | [three-portraits.tex](studio/three-portraits.tex) |
-| 77 | [Two framed images](../docs/templates/previews/two-image-comparison.png) | `\studiotemplate{two-image-comparison}` | [two-image-comparison.tex](studio/two-image-comparison.tex) |
-| 78 | [Asymmetric image collage](../docs/templates/previews/gallery-collage.png) | `\studiotemplate{gallery-collage}` | [gallery-collage.tex](studio/gallery-collage.tex) |
-| 79 | [Screenshot or code callout](../docs/templates/previews/screenshot-callout.png) | `\studiotemplate{screenshot-callout}` | [screenshot-callout.tex](studio/screenshot-callout.tex) |
-| 80 | [Four-resource grid](../docs/templates/previews/resource-grid.png) | `\studiotemplate{resource-grid}` | [resource-grid.tex](studio/resource-grid.tex) |
-| 81 | [Photo Collage Banner](../docs/templates/previews/photo-collage-banner.png) | `\studiotemplate{photo-collage-banner}` | [photo-collage-banner.tex](studio/photo-collage-banner.tex) |
-| 82 | [Photo Collage Grid](../docs/templates/previews/photo-collage-grid.png) | `\studiotemplate{photo-collage-grid}` | [photo-collage-grid.tex](studio/photo-collage-grid.tex) |
-| 83 | [Photo Triptych](../docs/templates/previews/photo-triptych.png) | `\studiotemplate{photo-triptych}` | [photo-triptych.tex](studio/photo-triptych.tex) |
-| 84 | [Image Pair Title](../docs/templates/previews/image-pair-title.png) | `\studiotemplate{image-pair-title}` | [image-pair-title.tex](studio/image-pair-title.tex) |
-| 85 | [Nine-symbol grid](../docs/templates/previews/nine-logo-grid.png) | `\studiotemplate{nine-logo-grid}` | [nine-logo-grid.tex](studio/nine-logo-grid.tex) |
-| 86 | [Screenshot Pair](../docs/templates/previews/screenshot-pair.png) | `\studiotemplate{screenshot-pair}` | [screenshot-pair.tex](studio/screenshot-pair.tex) |
-| 87 | [Phone Screenshot](../docs/templates/previews/phone-screenshot.png) | `\studiotemplate{phone-screenshot}` | [phone-screenshot.tex](studio/phone-screenshot.tex) |
-| 88 | [Photo Center Two Icons](../docs/templates/previews/photo-center-two-icons.png) | `\studiotemplate{photo-center-two-icons}` | [photo-center-two-icons.tex](studio/photo-center-two-icons.tex) |
-| 89 | [Abacus Explanation](../docs/templates/previews/abacus-explanation.png) | `\studiotemplate{abacus-explanation}` | [abacus-explanation.tex](studio/abacus-explanation.tex) |
-| 90 | [Document spotlight](../docs/templates/previews/whitepaper-blue.png) | `\studiotemplate{whitepaper-blue}` | [whitepaper-blue.tex](studio/whitepaper-blue.tex) |
-| 91 | [Media grid](../docs/templates/previews/partner-media-grid.png) | `\studiotemplate{partner-media-grid}` | [partner-media-grid.tex](studio/partner-media-grid.tex) |
-| 92 | [Three badges](../docs/templates/previews/mission-badges.png) | `\studiotemplate{mission-badges}` | [mission-badges.tex](studio/mission-badges.tex) |
-| 93 | [Image and symbol](../docs/templates/previews/image-logo-pair.png) | `\studiotemplate{image-logo-pair}` | [image-logo-pair.tex](studio/image-logo-pair.tex) |
-| 94 | [Headline number](../docs/templates/previews/hero-number.png) | `\studiotemplate{hero-number}` | [hero-number.tex](studio/hero-number.tex) |
-| 95 | [Four counters](../docs/templates/previews/three-statistics.png) | `\studiotemplate{three-statistics}` | [three-statistics.tex](studio/three-statistics.tex) |
-| 96 | [Illustrative line chart](../docs/templates/previews/line-chart.png) | `\studiotemplate{line-chart}` | [line-chart.tex](studio/line-chart.tex) |
-| 97 | [Diagonal hero number](../docs/templates/previews/diagonal-number.png) | `\studiotemplate{diagonal-number}` | [diagonal-number.tex](studio/diagonal-number.tex) |
-| 98 | [Two-column conversion table](../docs/templates/previews/unit-conversion.png) | `\studiotemplate{unit-conversion}` | [unit-conversion.tex](studio/unit-conversion.tex) |
-| 99 | [Horizontal bar comparison](../docs/templates/previews/bar-comparison.png) | `\studiotemplate{bar-comparison}` | [bar-comparison.tex](studio/bar-comparison.tex) |
-| 100 | [Two-axis comparison](../docs/templates/previews/scatter-comparison.png) | `\studiotemplate{scatter-comparison}` | [scatter-comparison.tex](studio/scatter-comparison.tex) |
-| 101 | [Adoption curve with stages](../docs/templates/previews/adoption-curve.png) | `\studiotemplate{adoption-curve}` | [adoption-curve.tex](studio/adoption-curve.tex) |
-| 102 | [Four-metric dashboard](../docs/templates/previews/metric-dashboard.png) | `\studiotemplate{metric-dashboard}` | [metric-dashboard.tex](studio/metric-dashboard.tex) |
-| 103 | [Ranked podium](../docs/templates/previews/ranked-podium.png) | `\studiotemplate{ranked-podium}` | [ranked-podium.tex](studio/ranked-podium.tex) |
-| 104 | [Two-chart comparison](../docs/templates/previews/two-charts.png) | `\studiotemplate{two-charts}` | [two-charts.tex](studio/two-charts.tex) |
-| 105 | [Three-chart dashboard](../docs/templates/previews/three-charts.png) | `\studiotemplate{three-charts}` | [three-charts.tex](studio/three-charts.tex) |
-| 106 | [World Map](../docs/templates/previews/world-map.png) | `\studiotemplate{world-map}` | [world-map.tex](studio/world-map.tex) |
-| 107 | [Europe Map](../docs/templates/previews/europe-map.png) | `\studiotemplate{europe-map}` | [europe-map.tex](studio/europe-map.tex) |
-| 108 | [Bubble Chart](../docs/templates/previews/bubble-chart.png) | `\studiotemplate{bubble-chart}` | [bubble-chart.tex](studio/bubble-chart.tex) |
-| 109 | [Price Lines](../docs/templates/previews/price-lines.png) | `\studiotemplate{price-lines}` | [price-lines.tex](studio/price-lines.tex) |
-| 110 | [Value over time](../docs/templates/previews/purchasing-power.png) | `\studiotemplate{purchasing-power}` | [purchasing-power.tex](studio/purchasing-power.tex) |
-| 111 | [Equivalent values](../docs/templates/previews/currency-equivalence.png) | `\studiotemplate{currency-equivalence}` | [currency-equivalence.tex](studio/currency-equivalence.tex) |
-| 112 | [Photo Statistics Collage](../docs/templates/previews/photo-statistics-collage.png) | `\studiotemplate{photo-statistics-collage}` | [photo-statistics-collage.tex](studio/photo-statistics-collage.tex) |
-| 113 | [Split value comparison](../docs/templates/previews/split-currency.png) | `\studiotemplate{split-currency}` | [split-currency.tex](studio/split-currency.tex) |
-| 114 | [Success Dashboard](../docs/templates/previews/success-dashboard.png) | `\studiotemplate{success-dashboard}` | [success-dashboard.tex](studio/success-dashboard.tex) |
-| 115 | [Annotated system](../docs/templates/previews/diagram-annotated-energy.png) | `\studiotemplate{diagram-annotated-energy}` | [diagram-annotated-energy.tex](studio/diagram-annotated-energy.tex) |
-| 116 | [Cards and counters](../docs/templates/previews/card-statistics-process.png) | `\studiotemplate{card-statistics-process}` | [card-statistics-process.tex](studio/card-statistics-process.tex) |
-| 117 | [Protocol key pair](../docs/templates/previews/protocol-key-pair.png) | `\studiotemplate{protocol-key-pair}` | [protocol-key-pair.tex](studio/protocol-key-pair.tex) |
-| 118 | [Large diagram](../docs/templates/previews/large-figure.png) | `\studiotemplate{large-figure}` | [large-figure.tex](studio/large-figure.tex) |
-| 119 | [Horizontal timeline](../docs/templates/previews/horizontal-timeline.png) | `\studiotemplate{horizontal-timeline}` | [horizontal-timeline.tex](studio/horizontal-timeline.tex) |
-| 120 | [Vertical timeline](../docs/templates/previews/vertical-timeline.png) | `\studiotemplate{vertical-timeline}` | [vertical-timeline.tex](studio/vertical-timeline.tex) |
-| 121 | [Development cycle](../docs/templates/previews/cycle.png) | `\studiotemplate{cycle}` | [cycle.tex](studio/cycle.tex) |
-| 122 | [Decision tree](../docs/templates/previews/decision-tree.png) | `\studiotemplate{decision-tree}` | [decision-tree.tex](studio/decision-tree.tex) |
-| 123 | [System architecture](../docs/templates/previews/system-architecture.png) | `\studiotemplate{system-architecture}` | [system-architecture.tex](studio/system-architecture.tex) |
-| 124 | [Radial goals](../docs/templates/previews/radial-goals.png) | `\studiotemplate{radial-goals}` | [radial-goals.tex](studio/radial-goals.tex) |
-| 125 | [Nested set comparison](../docs/templates/previews/nested-circles.png) | `\studiotemplate{nested-circles}` | [nested-circles.tex](studio/nested-circles.tex) |
-| 126 | [Separate set comparison](../docs/templates/previews/separate-circles.png) | `\studiotemplate{separate-circles}` | [separate-circles.tex](studio/separate-circles.tex) |
-| 127 | [Three-way trade-off](../docs/templates/previews/triangle-tradeoff.png) | `\studiotemplate{triangle-tradeoff}` | [triangle-tradeoff.tex](studio/triangle-tradeoff.tex) |
-| 128 | [Layer and purpose stack](../docs/templates/previews/layered-stack.png) | `\studiotemplate{layered-stack}` | [layered-stack.tex](studio/layered-stack.tex) |
-| 129 | [Alternating horizontal timeline](../docs/templates/previews/alternating-timeline.png) | `\studiotemplate{alternating-timeline}` | [alternating-timeline.tex](studio/alternating-timeline.tex) |
-| 130 | [Three network topologies](../docs/templates/previews/network-topologies.png) | `\studiotemplate{network-topologies}` | [network-topologies.tex](studio/network-topologies.tex) |
-| 131 | [Five Spoke Values](../docs/templates/previews/five-spoke-values.png) | `\studiotemplate{five-spoke-values}` | [five-spoke-values.tex](studio/five-spoke-values.tex) |
-| 132 | [Three Spoke Benefits](../docs/templates/previews/three-spoke-benefits.png) | `\studiotemplate{three-spoke-benefits}` | [three-spoke-benefits.tex](studio/three-spoke-benefits.tex) |
-| 133 | [Two Radial Groups](../docs/templates/previews/two-radial-groups.png) | `\studiotemplate{two-radial-groups}` | [two-radial-groups.tex](studio/two-radial-groups.tex) |
-| 134 | [Personal Timeline](../docs/templates/previews/personal-timeline.png) | `\studiotemplate{personal-timeline}` | [personal-timeline.tex](studio/personal-timeline.tex) |
-| 135 | [Nested Outline Circles](../docs/templates/previews/nested-outline-circles.png) | `\studiotemplate{nested-outline-circles}` | [nested-outline-circles.tex](studio/nested-outline-circles.tex) |
-| 136 | [Two Steps Outline](../docs/templates/previews/two-steps-outline.png) | `\studiotemplate{two-steps-outline}` | [two-steps-outline.tex](studio/two-steps-outline.tex) |
-| 137 | [Bullseye Values](../docs/templates/previews/bullseye-values.png) | `\studiotemplate{bullseye-values}` | [bullseye-values.tex](studio/bullseye-values.tex) |
-| 138 | [Data table](../docs/templates/previews/table.png) | `\studiotemplate{table}` | [table.tex](studio/table.tex) |
-| 139 | [Equation and example](../docs/templates/previews/equation.png) | `\studiotemplate{equation}` | [equation.tex](studio/equation.tex) |
-| 140 | [Editable code](../docs/templates/previews/code.png) | `\studiotemplate{code}` | [code.tex](studio/code.tex) |
-| 141 | [Bibliography and resources](../docs/templates/previews/references.png) | `\studiotemplate{references}` | [references.tex](studio/references.tex) |
-| 142 | [Input and output comparison](../docs/templates/previews/hash-avalanche.png) | `\studiotemplate{hash-avalanche}` | [hash-avalanche.tex](studio/hash-avalanche.tex) |
-| 143 | [Derivation path](../docs/templates/previews/key-derivation.png) | `\studiotemplate{key-derivation}` | [key-derivation.tex](studio/key-derivation.tex) |
-| 144 | [Input and output flow](../docs/templates/previews/signature-flow.png) | `\studiotemplate{signature-flow}` | [signature-flow.tex](studio/signature-flow.tex) |
-| 145 | [Three-lane sequence](../docs/templates/previews/protocol-sequence.png) | `\studiotemplate{protocol-sequence}` | [protocol-sequence.tex](studio/protocol-sequence.tex) |
-| 146 | [Chain with block headers](../docs/templates/previews/block-chain.png) | `\studiotemplate{block-chain}` | [block-chain.tex](studio/block-chain.tex) |
-| 147 | [Merkle hash tree](../docs/templates/previews/merkle-tree.png) | `\studiotemplate{merkle-tree}` | [merkle-tree.tex](studio/merkle-tree.tex) |
-| 148 | [Forked chain branches](../docs/templates/previews/fork-branches.png) | `\studiotemplate{fork-branches}` | [fork-branches.tex](studio/fork-branches.tex) |
-| 149 | [Two-lane process](../docs/templates/previews/transaction-flow.png) | `\studiotemplate{transaction-flow}` | [transaction-flow.tex](studio/transaction-flow.tex) |
-| 150 | [Cipher substitution mapping](../docs/templates/previews/cipher-mapping.png) | `\studiotemplate{cipher-mapping}` | [cipher-mapping.tex](studio/cipher-mapping.tex) |
-| 151 | [Encryption and decryption pipeline](../docs/templates/previews/encryption-flow.png) | `\studiotemplate{encryption-flow}` | [encryption-flow.tex](studio/encryption-flow.tex) |
-| 152 | [Outcome matrix](../docs/templates/previews/payoff-matrix.png) | `\studiotemplate{payoff-matrix}` | [payoff-matrix.tex](studio/payoff-matrix.tex) |
-| 153 | [Two-way channel](../docs/templates/previews/payment-channel.png) | `\studiotemplate{payment-channel}` | [payment-channel.tex](studio/payment-channel.tex) |
-| 154 | [Processing flow](../docs/templates/previews/proof-of-work-flow.png) | `\studiotemplate{proof-of-work-flow}` | [proof-of-work-flow.tex](studio/proof-of-work-flow.tex) |
-| 155 | [Seed Key Tree](../docs/templates/previews/seed-key-tree.png) | `\studiotemplate{seed-key-tree}` | [seed-key-tree.tex](studio/seed-key-tree.tex) |
-| 156 | [Three assumptions](../docs/templates/previews/cryptographic-assumptions.png) | `\studiotemplate{cryptographic-assumptions}` | [cryptographic-assumptions.tex](studio/cryptographic-assumptions.tex) |
-| 157 | [Routing diagram](../docs/templates/previews/routing-graph.png) | `\studiotemplate{routing-graph}` | [routing-graph.tex](studio/routing-graph.tex) |
-| 158 | [Protocol Symmetric](../docs/templates/previews/protocol-symmetric.png) | `\studiotemplate{protocol-symmetric}` | [protocol-symmetric.tex](studio/protocol-symmetric.tex) |
-| 159 | [Protocol Public Keys](../docs/templates/previews/protocol-public-keys.png) | `\studiotemplate{protocol-public-keys}` | [protocol-public-keys.tex](studio/protocol-public-keys.tex) |
-| 160 | [Protocol Key Lock](../docs/templates/previews/protocol-key-lock.png) | `\studiotemplate{protocol-key-lock}` | [protocol-key-lock.tex](studio/protocol-key-lock.tex) |
-| 161 | [Protocol Key Exchange](../docs/templates/previews/protocol-key-exchange.png) | `\studiotemplate{protocol-key-exchange}` | [protocol-key-exchange.tex](studio/protocol-key-exchange.tex) |
-| 162 | [Protocol Signed Message](../docs/templates/previews/protocol-signed-message.png) | `\studiotemplate{protocol-signed-message}` | [protocol-signed-message.tex](studio/protocol-signed-message.tex) |
-| 163 | [Protocol Encrypted Message](../docs/templates/previews/protocol-encrypted-message.png) | `\studiotemplate{protocol-encrypted-message}` | [protocol-encrypted-message.tex](studio/protocol-encrypted-message.tex) |
-| 164 | [Protocol Unlock Message](../docs/templates/previews/protocol-unlock-message.png) | `\studiotemplate{protocol-unlock-message}` | [protocol-unlock-message.tex](studio/protocol-unlock-message.tex) |
-| 165 | [Protocol Signed Payload](../docs/templates/previews/protocol-signed-payload.png) | `\studiotemplate{protocol-signed-payload}` | [protocol-signed-payload.tex](studio/protocol-signed-payload.tex) |
-| 166 | [Protocol Key Setup](../docs/templates/previews/protocol-key-setup.png) | `\studiotemplate{protocol-key-setup}` | [protocol-key-setup.tex](studio/protocol-key-setup.tex) |
-| 167 | [Protocol Token Transfer](../docs/templates/previews/protocol-token-transfer.png) | `\studiotemplate{protocol-token-transfer}` | [protocol-token-transfer.tex](studio/protocol-token-transfer.tex) |
-| 168 | [Protocol Token Routing](../docs/templates/previews/protocol-token-routing.png) | `\studiotemplate{protocol-token-routing}` | [protocol-token-routing.tex](studio/protocol-token-routing.tex) |
-| 169 | [Protocol Key Aggregation](../docs/templates/previews/protocol-key-aggregation.png) | `\studiotemplate{protocol-key-aggregation}` | [protocol-key-aggregation.tex](studio/protocol-key-aggregation.tex) |
-| 170 | [Protocol Aggregate Signature](../docs/templates/previews/protocol-aggregate-signature.png) | `\studiotemplate{protocol-aggregate-signature}` | [protocol-aggregate-signature.tex](studio/protocol-aggregate-signature.tex) |
-| 171 | [Protocol Eavesdropping](../docs/templates/previews/protocol-eavesdropping.png) | `\studiotemplate{protocol-eavesdropping}` | [protocol-eavesdropping.tex](studio/protocol-eavesdropping.tex) |
-| 172 | [Protocol Encrypted Channel](../docs/templates/previews/protocol-encrypted-channel.png) | `\studiotemplate{protocol-encrypted-channel}` | [protocol-encrypted-channel.tex](studio/protocol-encrypted-channel.tex) |
-| 173 | [Symmetric Encryption](../docs/templates/previews/symmetric-encryption.png) | `\studiotemplate{symmetric-encryption}` | [symmetric-encryption.tex](studio/symmetric-encryption.tex) |
-| 174 | [Asymmetric Encryption](../docs/templates/previews/asymmetric-encryption.png) | `\studiotemplate{asymmetric-encryption}` | [asymmetric-encryption.tex](studio/asymmetric-encryption.tex) |
-| 175 | [Merkle Tree Wide](../docs/templates/previews/merkle-tree-wide.png) | `\studiotemplate{merkle-tree-wide}` | [merkle-tree-wide.tex](studio/merkle-tree-wide.tex) |
-| 176 | [Inputs and outputs](../docs/templates/previews/diagram-transaction-inputs.png) | `\studiotemplate{diagram-transaction-inputs}` | [diagram-transaction-inputs.tex](studio/diagram-transaction-inputs.tex) |
-| 177 | [Word grid and caption](../docs/templates/previews/seed-grid-caption.png) | `\studiotemplate{seed-grid-caption}` | [seed-grid-caption.tex](studio/seed-grid-caption.tex) |
-| 178 | [Shared work diagram](../docs/templates/previews/diagram-pool-shares.png) | `\studiotemplate{diagram-pool-shares}` | [diagram-pool-shares.tex](studio/diagram-pool-shares.tex) |
-| 179 | [Layers Overview](../docs/templates/previews/layers-overview.png) | `\studiotemplate{layers-overview}` | [layers-overview.tex](studio/layers-overview.tex) |
-| 180 | [Multiple approvals](../docs/templates/previews/multi-signature.png) | `\studiotemplate{multi-signature}` | [multi-signature.tex](studio/multi-signature.tex) |
-| 181 | [Blockchain With List](../docs/templates/previews/blockchain-with-list.png) | `\studiotemplate{blockchain-with-list}` | [blockchain-with-list.tex](studio/blockchain-with-list.tex) |
-| 182 | [Double Spend Diagram](../docs/templates/previews/double-spend-diagram.png) | `\studiotemplate{double-spend-diagram}` | [double-spend-diagram.tex](studio/double-spend-diagram.tex) |
-| 183 | [One-to-many mapping](../docs/templates/previews/key-to-addresses.png) | `\studiotemplate{key-to-addresses}` | [key-to-addresses.tex](studio/key-to-addresses.tex) |
-| 184 | [Two-system comparison](../docs/templates/previews/dual-consensus-diagram.png) | `\studiotemplate{dual-consensus-diagram}` | [dual-consensus-diagram.tex](studio/dual-consensus-diagram.tex) |
-| 185 | [Letter wheel](../docs/templates/previews/cipher-wheel.png) | `\studiotemplate{cipher-wheel}` | [cipher-wheel.tex](studio/cipher-wheel.tex) |
-| 186 | [Resource columns](../docs/templates/previews/blue-resources-columns.png) | `\studiotemplate{blue-resources-columns}` | [blue-resources-columns.tex](studio/blue-resources-columns.tex) |
-| 187 | [Record information](../docs/templates/previews/genesis-information.png) | `\studiotemplate{genesis-information}` | [genesis-information.tex](studio/genesis-information.tex) |
-| 188 | [Practical instructions](../docs/templates/previews/regtest-instructions.png) | `\studiotemplate{regtest-instructions}` | [regtest-instructions.tex](studio/regtest-instructions.tex) |
-| 189 | [Record inspection](../docs/templates/previews/block-inspection.png) | `\studiotemplate{block-inspection}` | [block-inspection.tex](studio/block-inspection.tex) |
-| 190 | [Processing cards](../docs/templates/previews/mining-card-grid.png) | `\studiotemplate{mining-card-grid}` | [mining-card-grid.tex](studio/mining-card-grid.tex) |
-| 191 | [Contact slide with working QR](../docs/templates/previews/contact-qr.png) | `\studiotemplate{contact-qr}` | [contact-qr.tex](studio/contact-qr.tex) |
-| 192 | [Apply Qr](../docs/templates/previews/apply-qr.png) | `\studiotemplate{apply-qr}` | [apply-qr.tex](studio/apply-qr.tex) |
-| 193 | [Five-section contents](../docs/templates/previews/contents-five.png) | `\studiotemplate{contents-five}` | [contents-five.tex](studio/contents-five.tex) |
-| 194 | [Team presentation](../docs/templates/previews/team-presentation.png) | `\studiotemplate{team-presentation}` | [team-presentation.tex](studio/team-presentation.tex) |
-| 195 | [Five-item list with vertical rail](../docs/templates/previews/list-rail-five.png) | `\studiotemplate{list-rail-five}` | [list-rail-five.tex](studio/list-rail-five.tex) |
-| 196 | [Standard closing](../docs/templates/previews/closing.png) | `\studiotemplate{closing}` | [closing.tex](studio/closing.tex) |
+| 56 | [Five Icon Row](../docs/templates/previews/five-icon-row.png) | `\studiotemplate{five-icon-row}` | [five-icon-row.tex](studio/five-icon-row.tex) |
+| 57 | [Square Icon Grid](../docs/templates/previews/square-icon-grid.png) | `\studiotemplate{square-icon-grid}` | [square-icon-grid.tex](studio/square-icon-grid.tex) |
+| 58 | [Incentives Card Grid](../docs/templates/previews/incentives-card-grid.png) | `\studiotemplate{incentives-card-grid}` | [incentives-card-grid.tex](studio/incentives-card-grid.tex) |
+| 59 | [Three environments](../docs/templates/previews/network-environments.png) | `\studiotemplate{network-environments}` | [network-environments.tex](studio/network-environments.tex) |
+| 60 | [Three node types](../docs/templates/previews/node-type-grid.png) | `\studiotemplate{node-type-grid}` | [node-type-grid.tex](studio/node-type-grid.tex) |
+| 61 | [Horizontal split comparison](../docs/templates/previews/horizontal-split.png) | `\studiotemplate{horizontal-split}` | [horizontal-split.tex](studio/horizontal-split.tex) |
+| 62 | [Benefits and responsibilities](../docs/templates/previews/benefits-limits.png) | `\studiotemplate{benefits-limits}` | [benefits-limits.tex](studio/benefits-limits.tex) |
+| 63 | [Before and after panels](../docs/templates/previews/before-after.png) | `\studiotemplate{before-after}` | [before-after.tex](studio/before-after.tex) |
+| 64 | [Vertical light and blue comparison](../docs/templates/previews/vertical-split.png) | `\studiotemplate{vertical-split}` | [vertical-split.tex](studio/vertical-split.tex) |
+| 65 | [Two approaches](../docs/templates/previews/onchain-offchain.png) | `\studiotemplate{onchain-offchain}` | [onchain-offchain.tex](studio/onchain-offchain.tex) |
+| 66 | [Photo Split](../docs/templates/previews/photo-split.png) | `\studiotemplate{photo-split}` | [photo-split.tex](studio/photo-split.tex) |
+| 67 | [Split Outline Cards](../docs/templates/previews/split-outline-cards.png) | `\studiotemplate{split-outline-cards}` | [split-outline-cards.tex](studio/split-outline-cards.tex) |
+| 68 | [Split Process Cards](../docs/templates/previews/split-process-cards.png) | `\studiotemplate{split-process-cards}` | [split-process-cards.tex](studio/split-process-cards.tex) |
+| 69 | [Two-symbol comparison](../docs/templates/previews/coin-comparison.png) | `\studiotemplate{coin-comparison}` | [coin-comparison.tex](studio/coin-comparison.tex) |
+| 70 | [Image on the left](../docs/templates/previews/image-left.png) | `\studiotemplate{image-left}` | [image-left.tex](studio/image-left.tex) |
+| 71 | [Image on the right](../docs/templates/previews/image-right.png) | `\studiotemplate{image-right}` | [image-right.tex](studio/image-right.tex) |
+| 72 | [Background image with text overlay](../docs/templates/previews/image-overlay.png) | `\studiotemplate{image-overlay}` | [image-overlay.tex](studio/image-overlay.tex) |
+| 73 | [Four-image grid](../docs/templates/previews/four-images.png) | `\studiotemplate{four-images}` | [four-images.tex](studio/four-images.tex) |
+| 74 | [Three portrait cards](../docs/templates/previews/three-portraits.png) | `\studiotemplate{three-portraits}` | [three-portraits.tex](studio/three-portraits.tex) |
+| 75 | [Two framed images](../docs/templates/previews/two-image-comparison.png) | `\studiotemplate{two-image-comparison}` | [two-image-comparison.tex](studio/two-image-comparison.tex) |
+| 76 | [Asymmetric image collage](../docs/templates/previews/gallery-collage.png) | `\studiotemplate{gallery-collage}` | [gallery-collage.tex](studio/gallery-collage.tex) |
+| 77 | [Screenshot or code callout](../docs/templates/previews/screenshot-callout.png) | `\studiotemplate{screenshot-callout}` | [screenshot-callout.tex](studio/screenshot-callout.tex) |
+| 78 | [Four-resource grid](../docs/templates/previews/resource-grid.png) | `\studiotemplate{resource-grid}` | [resource-grid.tex](studio/resource-grid.tex) |
+| 79 | [Photo Collage Banner](../docs/templates/previews/photo-collage-banner.png) | `\studiotemplate{photo-collage-banner}` | [photo-collage-banner.tex](studio/photo-collage-banner.tex) |
+| 80 | [Photo Collage Grid](../docs/templates/previews/photo-collage-grid.png) | `\studiotemplate{photo-collage-grid}` | [photo-collage-grid.tex](studio/photo-collage-grid.tex) |
+| 81 | [Photo Triptych](../docs/templates/previews/photo-triptych.png) | `\studiotemplate{photo-triptych}` | [photo-triptych.tex](studio/photo-triptych.tex) |
+| 82 | [Image Pair Title](../docs/templates/previews/image-pair-title.png) | `\studiotemplate{image-pair-title}` | [image-pair-title.tex](studio/image-pair-title.tex) |
+| 83 | [Nine-symbol grid](../docs/templates/previews/nine-logo-grid.png) | `\studiotemplate{nine-logo-grid}` | [nine-logo-grid.tex](studio/nine-logo-grid.tex) |
+| 84 | [Screenshot Pair](../docs/templates/previews/screenshot-pair.png) | `\studiotemplate{screenshot-pair}` | [screenshot-pair.tex](studio/screenshot-pair.tex) |
+| 85 | [Phone Screenshot](../docs/templates/previews/phone-screenshot.png) | `\studiotemplate{phone-screenshot}` | [phone-screenshot.tex](studio/phone-screenshot.tex) |
+| 86 | [Photo Center Two Icons](../docs/templates/previews/photo-center-two-icons.png) | `\studiotemplate{photo-center-two-icons}` | [photo-center-two-icons.tex](studio/photo-center-two-icons.tex) |
+| 87 | [Abacus Explanation](../docs/templates/previews/abacus-explanation.png) | `\studiotemplate{abacus-explanation}` | [abacus-explanation.tex](studio/abacus-explanation.tex) |
+| 88 | [Document spotlight](../docs/templates/previews/whitepaper-blue.png) | `\studiotemplate{whitepaper-blue}` | [whitepaper-blue.tex](studio/whitepaper-blue.tex) |
+| 89 | [Media grid](../docs/templates/previews/partner-media-grid.png) | `\studiotemplate{partner-media-grid}` | [partner-media-grid.tex](studio/partner-media-grid.tex) |
+| 90 | [Three badges](../docs/templates/previews/mission-badges.png) | `\studiotemplate{mission-badges}` | [mission-badges.tex](studio/mission-badges.tex) |
+| 91 | [Image and symbol](../docs/templates/previews/image-logo-pair.png) | `\studiotemplate{image-logo-pair}` | [image-logo-pair.tex](studio/image-logo-pair.tex) |
+| 92 | [Headline number](../docs/templates/previews/hero-number.png) | `\studiotemplate{hero-number}` | [hero-number.tex](studio/hero-number.tex) |
+| 93 | [Four counters](../docs/templates/previews/three-statistics.png) | `\studiotemplate{three-statistics}` | [three-statistics.tex](studio/three-statistics.tex) |
+| 94 | [Illustrative line chart](../docs/templates/previews/line-chart.png) | `\studiotemplate{line-chart}` | [line-chart.tex](studio/line-chart.tex) |
+| 95 | [Diagonal hero number](../docs/templates/previews/diagonal-number.png) | `\studiotemplate{diagonal-number}` | [diagonal-number.tex](studio/diagonal-number.tex) |
+| 96 | [Two-column conversion table](../docs/templates/previews/unit-conversion.png) | `\studiotemplate{unit-conversion}` | [unit-conversion.tex](studio/unit-conversion.tex) |
+| 97 | [Horizontal bar comparison](../docs/templates/previews/bar-comparison.png) | `\studiotemplate{bar-comparison}` | [bar-comparison.tex](studio/bar-comparison.tex) |
+| 98 | [Two-axis comparison](../docs/templates/previews/scatter-comparison.png) | `\studiotemplate{scatter-comparison}` | [scatter-comparison.tex](studio/scatter-comparison.tex) |
+| 99 | [Adoption curve with stages](../docs/templates/previews/adoption-curve.png) | `\studiotemplate{adoption-curve}` | [adoption-curve.tex](studio/adoption-curve.tex) |
+| 100 | [Four-metric dashboard](../docs/templates/previews/metric-dashboard.png) | `\studiotemplate{metric-dashboard}` | [metric-dashboard.tex](studio/metric-dashboard.tex) |
+| 101 | [Ranked podium](../docs/templates/previews/ranked-podium.png) | `\studiotemplate{ranked-podium}` | [ranked-podium.tex](studio/ranked-podium.tex) |
+| 102 | [Two-chart comparison](../docs/templates/previews/two-charts.png) | `\studiotemplate{two-charts}` | [two-charts.tex](studio/two-charts.tex) |
+| 103 | [Three-chart dashboard](../docs/templates/previews/three-charts.png) | `\studiotemplate{three-charts}` | [three-charts.tex](studio/three-charts.tex) |
+| 104 | [World Map](../docs/templates/previews/world-map.png) | `\studiotemplate{world-map}` | [world-map.tex](studio/world-map.tex) |
+| 105 | [Europe Map](../docs/templates/previews/europe-map.png) | `\studiotemplate{europe-map}` | [europe-map.tex](studio/europe-map.tex) |
+| 106 | [Bubble Chart](../docs/templates/previews/bubble-chart.png) | `\studiotemplate{bubble-chart}` | [bubble-chart.tex](studio/bubble-chart.tex) |
+| 107 | [Price Lines](../docs/templates/previews/price-lines.png) | `\studiotemplate{price-lines}` | [price-lines.tex](studio/price-lines.tex) |
+| 108 | [Value over time](../docs/templates/previews/purchasing-power.png) | `\studiotemplate{purchasing-power}` | [purchasing-power.tex](studio/purchasing-power.tex) |
+| 109 | [Equivalent values](../docs/templates/previews/currency-equivalence.png) | `\studiotemplate{currency-equivalence}` | [currency-equivalence.tex](studio/currency-equivalence.tex) |
+| 110 | [Photo Statistics Collage](../docs/templates/previews/photo-statistics-collage.png) | `\studiotemplate{photo-statistics-collage}` | [photo-statistics-collage.tex](studio/photo-statistics-collage.tex) |
+| 111 | [Split value comparison](../docs/templates/previews/split-currency.png) | `\studiotemplate{split-currency}` | [split-currency.tex](studio/split-currency.tex) |
+| 112 | [Success Dashboard](../docs/templates/previews/success-dashboard.png) | `\studiotemplate{success-dashboard}` | [success-dashboard.tex](studio/success-dashboard.tex) |
+| 113 | [Annotated system](../docs/templates/previews/diagram-annotated-energy.png) | `\studiotemplate{diagram-annotated-energy}` | [diagram-annotated-energy.tex](studio/diagram-annotated-energy.tex) |
+| 114 | [Cards and counters](../docs/templates/previews/card-statistics-process.png) | `\studiotemplate{card-statistics-process}` | [card-statistics-process.tex](studio/card-statistics-process.tex) |
+| 115 | [Protocol key pair](../docs/templates/previews/protocol-key-pair.png) | `\studiotemplate{protocol-key-pair}` | [protocol-key-pair.tex](studio/protocol-key-pair.tex) |
+| 116 | [Large diagram](../docs/templates/previews/large-figure.png) | `\studiotemplate{large-figure}` | [large-figure.tex](studio/large-figure.tex) |
+| 117 | [Horizontal timeline](../docs/templates/previews/horizontal-timeline.png) | `\studiotemplate{horizontal-timeline}` | [horizontal-timeline.tex](studio/horizontal-timeline.tex) |
+| 118 | [Vertical timeline](../docs/templates/previews/vertical-timeline.png) | `\studiotemplate{vertical-timeline}` | [vertical-timeline.tex](studio/vertical-timeline.tex) |
+| 119 | [Development cycle](../docs/templates/previews/cycle.png) | `\studiotemplate{cycle}` | [cycle.tex](studio/cycle.tex) |
+| 120 | [Decision tree](../docs/templates/previews/decision-tree.png) | `\studiotemplate{decision-tree}` | [decision-tree.tex](studio/decision-tree.tex) |
+| 121 | [System architecture](../docs/templates/previews/system-architecture.png) | `\studiotemplate{system-architecture}` | [system-architecture.tex](studio/system-architecture.tex) |
+| 122 | [Radial goals](../docs/templates/previews/radial-goals.png) | `\studiotemplate{radial-goals}` | [radial-goals.tex](studio/radial-goals.tex) |
+| 123 | [Nested set comparison](../docs/templates/previews/nested-circles.png) | `\studiotemplate{nested-circles}` | [nested-circles.tex](studio/nested-circles.tex) |
+| 124 | [Separate set comparison](../docs/templates/previews/separate-circles.png) | `\studiotemplate{separate-circles}` | [separate-circles.tex](studio/separate-circles.tex) |
+| 125 | [Three-way trade-off](../docs/templates/previews/triangle-tradeoff.png) | `\studiotemplate{triangle-tradeoff}` | [triangle-tradeoff.tex](studio/triangle-tradeoff.tex) |
+| 126 | [Layer and purpose stack](../docs/templates/previews/layered-stack.png) | `\studiotemplate{layered-stack}` | [layered-stack.tex](studio/layered-stack.tex) |
+| 127 | [Alternating horizontal timeline](../docs/templates/previews/alternating-timeline.png) | `\studiotemplate{alternating-timeline}` | [alternating-timeline.tex](studio/alternating-timeline.tex) |
+| 128 | [Three network topologies](../docs/templates/previews/network-topologies.png) | `\studiotemplate{network-topologies}` | [network-topologies.tex](studio/network-topologies.tex) |
+| 129 | [Five Spoke Values](../docs/templates/previews/five-spoke-values.png) | `\studiotemplate{five-spoke-values}` | [five-spoke-values.tex](studio/five-spoke-values.tex) |
+| 130 | [Three Spoke Benefits](../docs/templates/previews/three-spoke-benefits.png) | `\studiotemplate{three-spoke-benefits}` | [three-spoke-benefits.tex](studio/three-spoke-benefits.tex) |
+| 131 | [Two Radial Groups](../docs/templates/previews/two-radial-groups.png) | `\studiotemplate{two-radial-groups}` | [two-radial-groups.tex](studio/two-radial-groups.tex) |
+| 132 | [Personal Timeline](../docs/templates/previews/personal-timeline.png) | `\studiotemplate{personal-timeline}` | [personal-timeline.tex](studio/personal-timeline.tex) |
+| 133 | [Nested Outline Circles](../docs/templates/previews/nested-outline-circles.png) | `\studiotemplate{nested-outline-circles}` | [nested-outline-circles.tex](studio/nested-outline-circles.tex) |
+| 134 | [Two Steps Outline](../docs/templates/previews/two-steps-outline.png) | `\studiotemplate{two-steps-outline}` | [two-steps-outline.tex](studio/two-steps-outline.tex) |
+| 135 | [Bullseye Values](../docs/templates/previews/bullseye-values.png) | `\studiotemplate{bullseye-values}` | [bullseye-values.tex](studio/bullseye-values.tex) |
+| 136 | [Data table](../docs/templates/previews/table.png) | `\studiotemplate{table}` | [table.tex](studio/table.tex) |
+| 137 | [Equation and example](../docs/templates/previews/equation.png) | `\studiotemplate{equation}` | [equation.tex](studio/equation.tex) |
+| 138 | [Editable code](../docs/templates/previews/code.png) | `\studiotemplate{code}` | [code.tex](studio/code.tex) |
+| 139 | [Bibliography and resources](../docs/templates/previews/references.png) | `\studiotemplate{references}` | [references.tex](studio/references.tex) |
+| 140 | [Input and output comparison](../docs/templates/previews/hash-avalanche.png) | `\studiotemplate{hash-avalanche}` | [hash-avalanche.tex](studio/hash-avalanche.tex) |
+| 141 | [Derivation path](../docs/templates/previews/key-derivation.png) | `\studiotemplate{key-derivation}` | [key-derivation.tex](studio/key-derivation.tex) |
+| 142 | [Input and output flow](../docs/templates/previews/signature-flow.png) | `\studiotemplate{signature-flow}` | [signature-flow.tex](studio/signature-flow.tex) |
+| 143 | [Three-lane sequence](../docs/templates/previews/protocol-sequence.png) | `\studiotemplate{protocol-sequence}` | [protocol-sequence.tex](studio/protocol-sequence.tex) |
+| 144 | [Chain with block headers](../docs/templates/previews/block-chain.png) | `\studiotemplate{block-chain}` | [block-chain.tex](studio/block-chain.tex) |
+| 145 | [Merkle hash tree](../docs/templates/previews/merkle-tree.png) | `\studiotemplate{merkle-tree}` | [merkle-tree.tex](studio/merkle-tree.tex) |
+| 146 | [Forked chain branches](../docs/templates/previews/fork-branches.png) | `\studiotemplate{fork-branches}` | [fork-branches.tex](studio/fork-branches.tex) |
+| 147 | [Two-lane process](../docs/templates/previews/transaction-flow.png) | `\studiotemplate{transaction-flow}` | [transaction-flow.tex](studio/transaction-flow.tex) |
+| 148 | [Cipher substitution mapping](../docs/templates/previews/cipher-mapping.png) | `\studiotemplate{cipher-mapping}` | [cipher-mapping.tex](studio/cipher-mapping.tex) |
+| 149 | [Encryption and decryption pipeline](../docs/templates/previews/encryption-flow.png) | `\studiotemplate{encryption-flow}` | [encryption-flow.tex](studio/encryption-flow.tex) |
+| 150 | [Outcome matrix](../docs/templates/previews/payoff-matrix.png) | `\studiotemplate{payoff-matrix}` | [payoff-matrix.tex](studio/payoff-matrix.tex) |
+| 151 | [Two-way channel](../docs/templates/previews/payment-channel.png) | `\studiotemplate{payment-channel}` | [payment-channel.tex](studio/payment-channel.tex) |
+| 152 | [Processing flow](../docs/templates/previews/proof-of-work-flow.png) | `\studiotemplate{proof-of-work-flow}` | [proof-of-work-flow.tex](studio/proof-of-work-flow.tex) |
+| 153 | [Seed Key Tree](../docs/templates/previews/seed-key-tree.png) | `\studiotemplate{seed-key-tree}` | [seed-key-tree.tex](studio/seed-key-tree.tex) |
+| 154 | [Three assumptions](../docs/templates/previews/cryptographic-assumptions.png) | `\studiotemplate{cryptographic-assumptions}` | [cryptographic-assumptions.tex](studio/cryptographic-assumptions.tex) |
+| 155 | [Routing diagram](../docs/templates/previews/routing-graph.png) | `\studiotemplate{routing-graph}` | [routing-graph.tex](studio/routing-graph.tex) |
+| 156 | [Protocol Symmetric](../docs/templates/previews/protocol-symmetric.png) | `\studiotemplate{protocol-symmetric}` | [protocol-symmetric.tex](studio/protocol-symmetric.tex) |
+| 157 | [Protocol Public Keys](../docs/templates/previews/protocol-public-keys.png) | `\studiotemplate{protocol-public-keys}` | [protocol-public-keys.tex](studio/protocol-public-keys.tex) |
+| 158 | [Protocol Key Lock](../docs/templates/previews/protocol-key-lock.png) | `\studiotemplate{protocol-key-lock}` | [protocol-key-lock.tex](studio/protocol-key-lock.tex) |
+| 159 | [Protocol Key Exchange](../docs/templates/previews/protocol-key-exchange.png) | `\studiotemplate{protocol-key-exchange}` | [protocol-key-exchange.tex](studio/protocol-key-exchange.tex) |
+| 160 | [Protocol Signed Message](../docs/templates/previews/protocol-signed-message.png) | `\studiotemplate{protocol-signed-message}` | [protocol-signed-message.tex](studio/protocol-signed-message.tex) |
+| 161 | [Protocol Encrypted Message](../docs/templates/previews/protocol-encrypted-message.png) | `\studiotemplate{protocol-encrypted-message}` | [protocol-encrypted-message.tex](studio/protocol-encrypted-message.tex) |
+| 162 | [Protocol Unlock Message](../docs/templates/previews/protocol-unlock-message.png) | `\studiotemplate{protocol-unlock-message}` | [protocol-unlock-message.tex](studio/protocol-unlock-message.tex) |
+| 163 | [Protocol Signed Payload](../docs/templates/previews/protocol-signed-payload.png) | `\studiotemplate{protocol-signed-payload}` | [protocol-signed-payload.tex](studio/protocol-signed-payload.tex) |
+| 164 | [Protocol Key Setup](../docs/templates/previews/protocol-key-setup.png) | `\studiotemplate{protocol-key-setup}` | [protocol-key-setup.tex](studio/protocol-key-setup.tex) |
+| 165 | [Protocol Token Transfer](../docs/templates/previews/protocol-token-transfer.png) | `\studiotemplate{protocol-token-transfer}` | [protocol-token-transfer.tex](studio/protocol-token-transfer.tex) |
+| 166 | [Protocol Token Routing](../docs/templates/previews/protocol-token-routing.png) | `\studiotemplate{protocol-token-routing}` | [protocol-token-routing.tex](studio/protocol-token-routing.tex) |
+| 167 | [Protocol Key Aggregation](../docs/templates/previews/protocol-key-aggregation.png) | `\studiotemplate{protocol-key-aggregation}` | [protocol-key-aggregation.tex](studio/protocol-key-aggregation.tex) |
+| 168 | [Protocol Aggregate Signature](../docs/templates/previews/protocol-aggregate-signature.png) | `\studiotemplate{protocol-aggregate-signature}` | [protocol-aggregate-signature.tex](studio/protocol-aggregate-signature.tex) |
+| 169 | [Protocol Eavesdropping](../docs/templates/previews/protocol-eavesdropping.png) | `\studiotemplate{protocol-eavesdropping}` | [protocol-eavesdropping.tex](studio/protocol-eavesdropping.tex) |
+| 170 | [Protocol Encrypted Channel](../docs/templates/previews/protocol-encrypted-channel.png) | `\studiotemplate{protocol-encrypted-channel}` | [protocol-encrypted-channel.tex](studio/protocol-encrypted-channel.tex) |
+| 171 | [Symmetric Encryption](../docs/templates/previews/symmetric-encryption.png) | `\studiotemplate{symmetric-encryption}` | [symmetric-encryption.tex](studio/symmetric-encryption.tex) |
+| 172 | [Asymmetric Encryption](../docs/templates/previews/asymmetric-encryption.png) | `\studiotemplate{asymmetric-encryption}` | [asymmetric-encryption.tex](studio/asymmetric-encryption.tex) |
+| 173 | [Merkle Tree Wide](../docs/templates/previews/merkle-tree-wide.png) | `\studiotemplate{merkle-tree-wide}` | [merkle-tree-wide.tex](studio/merkle-tree-wide.tex) |
+| 174 | [Inputs and outputs](../docs/templates/previews/diagram-transaction-inputs.png) | `\studiotemplate{diagram-transaction-inputs}` | [diagram-transaction-inputs.tex](studio/diagram-transaction-inputs.tex) |
+| 175 | [Word grid and caption](../docs/templates/previews/seed-grid-caption.png) | `\studiotemplate{seed-grid-caption}` | [seed-grid-caption.tex](studio/seed-grid-caption.tex) |
+| 176 | [Shared work diagram](../docs/templates/previews/diagram-pool-shares.png) | `\studiotemplate{diagram-pool-shares}` | [diagram-pool-shares.tex](studio/diagram-pool-shares.tex) |
+| 177 | [Layers Overview](../docs/templates/previews/layers-overview.png) | `\studiotemplate{layers-overview}` | [layers-overview.tex](studio/layers-overview.tex) |
+| 178 | [Multiple approvals](../docs/templates/previews/multi-signature.png) | `\studiotemplate{multi-signature}` | [multi-signature.tex](studio/multi-signature.tex) |
+| 179 | [Blockchain With List](../docs/templates/previews/blockchain-with-list.png) | `\studiotemplate{blockchain-with-list}` | [blockchain-with-list.tex](studio/blockchain-with-list.tex) |
+| 180 | [Double Spend Diagram](../docs/templates/previews/double-spend-diagram.png) | `\studiotemplate{double-spend-diagram}` | [double-spend-diagram.tex](studio/double-spend-diagram.tex) |
+| 181 | [One-to-many mapping](../docs/templates/previews/key-to-addresses.png) | `\studiotemplate{key-to-addresses}` | [key-to-addresses.tex](studio/key-to-addresses.tex) |
+| 182 | [Two-system comparison](../docs/templates/previews/dual-consensus-diagram.png) | `\studiotemplate{dual-consensus-diagram}` | [dual-consensus-diagram.tex](studio/dual-consensus-diagram.tex) |
+| 183 | [Letter wheel](../docs/templates/previews/cipher-wheel.png) | `\studiotemplate{cipher-wheel}` | [cipher-wheel.tex](studio/cipher-wheel.tex) |
+| 184 | [Resource columns](../docs/templates/previews/blue-resources-columns.png) | `\studiotemplate{blue-resources-columns}` | [blue-resources-columns.tex](studio/blue-resources-columns.tex) |
+| 185 | [Record information](../docs/templates/previews/genesis-information.png) | `\studiotemplate{genesis-information}` | [genesis-information.tex](studio/genesis-information.tex) |
+| 186 | [Practical instructions](../docs/templates/previews/regtest-instructions.png) | `\studiotemplate{regtest-instructions}` | [regtest-instructions.tex](studio/regtest-instructions.tex) |
+| 187 | [Record inspection](../docs/templates/previews/block-inspection.png) | `\studiotemplate{block-inspection}` | [block-inspection.tex](studio/block-inspection.tex) |
+| 188 | [Processing cards](../docs/templates/previews/mining-card-grid.png) | `\studiotemplate{mining-card-grid}` | [mining-card-grid.tex](studio/mining-card-grid.tex) |
+| 189 | [Contact slide with working QR](../docs/templates/previews/contact-qr.png) | `\studiotemplate{contact-qr}` | [contact-qr.tex](studio/contact-qr.tex) |
+| 190 | [Apply Qr](../docs/templates/previews/apply-qr.png) | `\studiotemplate{apply-qr}` | [apply-qr.tex](studio/apply-qr.tex) |
+| 191 | [Five-section contents](../docs/templates/previews/contents-five.png) | `\studiotemplate{contents-five}` | [contents-five.tex](studio/contents-five.tex) |
+| 192 | [Team presentation](../docs/templates/previews/team-presentation.png) | `\studiotemplate{team-presentation}` | [team-presentation.tex](studio/team-presentation.tex) |
+| 193 | [Five-item list with vertical rail](../docs/templates/previews/list-rail-five.png) | `\studiotemplate{list-rail-five}` | [list-rail-five.tex](studio/list-rail-five.tex) |
+| 194 | [Standard closing](../docs/templates/previews/closing.png) | `\studiotemplate{closing}` | [closing.tex](studio/closing.tex) |
 
 ## Compatibility names
 

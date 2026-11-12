@@ -38,42 +38,6 @@ Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (the
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
-### six-outline
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/six-outline-cards.tex) · [Full slot guide](../guides/six-outline-cards.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `title` | <code>Slide title</code> | 27.9% wide × 7.6% high |
-| `label-two` | <code>Supporting explanation</code> | 37.7% wide × 4.6% high |
-| `label-three` | <code>Supporting explanation</code> | 37.6% wide × 4.1% high |
-| `label-four` | <code>Supporting explanation</code> | 37.6% wide × 4.6% high |
-| `label-five` | <code>Supporting explanation</code> | 37.6% wide × 4.1% high |
-| `label-six` | <code>Supporting explanation</code> | 37.7% wide × 4.6% high |
-| `label-seven` | <code>Supporting explanation</code> | 37.7% wide × 4.1% high |
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
-### six-detailed
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/six-explanation-cards.tex) · [Full slot guide](../guides/six-explanation-cards.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `title` | <code>Slide title</code> | 39.4% wide × 8.5% high |
-| `label-two` | <code>Supporting explanation</code> | 37.7% wide × 7.9% high |
-| `label-three` | <code>Supporting explanation</code> | 37.7% wide × 8.5% high |
-| `label-four` | <code>Supporting explanation</code> | 35.3% wide × 8.5% high |
-| `label-five` | <code>Supporting explanation</code> | 36.5% wide × 4.6% high |
-| `label-six` | <code>Supporting explanation</code> | 36.5% wide × 8.5% high |
-| `label-seven` | <code>Supporting explanation</code> | 37.7% wide × 4.5% high |
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
 ## Complete one-slide example
 
 ```latex

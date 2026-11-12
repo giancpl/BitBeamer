@@ -1,0 +1,47 @@
+% Twelve-word grids: short words, long words, explicit breaks and annotations.
+\ifdefined\pdfminorversion\pdfminorversion=7\fi
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\usepackage{bitpolitostudiolibrary}
+\usepackage[backend=biber]{biblatex}
+\addbibresource{bibliography.bib}
+\addbibresource{library/references.bib}
+\begin{document}
+\studiotemplate[
+  variant={plain},
+  title={Private key},
+  words={issue,flame,sample,lyrics,find,vault,announce,banner,cute,damage,civil,goat}
+]{word-grid}
+\studiotemplate[
+  variant={annotated},
+  title={Mnemonic},
+  words={issue,flame,sample,lyrics,find,vault,announce,banner,cute,damage,civil,goat},
+  grid-title={Seed phrase},
+  explanation-title={Ordered words},
+  explanation={A sequence of words makes an example easier to read and discuss.},
+  note-title={Additional note},
+  note={Use these cells for illustrative workshop material.}
+]{word-grid}
+\studiotemplate[
+  variant={plain},
+  title={Twelve workshop topics},
+  words={independent verification,clear communication,shared understanding,verification,coordination,collaboration,participation,responsibility,transparency,written notes,careful testing,shared protocols}
+]{word-grid}
+\studiotemplate[
+  variant={annotated},
+  title={Working with longer text},
+  words={independent verification,clear communication,shared understanding,verification,coordination,collaboration,participation,responsibility,transparency,written notes,careful testing,shared protocols},
+  grid-title={Workshop vocabulary},
+  explanation-title={How to read the grid},
+  explanation={Read each row from left to right. The sequence continues on the next row, while longer labels wrap within their own cells.},
+  note-title={Supporting note},
+  note={Keep each label concise.\\Explain longer ideas in this separate area.}
+]{word-grid}
+\studiotemplate[
+  variant={plain},
+  title={Labels on two lines},
+  words={Learning\\together,Shared\\rules,Public\\history,Local\\checks,Clear\\examples,Open\\questions,Useful\\tools,Small\\groups,Good\\notes,Common\\goals,Careful\\review,Next\\steps},
+  numbered={false}
+]{word-grid}
+\end{document}

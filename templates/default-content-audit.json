@@ -1207,90 +1207,6 @@
       "default": "Title"
     },
     {
-      "composition": "twelve-word-grid",
-      "field": "title",
-      "role": "title",
-      "previous": "Private key",
-      "default": "Slide title"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-2",
-      "role": "label-two",
-      "previous": "1. issue",
-      "default": "Item 1"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-3",
-      "role": "label-five",
-      "previous": "4. lyrics",
-      "default": "Item 4"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-4",
-      "role": "label-eight",
-      "previous": "7. announce",
-      "default": "Item 7"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-5",
-      "role": "label-ten",
-      "previous": "10. damage",
-      "default": "Item 10"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-6",
-      "role": "label-three",
-      "previous": "2. flame",
-      "default": "Item 2"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-7",
-      "role": "label-six",
-      "previous": "5. find",
-      "default": "Item 5"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-8",
-      "role": "label-nine",
-      "previous": "8. banner",
-      "default": "Item 8"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-9",
-      "role": "label-eleven",
-      "previous": "11. civil",
-      "default": "Item 11"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-10",
-      "role": "label-four",
-      "previous": "3.sample",
-      "default": "Item 3"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-11",
-      "role": "label-seven",
-      "previous": "6. vault",
-      "default": "Item 6"
-    },
-    {
-      "composition": "twelve-word-grid",
-      "field": "text-12",
-      "role": "label-twelve",
-      "previous": "12. goat",
-      "default": "Item 12"
-    },
-    {
       "composition": "three-card-summary",
       "field": "title",
       "role": "title",
@@ -1569,104 +1485,6 @@
       "role": "label-three",
       "previous": "Use STARKs to prove channel\\\\correctness without revealing\\\\balances or requiring full\\\\channel history",
       "default": "Supporting explanation.\\\\Add your own details."
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "title",
-      "role": "title",
-      "previous": "What to consider",
-      "default": "Slide title"
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "text-2",
-      "role": "label-three",
-      "previous": "Difficulty level",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "text-3",
-      "role": "label-five",
-      "previous": "Bitcoin price",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "text-4",
-      "role": "label-seven",
-      "previous": "Payment method",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "text-5",
-      "role": "label-two",
-      "previous": "Energy price",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "text-6",
-      "role": "label-four",
-      "previous": "Capital Expenditure (CapEx)",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-outline-cards",
-      "field": "text-7",
-      "role": "label-six",
-      "previous": "Geopolitics",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "title",
-      "role": "title",
-      "previous": "Wallet Lightning Network",
-      "default": "Slide title"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "text-2",
-      "role": "label-three",
-      "previous": "A keystore holding secrets, such as\\\\private keys",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "text-3",
-      "role": "label-five",
-      "previous": "Manages channel opening and closing",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "text-4",
-      "role": "label-six",
-      "previous": "Finds a connected channel route from\\\\the payer to the payment recipient",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "text-5",
-      "role": "label-two",
-      "previous": "A Bitcoin node stores blockchain data\\\\and communicates with other nodes",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "text-6",
-      "role": "label-four",
-      "previous": "A Lightning node communicates on\\\\the peer-to-peer network",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "six-explanation-cards",
-      "field": "text-7",
-      "role": "label-seven",
-      "previous": "A map of announced nodes and channels",
-      "default": "Supporting explanation"
     },
     {
       "composition": "five-icon-row",
@@ -6905,153 +6723,6 @@
       "default": "Label"
     },
     {
-      "composition": "seed-grid-caption",
-      "field": "title",
-      "role": "title",
-      "previous": "Mnemonic",
-      "default": "Title"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-2-1",
-      "role": "label-three",
-      "previous": "BIP39",
-      "default": "Item"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-2-2",
-      "role": "label-four",
-      "previous": "12 or 24 ordered words",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-2-3",
-      "role": "label-eight",
-      "previous": "selected at random",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-2-4",
-      "role": "label-nine",
-      "previous": "from a dictionary of",
-      "default": "Example label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-2-5",
-      "role": "label-ten",
-      "previous": "2,048",
-      "default": "2,048"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-3-1",
-      "role": "label-sixteen",
-      "previous": "Optional passphrase",
-      "default": "Example label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-3-2",
-      "role": "label-seventeen",
-      "previous": "Changes the seed",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "item-3-3",
-      "role": "label-21",
-      "previous": "the resulting seed",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-4",
-      "role": "label-two",
-      "previous": "Seed Phrase",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-5",
-      "role": "label-five",
-      "previous": "1.issue",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-6",
-      "role": "label-eleven",
-      "previous": "4. lyrics",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-7",
-      "role": "label-fourteen",
-      "previous": "7. announce",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-8",
-      "role": "label-eighteen",
-      "previous": "10. damage",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-9",
-      "role": "label-six",
-      "previous": "2. flame",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-10",
-      "role": "label-twelve",
-      "previous": "5. find",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-11",
-      "role": "label-fifteen",
-      "previous": "8. banner",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-12",
-      "role": "label-nineteen",
-      "previous": "11. civil",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-13",
-      "role": "label-seven",
-      "previous": "3.sample",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-14",
-      "role": "label-thirteen",
-      "previous": "6. vault",
-      "default": "Label"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-15",
-      "role": "label-twenty",
-      "previous": "12. goat",
-      "default": "Label"
-    },
-    {
       "composition": "diagram-pool-shares",
       "field": "title",
       "role": "title",
@@ -7587,28 +7258,28 @@
       "composition": "blockchain-with-list",
       "field": "text-11",
       "role": "label-eleven",
-      "previous": "T™X1",
+      "previous": "T\u2122X1",
       "default": "Example label"
     },
     {
       "composition": "blockchain-with-list",
       "field": "text-12",
       "role": "label-twelve",
-      "previous": "T™X1",
+      "previous": "T\u2122X1",
       "default": "Example label"
     },
     {
       "composition": "blockchain-with-list",
       "field": "text-13",
       "role": "label-thirteen",
-      "previous": "T™X1",
+      "previous": "T\u2122X1",
       "default": "Example label"
     },
     {
       "composition": "blockchain-with-list",
       "field": "text-14",
       "role": "label-fourteen",
-      "previous": "T™X1",
+      "previous": "T\u2122X1",
       "default": "Example label"
     },
     {
@@ -8082,25 +7753,11 @@
       "current": "Value 2"
     },
     {
-      "composition": "twelve-word-grid",
-      "field": "text-13",
-      "role": "caption-nine",
-      "previous": "9. cute",
-      "default": "Item 9"
-    },
-    {
       "composition": "callout-explanation",
       "field": "result",
       "role": "result",
       "previous": "Scalable payments",
       "default": "Output"
-    },
-    {
-      "composition": "seed-grid-caption",
-      "field": "text-16",
-      "role": "caption-nine",
-      "previous": "9. cute",
-      "default": "Item 9"
     },
     {
       "composition": "four-card-grid",
@@ -8206,6 +7863,244 @@
       "role": "body-two",
       "previous": "Supporting explanation",
       "default": "Supporting explanation"
+    },
+    {
+      "composition": "square-icon-grid",
+      "field": "text-5",
+      "role": "caption",
+      "previous": "IT",
+      "default": "Caption"
+    },
+    {
+      "composition": "eight-icon-grid",
+      "field": "text-7",
+      "role": "caption",
+      "previous": "IT",
+      "default": "Caption"
+    },
+    {
+      "composition": "eight-icon-grid",
+      "field": "text-8",
+      "role": "caption",
+      "previous": "R\\&D",
+      "default": "Caption"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-1",
+      "role": "word",
+      "previous": "issue",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-2",
+      "role": "word",
+      "previous": "flame",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-3",
+      "role": "word",
+      "previous": "sample",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-4",
+      "role": "word",
+      "previous": "lyrics",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-5",
+      "role": "word",
+      "previous": "find",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-6",
+      "role": "word",
+      "previous": "vault",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-7",
+      "role": "word",
+      "previous": "announce",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-8",
+      "role": "word",
+      "previous": "banner",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-9",
+      "role": "word",
+      "previous": "cute",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-10",
+      "role": "word",
+      "previous": "damage",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-11",
+      "role": "word",
+      "previous": "civil",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "word-12",
+      "role": "word",
+      "previous": "goat",
+      "default": "Word"
+    },
+    {
+      "composition": "twelve-word-grid",
+      "field": "title",
+      "role": "title",
+      "previous": "Private key",
+      "default": "Slide title"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-1",
+      "role": "word",
+      "previous": "issue",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-2",
+      "role": "word",
+      "previous": "flame",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-3",
+      "role": "word",
+      "previous": "sample",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-4",
+      "role": "word",
+      "previous": "lyrics",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-5",
+      "role": "word",
+      "previous": "find",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-6",
+      "role": "word",
+      "previous": "vault",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-7",
+      "role": "word",
+      "previous": "announce",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-8",
+      "role": "word",
+      "previous": "banner",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-9",
+      "role": "word",
+      "previous": "cute",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-10",
+      "role": "word",
+      "previous": "damage",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-11",
+      "role": "word",
+      "previous": "civil",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "word-12",
+      "role": "word",
+      "previous": "goat",
+      "default": "Word"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "title",
+      "role": "title",
+      "previous": "Mnemonic",
+      "default": "Slide title"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "grid-title",
+      "role": "grid-title",
+      "previous": "Seed phrase",
+      "default": "Word sequence"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "explanation-title",
+      "role": "explanation-title",
+      "previous": "Ordered words",
+      "default": "Explanation"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "explanation",
+      "role": "explanation",
+      "previous": "A sequence of words makes an example easier to read and discuss.",
+      "default": "Explain the example in a short paragraph."
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "note-title",
+      "role": "note-title",
+      "previous": "Additional note",
+      "default": "Additional note"
+    },
+    {
+      "composition": "seed-grid-caption",
+      "field": "note",
+      "role": "note",
+      "previous": "Use these cells for illustrative workshop material.",
+      "default": "Add a short supporting note."
     }
   ]
 }

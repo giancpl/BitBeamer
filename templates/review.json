@@ -1426,16 +1426,26 @@
       ]
     },
     "eight-icon-grid": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "\nExplicitly approved by the user on 2026-11-12 after reviewing Divisions with editable icons, stable panel bounds and longer captions.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after reviewing Divisions with editable icons, stable panel bounds and longer captions."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "divisions-01-approval",
+          "source": "Explicit user decision, 2026-11-12",
+          "issue": "Finalize both reviewed Divisions variants.",
+          "action": "Accepted with every icon editable in caption reading order.",
+          "verification": "Seven visual specimens, expected-error tests, scoped regression and repository checks recorded separately.",
+          "status": "approved"
+        }
+      ]
     },
     "four-step-process": {
       "status": "approved",
@@ -1539,14 +1549,14 @@
       ]
     },
     "twelve-word-grid": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nUser requested the second variant's panels for both grids and corrected standard paper on 2026-11-12. Shared inset-shadow panels, consistent semibold cells and thin numeric-prefix spacing are pending visual review.\nUser deferred panel shadows to a later review across all card families on 2026-11-12; this is not approval of the current shadow treatment.\nExplicitly approved by the user on 2026-11-12 after shared-panel, exact-paper and semibold-body corrections. General card-shadow refinement remains deferred across families.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after shared-panel, exact-paper and semibold-body corrections. General card-shadow refinement remains deferred across families."
         }
       },
       "feedback": [
@@ -1556,7 +1566,7 @@
           "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved"
         },
         {
           "id": "guide-field-audit",
@@ -1564,7 +1574,23 @@
           "issue": "Default field roles, caption weight, or embedded text required refinement.",
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved"
+        },
+        {
+          "id": "word-grid-panel-paper",
+          "source": "User review in the current conversation",
+          "issue": "Prefer the second grid's panels; background is wrong. Review overall reproduction.",
+          "action": "Use figma-0662 panels in both layouts; correct PDF paper quantization to F9; use fixed 62/72 semibold cells and thin numeric-prefix spacing.",
+          "verification": "Both original/current comparisons and all five short/long/explicit-break examples visually inspected. All five rendered pages sample F9F9F9 paper, matching panel padding. Fixed 62/72 semibold cell labels compile without diagnostics; count and overflow negative cases pass. No lesson/block consumers; graphical review pending.",
+          "status": "approved"
+        },
+        {
+          "id": "word-grid-01-approval",
+          "source": "Explicit user decision, 2026-11-12",
+          "issue": "Finalize both reviewed word-grid variants.",
+          "action": "Accepted current geometry, shared panels, F9F9F9 paper and semibold editable text; retain the later cross-family shadow task.",
+          "verification": "Five canonical short/long/explicit-break pages, PDF font inspection, count/overflow rejection, preview checks and 207 passing tests (one existing skip).",
+          "status": "approved"
         }
       ]
     },
@@ -1790,40 +1816,6 @@
         }
       ]
     },
-    "six-outline-cards": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
-      "use": "",
-      "example": {},
-      "palette_reviews": {
-        "light": {
-          "status": "in review",
-          "notes": ""
-        }
-      },
-      "feedback": [
-        {
-          "id": "type-alignment",
-          "source": "User review in the current conversation",
-          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
-          "action": "Audit canonical source against retained original and rendered guide command.",
-          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
-        }
-      ]
-    },
-    "six-explanation-cards": {
-      "status": "in review",
-      "notes": "",
-      "use": "",
-      "example": {},
-      "palette_reviews": {
-        "light": {
-          "status": "in review",
-          "notes": ""
-        }
-      }
-    },
     "five-icon-row": {
       "status": "approved",
       "notes": "Approved by the user on 2026-11-12: unified two/three/five icon-card rows, optional title, 216 x 216 icon fitting, shared 76-unit caption gap and aligned first baselines. Both title states and short/long captions reviewed.",
@@ -1861,16 +1853,26 @@
       ]
     },
     "square-icon-grid": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "\nExplicitly approved by the user on 2026-11-12 after reviewing Divisions with editable icons, stable panel bounds and longer captions.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after reviewing Divisions with editable icons, stable panel bounds and longer captions."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "divisions-01-approval",
+          "source": "Explicit user decision, 2026-11-12",
+          "issue": "Finalize both reviewed Divisions variants.",
+          "action": "Accepted with every icon editable in caption reading order.",
+          "verification": "Seven visual specimens, expected-error tests, scoped regression and repository checks recorded separately.",
+          "status": "approved"
+        }
+      ]
     },
     "incentives-card-grid": {
       "status": "approved",
@@ -3673,14 +3675,14 @@
       ]
     },
     "seed-grid-caption": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "\nUser requested the second variant's panels for both grids and corrected standard paper on 2026-11-12. Shared inset-shadow panels, consistent semibold cells and thin numeric-prefix spacing are pending visual review.\nUser deferred panel shadows to a later review across all card families on 2026-11-12; this is not approval of the current shadow treatment.\nExplicitly approved by the user on 2026-11-12 after shared-panel, exact-paper and semibold-body corrections. General card-shadow refinement remains deferred across families.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicitly approved by the user on 2026-11-12 after shared-panel, exact-paper and semibold-body corrections. General card-shadow refinement remains deferred across families."
         }
       },
       "feedback": [
@@ -3690,7 +3692,31 @@
           "issue": "Overlapping generic labels or an embedded ninth tile label.",
           "action": "Bounded text slots to their original cells; shortened defaults; separated the missing native tile label where applicable.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved"
+        },
+        {
+          "id": "word-grid-panel-paper",
+          "source": "User review in the current conversation",
+          "issue": "Prefer the second grid's panels; background is wrong. Review overall reproduction.",
+          "action": "Use figma-0662 panels in both layouts; correct PDF paper quantization to F9; use fixed 62/72 semibold cells and thin numeric-prefix spacing.",
+          "verification": "Both original/current comparisons and all five short/long/explicit-break examples visually inspected. All five rendered pages sample F9F9F9 paper, matching panel padding. Fixed 62/72 semibold cell labels compile without diagnostics; count and overflow negative cases pass. No lesson/block consumers; graphical review pending.",
+          "status": "approved"
+        },
+        {
+          "id": "word-grid-body-weight",
+          "source": "User review in the current conversation",
+          "issue": "The explanatory bodies are not bold.",
+          "action": "Set explanation and note to fixed-size Inter Semibold in the canonical shared component and metadata. Keep current shadows for the later cross-family review.",
+          "verification": "Rebuilt all five canonical examples. PDF font inspection confirms all right-column spans on the short and long annotated pages are Inter-SemiBold; visual inspection confirms wrapping and spacing, with no layout diagnostics. Shadow review remains deferred and no approval is inferred.",
+          "status": "approved"
+        },
+        {
+          "id": "word-grid-01-approval",
+          "source": "Explicit user decision, 2026-11-12",
+          "issue": "Finalize both reviewed word-grid variants.",
+          "action": "Accepted current geometry, shared panels, F9F9F9 paper and semibold editable text; retain the later cross-family shadow task.",
+          "verification": "Five canonical short/long/explicit-break pages, PDF font inspection, count/overflow rejection, preview checks and 207 passing tests (one existing skip).",
+          "status": "approved"
         }
       ]
     },
@@ -4125,7 +4151,7 @@
   "review_batches": [
     {
       "id": "covers-01",
-      "title": "Covers — first graphical review",
+      "title": "Covers \u2014 first graphical review",
       "family": "Covers",
       "compositions": [
         "cover",
@@ -4144,7 +4170,7 @@
     },
     {
       "id": "team-01",
-      "title": "Team introduction — graphical review",
+      "title": "Team introduction \u2014 graphical review",
       "family": "Team",
       "compositions": [
         "team-presentation"
@@ -4159,7 +4185,7 @@
     },
     {
       "id": "contents-01",
-      "title": "Contents — graphical review",
+      "title": "Contents \u2014 graphical review",
       "family": "Contents",
       "compositions": [
         "contents",
@@ -4175,7 +4201,7 @@
     },
     {
       "id": "closing-01",
-      "title": "Closing slides — graphical review",
+      "title": "Closing slides \u2014 graphical review",
       "family": "Closing",
       "compositions": [
         "closing"
@@ -4189,7 +4215,7 @@
     },
     {
       "id": "dividers-01",
-      "title": "Section divider and incoming-arrow statement — graphical review",
+      "title": "Section divider and incoming-arrow statement \u2014 graphical review",
       "family": "Section transitions",
       "compositions": [
         "section-divider",
@@ -4205,7 +4231,7 @@
     },
     {
       "id": "statements-01",
-      "title": "Other statements — graphical review",
+      "title": "Other statements \u2014 graphical review",
       "family": "Statements",
       "compositions": [
         "glow-statement",
@@ -4222,7 +4248,7 @@
     },
     {
       "id": "columns-01",
-      "title": "Two-column explanation — graphical review",
+      "title": "Two-column explanation \u2014 graphical review",
       "family": "Columns",
       "compositions": [
         "two-columns"
@@ -4239,7 +4265,7 @@
     },
     {
       "id": "lists-light",
-      "title": "Bullet lists — light",
+      "title": "Bullet lists \u2014 light",
       "family": "Lists",
       "compositions": [
         "list-rail-light",
@@ -4259,7 +4285,7 @@
     },
     {
       "id": "lists-blue",
-      "title": "Bullet lists — blue",
+      "title": "Bullet lists \u2014 blue",
       "family": "Lists",
       "compositions": [
         "list-rail-light",
@@ -4299,7 +4325,7 @@
     },
     {
       "id": "cards-01",
-      "title": "Three icon cards — graphical review",
+      "title": "Three icon cards \u2014 graphical review",
       "family": "Cards",
       "compositions": [
         "three-cards"
@@ -4316,7 +4342,7 @@
     },
     {
       "id": "cards-02",
-      "title": "Two icon cards — graphical review",
+      "title": "Two icon cards \u2014 graphical review",
       "family": "Cards",
       "compositions": [
         "two-cards"
@@ -4355,7 +4381,7 @@
     },
     {
       "id": "icon-process-01",
-      "title": "Icon process — two, three and four stages",
+      "title": "Icon process \u2014 two, three and four stages",
       "family": "Cards",
       "compositions": [
         "two-step-process",
@@ -4408,7 +4434,7 @@
     },
     {
       "id": "soft-cards-01",
-      "title": "Unified soft text cards — original layouts and optional content (1/2)",
+      "title": "Unified soft text cards \u2014 original layouts and optional content (1/2)",
       "family": "Cards",
       "compositions": [
         "three-card-summary",
@@ -4432,7 +4458,7 @@
     },
     {
       "id": "soft-cards-02",
-      "title": "Unified soft text cards — original layouts and optional content (2/2)",
+      "title": "Unified soft text cards \u2014 original layouts and optional content (2/2)",
       "family": "Cards",
       "compositions": [
         "feature-spotlight",
@@ -4452,6 +4478,42 @@
         "Compare each layout with its verified original SVG.",
         "Check source-specific geometry, type size, margins and reading order.",
         "Verify longer text, explicit wrapping and optional content at fixed font sizes."
+      ]
+    },
+    {
+      "id": "divisions-01",
+      "title": "Divisions \u2014 four and eight icon cards",
+      "family": "Cards",
+      "compositions": [
+        "square-icon-grid",
+        "eight-icon-grid"
+      ],
+      "commands": {
+        "square-icon-grid": "\\studiotemplate[\n  variant={four},\n  title={Divisions},\n  caption-one={Education},\n  icon-one={book},\n  caption-two={IT},\n  caption-three={Marketing},\n  caption-four={Management}\n]{icon-grid}",
+        "eight-icon-grid": "\\studiotemplate[\n  variant={eight},\n  title={Divisions},\n  caption-one={IT},\n  icon-one={code},\n  caption-two={R\\&D},\n  caption-three={Education},\n  caption-four={Events},\n  caption-five={Marketing},\n  caption-six={Design},\n  caption-seven={Cryptography},\n  caption-eight={Management}\n]{icon-grid}"
+      },
+      "focus": [
+        "Compare with original Divisions layouts.",
+        "Check caption order, fixed sizes and centering under icons.",
+        "Review long captions, automatic wrapping and explicit line breaks."
+      ]
+    },
+    {
+      "id": "word-grid-01",
+      "title": "Twelve-word grids \u2014 plain and annotated",
+      "family": "Technical",
+      "compositions": [
+        "twelve-word-grid",
+        "seed-grid-caption"
+      ],
+      "commands": {
+        "twelve-word-grid": "\\studiotemplate[\n  variant={plain},\n  title={Private key},\n  words={issue,flame,sample,lyrics,find,vault,announce,banner,cute,damage,civil,goat}\n]{word-grid}",
+        "seed-grid-caption": "\\studiotemplate[\n  variant={annotated},\n  title={Mnemonic},\n  words={issue,flame,sample,lyrics,find,vault,announce,banner,cute,damage,civil,goat},\n  grid-title={Seed phrase},\n  explanation-title={Ordered words},\n  explanation={A sequence of words makes an example easier to read and discuss.},\n  note-title={Additional note},\n  note={Use these cells for illustrative workshop material.}\n]{word-grid}"
+      },
+      "focus": [
+        "Compare with the verified original word-grid SVGs.",
+        "Check numbered reading order, fixed text size and centered panel labels.",
+        "Review longer words, automatic wrapping, explicit breaks and annotations."
       ]
     }
   ],

@@ -23,52 +23,17 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Item</code> | 10.9% wide × 5.0% high |
-| `label-two` | <code>Item</code> | 7.7% wide × 4.9% high |
-| `title` | <code>Title</code> | 15.3% wide × 7.5% high |
-| `label-four` | <code>Item</code> | 10.9% wide × 5.6% high |
-| `label-five` | <code>Item</code> | 7.9% wide × 5.6% high |
-| `label-six` | <code>Label 6</code> | 14.8% wide × 5.7% high |
-| `label-seven` | <code>Label 7</code> | 14.0% wide × 5.6% high |
+| `title` | <code>Title</code> | 19.7% wide × 15.0% high |
+| `caption-one` | <code>Caption</code> | 15.2% wide × 10.0% high |
+| `caption-two` | <code>Caption</code> | 15.2% wide × 10.0% high |
+| `caption-three` | <code>Item</code> | 15.2% wide × 10.0% high |
+| `caption-four` | <code>Item</code> | 15.2% wide × 10.0% high |
+| `caption-five` | <code>Item</code> | 15.2% wide × 10.0% high |
+| `caption-six` | <code>Item</code> | 15.2% wide × 10.0% high |
+| `caption-seven` | <code>Label 6</code> | 15.2% wide × 10.0% high |
+| `caption-eight` | <code>Label 7</code> | 15.2% wide × 10.0% high |
 
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
-### twelve
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/twelve-word-grid.tex) · [Full slot guide](../guides/twelve-word-grid.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `title` | <code>Slide title</code> | 23.0% wide × 8.5% high |
-| `label-two` | <code>Item 1</code> | 14.9% wide × 4.0% high |
-| `label-three` | <code>Item 2</code> | 14.8% wide × 4.1% high |
-| `label-four` | <code>Item 3</code> | 14.8% wide × 4.6% high |
-| `label-five` | <code>Item 4</code> | 14.9% wide × 4.6% high |
-| `label-six` | <code>Item 5</code> | 14.8% wide × 4.1% high |
-| `label-seven` | <code>Item 6</code> | 14.8% wide × 4.1% high |
-| `label-eight` | <code>Item 7</code> | 14.9% wide × 4.0% high |
-| `label-nine` | <code>Item 8</code> | 14.8% wide × 4.1% high |
-| `label-ten` | <code>Item 10</code> | 14.8% wide × 4.7% high |
-| `label-eleven` | <code>Item 11</code> | 14.9% wide × 4.0% high |
-| `label-twelve` | <code>Item 12</code> | 14.8% wide × 4.6% high |
-| `caption-one` | <code>Item 1</code> | 14.9% wide × 4.0% high |
-| `caption-two` | <code>Item 2</code> | 14.8% wide × 4.1% high |
-| `caption-three` | <code>Item 3</code> | 14.8% wide × 4.6% high |
-| `caption-four` | <code>Item 4</code> | 14.9% wide × 4.6% high |
-| `caption-five` | <code>Item 5</code> | 14.8% wide × 4.1% high |
-| `caption-six` | <code>Item 6</code> | 14.8% wide × 4.1% high |
-| `caption-seven` | <code>Item 7</code> | 14.9% wide × 4.0% high |
-| `caption-eight` | <code>Item 8</code> | 14.8% wide × 4.1% high |
-| `caption-nine` | <code>Item 9</code> | 14.8% wide × 4.1% high |
-| `caption-ten` | <code>Item 10</code> | 14.8% wide × 4.7% high |
-| `caption-eleven` | <code>Item 11</code> | 14.9% wide × 4.0% high |
-| `caption-twelve` | <code>Item 12</code> | 14.8% wide × 4.6% high |
-
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
+Editable icons: `icon-one` / `image-one` / `graphic-one`, `icon-two` / `image-two` / `graphic-two`, `icon-three` / `image-three` / `graphic-three`, `icon-four` / `image-four` / `graphic-four`, `icon-five` / `image-five` / `graphic-five`, `icon-six` / `image-six` / `graphic-six`, `icon-seven` / `image-seven` / `graphic-seven`, `icon-eight` / `image-eight` / `graphic-eight`. These semantic keys select the icon artwork, preserving the panels. See the full slot guide for position and bounds.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -80,12 +45,13 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Item</code> | 10.9% wide × 5.0% high |
-| `title` | <code>Title</code> | 15.3% wide × 7.5% high |
-| `label-three` | <code>Item</code> | 10.9% wide × 5.6% high |
-| `label-four` | <code>Label 4</code> | 14.0% wide × 5.6% high |
+| `title` | <code>Title</code> | 28.1% wide × 15.0% high |
+| `caption-one` | <code>Item</code> | 16.9% wide × 11.0% high |
+| `caption-two` | <code>Caption</code> | 16.9% wide × 11.0% high |
+| `caption-three` | <code>Item</code> | 16.9% wide × 11.0% high |
+| `caption-four` | <code>Label 4</code> | 16.9% wide × 11.0% high |
 
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
+Editable icons: `icon-one` / `image-one` / `graphic-one`, `icon-two` / `image-two` / `graphic-two`, `icon-three` / `image-three` / `graphic-three`, `icon-four` / `image-four` / `graphic-four`. These semantic keys select the icon artwork, preserving the panels. See the full slot guide for position and bounds.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -101,8 +67,8 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
 \studiotemplate[
   variant={eight},
   palette={light},
-  label-one={Item},
-  label-two={Item}
+  title={Title},
+  caption-one={Caption}
 ]{icon-grid}
 \end{document}
 ```

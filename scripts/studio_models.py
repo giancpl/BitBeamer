@@ -17,9 +17,9 @@ GROUPS = [
  ('list-rail','List beside a rail',[('three-items','list-rail-light'),('four-items','list-rail-blue'),('grouped','grouped-rail')]),
  ('levels','Three levels',[('default','privacy-levels'),('default','privacy-levels-blue')]),
  ('icon-cards','Icon cards',[('two','two-cards'),('three','three-cards'),('two-vertical','two-card-vertical'),('four-pillars','four-pillar-cards'),('summary','three-card-summary')]),
- ('text-cards','Text cards',[('four','four-card-grid'),('six-outline','six-outline-cards'),('six-detailed','six-explanation-cards'),('callout','callout-explanation')]),
+ ('text-cards','Text cards',[('four','four-card-grid'),('callout','callout-explanation')]),
  ('icon-process','Icon process',[('two','two-step-process'),('three','three-step-process'),('four','four-step-process'),('milestones','milestone-cards')]),
- ('icon-grid','Labelled icon grid',[('four','square-icon-grid'),('eight','eight-icon-grid'),('twelve','twelve-word-grid'),('row','five-icon-row')]),
+ ('icon-grid','Labelled icon grid',[('four','square-icon-grid'),('eight','eight-icon-grid'),('row','five-icon-row')]),
  ('options','Options',[('devices','hardware-options'),('applications','software-options')]),
  ('split-comparison','Panel comparison',[('horizontal','horizontal-split'),('vertical','vertical-split'),('outlines','split-outline-cards'),('process','split-process-cards')]),
  ('image-text','Image and text',[('left','image-left'),('right','image-right'),('overlay','image-overlay'),('diagonal','diagonal-photo-title')]),
@@ -306,6 +306,8 @@ def model_guides(root,entries):
                ('Simple three-, four- and five-item lists support light and blue; blue is the dark treatment. Specialized variants keep their native palette.' if m['id']=='list-rail' else 'Palette switches are available only where the original composition exists in both colours.'),
                'Unsupported explicit choices fail. A global palette leaves special compositions in their native treatment.','',
                '## Variants and named fields','']
+        if m['id']=='word-grid':
+            lines += ['Use `words={alpha,bravo,charlie,delta,echo,foxtrot,golf,hotel,india,juliet,kilo,lima}` for exactly twelve cells in row-major order. Numbering is automatic; `numbered=false` hides the prefixes. Text keeps its fixed size and supports explicit `\\\\` breaks. The annotated variant adds grid-title, explanation-title, explanation, note-title and note.', '']
         if m['id']=='list-rail':
             lines+=['[Complete usage reference: counts, palettes, defaults and wrapping](../../STUDIO-LISTS.md)','','The number of items is selected explicitly by `variant`; it is not inferred from filled fields.','']
         for v,cs in variants:
@@ -341,6 +343,8 @@ def model_guides(root,entries):
             native=first['fields'][key]
             f=next(f for f in first_entry['fields'] if f['name']==native)
             if f['type']=='text':options[key]=f['default'].replace(r'\\\\',r'\\')
+        if m['id']=='word-grid':
+            options={'variant':first_variant['id'],'title':'Example words','words':'alpha,bravo,charlie,delta,echo,foxtrot,golf,hotel,india,juliet,kilo,lima'}
         current={c['id'] for _,cs in variants for c in cs}
         for sequence in sequences:
             if not current.intersection(sequence['compositions']) or not set(sequence['compositions'])<=set(by_id):continue

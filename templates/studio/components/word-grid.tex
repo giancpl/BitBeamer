@@ -1,0 +1,57 @@
+% Shared twelve-word grid. Panels stay fixed; editable text never shrinks.
+\ifdefined\studiowordcount\else\newcount\studiowordcount\fi
+\def\studiowordnumbered{true}
+\makeatletter
+\def\studiowordset#1{%
+ \studiowordcount=0
+ \@for\studiowordvalue:=#1\do{%
+  \advance\studiowordcount by 1
+  \ifnum\studiowordcount>12
+   \PackageError{bitpolitostudiotemplates}{Word grid requires exactly twelve words}{Provide twelve comma-separated values in reading order.}%
+  \else
+   \ifx\studiowordvalue\@empty
+    \PackageError{bitpolitostudiotemplates}{Empty word in word grid}{Provide twelve nonempty values.}%
+   \fi
+   \pgfkeyslet{/studio values/word-\the\studiowordcount}\studiowordvalue
+  \fi}%
+ \ifnum\studiowordcount=12\else
+  \PackageError{bitpolitostudiotemplates}{Word grid requires exactly twelve words}{Provide twelve comma-separated values in reading order.}%
+ \fi}
+\makeatother
+\pgfkeys{/studio fields/words/.code=\studiowordset{#1},
+ /studio fields/numbered/.is choice,
+ /studio fields/numbered/true/.code=\def\studiowordnumbered{true},
+ /studio fields/numbered/false/.code=\def\studiowordnumbered{false}}
+\studioapplyfields
+% xcolor serializes F9F9F9 as 0.97647, which some PDF rasterizers
+% quantize to F8. Round up at the same precision to match the prepared panels.
+\definecolor{studiowordpaper}{rgb}{0.97648,0.97648,0.97648}
+\studiomeasuredcanvas{3556}{2000}{\studiocurrenttemplate}{studiowordpaper}{
+ \def\studiowordtrue{true}
+ \ifx\studiowordannotated\studiowordtrue
+  \studiomeasuredtext{title}{355}{239}{2846}{170}{112.735}{130.772}{\centering\bfseries}{\studiofield{title}}
+  \studiomeasuredtext{grid-title}{274}{501}{1975}{120}{87.48}{101.48}{\bfseries}{\studiofield{grid-title}}
+  \studiomeasuredtext{explanation-title}{2508}{499}{750}{125}{77.76}{90.2}{\bfseries}{\studiofield{explanation-title}}
+  \studiomeasuredtext{explanation}{2508}{638}{750}{470}{62}{80}{\bfseries}{\studiofield{explanation}}
+  \studiomeasuredtext{note-title}{2508}{1381}{750}{125}{75.16}{87.19}{\bfseries}{\studiofield{note-title}}
+  \studiomeasuredtext{note}{2508}{1519}{750}{220}{62}{80}{\bfseries}{\studiofield{note}}
+ \else
+  \studiomeasuredtext{title}{355}{326}{2846}{170}{112.735}{130.772}{\centering\bfseries}{\studiofield{title}}
+ \fi
+ \foreach \studiowordindex in {1,...,12}{%
+  \pgfmathsetmacro{\studiowordleft}{\studiowordx+mod(\studiowordindex-1,3)*\studiowordstepx}
+  \pgfmathsetmacro{\studiowordtop}{\studiowordy+floor((\studiowordindex-1)/3)*\studiowordstepy}
+  \studiomeasuredpart{\studiowordpanel}{\studiowordleft}{\studiowordtop}{678}
+  \ifstudiogeometryonly\else
+  \typeout{STUDIO-FIELD: \studiopilotname/word-\studiowordindex}%
+  \node[anchor=north west] at ({\studiowordleft+74},{\studiowordtop+\studiowordoffsety}) {%
+   \setbox\studiotextbox=\vbox{\hsize=530\studiounit\parindent=0pt\hfuzz=.1pt\overfullrule=2pt
+    \normalfont\sffamily\fontsize{62\studiounit}{72\studiounit}\selectfont\studiowordfont\centering
+    \ifx\studiowordnumbered\studiowordtrue\studiowordindex.\,\fi\studiofield{word-\studiowordindex}\par}%
+   \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>152\studiounit
+    \PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/word-\studiowordindex}{Shorten the cell text. The font size is fixed.}%
+   \fi
+   \vbox to 152\studiounit{\vfil\box\studiotextbox\vfil}};%
+  \fi
+ }
+}

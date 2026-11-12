@@ -19,7 +19,7 @@ class StudioCollectionTests(unittest.TestCase):
         frames=json.loads((ROOT/'templates/figma-inventory.json').read_text(encoding='utf-8'))['frames']
         models={e['id'] for e in json.loads((ROOT/'templates/index.json').read_text(encoding='utf-8'))['templates']}
         self.assertEqual(len(frames),1073)
-        allowed={'model','example','duplicate','resource','outside-slide-format'}
+        allowed={'model','example','duplicate','resource','outside-slide-format','excluded'}
         for frame in frames:
             assignment=frame['assignment'];self.assertIn(assignment['destination'],allowed)
             if 'template'in assignment:self.assertIn(assignment['template'],models)

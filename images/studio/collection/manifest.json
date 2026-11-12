@@ -6837,9 +6837,11 @@
       "definition_ids": [
         "filter0_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "1bbfb356e3b630e6285e71985f1873312dc5fd5ea2431f6038ae58a94d24b483",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "838b8f1ce02c4a827ac566e7ab4c35a2338ca28da1d56bd194eed2ac466943d3",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-02",
@@ -6880,9 +6882,11 @@
       "definition_ids": [
         "filter1_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "e5ad8adc13d92e19c0ebcd11bda804c730ec6294dbf38ce33cee101f3311bbca",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "963e781bee817fb84a723b284eb2250752c4ae8f4255397a8a9bfe65b556f310",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-03",
@@ -6923,9 +6927,11 @@
       "definition_ids": [
         "filter2_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "2467655f4baaa32d02bc23d5cd865d79856c51d2b6a1b427e8406c4fe9a4a6ff",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "735ebef8e249e88558a6b81935d66423e97227807ed802c198022e0b7ec574f4",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-04",
@@ -6966,9 +6972,11 @@
       "definition_ids": [
         "filter3_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "b5662dbc3e454cf3ecedb0901db753d3e4cd195088ac246c41cc69f5b6a6ee54",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "467de3eefc7f96321bb946556d04a4a3be982efbaf807b15f1aa118b4a469e64",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-05",
@@ -7009,9 +7017,11 @@
       "definition_ids": [
         "filter4_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "693b3085dac07512d890653a9acf3207af2d3643d488f22cf64eb671418f024e",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "446c841cdb84a2f80480fa4a151d3d7c5cb847867d0989c3026adcb0abfb463f",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-06",
@@ -7052,9 +7062,11 @@
       "definition_ids": [
         "filter5_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "b62dca9dd68656effaee1fbeba1827f777990ae28b43d4626f9b09b70dc72f87",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "55f055823b298a38f89a177954b9ce090ac0e5c9721e25af4c6723d5b305c936",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-07",
@@ -7095,9 +7107,11 @@
       "definition_ids": [
         "filter6_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "813d76f535afcc1f790df3f044ee609da0a69b271ad9d4b9f6c4b38ed6d82374",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "cdb0e682c13051d9d2cfedd2b8c165743bb00da150c8ec993496967b0f64ed6f",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0429-part-08",
@@ -7174,9 +7188,11 @@
       "definition_ids": [
         "filter7_dii_3171_889"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "74cef43cf8a307a8b01f198cf7635d90b7fec9156f3d8c67a3a5d781f646d9dc",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "f6e50e2c77590510868528031fb54036cbb84ea91b3ed25af7ba5eb4fffb9e49",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0054-part-01",
@@ -13358,9 +13374,11 @@
       "definition_ids": [
         "filter0_d_2521_718"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "c4f3d9772acd5b6702d18823237389faa0ba6a13ed5d7199149dee1f86add226",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "aaae244f3f3627d5faef5f18c11b23400bcafbb984826118f6519cfb83f40db4",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0646-part-02",
@@ -30182,9 +30200,11 @@
       "definition_ids": [
         "filter0_dii_5676_1501"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "14ac6f8ac2844d19ca1b7cf300eedf33e78f6ca8ddc402d0bcf03b75dc652ccb",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "d7f23990f3c75744c7100d897ed0e3f9e354d6a6821a5898478c31bf5a9e3dd1",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0662-part-02",
@@ -36783,9 +36803,11 @@
       "definition_ids": [
         "filter0_dii_983_2653"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "97121bcff2736fd128196349aff9d729e2fc09e0f731eb54d2c069da7e6464da",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "301e9a3d1dff11e585d0986e4165c75d821b20a0642765d4c4aa8abdc83679ff",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-1061-part-02",
@@ -36826,9 +36848,11 @@
       "definition_ids": [
         "filter1_dii_983_2653"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "e3d8f76af770d59c0808467a323090224856846b48cdd62cf69db76192ecdb48",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "f5bad5c75046822935fb71be5ca56abb8f4178ab57824a5bb932d6f5636833e1",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-1061-part-03",
@@ -36866,9 +36890,11 @@
       "definition_ids": [
         "filter2_dii_983_2653"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "667d14c220ce1672bb8eb8d802d6953b410bcd513c79638a59cd34061028b96a",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "45319085a2f1bf207870e3419e159fd5bf115b026595179b873939ae14ca5265",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-1061-part-04",
@@ -36909,9 +36935,11 @@
       "definition_ids": [
         "filter3_dii_983_2653"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "361e15d2bbd501dc2dd618c1d2939e344375a88c501e255cf502bc904be730ac",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "pdf_sha256": "c2b7250bbe580a68b4efb7007a9fe50188b00d76af0b7bf262f388b1b57acf20",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "render_scale": 2,
+      "paper_background": "F9F9F9"
     },
     {
       "name": "figma-0525-part-01",
@@ -39822,6 +39850,230 @@
         "stroke6_5453_4"
       ],
       "pdf_sha256": "54c70d7f973b042ac9b7178ad92118f3f94e26601e7a13101841ad5cacc176ec"
+    },
+    {
+      "name": "divisions-icon-it",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-it.svg",
+      "source_sha256": "792694b4a269ec0f86913ab316cd3b135d35334ec45eb907503cd8fe5ba2400b",
+      "render_box": [
+        1073.25,
+        488.25,
+        285.5,
+        155.5
+      ],
+      "anchor": [
+        1073.25,
+        488.25
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-01.svg",
+          "sha256": "685c6894ff43c7c2c23e3516230a73a997283556a5245635fb967ba2e5acddc7"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-01.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "2b3cea3e43ebf85158a050e54565d12c53d09b8e1c61e64e26b9c9683b988d50"
+    },
+    {
+      "name": "divisions-icon-research",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-research.svg",
+      "source_sha256": "11d60eec95b8cb0c4e48314581d269c4f018b947fefab8eafbd63927d2fc6e12",
+      "render_box": [
+        1701.75,
+        416.0,
+        224.25,
+        274.0
+      ],
+      "anchor": [
+        1701.75,
+        416.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-05.svg",
+          "sha256": "73fdce3353478f1ef54d2082b44b5db987fedfc65a63674bbd74474d42641d0a"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-05.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "0765f4a33eb7a5c90d1725d78711c6c6a350260e3e95f13ff842b20d58b517d6"
+    },
+    {
+      "name": "divisions-icon-education",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-education.svg",
+      "source_sha256": "17f78ffa89fae3e5d418dc2c72e26334791ae8999fb3c567634dda8455058f0a",
+      "render_box": [
+        2312.25,
+        449.25,
+        207.5,
+        233.5
+      ],
+      "anchor": [
+        2312.25,
+        449.25
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-04.svg",
+          "sha256": "011b5f4f54a904217656dbf0a119edf8ddf9c0b2b42e669086c36b3006370d4b"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-04.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "0ea8599278a021a806454916aa9fb4179cf840554b4d686bd8f1a8ecc9e24d83"
+    },
+    {
+      "name": "divisions-icon-events",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-events.svg",
+      "source_sha256": "c5150a1802a58fc66374e777aa28153e71c9fe2c12a34ef60b9c83f84525fbbd",
+      "render_box": [
+        2898.75,
+        449.0,
+        238.25,
+        238.0
+      ],
+      "anchor": [
+        2898.75,
+        449.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-06.svg",
+          "sha256": "a36356c7b79013c2be679c9743e523e0c749989576835cd823fdc985adae79d2"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-06.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "0316dd0fd4bcd4e8a1976414931ffccf9c5355c2948d38ebf23928fea7c35c12"
+    },
+    {
+      "name": "divisions-icon-marketing",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-marketing.svg",
+      "source_sha256": "c21ee4c9337b8fe5703550c7b6f185a06175f78ce0b994ceaf3a6b0e78379a37",
+      "render_box": [
+        1113.75,
+        1166.0,
+        204.5,
+        204.25
+      ],
+      "anchor": [
+        1113.75,
+        1166.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-02.svg",
+          "sha256": "fef5bce69457167a486314ff24b3a14ba2a68a293babf6a901657df745693145"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-02.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "67f5398981ea0da2ac205bd8eed031bc22af87c3bf5e3e04d2dfb629c0148df5"
+    },
+    {
+      "name": "divisions-icon-design",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-design.svg",
+      "source_sha256": "97586405bc22d4acd758e8d143be7023b6552f8735beb0f4f18b717a3e4d1480",
+      "render_box": [
+        1701.75,
+        1166.0,
+        228.25,
+        204.0
+      ],
+      "anchor": [
+        1701.75,
+        1166.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-03.svg",
+          "sha256": "a8e0efca4efc18dd5ded61ab2766befb8094c1fb0bb7178a616d0addb45b0797"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-03.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "b81b5ae933b9b6fd3fa0ede135086f3e4bc6b447d20b1d3033b740232a6ceef9"
+    },
+    {
+      "name": "divisions-icon-cryptography",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-cryptography.svg",
+      "source_sha256": "970cd911d3406447c61e0a470f3b16576c11876369e7e6eac585eeee3b58a95f",
+      "render_box": [
+        2293.0,
+        1161.0,
+        234.0,
+        233.5
+      ],
+      "anchor": [
+        2293.0,
+        1161.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-09.svg",
+          "sha256": "490657139a63162f03f9eee4b3a377f8028befb19d9ecd13e41e8cdcfbaf5949"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-09.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "96eb04ece320bb0dd53e0ad03681e8f7d6b67f54f66bea06ac1a91d9bb7e31f3"
+    },
+    {
+      "name": "divisions-icon-management",
+      "reference": "figma-0429",
+      "source": "images/studio/collection/source/divisions-icon-management.svg",
+      "source_sha256": "b4e29728dc6634e00a8fa4a254c0cda5c9f37b9a46d7b880c41cbd638e8b4ec9",
+      "render_box": [
+        2889.75,
+        1142.0,
+        252.25,
+        252.0
+      ],
+      "anchor": [
+        2889.75,
+        1142.0
+      ],
+      "dependencies": [
+        {
+          "path": "images/studio/collection/source/figma-0429-part-07.svg",
+          "sha256": "2068271e8a7e053ab9c9d8bc27fab28beb7dfd34e794c01dc388a55ebbaf3b57"
+        }
+      ],
+      "source_origin": {
+        "kind": "Original vector SVG symbol, panel and unused filter definitions excluded",
+        "parent": "images/studio/collection/source/figma-0429-part-07.svg",
+        "crop": "Ink bounds measured at four times source resolution; aspect ratio preserved."
+      },
+      "pdf_sha256": "69ea462d98c56f2a0890da4f2dfe3c3ce856d0f58f7bee4e53bfbf1346a80c12"
     }
   ]
 }

@@ -2,9 +2,9 @@
 
 # Twelve labelled tiles
 
-Group concepts into a visual set using the twelve labelled tiles layout.
+Present technical content in a measured composition using the twelve labelled tiles layout.
 
-Model: `twelve-word-grid` · Family: Cards · Status: **in review**.
+Model: `twelve-word-grid` · Family: Technical · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/twelve-word-grid.tex)
 
@@ -16,15 +16,24 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/icon-grid.md)
+[Model variants and named fields](../models/word-grid.md)
 
 ```latex
-\studiotemplate[variant=twelve,palette=light]{icon-grid}
+\studiotemplate[variant=plain,palette=light]{word-grid}
 ```
 
 Named fields are coherent across related variants. All old fields and numbered slots remain available.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `words` | list | `word,word,word,word,word,word,word,word,word,word,word,word` | Exactly twelve cell values, in row-major order. |
+| `numbered` | boolean | `true` | Prefix each cell with its one-based position. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -38,31 +47,19 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/4`, `image/4`, `graphic/4` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/7`, `image/7`, `graphic/7` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/10`, `image/10`, `graphic/10` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/2`, `image/2`, `graphic/2` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/5`, `image/5`, `graphic/5` | `graphic-6` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/8`, `image/8`, `graphic/8` | `graphic-7` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/11`, `image/11`, `graphic/11` | `graphic-8` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/3`, `image/3`, `graphic/3` | `graphic-9` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/6`, `image/6`, `graphic/6` | `graphic-10` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/9`, `image/9`, `graphic/9` | `graphic-11` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/12`, `image/12`, `graphic/12` | `graphic-12` | Replaces this complete graphic; other elements stay fixed. |
 | `text/1` | `title` | Main text |
-| `text/2` | `text-2` | Editable text |
-| `text/5` | `text-3` | Editable text |
-| `text/8` | `text-4` | Editable text |
-| `text/10` | `text-5` | Editable text |
-| `text/3` | `text-6` | Editable text |
-| `text/6` | `text-7` | Editable text |
-| `text/9` | `text-8` | Editable text |
-| `text/11` | `text-9` | Editable text |
-| `text/4` | `text-10` | Editable text |
-| `text/7` | `text-11` | Editable text |
-| `text/12` | `text-12` | Editable text |
-| `text/13` | `text-13` | Editable text |
+| `text/2` | `word-1` | Editable text |
+| `text/3` | `word-2` | Editable text |
+| `text/4` | `word-3` | Editable text |
+| `text/5` | `word-4` | Editable text |
+| `text/6` | `word-5` | Editable text |
+| `text/7` | `word-6` | Editable text |
+| `text/8` | `word-7` | Editable text |
+| `text/9` | `word-8` | Editable text |
+| `text/10` | `word-9` | Editable text |
+| `text/11` | `word-10` | Editable text |
+| `text/12` | `word-11` | Editable text |
+| `text/13` | `word-12` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -82,7 +79,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 ```latex
 \studiotemplate[
   text/1={Slide title},
-  text/2={Item 1}
+  text/2={Word}
 ]{twelve-word-grid}
 ```
 
@@ -99,7 +96,7 @@ Create `my-slide.tex` in the project root and paste:
 \begin{document}
 \studiotemplate[
   text/1={Slide title},
-  text/2={Item 1}
+  text/2={Word}
 ]{twelve-word-grid}
 \end{document}
 ```
@@ -119,47 +116,22 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle left | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle left | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower left | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower left | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle centre | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower centre | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | middle right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | middle right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | lower right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-10.pdf}</code> |
-| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower right | 19.1% wide × 14.0% high | <code>\studiopaletteimage[width=678\studiounit]{images/studio/collection/figma-0646-part-12.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 23.0% wide × 8.5% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 14.9% wide × 4.0% high | <code>Item 1</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 14.9% wide × 4.6% high | <code>Item 4</code> |
-| <code>text-4</code> | Editable text (text) | lower left | 14.9% wide × 4.0% high | <code>Item 7</code> |
-| <code>text-5</code> | Editable text (text) | lower left | 14.8% wide × 4.7% high | <code>Item 10</code> |
-| <code>text-6</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Item 2</code> |
-| <code>text-7</code> | Editable text (text) | middle centre | 14.8% wide × 4.1% high | <code>Item 5</code> |
-| <code>text-8</code> | Editable text (text) | lower centre | 14.8% wide × 4.1% high | <code>Item 8</code> |
-| <code>text-9</code> | Editable text (text) | lower centre | 14.9% wide × 4.0% high | <code>Item 11</code> |
-| <code>text-10</code> | Editable text (text) | middle right | 14.8% wide × 4.6% high | <code>Item 3</code> |
-| <code>text-11</code> | Editable text (text) | middle right | 14.8% wide × 4.1% high | <code>Item 6</code> |
-| <code>text-12</code> | Editable text (text) | lower right | 14.8% wide × 4.6% high | <code>Item 12</code> |
-| <code>text-13</code> | Editable text (text) | lower right | 14.8% wide × 4.1% high | <code>Item 9</code> |
+| <code>title</code> | Main text (text) | upper centre | 80.0% wide × 8.5% high | <code>Slide title</code> |
+| <code>word-1</code> | Editable text (text) | middle left | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-2</code> | Editable text (text) | middle centre | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-3</code> | Editable text (text) | middle right | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-4</code> | Editable text (text) | middle left | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-5</code> | Editable text (text) | middle centre | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-6</code> | Editable text (text) | middle right | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-7</code> | Editable text (text) | middle left | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-8</code> | Editable text (text) | middle centre | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-9</code> | Editable text (text) | middle right | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-10</code> | Editable text (text) | lower left | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-11</code> | Editable text (text) | lower centre | 14.9% wide × 7.6% high | <code>Word</code> |
+| <code>word-12</code> | Editable text (text) | lower right | 14.9% wide × 7.6% high | <code>Word</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
-
-## Replace a graphic
-
-This example selects an icon by catalogue name; its size and position come from the slot:
-
-```latex
-\studiotemplate[
-  icon/1={alice}
-]{twelve-word-grid}
-```
-
-Use a numbered slot listed above to target another graphic. Some slots contain a complete
-panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
