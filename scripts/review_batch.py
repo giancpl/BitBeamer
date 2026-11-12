@@ -52,12 +52,26 @@ def comparisons(root, folder, names, choices, categories=None, commands=None):
             page.insert_text((20,22),str(number+1)+' / '+str(len(names))+' | '+name+' | '+(categories or {}).get(name,''),fontsize=13)
             page.insert_text((20,46),choices[name].get('reference_note','Original reference')+' | '+original_labels[name],fontsize=10)
             page.insert_text((710,46),'Current template',fontsize=10)
-            # Screen-size references keep a five-page review lightweight. Full originals remain local.
+            # Render both sides through the same source-size / thumbnail pipeline.
+            # Mixing a thumbnail with live PDF artwork changes fine edges and
+            # soft shadows at review zoom levels. The separate main.pdf keeps
+            # the full editable/vector template for detailed inspection.
             with Image.open(originals[name]) as source:
-                reference=source.convert('RGB');reference.thumbnail((1600,900),Image.Resampling.LANCZOS)
-                encoded=BytesIO();reference.save(encoded,format='PNG',optimize=True)
-            page.insert_image(fitz.Rect(20,60,690,437),stream=encoded.getvalue(),keep_proportion=True)
-            page.show_pdf_page(fitz.Rect(710,60,1380,437),replica,number,keep_proportion=True)
+                reference=source.convert('RGB')
+            original_size=reference.size
+            current_page=replica[number]
+            current_pixmap=current_page.get_pixmap(
+                matrix=fitz.Matrix(original_size[0]/current_page.rect.width,
+                                   original_size[1]/current_page.rect.height),
+                colorspace=fitz.csRGB,alpha=False)
+            current=Image.frombytes('RGB',(current_pixmap.width,current_pixmap.height),current_pixmap.samples)
+            if current.size!=original_size:
+                current=current.resize(original_size,Image.Resampling.LANCZOS)
+            for artwork,rectangle in ((reference,fitz.Rect(20,60,690,437)),
+                                      (current,fitz.Rect(710,60,1380,437))):
+                artwork.thumbnail((1600,900),Image.Resampling.LANCZOS)
+                encoded=BytesIO();artwork.save(encoded,format='PNG',optimize=True)
+                page.insert_image(rectangle,stream=encoded.getvalue(),keep_proportion=True)
             for line,text in enumerate(command_lines):
                 page.insert_text((20,451+11*line),text,fontsize=9,fontname='cour')
         temporary=folder/'comparisons.tmp.pdf';result.save(temporary,garbage=4,deflate=True);temporary.replace(folder/'comparisons.pdf')

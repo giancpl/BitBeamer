@@ -116,6 +116,37 @@ class ReviewBatchTests(unittest.TestCase):
                 self.assertIn('Use: '+invocation,text)
                 self.assertNotIn('unreviewed-default',text)
 
+    def test_identical_panel_artwork_has_identical_sampling_on_both_sides(self):
+        import json
+        from PIL import Image, ImageDraw, ImageFilter
+        with tempfile.TemporaryDirectory() as directory:
+            root=Path(directory);folder=root/'build/review/batches/panel';folder.mkdir(parents=True)
+            # A rounded panel with a soft shadow exposes inconsistent sampling.
+            shadow=Image.new('RGB',(1600,900),(249,249,249))
+            ImageDraw.Draw(shadow).rounded_rectangle((200,270,1400,670),radius=120,fill=(220,220,220))
+            shadow=shadow.filter(ImageFilter.GaussianBlur(30))
+            ImageDraw.Draw(shadow).rounded_rectangle((200,230,1400,630),radius=120,fill=(249,249,249))
+            shadow.save(root/'panel.png')
+            with fitz.open() as replica:
+                page=replica.new_page(width=1600,height=900)
+                page.insert_image(page.rect,filename=str(root/'panel.png'))
+                replica.save(folder/'main.pdf')
+                pixmap=page.get_pixmap(colorspace=fitz.csRGB,alpha=False)
+                pixmap.save(root/'original.png')
+            (root/'templates').mkdir()
+            (root/'templates/figma-inventory.json').write_text(json.dumps({'frames':[{'id':'panel','file':'panel.svg'}]}))
+            index=root/'build/checks/slide-guide/comparisons.js';index.parent.mkdir(parents=True)
+            index.write_text('window.BITBEAMER_COMPARISONS='+json.dumps({'records':{
+                'panel':{'variants':[{'label':'panel','original':'../../original.png'}]}}})+';')
+            with mock.patch('guide_comparisons.sync'):
+                review_batch.comparisons(root,folder,['panel'],{'panel':{'command':r'\studiotemplate{panel}'}})
+            with fitz.open(folder/'comparisons.pdf') as document:
+                placements=document[0].get_image_info(xrefs=True)
+                self.assertEqual(len(placements),2)
+                self.assertEqual(placements[0]['width'],placements[1]['width'])
+                self.assertEqual(placements[0]['height'],placements[1]['height'])
+                self.assertEqual(placements[0]['digest'],placements[1]['digest'])
+
     def test_no_pending_compositions_does_not_prepare_or_open_approved_batches(self):
         payload={'rows':[{'family':'Covers','choices':[{'id':'cover','status':'approved'}]}]}
         batches=[{'id':'first','family':'Covers','compositions':['cover']}]
