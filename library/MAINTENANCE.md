@@ -19,8 +19,11 @@ python3 scripts/library.py build --block hashing --preview
 python3 scripts/library.py check
 ```
 
-`sync` refreshes generated guides, catalogue data and retained LaTeX resource
-hashes. `check` is read-only. Builds cache each presentation/block by its actual
+`sync` refreshes generated guides, catalogue data and all registered resource
+hashes, including prepared PDF/image artwork as well as LaTeX. Run it after
+maintaining shared assets so every consuming lesson receives the new fingerprints.
+Artwork provenance manifests remain independently checked; sync does not rebuild
+assets or approve altered artwork. `check` is read-only. Builds cache each presentation/block by its actual
 source, layout, artwork, font and reference dependencies. Changing editorial notes
 alone does not invalidate a PDF. Preview caching is per slide, shared between its
 presentations and blocks. Do not run overlapping builds of the same presentation.

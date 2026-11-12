@@ -208,6 +208,33 @@ class LessonDependencyTests(unittest.TestCase):
     setUp=LessonLibraryTests.setUp
     save=LessonLibraryTests.save
 
+    def test_maintenance_sync_refreshes_binary_and_tex_resources_idempotently(self):
+        from library import synchronize_resources
+        for name in ('library/parts/panel.pdf', 'library/layouts/sample.tex'):
+            path = self.root / name
+            path.write_bytes(path.read_bytes() + b'\n% maintained artwork/source')
+        before = (self.root / 'library/index.json').read_bytes()
+        with self.assertRaisesRegex(ValueError, 'Changed library resource'):
+            library.validate(self.root)
+        self.assertEqual((self.root / 'library/index.json').read_bytes(), before)
+        self.assertTrue(synchronize_resources(self.root, self.data))
+        self.save()
+        library.validate(self.root)
+        self.assertFalse(synchronize_resources(self.root, self.data))
+        for slide in self.data['slides'].values():
+            for name, expected in slide['resources'].items():
+                self.assertEqual(hashlib.sha256((self.root / name).read_bytes()).hexdigest(), expected)
+
+    def test_maintenance_sync_registers_new_layout_artwork(self):
+        from library import synchronize_resources
+        extra = self.root / 'library/parts/extra.pdf'
+        extra.write_bytes(b'new prepared artwork')
+        with (self.root / 'library/layouts/sample.tex').open('a') as source:
+            source.write('\\includegraphics{library/parts/extra.pdf}')
+        self.assertTrue(synchronize_resources(self.root, self.data))
+        for slide in self.data['slides'].values():
+            self.assertIn('library/parts/extra.pdf', slide['resources'])
+
     def test_retained_svg_cannot_depend_on_network_or_unlisted_images(self):
         source=self.root/'library/parts/panel.svg';target=source.with_suffix('.pdf')
         for href,expected in [('https://example.invalid/image.png','External'),('unlisted.png','Unlisted')]:

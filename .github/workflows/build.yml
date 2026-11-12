@@ -25,9 +25,10 @@ jobs:
       - uses: actions/setup-python@v7
         with:
           python-version: '3.12'
+      - name: Check library manifests and prepared previews
+        run: python scripts/library.py check
       - run: python -m unittest discover -s tests -v
       - run: python scripts/deck.py layouts --json
-      - run: python scripts/library.py check
       - run: python scripts/prepare-assets.py --check
       - run: python scripts/prepare-studio-assets.py --check
       - run: python scripts/build-asset-catalogue.py --check
@@ -64,6 +65,9 @@ jobs:
         with:
           node-version: '24'
       - name: Exercise the offline slide guide in Chromium
+        timeout-minutes: 5
+        env:
+          CHROMIUM: google-chrome
         run: node scripts/check-slide-guide-browser.mjs
       - name: Build the default Studio entry point and both editable starters
         run: |

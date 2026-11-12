@@ -558,8 +558,8 @@
       "sha256": "adc594791354a703a8b94b519321271b9820150dc3cf30a20ccfd4c5b224cd8f"
     },
     "official-slide-c873bd9339ea": {
-      "fingerprint": "518a131d78dfd6106c119ab18863c92e7feb37cca4bf642368a039ade6248e49",
-      "sha256": "dd88e5dba1a22977bc090c2583d0459236af3b83617ffe466be852c858e5263c"
+      "fingerprint": "a105624069e109371c643c8bf3ce92297374519e902d1c072fca61711214bb57",
+      "sha256": "bfef37bdfc4d7bdff2d43a294f912d8d1151a6333a9dcb4181c9847fa4fb0218"
     },
     "official-slide-8488db23ab36": {
       "fingerprint": "3daf931b7a859ad9b29d943b36ab9f3457749fa0edf4b388ff583d76bbe7c3a3",
@@ -734,8 +734,8 @@
       "sha256": "50bbe21e17d6e4ecb23c8dd3707e8b5fde0f4452ea4c0dad307bd0a2e153fc61"
     },
     "official-slide-8dc8cff682f0": {
-      "fingerprint": "9d28db2853bde45b13838a4f77f7732663563e8924559ff2421c1089442f6e09",
-      "sha256": "e137b91af581c9bc714f31748dd1f82ceee2278f8a28e8b5981cd5ae8e4eef75"
+      "fingerprint": "3740e8fdd9e5330e14c9e9d1c3a13428baa1e825af742404bd236f5cc064a806",
+      "sha256": "3ff27f37a7f16c37888e35725a27e3762a56bfd788b72ea8a360d1b30ef16e9a"
     },
     "official-slide-9e20226675d9": {
       "fingerprint": "88ed942af7d66b86f09f1bce86eaedeb5cf2c0c13a5c3f15ba15d82d878eeb45",
@@ -746,8 +746,8 @@
       "sha256": "76c7520514d3737459161f464118830834db316e66d95b4e04d9faa390d78886"
     },
     "official-slide-236fe877bf0f": {
-      "fingerprint": "c920f830ac0a652458796b4f0e11377c1ffdc0f675545a43c7f2721c77a81140",
-      "sha256": "5d4795c19681ef382d08bed129d9be5036829e832cff6b0b5c23c2dc0f86a26b"
+      "fingerprint": "b35a370735f87e0d31013bbd245eecc3a7d7aee74128e90e7f003af3604832d0",
+      "sha256": "2cbe9cb6b8d11dd4fdee5e2a374a709230e86aea1cf58421a9f89d4524589057"
     },
     "official-slide-7161532eb15e": {
       "fingerprint": "951683d068e95935ea59da6b203e190f78f66f665ab901effa84f7f9e259bc1e",
@@ -850,8 +850,8 @@
       "sha256": "22aa5715753519f612dde7ff237578133f55df99c97fda9a40959423654f7c0f"
     },
     "official-slide-df97bf000a3d": {
-      "fingerprint": "d7cc2ff170edb2f528bf52b5cb95f7e8edb14ffe1aef79f83f3d8224633ee889",
-      "sha256": "dd88e5dba1a22977bc090c2583d0459236af3b83617ffe466be852c858e5263c"
+      "fingerprint": "4d4042d29429c28ae0f6e50e6a5c97ccbb6301b5eaebc6a0fd8f822770c19398",
+      "sha256": "bfef37bdfc4d7bdff2d43a294f912d8d1151a6333a9dcb4181c9847fa4fb0218"
     },
     "official-slide-f5901894a3aa": {
       "fingerprint": "6436409278a8f81c792b48f8f98e6263eaf79ec3cc81d21b5fc9f2fea4c3c44e",
@@ -1642,16 +1642,16 @@
       "sha256": "8214b2c5c5b1d253cf43c7eab050514bafa8fb01b32300639e80b9ac4ea1f800"
     },
     "official-slide-de9d6fe1516b": {
-      "fingerprint": "c96cc2622fd5dd31b49e29f43ae6ba78150628b0168fb5c84d072977b67a548e",
-      "sha256": "e137b91af581c9bc714f31748dd1f82ceee2278f8a28e8b5981cd5ae8e4eef75"
+      "fingerprint": "7e6cd8f3f14dccc4406baa276a2b125d01017ec6b37f8240b5b4bd8da5a2b9d8",
+      "sha256": "3ff27f37a7f16c37888e35725a27e3762a56bfd788b72ea8a360d1b30ef16e9a"
     },
     "official-slide-5fdee9b27dc8": {
       "fingerprint": "576b88ba825ed114bf22ab2c41a78df7862b420adccfe8a54042eb088b7012b0",
       "sha256": "a950d4664461f2505aa50112c7bfd5e549093cf0ae3cad3068355add3486de94"
     },
     "official-slide-0e7ef9048bc7": {
-      "fingerprint": "72e3b0bf6250156c14822f032cd29cc9c3c7d0c10f3311fb14a312dae372acc8",
-      "sha256": "5d4795c19681ef382d08bed129d9be5036829e832cff6b0b5c23c2dc0f86a26b"
+      "fingerprint": "318b65a677089e0177d6e5bce866fc93ba6a059d214db1b7c8900047c3ccd4cf",
+      "sha256": "2cbe9cb6b8d11dd4fdee5e2a374a709230e86aea1cf58421a9f89d4524589057"
     },
     "official-slide-298102e48f22": {
       "fingerprint": "acf0005ded22b6dcbe4fd9cf3e0441241d8c7520267696dad9bc5ff2b54f54a4",
@@ -1722,8 +1722,8 @@
       "sha256": "a6271cc6222b82db0869605e5cad970842dd12cc16731ea026a8862f3aace3d8"
     },
     "official-slide-e72413962791": {
-      "fingerprint": "2dfabb421d07692d6b13a2b917036de2e0a6c962004431c46356d0e89319ae84",
-      "sha256": "dd88e5dba1a22977bc090c2583d0459236af3b83617ffe466be852c858e5263c"
+      "fingerprint": "83e8baf8f8adabc50ce59625d34746687a82bb1e97a357951fdfcb3b7c8400a5",
+      "sha256": "bfef37bdfc4d7bdff2d43a294f912d8d1151a6333a9dcb4181c9847fa4fb0218"
     },
     "official-slide-c79c3222acb7": {
       "fingerprint": "a473ff19fc91a8c2edd73ac47a5f6b272de4c9bf81de62c583fc12d2a40ea4b6",

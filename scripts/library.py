@@ -171,20 +171,30 @@ def generated(root):
     return outputs
 
 
+def synchronize_resources(root, data):
+    """Refresh registered source and artwork hashes during explicit maintenance sync."""
+    changed = False
+    for slide in data['slides'].values():
+        resources = slide.setdefault('resources', {})
+        dependencies = source_dependencies(root, slide) - {slide['source']}
+        for name in sorted(dependencies | resources.keys()):
+            actual = hashlib.sha256(safe_file(root, name).read_bytes()).hexdigest()
+            if resources.get(name) != actual:
+                resources[name] = actual
+                changed = True
+    return changed
+
+
 def sync(root=ROOT,check=False):
     if not check:
-        for path,content in generated(root).items():
-            path.parent.mkdir(parents=True,exist_ok=True)
-            write_if_changed(path,content)
-        data=load(root);changed=False
-        for slide in data['slides'].values():
-            for name in sorted(source_dependencies(root,slide) - {slide['source']} - slide.get('resources',{}).keys()):
-                slide.setdefault('resources',{})[name]=hashlib.sha256(safe_file(root,name).read_bytes()).hexdigest();changed=True
-            for name,expected in list(slide.get('resources',{}).items()):
-                if Path(name).suffix!='.tex':continue
-                actual=hashlib.sha256((root/name).read_bytes()).hexdigest()
-                if actual!=expected:slide['resources'][name]=actual;changed=True
-        if changed:write_if_changed(root/'library/index.json',(json.dumps(data,ensure_ascii=False,indent=2)+'\n').encode())
+        # Materialize new fixed presets before traversing their dependencies.
+        for path, content in generated(root).items():
+            path.parent.mkdir(parents=True, exist_ok=True)
+            write_if_changed(path, content)
+        data = load(root)
+        if synchronize_resources(root, data):
+            write_if_changed(root/'library/index.json',
+                             (json.dumps(data,ensure_ascii=False,indent=2)+'\n').encode())
     for path,content in generated(root).items():
         if check:
             if not path.exists() or path.read_bytes()!=content:raise ValueError('Stale library guide: '+str(path))

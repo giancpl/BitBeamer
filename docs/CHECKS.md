@@ -1,5 +1,33 @@
 # Verification report
 
+## Recurring CI failures — 2026-11-12
+
+Audited GitHub Actions runs 43247951660 and 43288298605 and reproduced both
+failure classes locally: stale shared-artwork hashes in the lesson index, and
+the offline browser test selecting an unavailable variant under the Ready filter.
+The latter returned a DOM object instead of the expected absent sequence.
+The later run also lost Chromium startup diagnostics behind a ten-second timeout.
+
+Explicit `library.py sync` now refreshes every registered dependency, including
+PDF/image artwork and newly referenced components. Read-only checks still reject
+changed resources and independently validate artwork provenance. Refreshed the
+eight affected lesson previews by rebuilding their four decks and six blocks.
+All ten consumers passed; their affected pages were visually inspected.
+
+Browser checks choose the proper quality filter from the target variant metadata,
+wait for actual document navigation, and use a bounded Chromium startup lifecycle
+with stderr and early-exit diagnostics. CI selects Google Chrome explicitly and
+checks lesson manifests before running the portability suite. No check is skipped
+or converted to a warning. Regression tests cover binary/TeX resource sync, new
+artwork dependencies, partial port files, spawn errors, early exits and timeouts.
+
+The offline Chromium test passes with no JavaScript errors or network requests;
+the four browser lifecycle cases and 31 lesson-library tests pass. Both review
+packages build successfully. The full suite passes: 216 tests in 228.405 seconds,
+one optional check skipped. `library.py check` now passes (555 slides, 19 decks,
+223 blocks) and `guide_previews.py check` verifies all 749 guide commands.
+The previous global lesson hash limitation below is resolved by this correction.
+
 ## Approved template checkpoint — 2026-11-12
 
 User-approved families: levels (both palettes), labelled rows, two-column lists

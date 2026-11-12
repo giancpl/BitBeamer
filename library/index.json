@@ -95578,7 +95578,7 @@
       "resources": {
         "library/layouts/problem-solution.tex": "4ede573c2323099602749531a6abec4a0eeaa8f77f8f0b2043b0ff81a4ab0612",
         "library/layouts/components.tex": "0a2b8baa590ebd4a2f90e8c82b9ef2cebbda98fddaad97dcbc7cfbd5247ed3bc",
-        "images/studio/parts/card-1.pdf": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471",
+        "images/studio/parts/card-1.pdf": "a0c182c23d15894006e97e667a113858df445aa0b7fbc2535e770f0aee45655f",
         "assets/generated/face-sad.pdf": "063021082eea179b49085b6a64784f96e522417f24b516d1fa37fab8d645db04",
         "assets/generated/face-smile.pdf": "3b18c4f8aeda2991feaf76fc0f0d03c3a5f861d40e36064397494f42a23f2ad4"
       },
@@ -95738,7 +95738,7 @@
       "resources": {
         "library/layouts/problem-solution.tex": "4ede573c2323099602749531a6abec4a0eeaa8f77f8f0b2043b0ff81a4ab0612",
         "library/layouts/components.tex": "0a2b8baa590ebd4a2f90e8c82b9ef2cebbda98fddaad97dcbc7cfbd5247ed3bc",
-        "images/studio/parts/card-1.pdf": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471",
+        "images/studio/parts/card-1.pdf": "a0c182c23d15894006e97e667a113858df445aa0b7fbc2535e770f0aee45655f",
         "assets/generated/face-sad.pdf": "063021082eea179b49085b6a64784f96e522417f24b516d1fa37fab8d645db04",
         "assets/generated/face-smile.pdf": "3b18c4f8aeda2991feaf76fc0f0d03c3a5f861d40e36064397494f42a23f2ad4"
       },
@@ -97030,7 +97030,8 @@
       "role": "content",
       "topic": "money",
       "resources": {
-        "templates/studio/three-cards.tex": "b7cba071c83982b33c4e55e04d4863c9a820ac8fe6a2c9b629fc05edaebba6f4"
+        "templates/studio/three-cards.tex": "25646868e8d8aafe57cb3f0da5ee82dccafda69f93b314896befe538afc9ac00",
+        "templates/studio/components/icon-card-row.tex": "27c6cfacb686cebcef5dff806e94de0ad8be119b4866e5683680a18921a7271d"
       },
       "references": [
         "lesson-official-decks",
@@ -105838,7 +105839,8 @@
       "role": "content",
       "topic": "bitcoin-basics",
       "resources": {
-        "templates/studio/three-cards.tex": "b7cba071c83982b33c4e55e04d4863c9a820ac8fe6a2c9b629fc05edaebba6f4"
+        "templates/studio/three-cards.tex": "25646868e8d8aafe57cb3f0da5ee82dccafda69f93b314896befe538afc9ac00",
+        "templates/studio/components/icon-card-row.tex": "27c6cfacb686cebcef5dff806e94de0ad8be119b4866e5683680a18921a7271d"
       },
       "references": [
         "lesson-official-decks",
@@ -107005,7 +107007,7 @@
       "resources": {
         "library/layouts/problem-solution.tex": "4ede573c2323099602749531a6abec4a0eeaa8f77f8f0b2043b0ff81a4ab0612",
         "library/layouts/components.tex": "0a2b8baa590ebd4a2f90e8c82b9ef2cebbda98fddaad97dcbc7cfbd5247ed3bc",
-        "images/studio/parts/card-1.pdf": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471",
+        "images/studio/parts/card-1.pdf": "a0c182c23d15894006e97e667a113858df445aa0b7fbc2535e770f0aee45655f",
         "assets/generated/face-sad.pdf": "063021082eea179b49085b6a64784f96e522417f24b516d1fa37fab8d645db04",
         "assets/generated/face-smile.pdf": "3b18c4f8aeda2991feaf76fc0f0d03c3a5f861d40e36064397494f42a23f2ad4"
       },
@@ -107117,7 +107119,7 @@
       "resources": {
         "library/layouts/problem-solution.tex": "4ede573c2323099602749531a6abec4a0eeaa8f77f8f0b2043b0ff81a4ab0612",
         "library/layouts/components.tex": "0a2b8baa590ebd4a2f90e8c82b9ef2cebbda98fddaad97dcbc7cfbd5247ed3bc",
-        "images/studio/parts/card-1.pdf": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471",
+        "images/studio/parts/card-1.pdf": "a0c182c23d15894006e97e667a113858df445aa0b7fbc2535e770f0aee45655f",
         "assets/generated/face-sad.pdf": "063021082eea179b49085b6a64784f96e522417f24b516d1fa37fab8d645db04",
         "assets/generated/face-smile.pdf": "3b18c4f8aeda2991feaf76fc0f0d03c3a5f861d40e36064397494f42a23f2ad4"
       },
@@ -108073,7 +108075,8 @@
       "role": "content",
       "topic": "bitcoin-basics",
       "resources": {
-        "templates/studio/three-cards.tex": "b7cba071c83982b33c4e55e04d4863c9a820ac8fe6a2c9b629fc05edaebba6f4"
+        "templates/studio/three-cards.tex": "25646868e8d8aafe57cb3f0da5ee82dccafda69f93b314896befe538afc9ac00",
+        "templates/studio/components/icon-card-row.tex": "27c6cfacb686cebcef5dff806e94de0ad8be119b4866e5683680a18921a7271d"
       },
       "references": [
         "lesson-official-decks",
@@ -123213,9 +123216,9 @@
         "title": "Technology"
       },
       "resources": {
-        "images/studio/collection/figma-0048-part-01.pdf": "a3d099ace7719d4a05d9f86e225feeb332871902e40dec49d4b473b73251e6e9",
-        "images/studio/collection/figma-0048-part-02.pdf": "1bc7d511294b8476dd1bd521a0e75f09c4db776a6687b76d48dc26b3fd6df994",
-        "templates/studio/two-step-process.tex": "b61b85187c7820cd504a8bf06d36a495fb75a75e9d09e7dd3fc7d3590316de2b"
+        "images/studio/collection/figma-0048-part-01.pdf": "00e51c560b1afea1f8f236a63e393e041042594d352e54fa9c691107e3b83cef",
+        "images/studio/collection/figma-0048-part-02.pdf": "49c115de7ab1df25f5bf3d0f26781ebf2a334924bd1f5a931aa1d2e26ee34cd7",
+        "templates/studio/two-step-process.tex": "d84b62aabc815cf355aca163567cc77a7c45a25c41b9296413ac9af249640c95"
       },
       "references": [],
       "origins": [
