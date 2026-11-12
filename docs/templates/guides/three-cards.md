@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `three-cards` · Family: Cards · Status: **in review**.
+Model: `three-cards` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-cards.tex)
 
@@ -26,6 +26,14 @@ Named fields are coherent across related variants. All old fields and numbered s
 
 Numeric defaults and charts are illustrative.
 
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the heading; false hides it without moving the cards. Title text remains available in both states. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -40,10 +48,10 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | --- | --- | --- |
 | `text/1` | `title` | Main text |
 | `text/2` | `caption-one` | First caption |
-| `text/3` | `caption-two` | Second caption |
-| `text/4` | `caption-three` | Third caption |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-one` | Replaces this complete graphic; other elements stay fixed. |
+| `text/3` | `caption-two` | Second caption |
 | `icon/2`, `image/2`, `graphic/2` | `graphic-two` | Replaces this complete graphic; other elements stay fixed. |
+| `text/4` | `caption-three` | Third caption |
 | `icon/3`, `image/3`, `graphic/3` | `graphic-three` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
@@ -63,11 +71,10 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Slide title},
-  text/2={Label 2},
-  text/3={Label 3},
-  text/4={Label 4},
-  graphic/1={\asset[width=1cm]{alice}}
+  text/1={Shared rules},
+  text/2={Privacy},
+  text/3={Security},
+  text/4={Verification}
 ]{three-cards}
 ```
 
@@ -83,11 +90,10 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Slide title},
-  text/2={Label 2},
-  text/3={Label 3},
-  text/4={Label 4},
-  graphic/1={\asset[width=1cm]{alice}}
+  text/1={Shared rules},
+  text/2={Privacy},
+  text/3={Security},
+  text/4={Verification}
 ]{three-cards}
 \end{document}
 ```
@@ -107,13 +113,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 54.4% wide × 7.5% high | <code>Slide title</code> |
-| <code>caption-one</code> | First caption (text) | lower left | 18.6% wide × 5.5% high | <code>Label 2</code> |
-| <code>caption-two</code> | Second caption (text) | lower centre | 18.6% wide × 5.5% high | <code>Label 3</code> |
-| <code>caption-three</code> | Third caption (text) | lower right | 18.6% wide × 5.5% high | <code>Label 4</code> |
-| <code>graphic-one</code> | Icon or image inside a fixed composition (graphic) | middle left | 9.0% wide × 16.0% high | <code>\studiopart[width=180.9\studiounit]{card-icon-1}</code> |
-| <code>graphic-two</code> | Icon or image inside a fixed composition (graphic) | middle centre | 9.0% wide × 16.0% high | <code>\studiopart[width=162\studiounit]{card-icon-2}</code> |
-| <code>graphic-three</code> | Icon or image inside a fixed composition (graphic) | middle right | 9.0% wide × 16.0% high | <code>\studiopart[width=221.4\studiounit]{card-icon-3}</code> |
+| <code>title</code> | Main text (text) | upper centre | 73.1% wide × 15.0% high | <code>Slide title</code> |
+| <code>caption-one</code> | First caption (text) | lower left | 18.6% wide × 10.2% high | <code>Item 1</code> |
+| <code>graphic-one</code> | Icon or image inside a fixed composition (graphic) | middle left | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{card-icon-1}</code> |
+| <code>caption-two</code> | Second caption (text) | lower centre | 18.6% wide × 10.2% high | <code>Item 2</code> |
+| <code>graphic-two</code> | Icon or image inside a fixed composition (graphic) | middle centre | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{card-icon-2}</code> |
+| <code>caption-three</code> | Third caption (text) | lower right | 18.6% wide × 10.2% high | <code>Item 3</code> |
+| <code>graphic-three</code> | Icon or image inside a fixed composition (graphic) | middle right | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{card-icon-3}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -1,24 +1,31 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
+% Original card artwork with separate heading and description fields.
 \studiodeclarefield{graphic-1}{\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0603-part-01.pdf}}
 \studiodeclarefield{graphic-2}{\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0603-part-02.pdf}}
 \studiodeclarefield{graphic-3}{\studiopaletteimage[width=1375\studiounit]{images/studio/collection/figma-0603-part-03.pdf}}
 \studiodeclarefield{graphic-4}{\studiopaletteimage[width=1375\studiounit]{images/studio/collection/figma-0603-part-04.pdf}}
 \studiodeclarefield{title}{Slide title}
-\studiodeclarefield{text-2}{{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 1}\\Supporting detail.}
-\studiodeclarefield{item-3-1}{Concept 3}
-\studiodeclarefield{item-3-2}{Supporting detail.}
-\studiodeclarefield{text-4}{{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 2}\\Supporting detail.}
-\studiodeclarefield{text-5}{{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 4}\\Supporting detail.}
+\studiodeclarefield{caption-one}{Item}
+\studiodeclarefield{body-one}{Supporting explanation}
+\studiodeclarefield{caption-two}{Item}
+\studiodeclarefield{body-two}{Supporting explanation}
+\studiodeclarefield{caption-three}{Item}
+\studiodeclarefield{body-three}{Supporting explanation}
+\studiodeclarefield{caption-four}{Item}
+\studiodeclarefield{body-four}{Supporting explanation}
+\input{templates/studio/components/text-card-options.tex}
 \studioapplyfields
 \studiomeasuredcanvas{3556}{2000}{four-card-grid}{studio-background}{
-\studiomeasuredtext{title}{1151.35}{326.047}{1253.13}{150.422}{112.735}{130.772}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
 \studiographfield{graphic-1}{422}{589}{1333}{589}{}{}
-\studiomeasuredtext{text-2}{579.961}{712.656}{1183.04}{326.093}{61.9573}{71.8705}{\color{studio-foreground}}{\studiofield{text-2}}
 \studiographfield{graphic-2}{422}{1164}{1333}{589}{}{}
-\studiomeasuredtext{item-3-1}{612.875}{1287.03}{1065.44}{123.003}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{item-3-1}}
-\studiomeasuredtext{item-3-2}{652.895}{1376.44}{1036.42}{91.778}{61.96}{71.8736}{\color{studio-foreground}}{\studiofield{item-3-2}}
 \studiographfield{graphic-3}{1759}{589}{1375}{589}{}{}
-\studiomeasuredtext{text-4}{1951.96}{712.812}{1211.84}{266.297}{61.96}{71.8736}{\color{studio-foreground}}{\studiofield{text-4}}
 \studiographfield{graphic-4}{1759}{1164}{1375}{589}{}{}
-\studiomeasuredtext{text-5}{1951.96}{1287.03}{1211.84}{188.447}{61.96}{71.8736}{\color{studio-foreground}}{\studiofield{text-5}}
+\studiocardoptional{title}{\studiomeasuredtext{title}{1151.35}{326.047}{1253.13}{150.422}{112.735}{130.772}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}}
+\studiocardoptional{captions}{\studiomeasuredtext{caption-one}{579.961}{712.656}{1000}{105}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{caption-one}}}
+\studiocardoptional{bodies}{\studiomeasuredtext{body-one}{579.961}{813}{1000}{240}{61.96}{71.8736}{\color{studio-foreground}\bfseries}{\studiofield{body-one}}}
+\studiocardoptional{captions}{\studiomeasuredtext{caption-two}{1951.96}{712.812}{1000}{105}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{caption-two}}}
+\studiocardoptional{bodies}{\studiomeasuredtext{body-two}{1951.96}{813}{1000}{240}{61.96}{71.8736}{\color{studio-foreground}\bfseries}{\studiofield{body-two}}}
+\studiocardoptional{captions}{\studiomeasuredtext{caption-three}{612.875}{1287.03}{1000}{105}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{caption-three}}}
+\studiocardoptional{bodies}{\studiomeasuredtext{body-three}{612.875}{1387}{1000}{240}{61.96}{71.8736}{\color{studio-foreground}\bfseries}{\studiofield{body-three}}}
+\studiocardoptional{captions}{\studiomeasuredtext{caption-four}{1951.96}{1287.03}{1000}{105}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{caption-four}}}
+\studiocardoptional{bodies}{\studiomeasuredtext{body-four}{1951.96}{1387}{1000}{240}{61.96}{71.8736}{\color{studio-foreground}\bfseries}{\studiofield{body-four}}}
 }

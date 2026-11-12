@@ -4,7 +4,7 @@
 
 Organize related explanations or talking points using the blue list with vertical rail layout.
 
-Model: `list-rail-blue` · Family: Lists · Status: **in review**.
+Model: `list-rail-blue` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/list-rail-blue.tex)
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=four-items,palette=blue]{list-rail}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 

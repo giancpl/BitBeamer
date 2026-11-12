@@ -16,10 +16,10 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/text-cards.md)
+[Model variants and named fields](../models/outlined-cards.md)
 
 ```latex
-\studiotemplate[variant=callout,palette=light]{text-cards}
+\studiotemplate[variant=callout,palette=light]{outlined-cards}
 ```
 
 Named fields are coherent across related variants. All old fields and numbered slots remain available.

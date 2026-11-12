@@ -12,13 +12,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0048-part-01-panel.svg",
       "source_sha256": "d4c57b095af5e1a224aa42aa70cd3750a57941e359741a0509bf15437cbff81f",
       "pdf": "images/studio/slots/figma-0048-part-01-panel.pdf",
-      "pdf_sha256": "0f0c334e2d11a0baec7e2377a8668c8482da775e857478e784889ffc02d2cdf1"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "29ef0f940407886d1989d9a682fc37aa62b31c32f2ed0847f8c9f0047df9a518"
     },
     {
       "name": "figma-0048-part-02-panel",
@@ -31,13 +33,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0048-part-02-panel.svg",
       "source_sha256": "d97d5add60d6a97a81e96ea9d35c6328d4d03130f5eaf553d6c2f0af227d18b0",
       "pdf": "images/studio/slots/figma-0048-part-02-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "ad11e667b770f46e247d4c707fb04f5d82654c659c6b8f6f5cdfa754b679bc32"
     },
     {
       "name": "figma-0054-part-01-panel",
@@ -50,13 +54,15 @@
       "content": [
         244.5,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0054-part-01-panel.svg",
       "source_sha256": "91b6f9e639dc84e412c1bfcf9fff0b041f6bf4b986efe3bc60c587bc6408a3b8",
       "pdf": "images/studio/slots/figma-0054-part-01-panel.pdf",
-      "pdf_sha256": "f288ebfc37cd11ab574b8b9e2d17d64ac95a9e60c0803ba515b4b713d98bf16e"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "1a5f267e854e0a5d2c88ce46591b62a337d8453eed163b43e264fd563450b57a"
     },
     {
       "name": "figma-0054-part-02-panel",
@@ -69,13 +75,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0054-part-02-panel.svg",
       "source_sha256": "8adb5bb0a36f784b3d615be8a40b7bcc463f769c9fe5664d0e0ec5b208c1a34e",
       "pdf": "images/studio/slots/figma-0054-part-02-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "2fd31fdf26269f79e6f0f99ae2b535a8ca8b679a3b8971c194d10e3b76968a4f"
     },
     {
       "name": "figma-0054-part-03-panel",
@@ -88,13 +96,15 @@
       "content": [
         244.5,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0054-part-03-panel.svg",
       "source_sha256": "c45016b4a10592f4b0175b77192d90bbe001c864d5f65fc0b72b70c2c3423060",
       "pdf": "images/studio/slots/figma-0054-part-03-panel.pdf",
-      "pdf_sha256": "f288ebfc37cd11ab574b8b9e2d17d64ac95a9e60c0803ba515b4b713d98bf16e"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "5ff31f4d170ba10146edfd9b9e09ae3836ea07919147f247745f14ef05b01ede"
     },
     {
       "name": "figma-0054-part-04-panel",
@@ -107,13 +117,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0054-part-04-panel.svg",
       "source_sha256": "8a64b91d1d3b54e8d8837e97faea25b2c425dd98ce9ffb166b5a2934e7b84575",
       "pdf": "images/studio/slots/figma-0054-part-04-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "35e00ef43ca7469250d1a36ce97cc504c3e66e208583995644f21b174cf3e6b9"
     },
     {
       "name": "figma-0070-part-01-panel",
@@ -126,13 +138,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0070-part-01-panel.svg",
       "source_sha256": "0bc3c3174340594232f877c465b50b8cdb120515bdf79bd8c8997b6f12a47bf9",
       "pdf": "images/studio/slots/figma-0070-part-01-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "707da3e86e87585594c4db30e6b8341932fa37bc149d23870a28d9eb780a450e"
     },
     {
       "name": "figma-0070-part-02-panel",
@@ -145,13 +159,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0070-part-02-panel.svg",
       "source_sha256": "df670770bd28acfc42def5947066927996fc63598100f7b9ce78f9316ca80a14",
       "pdf": "images/studio/slots/figma-0070-part-02-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "f3e1377abbf5453c35fb89df08e72bf4895020c0149a2e4955e3ec321f37a45a"
     },
     {
       "name": "figma-0079-part-01-panel",
@@ -164,13 +180,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0079-part-01-panel.svg",
       "source_sha256": "945515bf35a599c916dfd876f0b70bda391965096fe65fc3afb718a1f6d49807",
       "pdf": "images/studio/slots/figma-0079-part-01-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "1bb81021dade3f2923d26c275e6d51e02fca41ede91db4bf13824b9cdec555da"
     },
     {
       "name": "figma-0079-part-02-panel",
@@ -183,13 +201,15 @@
       "content": [
         244.0,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0079-part-02-panel.svg",
       "source_sha256": "09ee4eba2170330fbac2d8ba65e0dc3c6c62970f44ae8bbf6e72385311fe3ffa",
       "pdf": "images/studio/slots/figma-0079-part-02-panel.pdf",
-      "pdf_sha256": "fd77a916e6eeda00e8f20c335ed9a98af10ad2d015e66d1ce0d0ffacd70a8138"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "0674e37e1136fad49ed247fc15c722fb511b8af644800782b76758c29e2fe835"
     },
     {
       "name": "figma-0079-part-03-panel",
@@ -202,13 +222,15 @@
       "content": [
         244.5,
         218.0,
-        260.0,
-        260.0
+        216,
+        216
       ],
       "source": "images/studio/slots/source/figma-0079-part-03-panel.svg",
       "source_sha256": "95a1159d7dae36baa9cc2fb7ef53aca4e97506db2460a0ab38374be0e37bf024",
       "pdf": "images/studio/slots/figma-0079-part-03-panel.pdf",
-      "pdf_sha256": "f288ebfc37cd11ab574b8b9e2d17d64ac95a9e60c0803ba515b4b713d98bf16e"
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "3d4662c0b3c7950b7f4338d91aa5a9aa81a554f5a91655eda0d4f32f21b2cd9f"
     },
     {
       "name": "figma-0429-part-01-panel",

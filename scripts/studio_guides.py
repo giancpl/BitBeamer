@@ -36,7 +36,25 @@ ROLES = {
 
 
 def command(name, values=None):
-    options = ',\n  '.join(key + '={' + value + '}' for key, value in (values or {}).items())
+    values = dict(values or {})
+    words = ['one','two','three','four','five']
+    grouped = any(re.fullmatch(r'card-(one|two|three|four|five)(/.*)?', key) for key in values)
+    if grouped:
+        groups = {}
+        for key in list(values):
+            match = re.fullmatch(r'(card-(?:one|two|three|four|five))/(title|body|icon|image|graphic)',key)
+            if match:groups.setdefault(match[1],{})[match[2]] = values.pop(key)
+        for card, fields in groups.items():
+            values[card] = ',\n    '.join(key+'={'+fields[key]+'}' for key in ('title','body','icon','image','graphic') if key in fields)
+        general = ['variant','palette','show-title','show-introduction','show-card-titles',
+                   'show-card-bodies','show-icons','title','title-icon','title-image','title-graphic','introduction']
+        order = [key for key in general if key in values]
+        cards = ['card-'+word for word in words if 'card-'+word in values]
+        order += [key for key in values if key not in order and key not in cards]
+        order += cards
+        options = ',\n  '.join(key+'={'+ ('\n    '+values[key]+'\n  ' if key.startswith('card-') else values[key]) +'}' for key in order)
+    else:
+        options = ',\n  '.join(key + '={' + value + '}' for key, value in values.items())
     return '\\studiotemplate' + ('[\n  ' + options + '\n]' if options else '') + '{' + name + '}'
 
 
@@ -142,7 +160,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
     member=membership().get(name)
     if member and not portable:
         model,variant,composition=member
-        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
+        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
     if entry.get('options'):
         lines += ['## Layout options', '', '| Option | Type | Default | Purpose |', '| --- | --- | --- | --- |']
         for key, option in entry['options'].items():
@@ -291,6 +309,9 @@ All reconstructed compositions remain in graphical review until explicitly appro
     from studio_models import model_guides,load_models
     model_files=model_guides(root,entries)
     for path,text in model_files.items():
+        # Full clone-only list reference includes variants absent from small archives.
+        text=re.sub(r'\[Complete usage reference:[^\n]+\]\(../../STUDIO-LISTS.md\)\n', '', text)
+        text=re.sub(r'Horizontal rows: see \[count, optional heading and icon sizing\]\(../../STUDIO-ICON-CARDS.md\)[^\n]*\n', '', text)
         text=text.replace('../../../templates/MODELS.md','../MODELS.md').replace('../../STUDIO-MODELS.md','../STUDIO-MODELS.md').replace('../../../templates/studio/','../templates/studio/')
         files['models/'+path.name]=text.encode('utf-8')
     files['MODELS.md']=('# Included Studio models\n\n'+''.join('- ['+path.stem+'](models/'+path.name+')\n' for path in model_files)).encode('utf-8')
@@ -309,6 +330,10 @@ All reconstructed compositions remain in graphical review until explicitly appro
     else:
         text=re.sub(r'\[[^]]+\]\(\.\./examples/studio-section-pair\.tex\)',
                     'paired and standalone commands above',text)
+    text=text.replace('(STUDIO-SOFT-CARDS.md)', '(models/text-cards.md)' if any(e.get('model')=='text-cards' for e in entries) else '(MODELS.md)')
+    text=re.sub(r'\[\d+-model index\]', '[included model index]', text)
+    text=re.sub(r'The library retains all \d+ compositions behind \d+ model cards\. The featured set contains\n\d+ models; every one of the \d+ former featured composition choices remains recorded in the review ledger\.',
+                'This standalone project contains only the models and variants listed in MODELS.md.', text)
     text=text.replace('[theme commands](STUDIO.md)','theme commands')
     files['STUDIO-MODELS.md']=text.encode('utf-8')
     return files

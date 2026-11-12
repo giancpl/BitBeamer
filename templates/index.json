@@ -4553,7 +4553,8 @@
       "variant": "three-items",
       "native_palette": "light",
       "palettes": [
-        "light"
+        "light",
+        "blue"
       ],
       "neutral_parts": []
     },
@@ -4679,6 +4680,7 @@
       "variant": "four-items",
       "native_palette": "blue",
       "palettes": [
+        "light",
         "blue"
       ],
       "neutral_parts": []
@@ -5334,8 +5336,8 @@
         "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
       ],
       "slot_parts": [],
-      "model": "checklist-rail",
-      "variant": "default",
+      "model": "list-rail",
+      "variant": "detailed",
       "native_palette": "blue",
       "palettes": [
         "blue"
@@ -5477,11 +5479,11 @@
         {
           "name": "text-4",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Protocol",
           "box": [
-            1828.578,
+            1751.1385,
             1540.789,
-            1384.8306666666667,
+            420,
             112.63366666666673
           ],
           "source_ink_box": [
@@ -5496,7 +5498,7 @@
             53
           ],
           "font_weight": "semibold",
-          "alignment": "left",
+          "alignment": "center",
           "slot": {
             "number": 6,
             "key": "text/6"
@@ -5533,11 +5535,11 @@
         {
           "name": "text-6",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Network",
           "box": [
-            1800.578,
+            1741.574,
             653.965,
-            1412.8292666666666,
+            420,
             110.83886666666669
           ],
           "source_ink_box": [
@@ -5552,10 +5554,54 @@
             125
           ],
           "font_weight": "semibold",
-          "alignment": "left",
+          "alignment": "center",
           "slot": {
             "number": 2,
             "key": "text/2"
+          }
+        },
+        {
+          "name": "symbol-one",
+          "type": "graphic",
+          "default": "\\begin{tikzpicture}[x=\\studiounit,y=-\\studiounit,every node/.style={inner sep=0,outer sep=0}]\n\\path[use as bounding box] (0,0) rectangle (240,240);\n\\begin{scope}[shift={(-1831.19000,-346.68950)}]\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1831,437.125) rectangle (1850.87,456.996);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1831,456.512) rectangle (1850.87,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1831,476.383) rectangle (1850.87,496.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1850.88,397.383) rectangle (1871.39,417.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1850.88,417.254) rectangle (1871.39,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1850.88,456.512) rectangle (1871.39,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1850.88,496.254) rectangle (1871.39,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1850.88,516.125) rectangle (1871.39,536.637);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1871.38,376.871) rectangle (1891.25,397.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1871.38,417.254) rectangle (1891.25,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1871.38,456.512) rectangle (1891.25,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1871.38,496.254) rectangle (1891.25,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1871.38,536.637) rectangle (1891.25,556.508);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,357) rectangle (1911.12,376.871);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,417.254) rectangle (1911.12,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,437.125) rectangle (1911.12,456.996);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,456.512) rectangle (1911.12,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,476.383) rectangle (1911.12,496.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,496.254) rectangle (1911.12,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1891.25,556.508) rectangle (1911.12,576.379);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,357) rectangle (1930.99,376.871);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,397.383) rectangle (1930.99,417.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,417.254) rectangle (1930.99,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,456.512) rectangle (1930.99,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,496.254) rectangle (1930.99,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,516.125) rectangle (1930.99,536.637);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,556.508) rectangle (1930.99,576.379);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,357) rectangle (1951.51,376.871);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,376.871) rectangle (1951.51,397.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1911.12,417.254) rectangle (1930.99,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,456.512) rectangle (1951.51,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,496.254) rectangle (1951.51,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,536.637) rectangle (1951.51,556.508);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,556.508) rectangle (1951.51,576.379);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,357) rectangle (1971.39,376.871);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,376.871) rectangle (1971.39,397.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1931,417.254) rectangle (1951.51,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,417.254) rectangle (1971.39,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,456.512) rectangle (1971.39,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,536.637) rectangle (1971.39,556.508);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,556.508) rectangle (1971.39,576.379);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,357) rectangle (1991.25,376.871);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,397.383) rectangle (1991.25,417.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,417.254) rectangle (1991.25,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,456.512) rectangle (1991.25,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1951.52,496.254) rectangle (1971.39,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,496.254) rectangle (1991.25,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,516.125) rectangle (1991.25,536.637);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1971.38,556.508) rectangle (1991.25,576.379);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,357) rectangle (2011.12,376.871);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,417.254) rectangle (2011.12,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,437.125) rectangle (2011.12,456.996);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,456.512) rectangle (2011.12,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,476.383) rectangle (2011.12,496.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,496.254) rectangle (2011.12,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (1991.25,556.508) rectangle (2011.12,576.379);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2011.12,376.871) rectangle (2031.63,397.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2011.12,417.254) rectangle (2031.63,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2011.12,456.512) rectangle (2031.63,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2011.12,496.254) rectangle (2031.63,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2011.12,536.637) rectangle (2031.63,556.508);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2031.64,397.383) rectangle (2051.51,417.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2031.64,417.254) rectangle (2051.51,437.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2051.51,437.125) rectangle (2071.38,456.996);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2031.64,456.512) rectangle (2051.51,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2051.51,456.512) rectangle (2071.38,476.383);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2051.51,476.383) rectangle (2071.38,496.254);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2031.64,496.254) rectangle (2051.51,516.125);\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit,rounded corners=0\\studiounit] (2031.64,516.125) rectangle (2051.51,536.637);\n\\end{scope}\n\\end{tikzpicture}",
+          "box": [
+            1831.19,
+            346.6895,
+            240,
+            240
+          ],
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "whole graphic",
+            "content": [
+              120,
+              120,
+              240,
+              240
+            ]
+          }
+        },
+        {
+          "name": "symbol-two",
+          "type": "graphic",
+          "default": "\\begin{tikzpicture}[x=\\studiounit,y=-\\studiounit,every node/.style={inner sep=0,outer sep=0}]\n\\path[use as bounding box] (0,0) rectangle (240,240);\n\\begin{scope}[shift={(-1831.42000,-1235.50000)}]\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1862,1424.84)--(1881.7,1424.84)--(1881.7,1445.3)--(1862,1445.3)--(1862,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1881.7,1365.73)--(1901.41,1365.73)--(1901.41,1385.43)--(1881.7,1385.43)--(1881.7,1365.73)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1881.7,1385.43)--(1901.41,1385.43)--(1901.41,1405.14)--(1881.7,1405.14)--(1881.7,1385.43)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1881.7,1405.14)--(1901.41,1405.14)--(1901.41,1424.84)--(1881.7,1424.84)--(1881.7,1405.14)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1881.7,1424.84)--(1901.41,1424.84)--(1901.41,1445.3)--(1881.7,1445.3)--(1881.7,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1266.46)--(1921.86,1266.46)--(1921.86,1286.16)--(1901.4,1286.16)--(1901.4,1266.46)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1305.87)--(1921.86,1305.87)--(1921.86,1325.57)--(1901.4,1325.57)--(1901.4,1305.87)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1325.57)--(1921.86,1325.57)--(1921.86,1345.27)--(1901.4,1345.27)--(1901.4,1325.57)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1345.27)--(1921.86,1345.27)--(1921.86,1365.73)--(1901.4,1365.73)--(1901.4,1345.27)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1365.73)--(1921.86,1365.73)--(1921.86,1385.43)--(1901.4,1385.43)--(1901.4,1365.73)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1385.43)--(1921.86,1385.43)--(1921.86,1405.14)--(1901.4,1405.14)--(1901.4,1385.43)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1405.14)--(1921.86,1405.14)--(1921.86,1424.84)--(1901.4,1424.84)--(1901.4,1405.14)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1424.84)--(1921.86,1424.84)--(1921.86,1445.3)--(1901.4,1445.3)--(1901.4,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1901.4,1445.3)--(1921.86,1445.3)--(1921.86,1465)--(1901.4,1465)--(1901.4,1445.3)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1266.46)--(1941.57,1266.46)--(1941.57,1286.16)--(1921.87,1286.16)--(1921.87,1266.46)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1286.16)--(1941.57,1286.16)--(1941.57,1305.87)--(1921.87,1305.87)--(1921.87,1286.16)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1305.87)--(1941.57,1305.87)--(1941.57,1325.57)--(1921.87,1325.57)--(1921.87,1305.87)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1325.57)--(1941.57,1325.57)--(1941.57,1345.27)--(1921.87,1345.27)--(1921.87,1325.57)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1345.27)--(1941.57,1345.27)--(1941.57,1365.73)--(1921.87,1365.73)--(1921.87,1345.27)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1365.73)--(1941.57,1365.73)--(1941.57,1385.43)--(1921.87,1385.43)--(1921.87,1365.73)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1921.87,1424.84)--(1941.57,1424.84)--(1941.57,1445.3)--(1921.87,1445.3)--(1921.87,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1941.57,1246)--(1961.27,1246)--(1961.27,1266.46)--(1941.57,1266.46)--(1941.57,1246)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1941.57,1266.46)--(1961.27,1266.46)--(1961.27,1286.16)--(1941.57,1286.16)--(1941.57,1266.46)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1941.57,1286.16)--(1961.27,1286.16)--(1961.27,1305.86)--(1941.57,1305.86)--(1941.57,1286.16)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1941.57,1345.27)--(1961.27,1345.27)--(1961.27,1365.73)--(1941.57,1365.73)--(1941.57,1345.27)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1941.57,1424.84)--(1961.27,1424.84)--(1961.27,1445.3)--(1941.57,1445.3)--(1941.57,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1941.57,1445.3)--(1961.27,1445.3)--(1961.27,1465)--(1941.57,1465)--(1941.57,1445.3)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1961.27,1266.46)--(1980.97,1266.46)--(1980.97,1286.16)--(1961.27,1286.16)--(1961.27,1266.46)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1961.27,1345.27)--(1980.97,1345.27)--(1980.97,1365.73)--(1961.27,1365.73)--(1961.27,1345.27)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1961.27,1405.14)--(1980.97,1405.14)--(1980.97,1424.84)--(1961.27,1424.84)--(1961.27,1405.14)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1961.27,1424.84)--(1980.97,1424.84)--(1980.97,1445.3)--(1961.27,1445.3)--(1961.27,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1246)--(2001.43,1246)--(2001.43,1266.46)--(1980.97,1266.46)--(1980.97,1246)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1266.46)--(2001.43,1266.46)--(2001.43,1286.16)--(1980.97,1286.16)--(1980.97,1266.46)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1325.57)--(2001.43,1325.57)--(2001.43,1345.27)--(1980.97,1345.27)--(1980.97,1325.57)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1345.27)--(2001.43,1345.27)--(2001.43,1365.73)--(1980.97,1365.73)--(1980.97,1345.27)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1365.73)--(2001.43,1365.73)--(2001.43,1385.43)--(1980.97,1385.43)--(1980.97,1365.73)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1385.43)--(2001.43,1385.43)--(2001.43,1405.14)--(1980.97,1405.14)--(1980.97,1385.43)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1405.14)--(2001.43,1405.14)--(2001.43,1424.84)--(1980.97,1424.84)--(1980.97,1405.14)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (1980.97,1424.84)--(2001.43,1424.84)--(2001.43,1445.3)--(1980.97,1445.3)--(1980.97,1424.84)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1266.46)--(2021.14,1266.46)--(2021.14,1286.16)--(2001.44,1286.16)--(2001.44,1266.46)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1286.16)--(2021.14,1286.16)--(2021.14,1305.87)--(2001.44,1305.87)--(2001.44,1286.16)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1305.87)--(2021.14,1305.87)--(2021.14,1325.57)--(2001.44,1325.57)--(2001.44,1305.87)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1325.57)--(2021.14,1325.57)--(2021.14,1345.27)--(2001.44,1345.27)--(2001.44,1325.57)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1365.73)--(2021.14,1365.73)--(2021.14,1385.43)--(2001.44,1385.43)--(2001.44,1365.73)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1385.43)--(2021.14,1385.43)--(2021.14,1405.14)--(2001.44,1405.14)--(2001.44,1385.43)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2001.44,1405.14)--(2021.14,1405.14)--(2021.14,1424.84)--(2001.44,1424.84)--(2001.44,1405.14)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2021.14,1286.16)--(2040.84,1286.16)--(2040.84,1305.86)--(2021.14,1305.86)--(2021.14,1286.16)--cycle;\n\\path[fill=studio-foreground,draw=none,line width=1\\studiounit] (2021.14,1305.87)--(2040.84,1305.87)--(2040.84,1325.57)--(2021.14,1325.57)--(2021.14,1305.87)--cycle;\n\\end{scope}\n\\end{tikzpicture}",
+          "box": [
+            1831.42,
+            1235.5,
+            240,
+            240
+          ],
+          "slot": {
+            "number": 4,
+            "key": "graphic/4",
+            "role": "whole graphic",
+            "content": [
+              120,
+              120,
+              240,
+              240
+            ]
           }
         }
       ],
@@ -5566,16 +5612,48 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "feature-spotlight",
-      "variant": "default",
+      "model": "text-cards",
+      "variant": "two-icon-stacked",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "privacy-levels",
@@ -6508,7 +6586,7 @@
         "figma-1026"
       ],
       "source": "templates/studio/icon-rail.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review. The caption shares the icon horizontal centre and width; up to two lines at the original font size.",
       "number": 40,
       "canvas": [
         3556.0,
@@ -6624,10 +6702,10 @@
           "type": "text",
           "default": "Item",
           "box": [
-            471.758,
+            396,
             1212.59,
-            386.3540000000001,
-            112.9790000000001
+            488,
+            200
           ],
           "source_ink_box": [
             471.758,
@@ -6642,7 +6720,7 @@
             11
           ],
           "font_weight": "semibold",
-          "alignment": "left",
+          "alignment": "center",
           "slot": {
             "number": 3,
             "key": "text/3"
@@ -6658,8 +6736,8 @@
         "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
       ],
       "slot_parts": [],
-      "model": "icon-rail",
-      "variant": "default",
+      "model": "list-rail",
+      "variant": "illustrated",
       "native_palette": "light",
       "palettes": [
         "light"
@@ -6865,218 +6943,6 @@
       ]
     },
     {
-      "id": "stepped-rail-blue",
-      "title": "Stepped Rail Blue",
-      "category": "Lists",
-      "references": [
-        "figma-1024"
-      ],
-      "source": "templates/studio/stepped-rail-blue.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
-      "number": 42,
-      "canvas": [
-        3556.0,
-        2000.0
-      ],
-      "background": "bitpolito",
-      "fields": [
-        {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            1866,
-            0,
-            1193,
-            2000.0
-          ],
-          "default": "\\studiopaletteimage[width=1193\\studiounit]{images/studio/collection/figma-1024-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "title",
-          "type": "text",
-          "default": "Title",
-          "box": [
-            249.398,
-            816.047,
-            729.7035333333334,
-            312.4690666666667
-          ],
-          "source_ink_box": [
-            249.398,
-            816.047,
-            656.426,
-            250.465
-          ],
-          "font_size": 112.735,
-          "leading": 130.772,
-          "source_node": [
-            0,
-            1
-          ],
-          "slot": {
-            "number": 2,
-            "key": "text/2"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            251.582,
-            1123.629,
-            1353.9911666666665,
-            127.10266666666656
-          ],
-          "source_ink_box": [
-            251.582,
-            1123.629,
-            726.59,
-            80.602
-          ],
-          "font_size": 84.547,
-          "leading": 98.074,
-          "source_node": [
-            0,
-            2
-          ],
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "First item",
-          "box": [
-            2033.8282,
-            589.707,
-            1145.4456,
-            164.955
-          ],
-          "source_ink_box": [
-            2322.25,
-            589.707,
-            568.602,
-            119.129
-          ],
-          "font_size": 83.32,
-          "leading": 96.651,
-          "source_node": [
-            0,
-            3
-          ],
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Third item\\\\Supporting detail.",
-          "box": [
-            1466.2299999999996,
-            1162.711,
-            1736.43,
-            341.09066666666655
-          ],
-          "source_ink_box": [
-            1779.57,
-            1162.711,
-            1109.75,
-            294.59
-          ],
-          "font_size": 84.547,
-          "leading": 98.074,
-          "source_node": [
-            0,
-            4
-          ],
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        },
-        {
-          "name": "item-5-1",
-          "type": "text",
-          "default": "Second item",
-          "box": [
-            1976.99,
-            865.532,
-            1002.9326000000001,
-            113.57319999999984
-          ],
-          "source_ink_box": [
-            1976.99,
-            865.532,
-            477.99,
-            65.52299999999991
-          ],
-          "font_size": 87.364,
-          "leading": 101.342,
-          "source_node": [
-            0,
-            5
-          ],
-          "slot": {
-            "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "item-5-2",
-          "type": "text",
-          "default": "Supporting detail.",
-          "box": [
-            1975.86,
-            949.816,
-            1021.4874666666668,
-            49.262266666666584
-          ],
-          "source_ink_box": [
-            1975.86,
-            949.816,
-            321.4000000000003,
-            28.593999999999937
-          ],
-          "font_size": 37.579,
-          "leading": 43.591,
-          "source_node": [
-            0,
-            5
-          ],
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        }
-      ],
-      "parts": [
-        "figma-1024-part-01"
-      ],
-      "reconstruction": "measured",
-      "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English.",
-        "English text boxes expanded within existing blank space while preserving source anchors: text-2, text-3, text-4."
-      ],
-      "slot_parts": [],
-      "model": "list-rail",
-      "variant": "stepped",
-      "native_palette": "blue",
-      "palettes": [
-        "blue"
-      ],
-      "neutral_parts": []
-    },
-    {
       "id": "three-cards",
       "number": 43,
       "title": "Three soft icon cards",
@@ -7092,13 +6958,14 @@
           "type": "text",
           "default": "Slide title",
           "box": [
-            810.0,
-            326.0,
-            1935.0,
-            150.0
+            478,
+            326,
+            2600,
+            300
           ],
-          "font_size": 120.0,
-          "leading": 140.0,
+          "font_size": 120,
+          "leading": 140,
+          "alignment": "center",
           "slot": {
             "number": 1,
             "key": "text/1"
@@ -7107,117 +6974,120 @@
         {
           "name": "caption-one",
           "type": "text",
-          "default": "Label 2",
+          "default": "Item 1",
           "box": [
             680.0,
-            1321.0,
-            660.0,
-            110.0
+            1259.5,
+            660,
+            205
           ],
-          "font_size": 88.0,
-          "leading": 102.0,
+          "font_size": 88,
+          "leading": 102,
+          "alignment": "center",
           "slot": {
             "number": 2,
             "key": "text/2"
           }
         },
         {
+          "name": "graphic-one",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{card-icon-1}",
+          "box": [
+            902,
+            875.5,
+            216,
+            216
+          ],
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
+          }
+        },
+        {
           "name": "caption-two",
           "type": "text",
-          "default": "Label 3",
+          "default": "Item 2",
           "box": [
             1451.0,
-            1321.0,
-            660.0,
-            110.0
+            1259.5,
+            660,
+            205
           ],
-          "font_size": 88.0,
-          "leading": 102.0,
+          "font_size": 88,
+          "leading": 102,
+          "alignment": "center",
           "slot": {
             "number": 3,
             "key": "text/3"
           }
         },
         {
+          "name": "graphic-two",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{card-icon-2}",
+          "box": [
+            1673,
+            875.5,
+            216,
+            216
+          ],
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
+          }
+        },
+        {
           "name": "caption-three",
           "type": "text",
-          "default": "Label 4",
+          "default": "Item 3",
           "box": [
             2222.0,
-            1321.0,
-            660.0,
-            110.0
+            1259.5,
+            660,
+            205
           ],
-          "font_size": 88.0,
-          "leading": 102.0,
+          "font_size": 88,
+          "leading": 102,
+          "alignment": "center",
           "slot": {
             "number": 4,
             "key": "text/4"
           }
         },
         {
-          "name": "graphic-one",
-          "type": "graphic",
-          "box": [
-            850.5,
-            823.5,
-            320,
-            320
-          ],
-          "default": "\\studiopart[width=180.9\\studiounit]{card-icon-1}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic",
-            "content": [
-              160,
-              160,
-              240,
-              240
-            ]
-          }
-        },
-        {
-          "name": "graphic-two",
-          "type": "graphic",
-          "box": [
-            1619.0,
-            823.5,
-            320,
-            320
-          ],
-          "default": "\\studiopart[width=162\\studiounit]{card-icon-2}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic",
-            "content": [
-              160,
-              160,
-              240,
-              240
-            ]
-          }
-        },
-        {
           "name": "graphic-three",
           "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{card-icon-3}",
           "box": [
-            2392.0,
-            823.5,
-            320,
-            320
+            2444,
+            875.5,
+            216,
+            216
           ],
-          "default": "\\studiopart[width=221.4\\studiounit]{card-icon-3}",
           "slot": {
             "number": 3,
             "key": "graphic/3",
             "role": "whole graphic",
             "content": [
-              160,
-              160,
-              240,
-              240
+              108,
+              108,
+              216,
+              216
             ]
           }
         }
@@ -7230,14 +7100,14 @@
       "parts": [
         "card-1",
         "card-icon-1",
-        "card-2",
         "card-icon-2",
-        "card-3",
         "card-icon-3"
       ],
       "intentional_differences": [
-        "Inter replaces outlined SF Pro; copy is English.",
-        "Icons reduced by 10% around their original centres as requested."
+        "Inter replaces outlined SF Pro; editable copy can differ from the original.",
+        "Shared SVG-derived rounded panel; every default and replacement icon fits a centred 216 x 216 envelope.",
+        "Title supports two fixed-size lines and a show-title boolean without card reflow; captions support two lines.",
+        "Caption distance is shared: 76 source units from the lower edge of the 400-unit panel to the caption text box; shadow padding is excluded."
       ],
       "slot_parts": [],
       "model": "icon-cards",
@@ -7246,7 +7116,17 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/icon-card-row.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the heading; false hides it without moving the cards. Title text remains available in both states."
+        }
+      }
     },
     {
       "id": "three-step-process",
@@ -7282,9 +7162,10 @@
             "content": [
               244.0,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -7305,9 +7186,10 @@
             "content": [
               244.0,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -7328,9 +7210,10 @@
             "content": [
               244.5,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -7338,10 +7221,10 @@
           "type": "text",
           "default": "Slide title",
           "box": [
-            1518.219,
-            1199.43,
-            586.4156666666668,
-            100.95133333333334
+            1437.0,
+            1200,
+            700,
+            205
           ],
           "source_ink_box": [
             1518.219,
@@ -7349,8 +7232,8 @@
             535.941,
             58.242
           ],
-          "font_size": 77.653,
-          "leading": 90.078,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             3
           ],
@@ -7358,17 +7241,18 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "alignment": "center"
         },
         {
           "name": "text-2",
           "type": "text",
           "default": "Label 3",
           "box": [
-            2481.801,
-            1200.371,
-            554.4470000000001,
-            112.01000000000005
+            2382.0,
+            1200,
+            700,
+            205
           ],
           "source_ink_box": [
             2481.801,
@@ -7376,8 +7260,8 @@
             504.891,
             70.078
           ],
-          "font_size": 76.24,
-          "leading": 88.438,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             4
           ],
@@ -7385,17 +7269,18 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "alignment": "center"
         },
         {
           "name": "text-3",
           "type": "text",
           "default": "Label 1",
           "box": [
-            571.328,
-            1199.43,
-            594.048,
-            100.17400000000004
+            492.5,
+            1200,
+            700,
+            205
           ],
           "source_ink_box": [
             571.328,
@@ -7403,8 +7288,8 @@
             544.492,
             58.242
           ],
-          "font_size": 76.24,
-          "leading": 88.438,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             8
           ],
@@ -7412,7 +7297,8 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "alignment": "center"
         }
       ],
       "parts": [
@@ -7422,7 +7308,8 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Captions share 76-unit type, 88-unit leading, centred two-line boxes and a 76-unit gap from the solid panel; replacements fit 216 x 216 while original default artwork is retained."
       ],
       "slot_parts": [
         "images/studio/slots/figma-0079-part-01-panel.pdf",
@@ -7454,73 +7341,35 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            2006,
-            706,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0070-part-01.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0070-part-01-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            1062,
-            706,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-0070-part-02.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-0070-part-02-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
           "name": "title",
           "type": "text",
-          "default": "Item 2",
+          "default": "Slide title",
           "box": [
-            2084.91,
-            1199.43,
-            380.32666666666665,
-            100.95133333333334
+            478,
+            326,
+            2600,
+            300
           ],
-          "source_ink_box": [
-            2084.91,
-            1199.43,
-            329.852,
-            58.242
+          "font_size": 120,
+          "leading": 140,
+          "alignment": "center",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "caption-one",
+          "type": "text",
+          "default": "Item 1",
+          "box": [
+            976.0,
+            1200,
+            660,
+            190
           ],
-          "font_size": 77.653,
-          "leading": 90.078,
-          "source_node": [
-            2
-          ],
-          "font_weight": "semibold",
+          "font_size": 76,
+          "leading": 88,
           "alignment": "center",
           "slot": {
             "number": 2,
@@ -7528,54 +7377,98 @@
           }
         },
         {
-          "name": "text-2",
-          "type": "text",
-          "default": "Item 1",
+          "name": "graphic-one",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-2-one}",
           "box": [
-            1183.82,
-            1199.59,
-            296.69733333333346,
-            112.18966666666675
+            1198,
+            816,
+            216,
+            216
           ],
-          "source_ink_box": [
-            1183.82,
-            1199.59,
-            247.852,
-            70.859
-          ],
-          "font_size": 75.147,
-          "leading": 87.17,
-          "source_node": [
-            4
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
             "number": 1,
-            "key": "text/1"
+            "key": "graphic/1",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
+          }
+        },
+        {
+          "name": "caption-two",
+          "type": "text",
+          "default": "Item 2",
+          "box": [
+            1920.0,
+            1200,
+            660,
+            190
+          ],
+          "font_size": 76,
+          "leading": 88,
+          "alignment": "center",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "graphic-two",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-2-two}",
+          "box": [
+            2142,
+            816,
+            216,
+            216
+          ],
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
           }
         }
       ],
       "parts": [
-        "figma-0070-part-01",
-        "figma-0070-part-02"
+        "card-1",
+        "row-icon-2-one",
+        "row-icon-2-two"
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Inter replaces outlined SF Pro; editable copy can differ from the original.",
+        "Shared SVG-derived rounded panel; every default and replacement icon fits a centred 216 x 216 envelope.",
+        "Title supports two fixed-size lines and a show-title boolean without card reflow; captions support two lines.",
+        "Caption distance is shared: 76 source units from the lower edge of the 400-unit panel to the caption text box; shadow padding is excluded."
       ],
-      "slot_parts": [
-        "images/studio/slots/figma-0070-part-01-panel.pdf",
-        "images/studio/slots/figma-0070-part-02-panel.pdf"
-      ],
+      "slot_parts": [],
       "model": "icon-cards",
       "variant": "two",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/icon-card-row.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": false,
+          "description": "Show the heading; false hides it without moving the cards. Title text remains available in both states."
+        }
+      }
     },
     {
       "id": "four-card-grid",
@@ -7686,63 +7579,55 @@
           }
         },
         {
-          "name": "text-2",
+          "name": "caption-one",
           "type": "text",
-          "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 1}\\\\Supporting detail.",
+          "default": "Item",
           "box": [
             579.961,
             712.656,
-            1183.04,
-            326.093
+            1000,
+            105
           ],
-          "source_ink_box": [
-            579.961,
-            712.656,
-            1021.898,
-            292.016
-          ],
-          "font_size": 61.9573,
-          "leading": 71.8705,
-          "source_node": [
-            3
-          ],
-          "font_weight": "regular",
+          "font_size": 75.16,
+          "leading": 87.1856,
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 2,
             "key": "text/2"
-          },
-          "block": {
-            "heading": "Concept 1",
-            "body": "Supporting detail.",
-            "heading_size": 75.16,
-            "heading_leading": 87.1856,
-            "body_size": 61.96,
-            "body_leading": 71.8736,
-            "body_weight": "regular"
           }
         },
         {
-          "name": "item-3-1",
+          "name": "body-one",
           "type": "text",
-          "default": "Concept 3",
+          "default": "Supporting explanation",
           "box": [
-            612.875,
-            1287.03,
-            1065.44,
-            123.003
+            579.961,
+            813,
+            1000,
+            240
           ],
-          "source_ink_box": [
-            612.875,
-            1287.03,
-            749.605,
-            71.6400000000001
+          "font_size": 61.96,
+          "leading": 71.8736,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "caption-two",
+          "type": "text",
+          "default": "Item",
+          "box": [
+            1951.961,
+            712.812,
+            1000,
+            105
           ],
           "font_size": 75.16,
           "leading": 87.1856,
-          "source_node": [
-            5
-          ],
           "font_weight": "semibold",
           "alignment": "left",
           "slot": {
@@ -7751,27 +7636,37 @@
           }
         },
         {
-          "name": "item-3-2",
+          "name": "body-two",
           "type": "text",
-          "default": "Supporting detail.",
+          "default": "Supporting explanation",
           "box": [
-            652.895,
-            1376.44,
-            1036.419,
-            91.77800000000008
-          ],
-          "source_ink_box": [
-            652.895,
-            1376.44,
-            567.4850000000001,
-            57.700000000000045
+            1951.961,
+            813,
+            1000,
+            240
           ],
           "font_size": 61.96,
-          "leading": 71.874,
-          "source_node": [
-            5
+          "leading": 71.8736,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "caption-three",
+          "type": "text",
+          "default": "Item",
+          "box": [
+            612.875,
+            1287.031,
+            1000,
+            105
           ],
-          "font_weight": "regular",
+          "font_size": 75.16,
+          "leading": 87.1856,
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 6,
@@ -7779,77 +7674,60 @@
           }
         },
         {
-          "name": "text-4",
+          "name": "body-three",
           "type": "text",
-          "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 2}\\\\Supporting detail.",
+          "default": "Supporting explanation",
           "box": [
-            1951.96,
-            712.812,
-            1211.84,
-            266.297
-          ],
-          "source_ink_box": [
-            1951.961,
-            712.812,
-            919.02,
-            224.961
+            612.875,
+            1387,
+            1000,
+            240
           ],
           "font_size": 61.96,
           "leading": 71.8736,
-          "source_node": [
-            7
-          ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
-            "number": 3,
-            "key": "text/3"
-          },
-          "block": {
-            "heading": "Concept 2",
-            "body": "Supporting detail.",
-            "heading_size": 75.16,
-            "heading_leading": 87.1856,
-            "body_size": 61.96,
-            "body_leading": 71.8736,
-            "body_weight": "regular"
+            "number": 7,
+            "key": "text/7"
           }
         },
         {
-          "name": "text-5",
+          "name": "caption-four",
           "type": "text",
-          "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 4}\\\\Supporting detail.",
+          "default": "Item",
           "box": [
-            1951.96,
-            1287.03,
-            1211.84,
-            188.447
-          ],
-          "source_ink_box": [
             1951.961,
             1287.031,
-            891.988,
-            147.109
+            1000,
+            105
+          ],
+          "font_size": 75.16,
+          "leading": 87.1856,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          }
+        },
+        {
+          "name": "body-four",
+          "type": "text",
+          "default": "Supporting explanation",
+          "box": [
+            1951.961,
+            1387,
+            1000,
+            240
           ],
           "font_size": 61.96,
           "leading": 71.8736,
-          "source_node": [
-            9
-          ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
-            "number": 5,
-            "key": "text/5"
-          },
-          "block": {
-            "heading": "Concept 4",
-            "body": "Supporting detail.",
-            "heading_size": 75.16,
-            "heading_leading": 87.1856,
-            "body_size": 61.96,
-            "body_leading": 71.8736,
-            "body_weight": "regular"
+            "number": 9,
+            "key": "text/9"
           }
         }
       ],
@@ -7862,16 +7740,48 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
       "model": "text-cards",
-      "variant": "four",
+      "variant": "four-bullets",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "eight-icon-grid",
@@ -8339,9 +8249,10 @@
             "content": [
               244.5,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -8362,9 +8273,10 @@
             "content": [
               244.0,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -8385,9 +8297,10 @@
             "content": [
               244.5,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -8408,9 +8321,10 @@
             "content": [
               244.0,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -8418,10 +8332,10 @@
           "type": "text",
           "default": "Slide title",
           "box": [
-            1325.5277,
+            478,
             225.293,
-            906.6756,
-            156.3322
+            2600,
+            260
           ],
           "source_ink_box": [
             1359.602,
@@ -8446,10 +8360,10 @@
           "type": "text",
           "default": "Label 2",
           "box": [
-            271.383,
-            1476.371,
-            644.7433333333335,
-            206.36966666666675
+            219.5,
+            1476,
+            700,
+            205
           ],
           "source_ink_box": [
             271.383,
@@ -8457,8 +8371,8 @@
             595.898,
             165.039
           ],
-          "font_size": 75.147,
-          "leading": 87.17,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             3
           ],
@@ -8474,10 +8388,10 @@
           "type": "text",
           "default": "Label 3",
           "box": [
-            1163.398,
-            1476.371,
-            560.4073333333334,
-            206.36966666666675
+            1066.0,
+            1476,
+            700,
+            205
           ],
           "source_ink_box": [
             1163.398,
@@ -8485,8 +8399,8 @@
             511.562,
             165.039
           ],
-          "font_size": 75.147,
-          "leading": 87.17,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             5
           ],
@@ -8502,10 +8416,10 @@
           "type": "text",
           "default": "Label 5",
           "box": [
-            2758.34,
-            1475.699,
-            580.3846666666666,
-            207.9513333333332
+            2671.5,
+            1476,
+            700,
+            205
           ],
           "source_ink_box": [
             2758.34,
@@ -8513,8 +8427,8 @@
             530.82,
             166.012
           ],
-          "font_size": 76.253,
-          "leading": 88.454,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             6
           ],
@@ -8530,10 +8444,10 @@
           "type": "text",
           "default": "Label 4",
           "box": [
-            2001.52,
-            1475.852,
-            515.0653333333335,
-            206.55666666666679
+            1881.0,
+            1476,
+            700,
+            205
           ],
           "source_ink_box": [
             2001.52,
@@ -8541,8 +8455,8 @@
             466.922,
             165.82
           ],
-          "font_size": 74.067,
-          "leading": 85.917,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             9
           ],
@@ -8563,7 +8477,8 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Captions share 76-unit type, 88-unit leading, centred two-line boxes and a 76-unit gap from the solid panel; replacements fit 216 x 216 while original default artwork is retained."
       ],
       "slot_parts": [
         "images/studio/slots/figma-0054-part-01-panel.pdf",
@@ -8613,9 +8528,10 @@
             "content": [
               244.0,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -8636,9 +8552,10 @@
             "content": [
               244.0,
               218.0,
-              260.0,
-              260.0
-            ]
+              216,
+              216
+            ],
+            "safe_fraction": 0.54
           }
         },
         {
@@ -8646,10 +8563,10 @@
           "type": "text",
           "default": "Title",
           "box": [
-            2052.191,
-            1200.371,
-            445.6820000000001,
-            112.19700000000009
+            1920.0,
+            1200,
+            660,
+            205
           ],
           "source_ink_box": [
             2052.191,
@@ -8657,8 +8574,8 @@
             396.828,
             70.859
           ],
-          "font_size": 75.16,
-          "leading": 87.186,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             2
           ],
@@ -8674,10 +8591,10 @@
           "type": "text",
           "default": "Item",
           "box": [
-            1191.672,
-            1200.371,
-            275.1343333333334,
-            98.51066666666676
+            976.0,
+            1200,
+            660,
+            205
           ],
           "source_ink_box": [
             1191.672,
@@ -8685,8 +8602,8 @@
             226.289,
             57.18
           ],
-          "font_size": 75.147,
-          "leading": 87.17,
+          "font_size": 76,
+          "leading": 88,
           "source_node": [
             5
           ],
@@ -8705,7 +8622,8 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Captions share 76-unit type, 88-unit leading, centred two-line boxes and a 76-unit gap from the solid panel; replacements fit 216 x 216 while original default artwork is retained."
       ],
       "slot_parts": [
         "images/studio/slots/figma-0048-part-01-panel.pdf",
@@ -8722,7 +8640,7 @@
     {
       "id": "milestone-cards",
       "number": 50,
-      "title": "Numbered milestone cards",
+      "title": "Hanging milestone badges",
       "category": "Cards",
       "source": "templates/studio/milestone-cards.tex",
       "references": [
@@ -8821,9 +8739,9 @@
           "default": "Label 1",
           "box": [
             110.277,
-            801.016,
-            465.44320000000005,
-            165.44740000000002
+            737,
+            590,
+            270
           ],
           "source_ink_box": [
             110.277,
@@ -8831,8 +8749,8 @@
             420.172,
             127.141
           ],
-          "font_size": 69.648,
-          "leading": 80.792,
+          "font_size": 72,
+          "leading": 84,
           "source_node": [
             6
           ],
@@ -8841,7 +8759,9 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "vertical_alignment": "center",
+          "text_block_center_y": 872
         },
         {
           "name": "text-2",
@@ -8849,9 +8769,9 @@
           "default": "Label 2",
           "box": [
             806.504,
-            764.016,
-            422.4458666666667,
-            240.00473333333332
+            737,
+            590,
+            270
           ],
           "source_ink_box": [
             806.504,
@@ -8859,8 +8779,8 @@
             376.516,
             201.141
           ],
-          "font_size": 70.661,
-          "leading": 81.967,
+          "font_size": 72,
+          "leading": 84,
           "source_node": [
             7
           ],
@@ -8869,7 +8789,9 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "vertical_alignment": "center",
+          "text_block_center_y": 872
         },
         {
           "name": "text-3",
@@ -8877,9 +8799,9 @@
           "default": "Item",
           "box": [
             1506.281,
-            836.531,
-            344.73086666666666,
-            94.25873333333328
+            737,
+            590,
+            270
           ],
           "source_ink_box": [
             1506.281,
@@ -8887,8 +8809,8 @@
             297.891,
             54.625
           ],
-          "font_size": 72.061,
-          "leading": 83.591,
+          "font_size": 72,
+          "leading": 84,
           "source_node": [
             8
           ],
@@ -8897,7 +8819,9 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "vertical_alignment": "center",
+          "text_block_center_y": 872
         },
         {
           "name": "text-4",
@@ -8905,9 +8829,9 @@
           "default": "Label 4",
           "box": [
             2204.281,
-            836.531,
-            506.82786666666664,
-            94.25873333333328
+            737,
+            590,
+            270
           ],
           "source_ink_box": [
             2204.281,
@@ -8915,8 +8839,8 @@
             459.988,
             54.625
           ],
-          "font_size": 72.061,
-          "leading": 83.591,
+          "font_size": 72,
+          "leading": 84,
           "source_node": [
             9
           ],
@@ -8925,7 +8849,9 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "vertical_alignment": "center",
+          "text_block_center_y": 872
         },
         {
           "name": "text-5",
@@ -8933,9 +8859,9 @@
           "default": "Label 5",
           "box": [
             2902.281,
-            837.109,
-            427.65986666666663,
-            106.20373333333328
+            737,
+            590,
+            270
           ],
           "source_ink_box": [
             2902.281,
@@ -8943,8 +8869,8 @@
             380.82,
             66.57
           ],
-          "font_size": 72.061,
-          "leading": 83.591,
+          "font_size": 72,
+          "leading": 84,
           "source_node": [
             10
           ],
@@ -8953,17 +8879,19 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "vertical_alignment": "center",
+          "text_block_center_y": 872
         },
         {
           "name": "title",
           "type": "text",
           "default": "Title",
           "box": [
-            1550.441,
-            1603.051,
-            532.2966666666666,
-            150.1833333333333
+            479.95,
+            1592,
+            2600,
+            280
           ],
           "source_ink_box": [
             1550.441,
@@ -8977,7 +8905,7 @@
             11
           ],
           "font_weight": "semibold",
-          "alignment": "left",
+          "alignment": "center",
           "slot": {
             "number": 6,
             "key": "text/6"
@@ -8994,11 +8922,12 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Badge labels preserve original left anchors and common visual centre near y=864, with measured one-/two-/three-line blocks. Fixed 72-unit Inter type and 84-unit leading; the heading keeps its original visual centre with a wider two-line area."
       ],
       "slot_parts": [],
-      "model": "icon-process",
-      "variant": "milestones",
+      "model": "milestone-badges",
+      "variant": "five",
       "native_palette": "light",
       "palettes": [
         "light"
@@ -9675,10 +9604,10 @@
           "type": "text",
           "default": "Slide title",
           "box": [
-            1009.2692333333333,
+            479.27,
             257.047,
-            1541.2925333333335,
-            170.3670666666667
+            2600,
+            290
           ],
           "source_ink_box": [
             1046.441,
@@ -9734,8 +9663,8 @@
           "box": [
             416.637,
             758.684,
-            1287.2787333333333,
-            134.2971333333333
+            1200,
+            200
           ],
           "source_ink_box": [
             416.637,
@@ -9749,7 +9678,7 @@
             2,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 4,
@@ -9792,8 +9721,8 @@
           "box": [
             1873.46,
             758.684,
-            1350.33,
-            209.133
+            1200,
+            200
           ],
           "source_ink_box": [
             1873.461,
@@ -9807,7 +9736,7 @@
             3,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 5,
@@ -9850,8 +9779,8 @@
           "box": [
             1172.699,
             1464.68,
-            1288.4789999999998,
-            142.72500000000002
+            1200,
+            200
           ],
           "source_ink_box": [
             1172.699,
@@ -9865,7 +9794,7 @@
             4,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 7,
@@ -9881,16 +9810,49 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Original text anchors and font sizes retained. Heading area accepts two lines; all three body areas have equal 1200-unit width and three-line capacity at fixed type.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "icon-cards",
-      "variant": "summary",
+      "model": "text-cards",
+      "variant": "three-summary",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "four-pillar-cards",
@@ -9977,7 +9939,7 @@
           "source_node": [
             1
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 1,
@@ -9991,7 +9953,7 @@
           "box": [
             226.75,
             365.516,
-            688.7099999999999,
+            648,
             61.597999999999985
           ],
           "source_ink_box": [
@@ -10006,7 +9968,7 @@
             2,
             1
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 2,
@@ -10020,8 +9982,8 @@
           "box": [
             224.941,
             436.199,
-            695.0554666666666,
-            71.86426666666665
+            648,
+            100
           ],
           "source_ink_box": [
             224.941,
@@ -10035,7 +9997,7 @@
             2,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 4,
@@ -10049,7 +10011,7 @@
           "box": [
             1013.969,
             365.516,
-            688.8124666666665,
+            648,
             60.99826666666669
           ],
           "source_ink_box": [
@@ -10064,7 +10026,7 @@
             3,
             1
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 3,
@@ -10078,8 +10040,8 @@
           "box": [
             1012.469,
             436.141,
-            694.7504666666665,
-            71.92226666666666
+            648,
+            100
           ],
           "source_ink_box": [
             1012.469,
@@ -10093,7 +10055,7 @@
             3,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 5,
@@ -10107,7 +10069,7 @@
           "box": [
             236.469,
             657.617,
-            688.9162666666666,
+            648,
             60.832866666666646
           ],
           "source_ink_box": [
@@ -10122,7 +10084,7 @@
             4,
             1
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 6,
@@ -10136,8 +10098,8 @@
           "box": [
             234.66,
             728.301,
-            729.085,
-            111.938
+            648,
+            100
           ],
           "source_ink_box": [
             234.66,
@@ -10151,7 +10113,7 @@
             4,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 8,
@@ -10165,7 +10127,7 @@
           "box": [
             1012.941,
             657.617,
-            689.6332666666665,
+            648,
             54.4718666666667
           ],
           "source_ink_box": [
@@ -10180,7 +10142,7 @@
             5,
             1
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 7,
@@ -10194,8 +10156,8 @@
           "box": [
             1012.281,
             728.242,
-            694.9384666666666,
-            76.99626666666666
+            648,
+            100
           ],
           "source_ink_box": [
             1012.281,
@@ -10209,7 +10171,7 @@
             5,
             2
           ],
-          "font_weight": "regular",
+          "font_weight": "semibold",
           "alignment": "left",
           "slot": {
             "number": 9,
@@ -10225,16 +10187,48 @@
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "icon-cards",
-      "variant": "four-pillars",
+      "model": "text-cards",
+      "variant": "four",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "hardware-options",
@@ -10754,58 +10748,6 @@
           }
         },
         {
-          "name": "text-1",
-          "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
-          "box": [
-            2051.621,
-            482.832,
-            1076.0061333333333,
-            258.6639333333334
-          ],
-          "source_ink_box": [
-            2051.621,
-            482.832,
-            844.598,
-            225.078
-          ],
-          "font_size": 61.065,
-          "leading": 70.836,
-          "source_node": [
-            2
-          ],
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
-          "box": [
-            2051.621,
-            1103.031,
-            1075.693,
-            415.81600000000003
-          ],
-          "source_ink_box": [
-            2051.621,
-            1103.031,
-            470.98,
-            381.738
-          ],
-          "font_size": 61.96,
-          "leading": 71.874,
-          "source_node": [
-            4
-          ],
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
           "name": "title",
           "type": "text",
           "default": "Slide title",
@@ -10827,9 +10769,10 @@
             5
           ],
           "slot": {
-            "number": 2,
-            "key": "text/2"
-          }
+            "number": 1,
+            "key": "text/1"
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
@@ -10853,8 +10796,85 @@
             6
           ],
           "slot": {
+            "number": 2,
+            "key": "text/2"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "caption-one",
+          "type": "text",
+          "default": "Item",
+          "box": [
+            2051.621,
+            482.832,
+            1000,
+            105
+          ],
+          "font_size": 75.16,
+          "leading": 87.1856,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
             "number": 3,
             "key": "text/3"
+          }
+        },
+        {
+          "name": "body-one",
+          "type": "text",
+          "default": "Supporting explanation",
+          "box": [
+            2051.621,
+            590,
+            1000,
+            165
+          ],
+          "font_size": 61.96,
+          "leading": 71.8736,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "caption-two",
+          "type": "text",
+          "default": "Item",
+          "box": [
+            2051.621,
+            1103.031,
+            1000,
+            105
+          ],
+          "font_size": 75.16,
+          "leading": 87.1856,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "body-two",
+          "type": "text",
+          "default": "Supporting explanation",
+          "box": [
+            2051.621,
+            1210,
+            1000,
+            310
+          ],
+          "font_size": 61.96,
+          "leading": 71.8736,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
           }
         }
       ],
@@ -10864,16 +10884,48 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "icon-cards",
-      "variant": "two-vertical",
+      "model": "text-cards",
+      "variant": "two-stacked",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "callout-explanation",
@@ -11197,7 +11249,7 @@
         "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
       ],
       "slot_parts": [],
-      "model": "text-cards",
+      "model": "outlined-cards",
       "variant": "callout",
       "native_palette": "light",
       "palettes": [
@@ -11425,7 +11477,7 @@
         "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
       ],
       "slot_parts": [],
-      "model": "text-cards",
+      "model": "outlined-cards",
       "variant": "six-outline",
       "native_palette": "light",
       "palettes": [
@@ -11652,7 +11704,7 @@
         "Inter replaces outlined source typography; copy is translated to English."
       ],
       "slot_parts": [],
-      "model": "text-cards",
+      "model": "outlined-cards",
       "variant": "six-detailed",
       "native_palette": "light",
       "palettes": [
@@ -11677,142 +11729,17 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            904,
-            855,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1022-part-01.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1022-part-01-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            2794,
-            853,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1022-part-02.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1022-part-02-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            2164,
-            853,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1022-part-03.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1022-part-03-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            274,
-            853,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1022-part-04.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1022-part-04-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
-          "name": "graphic-5",
-          "type": "graphic",
-          "box": [
-            1534,
-            855,
-            488,
-            489
-          ],
-          "default": "\\studiopaletteimage[width=488\\studiounit]{images/studio/collection/figma-1022-part-05.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "card content",
-            "frame": "images/studio/slots/figma-1022-part-05-panel.pdf",
-            "content": [
-              244.0,
-              218.0,
-              260.0,
-              260.0
-            ]
-          }
-        },
-        {
           "name": "title",
           "type": "text",
-          "default": "Title",
+          "default": "Slide title",
           "box": [
-            1507.6857333333332,
-            326.047,
-            537.4365333333334,
-            171.1240666666667
+            478,
+            326,
+            2600,
+            300
           ],
-          "source_ink_box": [
-            1544.578,
-            326.047,
-            463.652,
-            108.691
-          ],
-          "font_size": 113.515,
-          "leading": 131.677,
-          "source_node": [
-            1
-          ],
-          "font_weight": "semibold",
+          "font_size": 120,
+          "leading": 140,
           "alignment": "center",
           "slot": {
             "number": 1,
@@ -11820,55 +11747,57 @@
           }
         },
         {
-          "name": "text-2",
+          "name": "caption-one",
           "type": "text",
-          "default": "Label 6",
+          "default": "Item 1",
           "box": [
-            2728.0,
-            1346.43,
-            620.0,
-            215.0
-          ],
-          "source_ink_box": [
-            2817.328,
-            1346.43,
-            441.684,
-            153.121
+            223.0,
+            1347,
+            590,
+            205
           ],
           "font_size": 75.16,
           "leading": 87.1856,
-          "source_node": [
-            2
-          ],
-          "font_weight": "semibold",
           "alignment": "center",
           "slot": {
-            "number": 6,
-            "key": "text/6"
+            "number": 2,
+            "key": "text/2"
           }
         },
         {
-          "name": "text-3",
-          "type": "text",
-          "default": "Label 3",
+          "name": "graphic-one",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-5-one}",
           "box": [
-            838.0,
-            1348.43,
-            620.0,
-            215.0
+            410,
+            963,
+            216,
+            216
           ],
-          "source_ink_box": [
-            871.242,
-            1348.43,
-            553.828,
-            166.801
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
+          }
+        },
+        {
+          "name": "caption-two",
+          "type": "text",
+          "default": "Item 2",
+          "box": [
+            853.0,
+            1347,
+            590,
+            205
           ],
           "font_size": 75.16,
           "leading": 87.1856,
-          "source_node": [
-            3
-          ],
-          "font_weight": "semibold",
           "alignment": "center",
           "slot": {
             "number": 3,
@@ -11876,55 +11805,39 @@
           }
         },
         {
-          "name": "text-4",
-          "type": "text",
-          "default": "Label 5",
+          "name": "graphic-two",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-5-two}",
           "box": [
-            2098.0,
-            1347.37,
-            620.0,
-            215.0
+            1040,
+            963,
+            216,
+            216
           ],
-          "source_ink_box": [
-            2156.41,
-            1347.371,
-            503.988,
-            165.859
-          ],
-          "font_size": 75.16,
-          "leading": 87.1856,
-          "source_node": [
-            4
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
           "slot": {
-            "number": 5,
-            "key": "text/5"
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
           }
         },
         {
-          "name": "text-5",
+          "name": "caption-three",
           "type": "text",
-          "default": "Label 4",
+          "default": "Item 3",
           "box": [
-            1468.0,
-            1346.59,
-            620.0,
-            215.0
-          ],
-          "source_ink_box": [
-            1619.488,
-            1346.59,
-            318.871,
-            165.859
+            1483.0,
+            1347,
+            590,
+            205
           ],
           "font_size": 75.16,
           "leading": 87.1856,
-          "source_node": [
-            5
-          ],
-          "font_weight": "semibold",
           "alignment": "center",
           "slot": {
             "number": 4,
@@ -11932,60 +11845,141 @@
           }
         },
         {
-          "name": "text-6",
-          "type": "text",
-          "default": "Label 2",
+          "name": "graphic-three",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-5-three}",
           "box": [
-            208.0,
-            1347.69,
-            620.0,
-            215.0
+            1670,
+            963,
+            216,
+            216
           ],
-          "source_ink_box": [
-            291.039,
-            1347.691,
-            453.594,
-            153.859
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
+          }
+        },
+        {
+          "name": "caption-four",
+          "type": "text",
+          "default": "Item 4",
+          "box": [
+            2113.0,
+            1347,
+            590,
+            205
           ],
           "font_size": 75.16,
           "leading": 87.1856,
-          "source_node": [
-            6
-          ],
-          "font_weight": "semibold",
           "alignment": "center",
           "slot": {
-            "number": 2,
-            "key": "text/2"
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "graphic-four",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-5-four}",
+          "box": [
+            2300,
+            963,
+            216,
+            216
+          ],
+          "slot": {
+            "number": 4,
+            "key": "graphic/4",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
+          }
+        },
+        {
+          "name": "caption-five",
+          "type": "text",
+          "default": "Item 5",
+          "box": [
+            2743.0,
+            1347,
+            590,
+            205
+          ],
+          "font_size": 75.16,
+          "leading": 87.1856,
+          "alignment": "center",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          }
+        },
+        {
+          "name": "graphic-five",
+          "type": "graphic",
+          "default": "\\studiopart[width=216\\studiounit,height=216\\studiounit]{row-icon-5-five}",
+          "box": [
+            2930,
+            963,
+            216,
+            216
+          ],
+          "slot": {
+            "number": 5,
+            "key": "graphic/5",
+            "role": "whole graphic",
+            "content": [
+              108,
+              108,
+              216,
+              216
+            ]
           }
         }
       ],
       "parts": [
-        "figma-1022-part-01",
-        "figma-1022-part-02",
-        "figma-1022-part-03",
-        "figma-1022-part-04",
-        "figma-1022-part-05"
+        "card-1",
+        "row-icon-5-one",
+        "row-icon-5-two",
+        "row-icon-5-three",
+        "row-icon-5-four",
+        "row-icon-5-five"
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Inter replaces outlined SF Pro; editable copy can differ from the original.",
+        "Shared SVG-derived rounded panel; every default and replacement icon fits a centred 216 x 216 envelope.",
+        "Title supports two fixed-size lines and a show-title boolean without card reflow; captions support two lines.",
+        "Caption distance is shared: 76 source units from the lower edge of the 400-unit panel to the caption text box; shadow padding is excluded."
       ],
-      "slot_parts": [
-        "images/studio/slots/figma-1022-part-01-panel.pdf",
-        "images/studio/slots/figma-1022-part-02-panel.pdf",
-        "images/studio/slots/figma-1022-part-03-panel.pdf",
-        "images/studio/slots/figma-1022-part-04-panel.pdf",
-        "images/studio/slots/figma-1022-part-05-panel.pdf"
-      ],
-      "model": "icon-grid",
-      "variant": "row",
+      "slot_parts": [],
+      "model": "icon-cards",
+      "variant": "five",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/icon-card-row.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the heading; false hides it without moving the cards. Title text remains available in both states."
+        }
+      }
     },
     {
       "id": "square-icon-grid",
@@ -12352,7 +12346,8 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
@@ -12378,7 +12373,9 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
@@ -12404,7 +12401,8 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
@@ -12430,7 +12428,9 @@
           "slot": {
             "number": 8,
             "key": "text/8"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
@@ -12456,7 +12456,8 @@
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-6",
@@ -12482,7 +12483,9 @@
           "slot": {
             "number": 11,
             "key": "text/11"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-7",
@@ -12508,7 +12511,8 @@
           "slot": {
             "number": 10,
             "key": "text/10"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-8",
@@ -12534,7 +12538,9 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-9",
@@ -12552,15 +12558,16 @@
             554.648,
             70.039
           ],
-          "font_size": 93.385,
-          "leading": 108.327,
+          "font_size": 76.2493,
+          "leading": 88.4492,
           "source_node": [
             14
           ],
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-10",
@@ -12586,7 +12593,9 @@
           "slot": {
             "number": 9,
             "key": "text/9"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-11",
@@ -12612,7 +12621,8 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "font_weight": "semibold"
         }
       ],
       "parts": [
@@ -12625,16 +12635,49 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Corrected a mixed-glyph heading-size estimate to the same 76.2493-unit scale as adjacent original headings.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "incentives-card-grid",
-      "variant": "default",
+      "model": "text-cards",
+      "variant": "five",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "network-environments",
@@ -12740,7 +12783,8 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
@@ -12767,7 +12811,8 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
@@ -12776,7 +12821,7 @@
           "box": [
             416.316,
             807.602,
-            1287.5997333333332,
+            1200,
             209.2151333333333
           ],
           "source_ink_box": [
@@ -12794,7 +12839,9 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
@@ -12812,8 +12859,8 @@
             950.461,
             71.016
           ],
-          "font_size": 93.385,
-          "leading": 108.327,
+          "font_size": 76.2493,
+          "leading": 88.4492,
           "source_node": [
             3,
             1
@@ -12821,7 +12868,8 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
@@ -12830,7 +12878,7 @@
           "box": [
             1873.699,
             807.602,
-            1288.2167333333332,
+            1200,
             209.7811333333333
           ],
           "source_ink_box": [
@@ -12848,7 +12896,9 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-6",
@@ -12875,16 +12925,17 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-7",
           "type": "text",
           "default": "Supporting explanation.\\\\Add your own details.",
           "box": [
-            363.8333333333333,
+            436.09,
             1348.602,
-            1350.3333333333333,
+            1200,
             341.77566666666667
           ],
           "source_ink_box": [
@@ -12902,7 +12953,9 @@
           "slot": {
             "number": 8,
             "key": "text/8"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-8",
@@ -12929,7 +12982,8 @@
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-9",
@@ -12938,7 +12992,7 @@
           "box": [
             1874.609,
             1348.711,
-            1287.3076666666668,
+            1200,
             332.2646666666667
           ],
           "source_ink_box": [
@@ -12956,7 +13010,9 @@
           "slot": {
             "number": 9,
             "key": "text/9"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         }
       ],
       "parts": [
@@ -12967,16 +13023,49 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Corrected a mixed-glyph heading-size estimate to the same 76.2493-unit scale as adjacent original headings.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "network-environments",
-      "variant": "default",
+      "model": "text-cards",
+      "variant": "four-network",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "node-type-grid",
@@ -13074,8 +13163,8 @@
             614.961,
             72.457
           ],
-          "font_size": 93.387,
-          "leading": 108.329,
+          "font_size": 76.2493,
+          "leading": 88.4492,
           "source_node": [
             1,
             1
@@ -13083,16 +13172,17 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
           "type": "text",
           "default": "Supporting explanation.\\\\Add your own details.",
           "box": [
-            364.20666666666665,
+            468.449,
             1348.602,
-            1349.5866666666668,
+            1200,
             266.8663333333333
           ],
           "source_ink_box": [
@@ -13110,7 +13200,9 @@
           "slot": {
             "number": 8,
             "key": "text/8"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
@@ -13137,7 +13229,8 @@
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
@@ -13146,7 +13239,7 @@
           "box": [
             1908.449,
             1348.68,
-            1253.2063333333333,
+            1200,
             200.70633333333328
           ],
           "source_ink_box": [
@@ -13164,7 +13257,9 @@
           "slot": {
             "number": 9,
             "key": "text/9"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
@@ -13191,16 +13286,17 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-6",
           "type": "text",
           "default": "Supporting explanation.\\\\Add your own details.",
           "box": [
-            1804.2106666666666,
+            1908.449,
             807.684,
-            1349.5786666666668,
+            1200,
             209.5467333333333
           ],
           "source_ink_box": [
@@ -13218,7 +13314,9 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-7",
@@ -13245,7 +13343,8 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-8",
@@ -13254,7 +13353,7 @@
           "box": [
             450.449,
             807.656,
-            1253.4667333333332,
+            1200,
             209.18813333333333
           ],
           "source_ink_box": [
@@ -13272,7 +13371,9 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "title",
@@ -13298,7 +13399,8 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         }
       ],
       "parts": [
@@ -13309,16 +13411,49 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Corrected a mixed-glyph heading-size estimate to the same 76.2493-unit scale as adjacent original headings.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "node-type-grid",
-      "variant": "default",
+      "model": "text-cards",
+      "variant": "four-nodes",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "horizontal-split",
@@ -13853,7 +13988,8 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
@@ -13862,7 +13998,7 @@
           "box": [
             226.75,
             440.566,
-            688.8124666666668,
+            650,
             54.06026666666669
           ],
           "source_ink_box": [
@@ -13880,7 +14016,8 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
@@ -13889,8 +14026,8 @@
           "box": [
             226.0,
             511.25,
-            694.0004666666667,
-            106.86026666666666
+            650,
+            181
           ],
           "source_ink_box": [
             226.0,
@@ -13907,7 +14044,9 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
@@ -13916,7 +14055,7 @@
           "box": [
             1013.969,
             440.566,
-            688.8124666666665,
+            616,
             60.99826666666669
           ],
           "source_ink_box": [
@@ -13934,7 +14073,8 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
@@ -13943,8 +14083,8 @@
           "box": [
             1030.43,
             511.25,
-            676.9317999999998,
-            181.4096
+            616,
+            181
           ],
           "source_ink_box": [
             1030.43,
@@ -13961,7 +14101,9 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         }
       ],
       "parts": [
@@ -13970,16 +14112,48 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "benefits-limits",
-      "variant": "default",
+      "model": "text-cards",
+      "variant": "two",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "before-after",
@@ -50700,16 +50874,17 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-2",
           "type": "text",
           "default": "Supporting explanation.\\\\Add your own details.",
           "box": [
-            207.2106666666667,
+            328.449,
             696.664,
-            1554.5786666666665,
+            1380,
             210.19473333333335
           ],
           "source_ink_box": [
@@ -50726,7 +50901,9 @@
           "slot": {
             "number": 4,
             "key": "text/4"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-3",
@@ -50752,16 +50929,17 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-4",
           "type": "text",
           "default": "Supporting explanation.\\\\Add your own details.",
           "box": [
-            207.21333333333345,
+            295.57,
             1272.672,
-            1554.573333333333,
+            1380,
             408.1936666666668
           ],
           "source_ink_box": [
@@ -50778,7 +50956,9 @@
           "slot": {
             "number": 7,
             "key": "text/7"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-5",
@@ -50804,16 +50984,17 @@
           "slot": {
             "number": 6,
             "key": "text/6"
-          }
+          },
+          "font_weight": "semibold"
         },
         {
           "name": "text-6",
           "type": "text",
           "default": "Supporting explanation.\\\\Add your own details.",
           "box": [
-            1909.6933333333334,
+            1975.691,
             754.602,
-            1239.613333333333,
+            1100,
             870.1906666666667
           ],
           "source_ink_box": [
@@ -50830,7 +51011,9 @@
           "slot": {
             "number": 5,
             "key": "text/5"
-          }
+          },
+          "alignment": "left",
+          "font_weight": "semibold"
         },
         {
           "name": "text-7",
@@ -50856,7 +51039,8 @@
           "slot": {
             "number": 3,
             "key": "text/3"
-          }
+          },
+          "font_weight": "semibold"
         }
       ],
       "parts": [
@@ -50866,16 +51050,48 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "Optional content visibility is shared across the soft-card family; toggles preserve original card positions.",
+        "Descriptions follow the source ink left anchors; text widths stay inside the original panels. Visibility controls never resize text or move artwork."
       ],
       "slot_parts": [],
-      "model": "mining-card-grid",
-      "variant": "default",
+      "model": "text-cards",
+      "variant": "three-asymmetric",
       "native_palette": "light",
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/text-card-options.tex"
+      ],
+      "options": {
+        "show-title": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the slide heading without moving panels."
+        },
+        "show-card-titles": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card headings or icon captions."
+        },
+        "show-card-bodies": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show card descriptions."
+        },
+        "show-introduction": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show the introduction in sidebar layouts; no effect elsewhere."
+        },
+        "show-icons": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show original icons where present; no effect in text-only layouts."
+        }
+      }
     },
     {
       "id": "contact-qr",
@@ -51833,6 +52049,154 @@
       "palettes": [
         "light"
       ]
+    },
+    {
+      "id": "list-rail-five",
+      "number": 197,
+      "title": "Five-item list with vertical rail",
+      "category": "Lists",
+      "source": "templates/studio/list-rail-five.tex",
+      "references": [
+        "figma-0395"
+      ],
+      "notes": "Five-item adaptation of the four-item rail geometry. Native light and blue semantic treatments; pending review.",
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "default": "Key ideas",
+          "box": [
+            257,
+            870,
+            1400,
+            300
+          ],
+          "font_size": 120,
+          "leading": 140,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          }
+        },
+        {
+          "name": "item-1",
+          "type": "text",
+          "default": "Verify rules",
+          "box": [
+            1877,
+            355,
+            1400,
+            190
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "item-2",
+          "type": "text",
+          "default": "Check state",
+          "box": [
+            1877,
+            625,
+            1400,
+            190
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          }
+        },
+        {
+          "name": "item-3",
+          "type": "text",
+          "default": "Compare copies",
+          "box": [
+            1877,
+            895,
+            1400,
+            190
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          }
+        },
+        {
+          "name": "item-4",
+          "type": "text",
+          "default": "Share results",
+          "box": [
+            1877,
+            1165,
+            1400,
+            190
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          }
+        },
+        {
+          "name": "item-5",
+          "type": "text",
+          "default": "Repeat checks",
+          "box": [
+            1877,
+            1435,
+            1400,
+            190
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          }
+        }
+      ],
+      "canvas": [
+        3556,
+        2000
+      ],
+      "reconstruction": "adapted",
+      "parts": [],
+      "intentional_differences": [
+        "Inter replaces outlined SF Pro; copy is English.",
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "Five items use even 270-unit spacing; reference is the related four-item source, not an original five-item export."
+      ],
+      "slot_parts": [],
+      "model": "list-rail",
+      "variant": "five-items",
+      "native_palette": "light",
+      "palettes": [
+        "light",
+        "blue"
+      ],
+      "neutral_parts": [],
+      "background": "studio-paper"
     }
   ],
   "aliases": [

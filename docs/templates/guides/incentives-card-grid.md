@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the incentives card grid layout.
 
-Model: `incentives-card-grid` · Family: Cards · Status: **in review**.
+Model: `incentives-card-grid` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/incentives-card-grid.tex)
 
@@ -16,15 +16,27 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/incentives-card-grid.md)
+[Model variants and named fields](../models/text-cards.md)
 
 ```latex
-\studiotemplate[variant=default,palette=light]{incentives-card-grid}
+\studiotemplate[variant=five,palette=light]{text-cards}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the slide heading without moving panels. |
+| `show-card-titles` | boolean | `true` | Show card headings or icon captions. |
+| `show-card-bodies` | boolean | `true` | Show card descriptions. |
+| `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
+| `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 

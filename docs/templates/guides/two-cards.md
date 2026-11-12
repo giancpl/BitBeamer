@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the two icon cards layout.
 
-Model: `two-cards` · Family: Cards · Status: **in review**.
+Model: `two-cards` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-cards.tex)
 
@@ -26,6 +26,14 @@ Named fields are coherent across related variants. All old fields and numbered s
 
 Numeric defaults and charts are illustrative.
 
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `false` | Show the heading; false hides it without moving the cards. Title text remains available in both states. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+
 ## Typed content slots
 
 Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,
@@ -38,10 +46,11 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/2`, `image/2`, `graphic/2` | `graphic-1` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/1`, `image/1`, `graphic/1` | `graphic-2` | Card panel and shadow stay in place; only the inner content changes. |
-| `text/2` | `title` | Main text |
-| `text/1` | `text-2` | Editable text |
+| `text/1` | `title` | Main text |
+| `text/2` | `caption-one` | First caption |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-one` | Replaces this complete graphic; other elements stay fixed. |
+| `text/3` | `caption-two` | Second caption |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-two` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -60,8 +69,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Item 2},
-  text/1={Item 1}
+  text/1={Slide title},
+  text/2={Item 1}
 ]{two-cards}
 ```
 
@@ -77,8 +86,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Item 2},
-  text/1={Item 1}
+  text/1={Slide title},
+  text/2={Item 1}
 ]{two-cards}
 \end{document}
 ```
@@ -98,10 +107,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0070-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0070-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 10.7% wide × 5.0% high | <code>Item 2</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 8.3% wide × 5.6% high | <code>Item 1</code> |
+| <code>title</code> | Main text (text) | upper centre | 73.1% wide × 15.0% high | <code>Slide title</code> |
+| <code>caption-one</code> | First caption (text) | middle centre | 18.6% wide × 9.5% high | <code>Item 1</code> |
+| <code>graphic-one</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-2-one}</code> |
+| <code>caption-two</code> | Second caption (text) | middle centre | 18.6% wide × 9.5% high | <code>Item 2</code> |
+| <code>graphic-two</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-2-two}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

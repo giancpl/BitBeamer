@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `three-step-process` · Family: Cards · Status: **in review**.
+Model: `three-step-process` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/three-step-process.tex)
 
@@ -105,9 +105,9 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0079-part-01.pdf}</code> |
 | <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0079-part-02.pdf}</code> |
 | <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0079-part-03.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 16.5% wide × 5.0% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 15.6% wide × 5.6% high | <code>Label 3</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 16.7% wide × 5.0% high | <code>Label 1</code> |
+| <code>title</code> | Main text (text) | middle centre | 19.7% wide × 10.2% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | middle right | 19.7% wide × 10.2% high | <code>Label 3</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 19.7% wide × 10.2% high | <code>Label 1</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

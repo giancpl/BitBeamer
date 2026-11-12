@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="129.0" height="145.0" viewBox="2973.0 998.0 129.0 145.0"><defs><filter id="filter1_dii_2521_1444" x="2794" y="853" width="488" height="489" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="27" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2521_1444" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2521_1444" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-18" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_2521_1444" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="14" />
+<feGaussianBlur stdDeviation="9.5" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_2521_1444" result="effect3_innerShadow_2521_1444" />
+</filter>
+</defs><path d="M3005.25 998H3069.75V1014.11H3021.38V1030.22H3005.25V1110.78H3021.38V1126.89H3069.75V1143H3005.25V1126.89H2989.12V1110.78H2973V1030.22H2989.12V1014.11H3005.25V998ZM3085.88 1110.78H3069.75V1126.89H3085.88V1110.78ZM3085.88 1110.78H3102V1030.22H3085.88V1014.11H3069.75V1030.22H3085.88V1110.78ZM3053.62 1030.22H3037.5V1110.78H3053.62V1030.22Z" fill-rule="evenodd" clip-rule="evenodd" fill="#001CE0" />
+</svg>

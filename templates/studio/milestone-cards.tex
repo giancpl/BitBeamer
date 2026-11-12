@@ -11,16 +11,33 @@
 \studiodeclarefield{text-5}{Label 5}
 \studiodeclarefield{title}{Title}
 \studioapplyfields
+% Original badge labels share a visual centre near source y=864.
+% Centre the measured text block, rather than aligning its first line.
+\def\studiobadgecaption#1#2{%
+ \ifstudiogeometryonly\else
+ \typeout{STUDIO-FIELD: \studiopilotname/#1}%
+ \node[anchor=west] at (#2,872) {\setbox\studiotextbox=\vbox{%
+  \hsize=590\studiounit\parindent=0pt
+  \hfuzz=\dimexpr\paperheight/400\relax\overfullrule=2pt\raggedright
+  \normalfont\sffamily\fontsize{72\studiounit}{84\studiounit}\selectfont
+  \color{studio-foreground}\bfseries\noindent\strut\studiofield{#1}\strut\par}%
+  \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>270\studiounit
+   \ifstudioreviewdiagnostics\PackageWarning{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}%
+   \else\PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}{Shorten the text. The badge layout does not shrink fonts.}\fi
+  \fi
+  \box\studiotextbox};%
+ \fi
+}
 \studiomeasuredcanvas{3556}{2000}{milestone-cards}{studio-background}{
 \studiographfield{graphic-1}{60}{0}{693}{1391}{}{}
 \studiographfield{graphic-2}{758}{0}{693}{1391}{}{}
 \studiographfield{graphic-3}{1456}{0}{693}{1391}{}{}
 \studiographfield{graphic-4}{2154}{0}{693}{1391}{}{}
 \studiographfield{graphic-5}{2852}{0}{693}{1391}{}{}
-\studiomeasuredtext{text-1}{110.277}{801.016}{465.443}{165.447}{69.648}{80.7917}{\color{studio-foreground}\bfseries}{\studiofield{text-1}}
-\studiomeasuredtext{text-2}{806.504}{764.016}{422.446}{240.005}{70.6613}{81.9671}{\color{studio-foreground}\bfseries}{\studiofield{text-2}}
-\studiomeasuredtext{text-3}{1506.28}{836.531}{344.731}{94.2587}{72.0613}{83.5911}{\color{studio-foreground}\bfseries}{\studiofield{text-3}}
-\studiomeasuredtext{text-4}{2204.28}{836.531}{506.828}{94.2587}{72.0613}{83.5911}{\color{studio-foreground}\bfseries}{\studiofield{text-4}}
-\studiomeasuredtext{text-5}{2902.28}{837.109}{427.66}{106.204}{72.0613}{83.5911}{\color{studio-foreground}\bfseries}{\studiofield{text-5}}
-\studiomeasuredtext{title}{1550.44}{1603.05}{532.297}{150.183}{112.733}{130.771}{\color{studio-foreground}\bfseries}{\studiofield{title}}
+\studiobadgecaption{text-1}{110.277}
+\studiobadgecaption{text-2}{806.504}
+\studiobadgecaption{text-3}{1506.281}
+\studiobadgecaption{text-4}{2204.281}
+\studiobadgecaption{text-5}{2902.281}
+\studiomeasuredtext{title}{479.95}{1592}{2600}{280}{112.733}{130.771}{\color{studio-foreground}\bfseries\centering}{\strut\studiofield{title}}
 }

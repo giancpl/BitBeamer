@@ -98,7 +98,8 @@ class SlideGuideTests(unittest.TestCase):
         self.assertTrue(all(c['preview']['available'] for row in rows for c in row['choices']))
         pair=next(c for row in rows for c in row['choices'] if c['id']=='two-cards')
         graphics=[f for f in pair['fields'] if f['type']=='graphic']
-        self.assertTrue(all(f['box'][2:]==[260.0,260.0] for f in graphics))
+        self.assertEqual(len(graphics), 2)
+        self.assertTrue(all(f['box'][2:]==[216.0,216.0] for f in graphics))
 
     def test_sequence_retains_order_and_independent_primary_commands(self):
         choices={choice['id']:choice for row in slide_guide.catalogue(ROOT)['rows'] for choice in row['choices']}

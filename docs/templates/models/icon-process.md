@@ -23,9 +23,9 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Label 1</code> | 16.7% wide × 5.0% high |
-| `title` | <code>Slide title</code> | 16.5% wide × 5.0% high |
-| `label-three` | <code>Label 3</code> | 15.6% wide × 5.6% high |
+| `caption-one` | <code>Label 1</code> | 19.7% wide × 10.2% high |
+| `caption-two` | <code>Slide title</code> | 19.7% wide × 10.2% high |
+| `caption-three` | <code>Label 3</code> | 19.7% wide × 10.2% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -39,11 +39,11 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `title` | <code>Slide title</code> | 25.5% wide × 7.8% high |
-| `label-two` | <code>Label 2</code> | 18.1% wide × 10.3% high |
-| `label-three` | <code>Label 3</code> | 15.8% wide × 10.3% high |
-| `label-four` | <code>Label 4</code> | 14.5% wide × 10.3% high |
-| `label-five` | <code>Label 5</code> | 16.3% wide × 10.4% high |
+| `title` | <code>Slide title</code> | 73.1% wide × 13.0% high |
+| `caption-one` | <code>Label 2</code> | 19.7% wide × 10.2% high |
+| `caption-two` | <code>Label 3</code> | 19.7% wide × 10.2% high |
+| `caption-three` | <code>Label 4</code> | 19.7% wide × 10.2% high |
+| `caption-four` | <code>Label 5</code> | 19.7% wide × 10.2% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -57,27 +57,8 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Item</code> | 7.7% wide × 4.9% high |
-| `title` | <code>Title</code> | 12.5% wide × 5.6% high |
-
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
-### milestones
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/milestone-cards.tex) · [Full slot guide](../guides/milestone-cards.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `label-one` | <code>Label 1</code> | 13.1% wide × 8.3% high |
-| `label-two` | <code>Label 2</code> | 11.9% wide × 12.0% high |
-| `label-three` | <code>Item</code> | 9.7% wide × 4.7% high |
-| `label-four` | <code>Label 4</code> | 14.3% wide × 4.7% high |
-| `label-five` | <code>Label 5</code> | 12.0% wide × 5.3% high |
-| `title` | <code>Title</code> | 15.0% wide × 7.5% high |
+| `caption-one` | <code>Item</code> | 18.6% wide × 10.2% high |
+| `caption-two` | <code>Title</code> | 18.6% wide × 10.2% high |
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -95,8 +76,8 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
 \studiotemplate[
   variant={three},
   palette={light},
-  label-one={Label 1},
-  title={Slide title}
+  caption-one={Label 1},
+  caption-two={Slide title}
 ]{icon-process}
 \end{document}
 ```

@@ -1,0 +1,365 @@
+% Editable soft-card icons: originals, named icons, wide/tall custom graphics, images, empty values and long copy.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.},
+    icon={book}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.},
+    icon={bitcoin}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.},
+    graphic={\rule{4cm}{0.5cm}}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.},
+    graphic={\rule{4cm}{0.5cm}}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.},
+    graphic={\rule{0.5cm}{4cm}}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.},
+    graphic={\rule{0.5cm}{4cm}}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.},
+    image={assets/generated/book.pdf}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.},
+    image={assets/generated/bitcoin.pdf}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.},
+    icon={}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.},
+    icon={}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  show-icons={false},
+  title={Scaling a protocol},
+  introduction={Layered designs separate responsibilities.\\Compare the role of each layer.\\Discuss the practical trade-offs.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections and greater\\amounts of information.\\Compare the available\\processing resources.},
+    icon={book}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Compare ways to process\\more transactions while\\preserving independent\\verification and the\\shared public rules.},
+    icon={bitcoin}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Shared rules},
+  introduction={Compare the responsibilities\\of each layer and explain\\how the components work\\together in practice.},
+  card-one={
+    title={Research},
+    body={Verify each update. Compare the public rules. Keep the evidence available.},
+    icon={book}
+  },
+  card-two={
+    title={Research},
+    body={Verify each update. Compare the public rules. Keep the evidence available. Discuss the result with others.},
+    icon={bitcoin}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={two-icon-stacked},
+  title={Shared rules},
+  introduction={Compare the responsibilities\\of each layer and explain\\how the components work\\together in practice.},
+  card-one={
+    title={Research},
+    body={Verify each update.\\Compare the public\\rules. Keep the\\evidence available.},
+    icon={book}
+  },
+  card-two={
+    title={Research},
+    body={Verify each update.\\Compare the public rules.\\Keep the evidence\\available. Discuss the\\result with others.},
+    icon={bitcoin}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Incentives},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Incentives},
+  title-icon={book},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Incentives},
+  title-graphic={\rule{4cm}{0.5cm}},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Incentives},
+  title-graphic={\rule{0.5cm}{4cm}},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Incentives},
+  title-image={assets/generated/book.pdf},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Incentives},
+  title-icon={},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  show-icons={false},
+  title={Incentives},
+  title-icon={book},
+  card-one={
+    title={Miner},
+    body={Block rewards.\\Transaction fees.}
+  },
+  card-two={
+    title={Merchant / User},
+    body={Open participation.\\Independent payments.}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={Verify transactions independently.\\Keep a local copy of the record.\\Check the shared rules.}
+  },
+  card-four={
+    title={Developer},
+    body={Build tools on an open protocol.}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Understand the long-term trade-offs.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Verify},
+  title-icon={book},
+  card-one={
+    title={Independent checks},
+    body={Verify each update. Compare the public rules.}
+  },
+  card-two={
+    title={Independent checks},
+    body={Verify each update. Compare the public rules.}
+  },
+  card-three={
+    title={Independent checks},
+    body={Verify each update. Compare the public rules. Keep the evidence available. Discuss the result with others.}
+  },
+  card-four={
+    title={Independent checks},
+    body={Verify each update.}
+  },
+  card-five={
+    title={Independent checks},
+    body={Verify each update.}
+  }
+]{text-cards}
+\studiotemplate[
+  variant={five},
+  title={Verify},
+  title-icon={book},
+  card-one={
+    title={Independent checks},
+    body={Verify each update. Compare the\\public rules.}
+  },
+  card-two={
+    title={Independent checks},
+    body={Verify each update. Compare the\\public rules.}
+  },
+  card-three={
+    title={Independent checks},
+    body={Verify each update. Compare the\\public rules. Keep the evidence\\available. Discuss the result\\with others.}
+  },
+  card-four={
+    title={Independent checks},
+    body={Verify each update.}
+  },
+  card-five={
+    title={Independent checks},
+    body={Verify each update.}
+  }
+]{text-cards}
+\end{document}

@@ -1,0 +1,27 @@
+% Shared icon-card row. Wrappers supply fixed, source-measured geometry.
+% Both title states preserve the card row's position.
+% Captions start 76 units below the solid panel, excluding shadow padding.
+\def\studioiconcaptiongap{76}
+\pgfmathsetmacro{\studioiconcaptiony}{\studioicony+200+\studioiconcaptiongap}
+\def\studioiconshowtitle{\studioicondefaulttitle}
+\pgfkeys{/studio fields/show-title/.is choice,
+ /studio fields/show-title/true/.code=\def\studioiconshowtitle{true},
+ /studio fields/show-title/false/.code=\def\studioiconshowtitle{false}}
+\studioapplyfields
+\studiomeasuredcanvas{3556}{2000}{\studiocurrenttemplate}{studio-background}{
+\def\studioicontrue{true}
+\edef\studioiconshowtitle{\studioiconshowtitle}
+\ifx\studioiconshowtitle\studioicontrue
+ \studiomeasuredtext{title}{478}{326}{2600}{300}{120}{140}{\centering\bfseries}{\studiofield{title}}
+\fi
+\foreach \studioiconword/\studioiconx in \studioiconpositions {
+ \pgfmathsetmacro{\studioiconleft}{\studioiconx-244}
+ \pgfmathsetmacro{\studioicontop}{\studioicony-218}
+ \studiomeasuredpart{card-1}{\studioiconleft}{\studioicontop}{488}
+ \pgfmathsetmacro{\studioiconleft}{\studioiconx-108}
+ \pgfmathsetmacro{\studioicontop}{\studioicony-108}
+ \studiographfield{graphic-\studioiconword}{\studioiconleft}{\studioicontop}{216}{216}{}{}
+ \pgfmathsetmacro{\studioiconleft}{\studioiconx-\studioiconcaptionwidth/2}
+ \studiomeasuredtext{caption-\studioiconword}{\studioiconleft}{\studioiconcaptiony}{\studioiconcaptionwidth}{\studioiconcaptionheight}{\studioiconcaptionsize}{\studioiconcaptionleading}{\centering\bfseries}{\strut\studiofield{caption-\studioiconword}}
+}
+}

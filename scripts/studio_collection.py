@@ -23,13 +23,16 @@ def prepare(root=ROOT,check=False,converter='auto'):
             elif '<filter ' in source.read_text(encoding='utf-8') and converter!='inkscape':
                 # Preserve compound filter appearance at the original source resolution.
                 cairo,Rsvg=rsvg_modules();handle=Rsvg.Handle.new_from_file(str(source))
-                w,h=part['render_box'][2:];surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w),round(h));context=cairo.Context(surface)
+                w,h=part['render_box'][2:];scale=part.get('render_scale',1)
+                surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w*scale),round(h*scale));context=cairo.Context(surface);context.scale(scale,scale)
+                if part.get('paper_background')=='F9F9F9':
+                    context.set_source_rgb(249/255,249/255,249/255);context.paint()
                 # Preserve transparent padding so the crop cannot hide adjacent text.
                 viewport=Rsvg.Rectangle();viewport.x=viewport.y=0;viewport.width=w;viewport.height=h;handle.render_document(context,viewport)
                 with cairo.PDFSurface(str(target),w,h) as pdf:
                     pdf.restrict_to_version(cairo.PDF_VERSION_1_5)
-                    context=cairo.Context(pdf);context.set_source_surface(surface);context.paint()
-                part['effect_fallback']='Original-source-resolution compound filter with transparent padding. Main text remains editable.'
+                    context=cairo.Context(pdf);context.scale(1/scale,1/scale);context.set_source_surface(surface);context.paint()
+                part['effect_fallback']=('Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.' if part.get('paper_background')=='F9F9F9' else 'Original-source-resolution compound filter with transparent padding. Main text remains editable.')
             else:render_svg(source,target,converter,crop=False)
             part['source_sha256']=digest(source);part['pdf_sha256']=digest(target)
         if not check and i%40==0:print('Prepared',i,'/',len(parts),flush=True)

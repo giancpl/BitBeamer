@@ -5,15 +5,19 @@
 \studiodeclarefield{title}{Slide title}
 \studiodeclarefield{text-2}{Label 3}
 \studiodeclarefield{text-3}{Label 1}
+\pgfkeysgetvalue{/studio values/graphic-1}{\studioprocessbookdefault}
 \studioapplyfields
+\pgfkeysgetvalue{/studio values/graphic-1}{\studioprocessbookcurrent}
 \studiomeasuredcanvas{3556}{2000}{three-step-process}{studio-background}{
 \studiographfield{graphic-1}{1543}{706}{488}{489}{}{}
 \studiographfield{graphic-2}{2488}{706}{488}{489}{}{}
-\studiomeasuredtext{title}{1518.22}{1199.43}{586.416}{100.951}{77.6533}{90.0779}{\color{studio-foreground}\bfseries}{\studiofield{title}}
-\studiomeasuredtext{text-2}{2481.8}{1200.37}{554.447}{112.01}{76.24}{88.4384}{\color{studio-foreground}\bfseries}{\studiofield{text-2}}
+\studiomeasuredtext{title}{1437.0}{1200}{700}{205}{76}{88}{\color{studio-foreground}\bfseries\centering}{\strut\studiofield{title}}
+\studiomeasuredtext{text-2}{2382.0}{1200}{700}{205}{76}{88}{\color{studio-foreground}\bfseries\centering}{\strut\studiofield{text-2}}
 \path[fill=studio-foreground,draw=none,line width=1\studiounit] (1362,984)--(1362,976.5)--(1199.5,976.5)--(1199.5,984)--(1199.5,991.5)--(1362,991.5)--(1362,984)--cycle (1429.5,984)--(1354.5,940.699)--(1354.5,1027.3)--(1429.5,984)--cycle;
 \path[fill=studio-foreground,draw=none,line width=1\studiounit] (2307,984)--(2307,976.5)--(2144.5,976.5)--(2144.5,984)--(2144.5,991.5)--(2307,991.5)--(2307,984)--cycle (2374.5,984)--(2299.5,940.699)--(2299.5,1027.3)--(2374.5,984)--cycle;
 \studiographfield{graphic-3}{598}{706}{488}{489}{}{}
-\studiomeasuredtext{text-3}{571.328}{1199.43}{594.048}{100.174}{76.24}{88.4384}{\color{studio-foreground}\bfseries}{\studiofield{text-3}}
+\studiomeasuredtext{text-3}{492.5}{1200}{700}{205}{76}{88}{\color{studio-foreground}\bfseries\centering}{\strut\studiofield{text-3}}
+\ifx\studioprocessbookdefault\studioprocessbookcurrent
 \path[fill=studio-foreground,draw=none,line width=1\studiounit,rounded corners=0\studiounit] (1763.82,868) rectangle (1842.82,989);
+\fi
 }

@@ -667,7 +667,7 @@
     },
     {
       "id": "list-rail",
-      "title": "List beside a rail",
+      "title": "Bullet lists and vertical rails",
       "category": "Lists",
       "default_variant": "three-items",
       "variants": [
@@ -679,7 +679,8 @@
               "id": "list-rail-light",
               "native_palette": "light",
               "palettes": [
-                "light"
+                "light",
+                "blue"
               ],
               "fields": {
                 "title": "title",
@@ -687,7 +688,14 @@
                 "item-two": "text-3",
                 "item-three": "text-4"
               },
-              "rejected_semantic_fields": []
+              "rejected_semantic_fields": [],
+              "example_fields": [
+                "title",
+                "item-one",
+                "item-two",
+                "item-three"
+              ],
+              "palette_mode": "semantic"
             }
           ]
         },
@@ -699,6 +707,7 @@
               "id": "list-rail-blue",
               "native_palette": "blue",
               "palettes": [
+                "light",
                 "blue"
               ],
               "fields": {
@@ -708,7 +717,46 @@
                 "item-three": "item-3",
                 "item-four": "item-4"
               },
-              "rejected_semantic_fields": []
+              "rejected_semantic_fields": [],
+              "example_fields": [
+                "title",
+                "item-one",
+                "item-two",
+                "item-three",
+                "item-four"
+              ],
+              "palette_mode": "semantic"
+            }
+          ]
+        },
+        {
+          "id": "five-items",
+          "default_source": "list-rail-five",
+          "compositions": [
+            {
+              "id": "list-rail-five",
+              "native_palette": "light",
+              "palettes": [
+                "light",
+                "blue"
+              ],
+              "palette_mode": "semantic",
+              "fields": {
+                "title": "title",
+                "item-one": "item-1",
+                "item-two": "item-2",
+                "item-three": "item-3",
+                "item-four": "item-4",
+                "item-five": "item-5"
+              },
+              "example_fields": [
+                "title",
+                "item-one",
+                "item-two",
+                "item-three",
+                "item-four",
+                "item-five"
+              ]
             }
           ]
         },
@@ -723,35 +771,95 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-2",
-                "label-two": "text-3",
-                "label-three": "text-4",
-                "label-four": "text-1",
-                "title": "title",
-                "label-six": "text-6",
-                "label-seven": "text-7"
-              }
+                "title": "text-1",
+                "group-one-title": "text-2",
+                "group-two-title": "title",
+                "item-one": "text-3",
+                "item-two": "text-4",
+                "item-three": "text-6",
+                "item-four": "text-7"
+              },
+              "rejected_semantic_fields": [
+                "label-four",
+                "label-one",
+                "label-seven",
+                "label-six",
+                "label-three",
+                "label-two"
+              ],
+              "example_fields": [
+                "title",
+                "group-one-title",
+                "group-two-title",
+                "item-one",
+                "item-two",
+                "item-three",
+                "item-four"
+              ]
             }
           ]
         },
         {
-          "id": "stepped",
-          "default_source": "stepped-rail-blue",
+          "id": "detailed",
+          "default_source": "checklist-rail",
           "compositions": [
             {
-              "id": "stepped-rail-blue",
+              "id": "checklist-rail",
               "native_palette": "blue",
               "palettes": [
                 "blue"
               ],
               "fields": {
-                "label-one": "text-3",
                 "title": "title",
-                "label-three": "item-5-1",
-                "label-four": "item-5-2",
-                "label-five": "text-2",
-                "label-six": "text-4"
-              }
+                "item-one": "text-2",
+                "item-two": "text-3",
+                "item-three": "text-4",
+                "item-four": "text-5"
+              },
+              "rejected_semantic_fields": [
+                "label-five",
+                "label-four",
+                "label-one",
+                "label-two"
+              ],
+              "example_fields": [
+                "title",
+                "item-one",
+                "item-two",
+                "item-three",
+                "item-four"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "illustrated",
+          "default_source": "icon-rail",
+          "compositions": [
+            {
+              "id": "icon-rail",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "text-4",
+                "illustration": "graphic-1",
+                "item-one": "text-3",
+                "item-two": "title",
+                "item-three": "text-1"
+              },
+              "rejected_semantic_fields": [
+                "label-four",
+                "label-one",
+                "label-three"
+              ],
+              "example_fields": [
+                "title",
+                "item-one",
+                "item-two",
+                "item-three"
+              ]
             }
           ]
         }
@@ -781,63 +889,6 @@
                 "label-five": "text-5",
                 "label-six": "text-3",
                 "label-seven": "text-6"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "checklist-rail",
-      "title": "Practical checklist",
-      "category": "Lists",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "checklist-rail",
-          "compositions": [
-            {
-              "id": "checklist-rail",
-              "native_palette": "blue",
-              "palettes": [
-                "blue"
-              ],
-              "fields": {
-                "label-one": "text-2",
-                "label-two": "text-3",
-                "title": "title",
-                "label-four": "text-4",
-                "label-five": "text-5"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "feature-spotlight",
-      "title": "Heading beside two feature panels",
-      "category": "Lists",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "feature-spotlight",
-          "compositions": [
-            {
-              "id": "feature-spotlight",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "label-one": "text-5",
-                "label-two": "text-6",
-                "title": "title",
-                "label-four": "text-2",
-                "label-five": "text-3",
-                "label-six": "text-4"
               }
             }
           ]
@@ -947,33 +998,6 @@
       ]
     },
     {
-      "id": "icon-rail",
-      "title": "Icon Rail",
-      "category": "Lists",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "icon-rail",
-          "compositions": [
-            {
-              "id": "icon-rail",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "label-one": "text-3",
-                "title": "title",
-                "label-three": "text-4",
-                "label-four": "text-1"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "icon-cards",
       "title": "Icon cards",
       "category": "Cards",
@@ -1009,17 +1033,44 @@
                 "light"
               ],
               "fields": {
-                "caption-one": "text-2",
-                "caption-two": "title"
-              },
-              "rejected_semantic_fields": [
-                "title"
-              ]
+                "title": "title",
+                "caption-one": "caption-one",
+                "caption-two": "caption-two"
+              }
             }
           ]
         },
         {
-          "id": "summary",
+          "id": "five",
+          "default_source": "five-icon-row",
+          "compositions": [
+            {
+              "id": "five-icon-row",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "caption-one": "caption-one",
+                "caption-two": "caption-two",
+                "caption-three": "caption-three",
+                "caption-four": "caption-four",
+                "caption-five": "caption-five"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "text-cards",
+      "title": "Soft text cards",
+      "category": "Cards",
+      "default_variant": "three-summary",
+      "variants": [
+        {
+          "id": "three-summary",
           "default_source": "three-card-summary",
           "compositions": [
             {
@@ -1030,19 +1081,38 @@
               ],
               "fields": {
                 "title": "title",
-                "caption-one": "text-2",
-                "body-one": "text-3",
-                "caption-two": "text-4",
-                "body-two": "text-5",
-                "caption-three": "text-6",
-                "body-three": "text-7"
-              },
-              "rejected_semantic_fields": []
+                "card-one/title": "text-2",
+                "card-one/body": "text-3",
+                "card-two/title": "text-4",
+                "card-two/body": "text-5",
+                "card-three/title": "text-6",
+                "card-three/body": "text-7"
+              }
             }
           ]
         },
         {
-          "id": "four-pillars",
+          "id": "two",
+          "default_source": "benefits-limits",
+          "compositions": [
+            {
+              "id": "benefits-limits",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "text-2",
+                "card-one/body": "text-3",
+                "card-two/title": "text-4",
+                "card-two/body": "text-5"
+              }
+            }
+          ]
+        },
+        {
+          "id": "four",
           "default_source": "four-pillar-cards",
           "compositions": [
             {
@@ -1053,21 +1123,44 @@
               ],
               "fields": {
                 "title": "title",
-                "caption-one": "text-2",
-                "body-one": "text-3",
-                "caption-two": "text-4",
-                "body-two": "text-5",
-                "caption-three": "text-6",
-                "body-three": "text-7",
-                "caption-four": "text-8",
-                "body-four": "text-9"
-              },
-              "rejected_semantic_fields": []
+                "card-one/title": "text-2",
+                "card-one/body": "text-3",
+                "card-two/title": "text-4",
+                "card-two/body": "text-5",
+                "card-three/title": "text-6",
+                "card-three/body": "text-7",
+                "card-four/title": "text-8",
+                "card-four/body": "text-9"
+              }
             }
           ]
         },
         {
-          "id": "two-vertical",
+          "id": "four-bullets",
+          "default_source": "four-card-grid",
+          "compositions": [
+            {
+              "id": "four-card-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "caption-one",
+                "card-one/body": "body-one",
+                "card-two/title": "caption-two",
+                "card-two/body": "body-two",
+                "card-three/title": "caption-three",
+                "card-three/body": "body-three",
+                "card-four/title": "caption-four",
+                "card-four/body": "body-four"
+              }
+            }
+          ]
+        },
+        {
+          "id": "two-stacked",
           "default_source": "two-card-vertical",
           "compositions": [
             {
@@ -1078,11 +1171,134 @@
               ],
               "fields": {
                 "title": "title",
-                "body": "text-4",
-                "caption-one": "text-1",
-                "caption-two": "text-2"
+                "card-one/title": "caption-one",
+                "card-one/body": "body-one",
+                "card-two/title": "caption-two",
+                "card-two/body": "body-two",
+                "introduction": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "two-icon-stacked",
+          "default_source": "feature-spotlight",
+          "compositions": [
+            {
+              "id": "feature-spotlight",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "text-6",
+                "card-one/body": "text-5",
+                "card-two/title": "text-4",
+                "card-two/body": "text-3",
+                "introduction": "text-2"
               },
-              "rejected_semantic_fields": []
+              "graphic_slots": {
+                "one": 3,
+                "two": 4
+              }
+            }
+          ]
+        },
+        {
+          "id": "five",
+          "default_source": "incentives-card-grid",
+          "compositions": [
+            {
+              "id": "incentives-card-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "text-3",
+                "card-one/body": "text-2",
+                "card-two/title": "text-9",
+                "card-two/body": "text-8",
+                "card-three/title": "text-11",
+                "card-three/body": "text-10",
+                "card-four/title": "text-5",
+                "card-four/body": "text-4",
+                "card-five/title": "text-7",
+                "card-five/body": "text-6"
+              },
+              "title_graphic_slot": 1
+            }
+          ]
+        },
+        {
+          "id": "four-network",
+          "default_source": "network-environments",
+          "compositions": [
+            {
+              "id": "network-environments",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "text-2",
+                "card-one/body": "text-3",
+                "card-two/title": "text-4",
+                "card-two/body": "text-5",
+                "card-three/title": "text-6",
+                "card-three/body": "text-7",
+                "card-four/title": "text-8",
+                "card-four/body": "text-9"
+              }
+            }
+          ]
+        },
+        {
+          "id": "four-nodes",
+          "default_source": "node-type-grid",
+          "compositions": [
+            {
+              "id": "node-type-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "text-7",
+                "card-one/body": "text-8",
+                "card-two/title": "text-5",
+                "card-two/body": "text-6",
+                "card-three/title": "text-1",
+                "card-three/body": "text-2",
+                "card-four/title": "text-3",
+                "card-four/body": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "three-asymmetric",
+          "default_source": "mining-card-grid",
+          "compositions": [
+            {
+              "id": "mining-card-grid",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "card-one/title": "text-3",
+                "card-one/body": "text-2",
+                "card-two/title": "text-7",
+                "card-two/body": "text-6",
+                "card-three/title": "text-5",
+                "card-three/body": "text-4"
+              }
             }
           ]
         }
@@ -1105,10 +1321,13 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-3",
-                "title": "title",
-                "label-three": "text-2"
-              }
+                "caption-one": "text-3",
+                "caption-two": "title",
+                "caption-three": "text-2"
+              },
+              "rejected_semantic_fields": [
+                "title"
+              ]
             }
           ]
         },
@@ -1124,10 +1343,10 @@
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-3",
-                "label-four": "text-5",
-                "label-five": "text-4"
+                "caption-one": "text-2",
+                "caption-two": "text-3",
+                "caption-three": "text-5",
+                "caption-four": "text-4"
               }
             }
           ]
@@ -1143,14 +1362,25 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-2",
-                "title": "title"
-              }
+                "caption-one": "text-2",
+                "caption-two": "title"
+              },
+              "rejected_semantic_fields": [
+                "title"
+              ]
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "milestone-badges",
+      "title": "Hanging milestone badges",
+      "category": "Cards",
+      "default_variant": "five",
+      "variants": [
         {
-          "id": "milestones",
+          "id": "five",
           "default_source": "milestone-cards",
           "compositions": [
             {
@@ -1160,110 +1390,12 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-1",
-                "label-two": "text-2",
-                "label-three": "text-3",
-                "label-four": "text-4",
-                "label-five": "text-5",
-                "title": "title"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "text-cards",
-      "title": "Text cards",
-      "category": "Cards",
-      "default_variant": "four",
-      "variants": [
-        {
-          "id": "four",
-          "default_source": "four-card-grid",
-          "compositions": [
-            {
-              "id": "four-card-grid",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
                 "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-4",
-                "label-four": "item-3-1",
-                "label-five": "text-5",
-                "label-six": "item-3-2"
-              }
-            }
-          ]
-        },
-        {
-          "id": "callout",
-          "default_source": "callout-explanation",
-          "compositions": [
-            {
-              "id": "callout-explanation",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "item-2-1",
-                "label-three": "text-3",
-                "label-four": "item-2-2",
-                "label-five": "item-2-3",
-                "label-six": "item-2-4",
-                "label-seven": "item-2-5",
-                "label-eight": "item-2-6",
-                "label-nine": "item-2-7",
-                "result": "result"
-              }
-            }
-          ]
-        },
-        {
-          "id": "six-outline",
-          "default_source": "six-outline-cards",
-          "compositions": [
-            {
-              "id": "six-outline-cards",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-5",
-                "label-three": "text-2",
-                "label-four": "text-6",
-                "label-five": "text-3",
-                "label-six": "text-7",
-                "label-seven": "text-4"
-              }
-            }
-          ]
-        },
-        {
-          "id": "six-detailed",
-          "default_source": "six-explanation-cards",
-          "compositions": [
-            {
-              "id": "six-explanation-cards",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-5",
-                "label-three": "text-2",
-                "label-four": "text-6",
-                "label-five": "text-3",
-                "label-six": "text-4",
-                "label-seven": "text-7"
+                "badge-one": "text-1",
+                "badge-two": "text-2",
+                "badge-three": "text-3",
+                "badge-four": "text-4",
+                "badge-five": "text-5"
               }
             }
           ]
@@ -1338,27 +1470,6 @@
           ]
         },
         {
-          "id": "row",
-          "default_source": "five-icon-row",
-          "compositions": [
-            {
-              "id": "five-icon-row",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-6",
-                "label-three": "text-3",
-                "label-four": "text-5",
-                "label-five": "text-4",
-                "label-six": "text-2"
-              }
-            }
-          ]
-        },
-        {
           "id": "four",
           "default_source": "square-icon-grid",
           "compositions": [
@@ -1426,104 +1537,6 @@
                 "label-five": "text-2",
                 "label-six": "text-5",
                 "label-seven": "text-6"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "incentives-card-grid",
-      "title": "Incentives Card Grid",
-      "category": "Cards",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "incentives-card-grid",
-          "compositions": [
-            {
-              "id": "incentives-card-grid",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-3",
-                "label-three": "text-9",
-                "label-four": "text-2",
-                "label-five": "text-8",
-                "label-six": "text-11",
-                "label-seven": "text-5",
-                "label-eight": "text-4",
-                "label-nine": "text-10",
-                "label-ten": "text-7",
-                "label-eleven": "text-6"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "network-environments",
-      "title": "Three environments",
-      "category": "Cards",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "network-environments",
-          "compositions": [
-            {
-              "id": "network-environments",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-4",
-                "label-four": "text-3",
-                "label-five": "text-5",
-                "label-six": "text-6",
-                "label-seven": "text-8",
-                "label-eight": "text-7",
-                "label-nine": "text-9"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "node-type-grid",
-      "title": "Three node types",
-      "category": "Cards",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "node-type-grid",
-          "compositions": [
-            {
-              "id": "node-type-grid",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-7",
-                "label-three": "text-5",
-                "label-four": "text-8",
-                "label-five": "text-6",
-                "label-six": "text-1",
-                "label-seven": "text-3",
-                "label-eight": "text-2",
-                "label-nine": "text-4"
               }
             }
           ]
@@ -1620,34 +1633,6 @@
                 "label-four": "text-5",
                 "label-five": "text-6",
                 "label-six": "text-7"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "benefits-limits",
-      "title": "Benefits and responsibilities",
-      "category": "Comparisons",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "benefits-limits",
-          "compositions": [
-            {
-              "id": "benefits-limits",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-4",
-                "label-four": "text-3",
-                "label-five": "text-5"
               }
             }
           ]
@@ -4821,36 +4806,6 @@
       ]
     },
     {
-      "id": "mining-card-grid",
-      "title": "Processing cards",
-      "category": "Technical",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "mining-card-grid",
-          "compositions": [
-            {
-              "id": "mining-card-grid",
-              "native_palette": "light",
-              "palettes": [
-                "light"
-              ],
-              "fields": {
-                "title": "title",
-                "label-two": "text-3",
-                "label-three": "text-7",
-                "label-four": "text-2",
-                "label-five": "text-6",
-                "label-six": "text-5",
-                "label-seven": "text-4"
-              }
-            }
-          ]
-        }
-      ]
-    },
-    {
       "id": "contact",
       "title": "Contact and next steps",
       "category": "Closing",
@@ -4944,6 +4899,83 @@
                 "title": "title",
                 "subtitle": "subtitle",
                 "copyright": "text-1"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "outlined-cards",
+      "title": "Outlined text cards",
+      "category": "Cards",
+      "default_variant": "callout",
+      "variants": [
+        {
+          "id": "callout",
+          "default_source": "callout-explanation",
+          "compositions": [
+            {
+              "id": "callout-explanation",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "item-2-1",
+                "label-three": "text-3",
+                "label-four": "item-2-2",
+                "label-five": "item-2-3",
+                "label-six": "item-2-4",
+                "label-seven": "item-2-5",
+                "label-eight": "item-2-6",
+                "label-nine": "item-2-7",
+                "result": "result"
+              }
+            }
+          ]
+        },
+        {
+          "id": "six-outline",
+          "default_source": "six-outline-cards",
+          "compositions": [
+            {
+              "id": "six-outline-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-5",
+                "label-three": "text-2",
+                "label-four": "text-6",
+                "label-five": "text-3",
+                "label-six": "text-7",
+                "label-seven": "text-4"
+              }
+            }
+          ]
+        },
+        {
+          "id": "six-detailed",
+          "default_source": "six-explanation-cards",
+          "compositions": [
+            {
+              "id": "six-explanation-cards",
+              "native_palette": "light",
+              "palettes": [
+                "light"
+              ],
+              "fields": {
+                "title": "title",
+                "label-two": "text-5",
+                "label-three": "text-2",
+                "label-four": "text-6",
+                "label-five": "text-3",
+                "label-six": "text-4",
+                "label-seven": "text-7"
               }
             }
           ]

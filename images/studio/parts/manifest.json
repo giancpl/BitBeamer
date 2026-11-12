@@ -244,9 +244,10 @@
       "definition_ids": [
         "filter0_dii_3467_686"
       ],
-      "effect_fallback": "Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.",
-      "png_sha256": "62777aef8dc0188b7f1292bab2db883ee97fc61c04587a334384d3568996e14d",
-      "pdf_sha256": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471"
+      "rendering": "svg-pdf",
+      "renderer": "Original SVG source with unchanged geometry and filters; filtered panel rasterized internally, text and icons remain separate.",
+      "effect_fallback": "SVG filters evaluated directly at twice source resolution to avoid Cairo PDF mask seams; no extracted PNG input.",
+      "pdf_sha256": "a0c182c23d15894006e97e667a113858df445aa0b7fbc2535e770f0aee45655f"
     },
     {
       "name": "card-icon-1",
@@ -318,9 +319,10 @@
       "definition_ids": [
         "filter1_dii_3467_686"
       ],
-      "effect_fallback": "Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.",
-      "png_sha256": "62777aef8dc0188b7f1292bab2db883ee97fc61c04587a334384d3568996e14d",
-      "pdf_sha256": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471"
+      "rendering": "svg-pdf",
+      "renderer": "Original SVG source with unchanged geometry and filters; filtered panel rasterized internally, text and icons remain separate.",
+      "effect_fallback": "SVG filters evaluated directly at twice source resolution to avoid Cairo PDF mask seams; no extracted PNG input.",
+      "pdf_sha256": "6eb6bdc614130ecf583ac39e180cab5e04ea8b40a173a0a84c17fdeec69ca535"
     },
     {
       "name": "card-icon-2",
@@ -392,9 +394,10 @@
       "definition_ids": [
         "filter2_dii_3467_686"
       ],
-      "effect_fallback": "Panel filter only, original source resolution (~564 dpi), composited on the fixed paper background; icons and text remain vector.",
-      "png_sha256": "62777aef8dc0188b7f1292bab2db883ee97fc61c04587a334384d3568996e14d",
-      "pdf_sha256": "645a5dc2a394ef2d900f003d1e85aef180eaa24d0d5536e8bd7dcf2924a17471"
+      "rendering": "svg-pdf",
+      "renderer": "Original SVG source with unchanged geometry and filters; filtered panel rasterized internally, text and icons remain separate.",
+      "effect_fallback": "SVG filters evaluated directly at twice source resolution to avoid Cairo PDF mask seams; no extracted PNG input.",
+      "pdf_sha256": "573a0e146607cb3c0f38916d5f73a2b0aaf0a143b77c2a432f786337c7aae9e7"
     },
     {
       "name": "card-icon-3",
@@ -1021,6 +1024,244 @@
         "pattern6_4191_2"
       ],
       "pdf_sha256": "ceae27a309e1bbf350296de61b057adbf990cd75f1faec59a6327b7035c9c1bf"
+    },
+    {
+      "name": "row-icon-2-one",
+      "reference": "figma-0070",
+      "group": null,
+      "children": [],
+      "render_box": [
+        1211.0,
+        829.0,
+        190.0,
+        190.0
+      ],
+      "content_box": [
+        1211.0,
+        829.0,
+        190.0,
+        190.0
+      ],
+      "anchor": [
+        1211.0,
+        829.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-2-one.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-2-one.svg",
+      "source_sha256": "86a900b7a0f08b5064f9eaee4630ec1f4a6b4b6417831d203b1ce51f5c9d3e0b",
+      "reference_sha256": "e5836adf5f7d52bf545089df4e0f201303cc01b3a058a52b2bc4225812b4d83d",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "f0e30441ca1a02ce90d84f9275d8ef691c7b2d3d3705b2deefd2dcc59ca1eb16"
+    },
+    {
+      "name": "row-icon-2-two",
+      "reference": "figma-0070",
+      "group": null,
+      "children": [],
+      "render_box": [
+        2176.0,
+        818.0,
+        148.0,
+        212.0
+      ],
+      "content_box": [
+        2176.0,
+        818.0,
+        148.0,
+        212.0
+      ],
+      "anchor": [
+        2176.0,
+        818.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-2-two.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-2-two.svg",
+      "source_sha256": "9fd5a894450645b7ee02349f7c76a7b03298dba334a6c53f93c3313331e37546",
+      "reference_sha256": "e5836adf5f7d52bf545089df4e0f201303cc01b3a058a52b2bc4225812b4d83d",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "23e0d5fe7eece098d659a09b44e833eff4109839867893d6e2f3d5c235aa59d0"
+    },
+    {
+      "name": "row-icon-5-one",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        449.0,
+        964.0,
+        138.0,
+        217.0
+      ],
+      "content_box": [
+        449.0,
+        964.0,
+        138.0,
+        217.0
+      ],
+      "anchor": [
+        449.0,
+        964.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-one.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-5-one.svg",
+      "source_sha256": "eb93d797b187cc1e12e1ba2771b3b2b6a96e61e350c8a15d0d8fe28cc5e1d503",
+      "reference_sha256": "037ba82ed9aa105b472a9e108d543d23f5e33b2f4acec64b1ff48a83bb5471d7",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "b72f0c3a12ca0ec620d9df5cbf30a86cf5f7156a6c787bf1a3af60ec2fd16d40"
+    },
+    {
+      "name": "row-icon-5-two",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        1059.0,
+        982.0,
+        177.0,
+        177.0
+      ],
+      "content_box": [
+        1059.0,
+        982.0,
+        177.0,
+        177.0
+      ],
+      "anchor": [
+        1059.0,
+        982.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-two.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-5-two.svg",
+      "source_sha256": "7d8264123a9a8a6988c52504accdb486d9f82d0a0d8e61b95ccd4500d601efe8",
+      "reference_sha256": "037ba82ed9aa105b472a9e108d543d23f5e33b2f4acec64b1ff48a83bb5471d7",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "2e729f60f1a9943ef852cd259354574c23a89ebd65b5d81a9a328e38392686b9"
+    },
+    {
+      "name": "row-icon-5-three",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        1689.0,
+        982.0,
+        178.0,
+        177.0
+      ],
+      "content_box": [
+        1689.0,
+        982.0,
+        178.0,
+        177.0
+      ],
+      "anchor": [
+        1689.0,
+        982.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-three.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-5-three.svg",
+      "source_sha256": "4e4d2076c3cb65b04e48c1c6334682543b5fa752d3747bc3d6da8c881c715788",
+      "reference_sha256": "037ba82ed9aa105b472a9e108d543d23f5e33b2f4acec64b1ff48a83bb5471d7",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "b25b27786b108704e7975fee262b419231593f772d31e1efdc8b2a1b1e992142"
+    },
+    {
+      "name": "row-icon-5-four",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        2299.0,
+        962.0,
+        217.0,
+        217.0
+      ],
+      "content_box": [
+        2299.0,
+        962.0,
+        217.0,
+        217.0
+      ],
+      "anchor": [
+        2299.0,
+        962.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-four.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-5-four.svg",
+      "source_sha256": "b359ab0044e14aef13435f8877b58d62a223b3fed1ba3f6652b3bd74f1d8a48e",
+      "reference_sha256": "037ba82ed9aa105b472a9e108d543d23f5e33b2f4acec64b1ff48a83bb5471d7",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "8ab90632534eae181592661072e0c4c6ec0425a46075475ef53fcb841756e425"
+    },
+    {
+      "name": "row-icon-5-five",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        2973.0,
+        998.0,
+        129.0,
+        145.0
+      ],
+      "content_box": [
+        2973.0,
+        998.0,
+        129.0,
+        145.0
+      ],
+      "anchor": [
+        2973.0,
+        998.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-five.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters.",
+      "source": "images/studio/parts/source/row-icon-5-five.svg",
+      "source_sha256": "73681177279b789b78dcdedfea46d51964ee5e16edae59e8b70756d17c559c16",
+      "reference_sha256": "037ba82ed9aa105b472a9e108d543d23f5e33b2f4acec64b1ff48a83bb5471d7",
+      "canvas": [
+        3556,
+        2000
+      ],
+      "dependencies": [],
+      "definition_ids": [],
+      "pdf_sha256": "1d3777a2c76799deb64bab39d216671f94b358dcf9653530ae6656af7376e32e"
     }
   ]
 }

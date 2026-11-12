@@ -2,7 +2,211 @@
 \usetheme{bitpolito-studio}
 \usepackage{bitpolitostudiotemplates}
 \begin{document}
-\studiotemplate[variant=three-items,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies}]{list-rail}
-\studiotemplate[variant=three-items,title={Shared rules},item-one={Independent validation},item-two={Open rules},item-three={Shared verification}]{list-rail}
-\studiotemplate[variant=three-items,title={Shared\\rules},item-one={Independent validation},item-two={Open rules},item-three={Shared verification}]{list-rail}
+% Short: list-rail-light / light
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  variant={three-items},
+  palette={light}
+]{list-rail}
+% Short: list-rail-blue / light
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  variant={four-items},
+  palette={light}
+]{list-rail}
+% Short: list-rail-five / light
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  item-five={Repeat checks},
+  variant={five-items},
+  palette={light}
+]{list-rail}
+% Short: list-rail-light / blue
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  variant={three-items},
+  palette={blue}
+]{list-rail}
+% Short: list-rail-blue / blue
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  variant={four-items},
+  palette={blue}
+]{list-rail}
+% Short: list-rail-five / blue
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  item-five={Repeat checks},
+  variant={five-items},
+  palette={blue}
+]{list-rail}
+% Short: checklist-rail / native
+\studiotemplate[
+  title={Key ideas},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  variant={detailed}
+]{list-rail}
+% Short: grouped-rail / native
+\studiotemplate[
+  title={Key ideas},
+  group-one-title={First group},
+  group-two-title={Next group},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  variant={grouped}
+]{list-rail}
+% Short: icon-rail / native
+\studiotemplate[
+  title={Rules},
+  item-one={Verify},
+  item-two={Check},
+  item-three={Compare},
+  variant={illustrated}
+]{list-rail}
+% Longer automatic wrapping: list-rail-light / light
+\studiotemplate[
+  title={Shared rules},
+  item-one={Independent validation},
+  item-two={Open rules},
+  item-three={Shared verification},
+  variant={three-items},
+  palette={light}
+]{list-rail}
+% Longer automatic wrapping: list-rail-blue / light
+\studiotemplate[
+  title={Shared rules},
+  item-one={Independently verify each rule},
+  item-two={Check the accepted shared state},
+  item-three={Compare independent records},
+  item-four={Share the verified results},
+  variant={four-items},
+  palette={light}
+]{list-rail}
+% Longer automatic wrapping: list-rail-five / light
+\studiotemplate[
+  title={Shared rules},
+  item-one={Verify each update against the same public rules.},
+  item-two={Verify each update against the same public rules.},
+  item-three={Verify each update against the same public rules.},
+  item-four={Verify each update against the same public rules.},
+  item-five={Verify each update against the same public rules.},
+  variant={five-items},
+  palette={light}
+]{list-rail}
+% Longer automatic wrapping: list-rail-light / blue
+\studiotemplate[
+  title={Shared rules},
+  item-one={Independent validation},
+  item-two={Open rules},
+  item-three={Shared verification},
+  variant={three-items},
+  palette={blue}
+]{list-rail}
+% Longer automatic wrapping: list-rail-blue / blue
+\studiotemplate[
+  title={Shared rules},
+  item-one={Independently verify each rule},
+  item-two={Check the accepted shared state},
+  item-three={Compare independent records},
+  item-four={Share the verified results},
+  variant={four-items},
+  palette={blue}
+]{list-rail}
+% Longer automatic wrapping: list-rail-five / blue
+\studiotemplate[
+  title={Shared rules},
+  item-one={Verify each update against the same public rules.},
+  item-two={Verify each update against the same public rules.},
+  item-three={Verify each update against the same public rules.},
+  item-four={Verify each update against the same public rules.},
+  item-five={Verify each update against the same public rules.},
+  variant={five-items},
+  palette={blue}
+]{list-rail}
+% Longer automatic wrapping: checklist-rail / native
+\studiotemplate[
+  title={Shared rules},
+  item-one={Independent participants verify the common rules before accepting updates.},
+  item-two={Independent participants verify the common rules before accepting updates.},
+  item-three={Independent participants verify the common rules before accepting updates.},
+  item-four={Independent participants verify the common rules before accepting updates.},
+  variant={detailed}
+]{list-rail}
+% Longer automatic wrapping: grouped-rail / native
+\studiotemplate[
+  title={Our rules},
+  group-one-title={First group},
+  group-two-title={Next group},
+  item-one={Common rules},
+  item-two={Check the state},
+  item-three={Public checks},
+  item-four={Share the results},
+  variant={grouped}
+]{list-rail}
+% Longer automatic wrapping: icon-rail / native
+\studiotemplate[
+  title={Shared verification},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  variant={illustrated}
+]{list-rail}
+% Explicit supported wrapping: three-items
+\studiotemplate[
+  title={Shared\\rules},
+  item-one={Verify rules},
+  item-two={Check state},
+  item-three={Compare copies},
+  variant={three-items},
+  palette={light}
+]{list-rail}
+% Explicit supported wrapping: five-items
+\studiotemplate[
+  title={Shared\\rules},
+  item-one={Verify the common rules\\Check each accepted update.},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  item-five={Repeat checks},
+  variant={five-items},
+  palette={light}
+]{list-rail}
+% Explicit supported wrapping: detailed
+\studiotemplate[
+  title={Shared\\rules},
+  item-one={Verify the common rules\\Check each accepted update.},
+  item-two={Check state},
+  item-three={Compare copies},
+  item-four={Share results},
+  variant={detailed}
+]{list-rail}
+% Explicit two-line caption centred beneath the illustration.
+\studiotemplate[variant=illustrated,title={Shared\\rules},item-one={Verify rules},item-two={Check state},item-three={Compare copies}]{list-rail}
 \end{document}

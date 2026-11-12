@@ -72,25 +72,6 @@ Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (the
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
-### row
-
-Original palettes: light.
-
-[Current source](../../../templates/studio/five-icon-row.tex) · [Full slot guide](../guides/five-icon-row.md)
-
-| Field | Default | Available space |
-| --- | --- | --- |
-| `title` | <code>Title</code> | 15.1% wide × 8.6% high |
-| `label-two` | <code>Label 2</code> | 17.4% wide × 10.8% high |
-| `label-three` | <code>Label 3</code> | 17.4% wide × 10.8% high |
-| `label-four` | <code>Label 4</code> | 17.4% wide × 10.8% high |
-| `label-five` | <code>Label 5</code> | 17.4% wide × 10.8% high |
-| `label-six` | <code>Label 6</code> | 17.4% wide × 10.8% high |
-
-Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
-
-Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
-
 ### four
 
 Original palettes: light.

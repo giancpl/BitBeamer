@@ -79,19 +79,25 @@ icon keeps the panel and shadow.
 
 ```latex
 \studiotemplate[
-  text/1={People}, text/2={Bitcoin},
-  icon/1={alice}, icon/2={bitcoin}
-]{two-cards}
+  variant=two, show-title=false,
+  caption-one={People}, caption-two={Bitcoin},
+  icon-one={alice}, icon-two={bitcoin}
+]{icon-cards}
 
 \studiotemplate[image/1={assets/generated/cow.pdf}]{image-left}
 
-\studiotemplate[graphic/2={\cow}]{three-cards}
+\studiotemplate[variant=three,graphic-two={\cow}]{icon-cards}
 ```
 
 The slot supplies width, height, centre and padding. Graphics scale uniformly
 and keep their aspect ratio; no image is stretched. Separated icon-card slots
 retain their original rounded panel, shadow and content centre. Their safe
-inner area is 65% of the original square panel. Other graphic slots use their documented measured safe area and replace their
+inner area is normally 65% of the original square panel. The reviewed
+`icon-cards` variants `two`, `three` and `five` use the same 216 × 216 source-unit
+envelope (54% of a 400-unit panel). Use `icon-one={shield}`, `icon-two={key}`
+(and `icon-three` for three cards): each replacement is centred and fitted
+automatically, preserving aspect ratio. `image-one` and `graphic-one` use the
+same bounds; the rounded panel and its shadow remain fixed. Other graphic slots use their documented measured safe area and replace their
 complete graphic, as identified in the field guide.
 A slot can contain a whole diagram, screenshot, background or decoration; do not
 assume every graphic is an isolated icon.
@@ -110,13 +116,14 @@ The practical-checklist model has structured step blocks:
 
 ```latex
 \studiotemplate[
+  variant=detailed,
   clear=text,
   text/title={Your checklist},
   heading/1={Choose hardware},
   body/1={Use a device that meets your needs.},
   heading/2={Install software},
   body/2={Follow the official project instructions.}
-]{checklist-rail}
+]{list-rail}
 ```
 
 A heading/body pair shares the number of its text box; the slide title can appear

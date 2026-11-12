@@ -291,25 +291,29 @@
 ]{labelled-rows}
 \gdef\studiocataloguename{\detokenize{checklist-rail}}
 \studiotemplate[
-  variant={default},
+  variant={detailed},
   palette={blue},
   text/3={Installing\\RaspiBlitz},
   text/1={\textbf{Download the RaspiBlitz image}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont From the official GitHub repository or website.}},
   text/2={\textbf{Write the image to an SD card}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Use balenaEtcher to write it to a microSD card.}},
   text/4={\textbf{Configure the device}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Insert the SD card and SSD into the Raspberry Pi.}},
   text/5={\textbf{Start RaspiBlitz}\\{\fontsize{36\studiounit}{43\studiounit}\selectfont Connect network and power; use a monitor\\to follow the installation.}}
-]{checklist-rail}
+]{list-rail}
 \gdef\studiocataloguename{\detokenize{feature-spotlight}}
 \studiotemplate[
-  variant={default},
+  variant={two-icon-stacked},
   palette={light},
-  text/3={Scaling a protocol},
-  text/4={A system can handle more\\data or users without\\compromising performance\\or stability.},
-  text/5={Handle more transactions\\per second with lower\\fees, while preserving\\security and\\decentralization.},
-  text/6={Bitcoin},
-  text/1={Handle more simultaneous\\connections, increase\\data transmission speed\\or provide greater\\processing capacity.},
-  text/2={Internet}
-]{feature-spotlight}
+  title={Scaling a protocol},
+  introduction={A system can handle more\\data or users without\\compromising performance\\or stability.},
+  card-one={
+    title={Internet},
+    body={Handle more simultaneous\\connections, increase\\data transmission speed\\or provide greater\\processing capacity.}
+  },
+  card-two={
+    title={Bitcoin},
+    body={Handle more transactions\\per second with lower\\fees, while preserving\\security and\\decentralization.}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{privacy-levels}}
 \studiotemplate[
   variant={default},
@@ -361,13 +365,13 @@
 ]{partner-rail}
 \gdef\studiocataloguename{\detokenize{icon-rail}}
 \studiotemplate[
-  variant={default},
+  variant={illustrated},
   palette={light},
   text/4={Graphic Designer},
   text/2={Video Maker},
   text/1={Video Editor},
   text/3={Marketing}
-]{icon-rail}
+]{list-rail}
 \gdef\studiocataloguename{\detokenize{privacy-levels-blue}}
 \studiotemplate[
   variant={default},
@@ -377,17 +381,6 @@
   text/3={Soft-KYC: a minimum of personal\\information is requested},
   text/1={Full-KYC: identity verification\\by submitting documents}
 ]{levels}
-\gdef\studiocataloguename{\detokenize{stepped-rail-blue}}
-\studiotemplate[
-  variant={stepped},
-  palette={blue},
-  text/2={Installing\\RaspiBlitz},
-  text/5={Hardware needed},
-  text/1={Raspberry Pi 4\\{\fontsize{40\studiounit}{46\studiounit}\selectfont 4GB or 8GB preferred}},
-  text/6={Power supply and cables,\\with an optional display\\for monitoring},
-  text/3={External SSD},
-  text/4={1TB recommended}
-]{list-rail}
 \section{Cards}
 \gdef\studiocataloguename{\detokenize{three-cards}}
 \studiotemplate[
@@ -410,19 +403,29 @@
 \studiotemplate[
   variant={two},
   palette={light},
-  text/2={Security},
-  text/1={Privacy}
+  text/1={Security}
 ]{icon-cards}
 \gdef\studiocataloguename{\detokenize{four-card-grid}}
 \studiotemplate[
-  variant={four},
+  variant={four-bullets},
   palette={light},
-  text/1={How Bitcoin works},
-  text/2={{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont Proof of Work (What)}\\\textbullet{} Scarcity vs. privacy\\\textbullet{} Hashes and difficulty adjustment},
-  text/4={Timechain (When)},
-  text/6={\textbullet{} Durability/Scarcity},
-  text/3={{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont Proof of Knowledge (Who)}\\\textbullet{} Privacy vs. scarcity\\\textbullet{} Asymmetric cryptography},
-  text/5={{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont Lightning Network (Where)}\\\textbullet{} Scalability/Privacy}
+  title={How Bitcoin works},
+  card-one={
+    title={Item},
+    body={Supporting explanation}
+  },
+  card-two={
+    title={Item},
+    body={Supporting explanation}
+  },
+  card-three={
+    title={Item},
+    body={Supporting explanation}
+  },
+  card-four={
+    title={Item},
+    body={Supporting explanation}
+  }
 ]{text-cards}
 \gdef\studiocataloguename{\detokenize{eight-icon-grid}}
 \studiotemplate[
@@ -455,7 +458,7 @@
 ]{icon-process}
 \gdef\studiocataloguename{\detokenize{milestone-cards}}
 \studiotemplate[
-  variant={milestones},
+  variant={five},
   palette={light},
   text/1={Plan B Forum\\El Salvador},
   text/2={Barcelona\\Cypher\\Conference},
@@ -463,7 +466,7 @@
   text/4={BitCare Forum},
   text/5={BTC Prague},
   text/6={Missions}
-]{icon-process}
+]{milestone-badges}
 \gdef\studiocataloguename{\detokenize{twelve-word-grid}}
 \studiotemplate[
   variant={twelve},
@@ -484,30 +487,44 @@
 ]{icon-grid}
 \gdef\studiocataloguename{\detokenize{three-card-summary}}
 \studiotemplate[
-  variant={summary},
+  variant={three-summary},
   palette={light},
-  text/1={Key concepts recap},
-  text/2={Decentralization},
-  text/4={A foundation of Bitcoin: provides\\security and censorship resistance.},
-  text/3={The role of nodes},
-  text/5={Independent validation: each node checks\\the protocol rules; the timechain preserves\\a history of transactions.},
-  text/6={Workshop goal},
-  text/7={Explore options for running a node;\\provide practical steps to get started.}
-]{icon-cards}
+  title={Key concepts recap},
+  card-one={
+    title={Decentralization},
+    body={A foundation of Bitcoin: provides\\security and censorship resistance.}
+  },
+  card-two={
+    title={The role of nodes},
+    body={Independent validation: each node checks\\the protocol rules; the timechain preserves\\a history of transactions.}
+  },
+  card-three={
+    title={Workshop goal},
+    body={Explore options for running a node;\\provide practical steps to get started.}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{four-pillar-cards}}
 \studiotemplate[
-  variant={four-pillars},
+  variant={four},
   palette={light},
-  text/1={Bitcoin consensus},
-  text/2={Shared rules},
-  text/4={Nodes enforce the same rules, ensuring\\consistency across the network.},
-  text/3={Example},
-  text/5={Every new block may create only a\\limited number of new bitcoin.},
-  text/6={Outside consensus},
-  text/8={Some protocol rules fall outside network\\consensus, such as the algorithm used\\to gossip messages.},
-  text/7={Changing consensus},
-  text/9={Soft fork: add new consensus rules.\\Hard fork: remove consensus rules.}
-]{icon-cards}
+  title={Bitcoin consensus},
+  card-one={
+    title={Shared rules},
+    body={Nodes enforce the same rules, ensuring\\consistency across the network.}
+  },
+  card-two={
+    title={Example},
+    body={Every new block may create only a\\limited number of new bitcoin.}
+  },
+  card-three={
+    title={Outside consensus},
+    body={Some protocol rules fall outside network\\consensus, such as the algorithm used\\to gossip messages.}
+  },
+  card-four={
+    title={Changing consensus},
+    body={Soft fork: add new consensus rules.\\Hard fork: remove consensus rules.}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{hardware-options}}
 \studiotemplate[
   variant={devices},
@@ -535,13 +552,19 @@
 ]{options}
 \gdef\studiocataloguename{\detokenize{two-card-vertical}}
 \studiotemplate[
-  variant={two-vertical},
+  variant={two-stacked},
   palette={light},
-  text/1={Upper layers\\\textbullet{} Rapid innovation\\\textbullet{} Protocol competition},
-  text/4={Lower layers\\\textbullet{} Stability\\\textbullet{} Robustness\\\textbullet{} Ossification\\\textbullet{} Convergence},
-  text/2={Scaling a protocol},
-  text/3={Layered architectures help engineers\\build systems with greater stability\\and robustness, much like the\\structure of a building.}
-]{icon-cards}
+  title={Scaling a protocol},
+  introduction={Layered architectures help engineers\\build systems with greater stability\\and robustness, much like the\\structure of a building.},
+  card-one={
+    title={Item},
+    body={Supporting explanation}
+  },
+  card-two={
+    title={Item},
+    body={Supporting explanation}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{callout-explanation}}
 \studiotemplate[
   variant={callout},
@@ -556,7 +579,7 @@
   text/9={efficient verification required},
   text/3={Use STARKs to prove channel\\correctness without revealing\\balances or requiring full\\channel history},
   text/10={Scalable payments}
-]{text-cards}
+]{outlined-cards}
 \gdef\studiocataloguename{\detokenize{six-outline-cards}}
 \studiotemplate[
   variant={six-outline},
@@ -568,7 +591,7 @@
   text/2={Energy price},
   text/4={Capital Expenditure (CapEx)},
   text/6={Geopolitics}
-]{text-cards}
+]{outlined-cards}
 \gdef\studiocataloguename{\detokenize{six-explanation-cards}}
 \studiotemplate[
   variant={six-detailed},
@@ -580,18 +603,13 @@
   text/2={A Bitcoin node stores blockchain data\\and communicates with other nodes},
   text/4={A Lightning node communicates on\\the peer-to-peer network},
   text/7={A map of announced nodes and channels}
-]{text-cards}
+]{outlined-cards}
 \gdef\studiocataloguename{\detokenize{five-icon-row}}
 \studiotemplate[
-  variant={row},
+  variant={five},
   palette={light},
-  text/1={Benefits},
-  text/6={Low\\fees},
-  text/3={Micropayment\\support},
-  text/5={Low energy\\use},
-  text/4={More\\privacy},
-  text/2={Fast\\transactions}
-]{icon-grid}
+  text/1={Benefits}
+]{icon-cards}
 \gdef\studiocataloguename{\detokenize{square-icon-grid}}
 \studiotemplate[
   variant={four},
@@ -603,48 +621,74 @@
 ]{icon-grid}
 \gdef\studiocataloguename{\detokenize{incentives-card-grid}}
 \studiotemplate[
-  variant={default},
+  variant={five},
   palette={light},
-  text/1={Incentives},
-  text/4={- Block reward (new BTC)\\\textbullet{} Transaction fees},
-  text/2={Miner},
-  text/8={Build on a neutral, open protocol},
-  text/7={Developer},
-  text/11={Fixed supply = protection from inflation},
-  text/10={Long-term Holder},
-  text/5={- Censorship-resistant\\- Permissionless payments},
-  text/3={Merchant / User},
-  text/9={- Sovereignty: verify your own\\transactions\par \textbullet{} Strengthen network\\decentralization},
-  text/6={Full Node Operator}
-]{incentives-card-grid}
+  title={Incentives},
+  card-one={
+    title={Miner},
+    body={- Block reward (new BTC)\\\textbullet{} Transaction fees}
+  },
+  card-two={
+    title={Merchant / User},
+    body={- Censorship-resistant\\- Permissionless payments}
+  },
+  card-three={
+    title={Full Node Operator},
+    body={- Sovereignty: verify your own\\transactions\par \textbullet{} Strengthen network\\decentralization}
+  },
+  card-four={
+    title={Developer},
+    body={Build on a neutral, open protocol}
+  },
+  card-five={
+    title={Long-term Holder},
+    body={Fixed supply = protection from inflation}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{network-environments}}
 \studiotemplate[
-  variant={default},
+  variant={four-network},
   palette={light},
-  text/1={Network Environments},
-  text/2={Mainnet},
-  text/4={The real Bitcoin network. Real BTC. Real value.\\No mistakes. Chain started: January 3, 2009\\Use for: production, real transactions},
-  text/3={Testnet (testnet3/testnet4)},
-  text/5={Public test network. Coins are worthless (tBTC).\\Anyone can mine. Difficulty fluctuates wildly.\\Use for: public integration testing, faucet coins},
-  text/6={Regtest},
-  text/8={Local private blockchain. YOU control everything.\\Mine blocks instantly on command.\par No peers needed.\par Use for: development, workshops,\par learning < WE ARE HERE},
-  text/7={signet},
-  text/9={Public test network with trusted block signers.\\Predictable, stable.\par Better than testnet for testing.\par Use for: reliable public testing without testnet\\chaos}
-]{network-environments}
+  title={Network Environments},
+  card-one={
+    title={Mainnet},
+    body={The real Bitcoin network. Real BTC. Real value.\\No mistakes. Chain started: January 3, 2009\\Use for: production, real transactions}
+  },
+  card-two={
+    title={Testnet (testnet3/testnet4)},
+    body={Public test network. Coins are worthless (tBTC).\\Anyone can mine. Difficulty fluctuates wildly.\\Use for: public integration testing, faucet coins}
+  },
+  card-three={
+    title={Regtest},
+    body={Local private blockchain. YOU control everything.\\Mine blocks instantly on command.\par No peers needed.\par Use for: development, workshops,\par learning < WE ARE HERE}
+  },
+  card-four={
+    title={signet},
+    body={Public test network with trusted block signers.\\Predictable, stable.\par Better than testnet for testing.\par Use for: reliable public testing without testnet\\chaos}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{node-type-grid}}
 \studiotemplate[
-  variant={default},
+  variant={four-nodes},
   palette={light},
-  text/6={Light Client (SPV)},
-  text/8={\textbullet{}- Downloads only block headers (\textasciitilde{}6OMB vs\\\textasciitilde{}600GB).\par - Trusts that the chain with most PoW is valid.\par \textbullet{} Used in most mobile wallets.},
-  text/7={Mining Node},
-  text/9={- A full node + mining software.\\\textbullet{} Builds new blocks and competes for\\the block reward.},
-  text/3={Pruned Node},
-  text/5={\textbullet{} Full validation, but discards old block data after\\verifying it.\\- Saves disk space.},
-  text/2={Full Node},
-  text/4={\textbullet{} Downloads \& validates EVERY block \&\\transaction since the Genesis Block.\\- Trusts nobody.},
-  text/1={Node Types}
-]{node-type-grid}
+  title={Node Types},
+  card-one={
+    title={Full Node},
+    body={\textbullet{} Downloads \& validates EVERY block \&\\transaction since the Genesis Block.\\- Trusts nobody.}
+  },
+  card-two={
+    title={Pruned Node},
+    body={\textbullet{} Full validation, but discards old block data after\\verifying it.\\- Saves disk space.}
+  },
+  card-three={
+    title={Light Client (SPV)},
+    body={\textbullet{}- Downloads only block headers (\textasciitilde{}6OMB vs\\\textasciitilde{}600GB).\par - Trusts that the chain with most PoW is valid.\par \textbullet{} Used in most mobile wallets.}
+  },
+  card-four={
+    title={Mining Node},
+    body={- A full node + mining software.\\\textbullet{} Builds new blocks and competes for\\the block reward.}
+  }
+]{text-cards}
 \section{Comparisons}
 \gdef\studiocataloguename{\detokenize{horizontal-split}}
 \studiotemplate[
@@ -661,14 +705,18 @@
 ]{split-comparison}
 \gdef\studiocataloguename{\detokenize{benefits-limits}}
 \studiotemplate[
-  variant={default},
+  variant={two},
   palette={light},
-  text/1={Free market vs. monopoly},
-  text/2={Free market},
-  text/4={Many sellers and buyers.\\Prices set by supply and demand.\\Competition drives innovation.},
-  text/3={Monopoly},
-  text/5={One seller dominates the market.\par Prices imposed without alternatives\\for consumers.\par Innovation slows without\\competition.}
-]{benefits-limits}
+  title={Free market vs. monopoly},
+  card-one={
+    title={Free market},
+    body={Many sellers and buyers.\\Prices set by supply and demand.\\Competition drives innovation.}
+  },
+  card-two={
+    title={Monopoly},
+    body={One seller dominates the market.\par Prices imposed without alternatives\\for consumers.\par Innovation slows without\\competition.}
+  }
+]{text-cards}
 \gdef\studiocataloguename{\detokenize{before-after}}
 \studiotemplate[
   variant={default},
@@ -2206,16 +2254,22 @@
 ]{block-inspection}
 \gdef\studiocataloguename{\detokenize{mining-card-grid}}
 \studiotemplate[
-  variant={default},
+  variant={three-asymmetric},
   palette={light},
-  text/1={Mining},
-  text/4={* Goal: SHA256(SHA256(block\_header)) < target\\\textbullet{} Method: Increment nonce, try again. Trillions of times.\\- Cost: Real energy. Real hardware. Unforgeable.},
-  text/2={Proof of Work},
-  text/7={Every 2,016 blocks (\textasciitilde{}2 weeks):\\* new\_target = old\_target x (actual\_time / 1,209,600\\seconds)\\- Blocks found too fast? > difficulty T\\- Blocks found too slow? > difficulty \\\- Target: 1 block every 10 minutes},
-  text/6={Difficulty Adjustment},
-  text/5={Every 210,000 blocks (\textasciitilde{}4 years), the block\\reward is cut in half:\par BlockO --->50BTC\par Block 210,000 > 25 BTC\par Block 420,000 > 12.5 BTC\par Block 630,000 > 6.25 BTC\par Block 840,000 > 3.125 BTC \texteuro{} current (April\\2024)\par \textasciitilde{}Block 6,930,000 > O BTC (all 21M mined,\\\textasciitilde{}year 2140)},
-  text/3={Halving}
-]{mining-card-grid}
+  title={Mining},
+  card-one={
+    title={Proof of Work},
+    body={* Goal: SHA256(SHA256(block\_header)) < target\\\textbullet{} Method: Increment nonce, try again. Trillions of times.\\- Cost: Real energy. Real hardware. Unforgeable.}
+  },
+  card-two={
+    title={Halving},
+    body={Every 210,000 blocks (\textasciitilde{}4 years), the block\\reward is cut in half:\par BlockO --->50BTC\par Block 210,000 > 25 BTC\par Block 420,000 > 12.5 BTC\par Block 630,000 > 6.25 BTC\par Block 840,000 > 3.125 BTC \texteuro{} current (April\\2024)\par \textasciitilde{}Block 6,930,000 > O BTC (all 21M mined,\\\textasciitilde{}year 2140)}
+  },
+  card-three={
+    title={Difficulty Adjustment},
+    body={Every 2,016 blocks (\textasciitilde{}2 weeks):\\* new\_target = old\_target x (actual\_time / 1,209,600\\seconds)\\- Blocks found too fast? > difficulty T\\- Blocks found too slow? > difficulty \\\- Target: 1 block every 10 minutes}
+  }
+]{text-cards}
 \section{Closing}
 \gdef\studiocataloguename{\detokenize{contact-qr}}
 \studiotemplate[
@@ -2258,6 +2312,12 @@
   text/7={25+},
   text/8={Working in Bitcoin}
 ]{team}
+\section{Lists}
+\gdef\studiocataloguename{\detokenize{list-rail-five}}
+\studiotemplate[
+  variant={five-items},
+  palette={light}
+]{list-rail}
 \section{Closing}
 \gdef\studiocataloguename{\detokenize{closing}}
 \studiotemplate[

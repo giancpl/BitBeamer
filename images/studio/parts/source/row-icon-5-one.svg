@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" fill="none" width="138.0" height="217.0" viewBox="449.0 964.0 138.0 217.0"><defs><filter id="filter3_dii_2521_1444" x="274" y="853" width="488" height="489" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="27" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="out" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" />
+<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2521_1444" />
+<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2521_1444" result="shape" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="-18" />
+<feGaussianBlur stdDeviation="22" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.13 0" />
+<feBlend mode="normal" in2="shape" result="effect2_innerShadow_2521_1444" />
+<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha" />
+<feOffset dy="14" />
+<feGaussianBlur stdDeviation="9.5" />
+<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1" />
+<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0" />
+<feBlend mode="normal" in2="effect2_innerShadow_2521_1444" result="effect3_innerShadow_2521_1444" />
+</filter>
+</defs><path d="M547.571 964H567.286V983.727H547.571V964ZM488.429 1161.27H508.143V1141.55H527.857V1121.82H547.571V1102.09H567.286V1082.36H587V1062.64H527.857V1023.18H547.571V983.727H527.857V1003.45H508.143V1023.18H488.429V1042.91H468.714V1062.64H449V1082.36H508.143V1121.82H488.429V1161.27ZM488.429 1161.27V1181H468.714V1161.27H488.429Z" fill-rule="evenodd" clip-rule="evenodd" fill="#001CE0" />
+</svg>

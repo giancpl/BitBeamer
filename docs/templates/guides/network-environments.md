@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the three environments layout.
 
-Model: `network-environments` · Family: Cards · Status: **in review**.
+Model: `network-environments` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/network-environments.tex)
 
@@ -16,15 +16,27 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/network-environments.md)
+[Model variants and named fields](../models/text-cards.md)
 
 ```latex
-\studiotemplate[variant=default,palette=light]{network-environments}
+\studiotemplate[variant=four-network,palette=light]{text-cards}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the slide heading without moving panels. |
+| `show-card-titles` | boolean | `true` | Show card headings or icon captions. |
+| `show-card-bodies` | boolean | `true` | Show card descriptions. |
+| `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
+| `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -113,13 +125,13 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 41.9% wide × 34.7% high | <code>\studiopaletteimage[width=1490\studiounit]{images/studio/collection/figma-0873-part-04.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 35.6% wide × 7.5% high | <code>Slide title</code> |
 | <code>text-2</code> | Editable text (text) | middle left | 35.9% wide × 5.0% high | <code>Supporting explanation</code> |
-| <code>text-3</code> | Editable text (text) | middle left | 36.2% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-3</code> | Editable text (text) | middle left | 33.7% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-4</code> | Editable text (text) | middle right | 35.8% wide × 6.1% high | <code>Supporting explanation</code> |
-| <code>text-5</code> | Editable text (text) | middle right | 36.2% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-5</code> | Editable text (text) | middle right | 33.7% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-6</code> | Editable text (text) | middle left | 35.9% wide × 5.6% high | <code>Supporting explanation</code> |
-| <code>text-7</code> | Editable text (text) | lower left | 38.0% wide × 17.1% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-7</code> | Editable text (text) | lower left | 33.7% wide × 17.1% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-8</code> | Editable text (text) | middle right | 35.9% wide × 5.8% high | <code>Supporting explanation</code> |
-| <code>text-9</code> | Editable text (text) | lower right | 36.2% wide × 16.6% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-9</code> | Editable text (text) | lower right | 33.7% wide × 16.6% high | <code>Supporting explanation.\\Add your own details.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

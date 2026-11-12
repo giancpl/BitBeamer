@@ -805,7 +805,7 @@
       "field": "text-4",
       "role": "label-six",
       "previous": "Bitcoin",
-      "default": "Supporting explanation"
+      "default": "Protocol"
     },
     {
       "composition": "feature-spotlight",
@@ -819,7 +819,7 @@
       "field": "text-6",
       "role": "label-two",
       "previous": "Internet",
-      "default": "Supporting explanation"
+      "default": "Network"
     },
     {
       "composition": "privacy-levels",
@@ -1004,48 +1004,6 @@
       "default": "Supporting explanation"
     },
     {
-      "composition": "stepped-rail-blue",
-      "field": "title",
-      "role": "title",
-      "previous": "Installing\\\\RaspiBlitz",
-      "default": "Title"
-    },
-    {
-      "composition": "stepped-rail-blue",
-      "field": "text-2",
-      "role": "label-five",
-      "previous": "Hardware needed",
-      "default": "Supporting explanation"
-    },
-    {
-      "composition": "stepped-rail-blue",
-      "field": "text-3",
-      "role": "label-one",
-      "previous": "Raspberry Pi 4\\\\{\\fontsize{40\\studiounit}{46\\studiounit}\\selectfont 4GB or 8GB preferred}",
-      "default": "First item"
-    },
-    {
-      "composition": "stepped-rail-blue",
-      "field": "text-4",
-      "role": "label-six",
-      "previous": "Power supply and cables,\\\\with an optional display\\\\for monitoring",
-      "default": "Third item\\\\Supporting detail."
-    },
-    {
-      "composition": "stepped-rail-blue",
-      "field": "item-5-1",
-      "role": "label-three",
-      "previous": "External SSD",
-      "default": "Second item"
-    },
-    {
-      "composition": "stepped-rail-blue",
-      "field": "item-5-2",
-      "role": "label-four",
-      "previous": "1TB recommended",
-      "default": "Supporting detail."
-    },
-    {
       "composition": "three-cards",
       "field": "title",
       "role": "title",
@@ -1107,48 +1065,6 @@
       "role": "label-one",
       "previous": "Privacy",
       "default": "Item"
-    },
-    {
-      "composition": "four-card-grid",
-      "field": "title",
-      "role": "title",
-      "previous": "How Bitcoin works",
-      "default": "Slide title"
-    },
-    {
-      "composition": "four-card-grid",
-      "field": "text-2",
-      "role": "label-two",
-      "previous": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont Proof of Work (What)}\\\\\\textbullet{} Scarcity vs. privacy\\\\\\textbullet{} Hashes and difficulty adjustment",
-      "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 1}\\\\Supporting detail."
-    },
-    {
-      "composition": "four-card-grid",
-      "field": "item-3-1",
-      "role": "label-four",
-      "previous": "Timechain (When)",
-      "default": "Concept 3"
-    },
-    {
-      "composition": "four-card-grid",
-      "field": "item-3-2",
-      "role": "label-six",
-      "previous": "\\textbullet{} Durability/Scarcity",
-      "default": "Supporting detail."
-    },
-    {
-      "composition": "four-card-grid",
-      "field": "text-4",
-      "role": "label-three",
-      "previous": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont Proof of Knowledge (Who)}\\\\\\textbullet{} Privacy vs. scarcity\\\\\\textbullet{} Asymmetric cryptography",
-      "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 2}\\\\Supporting detail."
-    },
-    {
-      "composition": "four-card-grid",
-      "field": "text-5",
-      "role": "label-five",
-      "previous": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont Lightning Network (Where)}\\\\\\textbullet{} Scalability/Privacy",
-      "default": "{\\fontsize{75.16\\studiounit}{87.1856\\studiounit}\\selectfont\\bfseries Concept 4}\\\\Supporting detail."
     },
     {
       "composition": "eight-icon-grid",
@@ -1590,34 +1506,6 @@
       "role": "title",
       "previous": "Available\\\\software",
       "default": "Title"
-    },
-    {
-      "composition": "two-card-vertical",
-      "field": "text-1",
-      "role": "label-one",
-      "previous": "Upper layers\\\\\\textbullet{} Rapid innovation\\\\\\textbullet{} Protocol competition",
-      "default": "Supporting explanation.\\\\Add your own details."
-    },
-    {
-      "composition": "two-card-vertical",
-      "field": "text-2",
-      "role": "label-four",
-      "previous": "Lower layers\\\\\\textbullet{} Stability\\\\\\textbullet{} Robustness\\\\\\textbullet{} Ossification\\\\\\textbullet{} Convergence",
-      "default": "Supporting explanation.\\\\Add your own details."
-    },
-    {
-      "composition": "two-card-vertical",
-      "field": "title",
-      "role": "title",
-      "previous": "Scaling a protocol",
-      "default": "Slide title"
-    },
-    {
-      "composition": "two-card-vertical",
-      "field": "text-4",
-      "role": "label-three",
-      "previous": "Layered architectures help engineers\\\\build systems with greater stability\\\\and robustness, much like the\\\\structure of a building.",
-      "default": "Supporting explanation.\\\\Add your own details."
     },
     {
       "composition": "callout-explanation",
@@ -8213,6 +8101,111 @@
       "role": "caption-nine",
       "previous": "9. cute",
       "default": "Item 9"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "title",
+      "role": "title",
+      "previous": "How Bitcoin works",
+      "default": "Slide title"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "caption-one",
+      "role": "caption-one",
+      "previous": "Item",
+      "default": "Item"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "body-one",
+      "role": "body-one",
+      "previous": "Supporting explanation",
+      "default": "Supporting explanation"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "caption-two",
+      "role": "caption-two",
+      "previous": "Item",
+      "default": "Item"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "body-two",
+      "role": "body-two",
+      "previous": "Supporting explanation",
+      "default": "Supporting explanation"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "caption-three",
+      "role": "caption-three",
+      "previous": "Item",
+      "default": "Item"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "body-three",
+      "role": "body-three",
+      "previous": "Supporting explanation",
+      "default": "Supporting explanation"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "caption-four",
+      "role": "caption-four",
+      "previous": "Item",
+      "default": "Item"
+    },
+    {
+      "composition": "four-card-grid",
+      "field": "body-four",
+      "role": "body-four",
+      "previous": "Supporting explanation",
+      "default": "Supporting explanation"
+    },
+    {
+      "composition": "two-card-vertical",
+      "field": "title",
+      "role": "title",
+      "previous": "Scaling a protocol",
+      "default": "Slide title"
+    },
+    {
+      "composition": "two-card-vertical",
+      "field": "text-4",
+      "role": "text-4",
+      "previous": "Layered architectures help engineers\\\\build systems with greater stability\\\\and robustness, much like the\\\\structure of a building.",
+      "default": "Supporting explanation.\\\\Add your own details."
+    },
+    {
+      "composition": "two-card-vertical",
+      "field": "caption-one",
+      "role": "caption-one",
+      "previous": "Item",
+      "default": "Item"
+    },
+    {
+      "composition": "two-card-vertical",
+      "field": "body-one",
+      "role": "body-one",
+      "previous": "Supporting explanation",
+      "default": "Supporting explanation"
+    },
+    {
+      "composition": "two-card-vertical",
+      "field": "caption-two",
+      "role": "caption-two",
+      "previous": "Item",
+      "default": "Item"
+    },
+    {
+      "composition": "two-card-vertical",
+      "field": "body-two",
+      "role": "body-two",
+      "previous": "Supporting explanation",
+      "default": "Supporting explanation"
     }
   ]
 }

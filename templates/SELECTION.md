@@ -139,11 +139,10 @@ Demonstrate this reusable composition.
 
 ```latex
 \studiotemplate[
-  title={Slide title},
-  caption-one={Label 2},
-  caption-two={Label 3},
-  caption-three={Label 4},
-  graphic-one={\asset[width=1cm]{alice}}
+  title={Shared rules},
+  caption-one={Privacy},
+  caption-two={Security},
+  caption-three={Verification}
 ]{three-cards}
 ```
 

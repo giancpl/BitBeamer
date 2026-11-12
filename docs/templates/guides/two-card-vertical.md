@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the two card vertical layout.
 
-Model: `two-card-vertical` · Family: Cards · Status: **in review**.
+Model: `two-card-vertical` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-card-vertical.tex)
 
@@ -16,15 +16,27 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/icon-cards.md)
+[Model variants and named fields](../models/text-cards.md)
 
 ```latex
-\studiotemplate[variant=two-vertical,palette=light]{icon-cards}
+\studiotemplate[variant=two-stacked,palette=light]{text-cards}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the slide heading without moving panels. |
+| `show-card-titles` | boolean | `true` | Show card headings or icon captions. |
+| `show-card-bodies` | boolean | `true` | Show card descriptions. |
+| `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
+| `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -40,10 +52,12 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | --- | --- | --- |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
-| `text/1` | `text-1` | Editable text |
-| `text/4` | `text-2` | Editable text |
-| `text/2` | `title` | Main text |
-| `text/3` | `text-4` | Editable text |
+| `text/1` | `title` | Main text |
+| `text/2` | `text-4` | Editable text |
+| `text/3` | `caption-one` | First caption |
+| `text/4` | `body-one` | Editable text |
+| `text/5` | `caption-two` | Second caption |
+| `text/6` | `body-two` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -62,8 +76,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/2={Slide title},
-  text/1={Supporting explanation.\\Add your own details.}
+  text/1={Slide title},
+  text/2={Supporting explanation.\\Add your own details.}
 ]{two-card-vertical}
 ```
 
@@ -79,8 +93,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/2={Slide title},
-  text/1={Supporting explanation.\\Add your own details.}
+  text/1={Slide title},
+  text/2={Supporting explanation.\\Add your own details.}
 ]{two-card-vertical}
 \end{document}
 ```
@@ -102,10 +116,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | --- | --- | --- | --- | --- |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 37.5% wide × 27.7% high | <code>\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0649-part-01.pdf}</code> |
 | <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower right | 37.5% wide × 35.4% high | <code>\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0649-part-02.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper right | 30.3% wide × 12.9% high | <code>Supporting explanation.\\Add your own details.</code> |
-| <code>text-2</code> | Editable text (text) | middle right | 30.3% wide × 20.8% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>title</code> | Main text (text) | middle left | 33.1% wide × 8.4% high | <code>Slide title</code> |
 | <code>text-4</code> | Editable text (text) | middle left | 35.9% wide × 17.6% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>caption-one</code> | First caption (text) | upper right | 28.1% wide × 5.2% high | <code>Item</code> |
+| <code>body-one</code> | Editable text (text) | middle right | 28.1% wide × 8.2% high | <code>Supporting explanation</code> |
+| <code>caption-two</code> | Second caption (text) | middle right | 28.1% wide × 5.2% high | <code>Item</code> |
+| <code>body-two</code> | Editable text (text) | lower right | 28.1% wide × 15.5% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

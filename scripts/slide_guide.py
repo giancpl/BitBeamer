@@ -22,8 +22,8 @@ def digest(path):
 
 
 def command(name, fields):
-    options=',\n  '.join(key+'={'+value+'}' for key,value in fields.items())
-    return r'\studiotemplate'+('[\n  '+options+'\n]' if options else '')+'{'+name+'}'
+    from studio_guides import command as format_command
+    return format_command(name, fields)
 
 
 def preview(root, name, key=None, assets=None):
@@ -90,7 +90,17 @@ def semantic_fields(entry,composition):
         name=reverse.get(field['name'],field['name'])
         if field['type']=='graphic' and field.get('slot'):
             words=['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve']
-            number=field['slot']['number'];name='graphic-'+(words[number-1] if number<=len(words) else str(number))
+            number=field['slot']['number']
+            if any(key.startswith('card-') for key in composition['fields']):
+                names={value:'card-'+key+'/graphic' for key,value in composition.get('graphic_slots',{}).items()}
+                if composition.get('title_graphic_slot'):names[composition['title_graphic_slot']]='title-graphic'
+                if number not in names:continue
+                name=names[number]
+            elif 'graphic_slots' in composition:
+                names={value:key for key,value in composition['graphic_slots'].items()}
+                if number not in names:continue
+                name='graphic-'+names[number]
+            else:name='graphic-'+(words[number-1] if number<=len(words) else str(number))
         item=field_names([field])[0];item.update(name=name,native=field['name'])
         content=field.get('slot',{}).get('content')
         if field['type']=='graphic' and content and field.get('box'):
@@ -122,7 +132,8 @@ def catalogue(root=ROOT):
                     'variant':variant['id'],'palette':composition['native_palette'],'canvas':entry.get('canvas',[3556,2000]),
                     'source':'../../'+entry['source'],'source_sha256':digest(root/entry['source']),
                     'guide':'../templates/models/'+model['id']+'.md',
-                    'status':ledger['templates'][entry['id']]['status']})
+                    'status':ledger['templates'][entry['id']]['status'],
+                    **({'reference_note':'Related four-item source; current layout adapts it to five items.'} if entry.get('reconstruction')=='adapted' else {})})
         default=next((i for i,c in enumerate(choices) if c['id'] in featured),
                      next((i for i,c in enumerate(choices) if c['label'].split(' / ')[0]==model['default_variant']),0))
         rows.append({'id':model['id'],'title':model['title'],'kind':'studio','family':{'cover':'Covers','team':'Team','agenda':'Contents','closing':'Closing'}.get(model['id'],model['category']),

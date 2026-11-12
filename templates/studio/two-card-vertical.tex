@@ -1,16 +1,21 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
+% Original card artwork with separate heading and description fields.
 \studiodeclarefield{graphic-1}{\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0649-part-01.pdf}}
 \studiodeclarefield{graphic-2}{\studiopaletteimage[width=1333\studiounit]{images/studio/collection/figma-0649-part-02.pdf}}
-\studiodeclarefield{text-1}{Supporting explanation.\\Add your own details.}
-\studiodeclarefield{text-2}{Supporting explanation.\\Add your own details.}
 \studiodeclarefield{title}{Slide title}
 \studiodeclarefield{text-4}{Supporting explanation.\\Add your own details.}
+\studiodeclarefield{caption-one}{Item}
+\studiodeclarefield{body-one}{Supporting explanation}
+\studiodeclarefield{caption-two}{Item}
+\studiodeclarefield{body-two}{Supporting explanation}
+\input{templates/studio/components/text-card-options.tex}
 \studioapplyfields
 \studiomeasuredcanvas{3556}{2000}{two-card-vertical}{studio-background}{
 \studiographfield{graphic-1}{1860}{366}{1333}{553}{}{}
-\studiomeasuredtext{text-1}{2051.62}{482.832}{1076.01}{258.664}{61.0653}{70.8358}{\color{studio-foreground}}{\studiofield{text-1}}
 \studiographfield{graphic-2}{1860}{980}{1333}{707}{}{}
-\studiomeasuredtext{text-2}{2051.62}{1103.03}{1075.69}{415.816}{61.96}{71.8736}{\color{studio-foreground}}{\studiofield{text-2}}
-\studiomeasuredtext{title}{253.926}{753.984}{1177.71}{168.527}{112.735}{130.772}{\color{studio-foreground}\bfseries}{\studiofield{title}}
-\studiomeasuredtext{text-4}{252.051}{949.277}{1275.6}{351.571}{65.7613}{76.2831}{\color{studio-foreground}}{\studiofield{text-4}}
+\studiocardoptional{title}{\studiomeasuredtext{title}{253.926}{753.984}{1177.71}{168.527}{112.735}{130.772}{\color{studio-foreground}\bfseries}{\studiofield{title}}}
+\studiocardoptional{introduction}{\studiomeasuredtext{text-4}{252.051}{949.277}{1275.6}{351.571}{65.761}{76.283}{\color{studio-foreground}\bfseries}{\studiofield{text-4}}}
+\studiocardoptional{captions}{\studiomeasuredtext{caption-one}{2051.62}{482.832}{1000}{105}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{caption-one}}}
+\studiocardoptional{bodies}{\studiomeasuredtext{body-one}{2051.62}{590}{1000}{165}{61.96}{71.8736}{\color{studio-foreground}\bfseries}{\studiofield{body-one}}}
+\studiocardoptional{captions}{\studiomeasuredtext{caption-two}{2051.62}{1103.03}{1000}{105}{75.16}{87.1856}{\color{studio-foreground}\bfseries}{\studiofield{caption-two}}}
+\studiocardoptional{bodies}{\studiomeasuredtext{body-two}{2051.62}{1210}{1000}{310}{61.96}{71.8736}{\color{studio-foreground}\bfseries}{\studiofield{body-two}}}
 }

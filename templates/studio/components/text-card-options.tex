@@ -1,0 +1,53 @@
+% Optional content for source-measured soft text cards.
+\def\studiocardtrue{true}
+\def\studiocardshowtitle{true}
+\def\studiocardshowcaptions{true}
+\def\studiocardshowbodies{true}
+\def\studiocardshowintroduction{true}
+\def\studiocardshowicons{true}
+\pgfkeys{/studio fields/show-title/.is choice,
+ /studio fields/show-title/true/.code=\def\studiocardshowtitle{true},
+ /studio fields/show-title/false/.code=\def\studiocardshowtitle{false},
+ /studio fields/show-card-titles/.is choice,
+ /studio fields/show-card-titles/true/.code=\def\studiocardshowcaptions{true},
+ /studio fields/show-card-titles/false/.code=\def\studiocardshowcaptions{false},
+ /studio fields/show-card-bodies/.is choice,
+ /studio fields/show-card-bodies/true/.code=\def\studiocardshowbodies{true},
+ /studio fields/show-card-bodies/false/.code=\def\studiocardshowbodies{false},
+ /studio fields/show-introduction/.is choice,
+ /studio fields/show-introduction/true/.code=\def\studiocardshowintroduction{true},
+ /studio fields/show-introduction/false/.code=\def\studiocardshowintroduction{false},
+ /studio fields/show-icons/.is choice,
+ /studio fields/show-icons/true/.code=\def\studiocardshowicons{true},
+ /studio fields/show-icons/false/.code=\def\studiocardshowicons{false}}
+\long\def\studiocardoptional#1#2{%
+ \expandafter\ifx\csname studiocardshow#1\endcsname\studiocardtrue #2\fi}
+
+% Each public card groups its own text and optional icon, in reading order.
+\newcommand{\studiocardfields}[4]{%
+ \pgfkeys{/studio fields/card-#1/.code={\pgfqkeys{/studio card/#1}{##1}},
+  /studio card/#1/.is family,
+  /studio card/#1/title/.code=\pgfkeyssetvalue{/studio values/#2}{##1},
+  /studio card/#1/body/.code=\pgfkeyssetvalue{/studio values/#3}{##1},
+  /studio card/#1/.unknown/.code=\PackageError{bitpolitostudiomodels}{Unknown card-#1 field '\pgfkeyscurrentname'}{Use title, body and, where available, icon, image or graphic.}}%
+ \def\studiocardiconslot{#4}%
+ \ifx\studiocardiconslot\empty\else
+  \pgfkeys{/studio card/#1/icon/.style={/studio fields/icon/#4={##1}},
+   /studio card/#1/image/.style={/studio fields/image/#4={##1}},
+   /studio card/#1/graphic/.style={/studio fields/graphic/#4={##1}}}%
+ \fi}
+\newcommand{\studiocardtitlegraphic}[1]{%
+ \pgfkeys{/studio fields/title-icon/.style={icon/#1={##1}},
+  /studio fields/title-image/.style={image/#1={##1}},
+  /studio fields/title-graphic/.style={graphic/#1={##1}}}}
+% Replaced flat card fields are not public aliases, even when a native field
+% happens to have the same historical name. Numeric technical slots are stable.
+\def\studiocardrejectold#1{%
+ \pgfkeys{/studio fields/caption-#1/.code=\PackageError{bitpolitostudiomodels}{Replaced flat card syntax}{Use card-one={title={...},body={...}} and subsequent cards.},
+  /studio fields/body-#1/.code=\PackageError{bitpolitostudiomodels}{Replaced flat card syntax}{Use card-one={title={...},body={...}} and subsequent cards.}}}
+
+\studiocardrejectold{one}
+\studiocardrejectold{two}
+\studiocardrejectold{three}
+\studiocardrejectold{four}
+\studiocardrejectold{five}

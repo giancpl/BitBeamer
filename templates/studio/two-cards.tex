@@ -1,12 +1,14 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
-\studiodeclarefield{graphic-1}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0070-part-01.pdf}}
-\studiodeclarefield{graphic-2}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0070-part-02.pdf}}
-\studiodeclarefield{title}{Item 2}
-\studiodeclarefield{text-2}{Item 1}
-\studioapplyfields
-\studiomeasuredcanvas{3556}{2000}{two-cards}{studio-background}{
-\studiographfield{graphic-1}{2006}{706}{488}{489}{}{}
-\studiomeasuredtext{title}{2084.91}{1199.43}{380.327}{100.951}{77.6533}{90.0779}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
-\studiographfield{graphic-2}{1062}{706}{488}{489}{}{}
-\studiomeasuredtext{text-2}{1183.82}{1199.59}{296.697}{112.19}{75.1467}{87.1701}{\color{studio-foreground}\bfseries\centering}{\studiofield{text-2}}
-}
+% Shared icon-card row: count, positions and neutral editable defaults.
+\studiodeclarefield{title}{Slide title}
+\studiodeclarefield{caption-one}{Item 1}
+\studiodeclarefield{graphic-one}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-2-one}}
+\studiodeclarefield{caption-two}{Item 2}
+\studiodeclarefield{graphic-two}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-2-two}}
+\def\studioiconpositions{one/1306,two/2250}
+\def\studioicony{924}
+\def\studioiconcaptionwidth{660}
+\def\studioiconcaptionsize{76}
+\def\studioiconcaptionleading{88}
+\def\studioiconcaptionheight{190}
+\def\studioicondefaulttitle{false}
+\input{templates/studio/components/icon-card-row.tex}

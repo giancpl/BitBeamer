@@ -32,12 +32,17 @@ def comparisons(root, folder, names, choices, categories=None, commands=None):
     script=(root/'build/checks/slide-guide/comparisons.js').read_text(encoding='utf-8')
     records=json.loads(script.split('=',1)[1].strip().rstrip(';'))['records']
     originals={}
+    inventory=json.loads((root/'templates/figma-inventory.json').read_text(encoding='utf-8'))
+    reference_files={f['id']:f['file'] for f in inventory['frames']}
+    original_labels={}
     for name in names:
         variants=records.get(name,{}).get('variants',[])
         if not variants:raise ValueError('No local original for '+name+'. Prepare its reference before requesting --compare.')
         original=(root/'docs/slides'/unquote(urlsplit(variants[0]['original']).path)).resolve()
         if not original.is_relative_to(root.resolve()) or not original.is_file():raise ValueError('Missing or unsafe original: '+name)
         originals[name]=original
+        reference_id=variants[0].get('label','')
+        original_labels[name]=reference_files.get(reference_id, reference_id)
     with fitz.open(folder/'main.pdf') as replica, fitz.open() as result:
         for number,name in enumerate(names):
             invocation=(commands or {}).get(name,choices[name]['command'])
@@ -45,7 +50,7 @@ def comparisons(root, folder, names, choices, categories=None, commands=None):
                                         break_long_words=False,break_on_hyphens=False)
             page=result.new_page(width=1400,height=460+11*(len(command_lines)-1))
             page.insert_text((20,22),str(number+1)+' / '+str(len(names))+' | '+name+' | '+(categories or {}).get(name,''),fontsize=13)
-            page.insert_text((20,46),'Original reference',fontsize=10)
+            page.insert_text((20,46),choices[name].get('reference_note','Original reference')+' | '+original_labels[name],fontsize=10)
             page.insert_text((710,46),'Current template',fontsize=10)
             # Screen-size references keep a five-page review lightweight. Full originals remain local.
             with Image.open(originals[name]) as source:
@@ -104,7 +109,15 @@ def combine(root, backend='docker', image='bitbeamer-latex:local', compare=False
     choices={c['id']:c for row in payload['rows'] for c in row['choices']}
     categories={c['id']:row['family'] for row in payload['rows'] for c in row['choices']}
     batches=[];reports=[]
-    for batch in review_batches(root,payload):
+    registered=review_batches(root,payload)
+    ledger=root/'templates/review.json'
+    active=json.loads(ledger.read_text(encoding='utf-8')).get('active_review_batches') if ledger.exists() else None
+    if active is not None:
+        known={b['id'] for b in registered}
+        if not isinstance(active,list) or len(active)!=len(set(active)) or set(active)-known:
+            raise ValueError('Invalid active_review_batches; use registered batch IDs.')
+        registered=[b for b in registered if b['id'] in active]
+    for batch in registered:
         names=pending_compositions(batch,choices)
         if not names:continue
         current=dict(batch,compositions=names)

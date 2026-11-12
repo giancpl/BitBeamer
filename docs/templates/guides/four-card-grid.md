@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `four-card-grid` · Family: Cards · Status: **in review**.
+Model: `four-card-grid` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/four-card-grid.tex)
 
@@ -19,12 +19,24 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 [Model variants and named fields](../models/text-cards.md)
 
 ```latex
-\studiotemplate[variant=four,palette=light]{text-cards}
+\studiotemplate[variant=four-bullets,palette=light]{text-cards}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the slide heading without moving panels. |
+| `show-card-titles` | boolean | `true` | Show card headings or icon captions. |
+| `show-card-bodies` | boolean | `true` | Show card descriptions. |
+| `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
+| `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -43,11 +55,14 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `icon/2`, `image/2`, `graphic/2` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/4`, `image/4`, `graphic/4` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
 | `text/1` | `title` | Main text |
-| `text/2`, `heading/2`, `body/2` | `text-2` | Use heading/body separately to retain the measured text hierarchy. |
-| `text/4` | `item-3-1` | List or contents entry |
-| `text/6` | `item-3-2` | List or contents entry |
-| `text/3`, `heading/3`, `body/3` | `text-4` | Use heading/body separately to retain the measured text hierarchy. |
-| `text/5`, `heading/5`, `body/5` | `text-5` | Use heading/body separately to retain the measured text hierarchy. |
+| `text/2` | `caption-one` | First caption |
+| `text/3` | `body-one` | Editable text |
+| `text/4` | `caption-two` | Second caption |
+| `text/5` | `body-two` | Editable text |
+| `text/6` | `caption-three` | Third caption |
+| `text/7` | `body-three` | Editable text |
+| `text/8` | `caption-four` | Editable text |
+| `text/9` | `body-four` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -107,11 +122,14 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 38.7% wide × 29.4% high | <code>\studiopaletteimage[width=1375\studiounit]{images/studio/collection/figma-0603-part-03.pdf}</code> |
 | <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 38.7% wide × 29.4% high | <code>\studiopaletteimage[width=1375\studiounit]{images/studio/collection/figma-0603-part-04.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 35.2% wide × 7.5% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 33.3% wide × 16.3% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 1}\\Supporting detail.</code> |
-| <code>item-3-1</code> | List or contents entry (text) | lower left | 30.0% wide × 6.2% high | <code>Concept 3</code> |
-| <code>item-3-2</code> | List or contents entry (text) | lower left | 29.1% wide × 4.6% high | <code>Supporting detail.</code> |
-| <code>text-4</code> | Editable text (text) | middle right | 34.1% wide × 13.3% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 2}\\Supporting detail.</code> |
-| <code>text-5</code> | Editable text (text) | lower right | 34.1% wide × 9.4% high | <code>{\fontsize{75.16\studiounit}{87.1856\studiounit}\selectfont\bfseries Concept 4}\\Supporting detail.</code> |
+| <code>caption-one</code> | First caption (text) | middle left | 28.1% wide × 5.2% high | <code>Item</code> |
+| <code>body-one</code> | Editable text (text) | middle left | 28.1% wide × 12.0% high | <code>Supporting explanation</code> |
+| <code>caption-two</code> | Second caption (text) | middle right | 28.1% wide × 5.2% high | <code>Item</code> |
+| <code>body-two</code> | Editable text (text) | middle right | 28.1% wide × 12.0% high | <code>Supporting explanation</code> |
+| <code>caption-three</code> | Third caption (text) | lower left | 28.1% wide × 5.2% high | <code>Item</code> |
+| <code>body-three</code> | Editable text (text) | lower left | 28.1% wide × 12.0% high | <code>Supporting explanation</code> |
+| <code>caption-four</code> | Editable text (text) | lower right | 28.1% wide × 5.2% high | <code>Item</code> |
+| <code>body-four</code> | Editable text (text) | lower right | 28.1% wide × 12.0% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

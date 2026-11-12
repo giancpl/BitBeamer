@@ -107,7 +107,7 @@ Start with the selected layouts, then browse the full collection by family.
 - [Organization rail](guides/partner-rail.md)
 - [Icon Rail](guides/icon-rail.md)
 - [Privacy Levels Blue](guides/privacy-levels-blue.md)
-- [Stepped Rail Blue](guides/stepped-rail-blue.md)
+- [Five-item list with vertical rail](guides/list-rail-five.md)
 
 ## Cards
 
@@ -118,7 +118,7 @@ Start with the selected layouts, then browse the full collection by family.
 - [Eight-icon overview](guides/eight-icon-grid.md)
 - [Four-step icon process](guides/four-step-process.md)
 - [Two-step icon process](guides/two-step-process.md)
-- [Numbered milestone cards](guides/milestone-cards.md)
+- [Hanging milestone badges](guides/milestone-cards.md)
 - [Twelve labelled tiles](guides/twelve-word-grid.md)
 - [Three Card Summary](guides/three-card-summary.md)
 - [Four Pillar Cards](guides/four-pillar-cards.md)

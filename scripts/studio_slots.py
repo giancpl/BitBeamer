@@ -45,7 +45,7 @@ def card_recipe(root, field):
     cy = float(rect.get('y'))+h/2-y
     return dict(name=name+'-panel', parent=source.relative_to(root).as_posix(),
                 parent_sha256=digest(source), source_bytes=body,
-                frame_box=[rw, rh], content=[cx, cy, w*.65, h*.65])
+                frame_box=[rw, rh], content=[cx, cy, w*field.get('slot',{}).get('safe_fraction',.65), h*field.get('slot',{}).get('safe_fraction',.65)])
 
 
 def annotate(root=ROOT):
@@ -105,12 +105,16 @@ def prepare(root=ROOT, check=False):
             cairo, Rsvg = rsvg_modules()
             w,h=item['frame_box']
             handle=Rsvg.Handle.new_from_file(str(source))
-            surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w),round(h))
+            scale=item.get('render_scale',1)
+            surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w*scale),round(h*scale))
+            context=cairo.Context(surface);context.scale(scale,scale)
+            if item.get('paper_background')=='F9F9F9':
+                context.set_source_rgb(249/255,249/255,249/255);context.paint()
             viewport=Rsvg.Rectangle();viewport.x=viewport.y=0;viewport.width=w;viewport.height=h
-            handle.render_document(cairo.Context(surface),viewport)
+            handle.render_document(context,viewport)
             with cairo.PDFSurface(str(target),w,h) as pdf:
                 pdf.restrict_to_version(cairo.PDF_VERSION_1_5)
-                context=cairo.Context(pdf);context.set_source_surface(surface);context.paint()
+                context=cairo.Context(pdf);context.scale(1/scale,1/scale);context.set_source_surface(surface);context.paint()
             item['pdf_sha256']=digest(target)
     if not check:
         path.write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')

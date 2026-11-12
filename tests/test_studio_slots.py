@@ -29,7 +29,7 @@ class StudioSlotTests(unittest.TestCase):
             studio_slots.validate([broken])
 
     def test_missing_frame_dependency_is_rejected_before_packaging(self):
-        entry=copy.deepcopy(next(e for e in studio_templates.inspect_templates(ROOT) if e['id']=='two-cards'))
+        entry=copy.deepcopy(next(e for e in studio_templates.inspect_templates(ROOT) if e.get('slot_parts')))
         entry['slot_parts']=[]
         with self.assertRaisesRegex(RuntimeError,'slot dependencies disagree'):
             studio_slots.validate([entry])
@@ -41,6 +41,18 @@ class StudioSlotTests(unittest.TestCase):
         self.assertEqual(set(studio_slots.declarations(entry)),before)
         graphics=sorted((f for f in entry['fields'] if f['type']=='graphic'),key=lambda f:f['slot']['number'])
         self.assertEqual([f['box'][0] for f in graphics],sorted(f['box'][0] for f in graphics))
+
+    def test_reviewed_icon_cards_keep_common_bounds_when_reannotated(self):
+        entries=studio_templates.inspect_templates(ROOT)
+        for name in ('two-cards','three-cards'):
+            entry=next(e for e in entries if e['id']==name)
+            for field in entry['fields']:
+                if field['type']!='graphic':continue
+                self.assertEqual(field['slot']['content'][2:],[216,216])
+                recipe=studio_slots.card_recipe(ROOT,field)
+                if recipe:
+                    self.assertEqual(recipe['content'][2:],[216,216])
+                    self.assertEqual(recipe['frame_box'],[488,489])
 
     def test_separated_cards_keep_the_original_shadow_canvas(self):
         data=json.loads((ROOT/'images/studio/slots/manifest.json').read_text(encoding="utf-8"))

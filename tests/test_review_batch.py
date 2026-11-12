@@ -51,7 +51,7 @@ class ReviewBatchTests(unittest.TestCase):
                 {'family':'Statements','kind':'studio','choices':[{'id':'four','status':'changes requested'},{'id':'five','status':'approved'}]},
                 {'family':'Closing','kind':'studio','choices':[{'id':'closing','status':'approved'}]}]}
             def prepare(root,name,*args):
-                folder=root/'build/review/batches'/name;folder.mkdir(parents=True)
+                folder=root/'build/review/batches'/name;folder.mkdir(parents=True,exist_ok=True)
                 with fitz.open() as document:
                     for item in {'first':['photo'],'second':['four']}[name]:
                         page=document.new_page(width=1400,height=460)
@@ -77,6 +77,18 @@ class ReviewBatchTests(unittest.TestCase):
             report=json.loads((root/'build/review/batches/all-report.json').read_text())
             self.assertEqual(report['pending'],[{'id':'photo','category':'Covers','batch':'first'},
                                                 {'id':'four','category':'Statements','batch':'second'}])
+            (root/'templates').mkdir()
+            (root/'templates/review.json').write_text(json.dumps({'active_review_batches':['second']}))
+            with mock.patch.object(review_batch,'catalogue',return_value=payload), \
+                    mock.patch.object(review_batch,'review_batches',return_value=batches), \
+                    mock.patch.object(review_batch,'prepare',side_effect=prepare) as prepared:
+                result=review_batch.combine(root,compare=True)
+            self.assertEqual([call.args[1] for call in prepared.call_args_list],['second'])
+            with fitz.open(result) as document:
+                self.assertEqual(len(document),1)
+                self.assertIn('four',document[0].get_text())
+                self.assertNotIn('photo',document[0].get_text())
+
 
     def test_comparison_prints_the_invocation_used_for_the_reviewed_example(self):
         import json
@@ -84,9 +96,11 @@ class ReviewBatchTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root=Path(directory);folder=root/'build/review/batches/columns';folder.mkdir(parents=True)
             Image.new('RGB',(16,9),'white').save(root/'original.png')
+            (root/'templates').mkdir()
+            (root/'templates/figma-inventory.json').write_text(json.dumps({'frames':[{'id':'figma-0021','file':'1900.svg'}]}))
             index=root/'build/checks/slide-guide/comparisons.js';index.parent.mkdir(parents=True)
             index.write_text('window.BITBEAMER_COMPARISONS='+json.dumps({'records':{
-                'columns':{'variants':[{'original':'../../original.png'}]}}})+';')
+                'columns':{'variants':[{'label':'figma-0021','original':'../../original.png'}]}}})+';')
             with fitz.open() as replica:
                 page=replica.new_page(width=800,height=450);page.insert_text((20,20),'Current layout')
                 replica.save(folder/'main.pdf')
@@ -98,6 +112,7 @@ class ReviewBatchTests(unittest.TestCase):
             with fitz.open(folder/'comparisons.pdf') as document:
                 text=document[0].get_text()
                 self.assertIn('Lists',text)
+                self.assertIn('1900.svg',text)
                 self.assertIn('Use: '+invocation,text)
                 self.assertNotIn('unreviewed-default',text)
 

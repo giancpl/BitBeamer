@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the two-step icon process layout.
 
-Model: `two-step-process` · Family: Cards · Status: **in review**.
+Model: `two-step-process` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/two-step-process.tex)
 
@@ -100,8 +100,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | --- | --- | --- | --- | --- |
 | <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0048-part-01.pdf}</code> |
 | <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0048-part-02.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 12.5% wide × 5.6% high | <code>Title</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 7.7% wide × 4.9% high | <code>Item</code> |
+| <code>title</code> | Main text (text) | middle centre | 18.6% wide × 10.2% high | <code>Title</code> |
+| <code>text-2</code> | Editable text (text) | middle centre | 18.6% wide × 10.2% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

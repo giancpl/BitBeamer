@@ -125,15 +125,40 @@ def prepare(root=ROOT, check=False, converter='auto'):
             photographic=converter!='inkscape' and any(d['path'].lower().endswith(('.jpg','.jpeg')) for d in part['dependencies'])
             if photographic and jpeg_pdf(source,target):
                 part['renderer']='Original JPEG streams; no recompression.'
+            elif part.get('rendering') == 'svg-pdf':
+                # Cairo's PDF filter masks introduce a dark seam at the rounded
+                # edge. Evaluate the unmodified SVG filters on an image surface
+                # at twice the source resolution, then embed without a PNG input.
+                cairo,Rsvg=rsvg_modules()
+                handle=Rsvg.Handle.new_from_file(str(source))
+                w,h=part['render_box'][2:]; scale=2
+                surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w*scale),round(h*scale))
+                context=cairo.Context(surface);context.scale(scale,scale)
+                context.set_source_rgb(249/255,249/255,249/255);context.paint()
+                viewport=Rsvg.Rectangle();viewport.x=viewport.y=0;viewport.width=w;viewport.height=h
+                handle.render_document(context,viewport)
+                with cairo.PDFSurface(str(target),w,h) as pdf:
+                    context=cairo.Context(pdf);context.scale(1/scale,1/scale)
+                    context.set_source_surface(surface);context.paint()
+                part.pop('png_sha256',None)
+                part['effect_fallback']='SVG filters evaluated directly at twice source resolution to avoid Cairo PDF mask seams; no extracted PNG input.'
+                part['renderer']='Original SVG source with unchanged geometry and filters; filtered panel rasterized internally, text and icons remain separate.'
             elif part['name'] in ('card-1','card-2','card-3') and converter != 'inkscape':
                 # Cairo PDF produces a hairline at the boundary of this compound
                 # inset/drop-shadow filter. Rasterize only the panel at the original 2000px canvas resolution (~564 dpi on a 90mm slide).
                 cairo,Rsvg=rsvg_modules()
-                handle=Rsvg.Handle.new_from_file(str(source))
-                w,h=part['render_box'][2:]
+                # Evaluate filters in the original slide viewport before cropping.
+                # A tight viewport can change the compound inset shadows.
+                tree=ET.parse(source).getroot()
+                cw,ch=part['canvas']
+                tree.set('width',str(cw));tree.set('height',str(ch))
+                tree.set('viewBox',f'0 0 {cw} {ch}')
+                handle=Rsvg.Handle.new_from_data(ET.tostring(tree))
+                x,y,w,h=part['render_box']
                 surface=cairo.ImageSurface(cairo.FORMAT_ARGB32,round(w),round(h))
                 context=cairo.Context(surface);context.set_source_rgb(249/255,249/255,249/255);context.paint()
-                viewport=Rsvg.Rectangle();viewport.x=viewport.y=0;viewport.width=w;viewport.height=h
+                context.translate(-x,-y)
+                viewport=Rsvg.Rectangle();viewport.x=viewport.y=0;viewport.width=cw;viewport.height=ch
                 handle.render_document(context,viewport)
                 png=target.with_suffix('.png');surface.write_to_png(str(png))
                 with cairo.PDFSurface(str(target),w,h) as pdf:

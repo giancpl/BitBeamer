@@ -14,7 +14,7 @@ GROUPS = [
  ('dialogue','Dialogue',[('two-messages','chat-dialogue'),('three-messages','chat-three-messages'),('people','speech-panel'),('cards','people-speech-cards')]),
  ('oversized-number','Oversized number',[('plain','oversized-number-light'),('captioned','oversized-number-blue')]),
  ('paragraphs','Heading and paragraphs',[('left','title-paragraphs'),('centered','title-centered-paragraphs')]),
- ('list-rail','List beside a rail',[('three-items','list-rail-light'),('four-items','list-rail-blue'),('grouped','grouped-rail'),('stepped','stepped-rail-blue')]),
+ ('list-rail','List beside a rail',[('three-items','list-rail-light'),('four-items','list-rail-blue'),('grouped','grouped-rail')]),
  ('levels','Three levels',[('default','privacy-levels'),('default','privacy-levels-blue')]),
  ('icon-cards','Icon cards',[('two','two-cards'),('three','three-cards'),('two-vertical','two-card-vertical'),('four-pillars','four-pillar-cards'),('summary','three-card-summary')]),
  ('text-cards','Text cards',[('four','four-card-grid'),('six-outline','six-outline-cards'),('six-detailed','six-explanation-cards'),('callout','callout-explanation')]),
@@ -94,12 +94,19 @@ def validate(root, entries):
             variants.add(variant['id'])
             for item in variant['compositions']:
                 assigned.append(item['id'])
-                if item['palettes'] != [item['native_palette']]:
+                semantic=item.get('palette_mode')=='semantic'
+                if semantic and (model['id']!='list-rail' or variant['id'] not in ('three-items','four-items','five-items') or item['palettes']!=['light','blue']):
+                    raise RuntimeError('Invalid semantic list palette: '+item['id'])
+                if not semantic and item['palettes'] != [item['native_palette']]:
                     raise RuntimeError('Only original palette choices are supported: '+item['id'])
                 if set(item['fields'].values())- {f['name'] for e in entries if e['id']==item['id'] for f in e['fields']}:
                     raise RuntimeError('Unknown semantic field in '+item['id'])
                 if set(item.get('example_fields',[]))-set(item['fields']):
                     raise RuntimeError('Unknown example field in '+item['id'])
+                graphic_numbers={f['slot']['number'] for e in entries if e['id']==item['id'] for f in e['fields'] if f['type']=='graphic'}
+                if any(not re.fullmatch(r'[a-z][a-z0-9-]*',key) or value not in graphic_numbers
+                       for key,value in item.get('graphic_slots',{}).items()) or (item.get('title_graphic_slot') is not None and item['title_graphic_slot'] not in graphic_numbers):
+                    raise RuntimeError('Unknown semantic graphic slot in '+item['id'])
         if model['default_variant'] not in variants:raise RuntimeError('Missing default variant '+model['id'])
     aliases=set();by_model={m['id']:m for m in data['models']}
     for alias in data.get('variant_aliases',[]):
@@ -197,12 +204,21 @@ def registry(root, entries):
         lines.append(r'\DeclareStudioMembership{'+name+'}{'+m['id']+'}{'+v['id']+'}{'+c['native_palette']+'}{'+','.join(c['palettes'])+'}')
         entry=next(e for e in entries if e['id']==name)
         words=['one','two','three','four','five','six','seven','eight','nine','ten','eleven','twelve']
-        for f in entry['fields']:
-            if f['type']=='graphic':
-                n=f['slot']['number']; word=words[n-1] if n<=len(words) else str(n)
+        graphics={words[f['slot']['number']-1] if f['slot']['number']<=len(words) else str(f['slot']['number']):f['slot']['number']
+                  for f in entry['fields'] if f['type']=='graphic'}
+        if m['id']=='text-cards':
+            for word in ['one','two','three','four','five']:
+                head=c['fields'].get('card-'+word+'/title')
+                if head is None:continue
+                body=c['fields']['card-'+word+'/body'];slot=c.get('graphic_slots',{}).get(word,'')
+                lines.append(r'\studio@addslot{'+name+r'}{\ifstudio@canonical\studiocardfields{'+word+'}{'+head+'}{'+body+'}{'+str(slot)+r'}\fi}')
+            if c.get('title_graphic_slot'):
+                lines.append(r'\studio@addslot{'+name+r'}{\ifstudio@canonical\studiocardtitlegraphic{'+str(c['title_graphic_slot'])+r'}\fi}')
+        else:
+            for word,n in c.get('graphic_slots',graphics).items():
                 lines.append(r'\DeclareStudioGraphicSemantic{'+name+'}{'+word+'}{'+str(n)+'}')
         for semantic,native in c['fields'].items():
-            if semantic!=native:lines.append(r'\DeclareStudioSemantic{'+name+'}{'+semantic+'}{'+native+'}')
+            if semantic!=native and '/' not in semantic:lines.append(r'\DeclareStudioSemantic{'+name+'}{'+semantic+'}{'+native+'}')
         if name=='cover-script-blue':lines.append(r'\DeclareStudioMirror{'+name+'}{title}{text-3}')
         for rejected in c.get('rejected_semantic_fields',[]):lines.append(r'\DeclareStudioRejectedSemantic{'+name+'}{'+rejected+'}')
     icons=root/'images/studio/icon-palettes/manifest.json'
@@ -287,13 +303,15 @@ def model_guides(root,entries):
                'Model: `'+m['id']+'`. Each call creates a complete slide. Inter, geometry and text sizes are fixed.','',
                '[Model index](../../../templates/MODELS.md) · [Palette and content guide](../../STUDIO-MODELS.md)','',
                '```latex',r'\studiosetup{palette=light}',r'\studiotemplate[variant='+variants[0][0]['id']+']{'+m['id']+'}','```','',
-               'Palette switches are available only where the original composition exists in both colours.',
+               ('Simple three-, four- and five-item lists support light and blue; blue is the dark treatment. Specialized variants keep their native palette.' if m['id']=='list-rail' else 'Palette switches are available only where the original composition exists in both colours.'),
                'Unsupported explicit choices fail. A global palette leaves special compositions in their native treatment.','',
                '## Variants and named fields','']
+        if m['id']=='list-rail':
+            lines+=['[Complete usage reference: counts, palettes, defaults and wrapping](../../STUDIO-LISTS.md)','','The number of items is selected explicitly by `variant`; it is not inferred from filled fields.','']
         for v,cs in variants:
             c=cs[0];e=by_id[c['id']]
             palettes=sorted({p for item in cs for p in item['palettes']})
-            lines+=['### '+v['id'],'','Original palettes: '+', '.join(palettes)+'.','',
+            lines+=['### '+v['id'],'',('Supported semantic palettes: ' if any(c.get('palette_mode')=='semantic' for c in cs) else 'Original palettes: ')+', '.join(palettes)+'.','',
                     '[Current source](../../../'+e['source']+') · [Full slot guide](../guides/'+c['id']+'.md)','',
                     '| Field | Default | Available space |','| --- | --- | --- |']
             for semantic,native in c['fields'].items():
@@ -304,13 +322,22 @@ def model_guides(root,entries):
             if e.get('options'):
                 lines += ['', 'Layout options: ' + ', '.join('`'+key+'='+str(option['default']).lower()+'` ('+option['type']+')' for key,option in e['options'].items()) + '. See the full slot guide for both treatments.']
             graphics=[f for f in e['fields'] if f['type']=='graphic']
-            if graphics:lines+=['','Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.']
+            if graphics:
+                if m['id']=='text-cards':
+                    lines+=['','Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.']
+                    if c.get('graphic_slots'):lines+=['Add `icon`, `image` or `graphic` inside each icon-bearing card block.']
+                    if c.get('title_graphic_slot'):lines+=['The separate heading symbol uses `title-icon`, `title-image` or `title-graphic`.']
+                elif 'graphic_slots' in c:
+                    keys=', '.join('`icon-'+key+'` / `image-'+key+'` / `graphic-'+key+'`' for key in c['graphic_slots'])
+                    lines+=['','Editable icons: '+keys+'. These semantic keys select the icon artwork, preserving the panels. See the full slot guide for position and bounds.']
+                else:lines+=['','Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.']
+            if m['id']=='icon-cards':lines+=['','Horizontal rows: see [count, optional heading and icon sizing](../../STUDIO-ICON-CARDS.md) for variants two, three and five.']
             lines+=['','Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.','']
         from studio_guides import PREAMBLE,END,command
         first_variant,first_compositions=variants[0]
         first=first_compositions[0];first_entry=by_id[first['id']]
         options={'variant':first_variant['id'],'palette':first['native_palette']}
-        for key in first.get('example_fields',list(first['fields'])[:2]):
+        for key in (first['fields'] if m['id']=='text-cards' else first.get('example_fields',list(first['fields'])[:2])):
             native=first['fields'][key]
             f=next(f for f in first_entry['fields'] if f['name']==native)
             if f['type']=='text':options[key]=f['default'].replace(r'\\\\',r'\\')
@@ -336,8 +363,8 @@ def model_guides(root,entries):
 
 
 def choice_inputs(root,entry,palette,base):
-    """Fingerprint an existing original, never an invented opposite-colour render."""
-    if palette != entry['native_palette']:
+    """Fingerprint an explicitly declared native or semantic palette."""
+    if palette not in entry['palettes']:
         raise ValueError('No original '+palette+' palette for '+entry['id'])
     return dict(base, **{'@palette':palette})
 
@@ -350,9 +377,11 @@ def render_palette_previews(root, pdf):
 
 
 def check_palette_previews(root, entries):
-    """Original colour pairs reuse their own composition previews."""
+    """Native previews cover original pairs and explicitly supported semantic palettes."""
+    members=membership(root)
     for entry in entries:
-        if entry['palettes'] != [entry['native_palette']]:
+        c=members[entry['id']][2]
+        if entry['palettes'] != [entry['native_palette']] and c.get('palette_mode')!='semantic':
             raise RuntimeError('Unexpected synthetic palette for ' + entry['id'])
     obsolete = list((root / 'docs/templates/previews').glob('*--*.png'))
     if obsolete:

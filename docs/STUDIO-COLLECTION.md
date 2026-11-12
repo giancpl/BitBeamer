@@ -191,32 +191,58 @@ These names replace `label-two` through `label-six`; the obsolete keys are rejec
 python3 scripts/build.py examples/studio-two-columns.tex build/review/two-columns --open
 ```
 
-## Current list review
+## Active bullet-list review
 
-The next pending composition is `list-rail-light`, model `list-rail`, variant
-`three-items`, canonical category Lists. Batch `lists-01` compares it with the
-original. The related `four-items`, `grouped` and `stepped` variants are not added
-to this batch automatically.
+The list family was explicitly approved on 2026-11-09 and is excluded from
+pending comparisons. [The full usage reference](STUDIO-LISTS.md) explains counts,
+fields, native defaults, palettes, empty values and wrapping. Older unresolved
+Statements stay in the ledger and are excluded from the current PDF. Set `active_review_batches` when
+switching the review focus; approval and active scope are independent.
 
-[Short and longer examples](../examples/studio-list-rail.tex) include automatic
-and explicit two-line title wrapping. Item text uses the original fixed one-line
-slots; a second line is rejected rather than squeezed into the rail spacing.
-The public command matches the reviewed example:
+All bullet-and-rail compositions use `list-rail`, with `title`, `item-one`,
+`item-two`, `item-three`, and further items where available:
+
+| Variant | Items | Palette | Extra fields |
+| --- | --- | --- | --- |
+| `three-items` | 3 | light, blue | — |
+| `four-items` | 4 | light, blue | — |
+| `five-items` | 5 | light, blue | — |
+| `detailed` | 4 | blue | Two-line item text |
+| `grouped` | 4 in two groups | light | `group-one-title`, `group-two-title` |
+| `illustrated` | 3 | light | `illustration` |
+
+Blue is the dark treatment. The five-item layout is an adaptation of the related
+four-item source; the comparison reference is explicitly shared, not an original
+five-item design. Native geometry of the existing specialized variants is retained.
+Labelled boxes, column prose, partner-logo grids and level diagrams remain distinct
+models because they are not bullet-and-rail lists.
 
 ```latex
 \studiotemplate[
-  variant=three-items,
+  variant=five-items,
+  palette=blue,
   title={Key ideas},
   item-one={Verify rules},
   item-two={Check state},
-  item-three={Compare copies}
+  item-three={Compare copies},
+  item-four={Share results},
+  item-five={Repeat checks}
 ]{list-rail}
 ```
+
+[All short and longer examples](../examples/studio-list-rail.tex) test automatic
+and explicit wrapping where the original text slots support it. Fonts never shrink.
 
 ```sh
 python3 scripts/review_batch.py all --compare --open
 python3 scripts/build.py examples/studio-list-rail.tex build/review/list-rail --open
 ```
+
+## Card review families
+
+The approved icon-card rows use `icon-cards`; see
+[their guide](STUDIO-ICON-CARDS.md). Rectangular cards with descriptions use
+[text-cards](STUDIO-SOFT-CARDS.md); all ten compositions are approved.
 
 ## Correct the canonical source
 
@@ -309,3 +335,108 @@ python3 scripts/validate-studio-review.py
 Review ZIPs stay under `build/review/`; stable `dist/` artifacts are preserved.
 See [releasing](RELEASING.md) for isolated validation and explicit approval gates.
 On Windows use `py -3`; append `--backend native` for installed TeX Live/MacTeX.
+
+The active three-card comparison uses `1900.svg` from the original graphics export,
+verified against its inventory SHA-256. Its review command repeats the original
+Italian copy so typography can be compared directly. Inter retains the original
+text height and centred axes, with slightly different glyph widths from outlined
+SF Pro; the previously accepted 10% icon reduction remains intentional.
+
+The three-card layout uses the original extracted panel SVGs, prepared as PDF
+for pdfLaTeX. SVG geometry and filters are retained; the filtered panels are rendered
+internally at twice source resolution to avoid dark seams in Cairo PDF masks. Pre-extracted PNG panels are
+not used by this layout. Icons and captions remain separate editable layers.
+
+The three-card composition was approved on 2026-11-11. Its default icons fit
+a common 216 × 216 source-unit envelope (54% of the 400-unit panel), preserving
+aspect ratios and centres. This supersedes the earlier individual 10% reduction.
+The active review is now `icon-cards`, variant `two` (Cards), with equal 76-unit
+caption sizes, centred 660-unit caption boxes and up to two lines.
+See `examples/studio-two-cards.tex` for short, automatic and explicit wrapping.
+
+Icon replacement in `icon-cards` variants `two` and `three` uses a shared
+216 × 216 source-unit envelope, preserving aspect ratio and centred placement.
+Use named `icon-one`, `icon-two`, `icon-three` catalogue keys or the corresponding
+`image-one` / `graphic-one` keys; no explicit dimensions are needed.
+The two-card review examples include wide and tall replacement artwork.
+
+## Unified icon-card row review
+
+The two-, three- and five-icon horizontal rows now share one renderer and the
+`icon-cards` model. `variant=two|three|five` selects the item count;
+`show-title=true|false` independently controls the heading. Every default and
+replacement icon fits the same centred 216 × 216 envelope. The unified renderer was approved on 2026-11-12, including both heading states,
+icon replacement, the 76-unit caption gap and fixed first-line alignment.
+See [the complete row syntax](STUDIO-ICON-CARDS.md) and
+[all title, text and replacement examples](../examples/studio-icon-card-rows.tex).
+
+The unified `icon-cards` row family (two, three and five boxes) was explicitly
+approved on 2026-11-12. Approved rows are
+excluded from pending comparison output.
+
+## Approved horizontal icon processes
+
+The Cards family `icon-process`, variants `two`, `three` and `four`, was explicitly
+approved on 2026-11-12,
+with horizontal arrows. Public `caption-one` through `caption-four` follow
+reading order. `title` is a heading only for `four`; the shorter original
+processes have no heading. Captions share a 76-unit panel gap, centred fixed
+76-unit typography and 88-unit leading, with capacity for two lines.
+Original artwork remains the default; replacement icons fit 216 × 216.
+See [short and long examples](../examples/studio-icon-process.tex).
+
+Compatibility audit: inspected all 29 inventory assignments to these three
+compositions and the related milestone, statistics, split-process, outline,
+transaction, signature, encryption and proof-of-work layouts. The compatible
+horizontal icon sequences use the same two/three/four-stage variants with different
+captions and artwork. Similarity assignments are candidates, not approvals.
+Originals with additional headings above two or three stages (figma-0566/0567
+and figma-0825/0826/0827) need separate review for those headings; current
+commands intentionally expose a heading only for four stages. Five hanging
+milestone badges and multi-row or branching diagrams are separate compositions.
+This approval covers the three reviewed canonical compositions, not every
+inventory example or the hanging-badge composition, now exposed separately as
+`milestone-badges`. Approved process comparisons have been cleaned up locally.
+
+## Approved hanging milestone badges
+
+The Cards composition `milestone-cards` was explicitly approved on 2026-11-12, exposed as
+`milestone-badges` with its default `five` variant. Its original is `8907.svg`
+(figma-0105), verified against the inventory hash. Five hanging badges differ from
+horizontal arrow processes, so the old `icon-process/milestones` command was
+replaced rather than retained as an alias.
+
+```latex
+\studiotemplate[
+  title={Missions},
+  badge-one={Plan B Forum\\El Salvador},
+  badge-two={Barcelona\\Cypher\\Conference},
+  badge-three={BitCuneo},
+  badge-four={BitCare Forum},
+  badge-five={BTC Prague}
+]{milestone-badges}
+```
+
+Badge text uses fixed 72-unit type and 84-unit leading, the original left anchors
+and capacity for three lines. Measured text blocks share the original visual
+centre regardless of line count. The centred heading supports two lines. Short copy,
+automatic wrapping and explicit breaks are demonstrated in
+[the canonical example](../examples/studio-milestone-badges.tex). This template
+was explicitly approved after restoring the original text alignment. Its old local
+comparison and trial PDFs have been removed; source examples and guide previews remain.
+
+After approval, remove obsolete local batch outputs and disposable export trials;
+keep canonical examples, prepared graphics, current guide previews and recorded
+approval decisions. Unresolved review work and stable releases remain available.
+
+
+## Approved unified soft cards
+
+All ten `text-cards` compositions in Cards were explicitly approved on
+2026-11-12 after text-weight correction and editable-icon verification. The
+`soft-cards-01` and `soft-cards-02` ledger records remain as review history.
+
+See [all variants, optional content and the exact syntax](STUDIO-SOFT-CARDS.md)
+and [all short and longer text examples](../examples/studio-soft-cards.tex).
+Approved compositions are excluded from pending-review PDFs. The icon examples
+also cover custom images, wide/tall artwork, hidden icons and longer copy.

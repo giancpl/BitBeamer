@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the four-step icon process layout.
 
-Model: `four-step-process` · Family: Cards · Status: **in review**.
+Model: `four-step-process` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/four-step-process.tex)
 
@@ -107,11 +107,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-02.pdf}</code> |
 | <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-03.pdf}</code> |
 | <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-0054-part-04.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 25.5% wide × 7.8% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | lower left | 18.1% wide × 10.3% high | <code>Label 2</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 15.8% wide × 10.3% high | <code>Label 3</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 16.3% wide × 10.4% high | <code>Label 5</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 14.5% wide × 10.3% high | <code>Label 4</code> |
+| <code>title</code> | Main text (text) | upper centre | 73.1% wide × 13.0% high | <code>Slide title</code> |
+| <code>text-2</code> | Editable text (text) | lower left | 19.7% wide × 10.2% high | <code>Label 2</code> |
+| <code>text-3</code> | Editable text (text) | lower centre | 19.7% wide × 10.2% high | <code>Label 3</code> |
+| <code>text-4</code> | Editable text (text) | lower right | 19.7% wide × 10.2% high | <code>Label 5</code> |
+| <code>text-5</code> | Editable text (text) | lower centre | 19.7% wide × 10.2% high | <code>Label 4</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

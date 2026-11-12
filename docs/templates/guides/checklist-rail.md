@@ -4,7 +4,7 @@
 
 Organize related explanations or talking points using the practical checklist layout.
 
-Model: `checklist-rail` · Family: Lists · Status: **in review**.
+Model: `checklist-rail` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/checklist-rail.tex)
 
@@ -16,13 +16,13 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/checklist-rail.md)
+[Model variants and named fields](../models/list-rail.md)
 
 ```latex
-\studiotemplate[variant=default,palette=blue]{checklist-rail}
+\studiotemplate[variant=detailed,palette=blue]{list-rail}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 

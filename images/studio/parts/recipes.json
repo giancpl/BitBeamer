@@ -195,7 +195,8 @@
         766,
         766
       ],
-      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region."
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region.",
+      "rendering": "svg-pdf"
     },
     {
       "name": "card-icon-1",
@@ -245,7 +246,8 @@
         1537,
         766
       ],
-      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region."
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region.",
+      "rendering": "svg-pdf"
     },
     {
       "name": "card-icon-2",
@@ -295,7 +297,8 @@
         2308,
         766
       ],
-      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region."
+      "notes": "400 x 400 panel; corner radius 100. Render box includes the complete SVG filter region.",
+      "rendering": "svg-pdf"
     },
     {
       "name": "card-icon-3",
@@ -699,6 +702,174 @@
         902
       ],
       "notes": "Original JPEG, SVG pattern transform and radius 50. Slide clipping is intentional; embedded lettering belongs to the original photograph/poster."
+    },
+    {
+      "name": "row-icon-2-one",
+      "reference": "figma-0070",
+      "group": null,
+      "children": [],
+      "render_box": [
+        1211.0,
+        829.0,
+        190.0,
+        190.0
+      ],
+      "content_box": [
+        1211.0,
+        829.0,
+        190.0,
+        190.0
+      ],
+      "anchor": [
+        1211.0,
+        829.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-2-one.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "row-icon-2-two",
+      "reference": "figma-0070",
+      "group": null,
+      "children": [],
+      "render_box": [
+        2176.0,
+        818.0,
+        148.0,
+        212.0
+      ],
+      "content_box": [
+        2176.0,
+        818.0,
+        148.0,
+        212.0
+      ],
+      "anchor": [
+        2176.0,
+        818.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-2-two.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "row-icon-5-one",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        449.0,
+        964.0,
+        138.0,
+        217.0
+      ],
+      "content_box": [
+        449.0,
+        964.0,
+        138.0,
+        217.0
+      ],
+      "anchor": [
+        449.0,
+        964.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-one.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "row-icon-5-two",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        1059.0,
+        982.0,
+        177.0,
+        177.0
+      ],
+      "content_box": [
+        1059.0,
+        982.0,
+        177.0,
+        177.0
+      ],
+      "anchor": [
+        1059.0,
+        982.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-two.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "row-icon-5-three",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        1689.0,
+        982.0,
+        178.0,
+        177.0
+      ],
+      "content_box": [
+        1689.0,
+        982.0,
+        178.0,
+        177.0
+      ],
+      "anchor": [
+        1689.0,
+        982.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-three.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "row-icon-5-four",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        2299.0,
+        962.0,
+        217.0,
+        217.0
+      ],
+      "content_box": [
+        2299.0,
+        962.0,
+        217.0,
+        217.0
+      ],
+      "anchor": [
+        2299.0,
+        962.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-four.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
+    },
+    {
+      "name": "row-icon-5-five",
+      "reference": "figma-1022",
+      "group": null,
+      "children": [],
+      "render_box": [
+        2973.0,
+        998.0,
+        129.0,
+        145.0
+      ],
+      "content_box": [
+        2973.0,
+        998.0,
+        129.0,
+        145.0
+      ],
+      "anchor": [
+        2973.0,
+        998.0
+      ],
+      "retained_source": "images/studio/parts/source/row-icon-5-five.svg",
+      "notes": "Icon paths extracted from the original exported card, excluding the rounded panel and its filters."
     }
   ]
 }

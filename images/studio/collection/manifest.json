@@ -404,9 +404,11 @@
       "definition_ids": [
         "filter0_dii_993_204"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "662a532c5a574ffa3a248f04c9ed0b0f88b3b130b1b91d735bc818e62d7e3001",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "05788f1431ef804c534e003d5801a86d42d098ec76bc1a8f420c60dadc46975f"
     },
     {
       "name": "figma-0079-part-02",
@@ -447,9 +449,11 @@
       "definition_ids": [
         "filter1_dii_993_204"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "a9453b1d40714fb68a413313d089f292e18d6033addb06f4c372544f703f6dfe",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "08326d110e8992cb4cf430096ea945353227995106579fe6f934b211bac3b7b9"
     },
     {
       "name": "figma-0079-part-03",
@@ -490,9 +494,11 @@
       "definition_ids": [
         "filter2_dii_993_204"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "4f57dd5c1db27778153d0418bc547f4326ed3e70455453c4c4e19107f8a2aace",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "5e508bda71a94c20a78b1b177c789ffd7bcfa47a824ce8e9d09043fc96b22fc8"
     },
     {
       "name": "figma-0828-part-01",
@@ -4712,9 +4718,11 @@
       "definition_ids": [
         "filter0_dii_3220_687"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "b4944ae9cbfc44974cee16a4df043aafb2f9387b63d29a92218c797652ffbb02",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "c7ac3057fc32c5f568c4123c5ee586e222c7dbc85b4451c6e3ed0101f333ce9b"
     },
     {
       "name": "figma-0070-part-02",
@@ -4755,9 +4763,11 @@
       "definition_ids": [
         "filter1_dii_3220_687"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "82b31864ef704fe1f797261c21d0ac85b1074c2f0e5259982ec74507271de20f",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "cfd05290d465808c8d4d4378a32e8e9df074c37ff970cf9d42ca9f8d5fff902c"
     },
     {
       "name": "figma-0064-part-01",
@@ -4795,9 +4805,11 @@
       "definition_ids": [
         "filter0_dii_2521_4338"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "6649572bf4bde6d03f04c30980d15b9e87fb6594178e7f60ef624d1fc11cc5fd",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "b804292220263fc4671b58bb65572b44de837511270dadf5e821166bda45ebb2"
     },
     {
       "name": "figma-0064-part-02",
@@ -4835,9 +4847,11 @@
       "definition_ids": [
         "filter1_dii_2521_4338"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "755744c8a82cf66d37baa239c9183ad11747763e5a4203847d5caac64ed7152b",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "83514f3ad57f040244f0342df27b3e4307c0ad15c97d3a4d16174ead3f7c5ce8"
     },
     {
       "name": "figma-0742-part-01",
@@ -6652,9 +6666,11 @@
       "definition_ids": [
         "filter0_dii_3228_4193"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "ca6dacd279bfe2864995387c2c112b1c21dd6e3cb55bdfe38ad2641cd0b43e19",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "1aea3577bcc06a514b7130ade5f0ba756dc46243bb111e271c4a16f2d01405b0"
     },
     {
       "name": "figma-0603-part-02",
@@ -6692,9 +6708,11 @@
       "definition_ids": [
         "filter1_dii_3228_4193"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "ca6dacd279bfe2864995387c2c112b1c21dd6e3cb55bdfe38ad2641cd0b43e19",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "58dbc73d7e62e637db06be9492b5e94af26e0407f3f3062acba98d5bc5900779"
     },
     {
       "name": "figma-0603-part-03",
@@ -6732,9 +6750,11 @@
       "definition_ids": [
         "filter2_dii_3228_4193"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "45b9a6ceaf981f7f0868b29b81a1be333edf6d4fad69d58a28660a519f20911a",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "d89d2e6f7c353e5e3da11ac8c80c2a051d3dd5210c60e26e6291891d8bb3bbcd"
     },
     {
       "name": "figma-0603-part-04",
@@ -6772,9 +6792,11 @@
       "definition_ids": [
         "filter3_dii_3228_4193"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "45b9a6ceaf981f7f0868b29b81a1be333edf6d4fad69d58a28660a519f20911a",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "3bc20f35b97a16d6d58fe54cf740cbcd10c25326c57d53756136f0a5710b64d0"
     },
     {
       "name": "figma-0429-part-01",
@@ -7195,9 +7217,11 @@
       "definition_ids": [
         "filter0_dii_3171_2885"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "ff140066e53fda9b2ee8399296fff3e4d3082271a48781650193bd6372477d7e",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "749aa3064e144513b8319f7d3d832192773b98fcff4a08003f069da14c96358c"
     },
     {
       "name": "figma-0054-part-02",
@@ -7238,9 +7262,11 @@
       "definition_ids": [
         "filter1_dii_3171_2885"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "981603a12776cad0c0600e766dbad0469f9780c293cb3c83380289552b252fc0",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "5b6197570371e57e7229e25283580fa65b2daaf50379399eae7b504871ad878e"
     },
     {
       "name": "figma-0054-part-03",
@@ -7281,9 +7307,11 @@
       "definition_ids": [
         "filter2_dii_3171_2885"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "1fc43724d4cbcc1af5d662e4cfc72715a6f4fe92776612135574fe3d3ceff680",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "9a3b3e4818c68fac33c47fd7600f3cbece4ca19c3312af2264f31974f7acd603"
     },
     {
       "name": "figma-0054-part-04",
@@ -7324,9 +7352,11 @@
       "definition_ids": [
         "filter3_dii_3171_2885"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "f7e077cfb5087072c52449226a000025dd5fbf02c9ad3c5b622d20e649576ca1",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "dbe65fd29f1b7d7bf034605595a6c2ccf956e604ebca9440e7a7d0d7f7d731e7"
     },
     {
       "name": "figma-0048-part-01",
@@ -7367,9 +7397,11 @@
       "definition_ids": [
         "filter0_dii_3171_2876"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "a3d099ace7719d4a05d9f86e225feeb332871902e40dec49d4b473b73251e6e9",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "00e51c560b1afea1f8f236a63e393e041042594d352e54fa9c691107e3b83cef"
     },
     {
       "name": "figma-0048-part-02",
@@ -7410,9 +7442,11 @@
       "definition_ids": [
         "filter1_dii_3171_2876"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "1bc7d511294b8476dd1bd521a0e75f09c4db776a6687b76d48dc26b3fd6df994",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "49c115de7ab1df25f5bf3d0f26781ebf2a334924bd1f5a931aa1d2e26ee34cd7"
     },
     {
       "name": "figma-0757-part-01",
@@ -15603,9 +15637,11 @@
       "definition_ids": [
         "filter0_dii_3749_1969"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "8d81fc4122cf4dd289e6cc95e696b43b8c883285b1daae52c83fbac20184aa3f",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "7446c53b436e0ed0940037cacb4a0edbe2e3b5a204aa3300fa5c32af74b5677c"
     },
     {
       "name": "figma-0648-part-02",
@@ -15643,9 +15679,11 @@
       "definition_ids": [
         "filter1_dii_3749_1969"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "8d81fc4122cf4dd289e6cc95e696b43b8c883285b1daae52c83fbac20184aa3f",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "1dd1eb8222a02c57456ae012b310cd27f6ff3fcc2aa089b7786ac6f5fe2e6f3d"
     },
     {
       "name": "figma-0584-part-01",
@@ -18820,9 +18858,11 @@
       "definition_ids": [
         "filter0_dii_2521_3459"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "761538c4fb018bc067e872c9d31a0b7050c90aaa4818c91714a5bd7339560b84",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "75bac2915737c989579e3b79c8efe52409504b46ad78f4efabac2e820cad9a04"
     },
     {
       "name": "figma-0049-part-02",
@@ -18860,9 +18900,11 @@
       "definition_ids": [
         "filter1_dii_2521_3459"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "761538c4fb018bc067e872c9d31a0b7050c90aaa4818c91714a5bd7339560b84",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "d67ea1084c34a218e02ada6181c2a40eb6fdf49c5704b9f1929fc9994338a486"
     },
     {
       "name": "figma-0049-part-03",
@@ -18900,9 +18942,11 @@
       "definition_ids": [
         "filter2_dii_2521_3459"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "3da3028369a6c27a2fa079f80aef8698bc73fcc02005915720bf6cc0511c8c17",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "dd1f7323eab501b9c69adc1b0b1c977f48a4dfc7a5642f4e37cf3d37a1385ea4"
     },
     {
       "name": "figma-0065-part-01",
@@ -18940,9 +18984,11 @@
       "definition_ids": [
         "filter0_dii_2521_4349"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "a9bd9fce9e189528305e6931407bd84a465a8b57b2a1950c80e4c62281531807",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "27b157aee37e4dfe1c13a5e2894076e5578b69a6897ad4f50db2db17e43db39b"
     },
     {
       "name": "figma-0065-part-02",
@@ -18980,9 +19026,11 @@
       "definition_ids": [
         "filter1_dii_2521_4349"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "be1c2d8af8f14fe52d25866c2703c63b6ccb6a5625ee2b03d8c3c2ab654d5486",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "ffe7fa9d3689fa1fff5f111ab219464fa76c23daacf5f1dd9c9d7bda291ff601"
     },
     {
       "name": "figma-0065-part-03",
@@ -19025,9 +19073,11 @@
         "filter2_dii_2521_4349",
         "filter3_dii_2521_4349"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "79c3fb4594ea41be5325dcbe1831efcca65d15f6f333bcc976da185a0dc8dabf",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "6250c47f50c70f1e1d9e8aea73ed4eeb76d907ac08de4b1bf9eef0f8262df5f8"
     },
     {
       "name": "figma-0063-part-01",
@@ -31261,9 +31311,11 @@
       "definition_ids": [
         "filter0_dii_3749_2169"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "c4894eff5fe50e73cfa2cb352f6f799aad1305f3b8d67c22ccf6c6d91a07b260",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "4392e65140d10ac03aad528955d4e94822979ea171879e428b652d801abeb64a"
     },
     {
       "name": "figma-0649-part-02",
@@ -31301,9 +31353,11 @@
       "definition_ids": [
         "filter1_dii_3749_2169"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "89206d66d53774a0b7d26090ebf082a503458351be49a457386334bd0dff5eda",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "bfc2396d25fff1642261d5378582453baa796e05b7dab52be6c9449a064e40b3"
     },
     {
       "name": "figma-0691-part-01",
@@ -38117,9 +38171,11 @@
       "definition_ids": [
         "filter0_dii_5842_201"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "0bc8aec73e555bf4b01c2685b15fccf5c87694fb033a927066ee5bcebc7702c8",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "a5df6260304e893e91f4d045d324c0d2d6fbdd04125be73cc59924d09d2e1a98"
     },
     {
       "name": "figma-0868-part-02",
@@ -38157,9 +38213,11 @@
       "definition_ids": [
         "filter1_dii_5842_201"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "20c2ff3d5314e05cbbb2775ff7692c11160cdf0010b91994f6f77aa437ba150a",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "b2067c1ecb9aa1a4a180fde8e455d23b214df9d5eced82b90392738ba1004ec7"
     },
     {
       "name": "figma-0868-part-03",
@@ -38197,9 +38255,11 @@
       "definition_ids": [
         "filter2_dii_5842_201"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "fc30d7e60c7b3579ea0f35388d1458ac69c6621c3959ef52828f8c4c4326d767",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "fb86e9bb2e66fe3ee71c536d8e807bd063c19221a35b40a7104a23ff256e08b1"
     },
     {
       "name": "figma-0869-part-01",
@@ -38237,9 +38297,11 @@
       "definition_ids": [
         "filter0_dii_5842_171"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "a03fb2692382c72f703242de49424c80d1db2fd1cc3a445acad15b89869af2ca",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "991d8727a680a65bb45547f6cf18536fcc1f4b2b7ecbd8b976b78b3e86275d5e"
     },
     {
       "name": "figma-0869-part-02",
@@ -38313,9 +38375,11 @@
       "definition_ids": [
         "filter1_dii_5842_171"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "facbd8fd9f4e853797dd9bc39c669f38c93c2ae4af7b4665d253819519e2036a",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "5e6579daf492608f1606a129fad27fb7e243cc42320b2a1d99fc79fdc8eaa52a"
     },
     {
       "name": "figma-0869-part-04",
@@ -38353,9 +38417,11 @@
       "definition_ids": [
         "filter2_dii_5842_171"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "4a90205b829187d5ae1baf1adc8c8a0dfe6befe2d7d53640f8e25907dc1912a2",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "1dc4c4cf30d5c4c0c1247942a03ccabd7637144029486f37e81bba848e3c1f89"
     },
     {
       "name": "figma-0869-part-05",
@@ -38393,9 +38459,11 @@
       "definition_ids": [
         "filter3_dii_5842_171"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "d37967e02db07ed3535d4e704536579dcdeefb0c1ffea675db98aa8726f84574",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "8ad3f4f1314b830e8f07bc3b6e61d0dc720f45d9b41869d6cc87d343327cd377"
     },
     {
       "name": "figma-0869-part-06",
@@ -38433,9 +38501,11 @@
       "definition_ids": [
         "filter4_dii_5842_171"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "600bc335faeaf057dcb589874e8def7adbcc0792fe6ff67f1727ecff745fd10a",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "555612bd89df9ba6d5da6ad97379c55d4c193a0bfe1f8516692897c44c604162"
     },
     {
       "name": "figma-0873-part-01",
@@ -38473,9 +38543,11 @@
       "definition_ids": [
         "filter0_dii_5842_150"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "565500613d34607cadd340f3442ca741a75cc7d3003e65489018e621bdc50506",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "b07e8accf5e8584d102672862ab7b0513a77c8be9d56fefb338b9bcb27e4b2ab"
     },
     {
       "name": "figma-0873-part-02",
@@ -38513,9 +38585,11 @@
       "definition_ids": [
         "filter1_dii_5842_150"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "565500613d34607cadd340f3442ca741a75cc7d3003e65489018e621bdc50506",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "f05562bc07fb7f4e8c649a9df6923423f7a8d9fb077fd7245142b4ff2b7647a1"
     },
     {
       "name": "figma-0873-part-03",
@@ -38553,9 +38627,11 @@
       "definition_ids": [
         "filter2_dii_5842_150"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "1e01b1a6e23f870dcca5b9c93fc67f2a1c293c95ffd4ad8e1bbdc37f4e3eae80",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "4f54f569ed84851a1da837932efd6864177987ae3f9a7a509538c66a385220ad"
     },
     {
       "name": "figma-0873-part-04",
@@ -38593,9 +38669,11 @@
       "definition_ids": [
         "filter3_dii_5842_150"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "1e01b1a6e23f870dcca5b9c93fc67f2a1c293c95ffd4ad8e1bbdc37f4e3eae80",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "9e382906490d858bbbef11397bd9c7ed149d13bd05a4f85ad2bb7dfe1f302232"
     },
     {
       "name": "figma-0874-part-01",
@@ -38633,9 +38711,11 @@
       "definition_ids": [
         "filter0_dii_5842_2"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "f2c5b20268fe8adbba1b3f3f63809aeed4ad544f33031c979ec89758ba856679",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "a079a5381a66d260574e6a32af9526ab69919ab92ee73dfd3f24b4043a619d8b"
     },
     {
       "name": "figma-0874-part-02",
@@ -38673,9 +38753,11 @@
       "definition_ids": [
         "filter1_dii_5842_2"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "f2c5b20268fe8adbba1b3f3f63809aeed4ad544f33031c979ec89758ba856679",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "3f8575cbef53f3a00b57a46e56780e5dd1a70408e9c6fa846ce9deee236019d8"
     },
     {
       "name": "figma-0874-part-03",
@@ -38713,9 +38795,11 @@
       "definition_ids": [
         "filter2_dii_5842_2"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "e32e8b53c9a119bf54424fa22b7b6c6809e6dec61dc0a8f78a3d3a804ed5d2c2",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "b1152eb04e5233b53906fed7a29eea14c6ae5b8765283f1386ab70ee80398c1c"
     },
     {
       "name": "figma-0874-part-04",
@@ -38753,9 +38837,11 @@
       "definition_ids": [
         "filter3_dii_5842_2"
       ],
-      "effect_fallback": "Original-source-resolution compound filter with transparent padding. Main text remains editable.",
-      "pdf_sha256": "0e4c701192a00fe40ecae9f4a63380374d0071b1e3f2c0cfdb91f6544abe2831",
-      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box."
+      "effect_fallback": "Twice-source-resolution SVG filter on F9F9F9 paper; avoids PDF mask seams. Main text remains editable.",
+      "geometry_method": "Original SVG ink bounds, intersected with the intentional rendering crop; shadows have a separate render box.",
+      "paper_background": "F9F9F9",
+      "render_scale": 2,
+      "pdf_sha256": "d33b503b5caca162ed6f336172a3931278ac7d2cb40f4dc86ce78705ef2f0947"
     },
     {
       "name": "figma-0899-stroke-843",

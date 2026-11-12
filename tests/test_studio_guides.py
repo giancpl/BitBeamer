@@ -20,6 +20,30 @@ class StudioGuideTests(unittest.TestCase):
         self.entries = studio_templates.inspect_templates(ROOT)
         self.selected = {entry['id']:entry for entry in __import__('studio_review').selected(ROOT)}
 
+    def test_card_command_groups_content_and_orders_cards_visually(self):
+        from studio_guides import command
+        result=command('text-cards',{
+            'card-two/body':'Second, supporting detail.',
+            'card-one/icon':'book',
+            'card-one/body':r'First line\\Second line',
+            'introduction':'Context',
+            'card-two/title':'Second',
+            'title':'Overview',
+            'card-one/title':'First',
+            'variant':'two-icon-stacked'})
+        self.assertLess(result.index('variant='),result.index('title={Overview}'))
+        self.assertLess(result.index('title={Overview}'),result.index('introduction='))
+        self.assertLess(result.index('card-one='),result.index('card-two='))
+        self.assertLess(result.index('title={First}'),result.index('body={First line'))
+        self.assertLess(result.index('body={First line'),result.index('icon={book}'))
+        self.assertIn('body={Second, supporting detail.}',result)
+        self.assertIn(r'body={First line\\Second line}',result)
+        self.assertNotIn('card-one/title=',result)
+        # Preserve invalid keys for the compiler to reject; never silently drop them.
+        invalid=command('text-cards',{'card-one/title':'First','card-six':'title={Extra}','card-one/typo':'Bad'})
+        self.assertIn('card-six=',invalid)
+        self.assertIn('card-one/typo=',invalid)
+
     def test_every_current_composition_has_one_fresh_guide(self):
         generated = generated_guides(ROOT, self.entries, studio_templates.inspect_aliases(ROOT))
         paths = set((ROOT / 'docs/templates/guides').glob('*.md'))

@@ -808,3 +808,334 @@ The title supports two lines; the original item slots support one line each.
 The combined comparison is regenerated with only pending layouts, replacing the
 approved two-column review with the new list. Commands remain printed below each
 comparison. Longer text previews are opened separately using the normal launcher.
+
+
+## Unified bullet-list family and active comparisons — 2026-11-09
+
+The user requested that comparisons contain only the family currently under review,
+and that related bullet lists share one syntax across item counts and palettes.
+The ledger now selects `lists-light`, `lists-blue` and `lists-special` through
+`active_review_batches`. Older unresolved reviews remain recorded without appearing
+in the combined PDF. Regression coverage verifies that an older unapproved batch
+is excluded independently of approval status. No new approval is inferred.
+
+`list-rail` now contains `three-items`, `four-items`, `five-items`, `detailed`,
+`grouped`, `stepped` and `illustrated`. Their common fields are `title` and
+`item-one`, `item-two`, etc. Specialized fields name their actual purpose. The
+former standalone checklist and icon model cards are folded into this family;
+canonical source IDs remain available for maintenance. Replaced numbered semantic
+labels are rejected, without new compatibility aliases.
+
+Simple lists explicitly support light and blue (dark); semantic recolouring is
+restricted to these three variants. Other families retain the native-only palette
+contract. The five-item composition adapts the related four-item geometry; the
+comparison explicitly identifies its four-item reference. Its source and prepared
+previews are retained alongside metadata and guides. The catalogue now contains
+197 compositions behind 99 model cards. Audited the Lists compositions and 49
+coordinate-matched lesson candidates: repeated bullet layouts, agendas and panels
+are distinguished rather than added as duplicate neutral designs. Six-item lesson
+content remains outside this requested three-to-five-item review.
+
+Compiled and opened the ten-page active comparison and the 24-page short/long
+example deck. Inspected all pages, including automatic and explicit wrapping at
+fixed sizes. The stepped variant's third text box was narrowed around its original
+centre so longer lines wrap before the right rail; fonts and rail artwork are
+unchanged. Both native previews and the long-text page were regenerated. The
+negative five-item fixture reports overflow; a retired grouped label fails with
+an explicit unavailable-field error. Eight affected native previews were refreshed
+(including the closing page-number fingerprint), then the final stepped preview.
+No linked lesson consumers were found for these canonical Studio sources.
+
+Verification: 198 tests ran with one optional-environment skip. Three assertions
+still expected the old 196-composition count; updated them to 197 and reran those
+three tests plus model and review-batch coverage: all 22 passed. The remaining full
+suite tests passed. `review.py check`, `library.py check`, `check-docs.py` and
+`git diff --check` passed. Generated PDFs were also inspected with Poppler.
+
+
+## Illustrated-list caption alignment — 2026-11-09
+
+User feedback identified the caption below the icon in `list-rail/illustrated`.
+The canonical source is `templates/studio/icon-rail.tex`, native field `text-4`
+(public field `title`). Its old left-aligned box had a horizontal centre of
+664.935 source units, while the icon centre is 640. The caption now shares the
+icon's x=396 and width=488, centres its text and allows two lines in a 200-unit
+height. The original 75.16/87.1856 size/leading and vertical anchor are retained.
+
+Updated metadata, native previews, unified guide and active list comparisons.
+Compiled 25 example pages, including a short caption, automatic wrapping of
+"Shared verification", and an explicit two-line caption. Visually inspected all
+three affected pages with Poppler. PDF text centres differ from the icon axis by
+less than 0.01 pt; every caption span remains 9.1068 PDF points. Three lines report
+overflow instead of shrinking. No linked lesson consumers were found. The slide
+remains in review; no approval was inferred.
+
+
+## Remove the zig-zag list variant — 2026-11-09
+
+The user explicitly requested complete removal of `list-rail/stepped`.
+Removed its canonical source, model membership, review entry, comparison command,
+short/long/manual-wrap examples, individual guide, PNG/WebP previews and preview
+registry records. The source-inventory assignment is now reference artwork rather
+than a published slide; old design provenance is retained. Local caches bearing
+the removed composition ID were cleared. No compatibility alias was added, and
+resolving `list-rail/stepped` fails with "Unknown variant".
+
+The active list comparison now has nine pages. The example deck has 22 pages.
+The catalogue returns to 196 compositions behind 99 model cards. For unaffected
+clean previews whose catalogue page position shifted, verified identical metadata,
+commands, source/resource hashes and existing image hashes before updating their
+page-only fingerprints; no visual sources or rendered pixels were changed.
+
+Simple counts keep one interface: `variant=three-items`, `four-items` or
+`five-items`, with `title`, `item-one` through the selected last item and an
+independent `palette=light` or `palette=blue`. Item count is explicit in the variant,
+not inferred from populated fields. No remaining layouts were approved by this
+removal request.
+
+
+## List approval, explicit usage reference and next card review — 2026-11-09
+
+The user approved the remaining list family and requested that usage be completely
+explicit. Marked all six compositions and their nine supported native/semantic
+palette combinations approved. Added `docs/STUDIO-LISTS.md` with count selection,
+native defaults, global palette interaction, omitted/empty fields, specialized
+field roles, icon replacement and wrapping limits. Linked it from the model and
+collection guides. Portable subset guides omit the clone-only reference so they
+do not link to unavailable variants or files.
+
+The next active batch is `cards-01`: `three-cards`, model `icon-cards`, variant
+`three`, category Cards. The combined comparison now contains exactly that one
+pending slide; the approved lists and older unresolved families are excluded.
+The public command printed below the comparison supplies the title and all three
+captions. Related card variants remain available but are not added automatically.
+
+Compiled and visually checked the short and longer examples in
+`examples/studio-icon-cards.tex`. Original font sizes, cards, shadows, icon slots and
+anchors are unchanged. The current title and captions each have one-line capacity;
+a separate two-line caption fixture fails explicitly with overflow. No approval
+was inferred for the new card composition. Review and documentation checks pass.
+
+### 2026-11-11 — Unified icon-card rows
+
+- Shared `icon-card-row.tex` renderer for `icon-cards` variants `two`, `three`,
+  and `five`; `show-title` is a strict boolean independent of heading content.
+- Verified the three original export hashes (`1900.svg`, `59.svg`, and
+  `Slide 16_9 - 138.svg`); retained original icon paths, common SVG-derived
+  panel and aspect-preserving 216 × 216 icon envelope.
+- Compiled and visually inspected ten examples: both heading states for each
+  count, automatic and explicit two-line text, and wide/tall replacement icons.
+  PDF geometry confirmed that heading visibility does not move the panels.
+- Expected failures verified for caption overflow, invalid boolean and a caption
+  beyond the selected count. No text fitting reduces font sizes.
+- 28 model/slot/review tests passed; review and Markdown-link checks passed.
+  Custom three-row archive links, reproducibility and standalone Docker build
+  passed. Comparison PDF contains only the three revised rows under review.
+
+### 2026-11-12 — Icon-card caption spacing
+
+- Unified the panel-to-caption box gap at 76 source units for two, three and
+  five cards; the three-card gap was reduced from 137.5 units.
+- Added a fixed first-line strut to captions. Thirteen rendered examples cover
+  title states, long copy, explicit breaks and mixed one-/two-line labels.
+- Measured PDF first baselines agree within each row (zero detected drift);
+  horizontal centres, unchanged font scale and original leading were verified.
+- Geometry regression, caption-overflow rejection and documentation checks
+  passed. Measurements: `build/review/icon-card-rows/spacing-measurements.json`.
+
+### 2026-11-12 — Icon-process review preparation
+
+- Active review includes only `icon-process` variants `two`, `three`, `four`.
+  Original exports `35.svg`, `7.svg`, `40.svg` were checked against inventory hashes.
+- Centred captions share 76-unit type, 88-unit leading and a 76-unit panel gap;
+  original arrow geometry and default artwork remain. A detached book fill is
+  suppressed when replacing the middle graphic in the three-stage process.
+- Eight examples compiled and were inspected: short labels, automatically
+  wrapped and explicit two-line captions, a two-line heading and replacement icons.
+  Expected caption-overflow rejection passed without shrinking fonts.
+- Nine contract/slot tests and the complete review consistency check passed.
+  The linked `bitpolito-introduction-05` preview was refreshed. Previously
+  approved icon-card rows remain approved and excluded from comparisons.
+
+### 2026-11-12 — Icon-process approval and compatibility audit
+
+- Inspected 29 inventory candidates and related process originals. Confirmed
+  the reviewed horizontal sequences are represented by two, three and four stages.
+- Recorded explicit user approval for those three canonical light compositions;
+  heading-bearing two/three-stage examples, milestones and branching/multi-row
+  diagrams remain outside this approval.
+- Retained the previously verified eight long/short/replacement examples and
+  overflow checks; approval changes do not alter rendering. Cleared the active
+  review queue and replaced the combined PDF with an empty-queue status notice.
+
+### 2026-11-12 — Review cleanup and hanging milestone badges
+
+- Removed superseded approved batch outputs and disposable export packages,
+  freeing 439,088,588 bytes locally. Canonical examples, prepared assets, current
+  guide previews, unresolved reviews and stable releases were preserved.
+- Added the ongoing cleanup rule to the maintainer instructions.
+- Moved the five hanging badges from `icon-process/milestones` to the distinct
+  `milestone-badges` model; removed the old grouped syntax without an alias.
+- Verified original `8907.svg` against its inventory SHA-256. Preserved the five
+  badge graphics; labels share 72-unit type, 84-unit leading and equal left insets.
+  The wider centred heading allows two lines. No official lesson consumers found.
+- Compiled and visually inspected three examples: original labels, automatically
+  wrapped longer copy and explicit three-line labels with a two-line heading.
+  All example diagnostics are clear; a fourth caption line fails with overflow.
+- Sixteen model tests and the complete review consistency check passed. Refreshed
+  the canonical guide preview. The current comparison includes only this badge
+  composition; graphical approval remains pending.
+
+### 2026-11-12 — Long badge caption line breaks
+
+Adjusted only the second and third captions in the learning example with explicit
+three-line breaks. Preserved all words and fixed typography. Recompiled all three
+example pages, checked diagnostics and inspected the corrected second page; no
+overflow or clipping. Canonical layout is unchanged and remains in review.
+
+### 2026-11-12 — Restore original badge text alignment
+
+- Replaced the uniform top alignment with measured vertical centring in the
+  canonical `milestone-cards` renderer. Both first and last line struts preserve
+  symmetric metrics for one-, two- and three-line labels. Original individual
+  left anchors and the heading's optical position were restored.
+- Compared actual rendered text bounds at source resolution against original
+  `8907.svg`: centres 864/864/863/863/871 versus 864/864/863.5/863.5/870.
+  Maximum difference is one source unit. Inter remains the documented substitute.
+- Compiled and visually inspected all three short/long examples with no diagnostics.
+  Four-line caption overflow is still rejected. No official lesson consumers.
+  Refreshed guide and original/current comparison; approval remains pending.
+- Measurements: `build/review/milestone-badges/alignment-measurements.json`.
+
+### 2026-11-12 — Badge approval and three-card summary review
+
+- Recorded explicit user approval of the five hanging badges after the original
+  alignment correction. Removed their disposable batch and build trials; kept
+  canonical example source, prepared previews and the small measurement report.
+- Activated only `three-card-summary` in Cards, from verified original `36.svg`.
+  Moved its public command from `icon-cards/summary` to `text-cards/three-summary`
+  without keeping an obsolete alias. No official lesson consumers were found.
+- Retained original text anchors and font sizes. Main heading supports two lines;
+  each body has equal width and three-line capacity. Compiled and visually
+  inspected all three short/long/explicit-break examples with no diagnostics.
+  The four-line body fixture fails with explicit overflow, without font shrinking.
+- Reprepared the three original SVG panel graphics at twice source resolution
+  on F9F9F9 paper, removing PDF transparency seams while retaining original filters.
+  Refreshed the part gallery and canonical guide preview. Sixteen model tests pass.
+  This new composition remains in graphical review.
+
+### 2026-11-12 — Unified soft text cards and typography verification
+
+- Implemented the explicitly authorized `text-cards` family with ten original
+  compositions and one caption/body field convention. Shared strict boolean
+  options control title, captions, bodies, introduction and original icons.
+  Outlined cards remain a separate family. Obsolete grouped syntax was replaced;
+  no official lesson consumers required migration.
+- Preserved original artwork, positions and fixed typography. Restored left
+  text anchors and source-specific paragraph widths; corrected three mixed-glyph
+  heading-size estimates against adjacent source headings. Centred the two icon
+  captions in equal 420-unit envelopes. Reprepared 29 soft panel resources at
+  twice source resolution on F9F9F9 paper, preserving original filters.
+- Inspected all ten original/current comparisons, thirty short/long/explicit-wrap
+  pages and 54 visibility/empty-field pages. No clipping, collisions or text
+  overflow. Automated checks confirm visible content and unchanged coordinates
+  when optional fields are hidden. All four negative fixtures reject overflow,
+  invalid boolean values, out-of-count fields and obsolete grouped variants.
+- Refreshed thirteen affected guide previews, model documentation, registries,
+  examples and browser metadata. Review consistency and documentation links pass.
+  The ten layouts remain in graphical review, split into two five-layout batches;
+  the combined PDF excludes previously approved families.
+- Removed superseded proposal and summary-only proofs, retaining the small original
+  audit and the new complete example. Current evidence lives under
+  `build/review/soft-cards/`; canonical examples are in
+  `examples/studio-soft-cards.tex` and usage in `docs/STUDIO-SOFT-CARDS.md`.
+- Final full suite: 202 tests, OK with one existing skip. Updated two stale
+  expectations to the previously standardized 216-unit icon envelopes and 29
+  self-contained prepared parts. Documentation link check covers 351 Markdown
+  files; `git diff --check` passes.
+
+### 2026-11-12 — Correct soft-card font weight
+
+- User feedback identified text that was lighter than the original cards. Replaced
+  Regular with Inter Semibold in the nine affected canonical compositions; the
+  icon-sidebar composition already used Semibold. Updated all ten text-field
+  metadata records and the family guide. Public commands remain unchanged.
+- Recompiled and visually inspected thirty short, automatic-wrap and explicit-wrap
+  specimens. No diagnostics or clipped text. PDF text spans confirm actual
+  embedded Inter Semibold on every page. Fixed font sizes, leading and measured
+  coordinates remain unchanged. The 54 option/empty-field checks pass again.
+- No official lesson consumers are affected. Refreshed the guide thumbnails and
+  current original/template comparison; the ten Cards variants remain in review.
+  Evidence: `build/review/soft-cards/font-verification.json` and
+  `build/review/soft-cards/option-verification.json`.
+- Review consistency passes. The full 202-test run had one existing skip and two
+  packaging checks encountered previews while they were refreshing. Both pass
+  when rerun after preparation (2/2); the remaining tests passed on the full run.
+  The overflow fixture still fails with its expected measured-field error.
+
+### 2026-11-12 — Editable soft-card icons and family approval
+
+- Exposed `icon-one` and `icon-two` for the upper/lower icons in
+  `text-cards/two-icon-stacked`, and `icon-one` for the heading symbol in `five`.
+  Matching `image-*` and `graphic-*` keys support local files and LaTeX graphics.
+  The existing fitter preserves aspect ratio and centres replacements in fixed
+  240-unit sidebar or 209-unit heading envelopes. Original vector paths remain
+  the defaults; empty values and `show-icons=false` hide icons without reflow.
+- Semantic graphic mappings deliberately select symbols rather than the panel
+  slots. Updated the public registry, browser fields and generated guides together.
+  A regression check covers this mapping and the bounded envelopes. No official
+  lesson consumers are affected.
+- Compiled and visually inspected eighteen original/named/wide/tall/image/empty/
+  hidden and longer-text examples without diagnostics. Text coordinates match
+  the default for icon-only replacements. Compared defaults against the previous
+  PDF: the heading layout is pixel-identical; the sidebar differs by less than
+  0.003 mean channel value at 2× resolution (subpixel vector placement).
+- Recorded the explicit user approval of all ten Cards compositions. No active
+  review batches remain for this family. Canonical text and icon examples are
+  retained; obsolete review PDFs and disposable proofs are removed after checks.
+  Small audit records are retained under `build/checks/soft-cards/`; the complete
+  icon example is `examples/studio-soft-card-icons.tex`.
+- Final verification: 203 unit tests pass with one existing skip. Review consistency,
+  351-file documentation link check and whitespace checks pass. The eighteen-page
+  icon example was opened for the user; no soft-card compositions remain pending.
+
+### 2026-11-12 — Grouped text-card commands and explicit reading order
+
+- Replaced flat caption/body/icon fields in `text-cards` with one block per card:
+  `card-one={title={...},body={...},icon={...}}`, followed by subsequent cards.
+  The five-card heading symbol uses `title-icon`, `title-image` or `title-graphic`.
+  Visibility flags are `show-card-titles` and `show-card-bodies`. All other
+  composition IDs, layouts, type sizes and approved graphical states are stable.
+- Generated commands consistently put variant/visibility choices first, then
+  the slide title, heading symbol, introduction and card blocks in visual reading
+  order. Card fields are title, body and optional artwork. Updated canonical
+  examples, retained batch commands, generated ready-content calls, registries,
+  browser fields and guides without public aliases for replaced syntax.
+- Verified thirty short/long/explicit-wrap pages, eighteen icon examples, 54
+  visibility/empty-field cases, three guide examples and an order-independence
+  fixture. No text diagnostics; the eighteen migrated icon pages preserve the
+  previous rendering. Reversing both card and field input order gives identical
+  pixels, and hidden fields preserve remaining text anchors. Eight negative
+  fixtures reject overflow, unknown child fields, excess cards, unsupported
+  icons, old flat fields and invalid/obsolete boolean syntax.
+- Ten guide previews are current. No official lesson consumers are affected.
+  The family remains approved and is excluded from pending comparisons. Small
+  verification reports are retained under `build/checks/card-api/`; complete
+  text and icon examples remain in `examples/studio-soft-cards.tex` and
+  `examples/studio-soft-card-icons.tex`.
+- Final checks: the full 204-test run passed except for one missing clone-only
+  guide link in portable documentation (one existing skip). Corrected the link
+  to the included model guide/index; all eleven guide/package tests pass on
+  recheck. The command-order regression also verifies that unknown fields are
+  preserved for explicit compiler rejection. Review consistency and whitespace
+  checks pass. Complete public examples were opened after compilation.
+
+### 2026-11-12 — Final confirmation before commit and push
+
+- Recorded explicit confirmation of all ten soft-card compositions, the grouped
+  card command syntax and visual reading order. Earlier list, icon-row, process
+  and badge approvals are retained. No pending batch is activated for these families.
+- Final full suite: 204 tests, OK with one existing skip. Review consistency and
+  whitespace checks pass. Prepared artwork, model registries, examples, guides
+  and browser previews are included together; disposable builds and personal
+  presentations are excluded.

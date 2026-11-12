@@ -1,26 +1,20 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
-\studiodeclarefield{graphic-1}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-01.pdf}}
-\studiodeclarefield{graphic-2}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-02.pdf}}
-\studiodeclarefield{graphic-3}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-03.pdf}}
-\studiodeclarefield{graphic-4}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-04.pdf}}
-\studiodeclarefield{graphic-5}{\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-05.pdf}}
-\studiodeclarefield{title}{Title}
-\studiodeclarefield{text-2}{Label 6}
-\studiodeclarefield{text-3}{Label 3}
-\studiodeclarefield{text-4}{Label 5}
-\studiodeclarefield{text-5}{Label 4}
-\studiodeclarefield{text-6}{Label 2}
-\studioapplyfields
-\studiomeasuredcanvas{3556}{2000}{five-icon-row}{studio-background}{
-\studiomeasuredtext{title}{1507.69}{326.047}{537.437}{171.124}{113.515}{131.677}{\color{studio-foreground}\bfseries\centering}{\studiofield{title}}
-\studiomeasuredtext{text-2}{2728}{1346.43}{620}{215}{75.16}{87.1856}{\color{studio-foreground}\bfseries\centering}{\studiofield{text-2}}
-\studiomeasuredtext{text-3}{838}{1348.43}{620}{215}{75.16}{87.1856}{\color{studio-foreground}\bfseries\centering}{\studiofield{text-3}}
-\studiomeasuredtext{text-4}{2098}{1347.37}{620}{215}{75.16}{87.1856}{\color{studio-foreground}\bfseries\centering}{\studiofield{text-4}}
-\studiomeasuredtext{text-5}{1468}{1346.59}{620}{215}{75.16}{87.1856}{\color{studio-foreground}\bfseries\centering}{\studiofield{text-5}}
-\studiomeasuredtext{text-6}{208}{1347.69}{620}{215}{75.16}{87.1856}{\color{studio-foreground}\bfseries\centering}{\studiofield{text-6}}
-\studiographfield{graphic-1}{904}{855}{488}{489}{}{}
-\studiographfield{graphic-2}{2794}{853}{488}{489}{}{}
-\studiographfield{graphic-3}{2164}{853}{488}{489}{}{}
-\studiographfield{graphic-4}{274}{853}{488}{489}{}{}
-\studiographfield{graphic-5}{1534}{855}{488}{489}{}{}
-}
+% Shared icon-card row: count, positions and neutral editable defaults.
+\studiodeclarefield{title}{Slide title}
+\studiodeclarefield{caption-one}{Item 1}
+\studiodeclarefield{graphic-one}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-one}}
+\studiodeclarefield{caption-two}{Item 2}
+\studiodeclarefield{graphic-two}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-two}}
+\studiodeclarefield{caption-three}{Item 3}
+\studiodeclarefield{graphic-three}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-three}}
+\studiodeclarefield{caption-four}{Item 4}
+\studiodeclarefield{graphic-four}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-four}}
+\studiodeclarefield{caption-five}{Item 5}
+\studiodeclarefield{graphic-five}{\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-five}}
+\def\studioiconpositions{one/518,two/1148,three/1778,four/2408,five/3038}
+\def\studioicony{1071}
+\def\studioiconcaptionwidth{590}
+\def\studioiconcaptionsize{75.16}
+\def\studioiconcaptionleading{87.1856}
+\def\studioiconcaptionheight{205}
+\def\studioicondefaulttitle{true}
+\input{templates/studio/components/icon-card-row.tex}

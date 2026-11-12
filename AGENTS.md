@@ -72,7 +72,11 @@ Apply the workflow without
 waiting for a separate request to propagate or verify the correction.
 During interactive PDF reviews, open or reveal the refreshed comparison in the
 existing VS Code window: use `review_batch.py all --compare --open` for the
-combined review, and retain `--open` on subsequent review builds. Review PDFs must
+combined review, and retain `--open` on subsequent review builds. Set
+`active_review_batches` to the current review family: unresolved older families
+stay in the ledger but must not reappear automatically. After explicit approval, remove superseded local batch outputs and disposable
+export/build trials for that family. Preserve canonical examples, prepared assets,
+current guide previews, review decisions and stable releases. Review PDFs must
 exclude explicitly approved compositions, including approved fixed lesson presets.
 At each interactive handoff, report only the compositions still to verify and their
 canonical categories, so the user can decide whether to review related layouts

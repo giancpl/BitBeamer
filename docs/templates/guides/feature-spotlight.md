@@ -4,7 +4,7 @@
 
 Organize related explanations or talking points using the heading beside two feature panels layout.
 
-Model: `feature-spotlight` · Family: Lists · Status: **in review**.
+Model: `feature-spotlight` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/feature-spotlight.tex)
 
@@ -16,15 +16,27 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/feature-spotlight.md)
+[Model variants and named fields](../models/text-cards.md)
 
 ```latex
-\studiotemplate[variant=default,palette=light]{feature-spotlight}
+\studiotemplate[variant=two-icon-stacked,palette=light]{text-cards}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the slide heading without moving panels. |
+| `show-card-titles` | boolean | `true` | Show card headings or icon captions. |
+| `show-card-bodies` | boolean | `true` | Show card descriptions. |
+| `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
+| `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -46,6 +58,8 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `text/6` | `text-4` | Editable text |
 | `text/1` | `text-5` | Editable text |
 | `text/2` | `text-6` | Editable text |
+| `icon/3`, `image/3`, `graphic/3` | `symbol-one` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/4`, `image/4`, `graphic/4` | `symbol-two` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -107,9 +121,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>title</code> | Main text (text) | middle left | 33.1% wide × 8.4% high | <code>Slide title</code> |
 | <code>text-2</code> | Editable text (text) | middle left | 31.9% wide × 17.0% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-3</code> | Editable text (text) | lower right | 28.7% wide × 21.1% high | <code>Supporting explanation.\\Add your own details.</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 38.9% wide × 5.6% high | <code>Supporting explanation</code> |
+| <code>text-4</code> | Editable text (text) | lower centre | 11.8% wide × 5.6% high | <code>Protocol</code> |
 | <code>text-5</code> | Editable text (text) | upper right | 28.7% wide × 21.7% high | <code>Supporting explanation.\\Add your own details.</code> |
-| <code>text-6</code> | Editable text (text) | middle right | 39.7% wide × 5.5% high | <code>Supporting explanation</code> |
+| <code>text-6</code> | Editable text (text) | middle centre | 11.8% wide × 5.5% high | <code>Network</code> |
+| <code>symbol-one</code> | Complete graphic, image or decoration (graphic) | upper centre | 6.7% wide × 12.0% high | <code>\begin{tikzpicture}[x=\studiounit,y=-\studiounit,every node/.style={inner sep=0,outer sep=0}] \path[use as bounding b...</code> |
+| <code>symbol-two</code> | Complete graphic, image or decoration (graphic) | lower centre | 6.7% wide × 12.0% high | <code>\begin{tikzpicture}[x=\studiounit,y=-\studiounit,every node/.style={inner sep=0,outer sep=0}] \path[use as bounding b...</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

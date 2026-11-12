@@ -18,13 +18,96 @@ import studio_templates
 class StudioModelTests(unittest.TestCase):
     def test_every_legacy_composition_maps_once_without_merging_distinct_geometry(self):
         entries=studio_templates.inspect_templates(ROOT)
-        self.assertEqual(studio_models.validate(ROOT,entries),101)
+        self.assertEqual(studio_models.validate(ROOT,entries),95)
         members=studio_models.membership(ROOT)
         self.assertEqual(set(members),{e['id'] for e in entries})
         self.assertEqual(members['privacy-levels'][0]['id'],members['privacy-levels-blue'][0]['id'])
         self.assertEqual(members['privacy-levels'][1]['id'],members['privacy-levels-blue'][1]['id'])
         self.assertNotEqual(members['cover'][1]['id'],members['cover-light'][1]['id'])
         self.assertNotEqual(members['cover'][0]['id'],members['cover-dashboard'][0]['id'])
+        self.assertNotEqual(members['milestone-cards'][0]['id'],members['two-step-process'][0]['id'])
+        self.assertEqual(members['milestone-cards'][0]['id'],'milestone-badges')
+
+    def test_soft_card_icon_names_target_symbols_instead_of_panels(self):
+        entries=studio_templates.inspect_templates(ROOT)
+        members=studio_models.membership(ROOT)
+        registry="\n".join(studio_models.registry(ROOT,entries))
+        from slide_guide import semantic_fields
+        for name,expected in [('feature-spotlight',{'card-one/graphic':3,'card-two/graphic':4}),
+                              ('incentives-card-grid',{'title-graphic':1})]:
+            entry=next(e for e in entries if e['id']==name)
+            exposed=[f for f in semantic_fields(entry,members[name][2]) if f['type']=='graphic']
+            self.assertEqual({f['name'] for f in exposed},set(expected))
+            for key,number in expected.items():
+                field=next(f for f in entry['fields'] if f['type']=='graphic' and f['slot']['number']==number)
+                self.assertLessEqual(max(field['box'][2:]),240)
+        self.assertIn(r'\studiocardfields{one}{text-6}{text-5}{3}',registry)
+        self.assertIn(r'\studiocardtitlegraphic{1}',registry)
+        self.assertNotIn(r'\DeclareStudioGraphicSemantic{feature-spotlight}{one}',registry)
+
+    def test_soft_cards_share_semantics_and_keep_distinct_original_layouts(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        models=studio_models.load_models(ROOT)['models']
+        model=next(m for m in models if m['id']=='text-cards')
+        expected={'three-summary':3,'two':2,'four':4,'four-bullets':4,
+                  'two-stacked':2,'two-icon-stacked':2,'five':5,
+                  'four-network':4,'four-nodes':4,'three-asymmetric':3}
+        self.assertEqual({v['id'] for v in model['variants']},set(expected))
+        words=['one','two','three','four','five']
+        for variant in model['variants']:
+            composition=variant['compositions'][0]
+            entry=entries[composition['id']]
+            for word in words[:expected[variant['id']]]:
+                self.assertIn('card-'+word+'/title',composition['fields'])
+                self.assertIn('card-'+word+'/body',composition['fields'])
+            for word in words[expected[variant['id']]:]:
+                self.assertNotIn('card-'+word+'/title',composition['fields'])
+                self.assertNotIn('card-'+word+'/body',composition['fields'])
+            self.assertEqual(set(entry['options']),{'show-title','show-card-titles',
+                'show-card-bodies','show-introduction','show-icons'})
+            self.assertTrue(all(o['type']=='boolean' for o in entry['options'].values()))
+            self.assertIn('templates/studio/components/text-card-options.tex',entry['shared_sources'])
+        outlines=next(m for m in models if m['id']=='outlined-cards')
+        self.assertEqual({v['id'] for v in outlines['variants']},{'callout','six-outline','six-detailed'})
+
+    def test_icon_card_rows_share_count_fields_title_and_renderer(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        members=studio_models.membership(ROOT)
+        for source,count,variant,default in [('two-cards',2,'two',False),('three-cards',3,'three',True),('five-icon-row',5,'five',True)]:
+            entry=entries[source];model,choice,composition=members[source]
+            self.assertEqual(model['id'],'icon-cards')
+            self.assertEqual(choice['id'],variant)
+            self.assertEqual(entry['options']['show-title']['default'],default)
+            graphics=[f for f in entry['fields'] if f['type']=='graphic']
+            self.assertEqual(len(graphics),count)
+            self.assertEqual([f['slot']['number'] for f in graphics],list(range(1,count+1)))
+            self.assertTrue(all(f['slot']['content'][2:]==[216,216] for f in graphics))
+            for graphic in graphics:
+                caption=next(f for f in entry['fields'] if f['name']==graphic['name'].replace('graphic-','caption-'))
+                panel_bottom=graphic['box'][1]+108+200
+                self.assertAlmostEqual(caption['box'][1]-panel_bottom,76)
+                self.assertAlmostEqual(caption['box'][0]+caption['box'][2]/2,graphic['box'][0]+108)
+            self.assertEqual(entry['shared_sources'],['templates/studio/components/icon-card-row.tex'])
+            self.assertIn('title',composition['fields'])
+            self.assertNotIn('rejected_semantic_fields',composition)
+        grid=next(m for m in studio_models.load_models(ROOT)['models'] if m['id']=='icon-grid')
+        self.assertNotIn('row',[v['id'] for v in grid['variants']])
+
+    def test_process_captions_follow_reading_order_and_heading_is_not_a_caption(self):
+        entries={e['id']:e for e in studio_templates.inspect_templates(ROOT)}
+        members=studio_models.membership(ROOT)
+        for name,count in [('two-step-process',2),('three-step-process',3),('four-step-process',4)]:
+            entry=entries[name];composition=members[name][2]
+            fields={f['name']:f for f in entry['fields']}
+            graphics=sorted((f for f in entry['fields'] if f['type']=='graphic'),key=lambda f:f['slot']['number'])
+            self.assertEqual('title' in composition['fields'],count==4)
+            if count!=4:self.assertIn('title',composition['rejected_semantic_fields'])
+            for word,graphic in zip(['one','two','three','four'],graphics):
+                caption=fields[composition['fields']['caption-'+word]]
+                cx,cy,_,_=graphic['slot']['content']
+                self.assertAlmostEqual(caption['box'][0]+caption['box'][2]/2,graphic['box'][0]+cx)
+                self.assertAlmostEqual(caption['box'][1]-(graphic['box'][1]+cy+200),76)
+                self.assertEqual((caption['font_size'],caption['leading']),(76,88))
 
     def test_two_columns_uses_named_fields_and_rejects_replaced_syntax(self):
         entries=studio_templates.inspect_templates(ROOT)
@@ -45,6 +128,21 @@ class StudioModelTests(unittest.TestCase):
             self.assertIn('| `'+name+'` |',guide)
             self.assertIn(name+'={',guide)
         self.assertNotIn('Compatibility names remain accepted',guide)
+
+    def test_list_family_shares_fields_and_declares_requested_palettes(self):
+        model=next(m for m in studio_models.load_models(ROOT)['models'] if m['id']=='list-rail')
+        self.assertEqual([v['id'] for v in model['variants']],
+                         ['three-items','four-items','five-items','grouped','detailed','illustrated'])
+        for v in model['variants']:
+            for c in v['compositions']:
+                self.assertTrue({'title','item-one','item-two','item-three'}<=set(c['fields']))
+        for variant,count in [('three-items',3),('four-items',4),('five-items',5)]:
+            for palette in ['light','blue']:
+                _,_,c,p=studio_models.resolve(ROOT,'list-rail',variant,palette)
+                self.assertEqual(p,palette)
+                self.assertEqual(len([k for k in c['fields'] if k.startswith('item-')]),count)
+        with self.assertRaisesRegex(ValueError,'Unsupported palette'):
+            studio_models.resolve(ROOT,'list-rail','grouped','blue')
 
     def test_optional_sequences_validate_members_without_merging_models(self):
         sequence=studio_models.suggested_sequences(ROOT)[0]
@@ -118,7 +216,7 @@ class StudioModelTests(unittest.TestCase):
         data['variant_aliases']=studio_models.load_models(ROOT).get('variant_aliases',[])
         script=r'''const assert=require('node:assert/strict');const {matches,pageRows,resolveChoice}=require(process.argv[1]);
 const d=JSON.parse(require('node:fs').readFileSync(0,'utf8'));
-assert.equal(matches(d.rows,'','studio').length,101);
+assert.equal(matches(d.rows,'','studio').length,95);
 assert.equal(matches(d.rows,'','featured').length,21);
 assert.equal(resolveChoice(d,'cover','pattern','blue').row.id,'cover');
 assert.equal(resolveChoice(d,'levels','default','blue').row.choices[resolveChoice(d,'levels','default','blue').index].id,'privacy-levels-blue');
@@ -131,9 +229,14 @@ assert.equal(pageRows(d.rows,0).length,12);'''
     def test_only_original_colour_versions_are_declared(self):
         entries=studio_templates.inspect_templates(ROOT)
         for entry in entries:
-            self.assertEqual(entry['palettes'],[entry['native_palette']])
-            with self.assertRaisesRegex(ValueError,'No original'):
-                studio_models.choice_inputs(ROOT,entry,'light' if entry['native_palette']=='blue' else 'blue',{})
+            semantic=studio_models.membership(ROOT)[entry['id']][2].get('palette_mode')=='semantic'
+            if semantic:
+                self.assertEqual(entry['palettes'],['light','blue'])
+                self.assertEqual(studio_models.choice_inputs(ROOT,entry,'blue',{})['@palette'],'blue')
+            else:
+                self.assertEqual(entry['palettes'],[entry['native_palette']])
+                with self.assertRaisesRegex(ValueError,'No original'):
+                    studio_models.choice_inputs(ROOT,entry,'light' if entry['native_palette']=='blue' else 'blue',{})
         models=studio_models.load_models(ROOT)['models']
         pairs=[(m['id'],v['id']) for m in models for v in m['variants'] if len({c['native_palette'] for c in v['compositions']})>1]
         self.assertEqual(pairs,[('levels','default')])
@@ -154,7 +257,9 @@ assert.equal(pageRows(d.rows,0).length,12);'''
         models=studio_models.load_models(ROOT)['models']
         self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),196)
         subset=studio_models.expand_model_names(ROOT,['cover','icon-cards'])
-        self.assertEqual(len(subset),9)
+        self.assertEqual(len(subset),7)
         self.assertTrue({'cover','cover-light','cover-photo','three-cards','two-cards'}<=set(subset))
+        self.assertNotIn('three-card-summary',subset)
+        self.assertIn('three-card-summary',studio_models.expand_model_names(ROOT,['text-cards']))
         with self.assertRaisesRegex(ValueError,'Unknown Studio models'):
             studio_models.expand_model_names(ROOT,['missing-model'])

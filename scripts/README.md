@@ -88,3 +88,7 @@ Graphical review PDFs contain only compositions whose catalogue status is not
 batches are skipped by `review_batch.py all`; direct approved-batch requests
 report that no review is pending. Comparison headers and `all-report.json` list
 the canonical category for each pending composition.
+
+`active_review_batches` in the review ledger scopes the combined PDF to the
+current family. Older unresolved batches remain recorded without appearing in the
+active comparison. Omit the setting to explicitly review all pending batches.

@@ -4,7 +4,7 @@
 
 Group concepts into a visual set using the five icon row layout.
 
-Model: `five-icon-row` · Family: Cards · Status: **in review**.
+Model: `five-icon-row` · Family: Cards · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/five-icon-row.tex)
 
@@ -16,15 +16,23 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/icon-grid.md)
+[Model variants and named fields](../models/icon-cards.md)
 
 ```latex
-\studiotemplate[variant=row,palette=light]{icon-grid}
+\studiotemplate[variant=five,palette=light]{icon-cards}
 ```
 
 Named fields are coherent across related variants. All old fields and numbered slots remain available.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the heading; false hides it without moving the cards. Title text remains available in both states. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -38,17 +46,17 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/2`, `image/2`, `graphic/2` | `graphic-1` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/5`, `image/5`, `graphic/5` | `graphic-2` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/4`, `image/4`, `graphic/4` | `graphic-3` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/1`, `image/1`, `graphic/1` | `graphic-4` | Card panel and shadow stay in place; only the inner content changes. |
-| `icon/3`, `image/3`, `graphic/3` | `graphic-5` | Card panel and shadow stay in place; only the inner content changes. |
 | `text/1` | `title` | Main text |
-| `text/6` | `text-2` | Editable text |
-| `text/3` | `text-3` | Editable text |
-| `text/5` | `text-4` | Editable text |
-| `text/4` | `text-5` | Editable text |
-| `text/2` | `text-6` | Editable text |
+| `text/2` | `caption-one` | First caption |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-one` | Replaces this complete graphic; other elements stay fixed. |
+| `text/3` | `caption-two` | Second caption |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-two` | Replaces this complete graphic; other elements stay fixed. |
+| `text/4` | `caption-three` | Third caption |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-three` | Replaces this complete graphic; other elements stay fixed. |
+| `text/5` | `caption-four` | Editable text |
+| `icon/4`, `image/4`, `graphic/4` | `graphic-four` | Replaces this complete graphic; other elements stay fixed. |
+| `text/6` | `caption-five` | Editable text |
+| `icon/5`, `image/5`, `graphic/5` | `graphic-five` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -67,8 +75,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Title},
-  text/6={Label 6}
+  text/1={Slide title},
+  text/2={Item 1}
 ]{five-icon-row}
 ```
 
@@ -84,8 +92,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Title},
-  text/6={Label 6}
+  text/1={Slide title},
+  text/2={Item 1}
 ]{five-icon-row}
 \end{document}
 ```
@@ -105,17 +113,17 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-01.pdf}</code> |
-| <code>graphic-2</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-02.pdf}</code> |
-| <code>graphic-3</code> | Icon or image inside a fixed composition (graphic) | middle right | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-03.pdf}</code> |
-| <code>graphic-4</code> | Icon or image inside a fixed composition (graphic) | middle left | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-04.pdf}</code> |
-| <code>graphic-5</code> | Icon or image inside a fixed composition (graphic) | middle centre | 13.7% wide × 24.4% high | <code>\studiopaletteimage[width=488\studiounit]{images/studio/collection/figma-1022-part-05.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 15.1% wide × 8.6% high | <code>Title</code> |
-| <code>text-2</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Label 6</code> |
-| <code>text-3</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Label 3</code> |
-| <code>text-4</code> | Editable text (text) | lower right | 17.4% wide × 10.8% high | <code>Label 5</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 17.4% wide × 10.8% high | <code>Label 4</code> |
-| <code>text-6</code> | Editable text (text) | lower left | 17.4% wide × 10.8% high | <code>Label 2</code> |
+| <code>title</code> | Main text (text) | upper centre | 73.1% wide × 15.0% high | <code>Slide title</code> |
+| <code>caption-one</code> | First caption (text) | lower left | 16.6% wide × 10.2% high | <code>Item 1</code> |
+| <code>graphic-one</code> | Complete graphic, image or decoration (graphic) | middle left | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-one}</code> |
+| <code>caption-two</code> | Second caption (text) | lower left | 16.6% wide × 10.2% high | <code>Item 2</code> |
+| <code>graphic-two</code> | Complete graphic, image or decoration (graphic) | middle left | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-two}</code> |
+| <code>caption-three</code> | Third caption (text) | lower centre | 16.6% wide × 10.2% high | <code>Item 3</code> |
+| <code>graphic-three</code> | Complete graphic, image or decoration (graphic) | middle centre | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-three}</code> |
+| <code>caption-four</code> | Editable text (text) | lower right | 16.6% wide × 10.2% high | <code>Item 4</code> |
+| <code>graphic-four</code> | Complete graphic, image or decoration (graphic) | middle right | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-four}</code> |
+| <code>caption-five</code> | Editable text (text) | lower right | 16.6% wide × 10.2% high | <code>Item 5</code> |
+| <code>graphic-five</code> | Complete graphic, image or decoration (graphic) | middle right | 6.1% wide × 10.8% high | <code>\studiopart[width=216\studiounit,height=216\studiounit]{row-icon-5-five}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

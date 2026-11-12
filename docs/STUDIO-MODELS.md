@@ -1,7 +1,7 @@
 # Studio models, variants and palettes
 
-Start with the [slide guide](slides/index.html) or the [101-model index](../templates/MODELS.md).
-The library retains all 196 compositions behind 101 model cards. The featured set contains
+Start with the [slide guide](slides/index.html) or the [95-model index](../templates/MODELS.md).
+The library retains all 196 compositions behind 95 model cards. The featured set contains
 21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.
 
 Use `\studiotitleframe`, `\studiotocframe` and `\closingframe` for the standard
@@ -86,8 +86,10 @@ slide compilation needs no SVG converter, Python on Overleaf, or shell escape.
 
 Named fields describe roles: `title`, `author`, `institute`, `caption-one`, and the labels
 listed for the chosen variant. The [individual model guides](../templates/MODELS.md) list
-exact supported fields, source files, default text and fixed dimensions. Numbered keys and
-previous unscoped fields remain available through the [advanced composition guides](templates/GUIDES.md).
+exact supported fields, source files, default text and fixed dimensions. Numbered technical slots remain available through the [advanced composition guides](templates/GUIDES.md).
+Replaced public semantic names are not retained as aliases. For rectangular
+`text-cards`, use `card-one={title={...},body={...}}` and subsequent card blocks;
+see the [command order and layout reference](STUDIO-SOFT-CARDS.md).
 
 For graphic slots, `icon-one={alice}` selects a library icon; `image-one={my-picture.pdf}`
 selects an image; `graphic-one={\cow}` accepts LaTeX graphics. These follow the stable slot
@@ -149,3 +151,15 @@ and `cover/script` remain compatible. The former `statement-with-credit` is a
 `variant=quotation`, including a single `quote` paragraph and separate `credit`.
 Previous `statement/credit` and `dialogue/two-messages` calls remain accepted.
 See [the migration table](../templates/MIGRATION.md).
+
+
+## Unified bullet lists
+
+Use [list-rail](templates/models/list-rail.md) for three, four or five items
+(`variant=three-items`, `four-items` or `five-items`) with `palette=light` or
+`palette=blue` (dark). This family explicitly supports semantic colour changes.
+The `detailed`, `grouped` and `illustrated` variants use the same title
+and item fields, with their documented extra fields and native palettes.
+
+See the [complete bullet-list command reference](STUDIO-LISTS.md) for explicit
+counts, native defaults, empty fields, palette names and wrapping limits.

@@ -4,7 +4,7 @@
 
 Organize related explanations or talking points using the icon rail layout.
 
-Model: `icon-rail` · Family: Lists · Status: **in review**.
+Model: `icon-rail` · Family: Lists · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/icon-rail.tex)
 
@@ -16,13 +16,13 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/icon-rail.md)
+[Model variants and named fields](../models/list-rail.md)
 
 ```latex
-\studiotemplate[variant=default,palette=light]{icon-rail}
+\studiotemplate[variant=illustrated,palette=light]{list-rail}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -103,7 +103,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>text-1</code> | Editable text (text) | lower centre | 18.1% wide × 5.7% high | <code>Label 4</code> |
 | <code>title</code> | Main text (text) | middle centre | 13.5% wide × 5.0% high | <code>Title</code> |
 | <code>text-3</code> | Editable text (text) | upper centre | 13.1% wide × 5.0% high | <code>Label 1</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 10.9% wide × 5.6% high | <code>Item</code> |
+| <code>text-4</code> | Editable text (text) | middle left | 13.7% wide × 10.0% high | <code>Item</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

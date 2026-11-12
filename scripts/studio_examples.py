@@ -50,7 +50,11 @@ def exact_command(root, entry, content='neutral'):
     model, variant, composition = membership(root)[entry['id']]
     values = {'variant': variant['id'], 'palette': composition['native_palette']}
     if content == 'example':
-        values.update(example_values(root, entry))
+        example=example_values(root, entry)
+        if model['id']=='text-cards':
+            public={next(f['slot']['key'] for f in entry['fields'] if f['name']==native):key for key,native in composition['fields'].items()}
+            example={public.get(key,key):value for key,value in example.items()}
+        values.update(example)
     elif content != 'neutral':
         raise ValueError('Unknown content mode: ' + content)
     return command(model['id'], values)

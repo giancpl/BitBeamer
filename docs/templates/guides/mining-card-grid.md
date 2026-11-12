@@ -4,7 +4,7 @@
 
 Present technical content in a measured composition using the processing cards layout.
 
-Model: `mining-card-grid` · Family: Technical · Status: **in review**.
+Model: `mining-card-grid` · Family: Technical · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/mining-card-grid.tex)
 
@@ -16,15 +16,27 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/mining-card-grid.md)
+[Model variants and named fields](../models/text-cards.md)
 
 ```latex
-\studiotemplate[variant=default,palette=light]{mining-card-grid}
+\studiotemplate[variant=three-asymmetric,palette=light]{text-cards}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-title` | boolean | `true` | Show the slide heading without moving panels. |
+| `show-card-titles` | boolean | `true` | Show card headings or icon captions. |
+| `show-card-bodies` | boolean | `true` | Show card descriptions. |
+| `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
+| `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
+
+For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -108,11 +120,11 @@ In the individual web view, select a field or enable **Show editable areas** to 
 | <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower left | 47.7% wide × 42.2% high | <code>\studiopaletteimage[width=1695\studiounit]{images/studio/collection/figma-0868-part-02.pdf}</code> |
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 38.8% wide × 68.5% high | <code>\studiopaletteimage[width=1381\studiounit]{images/studio/collection/figma-0868-part-03.pdf}</code> |
 | <code>title</code> | Main text (text) | upper centre | 11.8% wide × 8.6% high | <code>Title</code> |
-| <code>text-2</code> | Editable text (text) | middle left | 43.7% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-2</code> | Editable text (text) | middle left | 38.8% wide × 10.5% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-3</code> | Editable text (text) | upper left | 41.1% wide × 5.0% high | <code>Supporting explanation</code> |
-| <code>text-4</code> | Editable text (text) | lower left | 43.7% wide × 20.4% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-4</code> | Editable text (text) | lower left | 38.8% wide × 20.4% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-5</code> | Editable text (text) | middle left | 41.1% wide × 5.7% high | <code>Supporting explanation</code> |
-| <code>text-6</code> | Editable text (text) | middle right | 34.9% wide × 43.5% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>text-6</code> | Editable text (text) | middle right | 30.9% wide × 43.5% high | <code>Supporting explanation.\\Add your own details.</code> |
 | <code>text-7</code> | Editable text (text) | upper right | 32.9% wide × 5.7% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.

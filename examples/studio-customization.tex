@@ -42,6 +42,7 @@
 
 % checklist-rail — see its individual guide for every numbered slot.
 \studiotemplate[
+  variant={detailed},
   clear={text},
   text/title={Your\\checklist},
   heading/1={Choose hardware},
@@ -52,20 +53,29 @@
   body/4={Check connections and available storage.},
   heading/5={Start your project},
   body/5={Record the next steps.}
-]{checklist-rail}
+]{list-rail}
 
 % four-card-grid — see its individual guide for every numbered slot.
 \studiotemplate[
-  text/title={Your workshop},
-  text/item-3-1={Third concept},
-  text/item-3-2={\textbullet{} A short takeaway},
-  heading/text-2={First concept},
-  body/text-2={\studiolist{{One point},{Another point}}},
-  heading/text-4={Second concept},
-  body/text-4={A short explanation.},
-  heading/text-5={Next steps},
-  body/text-5={Share what you learned.}
-]{four-card-grid}
+  variant={four-bullets},
+  title={Your workshop},
+  card-one={
+    title={First concept},
+    body={Explain the first idea.}
+  },
+  card-two={
+    title={Second concept},
+    body={A short explanation.}
+  },
+  card-three={
+    title={Third concept},
+    body={Discuss the result.}
+  },
+  card-four={
+    title={Next steps},
+    body={Share what you learned.}
+  }
+]{text-cards}
 
 % image-left — see its individual guide for every numbered slot.
 \studiotemplate[

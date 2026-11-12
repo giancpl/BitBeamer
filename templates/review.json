@@ -879,8 +879,8 @@
       ]
     },
     "list-rail-light": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Title"
@@ -891,8 +891,12 @@
       "previous_use": "Pair a concept with a short list.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
+        },
+        "blue": {
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
         }
       },
       "feedback": [
@@ -919,40 +923,29 @@
           "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "list-family-approved",
+          "date": "2026-11-09",
+          "status": "approved",
+          "feedback": "Keep usage clearly explicit; confirm and move on.",
+          "action": "Approved the reviewed list variants and supported palettes; documented counts, fields, capacities and defaults."
         }
       ]
     },
     "list-rail-blue": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
-      "use": "",
-      "example": {},
-      "palette_reviews": {
-        "blue": {
-          "status": "in review",
-          "notes": ""
-        }
-      },
-      "feedback": [
-        {
-          "id": "type-alignment",
-          "source": "User review in the current conversation",
-          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
-          "action": "Audit canonical source against retained original and rendered guide command.",
-          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
-        }
-      ]
-    },
-    "grouped-rail": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
+        },
+        "blue": {
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
         }
       },
       "feedback": [
@@ -963,6 +956,42 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "list-family-approved",
+          "date": "2026-11-09",
+          "status": "approved",
+          "feedback": "Keep usage clearly explicit; confirm and move on.",
+          "action": "Approved the reviewed list variants and supported palettes; documented counts, fields, capacities and defaults."
+        }
+      ]
+    },
+    "grouped-rail": {
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax.",
+      "use": "",
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
+        }
+      },
+      "feedback": [
+        {
+          "id": "type-alignment",
+          "source": "User review in the current conversation",
+          "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+          "action": "Audit canonical source against retained original and rendered guide command.",
+          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
+          "status": "in review"
+        },
+        {
+          "id": "list-family-approved",
+          "date": "2026-11-09",
+          "status": "approved",
+          "feedback": "Keep usage clearly explicit; confirm and move on.",
+          "action": "Approved the reviewed list variants and supported palettes; documented counts, fields, capacities and defaults."
         }
       ]
     },
@@ -979,14 +1008,14 @@
       }
     },
     "checklist-rail": {
-      "status": "in review",
-      "notes": "Preserve heading/body structure and mixed emphasis; avoid malformed wrapped list text.",
+      "status": "approved",
+      "notes": "Preserve heading/body structure and mixed emphasis; avoid malformed wrapped list text. Approved by the user on 2026-11-09 after clarification of the shared syntax.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
         }
       },
       "feedback": [
@@ -1005,18 +1034,25 @@
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "list-family-approved",
+          "date": "2026-11-09",
+          "status": "approved",
+          "feedback": "Keep usage clearly explicit; confirm and move on.",
+          "action": "Approved the reviewed list variants and supported palettes; documented counts, fields, capacities and defaults."
         }
       ]
     },
     "feature-spotlight": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
       },
       "feedback": [
@@ -1027,6 +1063,34 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
         }
       ]
     },
@@ -1087,14 +1151,14 @@
       }
     },
     "icon-rail": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Caption centred beneath the icon; short, automatically wrapped and explicit two-line copy checked at the original font size. User approval remains pending. Approved by the user on 2026-11-09 after clarification of the shared syntax.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
         }
       },
       "feedback": [
@@ -1105,6 +1169,20 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "icon-caption-centering",
+          "date": "2026-11-09",
+          "status": "in review",
+          "feedback": "The text beneath the icon looks misaligned; centre it.",
+          "action": "Aligned the caption box with the icon centre and width, centred its text and allowed two lines at the original fixed size."
+        },
+        {
+          "id": "list-family-approved",
+          "date": "2026-11-09",
+          "status": "approved",
+          "feedback": "Keep usage clearly explicit; confirm and move on.",
+          "action": "Approved the reviewed list variants and supported palettes; documented counts, fields, capacities and defaults."
         }
       ]
     },
@@ -1130,38 +1208,15 @@
         }
       ]
     },
-    "stepped-rail-blue": {
-      "status": "in review",
-      "notes": "",
-      "use": "",
-      "example": {},
-      "palette_reviews": {
-        "blue": {
-          "status": "in review",
-          "notes": ""
-        }
-      },
-      "feedback": [
-        {
-          "id": "full-collection-audit",
-          "source": "Full-collection contact-sheet and original audit, 2026-11-05",
-          "issue": "Overlapping generic labels or an embedded ninth tile label.",
-          "action": "Bounded text slots to their original cells; shortened defaults; separated the missing native tile label where applicable.",
-          "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
-        }
-      ]
-    },
     "three-cards": {
-      "status": "in review",
-      "notes": "Preserve the accepted 10% icon reduction, centres, proportions and complete panel shadows.",
+      "status": "approved",
+      "notes": "Approved by the user on 2026-11-12: unified two/three/five icon-card rows, optional title, 216 x 216 icon fitting, shared 76-unit caption gap and aligned first baselines. Both title states and short/long captions reviewed.",
       "use": "Demonstrate this reusable composition.",
       "example": {
-        "title": "Slide title",
-        "caption-one": "Label 2",
-        "caption-two": "Label 3",
-        "caption-three": "Label 4",
-        "graphic-one": "\\asset[width=1cm]{alice}"
+        "title": "Shared rules",
+        "caption-one": "Privacy",
+        "caption-two": "Security",
+        "caption-three": "Verification"
       },
       "previous_example": {
         "title": "Three useful tools",
@@ -1173,8 +1228,8 @@
       "previous_use": "Show three illustrated concepts.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 for the unified icon-card rows, including optional title and caption spacing."
         }
       },
       "feedback": [
@@ -1193,12 +1248,26 @@
           "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "standard-icon-size-approved",
+          "date": "2026-11-11",
+          "status": "approved",
+          "feedback": "Looks good; standardize icon sizes in the boxes, then move on.",
+          "action": "Replaced individual scales with a shared 216 x 216 bounding envelope, retaining aspect ratio and centres."
+        },
+        {
+          "id": "unified-icon-card-rows-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Looks good; confirm this family.",
+          "action": "Approved two, three and five horizontal icon-card rows with both title states, aspect-preserving replacements and verified caption formatting."
         }
       ]
     },
     "three-step-process": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12 after compatibility audit: horizontal two/three/four-stage icon processes, original arrows, fixed two-line captions and 216 x 216 replacement icon envelope. Heading is supported only by the four-stage composition.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title",
@@ -1213,8 +1282,8 @@
       "previous_use": "Explain a three-step process.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 of the reviewed horizontal icon-process composition."
         }
       },
       "feedback": [
@@ -1233,18 +1302,29 @@
           "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "icon-process-family-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Verify that these include all compatible slides and confirm them.",
+          "action": "Audited all 29 inventory assignments and related process layouts. Approved the reviewed two/three/four-stage compositions. Additional heading-bearing two/three-stage originals and structurally different diagrams remain outside this approval."
         }
       ]
     },
     "two-cards": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Approved by the user on 2026-11-12: unified two/three/five icon-card rows, optional title, 216 x 216 icon fitting, shared 76-unit caption gap and aligned first baselines. Both title states and short/long captions reviewed.",
       "use": "",
-      "example": {},
+      "example": {
+        "title": "Shared rules",
+        "caption-one": "Privacy",
+        "caption-two": "Security"
+      },
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 for the unified icon-card rows, including optional title and caption spacing."
         }
       },
       "feedback": [
@@ -1255,12 +1335,19 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "unified-icon-card-rows-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Looks good; confirm this family.",
+          "action": "Approved two, three and five horizontal icon-card rows with both title states, aspect-preserving replacements and verified caption formatting."
         }
       ]
     },
     "four-card-grid": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -1271,8 +1358,8 @@
       "previous_use": "Group four short explanations.",
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
       },
       "feedback": [
@@ -1307,6 +1394,34 @@
           "action": "Checked native font metadata and regenerated clean PDF; retain Regular supporting copy where the reference distinguishes it.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
         }
       ]
     },
@@ -1323,14 +1438,14 @@
       }
     },
     "four-step-process": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12 after compatibility audit: horizontal two/three/four-stage icon processes, original arrows, fixed two-line captions and 216 x 216 replacement icon envelope. Heading is supported only by the four-stage composition.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 of the reviewed horizontal icon-process composition."
         }
       },
       "feedback": [
@@ -1341,18 +1456,25 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "icon-process-family-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Verify that these include all compatible slides and confirm them.",
+          "action": "Audited all 29 inventory assignments and related process layouts. Approved the reviewed two/three/four-stage compositions. Additional heading-bearing two/three-stage originals and structurally different diagrams remain outside this approval."
         }
       ]
     },
     "two-step-process": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12 after compatibility audit: horizontal two/three/four-stage icon processes, original arrows, fixed two-line captions and 216 x 216 replacement icon envelope. Heading is supported only by the four-stage composition.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 of the reviewed horizontal icon-process composition."
         }
       },
       "feedback": [
@@ -1363,18 +1485,25 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "icon-process-family-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Verify that these include all compatible slides and confirm them.",
+          "action": "Audited all 29 inventory assignments and related process layouts. Approved the reviewed two/three/four-stage compositions. Additional heading-bearing two/three-stage originals and structurally different diagrams remain outside this approval."
         }
       ]
     },
     "milestone-cards": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved on 2026-11-12 after restoring original text anchors and measured visual centring; fixed typography, three-line badge captions and two-line heading verified.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 after the original-alignment correction."
         }
       },
       "feedback": [
@@ -1385,6 +1514,27 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "long-badge-copy-wraps",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Only cards two and three in Learning and sharing knowledge need better text formatting; the rest looks good.",
+          "action": "Balanced only those two example captions with explicit three-line breaks, preserving the wording, type sizes and layout. Three pages recompiled and inspected with no diagnostics; no approval inferred."
+        },
+        {
+          "id": "badge-original-text-alignment",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "In Missions the texts are not aligned like the originals.",
+          "action": "Replace uniform top alignment with measured vertical centring for one-, two- and three-line labels; restore original individual left anchors and heading optical position."
+        },
+        {
+          "id": "milestone-badges-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Confirm and move to the next template.",
+          "action": "Approved the five hanging badges, including original text alignment and long/explicit multiline examples. Removed obsolete local batch outputs."
         }
       ]
     },
@@ -1419,14 +1569,14 @@
       ]
     },
     "three-card-summary": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
       },
       "feedback": [
@@ -1445,18 +1595,46 @@
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
         }
       ]
     },
     "four-pillar-cards": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
       },
       "feedback": [
@@ -1475,6 +1653,34 @@
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
         }
       ]
     },
@@ -1513,16 +1719,46 @@
       }
     },
     "two-card-vertical": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
+        }
+      ]
     },
     "callout-explanation": {
       "status": "in review",
@@ -1589,14 +1825,21 @@
       }
     },
     "five-icon-row": {
-      "status": "in review",
-      "notes": "Centre the five icons and their labels as one visual row.",
+      "status": "approved",
+      "notes": "Approved by the user on 2026-11-12: unified two/three/five icon-card rows, optional title, 216 x 216 icon fitting, shared 76-unit caption gap and aligned first baselines. Both title states and short/long captions reviewed.",
       "use": "",
-      "example": {},
+      "example": {
+        "title": "Shared rules",
+        "caption-one": "Privacy",
+        "caption-two": "Security",
+        "caption-three": "Verification",
+        "caption-four": "Efficiency",
+        "caption-five": "Access"
+      },
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-12 for the unified icon-card rows, including optional title and caption spacing."
         }
       },
       "feedback": [
@@ -1607,6 +1850,13 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "unified-icon-card-rows-approved",
+          "date": "2026-11-12",
+          "status": "approved",
+          "feedback": "Looks good; confirm this family.",
+          "action": "Approved two, three and five horizontal icon-card rows with both title states, aspect-preserving replacements and verified caption formatting."
         }
       ]
     },
@@ -1623,40 +1873,130 @@
       }
     },
     "incentives-card-grid": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
+        }
+      ]
     },
     "network-environments": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
+        }
+      ]
     },
     "node-type-grid": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
+        }
+      ]
     },
     "horizontal-split": {
       "status": "in review",
@@ -1671,16 +2011,46 @@
       }
     },
     "benefits-limits": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
+        }
+      ]
     },
     "before-after": {
       "status": "in review",
@@ -3479,16 +3849,46 @@
       }
     },
     "mining-card-grid": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicitly approved by the user on 2026-11-12: Inter Semibold, editable icons, grouped card commands and visual reading order. Original geometry and fixed typography retained.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "User approval after text-weight correction and editable-icon verification."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "unified-soft-card-api",
+          "date": "2026-11-12",
+          "status": "in review",
+          "feedback": "Approved unification of the ten proposed variants; check text formatting carefully.",
+          "action": "Shared heading/body fields and strict visibility options; old grouped syntax replaced. Original artwork and geometry retained; long-text and option checks required."
+        },
+        {
+          "id": "soft-cards-weight",
+          "source": "User feedback 2026-11-12",
+          "issue": "Text appears too light compared with the original cards.",
+          "action": "Use Inter Semibold for all measured text in the family; retain per-layout fixed size, leading and anchors.",
+          "verification": "Thirty text specimens use embedded Inter Semibold without diagnostics; 54 visibility and anchor checks pass. All ten original/current comparisons visually inspected; final graphical approval pending."
+        },
+        {
+          "id": "soft-cards-approval",
+          "source": "User instruction 2026-11-12",
+          "issue": "Allow icon replacement wherever icons exist, then confirm the family.",
+          "action": "Exposed bounded icon/image/graphic keys for sidebar and heading symbols. Recorded approval of all ten text-card variants.",
+          "verification": "Eighteen icon substitution and longer-text pages compiled and visually inspected; original artwork and text coordinates preserved."
+        },
+        {
+          "id": "grouped-command-approval",
+          "source": "User confirmation 2026-11-12 before commit and push",
+          "issue": "Confirm the grouped commands and their order.",
+          "action": "Confirmed the final card-one={title={...},body={...},icon={...}} API and documented visual reading order.",
+          "verification": "Graphical approvals retained; migrated examples, overflow checks, visibility cases and portable guides verified."
+        }
+      ]
     },
     "contact-qr": {
       "status": "in review",
@@ -3689,6 +4089,31 @@
           "status": "approved"
         }
       ]
+    },
+    "list-rail-five": {
+      "status": "approved",
+      "notes": "Five-item adaptation of the four-item rail geometry. Native light and blue semantic treatments; pending review. Approved by the user on 2026-11-09 after clarification of the shared syntax.",
+      "use": "Present five related bullet points beside a vertical rail.",
+      "example": {},
+      "palette_reviews": {
+        "light": {
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
+        },
+        "blue": {
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-09 for the reviewed list family."
+        }
+      },
+      "feedback": [
+        {
+          "id": "list-family-approved",
+          "date": "2026-11-09",
+          "status": "approved",
+          "feedback": "Keep usage clearly explicit; confirm and move on.",
+          "action": "Approved the reviewed list variants and supported palettes; documented counts, fields, capacities and defaults."
+        }
+      ]
     }
   },
   "reusable_selection": [
@@ -3813,21 +4238,222 @@
       ]
     },
     {
-      "id": "lists-01",
-      "title": "Three-item list beside a rail — graphical review",
+      "id": "lists-light",
+      "title": "Bullet lists — light",
       "family": "Lists",
       "compositions": [
-        "list-rail-light"
+        "list-rail-light",
+        "list-rail-blue",
+        "list-rail-five"
       ],
       "commands": {
-        "list-rail-light": "\\studiotemplate[variant=three-items,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies}]{list-rail}"
+        "list-rail-light": "\\studiotemplate[variant=three-items,palette=light,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies}]{list-rail}",
+        "list-rail-blue": "\\studiotemplate[variant=four-items,palette=light,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies},item-four={Share results}]{list-rail}",
+        "list-rail-five": "\\studiotemplate[variant=five-items,palette=light,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies},item-four={Share results},item-five={Repeat checks}]{list-rail}"
       },
       "focus": [
-        "Compare the light three-item list with its original reference.",
-        "Check title size, item typography, dot alignment and rail segments.",
-        "Inspect short and longer one-line items, with automatic and explicit two-line title wrapping at fixed sizes.",
-        "List items retain one-line capacities; unsupported wrapping must report overflow. Approval remains explicit."
+        "Compare count, typography and rail spacing.",
+        "The five-item composition is an adaptation of the four-item reference.",
+        "Light and blue share semantic artwork and fixed typography."
+      ]
+    },
+    {
+      "id": "lists-blue",
+      "title": "Bullet lists — blue",
+      "family": "Lists",
+      "compositions": [
+        "list-rail-light",
+        "list-rail-blue",
+        "list-rail-five"
+      ],
+      "commands": {
+        "list-rail-light": "\\studiotemplate[variant=three-items,palette=blue,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies}]{list-rail}",
+        "list-rail-blue": "\\studiotemplate[variant=four-items,palette=blue,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies},item-four={Share results}]{list-rail}",
+        "list-rail-five": "\\studiotemplate[variant=five-items,palette=blue,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies},item-four={Share results},item-five={Repeat checks}]{list-rail}"
+      },
+      "focus": [
+        "Compare count, typography and rail spacing.",
+        "The five-item composition is an adaptation of the four-item reference.",
+        "Light and blue share semantic artwork and fixed typography."
+      ]
+    },
+    {
+      "id": "lists-special",
+      "title": "Grouped, detailed and illustrated bullet lists",
+      "family": "Lists",
+      "compositions": [
+        "checklist-rail",
+        "grouped-rail",
+        "icon-rail"
+      ],
+      "commands": {
+        "checklist-rail": "\\studiotemplate[variant=detailed,title={Key ideas},item-one={Verify rules},item-two={Check state},item-three={Compare copies},item-four={Share results}]{list-rail}",
+        "grouped-rail": "\\studiotemplate[variant=grouped,title={Key ideas},group-one-title={First group},group-two-title={Next group},item-one={Verify rules},item-two={Check state},item-three={Compare copies},item-four={Share results}]{list-rail}",
+        "icon-rail": "\\studiotemplate[variant=illustrated,title={Rules},item-one={Verify},item-two={Check},item-three={Compare}]{list-rail}"
+      },
+      "focus": [
+        "Check the shared title and item fields across the specialized variants.",
+        "Preserve each original arrangement and native palette.",
+        "Inspect automatic and explicit wrapping at fixed sizes."
+      ]
+    },
+    {
+      "id": "cards-01",
+      "title": "Three icon cards — graphical review",
+      "family": "Cards",
+      "compositions": [
+        "three-cards"
+      ],
+      "commands": {
+        "three-cards": "\\studiotemplate[variant=three,title={Esclusione finanziaria},caption-one={Unbanked},caption-two={Rimesse},caption-three={Censura}]{icon-cards}"
+      },
+      "focus": [
+        "Compare the three-card layout with its original reference.",
+        "Check title, captions, card spacing, shadows and icon alignment.",
+        "Inspect longer single-line text at fixed sizes; unsupported wrapping must report overflow.",
+        "Other card variants are separate review choices; no approval is inferred."
+      ]
+    },
+    {
+      "id": "cards-02",
+      "title": "Two icon cards — graphical review",
+      "family": "Cards",
+      "compositions": [
+        "two-cards"
+      ],
+      "commands": {
+        "two-cards": "\\studiotemplate[variant=two,caption-one={Privacy},caption-two={Security},icon-one={shield},icon-two={key}]{icon-cards}"
+      },
+      "focus": [
+        "Compare with the original SVG export named in the PDF.",
+        "Check panel effects, icon size, centred captions and equal fixed type sizes.",
+        "Check longer automatic and explicit two-line captions without shrinking fonts.",
+        "Substituted icons with wide and tall aspect ratios share the same 216 x 216 envelope; keep panels and captions fixed."
+      ]
+    },
+    {
+      "id": "icon-card-rows",
+      "title": "Unified icon-card rows",
+      "family": "Cards",
+      "compositions": [
+        "two-cards",
+        "three-cards",
+        "five-icon-row"
+      ],
+      "commands": {
+        "two-cards": "\\studiotemplate[variant=two,show-title=false,title={Shared rules},caption-one={Privacy},caption-two={Security}]{icon-cards}",
+        "three-cards": "\\studiotemplate[variant=three,show-title=true,title={Shared rules},caption-one={Privacy},caption-two={Security},caption-three={Verification}]{icon-cards}",
+        "five-icon-row": "\\studiotemplate[variant=five,show-title=true,title={Shared rules},caption-one={Privacy},caption-two={Security},caption-three={Verification},caption-four={Efficiency},caption-five={Access}]{icon-cards}"
+      },
+      "focus": [
+        "Compare the two-, three- and five-card rows with their pinned original SVGs.",
+        "One public model: variant=two|three|five and show-title=true|false.",
+        "All default and replacement icons use the same 216 x 216 aspect-preserving envelope.",
+        "Check short, longer automatically wrapped and explicitly broken headings/captions at fixed sizes.",
+        "Check the shared 76-unit panel-to-caption gap and top alignment for mixed one- and two-line labels."
+      ]
+    },
+    {
+      "id": "icon-process-01",
+      "title": "Icon process — two, three and four stages",
+      "family": "Cards",
+      "compositions": [
+        "two-step-process",
+        "three-step-process",
+        "four-step-process"
+      ],
+      "commands": {
+        "two-step-process": "\\studiotemplate[variant=two,caption-one={Values},caption-two={Technology}]{icon-process}",
+        "three-step-process": "\\studiotemplate[variant=three,caption-one={Overview},caption-two={Education},caption-three={Research}]{icon-process}",
+        "four-step-process": "\\studiotemplate[variant=four,title={A learning journey},caption-one={Discover},caption-two={Learn},caption-three={Practise},caption-four={Contribute}]{icon-process}"
+      },
+      "focus": [
+        "Compare with verified original SVG exports 35.svg, 7.svg and 40.svg.",
+        "Check arrows, icon boxes and caption centres.",
+        "Fixed caption sizes, common panel-to-caption gap and mixed one-/two-line labels.",
+        "Only the four-stage original contains a heading; two and three stages expose captions only."
+      ]
+    },
+    {
+      "id": "milestone-badges-01",
+      "title": "Five hanging milestone badges",
+      "family": "Cards",
+      "compositions": [
+        "milestone-cards"
+      ],
+      "commands": {
+        "milestone-cards": "\\studiotemplate[title={Missions},badge-one={Plan B Forum\\\\El Salvador},badge-two={Barcelona\\\\Cypher\\\\Conference},badge-three={BitCuneo},badge-four={BitCare Forum},badge-five={BTC Prague}]{milestone-badges}"
+      },
+      "focus": [
+        "Compare with original 8907.svg (figma-0105).",
+        "Check all five hanging badge graphics, equal text insets and 72-unit type.",
+        "Review automatic wrapping and explicit three-line labels at fixed sizes."
+      ]
+    },
+    {
+      "id": "summary-cards-01",
+      "title": "Three-card text summary",
+      "family": "Cards",
+      "compositions": [
+        "three-card-summary"
+      ],
+      "commands": {
+        "three-card-summary": "\\studiotemplate[variant=three-summary,title={Key concepts recap},caption-one={Decentralization},body-one={A foundation of Bitcoin: provides\\\\security and censorship resistance.},caption-two={The role of nodes},body-two={Each node checks the protocol rules.\\\\The timechain preserves a history\\\\of transactions.},caption-three={Workshop goal},body-three={Explore options for running a node;\\\\learn practical steps to get started.}]{text-cards}"
+      },
+      "focus": [
+        "Compare with original 36.svg (figma-0049).",
+        "Check original card shapes, title/body positions and fixed type sizes.",
+        "Inspect short copy, longer automatic wrapping and explicit line breaks."
+      ]
+    },
+    {
+      "id": "soft-cards-01",
+      "title": "Unified soft text cards — original layouts and optional content (1/2)",
+      "family": "Cards",
+      "compositions": [
+        "three-card-summary",
+        "benefits-limits",
+        "four-pillar-cards",
+        "four-card-grid",
+        "two-card-vertical"
+      ],
+      "commands": {
+        "three-card-summary": "\\studiotemplate[\n  variant={three-summary},\n  title={Key concepts recap},\n  card-one={\n    title={Decentralization},\n    body={Security and censorship resistance.}\n  },\n  card-two={\n    title={The role of nodes},\n    body={Each node checks the protocol rules.\\\\The shared record preserves a history\\\\of transactions.}\n  },\n  card-three={\n    title={Workshop goal},\n    body={Explore ways to run a node.\\\\Learn practical verification steps.}\n  }\n]{text-cards}",
+        "benefits-limits": "\\studiotemplate[\n  variant={two},\n  title={Free market vs. monopoly},\n  card-one={\n    title={Free market},\n    body={Many sellers and buyers.\\\\Prices respond to supply and demand.\\\\Competition encourages innovation.}\n  },\n  card-two={\n    title={Monopoly},\n    body={One seller dominates the market.\\\\Consumers have fewer alternatives.\\\\Competition is limited.}\n  }\n]{text-cards}",
+        "four-pillar-cards": "\\studiotemplate[\n  variant={four},\n  title={Bitcoin consensus},\n  card-one={\n    title={Shared rules},\n    body={Nodes apply the same public rules.\\\\Checks are performed independently.}\n  },\n  card-two={\n    title={Example},\n    body={Each participant validates updates.\\\\Invalid updates are rejected.}\n  },\n  card-three={\n    title={Outside consensus},\n    body={Communication methods can differ.\\\\Participants still check the same\\\\consensus rules.}\n  },\n  card-four={\n    title={Changing consensus},\n    body={Changes require careful coordination.\\\\Compare their practical effects.}\n  }\n]{text-cards}",
+        "four-card-grid": "\\studiotemplate[\n  variant={four-bullets},\n  title={How Bitcoin works},\n  card-one={\n    title={Proof of work},\n    body={Compare the main mechanism.\\\\Explain its practical purpose.}\n  },\n  card-two={\n    title={Proof of knowledge},\n    body={Compare the main mechanism.\\\\Explain its practical purpose.}\n  },\n  card-three={\n    title={Timechain},\n    body={Compare the main mechanism.\\\\Explain its practical purpose.}\n  },\n  card-four={\n    title={Lightning Network},\n    body={Compare the main mechanism.\\\\Explain its practical purpose.}\n  }\n]{text-cards}",
+        "two-card-vertical": "\\studiotemplate[\n  variant={two-stacked},\n  title={Scaling a protocol},\n  introduction={Layered designs separate responsibilities.\\\\Compare the role of each layer.\\\\Discuss the practical trade-offs.},\n  card-one={\n    title={Upper layers},\n    body={Fast innovation.\\\\Competition between protocols.}\n  },\n  card-two={\n    title={Lower layers},\n    body={Stability.\\\\Robustness.\\\\Optimisation.\\\\Convergence.}\n  }\n]{text-cards}"
+      },
+      "focus": [
+        "Compare each layout with its verified original SVG.",
+        "Check source-specific geometry, type size, margins and reading order.",
+        "Verify longer text, explicit wrapping and optional content at fixed font sizes."
+      ]
+    },
+    {
+      "id": "soft-cards-02",
+      "title": "Unified soft text cards — original layouts and optional content (2/2)",
+      "family": "Cards",
+      "compositions": [
+        "feature-spotlight",
+        "incentives-card-grid",
+        "network-environments",
+        "node-type-grid",
+        "mining-card-grid"
+      ],
+      "commands": {
+        "feature-spotlight": "\\studiotemplate[\n  variant={two-icon-stacked},\n  title={Scaling a protocol},\n  introduction={Layered designs separate responsibilities.\\\\Compare the role of each layer.\\\\Discuss the practical trade-offs.},\n  card-one={\n    title={Internet},\n    body={Handle more simultaneous\\\\connections and greater\\\\amounts of information.\\\\Compare the available\\\\processing resources.}\n  },\n  card-two={\n    title={Bitcoin},\n    body={Compare ways to process\\\\more transactions while\\\\preserving independent\\\\verification and the\\\\shared public rules.}\n  }\n]{text-cards}",
+        "incentives-card-grid": "\\studiotemplate[\n  variant={five},\n  title={Incentives},\n  card-one={\n    title={Miner},\n    body={Block rewards.\\\\Transaction fees.}\n  },\n  card-two={\n    title={Merchant / User},\n    body={Open participation.\\\\Independent payments.}\n  },\n  card-three={\n    title={Full Node Operator},\n    body={Verify transactions independently.\\\\Keep a local copy of the record.\\\\Check the shared rules.}\n  },\n  card-four={\n    title={Developer},\n    body={Build tools on an open protocol.}\n  },\n  card-five={\n    title={Long-term Holder},\n    body={Understand the long-term trade-offs.}\n  }\n]{text-cards}",
+        "network-environments": "\\studiotemplate[\n  variant={four-network},\n  title={Network environments},\n  card-one={\n    title={Mainnet},\n    body={The production Bitcoin network.\\\\Compare real transactions and blocks.}\n  },\n  card-two={\n    title={Testnet},\n    body={A public testing environment.\\\\Use it to study integration tests.}\n  },\n  card-three={\n    title={Regtest},\n    body={A local testing environment.\\\\Control the example blockchain.\\\\Create blocks for a workshop.\\\\Repeat checks with your own tools.}\n  },\n  card-four={\n    title={Signet},\n    body={A coordinated testing network.\\\\Compare its rules and behaviour.\\\\Use an appropriate test setup.}\n  }\n]{text-cards}",
+        "node-type-grid": "\\studiotemplate[\n  variant={four-nodes},\n  title={Node types},\n  card-one={\n    title={Full Node},\n    body={Download and validate the blockchain.\\\\Perform the protocol checks locally.}\n  },\n  card-two={\n    title={Pruned Node},\n    body={Validate the shared record.\\\\Discard older block data afterwards.}\n  },\n  card-three={\n    title={Light Client (SPV)},\n    body={Compare block-header verification.\\\\Identify the assumptions involved.\\\\Explain the limits of the checks.}\n  },\n  card-four={\n    title={Mining Node},\n    body={Validate and construct candidate blocks.\\\\Compare the work involved.}\n  }\n]{text-cards}",
+        "mining-card-grid": "\\studiotemplate[\n  variant={three-asymmetric},\n  title={Mining},\n  card-one={\n    title={Proof of Work},\n    body={Compare a candidate hash with a target.\\\\Repeat the check with another nonce.\\\\Observe the work required.}\n  },\n  card-two={\n    title={Halving},\n    body={The reward schedule follows public rules.\\\\Compare successive subsidy periods.\\\\Explain the schedule using an example.\\\\Separate the rules from market prices.}\n  },\n  card-three={\n    title={Difficulty Adjustment},\n    body={Compare block production over a period.\\\\Review how the target is adjusted.\\\\Explain the intended average interval.}\n  }\n]{text-cards}"
+      },
+      "focus": [
+        "Compare each layout with its verified original SVG.",
+        "Check source-specific geometry, type size, margins and reading order.",
+        "Verify longer text, explicit wrapping and optional content at fixed font sizes."
       ]
     }
-  ]
+  ],
+  "active_review_batches": []
 }
