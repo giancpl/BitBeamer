@@ -297,16 +297,37 @@
       ]
     },
     "cover-dashboard": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user graphical approval on 2026-11-13 of the unified dashboard cover, generic byline, semantic metric fields, editable logos and customization specimens.",
       "use": "",
-      "example": {},
+      "example": {
+        "title": "",
+        "byline": "Presentation 2024/25",
+        "participants-number": "55",
+        "participants-label": "Participants",
+        "alumni-number": "180",
+        "alumni-label": "Alumni",
+        "followers-number": "7000+",
+        "followers-label": "Followers on multiple channels",
+        "events-number": "40+",
+        "events-label": "Events organized"
+      },
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user graphical approval on 2026-11-13 of the unified dashboard cover, generic byline, semantic metric fields, editable logos and customization specimens."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "dashboard-cover-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the unified cover after replacing the personal byline with generic text.",
+          "action": "Approve one blue composition for the three selected source exports, semantic editable content and bounded logos.",
+          "verification": "Nine specimens inspected; native canvas, fixed typography, text bounds, empty fields, title/brand switching and logo replacements checked; isolated five-document package passed.",
+          "status": "approved"
+        }
+      ]
     },
     "cover-wide-title": {
       "status": "approved",
@@ -5050,6 +5071,66 @@
             "page": 14,
             "composition": "paired-icons-blue",
             "label": "Wide and tall custom graphics"
+          }
+        ]
+      }
+    },
+    {
+      "id": "dashboard-cover-01",
+      "title": "Dashboard cover",
+      "family": "Opening",
+      "compositions": [
+        "cover-dashboard"
+      ],
+      "commands": {
+        "cover-dashboard": "\\studiotemplate[byline={Presentation 2024/25},alumni-number={180},followers-number={7000+},events-number={40+}]{cover-dashboard}"
+      },
+      "focus": [
+        "Compare original panel geometry, fixed Inter typography, four metric pairs and logo sizes.",
+        "Verify long titles/bylines, empty fields and independent logo replacements."
+      ],
+      "specimen": {
+        "source": "examples/studio-dashboard-cover.tex",
+        "samples": [
+          {
+            "page": 2,
+            "composition": "cover-dashboard",
+            "label": "Longer two-line title and byline"
+          },
+          {
+            "page": 3,
+            "composition": "cover-dashboard",
+            "label": "All editable text replaced"
+          },
+          {
+            "page": 4,
+            "composition": "cover-dashboard",
+            "label": "Empty text and logos"
+          },
+          {
+            "page": 5,
+            "composition": "cover-dashboard",
+            "label": "Replace both logos and brand"
+          },
+          {
+            "page": 6,
+            "composition": "cover-dashboard",
+            "label": "Wide and tall logo replacements"
+          },
+          {
+            "page": 7,
+            "composition": "cover-dashboard",
+            "label": "Historical 2024/25 content"
+          },
+          {
+            "page": 8,
+            "composition": "cover-dashboard",
+            "label": "Historical 2023 content"
+          },
+          {
+            "page": 9,
+            "composition": "cover-dashboard",
+            "label": "Automatic title and byline wrapping"
           }
         ]
       }

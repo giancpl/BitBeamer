@@ -212,7 +212,7 @@
     },
     {
       "id": "cover-dashboard",
-      "title": "Overview dashboard",
+      "title": "Dashboard cover",
       "category": "Opening",
       "default_variant": "default",
       "variants": [
@@ -227,15 +227,21 @@
                 "blue"
               ],
               "fields": {
-                "label-one": "participants-number",
-                "label-two": "alumni-number",
-                "label-three": "participants-label",
-                "label-four": "alumni-label",
-                "label-five": "item-4-1",
-                "label-six": "item-4-2",
-                "label-seven": "item-5-1",
-                "label-eight": "item-5-2",
-                "label-nine": "text-6"
+                "title": "title",
+                "byline": "byline",
+                "participants-number": "participants-number",
+                "participants-label": "participants-label",
+                "alumni-number": "alumni-number",
+                "alumni-label": "alumni-label",
+                "followers-number": "followers-number",
+                "followers-label": "followers-label",
+                "events-number": "events-number",
+                "events-label": "events-label"
+              },
+              "graphic_slots": {
+                "left": 1,
+                "right": 2,
+                "brand": 3
               }
             }
           ]

@@ -896,7 +896,10 @@
     "partner-logo-four": "5794ef3935227751bcea658ac42f11bc955da01a3297552916afe21ef8261be6",
     "partner-logo-five": "0cd6748a5d847cbd3e97e49552551fbd4b0bb29bbbdde74eb47f1353b6ac0cc9",
     "partner-website": "765f1247f53444ad33918c178948394624fda1dd6c0a2b7c382765f0ebabade7",
-    "partner-social": "3084b659b336d854b85cf85ee596117761aef2bc9a99b670427c6be892fef3a2"
+    "partner-social": "3084b659b336d854b85cf85ee596117761aef2bc9a99b670427c6be892fef3a2",
+    "dashboard-panels": "57cd069328b59aeead770f8786d597865429e8ba7b4621838e91d3741daf2be4",
+    "dashboard-bull": "e305d0d291463cea114e9332b6cf0261b5c8cfe6c72abc3b93a4b2359b0293e4",
+    "dashboard-crest": "32a1bd1d6ee2e8af67925807198cf3cfa7e5ce9bf3c245c09a7fa14ac078305c"
   },
   "previews": {
     "figma-0575-part-01": "2281b98ff75ea0dd0a4d310b725761d1d536efcdd04c4fab80dcfb305d18c2f5",
@@ -1795,6 +1798,9 @@
     "partner-logo-four": "49a97a79778a680a04c90ac5c5f5c98954ee311c004538c8827afb3ba1cebf47",
     "partner-logo-five": "e5395a70f10dff028cced3bb0fc7a6ba5bd2060dc8244e74bd8d742226b2308f",
     "partner-website": "f750fcd27e4d4c1ed4c44be16a763f29042f045d4e7abdf71c2d3ea8d61ca9ea",
-    "partner-social": "9dfed6c2903368f81c1678f9be2c2c80b16753a4160cb894ea35207696c47d15"
+    "partner-social": "9dfed6c2903368f81c1678f9be2c2c80b16753a4160cb894ea35207696c47d15",
+    "dashboard-panels": "ac73fbcca3649b8a9290c6dd4209dcb105ade836763441cb739388f679635726",
+    "dashboard-bull": "067943eaff4f291d17b5e52da0fa8ad1bf6206fa4c70ed34d37d637aa7b11050",
+    "dashboard-crest": "ca3d3c45b68881d1ccb54b3c54a1b7c8aa3e60a7b3be43e4361b7c66bd07b0ba"
   }
 }

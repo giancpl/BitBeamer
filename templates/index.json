@@ -1068,10 +1068,12 @@
       "title": "Overview dashboard",
       "category": "Opening",
       "references": [
-        "figma-0610"
+        "figma-0609",
+        "figma-0610",
+        "figma-0611"
       ],
       "source": "templates/studio/cover-dashboard.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Three original dashboard covers explicitly selected for one editable composition on 2026-11-13. Original SVG panels, bounded logo replacements and fixed-size editable metric pairs. Explicitly approved by the user on 2026-11-13.",
       "number": 8,
       "canvas": [
         3556.0,
@@ -1080,394 +1082,39 @@
       "background": "bitpolito",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
+          "name": "title",
+          "type": "text",
+          "default": "",
           "box": [
-            2829,
-            405,
-            500,
-            423
+            271,
+            865,
+            1260,
+            490
           ],
-          "default": "\\studiopaletteimage[width=500\\studiounit]{images/studio/collection/figma-0610-part-01.pdf}",
-          "slot": {
-            "number": 6,
-            "key": "graphic/6",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            2248,
-            405,
-            565,
-            423
-          ],
-          "default": "\\studiopaletteimage[width=565\\studiounit]{images/studio/collection/figma-0610-part-02.pdf}",
-          "slot": {
-            "number": 5,
-            "key": "graphic/5",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            2248,
-            836,
-            1081,
-            465
-          ],
-          "default": "\\studiopaletteimage[width=1081\\studiounit]{images/studio/collection/figma-0610-part-03.pdf}",
-          "slot": {
-            "number": 8,
-            "key": "graphic/8",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            2248,
-            1309,
-            703,
-            423
-          ],
-          "default": "\\studiopaletteimage[width=703\\studiounit]{images/studio/collection/figma-0610-part-04.pdf}",
-          "slot": {
-            "number": 11,
-            "key": "graphic/11",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-5",
-          "type": "graphic",
-          "box": [
-            3344,
-            405,
-            212.0,
-            423
-          ],
-          "default": "\\studiopaletteimage[width=212\\studiounit]{images/studio/collection/figma-0610-part-05.pdf}",
-          "slot": {
-            "number": 7,
-            "key": "graphic/7",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-6",
-          "type": "graphic",
-          "box": [
-            2700,
-            0,
-            856.0,
-            392
-          ],
-          "default": "\\studiopaletteimage[width=856\\studiounit]{images/studio/collection/figma-0610-part-06.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-7",
-          "type": "graphic",
-          "box": [
-            3344,
-            836,
-            212.0,
-            466
-          ],
-          "default": "\\studiopaletteimage[width=212\\studiounit]{images/studio/collection/figma-0610-part-07.pdf}",
-          "slot": {
-            "number": 9,
-            "key": "graphic/9",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-8",
-          "type": "graphic",
-          "box": [
-            1666,
-            1309,
-            577,
-            424
-          ],
-          "default": "\\studiopaletteimage[width=577\\studiounit]{images/studio/collection/figma-0610-part-08.pdf}",
-          "slot": {
-            "number": 10,
-            "key": "graphic/10",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-9",
-          "type": "graphic",
-          "box": [
-            2248,
-            1746,
-            576,
-            254.0
-          ],
-          "default": "\\studiopaletteimage[width=576\\studiounit]{images/studio/collection/figma-0610-part-09.pdf}",
-          "slot": {
-            "number": 14,
-            "key": "graphic/14",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-10",
-          "type": "graphic",
-          "box": [
-            2116,
-            0,
-            576,
-            392
-          ],
-          "default": "\\studiopaletteimage[width=576\\studiounit]{images/studio/collection/figma-0610-part-10.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-11",
-          "type": "graphic",
-          "box": [
-            1671,
-            410,
-            567,
-            873
-          ],
-          "default": "\\studiopaletteimage[width=567\\studiounit]{images/studio/collection/figma-0610-part-11.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-12",
-          "type": "graphic",
-          "box": [
-            2965,
-            1311,
-            591.0,
-            423
-          ],
-          "default": "\\studiopaletteimage[width=591\\studiounit]{images/studio/collection/figma-0610-part-12.pdf}",
-          "slot": {
-            "number": 12,
-            "key": "graphic/12",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-13",
-          "type": "graphic",
-          "box": [
-            2849,
-            1746,
-            305,
-            254.0
-          ],
-          "default": "\\studiopaletteimage[width=305\\studiounit]{images/studio/collection/figma-0610-part-13.pdf}",
-          "slot": {
-            "number": 15,
-            "key": "graphic/15",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-14",
-          "type": "graphic",
-          "box": [
-            3168,
-            1746,
-            388.0,
-            254.0
-          ],
-          "default": "\\studiopaletteimage[width=388\\studiounit]{images/studio/collection/figma-0610-part-14.pdf}",
-          "slot": {
-            "number": 16,
-            "key": "graphic/16",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-15",
-          "type": "graphic",
-          "box": [
-            1666,
-            1746,
-            577,
-            254.0
-          ],
-          "default": "\\studiopaletteimage[width=577\\studiounit]{images/studio/collection/figma-0610-part-15.pdf}",
-          "slot": {
-            "number": 13,
-            "key": "graphic/13",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-16",
-          "type": "graphic",
-          "box": [
-            1703,
-            0,
-            406,
-            391
-          ],
-          "default": "\\studiopaletteimage[width=406\\studiounit]{images/studio/collection/figma-0610-part-16.pdf}",
+          "font_size": 170,
+          "leading": 195,
+          "weight": "semibold",
           "slot": {
             "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
+            "key": "text/1"
           }
         },
         {
-          "name": "item-4-1",
+          "name": "byline",
           "type": "text",
-          "default": "8,000+",
-          "box": [
-            2434.82,
-            937.531,
-            777.7104666666662,
-            252.71826666666664
-          ],
-          "source_ink_box": [
-            2434.82,
-            937.531,
-            657.9099999999999,
-            145.79899999999998
-          ],
-          "font_size": 194.399,
-          "leading": 225.502,
-          "source_node": [
-            0,
-            106
-          ],
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "item-4-2",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            2325.47,
-            1126.57,
-            932.0839999999998,
-            97.44800000000009
-          ],
-          "source_ink_box": [
-            2325.47,
-            1126.57,
-            882.1000000000004,
-            61.27999999999997
-          ],
-          "font_size": 65.76,
-          "leading": 76.282,
-          "source_node": [
-            0,
-            106
-          ],
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        },
-        {
-          "name": "item-5-1",
-          "type": "text",
-          "default": "60+",
-          "box": [
-            2393.21,
-            1391.64,
-            441.12800000000016,
-            252.71999999999994
-          ],
-          "source_ink_box": [
-            2393.21,
-            1391.64,
-            362.1100000000001,
-            145.79999999999995
-          ],
-          "font_size": 194.4,
-          "leading": 225.504,
-          "source_node": [
-            0,
-            109
-          ],
-          "slot": {
-            "number": 7,
-            "key": "text/7"
-          }
-        },
-        {
-          "name": "item-5-2",
-          "type": "text",
-          "default": "Label 8",
-          "box": [
-            2321.84,
-            1580.68,
-            557.5219999999999,
-            98.16800000000012
-          ],
-          "source_ink_box": [
-            2321.84,
-            1580.68,
-            508.62999999999965,
-            62.0
-          ],
-          "font_size": 65.76,
-          "leading": 76.282,
-          "source_node": [
-            0,
-            109
-          ],
-          "slot": {
-            "number": 8,
-            "key": "text/8"
-          }
-        },
-        {
-          "name": "text-6",
-          "type": "text",
-          "default": "Label 9",
+          "default": "Presentation overview",
           "box": [
             274.102,
             1659.82,
-            923.8753333333332,
-            116.44866666666661
+            1300,
+            220
           ],
-          "source_ink_box": [
-            274.102,
-            1659.82,
-            872.43,
-            72.918
-          ],
-          "font_size": 79.147,
-          "leading": 91.81,
-          "source_node": [
-            0,
-            135
-          ],
+          "font_size": 79.1467,
+          "leading": 91.8101,
+          "weight": "semibold",
           "slot": {
-            "number": 9,
-            "key": "text/9"
+            "number": 2,
+            "key": "text/2"
           }
         },
         {
@@ -1475,33 +1122,35 @@
           "type": "text",
           "default": "55",
           "box": [
-            2265,
+            2253,
             475,
             507,
-            205
+            230
           ],
-          "font_size": 200,
-          "leading": 231.99999999999997,
+          "font_size": 194.4,
+          "leading": 225.504,
+          "weight": "semibold",
           "slot": {
-            "number": 1,
-            "key": "text/1"
+            "number": 3,
+            "key": "text/3"
           }
         },
         {
           "name": "participants-label",
           "type": "text",
-          "default": "Label 3",
+          "default": "Participants",
           "box": [
-            2265,
+            2273,
             670,
-            507,
-            90
+            467,
+            99
           ],
-          "font_size": 64,
-          "leading": 74.24,
+          "font_size": 65.76,
+          "leading": 76.2816,
+          "weight": "regular",
           "slot": {
-            "number": 3,
-            "key": "text/3"
+            "number": 4,
+            "key": "text/4"
           }
         },
         {
@@ -1509,53 +1158,180 @@
           "type": "text",
           "default": "210",
           "box": [
-            2846,
+            2834,
             475,
             442,
-            205
+            230
           ],
-          "font_size": 200,
-          "leading": 231.99999999999997,
+          "font_size": 194.4,
+          "leading": 225.504,
+          "weight": "semibold",
           "slot": {
-            "number": 2,
-            "key": "text/2"
+            "number": 5,
+            "key": "text/5"
           }
         },
         {
           "name": "alumni-label",
           "type": "text",
-          "default": "Label 4",
+          "default": "Alumni",
           "box": [
-            2846,
+            2854,
             670,
-            442,
-            90
+            402,
+            99
           ],
-          "font_size": 64,
-          "leading": 74.24,
+          "font_size": 65.76,
+          "leading": 76.2816,
+          "weight": "regular",
           "slot": {
-            "number": 4,
-            "key": "text/4"
+            "number": 6,
+            "key": "text/6"
+          }
+        },
+        {
+          "name": "followers-number",
+          "type": "text",
+          "default": "8,000+",
+          "box": [
+            2253,
+            937.531,
+            1022.57,
+            230
+          ],
+          "font_size": 194.4,
+          "leading": 225.504,
+          "weight": "semibold",
+          "slot": {
+            "number": 7,
+            "key": "text/7"
+          }
+        },
+        {
+          "name": "followers-label",
+          "type": "text",
+          "default": "Followers on multiple channels",
+          "box": [
+            2273,
+            1126.57,
+            982.57,
+            99
+          ],
+          "font_size": 65.76,
+          "leading": 76.2816,
+          "weight": "regular",
+          "slot": {
+            "number": 8,
+            "key": "text/8"
+          }
+        },
+        {
+          "name": "events-number",
+          "type": "text",
+          "default": "60+",
+          "box": [
+            2253,
+            1391.64,
+            644.38,
+            230
+          ],
+          "font_size": 194.4,
+          "leading": 225.504,
+          "weight": "semibold",
+          "slot": {
+            "number": 9,
+            "key": "text/9"
+          }
+        },
+        {
+          "name": "events-label",
+          "type": "text",
+          "default": "Events organized",
+          "box": [
+            2273,
+            1580.68,
+            604.38,
+            99
+          ],
+          "font_size": 65.76,
+          "leading": 76.2816,
+          "weight": "regular",
+          "slot": {
+            "number": 10,
+            "key": "text/10"
+          }
+        },
+        {
+          "name": "graphic-left",
+          "type": "graphic",
+          "box": [
+            271,
+            176,
+            192.751,
+            157.679
+          ],
+          "default": "\\includegraphics[width=192.751\\studiounit,height=157.679\\studiounit,keepaspectratio]{images/studio/parts/dashboard-bull.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic",
+            "content": [
+              96.3755,
+              78.8395,
+              192.751,
+              157.679
+            ]
+          }
+        },
+        {
+          "name": "graphic-right",
+          "type": "graphic",
+          "box": [
+            513.75,
+            176,
+            157.686,
+            157.689
+          ],
+          "default": "\\includegraphics[width=157.686\\studiounit,height=157.689\\studiounit,keepaspectratio]{images/studio/parts/dashboard-crest.pdf}",
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic",
+            "content": [
+              78.843,
+              78.8445,
+              157.686,
+              157.689
+            ]
+          }
+        },
+        {
+          "name": "graphic-brand",
+          "type": "graphic",
+          "box": [
+            271,
+            903,
+            1089,
+            193
+          ],
+          "default": "\\includegraphics[width=1089\\studiounit,height=193\\studiounit,keepaspectratio]{images/studio/collection/figma-0610-stroke-833.pdf}",
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "whole graphic",
+            "content": [
+              544.5,
+              96.5,
+              1089,
+              193
+            ]
           }
         }
       ],
       "parts": [
-        "figma-0610-part-01",
-        "figma-0610-part-02",
-        "figma-0610-part-03",
-        "figma-0610-part-04",
-        "figma-0610-part-05",
-        "figma-0610-part-06",
-        "figma-0610-part-07",
-        "figma-0610-part-08",
-        "figma-0610-part-09",
-        "figma-0610-part-10",
-        "figma-0610-part-11",
-        "figma-0610-part-12",
-        "figma-0610-part-13",
-        "figma-0610-part-14",
-        "figma-0610-part-15",
-        "figma-0610-part-16",
+        "dashboard-panels",
+        "dashboard-bull",
+        "dashboard-crest",
         "figma-0610-stroke-833"
       ],
       "reconstruction": "measured",

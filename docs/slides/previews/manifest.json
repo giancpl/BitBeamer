@@ -997,20 +997,20 @@
           "file": "docs/slides/previews/hd/cover-dashboard.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "071715455e0578b6ac701c0de107e0bcc5de04d95ae9c705805172b1cefd71d4",
+          "sha256": "dc8efd04345a218c1ce5e3024872d1bddf0686e0743e488f817f54c408f2c6a4",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/cover-dashboard.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "6325c132c92aa783653466e8c701f85a078d8b55aece36ba7a30e2b68dd62b25",
+          "sha256": "694e64322b9e4f1224facb1cefb83c210df67f62a0194e8e218dbc3270d32bf7",
           "width": 640
         }
       },
-      "page": 20,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "7282076201eadc92e760d054b0f70608f048a138a35487edd6834f9cd2984a66"
+      "signature": "435a510275d41c5d64f9862d370967f22c67af8beaf4ccd75fb8d039a97579cf"
     },
     "cover-light": {
       "canvas": "complete slide; no catalogue labels",

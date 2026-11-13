@@ -4,7 +4,7 @@
 
 Open a talk or introduce its structure using the overview dashboard layout.
 
-Model: `cover-dashboard` · Family: Opening · Status: **in review**.
+Model: `cover-dashboard` · Family: Opening · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/cover-dashboard.tex)
 
@@ -38,31 +38,19 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/6`, `image/6`, `graphic/6` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/5`, `image/5`, `graphic/5` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/8`, `image/8`, `graphic/8` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/11`, `image/11`, `graphic/11` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/7`, `image/7`, `graphic/7` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/3`, `image/3`, `graphic/3` | `graphic-6` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/9`, `image/9`, `graphic/9` | `graphic-7` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/10`, `image/10`, `graphic/10` | `graphic-8` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/14`, `image/14`, `graphic/14` | `graphic-9` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/2`, `image/2`, `graphic/2` | `graphic-10` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/4`, `image/4`, `graphic/4` | `graphic-11` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/12`, `image/12`, `graphic/12` | `graphic-12` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/15`, `image/15`, `graphic/15` | `graphic-13` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/16`, `image/16`, `graphic/16` | `graphic-14` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/13`, `image/13`, `graphic/13` | `graphic-15` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/1`, `image/1`, `graphic/1` | `graphic-16` | Replaces this complete graphic; other elements stay fixed. |
-| `text/5` | `item-4-1` | List or contents entry |
-| `text/6` | `item-4-2` | List or contents entry |
-| `text/7` | `item-5-1` | List or contents entry |
-| `text/8` | `item-5-2` | List or contents entry |
-| `text/9` | `text-6` | Editable text |
-| `text/1` | `participants-number` | Editable text |
-| `text/3` | `participants-label` | Editable text |
-| `text/2` | `alumni-number` | Editable text |
-| `text/4` | `alumni-label` | Editable text |
+| `text/1` | `title` | Main text |
+| `text/2` | `byline` | Editable text |
+| `text/3` | `participants-number` | Editable text |
+| `text/4` | `participants-label` | Editable text |
+| `text/5` | `alumni-number` | Editable text |
+| `text/6` | `alumni-label` | Editable text |
+| `text/7` | `followers-number` | Editable text |
+| `text/8` | `followers-label` | Editable text |
+| `text/9` | `events-number` | Editable text |
+| `text/10` | `events-label` | Editable text |
+| `icon/1`, `image/1`, `graphic/1` | `graphic-left` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/2`, `image/2`, `graphic/2` | `graphic-right` | Replaces this complete graphic; other elements stay fixed. |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-brand` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -81,8 +69,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/5={8,000+},
-  text/6={Supporting explanation}
+  text/2={Presentation overview},
+  text/3={55}
 ]{cover-dashboard}
 ```
 
@@ -98,8 +86,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/5={8,000+},
-  text/6={Supporting explanation}
+  text/2={Presentation overview},
+  text/3={55}
 ]{cover-dashboard}
 \end{document}
 ```
@@ -119,31 +107,19 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper right | 14.1% wide × 21.1% high | <code>\studiopaletteimage[width=500\studiounit]{images/studio/collection/figma-0610-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper right | 15.9% wide × 21.1% high | <code>\studiopaletteimage[width=565\studiounit]{images/studio/collection/figma-0610-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle right | 30.4% wide × 23.2% high | <code>\studiopaletteimage[width=1081\studiounit]{images/studio/collection/figma-0610-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 19.8% wide × 21.1% high | <code>\studiopaletteimage[width=703\studiounit]{images/studio/collection/figma-0610-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | upper right | 6.0% wide × 21.1% high | <code>\studiopaletteimage[width=212\studiounit]{images/studio/collection/figma-0610-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | upper right | 24.1% wide × 19.6% high | <code>\studiopaletteimage[width=856\studiounit]{images/studio/collection/figma-0610-part-06.pdf}</code> |
-| <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | middle right | 6.0% wide × 23.3% high | <code>\studiopaletteimage[width=212\studiounit]{images/studio/collection/figma-0610-part-07.pdf}</code> |
-| <code>graphic-8</code> | Complete graphic, image or decoration (graphic) | lower centre | 16.2% wide × 21.2% high | <code>\studiopaletteimage[width=577\studiounit]{images/studio/collection/figma-0610-part-08.pdf}</code> |
-| <code>graphic-9</code> | Complete graphic, image or decoration (graphic) | lower right | 16.2% wide × 12.7% high | <code>\studiopaletteimage[width=576\studiounit]{images/studio/collection/figma-0610-part-09.pdf}</code> |
-| <code>graphic-10</code> | Complete graphic, image or decoration (graphic) | upper right | 16.2% wide × 19.6% high | <code>\studiopaletteimage[width=576\studiounit]{images/studio/collection/figma-0610-part-10.pdf}</code> |
-| <code>graphic-11</code> | Complete graphic, image or decoration (graphic) | middle centre | 15.9% wide × 43.6% high | <code>\studiopaletteimage[width=567\studiounit]{images/studio/collection/figma-0610-part-11.pdf}</code> |
-| <code>graphic-12</code> | Complete graphic, image or decoration (graphic) | lower right | 16.6% wide × 21.1% high | <code>\studiopaletteimage[width=591\studiounit]{images/studio/collection/figma-0610-part-12.pdf}</code> |
-| <code>graphic-13</code> | Complete graphic, image or decoration (graphic) | lower right | 8.6% wide × 12.7% high | <code>\studiopaletteimage[width=305\studiounit]{images/studio/collection/figma-0610-part-13.pdf}</code> |
-| <code>graphic-14</code> | Complete graphic, image or decoration (graphic) | lower right | 10.9% wide × 12.7% high | <code>\studiopaletteimage[width=388\studiounit]{images/studio/collection/figma-0610-part-14.pdf}</code> |
-| <code>graphic-15</code> | Complete graphic, image or decoration (graphic) | lower centre | 16.2% wide × 12.7% high | <code>\studiopaletteimage[width=577\studiounit]{images/studio/collection/figma-0610-part-15.pdf}</code> |
-| <code>graphic-16</code> | Complete graphic, image or decoration (graphic) | upper centre | 11.4% wide × 19.6% high | <code>\studiopaletteimage[width=406\studiounit]{images/studio/collection/figma-0610-part-16.pdf}</code> |
-| <code>item-4-1</code> | List or contents entry (text) | middle right | 21.9% wide × 12.6% high | <code>8,000+</code> |
-| <code>item-4-2</code> | List or contents entry (text) | middle right | 26.2% wide × 4.9% high | <code>Supporting explanation</code> |
-| <code>item-5-1</code> | List or contents entry (text) | lower right | 12.4% wide × 12.6% high | <code>60+</code> |
-| <code>item-5-2</code> | List or contents entry (text) | lower right | 15.7% wide × 4.9% high | <code>Label 8</code> |
-| <code>text-6</code> | Editable text (text) | lower left | 26.0% wide × 5.8% high | <code>Label 9</code> |
-| <code>participants-number</code> | Editable text (text) | upper right | 14.3% wide × 10.2% high | <code>55</code> |
-| <code>participants-label</code> | Editable text (text) | middle right | 14.3% wide × 4.5% high | <code>Label 3</code> |
-| <code>alumni-number</code> | Editable text (text) | upper right | 12.4% wide × 10.2% high | <code>210</code> |
-| <code>alumni-label</code> | Editable text (text) | middle right | 12.4% wide × 4.5% high | <code>Label 4</code> |
+| <code>title</code> | Main text (text) | middle left | 35.4% wide × 24.5% high | <code>(empty)</code> |
+| <code>byline</code> | Editable text (text) | lower left | 36.6% wide × 11.0% high | <code>Presentation overview</code> |
+| <code>participants-number</code> | Editable text (text) | upper right | 14.3% wide × 11.5% high | <code>55</code> |
+| <code>participants-label</code> | Editable text (text) | middle right | 13.1% wide × 5.0% high | <code>Participants</code> |
+| <code>alumni-number</code> | Editable text (text) | upper right | 12.4% wide × 11.5% high | <code>210</code> |
+| <code>alumni-label</code> | Editable text (text) | middle right | 11.3% wide × 5.0% high | <code>Alumni</code> |
+| <code>followers-number</code> | Editable text (text) | middle right | 28.8% wide × 11.5% high | <code>8,000+</code> |
+| <code>followers-label</code> | Editable text (text) | middle right | 27.6% wide × 5.0% high | <code>Followers on multiple channels</code> |
+| <code>events-number</code> | Editable text (text) | lower right | 18.1% wide × 11.5% high | <code>60+</code> |
+| <code>events-label</code> | Editable text (text) | lower right | 17.0% wide × 5.0% high | <code>Events organized</code> |
+| <code>graphic-left</code> | Complete graphic, image or decoration (graphic) | upper left | 5.4% wide × 7.9% high | <code>\includegraphics[width=192.751\studiounit,height=157.679\studiounit,keepaspectratio]{images/studio/parts/dashboard-bu...</code> |
+| <code>graphic-right</code> | Complete graphic, image or decoration (graphic) | upper left | 4.4% wide × 7.9% high | <code>\includegraphics[width=157.686\studiounit,height=157.689\studiounit,keepaspectratio]{images/studio/parts/dashboard-cr...</code> |
+| <code>graphic-brand</code> | Complete graphic, image or decoration (graphic) | middle left | 30.6% wide × 9.7% high | <code>\includegraphics[width=1089\studiounit,height=193\studiounit,keepaspectratio]{images/studio/collection/figma-0610-str...</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
@@ -172,7 +148,7 @@ panel, background, screenshot or decoration. Inspect the preview before replacin
 
 ## Review
 
-Reference: figma-0610.
+Reference: figma-0609, figma-0610, figma-0611.
 
 Review margins, text, crops, shadows and optical balance using this stable model ID.
 Record feedback in [the review ledger](../../../templates/review.json). Compilation is not graphical approval.

@@ -1,5 +1,64 @@
 # Verification report
 
+## Dashboard cover approval checkpoint — 2026-11-13
+
+The user explicitly approved the unified blue dashboard cover after generic
+byline replacement. Three selected original content versions share one model;
+semantic text/metric fields and independent bounded logos are included. There
+are now 56 graphically approved compositions. The historical source values
+remain examples. Superseded local proofs are removed after retaining compact
+audit reports, canonical examples, prepared artwork and current guide previews.
+The approved family archive is 1,147,124 bytes; all five isolated project
+documents compiled successfully with embedded fonts. Review, selection-ledger,
+362-file documentation and whitespace checks passed. The final full suite passed
+241 tests, with one optional test skipped. The prior CI checkpoint still reports
+a failure in the independent official-lesson compilation step; dashboard changes
+have no official lesson consumers. The new checkpoint requires CI verification.
+
+## Generic cover example text — 2026-11-13
+
+Dashboard review commands and specimens now use `Presentation 2024/25` instead
+of the personal author/event line. The current comparison uses the corresponding
+figma-0609 reference and its historical metric values. Reusable cover examples
+now emit `Author name` rather than restoring personal names from provenance;
+archived originals and the historical audit remain unchanged. The example
+regression ensures generic authors survive regeneration. Layouts and font sizes
+are unchanged; graphical approval remains pending for the dashboard.
+
+## Unified dashboard cover in graphical review — 2026-11-13
+
+The user selected figma-0609, figma-0610 and figma-0611 for one `cover-dashboard`
+composition. Selection is separate from graphical approval; 55 existing approvals
+are preserved. The three exports differ in historical text and metric values;
+they share one native blue geometry. These values are examples, not current facts.
+
+Prepared original SVG panels retain their mask/gradient geometry as fixed
+transparent decoration. The two top logos and pixel wordmark are independently
+replaceable in visible-ink bounds with preserved proportions. A nonempty editable
+title replaces the wordmark; clearing it restores the brand slot. Byline, four
+numbers and four labels use semantic fields in reading order. Obsolete numbered
+label and decorative-part keys were removed. No official lessons/blocks consume
+the changed source; personal presentations were not inspected or modified.
+
+Nine specimens cover original content, complete replacement, manual and automatic
+two-line title/byline wrapping, empty fields, independent logos and wide/tall
+artwork. All nine pages and the source/result comparison were visually inspected.
+Native-blue canvas, text envelopes (1.5 pt font-metric tolerance), brand switching
+and empty-field checks passed. Four negative cases report long captions/numbers,
+obsolete fields and unknown icons. The 27 model regressions and 749-command guide
+check passed. Source selection and prepared-parts gallery were refreshed. The
+1,147,126-byte optional family package passed all five isolated PDF builds, with
+embedded fonts and no checkout access or shell escape. Documentation links
+(362 files) and whitespace checks passed. The 240-test suite identified one
+outdated expected asset count (37 before these three extracted parts). It now
+expects 40; the complete six-test source module passed after that test-only
+correction. The other suite cases passed, with one optional test skipped.
+
+Reports: `build/checks/dashboard-cover/report.json`,
+`build/checks/dashboard-cover-negative/report.json`, and
+`build/review/batches/dashboard-cover-01/`. Active comparison includes only this
+pending composition and its customization examples.
+
 ## Icon-led statement approval checkpoint — 2026-11-13
 
 The user explicitly approved compact/light, large/blue and pair/blue after the

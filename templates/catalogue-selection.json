@@ -9986,14 +9986,18 @@
       "format": "slide",
       "family_proposal": "Opening",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "cover-dashboard"
+      ],
       "suggested_compositions": [
         "cover-dashboard"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "cover-dashboard"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all three originals for a single editable dashboard cover on 2026-11-13."
     },
     "figma-0610": {
       "file": "BitPolito-presentazione-breve-2.svg",
@@ -10008,10 +10012,12 @@
       "suggested_compositions": [
         "cover-dashboard"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "cover-dashboard"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all three originals for a single editable dashboard cover on 2026-11-13."
     },
     "figma-0611": {
       "file": "BitPolito-presentazione-breve.svg",
@@ -10020,14 +10026,18 @@
       "format": "slide",
       "family_proposal": "Opening",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "cover-dashboard"
+      ],
       "suggested_compositions": [
         "cover-dashboard"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "cover-dashboard"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all three originals for a single editable dashboard cover on 2026-11-13."
     },
     "figma-0612": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-1.svg",
@@ -17558,10 +17568,12 @@
       "reason": ""
     },
     "cover-dashboard": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "cover-dashboard"
+      ],
+      "basis": "user decision",
+      "reason": "Single shared geometry for the three selected historical content examples."
     },
     "cover-wide-title": {
       "decision": "keep",
@@ -18832,6 +18844,21 @@
         "figma-1003": "Keep a statement with one replaceable icon and editable text on the native light background. Group with the blue example while retaining its measured icon and text geometry.",
         "figma-0383": "Keep the blue icon-led statement in the same family; retain the original larger icon geometry if needed as a variant, with a replaceable icon and editable text.",
         "figma-0038": "Keep as a two-icon statement variant without required text. Both icons should be independently replaceable while retaining their original bounds."
+      }
+    },
+    {
+      "id": "dashboard-cover-selection-01",
+      "title": "Dashboard covers — historical content examples",
+      "family": "Opening",
+      "candidates": [
+        "figma-0609",
+        "figma-0610",
+        "figma-0611"
+      ],
+      "proposals": {
+        "figma-0609": "Merge into one dashboard cover with editable title, byline, four metrics and two replaceable logos. Historical values are example content, not current statistics. Retain one geometry unless measured differences require a variant.",
+        "figma-0610": "Merge into one dashboard cover with editable title, byline, four metrics and two replaceable logos. Historical values are example content, not current statistics. Retain one geometry unless measured differences require a variant.",
+        "figma-0611": "Merge into one dashboard cover with editable title, byline, four metrics and two replaceable logos. Historical values are example content, not current statistics. Retain one geometry unless measured differences require a variant."
       }
     }
   ],

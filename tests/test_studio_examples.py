@@ -44,6 +44,13 @@ class StudioExamplesTests(unittest.TestCase):
                          {'quote', 'attribution'})
         self.assertIn(']{quotation}', studio_examples.exact_command(ROOT, entry, 'example'))
 
+    def test_cover_examples_use_generic_authors(self):
+        for name in ['cover','cover-light','cover-photo','cover-wide-title']:
+            command=studio_examples.exact_command(ROOT,self.by_id[name],'example')
+            self.assertIn('Author name',command)
+            self.assertNotIn('Cappiello',command)
+            self.assertNotIn('Sibilla Merlo',command)
+
     def test_original_graphics_replace_neutral_placeholders_in_examples_only(self):
         entry = self.by_id['contact-qr']
         values = studio_examples.example_values(ROOT, entry)

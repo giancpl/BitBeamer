@@ -73,6 +73,12 @@ def exact_command(root, entry, content='neutral'):
         if model['id'] in {'text-cards','levels','labelled-rows','title-two-column-list','partner-rail'}:
             public={next(f['slot']['key'] for f in entry['fields'] if f['name']==native):key for key,native in composition['fields'].items()}
             example={public.get(key,key):value for key,value in example.items()}
+        # Reusable cover examples use a generic author instead of restoring
+        # personal names from the unchanged source-provenance audit.
+        if model['id']=='cover' and 'author' in composition['fields']:
+            native=composition['fields']['author']
+            slot=next(f['slot']['key'] for f in entry['fields'] if f['name']==native)
+            example[slot]='Author name'
         values.update(example)
     elif content != 'neutral':
         raise ValueError('Unknown content mode: ' + content)

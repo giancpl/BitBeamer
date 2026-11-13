@@ -104,7 +104,7 @@ class CurrentStudioSourceTests(unittest.TestCase):
         self.assertTrue((ROOT / 'tests/fixtures/studio-fields.tex').is_file())
 
     def test_prepared_parts_remain_self_contained(self):
-        self.assertEqual(prepare(ROOT, check=True), 37)
+        self.assertEqual(prepare(ROOT, check=True), 40)
         manifest = json.loads((ROOT / 'images/studio/parts/manifest.json').read_text(encoding='utf-8'))
         for part in manifest['parts']:
             if part.get('rendering') == 'copy-pdf':

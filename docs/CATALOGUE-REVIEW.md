@@ -3,7 +3,7 @@
 
 Human selection is separate from graphical approval. Original similarity assignments remain proposals.
 
-Current catalogue: **95 models / 194 compositions**; **55 compositions graphically approved**.
+Current catalogue: **95 models / 194 compositions**; **56 compositions graphically approved**.
 Original coverage: **1073 exports / 1005 exact-source groups**.
 
 ## Source selection progress
@@ -13,11 +13,11 @@ Original coverage: **1073 exports / 1005 exact-source groups**.
 | discard | 0 | 0 |
 | exclude | 1 | 1 |
 | keep | 60 | 52 |
-| merge | 9 | 8 |
-| pending | 1003 | 944 |
+| merge | 12 | 11 |
+| pending | 1000 | 941 |
 | preset | 0 | 0 |
 
-Composition decisions: exclude: 1, keep: 55, pending: 138.
+Composition decisions: exclude: 1, keep: 56, pending: 137.
 
 ## Ordered work
 

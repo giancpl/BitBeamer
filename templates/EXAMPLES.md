@@ -27,7 +27,7 @@ Layout geometry, fonts and field APIs are shared with neutral templates. Topic-s
 | `cover-light` | 3 fields | [cover-light.tex](studio/cover-light.tex) |
 | `cover-photo` | 3 fields | [cover-photo.tex](studio/cover-photo.tex) |
 | `cover-script-blue` | 3 fields | [cover-script-blue.tex](studio/cover-script-blue.tex) |
-| `cover-dashboard` | 9 fields | [cover-dashboard.tex](studio/cover-dashboard.tex) |
+| `cover-dashboard` | 4 fields | [cover-dashboard.tex](studio/cover-dashboard.tex) |
 | `cover-wide-title` | 3 fields | [cover-wide-title.tex](studio/cover-wide-title.tex) |
 | `agenda-with-icons` | 1 fields | [agenda-with-icons.tex](studio/agenda-with-icons.tex) |
 | `agenda-with-schedule` | 5 fields | [agenda-with-schedule.tex](studio/agenda-with-schedule.tex) |

@@ -394,6 +394,19 @@ assert.equal(pageRows(d.rows,0).length,12);'''
         self.assertEqual(pair['graphic_slots'], {'left': 2, 'right': 1})
         self.assertEqual([c['palettes'] for c in (single, large, pair)], [['light'], ['blue'], ['blue']])
 
+    def test_dashboard_cover_has_semantic_metric_pairs_and_independent_logos(self):
+        model=next(m for m in studio_models.load_models(ROOT)['models'] if m['id']=='cover-dashboard')
+        composition=model['variants'][0]['compositions'][0]
+        self.assertEqual(composition['palettes'], ['blue'])
+        self.assertEqual(list(composition['fields']), ['title','byline',
+            'participants-number','participants-label','alumni-number','alumni-label',
+            'followers-number','followers-label','events-number','events-label'])
+        self.assertEqual(composition['graphic_slots'], {'left':1,'right':2,'brand':3})
+        entry=next(t for t in studio_templates.inspect_templates(ROOT) if t['id']=='cover-dashboard')
+        self.assertEqual(set(entry['references']), {'figma-0609','figma-0610','figma-0611'})
+        self.assertEqual(sum(f['type']=='graphic' for f in entry['fields']),3)
+        self.assertIn('dashboard-panels',entry['parts'])
+
     def test_shared_geometry_edits_invalidate_both_colour_presets_only(self):
         import studio_preview
         entries=studio_templates.inspect_templates(ROOT);before=studio_preview.input_sets(ROOT,entries)
