@@ -94,6 +94,9 @@ def main(argv=None, root=ROOT):
         if args.open and args.action in ('sync','check'):
             raise ValueError('--open needs a build action')
         if args.action == 'check':
+            if (root/'templates/catalogue-selection.json').exists():
+                from catalogue_selection import check as check_selection
+                check_selection(root)
             prepare_catalogue(root,check=True)
             from doc_checks import check_docs
             from asset_library import check_prepared
@@ -121,6 +124,9 @@ def main(argv=None, root=ROOT):
             return 0
         prepare_catalogue(root)
         if args.action == 'sync':
+            if (root/'templates/catalogue-selection.json').exists():
+                from catalogue_selection import synchronize
+                synchronize(root)
             import runpy
             runpy.run_path(str(root/'scripts/catalogue-studio-collection.py'))['catalogue'](root)
             print('Synchronized review sheet, registries, field guides, unified slide guide and selection showcase. No slides compiled.')

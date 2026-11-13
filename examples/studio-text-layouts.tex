@@ -1,0 +1,40 @@
+% Selected originals, longer copy and independent empty fields at fixed type sizes.
+\documentclass[aspectratio=169]{beamer}
+\usetheme{bitpolito-studio}
+\usepackage{bitpolitostudiotemplates}
+\begin{document}
+\studiotemplate[title={General LNURL properties},
+ paragraph-one={Asynchronous.},
+ paragraph-two={An accepted amount range can be specified.},
+ paragraph-three={Extra metadata: longer description, image and message.},
+ paragraph-four={Static: it can be reused and printed or displayed on a website.},
+ paragraph-five={No expiration time.}]{paragraphs}
+\studiotemplate[variant=centered,title={BOLT 12},
+ upper-body={BOLT 12 offers a similar service without a web server, with greater privacy. Native to Lightning.},
+ separator={BUT},
+ lower-body={LNURL is already widely adopted and tested. It may suit shops and businesses that already run a web server.}]{paragraphs}
+\studiotemplate[variant=plain,title={Every UTXO requires a signature to be spent.}]{statement}
+\studiotemplate[variant=clipped,introduction={Bitcoin is},word={Trust}]{statement}
+% Longer copy: automatic wrapping and deliberate breaks use the same fonts.
+\studiotemplate[title={Understanding the principles\\behind a shared payment system},
+ paragraph-one={Independent participants can inspect the shared rules.},
+ paragraph-two={One deliberately chosen line break\\keeps this explanation together.},
+ paragraph-three={A longer explanation can use two lines while preserving the original alignment and the space between paragraphs.},
+ paragraph-four={Fixed typography applies to wrapping and explicit line breaks.\\Authors can choose where the second line begins.},
+ paragraph-five={Empty optional fields preserve their allocated space rather than moving other paragraphs around the page.}]{paragraphs}
+\studiotemplate[variant=centered,title={Two explanations\\with an independent separator},
+ upper-body={Longer text stays in its own fixed envelope. The paragraph wraps automatically while its left edge remains aligned.},
+ separator={HOWEVER},
+ lower-body={The second explanation is independent.\\An explicit break preserves the chosen reading rhythm.}]{paragraphs}
+\studiotemplate[variant=plain,
+ title={A shared set of rules lets independent people verify the same information.}]{statement}
+\studiotemplate[variant=clipped,introduction={Understanding Bitcoin},word={Discovery}]{statement}
+\studiotemplate[variant=plain,title={Independent participants\\can verify the same shared rules.}]{statement}
+% Independent empty values retain all other positions and typography.
+\studiotemplate[title={},paragraph-one={First explanation.},paragraph-two={},
+ paragraph-three={Third explanation.},paragraph-four={},paragraph-five={Final explanation.}]{paragraphs}
+\studiotemplate[variant=centered,title={Independent fields},upper-body={},separator={},
+ lower-body={Only the lower explanation is supplied.}]{paragraphs}
+\studiotemplate[variant=plain,title={}]{statement}
+\studiotemplate[variant=clipped,introduction={},word={Trust}]{statement}
+\end{document}

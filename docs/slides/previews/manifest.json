@@ -623,20 +623,20 @@
           "file": "docs/slides/previews/hd/blue-statement.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "26000e9fe1f70b8baab3d1d648be15bfa642c47db65321741a65a790c9356912",
+          "sha256": "36ace8d0b6097e28c9a0609c8356202c0dd59d1ab4abdae4a160aa4d001a8ef3",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/blue-statement.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "2636d19410684f22a7533c5ea44a92dca4d00ff88d58e686a37e0258e6ee4252",
+          "sha256": "1f566eefe5803074eee88a19fc8c166e2838597a39912f9f57ab9a3da6491cc5",
           "width": 640
         }
       },
-      "page": 13,
+      "page": 3,
       "render_source": "pdf",
-      "signature": "7a47ed8de0130c9d538994d73ab2391875013a57e9c6a428a22b3af7384e7eda"
+      "signature": "4ea602b45820f4e2e02cd77de9ac000a43ebb9fc81879eb478fb0ba9d0dcfd23"
     },
     "bubble-chart": {
       "canvas": "complete slide; no catalogue labels",
@@ -14439,20 +14439,20 @@
           "file": "docs/slides/previews/hd/oversized-word.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "cd822693a54a309ec385de1c678cdd17f27a9036f519447911a0ce99a61f34bd",
+          "sha256": "3e165c2d0d74d56f58331baea425bb39c785525ac1267455d8403e598bc020ae",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/oversized-word.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "f41b1c8d6b3b8917df11f6e78430b0e74527f6ac0dde4f909425667608109121",
+          "sha256": "fcbf7e30b9d6b4994116c8b64c762550297a736978d322220bd5145f75f54f87",
           "width": 640
         }
       },
-      "page": 14,
+      "page": 4,
       "render_source": "pdf",
-      "signature": "1ee0fb3735bc61f681a75a796fd5573d9ca4be2fef1b1faff8835c43763065c0"
+      "signature": "407b0bd1563edae9d90e3f30a43e3dcf3088192dc568dc170286176117a10189"
     },
     "paired-icons-blue": {
       "canvas": "complete slide; no catalogue labels",
@@ -16067,20 +16067,20 @@
           "file": "docs/slides/previews/hd/title-centered-paragraphs.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "de9092276860f1f9eccf754f261c5134b507bdb9cb91c2bdec54c82f64329f46",
+          "sha256": "637e2fb2bd885a24993f162a0e7d9b48bd666d06fc41141a3242f3c0298fd70d",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/title-centered-paragraphs.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "602f0bc08dd7016a90e443d4032c75eaefdc64b7ec08cdeb84b5d2115a143c57",
+          "sha256": "cf7f8a30e8e655e5b5fd4514ba994c1deee5f1abd3bf6bef9e093fbb2debe92f",
           "width": 640
         }
       },
-      "page": 6,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "e1c315fa2ed9cc47bb0fabac0a1b7fc92c406208e105da910fc2d721520039e4"
+      "signature": "d8ba569208f05388731aad9ada3204284562dac9c1ed609744f7f6f28ca7d3ee"
     },
     "title-paragraphs": {
       "canvas": "complete slide; no catalogue labels",
@@ -16089,20 +16089,20 @@
           "file": "docs/slides/previews/hd/title-paragraphs.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "7da1430e89fe3797cbd5e6a57b1f70a399e2a16a45ab15dcd5bfab70d5550f8c",
+          "sha256": "87251a38891ca93a07e96965056d495ed3d8a823ae415b97b21e01be5840b498",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/title-paragraphs.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "36e6bcc041a1d0a172be618451f3f13010d1cb2794d4d0746e1aed7391f6e1f2",
+          "sha256": "2d7d77c6a49813d4310e9e32272bdb6ae72090f57655abeb3d3cf40118c78bb4",
           "width": 640
         }
       },
-      "page": 5,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "73d4cca25b566aea935ad9afd8bfab90e5cdf69148d0a4896f005afbd5bc22be"
+      "signature": "37f7e0cc2665ba96fa351f69a6a9e0d636130a0d107ea7194112a4ed7a071eee"
     },
     "title-two-column-list": {
       "canvas": "complete slide; no catalogue labels",

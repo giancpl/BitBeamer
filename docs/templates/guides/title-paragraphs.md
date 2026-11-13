@@ -4,7 +4,7 @@
 
 Focus attention on one message using the title paragraphs layout.
 
-Model: `title-paragraphs` · Family: Statements · Status: **in review**.
+Model: `title-paragraphs` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/title-paragraphs.tex)
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=left,palette=light]{paragraphs}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -39,11 +39,11 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
 | `text/1` | `title` | Main text |
-| `text/3` | `text-2` | Editable text |
-| `text/4` | `text-3` | Editable text |
-| `text/6` | `text-4` | Editable text |
-| `text/5` | `text-5` | Editable text |
-| `text/2` | `text-6` | Editable text |
+| `text/2` | `paragraph-one` | Editable text |
+| `text/3` | `paragraph-two` | Editable text |
+| `text/4` | `paragraph-three` | Editable text |
+| `text/5` | `paragraph-four` | Editable text |
+| `text/6` | `paragraph-five` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -63,7 +63,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 ```latex
 \studiotemplate[
   text/1={Slide title},
-  text/3={Supporting explanation}
+  text/2={Supporting paragraph.}
 ]{title-paragraphs}
 ```
 
@@ -80,7 +80,7 @@ Create `my-slide.tex` in the project root and paste:
 \begin{document}
 \studiotemplate[
   text/1={Slide title},
-  text/3={Supporting explanation}
+  text/2={Supporting paragraph.}
 ]{title-paragraphs}
 \end{document}
 ```
@@ -100,12 +100,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 47.8% wide × 8.6% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 53.8% wide × 6.4% high | <code>Supporting explanation</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 63.4% wide × 5.7% high | <code>Supporting explanation</code> |
-| <code>text-4</code> | Editable text (text) | lower left | 27.8% wide × 5.6% high | <code>Label 6</code> |
-| <code>text-5</code> | Editable text (text) | lower centre | 67.8% wide × 9.6% high | <code>Supporting explanation</code> |
-| <code>text-6</code> | Editable text (text) | middle left | 17.4% wide × 5.0% high | <code>Label 2</code> |
+| <code>title</code> | Main text (text) | upper centre | 75.4% wide × 14.0% high | <code>Slide title</code> |
+| <code>paragraph-one</code> | Editable text (text) | middle centre | 74.7% wide × 8.0% high | <code>Supporting paragraph.</code> |
+| <code>paragraph-two</code> | Editable text (text) | middle centre | 74.7% wide × 10.2% high | <code>Supporting paragraph.</code> |
+| <code>paragraph-three</code> | Editable text (text) | middle centre | 74.7% wide × 10.2% high | <code>Supporting paragraph.</code> |
+| <code>paragraph-four</code> | Editable text (text) | lower centre | 74.7% wide × 10.5% high | <code>Supporting paragraph.</code> |
+| <code>paragraph-five</code> | Editable text (text) | lower centre | 74.7% wide × 10.2% high | <code>Supporting paragraph.</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

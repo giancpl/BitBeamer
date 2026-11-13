@@ -385,7 +385,7 @@ assert.equal(pageRows(d.rows,0).length,12);'''
 
     def test_grouped_subset_export_retains_every_requested_composition(self):
         models=studio_models.load_models(ROOT)['models']
-        self.assertEqual(len(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),194)
+        self.assertEqual(set(studio_models.expand_model_names(ROOT,[m['id'] for m in models])),{e['id'] for e in json.loads((ROOT/'templates/index.json').read_text())['templates']})
         subset=studio_models.expand_model_names(ROOT,['cover','icon-cards'])
         self.assertEqual(len(subset),7)
         self.assertTrue({'cover','cover-light','cover-photo','three-cards','two-cards'}<=set(subset))

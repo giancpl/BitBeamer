@@ -2,7 +2,7 @@
 
 # Radial glow statement
 
-Demonstrate this reusable composition.
+Focus attention on one message using the radial glow statement layout.
 
 Model: `glow-statement` · Family: Statements · Status: **in review**.
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=glow,palette=light]{statement}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 

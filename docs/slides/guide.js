@@ -92,6 +92,7 @@
     if(choice.preview.available){const open=button('',()=>showHD(row.title,choice));open.className='image-button';open.setAttribute('aria-label','Open HD preview: '+row.title);open.append(previewImage(choice.preview,row.title));visual.append(open,element('small','Open the preview for HD and editable areas.'));}else visual.append(element('p','Preview preparation pending.','missing'));
     const body=element('div',undefined,'body');body.append(element('h2',row.title),element('div',row.id,'identity'));
     const badge=element('p');badge.append(element('span',row.kind==='studio'?'Studio model':row.kind==='fixed'?'Fixed content':'Lesson layout','badge'),element('small',row.family+' · '+choice.status));body.append(badge);
+    if(choice.edition_exclusion)body.append(element('p','Excluded from this edition: '+choice.edition_exclusion,'notice'));
     if(row.choices.length>1){const label=element('label','Composition and original palette'),select=element('select',undefined,'choice');select.setAttribute('aria-label',row.title+' composition');row.choices.forEach((item,i)=>{if(!qualityMatches(item.status,quality))return;const o=element('option',item.label);o.value=i;o.selected=i===index;select.append(o);});select.onchange=()=>{choices.set(row.id,Number(select.value));article.replaceWith(template(row));};label.append(select);body.append(label);}
     if(choice.consumers?.length)body.append(element('p','Used by: '+choice.consumers.join(', ')));
     if(choice.preamble)body.append(element('p','Additional preamble: '+choice.preamble));

@@ -16,7 +16,7 @@ For slide writing, start with [Use a Studio slide](USING-STUDIO.md) and the
 | Review status, notes, ordered selection and examples | [review.json](../templates/review.json) |
 | Prepared graphic dependencies and provenance | [parts guide](STUDIO-PARTS.md) |
 
-There is one implementation for each of 196 compositions. Nine aliases share current
+There is one implementation for each retained composition. Compatibility aliases share current
 sources with compatible defaults. The featured models are a working selection,
 not a separate library. IDs stay stable when a layout is refined.
 

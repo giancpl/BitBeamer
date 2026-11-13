@@ -4,7 +4,7 @@
 
 Focus attention on one message using the title centered paragraphs layout.
 
-Model: `title-centered-paragraphs` · Family: Statements · Status: **in review**.
+Model: `title-centered-paragraphs` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/title-centered-paragraphs.tex)
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=centered,palette=light]{paragraphs}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -39,9 +39,9 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
 | `text/1` | `title` | Main text |
-| `text/2` | `text-2` | Editable text |
-| `text/4` | `text-3` | Editable text |
-| `text/3` | `text-4` | Editable text |
+| `text/2` | `upper-body` | Editable text |
+| `text/3` | `separator` | Editable text |
+| `text/4` | `lower-body` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -98,10 +98,10 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | upper centre | 12.6% wide × 7.5% high | <code>Title</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 70.9% wide × 10.4% high | <code>Supporting explanation</code> |
-| <code>text-3</code> | Editable text (text) | lower centre | 73.6% wide × 10.4% high | <code>Supporting explanation</code> |
-| <code>text-4</code> | Editable text (text) | middle centre | 8.4% wide × 5.5% high | <code>Item</code> |
+| <code>title</code> | Main text (text) | upper centre | 75.4% wide × 14.0% high | <code>Title</code> |
+| <code>upper-body</code> | Editable text (text) | middle centre | 72.3% wide × 12.5% high | <code>Supporting explanation</code> |
+| <code>separator</code> | Editable text (text) | middle centre | 45.0% wide × 6.5% high | <code>HOWEVER</code> |
+| <code>lower-body</code> | Editable text (text) | lower centre | 72.3% wide × 12.5% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

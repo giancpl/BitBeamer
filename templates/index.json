@@ -2189,7 +2189,7 @@
       "references": [
         "figma-0121"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected from verified original SVGs. Semantic reading-order fields and fixed typography; explicitly approved by the user on 2026-11-13.",
       "canvas": [
         3556.0,
         2000.0
@@ -2201,10 +2201,10 @@
           "type": "text",
           "default": "Slide title",
           "box": [
-            415.35086666666666,
-            952.25,
-            2725.5482666666667,
-            183.03953333333328
+            415,
+            830,
+            2726,
+            360
           ],
           "source_ink_box": [
             455.0,
@@ -2212,15 +2212,16 @@
             2646.25,
             115.941
           ],
-          "font_size": 121.997,
-          "leading": 141.517,
+          "font_size": 128,
+          "leading": 154,
           "source_node": [
             1
           ],
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         }
       ],
       "parts": [],
@@ -2235,7 +2236,10 @@
       "palettes": [
         "blue"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/centered-statement.tex"
+      ]
     },
     {
       "id": "icon-spotlight-light",
@@ -2396,7 +2400,7 @@
       "references": [
         "figma-0895"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected from verified original SVGs. Semantic reading-order fields and fixed typography; explicitly approved by the user on 2026-11-13.",
       "canvas": [
         3556.0,
         2000.0
@@ -2404,14 +2408,41 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "title",
+          "name": "introduction",
           "type": "text",
-          "default": "Title",
+          "default": "Explore",
           "box": [
-            21.690127754786403,
-            706.035,
-            3529.3098722452137,
-            1127.1853999999998
+            438,
+            227,
+            2680,
+            170
+          ],
+          "source_ink_box": [
+            1546.441,
+            227.047,
+            467.109,
+            88.184
+          ],
+          "font_size": 120,
+          "leading": 144,
+          "source_node": [
+            2
+          ],
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          },
+          "font_weight": "semibold"
+        },
+        {
+          "name": "word",
+          "type": "text",
+          "default": "Discovery",
+          "box": [
+            22,
+            706,
+            3529,
+            1127
           ],
           "source_ink_box": [
             121.676,
@@ -2427,33 +2458,8 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            1509.8022333333333,
-            227.047,
-            540.3865333333333,
-            150.18806666666666
-          ],
-          "source_ink_box": [
-            1546.441,
-            227.047,
-            467.109,
-            88.184
-          ],
-          "font_size": 112.735,
-          "leading": 130.772,
-          "source_node": [
-            2
-          ],
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
+          },
+          "font_weight": "semibold"
         }
       ],
       "parts": [],
@@ -3135,7 +3141,7 @@
         "figma-0198"
       ],
       "source": "templates/studio/title-paragraphs.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected from verified original SVGs. Semantic reading-order fields and fixed typography; explicitly approved by the user on 2026-11-13.",
       "number": 25,
       "canvas": [
         3556.0,
@@ -3148,10 +3154,10 @@
           "type": "text",
           "default": "Slide title",
           "box": [
-            928.6777333333334,
-            207.047,
-            1699.4645333333333,
-            171.12406666666666
+            438,
+            207,
+            2680,
+            280
           ],
           "source_ink_box": [
             965.57,
@@ -3159,8 +3165,8 @@
             1625.68,
             108.691
           ],
-          "font_size": 113.515,
-          "leading": 131.677,
+          "font_size": 120,
+          "leading": 144,
           "source_node": [
             1
           ],
@@ -3172,14 +3178,42 @@
           }
         },
         {
-          "name": "text-2",
+          "name": "paragraph-one",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Supporting paragraph.",
           "box": [
-            450.195,
-            820.188,
-            1911.8164,
-            127.81979999999997
+            450,
+            620,
+            2656,
+            160
+          ],
+          "source_ink_box": [
+            446.016,
+            620.852,
+            360.352,
+            57.969
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "source_node": [
+            6
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          }
+        },
+        {
+          "name": "paragraph-two",
+          "type": "text",
+          "default": "Supporting paragraph.",
+          "box": [
+            450,
+            820,
+            2656,
+            205
           ],
           "source_ink_box": [
             450.195,
@@ -3187,8 +3221,8 @@
             1862.965,
             86.484
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 80,
+          "leading": 96,
           "source_node": [
             2
           ],
@@ -3200,14 +3234,14 @@
           }
         },
         {
-          "name": "text-3",
+          "name": "paragraph-three",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Supporting paragraph.",
           "box": [
-            450.195,
-            1049.949,
-            2255.6470000000004,
-            113.8770000000001
+            450,
+            1049,
+            2656,
+            205
           ],
           "source_ink_box": [
             450.195,
@@ -3215,8 +3249,8 @@
             2206.793,
             72.539
           ],
-          "font_size": 75.16,
-          "leading": 87.186,
+          "font_size": 80,
+          "leading": 96,
           "source_node": [
             3
           ],
@@ -3228,42 +3262,14 @@
           }
         },
         {
-          "name": "text-4",
+          "name": "paragraph-four",
           "type": "text",
-          "default": "Label 6",
+          "default": "Supporting paragraph.",
           "box": [
-            450.195,
-            1575.852,
-            987.209,
-            112.15799999999992
-          ],
-          "source_ink_box": [
-            450.195,
-            1575.852,
-            938.355,
-            70.82
-          ],
-          "font_size": 75.16,
-          "leading": 87.186,
-          "source_node": [
-            4
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        },
-        {
-          "name": "text-5",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            445.664,
-            1264.949,
-            2411.928,
-            192.45899999999995
+            450,
+            1265,
+            2656,
+            210
           ],
           "source_ink_box": [
             445.664,
@@ -3271,8 +3277,8 @@
             2366.324,
             153.871
           ],
-          "font_size": 70.16,
-          "leading": 81.386,
+          "font_size": 80,
+          "leading": 96,
           "source_node": [
             5
           ],
@@ -3284,31 +3290,31 @@
           }
         },
         {
-          "name": "text-6",
+          "name": "paragraph-five",
           "type": "text",
-          "default": "Label 2",
+          "default": "Supporting paragraph.",
           "box": [
-            446.016,
-            620.852,
-            620.0,
-            99.3048
+            450,
+            1576,
+            2656,
+            205
           ],
           "source_ink_box": [
-            446.016,
-            620.852,
-            360.352,
-            57.969
+            450.195,
+            1575.852,
+            938.355,
+            70.82
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 80,
+          "leading": 96,
           "source_node": [
-            6
+            4
           ],
           "font_weight": "semibold",
           "alignment": "left",
           "slot": {
-            "number": 2,
-            "key": "text/2"
+            "number": 6,
+            "key": "text/6"
           }
         }
       ],
@@ -3335,7 +3341,7 @@
         "figma-0196"
       ],
       "source": "templates/studio/title-centered-paragraphs.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected from verified original SVGs. Semantic reading-order fields and fixed typography; explicitly approved by the user on 2026-11-13.",
       "number": 26,
       "canvas": [
         3556.0,
@@ -3348,10 +3354,10 @@
           "type": "text",
           "default": "Title",
           "box": [
-            1561.1674,
-            207.984,
-            447.55519999999996,
-            150.3244
+            438,
+            207,
+            2680,
+            280
           ],
           "source_ink_box": [
             1598.441,
@@ -3359,8 +3365,8 @@
             373.008,
             87.246
           ],
-          "font_size": 114.688,
-          "leading": 133.038,
+          "font_size": 120,
+          "leading": 144,
           "source_node": [
             1
           ],
@@ -3372,14 +3378,14 @@
           }
         },
         {
-          "name": "text-2",
+          "name": "upper-body",
           "type": "text",
           "default": "Supporting explanation",
           "box": [
-            492.945,
-            683.953,
-            2520.4564,
-            208.87479999999996
+            493,
+            684,
+            2570,
+            250
           ],
           "source_ink_box": [
             492.945,
@@ -3387,8 +3393,8 @@
             2471.605,
             167.539
           ],
-          "font_size": 75.156,
-          "leading": 87.181,
+          "font_size": 80,
+          "leading": 96,
           "source_node": [
             2
           ],
@@ -3400,42 +3406,14 @@
           }
         },
         {
-          "name": "text-3",
+          "name": "separator",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "HOWEVER",
           "box": [
-            491.539,
-            1342.949,
-            2618.616,
-            208.8769999999999
-          ],
-          "source_ink_box": [
-            491.539,
-            1342.949,
-            2569.762,
-            167.539
-          ],
-          "font_size": 75.16,
-          "leading": 87.186,
-          "source_node": [
-            3
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            1628.0,
-            1058.59,
-            300.0,
-            109.911
+            978,
+            1059,
+            1600,
+            130
           ],
           "source_ink_box": [
             1720.578,
@@ -3443,8 +3421,8 @@
             130.211,
             63.41
           ],
-          "font_size": 84.5467,
-          "leading": 98.0741,
+          "font_size": 90,
+          "leading": 108,
           "source_node": [
             4
           ],
@@ -3453,6 +3431,34 @@
           "slot": {
             "number": 3,
             "key": "text/3"
+          }
+        },
+        {
+          "name": "lower-body",
+          "type": "text",
+          "default": "Supporting explanation",
+          "box": [
+            493,
+            1343,
+            2570,
+            250
+          ],
+          "source_ink_box": [
+            491.539,
+            1342.949,
+            2569.762,
+            167.539
+          ],
+          "font_size": 80,
+          "leading": 96,
+          "source_node": [
+            3
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
           }
         }
       ],

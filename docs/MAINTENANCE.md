@@ -53,3 +53,18 @@ Full TeX and isolated package checks are separate; see [verification](CHECKS.md)
 
 `make clean` removes build output only. Archive review PDFs elsewhere if needed before
 cleaning. Never treat original comparison outputs as distributable source.
+
+## Catalogue completion
+
+Use [the completion register](CATALOGUE-REVIEW.md) for original selection and
+[the review workflow](STUDIO-COLLECTION.md) for graphical approval.
+`catalogue_selection.py sync` reconciles current catalogue counts and preserves
+human decisions. `check --sources` verifies optional local original SVGs;
+`check --complete` gates selection/graphical approval and intentionally fails
+until all original groups and retained compositions are resolved. Packaging,
+consumer builds and green CI remain additional final delivery gates.
+
+An optional review-batch `specimen` maps canonical example pages to their pending
+compositions. The combined comparison automatically includes those longer/empty
+examples, with copyable commands and uniform page sizes. Specimens may reference
+only official files under `examples/`; private presentations stay independent.

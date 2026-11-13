@@ -5,7 +5,7 @@ Start with [grouped models, variants and palettes](STUDIO-MODELS.md). The advanc
 
 For consistent text, icon and image customization, use the [typed content API](STUDIO-CONTENT.md).
 
-Studio has 101 grouped models retaining 196 compositions. Start with the 21 featured models;
+Studio groups retained compositions into named models. Start with the featured models;
 every composition has a [usage guide](templates/GUIDES.md) and one editable source.
 The collection compiles locally and remains in graphical review.
 

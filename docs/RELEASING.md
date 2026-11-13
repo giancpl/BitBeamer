@@ -40,7 +40,7 @@ All styles requested in a release must validate before any final file is replace
 | `bitbeamer-illustrations.pdf`, `bitbeamer-catalogue.pdf` | Icon examples and all 171 illustrations |
 | `bitbeamer-icon-cheatsheet.pdf`, `bitbeamer-cover-layouts.pdf` | Printable icon guide and Academic cover variants |
 
-The full 196-composition review catalogue is separate from stable release previews.
+The full retained-composition review catalogue is separate from stable release previews.
 The Studio ZIP opens its selected showcase as `main.tex`. Academic opens
 its short editable starter as `main.tex` and includes the full example separately
 as `academic-showcase.tex`. Both include the compatible `start.tex`. Studio includes

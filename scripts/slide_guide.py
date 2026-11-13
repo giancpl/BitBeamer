@@ -173,6 +173,12 @@ def catalogue(root=ROOT):
             for choice in row['choices']:
                 users={sid for sid,slide in data['slides'].items() if slide['layout']==choice['id'] or slide.get('preset')==choice['id']}
                 choice['consumers']=[name for name,deck in data.get('decks',{}).items() if users.intersection(deck['slides'])]
+    selection_path = root / 'templates/catalogue-selection.json'
+    excluded = read(root, 'templates/catalogue-selection.json').get('composition_exclusions', {}) if selection_path.exists() else {}
+    for row in rows:
+        for choice in row['choices']:
+            if choice['id'] in excluded:
+                choice['edition_exclusion'] = excluded[choice['id']]
     from studio_models import suggested_sequences
     choices={choice['id']:choice for row in rows if row['kind']=='studio' for choice in row['choices']}
     for sequence in suggested_sequences(root):
@@ -216,6 +222,8 @@ def review_batches(root, payload=None):
         overrides=batch.get('commands',{})
         if not isinstance(overrides,dict) or set(overrides)-set(ids) or any(not isinstance(command,str) or not command.strip() for command in overrides.values()):
             raise ValueError('Invalid review batch command overrides: '+batch['id'])
+        from review_specimens import validate_specimen
+        validate_specimen(root, batch)
         names.add(batch['id'])
     return batches
 

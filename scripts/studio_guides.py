@@ -160,7 +160,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
     member=membership().get(name)
     if member and not portable:
         model,variant,composition=member
-        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
+        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards','paragraphs','statement') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
     if entry.get('options'):
         lines += ['## Layout options', '', '| Option | Type | Default | Purpose |', '| --- | --- | --- | --- |']
         for key, option in entry['options'].items():
@@ -320,7 +320,6 @@ All reconstructed compositions remain in graphical review until explicitly appro
     start=text.index('```latex');end=text.index('```',start+8)+3
     first=next(iter(model_files)).stem if model_files else entries[0]['id']
     text=text[:start]+'```latex\n'+r'\studiosetup{palette=light}'+'\n'+r'\studiotemplate{'+first+'}\n```'+text[end:]
-    text=text.replace('The library retains all 194 compositions behind 100 model cards. The featured set contains\n21 models; every one of the 24 former featured composition choices remains recorded in the review ledger.','This standalone project contains only the models and variants listed in MODELS.md.')
     text=text.replace('slides/index.html','MODELS.md').replace('templates/index.html','MODELS.md').replace('../templates/MODELS.md','MODELS.md').replace('templates/GUIDES.md','TEMPLATES.md')
     # Clone-only examples must not leave broken links or unavailable calls in subsets.
     start=text.index('## Suggested two-slide sequence')

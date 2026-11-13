@@ -29,7 +29,7 @@ class StudioSelectionTests(unittest.TestCase):
 
     def test_selection_is_small_distinct_and_field_examples_are_valid(self):
         chosen = studio_review.selected(ROOT, self.entries)
-        self.assertEqual(len(chosen), 24)
+        self.assertEqual(len(chosen), len([n for n in studio_review.load_review(ROOT)['selection'] if n not in studio_review.edition_exclusions(ROOT)]))
         self.assertLess(len(chosen), len(self.entries) // 4)
         self.assertEqual(chosen[0]['id'], 'cover')
         self.assertEqual(chosen[-1]['id'], 'closing')

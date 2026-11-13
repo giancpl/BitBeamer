@@ -18,7 +18,7 @@ ROOT = Path(__file__).resolve().parents[1]
 
 def pending_compositions(batch, choices):
     """Use catalogue review status for core templates and fixed lesson presets."""
-    return [name for name in batch['compositions'] if choices[name]['status'] != 'approved']
+    return [name for name in batch['compositions'] if choices[name]['status'] != 'approved' and not choices[name].get('edition_exclusion')]
 
 
 def comparisons(root, folder, names, choices, categories=None, commands=None):
@@ -116,6 +116,11 @@ def prepare(root, name, backend='docker', image='bitbeamer-latex:local', compare
 
 def combine(root, backend='docker', image='bitbeamer-latex:local', compare=False):
     """Combine only unapproved compositions, retaining registered batch order."""
+    from catalogue_selection import active_batch, render_candidates
+    if active_batch(root):
+        if json.loads((root/'templates/review.json').read_text(encoding='utf-8')).get('active_review_batches'):
+            raise ValueError('Activate either original selection or template reconstruction, never both.')
+        return render_candidates(root)
     try:import pymupdf as fitz
     except ImportError as error:
         raise RuntimeError('Combined review PDFs need the optional lesson-maintenance requirements.') from error
@@ -160,7 +165,11 @@ def combine(root, backend='docker', image='bitbeamer-latex:local', compare=False
                 page.insert_text((20,22),str(number)+' / '+str(len(result))+' | '+name+' | '+categories[name],fontsize=13)
         temporary=target.with_suffix('.tmp.pdf')
         result.save(temporary,garbage=4,deflate=True);temporary.replace(target)
-    (folder/'all-report.json').write_text(json.dumps({'pdf':target.relative_to(root).as_posix(),'pages':sum(len(b['compositions']) for b in batches),'batches':[b['id'] for b in batches],'pending':[{'id':n,'category':categories[n],'batch':b['id']} for b in batches for n in b['compositions']],'approval':'none inferred'},indent=2)+'\n',encoding='utf-8')
+    pages=sum(len(b['compositions']) for b in batches)
+    if compare:
+        from review_specimens import append_specimens
+        pages=append_specimens(root,target,batches,backend,image) or pages
+    (folder/'all-report.json').write_text(json.dumps({'pdf':target.relative_to(root).as_posix(),'pages':pages,'batches':[b['id'] for b in batches],'pending':[{'id':n,'category':categories[n],'batch':b['id']} for b in batches for n in b['compositions']],'approval':'none inferred'},indent=2)+'\n',encoding='utf-8')
     print('Combined review PDF:',target)
     return target
 

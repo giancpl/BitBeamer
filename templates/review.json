@@ -514,8 +514,8 @@
       ]
     },
     "blue-statement": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review.",
       "use": "Demonstrate this reusable composition.",
       "example": {
         "title": "Slide title"
@@ -526,8 +526,8 @@
       "previous_use": "Present a statement on blue.",
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; native background verified against the original SVG."
         }
       },
       "feedback": [
@@ -538,6 +538,14 @@
           "action": "Rechecked current canonical composition in the complete contact-sheet audit; preserve measured geometry and recorded intentional differences.",
           "verification": "Native public command compiled, embedded fonts checked and complete-collection overview inspected. Detailed original typography/effect inspection remains open; no automatic approval.",
           "status": "in review"
+        },
+        {
+          "id": "text-layouts-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the four reviewed text layouts and proceed to the next original selection.",
+          "action": "Approve canonical compositions and native palettes, including the reviewed long-copy and empty-field behavior.",
+          "verification": "Four original backgrounds, twelve guide images and thirteen specimen pages checked. Six capacity/obsolete-syntax checks passed; no affected official lesson consumers.",
+          "status": "approved"
         }
       ]
     },
@@ -566,16 +574,26 @@
       }
     },
     "oversized-word": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; native background verified against the original SVG."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "text-layouts-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the four reviewed text layouts and proceed to the next original selection.",
+          "action": "Approve canonical compositions and native palettes, including the reviewed long-copy and empty-field behavior.",
+          "verification": "Four original backgrounds, twelve guide images and thirteen specimen pages checked. Six capacity/obsolete-syntax checks passed; no affected official lesson consumers.",
+          "status": "approved"
+        }
+      ]
     },
     "chat-dialogue": {
       "status": "in review",
@@ -714,14 +732,14 @@
       ]
     },
     "title-paragraphs": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; native background verified against the original SVG."
         }
       },
       "feedback": [
@@ -732,18 +750,26 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "text-layouts-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the four reviewed text layouts and proceed to the next original selection.",
+          "action": "Approve canonical compositions and native palettes, including the reviewed long-copy and empty-field behavior.",
+          "verification": "Four original backgrounds, twelve guide images and thirteen specimen pages checked. Six capacity/obsolete-syntax checks passed; no affected official lesson consumers.",
+          "status": "approved"
         }
       ]
     },
     "title-centered-paragraphs": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; native background verified against the original SVG."
         }
       },
       "feedback": [
@@ -754,6 +780,14 @@
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
           "status": "in review"
+        },
+        {
+          "id": "text-layouts-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the four reviewed text layouts and proceed to the next original selection.",
+          "action": "Approve canonical compositions and native palettes, including the reviewed long-copy and empty-field behavior.",
+          "verification": "Four original backgrounds, twelve guide images and thirteen specimen pages checked. Six capacity/obsolete-syntax checks passed; no affected official lesson consumers.",
+          "status": "approved"
         }
       ]
     },
@@ -4661,6 +4695,78 @@
         "Check original logo proportions, contact-symbol size and bold website/social text.",
         "Review five-sponsor and ten-sponsor/media compositions together."
       ]
+    },
+    {
+      "id": "texts-01",
+      "title": "Paragraphs and statements",
+      "family": "Statements",
+      "compositions": [
+        "title-paragraphs",
+        "title-centered-paragraphs",
+        "blue-statement",
+        "oversized-word"
+      ],
+      "commands": {
+        "title-paragraphs": "\\studiotemplate[title={General LNURL properties},paragraph-one={Asynchronous.},paragraph-two={An accepted amount range can be specified.},paragraph-three={Extra metadata: longer description, image and message.},paragraph-four={Static: it can be reused and printed or displayed on a website.},paragraph-five={No expiration time.}]{paragraphs}",
+        "title-centered-paragraphs": "\\studiotemplate[variant=centered,title={BOLT 12},upper-body={BOLT 12 offers a similar service without a web server, with greater privacy. Native to Lightning.},separator={BUT},lower-body={LNURL is already widely adopted and tested. It may suit shops and businesses that already run a web server.}]{paragraphs}",
+        "blue-statement": "\\studiotemplate[variant=plain,title={Every UTXO requires a signature to be spent.}]{statement}",
+        "oversized-word": "\\studiotemplate[variant=clipped,introduction={Bitcoin is},word={Discovery}]{statement}"
+      },
+      "focus": [
+        "Selected original SVGs; compare Inter weight, source scale and text positions.",
+        "Semantic reading-order fields replace numbered labels.",
+        "See the separate specimen with wrapping, line breaks and independent empty fields."
+      ],
+      "specimen": {
+        "source": "examples/studio-text-layouts.tex",
+        "samples": [
+          {
+            "page": 5,
+            "composition": "title-paragraphs",
+            "label": "Longer copy"
+          },
+          {
+            "page": 6,
+            "composition": "title-centered-paragraphs",
+            "label": "Longer copy"
+          },
+          {
+            "page": 7,
+            "composition": "blue-statement",
+            "label": "Automatic wrapping"
+          },
+          {
+            "page": 8,
+            "composition": "oversized-word",
+            "label": "Longer word and introduction"
+          },
+          {
+            "page": 9,
+            "composition": "blue-statement",
+            "label": "Explicit line break"
+          },
+          {
+            "page": 10,
+            "composition": "title-paragraphs",
+            "label": "Independent empty fields"
+          },
+          {
+            "page": 11,
+            "composition": "title-centered-paragraphs",
+            "label": "Independent empty fields"
+          },
+          {
+            "page": 12,
+            "composition": "blue-statement",
+            "label": "Empty statement"
+          },
+          {
+            "page": 13,
+            "composition": "oversized-word",
+            "label": "Empty introduction"
+          }
+        ]
+      }
     }
   ],
   "active_review_batches": []

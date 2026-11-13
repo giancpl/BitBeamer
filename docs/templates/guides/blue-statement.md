@@ -4,7 +4,7 @@
 
 Demonstrate this reusable composition.
 
-Model: `blue-statement` · Family: Statements · Status: **in review**.
+Model: `blue-statement` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/blue-statement.tex)
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=plain,palette=blue]{statement}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -93,7 +93,7 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>title</code> | Main text (text) | middle centre | 76.6% wide × 9.2% high | <code>Slide title</code> |
+| <code>title</code> | Main text (text) | middle centre | 76.7% wide × 18.0% high | <code>Slide title</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

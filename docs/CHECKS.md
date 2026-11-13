@@ -1,5 +1,63 @@
 # Verification report
 
+## Approved text-layout checkpoint — 2026-11-13
+
+The user explicitly approved `title-paragraphs`, `title-centered-paragraphs`,
+`blue-statement` and `oversized-word`, including the native palettes, longer copy,
+line breaks and independent empty fields. There are now 48 approved compositions.
+The source-background audit matched all four originals, twelve guide images and
+thirteen specimen pages. Superseded local comparisons/specimens were removed;
+canonical examples and current guide previews remain available.
+
+The final synchronized suite passed 230 tests in 245.795 seconds, with one optional
+check skipped; seven focused guide tests also passed. Catalogue/review, original
+SHA coverage, all 749 guide previews, Markdown links, offline Chromium and the
+lesson library check passed. The four-composition optional review ZIP is 950,897
+bytes and passed five isolated pdfLaTeX builds, including customization, a copied
+guide example and the bibliography, with embedded fonts and no layout diagnostics.
+This is a family checkpoint, not a published release or a completed catalogue.
+
+The preceding remote CI run 43312505529 passed all three portability jobs and the
+browser checks but failed while compiling the full official lesson collection
+(nine decks and seventeen blocks). None consumes the four text layouts just
+approved. Final catalogue delivery still requires resolving those build failures
+and green CI; local checks do not substitute for that gate.
+
+## Catalogue selection foundation and first text family — 2026-11-13
+
+The selection ledger covers all 1,073 original exports (1,005 exact-source groups)
+and all current compositions independently of graphical approval. Existing explicit
+approvals are preserved. Automated similarity assignments remain proposals; the
+unresolved glow statement is excluded from the edition and the Studio package,
+while its source/review history remains in the maintenance archive.
+
+The user selected all four initial text candidates: original figma-0198 and
+figma-0196 map to the left/centered paragraph variants, figma-0121 to the plain blue
+statement, and figma-0895 to the large-word variant. Those selection decisions are
+recorded, but none grants graphical approval. Four current comparisons and nine
+content specimens are shown in one 13-page PDF with uniform 1400 x 1000 pages.
+The public invocations accompany the examples. Confirmed compositions are filtered
+from both the original comparisons and their stress specimens.
+
+Migrated paragraph and large-word keys to semantic reading order. All content is
+editable, optional empty values retain geometry, and measured type sizes remain
+fixed. The blue statement centers the actual one/two-line text block. Preserved
+the original measured 749.328-unit large-word size; no automatic scaling is used.
+All 13 specimen pages were compiled and visually inspected. Six negative cases
+pass: overflow in each layout and rejection of the obsolete paragraph/word keys.
+There are no affected official lesson consumers of these four canonical sources.
+
+Checks passed: the complete suite ran 230 tests in 212.785 seconds with one
+optional check skipped. The final original-path audit refinement also passed all
+ten selection tests. Complete local original SHA audit, catalogue/review checks,
+all 749 guide previews, lesson library check, Markdown checks and the real offline
+Chromium checks passed. Studio review packaging and all 18 isolated archive
+builds passed using only files shipped in the archive. The 21,824,629-byte package
+excludes the deferred gradient and remains under the 45 MiB budget. Selection
+completion intentionally fails while required selections/graphical approvals are
+pending; the catalogue is not declared finished and no release is published.
+
+
 ## Recurring CI failures — 2026-11-12
 
 Audited GitHub Actions runs 43247951660 and 43288298605 and reproduced both

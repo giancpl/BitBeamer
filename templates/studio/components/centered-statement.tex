@@ -1,0 +1,12 @@
+% Fixed two-line statement envelope; center the actual text block vertically.
+\newcommand{\studiocenteredstatement}[8]{%
+ \ifstudiogeometryonly\else
+ \typeout{STUDIO-FIELD: \studiopilotname/#1}%
+ \node[anchor=center] at ({#2+#4/2},{#3+#5/2}) {\setbox\studiotextbox=\vbox{\hsize=#4\studiounit\parindent=0pt
+  \normalfont\sffamily\fontsize{#6\studiounit}{#7\studiounit}\selectfont
+  \color{studio-foreground}\bfseries\centering #8\par}%
+ \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>#5\studiounit
+  \PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}{Use at most two lines at the fixed font size.}%
+ \fi
+ \box\studiotextbox};%
+ \fi}

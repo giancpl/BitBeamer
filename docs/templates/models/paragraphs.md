@@ -23,12 +23,12 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `title` | <code>Slide title</code> | 47.8% wide × 8.6% high |
-| `label-two` | <code>Label 2</code> | 17.4% wide × 5.0% high |
-| `label-three` | <code>Supporting explanation</code> | 53.8% wide × 6.4% high |
-| `label-four` | <code>Supporting explanation</code> | 63.4% wide × 5.7% high |
-| `label-five` | <code>Supporting explanation</code> | 67.8% wide × 9.6% high |
-| `label-six` | <code>Label 6</code> | 27.8% wide × 5.6% high |
+| `title` | <code>Slide title</code> | 75.4% wide × 14.0% high |
+| `paragraph-one` | <code>Supporting paragraph.</code> | 74.7% wide × 8.0% high |
+| `paragraph-two` | <code>Supporting paragraph.</code> | 74.7% wide × 10.2% high |
+| `paragraph-three` | <code>Supporting paragraph.</code> | 74.7% wide × 10.2% high |
+| `paragraph-four` | <code>Supporting paragraph.</code> | 74.7% wide × 10.5% high |
+| `paragraph-five` | <code>Supporting paragraph.</code> | 74.7% wide × 10.2% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -40,10 +40,10 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `title` | <code>Title</code> | 12.6% wide × 7.5% high |
-| `label-two` | <code>Supporting explanation</code> | 70.9% wide × 10.4% high |
-| `label-three` | <code>Item</code> | 8.4% wide × 5.5% high |
-| `label-four` | <code>Supporting explanation</code> | 73.6% wide × 10.4% high |
+| `title` | <code>Title</code> | 75.4% wide × 14.0% high |
+| `upper-body` | <code>Supporting explanation</code> | 72.3% wide × 12.5% high |
+| `separator` | <code>HOWEVER</code> | 45.0% wide × 6.5% high |
+| `lower-body` | <code>Supporting explanation</code> | 72.3% wide × 12.5% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -60,7 +60,7 @@ Omitted fields retain these descriptive defaults; empty values retain their allo
   variant={left},
   palette={light},
   title={Slide title},
-  label-two={Label 2}
+  paragraph-one={Supporting paragraph.}
 ]{paragraphs}
 \end{document}
 ```

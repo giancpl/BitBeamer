@@ -474,3 +474,25 @@ See [commands, per-item indentation and capacity](STUDIO-TWO-COLUMN-LIST.md).
 The approved Lists compositions are `partner-rail` (figma-0996) and
 `partner-media-grid` (figma-0930), retained as preconfigured sponsor slides.
 See [preset commands, bold contacts and original logo sizing](STUDIO-SPONSORS.md).
+
+## Catalogue completion workflow
+
+Original selection and graphical approval are tracked separately. Start with
+[the completion register](CATALOGUE-REVIEW.md); it covers every supplied SVG and
+preserves existing approvals. Similarity assignments remain proposals.
+An active original-selection batch shows original SVGs only; an active
+reconstruction batch shows original/current comparisons. The two stages cannot
+be active simultaneously. `review_batch.py all --compare --open` uses the same
+editor PDF in either stage.
+
+The first selected text family is [paragraphs and statements](STUDIO-TEXT-LAYOUTS.md).
+Its canonical specimen includes longer text, explicit breaks and empty fields.
+
+## Approved paragraph and statement variants
+
+The four compositions `title-paragraphs`, `title-centered-paragraphs`,
+`blue-statement` and `oversized-word` (Statements) were explicitly approved on
+2026-11-13. See [commands and text capacity](STUDIO-TEXT-LAYOUTS.md). Approval
+includes the reviewed long-copy, deliberate breaks, independent empty fields and
+native backgrounds. Their original comparisons no longer appear in active review.
+The unresolved gradient remains excluded from this edition.

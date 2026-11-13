@@ -44,9 +44,15 @@ def reviewed_entries(root, entries):
                  palette_reviews=ledger['templates'][e['id']].get('palette_reviews',{})) for e in entries]
 
 
+def edition_exclusions(root):
+    path = root / 'templates/catalogue-selection.json'
+    return set(json.loads(path.read_text(encoding='utf-8')).get('composition_exclusions', {})) if path.exists() else set()
+
+
 def selected(root, entries=None):
     data = load_review(root, entries)
-    return [dict(id=name, **data['templates'][name]) for name in data['selection']]
+    excluded = edition_exclusions(root)
+    return [dict(id=name, **data['templates'][name]) for name in data['selection'] if name not in excluded]
 
 
 def review_csv(root, entries):
@@ -69,7 +75,8 @@ def package_selection(root):
     # Include optional covers, team introduction and measured agendas without changing the showcase selection.
     data = load_review(root)
     names = list(dict.fromkeys(data['selection'] + list(STANDARD_COVERS) + list(STANDARD_AGENDAS) + list(STANDARD_INTRODUCTIONS)))
-    return [dict(id=name, **data['templates'][name]) for name in names]
+    excluded = edition_exclusions(root)
+    return [dict(id=name, **data['templates'][name]) for name in names if name not in excluded]
 
 
 def require_approved(root):

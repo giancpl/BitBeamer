@@ -187,7 +187,7 @@ def selected_documents(root, entries):
     from studio_models import load_models
     model_count=len(load_models(root)['selection'])
     lines = ['# Selected Studio models', '',
-             f'The showcase presents {model_count} models. The ledger retains {len(chosen)} selected composition choices, including alternate variants. Selection is not graphical approval.',
+             f'The showcase presents {model_count} models. The active selection contains {len(chosen)} composition choices, including alternate variants; excluded choices remain in the ledger. Selection is not graphical approval.',
              'All other commands remain in the [full archive](CATALOGUE.md).',
              'Browse the [paginated gallery](../docs/slides/index.html) or build the',
              '[copyable selected deck](../examples/studio-selected-templates.tex):', '',

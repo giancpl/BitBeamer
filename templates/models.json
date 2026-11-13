@@ -307,8 +307,8 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-2",
-                "title": "title"
+                "introduction": "introduction",
+                "word": "word"
               }
             }
           ]
@@ -569,11 +569,11 @@
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-6",
-                "label-three": "text-2",
-                "label-four": "text-3",
-                "label-five": "text-5",
-                "label-six": "text-4"
+                "paragraph-one": "paragraph-one",
+                "paragraph-two": "paragraph-two",
+                "paragraph-three": "paragraph-three",
+                "paragraph-four": "paragraph-four",
+                "paragraph-five": "paragraph-five"
               }
             }
           ]
@@ -590,9 +590,9 @@
               ],
               "fields": {
                 "title": "title",
-                "label-two": "text-2",
-                "label-three": "text-4",
-                "label-four": "text-3"
+                "upper-body": "upper-body",
+                "separator": "separator",
+                "lower-body": "lower-body"
               }
             }
           ]

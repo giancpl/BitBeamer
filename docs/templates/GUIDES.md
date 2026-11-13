@@ -12,7 +12,6 @@ Start with the selected layouts, then browse the full collection by family.
 - [Four-section contents](guides/contents.md)
 - [Section divider with line](guides/section-divider.md)
 - [Statement with incoming arrow](guides/statement-arrow.md)
-- [Radial glow statement](guides/glow-statement.md)
 - [Plain blue statement](guides/blue-statement.md)
 - [Two-column explanation](guides/two-columns.md)
 - [Light list with vertical rail](guides/list-rail-light.md)
@@ -77,7 +76,7 @@ Start with the selected layouts, then browse the full collection by family.
 ## Statements
 
 - [Statement with incoming arrow](guides/statement-arrow.md) — selected
-- [Radial glow statement](guides/glow-statement.md) — selected
+- [Radial glow statement](guides/glow-statement.md)
 - [Plain blue statement](guides/blue-statement.md) — selected
 - [Light icon spotlight](guides/icon-spotlight-light.md)
 - [Blue icon spotlight](guides/icon-spotlight-blue.md)

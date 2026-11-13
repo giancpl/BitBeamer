@@ -1,6 +1,6 @@
 # Selected Studio models
 
-The showcase presents 21 models. The ledger retains 24 selected composition choices, including alternate variants. Selection is not graphical approval.
+The showcase presents 21 models. The active selection contains 23 composition choices, including alternate variants; excluded choices remain in the ledger. Selection is not graphical approval.
 All other commands remain in the [full archive](CATALOGUE.md).
 Browse the [paginated gallery](../docs/slides/index.html) or build the
 [copyable selected deck](../examples/studio-selected-templates.tex):
@@ -24,26 +24,25 @@ to change the arrangement. Defaults remain visible in the review PDF.
 | 2 | `contents` | Show four agenda items in the measured panel composition. | [contents.tex](studio/contents.tex) |
 | 3 | `section-divider` | Demonstrate this reusable composition. | [section-divider.tex](studio/section-divider.tex) |
 | 4 | `statement-arrow` | Demonstrate this reusable composition. | [statement-arrow.tex](studio/statement-arrow.tex) |
-| 5 | `glow-statement` | Demonstrate this reusable composition. | [glow-statement.tex](studio/glow-statement.tex) |
-| 6 | `blue-statement` | Demonstrate this reusable composition. | [blue-statement.tex](studio/blue-statement.tex) |
-| 7 | `two-columns` | Demonstrate this reusable composition. | [two-columns.tex](studio/two-columns.tex) |
-| 8 | `list-rail-light` | Demonstrate this reusable composition. | [list-rail-light.tex](studio/list-rail-light.tex) |
-| 9 | `three-cards` | Demonstrate this reusable composition. | [three-cards.tex](studio/three-cards.tex) |
-| 10 | `three-step-process` | Demonstrate this reusable composition. | [three-step-process.tex](studio/three-step-process.tex) |
-| 11 | `four-card-grid` | Demonstrate this reusable composition. | [four-card-grid.tex](studio/four-card-grid.tex) |
-| 12 | `vertical-split` | Demonstrate this reusable composition. | [vertical-split.tex](studio/vertical-split.tex) |
-| 13 | `image-left` | Demonstrate this reusable composition. | [image-left.tex](studio/image-left.tex) |
-| 14 | `image-right` | Demonstrate this reusable composition. | [image-right.tex](studio/image-right.tex) |
-| 15 | `four-images` | Demonstrate this reusable composition. | [four-images.tex](studio/four-images.tex) |
-| 16 | `hero-number` | Demonstrate this reusable composition. | [hero-number.tex](studio/hero-number.tex) |
-| 17 | `line-chart` | Demonstrate this reusable composition. | [line-chart.tex](studio/line-chart.tex) |
-| 18 | `horizontal-timeline` | Demonstrate this reusable composition. | [horizontal-timeline.tex](studio/horizontal-timeline.tex) |
-| 19 | `cycle` | Demonstrate this reusable composition. | [cycle.tex](studio/cycle.tex) |
-| 20 | `merkle-tree` | Demonstrate this reusable composition. | [merkle-tree.tex](studio/merkle-tree.tex) |
-| 21 | `table` | Demonstrate this reusable composition. | [table.tex](studio/table.tex) |
-| 22 | `equation` | Demonstrate this reusable composition. | [equation.tex](studio/equation.tex) |
-| 23 | `code` | Demonstrate this reusable composition. | [code.tex](studio/code.tex) |
-| 24 | `closing` | Demonstrate this reusable composition. | [closing.tex](studio/closing.tex) |
+| 5 | `blue-statement` | Demonstrate this reusable composition. | [blue-statement.tex](studio/blue-statement.tex) |
+| 6 | `two-columns` | Demonstrate this reusable composition. | [two-columns.tex](studio/two-columns.tex) |
+| 7 | `list-rail-light` | Demonstrate this reusable composition. | [list-rail-light.tex](studio/list-rail-light.tex) |
+| 8 | `three-cards` | Demonstrate this reusable composition. | [three-cards.tex](studio/three-cards.tex) |
+| 9 | `three-step-process` | Demonstrate this reusable composition. | [three-step-process.tex](studio/three-step-process.tex) |
+| 10 | `four-card-grid` | Demonstrate this reusable composition. | [four-card-grid.tex](studio/four-card-grid.tex) |
+| 11 | `vertical-split` | Demonstrate this reusable composition. | [vertical-split.tex](studio/vertical-split.tex) |
+| 12 | `image-left` | Demonstrate this reusable composition. | [image-left.tex](studio/image-left.tex) |
+| 13 | `image-right` | Demonstrate this reusable composition. | [image-right.tex](studio/image-right.tex) |
+| 14 | `four-images` | Demonstrate this reusable composition. | [four-images.tex](studio/four-images.tex) |
+| 15 | `hero-number` | Demonstrate this reusable composition. | [hero-number.tex](studio/hero-number.tex) |
+| 16 | `line-chart` | Demonstrate this reusable composition. | [line-chart.tex](studio/line-chart.tex) |
+| 17 | `horizontal-timeline` | Demonstrate this reusable composition. | [horizontal-timeline.tex](studio/horizontal-timeline.tex) |
+| 18 | `cycle` | Demonstrate this reusable composition. | [cycle.tex](studio/cycle.tex) |
+| 19 | `merkle-tree` | Demonstrate this reusable composition. | [merkle-tree.tex](studio/merkle-tree.tex) |
+| 20 | `table` | Demonstrate this reusable composition. | [table.tex](studio/table.tex) |
+| 21 | `equation` | Demonstrate this reusable composition. | [equation.tex](studio/equation.tex) |
+| 22 | `code` | Demonstrate this reusable composition. | [code.tex](studio/code.tex) |
+| 23 | `closing` | Demonstrate this reusable composition. | [closing.tex](studio/closing.tex) |
 
 ## Copyable examples
 
@@ -91,16 +90,6 @@ Demonstrate this reusable composition.
 \studiotemplate[
   title={Slide title}
 ]{statement-arrow}
-```
-
-### glow-statement
-
-Demonstrate this reusable composition.
-
-```latex
-\studiotemplate[
-  statement={Slide title}
-]{glow-statement}
 ```
 
 ### blue-statement

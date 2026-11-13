@@ -49,7 +49,7 @@ Original palettes: blue.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `title` | <code>Slide title</code> | 76.6% wide × 9.2% high |
+| `title` | <code>Slide title</code> | 76.7% wide × 18.0% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -61,8 +61,8 @@ Original palettes: light.
 
 | Field | Default | Available space |
 | --- | --- | --- |
-| `label-one` | <code>Item</code> | 15.2% wide × 7.5% high |
-| `title` | <code>Title</code> | 99.2% wide × 56.4% high |
+| `introduction` | <code>Explore</code> | 75.4% wide × 8.5% high |
+| `word` | <code>Discovery</code> | 99.2% wide × 56.4% high |
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
