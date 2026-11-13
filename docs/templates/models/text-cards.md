@@ -31,7 +31,7 @@ Original palettes: light.
 | `card-three/title` | <code>Supporting explanation</code> | 35.9% wide × 5.7% high |
 | `card-three/body` | <code>Supporting explanation</code> | 33.7% wide × 10.0% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -51,7 +51,7 @@ Original palettes: light.
 | `card-two/title` | <code>Supporting explanation</code> | 32.1% wide × 5.6% high |
 | `card-two/body` | <code>Supporting explanation.\\Add your own details.</code> | 32.1% wide × 16.8% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -75,7 +75,7 @@ Original palettes: light.
 | `card-four/title` | <code>Supporting explanation</code> | 33.8% wide × 5.0% high |
 | `card-four/body` | <code>Supporting explanation</code> | 33.8% wide × 9.3% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -99,7 +99,7 @@ Original palettes: light.
 | `card-four/title` | <code>Item</code> | 28.1% wide × 5.2% high |
 | `card-four/body` | <code>Supporting explanation</code> | 28.1% wide × 12.0% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -120,7 +120,7 @@ Original palettes: light.
 | `card-two/body` | <code>Supporting explanation</code> | 28.1% wide × 15.5% high |
 | `introduction` | <code>Supporting explanation.\\Add your own details.</code> | 35.9% wide × 17.6% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -141,7 +141,7 @@ Original palettes: light.
 | `card-two/body` | <code>Supporting explanation.\\Add your own details.</code> | 28.7% wide × 21.1% high |
 | `introduction` | <code>Supporting explanation.\\Add your own details.</code> | 31.9% wide × 17.0% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 Add `icon`, `image` or `graphic` inside each icon-bearing card block.
@@ -168,7 +168,7 @@ Original palettes: light.
 | `card-five/title` | <code>Supporting explanation</code> | 35.6% wide × 5.6% high |
 | `card-five/body` | <code>Supporting explanation</code> | 35.7% wide × 4.5% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 The separate heading symbol uses `title-icon`, `title-image` or `title-graphic`.
@@ -193,7 +193,7 @@ Original palettes: light.
 | `card-four/title` | <code>Supporting explanation</code> | 35.9% wide × 5.8% high |
 | `card-four/body` | <code>Supporting explanation.\\Add your own details.</code> | 33.7% wide × 16.6% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -217,7 +217,7 @@ Original palettes: light.
 | `card-four/title` | <code>Supporting explanation</code> | 35.9% wide × 5.7% high |
 | `card-four/body` | <code>Supporting explanation.\\Add your own details.</code> | 33.7% wide × 10.0% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 
@@ -239,7 +239,7 @@ Original palettes: light.
 | `card-three/title` | <code>Supporting explanation</code> | 41.1% wide × 5.7% high |
 | `card-three/body` | <code>Supporting explanation.\\Add your own details.</code> | 38.8% wide × 20.4% high |
 
-Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean), `show-card-titles=true` (boolean), `show-card-bodies=true` (boolean), `show-introduction=true` (boolean), `show-icons=true` (boolean). See the full slot guide for supported values.
 
 Card fields are grouped: `card-one={title={...},body={...}}`, then `card-two`, and so on in visual reading order.
 

@@ -70,6 +70,8 @@ def location(entry, field):
 
 
 def dimensions(entry, field):
+    if field.get('adaptive_box'):
+        return field['adaptive_box']
     if not field.get('box'):
         return 'Source-defined'
     return f"{field['box'][2] / entry['canvas'][0] * 100:.1f}% wide × {field['box'][3] / entry['canvas'][1] * 100:.1f}% high"
@@ -160,13 +162,20 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
     member=membership().get(name)
     if member and not portable:
         model,variant,composition=member
-        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards','paragraphs','statement') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
+        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards','paragraphs','statement','quotation','dialogue') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
+    if name == 'chat-dialogue':
+        lines += ['Quotation marks and the em dash before attribution are automatic. Write bare text in both fields; empty fields produce no stray punctuation.', '']
     if entry.get('options'):
         lines += ['## Layout options', '', '| Option | Type | Default | Purpose |', '| --- | --- | --- | --- |']
         for key, option in entry['options'].items():
             default = str(option['default']).lower()
             lines.append(f"| `{key}` | {option['type']} | `{default}` | {option['description']} |")
-        lines += ['', 'For example: `\\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.', '']
+        option_key, option = next(iter(entry['options'].items()))
+        value = 'false' if option['type'] == 'boolean' else ('wide' if option_key == 'width' else str(option['default']).lower())
+        layout = entry.get('model', name)
+        variant = ('variant=' + entry['variant'] + ',') if entry.get('model') and entry.get('variant') else ''
+        invocation = r'\studiotemplate[' + variant + option_key + '=' + value + ']{' + layout + '}'
+        lines += ['', 'For example: `' + invocation + '`. Options are not text slots; invalid values produce an error.', '']
     lines += ['## Typed content slots', '',
               'Use `text/N` for text, `icon/N` for an icon name, `image/N` for an image path,',
               'and `graphic/N` for LaTeX graphics. Numbers are local to this model and stored',
@@ -203,7 +212,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
         lines += ['```sh', 'python3 scripts/build.py my-slide.tex', '# Installed TeX alternative:',
                   'python3 scripts/build.py my-slide.tex --backend native', '```', '',
                   'Output: `build/my-slide.pdf`. On Windows use `py -3` instead of `python3`.', '']
-    lines += ['## Editable fields', '', 'Positions and available space refer to the original, fixed composition.',
+    lines += ['## Editable fields', '', ('Positions show the reference only; the quotation panel and its fields move with measured content height.' if name == 'chat-dialogue' else 'Positions and available space refer to the original, fixed composition.'),
               ('Use the position column to locate each field in the compiled slide.' if portable else 'In the individual web view, select a field or enable **Show editable areas** to locate it.'), '',
               '| Field | What it changes | Position | Available space | Shipped value |', '| --- | --- | --- | --- | --- |']
     for field in info['fields']:
@@ -234,7 +243,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
     lines += ['## Keep the composition', '',
               '- Keep replacements within their allocated boxes. Shorten text or use explicit `\\\\` line breaks.',
               '- Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.',
-              '- Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.',
+              ('- Font sizes stay fixed; panel height is measured automatically up to 1300 source units. Unknown fields and overflowing content produce diagnostics.' if name == 'chat-dialogue' else '- Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.'),
               '- Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.',
               '- Some diagrams, QR codes and decorations are native source elements rather than configurable fields.',
               f'- For structural changes, edit [the current source]({source}). Catalogues and the showcase reuse it.', '']

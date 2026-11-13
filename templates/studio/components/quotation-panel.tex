@@ -1,0 +1,41 @@
+% Measure copy at fixed Inter sizes; adapt the original layered rectangle height.
+% The outer TikZ node provides a real text font context during measurement.
+\newcommand{\studioquotationpanel}{%
+ \node[anchor=center] at (1778,1000) {%
+  \pgfmathsetmacro{\studioquotetextwidth}{\studioquotepanelwidth-178}%
+  \pgfkeysgetvalue{/studio values/quote}\studioquotecopy
+  \pgfkeysgetvalue{/studio values/attribution}\studioquotecitation
+  \typeout{STUDIO-FIELD: chat-dialogue/quote}%
+  \setbox\studiotextbox=\vbox{\hsize=\studioquotetextwidth\studiounit\parindent=0pt
+   \hfuzz=\dimexpr\paperheight/400\relax\overfullrule=2pt
+   \normalfont\sffamily\fontsize{83.9053\studiounit}{97.3302\studiounit}\selectfont
+   \color{bitpolito}\raggedright\bfseries
+   \ifx\studioquotecopy\empty\else\noindent\textquotedblleft\studioquotecopy\textquotedblright\par\fi}%
+  \typeout{STUDIO-FIELD: chat-dialogue/attribution}%
+  \setbox\studiographicbox=\vbox{\hsize=\studioquotetextwidth\studiounit\parindent=0pt
+   \hfuzz=\dimexpr\paperheight/400\relax\overfullrule=2pt
+   \normalfont\sffamily\fontsize{57.187\studiounit}{66.337\studiounit}\selectfont
+   \color{bitpolito}\raggedright\bfseries
+   \ifx\studioquotecitation\empty\else\noindent\textemdash\nobreakspace\studioquotecitation\par\fi}%
+  \pgfmathsetmacro{\studioquoteheight}{(\the\ht\studiotextbox+\the\dp\studiotextbox)/(\the\studiounit)}%
+  \pgfmathsetmacro{\studiocitationheight}{(\the\ht\studiographicbox+\the\dp\studiographicbox)/(\the\studiounit)}%
+  \def\studioquotegap{90}%
+  \ifx\studioquotecopy\empty\def\studioquotegap{0}\fi
+  \ifx\studioquotecitation\empty\def\studioquotegap{0}\fi
+  \pgfmathsetmacro{\studioquotepanelheight}{max(240,115.316+\studioquoteheight+\studioquotegap+\studiocitationheight+65)}%
+  \ifdim\studioquotepanelheight\studiounit>1300\studiounit
+   \PackageError{bitpolitostudiomeasured}{Text overflow in chat-dialogue/quote-and-attribution}{Shorten the quotation or attribution. The panel grows to 1300 source units; fonts never shrink.}%
+  \fi
+  \typeout{STUDIO-QUOTE-HEIGHT: \studioquotepanelheight}%
+  \begin{tikzpicture}[x=\studiounit,y=-\studiounit,every node/.style={inner sep=0,outer sep=0}]
+   \path[fill=studio-paper,draw=none,rounded corners=\studioquotebackradius\studiounit]
+    (\studioquotebackx,\studioquotebacky) rectangle ({\studioquotebackx+\studioquotebackwidth},{\studioquotepanelheight+\studioquotebackbottom});
+   \path[fill=studio-paper,draw=bitpolito,line width=7\studiounit,rounded corners=83.5\studiounit]
+    (0,0) rectangle (\studioquotepanelwidth,\studioquotepanelheight);
+   \ifstudiogeometryonly\else
+    \node[anchor=north west] at (97.07,115.316) {\box\studiotextbox};
+    \node[anchor=north west] at (97.992,{115.316+\studioquoteheight+\studioquotegap}) {\box\studiographicbox};
+   \fi
+  \end{tikzpicture}%
+ };
+}

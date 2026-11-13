@@ -20,17 +20,16 @@ blue-statement,Statements,figma-0121,approved,14,,"Explicit user approval on 202
 icon-spotlight-light,Statements,figma-1003,in review,15,,
 icon-spotlight-blue,Statements,figma-0383,in review,16,,
 oversized-word,Statements,figma-0895,approved,17,,"Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review."
-chat-dialogue,Statements,figma-0757,in review,18,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.
-Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines."
-speech-panel,Statements,figma-0482,in review,19,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
-chat-three-messages,Statements,figma-0046,in review,20,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+chat-dialogue,Statements,"figma-0757,figma-0039,figma-0197,figma-0652,figma-0653,figma-0664,figma-0733,figma-0893",approved,18,,"Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens. Covers compact, medium, standard and wide panels with measured height, automatic quotation marks and the attribution em dash."
+speech-panel,Statements,figma-0482,approved,19,,"Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens."
+chat-three-messages,Statements,figma-0046,approved,20,,"Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens."
 oversized-number-light,Statements,figma-0554,in review,21,,
 oversized-number-blue,Statements,figma-0555,in review,22,,
 diagonal-photo-title,Statements,figma-0557,in review,23,,"Match the original headline angle, position and intended canvas clipping."
 title-paragraphs,Statements,figma-0198,approved,24,,"Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review."
 title-centered-paragraphs,Statements,figma-0196,approved,25,,"Explicit user approval on 2026-11-13 after reviewing the four original/current comparisons, longer copy, automatic and manual wrapping, independent empty fields and the complete source-background audit. Preserve fixed Inter typography and native palettes; future visible changes require review."
 statement-with-credit,Diagrams,figma-0667,in review,26,,Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.
-people-speech-cards,Statements,figma-0765,in review,27,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis."
+people-speech-cards,Statements,figma-0765,approved,27,,"Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens."
 paired-icons-blue,Statements,figma-0038,in review,28,,
 two-columns,Lists,figma-0185,approved,29,,"Approved by the user on 2026-11-09, including short and longer text. Fixed typography: title 120/140, headings 90/105, introduction and bodies 80/95. Public named fields replace the former numbered syntax; obsolete label keys are rejected."
 list-rail-light,Lists,figma-0702,approved,30,,"Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis. Approved by the user on 2026-11-09 after clarification of the shared syntax."

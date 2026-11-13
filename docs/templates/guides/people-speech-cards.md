@@ -4,7 +4,7 @@
 
 Focus attention on one message using the people speech cards layout.
 
-Model: `people-speech-cards` · Family: Statements · Status: **in review**.
+Model: `people-speech-cards` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/people-speech-cards.tex)
 
@@ -22,9 +22,17 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=cards,palette=light]{dialogue}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `show-conclusion` | boolean | `true` | Show the concluding callout and its panel without moving the people or messages. |
+
+For example: `\studiotemplate[variant=cards,show-conclusion=false]{dialogue}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -38,6 +46,13 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
+| `text/1` | `message-one` | Editable text |
+| `text/2` | `message-two` | Editable text |
+| `text/3` | `message-three` | Editable text |
+| `text/4` | `name-one` | Editable text |
+| `text/5` | `name-two` | Editable text |
+| `text/6` | `name-three` | Editable text |
+| `text/7` | `conclusion` | Editable text |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/3`, `image/3`, `graphic/3` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
@@ -45,13 +60,6 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | `icon/5`, `image/5`, `graphic/5` | `graphic-5` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/6`, `image/6`, `graphic/6` | `graphic-6` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/7`, `image/7`, `graphic/7` | `graphic-7` | Replaces this complete graphic; other elements stay fixed. |
-| `text/1` | `text-1` | Editable text |
-| `text/2` | `text-2` | Editable text |
-| `text/3` | `text-3` | Editable text |
-| `text/4` | `text-4` | Editable text |
-| `text/5` | `text-5` | Editable text |
-| `text/6` | `title` | Main text |
-| `text/7` | `text-7` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -70,8 +78,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/6={Title},
-  text/1={Label 1}
+  text/1={First point},
+  text/2={Second point}
 ]{people-speech-cards}
 ```
 
@@ -87,8 +95,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/6={Title},
-  text/1={Label 1}
+  text/1={First point},
+  text/2={Second point}
 ]{people-speech-cards}
 \end{document}
 ```
@@ -108,20 +116,20 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
+| <code>message-one</code> | Editable text (text) | upper left | 12.8% wide × 9.7% high | <code>First point</code> |
+| <code>message-two</code> | Editable text (text) | upper centre | 18.6% wide × 9.7% high | <code>Second point</code> |
+| <code>message-three</code> | Editable text (text) | upper right | 18.6% wide × 9.7% high | <code>Third point</code> |
+| <code>name-one</code> | Editable text (text) | middle left | 13.0% wide × 10.2% high | <code>Person 1</code> |
+| <code>name-two</code> | Editable text (text) | middle centre | 13.0% wide × 10.2% high | <code>Person 2</code> |
+| <code>name-three</code> | Editable text (text) | middle right | 13.0% wide × 10.2% high | <code>Person 3</code> |
+| <code>conclusion</code> | Editable text (text) | lower centre | 55.6% wide × 10.5% high | <code>A shared conclusion connects the three points.</code> |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | upper left | 17.2% wide × 19.1% high | <code>\studiopaletteimage[width=331\studiounit]{images/studio/collection/figma-0765-part-01.pdf}</code> |
 | <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | upper centre | 23.0% wide × 19.1% high | <code>\studiopaletteimage[width=441\studiounit]{images/studio/collection/figma-0765-part-02.pdf}</code> |
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | upper right | 22.9% wide × 19.1% high | <code>\studiopaletteimage[width=440\studiounit]{images/studio/collection/figma-0765-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 10.2% wide × 18.2% high | <code>\studiopaletteimage[width=196\studiounit]{images/studio/collection/figma-0765-part-04.pdf}</code> |
-| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 10.3% wide × 18.2% high | <code>\studiopaletteimage[width=197\studiounit]{images/studio/collection/figma-0765-part-05.pdf}</code> |
-| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 10.3% wide × 18.2% high | <code>\studiopaletteimage[width=197\studiounit]{images/studio/collection/figma-0765-part-06.pdf}</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle left | 7.7% wide × 13.7% high | <code>\includegraphics[trim={0.35900bp 48.20300bp 48.23801bp 0.85500bp},clip,width=148\studiounit,height=148\studiounit,kee...</code> |
+| <code>graphic-5</code> | Complete graphic, image or decoration (graphic) | middle centre | 7.7% wide × 13.7% high | <code>\includegraphics[trim={0.98400bp 48.20300bp 48.60899bp 0.85500bp},clip,width=148\studiounit,height=148\studiounit,kee...</code> |
+| <code>graphic-6</code> | Complete graphic, image or decoration (graphic) | middle right | 7.7% wide × 13.7% high | <code>\includegraphics[trim={0.75000bp 48.20300bp 48.85201bp 0.85500bp},clip,width=148\studiounit,height=148\studiounit,kee...</code> |
 | <code>graphic-7</code> | Complete graphic, image or decoration (graphic) | lower centre | 63.4% wide × 24.5% high | <code>\studiopaletteimage[width=1217\studiounit]{images/studio/collection/figma-0765-part-07.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | upper left | 12.8% wide × 8.3% high | <code>Label 1</code> |
-| <code>text-2</code> | Editable text (text) | upper centre | 18.6% wide × 8.3% high | <code>Label 2</code> |
-| <code>text-3</code> | Editable text (text) | upper right | 18.6% wide × 8.2% high | <code>Label 3</code> |
-| <code>text-4</code> | Editable text (text) | middle left | 8.7% wide × 4.9% high | <code>Item</code> |
-| <code>text-5</code> | Editable text (text) | middle centre | 8.0% wide × 5.0% high | <code>Item</code> |
-| <code>title</code> | Main text (text) | middle right | 7.1% wide × 5.1% high | <code>Title</code> |
-| <code>text-7</code> | Editable text (text) | lower centre | 58.7% wide × 10.5% high | <code>Supporting explanation</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

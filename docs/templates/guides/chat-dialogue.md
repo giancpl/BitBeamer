@@ -4,7 +4,7 @@
 
 Focus attention on one message using the quotation with attribution layout.
 
-Model: `chat-dialogue` · Family: Statements · Status: **in review**.
+Model: `chat-dialogue` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/chat-dialogue.tex)
 
@@ -16,15 +16,25 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/dialogue.md)
+[Model variants and named fields](../models/quotation.md)
 
 ```latex
-\studiotemplate[variant=quotation,palette=blue]{dialogue}
+\studiotemplate[variant=layered,palette=blue]{quotation}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
+
+Quotation marks and the em dash before attribution are automatic. Write bare text in both fields; empty fields produce no stray punctuation.
+
+## Layout options
+
+| Option | Type | Default | Purpose |
+| --- | --- | --- | --- |
+| `width` | choice | `standard` | Original panel width: compact, medium, standard or wide. Height follows measured text; fonts stay fixed. |
+
+For example: `\studiotemplate[variant=layered,width=wide]{quotation}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 
@@ -38,9 +48,8 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
-| `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
-| `text/1` | `title` | Main text |
-| `text/2` | `text-2` | Editable text |
+| `text/1` | `quote` | Editable text |
+| `text/2` | `attribution` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -59,7 +68,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={A concise quotation, kept as one paragraph. Replace it with the words you want to highlight.},
+  text/1={A clear quotation can highlight one idea while keeping its source in a separate field.},
   text/2={Source or reference}
 ]{chat-dialogue}
 ```
@@ -76,7 +85,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={A concise quotation, kept as one paragraph. Replace it with the words you want to highlight.},
+  text/1={A clear quotation can highlight one idea while keeping its source in a separate field.},
   text/2={Source or reference}
 ]{chat-dialogue}
 \end{document}
@@ -92,36 +101,22 @@ Output: `build/my-slide.pdf`. On Windows use `py -3` instead of `python3`.
 
 ## Editable fields
 
-Positions and available space refer to the original, fixed composition.
+Positions show the reference only; the quotation panel and its fields move with measured content height.
 In the individual web view, select a field or enable **Show editable areas** to locate it.
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 60.8% wide × 47.5% high | <code>\studiopaletteimage[width=2163\studiounit]{images/studio/collection/figma-0757-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 57.1% wide × 27.1% high | <code>A concise quotation, kept as one paragraph. Replace it with the words you want to highlight.</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 57.8% wide × 4.3% high | <code>Source or reference</code> |
+| <code>quote</code> | Editable text (text) | middle centre | Text width is panel width minus 178 units; measured text height. Centered layered panel, fixed padding, maximum height 1300. | <code>A clear quotation can highlight one idea while keeping its source in a separate field.</code> |
+| <code>attribution</code> | Editable text (text) | middle centre | Text width is panel width minus 178 units; measured text height. Centered layered panel, fixed padding, maximum height 1300. | <code>Source or reference</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
-
-## Replace a graphic
-
-This example selects an icon by catalogue name; its size and position come from the slot:
-
-```latex
-\studiotemplate[
-  icon/1={alice}
-]{chat-dialogue}
-```
-
-Use a numbered slot listed above to target another graphic. Some slots contain a complete
-panel, background, screenshot or decoration. Inspect the preview before replacing them.
 
 ## Keep the composition
 
 - Keep replacements within their allocated boxes. Shorten text or use explicit `\\` line breaks.
 - Use `text/N={}` or `icon/N={}` to hide content while retaining its space; separated card panels stay visible.
-- Fonts, anchors and geometry remain fixed; unknown fields and overflowing content produce diagnostics.
+- Font sizes stay fixed; panel height is measured automatically up to 1300 source units. Unknown fields and overflowing content produce diagnostics.
 - Text colour does not recolour supplied graphics; prepare another asset when its fixed colours must change.
 - Some diagrams, QR codes and decorations are native source elements rather than configurable fields.
 - For structural changes, edit [the current source](../../../templates/studio/chat-dialogue.tex). Catalogues and the showcase reuse it.
@@ -134,7 +129,7 @@ These names share this source and may apply different shipped field defaults:
 
 ## Review
 
-Reference: figma-0757.
+Reference: figma-0757, figma-0039, figma-0197, figma-0652, figma-0653, figma-0664, figma-0733, figma-0893.
 
 Review margins, text, crops, shadows and optical balance using this stable model ID.
 Record feedback in [the review ledger](../../../templates/review.json). Compilation is not graphical approval.

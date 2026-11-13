@@ -1,11 +1,20 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
-\studiodeclarefield{graphic-1}{\studiopaletteimage[width=2163\studiounit]{images/studio/collection/figma-0757-part-01.pdf}}
-\studiodeclarefield{title}{A concise quotation, kept as one paragraph. Replace it with the words you want to highlight.}
-\studiodeclarefield{text-2}{Source or reference}
+% Original prepared artwork with semantic editable text and fixed icon bounds.
+\studiodeclarefield{quote}{A clear quotation can highlight one idea while keeping its source in a separate field.}
+\studiodeclarefield{attribution}{Source or reference}
+\input{templates/studio/components/quotation-panel.tex}
+% Widths selected together from all original layered quotation examples.
+\def\studioquotepanelwidth{2108}
+\def\studioquotebackwidth{2115}
+\def\studioquotebackx{57.5}
+\def\studioquotebacky{83.5}
+\def\studioquotebackbottom{66.5}
+\def\studioquotebackradius{123}
+\pgfkeys{/studio fields/width/.is choice,
+ /studio fields/width/compact/.code={\def\studioquotepanelwidth{1596}\def\studioquotebackwidth{1603}\def\studioquotebackx{42.5}\def\studioquotebacky{48.5}\def\studioquotebackbottom{55.5}\def\studioquotebackradius{123}},
+ /studio fields/width/medium/.code={\def\studioquotepanelwidth{1884}\def\studioquotebackwidth{1891}\def\studioquotebackx{51.5}\def\studioquotebacky{76.5}\def\studioquotebackbottom{61.5}\def\studioquotebackradius{123}},
+ /studio fields/width/standard/.code={\def\studioquotepanelwidth{2108}\def\studioquotebackwidth{2115}\def\studioquotebackx{57.5}\def\studioquotebacky{83.5}\def\studioquotebackbottom{66.5}\def\studioquotebackradius{123}},
+ /studio fields/width/wide/.code={\def\studioquotepanelwidth{2427.89}\def\studioquotebackwidth{2406.33}\def\studioquotebackx{82.172}\def\studioquotebacky{75.746}\def\studioquotebackbottom{58.816}\def\studioquotebackradius{87}}}
 \studioapplyfields
 \studiomeasuredcanvas{3556}{2000}{chat-dialogue}{studio-background}{
-\path[fill=studio-paper,draw=none,line width=1\studiounit,rounded corners=123\studiounit] (751,604) rectangle (2866,1483);
-\studiographfield{graphic-1}{690}{517}{2163}{951}{}{}
-\studiomeasuredtext{title}{790.57}{635.816}{2031.09}{541.253}{83.9053}{97.3302}{\color{studio-background}\bfseries}{\studiofield{title}}
-\studiomeasuredtext{text-2}{791.492}{1281.52}{2054.49}{85.8047}{57.1867}{66.3365}{\color{studio-background}\bfseries}{\studiofield{text-2}}
+ \studioquotationpanel
 }

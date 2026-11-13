@@ -1,16 +1,17 @@
-% Fixed source-coordinate composition; defaults and semantic fields are documented in the model guide.
+% Original prepared artwork with semantic editable text and fixed icon bounds.
+\studiodeclarefield{message-one}{A first message opens the conversation.}
+\studiodeclarefield{message-two}{A second message asks for an explanation.}
+\studiodeclarefield{message-three}{A short reply.}
 \studiodeclarefield{graphic-1}{\studiopaletteimage[width=1695\studiounit]{images/studio/collection/figma-0046-part-01.pdf}}
-\studiodeclarefield{graphic-2}{\studiopaletteimage[width=1127\studiounit]{images/studio/collection/figma-0046-part-02.pdf}}
 \studiodeclarefield{graphic-3}{\studiopaletteimage[width=1724\studiounit]{images/studio/collection/figma-0046-part-03.pdf}}
-\studiodeclarefield{text-1}{Supporting explanation}
-\studiodeclarefield{title}{Slide title}
-\studiodeclarefield{text-3}{Supporting explanation.\\Add your own details.}
+\studiodeclarefield{graphic-2}{\studiopaletteimage[width=1127\studiounit]{images/studio/collection/figma-0046-part-02.pdf}}
+\input{templates/studio/components/dialogue-text.tex}
 \studioapplyfields
 \studiomeasuredcanvas{3556}{2000}{chat-three-messages}{studio-background}{
 \studiographfield{graphic-1}{823}{505}{1695}{336}{}{}
-\studiographfield{graphic-2}{823}{1329}{1127}{215}{}{}
 \studiographfield{graphic-3}{1050}{865}{1724}{440}{}{}
-\studiomeasuredtext{text-1}{940.637}{556.281}{1545.45}{230.101}{84.5507}{98.0788}{\color{studio-surface}\bfseries}{\studiofield{text-1}}
-\studiomeasuredtext{title}{943.844}{1374.59}{928.135}{111.507}{85.7733}{99.4971}{\color{studio-surface}\bfseries}{\studiofield{title}}
-\studiomeasuredtext{text-3}{1126.75}{908.699}{1590.78}{317.726}{84.5507}{98.0788}{\color{studio-foreground}\bfseries}{\studiofield{text-3}}
+\studiographfield{graphic-2}{823}{1329}{1127}{215}{}{}
+\studiodialoguetext{message-one}{930}{535}{1460}{230}{84.5507}{98.0788}{\color{studio-paper}\raggedright\bfseries}{\studiofield{message-one}}
+\studiodialoguetext{message-two}{1126.75}{880}{1520}{360}{84.5507}{98.0788}{\color{bitpolito}\raggedright\bfseries}{\studiofield{message-two}}
+\studiodialoguetext{message-three}{940}{1339}{850}{146}{85.773}{99.497}{\color{studio-paper}\raggedright\bfseries}{\studiofield{message-three}}
 }

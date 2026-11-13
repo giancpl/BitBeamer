@@ -356,13 +356,13 @@
       ]
     },
     {
-      "id": "dialogue",
-      "title": "Speech and quotations",
+      "id": "quotation",
+      "title": "Quotation with attribution",
       "category": "Statements",
-      "default_variant": "quotation",
+      "default_variant": "layered",
       "variants": [
         {
-          "id": "quotation",
+          "id": "layered",
           "default_source": "chat-dialogue",
           "compositions": [
             {
@@ -372,12 +372,21 @@
                 "blue"
               ],
               "fields": {
-                "quote": "title",
-                "credit": "text-2"
-              }
+                "quote": "quote",
+                "attribution": "attribution"
+              },
+              "graphic_slots": {}
             }
           ]
-        },
+        }
+      ]
+    },
+    {
+      "id": "dialogue",
+      "title": "Speech and dialogue",
+      "category": "Statements",
+      "default_variant": "three-messages",
+      "variants": [
         {
           "id": "people",
           "default_source": "speech-panel",
@@ -389,8 +398,13 @@
                 "light"
               ],
               "fields": {
-                "title": "title",
-                "label-two": "text-2"
+                "message": "message",
+                "caption": "caption"
+              },
+              "graphic_slots": {
+                "person-one": 2,
+                "person-two": 3,
+                "person-three": 4
               }
             }
           ]
@@ -406,10 +420,11 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-1",
-                "label-two": "text-3",
-                "title": "title"
-              }
+                "message-one": "message-one",
+                "message-two": "message-two",
+                "message-three": "message-three"
+              },
+              "graphic_slots": {}
             }
           ]
         },
@@ -424,13 +439,18 @@
                 "light"
               ],
               "fields": {
-                "label-one": "text-1",
-                "label-two": "text-2",
-                "label-three": "text-3",
-                "label-four": "text-4",
-                "label-five": "text-5",
-                "title": "title",
-                "label-seven": "text-7"
+                "message-one": "message-one",
+                "message-two": "message-two",
+                "message-three": "message-three",
+                "name-one": "name-one",
+                "name-two": "name-two",
+                "name-three": "name-three",
+                "conclusion": "conclusion"
+              },
+              "graphic_slots": {
+                "person-one": 4,
+                "person-two": 5,
+                "person-three": 6
               }
             }
           ]
@@ -5083,17 +5103,6 @@
         "label-six": "label-three"
       },
       "note": "Compatibility access for the figma-0667 timeline previously named statement-with-credit."
-    },
-    {
-      "model": "dialogue",
-      "variant": "two-messages",
-      "target_model": "dialogue",
-      "target_variant": "quotation",
-      "fields": {
-        "title": "quote",
-        "text-2": "credit"
-      },
-      "note": "Compatibility access for the existing quote and attribution panel."
     }
   ],
   "sequences": [

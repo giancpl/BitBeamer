@@ -32,7 +32,7 @@ Numeric defaults and charts are illustrative.
 | --- | --- | --- | --- |
 | `qrcode` | boolean | `true` | Show the supplied QR; false centres the text and social group. |
 
-For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+For example: `\studiotemplate[variant=default,qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 

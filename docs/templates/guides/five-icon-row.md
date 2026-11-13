@@ -32,7 +32,7 @@ Numeric defaults and charts are illustrative.
 | --- | --- | --- | --- |
 | `show-title` | boolean | `true` | Show the heading; false hides it without moving the cards. Title text remains available in both states. |
 
-For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+For example: `\studiotemplate[variant=five,show-title=false]{icon-cards}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 

@@ -383,10 +383,12 @@
       "suggested_compositions": [
         "chat-three-messages"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-three-messages"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0023": {
       "file": "20.svg",
@@ -663,14 +665,18 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0040": {
       "file": "2900.svg",
@@ -783,10 +789,12 @@
       "suggested_compositions": [
         "chat-three-messages"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-three-messages"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0047": {
       "file": "3300.svg",
@@ -3219,14 +3227,18 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0198": {
       "file": "Bitcoin is not Crypto_BitPolito Presentation_BTC Prague 120.svg",
@@ -7858,10 +7870,12 @@
       "suggested_compositions": [
         "speech-panel"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "speech-panel"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0483": {
       "file": "BitPolito's Ripple Effect_BitPolito Presentation_BTC Prague 24.svg",
@@ -10672,10 +10686,12 @@
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0652": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-135.svg",
@@ -10684,14 +10700,18 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0653": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-136.svg",
@@ -10700,14 +10720,18 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0654": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-137.svg",
@@ -10872,10 +10896,12 @@
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0664": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-146.svg",
@@ -10884,28 +10910,38 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0665": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-147.svg",
       "sha256": "f4bc1336481dae3260a8406bcedb80900e11efd96e779220f421c4b38e782d25",
       "representative": "figma-0653",
       "format": "slide",
-      "family_proposal": "Needs classification",
-      "phase": "Resources and unclassified originals",
-      "canonical_compositions": [],
-      "suggested_compositions": [],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "family_proposal": "Statements",
+      "phase": "Texts and statements",
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
+      "suggested_compositions": [
+        "chat-dialogue"
+      ],
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0666": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-148.svg",
@@ -11584,10 +11620,12 @@
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0708": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-41.svg",
@@ -12002,14 +12040,18 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
-      "suggested_compositions": [
-        "paired-icons-blue"
+      "canonical_compositions": [
+        "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "suggested_compositions": [
+        "chat-dialogue"
+      ],
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0734": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-65.svg",
@@ -12404,10 +12446,12 @@
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0758": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-87.svg",
@@ -12540,10 +12584,12 @@
       "suggested_compositions": [
         "people-speech-cards"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "people-speech-cards"
+      ],
+      "basis": "user decision",
+      "reason": "User selected all four original quotation/dialogue candidates on 2026-11-13; graphical approval remains pending."
     },
     "figma-0766": {
       "file": "BitPolito-presentazione-introduzione-bitcoin-94.svg",
@@ -14578,14 +14624,18 @@
       "format": "slide",
       "family_proposal": "Statements",
       "phase": "Texts and statements",
-      "canonical_compositions": [],
+      "canonical_compositions": [
+        "chat-dialogue"
+      ],
       "suggested_compositions": [
         "chat-dialogue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "merge",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly selected four quotation widths with automatic height on 2026-11-13. Standard low is covered by automatic height. Selection is separate from graphical approval."
     },
     "figma-0894": {
       "file": "Frame 964.svg",
@@ -17570,22 +17620,28 @@
       "reason": "User selected this composition for reconstruction, not yet graphical approval."
     },
     "chat-dialogue": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-dialogue"
+      ],
+      "basis": "user decision",
+      "reason": "Retain the selected quotation/dialogue composition; graphical approval is separate."
     },
     "speech-panel": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "speech-panel"
+      ],
+      "basis": "user decision",
+      "reason": "Retain the selected quotation/dialogue composition; graphical approval is separate."
     },
     "chat-three-messages": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "chat-three-messages"
+      ],
+      "basis": "user decision",
+      "reason": "Retain the selected quotation/dialogue composition; graphical approval is separate."
     },
     "oversized-number-light": {
       "decision": "pending",
@@ -17628,10 +17684,12 @@
       "reason": ""
     },
     "people-speech-cards": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "people-speech-cards"
+      ],
+      "basis": "user decision",
+      "reason": "Retain the selected quotation/dialogue composition; graphical approval is separate."
     },
     "paired-icons-blue": {
       "decision": "pending",
@@ -18748,7 +18806,22 @@
         "figma-0482": "Keep as a separate shared-speech composition with editable text, caption and three person icons.",
         "figma-0765": "Keep as an individual-speech variant with three editable messages, names, person icons and an optional concluding callout."
       }
+    },
+    {
+      "id": "icon-statements-selection-01",
+      "title": "Icon-led statements",
+      "family": "Statements",
+      "candidates": [
+        "figma-1003",
+        "figma-0383",
+        "figma-0038"
+      ],
+      "proposals": {
+        "figma-1003": "Keep a statement with one replaceable icon and editable text on the native light background. Group with the blue example while retaining its measured icon and text geometry.",
+        "figma-0383": "Keep the blue icon-led statement in the same family; retain the original larger icon geometry if needed as a variant, with a replaceable icon and editable text.",
+        "figma-0038": "Keep as a two-icon statement variant without required text. Both icons should be independently replaceable while retaining their original bounds."
+      }
     }
   ],
-  "active_candidate_batch": "dialogue-selection-01"
+  "active_candidate_batch": "icon-statements-selection-01"
 }

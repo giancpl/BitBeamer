@@ -1,3 +1,4 @@
+import json
 """Review content stress cases must follow the active, unapproved compositions."""
 from pathlib import Path
 import sys
@@ -44,6 +45,8 @@ class ReviewSpecimenTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)
             (root / 'examples').mkdir()
+            (root / 'templates').mkdir()
+            (root / 'templates/index.json').write_text(json.dumps({'templates':[{'id':'body','background':'white'}]}))
             (root / 'examples/source.tex').write_text(r'\studiotemplate{approved}' + '\n' + r'\studiotemplate{body}')
             target = root / 'comparison.pdf'
             specimen = root / 'specimen.pdf'

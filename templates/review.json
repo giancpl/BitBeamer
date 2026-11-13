@@ -596,14 +596,14 @@
       ]
     },
     "chat-dialogue": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.\nKeep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens. Covers compact, medium, standard and wide panels with measured height, automatic quotation marks and the attribution em dash.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; original native backgrounds and reviewed typography approved."
         }
       },
       "feedback": [
@@ -613,7 +613,8 @@
           "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
         },
         {
           "id": "quote-credit",
@@ -621,7 +622,8 @@
           "issue": "Keep quotation and credit aligned; use complete paragraphs rather than individually positioned lines.",
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
         },
         {
           "id": "guide-field-audit",
@@ -629,19 +631,28 @@
           "issue": "Default field roles, caption weight, or embedded text required refinement.",
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
+        },
+        {
+          "id": "quotation-dialogue-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the quotation and three dialogue variants shown in the current review.",
+          "action": "Approve canonical compositions, native palettes and documented options; retain lesson editorial status separately.",
+          "verification": "26 customization pages, 14 adaptive quotation cases, source survey and four consuming lesson/block pages inspected. Fixed fonts, backgrounds, punctuation, empty fields, icon substitutions and optional conclusion verified. Full suite: 238 tests, one skipped; five isolated package documents passed.",
+          "status": "approved"
         }
       ]
     },
     "speech-panel": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; original native backgrounds and reviewed typography approved."
         }
       },
       "feedback": [
@@ -651,7 +662,8 @@
           "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
         },
         {
           "id": "guide-field-audit",
@@ -659,19 +671,28 @@
           "issue": "Default field roles, caption weight, or embedded text required refinement.",
           "action": "Corrected the canonical source and metadata; retained geometry and public fields.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
+        },
+        {
+          "id": "quotation-dialogue-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the quotation and three dialogue variants shown in the current review.",
+          "action": "Approve canonical compositions, native palettes and documented options; retain lesson editorial status separately.",
+          "verification": "26 customization pages, 14 adaptive quotation cases, source survey and four consuming lesson/block pages inspected. Fixed fonts, backgrounds, punctuation, empty fields, icon substitutions and optional conclusion verified. Full suite: 238 tests, one skipped; five isolated package documents passed.",
+          "status": "approved"
         }
       ]
     },
     "chat-three-messages": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; original native backgrounds and reviewed typography approved."
         }
       },
       "feedback": [
@@ -681,7 +702,16 @@
           "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
+        },
+        {
+          "id": "quotation-dialogue-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the quotation and three dialogue variants shown in the current review.",
+          "action": "Approve canonical compositions, native palettes and documented options; retain lesson editorial status separately.",
+          "verification": "26 customization pages, 14 adaptive quotation cases, source survey and four consuming lesson/block pages inspected. Fixed fonts, backgrounds, punctuation, empty fields, icon substitutions and optional conclusion verified. Full suite: 238 tests, one skipped; five isolated package documents passed.",
+          "status": "approved"
         }
       ]
     },
@@ -822,14 +852,14 @@
       ]
     },
     "people-speech-cards": {
-      "status": "in review",
-      "notes": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13 of the reviewed native composition, semantic fields, longer copy, empty fields and customization specimens.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user confirmation on 2026-11-13; original native backgrounds and reviewed typography approved."
         }
       },
       "feedback": [
@@ -839,7 +869,16 @@
           "issue": "Verify source-specific Regular/Semibold weights, line breaks, margins and alignment; preserve intentional mixed emphasis.",
           "action": "Audit canonical source against retained original and rendered guide command.",
           "verification": "Native public command compiled with embedded fonts and no diagnostics; original/current composition inspected. Clean 640/1600 px previews and available 2000 px comparison refreshed. Inter, translation and documented intentional differences remain in review.",
-          "status": "in review"
+          "status": "approved",
+          "resolution": "Resolved by explicit final user confirmation on 2026-11-13."
+        },
+        {
+          "id": "quotation-dialogue-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Confirm the quotation and three dialogue variants shown in the current review.",
+          "action": "Approve canonical compositions, native palettes and documented options; retain lesson editorial status separately.",
+          "verification": "26 customization pages, 14 adaptive quotation cases, source survey and four consuming lesson/block pages inspected. Fixed fonts, backgrounds, punctuation, empty fields, icon substitutions and optional conclusion verified. Full suite: 238 tests, one skipped; five isolated package documents passed.",
+          "status": "approved"
         }
       ]
     },
@@ -4767,6 +4806,144 @@
           }
         ]
       }
+    },
+    {
+      "id": "dialogue-01",
+      "title": "Quotations and dialogue",
+      "family": "Statements",
+      "compositions": [
+        "chat-dialogue",
+        "chat-three-messages",
+        "speech-panel",
+        "people-speech-cards"
+      ],
+      "commands": {
+        "chat-dialogue": "\\studiotemplate[quote={A private matter is something one does not want the whole world to know, while a secret matter is something one does not want anyone to know. Privacy is the power to selectively reveal oneself to the world.},attribution={Eric Hughes, A Cypherpunk\\textquotesingle{}s Manifesto, 1993}]{quotation}",
+        "chat-three-messages": "\\studiotemplate[variant=three-messages,message-one={Hurry up, you are going to be the next enlightened ruling class!},message-two={But you had never explained me how the society works and what are the values behind it...},message-three={It\\textquotesingle{}s not needed.}]{dialogue}",
+        "speech-panel": "\\studiotemplate[variant=people,message={Let's talk about Bitcoin in our university!\\\\Of course only technical stuff...},caption={February 2020}]{dialogue}",
+        "people-speech-cards": "\\studiotemplate[variant=cards,message-one={Linux is a cancer},name-one={Ballmer},message-two={Open source is un-American},name-two={Allchin},message-three={Free software is communism},name-three={Gates},conclusion={GNU and Linux scared entrenched powers, but just\\\\worked better and developed a global community}]{dialogue}"
+      },
+      "focus": [
+        "Match the original native backgrounds, bubble geometry and source-specific type sizes.",
+        "Keep attribution, messages, names and person icons independently editable.",
+        "Inspect long copy, explicit breaks, empty values, replacement icons and the optional conclusion."
+      ],
+      "specimen": {
+        "source": "examples/studio-dialogue-layouts.tex",
+        "samples": [
+          {
+            "page": 5,
+            "composition": "chat-dialogue",
+            "label": "Longer quotation and source"
+          },
+          {
+            "page": 6,
+            "composition": "chat-three-messages",
+            "label": "Longer messages and explicit breaks"
+          },
+          {
+            "page": 7,
+            "composition": "speech-panel",
+            "label": "Longer shared message"
+          },
+          {
+            "page": 8,
+            "composition": "people-speech-cards",
+            "label": "Longer messages and participant names"
+          },
+          {
+            "page": 9,
+            "composition": "chat-dialogue",
+            "label": "Empty quotation, independent attribution"
+          },
+          {
+            "page": 10,
+            "composition": "chat-dialogue",
+            "label": "Empty attribution"
+          },
+          {
+            "page": 11,
+            "composition": "chat-three-messages",
+            "label": "Independent empty messages"
+          },
+          {
+            "page": 12,
+            "composition": "speech-panel",
+            "label": "Empty shared message and person icon"
+          },
+          {
+            "page": 13,
+            "composition": "people-speech-cards",
+            "label": "Independent empty fields"
+          },
+          {
+            "page": 14,
+            "composition": "speech-panel",
+            "label": "Replacement icons and a wide custom graphic"
+          },
+          {
+            "page": 15,
+            "composition": "people-speech-cards",
+            "label": "Replacement icons and a tall custom graphic"
+          },
+          {
+            "page": 16,
+            "composition": "people-speech-cards",
+            "label": "Optional conclusion disabled"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 17,
+            "label": "Short quotation; automatic panel height"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 18,
+            "label": "Manual lines and long attribution"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 19,
+            "label": "Seven lines; fixed font and growing panel"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 20,
+            "label": "Both fields empty; minimum panel"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 21,
+            "label": "compact width; short quotation"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 22,
+            "label": "compact width; longer wrapping and attribution"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 23,
+            "label": "medium width; short quotation"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 24,
+            "label": "medium width; longer wrapping and attribution"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 25,
+            "label": "wide width; short quotation"
+          },
+          {
+            "composition": "chat-dialogue",
+            "page": 26,
+            "label": "wide width; longer wrapping and attribution"
+          }
+        ]
+      },
+      "reference_survey": "build/review/reference-surveys/quotation/survey.pdf"
     }
   ],
   "active_review_batches": []

@@ -551,7 +551,7 @@
     },
     "chat-dialogue": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "5d23046793e47e15693813d97b0cef5e18d094f1c47619d82a901771134e5572",
+      "@layout": "fb078c892d631b265c8f9fc7d80cb77082b3b1627c98f5767a0cba6896b8da1f",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -570,14 +570,14 @@
       "images/bitpolito/polito-coat-of-arms-white.pdf": "a7603084e38e2d317fa0b3f24ccb7e34973544512b572a71556c508618ed57d8",
       "images/studio/alice-white.pdf": "f5d894693c581345318a31da709225e01b9cef88d04090b0e360ae06de1a4710",
       "images/studio/bob-white.pdf": "a3af055e2743c22d81c1cba99703aca8c3e1e10e3d140250aee365060c0bab17",
-      "images/studio/collection/figma-0757-part-01.pdf": "103ee3e720ab6b8af2a195482672554e97371663fdb26f66acf815ce69ab781b",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/chat-dialogue.tex": "6e6834ddb88230d3c91b17035569b18913bbbd07840f004f437e729486c0af5a"
+      "templates/studio/chat-dialogue.tex": "02c7be7cc59e857add0b8d5a0e028dcc90c8e360690e418bb7e904c5a9f8792b",
+      "templates/studio/components/quotation-panel.tex": "266755744d2dbedabb6d100c34b40d9f2149c4e27f17aad7b0ca1a68091caf7b"
     },
     "chat-three-messages": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "fd82ad482837edb2788cd5444aeadf3d76afc0a82295d84e767af7ae1d289d4e",
+      "@layout": "37f6774406e2ed6c7a968cc494884462c5af42826cf35f05ec3a55a9566987b2",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -601,7 +601,8 @@
       "images/studio/collection/figma-0046-part-03.pdf": "a2a40f03165df3c8b065d0573f0dbfa2582368c64eb11ff1640e1ea5ac400ada",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/chat-three-messages.tex": "8e8fadca88e01375a5cec01a315c0067db56aecf40dcec11e3e31cc092cb739d"
+      "templates/studio/chat-three-messages.tex": "1be2cb21babb68eeb171965a809ac304640198255d92a838c06be77f692effed",
+      "templates/studio/components/dialogue-text.tex": "e8a57b24096f40e371cd6c7fcc27802eeec5ef146077bf2f622cb95928b0ba0e"
     },
     "checklist-rail": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
@@ -3145,7 +3146,7 @@
     },
     "people-speech-cards": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "f3bc65030a8f670fbdf250cb0571a3e95ee673a1512d5c2bada5981ac33d5e1c",
+      "@layout": "819a3d8cb44f8ab1709fd7eab76d4017ec32c60f409d5656606a0ba143c4842e",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -3173,7 +3174,8 @@
       "images/studio/collection/figma-0765-part-07.pdf": "c1b902bca03105eae1200f7cc8518613ff5d3dab9c6aab0a3933be061d1af02c",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/people-speech-cards.tex": "e4dd0e9af5241c6bd0a1b9a1818fc385afe627ee217a1782c35501cfd9739e83"
+      "templates/studio/components/dialogue-text.tex": "e8a57b24096f40e371cd6c7fcc27802eeec5ef146077bf2f622cb95928b0ba0e",
+      "templates/studio/people-speech-cards.tex": "b24085e072596fbf168c2e33d9d2900d026a9efaa2a0fff338e6ae61ea799043"
     },
     "personal-timeline": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
@@ -4592,7 +4594,7 @@
     },
     "speech-panel": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "9d7d974752dfb8741b6cc0d95c70b81b2719f7bc847f9ae1e65ab88d1aac6467",
+      "@layout": "6021098b6c75360f72a9e00ff579727015800a61ec6edabd31942f1aa7e8db1a",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -4617,7 +4619,8 @@
       "images/studio/collection/figma-0482-part-04.pdf": "d9a94d9461a068842cca7e8c6e33427c82d5130eed040fff4e0320087e521291",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/speech-panel.tex": "1825bfdc66ecfda20e1b6b451c81ce88d17a1bf117a555a3c87ad5d2872df475"
+      "templates/studio/components/dialogue-text.tex": "e8a57b24096f40e371cd6c7fcc27802eeec5ef146077bf2f622cb95928b0ba0e",
+      "templates/studio/speech-panel.tex": "bfd94607398469f776774a07834b89299b1664547833168c8f068270715dc629"
     },
     "split-currency": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
@@ -5716,8 +5719,8 @@
     "bullseye-values": "992044b187a2cef0f1fe7b0a78b2f7f6dbafc15ecff7cb2e3edf71e7b9ba7cd7",
     "callout-explanation": "369f4f2c48bc8a82671c2e04290313a856ce7e633acd4f4736cbcb99dbf3b922",
     "card-statistics-process": "9dd4472c8c3b3379db5c025b399d4b2002415219e70804d0a214e9a089133b28",
-    "chat-dialogue": "e73673dc5bb394682cf98b66de20b3a602626c53be3c78200467f9fbbc8dea80",
-    "chat-three-messages": "f15b50f02c1914e7ccaa9f3dc47d38ba31747f1a4e9d642dcd067ec18248e301",
+    "chat-dialogue": "2ce4da1fde3cd1d66cb07c2b0e1fdae28429f19ac3547ab0dafb317aa5fef3e0",
+    "chat-three-messages": "412c58bc40343f120631e500ce6723408d6ab637d858def8e0bdf0da0ed51d0c",
     "checklist-rail": "ba118bf260789a203022f6318907f29048a799fdc05730cf7b8124d29b3e762c",
     "cipher-mapping": "a3b82eec989ecc54ece9d5af38a9e184197d0853336b44da3f0b5a8e9bdb285f",
     "cipher-wheel": "93db1bae96ee1102aeeea88ce346aa6f4b886c899142d2c38263f8b8d97d4382",
@@ -5806,7 +5809,7 @@
     "partner-rail": "d31c893e4effca26f1bdf9c176c2e0acb57eb601f20443bebeb37b5de516251a",
     "payment-channel": "8430097f9ef652746ebe12f1df1c42ce1ce2be5e2ed749758ce8aac46921cb52",
     "payoff-matrix": "61d30ecb976ebca8521fdd663aa0ebc600d890c19e3bd064e54138a4ce6071ba",
-    "people-speech-cards": "b33b64ad4e5dd5a2efa8776cc18dbb48c2715dbb4df14d7e1ac6b187562ab353",
+    "people-speech-cards": "364cb732e2dff1224fc00d0f361bb24d26f3206269294c31e00d8e88dc5397d0",
     "personal-timeline": "aa6d00018ddd3ef8386d50c62649a637b38e4518205f220a9b21602c054fc5ad",
     "phone-screenshot": "f2b73ac2643342b683fa0dcc833ce90752ac734a6e19664f6604ab227c0ff741",
     "photo-center-two-icons": "76f36a65e68a4cc55dbd013882a7b8eae911d25f88cd655825b0897ca6f17cc6",
@@ -5852,7 +5855,7 @@
     "separate-circles": "606de2680968d0e6e080ae24c702a0134f3ea5a6e0d401b6ba1b2ba1d97c58e9",
     "signature-flow": "2b17dd006799043022938cc98a69636e20b5b57770ca1834e220bc24e109c8b2",
     "software-options": "2631c7ebf6ebd4b09a94107ac494293f25338227b7a101407a0dc85e9b6c5273",
-    "speech-panel": "c08542a77586f2faddef7f1101e29c4c6f85580b4c7dcace2dbeb44347c4658c",
+    "speech-panel": "47b03d3905c54a5ed34325b7c248e367e82ee1b0b78d5a7619be9e3126422967",
     "split-currency": "bbadfdc5d8f467fe85076ef10ba9f4103dea67b7c0b593a624552df761b8a69e",
     "split-outline-cards": "6d123990b9c6fa87d888f660e56bbc63362e0937a813e846e01afe2af8c545df",
     "split-process-cards": "32e8910fc68aa323987620d53c5802b31791d47713329cf518fa34236ab712e3",

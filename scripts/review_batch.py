@@ -102,6 +102,9 @@ def prepare(root, name, backend='docker', image='bitbeamer-latex:local', compare
         if int(re.search(r'^Pages:\s*(\d+)',info,re.M)[1])!=len(names):raise RuntimeError('Incorrect review batch page count.')
         cache.write_text(json.dumps({'fingerprint':fingerprint,'pdf':hashlib.sha256(pdf.read_bytes()).hexdigest()},indent=2)+'\n',encoding='utf-8')
     else:print('Reused batch PDF:',pdf)
+    if compare:
+        from review_backgrounds import check_pdf
+        check_pdf(root,pdf,[(i,n,commands[n]) for i,n in enumerate(names)],folder/'backgrounds.json')
     originals=comparisons(root,folder,names,choices,categories,commands) if compare else {}
     report={'batch':name,'family':batch['family'],'compositions':names,'categories':{n:categories[n] for n in names},'pages':len(names),'status':'compiled; graphical review pending','approval':'none inferred','originals':originals,'commands':commands,'guide':'docs/slides/index.html?batch='+name+'&maintenance=1'}
     (folder/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
@@ -169,6 +172,16 @@ def combine(root, backend='docker', image='bitbeamer-latex:local', compare=False
     if compare:
         from review_specimens import append_specimens
         pages=append_specimens(root,target,batches,backend,image) or pages
+    surveys=[root/b['reference_survey'] for b in batches if b.get('reference_survey')]
+    if surveys:
+        with fitz.open(target) as result:
+            for survey in surveys:
+                if not survey.resolve().is_relative_to((root/'build/review/reference-surveys').resolve()) or not survey.is_file():
+                    raise ValueError('Prepare the declared original reference survey before review: '+str(survey))
+                with fitz.open(survey) as source:result.insert_pdf(source)
+            temporary=target.with_suffix('.survey.pdf');result.save(temporary,garbage=4,deflate=True)
+            pages=len(result)
+        temporary.replace(target)
     (folder/'all-report.json').write_text(json.dumps({'pdf':target.relative_to(root).as_posix(),'pages':pages,'batches':[b['id'] for b in batches],'pending':[{'id':n,'category':categories[n],'batch':b['id']} for b in batches for n in b['compositions']],'approval':'none inferred'},indent=2)+'\n',encoding='utf-8')
     print('Combined review PDF:',target)
     return target

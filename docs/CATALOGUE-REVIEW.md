@@ -3,7 +3,7 @@
 
 Human selection is separate from graphical approval. Original similarity assignments remain proposals.
 
-Current catalogue: **95 models / 194 compositions**; **48 compositions graphically approved**.
+Current catalogue: **96 models / 194 compositions**; **52 compositions graphically approved**.
 Original coverage: **1073 exports / 1005 exact-source groups**.
 
 ## Source selection progress
@@ -12,12 +12,12 @@ Original coverage: **1073 exports / 1005 exact-source groups**.
 | --- | ---: | ---: |
 | discard | 0 | 0 |
 | exclude | 1 | 1 |
-| keep | 49 | 45 |
-| merge | 1 | 1 |
-| pending | 1022 | 958 |
+| keep | 57 | 49 |
+| merge | 9 | 8 |
+| pending | 1006 | 947 |
 | preset | 0 | 0 |
 
-Composition decisions: exclude: 1, keep: 48, pending: 145.
+Composition decisions: exclude: 1, keep: 52, pending: 141.
 
 ## Ordered work
 
@@ -43,14 +43,13 @@ they must not enter the final usable selection or its packages. No graphical app
 
 ## Current original selection
 
-**Quotations and dialogue — Statements**
+**Icon-led statements — Statements**
 
 | Original | Current composition | Proposal |
 | --- | --- | --- |
-| figma-0651 | chat-dialogue | Keep as a quotation model with editable quotation and attribution; its current chat assignment should be corrected after selection. |
-| figma-0022 | chat-three-messages | Keep as a three-message dialogue variant with editable message text. |
-| figma-0482 | speech-panel | Keep as a separate shared-speech composition with editable text, caption and three person icons. |
-| figma-0765 | people-speech-cards | Keep as an individual-speech variant with three editable messages, names, person icons and an optional concluding callout. |
+| figma-1003 | icon-spotlight-light | Keep a statement with one replaceable icon and editable text on the native light background. Group with the blue example while retaining its measured icon and text geometry. |
+| figma-0383 | icon-spotlight-blue | Keep the blue icon-led statement in the same family; retain the original larger icon geometry if needed as a variant, with a replaceable icon and editable text. |
+| figma-0038 | paired-icons-blue | Keep as a two-icon statement variant without required text. Both icons should be independently replaceable while retaining their original bounds. |
 
 ## Maintainer commands
 

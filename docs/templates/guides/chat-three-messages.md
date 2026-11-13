@@ -4,7 +4,7 @@
 
 Focus attention on one message using the chat three messages layout.
 
-Model: `chat-three-messages` · Family: Statements · Status: **in review**.
+Model: `chat-three-messages` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/chat-three-messages.tex)
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=three-messages,palette=light]{dialogue}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -38,12 +38,12 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
+| `text/1` | `message-one` | Editable text |
+| `text/2` | `message-two` | Editable text |
+| `text/3` | `message-three` | Editable text |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
-| `icon/3`, `image/3`, `graphic/3` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/2`, `image/2`, `graphic/2` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
-| `text/1` | `text-1` | Editable text |
-| `text/3` | `title` | Main text |
-| `text/2` | `text-3` | Editable text |
+| `icon/3`, `image/3`, `graphic/3` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -62,8 +62,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/3={Slide title},
-  text/1={Supporting explanation}
+  text/1={A first message opens the conversation.},
+  text/2={A second message asks for an explanation.}
 ]{chat-three-messages}
 ```
 
@@ -79,8 +79,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/3={Slide title},
-  text/1={Supporting explanation}
+  text/1={A first message opens the conversation.},
+  text/2={A second message asks for an explanation.}
 ]{chat-three-messages}
 \end{document}
 ```
@@ -100,12 +100,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
+| <code>message-one</code> | Editable text (text) | upper centre | 41.1% wide × 11.5% high | <code>A first message opens the conversation.</code> |
+| <code>message-two</code> | Editable text (text) | middle centre | 42.7% wide × 18.0% high | <code>A second message asks for an explanation.</code> |
+| <code>message-three</code> | Editable text (text) | lower centre | 23.9% wide × 7.3% high | <code>A short reply.</code> |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 47.7% wide × 16.8% high | <code>\studiopaletteimage[width=1695\studiounit]{images/studio/collection/figma-0046-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 31.7% wide × 10.8% high | <code>\studiopaletteimage[width=1127\studiounit]{images/studio/collection/figma-0046-part-02.pdf}</code> |
 | <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 48.5% wide × 22.0% high | <code>\studiopaletteimage[width=1724\studiounit]{images/studio/collection/figma-0046-part-03.pdf}</code> |
-| <code>text-1</code> | Editable text (text) | middle centre | 43.5% wide × 11.5% high | <code>Supporting explanation</code> |
-| <code>title</code> | Main text (text) | lower centre | 26.1% wide × 5.6% high | <code>Slide title</code> |
-| <code>text-3</code> | Editable text (text) | middle centre | 44.7% wide × 15.9% high | <code>Supporting explanation.\\Add your own details.</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 31.7% wide × 10.8% high | <code>\studiopaletteimage[width=1127\studiounit]{images/studio/collection/figma-0046-part-02.pdf}</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

@@ -111,3 +111,9 @@ the authoring workflow above. Personal content remains independent; canonical
 layout corrections reach linked decks on their next build. Legacy snapshots require
 explicit migration. Every official pack must use catalogue entries, including
 fixed-content presets when customization is inappropriate.
+
+Maintenance background rule: verify each compiled slide canvas against its native
+colour before every comparison and guide preview. Light is `#f9f9f9`; preserve
+explicit original white/photo exceptions and the original blue. The automatic
+`review_backgrounds` check runs on cached comparisons too and on long/empty
+specimens. Never sample the white comparison-sheet margin as the slide canvas.

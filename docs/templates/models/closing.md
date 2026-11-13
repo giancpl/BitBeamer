@@ -28,7 +28,7 @@ Original palettes: blue.
 | `subtitle` | <code></code> | 32.3% wide × 3.9% high |
 | `copyright` | <code>\textcopyright{} \the\year\ BitPolito</code> | 41.7% wide × 6.0% high |
 
-Layout options: `qrcode=true` (boolean). See the full slot guide for both treatments.
+Layout options: `qrcode=true` (boolean). See the full slot guide for supported values.
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

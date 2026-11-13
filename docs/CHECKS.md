@@ -1,5 +1,141 @@
 # Verification report
 
+## Quotation and dialogue approval checkpoint — 2026-11-13
+
+The user explicitly approved the four compositions: quotation (all four widths),
+three-message chat, shared speech with three people, and individual speech cards.
+Native palettes, automatic punctuation, measured quotation height, semantic icon
+replacement and optional conclusion are included. The catalogue now has 52
+graphically approved compositions. Official lesson content retains its separate
+review status. Superseded local proofs are removed after approval; canonical
+examples, source references, guide previews and the latest validated family
+archive are retained. The following dated entries record the preceding review.
+
+## Automatic quotation punctuation — 2026-11-13
+
+The quotation template now inserts opening/closing double quotation marks and
+an em dash plus a nonbreaking space before its attribution. Fields contain bare
+text. Punctuation is measured inside the text boxes before panel height is
+computed; empty fields produce no stray signs. This applies to all four widths.
+
+Official lesson callers, current review commands and customization examples no
+longer supply their own outer marks or attribution dash. Retained English
+examples migrate those delimiters during generation; the historical content
+audit remains unchanged. Model, slot and usage guides describe the bare-field
+contract. Graphical approval is still pending.
+
+Fourteen rendered quotation specimens passed exact punctuation, text bounds and
+native-background checks, including the long attribution, manual lines, empty
+fields and four widths. All affected quotation specimens and four lesson/block
+pages were visually inspected. The two lesson decks and two blocks compiled;
+the historical-content generation regression and explicit overflow check passed.
+See `build/checks/quotation-adaptive/punctuation.json` and
+`build/checks/quotation-punctuation-negative/report.json`.
+
+The full suite completed with 238 tests, one skipped and no failures. Review,
+guide, library and 361-file documentation checks passed. All five isolated
+Overleaf project documents compiled successfully with embedded fonts.
+Validation: `build/review/validation/quotation-punctuation/report.json`.
+
+## Adaptive quotation panels and default background checks — 2026-11-13
+
+Searched all 1,073 supplied SVG exports for the layered quotation geometry and
+visually inspected all matches: 12 exports in eight exact groups. Exact duplicates
+appear once in the reference survey. The user explicitly selected four widths:
+compact (1596), medium (1884), standard (2108), and wide (2427.89), on the
+3556-unit canvas. The shorter standard original is covered by measured panel
+height rather than another variant. Selection remains separate from graphical
+approval; the 48 prior approvals are preserved.
+
+`\studiotemplate[width=standard,quote={...},attribution={...}]{quotation}`
+keeps both Inter sizes fixed, measures text and attribution independently, and
+centers the complete layered panel. Empty fields remove their measured height
+and the inter-field gap. The panel reports overflow above 1300 source units.
+Original layer offsets and corner radii follow the chosen width. Both panel
+layers use `#f9f9f9` on the native `#001ce0` canvas. The two official Musa
+consumers use the medium width; obsolete fixed-panel resources were removed
+from their dependency records, with original artwork retained for provenance.
+
+`review_backgrounds.py` now checks compiled native canvases before interactive
+comparisons (including cache hits), customization specimens and new guide
+previews. Light means `#f9f9f9`; explicit original white/photo exceptions remain
+native. It reads opaque rectangle fills before raster quantisation and ignores
+the white comparison-sheet margins and non-rectangular decoration. Palette
+words inside editable copy do not change the expected canvas. This rule is also
+recorded in AGENTS and the maintainer workflow.
+
+Validation:
+
+- 238 unit tests passed, with one test skipped; seven background
+  regressions cover wrong and implicit white, native exceptions, palette choices,
+  cached PDFs and decoration.
+- All 26 specimen canvases passed the native-colour audit. Fourteen quotation
+  cases passed bounds and font-size checks, including all four widths with short
+  and longer wrapping, manual breaks, long attribution, and empty fields.
+- Ten negative runtime cases reported invalid width/fields/icons or excess text.
+- Both affected lesson decks and both topic blocks compiled successfully; their
+  four quotation pages were visually inspected at the medium width.
+- Review/source/guide/library checks and the complete original-source ledger
+  passed. The unified guide verified 749 commands; all 15 offline Chromium cases
+  passed without JavaScript errors or network access.
+- The optional quotation/dialogue archive is 997,415 bytes. All five documents
+  compiled in isolation, without checkout access, SVG conversion or shell escape;
+  fonts were embedded and layout diagnostics were clear.
+
+Current proof: `build/review/batches/comparisons.pdf` (28 pages; only the four
+pending Statements compositions, customization specimens and original survey).
+Native checks: `build/checks/quotation-adaptive/report.json`;
+`build/review/batches/dialogue-01/backgrounds.json`;
+`build/review/specimens/dialogue-01/backgrounds.json`.
+Originals: `docs/STUDIO-QUOTATION-REFERENCES.md` and
+`build/review/reference-surveys/quotation/survey.pdf`.
+Isolated package checks: `build/review/validation/quotation-delivery/report.json`.
+No graphical approval, release or remote CI success is inferred from these checks.
+
+## Quotation and dialogue reconstruction — 2026-11-13
+
+The user selected all four original candidates in `dialogue-selection-01`:
+figma-0651, figma-0022, figma-0482 and figma-0765. Exact export duplicates share
+their decisions. Graphical approval remains pending for all four compositions.
+The quotation now has its own `quotation` model; three `dialogue` variants retain
+their different source geometries. There are 96 grouped models and 194 canonical
+compositions; the 48 earlier graphical approvals remain unchanged.
+
+Replaced the old quotation/dialogue field syntax with semantic quotation,
+attribution, message and person-name fields. All six person icons are independently
+replaceable with icons, images or custom graphics. Original prepared vector parts
+are unchanged; clipping their transparent padding yields uniform visible-ink icon
+slots (246 units for the shared speech and 148 for individual speech). Person
+names align below the visible icon centers. The concluding callout is optional.
+Archived content-field names remain provenance metadata and still restore the
+English teaching examples; they are not public compatibility aliases.
+
+The current comparison contains only these four unapproved original/current
+pairs and twelve customization specimens, with exact commands on all sixteen
+pages. All specimen pages and all five affected official consumer pages were
+visually inspected. Verified native blue/F9 backgrounds on all sixteen pages,
+wide/tall replacement proportions and the hidden conclusion. Nine negative
+runtime cases pass: five capacity failures, three obsolete-key/variant failures
+and an unknown-icon failure. Fonts remain fixed; there is no text scaling.
+
+Migrated three official lesson callers and their field contracts. The affected
+three decks (`bitgeneration-economics`, `bitcoin-introduction-full`,
+`bitpolito-introduction`) and two blocks (`money-278b85da`,
+`bitcoin-basics-409e7b71`) passed. Rechecked the introduction deck after the final
+icon normalization. Source/dependency hashes and affected previews are current.
+
+The final suite passed 231 tests in 240.218 seconds, with one optional check
+skipped. Catalogue/review, all 749 guide previews and offline Chromium checks
+passed. The 995,006-byte optional four-composition ZIP passed five isolated
+pdfLaTeX builds with embedded fonts and no layout diagnostics. No graphical
+approval or release publication is inferred from these checks.
+
+The pushed preceding checkpoint is `ac5d34d`. Its remote run 43402889582 passed
+Linux/macOS/Windows portability and the browser step, but failed at the same full
+lesson-collection build step as run 43312505529 (nine decks and seventeen blocks).
+The uncommitted quotation/dialogue reconstruction is not part of that run.
+Green CI remains an outstanding final catalogue-delivery gate.
+
 ## Approved text-layout checkpoint — 2026-11-13
 
 The user explicitly approved `title-paragraphs`, `title-centered-paragraphs`,

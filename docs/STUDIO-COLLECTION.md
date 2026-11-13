@@ -496,3 +496,11 @@ The four compositions `title-paragraphs`, `title-centered-paragraphs`,
 includes the reviewed long-copy, deliberate breaks, independent empty fields and
 native backgrounds. Their original comparisons no longer appear in active review.
 The unresolved gradient remains excluded from this edition.
+
+## Selected quotations and dialogue
+
+Four originals were selected on 2026-11-13 and remain in graphical review.
+See [semantic commands, icons and text capacity](STUDIO-DIALOGUES.md). The
+quotation has a separate model; the three dialogue variants preserve their
+different original geometries. All reviewed text, names and person icons are
+editable, and the individual-speech conclusion is optional.

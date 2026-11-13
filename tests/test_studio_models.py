@@ -18,7 +18,7 @@ import studio_templates
 class StudioModelTests(unittest.TestCase):
     def test_every_legacy_composition_maps_once_without_merging_distinct_geometry(self):
         entries=studio_templates.inspect_templates(ROOT)
-        self.assertEqual(studio_models.validate(ROOT,entries),95)
+        self.assertEqual(studio_models.validate(ROOT,entries),len(studio_models.load_models(ROOT)['models']))
         members=studio_models.membership(ROOT)
         self.assertEqual(set(members),{e['id'] for e in entries})
         self.assertEqual(members['privacy-levels'][0]['id'],members['privacy-levels-blue'][0]['id'])
@@ -346,13 +346,14 @@ class StudioModelTests(unittest.TestCase):
         data['variant_aliases']=studio_models.load_models(ROOT).get('variant_aliases',[])
         script=r'''const assert=require('node:assert/strict');const {matches,pageRows,resolveChoice}=require(process.argv[1]);
 const d=JSON.parse(require('node:fs').readFileSync(0,'utf8'));
-assert.equal(matches(d.rows,'','studio').length,95);
-assert.equal(matches(d.rows,'','featured').length,21);
+assert.equal(matches(d.rows,'','studio').length,d.rows.filter(r=>r.kind==='studio').length);
+assert.equal(matches(d.rows,'','featured').length,d.rows.filter(r=>r.featured).length);
 assert.equal(resolveChoice(d,'cover','pattern','blue').row.id,'cover');
 assert.equal(resolveChoice(d,'levels','default','blue').row.choices[resolveChoice(d,'levels','default','blue').index].id,'privacy-levels-blue');
 assert.equal(resolveChoice(d,'cover','script').row.id,'protocol');
 assert.equal(resolveChoice(d,'statement','credit').row.id,'timeline');
-assert.equal(resolveChoice(d,'dialogue','two-messages').row.choices[resolveChoice(d,'dialogue','two-messages').index].id,'chat-dialogue');
+assert.equal(resolveChoice(d,'quotation','layered').row.choices[resolveChoice(d,'quotation','layered').index].id,'chat-dialogue');
+assert.equal(d.variant_aliases.some(a=>a.model==='dialogue' && a.variant==='two-messages'),false);
 assert.equal(pageRows(d.rows,0).length,12);'''
         subprocess.run(['node','-e',script,str(ROOT/'docs/slides/guide.js')],input=json.dumps(data),check=True,capture_output=True,text=True)
 

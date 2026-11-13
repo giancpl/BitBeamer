@@ -381,20 +381,20 @@
           "file": "docs/slides/previews/hd/bitpolito-introduction-02.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "a76db6490fb4a365685b5c7050207112c3871dcc8d7bd0143175e82bed36cd19",
+          "sha256": "4e73126dc57f174df2cef6b64ba2ed7088db5dd2c08d264a3e488ed6867d7543",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/bitpolito-introduction-02.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "ffa53d3f210847db16bd3561cf0fdf93b7d856cb1f15d39b676d4116d6551d1f",
+          "sha256": "a1a8bbc8fcf202ea1c55ce2a21facb153918b033b6fb9f35397e89e1fa2ad211",
           "width": 640
         }
       },
-      "page": 4,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "6acc05de348e1a33075423cf16c1e8ec3c71f553f44b576a4cb688c4ec5eded3"
+      "signature": "93308e3f15580b11d40d783deeed33e3c8e1c7c90e74c88cd44de29662c13d86"
     },
     "bitpolito-introduction-03": {
       "canvas": "complete slide; no catalogue labels",
@@ -733,20 +733,20 @@
           "file": "docs/slides/previews/hd/chat-dialogue.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "5b0cd9beece89df1b3463bee09eaa55d4c1f188c7bcb9c81b590f299ccf4d94b",
+          "sha256": "8ad255cc469f7c29e4c4e14de9381658c367840b6ab5497f25e06cff2c6ee51d",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/chat-dialogue.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "be4717ecf8a05b5a819aafc47ecbd93b685b1987751932627bfbbea78791f4f6",
+          "sha256": "17584a5540bc477a7a698d94a6246ce0375c3ca415d047abd55468409f13f271",
           "width": 640
         }
       },
-      "page": 23,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "e698486f74dd7551d0b1fcdeb704900837c76501a546bba9f8d4cfcd150ed32c"
+      "signature": "cd18f027dc7957367ff82befb0fd7638bbfdccb55c27f5ea7f226289b6193a48"
     },
     "chat-three-messages": {
       "canvas": "complete slide; no catalogue labels",
@@ -755,20 +755,20 @@
           "file": "docs/slides/previews/hd/chat-three-messages.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "bf3ff178039b97c4728cce056c111ed4e6714bcf4be94c7c3efa8d3003643170",
+          "sha256": "1fcb0305d47e7d7ae62aef71e627dac22d0a3264b5d90513ae29403ccfd384fa",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/chat-three-messages.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "2a3daf7ae9fa78db385f161c3889025a9cb24ccff6243316a649649a5200a2b6",
+          "sha256": "2c497cf7b6e64843c189938f7258ffc0001d678457c52a3d61ff6b06c847e158",
           "width": 640
         }
       },
-      "page": 1,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "ed40823a72e944e07c495e92de551737a0830a3c010d1686735030d453b570fe"
+      "signature": "e88bb65d5da79c02729d6c51735ebf5d6d30a6231ea907b1eccd2a85958fd133"
     },
     "checklist-rail": {
       "canvas": "complete slide; no catalogue labels",
@@ -14065,20 +14065,20 @@
           "file": "docs/slides/previews/hd/official-slide-374cc501d7e2.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "17524dd0be683966f2e8c448b7d2eaf86e7fb16b62c2dd3c729915c77aabb1ff",
+          "sha256": "f274d05a740903b9c70a2cc6160ed229928c9a03d9caf5ca2322f1d611c3237f",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/official-slide-374cc501d7e2.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "dac699c345b9c3fb1fbcebabe94d4bf992a065167b74cf9c6b9e10cfaba4ae75",
+          "sha256": "261c6add76ab1cd52a6ce766b8d58312c73905b5cf633f8e1ed73b8362bedb8c",
           "width": 640
         }
       },
       "page": 3,
       "render_source": "pdf",
-      "signature": "b360b0c1cd465577c35b3d91e9939c520d212d3976aa89e258afa9107c743c83"
+      "signature": "58d0721813d339d360b159665b9f629184e7402b401a24df968ef1fdc4448808"
     },
     "official-slide-3a729e0bd855": {
       "canvas": "complete slide; no catalogue labels",
@@ -14153,20 +14153,20 @@
           "file": "docs/slides/previews/hd/official-slide-b389b7b875ae.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "17524dd0be683966f2e8c448b7d2eaf86e7fb16b62c2dd3c729915c77aabb1ff",
+          "sha256": "f274d05a740903b9c70a2cc6160ed229928c9a03d9caf5ca2322f1d611c3237f",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/official-slide-b389b7b875ae.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "dac699c345b9c3fb1fbcebabe94d4bf992a065167b74cf9c6b9e10cfaba4ae75",
+          "sha256": "261c6add76ab1cd52a6ce766b8d58312c73905b5cf633f8e1ed73b8362bedb8c",
           "width": 640
         }
       },
-      "page": 13,
+      "page": 2,
       "render_source": "pdf",
-      "signature": "a4b98bda3ee66dddb5b3447e0f08a99571a1ede712fc08baa08f59ac3ab58ad1"
+      "signature": "9f88ec43ea41295825b74ddfbec23506fb414a8b99afc9b3475d68b21c3e065a"
     },
     "official-slide-bb3b5b036f0e": {
       "canvas": "complete slide; no catalogue labels",
@@ -14593,20 +14593,20 @@
           "file": "docs/slides/previews/hd/people-speech-cards.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "4358ac37b5d260ec81684a672599b96ebe57517b24ed796b4a3e4b5b5739b2db",
+          "sha256": "ef51c68a67194d6f444675f03c98a3ae33dd60dab2084f69bc64a9b4d72dae34",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/people-speech-cards.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "bbf881a721cac8f2acf8d73d3ceead02179802069818509e6b5a7d4a361f1f2b",
+          "sha256": "da415ed1cbaac47a028843ae38244c8dd85f0d58dc2696761c532cbbed975084",
           "width": 640
         }
       },
       "page": 2,
       "render_source": "pdf",
-      "signature": "3daa8e75b4ee595ccaa7bed145504de09c544e95dd5c74394d94d9c086ac18b2"
+      "signature": "b149a5c6919f596ebcef5dd05f91bd78135b721858a82d0f5b438867eec11711"
     },
     "personal-timeline": {
       "canvas": "complete slide; no catalogue labels",
@@ -15627,20 +15627,20 @@
           "file": "docs/slides/previews/hd/speech-panel.webp",
           "height": 900,
           "lossless": true,
-          "sha256": "3176bddfd11200eb621e3204975f030f2e7e32cf006c8f4316585de1af79dd82",
+          "sha256": "f40bf64aeac0def8bf7b446e693fede0652417b5d8c5da8061bb318cd4d0a54d",
           "width": 1600
         },
         "thumb": {
           "file": "docs/slides/previews/speech-panel.webp",
           "height": 360,
           "lossless": true,
-          "sha256": "7e8dabc3aa0957937b844bbe3c22d4cae1b625d0e985eccd61c1124b7de87c70",
+          "sha256": "b4616b4a2e5d06dc521ecedcef678ee5da1b615fbdad51042fb1316bb20e94e9",
           "width": 640
         }
       },
-      "page": 24,
+      "page": 1,
       "render_source": "pdf",
-      "signature": "ffa54f568a7036f9ca006a827a9b4a24fa59ef87d30b5a885a8dd1abd77e026b"
+      "signature": "2c5bc68f9a69f3f110c8bf421af5089bda1969aef4800e54f3f9b6f868568705"
     },
     "split-currency": {
       "canvas": "complete slide; no catalogue labels",

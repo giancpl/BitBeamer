@@ -33,7 +33,7 @@ Numeric defaults and charts are illustrative.
 | `words` | list | `word,word,word,word,word,word,word,word,word,word,word,word` | Exactly twelve cell values, in row-major order. |
 | `numbered` | boolean | `true` | Prefix each cell with its one-based position. |
 
-For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+For example: `\studiotemplate[variant=plain,words=word,word,word,word,word,word,word,word,word,word,word,word]{word-grid}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 

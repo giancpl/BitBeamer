@@ -39,7 +39,7 @@ Original palettes: light.
 | `word-eleven` | <code>Word</code> | 14.9% wide × 7.6% high |
 | `word-twelve` | <code>Word</code> | 14.9% wide × 7.6% high |
 
-Layout options: `words=word,word,word,word,word,word,word,word,word,word,word,word` (list), `numbered=true` (boolean). See the full slot guide for both treatments.
+Layout options: `words=word,word,word,word,word,word,word,word,word,word,word,word` (list), `numbered=true` (boolean). See the full slot guide for supported values.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 
@@ -70,7 +70,7 @@ Original palettes: light.
 | `note-title` | <code>Additional note</code> | 21.1% wide × 6.2% high |
 | `note` | <code>Add a short supporting note.</code> | 21.1% wide × 11.0% high |
 
-Layout options: `words=word,word,word,word,word,word,word,word,word,word,word,word` (list), `numbered=true` (boolean). See the full slot guide for both treatments.
+Layout options: `words=word,word,word,word,word,word,word,word,word,word,word,word` (list), `numbered=true` (boolean). See the full slot guide for supported values.
 
 Omitted fields retain these descriptive defaults; empty values retain their allocated space. Numbers and charts are illustrative.
 

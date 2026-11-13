@@ -22,7 +22,7 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `oversized-word` | `statement` | `clipped` | light |
 | `icon-spotlight-light` | `icon-spotlight` | `compact` | light |
 | `icon-spotlight-blue` | `icon-spotlight` | `large` | blue |
-| `chat-dialogue` | `dialogue` | `quotation` | blue |
+| `chat-dialogue` | `quotation` | `layered` | blue |
 | `speech-panel` | `dialogue` | `people` | light |
 | `chat-three-messages` | `dialogue` | `three-messages` | light |
 | `people-speech-cards` | `dialogue` | `cards` | light |
@@ -206,4 +206,3 @@ All previous names remain usable. Defaults are neutral; original references rema
 | --- | --- |
 | `cover/script` | `protocol/message-relay` |
 | `statement/credit` | `timeline/three-milestones` |
-| `dialogue/two-messages` | `dialogue/quotation` |

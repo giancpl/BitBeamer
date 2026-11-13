@@ -1,0 +1,12 @@
+% Fixed bubble envelope. Center the text block without scaling its font.
+\newcommand{\studiodialoguetext}[9]{%
+ \ifstudiogeometryonly\else
+ \typeout{STUDIO-FIELD: \studiopilotname/#1}%
+ \node[anchor=center] at ({#2+#4/2},{#3+#5/2}) {\setbox\studiotextbox=\vbox{\hsize=#4\studiounit\parindent=0pt
+  \hfuzz=\dimexpr\paperheight/400\relax\overfullrule=2pt
+  \normalfont\sffamily\fontsize{#6\studiounit}{#7\studiounit}\selectfont #8\noindent #9\par}%
+ \ifdim\dimexpr\ht\studiotextbox+\dp\studiotextbox\relax>#5\studiounit
+  \PackageError{bitpolitostudiomeasured}{Text overflow in \studiopilotname/#1}{Shorten the message or insert a deliberate line break. Bubble text never shrinks.}%
+ \fi
+ \box\studiotextbox};%
+ \fi}

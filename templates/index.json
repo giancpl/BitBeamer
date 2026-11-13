@@ -2483,9 +2483,16 @@
       "category": "Statements",
       "source": "templates/studio/chat-dialogue.tex",
       "references": [
-        "figma-0757"
+        "figma-0757",
+        "figma-0039",
+        "figma-0197",
+        "figma-0652",
+        "figma-0653",
+        "figma-0664",
+        "figma-0733",
+        "figma-0893"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "All four quotation widths selected by the user on 2026-11-13. Native blue canvas and #f9f9f9 panels. Automatic height at fixed Inter sizes. Explicitly approved by the user on 2026-11-13. Quotation marks and an em dash before attribution are supplied automatically; fields contain bare text.",
       "canvas": [
         3556.0,
         2000.0
@@ -2493,29 +2500,13 @@
       "background": "bitpolito",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            690,
-            517,
-            2163,
-            951
-          ],
-          "default": "\\studiopaletteimage[width=2163\\studiounit]{images/studio/collection/figma-0757-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "title",
+          "name": "quote",
           "type": "text",
-          "default": "A concise quotation, kept as one paragraph. Replace it with the words you want to highlight.",
+          "default": "A clear quotation can highlight one idea while keeping its source in a separate field.",
           "box": [
             790.57,
             635.816,
-            2031.09,
+            1930,
             541.253
           ],
           "source_ink_box": [
@@ -2534,16 +2525,18 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "historical_field": "title",
+          "adaptive_box": "Text width is panel width minus 178 units; measured text height. Centered layered panel, fixed padding, maximum height 1300."
         },
         {
-          "name": "text-2",
+          "name": "attribution",
           "type": "text",
           "default": "Source or reference",
           "box": [
             791.492,
             1281.52,
-            2054.4926666666665,
+            1930,
             85.80466666666675
           ],
           "source_ink_box": [
@@ -2562,25 +2555,42 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "historical_field": "text-2",
+          "adaptive_box": "Text width is panel width minus 178 units; measured text height. Centered layered panel, fixed padding, maximum height 1300."
         }
       ],
-      "parts": [
-        "figma-0757-part-01"
-      ],
+      "parts": [],
       "reconstruction": "measured",
       "intentional_differences": [
         "Inter replaces outlined source typography; copy is translated to English.",
-        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions."
+        "Typography and text alignment revised against the original; Inter and English copy remain intentional substitutions.",
+        "The layered panel adapts its height to quote and attribution; original corner radii, stroke and layer offset remain fixed."
       ],
       "slot_parts": [],
-      "model": "dialogue",
-      "variant": "quotation",
+      "model": "quotation",
+      "variant": "layered",
       "native_palette": "blue",
       "palettes": [
         "blue"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/quotation-panel.tex"
+      ],
+      "options": {
+        "width": {
+          "type": "choice",
+          "default": "standard",
+          "description": "Original panel width: compact, medium, standard or wide. Height follows measured text; fonts stay fixed."
+        }
+      },
+      "quotation_widths": {
+        "compact": 1596,
+        "medium": 1884,
+        "standard": 2108,
+        "wide": 2427.89
+      }
     },
     {
       "id": "speech-panel",
@@ -2591,7 +2601,7 @@
       "references": [
         "figma-0482"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected by the user on 2026-11-13. Semantic text and person-icon fields; native original artwork and fixed typography. Explicitly approved by the user on 2026-11-13.",
       "canvas": [
         1920.0,
         1080.0
@@ -2599,78 +2609,14 @@
       "background": "studio-paper",
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            420,
-            222,
-            1128,
-            376
-          ],
-          "default": "\\studiopaletteimage[width=1128\\studiounit]{images/studio/collection/figma-0482-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            536,
-            589,
-            295,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/collection/figma-0482-part-02.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            837,
-            589,
-            295,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/collection/figma-0482-part-03.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            1138,
-            589,
-            294,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=294\\studiounit]{images/studio/collection/figma-0482-part-04.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "title",
+          "name": "message",
           "type": "text",
-          "default": "Slide title",
+          "default": "A shared idea starts a conversation.",
           "box": [
             491.773,
-            277.715,
-            1028.6,
-            135.304
+            260,
+            980,
+            154
           ],
           "source_ink_box": [
             491.773,
@@ -2688,12 +2634,13 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "historical_field": "title"
         },
         {
-          "name": "text-2",
+          "name": "caption",
           "type": "text",
-          "default": "Date or supporting note",
+          "default": "Context or date",
           "box": [
             491.824,
             423.004,
@@ -2716,7 +2663,108 @@
           "slot": {
             "number": 2,
             "key": "text/2"
+          },
+          "historical_field": "text-2"
+        },
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "box": [
+            420,
+            222,
+            1128,
+            376
+          ],
+          "default": "\\studiopaletteimage[width=1128\\studiounit]{images/studio/collection/figma-0482-part-01.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic"
           }
+        },
+        {
+          "name": "graphic-2",
+          "type": "graphic",
+          "box": [
+            536.525,
+            588.9,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[trim={0.69100bp 48.26601bp 48.64101bp 0.06600bp},clip,width=246\\studiounit,height=246\\studiounit,keepaspectratio]{images/studio/collection/figma-0482-part-02.pdf}",
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic",
+            "content": [
+              123.0,
+              123.0,
+              246,
+              246
+            ]
+          },
+          "source_ink_box": [
+            536.6909999847412,
+            589.0659999996424,
+            245.66799354553223,
+            245.66799353063107
+          ]
+        },
+        {
+          "name": "graphic-3",
+          "type": "graphic",
+          "box": [
+            837.268,
+            588.9,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[trim={0.43400bp 48.26601bp 48.89799bp 0.06600bp},clip,width=246\\studiounit,height=246\\studiounit,keepaspectratio]{images/studio/collection/figma-0482-part-03.pdf}",
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "whole graphic",
+            "content": [
+              123.0,
+              123.0,
+              246,
+              246
+            ]
+          },
+          "source_ink_box": [
+            837.4339999854565,
+            589.0659999996424,
+            245.66800501942635,
+            245.66799353063107
+          ]
+        },
+        {
+          "name": "graphic-4",
+          "type": "graphic",
+          "box": [
+            1138.016,
+            588.9,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[trim={0.18000bp 48.26601bp 48.14799bp 0.06600bp},clip,width=246\\studiounit,height=246\\studiounit,keepaspectratio]{images/studio/collection/figma-0482-part-04.pdf}",
+          "slot": {
+            "number": 4,
+            "key": "graphic/4",
+            "role": "whole graphic",
+            "content": [
+              123.0,
+              123.0,
+              246,
+              246
+            ]
+          },
+          "source_ink_box": [
+            1138.1800000071526,
+            589.0659999996424,
+            245.67200499773026,
+            245.66799353063107
+          ]
         }
       ],
       "parts": [
@@ -2737,7 +2785,10 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/dialogue-text.tex"
+      ]
     },
     {
       "id": "chat-three-messages",
@@ -2747,7 +2798,7 @@
         "figma-0046"
       ],
       "source": "templates/studio/chat-three-messages.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected by the user on 2026-11-13. Semantic text and person-icon fields; native original artwork and fixed typography. Explicitly approved by the user on 2026-11-13.",
       "number": 21,
       "canvas": [
         3556.0,
@@ -2755,6 +2806,93 @@
       ],
       "background": "studio-paper",
       "fields": [
+        {
+          "name": "message-one",
+          "type": "text",
+          "default": "A first message opens the conversation.",
+          "box": [
+            930,
+            535,
+            1460,
+            230
+          ],
+          "source_ink_box": [
+            940.637,
+            556.281,
+            1427.035,
+            183.598
+          ],
+          "font_size": 84.5507,
+          "leading": 98.0788,
+          "source_node": [
+            6
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          },
+          "historical_field": "text-1"
+        },
+        {
+          "name": "message-two",
+          "type": "text",
+          "default": "A second message asks for an explanation.",
+          "box": [
+            1126.75,
+            880,
+            1520,
+            360
+          ],
+          "source_ink_box": [
+            1126.75,
+            908.699,
+            1409.371,
+            271.223
+          ],
+          "font_size": 84.5507,
+          "leading": 98.0788,
+          "source_node": [
+            8
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          },
+          "historical_field": "text-3"
+        },
+        {
+          "name": "message-three",
+          "type": "text",
+          "default": "A short reply.",
+          "box": [
+            940,
+            1339,
+            850,
+            146
+          ],
+          "source_ink_box": [
+            943.844,
+            1374.59,
+            574.547,
+            64.332
+          ],
+          "font_size": 85.773,
+          "leading": 99.497,
+          "source_node": [
+            7
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          },
+          "historical_field": "title"
+        },
         {
           "name": "graphic-1",
           "type": "graphic",
@@ -2768,22 +2906,6 @@
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            823,
-            1329,
-            1127,
-            215
-          ],
-          "default": "\\studiopaletteimage[width=1127\\studiounit]{images/studio/collection/figma-0046-part-02.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
             "role": "whole graphic"
           }
         },
@@ -2804,87 +2926,19 @@
           }
         },
         {
-          "name": "text-1",
-          "type": "text",
-          "default": "Supporting explanation",
+          "name": "graphic-2",
+          "type": "graphic",
           "box": [
-            940.637,
-            556.281,
-            1545.45,
-            230.101
+            823,
+            1329,
+            1127,
+            215
           ],
-          "source_ink_box": [
-            940.637,
-            556.281,
-            1427.035,
-            183.598
-          ],
-          "font_size": 84.5507,
-          "leading": 98.0788,
-          "source_node": [
-            6
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "title",
-          "type": "text",
-          "default": "Slide title",
-          "box": [
-            943.844,
-            1374.59,
-            928.1353333333332,
-            111.50733333333343
-          ],
-          "source_ink_box": [
-            943.844,
-            1374.59,
-            574.547,
-            64.332
-          ],
-          "font_size": 85.773,
-          "leading": 99.497,
-          "source_node": [
-            7
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
+          "default": "\\studiopaletteimage[width=1127\\studiounit]{images/studio/collection/figma-0046-part-02.pdf}",
           "slot": {
             "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "Supporting explanation.\\\\Add your own details.",
-          "box": [
-            1126.75,
-            908.699,
-            1590.78,
-            317.726
-          ],
-          "source_ink_box": [
-            1126.75,
-            908.699,
-            1409.371,
-            271.223
-          ],
-          "font_size": 84.5507,
-          "leading": 98.0788,
-          "source_node": [
-            8
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 2,
-            "key": "text/2"
+            "key": "graphic/3",
+            "role": "whole graphic"
           }
         }
       ],
@@ -2905,7 +2959,10 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/dialogue-text.tex"
+      ]
     },
     {
       "id": "oversized-number-light",
@@ -3820,7 +3877,7 @@
         "figma-0765"
       ],
       "source": "templates/studio/people-speech-cards.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected by the user on 2026-11-13. Semantic text and person-icon fields; native original artwork and fixed typography. Explicitly approved by the user on 2026-11-13.",
       "number": 28,
       "canvas": [
         1920.0,
@@ -3828,6 +3885,209 @@
       ],
       "background": "studio-paper",
       "fields": [
+        {
+          "name": "message-one",
+          "type": "text",
+          "default": "First point",
+          "box": [
+            309.401,
+            199,
+            246.591,
+            105
+          ],
+          "source_ink_box": [
+            364.035,
+            213.715,
+            137.246,
+            70.387
+          ],
+          "font_size": 35.507,
+          "leading": 41.188,
+          "source_node": [
+            4
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 1,
+            "key": "text/1"
+          },
+          "historical_field": "text-1"
+        },
+        {
+          "name": "message-two",
+          "type": "text",
+          "default": "Second point",
+          "box": [
+            654.409,
+            199,
+            356.587,
+            105
+          ],
+          "source_ink_box": [
+            712.59,
+            213.641,
+            239.762,
+            70.461
+          ],
+          "font_size": 35.507,
+          "leading": 41.188,
+          "source_node": [
+            5
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 2,
+            "key": "text/2"
+          },
+          "historical_field": "text-2"
+        },
+        {
+          "name": "message-three",
+          "type": "text",
+          "default": "Third point",
+          "box": [
+            1104.123,
+            199,
+            357.821,
+            105
+          ],
+          "source_ink_box": [
+            1166.441,
+            213.695,
+            232.027,
+            70.406
+          ],
+          "font_size": 33.144,
+          "leading": 38.447,
+          "source_node": [
+            6
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 3,
+            "key": "text/3"
+          },
+          "historical_field": "text-3"
+        },
+        {
+          "name": "name-one",
+          "type": "text",
+          "default": "Person 1",
+          "box": [
+            447.0605,
+            557,
+            250,
+            110
+          ],
+          "source_ink_box": [
+            502.484,
+            557.52,
+            141.035,
+            30.875
+          ],
+          "font_size": 40.579,
+          "leading": 47.071,
+          "source_node": [
+            8
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 4,
+            "key": "text/4"
+          },
+          "historical_field": "text-4"
+        },
+        {
+          "name": "name-two",
+          "type": "text",
+          "default": "Person 2",
+          "box": [
+            901.6875,
+            557,
+            250,
+            110
+          ],
+          "source_ink_box": [
+            962.059,
+            556.652,
+            127.543,
+            31.742
+          ],
+          "font_size": 40.579,
+          "leading": 47.071,
+          "source_node": [
+            10
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 5,
+            "key": "text/5"
+          },
+          "historical_field": "text-5"
+        },
+        {
+          "name": "name-three",
+          "type": "text",
+          "default": "Person 3",
+          "box": [
+            1351.449,
+            557,
+            250,
+            110
+          ],
+          "source_ink_box": [
+            1421.801,
+            556.992,
+            109.91,
+            31.488
+          ],
+          "font_size": 41.985,
+          "leading": 48.703,
+          "source_node": [
+            12
+          ],
+          "font_weight": "semibold",
+          "alignment": "left",
+          "slot": {
+            "number": 6,
+            "key": "text/6"
+          },
+          "historical_field": "title"
+        },
+        {
+          "name": "conclusion",
+          "type": "text",
+          "default": "A shared conclusion connects the three points.",
+          "box": [
+            425,
+            771.906,
+            1068,
+            113.41
+          ],
+          "source_ink_box": [
+            491.766,
+            771.906,
+            935.605,
+            90.766
+          ],
+          "font_size": 41.171,
+          "leading": 47.758,
+          "source_node": [
+            14
+          ],
+          "font_weight": "semibold",
+          "alignment": "center",
+          "slot": {
+            "number": 7,
+            "key": "text/7"
+          },
+          "historical_field": "text-7"
+        },
         {
           "name": "graphic-1",
           "type": "graphic",
@@ -3880,49 +4140,85 @@
           "name": "graphic-4",
           "type": "graphic",
           "box": [
-            498,
-            369,
-            196,
-            197
+            498.0605,
+            369.826,
+            148,
+            148
           ],
-          "default": "\\studiopaletteimage[width=196\\studiounit]{images/studio/collection/figma-0765-part-04.pdf}",
+          "default": "\\includegraphics[trim={0.35900bp 48.20300bp 48.23801bp 0.85500bp},clip,width=148\\studiounit,height=148\\studiounit,keepaspectratio]{images/studio/collection/figma-0765-part-04.pdf}",
           "slot": {
             "number": 4,
             "key": "graphic/4",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              74.0,
+              74.0,
+              148,
+              148
+            ]
+          },
+          "source_ink_box": [
+            498.3589999973774,
+            369.8550000190735,
+            147.40299341082573,
+            147.941997051239
+          ]
         },
         {
           "name": "graphic-5",
           "type": "graphic",
           "box": [
-            952,
-            369,
-            197,
-            197
+            952.6875,
+            369.826,
+            148,
+            148
           ],
-          "default": "\\studiopaletteimage[width=197\\studiounit]{images/studio/collection/figma-0765-part-05.pdf}",
+          "default": "\\includegraphics[trim={0.98400bp 48.20300bp 48.60899bp 0.85500bp},clip,width=148\\studiounit,height=148\\studiounit,keepaspectratio]{images/studio/collection/figma-0765-part-05.pdf}",
           "slot": {
             "number": 5,
             "key": "graphic/5",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              74.0,
+              74.0,
+              148,
+              148
+            ]
+          },
+          "source_ink_box": [
+            952.9840000271797,
+            369.8550000190735,
+            147.40700644254684,
+            147.941997051239
+          ]
         },
         {
           "name": "graphic-6",
           "type": "graphic",
           "box": [
-            1402,
-            369,
-            197,
-            197
+            1402.449,
+            369.826,
+            148,
+            148
           ],
-          "default": "\\studiopaletteimage[width=197\\studiounit]{images/studio/collection/figma-0765-part-06.pdf}",
+          "default": "\\includegraphics[trim={0.75000bp 48.20300bp 48.85201bp 0.85500bp},clip,width=148\\studiounit,height=148\\studiounit,keepaspectratio]{images/studio/collection/figma-0765-part-06.pdf}",
           "slot": {
             "number": 6,
             "key": "graphic/6",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              74.0,
+              74.0,
+              148,
+              148
+            ]
+          },
+          "source_ink_box": [
+            1402.75,
+            369.8550000190735,
+            147.3979949951172,
+            147.941997051239
+          ]
         },
         {
           "name": "graphic-7",
@@ -3938,202 +4234,6 @@
             "number": 7,
             "key": "graphic/7",
             "role": "whole graphic"
-          }
-        },
-        {
-          "name": "text-1",
-          "type": "text",
-          "default": "Label 1",
-          "box": [
-            309.40133333333335,
-            213.715,
-            246.59133333333335,
-            89.91566666666667
-          ],
-          "source_ink_box": [
-            364.035,
-            213.715,
-            137.246,
-            70.387
-          ],
-          "font_size": 35.507,
-          "leading": 41.188,
-          "source_node": [
-            4
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 1,
-            "key": "text/1"
-          }
-        },
-        {
-          "name": "text-2",
-          "type": "text",
-          "default": "Label 2",
-          "box": [
-            654.4093333333333,
-            213.641,
-            356.58733333333333,
-            89.98966666666666
-          ],
-          "source_ink_box": [
-            712.59,
-            213.641,
-            239.762,
-            70.461
-          ],
-          "font_size": 35.507,
-          "leading": 41.188,
-          "source_node": [
-            5
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 2,
-            "key": "text/2"
-          }
-        },
-        {
-          "name": "text-3",
-          "type": "text",
-          "default": "Label 3",
-          "box": [
-            1104.123,
-            213.695,
-            357.82099999999997,
-            88.63520000000001
-          ],
-          "source_ink_box": [
-            1166.441,
-            213.695,
-            232.027,
-            70.406
-          ],
-          "font_size": 33.144,
-          "leading": 38.447,
-          "source_node": [
-            6
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 3,
-            "key": "text/3"
-          }
-        },
-        {
-          "name": "text-4",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            502.484,
-            557.52,
-            167.4111333333333,
-            53.193266666666645
-          ],
-          "source_ink_box": [
-            502.484,
-            557.52,
-            141.035,
-            30.875
-          ],
-          "font_size": 40.579,
-          "leading": 47.071,
-          "source_node": [
-            8
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 4,
-            "key": "text/4"
-          }
-        },
-        {
-          "name": "text-5",
-          "type": "text",
-          "default": "Item",
-          "box": [
-            962.059,
-            556.652,
-            153.91913333333332,
-            54.06026666666665
-          ],
-          "source_ink_box": [
-            962.059,
-            556.652,
-            127.543,
-            31.742
-          ],
-          "font_size": 40.579,
-          "leading": 47.071,
-          "source_node": [
-            10
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 5,
-            "key": "text/5"
-          }
-        },
-        {
-          "name": "title",
-          "type": "text",
-          "default": "Title",
-          "box": [
-            1421.801,
-            556.992,
-            137.2004666666667,
-            54.57993333333336
-          ],
-          "source_ink_box": [
-            1421.801,
-            556.992,
-            109.91,
-            31.488
-          ],
-          "font_size": 41.985,
-          "leading": 48.703,
-          "source_node": [
-            12
-          ],
-          "font_weight": "semibold",
-          "alignment": "left",
-          "slot": {
-            "number": 6,
-            "key": "text/6"
-          }
-        },
-        {
-          "name": "text-7",
-          "type": "text",
-          "default": "Supporting explanation",
-          "box": [
-            395.8353333333334,
-            771.906,
-            1127.7783333333334,
-            113.4098666666667
-          ],
-          "source_ink_box": [
-            491.766,
-            771.906,
-            935.605,
-            90.766
-          ],
-          "font_size": 41.171,
-          "leading": 47.758,
-          "source_node": [
-            14
-          ],
-          "font_weight": "semibold",
-          "alignment": "center",
-          "slot": {
-            "number": 7,
-            "key": "text/7"
           }
         }
       ],
@@ -4158,7 +4258,17 @@
       "palettes": [
         "light"
       ],
-      "neutral_parts": []
+      "neutral_parts": [],
+      "shared_sources": [
+        "templates/studio/components/dialogue-text.tex"
+      ],
+      "options": {
+        "show-conclusion": {
+          "type": "boolean",
+          "default": "true",
+          "description": "Show the concluding callout and its panel without moving the people or messages."
+        }
+      }
     },
     {
       "id": "paired-icons-blue",

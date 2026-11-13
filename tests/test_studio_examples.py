@@ -31,6 +31,19 @@ class StudioExamplesTests(unittest.TestCase):
         self.assertIn('variant={three}', neutral)
         self.assertIn('variant={three}', example)
 
+    def test_renamed_semantic_fields_preserve_historical_content(self):
+        entry = self.by_id['chat-dialogue']
+        values = studio_examples.example_values(ROOT, entry)
+        self.assertIn('A private matter', values['text/1'])
+        self.assertIn('Eric Hughes', values['text/2'])
+        self.assertFalse(values['text/1'].startswith(('\"', '“', '``')))
+        self.assertFalse(values['text/1'].endswith(('\"', '”', "''")))
+        self.assertFalse(values['text/2'].startswith(('---', '—')))
+
+        self.assertEqual({f['name'] for f in entry['fields'] if f['type'] == 'text'},
+                         {'quote', 'attribution'})
+        self.assertIn(']{quotation}', studio_examples.exact_command(ROOT, entry, 'example'))
+
     def test_original_graphics_replace_neutral_placeholders_in_examples_only(self):
         entry = self.by_id['contact-qr']
         values = studio_examples.example_values(ROOT, entry)

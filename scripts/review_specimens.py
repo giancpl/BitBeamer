@@ -57,6 +57,8 @@ def append_specimens(root, target, batches, backend, image):
         output = root / 'build/review/specimens' / batch['id']
         output.mkdir(parents=True, exist_ok=True)
         pdf = compile_document(root, source, output, backend, image)
+        from review_backgrounds import check_pdf
+        check_pdf(root,pdf,[(s['page']-1,s['composition'],commands[s['page']-1]) for s in samples],output/'backgrounds.json')
         with fitz.open(pdf) as document:
             if len(document) != len(commands):
                 raise ValueError('Specimen commands must correspond one-to-one with PDF pages')

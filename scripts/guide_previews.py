@@ -106,6 +106,8 @@ def refresh(root,name,pdf,page=1,backend='docker',image='bitbeamer-latex:local',
     if not (root/'docs/slides/guide.js').is_file():return
     ctx=ctx or context(root)
     if name not in ctx['choices']:return
+    from review_backgrounds import check_pdf
+    check_pdf(root,pdf,[(page-1,name,ctx['choices'][name]['command'])])
     expected=signature(root,name,ctx);data=manifest(root)
     if not current(root,name,expected,data):
         save(root,{'previews':{name:record(root,name,pdf,page,expected,backend,image)}})
@@ -145,6 +147,8 @@ def prepare(root=ROOT,names=None,backend='docker',image='bitbeamer-latex:local',
         if int(re.search(r'^Pages:\s*(\d+)',info,re.M)[1])!=len(chunk):raise RuntimeError('Guide command page count differs.')
         fonts=pdf_tool(root,'pdffonts',pdf,backend,image)
         if any(re.search(r'\sno\s+(?:yes|no)\s+(?:yes|no)\s+\d+\s+\d+\s*$',row) for row in fonts.splitlines()[2:]):raise RuntimeError('Unembedded guide font: '+str(pdf))
+        from review_backgrounds import check_pdf
+        check_pdf(root,pdf,[(i,name,ctx['choices'][name]['command']) for i,name in enumerate(chunk)],output/'backgrounds.json')
         results={name:record(root,name,pdf,page,expected[name],backend,image) for page,name in enumerate(chunk,1)}
         return results,{'pdf':pdf.relative_to(root).as_posix(),'commands':chunk,'status':'passed','font_embedding':'checked','diagnostics':[]}
     previous=folder.parent/'hd-report.json'

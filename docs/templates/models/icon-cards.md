@@ -28,7 +28,7 @@ Original palettes: light.
 | `caption-two` | <code>Item 2</code> | 18.6% wide × 10.2% high |
 | `caption-three` | <code>Item 3</code> | 18.6% wide × 10.2% high |
 
-Layout options: `show-title=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean). See the full slot guide for supported values.
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -48,7 +48,7 @@ Original palettes: light.
 | `caption-one` | <code>Item 1</code> | 18.6% wide × 9.5% high |
 | `caption-two` | <code>Item 2</code> | 18.6% wide × 9.5% high |
 
-Layout options: `show-title=false` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=false` (boolean). See the full slot guide for supported values.
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 
@@ -71,7 +71,7 @@ Original palettes: light.
 | `caption-four` | <code>Item 4</code> | 16.6% wide × 10.2% high |
 | `caption-five` | <code>Item 5</code> | 16.6% wide × 10.2% high |
 
-Layout options: `show-title=true` (boolean). See the full slot guide for both treatments.
+Layout options: `show-title=true` (boolean). See the full slot guide for supported values.
 
 Graphic slots also accept named `icon-one`, `image-one`, `graphic-one` keys (then two, three, …), following their stable slot numbers. See the full slot guide for position and bounds.
 

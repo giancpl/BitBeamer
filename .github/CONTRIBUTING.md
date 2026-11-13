@@ -84,3 +84,9 @@ new authoring obligations or replacements of personal content. Linked layouts
 receive the canonical correction at the next build; legacy snapshots are migrated
 only when explicitly requested. It is not
 included in the Overleaf template's user instructions.
+
+Maintenance background rule: verify each compiled slide canvas against its native
+colour before every comparison and guide preview. Light is `#f9f9f9`; preserve
+explicit original white/photo exceptions and the original blue. The automatic
+`review_backgrounds` check runs on cached comparisons too and on long/empty
+specimens. Never sample the white comparison-sheet margin as the slide canvas.

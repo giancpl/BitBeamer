@@ -4,7 +4,7 @@
 
 Focus attention on one message using the speech panel over three people layout.
 
-Model: `speech-panel` · Family: Statements · Status: **in review**.
+Model: `speech-panel` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/speech-panel.tex)
 
@@ -22,7 +22,7 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 \studiotemplate[variant=people,palette=light]{dialogue}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -38,12 +38,12 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
+| `text/1` | `message` | Editable text |
+| `text/2` | `caption` | Editable text |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/2`, `image/2`, `graphic/2` | `graphic-2` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/3`, `image/3`, `graphic/3` | `graphic-3` | Replaces this complete graphic; other elements stay fixed. |
 | `icon/4`, `image/4`, `graphic/4` | `graphic-4` | Replaces this complete graphic; other elements stay fixed. |
-| `text/1` | `title` | Main text |
-| `text/2` | `text-2` | Editable text |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -62,8 +62,8 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Slide title},
-  text/2={Date or supporting note}
+  text/1={A shared idea starts a conversation.},
+  text/2={Context or date}
 ]{speech-panel}
 ```
 
@@ -79,8 +79,8 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Slide title},
-  text/2={Date or supporting note}
+  text/1={A shared idea starts a conversation.},
+  text/2={Context or date}
 ]{speech-panel}
 \end{document}
 ```
@@ -100,12 +100,12 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
+| <code>message</code> | Editable text (text) | upper centre | 51.0% wide × 14.3% high | <code>A shared idea starts a conversation.</code> |
+| <code>caption</code> | Editable text (text) | middle centre | 51.9% wide × 4.3% high | <code>Context or date</code> |
 | <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 58.8% wide × 34.8% high | <code>\studiopaletteimage[width=1128\studiounit]{images/studio/collection/figma-0482-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | lower centre | 15.4% wide × 27.2% high | <code>\studiopaletteimage[width=295\studiounit]{images/studio/collection/figma-0482-part-02.pdf}</code> |
-| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | lower centre | 15.4% wide × 27.2% high | <code>\studiopaletteimage[width=295\studiounit]{images/studio/collection/figma-0482-part-03.pdf}</code> |
-| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | lower right | 15.3% wide × 27.2% high | <code>\studiopaletteimage[width=294\studiounit]{images/studio/collection/figma-0482-part-04.pdf}</code> |
-| <code>title</code> | Main text (text) | upper centre | 53.6% wide × 12.5% high | <code>Slide title</code> |
-| <code>text-2</code> | Editable text (text) | middle centre | 51.9% wide × 4.3% high | <code>Date or supporting note</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.8% wide × 22.8% high | <code>\includegraphics[trim={0.69100bp 48.26601bp 48.64101bp 0.06600bp},clip,width=246\studiounit,height=246\studiounit,kee...</code> |
+| <code>graphic-3</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.8% wide × 22.8% high | <code>\includegraphics[trim={0.43400bp 48.26601bp 48.89799bp 0.06600bp},clip,width=246\studiounit,height=246\studiounit,kee...</code> |
+| <code>graphic-4</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.8% wide × 22.8% high | <code>\includegraphics[trim={0.18000bp 48.26601bp 48.14799bp 0.06600bp},clip,width=246\studiounit,height=246\studiounit,kee...</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

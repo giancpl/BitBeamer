@@ -36,7 +36,7 @@ Numeric defaults and charts are illustrative.
 | `show-introduction` | boolean | `true` | Show the introduction in sidebar layouts; no effect elsewhere. |
 | `show-icons` | boolean | `true` | Show original icons where present; no effect in text-only layouts. |
 
-For example: `\studiotemplate[qrcode=false]{closing}`. Options are not text slots; invalid values produce an error.
+For example: `\studiotemplate[variant=two,show-title=false]{text-cards}`. Options are not text slots; invalid values produce an error.
 
 ## Typed content slots
 

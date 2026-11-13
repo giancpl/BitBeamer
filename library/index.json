@@ -94132,29 +94132,13 @@
       ],
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            690,
-            517,
-            2163,
-            951
-          ],
-          "default": "\\studiopaletteimage[width=2163\\studiounit]{images/studio/collection/figma-0757-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "title",
+          "name": "quote",
           "type": "text",
-          "default": "Slide title",
+          "default": "A clear quotation can highlight one idea while keeping its source in a separate field.",
           "box": [
             790.57,
             635.816,
-            2031.09,
+            1930,
             541.253
           ],
           "source_ink_box": [
@@ -94173,16 +94157,18 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "historical_field": "title",
+          "adaptive_box": "Text width is panel width minus 178 units; measured text height. Centered layered panel, fixed padding, maximum height 1300."
         },
         {
-          "name": "text-2",
+          "name": "attribution",
           "type": "text",
-          "default": "Supporting explanation",
+          "default": "Source or reference",
           "box": [
             791.492,
             1281.52,
-            2054.4926666666665,
+            1930,
             85.80466666666675
           ],
           "source_ink_box": [
@@ -94201,12 +94187,25 @@
           "slot": {
             "number": 2,
             "key": "text/2"
-          }
+          },
+          "historical_field": "text-2",
+          "adaptive_box": "Text width is panel width minus 178 units; measured text height. Centered layered panel, fixed padding, maximum height 1300."
         }
       ],
-      "status": "in review",
+      "status": "approved",
       "registration": "shared core",
-      "example_slide": "official-slide-b389b7b875ae"
+      "example_slide": "official-slide-b389b7b875ae",
+      "options": {
+        "width": {
+          "type": "choice",
+          "default": "standard",
+          "description": "Original panel width: compact, medium, standard or wide. Height follows measured text; fonts stay fixed."
+        }
+      },
+      "notes": "Canonical graphical composition explicitly approved on 2026-11-13; official lesson content remains independently in review.",
+      "shared_sources": [
+        "templates/studio/components/quotation-panel.tex"
+      ]
     },
     "bitpolito-wordmark": {
       "title": "BitPolito",
@@ -94246,78 +94245,14 @@
       ],
       "fields": [
         {
-          "name": "graphic-1",
-          "type": "graphic",
-          "box": [
-            420,
-            222,
-            1128,
-            376
-          ],
-          "default": "\\studiopaletteimage[width=1128\\studiounit]{images/studio/collection/figma-0482-part-01.pdf}",
-          "slot": {
-            "number": 1,
-            "key": "graphic/1",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-2",
-          "type": "graphic",
-          "box": [
-            536,
-            589,
-            295,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/collection/figma-0482-part-02.pdf}",
-          "slot": {
-            "number": 2,
-            "key": "graphic/2",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-3",
-          "type": "graphic",
-          "box": [
-            837,
-            589,
-            295,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=295\\studiounit]{images/studio/collection/figma-0482-part-03.pdf}",
-          "slot": {
-            "number": 3,
-            "key": "graphic/3",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "graphic-4",
-          "type": "graphic",
-          "box": [
-            1138,
-            589,
-            294,
-            294
-          ],
-          "default": "\\studiopaletteimage[width=294\\studiounit]{images/studio/collection/figma-0482-part-04.pdf}",
-          "slot": {
-            "number": 4,
-            "key": "graphic/4",
-            "role": "whole graphic"
-          }
-        },
-        {
-          "name": "title",
+          "name": "message",
           "type": "text",
-          "default": "Slide title",
+          "default": "A shared idea starts a conversation.",
           "box": [
             491.773,
-            277.715,
-            1028.6,
-            135.304
+            260,
+            980,
+            154
           ],
           "source_ink_box": [
             491.773,
@@ -94335,12 +94270,13 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "historical_field": "title"
         },
         {
-          "name": "text-2",
+          "name": "caption",
           "type": "text",
-          "default": "Date or supporting note",
+          "default": "Context or date",
           "box": [
             491.824,
             423.004,
@@ -94363,12 +94299,114 @@
           "slot": {
             "number": 2,
             "key": "text/2"
+          },
+          "historical_field": "text-2"
+        },
+        {
+          "name": "graphic-1",
+          "type": "graphic",
+          "box": [
+            420,
+            222,
+            1128,
+            376
+          ],
+          "default": "\\studiopaletteimage[width=1128\\studiounit]{images/studio/collection/figma-0482-part-01.pdf}",
+          "slot": {
+            "number": 1,
+            "key": "graphic/1",
+            "role": "whole graphic"
           }
+        },
+        {
+          "name": "graphic-2",
+          "type": "graphic",
+          "box": [
+            536.525,
+            588.9,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[trim={0.69100bp 48.26601bp 48.64101bp 0.06600bp},clip,width=246\\studiounit,height=246\\studiounit,keepaspectratio]{images/studio/collection/figma-0482-part-02.pdf}",
+          "slot": {
+            "number": 2,
+            "key": "graphic/2",
+            "role": "whole graphic",
+            "content": [
+              123.0,
+              123.0,
+              246,
+              246
+            ]
+          },
+          "source_ink_box": [
+            536.6909999847412,
+            589.0659999996424,
+            245.66799354553223,
+            245.66799353063107
+          ]
+        },
+        {
+          "name": "graphic-3",
+          "type": "graphic",
+          "box": [
+            837.268,
+            588.9,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[trim={0.43400bp 48.26601bp 48.89799bp 0.06600bp},clip,width=246\\studiounit,height=246\\studiounit,keepaspectratio]{images/studio/collection/figma-0482-part-03.pdf}",
+          "slot": {
+            "number": 3,
+            "key": "graphic/3",
+            "role": "whole graphic",
+            "content": [
+              123.0,
+              123.0,
+              246,
+              246
+            ]
+          },
+          "source_ink_box": [
+            837.4339999854565,
+            589.0659999996424,
+            245.66800501942635,
+            245.66799353063107
+          ]
+        },
+        {
+          "name": "graphic-4",
+          "type": "graphic",
+          "box": [
+            1138.016,
+            588.9,
+            246,
+            246
+          ],
+          "default": "\\includegraphics[trim={0.18000bp 48.26601bp 48.14799bp 0.06600bp},clip,width=246\\studiounit,height=246\\studiounit,keepaspectratio]{images/studio/collection/figma-0482-part-04.pdf}",
+          "slot": {
+            "number": 4,
+            "key": "graphic/4",
+            "role": "whole graphic",
+            "content": [
+              123.0,
+              123.0,
+              246,
+              246
+            ]
+          },
+          "source_ink_box": [
+            1138.1800000071526,
+            589.0659999996424,
+            245.67200499773026,
+            245.66799353063107
+          ]
         }
       ],
       "registration": "shared core",
       "example_slide": "bitpolito-introduction-02",
-      "status": "in review"
+      "status": "approved",
+      "notes": "Canonical graphical composition explicitly approved on 2026-11-13; official lesson content remains independently in review."
     },
     "team-presentation": {
       "title": "Team presentation",
@@ -97470,16 +97508,16 @@
       "role": "content",
       "topic": "money",
       "resources": {
-        "images/studio/collection/figma-0757-part-01.pdf": "103ee3e720ab6b8af2a195482672554e97371663fdb26f66acf815ce69ab781b",
-        "templates/studio/chat-dialogue.tex": "6e6834ddb88230d3c91b17035569b18913bbbd07840f004f437e729486c0af5a"
+        "templates/studio/chat-dialogue.tex": "02c7be7cc59e857add0b8d5a0e028dcc90c8e360690e418bb7e904c5a9f8792b",
+        "templates/studio/components/quotation-panel.tex": "266755744d2dbedabb6d100c34b40d9f2149c4e27f17aad7b0ca1a68091caf7b"
       },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
       ],
       "fields": {
-        "title": "“The technology is so strong that I do not\\\\see what we can do about it through\\\\regulation. Bitcoin has made our currency\\\\almost worthless.”",
-        "text-2": "— Sani Musa, Nigerian senator, 2021"
+        "quote": "The technology is so strong that I do not\\\\see what we can do about it through\\\\regulation. Bitcoin has made our currency\\\\almost worthless.",
+        "attribution": "Sani Musa, Nigerian senator, 2021"
       },
       "origins": [
         {
@@ -97492,7 +97530,8 @@
       ],
       "changes": [
         "Inter replaces the original typeface.",
-        "English text replaces the original; source sequence and graphic proportions are retained. Typography and translation remain in review."
+        "English text replaces the original; source sequence and graphic proportions are retained. Typography and translation remain in review.",
+        "Uses the selected medium quotation width from the original Musa example; panel height follows the current text at fixed Inter sizes."
       ],
       "review_notes": [
         "Dated figures and screenshots are historical examples, not current live statistics; verify their reference period before reuse."
@@ -97514,7 +97553,10 @@
           "verification": "Canonical shared consumer compiled; seven known card/quotation pages refreshed in local original/current comparisons; quote paragraph and attribution inspected separately.",
           "status": "in review"
         }
-      ]
+      ],
+      "layout_options": {
+        "width": "medium"
+      }
     },
     "official-slide-fe41ddd10223": {
       "title": "Mining energy Can use surplus",
@@ -108660,16 +108702,16 @@
       "role": "content",
       "topic": "bitcoin-basics",
       "resources": {
-        "images/studio/collection/figma-0757-part-01.pdf": "103ee3e720ab6b8af2a195482672554e97371663fdb26f66acf815ce69ab781b",
-        "templates/studio/chat-dialogue.tex": "6e6834ddb88230d3c91b17035569b18913bbbd07840f004f437e729486c0af5a"
+        "templates/studio/chat-dialogue.tex": "02c7be7cc59e857add0b8d5a0e028dcc90c8e360690e418bb7e904c5a9f8792b",
+        "templates/studio/components/quotation-panel.tex": "266755744d2dbedabb6d100c34b40d9f2149c4e27f17aad7b0ca1a68091caf7b"
       },
       "references": [
         "lesson-official-decks",
         "lesson-bitcoin-faq"
       ],
       "fields": {
-        "title": "“The technology is so strong that I do not\\\\see what we can do about it through\\\\regulation. Bitcoin has made our currency\\\\almost worthless.”",
-        "text-2": "— Sani Musa, Nigerian senator, 2021"
+        "quote": "The technology is so strong that I do not\\\\see what we can do about it through\\\\regulation. Bitcoin has made our currency\\\\almost worthless.",
+        "attribution": "Sani Musa, Nigerian senator, 2021"
       },
       "origins": [
         {
@@ -108682,7 +108724,8 @@
       ],
       "changes": [
         "Inter replaces the original typeface.",
-        "English text replaces the original; source sequence and graphic proportions are retained. Typography and translation remain in review."
+        "English text replaces the original; source sequence and graphic proportions are retained. Typography and translation remain in review.",
+        "Uses the selected medium quotation width from the original Musa example; panel height follows the current text at fixed Inter sizes."
       ],
       "review_notes": [
         "Dated figures and screenshots are historical examples, not current live statistics; verify their reference period before reuse."
@@ -108704,7 +108747,10 @@
           "verification": "Canonical shared consumer compiled; seven known card/quotation pages refreshed in local original/current comparisons; quote paragraph and attribution inspected separately.",
           "status": "in review"
         }
-      ]
+      ],
+      "layout_options": {
+        "width": "medium"
+      }
     },
     "official-slide-57415467ee48": {
       "title": "Bitcoin fixes this",
@@ -123098,15 +123144,16 @@
       "role": "content",
       "topic": "BitPolito introduction",
       "fields": {
-        "title": "Let's talk about Bitcoin in our university!\\\\Of course only technical stuff...",
-        "text-2": "February 2020"
+        "message": "Let's talk about Bitcoin in our university!\\\\Of course only technical stuff...",
+        "caption": "February 2020"
       },
       "resources": {
         "images/studio/collection/figma-0482-part-01.pdf": "aa43f75439fb0817d281681a000ca3949e8bdcc795125b1b861d4bd460614ecd",
         "images/studio/collection/figma-0482-part-02.pdf": "0bd2ff2fb824d352f61da65a2559c11a967de1d34d381ba715f4333d1bf0caaf",
         "images/studio/collection/figma-0482-part-03.pdf": "0d1b185b3524deca2bbbb15e48465219d56beb5c464bde90c0b8cbe67eccd53a",
         "images/studio/collection/figma-0482-part-04.pdf": "d9a94d9461a068842cca7e8c6e33427c82d5130eed040fff4e0320087e521291",
-        "templates/studio/speech-panel.tex": "1825bfdc66ecfda20e1b6b451c81ce88d17a1bf117a555a3c87ad5d2872df475"
+        "templates/studio/speech-panel.tex": "bfd94607398469f776774a07834b89299b1664547833168c8f068270715dc629",
+        "templates/studio/components/dialogue-text.tex": "e8a57b24096f40e371cd6c7fcc27802eeec5ef146077bf2f622cb95928b0ba0e"
       },
       "references": [],
       "origins": [
@@ -129120,7 +129167,8 @@
         "official-slide-374cc501d7e2"
       ],
       "required_dependencies": [
-        "templates/studio/chat-dialogue.tex"
+        "templates/studio/chat-dialogue.tex",
+        "templates/studio/components/quotation-panel.tex"
       ],
       "reason": "Keep the complete quote in one paragraph and its credit in a separate shared field."
     }
