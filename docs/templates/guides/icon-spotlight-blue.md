@@ -4,7 +4,7 @@
 
 Focus attention on one message using the blue icon spotlight layout.
 
-Model: `icon-spotlight-blue` · Family: Statements · Status: **in review**.
+Model: `icon-spotlight-blue` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/icon-spotlight-blue.tex)
 
@@ -16,13 +16,13 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/icon-spotlight.md)
+[Model variants and named fields](../models/icon-statement.md)
 
 ```latex
-\studiotemplate[variant=large,palette=blue]{icon-spotlight}
+\studiotemplate[variant=large,palette=blue]{icon-statement}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -39,7 +39,7 @@ Omitted fields keep their defaults. Named aliases such as `text/title` also work
 | Public slot | Existing field | Content and appearance |
 | --- | --- | --- |
 | `icon/1`, `image/1`, `graphic/1` | `graphic-1` | Replaces this complete graphic; other elements stay fixed. |
-| `text/1` | `title` | Main text |
+| `text/1` | `statement` | Central statement |
 
 Original unscoped field names remain compatible. For a labelled block, changing
 `text/N` replaces the complete box; use `heading/N` and `body/N` for structured edits.
@@ -58,7 +58,7 @@ This example uses supported fields. Omitted fields keep their shipped defaults.
 
 ```latex
 \studiotemplate[
-  text/1={Slide title}
+  text/1={A shared purpose}
 ]{icon-spotlight-blue}
 ```
 
@@ -74,7 +74,7 @@ Create `my-slide.tex` in the project root and paste:
 \addbibresource{bibliography.bib}
 \begin{document}
 \studiotemplate[
-  text/1={Slide title}
+  text/1={A shared purpose}
 ]{icon-spotlight-blue}
 \end{document}
 ```
@@ -94,8 +94,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 10.1% wide × 19.9% high | <code>\studiopaletteimage[width=360\studiounit]{images/studio/collection/figma-0383-part-01.pdf}</code> |
-| <code>title</code> | Main text (text) | middle centre | 28.6% wide × 15.6% high | <code>Slide title</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 8.8% wide × 17.5% high | <code>\includegraphics[trim={0bp 48bp 48.629bp 0bp},clip,width=311.371\studiounit,height=350\studiounit,keepaspectratio]{im...</code> |
+| <code>statement</code> | Central statement (text) | middle centre | 28.6% wide × 15.6% high | <code>A shared purpose</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.

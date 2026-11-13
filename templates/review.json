@@ -550,28 +550,48 @@
       ]
     },
     "icon-spotlight-light": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13: native palette, fixed typography, editable icons and replacement specimens; pair uses the requested centred alignment.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "light": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-13: native palette, fixed typography, editable icons and replacement specimens; pair uses the requested centred alignment."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "icon-statement-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Approve the three icon statements after light-preview colour and pair alignment corrections.",
+          "action": "Approve compact/light, large/blue and pair/blue with semantic editable slots.",
+          "verification": "239 tests passed, one skipped; 14 specimens visually checked; exact 249 RGB preview, paired ink centres within 0.001pt, fixed fonts, empty fields and wide/tall replacements; five isolated package documents passed.",
+          "status": "approved"
+        }
+      ]
     },
     "icon-spotlight-blue": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13: native palette, fixed typography, editable icons and replacement specimens; pair uses the requested centred alignment.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-13: native palette, fixed typography, editable icons and replacement specimens; pair uses the requested centred alignment."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "icon-statement-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Approve the three icon statements after light-preview colour and pair alignment corrections.",
+          "action": "Approve compact/light, large/blue and pair/blue with semantic editable slots.",
+          "verification": "239 tests passed, one skipped; 14 specimens visually checked; exact 249 RGB preview, paired ink centres within 0.001pt, fixed fonts, empty fields and wide/tall replacements; five isolated package documents passed.",
+          "status": "approved"
+        }
+      ]
     },
     "oversized-word": {
       "status": "approved",
@@ -883,16 +903,26 @@
       ]
     },
     "paired-icons-blue": {
-      "status": "in review",
-      "notes": "",
+      "status": "approved",
+      "notes": "Explicit user approval on 2026-11-13: native palette, fixed typography, editable icons and replacement specimens; pair uses the requested centred alignment.",
       "use": "",
       "example": {},
       "palette_reviews": {
         "blue": {
-          "status": "in review",
-          "notes": ""
+          "status": "approved",
+          "notes": "Explicit user approval on 2026-11-13: native palette, fixed typography, editable icons and replacement specimens; pair uses the requested centred alignment."
         }
-      }
+      },
+      "feedback": [
+        {
+          "id": "icon-statement-final-approval",
+          "source": "Explicit user confirmation, 2026-11-13",
+          "issue": "Approve the three icon statements after light-preview colour and pair alignment corrections.",
+          "action": "Approve compact/light, large/blue and pair/blue with semantic editable slots.",
+          "verification": "239 tests passed, one skipped; 14 specimens visually checked; exact 249 RGB preview, paired ink centres within 0.001pt, fixed fonts, empty fields and wide/tall replacements; five isolated package documents passed.",
+          "status": "approved"
+        }
+      ]
     },
     "two-columns": {
       "status": "approved",
@@ -4944,6 +4974,85 @@
         ]
       },
       "reference_survey": "build/review/reference-surveys/quotation/survey.pdf"
+    },
+    {
+      "id": "icon-statements-01",
+      "title": "Icon-led statements",
+      "family": "Statements",
+      "compositions": [
+        "icon-spotlight-light",
+        "icon-spotlight-blue",
+        "paired-icons-blue"
+      ],
+      "commands": {
+        "icon-spotlight-light": "\\studiotemplate[variant=compact,statement={Passion becomes\\\\the mission}]{icon-statement}",
+        "icon-spotlight-blue": "\\studiotemplate[variant=large,statement={Absolutely scarce\\\\digital commodity}]{icon-statement}",
+        "paired-icons-blue": "\\studiotemplate[variant=pair]{icon-statement}"
+      },
+      "focus": [
+        "Compare native F9F9F9 / blue backgrounds, original icon size and icon-to-text spacing.",
+        "Check fixed-font two-line copy, editable icons, empty fields and aspect-ratio-preserving replacements."
+      ],
+      "specimen": {
+        "source": "examples/studio-icon-statements.tex",
+        "samples": [
+          {
+            "page": 4,
+            "composition": "icon-spotlight-light",
+            "label": "Longer automatic wrapping"
+          },
+          {
+            "page": 5,
+            "composition": "icon-spotlight-blue",
+            "label": "Explicit two-line statement"
+          },
+          {
+            "page": 6,
+            "composition": "icon-spotlight-light",
+            "label": "Empty statement"
+          },
+          {
+            "page": 7,
+            "composition": "icon-spotlight-blue",
+            "label": "Empty statement and icon"
+          },
+          {
+            "page": 8,
+            "composition": "paired-icons-blue",
+            "label": "Both icons hidden"
+          },
+          {
+            "page": 9,
+            "composition": "icon-spotlight-light",
+            "label": "Replace icon"
+          },
+          {
+            "page": 10,
+            "composition": "icon-spotlight-blue",
+            "label": "Replace image"
+          },
+          {
+            "page": 11,
+            "composition": "paired-icons-blue",
+            "label": "Replace both icons independently"
+          },
+          {
+            "page": 12,
+            "composition": "icon-spotlight-light",
+            "label": "Wide custom graphic; preserve proportions"
+          },
+          {
+            "page": 13,
+            "composition": "icon-spotlight-blue",
+            "label": "Tall custom graphic; preserve proportions"
+          },
+          {
+            "page": 14,
+            "composition": "paired-icons-blue",
+            "label": "Wide and tall custom graphics"
+          }
+        ]
+      }
     }
   ],
   "active_review_batches": []

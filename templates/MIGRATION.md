@@ -20,8 +20,9 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `glow-statement` | `statement` | `glow` | light |
 | `blue-statement` | `statement` | `plain` | blue |
 | `oversized-word` | `statement` | `clipped` | light |
-| `icon-spotlight-light` | `icon-spotlight` | `compact` | light |
-| `icon-spotlight-blue` | `icon-spotlight` | `large` | blue |
+| `icon-spotlight-light` | `icon-statement` | `compact` | light |
+| `icon-spotlight-blue` | `icon-statement` | `large` | blue |
+| `paired-icons-blue` | `icon-statement` | `pair` | blue |
 | `chat-dialogue` | `quotation` | `layered` | blue |
 | `speech-panel` | `dialogue` | `people` | light |
 | `chat-three-messages` | `dialogue` | `three-messages` | light |
@@ -34,7 +35,6 @@ All previous names remain usable. Defaults are neutral; original references rema
 | `image-overlay` | `image-text` | `overlay` | light |
 | `title-paragraphs` | `paragraphs` | `left` | light |
 | `title-centered-paragraphs` | `paragraphs` | `centered` | light |
-| `paired-icons-blue` | `paired-icons-blue` | `default` | blue |
 | `two-columns` | `two-columns` | `default` | light |
 | `list-rail-light` | `list-rail` | `three-items` | light |
 | `list-rail-blue` | `list-rail` | `four-items` | blue |

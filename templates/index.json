@@ -2250,7 +2250,7 @@
       "references": [
         "figma-1003"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected by the user on 2026-11-13. Original palette and icon geometry, editable statement and semantic icon replacements. Explicitly approved by the user on 2026-11-13.",
       "canvas": [
         3556.0,
         2000.0
@@ -2263,20 +2263,32 @@
           "box": [
             1648,
             721,
-            308,
-            260
+            260,
+            212
           ],
-          "default": "\\studiopaletteimage[width=308\\studiounit]{images/studio/collection/figma-1003-part-01.pdf}",
+          "default": "\\includegraphics[trim={0bp 48bp 48bp 0bp},clip,width=260\\studiounit,height=212\\studiounit,keepaspectratio]{images/studio/collection/figma-1003-part-01.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              130.0,
+              106.0,
+              260,
+              212
+            ]
+          },
+          "source_ink_box": [
+            1648,
+            721,
+            260,
+            212
+          ]
         },
         {
-          "name": "title",
+          "name": "statement",
           "type": "text",
-          "default": "Slide title",
+          "default": "A shared purpose",
           "box": [
             1287.0806666666667,
             1020.051,
@@ -2297,7 +2309,10 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "historical_field": "title",
+          "font_weight": "semibold",
+          "alignment": "center"
         }
       ],
       "parts": [
@@ -2308,7 +2323,7 @@
         "Inter replaces outlined source typography; copy is translated to English."
       ],
       "slot_parts": [],
-      "model": "icon-spotlight",
+      "model": "icon-statement",
       "variant": "compact",
       "native_palette": "light",
       "palettes": [
@@ -2325,7 +2340,7 @@
       "references": [
         "figma-0383"
       ],
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected by the user on 2026-11-13. Original palette and icon geometry, editable statement and semantic icon replacements. Explicitly approved by the user on 2026-11-13.",
       "canvas": [
         3556.0,
         2000.0
@@ -2338,20 +2353,32 @@
           "box": [
             1622,
             632,
-            360,
-            398
+            311.371,
+            350
           ],
-          "default": "\\studiopaletteimage[width=360\\studiounit]{images/studio/collection/figma-0383-part-01.pdf}",
+          "default": "\\includegraphics[trim={0bp 48bp 48.629bp 0bp},clip,width=311.371\\studiounit,height=350\\studiounit,keepaspectratio]{images/studio/collection/figma-0383-part-01.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              155.6855,
+              175.0,
+              311.371,
+              350
+            ]
+          },
+          "source_ink_box": [
+            1622,
+            632,
+            311.371,
+            350
+          ]
         },
         {
-          "name": "title",
+          "name": "statement",
           "type": "text",
-          "default": "Slide title",
+          "default": "A shared purpose",
           "box": [
             1270.715,
             1111.449,
@@ -2372,7 +2399,10 @@
           "slot": {
             "number": 1,
             "key": "text/1"
-          }
+          },
+          "historical_field": "title",
+          "font_weight": "semibold",
+          "alignment": "center"
         }
       ],
       "parts": [
@@ -2383,7 +2413,7 @@
         "Inter replaces outlined source typography; copy is translated to English."
       ],
       "slot_parts": [],
-      "model": "icon-spotlight",
+      "model": "icon-statement",
       "variant": "large",
       "native_palette": "blue",
       "palettes": [
@@ -4278,7 +4308,7 @@
         "figma-0038"
       ],
       "source": "templates/studio/paired-icons-blue.tex",
-      "notes": "Measured source composition with English editable fields; complex source graphics remain replaceable prepared parts. Pending graphical review.",
+      "notes": "Selected by the user on 2026-11-13. Original palette and icon geometry, editable statement and semantic icon replacements. Explicitly approved by the user on 2026-11-13.",
       "number": 29,
       "canvas": [
         3556.0,
@@ -4290,17 +4320,29 @@
           "name": "graphic-1",
           "type": "graphic",
           "box": [
-            1303,
-            768,
-            428,
-            512
+            1303.262,
+            684.574,
+            378.968,
+            463.852
           ],
-          "default": "\\studiopaletteimage[width=428\\studiounit]{images/studio/collection/figma-0038-part-01.pdf}",
+          "default": "\\includegraphics[trim={0.262bp 48.148bp 48.77bp 0bp},clip,width=378.968\\studiounit,height=463.852\\studiounit,keepaspectratio]{images/studio/collection/figma-0038-part-01.pdf}",
           "slot": {
             "number": 2,
             "key": "graphic/2",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              189.484,
+              231.926,
+              378.968,
+              463.852
+            ]
+          },
+          "source_ink_box": [
+            1303.262,
+            768,
+            378.968,
+            463.852
+          ]
         },
         {
           "name": "graphic-2",
@@ -4308,15 +4350,27 @@
           "box": [
             1822,
             601,
-            415,
-            679
+            367,
+            631
           ],
-          "default": "\\studiopaletteimage[width=415\\studiounit]{images/studio/collection/figma-0038-part-02.pdf}",
+          "default": "\\includegraphics[trim={0bp 48bp 48bp 0bp},clip,width=367\\studiounit,height=631\\studiounit,keepaspectratio]{images/studio/collection/figma-0038-part-02.pdf}",
           "slot": {
             "number": 1,
             "key": "graphic/1",
-            "role": "whole graphic"
-          }
+            "role": "whole graphic",
+            "content": [
+              183.5,
+              315.5,
+              367,
+              631
+            ]
+          },
+          "source_ink_box": [
+            1822,
+            601,
+            367,
+            631
+          ]
         }
       ],
       "parts": [
@@ -4325,11 +4379,12 @@
       ],
       "reconstruction": "measured",
       "intentional_differences": [
-        "Inter replaces outlined source typography; copy is translated to English."
+        "Inter replaces outlined source typography; copy is translated to English.",
+        "User-requested correction: center both visible icon bounds on y=916.5 instead of the original bottom alignment."
       ],
       "slot_parts": [],
-      "model": "paired-icons-blue",
-      "variant": "default",
+      "model": "icon-statement",
+      "variant": "pair",
       "native_palette": "blue",
       "palettes": [
         "blue"

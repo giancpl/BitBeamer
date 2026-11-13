@@ -16,6 +16,24 @@ any Beamer frame. Choose only the documented original palettes; fixed-content
 slides accept no overrides. See [model fields](STUDIO-MODELS.md) for semantic
 options and [the authoring guide](AUTHORING.md) for personal presentations.
 
+## Mandatory visual checks
+
+Mandatory visual review gate: before every interactive handoff, preview refresh
+or approval request, verify all three points for every affected slide:
+
+- Icons: visible-ink size, proportions, centering and distance from text/panels
+  match the original or the documented slot; replacements stay within that slot
+  without distortion. Check default icons and representative replacements.
+- Text: font family, size, weight, leading, alignment, wrapping and distances
+  match the original. Inspect both short and long copy; never shrink fonts.
+- Light canvas: verify `#f9f9f9` automatically and visually, including empty-field
+  examples and cached previews. Pure white is allowed only for a documented
+  original exception; retain native blue and photo backgrounds.
+
+Apply this gate by default, without waiting for user feedback. Fix discrepancies
+before presenting the comparison and record the checks in the maintenance report.
+A successful compile alone does not satisfy this gate.
+
 ## Review one small family at a time
 
 Review **three to five compositions per batch**, using function rather than lesson

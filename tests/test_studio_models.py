@@ -376,6 +376,24 @@ assert.equal(pageRows(d.rows,0).length,12);'''
         self.assertFalse(list((ROOT/'docs/templates/previews').glob('*--*.png')))
         self.assertFalse((ROOT/'images/studio/palettes').exists())
 
+    def test_icon_statement_groups_native_geometry_and_semantic_replacements(self):
+        models = studio_models.load_models(ROOT)['models']
+        grouped = next(m for m in models if m['id'] == 'icon-statement')
+        self.assertEqual([v['id'] for v in grouped['variants']], ['compact', 'large', 'pair'])
+        self.assertNotIn('icon-spotlight', {m['id'] for m in models})
+        self.assertNotIn('paired-icons-blue', {m['id'] for m in models})
+        single, large, pair = [v['compositions'][0] for v in grouped['variants']]
+        self.assertEqual(single['fields'], {'statement': 'statement'})
+        self.assertEqual(large['fields'], single['fields'])
+        self.assertEqual(single['graphic_slots'], {'symbol': 1})
+        self.assertEqual(pair['fields'], {})
+        entry=next(t for t in studio_templates.inspect_templates(ROOT) if t['id']=='paired-icons-blue')
+        boxes=[f['box'] for f in entry['fields'] if f['type']=='graphic']
+        self.assertAlmostEqual(boxes[0][1]+boxes[0][3]/2, boxes[1][1]+boxes[1][3]/2, places=3)
+        # Stable slots follow visual left/right labels despite historical slot numbering.
+        self.assertEqual(pair['graphic_slots'], {'left': 2, 'right': 1})
+        self.assertEqual([c['palettes'] for c in (single, large, pair)], [['light'], ['blue'], ['blue']])
+
     def test_shared_geometry_edits_invalidate_both_colour_presets_only(self):
         import studio_preview
         entries=studio_templates.inspect_templates(ROOT);before=studio_preview.input_sets(ROOT,entries)

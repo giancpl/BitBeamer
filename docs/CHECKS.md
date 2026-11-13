@@ -1,5 +1,62 @@
 # Verification report
 
+## Icon-led statement approval checkpoint — 2026-11-13
+
+The user explicitly approved compact/light, large/blue and pair/blue after the
+preview colour and pair-centre corrections. The catalogue now contains 55
+graphically approved compositions. Native fonts, semantic replacements and
+long/empty specimens are included. Superseded local proofs are removed; canonical
+examples, prepared artwork, guide previews and compact audit reports remain.
+
+## Icon statement alignment and comparison colour correction — 2026-11-13
+
+The user reported a light comparison canvas appearing as `#f8f8f8` and the two
+icons not aligned. The compiled native canvas was `#f9f9f9`; MuPDF rasterisation
+truncated its channels from 249 to 248. Comparison replicas now use the existing
+Poppler renderer, matching guide previews. Both embedded light comparison images
+were checked at RGB (249,249,249). No template colour compensation was applied.
+
+The pair now aligns both visible icon centres on y=916.5 source units, retaining
+their original sizes and aspect ratios. This explicitly requested deviation from
+the original bottom alignment is documented. Final PDF ink centres differ by less
+than 0.001 pt; all 14 specimens pass bounds, replacement and native-colour checks.
+The updated pair was inspected visually. Model and comparison regressions passed
+(26 and six tests); comparison tests also assert exact light raster channels.
+The refreshed five-document Overleaf package and the 749-command guide check
+also passed. The final full suite passed 239 tests with one skipped; documentation
+links and whitespace checks passed. Approval remains pending.
+
+## Icon-led statements selected for review — 2026-11-13
+
+The user selected figma-1003, figma-0383 and figma-0038. Their canonical
+compositions now share `icon-statement`, with `compact` (light), `large` (blue)
+and `pair` (blue) variants. Selection is not graphical approval. The catalogue
+has 95 models, 194 compositions and 52 graphically approved compositions.
+
+`statement` and semantic symbol/left/right icon, image and graphic fields replace
+the former model syntax. Native geometry, fixed Inter sizes and icon-to-text
+spacing follow each source. Default graphics trim transparent padding only;
+replacements preserve proportions inside the original visible-ink envelopes.
+No official lesson or block consumes these changed compositions.
+
+All 14 specimen pages and three original/result comparisons were visually
+inspected after the final TeX pass. The canvas audit passed for native blue and
+`#f9f9f9`; runtime checks passed source icon geometry, text envelopes (allowing
+1 pt for font ascender metrics), empty fields and wide/tall replacements. Five
+negative cases report excess copy, obsolete or unsupported fields and unknown
+icons. The full suite passed 239 tests (one skipped); the model routing tests passed
+all 26 cases. Review, source-selection,
+749-command guide and 361-file documentation checks passed. All 15 offline
+Chromium cases passed without JavaScript errors or network requests.
+
+The optional family archive is 950,260 bytes. Its five project documents compiled
+in isolation with embedded Inter, no checkout access and no shell escape.
+Reports: `build/checks/icon-statements/report.json`,
+`build/checks/icon-statements-negative/` and
+`build/review/validation/icon-statements/report.json`.
+The active comparison contains only these three compositions and their longer,
+empty-field and replacement examples; the previous approved group is omitted.
+
 ## Quotation and dialogue approval checkpoint — 2026-11-13
 
 The user explicitly approved the four compositions: quotation (all four widths),

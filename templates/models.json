@@ -316,8 +316,8 @@
       ]
     },
     {
-      "id": "icon-spotlight",
-      "title": "Icon spotlight",
+      "id": "icon-statement",
+      "title": "Icon-led statement",
       "category": "Statements",
       "default_variant": "compact",
       "variants": [
@@ -332,7 +332,10 @@
                 "light"
               ],
               "fields": {
-                "title": "title"
+                "statement": "statement"
+              },
+              "graphic_slots": {
+                "symbol": 1
               }
             }
           ]
@@ -348,7 +351,28 @@
                 "blue"
               ],
               "fields": {
-                "title": "title"
+                "statement": "statement"
+              },
+              "graphic_slots": {
+                "symbol": 1
+              }
+            }
+          ]
+        },
+        {
+          "id": "pair",
+          "default_source": "paired-icons-blue",
+          "compositions": [
+            {
+              "id": "paired-icons-blue",
+              "native_palette": "blue",
+              "palettes": [
+                "blue"
+              ],
+              "fields": {},
+              "graphic_slots": {
+                "left": 2,
+                "right": 1
               }
             }
           ]
@@ -614,28 +638,6 @@
                 "separator": "separator",
                 "lower-body": "lower-body"
               }
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "id": "paired-icons-blue",
-      "title": "Paired Icons Blue",
-      "category": "Statements",
-      "default_variant": "default",
-      "variants": [
-        {
-          "id": "default",
-          "default_source": "paired-icons-blue",
-          "compositions": [
-            {
-              "id": "paired-icons-blue",
-              "native_palette": "blue",
-              "palettes": [
-                "blue"
-              ],
-              "fields": {}
             }
           ]
         }

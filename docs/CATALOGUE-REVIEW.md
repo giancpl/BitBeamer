@@ -3,7 +3,7 @@
 
 Human selection is separate from graphical approval. Original similarity assignments remain proposals.
 
-Current catalogue: **96 models / 194 compositions**; **52 compositions graphically approved**.
+Current catalogue: **95 models / 194 compositions**; **55 compositions graphically approved**.
 Original coverage: **1073 exports / 1005 exact-source groups**.
 
 ## Source selection progress
@@ -12,12 +12,12 @@ Original coverage: **1073 exports / 1005 exact-source groups**.
 | --- | ---: | ---: |
 | discard | 0 | 0 |
 | exclude | 1 | 1 |
-| keep | 57 | 49 |
+| keep | 60 | 52 |
 | merge | 9 | 8 |
-| pending | 1006 | 947 |
+| pending | 1003 | 944 |
 | preset | 0 | 0 |
 
-Composition decisions: exclude: 1, keep: 52, pending: 141.
+Composition decisions: exclude: 1, keep: 55, pending: 138.
 
 ## Ordered work
 
@@ -43,13 +43,7 @@ they must not enter the final usable selection or its packages. No graphical app
 
 ## Current original selection
 
-**Icon-led statements — Statements**
-
-| Original | Current composition | Proposal |
-| --- | --- | --- |
-| figma-1003 | icon-spotlight-light | Keep a statement with one replaceable icon and editable text on the native light background. Group with the blue example while retaining its measured icon and text geometry. |
-| figma-0383 | icon-spotlight-blue | Keep the blue icon-led statement in the same family; retain the original larger icon geometry if needed as a variant, with a replaceable icon and editable text. |
-| figma-0038 | paired-icons-blue | Keep as a two-icon statement variant without required text. Both icons should be independently replaceable while retaining their original bounds. |
+No original selection batch is active.
 
 ## Maintainer commands
 

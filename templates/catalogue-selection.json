@@ -653,10 +653,12 @@
       "suggested_compositions": [
         "paired-icons-blue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "paired-icons-blue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly retained all three icon-statement originals on 2026-11-13. Graphical approval is separate."
     },
     "figma-0039": {
       "file": "2800.svg",
@@ -6221,10 +6223,12 @@
       "suggested_compositions": [
         "icon-spotlight-blue"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "icon-spotlight-blue"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly retained all three icon-statement originals on 2026-11-13. Graphical approval is separate."
     },
     "figma-0384": {
       "file": "Bitcoin is not Crypto_BitPolito Presentation_BTC Prague 62.svg",
@@ -16348,10 +16352,12 @@
       "suggested_compositions": [
         "icon-spotlight-light"
       ],
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "icon-spotlight-light"
+      ],
+      "basis": "user decision",
+      "reason": "User explicitly retained all three icon-statement originals on 2026-11-13. Graphical approval is separate."
     },
     "figma-1004": {
       "file": "Slide 16_9 - 118.svg",
@@ -17600,16 +17606,20 @@
       "reason": "User selected this composition for reconstruction, not yet graphical approval."
     },
     "icon-spotlight-light": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "icon-spotlight-light"
+      ],
+      "basis": "user decision",
+      "reason": "Original selected by the user on 2026-11-13; graphical approval pending."
     },
     "icon-spotlight-blue": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "icon-spotlight-blue"
+      ],
+      "basis": "user decision",
+      "reason": "Original selected by the user on 2026-11-13; graphical approval pending."
     },
     "oversized-word": {
       "decision": "keep",
@@ -17692,10 +17702,12 @@
       "reason": "Retain the selected quotation/dialogue composition; graphical approval is separate."
     },
     "paired-icons-blue": {
-      "decision": "pending",
-      "targets": [],
-      "basis": "awaiting user selection",
-      "reason": ""
+      "decision": "keep",
+      "targets": [
+        "paired-icons-blue"
+      ],
+      "basis": "user decision",
+      "reason": "Original selected by the user on 2026-11-13; graphical approval pending."
     },
     "two-columns": {
       "decision": "keep",
@@ -18823,5 +18835,5 @@
       }
     }
   ],
-  "active_candidate_batch": "icon-statements-selection-01"
+  "active_candidate_batch": null
 }

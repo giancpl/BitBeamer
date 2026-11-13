@@ -1,6 +1,7 @@
 """Check pending-only review PDFs, canonical categories and opening behavior."""
 from pathlib import Path
 import sys
+import shutil
 import tempfile
 import unittest
 from unittest import mock
@@ -90,6 +91,7 @@ class ReviewBatchTests(unittest.TestCase):
                 self.assertNotIn('photo',document[0].get_text())
 
 
+    @unittest.skipUnless(shutil.which('pdftocairo'), 'Poppler required for comparison raster checks')
     def test_comparison_prints_the_invocation_used_for_the_reviewed_example(self):
         import json
         from PIL import Image
@@ -102,7 +104,9 @@ class ReviewBatchTests(unittest.TestCase):
             index.write_text('window.BITBEAMER_COMPARISONS='+json.dumps({'records':{
                 'columns':{'variants':[{'label':'figma-0021','original':'../../original.png'}]}}})+';')
             with fitz.open() as replica:
-                page=replica.new_page(width=800,height=450);page.insert_text((20,20),'Current layout')
+                page=replica.new_page(width=800,height=450)
+                page.draw_rect(page.rect,fill=(249/255,)*3,color=None)
+                page.insert_text((20,20),'Current layout')
                 replica.save(folder/'main.pdf')
             invocation=r'\studiotemplate[title={Reviewed example},left-title={Left heading},right-title={Right heading}]{two-columns}'
             with mock.patch('guide_comparisons.sync'):
@@ -115,7 +119,10 @@ class ReviewBatchTests(unittest.TestCase):
                 self.assertIn('1900.svg',text)
                 self.assertIn('Use: '+invocation,text)
                 self.assertNotIn('unreviewed-default',text)
+                right=document[0].get_image_info(xrefs=True)[1]
+                self.assertEqual(fitz.Pixmap(document,right['xref']).pixel(1,1),(249,249,249))
 
+    @unittest.skipUnless(shutil.which('pdftocairo'), 'Poppler required for comparison raster checks')
     def test_identical_panel_artwork_has_identical_sampling_on_both_sides(self):
         import json
         from PIL import Image, ImageDraw, ImageFilter
@@ -129,6 +136,7 @@ class ReviewBatchTests(unittest.TestCase):
             shadow.save(root/'panel.png')
             with fitz.open() as replica:
                 page=replica.new_page(width=1600,height=900)
+                page.draw_rect(page.rect,fill=(249/255,)*3,color=None)
                 page.insert_image(page.rect,filename=str(root/'panel.png'))
                 replica.save(folder/'main.pdf')
                 pixmap=page.get_pixmap(colorspace=fitz.csRGB,alpha=False)
@@ -146,6 +154,9 @@ class ReviewBatchTests(unittest.TestCase):
                 self.assertEqual(placements[0]['width'],placements[1]['width'])
                 self.assertEqual(placements[0]['height'],placements[1]['height'])
                 self.assertEqual(placements[0]['digest'],placements[1]['digest'])
+                for placement in placements:
+                    raster=fitz.Pixmap(document,placement['xref'])
+                    self.assertEqual(raster.pixel(10,10),(249,249,249))
 
     def test_no_pending_compositions_does_not_prepare_or_open_approved_batches(self):
         payload={'rows':[{'family':'Covers','choices':[{'id':'cover','status':'approved'}]}]}

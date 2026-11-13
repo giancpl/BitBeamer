@@ -6,6 +6,7 @@ import os
 from pathlib import Path
 import sys
 import textwrap
+import tempfile
 from urllib.parse import unquote, urlsplit
 
 import build
@@ -21,7 +22,7 @@ def pending_compositions(batch, choices):
     return [name for name in batch['compositions'] if choices[name]['status'] != 'approved' and not choices[name].get('edition_exclusion')]
 
 
-def comparisons(root, folder, names, choices, categories=None, commands=None):
+def comparisons(root, folder, names, choices, categories=None, commands=None, backend='docker', image='bitbeamer-latex:local'):
     try:import pymupdf as fitz
     except ImportError as error:
         raise RuntimeError('Original comparisons need the optional lesson-maintenance requirements; normal batch compilation does not.') from error
@@ -59,12 +60,14 @@ def comparisons(root, folder, names, choices, categories=None, commands=None):
             with Image.open(originals[name]) as source:
                 reference=source.convert('RGB')
             original_size=reference.size
-            current_page=replica[number]
-            current_pixmap=current_page.get_pixmap(
-                matrix=fitz.Matrix(original_size[0]/current_page.rect.width,
-                                   original_size[1]/current_page.rect.height),
-                colorspace=fitz.csRGB,alpha=False)
-            current=Image.frombytes('RGB',(current_pixmap.width,current_pixmap.height),current_pixmap.samples)
+            # Poppler preserves the exact light canvas (249); MuPDF truncates
+            # the same PDF fill to 248 when rasterising it. Use the guide renderer.
+            from studio_preview import thumbnail
+            with tempfile.TemporaryDirectory(prefix='comparison-render-',dir=folder) as temporary:
+                rendered=Path(temporary)/'current.png'
+                thumbnail(root,folder/'main.pdf',rendered,backend,image,number+1,width=original_size[0])
+                with Image.open(rendered) as raster:
+                    current=raster.convert('RGB')
             if current.size!=original_size:
                 current=current.resize(original_size,Image.Resampling.LANCZOS)
             for artwork,rectangle in ((reference,fitz.Rect(20,60,690,437)),
@@ -105,7 +108,7 @@ def prepare(root, name, backend='docker', image='bitbeamer-latex:local', compare
     if compare:
         from review_backgrounds import check_pdf
         check_pdf(root,pdf,[(i,n,commands[n]) for i,n in enumerate(names)],folder/'backgrounds.json')
-    originals=comparisons(root,folder,names,choices,categories,commands) if compare else {}
+    originals=comparisons(root,folder,names,choices,categories,commands,backend,image) if compare else {}
     report={'batch':name,'family':batch['family'],'compositions':names,'categories':{n:categories[n] for n in names},'pages':len(names),'status':'compiled; graphical review pending','approval':'none inferred','originals':originals,'commands':commands,'guide':'docs/slides/index.html?batch='+name+'&maintenance=1'}
     (folder/'report.json').write_text(json.dumps(report,indent=2)+'\n',encoding='utf-8')
     lines=['# '+batch['title'],'','Generated review sheet. Record feedback in the existing review ledgers; no approval is inferred.','']

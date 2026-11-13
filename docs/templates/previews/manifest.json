@@ -2005,7 +2005,7 @@
     },
     "icon-spotlight-blue": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "cbbb86c3e1e192d419f44a4488f88d5c057f64108aac9d166774da9b00f41883",
+      "@layout": "5dfc02ffbe58cec82b8e40048a84ebbb47cc2525f3bf5a2410e9a3d702c0bcf7",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -2027,11 +2027,11 @@
       "images/studio/collection/figma-0383-part-01.pdf": "764a47877a8772731a20ceaa69c60681266f65d87e5e669bb5a28799288a4026",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/icon-spotlight-blue.tex": "0b8a10070910bb8f4d1f61b4994619160747faca2f86df9f29a741d944212190"
+      "templates/studio/icon-spotlight-blue.tex": "84a7595fa49909f2f47eaa33df20deebeb242e3953e35661376ce004e2e86aab"
     },
     "icon-spotlight-light": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "bb3af91a62a30de9db31d5ae6a836aacd6f67a3f4817f4cbdff314f1dd23c5ec",
+      "@layout": "9706d89b64f5f180bf0b81714576a98b7e23f0343ea112e407179913745145aa",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -2053,7 +2053,7 @@
       "images/studio/collection/figma-1003-part-01.pdf": "e9c6dbc34a539ba513b72bc33b9d4ec46439bb9bc09c5ffa06c3e4bc38dd220f",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/icon-spotlight-light.tex": "24673dd16a2450cd9f83fd4369813ba6a3ee365041841c4378144fd6e32f0726"
+      "templates/studio/icon-spotlight-light.tex": "8d27101c00b8358909c4ed031564626367d7b8f8cbe86f890999586bd05a5aa5"
     },
     "image-left": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
@@ -2999,7 +2999,7 @@
     },
     "paired-icons-blue": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
-      "@layout": "3a8af7b3c07f0edd30ccfad7bd0336b2122934cd3442c2fad8b0dab24be954a8",
+      "@layout": "0cca710ed4617ecb8f9ec4fb25d7c5760ddc7d9e773625280a57eebd6d2ee77b",
       "assets/generated/catalogue.tex": "4826d7d9681cf5869bc028d8538956ffa9f67a0bc52271d04e72de516694a5cc",
       "beamercolorthemebitpolito.sty": "36c5573aa0581c406219d0f0a81c46a918755af1c1ae9572741415b6aa4fa18a",
       "beamerfontthemebitpolito-studio.sty": "1b11d9c195613e15eea6fcf3da1b6cf4a96e9395ccdd58b2e1995b4890dd2640",
@@ -3022,7 +3022,7 @@
       "images/studio/collection/figma-0038-part-02.pdf": "c5341a118b370bbb95088af0fc643630e335d12d75c082491171cac62bb00885",
       "images/studio/cover-pattern-white.pdf": "dee5b917c5b4a75868575510ec3a91e43086c8f73989a239064a4cbbd15e703f",
       "images/studio/pig-white.pdf": "5d3724bf7354954c43c3dc85b80de13e5a494bd669e7b3e50b64f15d3b026259",
-      "templates/studio/paired-icons-blue.tex": "a82edc91c78b80df4813c78fb83318b5f79cb0494430c69d68083165bc4c41c2"
+      "templates/studio/paired-icons-blue.tex": "71209ee8cf570d5c2879f790ac14c22dd57844e8c100a6643efbd1c196e4f24c"
     },
     "partner-media-grid": {
       ".latexmkrc": "d14a222986d25adebde1c3ecbfbcaa9d6e156687146e9d7c7660bca55d428123",
@@ -5769,8 +5769,8 @@
     "horizontal-split": "46bb971e3d17fb229f8626fb70852883e3a3e990300a503dabc3c325e37889e8",
     "horizontal-timeline": "887e9d04f877e2c9e4e1aa5a12445f8272f4adc0d71f0014188f01ebb29f7078",
     "icon-rail": "7f0763032fdd2bd66a3e1aaf18af7dda69b6400de92bd292ff780397dea95b4a",
-    "icon-spotlight-blue": "b3a88a988f2ae1502a964688cd62bd48de2d9ad80a2fea15bba4bbc5bc41d17c",
-    "icon-spotlight-light": "bc0f18e40e02e8999cffb11d25070b3e94f77835e4a8a39c719d8b392089244d",
+    "icon-spotlight-blue": "557f60bf958551d3c321dea8a219149b061b8d17d1312bb76c10c19c28ac14f4",
+    "icon-spotlight-light": "e21ce03ce497b87f0897145d538f3d347b9aa89ae31b44015155a85048393c0d",
     "image-left": "f752060d8d1a7dd6120ae5f09923c9a1bddd5037145ad2ab3d79dbb133f220bc",
     "image-logo-pair": "b6efca44fd2d907b0c27047169e404c9777cc17e8ad0b889d6025957ff15623d",
     "image-overlay": "463f55f2d3ccb9aeb04aa46951aad7968b45d1e7e1f3242913616f93fdb647f6",
@@ -5804,7 +5804,7 @@
     "oversized-number-blue": "de4766c5d3006b6dd62b8b824946bc5b700243a77cc5b892a93c760b9650b9d1",
     "oversized-number-light": "bc921bde0c583e1c29b983aedf14982c7410b47b8c2ed2d79f95fa9eca223bfa",
     "oversized-word": "0a792160b59e903b32521f9532187170b4f4e8143d3d7a8fa8f604449b6a27e4",
-    "paired-icons-blue": "e6163964e45c187a66c3abcb37acc7468fada8e2383151e3561c72f0ce88c493",
+    "paired-icons-blue": "444cdc745704df5ac24dc846453bd5e95852ee828c4c9eee2b2c85c72a153a77",
     "partner-media-grid": "884cf5839330510f6395ef284479eb8f3768e0b81788c9b44130d1e154bbc20a",
     "partner-rail": "d31c893e4effca26f1bdf9c176c2e0acb57eb601f20443bebeb37b5de516251a",
     "payment-channel": "8430097f9ef652746ebe12f1df1c42ce1ce2be5e2ed749758ce8aac46921cb52",

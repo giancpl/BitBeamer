@@ -162,7 +162,7 @@ def guide_markdown(entry, selected=None, aliases=(), portable=False):
     member=membership().get(name)
     if member and not portable:
         model,variant,composition=member
-        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards','paragraphs','statement','quotation','dialogue') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
+        lines += ['## Grouped model', '', '[Model variants and named fields](../models/'+model['id']+'.md)', '', '```latex', r'\studiotemplate[variant='+variant['id']+',palette='+composition['native_palette']+']{'+model['id']+'}', '```', '', 'Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.' if model['id'] in ('list-rail','two-columns','text-cards','paragraphs','statement','quotation','dialogue','icon-statement') else 'Named fields are coherent across related variants. All old fields and numbered slots remain available.', '', 'Numeric defaults and charts are illustrative.', '']
     if name == 'chat-dialogue':
         lines += ['Quotation marks and the em dash before attribution are automatic. Write bare text in both fields; empty fields produce no stray punctuation.', '']
     if entry.get('options'):

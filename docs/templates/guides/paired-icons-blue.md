@@ -4,7 +4,7 @@
 
 Focus attention on one message using the paired icons blue layout.
 
-Model: `paired-icons-blue` · Family: Statements · Status: **in review**.
+Model: `paired-icons-blue` · Family: Statements · Status: **approved**.
 
 [Getting started](../../USING-STUDIO.md) · [All slide guides](../GUIDES.md) · [Content API](../../STUDIO-CONTENT.md) · [Current LaTeX source](../../../templates/studio/paired-icons-blue.tex)
 
@@ -16,13 +16,13 @@ The preview shows the shipped defaults. The thin bottom label belongs to the rev
 
 ## Grouped model
 
-[Model variants and named fields](../models/paired-icons-blue.md)
+[Model variants and named fields](../models/icon-statement.md)
 
 ```latex
-\studiotemplate[variant=default,palette=blue]{paired-icons-blue}
+\studiotemplate[variant=pair,palette=blue]{icon-statement}
 ```
 
-Named fields are coherent across related variants. All old fields and numbered slots remain available.
+Use the documented semantic fields or the lower-level numbered slots; replaced semantic names are not retained.
 
 Numeric defaults and charts are illustrative.
 
@@ -90,8 +90,8 @@ In the individual web view, select a field or enable **Show editable areas** to 
 
 | Field | What it changes | Position | Available space | Shipped value |
 | --- | --- | --- | --- | --- |
-| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 12.0% wide × 25.6% high | <code>\studiopaletteimage[width=428\studiounit]{images/studio/collection/figma-0038-part-01.pdf}</code> |
-| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 11.7% wide × 34.0% high | <code>\studiopaletteimage[width=415\studiounit]{images/studio/collection/figma-0038-part-02.pdf}</code> |
+| <code>graphic-1</code> | Complete graphic, image or decoration (graphic) | middle centre | 10.7% wide × 23.2% high | <code>\includegraphics[trim={0.262bp 48.148bp 48.77bp 0bp},clip,width=378.968\studiounit,height=463.852\studiounit,keepaspe...</code> |
+| <code>graphic-2</code> | Complete graphic, image or decoration (graphic) | middle centre | 10.3% wide × 31.6% high | <code>\includegraphics[trim={0bp 48bp 48bp 0bp},clip,width=367\studiounit,height=631\studiounit,keepaspectratio]{images/stu...</code> |
 
 Truncated values are shown in full at the start of the current source file.
 A text field accepts LaTeX; a graphic field accepts an icon, `\includegraphics`, TikZ or math.
